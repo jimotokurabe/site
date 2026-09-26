@@ -35,6 +35,8 @@ FILTERS = [
 ]
 HAS_BENEFIT = {"give", "discount", "elder", "purchase"}
 GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフォルダ
+# お問い合わせ（Googleフォーム。2026-09-26 に、ログインなしで開けること・運営者のメールアドレスが載っていないことを確認）
+CONTACT_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeNJuZsE9F--Erk3ZQK5rMyP704VH8S4mW5BNll9z_t7BeREg/viewform"
 FONTS = ("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700"
          "&family=Zen+Maru+Gothic:wght@700&display=swap")
 SIZE_BOOT = ('<script>try{if(localStorage.getItem("jk-size")==="large")'
@@ -117,6 +119,7 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts="", b
     <a href="{home}">トップ</a>
     <a href="{base}about.html">運営者情報</a>
     <a href="{base}privacy.html">プライバシーポリシー</a>
+    <a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせ</a>
   </nav>
   <p>© 2026 じもとくらべ</p>
 </footer>
@@ -336,7 +339,7 @@ def list_page(data, draft):
     <li>市町のページに書かれていないことは「記載なし」とし、推測で埋めていません。</li>
     <li>企業・団体の割引（公共交通機関の運賃割引など）は含めていません。<a href="#statewide">兵庫県内どこに住んでいても使える割引</a>から探せます。</li>
     <li>制度は変わることがあります。申し込む前に、市町の公式ページか窓口で確かめてください。</li>
-    <li>間違いに気づいたら、<a href="about.html#contact">運営者情報</a>のページからお知らせください。</li>
+    <li>間違いに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</li>
   </ul>
 </section>"""
 
@@ -636,7 +639,7 @@ def city_page(c, data, draft, base="../"):
 {source_items}
   </ul>
   <p>確かめた日：{jdate(checked)}。制度は変わることがあります。申し込む前に、{unit}のページか窓口で確かめてください。</p>
-  <p class="fix">間違いに気づいたら、<a href="{base}about.html#contact">運営者情報</a>のページからお知らせください。</p>
+  <p class="fix">間違いに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</p>
 </section>
 <p class="print-only">じもとくらべ（{jdate(checked)}に確認。制度は変わることがあります）　{e(url)}</p>
 <p class="back"><a href="{base}hyogo-menkyo-henno.html#{c['slug']}">← 兵庫県41市町の一覧にもどる</a></p>"""
@@ -683,14 +686,14 @@ def top_page(data, draft):
 # ---------------- 運営者情報 ----------------
 
 def about_page(draft):
-    main = """<article class="prose">
+    main = f"""<article class="prose">
   <h1>運営者情報</h1>
   <section aria-label="基本の情報">
     <dl class="info">
       <div><dt>サイト名</dt><dd>じもとくらべ</dd></div>
       <div><dt>アドレス</dt><dd>https://jimotokurabe.jp/</dd></div>
       <div><dt>運営</dt><dd>個人で運営しています</dd></div>
-      <div id="contact"><dt>連絡先</dt><dd>お問い合わせフォーム（準備中）</dd></div>
+      <div id="contact"><dt>連絡先</dt><dd><a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>（Googleフォーム）</dd></div>
     </dl>
   </section>
   <section>
@@ -708,7 +711,7 @@ def about_page(draft):
   </section>
   <section>
     <h2>間違いを見つけたら</h2>
-    <p>内容の間違いや、制度が変わったことに気づいたら、お知らせください。確かめて直し、直した日をページに書きます。</p>
+    <p>内容の間違いや、制度が変わったことに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。確かめて直し、直した日をページに書きます。</p>
   </section>
   <section>
     <h2>広告について</h2>
@@ -729,7 +732,7 @@ def about_page(draft):
 # ---------------- プライバシーポリシー ----------------
 
 def privacy_page(draft):
-    main = """<article class="prose">
+    main = f"""<article class="prose">
   <h1>プライバシーポリシー</h1>
   <p>じもとくらべ（以下「このサイト」）で扱う情報について説明します。</p>
   <section>
@@ -749,7 +752,8 @@ def privacy_page(draft):
   </section>
   <section>
     <h2>お問い合わせでいただいた情報</h2>
-    <p>お問い合わせでいただいた名前やメールアドレスは、返信のためだけに使い、ほかの目的には使いません。</p>
+    <p>お問い合わせは、<a href="{CONTACT_URL}" target="_blank" rel="noopener">Googleフォーム</a>で受け付けています。送られた内容は、Googleのサーバーに保存されます。</p>
+    <p>お問い合わせでいただいた内容やメールアドレスは、お問い合わせへの対応のためだけに使い、ほかの目的には使いません。</p>
   </section>
   <section>
     <h2>このページの変更</h2>
