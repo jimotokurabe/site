@@ -9,10 +9,10 @@ GitHub Pages（main ブランチの直下）で公開しています。
 
 | ファイル | 中身 |
 |---|---|
-| `data/hyogo-menkyo-henno.json` | 兵庫県41市町の免許返納特典のデータ（ページの元） |
+| `data/hyogo-menkyo-henno.json` | 兵庫県41市町の免許返納特典のデータ（ページの元）。`common` は県内共通の手続き、各市町の `guide` は手順ページの中身 |
 | `tools/build.py` | データからページを作るスクリプト |
 | `site.css` | 全ページ共通の見た目 |
-| `index.html` ほか `*.html`、`sitemap.xml`、`robots.txt` | `tools/build.py` が作るもの。手で直さない |
+| `index.html` ほか `*.html`、`hyogo-menkyo-henno/*.html`、`sitemap.xml`、`robots.txt` | `tools/build.py` が作るもの。手で直さない |
 | `CNAME`、`.nojekyll` | 独自ドメインの設定と、ファイルをそのまま公開する設定 |
 
 ## 更新のしかた

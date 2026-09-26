@@ -289,6 +289,101 @@ p { margin: 0; }
 .prose dl.info dd { margin: 0; }
 .updated { font-size: .9rem; color: var(--muted); }
 
+/* ---------- 一覧から手順ページへ ---------- */
+.btn-guide {
+  display: inline-flex; align-items: center; gap: .5rem;
+  min-height: 3rem; padding: .4rem 1.1rem; border-radius: .6rem;
+  background: var(--accent); color: var(--accent-ink); border: 2px solid var(--accent);
+  font-weight: 700; text-decoration: none;
+}
+.btn-guide:hover { background: var(--surface); color: var(--accent); }
+
+/* ---------- 市町ごとの手順ページ ---------- */
+.answer {
+  margin-top: 1rem; padding: .9rem 1.2rem .4rem; border-radius: .9rem;
+  background: var(--surface); border: 2px solid var(--ink); display: grid; gap: .3rem;
+}
+.answer h2 { margin: 0; font-size: .9rem; font-weight: 700; letter-spacing: .12em; color: var(--accent); }
+.answer .facts { border-top: 0; }
+.answer .facts > div:last-child { border-bottom: 0; }
+/* 手順ページの項目は文が長いので、スマホでは項目名を上、中身を下に並べる */
+.answer .facts dd, .step .facts dd, .block .facts dd { flex-basis: 14em; }
+.cautions {
+  margin-top: 1.2rem; padding: 1rem 1.2rem; border-radius: .9rem;
+  background: var(--nf-bg); display: grid; gap: .5rem;
+}
+.cautions h2 { font-family: var(--font-head); font-size: 1.15rem; line-height: 1.4; margin: 0; color: var(--nf-fg); }
+.cautions ul { margin: 0; padding-left: 1.2em; display: grid; gap: .4rem; font-weight: 700; }
+
+.steps { margin-top: 2.4rem; display: grid; gap: 1rem; }
+.step-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.step {
+  background: var(--surface); border: 1px solid var(--line); border-radius: .9rem;
+  padding: 1.1rem 1.2rem 1.2rem; display: grid; gap: .8rem; scroll-margin-top: 1rem;
+}
+.step h3 {
+  display: flex; align-items: center; gap: .7rem; margin: 0;
+  font-family: var(--font-head); font-weight: 700; font-size: 1.35rem; line-height: 1.35;
+}
+.step .num {
+  flex: none; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  background: var(--accent); color: var(--accent-ink);
+  font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.step-lead { font-weight: 700; }
+.step .bullets { list-style: disc; }
+.places { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.place {
+  display: grid; gap: .15rem; align-content: start;
+  padding: .7rem .9rem; border-radius: .7rem; background: var(--surface-2);
+}
+.place b { font-size: 1.1rem; }
+.place ul { margin: 0; padding: 0; list-style: none; font-size: .95rem; font-variant-numeric: tabular-nums; }
+.place .where { font-size: .85rem; color: var(--muted); }
+.tel { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.src-line { font-size: .8rem; line-height: 1.6; color: var(--muted); }
+details.more { border-top: 1px solid var(--line); padding-top: .3rem; display: grid; gap: .6rem; }
+details.more summary {
+  cursor: pointer; font-weight: 700; color: var(--accent);
+  min-height: 2.8rem; display: flex; align-items: center; gap: .4rem;
+}
+table.fees { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+table.fees caption { text-align: left; font-size: .88rem; color: var(--muted); padding-bottom: .2rem; }
+table.fees th, table.fees td { padding: .45rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.fees tr:first-child th, table.fees tr:first-child td { border-top: 1px solid var(--line); }
+table.fees th { text-align: left; font-weight: 400; padding-right: 1rem; }
+table.fees td { text-align: right; font-weight: 700; white-space: nowrap; }
+
+.checklist { margin-top: 2.2rem; display: grid; gap: .7rem; }
+.chk-cols { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.chk-cols fieldset {
+  margin: 0; min-width: 0; padding: .5rem 1rem 1rem; border-radius: .8rem;
+  border: 1.5px solid var(--line); background: var(--surface); display: grid; gap: .6rem; align-content: start;
+}
+.chk-cols legend { font-weight: 700; padding-inline: .3rem; }
+.chk-cols label { display: flex; gap: .6rem; align-items: flex-start; line-height: 1.6; cursor: pointer; }
+.chk-cols input { flex: none; width: 1.4rem; height: 1.4rem; margin: .15rem 0 0; accent-color: var(--accent); }
+
+.block { margin-top: 2.2rem; display: grid; gap: .7rem; }
+.block h2, .checklist h2 { font-family: var(--font-head); font-size: 1.3rem; line-height: 1.4; margin: 0; }
+.bullets.small { font-size: .9rem; color: var(--muted); }
+.share-row { display: flex; flex-wrap: wrap; gap: .6rem; }
+.btn-act {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 3rem; padding: .4rem 1.1rem; border-radius: .6rem; cursor: pointer;
+  font: inherit; font-weight: 700; text-decoration: none;
+  border: 2px solid var(--accent); background: var(--surface); color: var(--accent);
+}
+.btn-act:hover { background: var(--accent); color: var(--accent-ink); }
+#copy-url {
+  width: 100%; font: inherit; min-height: 3rem; padding: .4rem .8rem;
+  border: 2px solid var(--line); border-radius: .6rem; background: var(--surface); color: var(--ink);
+}
+.sources ul { font-size: .9rem; }
+.sources p { font-size: .9rem; color: var(--muted); }
+.back { margin-top: 2rem; font-weight: 700; }
+.print-only { display: none; }
+
 /* ---------- 下の帯 ---------- */
 .footer {
   margin-top: 3.5rem; padding-block: 1.4rem 2.4rem; border-top: 1px solid var(--line);
@@ -313,12 +408,46 @@ p { margin: 0; }
   html { scroll-behavior: smooth; }
 }
 
+@page { size: A4; margin: 12mm; }
 @media print {
   :root { font-size: 12pt; }
   body { background: #fff; color: #000; padding: 0; }
-  .topbar .sizer, .pick, .filters, .count, .skip, .region-head a, .draft { display: none !important; }
+  .topbar .sizer, .pick, .filters, .count, .skip, .region-head a, .draft,
+  .crumbs, .share, .back, .btn-guide { display: none !important; }
   .card { break-inside: avoid; border: 1px solid #888; }
   .card[hidden], .region[hidden] { display: grid !important; }
   a { color: #000; }
   .btn-src::after { content: " " attr(href); font-weight: 400; font-size: 9pt; word-break: break-all; }
+
+  /* 手順ページは、窓口に持っていける分量（A4で2枚まで）に詰める */
+  html:has(.guide) { font-size: 10pt; }
+  .guide { line-height: 1.5; }
+  .guide .topbar { padding-block: 0 .3rem; }
+  .guide .hero { padding-block: .6rem 0; }
+  .guide .hero h1 { font-size: 18pt; margin: 0 0 .3rem; }
+  .guide .stamp { width: 3.6rem; height: 3.6rem; }
+  .guide .answer, .guide .cautions, .guide .statewide { margin-top: .6rem; padding: .5rem .8rem; }
+  .guide .cautions, .guide .statewide { background: none; border: 1.5px solid #000; }
+  .guide .steps, .guide .checklist, .guide .block { margin-top: .9rem; gap: .4rem; }
+  .guide .step-list { gap: .5rem; }
+  .guide .step { padding: .5rem .8rem .6rem; gap: .4rem; border-color: #000; }
+  .guide .step h3 { font-size: 13pt; }
+  .guide .step .num { width: 1.8rem; height: 1.8rem; font-size: 11pt; border: 1.5px solid #000; }
+  .guide .place { padding: .3rem .6rem; border: 1px solid #888; }
+  .guide .facts > div { padding-block: .2rem; }
+  .guide .facts dd { flex-basis: 9em; }
+  .guide .bullets { gap: .1rem; }
+  .guide .chk-cols fieldset { padding: .3rem .7rem .5rem; gap: .25rem; border-color: #000; }
+  .guide .chk-cols input { width: 1.1rem; height: 1.1rem; }
+  .guide details.more, .guide .btn-src, .guide .src-line, .guide .extra, .guide .hero .lead,
+  .guide .sources, .guide .contacts, .guide .checklist > .note,
+  .guide .footer { display: none !important; }
+  .guide .place ul li { display: inline; }
+  .guide .place ul li + li::before { content: "、"; }
+  .guide table.fees th, .guide table.fees td { padding-block: .15rem; }
+  .guide .answer, .guide .cautions, .guide .place, .guide .chk-cols fieldset,
+  .guide .step h3, .guide table.fees { break-inside: avoid; }
+  .guide .step h3 { break-after: avoid; }
+  .guide .footer { margin-top: .6rem; padding-block: .3rem 0; }
+  .print-only { display: block; font-size: 9pt; }
 }

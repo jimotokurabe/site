@@ -10,6 +10,7 @@ import re
 import shutil
 from html import escape
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://jimotokurabe.jp/"
@@ -33,6 +34,7 @@ FILTERS = [
     ("endnone", "終了・なし", {"end", "none"}),
 ]
 HAS_BENEFIT = {"give", "discount", "elder", "purchase"}
+GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフォルダ
 FONTS = ("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700"
          "&family=Zen+Maru+Gothic:wght@700&display=swap")
 SIZE_BOOT = ('<script>try{if(localStorage.getItem("jk-size")==="large")'
@@ -66,8 +68,11 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
-def shell(*, title, description, path, main, draft, draft_note="", scripts=""):
+def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class=""):
+    """base は、サイトの直下から見たこのページの位置（下の階層のページなら "../"）。"""
     canonical = SITE + path
+    home = base or "./"
+    wrap_class = f"wrap {page_class}".strip()
     robots = '<meta name="robots" content="noindex">\n' if draft else ""
     banner = ""
     if draft:
@@ -89,14 +94,14 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="{base}site.css">
 {SIZE_BOOT}
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
-<div class="wrap">
+<div class="{wrap_class}">
 <header class="topbar">
-  <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <a class="brand" href="{home}">じもと<span>くらべ</span></a>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -109,9 +114,9 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts=""):
 </main>
 <footer class="footer">
   <nav aria-label="サイトの案内">
-    <a href="./">トップ</a>
-    <a href="about.html">運営者情報</a>
-    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="{home}">トップ</a>
+    <a href="{base}about.html">運営者情報</a>
+    <a href="{base}privacy.html">プライバシーポリシー</a>
   </nav>
   <p>© 2026 じもとくらべ</p>
 </footer>
@@ -157,6 +162,9 @@ def card(c, checked):
                      '<a href="#statewide">県内どこでも使える割引</a>もあります。</p>')
     if c.get("flag"):
         parts.append(f'<p class="flag">確かめ方：{e(c["flag"])}</p>')
+    if c.get("guide"):
+        parts.append(f'<p><a class="btn-guide" href="{GUIDE_DIR}/{c["slug"]}.html">'
+                     '返納から申し込みまでの手順を見る<span aria-hidden="true">→</span></a></p>')
     if c.get("url"):
         src = c.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(c["url"])}" target="_blank" rel="noopener">'
@@ -338,6 +346,241 @@ def list_page(data, draft):
         scripts=LIST_SCRIPT)
 
 
+# ---------------- 市町ごとの手順ページ ----------------
+
+CITY_SCRIPT = """<script>
+(function () {
+  var printBtn = document.querySelector("[data-print]");
+  if (printBtn) printBtn.addEventListener("click", function () { window.print(); });
+
+  var copyBtn = document.querySelector("[data-copy]");
+  var msg = document.getElementById("copied");
+  var box = document.getElementById("copy-url");
+  if (copyBtn) copyBtn.addEventListener("click", function () {
+    var url = copyBtn.getAttribute("data-copy");
+    function fallback() {
+      box.hidden = false;
+      box.focus();
+      box.select();
+      msg.textContent = "自動でコピーできませんでした。下のURLを長押しして、コピーしてください。";
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function () {
+        msg.textContent = "URLをコピーしました。LINEやメールに貼りつけて送れます。";
+      }, fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
+</script>"""
+
+# 警察での手続きの持ち物（兵庫県警「運転経歴証明書申請手続き」で確認）
+POLICE_CHECKLIST = [
+    "運転免許証（マイナ免許証も持っている人は、両方）",
+    "運転経歴証明書もつくるなら：手数料と写真（更新センターで本人が申し込むなら、写真は要りません）",
+    "印鑑（運転経歴証明書を受け取るときにあると便利。サインでもかまいません）",
+    "家族が代わりに行くなら：委任状兼承諾書、代理人誓約書、行く人の身分証明書",
+]
+
+
+def tel(num):
+    return f'<a class="tel" href="tel:{num.replace("-", "")}">{e(num)}</a>'
+
+
+def ext(url, label):
+    return (f'<a class="btn-src" href="{e(url)}" target="_blank" rel="noopener">'
+            f'{e(label)}<span aria-hidden="true">↗</span></a>')
+
+
+def lis(items, indent):
+    return "\n".join(f"{indent}<li>{e(x)}</li>" for x in items)
+
+
+def checks(items):
+    return "\n".join(f'      <label><input type="checkbox"> <span>{e(x)}</span></label>' for x in items)
+
+
+def city_page(c, data, draft, base="../"):
+    g = c["guide"]
+    kr = data["common"]["keireki"]
+    tk = data["common"]["tokuten"]
+    ap = g["apply"]
+    name = c["n"]
+    unit = "町" if name.endswith("町") else "市"
+    path = f"{GUIDE_DIR}/{c['slug']}.html"
+    url = SITE + path
+    checked = g["checked"]
+    y, m, d = checked.split("-")
+    deadline = dict(g["facts"]).get("申し込み期限", "")
+
+    places = []
+    for p in g["return_places"]:
+        hours = "".join(f"<li>{e(h)}</li>" for h in p["hours"])
+        where = f'\n          <span class="where">{e(p["where"])}</span>' if p.get("where") else ""
+        places.append(f"""        <div class="place">
+          <b>{e(p['name'])}</b>
+          <span>電話 {tel(p['tel'])}</span>
+          <ul>{hours}</ul>{where}
+        </div>""")
+    fees = "\n".join(f'          <tr><th scope="row">{e(k)}</th><td>{e(v)}</td></tr>' for k, v in kr["fees"])
+    ways = "\n".join(f"        <li><b>{e(k)}：</b>{e(v)}</li>" for k, v in ap["ways"])
+    extra = ""
+    if g.get("extra"):
+        extra = f"""
+<section class="block extra" aria-labelledby="ex-h">
+  <h2 id="ex-h">{e(g['extra_title'])}</h2>
+  <ul class="bullets">
+{lis(g['extra'], '    ')}
+  </ul>
+  <p class="src-line">{e(g['extra_src'])}</p>
+</section>
+"""
+    police_contacts = "<br>".join(f"{e(p['name'])} {tel(p['tel'])}" for p in g["return_places"])
+    sources = [(s["name"], s["url"], f"ページの日付：{s['date']}") for s in g["sources"]]
+    sources += [(kr["name"], kr["url"], "ページの日付：記載なし"),
+                (tk["name"], tk["url"], f"一覧は{tk['as_of']}")]
+    source_items = "\n".join(
+        f'    <li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a>（{e(dt)}）</li>'
+        for n, u, dt in sources)
+    line = "https://line.me/R/share?text=" + quote(f"{name}で運転免許を返納したら（じもとくらべ）\n{url}", safe="")
+
+    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="{base or './'}">トップ</a> ＞ <a href="{base}hyogo-menkyo-henno.html">兵庫県の免許返納特典</a> ＞ {e(name)}</nav>
+<div class="hero">
+  <div class="hero-top">
+    <p class="eyebrow">兵庫県・{e(name)}</p>
+    <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
+  </div>
+  <h1>{e(name)}で運転免許を返納したら</h1>
+  <p class="lead">{e(g['lead'])}もらうまでの手順を、{e(name)}と兵庫県警のページで確かめてまとめました。</p>
+</div>
+
+<section class="answer" aria-labelledby="ans-h">
+  <h2 id="ans-h">まとめ</h2>
+  <dl class="facts">
+{"".join(fact(k, v) for k, v in g["facts"])}  </dl>
+</section>
+
+<section class="cautions" aria-labelledby="cau-h">
+  <h2 id="cau-h">ここだけは気をつけてください</h2>
+  <ul>
+{lis(g['cautions'], '    ')}
+  </ul>
+</section>
+
+<section class="steps" aria-labelledby="steps-h">
+  <h2 class="section-title" id="steps-h">やることは3つ</h2>
+  <ol class="step-list">
+    <li class="step" id="step-1">
+      <h3><span class="num" aria-hidden="true">1</span>警察で免許を返納する</h3>
+      <div class="places">
+{chr(10).join(places)}
+      </div>
+      <p class="src-line">{e(g['return_note'])}</p>
+      <dl class="facts">
+{fact("持っていくもの", "運転免許証（マイナ免許証も持っている人は、両方）")}{fact("受け取るもの", "申請による運転免許の取消通知書（" + unit + "への申し込みに使うので、なくさないでください）")}      </dl>
+      <details class="more">
+        <summary>家族が代わりに返納するには</summary>
+        <ul class="bullets">
+{lis(kr['proxy'], '          ')}
+        </ul>
+        <p>{ext(kr['proxy_form'], '兵庫県警の書類（PDF）')}</p>
+      </details>
+    </li>
+    <li class="step" id="step-2">
+      <h3><span class="num" aria-hidden="true">2</span>運転経歴証明書をつくるか決める</h3>
+      <p class="step-lead">つくらなくても、{e(name)}の特典はもらえます。つくると、65歳以上なら<a href="#statewide">県内どこでも使える割引</a>を受けられます。</p>
+      <table class="fees">
+        <caption>手数料</caption>
+        <tbody>
+{fees}
+        </tbody>
+      </table>
+      <ul class="bullets">
+{lis(kr['points'], '        ')}
+      </ul>
+    </li>
+    <li class="step" id="step-3">
+      <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
+      <p>{e(ap['write'])}{e(ap['choice_note'])}</p>
+      <dl class="facts">
+{fact("添えるもの", ap['attach'])}{fact("申し込み期限", deadline)}{fact("宛先", ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
+      </dl>
+      <ul class="bullets">
+{ways}
+      </ul>
+      <p class="note">{e(ap['proxy'])}</p>
+      <p>{ext(ap['form_url'], '申請用紙（PDF）を開く')}</p>
+    </li>
+  </ol>
+</section>
+
+<section class="checklist" aria-labelledby="chk-h">
+  <h2 id="chk-h">持ち物チェック</h2>
+  <p class="note">印刷して、チェックしながら使えます。</p>
+  <div class="chk-cols">
+    <fieldset>
+      <legend>警察へ（手順1・2）</legend>
+{checks(POLICE_CHECKLIST)}
+    </fieldset>
+    <fieldset>
+      <legend>{e(name)}へ（手順3）</legend>
+{checks(ap['checklist'])}
+    </fieldset>
+  </div>
+</section>
+
+<section class="statewide" id="statewide" aria-labelledby="sw-h">
+  <h2 id="sw-h">兵庫県内どこでも使える割引</h2>
+  <p>{e(tk['who'])}{e(tk['what'])}</p>
+  <ul class="bullets">
+    <li>{e(tk['bus'])}</li>
+{lis(g.get('local_discounts', []), '    ')}
+  </ul>
+  <ul class="bullets small">
+{lis(tk['notes'], '    ')}
+  </ul>
+  <p>{ext(tk['list_url'], '特典の一覧（PDF）を見る')}</p>
+</section>
+{extra}
+<section class="block contacts" aria-labelledby="ct-h">
+  <h2 id="ct-h">問い合わせ先</h2>
+  <dl class="facts">
+    <div><dt>特典の申し込み</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
+    <div><dt>返納・運転経歴証明書</dt><dd>{police_contacts}</dd></div>
+  </dl>
+</section>
+
+<section class="block share" aria-labelledby="sh-h">
+  <h2 id="sh-h">家族に知らせる・紙で持つ</h2>
+  <div class="share-row">
+    <button type="button" class="btn-act" data-print>印刷する</button>
+    <button type="button" class="btn-act" data-copy="{e(url)}">URLをコピー</button>
+    <a class="btn-act" href="{e(line)}" target="_blank" rel="noopener">LINEで送る</a>
+  </div>
+  <p class="note" id="copied" aria-live="polite"></p>
+  <input id="copy-url" type="text" readonly value="{e(url)}" hidden aria-label="このページのURL">
+</section>
+
+<section class="block sources" aria-labelledby="src-h">
+  <h2 id="src-h">確かめたページ</h2>
+  <ul class="bullets">
+{source_items}
+  </ul>
+  <p>確かめた日：{jdate(checked)}。制度は変わることがあります。申し込む前に、{unit}のページか窓口で確かめてください。</p>
+  <p class="fix">間違いに気づいたら、<a href="{base}about.html#contact">運営者情報</a>のページからお知らせください。</p>
+</section>
+<p class="print-only">じもとくらべ（{jdate(checked)}に確認。制度は変わることがあります）　{e(url)}</p>
+<p class="back"><a href="{base}hyogo-menkyo-henno.html#{c['slug']}">← 兵庫県41市町の一覧にもどる</a></p>"""
+
+    return shell(
+        title=f"{g['title']}｜じもとくらべ",
+        description=g["description"],
+        path=path, main=main, draft=draft, base=base, page_class="guide",
+        draft_note=f"{name}の手順ページの試作です。",
+        scripts=CITY_SCRIPT)
+
+
 # ---------------- トップ ----------------
 
 def top_page(data, draft):
@@ -467,22 +710,26 @@ def main():
     ap.add_argument("--out", default=str(ROOT))
     ap.add_argument("--draft", action="store_true")
     ap.add_argument("--artifact")
+    ap.add_argument("--artifact-main", help="確認用ページで最初に出す市町の slug（省くとトップページ）")
     a = ap.parse_args()
     data = json.loads((ROOT / "data" / "hyogo-menkyo-henno.json").read_text(encoding="utf-8"))
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
+    guides = [c for c in data["cities"] if c.get("guide")]
     pages = {
         "index.html": top_page(data, a.draft),
         "hyogo-menkyo-henno.html": list_page(data, a.draft),
+        **{f"{GUIDE_DIR}/{c['slug']}.html": city_page(c, data, a.draft) for c in guides},
         "about.html": about_page(a.draft),
         "privacy.html": privacy_page(a.draft),
     }
     for name, html in pages.items():
+        (out / name).parent.mkdir(parents=True, exist_ok=True)
         (out / name).write_text(html, encoding="utf-8")
     if out.resolve() != ROOT:
         shutil.copy(ROOT / "site.css", out / "site.css")
     if not a.draft:
-        urls = ["", "hyogo-menkyo-henno.html", "about.html", "privacy.html"]
+        urls = ["" if n == "index.html" else n for n in pages]
         (out / "sitemap.xml").write_text(
             '<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -492,9 +739,16 @@ def main():
     if a.artifact:
         art = Path(a.artifact)
         art.mkdir(parents=True, exist_ok=True)
-        (art / "index.html").write_text(to_artifact_fragment(pages["index.html"], "じもとくらべ"), encoding="utf-8")
-        for name in ("hyogo-menkyo-henno.html", "about.html", "privacy.html"):
-            (art / name).write_text(pages[name], encoding="utf-8")
+        if a.artifact_main:
+            c = next(c for c in guides if c["slug"] == a.artifact_main)
+            first = to_artifact_fragment(city_page(c, data, a.draft, base=""), f"{c['n']}の返納ガイド")
+        else:
+            first = to_artifact_fragment(pages["index.html"], "じもとくらべ")
+        (art / "index.html").write_text(first, encoding="utf-8")
+        for name, html in pages.items():
+            if name != "index.html":
+                (art / name).parent.mkdir(parents=True, exist_ok=True)
+                (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
     print("built:", ", ".join(pages), "| draft" if a.draft else "")
 
