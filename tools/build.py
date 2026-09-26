@@ -161,7 +161,7 @@ def taxi_block(t, unit):
         facts += fact("申し込み", t.get("how"))
     link_back = t.get("henno_link")
     if link_back and link_back != "記載なし":
-        facts += fact("免許返納との関係", link_back)
+        facts += fact("返納した人は", link_back)
     parts = [f'<p>{e(t["what"])}</p>']
     if facts:
         parts.append(f'<dl class="facts">\n{facts}    </dl>')
@@ -344,7 +344,8 @@ def list_page(data, draft):
             for k, v in TAXI_KINDS.items())
         taxi_legend = f'  <h3>高齢者のタクシー代の助成の区分</h3>\n  <dl class="legend">\n{rows_t}\n  </dl>\n'
         taxi_note = (f'    <li>高齢者のタクシー代の助成は、{jdate(data["taxi_checked"])}に41市町の公式ページで確かめました。'
-                     '年齢などを条件にしたものだけを載せ、障害者手帳だけが条件の福祉タクシー券は含めていません。</li>\n')
+                     '年齢や介護の認定などを条件にしたものを載せ、障害者手帳だけが条件の福祉タクシー券は含めていません。'
+                     '原文で確かめきれなかった点は、その市町の欄に書いています。</li>\n')
     taxi_lead = "返納したあとの移動に使える、高齢者のタクシー代の助成もあわせて載せています。" if taxi else ""
     taxi_summary = f"高齢者のタクシー代の助成は <strong>{n_taxi}市町</strong> で見つかりました。" if taxi else ""
 
