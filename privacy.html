@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>プライバシーポリシー｜じもとくらべ</title>
+<meta name="description" content="じもとくらべで扱う情報と、使っている外部のサービスについて。">
+<link rel="canonical" href="https://jimotokurabe.jp/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="じもとくらべ">
+<meta property="og:title" content="プライバシーポリシー｜じもとくらべ">
+<meta property="og:description" content="じもとくらべで扱う情報と、使っている外部のサービスについて。">
+<meta property="og:url" content="https://jimotokurabe.jp/privacy.html">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<div class="wrap">
+<header class="topbar">
+  <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <div class="sizer" role="group" aria-label="文字の大きさ">
+    <span>文字の大きさ</span>
+    <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
+    <button type="button" data-size-btn="large" aria-pressed="false">大きく</button>
+  </div>
+</header>
+
+<main id="main">
+<article class="prose">
+  <h1>プライバシーポリシー</h1>
+  <p>じもとくらべ（以下「このサイト」）で扱う情報について説明します。</p>
+  <section>
+    <h2>集める情報</h2>
+    <p>このサイトには、会員登録や入力フォームはありません。アクセス解析や広告のためのCookieも、いまは使っていません。</p>
+  </section>
+  <section>
+    <h2>外部のサービス</h2>
+    <ul class="bullets">
+      <li>文字の表示に Google Fonts を使っています。ページを開くと、文字のデータを受け取るためにGoogleのサーバーに接続するので、IPアドレスなどがGoogleに送られます。</li>
+      <li>このサイトは GitHub Pages で公開しています。GitHubは、セキュリティのために、閲覧した人のIPアドレスを記録しています（<a href="https://docs.github.com/ja/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noopener">GitHubの説明</a>）。</li>
+    </ul>
+  </section>
+  <section>
+    <h2>文字の大きさの設定</h2>
+    <p>「大きく」を選ぶと、その設定をお使いのブラウザの中に保存します。このサイトに送られることはありません。</p>
+  </section>
+  <section>
+    <h2>お問い合わせでいただいた情報</h2>
+    <p>お問い合わせでいただいた名前やメールアドレスは、返信のためだけに使い、ほかの目的には使いません。</p>
+  </section>
+  <section>
+    <h2>このページの変更</h2>
+    <p>内容を変えるときは、このページを書き換えて日付を更新します。アクセス解析や広告を始めるときは、始める前にこのページに書きます。</p>
+  </section>
+  <p class="updated">2026年9月26日 制定</p>
+</article>
+</main>
+<footer class="footer">
+  <nav aria-label="サイトの案内">
+    <a href="./">トップ</a>
+    <a href="about.html">運営者情報</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 じもとくらべ</p>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll("[data-size-btn]");
+  function set(size, save) {
+    if (size === "large") root.setAttribute("data-size", "large");
+    else root.removeAttribute("data-size");
+    buttons.forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-size-btn") === size));
+    });
+    if (save) { try { localStorage.setItem("jk-size", size); } catch (e) {} }
+  }
+  set(root.getAttribute("data-size") === "large" ? "large" : "normal", false);
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () { set(b.getAttribute("data-size-btn"), true); });
+  });
+})();
+</script>
+
+</body>
+</html>

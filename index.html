@@ -2,28 +2,84 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>じもとくらべ（準備中）</title>
-<style>
-  :root { color-scheme: light dark; --bg: #f7f5f0; --fg: #1f2328; --muted: #5b6168; --accent: #1d5ba6; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #16181b; --fg: #e8e6e1; --muted: #a4a9ae; --accent: #7fb0ec; }
-  }
-  body {
-    margin: 0; min-height: 100vh; display: grid; place-items: center;
-    background: var(--bg); color: var(--fg); line-height: 1.8;
-    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", "Yu Gothic", Meiryo, sans-serif;
-  }
-  main { padding: 32px 16px; max-width: 32rem; text-align: center; }
-  h1 { margin: 0 0 .5rem; font-size: 2rem; letter-spacing: .08em; color: var(--accent); }
-  p { margin: 0; color: var(--muted); }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>じもとくらべ｜市や町ごとの制度を比べる</title>
+<meta name="description" content="住んでいる市や町によってちがう制度を、公式ページで確かめて、同じ項目にそろえて比べられるサイトです。">
+<link rel="canonical" href="https://jimotokurabe.jp/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="じもとくらべ">
+<meta property="og:title" content="じもとくらべ｜市や町ごとの制度を比べる">
+<meta property="og:description" content="住んでいる市や町によってちがう制度を、公式ページで確かめて、同じ項目にそろえて比べられるサイトです。">
+<meta property="og:url" content="https://jimotokurabe.jp/">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
-<main>
-  <h1>じもとくらべ</h1>
-  <p>市や町ごとにちがう制度を、並べて比べられるサイトです。<br>ただいま準備中です。</p>
+<a class="skip" href="#main">本文へ移動</a>
+<div class="wrap">
+<header class="topbar">
+  <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <div class="sizer" role="group" aria-label="文字の大きさ">
+    <span>文字の大きさ</span>
+    <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
+    <button type="button" data-size-btn="large" aria-pressed="false">大きく</button>
+  </div>
+</header>
+
+<main id="main">
+<section class="top-hero">
+  <h1 class="name">じもと<span>くらべ</span></h1>
+  <p class="lead">住んでいる市や町によって、使える制度はちがいます。市町の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
+</section>
+
+<a class="topic" href="hyogo-menkyo-henno.html">
+  <span class="t-eyebrow">兵庫県・41市町</span>
+  <span class="t-title">運転免許を返納したら、何がもらえる？</span>
+  <span class="t-meta">28市町で特典や支援が見つかりました ・ 2026年9月26日に確認</span>
+  <span class="t-go">41市町の一覧を見る →</span>
+</a>
+<p class="next-note">ほかの制度も、順に追加していきます。</p>
+
+<section class="about-list" aria-labelledby="how-h">
+  <h2 id="how-h">調べ方</h2>
+  <ul class="bullets">
+    <li>市町の公式ページを開いて、原文で確かめます。</li>
+    <li>確かめた日を、ページごとに書きます。</li>
+    <li>ページに書かれていないことは「記載なし」とし、推測で埋めません。</li>
+  </ul>
+</section>
 </main>
+<footer class="footer">
+  <nav aria-label="サイトの案内">
+    <a href="./">トップ</a>
+    <a href="about.html">運営者情報</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 じもとくらべ</p>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll("[data-size-btn]");
+  function set(size, save) {
+    if (size === "large") root.setAttribute("data-size", "large");
+    else root.removeAttribute("data-size");
+    buttons.forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-size-btn") === size));
+    });
+    if (save) { try { localStorage.setItem("jk-size", size); } catch (e) {} }
+  }
+  set(root.getAttribute("data-size") === "large" ? "large" : "normal", false);
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () { set(b.getAttribute("data-size-btn"), true); });
+  });
+})();
+</script>
+
 </body>
 </html>
