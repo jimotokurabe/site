@@ -163,8 +163,9 @@ def card(c, checked):
     if c.get("flag"):
         parts.append(f'<p class="flag">確かめ方：{e(c["flag"])}</p>')
     if c.get("guide"):
+        label = c["guide"].get("link_label", "返納から申し込みまでの手順を見る")
         parts.append(f'<p><a class="btn-guide" href="{GUIDE_DIR}/{c["slug"]}.html">'
-                     '返納から申し込みまでの手順を見る<span aria-hidden="true">→</span></a></p>')
+                     f'{e(label)}<span aria-hidden="true">→</span></a></p>')
     if c.get("url"):
         src = c.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(c["url"])}" target="_blank" rel="noopener">'
@@ -282,6 +283,8 @@ def list_page(data, draft):
         for k, v in KINDS.items())
 
     y, m, d = checked.split("-")
+    flagged_names = [c["n"] for c in cities if c.get("flag")]
+    flagged = f"{'と'.join(flagged_names)}は、カードに書いた方法で確かめています。" if flagged_names else ""
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 兵庫県の免許返納特典</nav>
 <div class="hero">
   <div class="hero-top">
@@ -329,7 +332,7 @@ def list_page(data, draft):
 {legend}
   </dl>
   <ul class="bullets">
-    <li>{jdate(checked)}に、41市町の公式ページを開いて、金額・対象の年齢・申し込み期限を原文で確かめました。神戸市と多可町は、それぞれのカードに書いた方法で確かめています。</li>
+    <li>{jdate(checked)}に、41市町の公式ページを開いて、金額・対象の年齢・申し込み期限を原文で確かめました。{flagged}</li>
     <li>市町のページに書かれていないことは「記載なし」とし、推測で埋めていません。</li>
     <li>企業・団体の割引（公共交通機関の運賃割引など）は含めていません。<a href="#statewide">兵庫県内どこに住んでいても使える割引</a>から探せます。</li>
     <li>制度は変わることがあります。申し込む前に、市町の公式ページか窓口で確かめてください。</li>
@@ -401,34 +404,105 @@ def checks(items):
     return "\n".join(f'      <label><input type="checkbox"> <span>{e(x)}</span></label>' for x in items)
 
 
+def place_card(p):
+    hours = "".join(f"<li>{e(h)}</li>" for h in p["hours"])
+    phone = f"\n          <span>電話 {tel(p['tel'])}</span>" if p.get("tel") else ""
+    where = f'\n          <span class="where">{e(p["where"])}</span>' if p.get("where") else ""
+    return f"""        <div class="place">
+          <b>{e(p['name'])}</b>{phone}
+          <ul>{hours}</ul>{where}
+        </div>"""
+
+
+def contact_row(label, who, number=""):
+    value = f"{e(who)} {tel(number)}" if number else e(who)
+    return f"    <div><dt>{e(label)}</dt><dd>{value}</dd></div>\n"
+
+
 def city_page(c, data, draft, base="../"):
     g = c["guide"]
-    kr = data["common"]["keireki"]
-    tk = data["common"]["tokuten"]
-    ap = g["apply"]
+    cm = data["common"]
+    hn, kr, tk = cm["hennou"], cm["keireki"], cm["tokuten"]
+    ap = g.get("apply")  # 市町に申し込む特典があるときだけ
     name = c["n"]
     unit = "町" if name.endswith("町") else "市"
     path = f"{GUIDE_DIR}/{c['slug']}.html"
     url = SITE + path
     checked = g["checked"]
     y, m, d = checked.split("-")
-    deadline = dict(g["facts"]).get("申し込み期限", "")
 
-    places = []
-    for p in g["return_places"]:
-        hours = "".join(f"<li>{e(h)}</li>" for h in p["hours"])
-        where = f'\n          <span class="where">{e(p["where"])}</span>' if p.get("where") else ""
-        places.append(f"""        <div class="place">
-          <b>{e(p['name'])}</b>
-          <span>電話 {tel(p['tel'])}</span>
-          <ul>{hours}</ul>{where}
-        </div>""")
+    # 手順1：警察で返納する
+    places = "\n".join(place_card(p) for p in g["return_places"])
+    receive = g.get("receive_note") or f"申請による運転免許の取消通知書（{unit}への申し込みに使うので、なくさないでください）"
+    stations = ""
+    if g.get("stations"):
+        rows = "\n".join(f'            <tr><th scope="row">{e(n)}</th><td>{e(area)}</td><td>{tel(t)}</td></tr>'
+                         for n, area, t in g["stations"])
+        stations = f"""
+      <details class="more">
+        <summary>{e(name)}内の警察署と電話番号</summary>
+        <div class="table-scroll">
+          <table class="list-table">
+            <thead><tr><th scope="col">警察署</th><th scope="col">ある場所</th><th scope="col">電話</th></tr></thead>
+            <tbody>
+{rows}
+            </tbody>
+          </table>
+        </div>
+        <p class="src-line">どの警察署がどの地域を受け持つかは、<a href="{e(hn['stations_url'])}" target="_blank" rel="noopener">兵庫県警の警察署一覧</a>から、各警察署のページで確かめられます。</p>
+      </details>"""
+
+    # 手順2：運転経歴証明書
+    step2_title = g.get("step2_title", "運転経歴証明書をつくるか決める")
+    if g.get("step2_lead"):
+        step2_lead = e(g["step2_lead"])
+    else:
+        step2_lead = (f"つくらなくても、{e(name)}の特典はもらえます。つくると、65歳以上なら"
+                      '<a href="#statewide">県内どこでも使える割引</a>を受けられます。')
     fees = "\n".join(f'          <tr><th scope="row">{e(k)}</th><td>{e(v)}</td></tr>' for k, v in kr["fees"])
-    ways = "\n".join(f"        <li><b>{e(k)}：</b>{e(v)}</li>" for k, v in ap["ways"])
+
+    # 手順3：市町に申し込む／割引などを使う
+    if ap:
+        deadline = dict(g["facts"]).get("申し込み期限", "")
+        ways = "\n".join(f"        <li><b>{e(k)}：</b>{e(v)}</li>" for k, v in ap["ways"])
+        step3 = f"""    <li class="step" id="step-3">
+      <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
+      <p>{e(ap['write'])}{e(ap['choice_note'])}</p>
+      <dl class="facts">
+{fact("添えるもの", ap['attach'])}{fact("申し込み期限", deadline)}{fact("宛先", ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
+      </dl>
+      <ul class="bullets">
+{ways}
+      </ul>
+      <p class="note">{e(ap['proxy'])}</p>
+      <p>{ext(ap['form_url'], '申請用紙（PDF）を開く')}</p>
+    </li>"""
+    else:
+        use = g["use"]
+        items = "\n".join(
+            f'        <li><b>{e(head)}</b><br>{e(body)}（<a href="{e(href)}">「{e(label)}」を見る</a>）</li>'
+            for head, body, href, label in use["items"])
+        step3 = f"""    <li class="step" id="step-3">
+      <h3><span class="num" aria-hidden="true">3</span>{e(use['title'])}</h3>
+      <ul class="bullets">
+{items}
+      </ul>
+    </li>"""
+
+    fieldsets = [f"""    <fieldset>
+      <legend>警察へ（手順1・2）</legend>
+{checks(POLICE_CHECKLIST)}
+    </fieldset>"""]
+    if ap:
+        fieldsets.append(f"""    <fieldset>
+      <legend>{e(name)}へ（手順3）</legend>
+{checks(ap['checklist'])}
+    </fieldset>""")
+
     extra = ""
     if g.get("extra"):
         extra = f"""
-<section class="block extra" aria-labelledby="ex-h">
+<section class="block extra" id="extra" aria-labelledby="ex-h">
   <h2 id="ex-h">{e(g['extra_title'])}</h2>
   <ul class="bullets">
 {lis(g['extra'], '    ')}
@@ -436,9 +510,16 @@ def city_page(c, data, draft, base="../"):
   <p class="src-line">{e(g['extra_src'])}</p>
 </section>
 """
-    police_contacts = "<br>".join(f"{e(p['name'])} {tel(p['tel'])}" for p in g["return_places"])
+    if g.get("contacts"):
+        contacts = "".join(contact_row(*row) for row in g["contacts"])
+    else:
+        police = "<br>".join(f"{e(p['name'])} {tel(p['tel'])}" for p in g["return_places"] if p.get("tel"))
+        contacts = (contact_row("特典の申し込み", ap["office"], ap["tel"])
+                    + f"    <div><dt>返納・運転経歴証明書</dt><dd>{police}</dd></div>\n")
+
     sources = [(s["name"], s["url"], f"ページの日付：{s['date']}") for s in g["sources"]]
-    sources += [(kr["name"], kr["url"], "ページの日付：記載なし"),
+    sources += [(hn["name"], hn["url"], "ページの日付：記載なし"),
+                (kr["name"], kr["url"], "ページの日付：記載なし"),
                 (tk["name"], tk["url"], f"一覧は{tk['as_of']}")]
     source_items = "\n".join(
         f'    <li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a>（{e(dt)}）</li>'
@@ -452,7 +533,7 @@ def city_page(c, data, draft, base="../"):
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
   <h1>{e(name)}で運転免許を返納したら</h1>
-  <p class="lead">{e(g['lead'])}もらうまでの手順を、{e(name)}と兵庫県警のページで確かめてまとめました。</p>
+  <p class="lead">{e(g['lead'])}</p>
 </div>
 
 <section class="answer" aria-labelledby="ans-h">
@@ -474,11 +555,18 @@ def city_page(c, data, draft, base="../"):
     <li class="step" id="step-1">
       <h3><span class="num" aria-hidden="true">1</span>警察で免許を返納する</h3>
       <div class="places">
-{chr(10).join(places)}
+{places}
       </div>
-      <p class="src-line">{e(g['return_note'])}</p>
+      <p class="src-line">{e(g['return_note'])}</p>{stations}
       <dl class="facts">
-{fact("持っていくもの", "運転免許証（マイナ免許証も持っている人は、両方）")}{fact("受け取るもの", "申請による運転免許の取消通知書（" + unit + "への申し込みに使うので、なくさないでください）")}      </dl>
+{fact("持っていくもの", "運転免許証（マイナ免許証も持っている人は、両方）")}{fact("手数料", hn['fee'])}{fact("受け取るもの", receive)}      </dl>
+      <details class="more">
+        <summary>窓口に行けないときは（郵送で返納する）</summary>
+        <ul class="bullets">
+{lis(hn['mail'], '          ')}
+        </ul>
+        <p>{ext(hn['url'], '兵庫県警の説明を見る')}</p>
+      </details>
       <details class="more">
         <summary>家族が代わりに返納するには</summary>
         <ul class="bullets">
@@ -488,8 +576,8 @@ def city_page(c, data, draft, base="../"):
       </details>
     </li>
     <li class="step" id="step-2">
-      <h3><span class="num" aria-hidden="true">2</span>運転経歴証明書をつくるか決める</h3>
-      <p class="step-lead">つくらなくても、{e(name)}の特典はもらえます。つくると、65歳以上なら<a href="#statewide">県内どこでも使える割引</a>を受けられます。</p>
+      <h3><span class="num" aria-hidden="true">2</span>{e(step2_title)}</h3>
+      <p class="step-lead">{step2_lead}</p>
       <table class="fees">
         <caption>手数料</caption>
         <tbody>
@@ -500,18 +588,7 @@ def city_page(c, data, draft, base="../"):
 {lis(kr['points'], '        ')}
       </ul>
     </li>
-    <li class="step" id="step-3">
-      <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
-      <p>{e(ap['write'])}{e(ap['choice_note'])}</p>
-      <dl class="facts">
-{fact("添えるもの", ap['attach'])}{fact("申し込み期限", deadline)}{fact("宛先", ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
-      </dl>
-      <ul class="bullets">
-{ways}
-      </ul>
-      <p class="note">{e(ap['proxy'])}</p>
-      <p>{ext(ap['form_url'], '申請用紙（PDF）を開く')}</p>
-    </li>
+{step3}
   </ol>
 </section>
 
@@ -519,14 +596,7 @@ def city_page(c, data, draft, base="../"):
   <h2 id="chk-h">持ち物チェック</h2>
   <p class="note">印刷して、チェックしながら使えます。</p>
   <div class="chk-cols">
-    <fieldset>
-      <legend>警察へ（手順1・2）</legend>
-{checks(POLICE_CHECKLIST)}
-    </fieldset>
-    <fieldset>
-      <legend>{e(name)}へ（手順3）</legend>
-{checks(ap['checklist'])}
-    </fieldset>
+{chr(10).join(fieldsets)}
   </div>
 </section>
 
@@ -546,9 +616,7 @@ def city_page(c, data, draft, base="../"):
 <section class="block contacts" aria-labelledby="ct-h">
   <h2 id="ct-h">問い合わせ先</h2>
   <dl class="facts">
-    <div><dt>特典の申し込み</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
-    <div><dt>返納・運転経歴証明書</dt><dd>{police_contacts}</dd></div>
-  </dl>
+{contacts}  </dl>
 </section>
 
 <section class="block share" aria-labelledby="sh-h">
