@@ -661,17 +661,19 @@ def city_page(c, data, draft, base="../"):
 {checks(ap['checklist'])}
     </fieldset>""")
 
-    extra = ""
+    # 市町の制度のくわしい説明。1つなら extra_title・extra・extra_src、2つ以上なら extras に並べる
+    extras = g.get("extras") or []
     if g.get("extra"):
-        extra = f"""
-<section class="block extra" id="extra" aria-labelledby="ex-h">
-  <h2 id="ex-h">{e(g['extra_title'])}</h2>
+        extras = [{"id": "extra", "title": g["extra_title"], "items": g["extra"], "src": g["extra_src"]}]
+    extra = "".join(f"""
+<section class="block extra" id="{e(x['id'])}" aria-labelledby="{'ex' if x['id'] == 'extra' else e(x['id'])}-h">
+  <h2 id="{'ex' if x['id'] == 'extra' else e(x['id'])}-h">{e(x['title'])}</h2>
   <ul class="bullets">
-{lis(g['extra'], '    ')}
+{lis(x['items'], '    ')}
   </ul>
-  <p class="src-line">{e(g['extra_src'])}</p>
+  <p class="src-line">{e(x['src'])}</p>
 </section>
-"""
+""" for x in extras)
     if g.get("contacts"):
         contacts = "".join(contact_row(*row) for row in g["contacts"])
     else:
