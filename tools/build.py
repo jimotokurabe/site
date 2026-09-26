@@ -418,7 +418,11 @@ def place_card(p):
 
 
 def contact_row(label, who, number=""):
-    value = f"{e(who)} {tel(number)}" if number else e(who)
+    """who は名前1つか、[名前, 電話] の組のリスト（窓口が複数あるとき）。"""
+    if isinstance(who, list):
+        value = "<br>".join(f"{e(n)} {tel(t)}" for n, t in who)
+    else:
+        value = f"{e(who)} {tel(number)}" if number else e(who)
     return f"    <div><dt>{e(label)}</dt><dd>{value}</dd></div>\n"
 
 
