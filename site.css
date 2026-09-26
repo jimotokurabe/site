@@ -152,6 +152,10 @@ p { margin: 0; }
 .k-purchase { background: var(--buy-bg); color: var(--buy-fg); }
 .k-end, .k-none { background: var(--end-bg); color: var(--end-fg); }
 .k-notfound { background: var(--nf-bg); color: var(--nf-fg); }
+.t-yes { background: var(--elder-bg); color: var(--elder-fg); }
+.t-care, .t-henno_only { background: var(--disc-bg); color: var(--disc-fg); }
+.t-end, .t-none { background: var(--end-bg); color: var(--end-fg); }
+.t-notfound { background: var(--nf-bg); color: var(--nf-fg); }
 
 /* ---------- 市町を選ぶ ---------- */
 .section-title {
@@ -241,6 +245,11 @@ p { margin: 0; }
 .note { color: var(--muted); font-size: .95rem; }
 .flag { font-size: .88rem; line-height: 1.6; padding: .45rem .7rem; border-radius: .5rem; background: var(--nf-bg); color: var(--nf-fg); }
 .card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1rem; padding-top: .2rem; }
+/* 市町のカードの中の、高齢者のタクシー代の助成の欄 */
+.taxi { display: grid; gap: .6rem; padding: .85rem .9rem; border-radius: .7rem; background: var(--surface-2); }
+.taxi p { margin: 0; }
+.taxi-head { display: flex; justify-content: space-between; align-items: center; gap: .8rem; }
+.taxi-head h4 { margin: 0; font-family: var(--font-head); font-size: 1.05rem; line-height: 1.4; }
 .btn-src {
   display: inline-flex; align-items: center; gap: .4rem;
   min-height: 2.9rem; padding: .35rem 1rem; border-radius: .6rem;
@@ -253,7 +262,8 @@ p { margin: 0; }
 
 /* ---------- この一覧について ---------- */
 .about-list { margin-top: 3rem; display: grid; gap: 1rem; }
-.about-list h2, .prose h2 { font-family: var(--font-head); font-size: 1.35rem; line-height: 1.4; margin: 0; }
+.about-list h2, .about-list h3, .prose h2 { font-family: var(--font-head); font-size: 1.35rem; line-height: 1.4; margin: 0; }
+.about-list h3 { font-size: 1.1rem; }
 .legend { margin: 0; display: grid; gap: .5rem; }
 .legend > div { display: grid; grid-template-columns: 7.2rem 1fr; gap: .8rem; align-items: baseline; }
 .legend dt { justify-self: start; }

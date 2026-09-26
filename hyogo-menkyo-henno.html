@@ -950,7 +950,8 @@
     chips.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-f") === f)); });
     cards.forEach(function (c) {
       var k = c.getAttribute("data-k");
-      var hit = f === "all" || (SETS[f] ? SETS[f].indexOf(k) >= 0 : k === f);
+      var hit = f === "all" || (f === "taxi" ? c.getAttribute("data-taxi") === "yes"
+        : SETS[f] ? SETS[f].indexOf(k) >= 0 : k === f);
       c.hidden = !hit;
       if (hit) shown++;
     });

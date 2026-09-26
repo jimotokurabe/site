@@ -34,6 +34,15 @@ FILTERS = [
     ("endnone", "終了・なし", {"end", "none"}),
 ]
 HAS_BENEFIT = {"give", "discount", "elder", "purchase"}
+# 高齢者のタクシー代の助成（data/hyogo-taxi.json）の区分
+TAXI_KINDS = {
+    "yes": ("助成あり", "年齢などの条件を満たす高齢者に、タクシー代を助成する"),
+    "care": ("介護の条件", "要介護の認定などを受けた人に限って、タクシー代を助成する"),
+    "henno_only": ("返納者のみ", "運転免許を返納した人に限った助成で、上の返納特典に含まれている"),
+    "end": ("終了", "以前はあったが、終わった"),
+    "none": ("なし", "市町のページに「ない」と書かれている"),
+    "notfound": ("記載なし", "市町のページに、高齢者向けのタクシー代の助成が見つからない。「ない」とも書かれていない"),
+}
 GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフォルダ
 # お問い合わせ（Googleフォーム。2026-09-26 に、ログインなしで開けること・運営者のメールアドレスが載っていないことを確認）
 CONTACT_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeNJuZsE9F--Erk3ZQK5rMyP704VH8S4mW5BNll9z_t7BeREg/viewform"
@@ -142,7 +151,42 @@ def fact(label, value):
     return f'    <div><dt>{e(label)}</dt><dd{cls}>{e(shown)}</dd></div>\n'
 
 
-def card(c, checked):
+def taxi_block(t, unit):
+    """市町のカードの下に出す、高齢者のタクシー代の助成の欄。"""
+    label = TAXI_KINDS[t["k"]][0]
+    facts = ""
+    if t["k"] in ("yes", "care"):
+        facts += fact("対象", t.get("age"))
+        facts += fact("助成の中身", t.get("amt"))
+        facts += fact("申し込み", t.get("how"))
+    link_back = t.get("henno_link")
+    if link_back and link_back != "記載なし":
+        facts += fact("免許返納との関係", link_back)
+    parts = [f'<p>{e(t["what"])}</p>']
+    if facts:
+        parts.append(f'<dl class="facts">\n{facts}    </dl>')
+    if t.get("flag"):
+        parts.append(f'<p class="flag">確かめ方：{e(t["flag"])}</p>')
+    if t.get("url"):
+        src = t.get("src") or f"{unit}の公式ページ"
+        link = (f'<a class="btn-src" href="{e(t["url"])}" target="_blank" rel="noopener">'
+                f'{e(src)}を見る<span aria-hidden="true">↗</span></a>')
+        dates = f'ページの日付：{e(t.get("upd") or "記載なし")}<br>確かめた日：{jdate(t["checked"])}'
+    else:
+        link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
+        dates = f'確かめた日：{jdate(t["checked"])}'
+    parts.append(f'<div class="card-foot">\n      {link}\n      <p class="dates">{dates}</p>\n    </div>')
+    body = "\n    ".join(parts)
+    return f"""<section class="taxi" aria-label="高齢者のタクシー代の助成">
+    <div class="taxi-head">
+      <h4>高齢者のタクシー代の助成</h4>
+      <span class="chip t-{t['k']}">{e(label)}</span>
+    </div>
+    {body}
+  </section>"""
+
+
+def card(c, checked, taxi=None):
     kind_label = KINDS[c["k"]][0]
     unit = "町" if c["n"].endswith("町") else "市"
     benefit = c["k"] in HAS_BENEFIT
@@ -178,9 +222,13 @@ def card(c, checked):
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
         dates = f'確かめた日：{jdate(checked)}'
     parts.append(f'<div class="card-foot">\n    {link}\n    <p class="dates">{dates}</p>\n  </div>')
+    t = (taxi or {}).get(c["slug"])
+    if t:
+        parts.append(taxi_block(t, unit))
     body = "\n  ".join(parts)
     notfound = " is-notfound" if c["k"] == "notfound" else ""
-    return f"""<article class="card{notfound}" id="{c['slug']}" data-k="{c['k']}" aria-labelledby="{c['slug']}-h">
+    tk = f' data-taxi="{t["k"]}"' if t else ""
+    return f"""<article class="card{notfound}" id="{c['slug']}" data-k="{c['k']}"{tk} aria-labelledby="{c['slug']}-h">
   <div class="card-head">
     <h3 class="city" id="{c['slug']}-h">{e(c['n'])}<span class="yomi">{e(c['y'])}</span></h3>
     <span class="chip k-{c['k']}">{e(kind_label)}</span>
@@ -224,7 +272,8 @@ LIST_SCRIPT = """<script>
     chips.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-f") === f)); });
     cards.forEach(function (c) {
       var k = c.getAttribute("data-k");
-      var hit = f === "all" || (SETS[f] ? SETS[f].indexOf(k) >= 0 : k === f);
+      var hit = f === "all" || (f === "taxi" ? c.getAttribute("data-taxi") === "yes"
+        : SETS[f] ? SETS[f].indexOf(k) >= 0 : k === f);
       c.hidden = !hit;
       if (hit) shown++;
     });
@@ -249,6 +298,8 @@ def list_page(data, draft):
     cities = data["cities"]
     regions = data["regions"]
     n_benefit = sum(1 for c in cities if c["k"] in HAS_BENEFIT)
+    taxi = data.get("taxi", {})
+    n_taxi = sum(1 for t in taxi.values() if t["k"] == "yes")
 
     pick = []
     for r in regions:
@@ -268,11 +319,13 @@ def list_page(data, draft):
         n = len(cities) if kinds is None else sum(1 for c in cities if c["k"] in kinds)
         pressed = "true" if fid == "all" else "false"
         chips.append(f'<button type="button" data-f="{fid}" aria-pressed="{pressed}">{e(label)}<span class="n">{n}</span></button>')
+    if taxi:
+        chips.append(f'<button type="button" data-f="taxi" aria-pressed="false">タクシー代の助成あり<span class="n">{n_taxi}</span></button>')
 
     sections = []
     for r in regions:
         rows = [c for c in cities if c["r"] == r["id"]]
-        cards = "\n".join(card(c, checked) for c in rows)
+        cards = "\n".join(card(c, checked, taxi) for c in rows)
         sections.append(f"""<section class="region" id="r-{r['id']}" aria-labelledby="r-{r['id']}-h">
   <div class="region-head">
     <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}市町</span></h2>
@@ -284,6 +337,16 @@ def list_page(data, draft):
     legend = "\n".join(
         f'    <div><dt><span class="chip k-{k}">{e(v[0])}</span></dt><dd>{e(v[1])}</dd></div>'
         for k, v in KINDS.items())
+    taxi_legend = taxi_note = ""
+    if taxi:
+        rows_t = "\n".join(
+            f'    <div><dt><span class="chip t-{k}">{e(v[0])}</span></dt><dd>{e(v[1])}</dd></div>'
+            for k, v in TAXI_KINDS.items())
+        taxi_legend = f'  <h3>高齢者のタクシー代の助成の区分</h3>\n  <dl class="legend">\n{rows_t}\n  </dl>\n'
+        taxi_note = (f'    <li>高齢者のタクシー代の助成は、{jdate(data["taxi_checked"])}に41市町の公式ページで確かめました。'
+                     '年齢などを条件にしたものだけを載せ、障害者手帳だけが条件の福祉タクシー券は含めていません。</li>\n')
+    taxi_lead = "返納したあとの移動に使える、高齢者のタクシー代の助成もあわせて載せています。" if taxi else ""
+    taxi_summary = f"高齢者のタクシー代の助成は <strong>{n_taxi}市町</strong> で見つかりました。" if taxi else ""
 
     y, m, d = checked.split("-")
     flagged_names = [c["n"] for c in cities if c.get("flag")]
@@ -295,7 +358,7 @@ def list_page(data, draft):
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
   <h1>運転免許を返納したら、何がもらえる？</h1>
-  <p class="lead">兵庫県の41市町が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。</p>
+  <p class="lead">兵庫県の41市町が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}</p>
 </div>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
@@ -320,7 +383,7 @@ def list_page(data, draft):
 
 <section class="list-head" aria-labelledby="list-h">
   <h2 class="section-title" id="list-h">41市町の特典</h2>
-  <p class="summary">41市町のうち <strong>{n_benefit}市町</strong> で、返納した人が使える特典や支援が見つかりました。</p>
+  <p class="summary">41市町のうち <strong>{n_benefit}市町</strong> で、返納した人が使える特典や支援が見つかりました。{taxi_summary}</p>
   <div class="filters" id="filters" role="group" aria-label="種類で絞り込む">
     {chr(10).join('    ' + c if i else c for i, c in enumerate(chips))}
   </div>
@@ -334,18 +397,20 @@ def list_page(data, draft):
   <dl class="legend">
 {legend}
   </dl>
-  <ul class="bullets">
+{taxi_legend}  <ul class="bullets">
     <li>{jdate(checked)}に、41市町の公式ページを開いて、金額・対象の年齢・申し込み期限を原文で確かめました。{flagged}</li>
     <li>市町のページに書かれていないことは「記載なし」とし、推測で埋めていません。</li>
-    <li>企業・団体の割引（公共交通機関の運賃割引など）は含めていません。<a href="#statewide">兵庫県内どこに住んでいても使える割引</a>から探せます。</li>
+{taxi_note}    <li>企業・団体の割引（公共交通機関の運賃割引など）は含めていません。<a href="#statewide">兵庫県内どこに住んでいても使える割引</a>から探せます。</li>
     <li>制度は変わることがあります。申し込む前に、市町の公式ページか窓口で確かめてください。</li>
     <li>間違いに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</li>
   </ul>
 </section>"""
 
     return shell(
-        title="兵庫県の免許返納特典 41市町の一覧（2026年9月確認）｜じもとくらべ",
-        description=f"兵庫県の41市町が、運転免許を自主返納した人に出している特典（ICOCA、タクシー券、バスの無料券など）を、金額・対象の年齢・申し込み期限をそろえて比べられます。{jdate(checked)}に各市町の公式ページで確認。",
+        title=(f"兵庫県の免許返納特典{'と高齢者タクシー助成' if taxi else ''} 41市町の一覧（2026年9月確認）｜じもとくらべ"),
+        description=(f"兵庫県の41市町が、運転免許を自主返納した人に出している特典（ICOCA、タクシー券、バスの無料券など）"
+                     + ("と、高齢者のタクシー代の助成を、金額・対象の年齢をそろえて" if taxi else "を、金額・対象の年齢・申し込み期限をそろえて")
+                     + f"比べられます。{jdate(checked)}に各市町の公式ページで確認。"),
         path="hyogo-menkyo-henno.html",
         main=main, draft=draft,
         draft_note="「記載なし」の11市町の扱いは、公開する前に決めます。",
@@ -660,6 +725,7 @@ def city_page(c, data, draft, base="../"):
 
 def top_page(data, draft):
     n_benefit = sum(1 for c in data["cities"] if c["k"] in HAS_BENEFIT)
+    n_taxi = sum(1 for t in data.get("taxi", {}).values() if t["k"] == "yes")
     main = f"""<section class="top-hero">
   <h1 class="name">じもと<span>くらべ</span></h1>
   <p class="lead">住んでいる市や町によって、使える制度はちがいます。市町の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
@@ -668,7 +734,7 @@ def top_page(data, draft):
 <a class="topic" href="hyogo-menkyo-henno.html">
   <span class="t-eyebrow">兵庫県・41市町</span>
   <span class="t-title">運転免許を返納したら、何がもらえる？</span>
-  <span class="t-meta">{n_benefit}市町で特典や支援が見つかりました ・ {jdate(data['checked'])}に確認</span>
+  <span class="t-meta">{n_benefit}市町で特典や支援が見つかりました{f" ・ 高齢者のタクシー代の助成は{n_taxi}市町" if n_taxi else ""} ・ {jdate(data['checked'])}に確認</span>
   <span class="t-go">41市町の一覧を見る →</span>
 </a>
 <p class="next-note">ほかの制度も、順に追加していきます。</p>
@@ -789,6 +855,11 @@ def main():
     ap.add_argument("--artifact-main", help="確認用ページで最初に出す市町の slug（省くとトップページ）")
     a = ap.parse_args()
     data = json.loads((ROOT / "data" / "hyogo-menkyo-henno.json").read_text(encoding="utf-8"))
+    taxi_file = ROOT / "data" / "hyogo-taxi.json"
+    if taxi_file.exists():
+        taxi = json.loads(taxi_file.read_text(encoding="utf-8"))
+        data["taxi_checked"] = taxi["checked"]
+        data["taxi"] = {slug: {"checked": taxi["checked"], **t} for slug, t in taxi["cities"].items()}
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]
