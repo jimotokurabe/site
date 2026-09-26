@@ -66,6 +66,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+/* hidden を付けた要素は、display を指定したクラスがあっても消す（絞り込み・検索・期限の計算で使う） */
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -288,6 +290,20 @@ p { margin: 0; }
 .topic .t-meta { font-size: .95rem; color: var(--muted); }
 .topic .t-go { font-weight: 700; color: var(--accent); }
 .next-note { margin-top: .9rem; color: var(--muted); font-size: .95rem; }
+.guides { margin-top: 1.8rem; display: grid; gap: .6rem; }
+.guides h2 { font-family: var(--font-head); font-size: 1.25rem; line-height: 1.4; margin: 0; }
+.guides p { margin: 0; }
+.guide-links {
+  list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+.guide-links a {
+  display: grid; gap: .1rem; min-height: 3rem; padding: .6rem 1rem; border-radius: .7rem;
+  background: var(--surface); border: 1.5px solid var(--line); color: var(--ink); text-decoration: none;
+}
+.guide-links a:hover { border-color: var(--accent); }
+.guide-links b { font-family: var(--font-head); font-size: 1.15rem; line-height: 1.4; color: var(--accent); }
+.guide-links span { font-size: .9rem; line-height: 1.5; color: var(--muted); }
 
 /* ---------- 文章ページ ---------- */
 .prose { padding-block: 1.6rem 0; display: grid; gap: 1.6rem; max-width: 40rem; }
@@ -307,6 +323,25 @@ p { margin: 0; }
   font-weight: 700; text-decoration: none;
 }
 .btn-guide:hover { background: var(--surface); color: var(--accent); }
+
+/* ---------- 申し込み期限の計算 ---------- */
+.calc {
+  display: grid; gap: .5rem; padding: .9rem 1rem; border-radius: .8rem;
+  background: var(--accent-soft); border: 2px solid var(--accent);
+}
+.calc h4 { margin: 0; font-family: var(--font-head); font-size: 1.15rem; line-height: 1.4; }
+.calc label { display: grid; gap: .1rem; font-weight: 700; }
+.calc .hint { font-weight: 400; font-size: .88rem; color: var(--muted); }
+.calc input[type="date"] {
+  font: inherit; font-size: 1.1rem; min-height: 3rem; width: 100%; max-width: 16rem; padding: .3rem .6rem;
+  border: 1.5px solid var(--line); border-radius: .5rem; background: var(--surface); color: var(--ink);
+}
+.calc-out { margin: 0; display: grid; gap: .15rem; font-variant-numeric: tabular-nums; }
+.calc-out strong { font-size: 1.15rem; line-height: 1.5; }
+.calc[data-state="ok"] .calc-out strong { color: var(--accent); }
+.calc[data-state="ng"] .calc-out strong { color: var(--stamp); }
+.calc-link { margin: 0 0 .7rem; font-weight: 700; }
+.src-links { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; }
 
 /* ---------- 市町ごとの手順ページ ---------- */
 .answer {
@@ -449,9 +484,9 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .guide .stamp { width: 3.6rem; height: 3.6rem; }
   .guide .answer, .guide .cautions, .guide .statewide { margin-top: .6rem; padding: .5rem .8rem; }
   .guide .cautions, .guide .statewide { background: none; border: 1.5px solid #000; }
-  .guide .steps, .guide .checklist, .guide .block { margin-top: .9rem; gap: .4rem; }
-  .guide .step-list { gap: .5rem; }
-  .guide .step { padding: .5rem .8rem .6rem; gap: .4rem; border-color: #000; }
+  .guide .steps, .guide .checklist, .guide .block { margin-top: .7rem; gap: .3rem; }
+  .guide .step-list { gap: .4rem; }
+  .guide .step { padding: .4rem .8rem .5rem; gap: .3rem; border-color: #000; }
   .guide .step h3 { font-size: 13pt; }
   .guide .step .num { width: 1.8rem; height: 1.8rem; font-size: 11pt; border: 1.5px solid #000; }
   .guide .place { padding: .3rem .6rem; border: 1px solid #888; }
@@ -470,5 +505,10 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .guide .step h3, .guide table.fees { break-inside: avoid; }
   .guide .step h3 { break-after: avoid; }
   .guide .footer { margin-top: .6rem; padding-block: .3rem 0; }
+  .guide .calc-link, .guide .calc:not(.has-result), .guide .calc h4, .guide .calc label,
+  .guide .calc input, .guide .calc .bullets { display: none !important; }
+  .guide .calc { padding: .3rem .6rem; background: none; border: 1.5px solid #000; }
+  .guide .statewide .bullets.small, .guide .src-links, .guide .no-print { display: none !important; }
+  .guide .calc-out strong { color: #000 !important; font-size: 11pt; }
   .print-only { display: block; font-size: 9pt; }
 }
