@@ -1,6 +1,7 @@
 // 手順ページ（hyogo-menkyo-henno/<slug>.html）を、ブラウザで開いて確かめる。
 // 見ること：横にはみ出さないか（スマホの幅・文字を大きく・折りたたみを開いた状態）、
-// コピー・印刷・LINEのボタン、一覧ページからの入口、印刷したときの枚数（A4で2枚まで）。
+// コピー・印刷・LINEのボタン、一覧ページからの入口、印刷したときの枚数（A4で2枚まで）、
+// 申し込み期限の計算欄（あるページだけ）。
 //
 // 使い方（ページを作ったフォルダを 127.0.0.1 で配ってから）:
 //   NODE_PATH=$(npm root -g) BASE=http://127.0.0.1:8765 PAGE=kawanishi node tools/check_guide.js
@@ -52,6 +53,14 @@ async function sideScroll(page) {
   out.lineText = decodeURIComponent((line || '').split('text=')[1] || '');
   out.tels = await page.$$eval('a[href^="tel:"]', as => [...new Set(as.map(a => a.getAttribute('href')))]);
 
+  // 申し込み期限の計算欄があるページは、日付を入れて答えが出るか
+  if (await page.$('#deadline')) {
+    await page.fill('#calc-date', new Date().toISOString().slice(0, 10));
+    await page.dispatchEvent('#calc-date', 'change');
+    out.calc = { visible: await page.isVisible('#deadline'), state: await page.getAttribute('#deadline', 'data-state'),
+                 text: ((await page.textContent('#calc-out strong')) || '').trim() };
+  }
+
   await page.click('[data-size-btn="large"]');
   await page.evaluate(() => document.querySelectorAll('details').forEach(d => { d.open = true; }));
   out.largeOpen = await sideScroll(page);
@@ -93,6 +102,7 @@ async function sideScroll(page) {
   if (out.fallbackBox !== out.canonical) ng.push('コピーできないときの表示');
   if (!out.fromList.endsWith(`/hyogo-menkyo-henno/${PAGE}.html`)) ng.push('一覧ページからの入口');
   if (out.printPages < 1 || out.printPages > MAX_PRINT_PAGES) ng.push(`印刷が${out.printPages}枚`);
+  if (out.calc && !(out.calc.visible && out.calc.state && out.calc.text)) ng.push('申し込み期限の計算');
   out.ng = ng;
   console.log(JSON.stringify(out, null, 1));
   process.exit(ng.length ? 1 : 0);

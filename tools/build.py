@@ -381,6 +381,67 @@ CITY_SCRIPT = """<script>
 })();
 </script>"""
 
+# 申し込み期限の計算（計算欄があるページだけに入れる）
+CALC_SCRIPT = """<script>
+(function () {
+  // 申し込み期限の計算：「返納から1年以内」なら、1年後の同じ日の前の日を出す（どう数えても間に合う日）
+  var calc = document.getElementById("deadline");
+  if (calc) {
+    var input = document.getElementById("calc-date");
+    var out = document.getElementById("calc-out");
+    var A = function (k) { return calc.getAttribute("data-" + k) || ""; };
+    var years = parseInt(A("years"), 10) || 0, months = parseInt(A("months"), 10) || 0;
+    var WD = "日月火水木金土";
+    var parse = function (s) {
+      var m = /^(\\d{4})-(\\d{2})-(\\d{2})$/.exec(s);
+      return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+    };
+    var ymd = function (d) { return d.getFullYear() + "年" + (d.getMonth() + 1) + "月" + d.getDate() + "日"; };
+    var ymdw = function (d) { return ymd(d) + "（" + WD.charAt(d.getDay()) + "）"; };
+    var earliest = parse(A("earliest")), end = parse(A("end"));
+    var period = "「" + A("period") + "」", ask = A("office") + "（" + A("tel") + "）";
+    var show = function (state, lines) {
+      out.textContent = "";
+      lines.forEach(function (t, i) {
+        var el = document.createElement(i ? "span" : "strong");
+        el.textContent = t;
+        out.appendChild(el);
+      });
+      calc.setAttribute("data-state", state);
+      calc.classList.toggle("has-result", state !== "");
+    };
+    var update = function () {
+      var d = parse(input.value);
+      if (!d) return show("", ["日付を入れると、申し込みの期限が出ます。"]);
+      var from = A("label") + "：" + ymdw(d);
+      if (earliest && d < earliest)
+        return show("ng", ["対象になりません", from, ymd(earliest) + "より前に返納した人は、対象ではありません。"]);
+      if (end && d > end)
+        return show("ng", ["期限を出せません", from, A("end-label") + "は" + ymd(end) + "までです。そのあとに返納する人が対象になるかは、市のページに書かれていません。"]);
+      var total = d.getMonth() + years * 12 + months;
+      var y = d.getFullYear() + Math.floor(total / 12), mo = total % 12;
+      var limit = new Date(y, mo, Math.min(d.getDate(), new Date(y, mo + 1, 0).getDate()) - 1);
+      var byEnd = !!(end && end < limit);
+      if (byEnd) limit = end;
+      var now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      var left = Math.round((limit - today) / 86400000);
+      if (left < 0 && byEnd)
+        return show("ng", [A("end-label") + "は" + ymd(end) + "で終わりました", from, "次の年度も続くかは、市のページか" + ask + "で確かめてください。"]);
+      if (left < 0)
+        return show("ng", [ymdw(limit) + "を過ぎています", from, period + "に間に合うかは、" + ask + "に確かめてください。"]);
+      show("ok", ["申し込みの期限：" + ymdw(limit) + (left === 0 ? "（今日まで）" : "（あと" + left + "日）"), from,
+        byEnd ? period + "の日付より前に、" + A("end-label") + "が" + ymd(end) + "で終わるためです。"
+              : "この日までに申し込めば、" + period + "に入ります。"]);
+    };
+    input.addEventListener("input", update);
+    input.addEventListener("change", update);
+    calc.hidden = false;
+    document.querySelectorAll(".calc-link").forEach(function (el) { el.hidden = false; });
+    update();
+  }
+})();
+</script>"""
+
 # 警察での手続きの持ち物（兵庫県警「運転経歴証明書申請手続き」で確認）
 POLICE_CHECKLIST = [
     "運転免許証（マイナ免許証も持っている人は、両方）",
@@ -415,6 +476,22 @@ def place_card(p):
           <b>{e(p['name'])}</b>{phone}
           <ul>{hours}</ul>{where}
         </div>"""
+
+
+def deadline_calc(dl, ap):
+    """返納した日から申し込み期限を出す欄。JavaScript が動くときだけ見せる（hidden を外す）。"""
+    return f"""
+      <div class="calc" id="deadline" hidden data-label="{e(dl['label'])}" data-years="{dl.get('years', 0)}" data-months="{dl.get('months', 0)}"
+           data-period="{e(dl['period'])}" data-earliest="{e(dl.get('earliest', ''))}" data-end="{e(dl.get('end', ''))}"
+           data-end-label="{e(dl.get('end_label', ''))}" data-office="{e(ap['office'])}" data-tel="{e(ap['tel'])}">
+        <h4>申し込みの期限を調べる</h4>
+        <label for="calc-date">{e(dl['label'])}を入れてください<span class="hint">{e(dl['hint'])}</span></label>
+        <input type="date" id="calc-date">
+        <p class="calc-out" id="calc-out" aria-live="polite">日付を入れると、申し込みの期限が出ます。</p>
+        <ul class="bullets small">
+{lis(dl.get('notes', []), '          ')}
+        </ul>
+      </div>"""
 
 
 def contact_row(label, who, number=""):
@@ -472,17 +549,29 @@ def city_page(c, data, draft, base="../"):
     if ap:
         deadline = dict(g["facts"]).get("申し込み期限", "")
         ways = "\n".join(f"        <li><b>{e(k)}：</b>{e(v)}</li>" for k, v in ap["ways"])
+        calc = deadline_calc(ap["deadline"], ap) if ap.get("deadline") else ""
+        more = "".join(f"""
+      <details class="more">
+        <summary>{e(m['summary'])}</summary>
+        <ul class="bullets">
+{lis(m['items'], '          ')}
+        </ul>
+      </details>""" for m in ap.get("more", []))
+        # まとめにも同じ期限があるので、印刷では手順3の側を出さない
+        dup_deadline = fact("申し込み期限", deadline).replace("<div>", '<div class="no-print">', 1)
+        links = [ext(ap["form_url"], ap.get("form_label", "申請用紙（PDF）を開く"))]
+        links += [ext(u, label) for u, label in ap.get("links", [])]
         step3 = f"""    <li class="step" id="step-3">
       <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
       <p>{e(ap['write'])}{e(ap['choice_note'])}</p>
       <dl class="facts">
-{fact("添えるもの", ap['attach'])}{fact("申し込み期限", deadline)}{fact("宛先", ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
-      </dl>
+{fact("添えるもの", ap['attach'])}{dup_deadline}{fact("宛先", ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
+      </dl>{calc}
       <ul class="bullets">
 {ways}
       </ul>
-      <p class="note">{e(ap['proxy'])}</p>
-      <p>{ext(ap['form_url'], '申請用紙（PDF）を開く')}</p>
+      <p class="note">{e(ap['proxy'])}</p>{more}
+      <p class="src-links">{" ".join(links)}</p>
     </li>"""
     else:
         use = g["use"]
@@ -532,6 +621,10 @@ def city_page(c, data, draft, base="../"):
         f'    <li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a>（{e(dt)}）</li>'
         for n, u, dt in sources)
     line = "https://line.me/R/share?text=" + quote(f"{name}で運転免許を返納したら（じもとくらべ）\n{url}", safe="")
+    calc_link = ""
+    if ap and ap.get("deadline"):
+        calc_link = (f'\n  <p class="calc-link" hidden><a href="#deadline">'
+                     f'{e(ap["deadline"]["label"])}から、申し込みの期限を調べる ↓</a></p>')
 
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="{base or './'}">トップ</a> ＞ <a href="{base}hyogo-menkyo-henno.html">兵庫県の免許返納特典</a> ＞ {e(name)}</nav>
 <div class="hero">
@@ -546,7 +639,7 @@ def city_page(c, data, draft, base="../"):
 <section class="answer" aria-labelledby="ans-h">
   <h2 id="ans-h">まとめ</h2>
   <dl class="facts">
-{"".join(fact(k, v) for k, v in g["facts"])}  </dl>
+{"".join(fact(k, v) for k, v in g["facts"])}  </dl>{calc_link}
 </section>
 
 <section class="cautions" aria-labelledby="cau-h">
@@ -645,7 +738,7 @@ def city_page(c, data, draft, base="../"):
   <p>確かめた日：{jdate(checked)}。制度は変わることがあります。申し込む前に、{unit}のページか窓口で確かめてください。</p>
   <p class="fix">間違いに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</p>
 </section>
-<p class="print-only">じもとくらべ（{jdate(checked)}に確認。制度は変わることがあります）　{e(url)}</p>
+<p class="print-only">{jdate(checked)}に確認（制度は変わることがあります）　{e(url)}</p>
 <p class="back"><a href="{base}hyogo-menkyo-henno.html#{c['slug']}">← 兵庫県41市町の一覧にもどる</a></p>"""
 
     return shell(
@@ -653,13 +746,27 @@ def city_page(c, data, draft, base="../"):
         description=g["description"],
         path=path, main=main, draft=draft, base=base, page_class="guide",
         draft_note=f"{name}の手順ページの試作です。",
-        scripts=CITY_SCRIPT)
+        scripts=CITY_SCRIPT + ("\n" + CALC_SCRIPT if calc_link else ""))
 
 
 # ---------------- トップ ----------------
 
 def top_page(data, draft):
     n_benefit = sum(1 for c in data["cities"] if c["k"] in HAS_BENEFIT)
+    guides = [c for c in data["cities"] if c.get("guide")]
+    guide_block = ""
+    if guides:
+        links = "\n".join(
+            f'    <li><a href="{GUIDE_DIR}/{c["slug"]}.html"><b>{e(c["n"])}</b>'
+            f'<span>{e(c["guide"]["short"])}</span></a></li>' for c in guides)
+        guide_block = f"""
+<section class="guides" aria-labelledby="gd-h">
+  <h2 id="gd-h">市町ごとの手順ページ</h2>
+  <p>返納する場所、特典の申し込み方、持ち物を、市町ごとに1ページにまとめています。</p>
+  <ul class="guide-links">
+{links}
+  </ul>
+</section>"""
     main = f"""<section class="top-hero">
   <h1 class="name">じもと<span>くらべ</span></h1>
   <p class="lead">住んでいる市や町によって、使える制度はちがいます。市町の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
@@ -670,7 +777,7 @@ def top_page(data, draft):
   <span class="t-title">運転免許を返納したら、何がもらえる？</span>
   <span class="t-meta">{n_benefit}市町で特典や支援が見つかりました ・ {jdate(data['checked'])}に確認</span>
   <span class="t-go">41市町の一覧を見る →</span>
-</a>
+</a>{guide_block}
 <p class="next-note">ほかの制度も、順に追加していきます。</p>
 
 <section class="about-list" aria-labelledby="how-h">
