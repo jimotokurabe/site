@@ -23,6 +23,7 @@
 | 神奈川県33市町村の免許返納の特典と、高齢者のタクシー代の助成 | `kanagawa-menkyo-henno.html`・`kanagawa-taxi.html` | — | 2026年9月27日 |
 | 埼玉県63市町村の免許返納の特典と、高齢者のタクシー代の助成 | `saitama-menkyo-henno.html`・`saitama-taxi.html` | — | 2026年9月27日 |
 | 福岡県60市町村の免許返納の特典と、高齢者のタクシー代の助成 | `fukuoka-menkyo-henno.html`・`fukuoka-taxi.html` | — | 2026年9月27日 |
+| 東京都62区市町村の免許返納の特典と、高齢者のタクシー代の助成 | `tokyo-menkyo-henno.html`・`tokyo-taxi.html` | — | 2026年9月27日 |
 
 ### これから作る
 
