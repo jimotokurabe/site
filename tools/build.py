@@ -360,6 +360,7 @@ def list_page(data, draft):
   </div>
   <h1>運転免許を返納したら、何がもらえる？</h1>
   <p class="lead">兵庫県の41市町が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}</p>
+  <p class="hk-link"><a href="{HANASHI_PATH}">親にどう話しはじめるか迷ったら →「最初のひと言」</a></p>
 </div>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
@@ -847,6 +848,12 @@ def top_page(data, draft):
   <span class="t-title">運転免許を返納したら、何がもらえる？</span>
   <span class="t-meta">{n_benefit}市町で特典や支援が見つかりました{f" ・ 高齢者のタクシー代の助成は{n_taxi}市町" if n_taxi else ""} ・ {jdate(data['checked'])}に確認</span>
   <span class="t-go">41市町の一覧を見る →</span>
+</a>
+<a class="topic topic-sub" href="{HANASHI_PATH}">
+  <span class="t-eyebrow">家族のための道具</span>
+  <span class="t-title">親に運転の話をはじめる、最初のひと言</span>
+  <span class="t-meta">6つの質問に答えると、親御さんに合った話しはじめの例が出ます</span>
+  <span class="t-go">質問に答える →</span>
 </a>{guide_block}
 <p class="next-note">ほかの制度も、順に追加していきます。</p>
 
@@ -862,6 +869,207 @@ def top_page(data, draft):
         title="じもとくらべ｜市や町ごとの制度を比べる",
         description="住んでいる市や町によってちがう制度を、公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
         path="", main=main, draft=draft)
+
+
+# ---------------- 最初のひと言（話し方のページ） ----------------
+
+HANASHI_PATH = "henno-hanashikata.html"
+
+
+def hanashi_page(data, hk, draft):
+    """data/hanashikata.json から、親に運転の話をはじめるためのページを作る。
+    入力はブラウザの中だけで使い、どこにも送らない（アクセス解析を始めるときは、先にプライバシーポリシーを直す）。"""
+    s, m, cs = hk["stats"], hk["manual"], hk["consult"]
+    cities = [{
+        "slug": c["slug"], "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
+        "what": c["what"],
+        "href": f"{GUIDE_DIR}/{c['slug']}.html" if c.get("guide") else f"hyogo-menkyo-henno.html#{c['slug']}",
+    } for c in data["cities"]]
+    payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities},
+                         ensure_ascii=False).replace("</", "<\\/")
+    n_phr = sum(len(v) for t in hk["phrases"].values() for v in t.values())
+    trig_opts = "".join(f'<button type="button" class="hk-chip" data-trig="{k}" aria-pressed="false">{e(v)}</button>'
+                        for k, v in hk["triggers"].items())
+    city_opts = "".join(f'<option value="{c["slug"]}">{e(c["n"])}</option>' for c in data["cities"])
+    ng = "".join(f"<li>{e(x)}</li>" for x in hk["ng"])
+    main = f"""<article class="hk">
+  <section class="hk-hero">
+    <p class="hk-eyebrow">免許返納・家族のための道具</p>
+    <h1>親に運転の話をはじめる、<br>最初のひと言</h1>
+    <p>家族が6つの質問に答えると、親御さんに合った話しはじめの例が出ます。例は{n_phr}通りあり、何度でも出し直せます。</p>
+    <p class="hk-stat"><b>{e(s["year"])}、全国で{e(s["total"])}</b>の運転免許が、本人の申し出で返納されました。1日あたり{e(s["per_day"])}です。そのうち75歳以上が{e(s["over75_rate"])}（{e(s["over75"])}）でした。
+      <span class="hk-src">出典：<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["src"])}</a>（{jdate(s["checked"])}に確認）</span></p>
+    <button type="button" class="hk-btn" data-go="quiz">質問に答える（約1分）</button>
+  </section>
+
+  <section class="hk-screen" id="hk-quiz" hidden aria-live="polite">
+    <div class="hk-progress" aria-hidden="true"><div id="hk-bar"></div></div>
+    <p class="hk-step" id="hk-step"></p>
+    <h2 class="hk-q" id="hk-q"></h2>
+    <div class="hk-opts" id="hk-opts"></div>
+    <button type="button" class="hk-back" id="hk-back">← 前の質問へ</button>
+  </section>
+
+  <section class="hk-screen" id="hk-result" hidden>
+    <div class="hk-card">
+      <h2>運転で気になるサインの多さ</h2>
+      <div class="hk-meter" id="hk-meter" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p id="hk-risk"></p>
+      <p class="hk-note">これは診断ではありません。運転に不安があるときは、本人も家族も<a href="{e(cs["url"])}" target="_blank" rel="noopener">{e(cs["label"])}</a>で警察の相談窓口に相談できます。</p>
+    </div>
+
+    <div class="hk-card">
+      <p class="hk-type-line">親御さんは <b class="hk-type" id="hk-type"></b></p>
+      <p id="hk-type-text"></p>
+      <h2>どんな場面で話しますか？</h2>
+      <div class="hk-chips" role="group" aria-label="話す場面">{trig_opts}</div>
+      <h2>最初のひと言</h2>
+      <div id="hk-phrases"></div>
+      <p class="hk-more-row"><button type="button" class="hk-more" id="hk-more">別の言い方を見る</button> <span class="hk-count" id="hk-count"></span></p>
+      <div class="hk-ng">
+        <b>言わないほうがいいこと</b>
+        <ul>{ng}</ul>
+      </div>
+    </div>
+
+    <div class="hk-card">
+      <h2>返納したら、住んでいる市町で何がある？</h2>
+      <p>兵庫県の41市町は、このサイトで特典を調べています。</p>
+      <label class="hk-label" for="hk-city">親御さんの住んでいる市町</label>
+      <select id="hk-city" class="hk-select"><option value="">選んでください</option>{city_opts}</select>
+      <div id="hk-city-out" class="hk-city-out" hidden></div>
+    </div>
+
+    <div class="hk-card">
+      <h2>「お金」から話すための計算</h2>
+      <p>車をやめると毎月いくら変わるかの目安です。数字があると話しやすくなります。</p>
+      <label class="hk-label" for="hk-car">車にかかるお金（保険・ガソリン・税金・車検・駐車場）<b class="hk-val" id="hk-car-v"></b></label>
+      <input type="range" id="hk-car" min="10000" max="80000" step="5000" value="35000">
+      <label class="hk-label" for="hk-taxi">タクシーを使う回数（1か月）<b class="hk-val" id="hk-taxi-v"></b></label>
+      <input type="range" id="hk-taxi" min="0" max="20" step="1" value="6">
+      <label class="hk-label" for="hk-net">ネットスーパーや宅配を使う回数（1か月）<b class="hk-val" id="hk-net-v"></b></label>
+      <input type="range" id="hk-net" min="0" max="8" step="1" value="2">
+      <p class="hk-diff" id="hk-diff"></p>
+      <p class="hk-note">タクシー1回2,000円、宅配1回500円として計算した目安です。市町の特典は入れていません。</p>
+    </div>
+
+    <div class="hk-card hk-about">
+      <h2>このページについて</h2>
+      <ul class="bullets small">
+        <li>ひと言は、じもとくらべが書いた例です。公的な資料の文章ではありません。</li>
+        <li>家族向けのくわしい手引きに、{e(m["by"])}の<a href="{e(m["url"])}" target="_blank" rel="noopener">「{e(m["name"])}」</a>があります。{e(m["scope"])}</li>
+      </ul>
+    </div>
+    <button type="button" class="hk-back" data-go="quiz">もう一度答える</button>
+  </section>
+</article>"""
+    script = """<script id="hk-data" type="application/json">""" + payload + """</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById("hk-data").textContent);
+  var $ = function (id) { return document.getElementById(id); };
+  var ans = [], i = 0, type = "ready", trig = null;
+  var OPTS = [["はい", 2], ["ときどき", 1], ["いいえ", 0]];
+  function show(id) {
+    ["hk-quiz", "hk-result"].forEach(function (s) { $(s).hidden = s !== id; });
+    document.querySelector(".hk-hero").hidden = !!id;
+    window.scrollTo(0, 0);
+  }
+  function start() { ans = []; i = 0; show("hk-quiz"); renderQ(); }
+  document.querySelectorAll("[data-go=quiz]").forEach(function (b) { b.addEventListener("click", start); });
+  function renderQ() {
+    var q = D.questions[i];
+    $("hk-bar").style.width = (i / D.questions.length * 100) + "%";
+    $("hk-step").textContent = "質問 " + (i + 1) + " / " + D.questions.length;
+    $("hk-q").textContent = q.q;
+    $("hk-opts").innerHTML = "";
+    OPTS.forEach(function (o) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "hk-opt"; b.textContent = o[0];
+      b.addEventListener("click", function () {
+        ans[i] = o[1];
+        if (i < D.questions.length - 1) { i++; renderQ(); } else { result(); }
+      });
+      $("hk-opts").appendChild(b);
+    });
+    $("hk-back").style.visibility = i ? "visible" : "hidden";
+    $("hk-opts").firstChild.focus();
+  }
+  $("hk-back").addEventListener("click", function () { if (i) { i--; renderQ(); } });
+  function result() {
+    var risk = 0, pride = 0, life = 0;
+    D.questions.forEach(function (q, k) {
+      risk += q.w * ans[k];
+      if (q.type === "pride") pride = ans[k];
+      if (q.type === "life") life = ans[k];
+    });
+    var lv = risk >= 9 ? 3 : risk >= 4 ? 2 : 1;
+    $("hk-meter").className = "hk-meter lv" + lv;
+    $("hk-risk").textContent = ["", "気になるサインは少なめです。", "気になるサインがいくつかあります。早めに話し合いを。", "気になるサインが多めです。できるだけ早く話し合いを。"][lv];
+    type = lv === 1 ? "ready" : (pride >= life ? "pride" : "life");
+    $("hk-type").textContent = D.types[type].name;
+    $("hk-type-text").textContent = D.types[type].text;
+    pickTrig(Object.keys(D.triggers)[0]);
+    calc();
+    show("hk-result");
+  }
+  var queue = [], qi = 0;
+  function shuffle(a) { return a.slice().sort(function () { return Math.random() - .5; }); }
+  function buildQueue() {
+    var t = D.phrases[type], rest = [];
+    Object.keys(t).forEach(function (k) { if (k !== trig) rest = rest.concat(t[k]); });
+    queue = shuffle(t[trig]).concat(shuffle(rest)); qi = 0;
+  }
+  function drawPhrases() {
+    if (qi >= queue.length) qi = 0;
+    var x = queue[qi++];
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "hk-phrase";
+    b.innerHTML = "<span></span><small>押すとコピーできます</small>";
+    b.firstChild.textContent = "「" + x + "」";
+    b.addEventListener("click", function () {
+      var done = function () { b.classList.add("copied"); b.lastChild.textContent = "コピーしました"; };
+      if (navigator.clipboard) navigator.clipboard.writeText(x).then(done, done); else done();
+    });
+    $("hk-phrases").innerHTML = "";
+    $("hk-phrases").appendChild(b);
+    $("hk-count").textContent = qi + " / " + queue.length;
+  }
+  function pickTrig(k) {
+    trig = k; buildQueue();
+    document.querySelectorAll(".hk-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.dataset.trig === k)); });
+    drawPhrases();
+  }
+  document.querySelectorAll(".hk-chip").forEach(function (c) { c.addEventListener("click", function () { pickTrig(c.dataset.trig); }); });
+  $("hk-more").addEventListener("click", drawPhrases);
+  $("hk-city").addEventListener("change", function () {
+    var c = D.cities.filter(function (x) { return x.slug === $("hk-city").value; })[0], o = $("hk-city-out");
+    if (!c) { o.hidden = true; return; }
+    o.hidden = false;
+    o.innerHTML = '<p><b></b> <span class="hk-kind"></span></p><p class="hk-what"></p><a></a>';
+    o.querySelector("b").textContent = c.n;
+    o.querySelector(".hk-kind").textContent = c.k;
+    o.querySelector(".hk-kind").classList.toggle("none", !c.has);
+    o.querySelector(".hk-what").textContent = c.what;
+    var a = o.querySelector("a"); a.href = c.href; a.textContent = c.n + "のくわしい内容を見る →";
+  });
+  var yen = function (n) { return Math.abs(n).toLocaleString("ja-JP") + "円"; };
+  function calc() {
+    var car = +$("hk-car").value, taxi = +$("hk-taxi").value, net = +$("hk-net").value;
+    $("hk-car-v").textContent = yen(car);
+    $("hk-taxi-v").textContent = taxi + "回";
+    $("hk-net-v").textContent = net + "回";
+    var d = car - (taxi * 2000 + net * 500);
+    $("hk-diff").textContent = d >= 0 ? "毎月 約" + yen(d) + " 浮きます" : "毎月 約" + yen(d) + " 増えます";
+    $("hk-diff").classList.toggle("minus", d < 0);
+  }
+  ["hk-car", "hk-taxi", "hk-net"].forEach(function (id) { $(id).addEventListener("input", calc); });
+})();
+</script>"""
+    return shell(
+        title="親に運転の話をはじめる、最初のひと言｜じもとくらべ",
+        description=f"親に免許返納の話をどう切り出すか。家族が6つ答えると、親御さんに合った話しはじめの例（{n_phr}通り）と、兵庫県41市町の返納特典が分かります。",
+        path=HANASHI_PATH, main=main, draft=draft, scripts=script)
 
 
 # ---------------- 運営者情報 ----------------
@@ -971,6 +1179,7 @@ def main():
         taxi = json.loads(taxi_file.read_text(encoding="utf-8"))
         data["taxi_checked"] = taxi["checked"]
         data["taxi"] = {slug: {"checked": taxi["checked"], **t} for slug, t in taxi["cities"].items()}
+    hk = json.loads((ROOT / "data" / "hanashikata.json").read_text(encoding="utf-8"))
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]
@@ -978,6 +1187,7 @@ def main():
         "index.html": top_page(data, a.draft),
         "hyogo-menkyo-henno.html": list_page(data, a.draft),
         **{f"{GUIDE_DIR}/{c['slug']}.html": city_page(c, data, a.draft) for c in guides},
+        HANASHI_PATH: hanashi_page(data, hk, a.draft),
         "about.html": about_page(a.draft),
         "privacy.html": privacy_page(a.draft),
     }
