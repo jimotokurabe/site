@@ -829,7 +829,12 @@ POLICE_CHECKLIST = [
 
 
 def tel(num):
-    return f'<a class="tel" href="tel:{num.replace("-", "")}">{e(num)}</a>'
+    """電話番号だけをリンクにし、「（内線…）」などの続きは、ふつうの文字にする。"""
+    m = re.match(r"[0-9０-９-]+", num)
+    if not m:
+        return e(num)
+    head, rest = m.group(0), num[m.end():]
+    return f'<a class="tel" href="tel:{head.replace("-", "")}">{e(head)}</a>{e(rest)}'
 
 
 def ext(url, label):
