@@ -224,6 +224,7 @@ def card(c, checked, taxi=None):
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
         dates = f'確かめた日：{jdate(checked)}'
     parts.append(f'<div class="card-foot">\n    {link}\n    <p class="dates">{dates}</p>\n  </div>')
+    parts.append(f'<p class="to-hk"><a href="{HANASHI_PATH}?city={c["slug"]}">親に話すときの、最初のひと言<span aria-hidden="true"> →</span></a></p>')
     henno_body = "\n    ".join(parts)
     blocks = [f"""<section class="henno-part" aria-label="免許返納の特典">
     <div class="part-head">
@@ -235,7 +236,6 @@ def card(c, checked, taxi=None):
     t = (taxi or {}).get(c["slug"])
     if t:
         blocks.append(taxi_block(t, unit))
-    blocks.append(f'<p class="to-hk"><a href="{HANASHI_PATH}?city={c["slug"]}">親に話すときの、最初のひと言<span aria-hidden="true"> →</span></a></p>')
     body = "\n  ".join(blocks)
     notfound = " is-notfound" if c["k"] == "notfound" else ""
     tk = f' data-taxi="{t["k"]}"' if t else ""
