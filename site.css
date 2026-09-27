@@ -690,3 +690,7 @@ a.jm.on[aria-pressed="true"] { background: var(--stamp); box-shadow: 0 0 0 3px v
 .pp-h { font-size: 1.15rem; margin: 0 0 .2rem; }
 .pp-links { margin: 0 0 .6rem; font-size: .9rem; }
 @media (min-width: 720px) { .jmap-wrap { grid-template-columns: 3fr 2fr; align-items: center; } .jm { font-size: .7rem; } a.jm.on { font-size: .85rem; } }
+
+/* 市町村の欄の下の「もどる」 */
+.card-back { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin: .8rem 0 0; padding-top: .7rem; border-top: 1px dashed var(--line); font-size: .95rem; }
+.card-back a { font-weight: 700; color: var(--accent); }
