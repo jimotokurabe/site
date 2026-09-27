@@ -668,3 +668,25 @@ details.guides[open] summary::after { content: " －"; }
   min-height: 3rem; padding: 0 1rem; border-radius: .8rem; cursor: pointer; font: inherit; font-weight: 700;
   background: var(--surface); color: var(--accent); border: 2px solid var(--accent);
 }
+
+/* トップ：都道府県のタイル地図 */
+.jmap-wrap { display: grid; gap: 1rem; margin: .8rem 0; }
+.jmap { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 3px; max-width: 30rem; width: 100%; margin-inline: auto; }
+.jm { aspect-ratio: 1; display: grid; place-items: center; border-radius: 5px; font-size: .6rem; line-height: 1;
+  background: var(--line); color: var(--muted); overflow: hidden; white-space: nowrap; cursor: default; user-select: none; }
+a.jm.on { background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: .72rem; z-index: 1; overflow: visible; text-decoration: none; cursor: pointer;
+  box-shadow: 0 0 0 2px var(--accent); }
+a.jm.on[aria-pressed="true"] { background: var(--stamp); box-shadow: 0 0 0 3px var(--stamp); }
+.pref-btns { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: .6rem; align-content: start; }
+.pref-btn { display: grid; gap: .1rem; padding: .8rem 1rem; border: 2px solid var(--accent); border-radius: .8rem;
+  text-decoration: none; color: var(--accent); background: var(--surface); }
+.pref-btn b { font-size: 1.2rem; }
+.pref-btn span { font-size: .85rem; color: var(--muted); }
+.pref-btn[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.pref-btn[aria-pressed="true"] span { color: var(--accent-ink); }
+.jm-msg { min-height: 1.4em; margin: 0; color: var(--muted); font-size: .9rem; }
+.pref-pick { margin-top: 1rem; scroll-margin-top: 1rem; }
+.pref-pick[hidden] { display: none; }
+.pp-h { font-size: 1.15rem; margin: 0 0 .2rem; }
+.pp-links { margin: 0 0 .6rem; font-size: .9rem; }
+@media (min-width: 720px) { .jmap-wrap { grid-template-columns: 3fr 2fr; align-items: center; } .jm { font-size: .7rem; } a.jm.on { font-size: .85rem; } }

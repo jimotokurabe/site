@@ -1145,6 +1145,98 @@ def pref_theme(d):
 </section>"""
 
 
+# 都道府県のタイル地図（列, 行）。形は大まかで、押しやすさを優先する
+JMAP = [
+    ("hokkaido", "北海道", 10, 0), ("aomori", "青森", 11, 2), ("akita", "秋田", 10, 3), ("iwate", "岩手", 11, 3),
+    ("yamagata", "山形", 10, 4), ("miyagi", "宮城", 11, 4), ("ishikawa", "石川", 7, 5), ("toyama", "富山", 8, 5),
+    ("niigata", "新潟", 9, 5), ("fukushima", "福島", 10, 5), ("shimane", "島根", 2, 6), ("tottori", "鳥取", 3, 6),
+    ("hyogo", "兵庫", 4, 6), ("kyoto", "京都", 5, 6), ("fukui", "福井", 6, 6), ("gifu", "岐阜", 7, 6),
+    ("nagano", "長野", 8, 6), ("gunma", "群馬", 9, 6), ("tochigi", "栃木", 10, 6), ("ibaraki", "茨城", 11, 6),
+    ("yamaguchi", "山口", 1, 7), ("hiroshima", "広島", 2, 7), ("okayama", "岡山", 3, 7), ("osaka", "大阪", 4, 7),
+    ("shiga", "滋賀", 5, 7), ("aichi", "愛知", 7, 7), ("yamanashi", "山梨", 8, 7), ("saitama", "埼玉", 9, 7),
+    ("tokyo", "東京", 10, 7), ("chiba", "千葉", 11, 7), ("fukuoka", "福岡", 0, 8), ("ehime", "愛媛", 2, 8),
+    ("kagawa", "香川", 3, 8), ("wakayama", "和歌山", 4, 8), ("nara", "奈良", 5, 8), ("mie", "三重", 6, 8),
+    ("shizuoka", "静岡", 8, 8), ("kanagawa", "神奈川", 9, 8), ("saga", "佐賀", 0, 9), ("oita", "大分", 1, 9),
+    ("kochi", "高知", 2, 9), ("tokushima", "徳島", 3, 9), ("nagasaki", "長崎", 0, 10), ("kumamoto", "熊本", 1, 10),
+    ("kagoshima", "鹿児島", 0, 11), ("miyazaki", "宮崎", 1, 11), ("okinawa", "沖縄", 0, 12),
+]
+
+
+def pref_picker(prefs):
+    """トップの「都道府県を選ぶ → 市町村を選ぶ」。調べ終えた府県だけ押せる。"""
+    on = {d["pref"]["id"]: d for d in prefs}
+    tiles = []
+    for pid, short, col, row in JMAP:
+        span = 2 if pid == "hokkaido" else 1
+        pos = f'style="grid-column:{col + 1}/span {span};grid-row:{row + 1}/span {span}"'
+        if pid in on:
+            tiles.append(f'<a class="jm on" href="#pref-{pid}" data-pref="{pid}" {pos}>{short}</a>')
+        else:
+            tiles.append(f'<span class="jm" data-soon="{short}" title="{short}（準備中）" {pos} aria-hidden="true"></span>')
+    btns = "\n    ".join(
+        f'<a class="pref-btn" href="#pref-{d["pref"]["id"]}" data-pref="{d["pref"]["id"]}">'
+        f'<b>{e(d["pref"]["name"])}</b><span>{len(d["cities"])}{d["pref"]["unit"]}</span></a>' for d in prefs)
+    blocks = []
+    for d in prefs:
+        P = d["pref"]
+        blocks.append(f"""  <div class="pref-pick" id="pref-{P['id']}" data-pref-block="{P['id']}">
+    <h3 class="pp-h">{e(P['name'])}の{len(d['cities'])}{P['unit']}</h3>
+    <p class="pp-links"><a href="{list_path(P)}">免許返納の特典の一覧</a>{f' ・ <a href="{taxi_path(P)}">タクシー代の助成の一覧</a>' if d.get("taxi") else ""}</p>
+    <div class="pick-list">
+{pick_html(d, list_path(P))}
+    </div>
+  </div>""")
+    names = "・".join(d["pref"]["name"] for d in prefs)
+    return f"""<section class="pick top-pick" id="pick" aria-labelledby="pick-h">
+  <h2 class="section-title" id="pick-h">お住まいの都道府県を選んでください</h2>
+  <p class="pick-lead">いま調べ終えているのは{names}です。色のついた府県を押すと、市町村を選べます。</p>
+  <div class="jmap-wrap">
+    <div class="jmap" role="group" aria-label="都道府県の地図">
+      {"".join(tiles)}
+    </div>
+    <div class="pref-btns">
+    {btns}
+    </div>
+  </div>
+  <p class="jm-msg" id="jm-msg" aria-live="polite"></p>
+  <div class="search">
+    <label for="q">市町村の名前で探す <span class="hint">（ひらがなでも探せます）</span></label>
+    <input id="q" type="search" autocomplete="off" placeholder="例：あかし、さかい">
+  </div>
+{chr(10).join(blocks)}
+  <p class="pick-none" id="pick-none" hidden>見つかりませんでした。市や町の名前の一部を、ひらがなで入れてみてください。</p>
+</section>"""
+
+
+PREF_SCRIPT = """<script>
+(function () {
+  var blocks = document.querySelectorAll("[data-pref-block]");
+  if (!blocks.length) return;
+  var msg = document.getElementById("jm-msg"), q = document.getElementById("q");
+  function show(id, scroll) {
+    blocks.forEach(function (b) { b.hidden = id ? b.getAttribute("data-pref-block") !== id : false; });
+    document.querySelectorAll("[data-pref]").forEach(function (a) {
+      a.setAttribute("aria-pressed", String(a.getAttribute("data-pref") === id));
+    });
+    msg.textContent = "";
+    if (id && scroll) document.getElementById("pref-" + id).scrollIntoView({ behavior: "smooth", block: "start" });
+    try { if (id) localStorage.setItem("jk-pref", id); } catch (e) {}
+  }
+  document.querySelectorAll("[data-pref]").forEach(function (a) {
+    a.addEventListener("click", function (ev) { ev.preventDefault(); q.value = ""; q.dispatchEvent(new Event("input")); show(a.getAttribute("data-pref"), true); });
+  });
+  document.querySelectorAll("[data-soon]").forEach(function (t) {
+    t.addEventListener("click", function () { msg.textContent = t.getAttribute("data-soon") + "は、まだ調べていません（準備中）。"; });
+  });
+  q.addEventListener("input", function () { if (q.value) blocks.forEach(function (b) { b.hidden = false; }); });
+  var saved = null;
+  try { saved = localStorage.getItem("jk-pref"); } catch (e) {}
+  var first = location.hash.replace("#pref-", "") || saved;
+  show(document.getElementById("pref-" + first) ? first : blocks[0].getAttribute("data-pref-block"), false);
+})();
+</script>"""
+
+
 def top_page(data, draft, others=()):
     n_benefit = sum(1 for c in data["cities"] if c["k"] in HAS_BENEFIT)
     n_taxi = sum(1 for t in data.get("taxi", {}).values() if t["k"] == "yes")
@@ -1173,18 +1265,7 @@ def top_page(data, draft, others=()):
   <p class="lead">住んでいる市や町によって、使える制度はちがいます。市町の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
 </section>
 
-<section class="pick top-pick" id="pick" aria-labelledby="pick-h">
-  <h2 class="section-title" id="pick-h">あなたの市町を選んでください</h2>
-  <p class="pick-lead">兵庫県の41市町。選ぶと、その市町の免許返納の特典と、高齢者のタクシー代の助成が見られます。</p>
-  <div class="search">
-    <label for="q">名前で探す <span class="hint">（ひらがなでも探せます）</span></label>
-    <input id="q" type="search" autocomplete="off" placeholder="例：あかし、丹波">
-  </div>
-  <div class="pick-list" id="pick-list">
-{pick_html(data, "hyogo-menkyo-henno.html")}
-  </div>
-  <p class="pick-none" id="pick-none" hidden>見つかりませんでした。市や町の名前の一部を、ひらがなで入れてみてください。</p>
-</section>
+{pref_picker([data, *others])}
 
 <section class="theme" aria-labelledby="th-car-h">
   <p class="t-eyebrow">兵庫県・41市町</p>
@@ -1217,7 +1298,7 @@ def top_page(data, draft, others=()):
     return shell(
         title="じもとくらべ｜市や町ごとの制度を比べる",
         description="住んでいる市や町によってちがう制度を、公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
-        path="", main=main, draft=draft, scripts=PICK_SCRIPT)
+        path="", main=main, draft=draft, scripts=PICK_SCRIPT + PREF_SCRIPT)
 
 
 # ---------------- 最初のひと言（話し方のページ） ----------------
