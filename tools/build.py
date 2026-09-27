@@ -1123,7 +1123,29 @@ UPCOMING = [
 ]
 
 
-def top_page(data, draft):
+def pref_theme(d):
+    """トップに出す、兵庫県のほかの県の「車・移動」の欄。"""
+    P = d["pref"]
+    pu = P["unit"]
+    n_benefit = sum(1 for c in d["cities"] if c["k"] in HAS_BENEFIT)
+    n_taxi = sum(1 for t in d.get("taxi", {}).values() if t["k"] == "yes")
+    taxi = ""
+    if d.get("taxi"):
+        taxi = f"""
+    <li><a href="{taxi_path(P)}"><b>高齢者のタクシー代の助成</b>
+      <span>{n_taxi}{pu}で、年齢などで使える助成 ・ {jdate(d['taxi_checked'])}に確認</span></a></li>"""
+    return f"""
+<section class="theme" aria-labelledby="th-{P['id']}-h">
+  <p class="t-eyebrow">{e(P['name'])}・{len(d['cities'])}{pu}</p>
+  <h2 id="th-{P['id']}-h">高齢の家族と、車・移動（{e(P['name'])}）</h2>
+  <ul class="theme-links">
+    <li><a href="{list_path(P)}"><b>運転免許を返納したら、何がもらえる？</b>
+      <span>{n_benefit}{pu}で特典や支援 ・ {jdate(d['checked'])}に確認</span></a></li>{taxi}
+  </ul>
+</section>"""
+
+
+def top_page(data, draft, others=()):
     n_benefit = sum(1 for c in data["cities"] if c["k"] in HAS_BENEFIT)
     n_taxi = sum(1 for t in data.get("taxi", {}).values() if t["k"] == "yes")
     taxi_link = ""
@@ -1174,6 +1196,7 @@ def top_page(data, draft):
       <span>家族が6つの質問に答えると、話しはじめの例が出ます</span></a></li>
   </ul>
 </section>
+{"".join(pref_theme(d) for d in others)}
 
 <section class="upcoming" aria-labelledby="up-h">
   <h2 id="up-h">これから比べる制度（準備中）</h2>
@@ -1525,7 +1548,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]
     pages = {
-        "index.html": top_page(data, a.draft),
+        "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")]),
         list_path(data["pref"]): list_page(data, a.draft),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
         **{f"{GUIDE_DIR}/{c['slug']}.html": city_page(c, data, a.draft) for c in guides},
