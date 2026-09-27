@@ -580,3 +580,35 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
 .hk-more-row { display: flex; align-items: center; gap: .8rem; }
 .hk-count { color: var(--muted); font-size: .85rem; }
 .hk-kind.none { background: var(--end-bg); color: var(--end-fg); }
+
+/* ---------- 市町のカード：返納特典とタクシー代の助成を同じ形の枠で並べる ---------- */
+.henno-part { display: grid; gap: .6rem; }
+.henno-part p { margin: 0; }
+.part-head { display: flex; justify-content: space-between; align-items: center; gap: .8rem; }
+.part-head h4 { margin: 0; font-family: var(--font-head); font-size: 1.05rem; line-height: 1.4; }
+.card .to-hk { margin: 0; font-weight: 700; }
+
+/* ---------- トップ：市町を選ぶ・テーマ・準備中 ---------- */
+.top-pick { margin-top: .6rem; padding: 1.2rem; border-radius: 1rem; background: var(--surface); border: 2px solid var(--ink); }
+.pick-lead { margin: -.4rem 0 0; color: var(--muted); }
+.theme { margin-top: 1.8rem; display: grid; gap: .7rem; }
+.theme .t-eyebrow { margin: 0; font-size: .9rem; font-weight: 700; letter-spacing: .1em; color: var(--accent); }
+.theme h2 { margin: 0; font-family: var(--font-head); font-size: 1.4rem; line-height: 1.4; }
+.theme-links { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.theme-links a {
+  display: grid; gap: .2rem; padding: .95rem 1.1rem; border-radius: .8rem; text-decoration: none;
+  background: var(--surface); border: 1px solid var(--line); color: var(--ink);
+}
+.theme-links a:hover { border-color: var(--accent); }
+.theme-links b { color: var(--accent); font-size: 1.05rem; }
+.theme-links span { font-size: .9rem; color: var(--muted); }
+.upcoming { margin-top: 1.8rem; display: grid; gap: .6rem; }
+.upcoming h2 { margin: 0; font-family: var(--font-head); font-size: 1.15rem; }
+.upcoming ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+.upcoming li { display: flex; align-items: center; gap: .6rem; padding: .6rem .9rem; border-radius: .7rem; border: 1px dashed var(--line); color: var(--muted); }
+.up-tag { font-size: .8rem; font-weight: 700; padding: .05rem .55rem; border-radius: 99px; background: var(--surface-2); color: var(--ink); }
+details.guides summary { cursor: pointer; list-style: none; }
+details.guides summary::-webkit-details-marker { display: none; }
+details.guides summary h2 { display: inline; }
+details.guides summary::after { content: " ＋"; color: var(--accent); font-weight: 700; }
+details.guides[open] summary::after { content: " －"; }

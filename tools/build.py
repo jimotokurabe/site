@@ -224,16 +224,24 @@ def card(c, checked, taxi=None):
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
         dates = f'確かめた日：{jdate(checked)}'
     parts.append(f'<div class="card-foot">\n    {link}\n    <p class="dates">{dates}</p>\n  </div>')
+    henno_body = "\n    ".join(parts)
+    blocks = [f"""<section class="henno-part" aria-label="免許返納の特典">
+    <div class="part-head">
+      <h4>免許返納の特典</h4>
+      <span class="chip k-{c['k']}">{e(kind_label)}</span>
+    </div>
+    {henno_body}
+  </section>"""]
     t = (taxi or {}).get(c["slug"])
     if t:
-        parts.append(taxi_block(t, unit))
-    body = "\n  ".join(parts)
+        blocks.append(taxi_block(t, unit))
+    blocks.append(f'<p class="to-hk"><a href="{HANASHI_PATH}?city={c["slug"]}">親に話すときの、最初のひと言<span aria-hidden="true"> →</span></a></p>')
+    body = "\n  ".join(blocks)
     notfound = " is-notfound" if c["k"] == "notfound" else ""
     tk = f' data-taxi="{t["k"]}"' if t else ""
     return f"""<article class="card{notfound}" id="{c['slug']}" data-k="{c['k']}"{tk} aria-labelledby="{c['slug']}-h">
   <div class="card-head">
     <h3 class="city" id="{c['slug']}-h">{e(c['n'])}<span class="yomi">{e(c['y'])}</span></h3>
-    <span class="chip k-{c['k']}">{e(kind_label)}</span>
   </div>
   {body}
 </article>"""
@@ -291,6 +299,53 @@ LIST_SCRIPT = """<script>
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");
     });
+  });
+})();
+</script>"""
+
+
+def pick_html(data, href_prefix=""):
+    """地域ごとの市町ボタン。href_prefix を付けると、ほかのページの市町の欄へ飛ぶ。"""
+    out = []
+    for r in data["regions"]:
+        rows = [c for c in data["cities"] if c["r"] == r["id"]]
+        links = "\n        ".join(
+            f'<a href="{href_prefix}#{c["slug"]}" data-name="{e(c["n"])}" data-yomi="{e(c["y"])}">{e(c["n"])}</a>'
+            for c in rows)
+        out.append(f"""    <div class="pick-region">
+      <h3>{e(r['name'])}</h3>
+      <div class="pick-grid">
+        {links}
+      </div>
+    </div>""")
+    return "\n".join(out)
+
+
+# 市町の名前で探す（一覧とトップで共通）
+PICK_SCRIPT = """<script>
+(function () {
+  function norm(s) {
+    return String(s).normalize("NFKC")
+      .replace(/[\\u30a1-\\u30f6]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0x60); })
+      .replace(/\\s+/g, "").toLowerCase();
+  }
+  var q = document.getElementById("q");
+  if (!q) return;
+  var groups = document.querySelectorAll(".pick-region");
+  var none = document.getElementById("pick-none");
+  q.addEventListener("input", function () {
+    var v = norm(q.value), total = 0;
+    groups.forEach(function (g) {
+      var n = 0;
+      g.querySelectorAll("a").forEach(function (a) {
+        var hit = !v || norm(a.getAttribute("data-name")).indexOf(v) >= 0 || norm(a.getAttribute("data-yomi")).indexOf(v) >= 0;
+        a.hidden = !hit;
+        if (hit) n++;
+      });
+      g.hidden = n === 0;
+      total += n;
+    });
+    none.hidden = total > 0;
   });
 })();
 </script>"""
@@ -990,19 +1045,23 @@ def city_page(c, data, draft, base="../"):
 
 # ---------------- トップ ----------------
 
+# トップの「準備中」。TOPICS.md の「これから作る」と同じ順番・名前にそろえる（公開したらここから消す）
+UPCOMING = [
+    ("補聴器を買うときの助成", "高齢者"),
+    ("子どもの医療費の助成", "子育て"),
+    ("粗大ごみの出し方と料金", "くらし"),
+    ("空き家の補助金", "住まい"),
+]
+
+
 def top_page(data, draft):
     n_benefit = sum(1 for c in data["cities"] if c["k"] in HAS_BENEFIT)
     n_taxi = sum(1 for t in data.get("taxi", {}).values() if t["k"] == "yes")
-    taxi_topic = ""
+    taxi_link = ""
     if n_taxi:
-        taxi_topic = f"""
-
-<a class="topic" href="{TAXI_PAGE}">
-  <span class="t-eyebrow">兵庫県・41市町</span>
-  <span class="t-title">高齢者のタクシー代、市や町が助成してくれる？</span>
-  <span class="t-meta">{n_taxi}市町で年齢などで使える助成が見つかりました ・ {jdate(data['taxi_checked'])}に確認</span>
-  <span class="t-go">41市町の一覧を見る →</span>
-</a>"""
+        taxi_link = f"""
+    <li><a href="{TAXI_PAGE}"><b>高齢者のタクシー代の助成</b>
+      <span>{n_taxi}市町で、年齢などで使える助成 ・ {jdate(data['taxi_checked'])}に確認</span></a></li>"""
     guides = [c for c in data["cities"] if c.get("guide")]
     guide_block = ""
     if guides:
@@ -1010,31 +1069,50 @@ def top_page(data, draft):
             f'    <li><a href="{GUIDE_DIR}/{c["slug"]}.html"><b>{e(c["n"])}</b>'
             f'<span>{e(c["guide"]["short"])}</span></a></li>' for c in guides)
         guide_block = f"""
-<section class="guides" aria-labelledby="gd-h">
-  <h2 id="gd-h">市町ごとの手順ページ</h2>
+<details class="guides">
+  <summary><h2 id="gd-h">市町ごとの、返納から申し込みまでの手順（{len(guides)}市町）</h2></summary>
   <p>返納する場所、特典の申し込み方、持ち物を、市町ごとに1ページにまとめています。</p>
   <ul class="guide-links">
 {links}
   </ul>
-</section>"""
+</details>"""
+    upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
     main = f"""<section class="top-hero">
   <h1 class="name">じもと<span>くらべ</span></h1>
   <p class="lead">住んでいる市や町によって、使える制度はちがいます。市町の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
 </section>
 
-<a class="topic" href="hyogo-menkyo-henno.html">
-  <span class="t-eyebrow">兵庫県・41市町</span>
-  <span class="t-title">運転免許を返納したら、何がもらえる？</span>
-  <span class="t-meta">{n_benefit}市町で特典や支援が見つかりました{f" ・ 高齢者のタクシー代の助成は{n_taxi}市町" if n_taxi else ""} ・ {jdate(data['checked'])}に確認</span>
-  <span class="t-go">41市町の一覧を見る →</span>
-</a>{taxi_topic}
-<a class="topic topic-sub" href="{HANASHI_PATH}">
-  <span class="t-eyebrow">家族のための道具</span>
-  <span class="t-title">親に運転の話をはじめる、最初のひと言</span>
-  <span class="t-meta">6つの質問に答えると、親御さんに合った話しはじめの例が出ます</span>
-  <span class="t-go">質問に答える →</span>
-</a>{guide_block}
-<p class="next-note">ほかの制度も、順に追加していきます。</p>
+<section class="pick top-pick" id="pick" aria-labelledby="pick-h">
+  <h2 class="section-title" id="pick-h">あなたの市町を選んでください</h2>
+  <p class="pick-lead">兵庫県の41市町。選ぶと、その市町の免許返納の特典と、高齢者のタクシー代の助成が見られます。</p>
+  <div class="search">
+    <label for="q">名前で探す <span class="hint">（ひらがなでも探せます）</span></label>
+    <input id="q" type="search" autocomplete="off" placeholder="例：あかし、丹波">
+  </div>
+  <div class="pick-list" id="pick-list">
+{pick_html(data, "hyogo-menkyo-henno.html")}
+  </div>
+  <p class="pick-none" id="pick-none" hidden>見つかりませんでした。市や町の名前の一部を、ひらがなで入れてみてください。</p>
+</section>
+
+<section class="theme" aria-labelledby="th-car-h">
+  <p class="t-eyebrow">兵庫県・41市町</p>
+  <h2 id="th-car-h">高齢の家族と、車・移動</h2>
+  <ul class="theme-links">
+    <li><a href="hyogo-menkyo-henno.html"><b>運転免許を返納したら、何がもらえる？</b>
+      <span>{n_benefit}市町で特典や支援 ・ {jdate(data['checked'])}に確認</span></a></li>{taxi_link}
+    <li><a href="{HANASHI_PATH}"><b>親に運転の話をはじめる、最初のひと言</b>
+      <span>家族が6つの質問に答えると、話しはじめの例が出ます</span></a></li>
+  </ul>
+</section>
+
+<section class="upcoming" aria-labelledby="up-h">
+  <h2 id="up-h">これから比べる制度（準備中）</h2>
+  <ul>
+{upcoming}
+  </ul>
+</section>
+{guide_block}
 
 <section class="about-list" aria-labelledby="how-h">
   <h2 id="how-h">調べ方</h2>
@@ -1047,7 +1125,7 @@ def top_page(data, draft):
     return shell(
         title="じもとくらべ｜市や町ごとの制度を比べる",
         description="住んでいる市や町によってちがう制度を、公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
-        path="", main=main, draft=draft)
+        path="", main=main, draft=draft, scripts=PICK_SCRIPT)
 
 
 # ---------------- 最初のひと言（話し方のページ） ----------------
@@ -1243,6 +1321,12 @@ def hanashi_page(data, hk, draft):
     $("hk-diff").classList.toggle("minus", d < 0);
   }
   ["hk-car", "hk-taxi", "hk-net"].forEach(function (id) { $(id).addEventListener("input", calc); });
+  // 一覧の市町の欄から来たとき（?city=slug）は、その市町を選んだ状態にしておく
+  var from = new URLSearchParams(location.search).get("city");
+  if (from && D.cities.some(function (x) { return x.slug === from; })) {
+    $("hk-city").value = from;
+    $("hk-city").dispatchEvent(new Event("change"));
+  }
 })();
 </script>"""
     return shell(
