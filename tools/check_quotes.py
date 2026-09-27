@@ -26,7 +26,7 @@ def page_text(url):
     if url in CACHE:
         return CACHE[url]
     with tempfile.NamedTemporaryFile(suffix=".bin") as f:
-        r = subprocess.run(["curl", "-sS", "-L", "-m", "40", "-A", "Mozilla/5.0", "-o", f.name,
+        r = subprocess.run(["curl", "-sS", "-L", "-m", "40", "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36", "-o", f.name,
                             "-w", "%{http_code} %{content_type}", url], capture_output=True, text=True)
         code, _, ctype = r.stdout.partition(" ")
         if not code.startswith("2"):

@@ -16,7 +16,7 @@ def status(url):
     # 役所のサイトは一時的につながらないことがあるので、3回まで試す
     for i in range(3):
         r = subprocess.run(
-            ["curl", "-sS", "-L", "-o", "/dev/null", "-m", "30", "-A", "Mozilla/5.0",
+            ["curl", "-sS", "-L", "-o", "/dev/null", "-m", "30", "-A", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36",
              "-w", "%{http_code}", url],
             capture_output=True, text=True)
         code = r.stdout.strip()

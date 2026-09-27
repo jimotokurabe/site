@@ -64,8 +64,19 @@ def hk_key(pref, c):
     return c["slug"] if pref["id"] == HOME_PREF else f"{pref['id']}-{c['slug']}"
 
 
+def region_unit(rows):
+    """地域の中の数につける単位（23区、5市、8市町村など）。"""
+    have = {city_unit(c["n"]) for c in rows}
+    return "".join(u for u in "区市町村" if u in have)
+
+
+def area_word(pref):
+    """「県内」「府内」「都内」「道内」。"""
+    return pref["name"][-1] + "内"
+
+
 def city_unit(name):
-    return "町" if name.endswith("町") else "村" if name.endswith("村") else "市"
+    return "町" if name.endswith("町") else "村" if name.endswith("村") else "区" if name.endswith("区") else "市"
 # お問い合わせ（Googleフォーム。2026-09-26 に、ログインなしで開けること・運営者のメールアドレスが載っていないことを確認）
 CONTACT_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeNJuZsE9F--Erk3ZQK5rMyP704VH8S4mW5BNll9z_t7BeREg/viewform"
 FONTS = ("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700"
@@ -210,7 +221,7 @@ def taxi_block(t, unit):
   </section>"""
 
 
-def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_DIR):
+def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_DIR, area="県内"):
     kind_label = KINDS[c["k"]][0]
     unit = city_unit(c["n"])
     benefit = c["k"] in HAS_BENEFIT
@@ -229,7 +240,7 @@ def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_D
     if c.get("note"):
         parts.append(f'<p class="note">{e(c["note"])}</p>')
     if c["k"] == "notfound":
-        more = '<a href="#statewide">県内どこでも使える割引</a>もあります。' if statewide else ""
+        more = f'<a href="#statewide">{area}どこでも使える割引</a>もあります。' if statewide else ""
         parts.append(f'<p class="note">くわしくは{unit}の窓口で確かめてください。{more}</p>')
     if c.get("flag"):
         parts.append(f'<p class="flag">確かめ方：{e(c["flag"])}</p>')
@@ -460,10 +471,10 @@ def list_page(data, draft):
     sections = []
     for r in regions:
         rows = [c for c in cities if c["r"] == r["id"]]
-        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS, gdir=guide_dir(P)) for c in rows)
+        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS, gdir=guide_dir(P), area=area_word(P)) for c in rows)
         sections.append(f"""<section class="region" id="r-{r['id']}" aria-labelledby="r-{r['id']}-h">
   <div class="region-head">
-    <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{pu}</span></h2>
+    <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{region_unit(rows)}</span></h2>
     <a href="#pick">{pu}を選び直す ↑</a>
   </div>
 {cards}
@@ -661,7 +672,7 @@ def taxi_page(data, draft):
         cards = "\n".join(taxi_card(c, taxi[c["slug"]], P) for c in rows)
         sections.append(f"""<section class="region" id="r-{r['id']}" aria-labelledby="r-{r['id']}-h">
   <div class="region-head">
-    <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{pu}</span></h2>
+    <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{region_unit(rows)}</span></h2>
     <a href="#pick">{pu}を選び直す ↑</a>
   </div>
 {cards}
@@ -937,7 +948,7 @@ def city_page(c, data, draft, base="../"):
         step2_lead = e(g["step2_lead"])
     else:
         step2_lead = (f"つくらなくても、{e(name)}の特典はもらえます。つくると、65歳以上なら"
-                      '<a href="#statewide">県内どこでも使える割引</a>を受けられます。')
+                      '<a href="#statewide">' + area_word(P) + 'どこでも使える割引</a>を受けられます。')
     fees = "\n".join(f'          <tr><th scope="row">{e(k)}</th><td>{e(v)}</td></tr>' for k, v in kr["fees"])
 
     # 手順3：市町に申し込む／割引などを使う
