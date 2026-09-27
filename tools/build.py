@@ -961,7 +961,7 @@ def city_page(c, data, draft, base="../"):
       <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
       <p>{e(ap['write'])}{e(ap.get('choice_note', ''))}</p>
       <dl class="facts">
-{fact(ap.get("attach_label", "添えるもの"), ap['attach'])}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
+{fact(ap.get("attach_label", "添えるもの"), ap.get('attach'))}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap.get('address'))}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap.get('tel', ''))}</dd></div>
       </dl>{calc}
       <ul class="bullets">
 {ways}
