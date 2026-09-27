@@ -11,6 +11,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 |---|---|
 | `data/hyogo-menkyo-henno.json` | 兵庫県41市町の免許返納特典のデータ（ページの元）。`common` は県内共通の手続き、各市町の `guide` は手順ページの中身 |
 | `data/hyogo-taxi.json` | 41市町の高齢者のタクシー代の助成のデータ。返納特典の一覧の、市町ごとの欄の下に出る |
+| `data/hanashikata.json` | 「親に運転の話をはじめる、最初のひと言」（`henno-hanashikata.html`）の質問・タイプ・ひと言の例と、出典（警察庁の返納件数・支援マニュアル・#8080）。ひと言はサイトが書いた例で、事実ではない。数字と出典は確かめた日を `checked` に書く |
 | `tools/build.py` | データからページを作るスクリプト |
 | `tools/check_guide.js`、`tools/check_links.py` | 手順ページをブラウザで開いて確かめる道具と、ページのリンクが開けるかを確かめる道具 |
 | `GUIDES.md` | 手順ページを作る順番と作り方 |

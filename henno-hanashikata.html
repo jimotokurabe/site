@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>親に運転の話をはじめる、最初のひと言｜じもとくらべ</title>
+<meta name="description" content="親に免許返納の話をどう切り出すか。家族が6つ答えると、親御さんに合った話しはじめの例（36通り）と、兵庫県41市町の返納特典が分かります。">
+<link rel="canonical" href="https://jimotokurabe.jp/henno-hanashikata.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="じもとくらべ">
+<meta property="og:title" content="親に運転の話をはじめる、最初のひと言｜じもとくらべ">
+<meta property="og:description" content="親に免許返納の話をどう切り出すか。家族が6つ答えると、親御さんに合った話しはじめの例（36通り）と、兵庫県41市町の返納特典が分かります。">
+<meta property="og:url" content="https://jimotokurabe.jp/henno-hanashikata.html">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<div class="wrap">
+<header class="topbar">
+  <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <div class="sizer" role="group" aria-label="文字の大きさ">
+    <span>文字の大きさ</span>
+    <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
+    <button type="button" data-size-btn="large" aria-pressed="false">大きく</button>
+  </div>
+</header>
+
+<main id="main">
+<article class="hk">
+  <section class="hk-hero">
+    <p class="hk-eyebrow">免許返納・家族のための道具</p>
+    <h1>親に運転の話をはじめる、<br>最初のひと言</h1>
+    <p>家族が6つの質問に答えると、親御さんに合った話しはじめの例が出ます。例は36通りあり、何度でも出し直せます。</p>
+    <p class="hk-stat"><b>2025年、全国で43万5,067件</b>の運転免許が、本人の申し出で返納されました。1日あたり約1,200件です。そのうち75歳以上が60.0%（26万915件）でした。
+      <span class="hk-src">出典：<a href="https://www.npa.go.jp/publications/statistics/koutsuu/menkyo.html" target="_blank" rel="noopener">警察庁「運転免許統計（令和7年版）」 申請による運転免許の取消件数</a>（2026年9月27日に確認）</span></p>
+    <button type="button" class="hk-btn" data-go="quiz">質問に答える（約1分）</button>
+  </section>
+
+  <section class="hk-screen" id="hk-quiz" hidden aria-live="polite">
+    <div class="hk-progress" aria-hidden="true"><div id="hk-bar"></div></div>
+    <p class="hk-step" id="hk-step"></p>
+    <h2 class="hk-q" id="hk-q"></h2>
+    <div class="hk-opts" id="hk-opts"></div>
+    <button type="button" class="hk-back" id="hk-back">← 前の質問へ</button>
+  </section>
+
+  <section class="hk-screen" id="hk-result" hidden>
+    <div class="hk-card">
+      <h2>運転で気になるサインの多さ</h2>
+      <div class="hk-meter" id="hk-meter" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p id="hk-risk"></p>
+      <p class="hk-note">これは診断ではありません。運転に不安があるときは、本人も家族も<a href="https://www.npa.go.jp/policies/application/license_renewal/conferennce_out_line.html" target="_blank" rel="noopener">安全運転相談ダイヤル（#8080）</a>で警察の相談窓口に相談できます。</p>
+    </div>
+
+    <div class="hk-card">
+      <p class="hk-type-line">親御さんは <b class="hk-type" id="hk-type"></b></p>
+      <p id="hk-type-text"></p>
+      <h2>どんな場面で話しますか？</h2>
+      <div class="hk-chips" role="group" aria-label="話す場面"><button type="button" class="hk-chip" data-trig="renew" aria-pressed="false">免許の更新が近い</button><button type="button" class="hk-chip" data-trig="family" aria-pressed="false">誕生日・家族が集まる日</button><button type="button" class="hk-chip" data-trig="scare" aria-pressed="false">ヒヤッとしたことがあった</button><button type="button" class="hk-chip" data-trig="grandkid" aria-pressed="false">孫の話から</button><button type="button" class="hk-chip" data-trig="money" aria-pressed="false">お金の話から</button><button type="button" class="hk-chip" data-trig="health" aria-pressed="false">通院・体の話から</button></div>
+      <h2>最初のひと言</h2>
+      <div id="hk-phrases"></div>
+      <p class="hk-more-row"><button type="button" class="hk-more" id="hk-more">別の言い方を見る</button> <span class="hk-count" id="hk-count"></span></p>
+      <div class="hk-ng">
+        <b>言わないほうがいいこと</b>
+        <ul><li>「もう年なんだから」</li><li>「事故を起こしてからじゃ遅い」（責める言い方）</li><li>「認知症じゃないの？」</li><li>大勢の前で、責めるように切り出す</li></ul>
+      </div>
+    </div>
+
+    <div class="hk-card">
+      <h2>返納したら、住んでいる市町で何がある？</h2>
+      <p>兵庫県の41市町は、このサイトで特典を調べています。</p>
+      <label class="hk-label" for="hk-city">親御さんの住んでいる市町</label>
+      <select id="hk-city" class="hk-select"><option value="">選んでください</option><option value="kobe">神戸市</option><option value="amagasaki">尼崎市</option><option value="nishinomiya">西宮市</option><option value="ashiya">芦屋市</option><option value="itami">伊丹市</option><option value="takarazuka">宝塚市</option><option value="kawanishi">川西市</option><option value="sanda">三田市</option><option value="inagawa">猪名川町</option><option value="akashi">明石市</option><option value="kakogawa">加古川市</option><option value="takasago">高砂市</option><option value="inami">稲美町</option><option value="harima">播磨町</option><option value="nishiwaki">西脇市</option><option value="miki">三木市</option><option value="ono">小野市</option><option value="kasai">加西市</option><option value="kato">加東市</option><option value="taka">多可町</option><option value="himeji">姫路市</option><option value="ichikawa">市川町</option><option value="fukusaki">福崎町</option><option value="kamikawa">神河町</option><option value="aioi">相生市</option><option value="tatsuno">たつの市</option><option value="ako">赤穂市</option><option value="shiso">宍粟市</option><option value="taishi">太子町</option><option value="kamigori">上郡町</option><option value="sayo">佐用町</option><option value="toyooka">豊岡市</option><option value="yabu">養父市</option><option value="asago">朝来市</option><option value="kami">香美町</option><option value="shinonsen">新温泉町</option><option value="tambasasayama">丹波篠山市</option><option value="tamba">丹波市</option><option value="sumoto">洲本市</option><option value="minamiawaji">南あわじ市</option><option value="awaji">淡路市</option></select>
+      <div id="hk-city-out" class="hk-city-out" hidden></div>
+    </div>
+
+    <div class="hk-card">
+      <h2>「お金」から話すための計算</h2>
+      <p>車をやめると毎月いくら変わるかの目安です。数字があると話しやすくなります。</p>
+      <label class="hk-label" for="hk-car">車にかかるお金（保険・ガソリン・税金・車検・駐車場）<b class="hk-val" id="hk-car-v"></b></label>
+      <input type="range" id="hk-car" min="10000" max="80000" step="5000" value="35000">
+      <label class="hk-label" for="hk-taxi">タクシーを使う回数（1か月）<b class="hk-val" id="hk-taxi-v"></b></label>
+      <input type="range" id="hk-taxi" min="0" max="20" step="1" value="6">
+      <label class="hk-label" for="hk-net">ネットスーパーや宅配を使う回数（1か月）<b class="hk-val" id="hk-net-v"></b></label>
+      <input type="range" id="hk-net" min="0" max="8" step="1" value="2">
+      <p class="hk-diff" id="hk-diff"></p>
+      <p class="hk-note">タクシー1回2,000円、宅配1回500円として計算した目安です。市町の特典は入れていません。</p>
+    </div>
+
+    <div class="hk-card hk-about">
+      <h2>このページについて</h2>
+      <ul class="bullets small">
+        <li>ひと言は、じもとくらべが書いた例です。公的な資料の文章ではありません。</li>
+        <li>家族向けのくわしい手引きに、国立長寿医療研究センター（厚生労働科学研究費による研究班）の<a href="https://www.ncgg.go.jp/ri/pamph/documents/cgss5.pdf" target="_blank" rel="noopener">「認知症高齢者の自動車運転を考える家族介護者のための支援マニュアル（第二版）」</a>があります。認知症の方のご家族向けの手引きです。</li>
+      </ul>
+    </div>
+    <button type="button" class="hk-back" data-go="quiz">もう一度答える</button>
+  </section>
+</article>
+</main>
+<footer class="footer">
+  <nav aria-label="サイトの案内">
+    <a href="./">トップ</a>
+    <a href="about.html">運営者情報</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNJuZsE9F--Erk3ZQK5rMyP704VH8S4mW5BNll9z_t7BeREg/viewform" target="_blank" rel="noopener">お問い合わせ</a>
+  </nav>
+  <p>© 2026 じもとくらべ</p>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll("[data-size-btn]");
+  function set(size, save) {
+    if (size === "large") root.setAttribute("data-size", "large");
+    else root.removeAttribute("data-size");
+    buttons.forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-size-btn") === size));
+    });
+    if (save) { try { localStorage.setItem("jk-size", size); } catch (e) {} }
+  }
+  set(root.getAttribute("data-size") === "large" ? "large" : "normal", false);
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () { set(b.getAttribute("data-size-btn"), true); });
+  });
+})();
+</script>
+<script id="hk-data" type="application/json">{"questions": [{"q": "最近、車に新しいこすり傷やへこみが増えましたか？", "w": 2}, {"q": "駐車や車庫入れに、前より時間がかかっていますか？", "w": 1}, {"q": "よく知っている道で、迷ったり曲がる場所を間違えたりしますか？", "w": 2}, {"q": "助手席に乗ると、ヒヤッとすることがありますか？", "w": 2}, {"q": "親御さんは「まだ大丈夫」「運転はうまい」と言い切りますか？", "w": 0, "type": "pride"}, {"q": "車がないと、買い物や通院に行けない場所に住んでいますか？", "w": 0, "type": "life"}], "types": {"pride": {"name": "プライド型", "text": "運転の腕を否定されると、心を閉ざしやすいタイプです。うまいことは認めた上で、「家族が安心したい」とお願いする形が向いています。"}, "life": {"name": "生活の心配型", "text": "やめた後の買い物や通院が心配で、手放せないタイプです。「やめる話」より先に「やめても困らない方法」を一緒に用意すると、話が進みやすくなります。"}, "ready": {"name": "話し合い準備型", "text": "いま気になるサインは少なめです。元気なうちに「いつ・どうなったら手放すか」を家族で決めておくのが、いちばんの近道です。"}}, "triggers": {"renew": "免許の更新が近い", "family": "誕生日・家族が集まる日", "scare": "ヒヤッとしたことがあった", "grandkid": "孫の話から", "money": "お金の話から", "health": "通院・体の話から"}, "phrases": {"pride": {"renew": ["次の更新、どうするか一緒に考えさせてくれない？ お父さんの運転がうまいのは知ってるから、決めるのはお父さんでいいよ。", "更新の前に、一度だけ運転を見せてもらえる？ 大丈夫なら私も安心できるから。"], "family": ["今日はみんないるから、お父さんの車のこれからを、ちょっとだけ相談させて。", "誕生日だから言うね。いつまでも元気でいてほしいから、運転のやめどきも一緒に決めておきたいんだ。"], "scare": ["この前のこと、責めるつもりはないよ。でも、私がずっと心配してるのは本当なんだ。", "うまい人でも、ヒヤッとすることはあるよね。次はどうしたら防げるか、一緒に考えたい。"], "grandkid": ["孫が『じいじの車に乗りたい』って言うから、念のため一緒に運転を見直してみない？", "孫を乗せるときのことを考えたら、私も運転のことを考えるようになったんだ。"], "money": ["車にいくらかかってるか、一度一緒に計算してみない？ 続けるかどうかは、それから決めればいいから。", "もし手放したら、その分で好きなところに出かけられるかもしれないよ。"], "health": ["今度の検診のついでに、運転のことも先生に聞いてみない？ 私が聞くより、先生の話のほうが確かだから。", "目や耳の調子で、運転に気をつけることがあるか、先生に一緒に聞いてみようよ。"]}, "life": {"renew": ["更新の前に、車がなくても困らない方法を一緒に調べてみない？ 困るなら、無理にやめなくていいから。", "もし免許を返したら、町でもらえるものがあるか、一緒に見てみようよ。"], "family": ["みんないるうちに、買い物と通院の足をどうするか、分担を決めておこうよ。", "次に集まるまで、週に1回だけ車を使わない日を作ってみない？ 困ったら言ってね。"], "scare": ["責めてるんじゃないよ。車を使う回数を減らせる方法を、一緒に探したいんだ。", "遠い所と夜だけ、しばらく私が送るのはどう？"], "grandkid": ["孫の送り迎えは私がやるから、ほかの日にタクシーを試してみない？", "孫と一緒にバスに乗って出かけてみようよ。行き方は私が調べるから。"], "money": ["車にかかるお金を、タクシー代と比べてみたんだけど、一緒に見てくれる？", "ネットスーパーなら、重いものも家まで届くよ。一度だけ試してみない？"], "health": ["通院の日は私が送るから、ほかの日の出かけ方を一緒に考えよう。", "病院の行き帰りに使えるサービスが町にあるか、一緒に調べてみようよ。"]}, "ready": {"renew": ["次の更新のときに、この先どうするか、一度だけ話しておかない？", "更新のついでに、どうなったら運転をやめるか、いまのうちに決めておこうよ。"], "family": ["元気ないまのうちに、運転をやめる目安を家族で決めておかない？", "もしものときに慌てないように、車のこれからをみんなで話しておこうよ。"], "scare": ["大きなことにならなくてよかったね。次のために、やめどきの目安を決めておこうか。", "心配したけど、責める気はないよ。ただ、次に同じことがあったら、一緒に考えさせて。"], "grandkid": ["孫が大きくなるまで、元気に一緒に出かけたいね。そのために、運転のことも時々話そう。", "孫に、どうなったら運転をやめるか話しておくのもいいかもね。"], "money": ["車の維持費がこの先どれくらいかかるか、一度書き出しておかない？", "車を手放す日が来たら、その分をどう使うか、いまから楽しみに考えておこうよ。"], "health": ["年に1回、健康診断と一緒に、運転のことも見直す日にしない？", "体の調子が変わったら、運転のことも一緒に考えるって約束しておこうよ。"]}}, "cities": [{"slug": "kobe", "n": "神戸市", "y": "こうべし", "k": "終了", "has": false, "what": "ICOCA 5,000円分を配るキャンペーンは、2023年12月28日で受付を終えています。そのあとの市独自の特典は見つかりませんでした。", "href": "hyogo-menkyo-henno/kobe.html"}, {"slug": "amagasaki", "n": "尼崎市", "y": "あまがさきし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県内の企業・団体の割引を案内しています。", "href": "hyogo-menkyo-henno.html#amagasaki"}, {"slug": "nishinomiya", "n": "西宮市", "y": "にしのみやし", "k": "なし", "has": false, "what": "市のページに「西宮市の特典はありません。」と書かれています。", "href": "hyogo-menkyo-henno/nishinomiya.html"}, {"slug": "ashiya", "n": "芦屋市", "y": "あしやし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県内の企業・団体の割引を案内しています。", "href": "hyogo-menkyo-henno.html#ashiya"}, {"slug": "itami", "n": "伊丹市", "y": "いたみし", "k": "記載なし", "has": false, "what": "返納について書かれた市のページが見つかりませんでした。", "href": "hyogo-menkyo-henno.html#itami"}, {"slug": "takarazuka", "n": "宝塚市", "y": "たからづかし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県内の企業・団体の割引を案内しています。", "href": "hyogo-menkyo-henno.html#takarazuka"}, {"slug": "kawanishi", "n": "川西市", "y": "かわにしし", "k": "もらえる", "has": true, "what": "ICOCA 5,000円分、hanica 6,000円分、電車やバスの定期券の購入支援（上限15,700円）から、1つを選べます。", "href": "hyogo-menkyo-henno/kawanishi.html"}, {"slug": "sanda", "n": "三田市", "y": "さんだし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県内の企業・団体の割引を案内しています。", "href": "hyogo-menkyo-henno.html#sanda"}, {"slug": "inagawa", "n": "猪名川町", "y": "いながわちょう", "k": "記載なし", "has": false, "what": "町のページには、町独自の特典は書かれていません。県内の企業・団体の割引を案内しています。", "href": "hyogo-menkyo-henno.html#inagawa"}, {"slug": "akashi", "n": "明石市", "y": "あかしし", "k": "もらえる", "has": true, "what": "ICOCA 3,000円分（預り金500円を含む）か、図書カード3,000円分のどちらかを選べます。", "href": "hyogo-menkyo-henno/akashi.html"}, {"slug": "kakogawa", "n": "加古川市", "y": "かこがわし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県内の企業・団体の割引を案内しています。", "href": "hyogo-menkyo-henno.html#kakogawa"}, {"slug": "takasago", "n": "高砂市", "y": "たかさごし", "k": "安くなる", "has": true, "what": "運転経歴証明書を見せると、じょうとんバスの運賃が半額になります。", "href": "hyogo-menkyo-henno/takasago.html"}, {"slug": "inami", "n": "稲美町", "y": "いなみちょう", "k": "もらえる", "has": true, "what": "乗合タクシー「あいのりいなみ」を1年間無料で使えます。交通安全グッズももらえます。", "href": "hyogo-menkyo-henno/inami.html"}, {"slug": "harima", "n": "播磨町", "y": "はりまちょう", "k": "もらえる", "has": true, "what": "ICOCA 5,000円分（預り金500円を含む）。", "href": "hyogo-menkyo-henno/harima.html"}, {"slug": "nishiwaki", "n": "西脇市", "y": "にしわきし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県警の特典一覧へのリンクがあります。", "href": "hyogo-menkyo-henno.html#nishiwaki"}, {"slug": "miki", "n": "三木市", "y": "みきし", "k": "もらえる", "has": true, "what": "ICカードのチャージ券、電車の回数券、タクシー券、バスの回数券の4種類から、合わせて5冊を選べます。", "href": "hyogo-menkyo-henno/miki.html"}, {"slug": "ono", "n": "小野市", "y": "おのし", "k": "記載なし", "has": false, "what": "返納について書かれた市のページが見つかりませんでした。", "href": "hyogo-menkyo-henno.html#ono"}, {"slug": "kasai", "n": "加西市", "y": "かさいし", "k": "高齢者向け", "has": true, "what": "タクシー代の半分を助成します。75歳以上で免許を持っていない人なども対象です。", "href": "hyogo-menkyo-henno/kasai.html"}, {"slug": "kato", "n": "加東市", "y": "かとうし", "k": "高齢者向け", "has": true, "what": "予約して乗るデマンド型交通を、決まった負担額で使えます（例：運賃が1,000円未満なら300円）。75歳以上の人なども対象です。", "href": "hyogo-menkyo-henno/kato.html"}, {"slug": "taka", "n": "多可町", "y": "たかちょう", "k": "高齢者向け", "has": true, "what": "福祉タクシー券（500円×24枚）。75歳以上の人なども対象です。", "href": "hyogo-menkyo-henno/taka.html"}, {"slug": "himeji", "n": "姫路市", "y": "ひめじし", "k": "記載なし", "has": false, "what": "市のページには、市独自の特典は書かれていません。県警の特典一覧へのリンクがあります。", "href": "hyogo-menkyo-henno.html#himeji"}, {"slug": "ichikawa", "n": "市川町", "y": "いちかわちょう", "k": "もらえる", "has": true, "what": "コミバス・買い物バスの無料乗車券（年度内48枚）。運転経歴証明書を見せると、運賃も半額になります。", "href": "hyogo-menkyo-henno/ichikawa.html"}, {"slug": "fukusaki", "n": "福崎町", "y": "ふくさきちょう", "k": "もらえる", "has": true, "what": "町内巡回バス「サルビア号」の無料乗車券。", "href": "hyogo-menkyo-henno/fukusaki.html"}, {"slug": "kamikawa", "n": "神河町", "y": "かみかわちょう", "k": "安くなる", "has": true, "what": "運転経歴証明書を見せると、町のコミュニティバスの運賃が半額（200円→100円）になります。", "href": "hyogo-menkyo-henno/kamikawa.html"}, {"slug": "aioi", "n": "相生市", "y": "あいおいし", "k": "もらえる", "has": true, "what": "タクシー補助券（500円×6枚）。2024年4月1日以降に返納し、運転経歴証明書を受けた人が対象です。", "href": "hyogo-menkyo-henno/aioi.html"}, {"slug": "tatsuno", "n": "たつの市", "y": "たつのし", "k": "もらえる", "has": true, "what": "コミュニティバスの無料定期券（3年間）と、乗り合いタクシー券（200円×60枚）。", "href": "hyogo-menkyo-henno/tatsuno.html"}, {"slug": "ako", "n": "赤穂市", "y": "あこうし", "k": "もらえる", "has": true, "what": "ICOCA 2,000円分（預り金500円を含む）。", "href": "hyogo-menkyo-henno/ako.html"}, {"slug": "shiso", "n": "宍粟市", "y": "しそうし", "k": "記載なし", "has": false, "what": "以前のバス券の案内ページは削除されていて、制度が続いているか分かりません。", "href": "hyogo-menkyo-henno.html#shiso"}, {"slug": "taishi", "n": "太子町", "y": "たいしちょう", "k": "もらえる", "has": true, "what": "タクシー利用券（500円×18枚）。高齢者タクシー助成の中にある、返納した人向けの枠です。", "href": "hyogo-menkyo-henno/taishi.html"}, {"slug": "kamigori", "n": "上郡町", "y": "かみごおりちょう", "k": "もらえる", "has": true, "what": "乗合タクシーとバスの回数券1万円分と、ICOCAの購入補助（2,000円まで）。", "href": "hyogo-menkyo-henno/kamigori.html"}, {"slug": "sayo", "n": "佐用町", "y": "さようちょう", "k": "もらえる", "has": true, "what": "バスの回数券など1冊と、タクシー運賃の助成券1冊。", "href": "hyogo-menkyo-henno/sayo.html"}, {"slug": "toyooka", "n": "豊岡市", "y": "とよおかし", "k": "安くなる", "has": true, "what": "運転経歴証明書を見せると、市営バス「イナカー」の運賃が半額になります。", "href": "hyogo-menkyo-henno/toyooka.html"}, {"slug": "yabu", "n": "養父市", "y": "やぶし", "k": "もらえる", "has": true, "what": "運転経歴証明書の交付手数料を補助します。", "href": "hyogo-menkyo-henno/yabu.html"}, {"slug": "asago", "n": "朝来市", "y": "あさごし", "k": "購入の補助", "has": true, "what": "シニアカーの購入費の3分の1を補助します。", "href": "hyogo-menkyo-henno/asago.html"}, {"slug": "kami", "n": "香美町", "y": "かみちょう", "k": "もらえる", "has": true, "what": "運転経歴証明書の手数料の補助と、町内で使えるタクシー券（400円×72枚を3年間に分けて配布）。", "href": "hyogo-menkyo-henno/kami.html"}, {"slug": "shinonsen", "n": "新温泉町", "y": "しんおんせんちょう", "k": "もらえる", "has": true, "what": "運転経歴証明書の手数料の補助と、温泉入浴券2枚。証明書を見せると、バスの運賃が半額になり、入浴料の割引もあります。", "href": "hyogo-menkyo-henno/shinonsen.html"}, {"slug": "tambasasayama", "n": "丹波篠山市", "y": "たんばささやまし", "k": "もらえる", "has": true, "what": "タクシークーポン、バス乗車券、図書カード（各5,000円相当）から、2つを選べます。", "href": "hyogo-menkyo-henno/tambasasayama.html"}, {"slug": "tamba", "n": "丹波市", "y": "たんばし", "k": "もらえる", "has": true, "what": "たんば共通商品券か、ICOCAを1万円分。", "href": "hyogo-menkyo-henno/tamba.html"}, {"slug": "sumoto", "n": "洲本市", "y": "すもとし", "k": "安くなる", "has": true, "what": "運転経歴証明書を見せると、コミュニティバスの運賃が半額になります。", "href": "hyogo-menkyo-henno/sumoto.html"}, {"slug": "minamiawaji", "n": "南あわじ市", "y": "みなみあわじし", "k": "もらえる", "has": true, "what": "コミュニティバス「らん・らんバス」の1年フリーパス。最大5回まで更新できます。", "href": "hyogo-menkyo-henno/minamiawaji.html"}, {"slug": "awaji", "n": "淡路市", "y": "あわじし", "k": "もらえる", "has": true, "what": "市内コミバスの無料券。2026年8月5日から、無料の期間が7年間に延びました。", "href": "hyogo-menkyo-henno/awaji.html"}]}</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById("hk-data").textContent);
+  var $ = function (id) { return document.getElementById(id); };
+  var ans = [], i = 0, type = "ready", trig = null;
+  var OPTS = [["はい", 2], ["ときどき", 1], ["いいえ", 0]];
+  function show(id) {
+    ["hk-quiz", "hk-result"].forEach(function (s) { $(s).hidden = s !== id; });
+    document.querySelector(".hk-hero").hidden = !!id;
+    window.scrollTo(0, 0);
+  }
+  function start() { ans = []; i = 0; show("hk-quiz"); renderQ(); }
+  document.querySelectorAll("[data-go=quiz]").forEach(function (b) { b.addEventListener("click", start); });
+  function renderQ() {
+    var q = D.questions[i];
+    $("hk-bar").style.width = (i / D.questions.length * 100) + "%";
+    $("hk-step").textContent = "質問 " + (i + 1) + " / " + D.questions.length;
+    $("hk-q").textContent = q.q;
+    $("hk-opts").innerHTML = "";
+    OPTS.forEach(function (o) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "hk-opt"; b.textContent = o[0];
+      b.addEventListener("click", function () {
+        ans[i] = o[1];
+        if (i < D.questions.length - 1) { i++; renderQ(); } else { result(); }
+      });
+      $("hk-opts").appendChild(b);
+    });
+    $("hk-back").style.visibility = i ? "visible" : "hidden";
+    $("hk-opts").firstChild.focus();
+  }
+  $("hk-back").addEventListener("click", function () { if (i) { i--; renderQ(); } });
+  function result() {
+    var risk = 0, pride = 0, life = 0;
+    D.questions.forEach(function (q, k) {
+      risk += q.w * ans[k];
+      if (q.type === "pride") pride = ans[k];
+      if (q.type === "life") life = ans[k];
+    });
+    var lv = risk >= 9 ? 3 : risk >= 4 ? 2 : 1;
+    $("hk-meter").className = "hk-meter lv" + lv;
+    $("hk-risk").textContent = ["", "気になるサインは少なめです。", "気になるサインがいくつかあります。早めに話し合いを。", "気になるサインが多めです。できるだけ早く話し合いを。"][lv];
+    type = lv === 1 ? "ready" : (pride >= life ? "pride" : "life");
+    $("hk-type").textContent = D.types[type].name;
+    $("hk-type-text").textContent = D.types[type].text;
+    pickTrig(Object.keys(D.triggers)[0]);
+    calc();
+    show("hk-result");
+  }
+  var queue = [], qi = 0;
+  function shuffle(a) { return a.slice().sort(function () { return Math.random() - .5; }); }
+  function buildQueue() {
+    var t = D.phrases[type], rest = [];
+    Object.keys(t).forEach(function (k) { if (k !== trig) rest = rest.concat(t[k]); });
+    queue = shuffle(t[trig]).concat(shuffle(rest)); qi = 0;
+  }
+  function drawPhrases() {
+    if (qi >= queue.length) qi = 0;
+    var x = queue[qi++];
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "hk-phrase";
+    b.innerHTML = "<span></span><small>押すとコピーできます</small>";
+    b.firstChild.textContent = "「" + x + "」";
+    b.addEventListener("click", function () {
+      var done = function () { b.classList.add("copied"); b.lastChild.textContent = "コピーしました"; };
+      if (navigator.clipboard) navigator.clipboard.writeText(x).then(done, done); else done();
+    });
+    $("hk-phrases").innerHTML = "";
+    $("hk-phrases").appendChild(b);
+    $("hk-count").textContent = qi + " / " + queue.length;
+  }
+  function pickTrig(k) {
+    trig = k; buildQueue();
+    document.querySelectorAll(".hk-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.dataset.trig === k)); });
+    drawPhrases();
+  }
+  document.querySelectorAll(".hk-chip").forEach(function (c) { c.addEventListener("click", function () { pickTrig(c.dataset.trig); }); });
+  $("hk-more").addEventListener("click", drawPhrases);
+  $("hk-city").addEventListener("change", function () {
+    var c = D.cities.filter(function (x) { return x.slug === $("hk-city").value; })[0], o = $("hk-city-out");
+    if (!c) { o.hidden = true; return; }
+    o.hidden = false;
+    o.innerHTML = '<p><b></b> <span class="hk-kind"></span></p><p class="hk-what"></p><a></a>';
+    o.querySelector("b").textContent = c.n;
+    o.querySelector(".hk-kind").textContent = c.k;
+    o.querySelector(".hk-kind").classList.toggle("none", !c.has);
+    o.querySelector(".hk-what").textContent = c.what;
+    var a = o.querySelector("a"); a.href = c.href; a.textContent = c.n + "のくわしい内容を見る →";
+  });
+  var yen = function (n) { return Math.abs(n).toLocaleString("ja-JP") + "円"; };
+  function calc() {
+    var car = +$("hk-car").value, taxi = +$("hk-taxi").value, net = +$("hk-net").value;
+    $("hk-car-v").textContent = yen(car);
+    $("hk-taxi-v").textContent = taxi + "回";
+    $("hk-net-v").textContent = net + "回";
+    var d = car - (taxi * 2000 + net * 500);
+    $("hk-diff").textContent = d >= 0 ? "毎月 約" + yen(d) + " 浮きます" : "毎月 約" + yen(d) + " 増えます";
+    $("hk-diff").classList.toggle("minus", d < 0);
+  }
+  ["hk-car", "hk-taxi", "hk-net"].forEach(function (id) { $(id).addEventListener("input", calc); });
+})();
+</script>
+</body>
+</html>
