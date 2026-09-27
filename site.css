@@ -485,7 +485,9 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .guide .answer, .guide .cautions, .guide .statewide { margin-top: .6rem; padding: .5rem .8rem; }
   .guide .cautions, .guide .statewide { background: none; border: 1.5px solid #000; }
   .guide .steps, .guide .checklist, .guide .block { margin-top: .7rem; gap: .3rem; }
-  .guide .step-list { gap: .4rem; }
+  /* 手順の並びが grid のまま改ページすると、次の手順の枠が前の手順の最後の行に重なって隠すことがある（Chromium）。印刷では block にする */
+  .guide .step-list { display: block; }
+  .guide .step-list > .step + .step { margin-top: .4rem; }
   .guide .step { padding: .4rem .8rem .5rem; gap: .3rem; border-color: #000; }
   .guide .step h3 { font-size: 13pt; }
   .guide .step .num { width: 1.8rem; height: 1.8rem; font-size: 11pt; border: 1.5px solid #000; }
