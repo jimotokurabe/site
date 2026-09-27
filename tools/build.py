@@ -351,6 +351,48 @@ PICK_SCRIPT = """<script>
 </script>"""
 
 
+# 一覧の冒頭に出す「最初のひと言」の見本（タイプ・場面ごとに1つずつ。data/hanashikata.json の文をそのまま使う）
+HK_SAMPLES = [("pride", "renew"), ("life", "money"), ("ready", "family")]
+
+
+def hk_banner(hk):
+    if not hk:
+        return ""
+    samples = [{"type": hk["types"][t]["name"], "trig": hk["triggers"][g], "text": hk["phrases"][t][g][0]}
+               for t, g in HK_SAMPLES]
+    first = samples[0]
+    data_attr = e(json.dumps(samples, ensure_ascii=False))
+    return f"""<aside class="hk-banner" aria-labelledby="hkb-h" data-samples="{data_attr}">
+    <p class="hkb-eyebrow">家族のための道具</p>
+    <h2 id="hkb-h">親にどう話しはじめるか、迷ったら</h2>
+    <p class="hkb-lead">6つの質問に答えると、親御さんのタイプと場面に合った「最初のひと言」が出ます。たとえば、こんな感じです。</p>
+    <figure class="hkb-sample">
+      <figcaption><span class="hkb-type">{e(first["type"])}</span><span class="hkb-trig">{e(first["trig"])}</span></figcaption>
+      <blockquote>「{e(first["text"])}」</blockquote>
+    </figure>
+    <p class="hkb-actions">
+      <a class="hkb-go" href="{HANASHI_PATH}">質問に答えて、ひと言を見る<span aria-hidden="true"> →</span></a>
+      <button type="button" class="hkb-next" hidden>ほかの例</button>
+    </p>
+  </aside>"""
+
+
+HK_BANNER_SCRIPT = """<script>
+(function () {
+  var b = document.querySelector(".hk-banner");
+  if (!b) return;
+  var s = JSON.parse(b.getAttribute("data-samples")), i = 0, btn = b.querySelector(".hkb-next");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    i = (i + 1) % s.length;
+    b.querySelector(".hkb-type").textContent = s[i].type;
+    b.querySelector(".hkb-trig").textContent = s[i].trig;
+    b.querySelector("blockquote").textContent = "「" + s[i].text + "」";
+  });
+})();
+</script>"""
+
+
 def list_page(data, draft):
     checked = data["checked"]
     cities = data["cities"]
@@ -419,7 +461,7 @@ def list_page(data, draft):
   </div>
   <h1>運転免許を返納したら、何がもらえる？</h1>
   <p class="lead">兵庫県の41市町が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}</p>
-  <p class="hk-link"><a href="{HANASHI_PATH}">親にどう話しはじめるか迷ったら →「最初のひと言」</a></p>
+{hk_banner(data.get("hk"))}
 </div>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
@@ -475,7 +517,7 @@ def list_page(data, draft):
         path="hyogo-menkyo-henno.html",
         main=main, draft=draft,
         draft_note="「記載なし」の11市町の扱いは、公開する前に決めます。",
-        scripts=LIST_SCRIPT)
+        scripts=LIST_SCRIPT + HK_BANNER_SCRIPT)
 
 
 # ---------------- 高齢者のタクシー代の助成の一覧 ----------------
@@ -1443,6 +1485,7 @@ def main():
         data["taxi_checked"] = taxi["checked"]
         data["taxi"] = {slug: {"checked": taxi["checked"], **t} for slug, t in taxi["cities"].items()}
     hk = json.loads((ROOT / "data" / "hanashikata.json").read_text(encoding="utf-8"))
+    data["hk"] = hk
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]

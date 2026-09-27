@@ -517,7 +517,6 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
 
 /* ---------- 最初のひと言（henno-hanashikata.html） ---------- */
 .topic-sub { border-width: 1px; border-color: var(--line); }
-.hk-link { margin: .2rem 0 0; font-weight: 700; }
 .hk { display: grid; gap: 1rem; padding-block: 1.2rem 0; max-width: 40rem; }
 .hk h1 { font-family: var(--font-head); font-size: clamp(1.7rem, 1.2rem + 2vw, 2.2rem); line-height: 1.4; margin: 0; }
 .hk h2 { font-family: var(--font-head); font-size: 1.2rem; line-height: 1.45; margin: 0; }
@@ -642,3 +641,30 @@ details.guides[open] summary::after { content: " －"; }
   text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px;
 }
 .card .henno-part .facts, .card .taxi .facts { border-top-color: color-mix(in srgb, var(--line) 70%, transparent); }
+
+/* ---------- 一覧の冒頭：「最初のひと言」の見本カード ---------- */
+.hk-banner {
+  display: grid; gap: .7rem; margin-top: .4rem; padding: 1.1rem 1.1rem 1rem;
+  border-radius: 1rem; background: var(--accent-soft); border: 2px solid var(--accent);
+}
+.hk-banner p, .hk-banner h2, .hk-banner figure { margin: 0; }
+.hkb-eyebrow { font-size: .85rem; font-weight: 700; letter-spacing: .1em; color: var(--accent); }
+.hk-banner h2 { font-family: var(--font-head); font-size: 1.3rem; line-height: 1.4; }
+.hkb-lead { font-size: .95rem; }
+.hkb-sample { display: grid; gap: .45rem; }
+.hkb-sample figcaption { display: flex; flex-wrap: wrap; gap: .35rem; font-size: .8rem; font-weight: 700; }
+.hkb-type, .hkb-trig { padding: .05rem .6rem; border-radius: 99px; background: var(--surface); color: var(--accent); border: 1px solid var(--accent); }
+.hkb-trig { color: var(--muted); border-color: var(--line); }
+.hkb-sample blockquote {
+  position: relative; margin: 0; padding: .9rem 1rem; border-radius: 1rem 1rem 1rem .3rem;
+  background: var(--surface); font-size: 1.05rem; line-height: 1.7; box-shadow: 0 1px 0 var(--line);
+}
+.hkb-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.hkb-go {
+  display: inline-flex; align-items: center; min-height: 3rem; padding: 0 1.1rem; border-radius: .8rem;
+  background: var(--accent); color: var(--accent-ink); font-weight: 700; text-decoration: none;
+}
+.hkb-next {
+  min-height: 3rem; padding: 0 1rem; border-radius: .8rem; cursor: pointer; font: inherit; font-weight: 700;
+  background: var(--surface); color: var(--accent); border: 2px solid var(--accent);
+}
