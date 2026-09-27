@@ -47,6 +47,10 @@ GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフ�
 HOME_PREF = "hyogo"  # トップ・最初のひと言・手順ページで使う県
 
 
+def guide_dir(pref):
+    return f"{pref['id']}-menkyo-henno"
+
+
 def list_path(pref):
     return f"{pref['id']}-menkyo-henno.html"
 
@@ -206,7 +210,7 @@ def taxi_block(t, unit):
   </section>"""
 
 
-def card(c, checked, taxi=None, statewide=True, hk=None, back=None):
+def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_DIR):
     kind_label = KINDS[c["k"]][0]
     unit = city_unit(c["n"])
     benefit = c["k"] in HAS_BENEFIT
@@ -231,7 +235,7 @@ def card(c, checked, taxi=None, statewide=True, hk=None, back=None):
         parts.append(f'<p class="flag">確かめ方：{e(c["flag"])}</p>')
     if c.get("guide"):
         label = c["guide"].get("link_label", "返納から申し込みまでの手順を見る")
-        parts.append(f'<p><a class="btn-guide" href="{GUIDE_DIR}/{c["slug"]}.html">'
+        parts.append(f'<p><a class="btn-guide" href="{gdir}/{c["slug"]}.html">'
                      f'{e(label)}<span aria-hidden="true">→</span></a></p>')
     if c.get("url"):
         src = c.get("src") or f"{unit}の公式ページ"
@@ -456,7 +460,7 @@ def list_page(data, draft):
     sections = []
     for r in regions:
         rows = [c for c in cities if c["r"] == r["id"]]
-        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS) for c in rows)
+        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS, gdir=guide_dir(P)) for c in rows)
         sections.append(f"""<section class="region" id="r-{r['id']}" aria-labelledby="r-{r['id']}-h">
   <div class="region-head">
     <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{pu}</span></h2>
@@ -879,12 +883,14 @@ def contact_row(label, who, number=""):
 
 def city_page(c, data, draft, base="../"):
     g = c["guide"]
+    P = data["pref"]
+    pn, pu, pol = P["name"], P["unit"], P["police"]
     cm = data["common"]
     hn, kr, tk = cm["hennou"], cm["keireki"], cm["tokuten"]
     ap = g.get("apply")  # 市町に申し込む特典があるときだけ
     name = c["n"]
-    unit = "町" if name.endswith("町") else "市"
-    path = f"{GUIDE_DIR}/{c['slug']}.html"
+    unit = city_unit(name)
+    path = f"{guide_dir(P)}/{c['slug']}.html"
     url = SITE + path
     checked = g["checked"]
     y, m, d = checked.split("-")
@@ -907,7 +913,7 @@ def city_page(c, data, draft, base="../"):
             </tbody>
           </table>
         </div>
-        <p class="src-line">どの警察署がどの地域を受け持つかは、<a href="{e(hn['stations_url'])}" target="_blank" rel="noopener">兵庫県警の警察署一覧</a>から、各警察署のページで確かめられます。</p>
+        <p class="src-line">どの警察署がどの地域を受け持つかは、<a href="{e(hn['stations_url'])}" target="_blank" rel="noopener">{pol}の警察署一覧</a>から、各警察署のページで確かめられます。</p>
       </details>"""
 
     # 手順2：運転経歴証明書
@@ -961,7 +967,7 @@ def city_page(c, data, draft, base="../"):
 
     fieldsets = [f"""    <fieldset>
       <legend>警察へ（手順1・2）</legend>
-{checks(POLICE_CHECKLIST)}
+{checks(cm.get("checklist", POLICE_CHECKLIST))}
     </fieldset>"""]
     if ap:
         fieldsets.append(f"""    <fieldset>
@@ -1002,10 +1008,10 @@ def city_page(c, data, draft, base="../"):
         calc_link = (f'\n  <p class="calc-link" hidden><a href="#deadline">'
                      f'{e(ap["deadline"]["label"])}から、申し込みの期限を調べる ↓</a></p>')
 
-    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="{base or './'}">トップ</a> ＞ <a href="{base}hyogo-menkyo-henno.html">兵庫県の免許返納特典</a> ＞ {e(name)}</nav>
+    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="{base or './'}">トップ</a> ＞ <a href="{base}{list_path(P)}">{pn}の免許返納特典</a> ＞ {e(name)}</nav>
 <div class="hero">
   <div class="hero-top">
-    <p class="eyebrow">兵庫県・{e(name)}</p>
+    <p class="eyebrow">{pn}・{e(name)}</p>
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
   <h1>{e(name)}で運転免許を返納したら</h1>
@@ -1041,14 +1047,14 @@ def city_page(c, data, draft, base="../"):
         <ul class="bullets">
 {lis(hn['mail'], '          ')}
         </ul>
-        <p>{ext(hn['url'], '兵庫県警の説明を見る')}</p>
+        <p>{ext(hn['url'], pol + 'の説明を見る')}</p>
       </details>
       <details class="more">
         <summary>家族が代わりに返納するには</summary>
         <ul class="bullets">
 {lis(kr['proxy'], '          ')}
         </ul>
-        <p>{ext(kr['proxy_form'], '兵庫県警の書類（PDF）')}</p>
+        {f"<p>{ext(kr['proxy_form'], pol + 'の書類（PDF）')}</p>" if kr.get('proxy_form') else ""}
       </details>
     </li>
     <li class="step" id="step-2">
@@ -1077,11 +1083,10 @@ def city_page(c, data, draft, base="../"):
 </section>
 
 <section class="statewide" id="statewide" aria-labelledby="sw-h">
-  <h2 id="sw-h">兵庫県内どこでも使える割引</h2>
+  <h2 id="sw-h">{pn}内どこでも使える割引</h2>
   <p>{e(tk['who'])}{e(tk['what'])}</p>
   <ul class="bullets">
-    <li>{e(tk['bus'])}</li>
-{lis(g.get('local_discounts', []), '    ')}
+{lis(([tk['bus']] if tk.get('bus') else []) + g.get('local_discounts', []), '    ')}
   </ul>
   <ul class="bullets small">
 {lis(tk['notes'], '    ')}
@@ -1115,7 +1120,7 @@ def city_page(c, data, draft, base="../"):
   <p class="fix">間違いに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</p>
 </section>
 <p class="print-only">{jdate(checked)}に確認（制度は変わることがあります）　{e(url)}</p>
-<p class="back"><a href="{base}hyogo-menkyo-henno.html#{c['slug']}">← 兵庫県41市町の一覧にもどる</a></p>"""
+<p class="back"><a href="{base}{list_path(P)}#{c['slug']}">← {pn}{len(data['cities'])}{pu}の一覧にもどる</a></p>"""
 
     return shell(
         title=f"{g['title']}｜じもとくらべ",
@@ -1327,7 +1332,7 @@ def hanashi_page(data, hk, draft, prefs=None):
     cities = [{
         "slug": hk_key(d["pref"], c), "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
         "what": c["what"],
-        "href": f"{GUIDE_DIR}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
+        "href": f"{guide_dir(d['pref'])}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
     } for d in prefs for c in d["cities"]]
     payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities},
                          ensure_ascii=False).replace("</", "<\\/")
@@ -1651,7 +1656,8 @@ def main():
         "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")]),
         list_path(data["pref"]): list_page(data, a.draft),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
-        **{f"{GUIDE_DIR}/{c['slug']}.html": city_page(c, data, a.draft) for c in guides},
+        **{f"{guide_dir(d['pref'])}/{c['slug']}.html": city_page(c, d, a.draft or d["pref"].get("draft", False))
+           for d in [data, *others] for c in d["cities"] if c.get("guide")},
         HANASHI_PATH: hanashi_page(data, hk, a.draft, [data, *[d for d in others if not d["pref"].get("draft")]]),
         "about.html": about_page(a.draft),
         "privacy.html": privacy_page(a.draft),
