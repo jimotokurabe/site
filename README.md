@@ -14,6 +14,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `tools/build.py` | データからページを作るスクリプト |
 | `tools/check_guide.js`、`tools/check_links.py` | 手順ページをブラウザで開いて確かめる道具と、ページのリンクが開けるかを確かめる道具 |
 | `GUIDES.md` | 手順ページを作る順番と作り方 |
+| `TOPICS.md` | 新しい制度のページを作る順番と作り方 |
 | `site.css` | 全ページ共通の見た目 |
 | `index.html` ほか `*.html`、`hyogo-menkyo-henno/*.html`、`sitemap.xml`、`robots.txt` | `tools/build.py` が作るもの。手で直さない |
 | `CNAME`、`.nojekyll` | 独自ドメインの設定と、ファイルをそのまま公開する設定 |
