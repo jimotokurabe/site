@@ -625,19 +625,19 @@ def city_page(c, data, draft, base="../"):
       </details>""" for m in ap.get("more", []))
         # まとめにも同じ期限があるので、印刷では手順3の側を出さない
         dup_deadline = fact("申し込み期限", deadline).replace("<div>", '<div class="no-print">', 1)
-        links = [ext(ap["form_url"], ap.get("form_label", "申請用紙（PDF）を開く"))]
+        links = [ext(ap["form_url"], ap.get("form_label", "申請用紙（PDF）を開く"))] if ap.get("form_url") else []
         links += [ext(u, label) for u, label in ap.get("links", [])]
+        link_row = f'\n      <p class="src-links">{" ".join(links)}</p>' if links else ""
         step3 = f"""    <li class="step" id="step-3">
       <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
-      <p>{e(ap['write'])}{e(ap['choice_note'])}</p>
+      <p>{e(ap['write'])}{e(ap.get('choice_note', ''))}</p>
       <dl class="facts">
-{fact("添えるもの", ap['attach'])}{dup_deadline}{fact("宛先", ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
+{fact(ap.get("attach_label", "添えるもの"), ap['attach'])}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap['address'])}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap['tel'])}</dd></div>
       </dl>{calc}
       <ul class="bullets">
 {ways}
       </ul>
-      <p class="note">{e(ap['proxy'])}</p>{more}
-      <p class="src-links">{" ".join(links)}</p>
+      <p class="note">{e(ap['proxy'])}</p>{more}{link_row}
     </li>"""
     else:
         use = g["use"]
