@@ -232,6 +232,12 @@
     $("hk-diff").classList.toggle("minus", d < 0);
   }
   ["hk-car", "hk-taxi", "hk-net"].forEach(function (id) { $(id).addEventListener("input", calc); });
+  // 一覧の市町の欄から来たとき（?city=slug）は、その市町を選んだ状態にしておく
+  var from = new URLSearchParams(location.search).get("city");
+  if (from && D.cities.some(function (x) { return x.slug === from; })) {
+    $("hk-city").value = from;
+    $("hk-city").dispatchEvent(new Event("change"));
+  }
 })();
 </script>
 </body>
