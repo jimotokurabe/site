@@ -55,6 +55,11 @@ def taxi_path(pref):
     return f"{pref['id']}-taxi.html"
 
 
+def hk_key(pref, c):
+    """最初のひと言のページで市町村を選ぶときの値（兵庫は slug のまま、ほかの県は 県-slug）。"""
+    return c["slug"] if pref["id"] == HOME_PREF else f"{pref['id']}-{c['slug']}"
+
+
 def city_unit(name):
     return "町" if name.endswith("町") else "村" if name.endswith("村") else "市"
 # お問い合わせ（Googleフォーム。2026-09-26 に、ログインなしで開けること・運営者のメールアドレスが載っていないことを確認）
@@ -201,7 +206,7 @@ def taxi_block(t, unit):
   </section>"""
 
 
-def card(c, checked, taxi=None, statewide=True, hk_link=True):
+def card(c, checked, taxi=None, statewide=True, hk=None, back=None):
     kind_label = KINDS[c["k"]][0]
     unit = city_unit(c["n"])
     benefit = c["k"] in HAS_BENEFIT
@@ -237,8 +242,8 @@ def card(c, checked, taxi=None, statewide=True, hk_link=True):
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
         dates = f'確かめた日：{jdate(checked)}'
     parts.append(f'<div class="card-foot">\n    {link}\n    <p class="dates">{dates}</p>\n  </div>')
-    if hk_link:
-        parts.append(f'<p class="to-hk"><a href="{HANASHI_PATH}?city={c["slug"]}">親に話すときの、最初のひと言<span aria-hidden="true"> →</span></a></p>')
+    if hk:
+        parts.append(f'<p class="to-hk"><a href="{HANASHI_PATH}?city={hk}">親に話すときの、最初のひと言<span aria-hidden="true"> →</span></a></p>')
     henno_body = "\n    ".join(parts)
     blocks = [f"""<section class="henno-part" aria-label="免許返納の特典">
     <div class="part-head">
@@ -250,6 +255,8 @@ def card(c, checked, taxi=None, statewide=True, hk_link=True):
     t = (taxi or {}).get(c["slug"])
     if t:
         blocks.append(taxi_block(t, unit))
+    if back:
+        blocks.append(back)
     body = "\n  ".join(blocks)
     notfound = " is-notfound" if c["k"] == "notfound" else ""
     tk = f' data-taxi="{t["k"]}"' if t else ""
@@ -259,6 +266,10 @@ def card(c, checked, taxi=None, statewide=True, hk_link=True):
   </div>
   {body}
 </article>"""
+
+
+# 市町村の欄の下の「もどる」（トップの地図から来た人と、この一覧で探していた人の両方のため）
+BACK_LINKS = """<p class="card-back"><a href="#pick">↑ ほかの市町村を選ぶ</a><a href="./">← トップ（地図）にもどる</a></p>"""
 
 
 LIST_SCRIPT = """<script>
@@ -303,7 +314,8 @@ LIST_SCRIPT = """<script>
       if (hit) shown++;
     });
     regions.forEach(function (r) { r.hidden = !r.querySelector(".card:not([hidden])"); });
-    count.textContent = f === "all" ? "41市町すべてを表示しています。" : "41市町のうち " + shown + "市町を表示しています。";
+    var u = count.getAttribute("data-unit") || "市町";
+    count.textContent = f === "all" ? cards.length + u + "すべてを表示しています。" : cards.length + u + "のうち " + shown + u + "を表示しています。";
   }
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
@@ -444,7 +456,7 @@ def list_page(data, draft):
     sections = []
     for r in regions:
         rows = [c for c in cities if c["r"] == r["id"]]
-        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk_link=home) for c in rows)
+        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS) for c in rows)
         sections.append(f"""<section class="region" id="r-{r['id']}" aria-labelledby="r-{r['id']}-h">
   <div class="region-head">
     <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{pu}</span></h2>
@@ -515,7 +527,7 @@ def list_page(data, draft):
   <div class="filters" id="filters" role="group" aria-label="種類で絞り込む">
     {chr(10).join('    ' + c if i else c for i, c in enumerate(chips))}
   </div>
-  <p class="count" id="count" aria-live="polite">{total}{pu}すべてを表示しています。</p>
+  <p class="count" id="count" aria-live="polite" data-unit="{pu}">{total}{pu}すべてを表示しています。</p>
 </section>
 
 {chr(10).join(sections)}
@@ -592,6 +604,7 @@ def taxi_card(c, t, P):
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
         dates = f'確かめた日：{jdate(t["checked"])}'
     parts.append(f'<div class="card-foot">\n    {link}\n    <p class="dates">{dates}</p>\n  </div>')
+    parts.append(BACK_LINKS)
     body = "\n  ".join(parts)
     notfound = " is-notfound" if t["k"] == "notfound" else ""
     henno = " data-henno" if henno_earlier(t) else ""
@@ -683,7 +696,7 @@ def taxi_page(data, draft):
   <div class="filters" id="filters" role="group" aria-label="種類で絞り込む">
     {chr(10).join('    ' + c if i else c for i, c in enumerate(chips))}
   </div>
-  <p class="count" id="count" aria-live="polite">{total}{pu}すべてを表示しています。</p>
+  <p class="count" id="count" aria-live="polite" data-unit="{pu}">{total}{pu}すべてを表示しています。</p>
 </section>
 
 {chr(10).join(sections)}
@@ -1306,21 +1319,27 @@ def top_page(data, draft, others=()):
 HANASHI_PATH = "henno-hanashikata.html"
 
 
-def hanashi_page(data, hk, draft):
+def hanashi_page(data, hk, draft, prefs=None):
     """data/hanashikata.json から、親に運転の話をはじめるためのページを作る。
     入力はブラウザの中だけで使い、どこにも送らない（アクセス解析を始めるときは、先にプライバシーポリシーを直す）。"""
     s, m, cs = hk["stats"], hk["manual"], hk["consult"]
+    prefs = prefs or [data]
     cities = [{
-        "slug": c["slug"], "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
+        "slug": hk_key(d["pref"], c), "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
         "what": c["what"],
-        "href": f"{GUIDE_DIR}/{c['slug']}.html" if c.get("guide") else f"hyogo-menkyo-henno.html#{c['slug']}",
-    } for c in data["cities"]]
+        "href": f"{GUIDE_DIR}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
+    } for d in prefs for c in d["cities"]]
     payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities},
                          ensure_ascii=False).replace("</", "<\\/")
     n_phr = sum(len(v) for t in hk["phrases"].values() for v in t.values())
     trig_opts = "".join(f'<button type="button" class="hk-chip" data-trig="{k}" aria-pressed="false">{e(v)}</button>'
                         for k, v in hk["triggers"].items())
-    city_opts = "".join(f'<option value="{c["slug"]}">{e(c["n"])}</option>' for c in data["cities"])
+    city_opts = "".join(
+        f'<optgroup label="{e(d["pref"]["name"])}">'
+        + "".join(f'<option value="{hk_key(d["pref"], c)}">{e(c["n"])}</option>' for c in d["cities"])
+        + "</optgroup>" for d in prefs)
+    area = "・".join(d["pref"]["name"] for d in prefs)
+    n_all = sum(len(d["cities"]) for d in prefs)
     ng = "".join(f"<li>{e(x)}</li>" for x in hk["ng"])
     main = f"""<article class="hk">
   <section class="hk-hero">
@@ -1364,8 +1383,8 @@ def hanashi_page(data, hk, draft):
 
     <div class="hk-card">
       <h2>返納したら、住んでいる市町で何がある？</h2>
-      <p>兵庫県の41市町は、このサイトで特典を調べています。</p>
-      <label class="hk-label" for="hk-city">親御さんの住んでいる市町</label>
+      <p>{area}の{n_all}市町村は、このサイトで特典を調べています。</p>
+      <label class="hk-label" for="hk-city">親御さんの住んでいる市町村</label>
       <select id="hk-city" class="hk-select"><option value="">選んでください</option>{city_opts}</select>
       <div id="hk-city-out" class="hk-city-out" hidden></div>
     </div>
@@ -1504,7 +1523,7 @@ def hanashi_page(data, hk, draft):
 </script>"""
     return shell(
         title="親に運転の話をはじめる、最初のひと言｜じもとくらべ",
-        description=f"親に免許返納の話をどう切り出すか。家族が6つ答えると、親御さんに合った話しはじめの例（{n_phr}通り）と、兵庫県41市町の返納特典が分かります。",
+        description=f"親に免許返納の話をどう切り出すか。家族が6つ答えると、親御さんに合った話しはじめの例（{n_phr}通り）と、{area}の{n_all}市町村の返納特典が分かります。",
         path=HANASHI_PATH, main=main, draft=draft, scripts=script)
 
 
@@ -1633,7 +1652,7 @@ def main():
         list_path(data["pref"]): list_page(data, a.draft),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
         **{f"{GUIDE_DIR}/{c['slug']}.html": city_page(c, data, a.draft) for c in guides},
-        HANASHI_PATH: hanashi_page(data, hk, a.draft),
+        HANASHI_PATH: hanashi_page(data, hk, a.draft, [data, *[d for d in others if not d["pref"].get("draft")]]),
         "about.html": about_page(a.draft),
         "privacy.html": privacy_page(a.draft),
     }
