@@ -1,5 +1,23 @@
 {
  "title": "兵庫県41市町の運転免許自主返納の特典",
+ "pref": {
+  "id": "hyogo",
+  "name": "兵庫県",
+  "unit": "市町",
+  "police": "兵庫県警",
+  "statewide": {
+   "title": "兵庫県内どこに住んでいても使える割引",
+   "body": [
+    "65歳以上で「運転経歴証明書」を持っている人は、証明書を見せると、公共交通機関の運賃割引などを受けられます（証明書の住所が兵庫県の人に限ります）。高齢者運転免許自主返納サポート協議会に加わる企業・団体の特典で、一覧は兵庫県警のページで見られます。",
+    "運転経歴証明書は、免許を返納したあとに申し込める証明書です。本人確認の書類としても使えます。"
+   ],
+   "link_url": "https://www.police.pref.hyogo.lg.jp/traffic/license/keireki_tokuten/index.htm",
+   "link_label": "兵庫県警の特典一覧を見る",
+   "src_url": "https://www.city.amagasaki.hyogo.jp/kurashi/ansin/anzen/1017223.html",
+   "src_label": "尼崎市のページ"
+  },
+  "draft_note": "「記載なし」の11市町の扱いは、公開する前に決めます。"
+ },
  "checked": "2026-09-26",
  "common": {
   "checked": "2026-09-26",

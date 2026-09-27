@@ -4,6 +4,7 @@
 構成と更新のしかたは `README.md` を読むこと。main に push すると GitHub Pages で本番に出る。
 市町ごとの手順ページは、`GUIDES.md` の順番と作り方で作り、公開したら同じコミットで表を直す。
 新しい制度のページは、`TOPICS.md` の順番と作り方で作り、公開したら同じコミットで表を直す。
+県を増やすときは、`.agents/skills/add-pref/SKILL.md`（スキル add-pref）の手順で進める。
 
 ## 守ること
 
