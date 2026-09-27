@@ -483,7 +483,7 @@ CALC_SCRIPT = """<script>
       if (earliest && d < earliest)
         return show("ng", ["対象になりません", from, ymd(earliest) + "より前に返納した人は、対象ではありません。"]);
       if (end && d > end)
-        return show("ng", ["期限を出せません", from, A("end-label") + "は" + ymd(end) + "までです。そのあとに返納する人が対象になるかは、市のページに書かれていません。"]);
+        return show("ng", ["期限を出せません", from, A("end-label") + "は" + ymd(end) + "までです。そのあとに返納する人が対象になるかは、" + A("unit") + "のページに書かれていません。"]);
       var total = d.getMonth() + years * 12 + months;
       var y = d.getFullYear() + Math.floor(total / 12), mo = total % 12;
       var limit = new Date(y, mo, Math.min(d.getDate(), new Date(y, mo + 1, 0).getDate()) - 1);
@@ -492,7 +492,7 @@ CALC_SCRIPT = """<script>
       var now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
       var left = Math.round((limit - today) / 86400000);
       if (left < 0 && byEnd)
-        return show("ng", [A("end-label") + "は" + ymd(end) + "で終わりました", from, "次の年度も続くかは、市のページか" + ask + "で確かめてください。"]);
+        return show("ng", [A("end-label") + "は" + ymd(end) + "で終わりました", from, "次の年度も続くかは、" + A("unit") + "のページか" + ask + "で確かめてください。"]);
       if (left < 0)
         return show("ng", [ymdw(limit) + "を過ぎています", from, period + "に間に合うかは、" + ask + "に確かめてください。"]);
       show("ok", ["申し込みの期限：" + ymdw(limit) + (left === 0 ? "（今日まで）" : "（あと" + left + "日）"), from,
@@ -544,12 +544,13 @@ def place_card(p):
         </div>"""
 
 
-def deadline_calc(dl, ap):
+def deadline_calc(dl, ap, unit="市"):
     """返納した日から申し込み期限を出す欄。JavaScript が動くときだけ見せる（hidden を外す）。"""
     return f"""
       <div class="calc" id="deadline" hidden data-label="{e(dl['label'])}" data-years="{dl.get('years', 0)}" data-months="{dl.get('months', 0)}"
            data-period="{e(dl['period'])}" data-earliest="{e(dl.get('earliest', ''))}" data-end="{e(dl.get('end', ''))}"
-           data-end-label="{e(dl.get('end_label', ''))}" data-office="{e(ap['office'])}" data-tel="{e(ap['tel'])}">
+           data-end-label="{e(dl.get('end_label', ''))}" data-office="{e(ap['office'])}" data-tel="{e(ap['tel'])}"
+           data-unit="{unit}">
         <h4>申し込みの期限を調べる</h4>
         <label for="calc-date">{e(dl['label'])}を入れてください<span class="hint">{e(dl['hint'])}</span></label>
         <input type="date" id="calc-date">
@@ -615,7 +616,7 @@ def city_page(c, data, draft, base="../"):
     if ap:
         deadline = dict(g["facts"]).get("申し込み期限", "")
         ways = "\n".join(f"        <li><b>{e(k)}：</b>{e(v)}</li>" for k, v in ap["ways"])
-        calc = deadline_calc(ap["deadline"], ap) if ap.get("deadline") else ""
+        calc = deadline_calc(ap["deadline"], ap, unit) if ap.get("deadline") else ""
         more = "".join(f"""
       <details class="more">
         <summary>{e(m['summary'])}</summary>

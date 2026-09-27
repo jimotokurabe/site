@@ -148,7 +148,8 @@
       </dl>
       <div class="calc" id="deadline" hidden data-label="返納した日" data-years="1" data-months="0"
            data-period="返納から1年以内" data-earliest="" data-end=""
-           data-end-label="" data-office="三木市 高齢福祉課（代表電話）" data-tel="0794-82-2000">
+           data-end-label="" data-office="三木市 高齢福祉課（代表電話）" data-tel="0794-82-2000"
+           data-unit="市">
         <h4>申し込みの期限を調べる</h4>
         <label for="calc-date">返納した日を入れてください<span class="hint">これから返納する人は、予定の日を入れてください。</span></label>
         <input type="date" id="calc-date">
@@ -333,7 +334,7 @@
       if (earliest && d < earliest)
         return show("ng", ["対象になりません", from, ymd(earliest) + "より前に返納した人は、対象ではありません。"]);
       if (end && d > end)
-        return show("ng", ["期限を出せません", from, A("end-label") + "は" + ymd(end) + "までです。そのあとに返納する人が対象になるかは、市のページに書かれていません。"]);
+        return show("ng", ["期限を出せません", from, A("end-label") + "は" + ymd(end) + "までです。そのあとに返納する人が対象になるかは、" + A("unit") + "のページに書かれていません。"]);
       var total = d.getMonth() + years * 12 + months;
       var y = d.getFullYear() + Math.floor(total / 12), mo = total % 12;
       var limit = new Date(y, mo, Math.min(d.getDate(), new Date(y, mo + 1, 0).getDate()) - 1);
@@ -342,7 +343,7 @@
       var now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
       var left = Math.round((limit - today) / 86400000);
       if (left < 0 && byEnd)
-        return show("ng", [A("end-label") + "は" + ymd(end) + "で終わりました", from, "次の年度も続くかは、市のページか" + ask + "で確かめてください。"]);
+        return show("ng", [A("end-label") + "は" + ymd(end) + "で終わりました", from, "次の年度も続くかは、" + A("unit") + "のページか" + ask + "で確かめてください。"]);
       if (left < 0)
         return show("ng", [ymdw(limit) + "を過ぎています", from, period + "に間に合うかは、" + ask + "に確かめてください。"]);
       show("ok", ["申し込みの期限：" + ymdw(limit) + (left === 0 ? "（今日まで）" : "（あと" + left + "日）"), from,
