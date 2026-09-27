@@ -916,6 +916,16 @@ def city_page(c, data, draft, base="../"):
         <p class="src-line">どの警察署がどの地域を受け持つかは、<a href="{e(hn['stations_url'])}" target="_blank" rel="noopener">{pol}の警察署一覧</a>から、各警察署のページで確かめられます。</p>
       </details>"""
 
+    mail_block = ""
+    if hn.get("mail"):
+        mail_block = f"""      <details class="more">
+        <summary>窓口に行けないときは（郵送で返納する）</summary>
+        <ul class="bullets">
+{lis(hn['mail'], '          ')}
+        </ul>
+        <p>{ext(hn['url'], pol + 'の説明を見る')}</p>
+      </details>"""
+
     # 手順2：運転経歴証明書
     step2_title = g.get("step2_title", "運転経歴証明書をつくるか決める")
     if g.get("step2_lead"):
@@ -1041,14 +1051,8 @@ def city_page(c, data, draft, base="../"):
       </div>
       <p class="src-line">{e(g['return_note'])}</p>{stations}
       <dl class="facts">
-{fact("持っていくもの", "運転免許証（マイナ免許証も持っている人は、両方）")}{fact("手数料", hn['fee'])}{fact("受け取るもの", receive)}      </dl>
-      <details class="more">
-        <summary>窓口に行けないときは（郵送で返納する）</summary>
-        <ul class="bullets">
-{lis(hn['mail'], '          ')}
-        </ul>
-        <p>{ext(hn['url'], pol + 'の説明を見る')}</p>
-      </details>
+{fact("持っていくもの", "運転免許証（マイナ免許証も持っている人は、両方）")}{fact("手数料", hn.get('fee') or "記載なし")}{fact("受け取るもの", receive)}      </dl>
+{mail_block}
       <details class="more">
         <summary>家族が代わりに返納するには</summary>
         <ul class="bullets">
