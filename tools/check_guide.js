@@ -25,7 +25,7 @@ async function sideScroll(page) {
 
 (async () => {
   if (!PAGE) throw new Error('PAGE（市町の slug）を指定してください');
-  const url = `${BASE}/hyogo-menkyo-henno/${PAGE}.html`;
+  const url = `${BASE}/${process.env.DIR || 'hyogo-menkyo-henno'}/${PAGE}.html`;  // DIR=osaka-menkyo-henno など
   const browser = await chromium.launch();
   const out = {};
   const ng = [];
