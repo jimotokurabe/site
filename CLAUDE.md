@@ -5,6 +5,7 @@
 市町ごとの手順ページは、`GUIDES.md` の順番と作り方で作り、公開したら同じコミットで表を直す。
 新しい制度のページは、`TOPICS.md` の順番と作り方で作り、公開したら同じコミットで表を直す。
 県を増やすときは、`.agents/skills/add-pref/SKILL.md`（スキル add-pref）の手順で進める。
+課題は GitHub の Issues（jimotokurabe/site）で管理する。作業を始める前に開いている Issue を見て、終えたら同じ PR で閉じる（本文に `Closes #番号`）。新しく見つけた課題は Issue に足す。
 
 ## 守ること
 
