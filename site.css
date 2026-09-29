@@ -279,6 +279,7 @@ p { margin: 0; }
   font-size: clamp(2.4rem, 1.4rem + 5vw, 3.6rem); letter-spacing: .06em;
 }
 .top-hero .name span { color: var(--accent); }
+.top-hero .tagline { margin: -.4rem 0 0; font-size: 1.15rem; font-weight: 700; }
 .topic {
   display: grid; gap: .6rem; margin-top: 1rem; padding: 1.3rem 1.3rem 1.2rem;
   border-radius: 1rem; background: var(--surface); border: 2px solid var(--ink);
@@ -694,3 +695,10 @@ a.jm.on[aria-pressed="true"] { background: var(--stamp); box-shadow: 0 0 0 3px v
 /* 市町村の欄の下の「もどる」 */
 .card-back { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin: .8rem 0 0; padding-top: .7rem; border-top: 1px dashed var(--line); font-size: .95rem; }
 .card-back a { font-weight: 700; color: var(--accent); }
+
+.pref-regions { display: grid; gap: 1rem; margin: .8rem 0; }
+.pref-region .pr-h { margin: 0 0 .4rem; font-size: .95rem; color: var(--muted); letter-spacing: .05em; }
+.pref-region .pref-btns { grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr)); gap: .5rem; }
+.pref-region .pref-btn { padding: .5rem .7rem; border-radius: .6rem; }
+.pref-region .pref-btn b { font-size: 1.1rem; }
+.pref-region .pref-btn span { font-size: .8rem; }
