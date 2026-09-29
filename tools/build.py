@@ -1161,59 +1161,35 @@ UPCOMING = [
 ]
 
 
-def pref_theme(d):
-    """トップに出す、兵庫県のほかの県の「車・移動」の欄。"""
-    P = d["pref"]
-    pu = P["unit"]
-    n_benefit = sum(1 for c in d["cities"] if c["k"] in HAS_BENEFIT)
-    n_taxi = sum(1 for t in d.get("taxi", {}).values() if t["k"] == "yes")
-    taxi = ""
-    if d.get("taxi"):
-        taxi = f"""
-    <li><a href="{taxi_path(P)}"><b>高齢者のタクシー代の助成</b>
-      <span>{n_taxi}{pu}で、年齢などで使える助成 ・ {jdate(d['taxi_checked'])}に確認</span></a></li>"""
-    return f"""
-<section class="theme" aria-labelledby="th-{P['id']}-h">
-  <p class="t-eyebrow">{e(P['name'])}・{len(d['cities'])}{pu}</p>
-  <h2 id="th-{P['id']}-h">高齢の家族と、車・移動（{e(P['name'])}）</h2>
-  <ul class="theme-links">
-    <li><a href="{list_path(P)}"><b>運転免許を返納したら、何がもらえる？</b>
-      <span>{n_benefit}{pu}で特典や支援 ・ {jdate(d['checked'])}に確認</span></a></li>{taxi}
-  </ul>
-</section>"""
-
-
-# 都道府県のタイル地図（列, 行）。形は大まかで、押しやすさを優先する
-JMAP = [
-    ("hokkaido", "北海道", 10, 0), ("aomori", "青森", 11, 2), ("akita", "秋田", 10, 3), ("iwate", "岩手", 11, 3),
-    ("yamagata", "山形", 10, 4), ("miyagi", "宮城", 11, 4), ("ishikawa", "石川", 7, 5), ("toyama", "富山", 8, 5),
-    ("niigata", "新潟", 9, 5), ("fukushima", "福島", 10, 5), ("shimane", "島根", 2, 6), ("tottori", "鳥取", 3, 6),
-    ("hyogo", "兵庫", 4, 6), ("kyoto", "京都", 5, 6), ("fukui", "福井", 6, 6), ("gifu", "岐阜", 7, 6),
-    ("nagano", "長野", 8, 6), ("gunma", "群馬", 9, 6), ("tochigi", "栃木", 10, 6), ("ibaraki", "茨城", 11, 6),
-    ("yamaguchi", "山口", 1, 7), ("hiroshima", "広島", 2, 7), ("okayama", "岡山", 3, 7), ("osaka", "大阪", 4, 7),
-    ("shiga", "滋賀", 5, 7), ("aichi", "愛知", 7, 7), ("yamanashi", "山梨", 8, 7), ("saitama", "埼玉", 9, 7),
-    ("tokyo", "東京", 10, 7), ("chiba", "千葉", 11, 7), ("fukuoka", "福岡", 0, 8), ("ehime", "愛媛", 2, 8),
-    ("kagawa", "香川", 3, 8), ("wakayama", "和歌山", 4, 8), ("nara", "奈良", 5, 8), ("mie", "三重", 6, 8),
-    ("shizuoka", "静岡", 8, 8), ("kanagawa", "神奈川", 9, 8), ("saga", "佐賀", 0, 9), ("oita", "大分", 1, 9),
-    ("kochi", "高知", 2, 9), ("tokushima", "徳島", 3, 9), ("nagasaki", "長崎", 0, 10), ("kumamoto", "熊本", 1, 10),
-    ("kagoshima", "鹿児島", 0, 11), ("miyazaki", "宮崎", 1, 11), ("okinawa", "沖縄", 0, 12),
+# トップで県を並べる地方の分け方
+REGIONS = [
+    ("北海道・東北", ["hokkaido", "aomori", "iwate", "miyagi", "akita", "yamagata", "fukushima"]),
+    ("関東", ["ibaraki", "tochigi", "gunma", "saitama", "chiba", "tokyo", "kanagawa"]),
+    ("甲信越・北陸", ["niigata", "toyama", "ishikawa", "fukui", "yamanashi", "nagano"]),
+    ("東海", ["gifu", "shizuoka", "aichi", "mie"]),
+    ("近畿", ["shiga", "kyoto", "osaka", "hyogo", "nara", "wakayama"]),
+    ("中国・四国", ["tottori", "shimane", "okayama", "hiroshima", "yamaguchi", "tokushima", "kagawa", "ehime", "kochi"]),
+    ("九州・沖縄", ["fukuoka", "saga", "nagasaki", "kumamoto", "oita", "miyazaki", "kagoshima", "okinawa"]),
 ]
 
 
 def pref_picker(prefs):
-    """トップの「都道府県を選ぶ → 市町村を選ぶ」。調べ終えた府県だけ押せる。"""
+    """トップの「都道府県を選ぶ → 市町村を選ぶ」。地方ごとに、調べ終えた府県のボタンを並べる。"""
     on = {d["pref"]["id"]: d for d in prefs}
-    tiles = []
-    for pid, short, col, row in JMAP:
-        span = 2 if pid == "hokkaido" else 1
-        pos = f'style="grid-column:{col + 1}/span {span};grid-row:{row + 1}/span {span}"'
-        if pid in on:
-            tiles.append(f'<a class="jm on" href="#pref-{pid}" data-pref="{pid}" {pos}>{short}</a>')
-        else:
-            tiles.append(f'<span class="jm" data-soon="{short}" title="{short}（準備中）" {pos} aria-hidden="true"></span>')
-    btns = "\n    ".join(
-        f'<a class="pref-btn" href="#pref-{d["pref"]["id"]}" data-pref="{d["pref"]["id"]}">'
-        f'<b>{e(d["pref"]["name"])}</b><span>{len(d["cities"])}{d["pref"]["unit"]}</span></a>' for d in prefs)
+    groups = []
+    for rname, ids in REGIONS:
+        ds = [on[i] for i in ids if i in on]
+        if not ds:
+            continue
+        btns = "\n      ".join(
+            f'<a class="pref-btn" href="#pref-{d["pref"]["id"]}" data-pref="{d["pref"]["id"]}">'
+            f'<b>{e(d["pref"]["name"])}</b><span>{len(d["cities"])}{d["pref"]["unit"]}</span></a>' for d in ds)
+        groups.append(f"""    <div class="pref-region">
+      <h3 class="pr-h">{rname}</h3>
+      <div class="pref-btns">
+      {btns}
+      </div>
+    </div>""")
     blocks = []
     for d in prefs:
         P = d["pref"]
@@ -1224,17 +1200,11 @@ def pref_picker(prefs):
 {pick_html(d, list_path(P))}
     </div>
   </div>""")
-    names = "・".join(d["pref"]["name"] for d in prefs)
     return f"""<section class="pick top-pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの都道府県を選んでください</h2>
-  <p class="pick-lead">いま調べ終えているのは{names}です。色のついた府県を押すと、市町村を選べます。</p>
-  <div class="jmap-wrap">
-    <div class="jmap" role="group" aria-label="都道府県の地図">
-      {"".join(tiles)}
-    </div>
-    <div class="pref-btns">
-    {btns}
-    </div>
+  <p class="pick-lead">いま{len(prefs)}都道府県を調べ終えています。県を押すと、市町村を選べます。</p>
+  <div class="pref-regions">
+{chr(10).join(groups)}
   </div>
   <p class="jm-msg" id="jm-msg" aria-live="polite"></p>
   <div class="search">
@@ -1276,13 +1246,6 @@ PREF_SCRIPT = """<script>
 
 
 def top_page(data, draft, others=()):
-    n_benefit = sum(1 for c in data["cities"] if c["k"] in HAS_BENEFIT)
-    n_taxi = sum(1 for t in data.get("taxi", {}).values() if t["k"] == "yes")
-    taxi_link = ""
-    if n_taxi:
-        taxi_link = f"""
-    <li><a href="{taxi_path(data['pref'])}"><b>高齢者のタクシー代の助成</b>
-      <span>{n_taxi}市町で、年齢などで使える助成 ・ {jdate(data['taxi_checked'])}に確認</span></a></li>"""
     guides = [c for c in data["cities"] if c.get("guide")]
     guide_block = ""
     if guides:
@@ -1300,22 +1263,19 @@ def top_page(data, draft, others=()):
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
     main = f"""<section class="top-hero">
   <h1 class="name">じもと<span>くらべ</span></h1>
-  <p class="lead">住んでいる市や町によって、使える制度はちがいます。市町の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
+  <p class="tagline">免許返納の特典・タクシー代の助成を市町村ごとに</p>
+  <p class="lead">住んでいる市や町によって、使える特典や助成はちがいます。市町村の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
 </section>
 
 {pref_picker([data, *others])}
 
 <section class="theme" aria-labelledby="th-car-h">
-  <p class="t-eyebrow">兵庫県・41市町</p>
-  <h2 id="th-car-h">高齢の家族と、車・移動</h2>
+  <h2 id="th-car-h">家族で読む</h2>
   <ul class="theme-links">
-    <li><a href="hyogo-menkyo-henno.html"><b>運転免許を返納したら、何がもらえる？</b>
-      <span>{n_benefit}市町で特典や支援 ・ {jdate(data['checked'])}に確認</span></a></li>{taxi_link}
     <li><a href="{HANASHI_PATH}"><b>親に運転の話をはじめる、最初のひと言</b>
       <span>家族が6つの質問に答えると、話しはじめの例が出ます</span></a></li>
   </ul>
 </section>
-{"".join(pref_theme(d) for d in others)}
 
 <section class="upcoming" aria-labelledby="up-h">
   <h2 id="up-h">これから比べる制度（準備中）</h2>
@@ -1334,8 +1294,8 @@ def top_page(data, draft, others=()):
   </ul>
 </section>"""
     return shell(
-        title="じもとくらべ｜市や町ごとの制度を比べる",
-        description="住んでいる市や町によってちがう制度を、公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
+        title="じもとくらべ｜免許返納の特典・タクシー代の助成を市町村ごとに",
+        description="運転免許を返納したときの特典と、高齢者のタクシー代の助成を、市町村の公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
         path="", main=main, draft=draft, scripts=PICK_SCRIPT + PREF_SCRIPT)
 
 
