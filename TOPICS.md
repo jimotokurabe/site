@@ -44,6 +44,10 @@
 | 香川県17市町の免許返納の特典と、高齢者のタクシー代の助成 | `kagawa-menkyo-henno.html`・`kagawa-taxi.html` | — | 2026年9月29日 |
 | 愛媛県20市町の免許返納の特典と、高齢者のタクシー代の助成 | `ehime-menkyo-henno.html`・`ehime-taxi.html` | — | 2026年9月29日 |
 | 高知県34市町村の免許返納の特典と、高齢者のタクシー代の助成 | `kochi-menkyo-henno.html`・`kochi-taxi.html` | — | 2026年9月29日 |
+| 茨城県44市町村の免許返納の特典と、高齢者のタクシー代の助成 | `ibaraki-menkyo-henno.html`・`ibaraki-taxi.html` | — | 2026年9月29日 |
+| 栃木県25市町の免許返納の特典と、高齢者のタクシー代の助成 | `tochigi-menkyo-henno.html`・`tochigi-taxi.html` | — | 2026年9月29日 |
+| 群馬県35市町村の免許返納の特典と、高齢者のタクシー代の助成 | `gunma-menkyo-henno.html`・`gunma-taxi.html` | — | 2026年9月29日 |
+| 千葉県54市町村の免許返納の特典と、高齢者のタクシー代の助成 | `chiba-menkyo-henno.html`・`chiba-taxi.html` | — | 2026年9月29日 |
 
 ### これから作る
 
