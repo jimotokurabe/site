@@ -64,6 +64,7 @@
 | 大分県18市町村の免許返納の特典と、高齢者のタクシー代の助成 | `oita-menkyo-henno.html`・`oita-taxi.html` | — | 2026年9月29日 |
 | 宮崎県26市町村の免許返納の特典と、高齢者のタクシー代の助成 | `miyazaki-menkyo-henno.html`・`miyazaki-taxi.html` | — | 2026年9月29日 |
 | 鹿児島県43市町村の免許返納の特典と、高齢者のタクシー代の助成 | `kagoshima-menkyo-henno.html`・`kagoshima-taxi.html` | — | 2026年9月29日 |
+| 北海道179市町村の免許返納の特典と、高齢者のタクシー代の助成 | `hokkaido-menkyo-henno.html`・`hokkaido-taxi.html` | — | 2026年10月2日 |
 
 ### これから作る
 
