@@ -161,8 +161,15 @@
   },
   "okinawa": {
    "k": "notfound",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
-   "henno_link": "記載なし"
+   "what": "沖縄市循環バスは、運転経歴証明書を提示する自主返納者が1乗車50円、65歳以上の人が証明書を提示すると1乗車100円です（一般200円）。返納者の50円は同じ循環バスの割引で、タクシー助成ではありません。",
+   "henno_link": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者・65歳以上の循環バス運賃",
+   "url": "https://www.city.okinawa.okinawa.jp/k036-001/chiikikankyou/koukyoukoutsuu/shibus/25042.html",
+   "src": "市の循環バス案内",
+   "upd": "更新日：2026年5月8日"
   },
   "yomitan": {
    "k": "notfound",
