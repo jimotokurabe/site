@@ -523,14 +523,31 @@ def list_page(data, draft):
     y, m, d = checked.split("-")
     flagged_names = [c["n"] for c in cities if c.get("flag")]
     flagged = f"{'と'.join(flagged_names)}は、カードに書いた方法で確かめています。" if flagged_names else ""
+    if home:
+        page_title = f"{pn}の免許返納特典一覧｜{total}{pu}の対象・金額とタクシー助成｜じもとくらべ"
+        page_description = (f"{pn}{total}{pu}の免許返納特典を、対象年齢・もらえるもの・金額・申し込み先で比較。"
+                            f"ICOCA、タクシー券、バスの無料券などを市町別に確認できます。"
+                            f"高齢者のタクシー代の助成も掲載。各市町の公式ページを{jdate(checked)}に確認しました。")
+        page_heading = f"{pn}の免許返納特典を{total}{pu}で比較"
+        page_lead = (f"{pn}の{total}{pu}について、運転免許を自主返納した人への特典を市町別に掲載。"
+                     f"対象年齢、金額、申し込み先を同じ項目で比べられます。"
+                     f"返納後の移動に役立つ、高齢者のタクシー代の助成もあわせて確認できます"
+                     f"（<a href=\"{taxi_path(P)}\">タクシー代の助成だけの一覧</a>）。")
+    else:
+        page_title = f"{pn}の免許返納特典{'と高齢者タクシー助成' if taxi else ''} {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"
+        page_description = (f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典（ICOCA、タクシー券、バスの無料券など）"
+                            + ("と、高齢者のタクシー代の助成を、金額・対象の年齢をそろえて" if taxi else "を、金額・対象の年齢・申し込み期限をそろえて")
+                            + f"比べられます。{jdate(checked)}に各市町の公式ページで確認。")
+        page_heading = "運転免許を返納したら、何がもらえる？"
+        page_lead = f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}"
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {pn}の免許返納特典</nav>
 <div class="hero">
   <div class="hero-top">
     <p class="eyebrow">{pn}・{total}{pu}</p>
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
-  <h1>運転免許を返納したら、何がもらえる？</h1>
-  <p class="lead">{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}</p>
+  <h1>{e(page_heading)}</h1>
+  <p class="lead">{page_lead}</p>
 {hk_banner(data.get("hk")) if home else ""}
 </div>
 
@@ -572,10 +589,8 @@ def list_page(data, draft):
 </section>"""
 
     return shell(
-        title=(f"{pn}の免許返納特典{'と高齢者タクシー助成' if taxi else ''} {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"),
-        description=(f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典（ICOCA、タクシー券、バスの無料券など）"
-                     + ("と、高齢者のタクシー代の助成を、金額・対象の年齢をそろえて" if taxi else "を、金額・対象の年齢・申し込み期限をそろえて")
-                     + f"比べられます。{jdate(checked)}に各市町の公式ページで確認。"),
+        title=page_title,
+        description=page_description,
         path=list_path(P),
         main=main, draft=draft,
         draft_note=P.get("draft_note", ""),
@@ -1129,7 +1144,7 @@ def city_page(c, data, draft, base="../"):
     <p class="eyebrow">{pn}・{e(name)}</p>
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
-  <h1>{e(name)}で運転免許を返納したら</h1>
+  <h1>{e(g.get('heading', f'{name}で運転免許を返納したら'))}</h1>
   <p class="lead">{e(g['lead'])}</p>
 </div>
 
