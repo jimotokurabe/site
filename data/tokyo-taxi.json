@@ -4,15 +4,25 @@
   "chiyoda": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。区の福祉タクシー券は障害者手帳などが条件です。",
+   "what": "70歳以上の返納者には交通系ICカード5,500円分を1回交付します。券種は調達状況で変わる場合があります。区の福祉タクシー券は障害者手帳などの条件があり、年齢だけでは利用できません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.chiyoda.lg.jp/koho/kenko/shogaisha/techo/josei/fukushitaxi.html",
-   "src": "区の福祉タクシー券のページ",
-   "upd": "更新日：2023年4月13日"
+   "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/kotsu/kotsuanzen/jishuhenno.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けICカードと福祉タクシー",
+   "more_sources": [
+    {
+     "label": "福祉タクシーの対象",
+     "url": "https://www.city.chiyoda.lg.jp/koho/kenko/shogaisha/techo/josei/fukushitaxi.html"
+    }
+   ]
   },
   "chuo": {
    "k": "notfound",
@@ -55,7 +65,10 @@
    "k": "care",
    "guide_mobility": true,
    "guide_relation_note": "上の免許返納者向け「めぐりん」回数乗車券とは別の制度です。免許返納だけでは対象にならず、介護度などの条件を満たす人が利用できます。",
-   "guide_details": ["病院への通院・入退院や施設への入退所などが対象です。買い物・食事などの移動には使えません。", "運賃、室内介助料、車いす・ストレッチャーの貸与料は自己負担です。"],
+   "guide_details": [
+    "病院への通院・入退院や施設への入退所などが対象です。買い物・食事などの移動には使えません。",
+    "運賃、室内介助料、車いす・ストレッチャーの貸与料は自己負担です。"
+   ],
    "checked": "2026-10-03",
    "name": "高齢者移送サービス",
    "what": "65歳以上で要介護3〜5、いつも車いすを使う、または寝たきりの人が、通院や入退院などでリフト付福祉タクシーを使うとき、予約料・迎車料・基本介助料を区が負担します。",
@@ -140,8 +153,21 @@
   },
   "shibuya": {
    "k": "notfound",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
-   "henno_link": "記載なし"
+   "what": "65歳以上の返納者にはハチ公バス専用回数券を1冊交付します。通常のハチ公バスは1乗車100円です。返納者向け券はタクシー助成ではありません。返納案内の更新日が古いため、申請前に警察署へ確認してください。",
+   "henno_link": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けハチ公バス券と通常運賃",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/kotsu/hachiko/hachiko_about.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "more_sources": [
+    {
+     "label": "返納者向け専用券",
+     "url": "https://www.city.shibuya.tokyo.jp/kurashi/kotsu/jidosha/menkyo_hennou.html"
+    }
+   ]
   },
   "nakano": {
    "k": "notfound",
@@ -191,8 +217,15 @@
   },
   "arakawa": {
    "k": "notfound",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
-   "henno_link": "記載なし"
+   "what": "65歳以上で返納・失効後に運転経歴証明書を取得した区民には、図書カード1,000円分と交通安全グッズを交付します。交通費補助ではありません。区の福祉タクシー券は障害・難病などの条件がある別制度です。",
+   "henno_link": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と対象限定の福祉交通",
+   "url": "https://www.city.arakawa.tokyo.jp/a014/koutsuu-bus/koutsuuanzen/hennou.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認"
   },
   "itabashi": {
    "k": "notfound",
@@ -428,7 +461,10 @@
    "k": "care",
    "guide_mobility": true,
    "guide_relation_note": "上の運転経歴証明書による協力店の特典とは別の制度です。免許返納だけでは対象にならず、介護度や障害などの条件を満たす人が利用できます。",
-   "guide_details": ["運賃と待ち時間料金は自己負担です。", "要介護3などの場合は、医師の診断書で対象と同等と認められる必要があります。"],
+   "guide_details": [
+    "運賃と待ち時間料金は自己負担です。",
+    "要介護3などの場合は、医師の診断書で対象と同等と認められる必要があります。"
+   ],
    "checked": "2026-10-03",
    "name": "調布市車椅子福祉タクシー事業",
    "what": "要介護4・5の人などが、市と契約した大型の福祉タクシーを使うとき、予約料・迎車料・車いすの使用料などを市が助成します。運賃は自分で払います。",
