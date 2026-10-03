@@ -206,6 +206,7 @@ def taxi_block(t, unit):
         src = t.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(t["url"])}" target="_blank" rel="noopener">'
                 f'{e(src)}を見る<span aria-hidden="true">↗</span></a>')
+        link += more_source_links(t)
         dates = f'ページの日付：{e(t.get("upd") or "記載なし")}<br>確かめた日：{jdate(t["checked"])}'
     else:
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
@@ -614,6 +615,7 @@ def taxi_card(c, t, P):
         src = t.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(t["url"])}" target="_blank" rel="noopener">'
                 f'{e(src)}を見る<span aria-hidden="true">↗</span></a>')
+        link += more_source_links(t)
         dates = f'ページの日付：{e(t.get("upd") or "記載なし")}<br>確かめた日：{jdate(t["checked"])}'
     else:
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
@@ -853,6 +855,10 @@ def ext(url, label):
             f'{e(label)}<span aria-hidden="true">↗</span></a>')
 
 
+def more_source_links(t):
+    return "".join(ext(s["url"], s["label"] + "を見る") for s in t.get("more_sources", []))
+
+
 def lis(items, indent):
     return "\n".join(f"{indent}<li>{e(x)}</li>" for x in items)
 
@@ -928,6 +934,7 @@ def guide_taxi_mobility(c, t, pref, base):
   </div>"""
     note = f'  <p class="mobility-note">{e(t["note"])}</p>\n' if t.get("note") else ""
     source = ext(t["url"], f"{city_unit(c['n'])}の公式ページを見る") if t.get("url") else ""
+    source += more_source_links(t)
     flag = f'  <p class="flag">確かめ方：{e(t["flag"])}</p>\n' if t.get("flag") else ""
     return f"""
 
