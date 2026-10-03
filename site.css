@@ -501,7 +501,7 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
 
   /* 手順ページは、窓口に持っていける分量（A4で2枚まで）に詰める */
   html:has(.guide) { font-size: 10pt; }
-  .guide { line-height: 1.5; }
+  .guide { line-height: 1.4; }
   .guide .topbar { padding-block: 0 .3rem; }
   .guide .hero { padding-block: .6rem 0; }
   .guide .hero h1 { font-size: 18pt; margin: 0 0 .3rem; }
