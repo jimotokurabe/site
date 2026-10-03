@@ -1034,6 +1034,22 @@ def city_page(c, data, draft, base="../"):
         calc_link = (f'\n  <p class="calc-link" hidden><a href="#deadline">'
                      f'{e(ap["deadline"]["label"])}から、申し込みの期限を調べる ↓</a></p>')
 
+    mobility = ""
+    if g.get("mobility"):
+        mobility_items = "\n".join(
+            f'    <li><a href="{e(item["href"])}"><b>{e(item["title"])}</b>'
+            f'<span>{e(item["summary"])}</span><strong>{e(item["link"])} →</strong></a></li>'
+            for item in g["mobility"])
+        mobility = f"""
+
+<section class="mobility" aria-labelledby="mobility-h">
+  <h2 id="mobility-h">返納後の移動に使えるもの</h2>
+  <ul>
+{mobility_items}
+  </ul>
+  <p><a href="{base}{HANASHI_PATH}?city={e(hk_key(P, c))}">親に話すときの、最初のひと言 →</a></p>
+</section>"""
+
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="{base or './'}">トップ</a> ＞ <a href="{base}{list_path(P)}">{pn}の免許返納特典</a> ＞ {e(name)}</nav>
 <div class="hero">
   <div class="hero-top">
@@ -1055,7 +1071,7 @@ def city_page(c, data, draft, base="../"):
   <ul>
 {lis(g['cautions'], '    ')}
   </ul>
-</section>
+</section>{mobility}
 
 <section class="steps" aria-labelledby="steps-h">
   <h2 class="section-title" id="steps-h">やることは3つ</h2>

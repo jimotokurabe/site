@@ -361,6 +361,20 @@ p { margin: 0; }
 .cautions h2 { font-family: var(--font-head); font-size: 1.15rem; line-height: 1.4; margin: 0; color: var(--nf-fg); }
 .cautions ul { margin: 0; padding-left: 1.2em; display: grid; gap: .4rem; font-weight: 700; }
 
+.mobility { margin-top: 1.5rem; display: grid; gap: .6rem; }
+.mobility h2 { margin: 0; font-family: var(--font-head); font-size: 1.2rem; line-height: 1.4; }
+.mobility ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.mobility li a {
+  display: grid; gap: .1rem; padding: .7rem 1rem; min-height: 3rem;
+  background: var(--surface); border: 1px solid var(--line); border-radius: .7rem;
+  color: var(--ink); text-decoration: none;
+}
+.mobility li a:hover, .mobility li a:focus-visible { border-color: var(--accent); }
+.mobility li b { font-size: 1.05rem; }
+.mobility li span { font-size: .9rem; line-height: 1.6; }
+.mobility li strong { font-size: .9rem; color: var(--accent); }
+.mobility > p { font-size: .9rem; font-weight: 700; }
+
 .steps { margin-top: 2.4rem; display: grid; gap: 1rem; }
 .step-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
 .step {
@@ -470,7 +484,7 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   :root { font-size: 12pt; }
   body { background: #fff; color: #000; padding: 0; }
   .topbar .sizer, .pick, .filters, .count, .skip, .region-head a, .draft,
-  .crumbs, .share, .back, .btn-guide { display: none !important; }
+  .crumbs, .share, .back, .btn-guide, .mobility { display: none !important; }
   .card { break-inside: avoid; border: 1px solid #888; }
   .card[hidden], .region[hidden] { display: grid !important; }
   a { color: #000; }
