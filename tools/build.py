@@ -1369,6 +1369,16 @@ def top_page(data, draft, others=()):
 # ---------------- 最初のひと言（話し方のページ） ----------------
 
 HANASHI_PATH = "henno-hanashikata.html"
+PREF_REGIONS = [
+    ("北海道・東北", "hokkaido aomori iwate miyagi akita yamagata fukushima"),
+    ("関東", "ibaraki tochigi gunma saitama chiba tokyo kanagawa"),
+    ("甲信越・北陸", "niigata toyama ishikawa fukui yamanashi nagano"),
+    ("東海", "gifu shizuoka aichi mie"),
+    ("近畿", "shiga kyoto osaka hyogo nara wakayama"),
+    ("中国", "tottori shimane okayama hiroshima yamaguchi"),
+    ("四国", "tokushima kagawa ehime kochi"),
+    ("九州・沖縄", "fukuoka saga nagasaki kumamoto oita miyazaki kagoshima okinawa"),
+]
 
 
 def hanashi_page(data, hk, draft, prefs=None):
@@ -1381,11 +1391,22 @@ def hanashi_page(data, hk, draft, prefs=None):
         "what": c["what"],
         "href": f"{guide_dir(d['pref'])}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
     } for d in prefs for c in d["cities"]]
-    payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities},
+    pref_names = {d["pref"]["id"]: d["pref"]["name"] for d in prefs}
+    payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities, "prefNames": pref_names},
                          ensure_ascii=False).replace("</", "<\\/")
     trig_opts = "".join(f'<button type="button" class="hk-chip" data-trig="{k}" aria-pressed="false">{e(v)}</button>'
                         for k, v in hk["triggers"].items())
-    pref_opts = "".join(f'<option value="{e(d["pref"]["id"])}">{e(d["pref"]["name"])}</option>' for d in prefs)
+    region_html = "".join(
+        f'<details class="hk-region"><summary>{e(region)}</summary><div class="hk-pref-grid">'
+        + "".join(f'<button type="button" data-pref-id="{pid}" aria-pressed="false">{e(pref_names[pid])}</button>'
+                  for pid in ids.split() if pid in pref_names)
+        + "</div></details>"
+        for region, ids in PREF_REGIONS if any(pid in pref_names for pid in ids.split()))
+    def pref_picker(suffix):
+        return (f'<div class="hk-pref-picker"><p class="hk-label" id="hk-pref-label-{suffix}">親御さんの住んでいる都道府県</p>'
+                f'<details class="hk-pref-details"><summary aria-labelledby="hk-pref-label-{suffix} hk-pref-choice-{suffix}">'
+                f'<span class="hk-pref-choice" id="hk-pref-choice-{suffix}">都道府県を選ぶ</span></summary>'
+                f'<div class="hk-region-list">{region_html}</div></details></div>')
     n_all = sum(len(d["cities"]) for d in prefs)
     ng = "".join(f"<li>{e(x)}</li>" for x in hk["ng"])
     main = f"""<article class="hk">
@@ -1393,8 +1414,7 @@ def hanashi_page(data, hk, draft, prefs=None):
     <p class="hk-eyebrow">免許返納・家族のための道具</p>
     <h1>親に免許返納をどう切り出す？<br>最初のひと言を考える</h1>
     <p>親の運転が心配でも、免許返納の話をどう始めればいいか迷うもの。6つの質問に答えると、親御さんの様子に合わせた話しはじめの例を見られます。返納後の移動に役立つ、お住まいの市町村の特典も調べられます。</p>
-    <label class="hk-label" for="hk-pref-start">親御さんの住んでいる都道府県</label>
-    <select id="hk-pref-start" class="hk-select"><option value="">都道府県を選ぶ（あとでも選べます）</option>{pref_opts}</select>
+    {pref_picker("start")}
     <p class="hk-note">都道府県は返納特典を探すために使います。ひと言の例は地域で変わりません。</p>
     <button type="button" class="hk-btn" data-go="quiz">最初のひと言を見つける（約1分）</button>
     <p class="hk-stat"><b>{e(s["year"])}、全国で{e(s["total"])}</b>の運転免許が、本人の申し出で返納されました。1日あたり{e(s["per_day"])}です。そのうち75歳以上が{e(s["over75_rate"])}（{e(s["over75"])}）でした。
@@ -1434,8 +1454,7 @@ def hanashi_page(data, hk, draft, prefs=None):
     <div class="hk-card">
       <h2>返納したら、住んでいる市町で何がある？</h2>
       <p>全国{len(prefs)}都道府県の{n_all}市町村について、返納特典を調べています。</p>
-      <label class="hk-label" for="hk-pref">親御さんの住んでいる都道府県</label>
-      <select id="hk-pref" class="hk-select"><option value="">選んでください</option>{pref_opts}</select>
+      {pref_picker("result")}
       <label class="hk-label" for="hk-city">親御さんの住んでいる市町村</label>
       <select id="hk-city" class="hk-select" disabled><option value="">先に都道府県を選んでください</option></select>
       <div id="hk-city-out" class="hk-city-out" hidden></div>
@@ -1544,8 +1563,13 @@ def hanashi_page(data, hk, draft, prefs=None):
   document.querySelectorAll(".hk-chip").forEach(function (c) { c.addEventListener("click", function () { pickTrig(c.dataset.trig); }); });
   $("hk-more").addEventListener("click", drawPhrases);
   function setPref(value) {
-    $("hk-pref-start").value = value;
-    $("hk-pref").value = value;
+    document.querySelectorAll(".hk-pref-picker").forEach(function (picker) {
+      picker.querySelector(".hk-pref-choice").textContent = D.prefNames[value] || "都道府県を選ぶ";
+      picker.querySelectorAll("[data-pref-id]").forEach(function (button) {
+        button.setAttribute("aria-pressed", String(button.dataset.prefId === value));
+      });
+      picker.querySelectorAll("details").forEach(function (details) { details.open = false; });
+    });
     var city = $("hk-city");
     city.replaceChildren(new Option(value ? "市町村を選んでください" : "先に都道府県を選んでください", ""));
     D.cities.filter(function (x) { return x.pref === value; }).forEach(function (x) {
@@ -1554,8 +1578,22 @@ def hanashi_page(data, hk, draft, prefs=None):
     city.disabled = !value;
     $("hk-city-out").hidden = true;
   }
-  $("hk-pref-start").addEventListener("change", function () { setPref(this.value); });
-  $("hk-pref").addEventListener("change", function () { setPref(this.value); });
+  document.querySelectorAll("[data-pref-id]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var summary = this.closest(".hk-pref-picker").querySelector(".hk-pref-details > summary");
+      setPref(this.dataset.prefId);
+      summary.focus();
+    });
+  });
+  document.querySelectorAll(".hk-pref-picker").forEach(function (picker) {
+    picker.querySelectorAll(".hk-region").forEach(function (region) {
+      region.addEventListener("toggle", function () {
+        if (region.open) picker.querySelectorAll(".hk-region").forEach(function (other) {
+          if (other !== region) other.open = false;
+        });
+      });
+    });
+  });
   $("hk-city").addEventListener("change", function () {
     var c = D.cities.filter(function (x) { return x.slug === $("hk-city").value; })[0], o = $("hk-city-out");
     if (!c) { o.hidden = true; return; }
