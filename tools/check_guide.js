@@ -1,15 +1,16 @@
-// 手順ページ（hyogo-menkyo-henno/<slug>.html）を、ブラウザで開いて確かめる。
+// 手順ページ（<DIR>/<slug>.html）を、ブラウザで開いて確かめる。
 // 見ること：横にはみ出さないか（スマホの幅・文字を大きく・折りたたみを開いた状態）、
 // コピー・印刷・LINEのボタン、一覧ページからの入口、印刷したときの枚数（A4で2枚まで）、
 // 申し込み期限の計算欄（あるページだけ）。
 //
 // 使い方（ページを作ったフォルダを 127.0.0.1 で配ってから）:
-//   NODE_PATH=$(npm root -g) BASE=http://127.0.0.1:8765 PAGE=kawanishi node tools/check_guide.js
+//   NODE_PATH=$(npm root -g) BASE=http://127.0.0.1:8765 DIR=osaka-menkyo-henno PAGE=hirakata node tools/check_guide.js
 // PDF_OUT=印刷.pdf を付けると、印刷の見た目をPDFで保存する。問題があれば終了コード1で終わる。
 const { chromium } = require('playwright');
 
 const BASE = (process.env.BASE || 'http://127.0.0.1:8765').replace(/\/$/, '');
 const PAGE = process.env.PAGE;
+const DIR = process.env.DIR || 'hyogo-menkyo-henno';
 const MAX_PRINT_PAGES = 2;
 
 async function sideScroll(page) {
@@ -25,7 +26,7 @@ async function sideScroll(page) {
 
 (async () => {
   if (!PAGE) throw new Error('PAGE（市町の slug）を指定してください');
-  const url = `${BASE}/${process.env.DIR || 'hyogo-menkyo-henno'}/${PAGE}.html`;  // DIR=osaka-menkyo-henno など
+  const url = `${BASE}/${DIR}/${PAGE}.html`;
   const browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {});
   const out = {};
   const ng = [];
@@ -78,7 +79,7 @@ async function sideScroll(page) {
   // 3) 一覧ページのカードから、手順ページへ行けるか
   ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
   page = await ctx.newPage();
-  await page.goto(`${BASE}/hyogo-menkyo-henno.html`, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await page.goto(`${BASE}/${DIR}.html`, { waitUntil: 'domcontentloaded', timeout: 60000 });
   await page.click(`#${PAGE} .btn-guide`);
   await page.waitForLoadState('domcontentloaded');
   out.fromList = page.url();
@@ -100,7 +101,7 @@ async function sideScroll(page) {
   if (out.printCalled !== 1) ng.push('印刷ボタン');
   if (!out.lineText.includes(out.canonical)) ng.push('LINEで送る');
   if (out.fallbackBox !== out.canonical) ng.push('コピーできないときの表示');
-  if (!out.fromList.endsWith(`/hyogo-menkyo-henno/${PAGE}.html`)) ng.push('一覧ページからの入口');
+  if (!out.fromList.endsWith(`/${DIR}/${PAGE}.html`)) ng.push('一覧ページからの入口');
   if (out.printPages < 1 || out.printPages > MAX_PRINT_PAGES) ng.push(`印刷が${out.printPages}枚`);
   if (out.calc && !(out.calc.visible && out.calc.state && out.calc.text)) ng.push('申し込み期限の計算');
   out.ng = ng;
