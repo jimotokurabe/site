@@ -920,10 +920,16 @@ def deadline_calc(dl, ap, unit="市"):
 
 def contact_row(label, who, number=""):
     """who は名前1つか、[名前, 電話] の組のリスト（窓口が複数あるとき）。"""
+    def contact_value(name, phone):
+        if phone and phone in name:
+            before, _, after = name.partition(phone)
+            return f"{e(before)}{tel(phone)}{e(after)}"
+        return f"{e(name)} {tel(phone)}" if phone else e(name)
+
     if isinstance(who, list):
-        value = "<br>".join(f"{e(n)} {tel(t)}" for n, t in who)
+        value = "<br>".join(contact_value(n, t) for n, t in who)
     else:
-        value = f"{e(who)} {tel(number)}" if number else e(who)
+        value = contact_value(who, number)
     return f"    <div><dt>{e(label)}</dt><dd>{value}</dd></div>\n"
 
 
@@ -1056,7 +1062,7 @@ def city_page(c, data, draft, base="../"):
       <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
       <p>{e(ap['write'])}{e(ap.get('choice_note', ''))}</p>
       <dl class="facts">
-{fact(ap.get("attach_label", "添えるもの"), ap.get('attach'))}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap.get('address'))}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap.get('tel', ''))}</dd></div>
+{fact(ap.get("attach_label", "添えるもの"), ap.get('attach'))}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap.get('address'))}        {contact_row("問い合わせ", ap['office'], ap.get('tel', '')).strip()}
       </dl>{calc}
       <ul class="bullets">
 {ways}

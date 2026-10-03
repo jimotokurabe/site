@@ -422,6 +422,8 @@ table.fees th, table.fees td { padding: .45rem 0; border-bottom: 1px solid var(-
 table.fees tr:first-child th, table.fees tr:first-child td { border-top: 1px solid var(--line); }
 table.fees th { text-align: left; font-weight: 400; padding-right: 1rem; }
 table.fees td { text-align: right; font-weight: 700; white-space: nowrap; }
+.guide table.fees { table-layout: fixed; }
+.guide table.fees td { white-space: normal; overflow-wrap: anywhere; }
 
 /* 横に長い表があっても、手順の枠が画面からはみ出さないようにする */
 .steps, .step-list, .step, details.more { grid-template-columns: minmax(0, 1fr); }
@@ -489,6 +491,7 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
 }
 
 @page { size: A4; margin: 12mm; }
+@page guide { size: A4; margin: 10mm; }
 @media print {
   :root { font-size: 12pt; }
   body { background: #fff; color: #000; padding: 0; }
@@ -500,8 +503,8 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .btn-src::after { content: " " attr(href); font-weight: 400; font-size: 9pt; word-break: break-all; }
 
   /* 手順ページは、窓口に持っていける分量（A4で2枚まで）に詰める */
-  html:has(.guide) { font-size: 10pt; }
-  .guide { line-height: 1.4; }
+  html:has(.guide) { font-size: 9.5pt; }
+  .guide { line-height: 1.4; page: guide; }
   .guide .topbar { padding-block: 0 .3rem; }
   .guide .hero { padding-block: .6rem 0; }
   .guide .hero h1 { font-size: 18pt; margin: 0 0 .3rem; }
@@ -509,6 +512,7 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .guide .answer, .guide .cautions, .guide .statewide { margin-top: .6rem; padding: .5rem .8rem; }
   .guide .cautions, .guide .statewide { background: none; border: 1.5px solid #000; }
   .guide .steps, .guide .checklist, .guide .block { margin-top: .7rem; gap: .3rem; }
+  .guide .steps { display: block; }
   /* 手順の並びが grid のまま改ページすると、次の手順の枠が前の手順の最後の行に重なって隠すことがある（Chromium）。印刷では block にする */
   .guide .step-list { display: block; }
   .guide .step-list > .step + .step { margin-top: .4rem; }
@@ -527,6 +531,7 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .guide .place ul li { display: inline; }
   .guide .place ul li + li::before { content: "、"; }
   .guide table.fees th, .guide table.fees td { padding-block: .15rem; }
+  .guide .statewide { display: none !important; }
   .guide .answer, .guide .cautions, .guide .place, .guide .chk-cols fieldset,
   .guide .step h3, .guide table.fees { break-inside: avoid; }
   .guide .step h3 { break-after: avoid; }
@@ -537,6 +542,7 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
   .guide .statewide .bullets.small, .guide .src-links, .guide .no-print { display: none !important; }
   .guide .calc-out strong { color: #000 !important; font-size: 11pt; }
   .print-only { display: block; font-size: 9pt; }
+  .guide .print-only { font-size: 8pt; margin: 0; }
 }
 
 /* ---------- 最初のひと言（henno-hanashikata.html） ---------- */
