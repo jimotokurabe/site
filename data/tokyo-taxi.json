@@ -263,16 +263,26 @@
   "katsushika": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。福祉タクシー券は平成21年に心身障害者福祉手当にまとめられています。",
+   "what": "2026年度の返納特典は5,000円分のQUOカードで、タクシー券ではありません。別に西亀有1〜3丁目・堀切8丁目などの限定地域では、予約型「かつライド」を1乗車500円で利用できます。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.katsushika.lg.jp/faq/1030271/1007660/1008538/1008578.html",
-   "src": "区のよくある質問（福祉タクシー券）",
-   "upd": "更新日 令和7年10月1日",
-   "note": "返納特典はクオカードで、タクシー券ではありません。"
+   "url": "https://www2.city.katsushika.lg.jp/planning/1030243/1003616/1027519.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "note": "返納特典はクオカードで、タクシー券ではありません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けQUOカードと一部地域のかつライド",
+   "more_sources": [
+    {
+     "label": "2026年度の返納支援",
+     "url": "https://www2.city.katsushika.lg.jp/planning/1030243/1003615/1035851.html"
+    }
+   ]
   },
   "edogawa": {
    "k": "notfound",
@@ -364,21 +374,38 @@
   },
   "akishima": {
    "k": "notfound",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
-   "henno_link": "記載なし"
+   "what": "65歳以上の返納者にはコミュニティバス「Aバス」の11枚綴り回数券を2冊交付します。申請は返納から6か月以内、1人1回です。タクシー助成券ではありません。",
+   "henno_link": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けAバス回数券",
+   "url": "https://www.city.akishima.lg.jp/kurashi/bohan/1008253/1008256/1002254.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認"
   },
   "kokubunji": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。市のページには「タクシー券の給付はありません」とあり、通院の交通費助成は障害者手帳が条件です。",
+   "what": "65歳以上で自主返納し運転経歴証明書を取得した市民には、ぶんバス全ルートを無料で利用できる「ぶんPass」を交付します。市の案内では一般の高齢者向けタクシー券はありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.kokubunji.tokyo.jp/faq/kurashi/1005236/1005276/1005841.html",
-   "src": "市のよくある質問（タクシー券）",
-   "upd": "更新日 令和7年8月8日"
+   "url": "https://www.city.kokubunji.tokyo.jp/kenkou-fukushi/koureishien/1011722/1016394/index.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けぶんバス無料パス",
+   "more_sources": [
+    {
+     "label": "タクシー券に関する市のFAQ",
+     "url": "https://www.city.kokubunji.tokyo.jp/faq/kurashi/1005236/1005276/1005841.html"
+    }
+   ]
   },
   "kunitachi": {
    "k": "care",
@@ -396,8 +423,15 @@
   },
   "higashiyamato": {
    "k": "notfound",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
-   "henno_link": "記載なし"
+   "what": "65歳以上の市民が自主返納すると、ちょこバスの90円券25枚を1回交付します。期限切れ失効は対象外です。返納特典はバス券で、タクシー券ではありません。",
+   "henno_link": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けちょこバス券",
+   "url": "https://www.city.higashiyamato.lg.jp/kurashi/dorokotsu/1002129/1002152/1002153.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認"
   },
   "musashimurayama": {
    "k": "yes",
@@ -446,16 +480,26 @@
   "fuchu": {
    "k": "care",
    "name": "高齢者車いす福祉タクシー",
-   "what": "要介護3以上で、車いすのままリフト付タクシーで通院する必要がある人に、リフト付タクシーの券を出します。",
+   "what": "65歳以上の返納者にはちゅうバス専用100円券21枚を1回交付します。別に、要介護3以上で車いす・ストレッチャーによる通院が必要な人は、リフト付タクシー券の対象となる場合があります。",
    "age": "記載なし（介護保険「要介護3」以上に認定された在宅の方）",
    "amt": "30分を1枚とするリフト付タクシーの券を年間24枚まで",
    "how": "市役所1階介護保険課介護サービス係に申込書と介護保険被保険者証を出す（地域包括支援センターで申請代行）",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.city.fuchu.tokyo.jp/kenko/korenokata/koreisha/koureisyakurumaisufukusitaxi.html",
-   "src": "市の高齢者車いす福祉タクシーのページ",
-   "upd": "最終更新日：2025年4月1日",
-   "note": "自宅から病院・保険薬局の区間だけ。介助者の同乗が必要。問い合わせは介護保険課介護サービス係（042-335-4470）。"
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "note": "自宅から病院・保険薬局の区間だけ。介助者の同乗が必要。問い合わせは介護保険課介護サービス係（042-335-4470）。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けちゅうバス券と介護条件のタクシー券",
+   "more_sources": [
+    {
+     "label": "返納者向けちゅうバス券",
+     "url": "https://www.city.fuchu.tokyo.jp/kurashi/sekatu/kotuanzen/koureisyamenkyohennou.html"
+    }
+   ]
   },
   "chofu": {
    "k": "care",
@@ -486,15 +530,25 @@
   "komae": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。福祉タクシー券は障がいのある人向けで、令和6年10月から外出支援金に変わりました。",
+   "what": "返納者向けの特典は地域の商品セットです。別に、2026年10月1日から一部地域で予約型交通「チョイソコこまえ」が実証運行を開始しました。利用可能地域は西野川・東野川・岩戸南・猪方・駒井町などに限られ、通常1乗車300円です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.komae.tokyo.jp/index.cfm/44,4401,339,2069,html",
-   "src": "市の福祉タクシーおよび福祉車輌利用券のページ",
-   "upd": "更新日: 2025年4月11日"
+   "url": "https://origin.city.komae.tokyo.jp/index.cfm/41%2C145660%2C312%2C3251%2Chtml",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典とチョイソコこまえ",
+   "more_sources": [
+    {
+     "label": "返納者向け特典",
+     "url": "https://www.city.komae.tokyo.jp/index.cfm/42,86636,328,2046,html"
+    }
+   ]
   },
   "hachioji": {
    "k": "notfound",
@@ -587,9 +641,22 @@
   "akiruno": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "65歳以上の返納者には「るのバス無料乗車証」を交付します。通常運賃は2026年4月から大人200円になりましたが、無料乗車証を提示する人は引き続き無料です。",
    "henno_link": "記載なし",
-   "henno_earlier": false
+   "henno_earlier": false,
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けるのバス無料乗車証",
+   "url": "https://www.city.akiruno.tokyo.jp/0000019899.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "more_sources": [
+    {
+     "label": "返納者向け無料乗車証",
+     "url": "https://www.city.akiruno.tokyo.jp/0000004315.html"
+    }
+   ]
   },
   "mizuho": {
    "k": "yes",
