@@ -1377,30 +1377,28 @@ def hanashi_page(data, hk, draft, prefs=None):
     s, m, cs = hk["stats"], hk["manual"], hk["consult"]
     prefs = prefs or [data]
     cities = [{
-        "slug": hk_key(d["pref"], c), "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
+        "slug": hk_key(d["pref"], c), "pref": d["pref"]["id"], "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
         "what": c["what"],
         "href": f"{guide_dir(d['pref'])}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
     } for d in prefs for c in d["cities"]]
     payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities},
                          ensure_ascii=False).replace("</", "<\\/")
-    n_phr = sum(len(v) for t in hk["phrases"].values() for v in t.values())
     trig_opts = "".join(f'<button type="button" class="hk-chip" data-trig="{k}" aria-pressed="false">{e(v)}</button>'
                         for k, v in hk["triggers"].items())
-    city_opts = "".join(
-        f'<optgroup label="{e(d["pref"]["name"])}">'
-        + "".join(f'<option value="{hk_key(d["pref"], c)}">{e(c["n"])}</option>' for c in d["cities"])
-        + "</optgroup>" for d in prefs)
-    area = "・".join(d["pref"]["name"] for d in prefs)
+    pref_opts = "".join(f'<option value="{e(d["pref"]["id"])}">{e(d["pref"]["name"])}</option>' for d in prefs)
     n_all = sum(len(d["cities"]) for d in prefs)
     ng = "".join(f"<li>{e(x)}</li>" for x in hk["ng"])
     main = f"""<article class="hk">
   <section class="hk-hero">
     <p class="hk-eyebrow">免許返納・家族のための道具</p>
-    <h1>親に運転の話をはじめる、<br>最初のひと言</h1>
-    <p>家族が6つの質問に答えると、親御さんに合った話しはじめの例が出ます。例は{n_phr}通りあり、何度でも出し直せます。</p>
+    <h1>親に免許返納をどう切り出す？<br>最初のひと言を考える</h1>
+    <p>親の運転が心配でも、免許返納の話をどう始めればいいか迷うもの。6つの質問に答えると、親御さんの様子に合わせた話しはじめの例を見られます。返納後の移動に役立つ、お住まいの市町村の特典も調べられます。</p>
+    <label class="hk-label" for="hk-pref-start">親御さんの住んでいる都道府県</label>
+    <select id="hk-pref-start" class="hk-select"><option value="">都道府県を選ぶ（あとでも選べます）</option>{pref_opts}</select>
+    <p class="hk-note">都道府県は返納特典を探すために使います。ひと言の例は地域で変わりません。</p>
+    <button type="button" class="hk-btn" data-go="quiz">最初のひと言を見つける（約1分）</button>
     <p class="hk-stat"><b>{e(s["year"])}、全国で{e(s["total"])}</b>の運転免許が、本人の申し出で返納されました。1日あたり{e(s["per_day"])}です。そのうち75歳以上が{e(s["over75_rate"])}（{e(s["over75"])}）でした。
       <span class="hk-src">出典：<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["src"])}</a>（{jdate(s["checked"])}に確認）</span></p>
-    <button type="button" class="hk-btn" data-go="quiz">質問に答える（約1分）</button>
   </section>
 
   <section class="hk-screen" id="hk-quiz" hidden aria-live="polite">
@@ -1435,9 +1433,11 @@ def hanashi_page(data, hk, draft, prefs=None):
 
     <div class="hk-card">
       <h2>返納したら、住んでいる市町で何がある？</h2>
-      <p>{area}の{n_all}市町村は、このサイトで特典を調べています。</p>
+      <p>全国{len(prefs)}都道府県の{n_all}市町村について、返納特典を調べています。</p>
+      <label class="hk-label" for="hk-pref">親御さんの住んでいる都道府県</label>
+      <select id="hk-pref" class="hk-select"><option value="">選んでください</option>{pref_opts}</select>
       <label class="hk-label" for="hk-city">親御さんの住んでいる市町村</label>
-      <select id="hk-city" class="hk-select"><option value="">選んでください</option>{city_opts}</select>
+      <select id="hk-city" class="hk-select" disabled><option value="">先に都道府県を選んでください</option></select>
       <div id="hk-city-out" class="hk-city-out" hidden></div>
     </div>
 
@@ -1543,6 +1543,19 @@ def hanashi_page(data, hk, draft, prefs=None):
   }
   document.querySelectorAll(".hk-chip").forEach(function (c) { c.addEventListener("click", function () { pickTrig(c.dataset.trig); }); });
   $("hk-more").addEventListener("click", drawPhrases);
+  function setPref(value) {
+    $("hk-pref-start").value = value;
+    $("hk-pref").value = value;
+    var city = $("hk-city");
+    city.replaceChildren(new Option(value ? "市町村を選んでください" : "先に都道府県を選んでください", ""));
+    D.cities.filter(function (x) { return x.pref === value; }).forEach(function (x) {
+      city.add(new Option(x.n, x.slug));
+    });
+    city.disabled = !value;
+    $("hk-city-out").hidden = true;
+  }
+  $("hk-pref-start").addEventListener("change", function () { setPref(this.value); });
+  $("hk-pref").addEventListener("change", function () { setPref(this.value); });
   $("hk-city").addEventListener("change", function () {
     var c = D.cities.filter(function (x) { return x.slug === $("hk-city").value; })[0], o = $("hk-city-out");
     if (!c) { o.hidden = true; return; }
@@ -1567,15 +1580,17 @@ def hanashi_page(data, hk, draft, prefs=None):
   ["hk-car", "hk-taxi", "hk-net"].forEach(function (id) { $(id).addEventListener("input", calc); });
   // 一覧の市町の欄から来たとき（?city=slug）は、その市町を選んだ状態にしておく
   var from = new URLSearchParams(location.search).get("city");
-  if (from && D.cities.some(function (x) { return x.slug === from; })) {
+  var fromCity = D.cities.filter(function (x) { return x.slug === from; })[0];
+  if (fromCity) {
+    setPref(fromCity.pref);
     $("hk-city").value = from;
     $("hk-city").dispatchEvent(new Event("change"));
   }
 })();
 </script>"""
     return shell(
-        title="親に運転の話をはじめる、最初のひと言｜じもとくらべ",
-        description=f"親に免許返納の話をどう切り出すか。家族が6つ答えると、親御さんに合った話しはじめの例（{n_phr}通り）と、{area}の{n_all}市町村の返納特典が分かります。",
+        title="親に免許返納をどう切り出す？最初のひと言を考える｜じもとくらべ",
+        description="親の運転が心配な家族へ。免許返納の話をどう切り出すか、6つの質問から最初のひと言の例を探せます。返納後の移動に役立つ、市町村の特典も確認できます。",
         path=HANASHI_PATH, main=main, draft=draft, scripts=script)
 
 
