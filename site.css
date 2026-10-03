@@ -609,6 +609,15 @@ table.list-table thead th { font-size: .85rem; font-weight: 400; color: var(--mu
 .hk input[type="range"] { width: 100%; accent-color: var(--accent); height: 2rem; }
 .hk-select { width: 100%; min-height: 3rem; padding: 0 .8rem; border: 2px solid var(--line); border-radius: .8rem; background: var(--surface); }
 .hk-city-out { display: grid; gap: .4rem; background: var(--surface-2); border-radius: .8rem; padding: .9rem 1rem; }
+.hk-city-out h3 { margin: 0; font-family: var(--font-head); font-size: 1.15rem; }
+.hk-city-out p { margin: 0; }
+.hk-next-list { display: grid; gap: .6rem; margin-top: .4rem; }
+.hk-next-link { display: grid; grid-template-columns: 1fr auto; gap: .2rem .6rem; min-height: 4.5rem; padding: .75rem .9rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--surface); color: var(--ink); text-decoration: none; }
+.hk-next-link[href]:hover, .hk-next-link[href]:focus-visible { border-color: var(--accent); outline: 2px solid var(--accent); outline-offset: 1px; }
+.hk-next-link strong { grid-column: 1 / -1; color: var(--accent); text-decoration: underline; text-underline-offset: .15em; }
+.hk-next-link:not([href]) strong { color: var(--muted); text-decoration: none; }
+.hk-next-title { font-weight: 700; }
+.hk-next-kind { font-size: .85rem; color: var(--muted); text-align: right; }
 .hk-kind { font-size: .85rem; font-weight: 700; background: var(--give-bg); color: var(--give-fg); padding: .05rem .6rem; border-radius: 99px; }
 .hk-city-out a { font-weight: 700; }
 .hk-diff { font-size: 1.3rem; font-weight: 700; color: var(--give-fg); }

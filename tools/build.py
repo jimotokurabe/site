@@ -1407,10 +1407,25 @@ def hanashi_page(data, hk, draft, prefs=None):
     質問への入力内容はブラウザの中だけで使い、サイトには送らない。"""
     s, m, cs = hk["stats"], hk["manual"], hk["consult"]
     prefs = prefs or [data]
+    police_links = json.loads((ROOT / "data" / "henno-procedure-links.json").read_text(encoding="utf-8"))
+    def procedure_url(d):
+        return d.get("common", {}).get("hennou", {}).get("url") or police_links.get(d["pref"]["id"], {}).get("url", "")
+    if any(not procedure_url(d) for d in prefs):
+        missing = [d["pref"]["id"] for d in prefs if not procedure_url(d)]
+        raise ValueError(f"免許返納の公式手続きURLがありません: {', '.join(missing)}")
+    missing_taxi = [f"{d['pref']['id']}/{c['slug']}" for d in prefs for c in d["cities"]
+                    if c["slug"] not in d.get("taxi", {})]
+    if missing_taxi:
+        raise ValueError(f"タクシー助成データがありません: {', '.join(missing_taxi)}")
     cities = [{
         "slug": hk_key(d["pref"], c), "pref": d["pref"]["id"], "n": c["n"], "y": c["y"], "k": KINDS[c["k"]][0], "has": c["k"] in HAS_BENEFIT,
         "what": c["what"],
-        "href": f"{guide_dir(d['pref'])}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
+        "benefitHref": f"{guide_dir(d['pref'])}/{c['slug']}.html" if c.get("guide") else f"{list_path(d['pref'])}#{c['slug']}",
+        "taxiKind": TAXI_KINDS[d["taxi"][c["slug"]]["k"]][0],
+        "taxiHref": f"{taxi_path(d['pref'])}#{c['slug']}",
+        "procedureKind": "市町村の手順" if c.get("guide") else ("警視庁の案内" if d["pref"]["id"] == "tokyo" else f"{d['pref']['name']}警の案内"),
+        "procedureHref": f"{guide_dir(d['pref'])}/{c['slug']}.html" if c.get("guide") else procedure_url(d),
+        "procedureExternal": not bool(c.get("guide")),
     } for d in prefs for c in d["cities"]]
     pref_names = {d["pref"]["id"]: d["pref"]["name"] for d in prefs}
     payload = json.dumps({k: hk[k] for k in ("questions", "types", "triggers", "phrases")} | {"cities": cities, "prefNames": pref_names},
@@ -1473,8 +1488,8 @@ def hanashi_page(data, hk, draft, prefs=None):
     </div>
 
     <div class="hk-card">
-      <h2>返納したら、住んでいる市町で何がある？</h2>
-      <p>全国{len(prefs)}都道府県の{n_all}市町村について、返納特典を調べています。</p>
+      <h2>親御さんの市町村で、次に確認すること</h2>
+      <p>全国{len(prefs)}都道府県の{n_all}市町村について、返納特典と移動の支援を調べています。</p>
       {pref_picker("result")}
       <label class="hk-label" for="hk-city">親御さんの住んでいる市町村</label>
       <select id="hk-city" class="hk-select" disabled><option value="">先に都道府県を選んでください</option></select>
@@ -1509,14 +1524,15 @@ def hanashi_page(data, hk, draft, prefs=None):
 (function () {
   var D = JSON.parse(document.getElementById("hk-data").textContent);
   var $ = function (id) { return document.getElementById(id); };
-  var ans = [], i = 0, type = "ready", trig = null;
+  var ans = [], i = 0, type = "ready", trig = null, level = 0;
+  var RETURN_KEY = "jk-hanashi-return";
   var OPTS = [["はい", 2], ["ときどき", 1], ["いいえ", 0]];
   function show(id) {
     ["hk-quiz", "hk-result"].forEach(function (s) { $(s).hidden = s !== id; });
     document.querySelector(".hk-hero").hidden = !!id;
     window.scrollTo(0, 0);
   }
-  function start() { ans = []; i = 0; show("hk-quiz"); renderQ(); }
+  function start() { ans = []; i = 0; level = 0; try { sessionStorage.removeItem(RETURN_KEY); } catch (e) {} show("hk-quiz"); renderQ(); }
   document.querySelectorAll("[data-go=quiz]").forEach(function (b) { b.addEventListener("click", start); });
   function renderQ() {
     var q = D.questions[i];
@@ -1545,12 +1561,16 @@ def hanashi_page(data, hk, draft, prefs=None):
       if (q.type === "life") life = ans[k];
     });
     var lv = risk >= 9 ? 3 : risk >= 4 ? 2 : 1;
-    $("hk-meter").className = "hk-meter lv" + lv;
-    $("hk-risk").textContent = ["", "気になるサインは少なめです。", "気になるサインがいくつかあります。早めに話し合いを。", "気になるサインが多めです。できるだけ早く話し合いを。"][lv];
     type = lv === 1 ? "ready" : (pride >= life ? "pride" : "life");
+    level = lv;
+    renderResult(Object.keys(D.triggers)[0]);
+  }
+  function renderResult(trigger) {
+    $("hk-meter").className = "hk-meter lv" + level;
+    $("hk-risk").textContent = ["", "気になるサインは少なめです。", "気になるサインがいくつかあります。早めに話し合いを。", "気になるサインが多めです。できるだけ早く話し合いを。"][level];
     $("hk-type").textContent = D.types[type].name;
     $("hk-type-text").textContent = D.types[type].text;
-    pickTrig(Object.keys(D.triggers)[0]);
+    pickTrig(trigger);
     calc();
     show("hk-result");
   }
@@ -1615,17 +1635,41 @@ def hanashi_page(data, hk, draft, prefs=None):
       });
     });
   });
-  $("hk-city").addEventListener("change", function () {
+  function cityChanged() {
     var c = D.cities.filter(function (x) { return x.slug === $("hk-city").value; })[0], o = $("hk-city-out");
     if (!c) { o.hidden = true; return; }
     o.hidden = false;
-    o.innerHTML = '<p><b></b> <span class="hk-kind"></span></p><p class="hk-what"></p><a></a>';
-    o.querySelector("b").textContent = c.n;
+    o.innerHTML = '<h3></h3><p><b></b> <span class="hk-kind"></span></p><p class="hk-what"></p><div class="hk-next-list"></div>';
+    o.querySelector("h3").textContent = c.n + "で次に確認すること";
+    o.querySelector("b").textContent = "返納後の特典";
     o.querySelector(".hk-kind").textContent = c.k;
     o.querySelector(".hk-kind").classList.toggle("none", !c.has);
     o.querySelector(".hk-what").textContent = c.what;
-    var a = o.querySelector("a"); a.href = c.href; a.textContent = c.n + "のくわしい内容を見る →";
-  });
+    var links = [
+      ["返納後の特典", c.k, c.n + "の返納後の特典を見る", c.benefitHref, false],
+      ["タクシー代の助成", c.taxiKind, c.n + "のタクシー代の助成を確認する", c.taxiHref, false],
+      ["免許返納の手続き", c.procedureKind, "免許返納の手続きを確認する", c.procedureHref, c.procedureExternal]
+    ];
+    links.forEach(function (item) {
+      var a = document.createElement(item[3] ? "a" : "div");
+      a.className = "hk-next-link";
+      if (item[3]) {
+        a.href = item[3];
+        if (item[4]) { a.target = "_blank"; a.rel = "noopener"; }
+        else a.addEventListener("click", saveReturn);
+      }
+      var title = document.createElement("span"), kind = document.createElement("span"), action = document.createElement("strong");
+      title.className = "hk-next-title"; title.textContent = item[0];
+      kind.className = "hk-next-kind"; kind.textContent = item[1];
+      action.textContent = item[3] ? item[2] + (item[4] ? " ↗ 外部サイト" : " →") : "案内を確認中です";
+      a.append(title, kind, action);
+      o.querySelector(".hk-next-list").appendChild(a);
+    });
+  }
+  $("hk-city").addEventListener("change", cityChanged);
+  function saveReturn() {
+    try { sessionStorage.setItem(RETURN_KEY, JSON.stringify({level: level, type: type, trig: trig, pref: D.cities.find(function (x) { return x.slug === $("hk-city").value; }).pref, city: $("hk-city").value})); } catch (e) {}
+  }
   var yen = function (n) { return Math.abs(n).toLocaleString("ja-JP") + "円"; };
   function calc() {
     var car = +$("hk-car").value, taxi = +$("hk-taxi").value, net = +$("hk-net").value;
@@ -1643,7 +1687,19 @@ def hanashi_page(data, hk, draft, prefs=None):
   if (fromCity) {
     setPref(fromCity.pref);
     $("hk-city").value = from;
-    $("hk-city").dispatchEvent(new Event("change"));
+    cityChanged();
+  }
+  var navigation = performance.getEntriesByType("navigation")[0];
+  if (navigation && navigation.type === "back_forward") {
+    try {
+      var saved = JSON.parse(sessionStorage.getItem(RETURN_KEY));
+      if (saved && D.prefNames[saved.pref] && D.cities.some(function (x) { return x.slug === saved.city && x.pref === saved.pref; })) {
+        setPref(saved.pref); $("hk-city").value = saved.city; cityChanged();
+        if (saved.level >= 1 && saved.level <= 3 && D.types[saved.type] && D.triggers[saved.trig]) {
+          level = saved.level; type = saved.type; renderResult(saved.trig);
+        }
+      }
+    } catch (e) {}
   }
 })();
 </script>"""
