@@ -937,12 +937,12 @@ def guide_taxi_mobility(c, t, pref, base):
     <a href="#{e(t['guide_anchor'])}">制度の詳細を見る →</a>
   </div>"""
     elif same:
-        relation = (e(t["what"]) if t["k"] == "henno_only"
+        relation = (e(t["what"]) if t["k"] in ("henno_only", "notfound")
                     else "上の返納特典と、タクシー代の助成は同じ制度です。")
         henno = (f'<p>{e(t["henno_link"])}</p>'
                  if t.get("henno_link") and t["henno_link"] != "記載なし" and t["k"] != "henno_only" else "")
         taxi = f"""  <div class="mobility-panel">
-    <h3>{e(t.get('name', 'タクシー代の助成'))}</h3>
+    <h3>{e(t.get('guide_heading', t.get('name', 'タクシー代の助成')))}</h3>
     <p>{relation}</p>{henno}
     <a href="#ans-h">対象と手順を見る →</a>
   </div>"""
