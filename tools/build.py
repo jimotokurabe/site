@@ -1178,7 +1178,7 @@ def city_page(c, data, draft, base="../"):
         <ul class="bullets">
 {lis(kr['proxy'], '          ')}
         </ul>
-        {f"<p>{ext(kr['proxy_form'], pol + 'の書類（PDF）')}</p>" if kr.get('proxy_form') else ""}
+{f"        <p>{ext(kr['proxy_form'], pol + 'の書類（PDF）')}</p>" if kr.get('proxy_form') else ""}
       </details>
     </li>
     <li class="step" id="step-2">
