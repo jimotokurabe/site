@@ -134,6 +134,7 @@ gtag('config', 'G-T1PQ72Q40S');
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google-adsense-account" content="ca-pub-2542211932832864">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 {robots}<link rel="canonical" href="{canonical}">
