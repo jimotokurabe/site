@@ -407,10 +407,23 @@
   "moroyama": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町の福祉タクシー利用料金助成は重い障害のある人向けです。",
+   "what": "運転経歴証明書を見せると、証明書の交付から3年間「もろバス」に無料で乗れます。確認した福祉タクシー券は重い障害のある人が対象です。",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "flag": "毛呂山町役場で確かめてください。"
+   "flag": "確認した町のページには、年齢だけで申請できるタクシー券は書かれていません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "もろバスの返納者向け無料乗車",
+   "url": "https://www.town.moroyama.saitama.jp/soshikikarasagasu/fukushika/shogaishafukushi/teate/2256.html",
+   "src": "町の障害者向け福祉タクシー券の案内",
+   "upd": "更新日の記載なし",
+   "more_sources": [
+    {
+     "label": "もろバスの返納者向け無料乗車",
+     "url": "https://www.town.moroyama.saitama.jp/soshikikarasagasu/kikakuzaiseika/kikakukakari/circular_bus/3174.html"
+    }
+   ]
   },
   "ogose": {
    "k": "yes",
@@ -577,17 +590,27 @@
   "tokorozawa": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー使用料金補助は重度障害者が対象です。",
+   "what": "65歳以上の返納者は「ところバス・ところワゴン」の無料定期券か50回券を選べます。別に、市内に住む65歳以上には100円で乗れる特別乗車証があります。確認した福祉タクシー券は重度障害者向けです。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/tokorozawacity.html",
-   "src": "県の市町村別支援施策のページ（所沢市）",
-   "upd": "掲載日：2025年12月11日",
+   "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/waribiki_tokubetsu.html",
+   "src": "市のところバス・ところワゴン特別乗車証の案内",
+   "upd": "更新日の記載なし",
    "note": "ところバス・ところワゴンの65歳以上100円の特別乗車証はタクシー代の助成ではありません。",
-   "flag": "所沢市の高齢者福祉の窓口で確かめてください。"
+   "flag": "返納者向け無料乗車券の市ページは2022年更新です。現在の交付条件を都市計画課へ確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け無料券と65歳以上の乗車証",
+   "more_sources": [
+    {
+     "label": "所沢市の返納者向け無料乗車券",
+     "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/menkyo_hennou.html"
+    }
+   ]
   },
   "hanno": {
    "k": "notfound",
@@ -607,17 +630,27 @@
   "sayama": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者には交通系ICカードへの入金費などを最大1万円助成します。別に、75歳以上の茶の花号特別乗車証や、高齢者向け病院送迎バスの空席利用があります。確認した県の一覧だけでタクシー助成の有無は断定できません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/sayaacity01.html",
-   "src": "県の市町村別支援施策のページ（狭山市）",
-   "upd": "掲載日：2026年4月27日",
+   "url": "https://www.city.sayama.saitama.jp/kurashi/dourokotsuu/kotsu/sougeibus.html",
+   "src": "市の病院送迎バス空席利用の案内",
+   "upd": "更新日の記載なし",
    "note": "75歳以上の市内循環バス100円、70歳以上の病院送迎バスの空席利用はタクシー代の助成ではありません。",
-   "flag": "狭山市の高齢者支援課で確かめてください。"
+   "flag": "返納特典の市ページは2025年更新です。現在の募集状況を交通防犯課へ確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と高齢者のバス利用",
+   "more_sources": [
+    {
+     "label": "狭山市の返納者向けICカード助成",
+     "url": "https://www.city.sayama.saitama.jp/kurashi/anshin/kotsuanzen/koureishajikobousi/menkiyo-henno.html"
+    }
+   ]
   },
   "iruma": {
    "k": "care",
@@ -826,7 +859,7 @@
   },
   "satte": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。乗合型デマンドタクシーの実証運行は令和8年6月30日で終わりました。",
+   "what": "70歳以上で自主返納した市民には、初乗り運賃相当のタクシー券10枚を1回交付します。市の乗合型デマンドタクシーの実証運行は2026年6月30日で終了し、次のAIデマンド交通は2027年1月開始予定です。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "name": "記載なし",
@@ -836,7 +869,17 @@
    "url": "https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_2/13628.html",
    "src": "市の乗合型デマンドタクシーのページ",
    "upd": "更新日：2025年07月01日",
-   "note": "令和9年1月からAIデマンド交通の運行を予定。返納した70歳以上の人へのタクシー利用券は返納特典の一覧にある。"
+   "note": "予定段階のAIデマンド交通を、現在利用できる制度として案内していません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けタクシー券",
+   "more_sources": [
+    {
+     "label": "幸手市の返納者向けタクシー券",
+     "url": "https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_1/6053.html"
+    }
+   ]
   },
   "shiraoka": {
    "k": "notfound",
@@ -880,15 +923,32 @@
   },
   "sugito": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は、町のページで見つかりませんでした。",
+   "what": "65歳以上の返納者には町内巡回バスの回数券60枚を交付します。別に、巡回バスからタクシーへ乗り継ぐ際には300円の補助券があります。要支援・要介護の人などには巡回バス無料乗車証の制度もあります。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "name": "記載なし",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
-   "flag": "町役場（0480-33-1111）で確かめてください",
-   "note": "町の福祉タクシー利用料金助成は重度心身障害者が対象。"
+   "flag": "返納者向け回数券の町ページは更新日を確認できません。交付条件を住民協働課で確認してください。",
+   "note": "町の福祉タクシー利用料金助成は重度心身障害者が対象。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け巡回バス券と乗り継ぎ補助",
+   "url": "https://www.town.sugito.lg.jp/page/16522.html",
+   "src": "町の巡回バスからのタクシー乗継補助",
+   "upd": "更新日の記載なし",
+   "more_sources": [
+    {
+     "label": "杉戸町の返納者向け巡回バス券",
+     "url": "https://www.town.sugito.lg.jp/page/1313.html"
+    },
+    {
+     "label": "要支援・要介護者向け特別乗車証",
+     "url": "https://www.town.sugito.lg.jp/page/17472.html"
+    }
+   ]
   },
   "kumagaya": {
    "k": "care",
@@ -933,13 +993,17 @@
   "honjo": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢などで使える高齢者向けのタクシー代の助成は見つかりませんでした。市のタクシー券は障害者手帳を持つ人が対象です。",
+   "what": "運転経歴証明書を示す返納者は、はにぽん号・シャトル共通の1,000円分回数券を600円で購入できます。75歳以上の人も同額です。確認した高齢者向け交通ページには、年齢だけで使えるタクシー券は書かれていません。",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.honjo.lg.jp/shiseijoho/shichonoheya/shimintonokoryu/shichohenotegami/1/4/1/8931.html",
-   "src": "市長への手紙の回答（無料タクシー券について）",
-   "upd": "更新日：2020年10月01日",
-   "flag": "回答が2020年のものです。本庄市役所で確かめてください。"
+   "url": "https://www.city.honjo.lg.jp/soshiki/toshiseibi/toshikeikaku/tantoujouhou/koukyoukoutuu/a/kikaku1001.html",
+   "src": "市のはにぽん号・シャトルバスの運賃案内",
+   "upd": "更新日：2026年9月13日",
+   "flag": "年齢による別のタクシー券の有無は、確認した市の交通案内の範囲です。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "はにぽん号・シャトルの回数券割引"
   },
   "misato-machi": {
    "k": "yes",
