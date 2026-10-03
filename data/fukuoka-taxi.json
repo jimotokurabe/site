@@ -22,15 +22,25 @@
   "itoshima": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー料金助成は、重い障害のある人（手帳が条件）向けです。",
+   "what": "70歳以上で返納した市民には、利用可能額4,500円のSUGOCAを1回交付します。確認した福祉タクシー料金助成は障害者手帳などの条件があります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www1.g-reiki.net/itoshima/reiki_honbun/r385RG00000345.html",
-   "src": "糸島市福祉タクシー料金助成事業実施規程",
-   "upd": "記載なし"
+   "url": "https://www.city.itoshima.lg.jp/s016/20250221134104.html",
+   "src": "市の障害者向け福祉タクシーの案内",
+   "upd": "更新日の記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けSUGOCA",
+   "more_sources": [
+    {
+     "label": "糸島市の返納者向けSUGOCA",
+     "url": "https://www.city.itoshima.lg.jp/s004/010/010/090/030/20170418141620.html"
+    }
+   ]
   },
   "kasuga": {
    "k": "notfound",
@@ -63,13 +73,30 @@
   "nakagawa": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者にはnimocaかかわせみバス券を1回交付します。別に、65歳以上で介護認定を受け歩行が難しい人などには移送サービスがあります。返納だけで申請できる制度ではありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "flag": "高齢者支援課（092-953-2211）で確かめてください。"
+   "flag": "移送サービスは介護や歩行の条件があります。対象・利用回数は高齢者支援課に確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と条件付き外出支援",
+   "url": "https://www.city.nakagawa.lg.jp/soshiki/11/gaisyutsu-service.html",
+   "src": "市の高齢者外出支援サービスの案内",
+   "upd": "更新日：2025年4月1日",
+   "more_sources": [
+    {
+     "label": "那珂川市の免許返納者向け交通券",
+     "url": "https://www.city.nakagawa.lg.jp/soshiki/11/jisyuhennou.html"
+    },
+    {
+     "label": "かわせみバス・のるーとの交通案内",
+     "url": "https://www.city.nakagawa.lg.jp/soshiki/16/kawasemi-aiod-kokuchi.html"
+    }
+   ]
   },
   "munakata": {
    "k": "henno_only",
