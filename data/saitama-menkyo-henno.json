@@ -2661,13 +2661,13 @@
    "y": "おがわまち",
    "r": "kawagoe-hiki",
    "k": "give",
-   "what": "70歳以上で運転免許を返納した人に、返納から1年間のバス定期券代の3分の1（上限1万円）か、デマンドタクシー料金1万円分を補助します。",
-   "amt": "バス定期券購入費用の3分の1（上限1万円）またはデマンドタクシー利用料金1万円分（どちらか）",
-   "age": "70歳以上（令和5年4月1日以後に自主返納または失効した方）",
-   "dl": "令和9年3月12日（金曜日）まで。予算に達し次第受付を終了",
+   "what": "70歳以上で運転免許を自主返納または失効した人に、バス定期券購入費の3分の1（上限1万円）かデマンドタクシー利用費（上限1万円）のどちらかを1回補助します。",
+   "amt": "路線バス定期券購入費の3分の1（上限1万円）、またはデマンドタクシー利用費（上限1万円）",
+   "age": "70歳以上で2023年4月1日以降に自主返納または失効した町民",
+   "dl": "返納・失効から1年間の購入費・利用費が対象。2026年度の受付は2027年3月12日まで（予算に達したら終了）",
    "apply_label": "申し込み先",
    "apply": "小川町役場 防災地域支援課（0493-72-1221）",
-   "url": "https://www.town.ogawa.saitama.jp/gyosei/sosiki/4/2/1/1304.html",
+   "url": "https://www.town.ogawa.saitama.jp/gyosei/kurashi_tetsuzuki/doro_kotsu/3824.html",
    "src": "町の免許返納者のお出かけサポートのページ",
    "upd": "更新日：2026年07月21日",
    "note": "補助は1人1回まで。運転経歴証明書または運転免許取消通知書が要る。",
@@ -2820,7 +2820,7 @@
     "sources": [
      {
       "name": "小川町「運転免許を返納した高齢者の方のお出かけをサポートします！」",
-      "url": "https://www.town.ogawa.saitama.jp/gyosei/sosiki/4/2/1/1304.html",
+      "url": "https://www.town.ogawa.saitama.jp/gyosei/kurashi_tetsuzuki/doro_kotsu/3824.html",
       "date": "2026年7月21日"
      },
      {
@@ -3674,7 +3674,7 @@
    "dl": "乗車定期券等の購入から2か月以内に申請（予算がなくなり次第終了）",
    "apply_label": "申し込み先",
    "apply": "市民生活部交通政策課（042-989-2111 代表）",
-   "url": "https://www.city.hidaka.lg.jp/soshiki/shiminseikatsu/kotuseisaku/kotsuanzenbohan/kotsu/odekake/31995.html",
+   "url": "https://www.city.hidaka.lg.jp/life_procedure/1/5/32256.html",
    "src": "市の高齢者等路線バス利用補助事業のページ",
    "upd": "更新日：2026年04月01日",
    "note": "1年度につき1回。対象は国際興業バスの定期券（彩京のびのびパスを含む）と回数券。75歳未満の返納者は取消通知書の写しが要ります。",
@@ -3794,7 +3794,7 @@
     "sources": [
      {
       "name": "日高市「高齢者等路線バス利用補助事業」",
-      "url": "https://www.city.hidaka.lg.jp/soshiki/shiminseikatsu/kotuseisaku/kotsuanzenbohan/kotsu/odekake/31995.html",
+      "url": "https://www.city.hidaka.lg.jp/life_procedure/1/5/32256.html",
       "date": "2026年4月1日"
      },
      {
