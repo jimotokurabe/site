@@ -897,6 +897,48 @@ def contact_row(label, who, number=""):
     return f"    <div><dt>{e(label)}</dt><dd>{value}</dd></div>\n"
 
 
+def guide_taxi_mobility(c, t, pref, base):
+    """既存の一覧データから、兵庫県の手順ページにタクシー助成を加える。"""
+    same = t.get("guide_relation") == "same"
+    if same:
+        relation = (e(t["what"]) if t["k"] == "henno_only"
+                    else "上の返納特典と、タクシー代の助成は同じ制度です。")
+        henno = (f'<p>{e(t["henno_link"])}</p>'
+                 if t.get("henno_link") and t["henno_link"] != "記載なし" and t["k"] != "henno_only" else "")
+        taxi = f"""  <div class="mobility-panel">
+    <h3>{e(t.get('name', 'タクシー代の助成'))}</h3>
+    <p>{relation}</p>{henno}
+    <a href="#ans-h">対象と手順を見る →</a>
+  </div>"""
+    elif t["k"] in ("yes", "care"):
+        facts = "".join((fact("対象", t.get("age")), fact("助成", t.get("amt")),
+                         fact("申し込み", t.get("how"))))
+        if t.get("henno_link") and t["henno_link"] != "記載なし":
+            facts += fact("返納した人は", t["henno_link"])
+        taxi = f"""  <div class="mobility-panel">
+    <h3>高齢者のタクシー代の助成 <span class="chip t-{t['k']}">{e(TAXI_KINDS[t['k']][0])}</span></h3>
+    <p><b>{e(t.get('name', 'タクシー代の助成'))}</b></p>
+    <dl class="facts">
+{facts}    </dl>
+  </div>"""
+    else:
+        taxi = f"""  <div class="mobility-panel">
+    <h3>高齢者のタクシー代の助成 <span class="chip t-{t['k']}">{e(TAXI_KINDS[t['k']][0])}</span></h3>
+    <p>{e(t['what'])}</p>
+  </div>"""
+    note = f'  <p class="mobility-note">{e(t["note"])}</p>\n' if t.get("note") else ""
+    source = ext(t["url"], f"{city_unit(c['n'])}の公式ページを見る") if t.get("url") else ""
+    flag = f'  <p class="flag">確かめ方：{e(t["flag"])}</p>\n' if t.get("flag") else ""
+    return f"""
+
+<section class="mobility" aria-labelledby="mobility-h">
+  <h2 id="mobility-h">返納後の移動に使えるもの</h2>
+{taxi}
+{note}  <p class="mobility-source">{source} 確かめた日：{jdate(t['checked'])}</p>
+{flag}  <p><a href="{base}{HANASHI_PATH}?city={e(hk_key(pref, c))}">親に話すときの、最初のひと言 →</a></p>
+</section>"""
+
+
 def city_page(c, data, draft, base="../"):
     g = c["guide"]
     P = data["pref"]
@@ -1049,6 +1091,8 @@ def city_page(c, data, draft, base="../"):
   </ul>
   <p><a href="{base}{HANASHI_PATH}?city={e(hk_key(P, c))}">親に話すときの、最初のひと言 →</a></p>
 </section>"""
+    elif P["id"] == HOME_PREF and c["slug"] in data.get("taxi", {}):
+        mobility = guide_taxi_mobility(c, data["taxi"][c["slug"]], P, base)
 
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="{base or './'}">トップ</a> ＞ <a href="{base}{list_path(P)}">{pn}の免許返納特典</a> ＞ {e(name)}</nav>
 <div class="hero">
