@@ -914,7 +914,13 @@ def contact_row(label, who, number=""):
 def guide_taxi_mobility(c, t, pref, base):
     """確認済みの一覧データから、手順ページに移動支援を加える。"""
     same = t.get("guide_relation") == "same"
-    if same:
+    if t.get("guide_anchor"):
+        taxi = f"""  <div class="mobility-panel">
+    <h3>{e(t.get('name', 'タクシー代の助成'))}</h3>
+    <p>{e(t['guide_relation_note'])}</p>
+    <a href="#{e(t['guide_anchor'])}">制度の詳細を見る →</a>
+  </div>"""
+    elif same:
         relation = (e(t["what"]) if t["k"] == "henno_only"
                     else "上の返納特典と、タクシー代の助成は同じ制度です。")
         henno = (f'<p>{e(t["henno_link"])}</p>'
