@@ -947,7 +947,7 @@ def guide_taxi_mobility(c, t, pref, base):
 {details}  </div>"""
     else:
         taxi = f"""  <div class="mobility-panel">
-    <h3>高齢者のタクシー代の助成 <span class="chip t-{t['k']}">{e(TAXI_KINDS[t['k']][0])}</span></h3>
+    <h3>{e(t.get('guide_heading', '高齢者のタクシー代の助成'))} <span class="chip t-{t['k']}">{e(TAXI_KINDS[t['k']][0])}</span></h3>
     <p>{e(t['what'])}</p>
   </div>"""
     note = (f'  <p class="mobility-note">{e(t["note"])}</p>\n'
