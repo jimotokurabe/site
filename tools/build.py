@@ -1584,20 +1584,6 @@ PREF_SCRIPT = """<script>
 
 
 def top_page(data, draft, others=()):
-    guides = [c for c in data["cities"] if c.get("guide")]
-    guide_block = ""
-    if guides:
-        links = "\n".join(
-            f'    <li><a href="{GUIDE_DIR}/{c["slug"]}.html"><b>{e(c["n"])}の免許返納</b>'
-            f'<span>{e(c["guide"]["short"])}</span></a></li>' for c in guides)
-        guide_block = f"""
-<details class="guides">
-  <summary><h2 id="gd-h">市町ごとの、返納から申し込みまでの手順（{len(guides)}市町）</h2></summary>
-  <p>返納する場所、特典の申し込み方、持ち物を、市町ごとに1ページにまとめています。</p>
-  <ul class="guide-links">
-{links}
-  </ul>
-</details>"""
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
     main = f"""<section class="top-hero">
   <h1 class="name">じもと<span>くらべ</span></h1>
@@ -1623,7 +1609,6 @@ def top_page(data, draft, others=()):
 {upcoming}
   </ul>
 </section>
-{guide_block}
 
 <section class="about-list" aria-labelledby="how-h">
   <h2 id="how-h">調べ方</h2>
