@@ -7,6 +7,8 @@
   "cities": [
     {
       "id": "akashi", "group": "core", "name": "明石市", "hint": "路線・Tacoバスと、70歳以上の優待を確認",
+      "search_title": "明石市のTacoバスと高齢者向け運賃支援",
+      "quick_scope": "Tacoバスは地区・路線を確認。敬老優待は市内在住70歳以上、通院支援券は65歳以上で介護認定などの条件があります。",
       "rides": [
         {"name": "Tacoバス・Tacoバスミニ", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内の一部地域を走るコミュニティバス。乗る場所と行き先が同じルートにあるかを確認してください。", "check": "停留所・時刻・車いす対応は路線ごとに確認。", "source": "https://www.city.akashi.lg.jp/doboku/kousei_ka/machizukuri/kotsu/kokyo/taco-bus/rosenzu/index.html"}
       ],
@@ -17,6 +19,8 @@
     },
     {
       "id": "kakogawa", "group": "core", "name": "加古川市", "hint": "地区別の小型バス・予約交通が豊富",
+      "search_title": "加古川市のかこバス・チョイソコと運賃支援",
+      "quick_scope": "かこバス・かこバスミニは路線別。チョイソコは対象地区に住む人向けで登録・予約が必要。神姫バスの運賃上限はNicoPaで市内乗降する場合です。",
       "rides": [
         {"name": "かこバス", "tags": ["4ルート", "停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "東加古川・別府・鳩里／尾上・浜手のルート。区間により100円または200円。", "check": "自宅と目的地に近い停留所、時刻、車いす対応を確認。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/1438301129725.html"},
         {"name": "かこバスミニ", "tags": ["地区別", "曜日を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "志方・山手・平岡などの地区別ルートを走ります。", "check": "地区ごとに路線、運行日、運賃が違います。市の一覧から該当ルートを選んでください。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/index.html"},
@@ -29,6 +33,8 @@
     },
     {
       "id": "takasago", "group": "core", "name": "高砂市", "hint": "じょうとんバスと条件付きタクシー助成",
+      "search_title": "高砂市のじょうとんバスと高齢者向け助成",
+      "quick_scope": "じょうとんバスは75歳以上に割引。タクシー券は65歳以上の非課税世帯で、介護認定または運転経歴証明書などの条件があります。",
       "rides": [
         {"name": "じょうとんバス・じょうとんバスミニ", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内を走るコミュニティバス。ミニには地区別ルートもあります。", "check": "2026年10月1日にダイヤが改正されました。牛谷ルートは試験運行中です。最新の停留所・運行日・時刻を確認。", "source": "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/doro_kotsu/1/1/5506.html"}
       ],
@@ -39,6 +45,8 @@
     },
     {
       "id": "inami", "group": "core", "name": "稲美町", "hint": "予約型のあいのりいなみと券を比較",
+      "search_title": "稲美町のあいのりいなみと高齢者優待券",
+      "quick_scope": "あいのりいなみは町民向けで登録・予約が必要。優待券は75歳以上、または非課税世帯の65～74歳などが対象です。",
       "rides": [
         {"name": "あいのりいなみ", "tags": ["登録・予約が必要", "行き先指定"], "purposes": ["shopping", "hospital", "other"], "summary": "町民向けの予約制乗合タクシー。自宅などから指定の目的地へ。65歳以上は町内200円、指定町外400円。", "check": "平日運行。行き先とバス停近接による利用制限、予約期限を確認。", "source": "https://www.town.hyogo-inami.lg.jp/0000004854.html"}
       ],
@@ -48,6 +56,8 @@
     },
     {
       "id": "harima", "group": "core", "name": "播磨町", "hint": "町内停留所のあるバスとタクシー助成",
+      "search_title": "播磨町のかこバスミニとタクシー料金助成",
+      "quick_scope": "かこバスミニは町内の停留所を確認。タクシー券は2026年4月1日時点で町在住75歳以上、または町在住で要支援・要介護認定を受けた人が対象です。",
       "rides": [
         {"name": "かこバスミニ 平岡東南ルート", "tags": ["平日運行", "停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "土山駅南口と東加古川駅を結ぶルートで、播磨町内にも停留所があります。", "check": "利用する停留所、時刻、現金運賃を確認。", "source": "https://www.town.harima.lg.jp/toshikekaku/kakobasumini.html"}
       ],
@@ -57,6 +67,8 @@
     },
     {
       "id": "kobe-nishi", "group": "nearby", "name": "神戸市西区", "hint": "櫨谷・学園東町などの地区別交通",
+      "search_title": "神戸市西区のすこやかバス・にじ色バス（対象地区限定）",
+      "quick_scope": "掲載対象は櫨谷・学園東町など一部地区。すこやかバスは予約が必要で、敬老割引は敬老パス対象者向け。にじ色バスは2026年12月25日まで試験運行です。",
       "rides": [
         {"name": "すこやかバス", "tags": ["櫨谷地区", "予約が必要"], "purposes": ["shopping", "hospital", "other"], "summary": "櫨谷地区と西神中央駅などを結ぶ予約制の地域交通。平日・土曜に運行します。", "check": "対象地区、乗降場所、事前登録と予約期限を確認。", "source": "https://www.city.kobe.lg.jp/a80014/hasetanichikomi.html"},
         {"name": "にじ色バス", "tags": ["学園東町", "2026年12月25日まで試験運行"], "purposes": ["shopping", "hospital", "other"], "summary": "学園都市駅前と学園東町を循環。平日運行、大人300円。", "check": "試験運行の終了後に継続するかは未確認。停留所・時刻・支払い方法を公式ページで確認。", "source": "https://www.city.kobe.lg.jp/a80014/shise/kekaku/jutakutoshikyoku/sogokotsu/gakuenhigashimachi.html"}
@@ -67,6 +79,8 @@
     },
     {
       "id": "miki", "group": "nearby", "name": "三木市", "hint": "地区別の予約交通と乗車券助成",
+      "search_title": "三木市のチョイソコみきと乗車券助成",
+      "quick_scope": "チョイソコみきは吉川・三木南・別所・志染の対象地区で登録・予約が必要。乗車券助成は70歳以上などが対象です。",
       "rides": [
         {"name": "チョイソコみき", "tags": ["4地区限定", "登録・予約が必要"], "purposes": ["shopping", "hospital", "other"], "summary": "吉川・三木南・別所・志染の対象地区で使う予約交通。大人1回300円。", "check": "会員登録、対象住所・停留所、平日の運行時間と予約方法を確認。", "source": "https://www.city.miki.lg.jp/soshiki/39/31598.html"},
         {"name": "市内路線バス・神戸電鉄", "tags": ["路線・駅を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内の幹線バスと神戸電鉄粟生線を、地区の交通と組み合わせて使えます。", "check": "目的地までの路線・時刻・乗換を市の総合おでかけガイドで確認。", "source": "https://www.city.miki.lg.jp/site/busschedule/29765.html"}
@@ -77,6 +91,8 @@
     },
     {
       "id": "ono", "group": "nearby", "name": "小野市", "hint": "らんらんバスと登録制タクシー",
+      "search_title": "小野市のらんらんバス・タクシーと高齢者優待",
+      "quick_scope": "らんらんバスは65歳以上無料。らんらんタクシーは75歳以上で免許がない人、または要介護1～5の人などが対象です。",
       "rides": [
         {"name": "らんらんバス", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内を走るコミュニティバス。2026年4月改正の路線と時刻を確認できます。", "check": "目的地に近い停留所・運行日を確認。旧らんらんデマンドバスは2026年3月で終了しています。", "source": "https://www.city.ono.hyogo.jp/kurashi_fukushi/doro_kotsu/kokyokotsu/5514.html"},
         {"name": "らんらんタクシー", "tags": ["登録・予約が必要", "対象者限定"], "purposes": ["shopping", "hospital", "other"], "summary": "市内在住の75歳以上で免許がない人、または要介護1～5の人などが使う予約制交通。自宅と指定乗降地点を結びます。", "check": "対象条件、指定乗降地点、予約方法、運賃を確認。市外への行き先は指定地点に限られます。", "source": "https://www.city.ono.hyogo.jp/soshikikarasagasu/sogoseisakubu_kotsuseisakugroup/gyomuannai/3/1/10331.html"}
@@ -87,6 +103,8 @@
     },
     {
       "id": "himeji", "group": "nearby", "name": "姫路市", "hint": "地区別コミュニティ交通と75歳以上の優待",
+      "search_title": "姫路市の地域コミュニティバスと高齢者優待",
+      "quick_scope": "地域コミュニティバスは一部地区で運行。優待は市内在住75歳以上が対象で、バス・船舶・タクシーから一つを選びます。",
       "rides": [
         {"name": "地域コミュニティバス", "tags": ["地区限定", "路線・曜日を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "家島・坊勢島内、前之庄～山之内など、地域ごとに異なるバスを運行しています。", "check": "市全域を一つのバスで回れるわけではありません。対象地区・運行日・時刻を選んで確認。", "source": "https://www.city.himeji.lg.jp/sangyo/0000004453.html"}
       ],
