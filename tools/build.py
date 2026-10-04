@@ -1304,8 +1304,12 @@ def basic_guide_page(prefs, draft):
             raise ValueError(f"基本ガイドの確認先が足りません: {pid}")
         links[pid] = {"name": d["pref"]["name"], "policeName": d["pref"]["police"], "police": police,
                       "benefit": list_path(d["pref"]), "taxi": taxi_path(d["pref"])}
-    options = "\n".join(f'      <option value="{pid}">{e(links[pid]["name"])}</option>'
-                        for _, ids in REGIONS for pid in ids if pid in links)
+    options = "\n".join(
+        f'      <optgroup label="{e(region)}">\n'
+        + "\n".join(f'        <option value="{pid}">{e(links[pid]["name"])}</option>'
+                    for pid in ids if pid in links)
+        + "\n      </optgroup>"
+        for region, ids in REGIONS if any(pid in links for pid in ids))
     regions = []
     for region, ids in REGIONS:
         rows = [f'<li><a href="{links[pid]["benefit"]}">{e(links[pid]["name"])}の免許返納特典と市町村別の案内</a></li>'
@@ -1353,15 +1357,15 @@ def basic_guide_page(prefs, draft):
 <section id="region" class="basic-section" aria-labelledby="basic-region-h">
   <p class="basic-kicker">住所地から探す</p><h2 id="basic-region-h">手続き先と市町村の支援を探す</h2>
   <p>警察での手続きと、市町村の特典・タクシー助成は確認先が異なります。都道府県を選ぶと、それぞれのページを開けます。</p>
-  <div class="basic-picker"><label for="basic-pref">お住まいの都道府県</label><div class="basic-picker-row"><select id="basic-pref"><option value="">選んでください</option>
+  <div class="basic-picker"><label for="basic-pref">お住まいの都道府県</label><p class="basic-picker-hint">地方ごとに並んでいます。</p><div class="basic-picker-row"><div class="basic-select"><select id="basic-pref"><option value="">都道府県を選ぶ</option>
 {options}
-  </select><button type="button" id="basic-show">確認先を見る</button></div>
+  </select></div><button type="button" id="basic-show">確認先を見る</button></div>
   <div class="basic-result" id="basic-result" hidden aria-live="polite"><h3 id="basic-result-title"></h3><ul>
     <li><a id="basic-police-link" href="https://www.npa.go.jp/link/prefectural.html" target="_blank" rel="noopener">警察の免許返納手続き（公式）</a></li>
     <li><a id="basic-benefit-link" href="./">市町村別の免許返納特典</a></li>
     <li><a id="basic-taxi-link" href="./">高齢者向けタクシー助成</a></li>
   </ul></div></div>
-  <details class="basic-all"><summary>都道府県の一覧から選ぶ</summary><div class="basic-regions">{"".join(regions)}</div></details>
+  <details class="basic-all"><summary>地方別の一覧から選ぶ</summary><div class="basic-regions">{"".join(regions)}</div></details>
   <p class="basic-source">警察の手続きURLは各都道府県警察の案内を確認したものです。市町村の制度は各自治体の原典と確認日を一覧・個別ページに記しています。</p>
 </section>
 

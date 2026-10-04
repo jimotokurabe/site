@@ -357,9 +357,14 @@ p { margin: 0; }
 .basic-check p { margin-top: .6rem; color: var(--muted); font-size: .9rem; }
 .basic-picker { margin-top: 1.2rem; padding: 1.2rem; background: var(--surface-2); border-top: 3px solid var(--accent); }
 .basic-picker label { display: block; margin-bottom: .4rem; font-weight: 700; }
+.basic-picker-hint { margin: 0 0 .65rem; color: var(--muted); font-size: .86rem; }
 .basic-picker-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; }
 .basic-picker select, .basic-picker button { min-height: 3rem; padding: .45rem .75rem; font: inherit; }
-.basic-picker select { min-width: 0; border: 2px solid var(--line); background: var(--surface); color: var(--ink); }
+.basic-select { position: relative; min-width: 0; }
+.basic-select::after { content: ""; position: absolute; right: 1.1rem; top: 50%; width: .7rem; height: .7rem; border-right: 3px solid var(--accent); border-bottom: 3px solid var(--accent); transform: translateY(-70%) rotate(45deg); pointer-events: none; }
+.basic-picker select { width: 100%; min-width: 0; min-height: 3.4rem; appearance: none; padding: .55rem 2.9rem .55rem .9rem; border: 2px solid var(--accent); border-radius: .35rem; background: var(--surface); color: var(--ink); font-size: 1.05rem; font-weight: 700; cursor: pointer; }
+.basic-picker option, .basic-picker optgroup { background: var(--surface); color: var(--ink); }
+.basic-picker optgroup { font-weight: 700; }
 .basic-picker button { border: 2px solid var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 700; cursor: pointer; }
 .basic-result { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
 .basic-result h3 { margin: 0 0 .4rem; font: 700 1.1rem/1.5 var(--font-head); }
