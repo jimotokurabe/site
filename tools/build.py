@@ -1664,8 +1664,8 @@ HOME_CITY_SCRIPT = """<script>
     if (!item) return;
     var full = item.details.some(function (d) { return d.level === 'detailed'; });
     var partial = item.details.some(function (d) { return d.level === 'partial'; });
-    status.textContent = full ? '交通の詳細案内があります。'
-      : partial ? '一部地区の交通案内があります。' : '交通の詳細は調査中です。確認済みの助成・返納情報は見られます。';
+    status.textContent = full || partial ? '確認済みの移動・運賃支援の案内があります。'
+      : '交通の詳細は調査中です。確認済みの助成・返納情報は見られます。';
   });
   document.getElementById('home-city-form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -1673,7 +1673,7 @@ HOME_CITY_SCRIPT = """<script>
     if (!item) { status.textContent = '市区町村を選んでください。'; city.focus(); return; }
     var detail = item.details.find(function (d) { return d.level === 'detailed'; }) || item.details[0];
     if (detail) {
-      location.href = detail.url + (topicField.value === 'support' ? '#support-h' : '#ride-h');
+      location.href = detail.url + (topicField.value === 'support' || detail.focus === 'support' ? '#support-h' : '#ride-h');
     } else {
       location.href = 'mobility.html?pref=' + encodeURIComponent(item.pref)
         + '&city=' + encodeURIComponent(item.slug) + '&topic=' + encodeURIComponent(topicField.value);
@@ -1719,9 +1719,13 @@ def top_page(data, draft, others, mobility_index):
             options.append(f'<optgroup label="{e(region)}">{"".join(group)}</optgroup>')
     city_count = len(mobility_index["cities"])
     detailed_count = sum(bool(row["details"]) for row in mobility_index["cities"])
-    detailed_links = " ".join(
-        f'<a href="{e(detail["url"])}">{e(detail["scope"])}の移動案内</a>'
-        for row in mobility_index["cities"] for detail in row["details"])
+    detailed_links = "\n".join(
+        f'<details><summary>{e(region)}（{sum(len(row["details"]) for row in mobility_index["cities"] if row["pref"] in ids.split())}地域）</summary>'
+        f'<nav aria-label="{e(region)}の移動案内">' + " ".join(
+            f'<a href="{e(detail["url"])}">{e(detail["scope"])}の移動案内</a>'
+            for row in mobility_index["cities"] if row["pref"] in ids.split()
+            for detail in row["details"]) + '</nav></details>'
+        for region, ids in PREF_REGIONS)
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
     main = f"""<section class="top-hero">
   <p class="top-hero-kicker">全国の市区町村から</p>
@@ -1758,10 +1762,10 @@ def top_page(data, draft, others, mobility_index):
     </div>
   </form>
   <p class="home-city-status" id="home-city-status" role="status">都道府県を選んでください。</p>
-  <p class="home-coverage"><span aria-hidden="true">●</span> 全国{city_count:,}市区町村から探せます。交通の詳細案内は現在{detailed_count}地域です。</p>
+  <p class="home-coverage"><span aria-hidden="true">●</span> 全国{city_count:,}市区町村から探せます。移動・支援の個別案内は現在{detailed_count}地域です。</p>
 </section>
 
-<details class="home-featured"><summary>交通の詳細を確認した{detailed_count}地域を見る</summary><nav aria-label="交通の詳細案内">{detailed_links}</nav></details>
+<details class="home-featured"><summary>移動手段・運賃支援を確認した{detailed_count}地域を見る</summary><div class="home-featured-groups">{detailed_links}</div></details>
 <details class="home-pref-links"><summary>都道府県別の制度一覧を見る</summary><nav aria-label="都道府県別の制度一覧">{' '.join(prefecture_links)}</nav></details>
 
 <p class="top-basic-entry"><a href="{BASIC_GUIDE_PATH}"><b>返納の手続きから知りたい方へ</b><span>免許返納の基本ガイドで、条件・警察の手続き・運転経歴証明書を確認する →</span></a></p>
@@ -1817,6 +1821,7 @@ def national_mobility_data(prefs, coverage, regional):
             "scope": entry["scope"],
             "level": entry["level"],
             "url": url,
+            "focus": entry.get("focus", "mobility"),
         })
     rows = []
     for d in published:
@@ -1858,14 +1863,18 @@ def national_mobility_page(prefs, coverage, regional, draft):
         options.append(f'<optgroup label="{e(region)}">{"".join(region_options)}</optgroup>')
     regional_hints = {c["id"]: c["hint"] for c in regional["cities"]}
     featured = "\n".join(
-        f'<a href="{e(entry["page"])}"><strong>{e(by_id[entry["pref"]]["pref"]["name"])} {e(entry["scope"])}</strong>'
-        f'<span>{e(entry.get("hint", regional_hints.get(entry["city"], "交通と助成の確認結果")))}</span></a>'
-        for entry in coverage["entries"] if entry["page"] != MOBILITY_PATH)
+        f'<details class="nation-featured-region"><summary>{e(region)}（{sum(1 for entry in coverage["entries"] if entry["pref"] in ids.split() and entry["page"] != MOBILITY_PATH)}地域）</summary>'
+        '<div class="nation-featured-grid">' + "\n".join(
+            f'<a href="{e(entry["page"])}"><strong>{e(by_id[entry["pref"]]["pref"]["name"])} {e(entry["scope"])}</strong>'
+            f'<span>{e(entry.get("hint", regional_hints.get(entry["city"], "移動・支援の確認結果")))}</span></a>'
+            for entry in coverage["entries"] if entry["pref"] in ids.split() and entry["page"] != MOBILITY_PATH)
+        + '</div></details>'
+        for region, ids in PREF_REGIONS)
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 市区町村の掲載状況</nav>
 <header class="nation-intro">
   <p class="mobility-kicker">全国の市区町村から</p>
   <h1>市区町村の掲載状況</h1>
-  <p>交通手段の詳細を確認した地域と、現在読める助成・返納の情報を案内します。</p>
+  <p>移動手段や運賃支援を確認した地域と、現在読める助成・返納の情報を案内します。</p>
 </header>
 <div class="nation-layout">
   <section class="nation-search" aria-labelledby="nation-search-h">
@@ -1885,9 +1894,9 @@ def national_mobility_page(prefs, coverage, regional, draft):
   </section>
 </div>
 <section class="nation-featured" aria-labelledby="nation-featured-h">
-  <h2 id="nation-featured-h">交通手段を詳しく確認した地域</h2>
-  <p>地域名から、乗れる交通と運賃の支援を直接確認できます。</p>
-  <div class="nation-featured-grid">{featured}</div>
+  <h2 id="nation-featured-h">移動手段・運賃支援を確認した地域</h2>
+  <p>地域名から、確認した交通や運賃の支援を直接確認できます。</p>
+  <div class="nation-featured-regions">{featured}</div>
 </section>
 <aside class="nation-help"><h2>掲載状況について</h2><p>詳細な交通案内は、地域ごとに確認して追加しています。タクシー助成の「記載なし」は、その地域にバスや予約交通がないという意味ではありません。利用前に公式情報で区域・予約・運行日を確認してください。</p></aside>
 <noscript><section class="nation-fallback"><h2>都道府県から助成情報を見る</h2><ul>{''.join(fallback)}</ul></section></noscript>"""
@@ -1920,11 +1929,11 @@ def national_mobility_page(prefs, coverage, regional, draft):
     document.getElementById('nation-city-name').textContent = item.pref_name + ' ' + item.name;
     var hasFull = item.details.some(function (d) { return d.level === 'detailed'; });
     var hasPartial = item.details.some(function (d) { return d.level === 'partial'; });
-    document.getElementById('nation-status').textContent = hasFull ? '交通と助成の詳細案内あり' : hasPartial ? '一部地区の詳細案内あり' : '交通手段の詳細は調査中';
-    document.getElementById('nation-intro').textContent = hasFull ? '地域で使える交通候補と運賃の助成を比べられます。' : hasPartial ? '確認済みの地区だけ、交通候補を案内しています。' : '現在確認できる助成などの調査結果へ進めます。地域のバス・予約交通は順次確認しています。';
+    document.getElementById('nation-status').textContent = hasFull || hasPartial ? '確認済みの移動・運賃支援の案内あり' : '交通手段の詳細は調査中';
+    document.getElementById('nation-intro').textContent = hasFull || hasPartial ? '確認した交通・運賃支援の候補を、対象範囲とともに案内しています。' : '現在確認できる助成などの調査結果へ進めます。地域のバス・予約交通は順次確認しています。';
     function addMobility() {
       item.details.forEach(function (d) {
-        addLink(links, d.scope + 'の移動候補', '乗れる交通と運賃の助成。対象地区や予約条件を確認してください。', d.url, d.level === 'partial' ? '地区限定' : '交通と助成');
+        addLink(links, d.scope + 'の移動候補', '確認済みの交通または運賃支援。対象地区や利用条件を確認してください。', d.url + (d.focus === 'support' ? '#support-h' : '#ride-h'), '対象範囲を確認');
       });
     }
     function addSupport() {
@@ -2126,6 +2135,8 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
                          for i, item in enumerate(city["rides"], 1))
     support_links = "".join(f'<a href="#support-{i}">{e(item["name"])}</a>'
                             for i, item in enumerate(city["supports"], 1))
+    if not ride_links:
+        ride_links = "このページでは個別の交通手段を未掲載。運賃の支援をご確認ください。"
     if not support_links:
         support_links = "確認した範囲では未掲載。既存の助成調査もご覧ください。"
     rides = "\n".join(mobility_card(item, "h3", f"ride-{i}")
@@ -2141,7 +2152,9 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
                     if regional else "")
     support_note = ("" if city["supports"] else
                     f'<p>個別の運賃助成はこのページでは掲載していません。<a href="../{e(taxi_path(pref_data["pref"]))}#{e(guide_city["slug"])}">既存のタクシー助成の調査結果</a>もご確認ください。</p>')
-    scope_note = (f'{scope}で確認した交通です。{name}全域の案内ではありません。'
+    ride_note = ("" if city["rides"] else
+                 '<p>このページでは個別の交通手段を掲載していません。以下の運賃支援と公式案内をご確認ください。</p>')
+    scope_note = (f'{scope}で確認した移動・支援の候補です。この地域の全交通手段を網羅した案内ではありません。'
                   if partial else '住む地区と目的地で使える交通が変わります。')
     main = f'''<nav class="crumbs" aria-label="いまいる場所"><a href="../">トップ</a> ＞ <a href="../mobility.html">移動手段を探す</a> ＞ {e(scope)}</nav>
 <header class="mobility-city-hero">
@@ -2165,7 +2178,7 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
   <p>対象地区・運行日・予約などは、利用前に公式ページで確かめてください。</p>
 </section>
 <div class="mobility-city-content">
-  <section class="mobility-group" aria-labelledby="ride-h"><h2 id="ride-h">実際に乗る交通手段</h2><div class="mobility-cards">{rides}</div></section>
+  <section class="mobility-group" aria-labelledby="ride-h"><h2 id="ride-h">実際に乗る交通手段</h2>{ride_note}<div class="mobility-cards">{rides}</div></section>
   <section class="mobility-group" aria-labelledby="support-h"><h2 id="support-h">運賃の割引・助成</h2>{support_note}<div class="mobility-cards">{supports}</div></section>
 </div>
 <section class="mobility-city-return" aria-labelledby="return-h">
@@ -2631,7 +2644,7 @@ def municipal_mobility_coverage(data, prefs):
         if key not in valid or key in seen:
             raise ValueError(f"地域交通データの市区町村が不正または重複: {key}")
         seen.add(key)
-        if city["level"] not in {"detailed", "partial"} or not city["rides"]:
+        if city["level"] not in {"detailed", "partial"} or not (city["rides"] or city["supports"]):
             raise ValueError(f"地域交通データの掲載範囲または交通候補が不正: {key}")
         for service in [*city["rides"], *city["supports"]]:
             if not service["source"].startswith("https://"):
@@ -2640,6 +2653,7 @@ def municipal_mobility_coverage(data, prefs):
             "pref": city["pref"], "municipality": city["municipality"],
             "scope": city["scope"], "page": municipal_mobility_path(*key),
             "city": f"{key[0]}:{key[1]}", "level": city["level"],
+            "focus": "support" if not city["rides"] else "mobility",
             "hint": city["hint"],
         })
     return entries
