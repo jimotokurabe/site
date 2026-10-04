@@ -1,0 +1,55 @@
+{
+  "checked": "2026-10-04",
+  "cities": [
+    {
+      "id": "akashi", "name": "明石市", "hint": "路線・Tacoバスと、70歳以上の優待を確認",
+      "rides": [
+        {"name": "Tacoバス・Tacoバスミニ", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内の一部地域を走るコミュニティバス。乗る場所と行き先が同じルートにあるかを確認してください。", "check": "停留所・時刻・車いす対応は路線ごとに確認。", "source": "https://www.city.akashi.lg.jp/doboku/kousei_ka/machizukuri/kotsu/kokyo/taco-bus/rosenzu/index.html"}
+      ],
+      "supports": [
+        {"name": "敬老優待乗車券", "tags": ["70歳以上", "居住日条件あり"], "purposes": ["shopping", "hospital", "other"], "summary": "市内在住70歳以上にはバス証。1月1日から継続居住し4月1日時点で70歳以上なら、寿タクシー券500円×4枚も交付。", "check": "対象路線・契約タクシー会社を年度案内で確認。通院支援券との重複交付はできません。", "source": "https://www.city.akashi.lg.jp/fukushi/k_kaigo_shitsu/kenko/koresha/jose/josesedo.html"},
+        {"name": "高齢者通院支援タクシー利用券", "tags": ["通院のみ", "介護認定など条件あり"], "purposes": ["hospital"], "summary": "65歳以上・要介護1以上・在宅・公共交通を使うことが難しい方の、自宅からの通院を支援。", "check": "条件と通院先を確認。敬老優待乗車券または障害者優待乗車券と重複交付はできません。", "source": "https://www.city.akashi.lg.jp/fukushi/k_kaigo_shitsu/konenfukushi/zaitakukaigo/taxi.html"}
+      ]
+    },
+    {
+      "id": "kakogawa", "name": "加古川市", "hint": "地区別の小型バス・予約交通が豊富",
+      "rides": [
+        {"name": "かこバス", "tags": ["4ルート", "停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "東加古川・別府・鳩里／尾上・浜手のルート。区間により100円または200円。", "check": "自宅と目的地に近い停留所、時刻、車いす対応を確認。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/1438301129725.html"},
+        {"name": "かこバスミニ", "tags": ["地区別", "曜日を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "志方・山手・平岡などの地区別ルートを走ります。", "check": "地区ごとに路線、運行日、運賃が違います。市の一覧から該当ルートを選んでください。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/index.html"},
+        {"name": "病院ライナー", "tags": ["通院向け", "平日運行"], "purposes": ["hospital"], "summary": "JR宝殿駅と加古川中央市民病院を結ぶ、かこバスミニの路線。片道200円。", "check": "土日祝・年末年始は運休。自宅から宝殿駅までの移動は別途確認。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/1495087167963.html"},
+        {"name": "チョイソコかこがわ", "tags": ["地区限定", "登録・予約が必要"], "purposes": ["shopping", "hospital", "other"], "summary": "八幡町・上荘町国包、または平荘町の対象地区に住む人向けの予約交通。", "check": "対象住所・地区別の停留所・予約方法を確認。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/32630.html"}
+      ],
+      "supports": [
+        {"name": "神姫バス市内上限運賃", "tags": ["NicoPa限定", "市内乗降"], "purposes": ["shopping", "hospital", "other"], "summary": "加古川市内の停留所同士で乗り降りし、NicoPaで払うと運賃が上限200円。", "check": "現金や他のICカードは対象外。対象便と乗降地を確認。", "source": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/tosikekakuka/kotsuseisaku/communitykoutuu/18146.html"}
+      ]
+    },
+    {
+      "id": "takasago", "name": "高砂市", "hint": "じょうとんバスと条件付きタクシー助成",
+      "rides": [
+        {"name": "じょうとんバス・じょうとんバスミニ", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内を走るコミュニティバス。ミニには地区別ルートもあります。", "check": "路線図と運行日を確認。牛谷ルートは2027年3月までの実証運行です。", "source": "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/doro_kotsu/1/1/6029.html"}
+      ],
+      "supports": [
+        {"name": "じょうとんバス75歳以上割引", "tags": ["75歳以上", "現金払い"], "purposes": ["shopping", "hospital", "other"], "summary": "75歳以上は片道100円、1日券150円。年齢を示す証明書などを提示します。", "check": "対象のバス・ミニと支払い方法を確認。", "source": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/8850.html"},
+        {"name": "高齢者福祉タクシー券", "tags": ["65歳以上", "非課税世帯など"], "purposes": ["shopping", "hospital", "other"], "summary": "65歳以上で、介護認定または運転経歴証明書があり、住民税非課税世帯の人向け。500円券を交付。", "check": "申請月で枚数が変わり、1乗車に使える枚数にも制限があります。契約会社を確認。", "source": "https://www.city.takasago.lg.jp/gyoseisite/kenko_fukushi/koreishafukushi_kaigo/2/1/10602.html"}
+      ]
+    },
+    {
+      "id": "inami", "name": "稲美町", "hint": "予約型のあいのりいなみと券を比較",
+      "rides": [
+        {"name": "あいのりいなみ", "tags": ["登録・予約が必要", "行き先指定"], "purposes": ["shopping", "hospital", "other"], "summary": "町民向けの予約制乗合タクシー。自宅などから指定の目的地へ。65歳以上は町内200円、指定町外400円。", "check": "平日運行。行き先とバス停近接による利用制限、予約期限を確認。", "source": "https://www.town.hyogo-inami.lg.jp/0000004854.html"}
+      ],
+      "supports": [
+        {"name": "高齢者優待利用券", "tags": ["75歳以上など", "バス・タクシー選択"], "purposes": ["shopping", "hospital", "other"], "summary": "75歳以上、または非課税世帯の65～74歳などが対象。バス券かタクシー券を選びます。", "check": "在宅・利用の必要性・他の券との重複条件を確認。あいのりいなみで券を使えるかは未確認です。", "source": "https://www.town.hyogo-inami.lg.jp/0000007447.html"}
+      ]
+    },
+    {
+      "id": "harima", "name": "播磨町", "hint": "町内停留所のあるバスとタクシー助成",
+      "rides": [
+        {"name": "かこバスミニ 平岡東南ルート", "tags": ["平日運行", "停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "土山駅南口と東加古川駅を結ぶルートで、播磨町内にも停留所があります。", "check": "利用する停留所、時刻、現金運賃を確認。", "source": "https://www.town.harima.lg.jp/toshikekaku/kakobasumini.html"}
+      ],
+      "supports": [
+        {"name": "高齢者等タクシー料金助成券", "tags": ["75歳以上など", "契約会社限定"], "purposes": ["shopping", "hospital", "other"], "summary": "2026年4月1日時点の町在住・75歳以上の人、または町在住で要支援・要介護認定を受けた人向け。700円券を交付。", "check": "乗車地か到着地が町内であること、契約会社、運賃ごとの利用枚数を確認。", "source": "https://www.town.harima.lg.jp/hoken/koureisyatakusiryoukin.html"}
+      ]
+    }
+  ]
+}

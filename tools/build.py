@@ -46,6 +46,7 @@ TAXI_KINDS = {
 GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフォルダ（いまは兵庫県だけ）
 HOME_PREF = "hyogo"  # トップ・最初のひと言・手順ページで使う県
 BASIC_GUIDE_PATH = "menkyo-henno-guide.html"
+MOBILITY_PATH = "east-harima-mobility.html"
 
 
 def guide_dir(pref):
@@ -1591,6 +1592,13 @@ def top_page(data, draft, others=()):
   <p class="lead">住んでいる市や町によって、使える特典や助成はちがいます。市町村の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
 </section>
 
+<section class="mobility-entry" aria-labelledby="mobility-entry-h">
+  <div><p class="mobility-entry-kicker">東播磨・5市町から</p>
+  <h2 id="mobility-entry-h">車を使わず、どう行く？</h2>
+  <p>住む市町と外出の目的を選ぶと、地域の交通手段と助成を見比べられます。</p></div>
+  <a href="{MOBILITY_PATH}">移動手段を探す <span aria-hidden="true">→</span></a>
+</section>
+
 {pref_picker([data, *others])}
 
 <p class="top-basic-entry"><a href="{BASIC_GUIDE_PATH}"><b>返納の手続きから知りたい方へ</b><span>免許返納の基本ガイドで、条件・警察の手続き・運転経歴証明書を確認する →</span></a></p>
@@ -1622,6 +1630,97 @@ def top_page(data, draft, others=()):
         title="じもとくらべ｜免許返納の特典・タクシー代の助成を市町村ごとに",
         description="運転免許を返納したときの特典と、高齢者のタクシー代の助成を、市町村の公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
         path="", main=main, draft=draft, scripts=PREF_CHOOSER_SCRIPT + PICK_SCRIPT + PREF_SCRIPT)
+
+
+def mobility_card(item):
+    tags = "".join(f'<span class="mobility-tag">{e(tag)}</span>' for tag in item["tags"])
+    purposes = " ".join(item["purposes"])
+    return f"""<article class="mobility-card" data-purposes="{purposes}">
+  <div class="mobility-tags">{tags}</div>
+  <h4>{e(item['name'])}</h4>
+  <p>{e(item['summary'])}</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>{e(item['check'])}</span></div>
+  <a href="{e(item['source'])}" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article>"""
+
+
+def mobility_page(data, draft):
+    cities = data["cities"]
+    choices = "\n".join(
+        f'<button type="button" class="mobility-choice" data-city-choice="{e(c["id"])}"'
+        f' aria-pressed="{"true" if i == 0 else "false"}"><b>{e(c["name"])}</b><small>{e(c["hint"])}</small></button>'
+        for i, c in enumerate(cities))
+    results = "\n".join(f"""<section class="mobility-city" data-mobility-city="{e(c['id'])}"{' hidden' if i else ''}>
+  <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>{e(c['name'])}の移動候補</h2>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p></div>
+  <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['rides'])}</div></section>
+  <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['supports'])}</div></section>
+</section>""" for i, c in enumerate(cities))
+    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨の移動手段</nav>
+<section class="mobility-hero">
+  <p class="mobility-kicker">東播磨の移動案内 / 2026年10月4日確認</p>
+  <h1>車を使わず、<br><em>どう行く？</em></h1>
+  <p>買い物や通院に使える地域の交通を、住む市町から探せます。バス・予約交通と、運賃の助成を分けて案内します。</p>
+  <div class="mobility-hero-route" aria-hidden="true"><i></i><i></i><i></i><span>住む地域</span><span>外出の目的</span><span>移動候補</span></div>
+</section>
+<div class="mobility-layout">
+  <form class="mobility-form" id="mobility-form">
+    <fieldset><legend><span class="mobility-step">1</span> お住まいはどこですか？</legend>
+      <p class="mobility-field-help">まずは市町を選んでください。細かな地区は候補の公式ページで確認します。</p>
+      <div class="mobility-choices">{choices}</div>
+    </fieldset>
+    <fieldset><legend><span class="mobility-step">2</span> どんな外出ですか？</legend>
+      <p class="mobility-field-help">目的に合う交通を優先して表示します。</p>
+      <div class="mobility-purpose">
+        <button type="button" data-purpose="shopping" aria-pressed="true">買い物</button>
+        <button type="button" data-purpose="hospital" aria-pressed="false">通院</button>
+        <button type="button" data-purpose="other" aria-pressed="false">その他</button>
+      </div>
+    </fieldset>
+  </form>
+  <div class="mobility-results" id="mobility-results" aria-live="polite" aria-atomic="false">{results}</div>
+</div>
+<aside class="mobility-note"><h2>この画面で分かること</h2><p>地域で使える可能性がある交通手段と助成の入口です。利用条件は年齢、居住日、地区、介護認定、予約、目的地などで変わります。運行時刻と停留所は公式ページで直前に確認してください。</p></aside>"""
+    script = """<script>
+(function () {
+  var form = document.getElementById('mobility-form');
+  var sections = document.querySelectorAll('[data-mobility-city]');
+  if (!form || !sections.length) return;
+  var params = new URLSearchParams(location.search);
+  var city = form.querySelector('[data-city-choice="' + params.get('city') + '"]');
+  var purpose = form.querySelector('[data-purpose="' + params.get('purpose') + '"]');
+  var selectedCity = city ? city.getAttribute('data-city-choice') : 'akashi';
+  var selectedPurpose = purpose ? purpose.getAttribute('data-purpose') : 'shopping';
+  function update() {
+    form.querySelectorAll('[data-city-choice]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-city-choice') === selectedCity));
+    });
+    form.querySelectorAll('[data-purpose]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-purpose') === selectedPurpose));
+    });
+    sections.forEach(function (section) {
+      section.hidden = section.getAttribute('data-mobility-city') !== selectedCity;
+      section.querySelectorAll('[data-purposes]').forEach(function (card) {
+        card.hidden = card.getAttribute('data-purposes').split(' ').indexOf(selectedPurpose) < 0;
+      });
+    });
+    var next = new URL(location.href);
+    next.searchParams.set('city', selectedCity);
+    next.searchParams.set('purpose', selectedPurpose);
+    history.replaceState(null, '', next);
+  }
+  form.querySelectorAll('[data-city-choice]').forEach(function (button) {
+    button.addEventListener('click', function () { selectedCity = button.getAttribute('data-city-choice'); update(); });
+  });
+  form.querySelectorAll('[data-purpose]').forEach(function (button) {
+    button.addEventListener('click', function () { selectedPurpose = button.getAttribute('data-purpose'); update(); });
+  });
+  update();
+})();
+</script>"""
+    return shell(title="東播磨の移動手段を探す｜じもとくらべ",
+                 description="明石・加古川・高砂・稲美・播磨の交通手段と運賃助成を、住む市町と外出目的から探せます。",
+                 path=MOBILITY_PATH, main=main, draft=draft, page_class="mobility-page", scripts=script)
 
 
 # ---------------- 最初のひと言（話し方のページ） ----------------
@@ -2067,12 +2166,14 @@ def main():
     data = next(d for d in prefs if d["pref"]["id"] == HOME_PREF)
     others = [d for d in prefs if d is not data]
     hk = json.loads((ROOT / "data" / "hanashikata.json").read_text(encoding="utf-8"))
+    mobility = json.loads((ROOT / "data" / "east-harima-mobility.json").read_text(encoding="utf-8"))
     data["hk"] = hk
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]
     pages = {
         "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")]),
+        MOBILITY_PATH: mobility_page(mobility, a.draft),
         BASIC_GUIDE_PATH: basic_guide_page([data, *others], a.draft),
         list_path(data["pref"]): list_page(data, a.draft),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
