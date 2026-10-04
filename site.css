@@ -109,12 +109,6 @@ p { margin: 0; }
 
 /* 東播磨の移動案内 */
 .mobility-page { max-width: 70rem; }
-.mobility-entry { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; margin: 1.2rem 0 2rem; padding: 1.2rem 1.4rem; border-radius: 1rem; background: #173b50; color: #fff; }
-.mobility-entry-kicker { color: #b8e3ee; font-size: .8rem; font-weight: 700; letter-spacing: .08em; }
-.mobility-entry h2 { margin: .1rem 0; font-family: var(--font-head); font-size: 1.35rem; line-height: 1.4; }
-.mobility-entry p:last-child { line-height: 1.6; font-size: .9rem; }
-.mobility-entry a { display: inline-flex; align-items: center; justify-content: center; flex: none; gap: .6rem; min-height: 3.1rem; padding: .55rem 1rem; border-radius: .65rem; background: #d9f5ed; color: #123b40; font-weight: 700; text-decoration: none; }
-.mobility-entry a:hover { background: #fff; }
 .mobility-hero { position: relative; overflow: hidden; margin-top: 1rem; padding: clamp(1.4rem, 4vw, 3rem); border-radius: 1.2rem; background: linear-gradient(125deg, #143447 0%, #205369 72%, #2d6775 100%); color: #fff; }
 .mobility-hero::after { content: ""; position: absolute; width: 15rem; height: 15rem; border: 1px solid #ffffff32; border-radius: 50%; right: -6rem; top: -5rem; box-shadow: 0 0 0 3.5rem #ffffff08, 0 0 0 7rem #ffffff06; pointer-events: none; }
 .mobility-kicker { color: #37667a; font-size: .78rem; font-weight: 700; letter-spacing: .09em; }
@@ -171,8 +165,6 @@ p { margin: 0; }
   .mobility-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 34rem) {
-  .mobility-entry { display: block; }
-  .mobility-entry a { margin-top: .9rem; }
   .mobility-choices { grid-template-columns: 1fr; }
   .mobility-hero-route { margin-top: 1.4rem; }
 }
@@ -344,13 +336,25 @@ p { margin: 0; }
 .bullets { margin: 0; padding-left: 1.2em; display: grid; gap: .4rem; }
 
 /* ---------- トップ ---------- */
-.top-hero { padding-block: 2.2rem 1rem; display: grid; gap: .8rem; }
-.top-hero .name {
-  font-family: var(--font-head); font-weight: 700; margin: 0; line-height: 1.2;
-  font-size: clamp(2.4rem, 1.4rem + 5vw, 3.6rem); letter-spacing: .06em;
-}
-.top-hero .name span { color: var(--accent); }
-.top-hero .tagline { margin: -.4rem 0 0; font-size: 1.15rem; font-weight: 700; }
+.top-hero { padding-block: 1.4rem .8rem; display: grid; gap: .45rem; }
+.top-hero-kicker { color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .1em; }
+.top-hero-title { margin: 0; font-family: var(--font-head); font-size: clamp(1.85rem, 1.25rem + 3vw, 2.8rem); line-height: 1.35; }
+.top-hero .lead { color: var(--muted); font-size: .94rem; line-height: 1.7; }
+.home-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin: .8rem 0 1.8rem; }
+.home-paths a { display: grid; align-content: start; gap: .4rem; min-width: 0; padding: 1.15rem 1.2rem; border-radius: .85rem; text-decoration: none; line-height: 1.55; }
+.home-path-primary { background: #173b50; color: #fff; }
+.home-path-primary:hover { background: #24536a; }
+.home-path-secondary { background: var(--surface); color: var(--ink); border: 1.5px solid var(--line); }
+.home-path-secondary:hover { border-color: var(--accent); }
+.home-path-kicker { font-size: .76rem; font-weight: 700; letter-spacing: .05em; }
+.home-path-primary .home-path-kicker { color: #b8e3ee; }
+.home-path-secondary .home-path-kicker { color: var(--accent); }
+.home-paths strong { font-family: var(--font-head); font-size: 1.25rem; line-height: 1.4; }
+.home-paths a > span:nth-of-type(2) { font-size: .84rem; }
+.home-paths b { align-self: end; margin-top: .35rem; font-size: .85rem; }
+.home-path-primary b { color: #c5f5dc; }
+.home-path-secondary b { color: var(--accent); }
+@media (max-width: 36rem) { .home-paths { grid-template-columns: 1fr; } }
 .topic {
   display: grid; gap: .6rem; margin-top: 1rem; padding: 1.3rem 1.3rem 1.2rem;
   border-radius: 1rem; background: var(--surface); border: 2px solid var(--ink);

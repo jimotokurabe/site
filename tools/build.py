@@ -1587,17 +1587,25 @@ PREF_SCRIPT = """<script>
 def top_page(data, draft, others=()):
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
     main = f"""<section class="top-hero">
-  <h1 class="name">じもと<span>くらべ</span></h1>
-  <p class="tagline">免許返納の特典・タクシー代の助成を市町村ごとに</p>
-  <p class="lead">住んでいる市や町によって、使える特典や助成はちがいます。市町村の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
+  <p class="top-hero-kicker">地域の移動と支援を調べる</p>
+  <h1 class="top-hero-title">車を使わない毎日、<br>わが町ではどう動く？</h1>
+  <p class="lead">東播磨の交通手段と、各地の返納特典・助成を公式情報から調べられます。</p>
 </section>
 
-<section class="mobility-entry" aria-labelledby="mobility-entry-h">
-  <div><p class="mobility-entry-kicker">東播磨・5市町から</p>
-  <h2 id="mobility-entry-h">車を使わず、どう行く？</h2>
-  <p>住む市町と外出の目的を選ぶと、地域の交通手段と助成を見比べられます。</p></div>
-  <a href="{MOBILITY_PATH}">移動手段を探す <span aria-hidden="true">→</span></a>
-</section>
+<nav class="home-paths" aria-label="調べたい内容を選ぶ">
+  <a class="home-path-primary" href="{MOBILITY_PATH}">
+    <span class="home-path-kicker">東播磨5市町</span>
+    <strong>移動手段を探す</strong>
+    <span>明石・加古川・高砂・稲美・播磨。買い物や通院の候補を探せます。</span>
+    <b>地域と目的を選ぶ <span aria-hidden="true">→</span></b>
+  </a>
+  <a class="home-path-secondary" href="#pick">
+    <span class="home-path-kicker">調査済みの市町村</span>
+    <strong>制度から探す</strong>
+    <span>免許返納の特典と、高齢者のタクシー代の助成を調べます。</span>
+    <b>都道府県を選ぶ <span aria-hidden="true">↓</span></b>
+  </a>
+</nav>
 
 {pref_picker([data, *others])}
 
@@ -1627,8 +1635,8 @@ def top_page(data, draft, others=()):
   </ul>
 </section>"""
     return shell(
-        title="じもとくらべ｜免許返納の特典・タクシー代の助成を市町村ごとに",
-        description="運転免許を返納したときの特典と、高齢者のタクシー代の助成を、市町村の公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
+        title="じもとくらべ｜地域の移動手段と支援を市町村から探す",
+        description="地域の交通手段、免許返納の特典、高齢者のタクシー代の助成を、市町村の公式ページで確かめて調べられるサイトです。",
         path="", main=main, draft=draft, scripts=PREF_CHOOSER_SCRIPT + PICK_SCRIPT + PREF_SCRIPT)
 
 
