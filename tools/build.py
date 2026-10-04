@@ -1594,9 +1594,9 @@ def top_page(data, draft, others=()):
 
 <nav class="home-paths" aria-label="調べたい内容を選ぶ">
   <a class="home-path-primary" href="{MOBILITY_PATH}">
-    <span class="home-path-kicker">東播磨5市町</span>
+    <span class="home-path-kicker">東播磨と周辺・9地域</span>
     <strong>移動手段を探す</strong>
-    <span>明石・加古川・高砂・稲美・播磨。買い物や通院の候補を探せます。</span>
+    <span>明石・加古川など東播磨に加え、神戸市西区・三木・小野・姫路にも対応。</span>
     <b>地域と目的を選ぶ <span aria-hidden="true">→</span></b>
   </a>
   <a class="home-path-secondary" href="#pick">
@@ -1654,8 +1654,14 @@ def mobility_card(item):
 
 def mobility_page(data, draft):
     cities = data["cities"]
+    groups = data["groups"]
+    group_choices = "\n".join(
+        f'<button type="button" data-area-choice="{e(g["id"])}"'
+        f' aria-pressed="{"true" if i == 0 else "false"}"><b>{e(g["name"])}</b><small>{e(g["hint"])}</small></button>'
+        for i, g in enumerate(groups))
     choices = "\n".join(
         f'<button type="button" class="mobility-choice" data-city-choice="{e(c["id"])}"'
+        f' data-city-group="{e(c["group"])}"{" hidden" if c["group"] != groups[0]["id"] else ""}'
         f' aria-pressed="{"true" if i == 0 else "false"}"><b>{e(c["name"])}</b><small>{e(c["hint"])}</small></button>'
         for i, c in enumerate(cities))
     results = "\n".join(f"""<section class="mobility-city" data-mobility-city="{e(c['id'])}"{' hidden' if i else ''}>
@@ -1664,17 +1670,18 @@ def mobility_page(data, draft):
   <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['rides'])}</div></section>
   <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['supports'])}</div></section>
 </section>""" for i, c in enumerate(cities))
-    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨の移動手段</nav>
+    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨と周辺の移動手段</nav>
 <section class="mobility-hero">
-  <p class="mobility-kicker">東播磨の移動案内 / 2026年10月4日確認</p>
+  <p class="mobility-kicker">東播磨と周辺の移動案内 / {jdate(data['checked'])}確認</p>
   <h1>車を使わず、<br><em>どう行く？</em></h1>
-  <p>買い物や通院に使える地域の交通を、住む市町から探せます。バス・予約交通と、運賃の助成を分けて案内します。</p>
+  <p>買い物や通院に使える地域の交通を、住む市区町から探せます。バス・予約交通と、運賃の助成を分けて案内します。</p>
   <div class="mobility-hero-route" aria-hidden="true"><i></i><i></i><i></i><span>住む地域</span><span>外出の目的</span><span>移動候補</span></div>
 </section>
 <div class="mobility-layout">
   <form class="mobility-form" id="mobility-form">
     <fieldset><legend><span class="mobility-step">1</span> お住まいはどこですか？</legend>
-      <p class="mobility-field-help">まずは市町を選んでください。細かな地区は候補の公式ページで確認します。</p>
+      <p class="mobility-field-help">地域を選んでから、市区町を選んでください。</p>
+      <div class="mobility-areas" role="group" aria-label="地域">{group_choices}</div>
       <div class="mobility-choices">{choices}</div>
     </fieldset>
     <fieldset><legend><span class="mobility-step">2</span> どんな外出ですか？</legend>
@@ -1698,9 +1705,14 @@ def mobility_page(data, draft):
   var city = form.querySelector('[data-city-choice="' + params.get('city') + '"]');
   var purpose = form.querySelector('[data-purpose="' + params.get('purpose') + '"]');
   var selectedCity = city ? city.getAttribute('data-city-choice') : 'akashi';
+  var selectedArea = city ? city.getAttribute('data-city-group') : 'core';
   var selectedPurpose = purpose ? purpose.getAttribute('data-purpose') : 'shopping';
   function update() {
+    form.querySelectorAll('[data-area-choice]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-area-choice') === selectedArea));
+    });
     form.querySelectorAll('[data-city-choice]').forEach(function (button) {
+      button.hidden = button.getAttribute('data-city-group') !== selectedArea;
       button.setAttribute('aria-pressed', String(button.getAttribute('data-city-choice') === selectedCity));
     });
     form.querySelectorAll('[data-purpose]').forEach(function (button) {
@@ -1717,8 +1729,15 @@ def mobility_page(data, draft):
     next.searchParams.set('purpose', selectedPurpose);
     history.replaceState(null, '', next);
   }
+  form.querySelectorAll('[data-area-choice]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      selectedArea = button.getAttribute('data-area-choice');
+      selectedCity = form.querySelector('[data-city-group="' + selectedArea + '"]').getAttribute('data-city-choice');
+      update();
+    });
+  });
   form.querySelectorAll('[data-city-choice]').forEach(function (button) {
-    button.addEventListener('click', function () { selectedCity = button.getAttribute('data-city-choice'); update(); });
+    button.addEventListener('click', function () { selectedCity = button.getAttribute('data-city-choice'); selectedArea = button.getAttribute('data-city-group'); update(); });
   });
   form.querySelectorAll('[data-purpose]').forEach(function (button) {
     button.addEventListener('click', function () { selectedPurpose = button.getAttribute('data-purpose'); update(); });
@@ -1726,8 +1745,8 @@ def mobility_page(data, draft):
   update();
 })();
 </script>"""
-    return shell(title="東播磨の移動手段を探す｜じもとくらべ",
-                 description="明石・加古川・高砂・稲美・播磨の交通手段と運賃助成を、住む市町と外出目的から探せます。",
+    return shell(title="東播磨と周辺の移動手段を探す｜じもとくらべ",
+                 description="東播磨と周辺地域の交通手段と運賃助成を、住む市区町と外出目的から探せます。",
                  path=MOBILITY_PATH, main=main, draft=draft, page_class="mobility-page", scripts=script)
 
 

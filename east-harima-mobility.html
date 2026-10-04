@@ -12,13 +12,13 @@ gtag('config', 'G-T1PQ72Q40S');
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="google-adsense-account" content="ca-pub-2542211932832864">
-<title>東播磨の移動手段を探す｜じもとくらべ</title>
-<meta name="description" content="明石・加古川・高砂・稲美・播磨の交通手段と運賃助成を、住む市町と外出目的から探せます。">
+<title>東播磨と周辺の移動手段を探す｜じもとくらべ</title>
+<meta name="description" content="東播磨と周辺地域の交通手段と運賃助成を、住む市区町と外出目的から探せます。">
 <link rel="canonical" href="https://jimotokurabe.jp/east-harima-mobility.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="じもとくらべ">
-<meta property="og:title" content="東播磨の移動手段を探す｜じもとくらべ">
-<meta property="og:description" content="明石・加古川・高砂・稲美・播磨の交通手段と運賃助成を、住む市町と外出目的から探せます。">
+<meta property="og:title" content="東播磨と周辺の移動手段を探す｜じもとくらべ">
+<meta property="og:description" content="東播磨と周辺地域の交通手段と運賃助成を、住む市区町と外出目的から探せます。">
 <meta property="og:url" content="https://jimotokurabe.jp/east-harima-mobility.html">
 <meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,22 +40,28 @@ gtag('config', 'G-T1PQ72Q40S');
 </header>
 
 <main id="main">
-<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨の移動手段</nav>
+<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨と周辺の移動手段</nav>
 <section class="mobility-hero">
-  <p class="mobility-kicker">東播磨の移動案内 / 2026年10月4日確認</p>
+  <p class="mobility-kicker">東播磨と周辺の移動案内 / 2026年10月4日確認</p>
   <h1>車を使わず、<br><em>どう行く？</em></h1>
-  <p>買い物や通院に使える地域の交通を、住む市町から探せます。バス・予約交通と、運賃の助成を分けて案内します。</p>
+  <p>買い物や通院に使える地域の交通を、住む市区町から探せます。バス・予約交通と、運賃の助成を分けて案内します。</p>
   <div class="mobility-hero-route" aria-hidden="true"><i></i><i></i><i></i><span>住む地域</span><span>外出の目的</span><span>移動候補</span></div>
 </section>
 <div class="mobility-layout">
   <form class="mobility-form" id="mobility-form">
     <fieldset><legend><span class="mobility-step">1</span> お住まいはどこですか？</legend>
-      <p class="mobility-field-help">まずは市町を選んでください。細かな地区は候補の公式ページで確認します。</p>
-      <div class="mobility-choices"><button type="button" class="mobility-choice" data-city-choice="akashi" aria-pressed="true"><b>明石市</b><small>路線・Tacoバスと、70歳以上の優待を確認</small></button>
-<button type="button" class="mobility-choice" data-city-choice="kakogawa" aria-pressed="false"><b>加古川市</b><small>地区別の小型バス・予約交通が豊富</small></button>
-<button type="button" class="mobility-choice" data-city-choice="takasago" aria-pressed="false"><b>高砂市</b><small>じょうとんバスと条件付きタクシー助成</small></button>
-<button type="button" class="mobility-choice" data-city-choice="inami" aria-pressed="false"><b>稲美町</b><small>予約型のあいのりいなみと券を比較</small></button>
-<button type="button" class="mobility-choice" data-city-choice="harima" aria-pressed="false"><b>播磨町</b><small>町内停留所のあるバスとタクシー助成</small></button></div>
+      <p class="mobility-field-help">地域を選んでから、市区町を選んでください。</p>
+      <div class="mobility-areas" role="group" aria-label="地域"><button type="button" data-area-choice="core" aria-pressed="true"><b>東播磨</b><small>明石・加古川・高砂・稲美・播磨</small></button>
+<button type="button" data-area-choice="nearby" aria-pressed="false"><b>周辺地域</b><small>神戸市西区・三木・小野・姫路</small></button></div>
+      <div class="mobility-choices"><button type="button" class="mobility-choice" data-city-choice="akashi" data-city-group="core" aria-pressed="true"><b>明石市</b><small>路線・Tacoバスと、70歳以上の優待を確認</small></button>
+<button type="button" class="mobility-choice" data-city-choice="kakogawa" data-city-group="core" aria-pressed="false"><b>加古川市</b><small>地区別の小型バス・予約交通が豊富</small></button>
+<button type="button" class="mobility-choice" data-city-choice="takasago" data-city-group="core" aria-pressed="false"><b>高砂市</b><small>じょうとんバスと条件付きタクシー助成</small></button>
+<button type="button" class="mobility-choice" data-city-choice="inami" data-city-group="core" aria-pressed="false"><b>稲美町</b><small>予約型のあいのりいなみと券を比較</small></button>
+<button type="button" class="mobility-choice" data-city-choice="harima" data-city-group="core" aria-pressed="false"><b>播磨町</b><small>町内停留所のあるバスとタクシー助成</small></button>
+<button type="button" class="mobility-choice" data-city-choice="kobe-nishi" data-city-group="nearby" hidden aria-pressed="false"><b>神戸市西区</b><small>櫨谷・学園東町などの地区別交通</small></button>
+<button type="button" class="mobility-choice" data-city-choice="miki" data-city-group="nearby" hidden aria-pressed="false"><b>三木市</b><small>地区別の予約交通と乗車券助成</small></button>
+<button type="button" class="mobility-choice" data-city-choice="ono" data-city-group="nearby" hidden aria-pressed="false"><b>小野市</b><small>らんらんバスと登録制タクシー</small></button>
+<button type="button" class="mobility-choice" data-city-choice="himeji" data-city-group="nearby" hidden aria-pressed="false"><b>姫路市</b><small>地区別コミュニティ交通と75歳以上の優待</small></button></div>
     </fieldset>
     <fieldset><legend><span class="mobility-step">2</span> どんな外出ですか？</legend>
       <p class="mobility-field-help">目的に合う交通を優先して表示します。</p>
@@ -185,6 +191,96 @@ gtag('config', 'G-T1PQ72Q40S');
   <div class="mobility-check"><b>使う前に確認</b><span>乗車地か到着地が町内であること、契約会社、運賃ごとの利用枚数を確認。</span></div>
   <a href="https://www.town.harima.lg.jp/hoken/koureisyatakusiryoukin.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
 </article></div></section>
+</section>
+<section class="mobility-city" data-mobility-city="kobe-nishi" hidden>
+  <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>神戸市西区の移動候補</h2>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p></div>
+  <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">櫨谷地区</span><span class="mobility-tag">予約が必要</span></div>
+  <h4>すこやかバス</h4>
+  <p>櫨谷地区と西神中央駅などを結ぶ予約制の地域交通。平日・土曜に運行します。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>対象地区、乗降場所、事前登録と予約期限を確認。</span></div>
+  <a href="https://www.city.kobe.lg.jp/a80014/hasetanichikomi.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">学園東町</span><span class="mobility-tag">2026年12月25日まで試験運行</span></div>
+  <h4>にじ色バス</h4>
+  <p>学園都市駅前と学園東町を循環。平日運行、大人300円。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>試験運行の終了後に継続するかは未確認。停留所・時刻・支払い方法を公式ページで確認。</span></div>
+  <a href="https://www.city.kobe.lg.jp/a80014/shise/kekaku/jutakutoshikyoku/sogokotsu/gakuenhigashimachi.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+  <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">敬老パス対象者</span><span class="mobility-tag">事前登録</span></div>
+  <h4>すこやかバスの敬老割引</h4>
+  <p>敬老パス対象者は、すこやかバスの運賃が半額になります。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>対象者、事前登録、乗車時に必要なものを神戸市の案内で確認。</span></div>
+  <a href="https://www.city.kobe.lg.jp/a80014/hasetanichikomi.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+</section>
+<section class="mobility-city" data-mobility-city="miki" hidden>
+  <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>三木市の移動候補</h2>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p></div>
+  <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">4地区限定</span><span class="mobility-tag">登録・予約が必要</span></div>
+  <h4>チョイソコみき</h4>
+  <p>吉川・三木南・別所・志染の対象地区で使う予約交通。大人1回300円。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>会員登録、対象住所・停留所、平日の運行時間と予約方法を確認。</span></div>
+  <a href="https://www.city.miki.lg.jp/soshiki/39/31598.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">路線・駅を確認</span></div>
+  <h4>市内路線バス・神戸電鉄</h4>
+  <p>市内の幹線バスと神戸電鉄粟生線を、地区の交通と組み合わせて使えます。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>目的地までの路線・時刻・乗換を市の総合おでかけガイドで確認。</span></div>
+  <a href="https://www.city.miki.lg.jp/site/busschedule/29765.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+  <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">70歳以上</span><span class="mobility-tag">4種類から選択</span></div>
+  <h4>高齢者等の乗車券助成</h4>
+  <p>市内在住70歳以上などを対象に、交通の種類を選ぶ2,000円相当の乗車券助成があります。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>券種ごとに有効期限や使える交通が違います。2026年4月以降のタクシー券はチョイソコみきでも利用可能。</span></div>
+  <a href="https://www.city.miki.lg.jp/soshiki/97/90893.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+</section>
+<section class="mobility-city" data-mobility-city="ono" hidden>
+  <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>小野市の移動候補</h2>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p></div>
+  <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">路線・停留所を確認</span></div>
+  <h4>らんらんバス</h4>
+  <p>市内を走るコミュニティバス。2026年4月改正の路線と時刻を確認できます。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>目的地に近い停留所・運行日を確認。旧らんらんデマンドバスは2026年3月で終了しています。</span></div>
+  <a href="https://www.city.ono.hyogo.jp/kurashi_fukushi/doro_kotsu/kokyokotsu/5514.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">登録・予約が必要</span><span class="mobility-tag">対象者限定</span></div>
+  <h4>らんらんタクシー</h4>
+  <p>市内在住の75歳以上で免許がない人、または要介護1～5の人などが使う予約制交通。自宅と指定乗降地点を結びます。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>対象条件、指定乗降地点、予約方法、運賃を確認。市外への行き先は指定地点に限られます。</span></div>
+  <a href="https://www.city.ono.hyogo.jp/soshikikarasagasu/sogoseisakubu_kotsuseisakugroup/gyomuannai/3/1/10331.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+  <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">65歳以上</span><span class="mobility-tag">市内バス</span></div>
+  <h4>らんらんバス65歳以上無料</h4>
+  <p>らんらんバスは65歳以上の人が無料で乗れます。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>年齢確認方法と、利用する便の運行日・停留所を確認。</span></div>
+  <a href="https://www.city.ono.hyogo.jp/kurashi_fukushi/doro_kotsu/kokyokotsu/5514.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+</section>
+<section class="mobility-city" data-mobility-city="himeji" hidden>
+  <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>姫路市の移動候補</h2>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p></div>
+  <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">地区限定</span><span class="mobility-tag">路線・曜日を確認</span></div>
+  <h4>地域コミュニティバス</h4>
+  <p>家島・坊勢島内、前之庄～山之内など、地域ごとに異なるバスを運行しています。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>市全域を一つのバスで回れるわけではありません。対象地区・運行日・時刻を選んで確認。</span></div>
+  <a href="https://www.city.himeji.lg.jp/sangyo/0000004453.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
+  <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards"><article class="mobility-card" data-purposes="shopping hospital other">
+  <div class="mobility-tags"><span class="mobility-tag">75歳以上の市民</span><span class="mobility-tag">交通手段を選択</span></div>
+  <h4>高齢者バス等優待</h4>
+  <p>姫路市在住の75歳以上は、バス・船舶・タクシーの優待から一つを選べます。タクシーは年7,000円相当。</p>
+  <div class="mobility-check"><b>使う前に確認</b><span>年度内の選択変更はできません。対象路線・事業者、障害者助成との重複条件を確認。</span></div>
+  <a href="https://www.city.himeji.lg.jp/kurashi/0000002864.html" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article></div></section>
 </section></div>
 </div>
 <aside class="mobility-note"><h2>この画面で分かること</h2><p>地域で使える可能性がある交通手段と助成の入口です。利用条件は年齢、居住日、地区、介護認定、予約、目的地などで変わります。運行時刻と停留所は公式ページで直前に確認してください。</p></aside>
@@ -226,9 +322,14 @@ gtag('config', 'G-T1PQ72Q40S');
   var city = form.querySelector('[data-city-choice="' + params.get('city') + '"]');
   var purpose = form.querySelector('[data-purpose="' + params.get('purpose') + '"]');
   var selectedCity = city ? city.getAttribute('data-city-choice') : 'akashi';
+  var selectedArea = city ? city.getAttribute('data-city-group') : 'core';
   var selectedPurpose = purpose ? purpose.getAttribute('data-purpose') : 'shopping';
   function update() {
+    form.querySelectorAll('[data-area-choice]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-area-choice') === selectedArea));
+    });
     form.querySelectorAll('[data-city-choice]').forEach(function (button) {
+      button.hidden = button.getAttribute('data-city-group') !== selectedArea;
       button.setAttribute('aria-pressed', String(button.getAttribute('data-city-choice') === selectedCity));
     });
     form.querySelectorAll('[data-purpose]').forEach(function (button) {
@@ -245,8 +346,15 @@ gtag('config', 'G-T1PQ72Q40S');
     next.searchParams.set('purpose', selectedPurpose);
     history.replaceState(null, '', next);
   }
+  form.querySelectorAll('[data-area-choice]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      selectedArea = button.getAttribute('data-area-choice');
+      selectedCity = form.querySelector('[data-city-group="' + selectedArea + '"]').getAttribute('data-city-choice');
+      update();
+    });
+  });
   form.querySelectorAll('[data-city-choice]').forEach(function (button) {
-    button.addEventListener('click', function () { selectedCity = button.getAttribute('data-city-choice'); update(); });
+    button.addEventListener('click', function () { selectedCity = button.getAttribute('data-city-choice'); selectedArea = button.getAttribute('data-city-group'); update(); });
   });
   form.querySelectorAll('[data-purpose]').forEach(function (button) {
     button.addEventListener('click', function () { selectedPurpose = button.getAttribute('data-purpose'); update(); });
