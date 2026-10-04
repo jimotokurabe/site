@@ -5,6 +5,7 @@
                                           # 下書き（検索に出さない・下書きの帯を出す）と、確認用ページの形
 """
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -14,6 +15,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://jimotokurabe.jp/"
+CSS_REV = hashlib.sha256((ROOT / "site.css").read_bytes()).hexdigest()[:12]
 
 KINDS = {
     "give": ("もらえる", "返納した人に、券・カード・補助金などを出す"),
@@ -127,6 +129,8 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts="", b
     home = base or "./"
     wrap_class = f"wrap {page_class}".strip()
     body_tag = f'<body class="{e(body_class)}">' if body_class else '<body>'
+    # 新しい画面だけでも、旧版CSSがブラウザーに残るとレイアウトが崩れる。
+    css_href = f"{base}site.css?v={CSS_REV}" if body_class == "wayfinding" else f"{base}site.css"
     robots = '<meta name="robots" content="noindex">\n' if draft else ""
     banner = ""
     if draft:
@@ -157,7 +161,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="{base}site.css">
+<link rel="stylesheet" href="{css_href}">
 {SIZE_BOOT}
 </head>
 {body_tag}
