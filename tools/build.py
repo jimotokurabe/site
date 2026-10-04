@@ -45,6 +45,7 @@ TAXI_KINDS = {
 }
 GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフォルダ（いまは兵庫県だけ）
 HOME_PREF = "hyogo"  # トップ・最初のひと言・手順ページで使う県
+BASIC_GUIDE_PATH = "menkyo-henno-guide.html"
 
 
 def guide_dir(pref):
@@ -548,6 +549,7 @@ def list_page(data, draft):
   </div>
   <h1>{e(page_heading)}</h1>
   <p class="lead">{page_lead}</p>
+  <p class="basic-entry"><a href="{BASIC_GUIDE_PATH}">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 {hk_banner(data.get("hk")) if home else ""}
 </div>
 
@@ -1260,6 +1262,131 @@ def city_page(c, data, draft, base="../"):
         scripts=CITY_SCRIPT + ("\n" + CALC_SCRIPT if calc_link else ""))
 
 
+# ---------------- 免許返納の基本ガイド ----------------
+
+BASIC_GUIDE_SCRIPT = """<script>
+(function () {
+  var data = __PREF_DATA__;
+  var select = document.getElementById("basic-pref");
+  var button = document.getElementById("basic-show");
+  var result = document.getElementById("basic-result");
+  if (!select || !button || !result) return;
+  button.addEventListener("click", function () {
+    var row = data[select.value];
+    if (!row) { select.focus(); return; }
+    document.getElementById("basic-result-title").textContent = row.name + "の確認先";
+    var police = document.getElementById("basic-police-link");
+    police.href = row.police;
+    police.textContent = row.policeName + "の免許返納手続き（公式） ↗";
+    var benefit = document.getElementById("basic-benefit-link");
+    benefit.href = row.benefit;
+    benefit.textContent = row.name + "の免許返納特典を市町村別に見る →";
+    var taxi = document.getElementById("basic-taxi-link");
+    taxi.href = row.taxi;
+    taxi.textContent = row.name + "の高齢者向けタクシー助成を見る →";
+    result.hidden = false;
+    result.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
+  });
+})();
+</script>"""
+
+
+def basic_guide_page(prefs, draft):
+    """全国共通の説明と、確認済みの47都道府県の手続き・地域情報への入口。"""
+    public = [d for d in prefs if not d["pref"].get("draft")]
+    by_id = {d["pref"]["id"]: d for d in public}
+    procedure_links = json.loads((ROOT / "data" / "henno-procedure-links.json").read_text(encoding="utf-8"))
+    links = {}
+    for d in public:
+        pid = d["pref"]["id"]
+        police = d.get("common", {}).get("hennou", {}).get("url") or procedure_links.get(pid, {}).get("url")
+        if not police or not d.get("taxi"):
+            raise ValueError(f"基本ガイドの確認先が足りません: {pid}")
+        links[pid] = {"name": d["pref"]["name"], "policeName": d["pref"]["police"], "police": police,
+                      "benefit": list_path(d["pref"]), "taxi": taxi_path(d["pref"])}
+    options = "\n".join(f'      <option value="{pid}">{e(links[pid]["name"])}</option>'
+                        for _, ids in REGIONS for pid in ids if pid in links)
+    regions = []
+    for region, ids in REGIONS:
+        rows = [f'<li><a href="{links[pid]["benefit"]}">{e(links[pid]["name"])}の免許返納特典と市町村別の案内</a></li>'
+                for pid in ids if pid in links]
+        if rows:
+            regions.append(f'<div><h3>{e(region)}</h3><ul>{"".join(rows)}</ul></div>')
+    examples = []
+    hyogo = by_id[HOME_PREF]
+    for slug, label in (("kobe", "特典が終了した地域"), ("akashi", "申し込みが必要な地域"), ("takasago", "証明書で割引を受ける地域")):
+        c = next(c for c in hyogo["cities"] if c["slug"] == slug)
+        examples.append(f'<li><b>{label}：</b><a href="{guide_dir(hyogo["pref"])}/{slug}.html">'
+                        f'{e(c["n"])}の免許返納と支援</a><span>{e(c["guide"]["short"])}</span></li>')
+    payload = json.dumps(links, ensure_ascii=False).replace("</", "<\\/")
+    script = BASIC_GUIDE_SCRIPT.replace("__PREF_DATA__", payload)
+    main = f"""<article class="basic-guide">
+<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 免許返納の基本ガイド</nav>
+<header class="basic-hero">
+  <p class="basic-kicker">はじめて調べる方へ</p>
+  <h1>免許返納の基本ガイド</h1>
+  <p class="basic-answer"><strong>運転免許の自主返納は、免許が不要になった人などが本人の意思で申請する手続きです。</strong>返納する場所や必要なものは都道府県警察で確認します。返納後の移動手段と、地域で使える支援も先に調べておくと安心です。</p>
+  <nav class="basic-jump" aria-label="このページでわかること"><a href="#before">返納できるか</a><a href="#flow">手続きの流れ</a><a href="#region">地域の確認先</a><a href="#after">返納後の支援</a></nav>
+</header>
+
+<section id="before" class="basic-section" aria-labelledby="basic-before-h">
+  <p class="basic-kicker">まず確認</p><h2 id="basic-before-h">自主返納できる人・できない人</h2>
+  <p>運転しなくなった人や、運転に不安を感じる人は、免許を自主的に返納できます。一方、免許の停止・取消しの行政処分中の人や、その処分の基準に該当する人などは自主返納できません。該当するか迷うときは、手続き前に住所地の都道府県警察へ確認してください。</p>
+  <p class="basic-source">出典：<a href="https://www.npa.go.jp/policies/application/license_renewal/jishuhennou.html">警察庁「運転免許証の自主返納について」</a></p>
+</section>
+
+<section id="flow" class="basic-section" aria-labelledby="basic-flow-h">
+  <p class="basic-kicker">手続きの順序</p><h2 id="basic-flow-h">返納までの3つの確認</h2>
+  <ol class="basic-steps">
+    <li><span class="basic-num" aria-hidden="true">01</span><div><h3>返納後の移動を考える</h3><p>通院、買い物、家族の送迎など、普段の行き先を書き出します。バス・タクシーや家族の送迎で移動できるかを確かめ、手続き当日の帰り道も決めておきます。返納が完了した後は運転できません。</p></div></li>
+    <li><span class="basic-num" aria-hidden="true">02</span><div><h3>住所地の警察に手続きを確認する</h3><p>申請場所、受付時間、必要な書類、代理申請の条件は都道府県警察の案内で確認します。全国共通の窓口や持ち物として決めつけず、下の地域選択から住所地の公式案内へ進んでください。</p></div></li>
+    <li><span class="basic-num" aria-hidden="true">03</span><div><h3>運転経歴証明書と地域の支援を確認する</h3><p>運転経歴証明書は、返納した人などが申請できる本人確認用の書類です。返納後5年以上たつと交付を受けられません。地域の特典で提示が必要な場合もあるため、証明書を申請するか警察の案内で確認します。</p></div></li>
+  </ol>
+  <div class="basic-check"><h3>警察の案内で確認する項目</h3><ul>
+    <li>返納できる窓口と受付日・時間</li>
+    <li>免許証の種類に応じた持ち物と、代理申請・郵送の条件</li>
+    <li>運転経歴証明書を申し込む場合の書類、写真、手数料、受け取り方</li>
+  </ul><p>返納の受付方法と証明書の申請方法は別に確認します。費用や必要書類を全国一律と考えず、住所地の案内を見てください。</p></div>
+  <p class="basic-source">証明書の対象・期限：<a href="https://www.npa.go.jp/policies/application/license_renewal/jishuhennou.html">警察庁の説明</a>。申請場所など：<a href="https://www.npa.go.jp/link/prefectural.html">各都道府県警察の案内</a>。</p>
+</section>
+
+<section id="region" class="basic-section" aria-labelledby="basic-region-h">
+  <p class="basic-kicker">住所地から探す</p><h2 id="basic-region-h">手続き先と市町村の支援を探す</h2>
+  <p>警察での手続きと、市町村の特典・タクシー助成は確認先が異なります。都道府県を選ぶと、それぞれのページを開けます。</p>
+  <div class="basic-picker"><label for="basic-pref">お住まいの都道府県</label><div class="basic-picker-row"><select id="basic-pref"><option value="">選んでください</option>
+{options}
+  </select><button type="button" id="basic-show">確認先を見る</button></div>
+  <div class="basic-result" id="basic-result" hidden aria-live="polite"><h3 id="basic-result-title"></h3><ul>
+    <li><a id="basic-police-link" href="https://www.npa.go.jp/link/prefectural.html" target="_blank" rel="noopener">警察の免許返納手続き（公式）</a></li>
+    <li><a id="basic-benefit-link" href="./">市町村別の免許返納特典</a></li>
+    <li><a id="basic-taxi-link" href="./">高齢者向けタクシー助成</a></li>
+  </ul></div></div>
+  <details class="basic-all"><summary>都道府県の一覧から選ぶ</summary><div class="basic-regions">{"".join(regions)}</div></details>
+  <p class="basic-source">警察の手続きURLは各都道府県警察の案内を確認したものです。市町村の制度は各自治体の原典と確認日を一覧・個別ページに記しています。</p>
+</section>
+
+<section id="after" class="basic-section" aria-labelledby="basic-after-h">
+  <p class="basic-kicker">返納後の暮らし</p><h2 id="basic-after-h">特典と移動支援は地域で違います</h2>
+  <p>返納した人だけを対象にする券・ポイント、運転経歴証明書を見せて使う割引、返納の有無にかかわらず高齢者が使えるタクシー助成があります。対象年齢、住所、申請期限、証明書の要否を市町村ごとに確認してください。</p>
+  <p>実際の違いが分かる例として、兵庫県の3市を掲載します。金額や条件は変わるため、各ページの確認日と公式出典も見てください。</p>
+  <ul class="basic-examples">{"".join(examples)}</ul>
+  <p><a href="./#pick">トップで都道府県と市町村を選ぶ →</a></p>
+</section>
+
+<section class="basic-section" aria-labelledby="basic-faq-h">
+  <p class="basic-kicker">よくある疑問</p><h2 id="basic-faq-h">手続きを進める前に</h2>
+  <div class="basic-faq"><details><summary>運転経歴証明書は必ず申請しますか？</summary><p>返納とは別に、必要かどうかを考える書類です。返納後の本人確認や地域の割引に使える場合があります。申請方法と手数料は住所地の警察の案内で確認してください。</p></details>
+  <details><summary>免許証の有効期限が切れている場合は？</summary><p>警察庁によると、免許を更新せず失効した人も、失効から5年以内なら運転経歴証明書の交付対象です。自主返納の手続きとは状況が異なるため、申請できるかと必要書類を住所地の警察に確認してください。</p></details>
+  <details><summary>家族が代わりに返納できますか？</summary><p>代理申請の扱いと必要書類は都道府県警察の案内で確認してください。本人の状況や免許証の種類で条件が変わることがあります。</p></details>
+  <details><summary>返納するか、家族でまだ迷っています</summary><p>まずは通院や買い物の移動手段を書き出してみてください。話の切り出し方は、<a href="henno-hanashikata.html">親に運転の話をはじめるためのガイド</a>でも考えられます。</p></details></div>
+</section>
+<p class="basic-updated">全国共通の説明は、<time datetime="2026-10-04">2026年10月4日</time>に警察庁のページで確認しました。手続き前に、住所地の都道府県警察で最新情報を確認してください。</p>
+</article>"""
+    return shell(title="免許返納の基本ガイド｜手続き・運転経歴証明書・返納後の支援｜じもとくらべ",
+                 description="免許返納の条件、警察での手続き、運転経歴証明書、返納後の移動支援を順に説明。都道府県警察の公式案内と、市町村別の特典・タクシー助成へ進めます。",
+                 path=BASIC_GUIDE_PATH, main=main, draft=draft, page_class="basic-page", scripts=script)
+
+
 # ---------------- トップ ----------------
 
 # トップの「準備中」。TOPICS.md の「これから作る」と同じ順番・名前にそろえる（公開したらここから消す）
@@ -1376,6 +1503,8 @@ def top_page(data, draft, others=()):
   <p class="tagline">免許返納の特典・タクシー代の助成を市町村ごとに</p>
   <p class="lead">住んでいる市や町によって、使える特典や助成はちがいます。市町村の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
 </section>
+
+<p class="top-basic-entry"><a href="{BASIC_GUIDE_PATH}"><b>免許返納の基本ガイド</b><span>返納できる条件・警察の手続き・運転経歴証明書・返納後の移動を順に確認する →</span></a></p>
 
 {pref_picker([data, *others])}
 
@@ -1858,6 +1987,7 @@ def main():
     guides = [c for c in data["cities"] if c.get("guide")]
     pages = {
         "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")]),
+        BASIC_GUIDE_PATH: basic_guide_page([data, *others], a.draft),
         list_path(data["pref"]): list_page(data, a.draft),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
         **{f"{guide_dir(d['pref'])}/{c['slug']}.html": city_page(c, d, a.draft or d["pref"].get("draft", False))

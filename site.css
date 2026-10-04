@@ -326,6 +326,65 @@ p { margin: 0; }
 }
 .btn-guide:hover { background: var(--surface); color: var(--accent); }
 
+/* ---------- 免許返納の基本ガイド ---------- */
+.top-basic-entry { margin: 1.4rem 0 1.8rem; padding: .7rem 0 .7rem 1rem; border-left: 4px solid var(--accent); }
+.top-basic-entry a { display: grid; gap: .1rem; text-decoration: none; }
+.top-basic-entry b { font-family: var(--font-head); font-size: 1.15rem; }
+.top-basic-entry span { color: var(--ink); font-size: .9rem; }
+.top-basic-entry a:hover b, .top-basic-entry a:hover span { text-decoration: underline; }
+.basic-entry { margin-top: .9rem; font-size: .95rem; font-weight: 700; }
+.basic-guide { padding-bottom: 1rem; }
+.basic-hero { padding: 1.4rem 0 2rem; border-top: 4px solid var(--accent); border-bottom: 1px solid var(--line); }
+.basic-kicker { margin: 0 0 .35rem; color: var(--accent); font-size: .84rem; font-weight: 700; letter-spacing: .06em; }
+.basic-hero h1 { margin: 0 0 1rem; font: 700 clamp(2rem, 1.4rem + 2.7vw, 2.9rem)/1.35 var(--font-head); }
+.basic-answer { max-width: 40em; font-size: 1.06rem; }
+.basic-answer strong { font-weight: 700; }
+.basic-jump { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; margin-top: 1.5rem; font-size: .88rem; font-weight: 700; }
+.basic-jump a { white-space: nowrap; }
+.basic-section { margin-top: 3rem; }
+.basic-section h2 { margin: 0 0 .8rem; font: 700 clamp(1.42rem, 1.16rem + 1vw, 1.72rem)/1.45 var(--font-head); }
+.basic-section > p + p { margin-top: .9rem; }
+.basic-source, .basic-updated { color: var(--muted); font-size: .82rem; }
+.basic-source { margin-top: 1rem !important; }
+.basic-steps { margin: 1rem 0 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
+.basic-steps li { display: grid; grid-template-columns: 3.3rem minmax(0, 1fr); gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.basic-num { color: var(--accent); font-size: 1.13rem; font-weight: 700; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.basic-steps h3 { margin: 0 0 .3rem; font: 700 1.12rem/1.5 var(--font-head); }
+.basic-steps p { color: var(--muted); }
+.basic-check { margin-top: 1.2rem; padding: .2rem 0 .2rem 1rem; border-left: 3px solid var(--line); }
+.basic-check h3 { margin: 0 0 .3rem; font: 700 1.02rem/1.5 var(--font-head); }
+.basic-check ul { margin: 0; padding-left: 1.3rem; }
+.basic-check p { margin-top: .6rem; color: var(--muted); font-size: .9rem; }
+.basic-picker { margin-top: 1.2rem; padding: 1.2rem; background: var(--surface-2); border-top: 3px solid var(--accent); }
+.basic-picker label { display: block; margin-bottom: .4rem; font-weight: 700; }
+.basic-picker-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; }
+.basic-picker select, .basic-picker button { min-height: 3rem; padding: .45rem .75rem; font: inherit; }
+.basic-picker select { min-width: 0; border: 2px solid var(--line); background: var(--surface); color: var(--ink); }
+.basic-picker button { border: 2px solid var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 700; cursor: pointer; }
+.basic-result { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.basic-result h3 { margin: 0 0 .4rem; font: 700 1.1rem/1.5 var(--font-head); }
+.basic-result ul { margin: 0; padding-left: 1.3rem; }
+.basic-result li + li { margin-top: .3rem; }
+.basic-all { margin-top: 1.2rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.basic-all summary { padding: .7rem 0; color: var(--accent); font-weight: 700; cursor: pointer; }
+.basic-regions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; padding: .4rem 0 1rem; }
+.basic-regions h3 { margin: 0 0 .25rem; font-size: .94rem; }
+.basic-regions ul { margin: 0; padding-left: 1.2rem; font-size: .88rem; }
+.basic-examples { margin: 1rem 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
+.basic-examples li { display: grid; gap: .1rem; padding: .75rem 0; border-bottom: 1px solid var(--line); }
+.basic-examples b { font-size: .82rem; color: var(--muted); }
+.basic-examples span { font-size: .9rem; }
+.basic-faq { border-top: 2px solid var(--ink); }
+.basic-faq details { border-bottom: 1px solid var(--line); }
+.basic-faq summary { padding: .8rem 0; font-weight: 700; cursor: pointer; }
+.basic-faq p { margin: 0 0 1rem; }
+.basic-updated { margin-top: 2.5rem; }
+@media (max-width: 520px) {
+  .basic-steps li { grid-template-columns: 2.4rem minmax(0, 1fr); gap: .55rem; }
+  .basic-picker-row, .basic-regions { grid-template-columns: 1fr; }
+  .basic-picker button { width: 100%; }
+}
+
 /* ---------- 申し込み期限の計算 ---------- */
 .calc {
   display: grid; gap: .5rem; padding: .9rem 1rem; border-radius: .8rem;
