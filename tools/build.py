@@ -47,8 +47,13 @@ GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフ�
 HOME_PREF = "hyogo"  # トップ・最初のひと言・手順ページで使う県
 BASIC_GUIDE_PATH = "menkyo-henno-guide.html"
 MOBILITY_PATH = "east-harima-mobility.html"
+MOBILITY_CITY_DIR = "hyogo-mobility"
 NATIONAL_MOBILITY_PATH = "mobility.html"
 NATIONAL_MOBILITY_DATA_PATH = "mobility-city-index.json"
+
+
+def mobility_city_path(city_id):
+    return f"{MOBILITY_CITY_DIR}/{city_id}.html"
 
 
 def guide_dir(pref):
@@ -451,7 +456,7 @@ HK_BANNER_SCRIPT = """<script>
 </script>"""
 
 
-def list_page(data, draft):
+def list_page(data, draft, mobility_cities=(), mobility_scopes=None):
     P = data["pref"]
     pn, pu = P["name"], P["unit"]
     sw = P.get("statewide")
@@ -547,6 +552,17 @@ def list_page(data, draft):
                             + f"比べられます。{jdate(checked)}に各市町の公式ページで確認。")
         page_heading = "運転免許を返納したら、何がもらえる？"
         page_lead = f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}"
+    mobility_links = "\n"
+    if mobility_cities:
+        items = "\n".join(
+            f'<li><a href="{mobility_city_path(c["id"])}">{e((mobility_scopes or {}).get(c["id"], c["name"]))}の移動手段・運賃支援を見る</a></li>'
+            for c in mobility_cities)
+        mobility_links = f'''\n<section class="mobility-entry-list" aria-labelledby="mobility-entry-h">
+  <h2 id="mobility-entry-h">地域の移動手段を探す</h2>
+  <p>確認済みの地域交通と運賃支援を、市町ごとにまとめました。神戸市西区は一部地区の案内です。</p>
+  <ul>{items}</ul>
+</section>
+'''
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {pn}の免許返納特典</nav>
 <div class="hero">
   <div class="hero-top">
@@ -557,8 +573,7 @@ def list_page(data, draft):
   <p class="lead">{page_lead}</p>
   <p class="basic-entry"><a href="{BASIC_GUIDE_PATH}">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 {hk_banner(data.get("hk")) if home else ""}
-</div>
-
+</div>{mobility_links}
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの{pu}を選んでください</h2>
   <div class="search">
@@ -1657,10 +1672,12 @@ def national_mobility_data(prefs, coverage, regional):
             raise ValueError(f"移動案内の詳細IDが存在しません: {entry['city']}")
         if entry["level"] not in {"detailed", "partial"}:
             raise ValueError(f"移動案内の掲載範囲が不正です: {entry['level']}")
+        url = (f"{entry['page']}?city={quote(entry['city'])}"
+               if entry["page"] == MOBILITY_PATH else entry["page"])
         details.setdefault(key, []).append({
             "scope": entry["scope"],
             "level": entry["level"],
-            "url": f"{entry['page']}?city={quote(entry['city'])}",
+            "url": url,
         })
     rows = []
     for d in published:
@@ -1687,7 +1704,7 @@ def national_mobility_data(prefs, coverage, regional):
     return {"checked": coverage["checked"], "cities": rows}
 
 
-def national_mobility_page(prefs, draft):
+def national_mobility_page(prefs, coverage, regional, draft):
     by_id = {d["pref"]["id"]: d for d in prefs if not d["pref"].get("draft")}
     options = []
     fallback = []
@@ -1700,6 +1717,12 @@ def national_mobility_page(prefs, draft):
             region_options.append(f'<option value="{e(pid)}">{e(pref["name"])}</option>')
             fallback.append(f'<li><a href="{e(taxi_path(pref))}">{e(pref["name"])}のタクシー助成の調査結果</a></li>')
         options.append(f'<optgroup label="{e(region)}">{"".join(region_options)}</optgroup>')
+    coverage_by_city = {entry["city"]: entry for entry in coverage["entries"]
+                        if entry["page"].startswith(f"{MOBILITY_CITY_DIR}/")}
+    featured = "\n".join(
+        f'<a href="{e(coverage_by_city[c["id"]]["page"])}"><strong>{e(coverage_by_city[c["id"]]["scope"])}</strong>'
+        f'<span>{e(c["hint"])}</span></a>'
+        for c in regional["cities"])
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 移動手段を探す</nav>
 <section class="nation-hero">
   <p class="mobility-kicker">全国の市区町村から</p>
@@ -1723,6 +1746,11 @@ def national_mobility_page(prefs, draft):
     <div id="nation-detail-links"></div>
   </section>
 </div>
+<section class="nation-featured" aria-labelledby="nation-featured-h">
+  <h2 id="nation-featured-h">交通手段を詳しく確認した地域</h2>
+  <p>地域名から、乗れる交通と運賃の支援を直接確認できます。</p>
+  <div class="nation-featured-grid">{featured}</div>
+</section>
 <aside class="nation-help"><h2>掲載状況について</h2><p>詳細な交通案内は、地域ごとに確認して追加しています。タクシー助成の「記載なし」は、その地域にバスや予約交通がないという意味ではありません。利用前に公式情報で区域・予約・運行日を確認してください。</p></aside>
 <noscript><section class="nation-fallback"><h2>都道府県から助成情報を見る</h2><ul>{''.join(fallback)}</ul></section></noscript>"""
     script = """<script>
@@ -1815,19 +1843,20 @@ def national_mobility_page(prefs, draft):
                  page_class="mobility-national-page", scripts=script)
 
 
-def mobility_card(item):
+def mobility_card(item, heading="h4", item_id=""):
     tags = "".join(f'<span class="mobility-tag">{e(tag)}</span>' for tag in item["tags"])
     purposes = " ".join(item["purposes"])
-    return f"""<article class="mobility-card" data-purposes="{purposes}">
+    identifier = f' id="{e(item_id)}"' if item_id else ""
+    return f"""<article class="mobility-card"{identifier} data-purposes="{purposes}">
   <div class="mobility-tags">{tags}</div>
-  <h4>{e(item['name'])}</h4>
+  <{heading}>{e(item['name'])}</{heading}>
   <p>{e(item['summary'])}</p>
   <div class="mobility-check"><b>使う前に確認</b><span>{e(item['check'])}</span></div>
   <a href="{e(item['source'])}" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
 </article>"""
 
 
-def mobility_page(data, draft):
+def mobility_page(data, draft, mobility_scopes=None):
     cities = data["cities"]
     groups = data["groups"]
     group_choices = "\n".join(
@@ -1841,10 +1870,14 @@ def mobility_page(data, draft):
         for i, c in enumerate(cities))
     results = "\n".join(f"""<section class="mobility-city" data-mobility-city="{e(c['id'])}"{' hidden' if i else ''}>
   <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>{e(c['name'])}の移動候補</h2>
-  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p></div>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p>
+  <a href="{mobility_city_path(c['id'])}">{e((mobility_scopes or {}).get(c['id'], c['name']))}の情報を1ページで読む →</a></div>
   <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['rides'])}</div></section>
   <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['supports'])}</div></section>
 </section>""" for i, c in enumerate(cities))
+    city_links = "\n".join(
+        f'<a href="{mobility_city_path(c["id"])}">{e((mobility_scopes or {}).get(c["id"], c["name"]))}の移動手段を見る</a>'
+        for c in cities)
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨と周辺の移動手段</nav>
 <section class="mobility-hero">
   <p class="mobility-kicker">東播磨と周辺の移動案内 / {jdate(data['checked'])}確認</p>
@@ -1870,6 +1903,9 @@ def mobility_page(data, draft):
   </form>
   <div class="mobility-results" id="mobility-results" aria-live="polite" aria-atomic="false">{results}</div>
 </div>
+<nav class="mobility-city-links" aria-label="地域別の移動案内">
+  <h2>地域別に読む</h2><div>{city_links}</div>
+</nav>
 <aside class="mobility-note"><h2>この画面で分かること</h2><p>地域で使える可能性がある交通手段と助成の入口です。利用条件は年齢、居住日、地区、介護認定、予約、目的地などで変わります。運行時刻と停留所は公式ページで直前に確認してください。</p></aside>"""
     script = """<script>
 (function () {
@@ -1923,6 +1959,62 @@ def mobility_page(data, draft):
     return shell(title="東播磨と周辺の移動手段を探す｜じもとくらべ",
                  description="東播磨と周辺地域の交通手段と運賃助成を、住む市区町と外出目的から探せます。",
                  path=MOBILITY_PATH, main=main, draft=draft, page_class="mobility-page", scripts=script)
+
+
+def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scopes, checked, draft):
+    """地域交通の確認済みデータから、検索で直接開ける地域別ページを作る。"""
+    name = city["name"]
+    scope = coverage["scope"]
+    path = mobility_city_path(city["id"])
+    partial = coverage["level"] == "partial"
+    guide_city = next(c for c in pref_data["cities"] if c["slug"] == coverage["municipality"])
+    guide = (f'{guide_dir(pref_data["pref"])}/{guide_city["slug"]}.html'
+             if guide_city.get("guide") else f'{list_path(pref_data["pref"])}#{guide_city["slug"]}')
+    ride_links = "".join(f'<a href="#ride-{i}">{e(item["name"])}</a>'
+                         for i, item in enumerate(city["rides"], 1))
+    support_links = "".join(f'<a href="#support-{i}">{e(item["name"])}</a>'
+                            for i, item in enumerate(city["supports"], 1))
+    rides = "\n".join(mobility_card(item, "h3", f"ride-{i}")
+                      for i, item in enumerate(city["rides"], 1))
+    supports = "\n".join(mobility_card(item, "h3", f"support-{i}")
+                         for i, item in enumerate(city["supports"], 1))
+    other_cities = "\n".join(
+        f'<a href="{e(other["id"])}.html">{e(mobility_scopes[other["id"]])}の移動手段</a>'
+        for other in regional_cities if other["id"] != city["id"])
+    scope_note = (f'このページは{name}の一部地区で確認した交通だけを載せています。'
+                  f'{name}全域の交通を網羅した案内ではありません。' if partial else
+                  '住む地区や目的地によって使える交通が異なります。利用する路線・区域を公式ページで確認してください。')
+    main = f'''<nav class="crumbs" aria-label="いまいる場所"><a href="../">トップ</a> ＞ <a href="../mobility.html">移動手段を探す</a> ＞ {e(scope)}</nav>
+<header class="mobility-city-hero">
+  <p class="mobility-kicker">兵庫県の移動案内 / {jdate(checked)}確認</p>
+  <h1>{e(scope)}の移動手段と運賃支援</h1>
+  <p>{e(city["hint"])}。{e(scope_note)}</p>
+</header>
+<section class="mobility-city-overview" aria-labelledby="overview-h">
+  <h2 id="overview-h">この地域で確認した移動候補</h2>
+  <div class="mobility-city-overview-grid">
+    <div><h3>乗れる交通</h3><p>{ride_links}</p></div>
+    <div><h3>割引・助成</h3><p>{support_links}</p></div>
+  </div>
+  <p>住所や停留所を入力していないため、対象地区・運行日・予約・利用条件は、各公式ページで確かめてください。</p>
+</section>
+<div class="mobility-city-content">
+  <section class="mobility-group" aria-labelledby="ride-h"><h2 id="ride-h">実際に乗る交通手段</h2><div class="mobility-cards">{rides}</div></section>
+  <section class="mobility-group" aria-labelledby="support-h"><h2 id="support-h">運賃の割引・助成</h2><div class="mobility-cards">{supports}</div></section>
+</div>
+<section class="mobility-city-next" aria-labelledby="next-h">
+  <h2 id="next-h">続けて確認する</h2>
+  <a href="../east-harima-mobility.html?city={e(city['id'])}">外出目的で交通候補を絞る →</a>
+  <a href="../{e(guide)}">{e(guide_city['n'])}の免許返納の情報 →</a>
+  <a href="../{e(taxi_path(pref_data['pref']))}#{e(guide_city['slug'])}">{e(guide_city['n'])}のタクシー助成の調査結果 →</a>
+</section>
+<nav class="mobility-city-nearby" aria-label="ほかの地域の移動案内"><h2>ほかの地域を見る</h2><div>{other_cities}</div></nav>
+<p class="mobility-city-updated">公式ページを確認した日：{jdate(checked)}。運行内容や制度は変わるため、利用前に各公式ページで最新情報を確認してください。</p>'''
+    description = (f'{scope}の移動手段と運賃支援。{city["hint"]}。'
+                   f'対象地区・予約・利用条件と公式出典を{jdate(checked)}に確認。')
+    return shell(title=f'{scope}の移動手段と運賃支援｜じもとくらべ',
+                 description=description, path=path, main=main, draft=draft,
+                 base='../', page_class='mobility-city-page')
 
 
 # ---------------- 最初のひと言（話し方のページ） ----------------
@@ -2371,16 +2463,27 @@ def main():
     mobility = json.loads((ROOT / "data" / "east-harima-mobility.json").read_text(encoding="utf-8"))
     mobility_coverage = json.loads((ROOT / "data" / "mobility-coverage.json").read_text(encoding="utf-8"))
     mobility_index = national_mobility_data(prefs, mobility_coverage, mobility)
+    city_coverage = {entry["city"]: entry for entry in mobility_coverage["entries"]
+                     if entry["page"].startswith(f"{MOBILITY_CITY_DIR}/")}
+    mobility_scopes = {city_id: entry["scope"] for city_id, entry in city_coverage.items()}
+    if set(city_coverage) != {c["id"] for c in mobility["cities"]}:
+        raise ValueError("地域交通データと掲載範囲の地域IDが一致しません")
+    for city_id, entry in city_coverage.items():
+        if entry["page"] != mobility_city_path(city_id):
+            raise ValueError(f"地域別ページのパスが一致しません: {city_id}")
     data["hk"] = hk
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]
     pages = {
         "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")]),
-        NATIONAL_MOBILITY_PATH: national_mobility_page(prefs, a.draft),
-        MOBILITY_PATH: mobility_page(mobility, a.draft),
+        NATIONAL_MOBILITY_PATH: national_mobility_page(prefs, mobility_coverage, mobility, a.draft),
+        MOBILITY_PATH: mobility_page(mobility, a.draft, mobility_scopes),
+        **{mobility_city_path(c["id"]): mobility_city_page(
+            c, city_coverage[c["id"]], data, mobility["cities"], mobility_scopes, mobility["checked"], a.draft)
+           for c in mobility["cities"]},
         BASIC_GUIDE_PATH: basic_guide_page([data, *others], a.draft),
-        list_path(data["pref"]): list_page(data, a.draft),
+        list_path(data["pref"]): list_page(data, a.draft, mobility["cities"], mobility_scopes),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
         **{f"{guide_dir(d['pref'])}/{c['slug']}.html": city_page(c, d, a.draft or d["pref"].get("draft", False))
            for d in [data, *others] for c in d["cities"] if c.get("guide")},

@@ -156,7 +156,7 @@ p { margin: 0; }
 .mobility-group + .mobility-group .mobility-card { border-left-color: #9d7b4b; }
 .mobility-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
 .mobility-tag { display: inline-block; padding: .08rem .5rem; border-radius: .25rem; background: var(--surface-2); color: var(--muted); font-size: .72rem; font-weight: 700; line-height: 1.55; }
-.mobility-card h4 { margin: .45rem 0 .25rem; font-family: var(--font-head); font-size: 1.14rem; line-height: 1.45; }
+.mobility-card h3, .mobility-card h4 { margin: .45rem 0 .25rem; font-family: var(--font-head); font-size: 1.14rem; line-height: 1.45; }
 .mobility-card > p { font-size: .87rem; line-height: 1.7; }
 .mobility-check { display: grid; gap: .1rem; margin: .7rem 0; padding: .6rem .7rem; border-radius: .35rem; background: var(--surface-2); font-size: .78rem; line-height: 1.55; }
 .mobility-check b { color: var(--ink); }
@@ -175,6 +175,45 @@ p { margin: 0; }
   .mobility-hero-route { margin-top: 1.4rem; }
 }
 @media (prefers-reduced-motion: reduce) { .mobility-choice { transition: none; } }
+
+.mobility-city-links { margin-top: 1.5rem; padding: 1.15rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--surface); }
+.mobility-city-links h2, .mobility-city-nearby h2 { margin: 0 0 .65rem; font-family: var(--font-head); font-size: 1.05rem; }
+.mobility-city-links > div, .mobility-city-nearby > div { display: flex; flex-wrap: wrap; gap: .5rem; }
+.mobility-city-links a, .mobility-city-nearby a { display: inline-block; padding: .36rem .65rem; border: 1px solid var(--line); border-radius: .4rem; background: var(--surface); font-size: .78rem; font-weight: 700; text-decoration: none; }
+.mobility-city-links a:hover, .mobility-city-nearby a:hover { border-color: var(--accent); background: var(--accent-soft); }
+.mobility-result-head > a { display: inline-block; margin-top: .5rem; font-size: .84rem; font-weight: 700; }
+
+/* 地域名で直接開ける交通案内 */
+.mobility-city-page { max-width: 64rem; }
+.mobility-city-hero { margin-top: 1rem; padding: clamp(1.3rem, 4vw, 2.4rem); border-radius: .9rem; background: linear-gradient(125deg, #143447, #286b75); color: #fff; }
+.mobility-city-hero .mobility-kicker { color: #b7e1ed; }
+.mobility-city-hero h1 { margin: .4rem 0 .6rem; font-family: var(--font-head); font-size: clamp(1.8rem, 1.1rem + 3vw, 2.8rem); line-height: 1.38; }
+.mobility-city-hero > p:last-child { max-width: 42em; font-size: .9rem; line-height: 1.8; }
+.mobility-city-overview { margin-top: 1.2rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: .8rem; background: var(--surface); }
+.mobility-city-overview h2 { margin: 0 0 .75rem; font-family: var(--font-head); font-size: 1.2rem; }
+.mobility-city-overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.mobility-city-overview-grid > div { min-width: 0; padding: .8rem; border-radius: .5rem; background: var(--surface-2); }
+.mobility-city-overview-grid h3 { margin: 0 0 .35rem; font-size: .85rem; }
+.mobility-city-overview-grid p { display: flex; flex-wrap: wrap; gap: .3rem .65rem; }
+.mobility-city-overview-grid a { font-size: .82rem; font-weight: 700; }
+.mobility-city-overview > p:last-child { margin-top: .8rem; color: var(--muted); font-size: .8rem; line-height: 1.65; }
+.mobility-city-content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.3rem; }
+.mobility-city-content .mobility-group { min-width: 0; }
+.mobility-city-content .mobility-group > h2 { margin: 0 0 .65rem; padding-bottom: .35rem; border-bottom: 2px solid var(--ink); font-family: var(--font-head); font-size: 1.22rem; }
+.mobility-city-content .mobility-group:nth-child(2) .mobility-card { border-left-color: #9d7b4b; }
+.mobility-city-next { display: grid; gap: .55rem; margin-top: 1.6rem; padding: 1.15rem; border-radius: .8rem; background: var(--accent-soft); }
+.mobility-city-next h2 { margin: 0; font-family: var(--font-head); font-size: 1.08rem; }
+.mobility-city-next a { font-size: .87rem; font-weight: 700; }
+.mobility-city-nearby { margin-top: 1.5rem; }
+.mobility-city-updated { margin: 1.5rem 0 2rem; color: var(--muted); font-size: .78rem; line-height: 1.7; }
+.mobility-entry-list { margin: 1.1rem 0; padding: 1.1rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--surface); }
+.mobility-entry-list h2 { margin: 0 0 .3rem; font-family: var(--font-head); font-size: 1.13rem; }
+.mobility-entry-list p { color: var(--muted); font-size: .82rem; }
+.mobility-entry-list ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem .8rem; margin: .7rem 0 0; padding-left: 1.3rem; }
+.mobility-entry-list li { font-size: .83rem; }
+@media (max-width: 42rem) {
+  .mobility-city-content, .mobility-city-overview-grid, .mobility-entry-list ul { grid-template-columns: 1fr; }
+}
 
 /* 全国の移動案内：市区町村名から入り、掲載範囲を明示する */
 .mobility-national-page { max-width: 70rem; }
@@ -209,6 +248,16 @@ p { margin: 0; }
 .nation-help { margin: 1.5rem 0 2rem; padding: .9rem 1.1rem; border-top: 1px solid var(--line); color: var(--muted); }
 .nation-help h2 { margin: 0 0 .2rem; color: var(--ink); font-family: var(--font-head); font-size: 1rem; }
 .nation-help p { font-size: .79rem; line-height: 1.7; }
+.nation-featured { margin-top: 1.4rem; }
+.nation-featured h2 { margin: 0 0 .25rem; font-family: var(--font-head); font-size: 1.25rem; }
+.nation-featured > p { color: var(--muted); font-size: .83rem; }
+.nation-featured-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; margin-top: .85rem; }
+.nation-featured-grid a { display: grid; align-content: start; gap: .15rem; min-width: 0; padding: .85rem; border: 1px solid var(--line); border-left: 4px solid #4d9a9b; border-radius: .55rem; background: var(--surface); text-decoration: none; }
+.nation-featured-grid a:hover { border-color: var(--accent); }
+.nation-featured-grid strong { color: var(--ink); font-family: var(--font-head); font-size: .9rem; }
+.nation-featured-grid span { color: var(--muted); font-size: .72rem; line-height: 1.55; }
+@media (max-width: 42rem) { .nation-featured-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 30rem) { .nation-featured-grid { grid-template-columns: 1fr; } }
 .nation-fallback ul { columns: 3; padding-left: 1.2rem; }
 @media (max-width: 48rem) {
   .nation-layout { grid-template-columns: 1fr; }

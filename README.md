@@ -15,6 +15,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `tools/check_quotes.py` | 調べたときの抜き書きが、いまの公式ページに載っているかを確かめる |
 | `data/hanashikata.json` | 「親に運転の話をはじめる、最初のひと言」（`henno-hanashikata.html`）の質問・タイプ・ひと言の例と、出典（警察庁の返納件数・支援マニュアル・#8080）。ひと言はサイトが書いた例で、事実ではない。数字と出典は確かめた日を `checked` に書く |
 | `data/east-harima-mobility.json` | 東播磨5市町と周辺4市区の地域交通と運賃助成。`east-harima-mobility.html` の元データ。公式ページの確認日は `checked` に書く |
+| `hyogo-mobility/*.html` | 確認済み9地域の移動手段と運賃支援を地域別にまとめたページ。`tools/build.py` から生成する |
 | `data/mobility-coverage.json` | 全国検索から詳細な地域交通ページへつなぐ対応表。市区町村の一部だけを扱う場合は `partial` と対象地区を明記する |
 | `mobility.html`、`mobility-city-index.json` | 47都道府県の市区町村から、確認済みの地域交通・タクシー助成・免許返納情報を探す入口。`tools/build.py` から生成する |
 | `docs/mobility-data.md` | 全国検索の元データ、地域交通の掲載範囲、追加手順 |
