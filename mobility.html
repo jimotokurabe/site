@@ -27,7 +27,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="stylesheet" href="site.css">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
-<body>
+<body class="wayfinding">
 <a class="skip" href="#main">本文へ移動</a>
 <div class="wrap mobility-national-page">
 <header class="topbar">
@@ -40,12 +40,12 @@ gtag('config', 'G-T1PQ72Q40S');
 </header>
 
 <main id="main">
-<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 移動手段を探す</nav>
-<section class="nation-hero">
+<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 市区町村の掲載状況</nav>
+<header class="nation-intro">
   <p class="mobility-kicker">全国の市区町村から</p>
-  <h1>住む町から、<br>移動手段を探す。</h1>
-  <p>市区町村ごとに、交通と助成の情報を整理しています。免許を返納する前でも調べられます。</p>
-</section>
+  <h1>市区町村の掲載状況</h1>
+  <p>交通手段の詳細を確認した地域と、現在読める助成・返納の情報を案内します。</p>
+</header>
 <div class="nation-layout">
   <section class="nation-search" aria-labelledby="nation-search-h">
     <h2 id="nation-search-h">お住まいの市区町村</h2>
@@ -138,15 +138,21 @@ gtag('config', 'G-T1PQ72Q40S');
     var hasPartial = item.details.some(function (d) { return d.level === 'partial'; });
     document.getElementById('nation-status').textContent = hasFull ? '交通と助成の詳細案内あり' : hasPartial ? '一部地区の詳細案内あり' : '交通手段の詳細は調査中';
     document.getElementById('nation-intro').textContent = hasFull ? '地域で使える交通候補と運賃の助成を比べられます。' : hasPartial ? '確認済みの地区だけ、交通候補を案内しています。' : '現在確認できる助成などの調査結果へ進めます。地域のバス・予約交通は順次確認しています。';
-    item.details.forEach(function (d) {
-      addLink(links, d.scope + 'の移動候補', '乗れる交通と運賃の助成。対象地区や予約条件を確認してください。', d.url, d.level === 'partial' ? '地区限定' : '交通と助成');
-    });
-    if (item.taxi_url) {
-      var kinds = {yes:'助成あり',care:'条件つき',henno_only:'返納者のみ',end:'終了',none:'なし',notfound:'記載なし'};
-      var kind = kinds[item.taxi_kind] || '調査結果';
-      addLink(links, '高齢者のタクシー代の助成', '調査結果：' + kind + '。' + (item.taxi_checked ? '確認日：' + item.taxi_checked + '。' : '') + '対象条件と出典を確認できます。', item.taxi_url, '助成の調査結果');
+    function addMobility() {
+      item.details.forEach(function (d) {
+        addLink(links, d.scope + 'の移動候補', '乗れる交通と運賃の助成。対象地区や予約条件を確認してください。', d.url, d.level === 'partial' ? '地区限定' : '交通と助成');
+      });
     }
-    addLink(links, '免許返納の特典', '市区町村の特典と申請条件の調査結果を確認できます。', item.return_url, '返納の情報');
+    function addSupport() {
+      if (item.taxi_url) {
+        var kinds = {yes:'助成あり',care:'条件つき',henno_only:'返納者のみ',end:'終了',none:'なし',notfound:'記載なし'};
+        var kind = kinds[item.taxi_kind] || '調査結果';
+        addLink(links, '高齢者のタクシー代の助成', '調査結果：' + kind + '。' + (item.taxi_checked ? '確認日：' + item.taxi_checked + '。' : '') + '対象条件と出典を確認できます。', item.taxi_url, '助成の調査結果');
+      }
+      addLink(links, '免許返納の特典', '市区町村の特典と申請条件の調査結果を確認できます。', item.return_url, '返納の情報');
+    }
+    if (new URLSearchParams(location.search).get('topic') === 'support') { addSupport(); addMobility(); }
+    else { addMobility(); addSupport(); }
     var url = new URL(location.href);
     url.searchParams.set('pref', item.pref);
     url.searchParams.set('city', item.slug);
@@ -186,7 +192,7 @@ gtag('config', 'G-T1PQ72Q40S');
     all = data.cities;
     var params = new URLSearchParams(location.search);
     var selected = all.find(function (item) { return item.pref === params.get('pref') && item.slug === params.get('city'); });
-    if (selected) { pref.value = selected.pref; query.value = selected.name; update(); show(selected, false); }
+    if (selected) { pref.value = selected.pref; query.value = selected.name; update(); show(selected, false); detail.scrollIntoView({block:'start'}); }
     else update();
   }).catch(function () { count.textContent = '市区町村の一覧を読み込めませんでした。ページを再読み込みしてください。'; });
 })();
