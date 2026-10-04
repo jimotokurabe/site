@@ -17,7 +17,8 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `data/east-harima-mobility.json` | 東播磨5市町と周辺4市区の地域交通と運賃助成。`east-harima-mobility.html` の元データ。公式ページの確認日は `checked` に書く |
 | `hyogo-mobility/*.html` | 確認済み9地域の移動手段と運賃支援を地域別にまとめたページ。`tools/build.py` から生成する |
 | `data/mobility-coverage.json` | 全国検索から詳細な地域交通ページへつなぐ対応表。市区町村の一部だけを扱う場合は `partial` と対象地区を明記する |
-| `mobility.html`、`mobility-city-index.json` | 47都道府県の市区町村から、確認済みの地域交通・タクシー助成・免許返納情報を探す入口。トップの「移動手段」「制度・助成」は同じ地域選択を使い、詳細確認済みの9地域は直接地域別ページへ、その他は掲載状況へ進む。`tools/build.py` から生成する |
+| `data/municipal-mobility.json`、`<県ID>-mobility/*.html` | 兵庫県以外も含む市区町村別の交通・運賃支援。元データに確認日、対象地区、予約、費用、公式出典を記録し、HTMLを生成する |
+| `mobility.html`、`mobility-city-index.json` | 47都道府県の市区町村から、確認済みの地域交通・タクシー助成・免許返納情報を探す入口。トップの「移動手段」「制度・助成」は同じ地域選択を使い、詳細確認済みの地域は直接地域別ページへ、その他は掲載状況へ進む。`tools/build.py` から生成する |
 | `docs/mobility-data.md` | 全国検索の元データ、地域交通の掲載範囲、追加手順 |
 | `menkyo-henno-guide.html` | 免許返納の基本ガイド。警察庁の全国共通の説明と、都道府県警察・市町村別ページへの入口。`tools/build.py` から生成する |
 | `guide-city-data/*.json` | 基本ガイドで都道府県を選んだときに読み込む市町村データ。`tools/build.py` から生成する |
