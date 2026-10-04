@@ -14,6 +14,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `data/<県>-menkyo-henno.json` の `pref` | 県の名前・単位（市町／市町村）・県内共通の割引。`draft: true` の県は下書き（検索に出さず、サイトマップにも載せない）。ほかの県も同じ形のファイルを置けば、`<県>-menkyo-henno.html`・`<県>-taxi.html` ができる |
 | `tools/check_quotes.py` | 調べたときの抜き書きが、いまの公式ページに載っているかを確かめる |
 | `data/hanashikata.json` | 「親に運転の話をはじめる、最初のひと言」（`henno-hanashikata.html`）の質問・タイプ・ひと言の例と、出典（警察庁の返納件数・支援マニュアル・#8080）。ひと言はサイトが書いた例で、事実ではない。数字と出典は確かめた日を `checked` に書く |
+| `menkyo-henno-guide.html` | 免許返納の基本ガイド。警察庁の全国共通の説明と、都道府県警察・市町村別ページへの入口。`tools/build.py` から生成する |
 | `tools/build.py` | データからページを作るスクリプト |
 | `tools/check_guide.js`、`tools/check_links.py` | 手順ページをブラウザで開いて確かめる道具と、ページのリンクが開けるかを確かめる道具 |
 | `GUIDES.md` | 手順ページを作る順番と作り方 |
