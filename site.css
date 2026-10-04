@@ -319,6 +319,7 @@ p { margin: 0; }
 /* ---------- 一覧から手順ページへ ---------- */
 .btn-guide {
   display: inline-flex; align-items: center; gap: .5rem;
+  max-width: 100%; box-sizing: border-box;
   min-height: 3rem; padding: .4rem 1.1rem; border-radius: .6rem;
   background: var(--accent); color: var(--accent-ink); border: 2px solid var(--accent);
   font-weight: 700; text-decoration: none;

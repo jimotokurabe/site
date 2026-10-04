@@ -257,7 +257,7 @@ def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_D
     if c.get("guide"):
         label = c["guide"].get("link_label", "返納から申し込みまでの手順を見る")
         parts.append(f'<p><a class="btn-guide" href="{gdir}/{c["slug"]}.html">'
-                     f'{e(label)}<span aria-hidden="true">→</span></a></p>')
+                     f'{e(c["n"])}の免許返納｜{e(label)}<span aria-hidden="true">→</span></a></p>')
     if c.get("url"):
         src = c.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(c["url"])}" target="_blank" rel="noopener">'
@@ -1360,7 +1360,7 @@ def top_page(data, draft, others=()):
     guide_block = ""
     if guides:
         links = "\n".join(
-            f'    <li><a href="{GUIDE_DIR}/{c["slug"]}.html"><b>{e(c["n"])}</b>'
+            f'    <li><a href="{GUIDE_DIR}/{c["slug"]}.html"><b>{e(c["n"])}の免許返納</b>'
             f'<span>{e(c["guide"]["short"])}</span></a></li>' for c in guides)
         guide_block = f"""
 <details class="guides">
