@@ -30,7 +30,7 @@
     {
       "id": "takasago", "group": "core", "name": "高砂市", "hint": "じょうとんバスと条件付きタクシー助成",
       "rides": [
-        {"name": "じょうとんバス・じょうとんバスミニ", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内を走るコミュニティバス。ミニには地区別ルートもあります。", "check": "路線図と運行日を確認。牛谷ルートは2027年3月までの実証運行です。", "source": "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/doro_kotsu/1/1/6029.html"}
+        {"name": "じょうとんバス・じょうとんバスミニ", "tags": ["路線・停留所を確認"], "purposes": ["shopping", "hospital", "other"], "summary": "市内を走るコミュニティバス。ミニには地区別ルートもあります。", "check": "2026年10月1日にダイヤが改正されました。牛谷ルートは試験運行中です。最新の停留所・運行日・時刻を確認。", "source": "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/doro_kotsu/1/1/5506.html"}
       ],
       "supports": [
         {"name": "じょうとんバス75歳以上割引", "tags": ["75歳以上", "現金払い"], "purposes": ["shopping", "hospital", "other"], "summary": "75歳以上は片道100円、1日券150円。年齢を示す証明書などを提示します。", "check": "対象のバス・ミニと支払い方法を確認。", "source": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/8850.html"},
