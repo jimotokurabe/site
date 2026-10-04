@@ -185,18 +185,22 @@ p { margin: 0; }
 
 /* 地域名で直接開ける交通案内 */
 .mobility-city-page { max-width: 64rem; }
-.mobility-city-hero { margin-top: 1rem; padding: clamp(1.3rem, 4vw, 2.4rem); border-radius: .9rem; background: linear-gradient(125deg, #143447, #286b75); color: #fff; }
+.mobility-city-hero { margin-top: 1rem; padding: clamp(1.15rem, 3vw, 2rem) clamp(1.3rem, 4vw, 2.4rem) 2.4rem; border-radius: .9rem; background: linear-gradient(125deg, #143447, #286b75); color: #fff; }
 .mobility-city-hero .mobility-kicker { color: #b7e1ed; }
-.mobility-city-hero h1 { margin: .4rem 0 .6rem; font-family: var(--font-head); font-size: clamp(1.8rem, 1.1rem + 3vw, 2.8rem); line-height: 1.38; }
+.mobility-city-hero h1 { margin: .15rem 0 .35rem; font-family: var(--font-head); font-size: clamp(1.8rem, 1.1rem + 3vw, 2.8rem); line-height: 1.32; }
 .mobility-city-hero > p:last-child { max-width: 42em; font-size: .9rem; line-height: 1.8; }
-.mobility-city-overview { margin-top: 1.2rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: .8rem; background: var(--surface); }
-.mobility-city-overview h2 { margin: 0 0 .75rem; font-family: var(--font-head); font-size: 1.2rem; }
-.mobility-city-overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
-.mobility-city-overview-grid > div { min-width: 0; padding: .8rem; border-radius: .5rem; background: var(--surface-2); }
-.mobility-city-overview-grid h3 { margin: 0 0 .35rem; font-size: .85rem; }
-.mobility-city-overview-grid p { display: flex; flex-wrap: wrap; gap: .3rem .65rem; }
-.mobility-city-overview-grid a { font-size: .82rem; font-weight: 700; }
-.mobility-city-overview > p:last-child { margin-top: .8rem; color: var(--muted); font-size: .8rem; line-height: 1.65; }
+.mobility-city-overview { position: relative; margin: -1.1rem 1rem 1.35rem; padding: 1.2rem; border: 1px solid var(--line); border-top: .32rem solid #3e8994; border-radius: .8rem; background: var(--surface); box-shadow: 0 .45rem 1.2rem rgb(10 29 43 / .11); }
+.mobility-city-overview-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .15rem .8rem; margin-bottom: .4rem; }
+.mobility-city-overview h2 { margin: 0; font-family: var(--font-head); font-size: 1.1rem; }
+.mobility-city-overview-heading p { color: var(--muted); font-size: .73rem; white-space: nowrap; }
+.mobility-city-summary { margin: 0; }
+.mobility-city-summary > div { display: grid; grid-template-columns: 5.1rem minmax(0, 1fr); gap: .6rem; min-width: 0; padding: .5rem 0; border-top: 1px solid var(--line); }
+.mobility-city-summary dt { color: var(--muted); font-size: .77rem; font-weight: 700; }
+.mobility-city-summary dd { display: flex; flex-wrap: wrap; gap: .1rem .65rem; min-width: 0; margin: 0; font-size: .82rem; line-height: 1.6; }
+.mobility-city-summary > div:last-child { display: block; }
+.mobility-city-summary > div:last-child dt { margin-bottom: .15rem; }
+.mobility-city-summary a { font-weight: 700; }
+.mobility-city-overview > p:last-child { margin-top: .45rem; color: var(--muted); font-size: .74rem; line-height: 1.55; }
 .mobility-city-content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.3rem; }
 .mobility-city-content .mobility-group { min-width: 0; }
 .mobility-city-content .mobility-group > h2 { margin: 0 0 .65rem; padding-bottom: .35rem; border-bottom: 2px solid var(--ink); font-family: var(--font-head); font-size: 1.22rem; }
@@ -212,7 +216,9 @@ p { margin: 0; }
 .mobility-entry-list ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem .8rem; margin: .7rem 0 0; padding-left: 1.3rem; }
 .mobility-entry-list li { font-size: .83rem; }
 @media (max-width: 42rem) {
-  .mobility-city-content, .mobility-city-overview-grid, .mobility-entry-list ul { grid-template-columns: 1fr; }
+  .mobility-city-hero { padding-bottom: 1.5rem; }
+  .mobility-city-overview { margin: -.6rem .35rem 1.2rem; padding: .85rem; }
+  .mobility-city-content, .mobility-entry-list ul { grid-template-columns: 1fr; }
 }
 
 /* 全国の移動案内：市区町村名から入り、掲載範囲を明示する */

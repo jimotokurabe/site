@@ -1981,22 +1981,25 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
     other_cities = "\n".join(
         f'<a href="{e(other["id"])}.html">{e(mobility_scopes[other["id"]])}の移動手段</a>'
         for other in regional_cities if other["id"] != city["id"])
-    scope_note = (f'このページは{name}の一部地区で確認した交通だけを載せています。'
-                  f'{name}全域の交通を網羅した案内ではありません。' if partial else
-                  '住む地区や目的地によって使える交通が異なります。利用する路線・区域を公式ページで確認してください。')
+    scope_note = (f'{scope}で確認した交通です。{name}全域の案内ではありません。'
+                  if partial else '住む地区と目的地で使える交通が変わります。')
     main = f'''<nav class="crumbs" aria-label="いまいる場所"><a href="../">トップ</a> ＞ <a href="../mobility.html">移動手段を探す</a> ＞ {e(scope)}</nav>
 <header class="mobility-city-hero">
-  <p class="mobility-kicker">兵庫県の移動案内 / {jdate(checked)}確認</p>
-  <h1>{e(scope)}の移動手段と運賃支援</h1>
-  <p>{e(city["hint"])}。{e(scope_note)}</p>
+  <p class="mobility-kicker">兵庫県の移動案内</p>
+  <h1>{e(scope)}の移動案内</h1>
+  <p>{e(scope_note)}</p>
 </header>
 <section class="mobility-city-overview" aria-labelledby="overview-h">
-  <h2 id="overview-h">この地域で確認した移動候補</h2>
-  <div class="mobility-city-overview-grid">
-    <div><h3>乗れる交通</h3><p>{ride_links}</p></div>
-    <div><h3>割引・助成</h3><p>{support_links}</p></div>
+  <div class="mobility-city-overview-heading">
+    <h2 id="overview-h">この地域で確認した候補</h2>
+    <p>公式確認 <time datetime="{e(checked)}">{jdate(checked)}</time></p>
   </div>
-  <p>住所や停留所を入力していないため、対象地区・運行日・予約・利用条件は、各公式ページで確かめてください。</p>
+  <dl class="mobility-city-summary">
+    <div><dt>交通</dt><dd>{ride_links}</dd></div>
+    <div><dt>割引・助成</dt><dd>{support_links}</dd></div>
+    <div><dt>対象・範囲</dt><dd>{e(city['quick_scope'])}</dd></div>
+  </dl>
+  <p>対象地区・運行日・予約などは、利用前に公式ページで確かめてください。</p>
 </section>
 <div class="mobility-city-content">
   <section class="mobility-group" aria-labelledby="ride-h"><h2 id="ride-h">実際に乗る交通手段</h2><div class="mobility-cards">{rides}</div></section>
@@ -2010,9 +2013,9 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
 </section>
 <nav class="mobility-city-nearby" aria-label="ほかの地域の移動案内"><h2>ほかの地域を見る</h2><div>{other_cities}</div></nav>
 <p class="mobility-city-updated">公式ページを確認した日：{jdate(checked)}。運行内容や制度は変わるため、利用前に各公式ページで最新情報を確認してください。</p>'''
-    description = (f'{scope}の移動手段と運賃支援。{city["hint"]}。'
-                   f'対象地区・予約・利用条件と公式出典を{jdate(checked)}に確認。')
-    return shell(title=f'{scope}の移動手段と運賃支援｜じもとくらべ',
+    description = (f'{scope}の移動手段と運賃支援。{city["quick_scope"]}'
+                   f'公式ページを{jdate(checked)}に確認。')
+    return shell(title=f'{city["search_title"]}｜じもとくらべ',
                  description=description, path=path, main=main, draft=draft,
                  base='../', page_class='mobility-city-page')
 
