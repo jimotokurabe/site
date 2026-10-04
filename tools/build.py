@@ -121,7 +121,7 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
-def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class=""):
+def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class="", defer_fonts=False):
     """base は、サイトの直下から見たこのページの位置（下の階層のページなら "../"）。"""
     canonical = SITE + path
     home = base or "./"
@@ -130,6 +130,9 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts="", b
     banner = ""
     if draft:
         banner = ('<p class="draft">これは公開前の下書きです。' + draft_note + '</p>')
+    font_stylesheet = (f'<link rel="stylesheet" href="{FONTS}" media="print" onload="this.media=\'all\'">\n'
+                       f'<noscript><link rel="stylesheet" href="{FONTS}"></noscript>'
+                       if defer_fonts else f'<link rel="stylesheet" href="{FONTS}">')
     return f"""<!doctype html>
 <html lang="ja">
 <head>
@@ -155,7 +158,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{FONTS}">
+{font_stylesheet}
 <link rel="stylesheet" href="{base}site.css">
 {SIZE_BOOT}
 </head>
@@ -2017,7 +2020,7 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
                    f'公式ページを{jdate(checked)}に確認。')
     return shell(title=f'{city["search_title"]}｜じもとくらべ',
                  description=description, path=path, main=main, draft=draft,
-                 base='../', page_class='mobility-city-page')
+                 base='../', page_class='mobility-city-page', defer_fonts=True)
 
 
 # ---------------- 最初のひと言（話し方のページ） ----------------
