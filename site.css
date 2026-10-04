@@ -158,6 +158,11 @@ p { margin: 0; }
 .mobility-tag { display: inline-block; padding: .08rem .5rem; border-radius: .25rem; background: var(--surface-2); color: var(--muted); font-size: .72rem; font-weight: 700; line-height: 1.55; }
 .mobility-card h3, .mobility-card h4 { margin: .45rem 0 .25rem; font-family: var(--font-head); font-size: 1.14rem; line-height: 1.45; }
 .mobility-card > p { font-size: .87rem; line-height: 1.7; }
+.mobility-card-facts { margin: .75rem 0; border-top: 1px solid var(--line); font-size: .82rem; }
+.mobility-card-facts > div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: .4rem .75rem; padding: .42rem 0; border-bottom: 1px solid var(--line); }
+.mobility-card-facts dt { color: var(--muted); font-weight: 700; }
+.mobility-card-facts dd { margin: 0; line-height: 1.65; overflow-wrap: anywhere; }
+@media (max-width: 36rem) { .mobility-card-facts > div { grid-template-columns: 1fr; gap: .05rem; } }
 .mobility-check { display: grid; gap: .1rem; margin: .7rem 0; padding: .6rem .7rem; border-radius: .35rem; background: var(--surface-2); font-size: .78rem; line-height: 1.55; }
 .mobility-check b { color: var(--ink); }
 .mobility-check span { color: var(--muted); }
