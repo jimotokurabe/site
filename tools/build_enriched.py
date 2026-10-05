@@ -107,7 +107,7 @@ def render(out=None,draft=True,base_built=False):
      while sibling and sibling.name!='h3':
       nxt=sibling.find_next_sibling();sibling.decompose();sibling=nxt
      redundant.decompose()
-  
+
   if r and not r.get('unresolved'):
    empty_heading=main.select_one('#audit').find('h3',string='残る確認事項')
    if empty_heading:
