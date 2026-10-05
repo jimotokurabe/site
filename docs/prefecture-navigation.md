@@ -8,6 +8,6 @@
 
 作成担当は県別の設定ファイルを提出し、共通コードは統合担当が編集します。地域区分・図・紹介文を別々に確認し、以降は3県を並行作成して担当者を替えて相互レビューします。
 
-検査は `python3 tools/check_prefecture_navigation.py --out . --pref ibaraki hyogo`。下書きには `--draft` を付けます。地域ID・市町村件数・リンク・紹介文・図内のラベル座標・公開設定を確認します。全サイトの検査は `python3 tools/check_publication.py .` を使います。
+検査は `python3 tools/check_prefecture_navigation.py --out . --pref ibaraki hyogo`。下書きには `--draft` を付けます。地域ID・市町村件数・リンク・紹介文・図形の全頂点とラベル座標・公開設定を確認します。全サイトの検査は `python3 tools/check_publication.py .` を使います。
 
 地域数や離島に合わせて `viewBox` を設定でき、長い地域名は `map_labels` で図上だけ短縮できます。一覧の地域名には元データの正式名を使います。

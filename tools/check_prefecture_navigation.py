@@ -5,6 +5,21 @@ import argparse,json,re
 from bs4 import BeautifulSoup
 import build as b
 
+def path_vertices(path):
+    tokens=re.findall(r'[A-Za-z]|[-+]?(?:\d*\.\d+|\d+)',path)
+    vertices=[];x=y=0;start=(0,0);command=None;i=0
+    while i<len(tokens):
+        if tokens[i].isalpha():
+            command=tokens[i];i+=1
+            if command.upper()=='Z':x,y=start;continue
+        if command not in {'M','m','L','l'}:raise ValueError('未対応の描画命令')
+        a,b=map(float,tokens[i:i+2]);i+=2
+        if command.islower():x,y=x+a,y+b
+        else:x,y=a,b
+        vertices.append((x,y))
+        if command.upper()=='M':start=(x,y);command='l' if command.islower() else 'L'
+    return vertices
+
 def check(pid,out,draft=False):
     cfg=json.loads((b.ROOT/'data/prefecture-navigation.json').read_text())[pid]
     data=b.load_pref(b.ROOT/'data'/f'{pid}-menkyo-henno.json');cities=data['cities'];regions=data['regions']
@@ -15,6 +30,9 @@ def check(pid,out,draft=False):
     for rid,shape in cfg['shapes'].items():
         if len(shape)!=3 or not isinstance(shape[0],str) or not re.match(r'^\s*M',shape[0]):issues.append([rid,'図の書式'])
         elif not (box[0]<=shape[1]<=box[0]+box[2] and box[1]<=shape[2]<=box[1]+box[3]-21):issues.append([rid,'ラベル位置'])
+        try:
+            if any(not (box[0]<=x<=box[0]+box[2] and box[1]<=y<=box[1]+box[3]) for x,y in path_vertices(shape[0])):issues.append([rid,'図形座標が表示範囲外'])
+        except (ValueError,TypeError):issues.append([rid,'図形座標の構文'])
     for slug,text in cfg.get('summaries',{}).items():
         if slug not in slugs or not isinstance(text,str) or not 0<len(text)<=95:issues.append([slug,'短文設定'])
     file=out/b.list_path(data['pref']);s=BeautifulSoup(file.read_text(),'html.parser')
