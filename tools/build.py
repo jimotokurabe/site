@@ -2924,6 +2924,9 @@ def main():
                 (art / name).parent.mkdir(parents=True, exist_ok=True)
                 (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
+    if (ROOT / 'data/municipality-supplements.json').exists():
+        from build_enriched import render
+        render(out, draft=a.draft, base_built=True)
     print("built:", ", ".join(pages), "| draft" if a.draft else "")
 
 

@@ -35,3 +35,9 @@ GitHub Pages（main ブランチの直下）で公開しています。
 1. `data/hyogo-menkyo-henno.json` か `data/hyogo-taxi.json` を直す（確かめた日は `checked`）
 2. `python3 tools/build.py` でページを作り直す
 3. 生成されたファイルも含めて main に push する（数分で本番に出る）
+
+## 全国の市町村ページ
+
+`python3 tools/build.py` で、トップ → 都道府県 → 1741市町村のページとサイトマップを生成します。`beautifulsoup4` が必要です（`python3 -m pip install beautifulsoup4`）。確認用は `python3 tools/build.py --out preview --draft` で生成します。
+
+`data/municipality-supplements.json` に市町村の一覧と、公式出典・原文根拠を確認して採用した補足を保存しています。既存制度の確認日と、補足情報の確認日は分けて表示します。未確認事項は未確認のまま掲載します。採用する補足には `reviewed: true` と `safety_accepted: true`、内容・出典・原文根拠が必要です。`assets/notice.css` が個別ページの表示を定義します。生成HTMLを直接編集せず、データと生成処理を更新してください。
