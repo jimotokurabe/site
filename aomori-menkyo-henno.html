@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた20市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#hiranai">平内町</a><span data-label="特典・金額">入浴回数券2冊の引換券と町民バスの福祉乗車証</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#imabetsu">今別町</a><span data-label="特典・金額">1回500円のところ300円（1カ月定期券は3,000円のところ2,000円）</span><span data-label="申込期限">申し込みはいりません（割引の確かめ方の記載なし）</span></li>
+<li><a href="#sotogahama">外ヶ浜町</a><span data-label="特典・金額">1回500円のところ300円（1カ月定期券は3,000円のところ2,000円）</span><span data-label="申込期限">申し込みはいりません（割引の確かめ方の記載なし）</span></li>
+<li><a href="#hirakawa">平川市</a><span data-label="特典・金額">運転経歴証明書1,150円、マイナ経歴証明書900円、両方1,250円</span><span data-label="申込期限">運転経歴証明書を取得してから1年以内</span></li>
+<li><a href="#fujisaki">藤崎町</a><span data-label="特典・金額">初乗り運賃670円分の券（申請した月から翌年3月まで、往復分で1カ月2枚）</span><span data-label="申込期限">随時申請可（翌年度分は3月中に郵送）</span></li>
+<li><a href="#sannohe">三戸町</a><span data-label="特典・金額">タクシー券1枚700円×12枚（8,400円分）を交付。有効期限は交付月から1年間</span><span data-label="申込期限">運転取消通知書または運転経歴証明書</span></li>
+<li><a href="#gonohe">五戸町</a><span data-label="特典・金額">交通機関専用回数乗車券。新規申請は1万円分、2回目以降の更新申請は5千円分（1年に1回）。岩手県北バス（南部バス）の路線バス・町コミュニティバス・町内タクシー会社4社で使える</span><span data-label="申込期限">「申請による運転免許の取消通知書」</span></li>
+<li><a href="#takko">田子町</a><span data-label="特典・金額">田子スタンプ会商品券（1万1千円相当）または田子町商工会発行の地域振興商品券（1万円相当）。原則、返納から6か月以内に申請</span><span data-label="申込期限">運転免許の取消通知書（公安委員会交付）</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1692,7 +1711,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた12市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#odate">大館市</a><span data-label="特典・金額">「大館市得とく定期券6か月券」購入費用の助成（1回限り）、またはタクシー利用助成券700円×32枚（1回限り）のどちらか一方。タクシー券は大館市内の乗車区間のみで、1回の乗車で最大4枚まで</span><span data-label="申込期限">記載なし（申請書・委任状の様式あり）</span></li>
+<li><a href="#kazuno">鹿角市</a><span data-label="特典・金額">購入料金の5割を助成（例：2,000円分の回数券が1,000円）</span><span data-label="申込期限">65歳以上の方は生年月日がわかるマイナンバーカード等、運転免許返納者は運転経歴証明書</span></li>
+<li><a href="#kosaka">小坂町</a><span data-label="特典・金額">1枚あたり100円引きの割引回数券を100枚（1人1回限り）。「野口線」（町営バス）・「上向七滝線」・十和田湖地区乗合タクシーで使える（秋北バスの各路線は不可）</span><span data-label="申込期限">「運転経歴証明書」の写しまたは「取消通知書」の写し</span></li>
+<li><a href="#fujisato">藤里町</a><span data-label="特典・金額">駒わりくん無料乗車券（町内区間、如来瀬岱まで。有効期限なし）。「駒きゅう」も通常料金の半額で利用可（二ツ井まで250円、能代市まで500円）</span><span data-label="申込期限">写真（縦3.0cm×横2.4cm）。65歳以上70歳未満の方は運転経歴証明書</span></li>
+<li><a href="#yurihonjo">由利本荘市</a><span data-label="特典・金額">市コミュニティバスの利用料金が半額になる利用者証の交付（住民基本台帳に登載されている期間有効）</span><span data-label="申込期限">警察署等発行の「申請による運転免許の取消通知書」と「マイナンバーカードなどの年齢が確認できる書類」の両方、または「運転経歴証明書」（返納から5年以内）</span></li>
+<li><a href="#nikaho">にかほ市</a><span data-label="特典・金額">コミュニティバス運賃（通常1回200円）が無料。降車時に運転経歴証明書を提示するか、申請して「無料パス」の交付を受ける。回数券も割引価格（運転経歴証明書があると100円券13枚・200円券13枚が各1,000円/2,000円で買える）</span><span data-label="申込期限">運転経歴証明書</span></li>
+<li><a href="#daisen">大仙市</a><span data-label="特典・金額">1枚100円の交通助成券を、75歳以上の人に年間5,000円分、運転免許を返納した人に年間5,000円分（両方に当てはまれば10,000円分）。返納した人がもらえるのは3年間、またはその前に75歳になるまで</span><span data-label="申込期限">申請は年度内1回。返納した人が初めてもらうときは、取消通知書か運転経歴証明書などの提出が必要</span></li>
+<li><a href="#semboku">仙北市</a><span data-label="特典・金額">回数券1枚につき100円引き</span><span data-label="申込期限">記載なし</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1161,7 +1180,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

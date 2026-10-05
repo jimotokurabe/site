@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -605,7 +610,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,19 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた7市町村のうち、地域順の先頭7件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#yasugi">安来市</a><span data-label="特典・金額">フリー定期券（申請日から1年間、イエローバス無料）と、申請日から無期限で使える減額証明書（乗車料金が半額、200円が100円）。特典の受け取りは1人1回のみ</span><span data-label="申込期限">免許返納日より3か月以内に窓口（地域振興課）へ</span></li>
+<li><a href="#unnan">雲南市</a><span data-label="特典・金額">総額20,000円以内（1人1回限り）。優待乗車券は合計8,000円以上が必須（有効期限は令和12年3月31日）。あと12,000円以内は、温浴施設の入浴券または優待乗車券から選べます</span><span data-label="申込期限">運転免許証の取消の日から起算して2年以内（申請書・取消通知書の写し・穴が開いた免許証の写しなどを出します）</span></li>
+<li><a href="#iinan">飯南町</a><span data-label="特典・金額">20,000円分の優待乗車券（500円券×40枚）。おつりは出ません。有効期限は交付から3年間（3年目の3月末日まで）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#misato">美郷町</a><span data-label="特典・金額">バス利用券20,000円分、町内タクシー利用券20,000円分、有償運送事業者等の利用券20,000円分のうち、上限40,000円分を交付。1人につき1回限り</span><span data-label="申込期限">自主返納をした日から起算して1年以内に申請</span></li>
+<li><a href="#hamada">浜田市</a><span data-label="特典・金額">敬老福祉乗車券15,000円分（1冊3,000円分を5冊。100円券綴りと500円券綴りから選べる）。返納後または失効後1回限り</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#gotsu">江津市</a><span data-label="特典・金額">2,000円分（500円券4枚）を半額の1,000円で購入。令和8年度は最大15セット（30,000円分）まで。有効期限は令和10年3月31日</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#okinoshima">隠岐の島町</a><span data-label="特典・金額">隠岐一畑交通の回数券（100円×11枚＝1,000円）、隠岐タクシー業協議会のタクシー乗車券（300円×10枚＝3,000円）、町営バスの回数券（300円×11枚＝3,000円／300円×23枚＝6,000円）から、21,000円以内で自由に組み合わせて選べる。交付はお1人1回限り</span><span data-label="申込期限">免許返納日または失効日から60日以内に申請</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -993,7 +1011,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

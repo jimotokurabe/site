@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた28市町のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#shimoda">下田市</a><span data-label="特典・金額">運転経歴証明書の交付に係る手数料の助成（金額はページに記載なし）</span><span data-label="申込期限">運転経歴証明書交付から3ヶ月以内に申請</span></li>
+<li><a href="#kawazu">河津町</a><span data-label="特典・金額">記載なし（返納者向けの特別な金額はなし。デマンド交通の利用料金は1乗車1,000円・現金のみ）</span><span data-label="申込期限">「利用者証交付申請書」に必要事項を記入し、河津町役場企画調整課へ提出（二次元コード・URLでの申請も可）</span></li>
+<li><a href="#matsuzaki">松崎町</a><span data-label="特典・金額">福祉タクシー券はタクシー初乗料金相当額×5枚。寿回数券は1,000円分のバス乗車券を自己負担500円で購入可（返納者は町発行の購入資格証明書が必要）</span><span data-label="申込期限">運転免許証返納者（満70歳以上の方）は返納の分かるものを持参し役場健康福祉課で申請</span></li>
+<li><a href="#nishiizu">西伊豆町</a><span data-label="特典・金額">運転経歴証明書の発行手数料(1,150円)</span><span data-label="申込期限">運転経歴証明書の交付日から1年以内。</span></li>
+<li><a href="#numazu">沼津市</a><span data-label="特典・金額">5,000円分（100円券×50枚）。交付は1回限り</span><span data-label="申込期限">申請期間は免許返納後6か月以内。利用券の有効期限は交付日から1年を経過した日の属する年度の3月末日まで</span></li>
+<li><a href="#atami">熱海市</a><span data-label="特典・金額">運転経歴証明書の交付手数料の全額（金額はページに記載なし）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#mishima">三島市</a><span data-label="特典・金額">1万円分（100円券×100枚）。利用期間は交付から2年間（令和7年4月1日交付分より）</span><span data-label="申込期限">有効な運転免許証を自主返納し全部取消しとなった日から6か月以内に申請</span></li>
+<li><a href="#fujinomiya">富士宮市</a><span data-label="特典・金額">返納時期により、平成25年10月1日〜令和2年3月31日は5,000円分、令和2年4月1日〜令和3年3月31日は10,000円分、令和3年4月1日以降は30,000円分（1回限り）。有効期限あり</span><span data-label="申込期限">記載なし</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町を選んでください</h2>
@@ -1699,7 +1718,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

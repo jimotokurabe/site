@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた25市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#kagoshima">鹿児島市</a><span data-label="特典・金額">市電100円・バス120円（大人）。県警のページでは「路線バス等の料金が半額」と説明されています</span><span data-label="申込期限">申し込みはいりません（運賃を払う前に運転手へ提示）</span></li>
+<li><a href="#hioki">日置市</a><span data-label="特典・金額">ひお吉号の運賃が200円（ふだん高校生以上は300円）</span><span data-label="申込期限">申し込みはいりません（運賃を払うときに返納書を見せる）。ひお吉号を使うには事前の会員登録と乗車予約が必要です</span></li>
+<li><a href="#minamisatsuma">南さつま市</a><span data-label="特典・金額">南さつま市共通商品券・南さつま市商工会共通商品券・いわさきICカードのうちいずれか1つ10,500円分を1回交付。別に、つわちゃんバス・つわちゃんタクシーの運賃が無料</span><span data-label="申込期限">運転免許を自主返納した日から1年以内</span></li>
+<li><a href="#minamikyushu">南九州市</a><span data-label="特典・金額">ひまわりバス（ふだん大人100円）とチョイソコひまわり（ふだん大人300円）が無料</span><span data-label="申込期限">申し込みはいりません（乗るときに警察署発行の証明書を見せる）</span></li>
+<li><a href="#akune">阿久根市</a><span data-label="特典・金額">タクシー利用券（1枚400円）を年間最大48枚（1か月4枚、申請月により月割り）。1人1回の乗車につき1枚</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#izumi">出水市</a><span data-label="特典・金額">交通災害共済の会費 360円→100円（市）／協力タクシー（出水タクシー・旭交通タクシー・福祉タクシーにこはな）の料金1割引／南国交通バス（出水ふれあいバス・天草シャトルバス・空港バスを除く）の料金半額／舞鶴温泉 350円→250円／協力ホテル・旅館の宿泊料金1割引</span><span data-label="申込期限">共済会費の減額は、3月31日までに「運転免許返納者であることの届出書」を市へ出した人が次年度から</span></li>
+<li><a href="#satsumasendai">薩摩川内市</a><span data-label="特典・金額">タクシーチケット5,000円分（1回限り）。別に、市が委託して運行するコミュニティ交通（運賃150円）が半額の80円</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#kirishima">霧島市</a><span data-label="特典・金額">5,500円分のかごしま共通乗車カード／タクシーチケット／SUGOCAから1種類を選ぶ（1回限り、無償）</span><span data-label="申込期限">記載なし</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -2031,7 +2050,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

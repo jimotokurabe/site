@@ -18,7 +18,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `hyogo-mobility/*.html` | 確認済み9地域の移動手段と運賃支援を地域別にまとめたページ。`tools/build.py` から生成する |
 | `data/mobility-coverage.json` | 全国検索から詳細な地域交通ページへつなぐ対応表。市区町村の一部だけを扱う場合は `partial` と対象地区を明記する |
 | `data/municipal-mobility.json`、`<県ID>-mobility/*.html` | 兵庫県以外も含む市区町村別の交通・運賃支援。元データに確認日、対象地区、予約、費用、公式出典を記録し、HTMLを生成する |
-| `mobility.html`、`mobility-city-index.json` | 47都道府県の市区町村から、確認済みの地域交通・タクシー助成・免許返納情報を探す入口。トップの「移動手段」「制度・助成」は同じ地域選択を使い、詳細確認済みの地域は直接地域別ページへ、その他は掲載状況へ進む。`tools/build.py` から生成する |
+| `mobility.html`、`mobility-city-index.json` | 47都道府県の市区町村から、確認済みの地域交通・タクシー助成・免許返納情報を探す入口。トップでは町名を直接入力して3種類の情報を確認でき、都道府県からも選べる。`tools/build.py` から生成する |
 | `docs/mobility-data.md` | 全国検索の元データ、地域交通の掲載範囲、追加手順 |
 | `menkyo-henno-guide.html` | 免許返納の基本ガイド。警察庁の全国共通の説明と、都道府県警察・市町村別ページへの入口。`tools/build.py` から生成する |
 | `guide-city-data/*.json` | 基本ガイドで都道府県を選んだときに読み込む市町村データ。`tools/build.py` から生成する |
@@ -26,7 +26,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `tools/check_guide.js`、`tools/check_links.py` | 手順ページをブラウザで開いて確かめる道具と、ページのリンクが開けるかを確かめる道具 |
 | `GUIDES.md` | 手順ページを作る順番と作り方 |
 | `TOPICS.md` | 新しい制度のページを作る順番と作り方 |
-| `site.css` | 全ページ共通の見た目 |
+| `site.css` | 返納詳細ページの黒基調を全ページで共用する見た目。印刷時は白地にする |
 | `index.html` ほか `*.html`、`hyogo-menkyo-henno/*.html`、`sitemap.xml`、`robots.txt` | `tools/build.py` が作るもの。手で直さない |
 | `CNAME`、`.nojekyll` | 独自ドメインの設定と、ファイルをそのまま公開する設定 |
 

@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた21市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#kainan">海南市</a><span data-label="特典・金額">全区間一乗車50円（ふつうは100円）。回数券は50円券11枚つづりが500円</span><span data-label="申込期限">申し込みはいりません（乗車・回数券の購入時に運転経歴証明書を見せる）</span></li>
+<li><a href="#kimino">紀美野町</a><span data-label="特典・金額">1乗車100円（大人は200円）</span><span data-label="申込期限">申し込みはいりません（乗車時に運転経歴証明書を見せる）</span></li>
+<li><a href="#hashimoto">橋本市</a><span data-label="特典・金額">Hashi-Moポイント10,000ポイント（10,000円相当）。1人1回限り</span><span data-label="申込期限">窓口か郵送で申請（申請期限は記載なし）。申請書・取消通知書（または失効が分かる書類）・運転経歴証明書などが要ります</span></li>
+<li><a href="#koya">高野町</a><span data-label="特典・金額">外出支援助成券 年間18,000円分</span><span data-label="申込期限">申請に基づき交付（要申請）</span></li>
+<li><a href="#arida">有田市</a><span data-label="特典・金額">有田市デマンドバス（ありバス）1乗車100円（大人は200円）</span><span data-label="申込期限">乗車のとき、運転手に証明書等を見せます</span></li>
+<li><a href="#hirogawa">広川町</a><span data-label="特典・金額">福祉タクシー利用券（県の一覧：基本料金〈初乗り〉が年間最大24回無料になるチケット）</span><span data-label="申込期限">随時申請できます（代理の人でも可）。運転経歴証明書または申請による運転免許の取消通知書と印鑑を持って、役場保健福祉課の窓口へ</span></li>
+<li><a href="#aridagawa">有田川町</a><span data-label="特典・金額">コミュニティバス運賃300円が半額（150円）</span><span data-label="申込期限">乗車のとき、運転経歴証明書を見せます</span></li>
+<li><a href="#gobo">御坊市</a><span data-label="特典・金額">運転経歴証明書の交付等にかかる手数料の全額</span><span data-label="申込期限">申請書兼請求書と誓約書が必要です（印鑑は不要）。運転経歴証明書は交付後1年以内のものに限ります</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1480,7 +1499,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

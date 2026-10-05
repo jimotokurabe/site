@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた38市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#date">伊達市</a><span data-label="特典・金額">1回200円引きの割引券100枚（20,000円分）。申請日から1年経過ごとに再申請すれば交付</span><span data-label="申込期限">受付は生活環境課、各総合支所業務防災係（保原総合支所を除く）。平日8時30分〜17時00分</span></li>
+<li><a href="#motomiya">本宮市</a><span data-label="特典・金額">3種類（地域公共交通共通乗車券・一般タクシー利用券・バスICカード購入/チャージ券）を1万円単位で組み合わせ、上限50,000円分</span><span data-label="申込期限">地域公共交通共通乗車券とバスICカードに使用期限はなし。一般タクシー利用券は発行日から2年間</span></li>
+<li><a href="#koori">桑折町</a><span data-label="特典・金額">タクシー利用券12,000円分（1人1回限り）</span><span data-label="申込期限">健康福祉課で随時申請</span></li>
+<li><a href="#kunimi">国見町</a><span data-label="特典・金額">タクシー券10,000円分（指定タクシー会社5,000円分＋まちなかタクシー5,000円分。まちなかタクシーのみで10,000円分にすることも選べる）。有効期限は発行日から2年間</span><span data-label="申込期限">福祉課長寿介護係で申請</span></li>
+<li><a href="#kawamata">川俣町</a><span data-label="特典・金額">デマンド型乗合タクシーの片道利用券50枚（1回限り、有効期限なし）</span><span data-label="申込期限">審査があり、申請から交付まで10日程度</span></li>
+<li><a href="#otama">大玉村</a><span data-label="特典・金額">たまちゃんタクシー券 年15,000円分を3年間（最大45,000円分）。大玉村共通商品券10,000円分（1人1回限り）</span><span data-label="申込期限">役場住民生活課で申請（代理申請も可）</span></li>
+<li><a href="#iwaki">いわき市</a><span data-label="特典・金額">5,000円相当の利用券（LOCOCA／いわき市タクシー事業協同組合のタクシー回数乗車券／入浴券から1つを選択。Suicaは現在受付停止中）</span><span data-label="申込期限">取消通知書の交付日から1年間申請可能。利用券は申請から2か月程度で自宅へ郵送</span></li>
+<li><a href="#koriyama">郡山市</a><span data-label="特典・金額">5,000円分のバス・タクシー利用券（500円券10枚つづり）。交付は1人1回限り、有効期限1年、本人のみ利用可</span><span data-label="申込期限">取消通知書（原本）、本人確認書類（運転経歴証明書、マイナンバーカードなど）</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -2646,7 +2665,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

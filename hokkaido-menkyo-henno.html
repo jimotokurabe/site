@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた79市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#iwamizawa">岩見沢市</a><span data-label="特典・金額">協力店ごとに異なる（札幌市のページの協力店一覧を見る）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#ashibetsu">芦別市</a><span data-label="特典・金額">地域限定商品券どんぐり 2万円</span><span data-label="申込期限">自主返納から30日以内（30日以上たつと対象外）。商品券の使用期限は支給開始日から半年間</span></li>
+<li><a href="#akabira">赤平市</a><span data-label="特典・金額">中央バス回数券2,400円分と乗合タクシー無料券2,000円分（と公共交通総合時刻表）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#sunagawa">砂川市</a><span data-label="特典・金額">商品券10,000円分、夜光反射材、（予約型乗合タクシーに利用登録している人は）無料利用券3,000円分</span><span data-label="申込期限">自主返納した日から1年以内に申請（1人1回限り）</span></li>
+<li><a href="#nanporo">南幌町</a><span data-label="特典・金額">ハイヤー小型車または普通車の1区間の基本料金と、南幌町オンデマンド交通の運賃を支援。利用券は1年間に1人1冊24枚（3年間）</span><span data-label="申込期限">最初の申請は自主返納した日から1年以内</span></li>
+<li><a href="#naie">奈井江町</a><span data-label="特典・金額">町営バス（200円×30枚）又は乗りあいタクシー（300円×20枚）の無料利用券（有効期限6ヶ月）、夜行反射材等のグッズ、奈井江町商工会ふれあいチケット（3000円）</span><span data-label="申込期限">返納日から1年間</span></li>
+<li><a href="#kamisunagawa">上砂川町</a><span data-label="特典・金額">5万円分のタクシー利用券（3年間有効）</span><span data-label="申込期限">免許証を返納して1年以内に申請</span></li>
+<li><a href="#yuni">由仁町</a><span data-label="特典・金額">デマンドタクシー1乗車100円（通常は300円）</span><span data-label="申込期限">100円で使えるのは、登録証を交付した日の属する年度の翌年度末まで。以降は300円</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -7519,7 +7538,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

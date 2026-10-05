@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた10市町のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#otsu">大津市</a><span data-label="特典・金額">ICOCA等の購入またはチャージ費用6,000円分、またはバス・タクシーで使用できる公共交通共通乗車券6,000円分、または自転車用ヘルメット（1つ選ぶ）</span><span data-label="申込期限">申請期間は令和8年4月1日から令和9年3月31日まで（公共交通共通乗車券のみ令和9年2月26日が締切）。ICOCA等と共通乗車券は予算に達し次第終了。令和7年度以前に返納した人は令和8年4月1日以降は申請できません</span></li>
+<li><a href="#yasu">野洲市</a><span data-label="特典・金額">コミュニティバス23枚綴り回数券5冊（1万円分）を1回限り無料交付</span><span data-label="申込期限">取消日から1年以内の申請に限る</span></li>
+<li><a href="#koka">甲賀市</a><span data-label="特典・金額">コミュニティバス環境回数乗車券30枚（本人のみ1回限り）</span><span data-label="申込期限">取消日から数えて90日以内に申し込み（県警のチラシ）</span></li>
+<li><a href="#konan">湖南市</a><span data-label="特典・金額">湖南市コミュニティバス回数乗車券15枚</span><span data-label="申込期限">取消日から数えて90日以内に申し込み</span></li>
+<li><a href="#omihachiman">近江八幡市</a><span data-label="特典・金額">あかこんバスの回数券（65歳以上回数使用券7,500円分）、またはWESTERポイント5,000ポイント（5,000円相当）のどちらか</span><span data-label="申込期限">1人につきどちらか1回限り。交通政策課の窓口（平日午前9時から午後4時45分）かオンラインで申請。申請書・誓約書兼承諾書・取消通知書などが必要</span></li>
+<li><a href="#aisho">愛荘町</a><span data-label="特典・金額">愛のりタクシー回数券9,000円相当分、またはコミュニティバス回数券9,000円相当分（どちらか）。回数券に使用期限はありません。</span><span data-label="申込期限">1回限り。警察署で交付される「運転免許の取消しに係る通知書の写し」の日付から1年以内に申請。窓口のみ（郵送は不可）。代理人でも申請できます。</span></li>
+<li><a href="#toyosato">豊郷町</a><span data-label="特典・金額">愛のりタクシー共通回数券（9千円相当分）</span><span data-label="申込期限">取消通知日から数えて1年以内に申し込み</span></li>
+<li><a href="#kora">甲良町</a><span data-label="特典・金額">愛のりタクシー共通回数券（9千円相当分）</span><span data-label="申込期限">取消通知日から数えて1年以内に申し込み</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町を選んでください</h2>
@@ -1047,7 +1066,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

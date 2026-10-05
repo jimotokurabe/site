@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた22市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#nara">奈良市</a><span data-label="特典・金額">ななまる専用バスチャージ券（2000円分）</span><span data-label="申込期限">1人1回限り。窓口でその場で贈呈（郵送・オンライン申請もあり）。バスチャージ券の有効期限は交付後1年間。令和8年4月13日から受付</span></li>
+<li><a href="#tenri">天理市</a><span data-label="特典・金額">チョイソコてんりの運賃割引：福住エリア（福住校区）は1回500円→300円、福住エリア以外の停留所は1回300円→200円</span><span data-label="申込期限">チョイソコてんりの会員申し込みのときに、運転免許自主返納者として登録が必要です</span></li>
+<li><a href="#sakurai">桜井市</a><span data-label="特典・金額">5,000円相当分（桜井市内共通商品券、またはICOCAカード（デポジット500円を含む）のどちらか）</span><span data-label="申込期限">令和8年度分は令和8年4月1日から受付中。予算が上限に達し次第終了。失効した免許を返納しても対象になりません</span></li>
+<li><a href="#uda">宇陀市</a><span data-label="特典・金額">ウッピー商品券（1万円分）</span><span data-label="申込期限">申請書などを、危機管理課か各地域事務所へ出します。受付開始は令和5年7月3日</span></li>
+<li><a href="#kawanishi">川西町</a><span data-label="特典・金額">コミュニティバス「川西こすもす号」の使用料が1回100円から50円</span><span data-label="申込期限">減額を使う前に、申請書を役場総合政策課へ提出（申請書は保健センター・子育て支援センターの窓口でも書けます）</span></li>
+<li><a href="#miyake">三宅町</a><span data-label="特典・金額">タクシー利用補助券（1回750円・48枚綴り、36,000円分）</span><span data-label="申込期限">1人1回限り（県警の一覧より）。申し込み方法は町のタクシー補助券のページ（交流まちづくりセンターMiiMo 1階窓口）</span></li>
+<li><a href="#tawaramoto">田原本町</a><span data-label="特典・金額">デマンド交通tawamo（タワモ）乗車券36枚（1回の乗車は1人300円）</span><span data-label="申込期限">1人1回限り。2冊目以降・再発行はありません。令和8年3月以前にタワラモトンタクシー利用券（返納特典）をもらった人には出ません。受付は午前9時〜午後4時30分</span></li>
+<li><a href="#yamatokoriyama">大和郡山市</a><span data-label="特典・金額">市内共通商品券5,000円分（1,000円分5枚）、または無記名ICOCA5,000円分（デポジット500円＋チャージ4,500円）のどちらか</span><span data-label="申込期限">商品券は交付日から6か月間、商工会の登録加盟店で使えます。令和7年3月24日から、申請するときに要件を満たしていれば対象になります</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1812,7 +1831,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

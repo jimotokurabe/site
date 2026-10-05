@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた14市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#tokushima">徳島市</a><span data-label="特典・金額">普通運賃が半額（10円未満切り上げ）。現金・回数券・交通系ICカードで払うときだけ（定期券などは対象外）</span><span data-label="申込期限">申し込みはいりません（降りるときに運転経歴証明書かマイナ経歴証明書を運転手に見せます）</span></li>
+<li><a href="#naruto">鳴門市</a><span data-label="特典・金額">普通運賃が半額（10円未満切り上げ）（徳島市のページの記載）</span><span data-label="申込期限">申し込みはいりません（降りるときに運転経歴証明書などを運転手に見せます）</span></li>
+<li><a href="#komatsushima">小松島市</a><span data-label="特典・金額">運賃の半額（現金と回数券の利用者のみ。定期券は対象外）</span><span data-label="申込期限">申し込みはいりません（降りるときに運転経歴証明書を乗務員に見せます）</span></li>
+<li><a href="#awa">阿波市</a><span data-label="特典・金額">1回（片道）300円（ふつうは500円）</span><span data-label="申込期限">利用登録が必要です（登録申請書に運転経歴証明書等の写しを添えます）</span></li>
+<li><a href="#ishii">石井町</a><span data-label="特典・金額">紙助成券（100円券・300円券）を25枚ずつ（合わせて10,000円分）。令和8年度に限り、顔認証デジタルチケットを選ぶと15,000円分（100円券30枚・300円券40枚）</span><span data-label="申込期限">予算がなくなり次第終了。助成券の有効期間は4月1日〜翌年3月31日</span></li>
+<li><a href="#kamiyama">神山町</a><span data-label="特典・金額">神山町商工会の商品券5,000円分、または徳島バス等で使えるICOCA5,000円分（カード預かり金500円分を含む）のどちらか。一人1回限り</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#aizumi">藍住町</a><span data-label="特典・金額">1万円分のタクシー券（500円券20枚つづり）を5,000円で販売。1人5冊まで（令和8年度）。1冊買うごとにゆめタウン徳島行き専用タクシー券（500円券2枚）がもらえます</span><span data-label="申込期限">販売期間は令和8年4月1日から令和9年3月26日まで</span></li>
+<li><a href="#kamiita">上板町</a><span data-label="特典・金額">年額12,000円分の助成券。バスのみ、タクシーのみ、またはバス6,000円分とタクシー6,000円分から選べます</span><span data-label="申込期限">毎年申請が必要（申請の期限は記載なし）</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1216,7 +1235,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

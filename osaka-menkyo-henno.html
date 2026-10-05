@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた16市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#toyonaka">豊中市</a><span data-label="特典・金額">阪急バス無料乗車券（4枚）付きチラシ1枚</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#ikeda">池田市</a><span data-label="特典・金額">「hanica（ハニカ）」2,000円分の費用を補助</span><span data-label="申込期限">令和8年4月1日（水曜日）から令和9年3月31日（水曜日）まで（予算残額が無くなった時点で終了）</span></li>
+<li><a href="#toyono">豊能町</a><span data-label="特典・金額">「hanicaはんきゅうグランドパス」は上限1万5千円、「hanica」の購入・チャージは上限1万円、京都タクシー株式会社の利用券は上限1万円（いずれか1つ）</span><span data-label="申込期限">申請受付期限：令和9年2月26日（金）</span></li>
+<li><a href="#ibaraki">茨木市</a><span data-label="特典・金額">「グランドパス70」の購入費用、6,000円の助成（70歳以上）または ICOCAカードの交付（6,000円相当※デポジット代500円含む）</span><span data-label="申込期限">令和8(2026)年4月1日(水曜日)～令和9(2027)年2月26日（金曜日）まで。グランドパスの引換え期限は令和9年3月31日まで</span></li>
+<li><a href="#settsu">摂津市</a><span data-label="特典・金額">反射材付きジャンパーを1回限り支給</span><span data-label="申込期限">返納後、6か月以内</span></li>
+<li><a href="#hirakata">枚方市</a><span data-label="特典・金額">ひらかたポイント1,000ポイント（1ポイント1円）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#shijonawate">四條畷市</a><span data-label="特典・金額">自宅〜市役所・市民総合センター、自宅〜JR四条畷駅・忍ケ丘駅が、西部地域350円・逢阪地区470円</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#katano">交野市</a><span data-label="特典・金額">タクシー利用補助券 500円×24枚、または おりひめバス利用補助券 100円×120枚（どちらか1つ、一人1回限り）</span><span data-label="申込期限">運転経歴証明書の交付から1年以内</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1916,7 +1935,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

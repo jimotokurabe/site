@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた16区市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#chiyoda">千代田区</a><span data-label="特典・金額">無記名式交通系ICカード5,500円分（デポジット含む）</span><span data-label="申込期限">自主返納してから1年以内</span></li>
+<li><a href="#taito">台東区</a><span data-label="特典・金額">区内循環バスめぐりん専用回数乗車券1冊（11枚綴り）。回数乗車券に使用期限はありません</span><span data-label="申込期限">返納から1年以内</span></li>
+<li><a href="#shibuya">渋谷区</a><span data-label="特典・金額">渋谷区コミュニティバス「ハチ公バス」専用回数乗車券（1冊）</span><span data-label="申込期限">既に返納している場合は、返納後6か月以内</span></li>
+<li><a href="#arakawa">荒川区</a><span data-label="特典・金額">図書カード1,000円分と交通安全グッズ</span><span data-label="申込期限">運転経歴証明書の交付日から1年間</span></li>
+<li><a href="#katsushika">葛飾区</a><span data-label="特典・金額">支援券（クオカード）5,000円分（1人1回限り）</span><span data-label="申込期限">申請期間 令和8年4月13日（月曜日）～令和9年3月31日（水曜日）消印有効（返納日から1年以内）。予算額に達した場合、早く終了する場合あり</span></li>
+<li><a href="#higashikurume">東久留米市</a><span data-label="特典・金額">「くるぶー」の利用登録（登録無料）。運賃は1人1回500円（2人以上で乗ると1人1回300円）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#akishima">昭島市</a><span data-label="特典・金額">昭島市コミュニティバス（Aバス）専用回数乗車券（11枚つづり）2冊（1人1回限り）</span><span data-label="申込期限">すべての運転免許証を自主返納した日から起算して6か月以内（実施期間：令和8年4月1日から令和9年3月31日まで）</span></li>
+<li><a href="#kokubunji">国分寺市</a><span data-label="特典・金額">ぶんバスの全ルートで利用できる無料乗車パス（ぶんPass）</span><span data-label="申込期限">記載なし</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの区市町村を選んでください</h2>
@@ -2598,7 +2617,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

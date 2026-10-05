@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた30市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#shiogama">塩竈市</a><span data-label="特典・金額">Newしおナビバスのみで使える無料乗車券。交付を受けた日から1年間有効。お一人様1回限り</span><span data-label="申込期限">運転経歴証明書、または申請による運転免許の取消通知書</span></li>
+<li><a href="#natori">名取市</a><span data-label="特典・金額">なとりん号：無料。なとりんくる：半額（200円）。割引証の発行から1年間有効。1人1回のみ発行</span><span data-label="申込期限">運転経歴証明書、または申請による運転免許の取消通知書</span></li>
+<li><a href="#tagajo">多賀城市</a><span data-label="特典・金額">多賀城東部線・多賀城西部線の運賃が無料（証明書交付日から1年間）</span><span data-label="申込期限">運転経歴証明書、またはマイナ経歴証明書の申請手続き</span></li>
+<li><a href="#iwanuma">岩沼市</a><span data-label="特典・金額">市民バス・デマンド型乗合タクシー・岩沼AI乗合バスが申請日から6か月間無料になる乗車証（お一人様1回限り）</span><span data-label="申込期限">運転免許の取消通知書＋生年月日を証明するもの、または運転経歴証明書（写し）、または運転経歴証明書交付済シール（写し）。返納予定の人は有効期限内の運転免許証（写し）</span></li>
+<li><a href="#tomiya">富谷市</a><span data-label="特典・金額">富谷市民バス全路線が無料で使える市民バス無料乗車証</span><span data-label="申込期限">運転経歴証明書、もしくは運転免許取消通知書</span></li>
+<li><a href="#watari">亘理町</a><span data-label="特典・金額">わたりん号の運賃（1回400円）が、利用者登録時から1年間無料</span><span data-label="申込期限">運転免許の取消通知書、または運転経歴証明書（利用者登録時に提示）</span></li>
+<li><a href="#yamamoto">山元町</a><span data-label="特典・金額">町民バス・予約運行型の運賃が1年間無料。2年目以降は75歳に至るまで半額</span><span data-label="申込期限">運転免許の取り消し通知書、または運転経歴証明書</span></li>
+<li><a href="#matsushima">松島町</a><span data-label="特典・金額">町営バスの運賃が無料になる「町営バス無料カード」</span><span data-label="申込期限">運転経歴証明書、または運転免許の取消通知書（窓口に持参）</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1644,7 +1663,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

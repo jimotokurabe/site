@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた15市町のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#yokkaichi">四日市市</a><span data-label="特典・金額">交通系ICカード5,000円分（内訳：利用可能額4,500円+カード発行預り金500円）</span><span data-label="申込期限">ICカードの交付は1人1回限り。申請は市役所6階の道路管理課へ</span></li>
+<li><a href="#kuwana">桑名市</a><span data-label="特典・金額">K-バス回数券13枚綴り4冊、または交通系ICカード4,000円分（デポジット料金500円を含む）のいずれか</span><span data-label="申込期限">桑名警察署などで自主返納し「申請による運転免許の取消通知書」を受け取ったうえで、申請書類（申請書・誓約書兼同意書・取消通知書の写し）を危機管理室へ郵送または提出</span></li>
+<li><a href="#suzuka">鈴鹿市</a><span data-label="特典・金額">C-BUSの区間運賃が半額（同伴者1名まで。同伴者が小学生なら1乗車100円）</span><span data-label="申込期限">申し込みはいりません</span></li>
+<li><a href="#kameyama">亀山市</a><span data-label="特典・金額">乗合タクシー運賃：単独乗車500円/1,000円/1,500円、複数乗車400円/800円/1,200円（乗降するゾーンにより異なる）</span><span data-label="申込期限">事前に利用者登録が必要（本庁・あいあい・関支所・加太出張所）。タクシー会社へ電話予約</span></li>
+<li><a href="#kisosaki">木曽岬町</a><span data-label="特典・金額">タクシー乗車券（初乗り運賃相当額）を1ヶ月あたり4枚、年間最大48枚。1回の乗車で1枚（2人以上なら2枚まで）使用可</span><span data-label="申込期限">登録を決定した月または翌月から年度末月まで交付。町内指定のタクシー会社でのみ利用可</span></li>
+<li><a href="#toin">東員町</a><span data-label="特典・金額">オレンジバスの運賃が半額（100円）</span><span data-label="申込期限">健康長寿課（7番窓口）か笹尾連絡所で申請。運転経歴証明書など、返納が分かるものが要る</span></li>
+<li><a href="#komono">菰野町</a><span data-label="特典・金額">運賃はエリア・予約方法（電話／Web）により異なる。例：北部エリア内で乗降する場合、一般運賃300円のところ、免許返納者・65歳以上等は電話予約200円、Web予約100円</span><span data-label="申込期限">事前予約が必要（電話：059-396-0292、またはWeb「おでかけこもの」）。降車時に免許返納が分かるものを提示</span></li>
+<li><a href="#tsu">津市</a><span data-label="特典・金額">中学生以上の運賃300円→150円（同乗者1名も対象。小学生は70円）。定期乗車券（普通1か月7,500円）も1か月3,750円に割引</span><span data-label="申込期限">申し込みはいりません（乗車・購入時に運転経歴証明書を提示）</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町を選んでください</h2>
@@ -1413,7 +1432,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

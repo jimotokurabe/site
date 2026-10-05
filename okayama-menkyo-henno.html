@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた16市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#okayama">岡山市</a><span data-label="特典・金額">千種地区の「モモタク」は愛カード提示で100円引き（区域内300円、区域をまたぐ移動500円が対象）。迫川地区「ブンタク」・馬屋上・野谷地区「あいタク」のチラシにも愛カード提示で100円引きとあります</span><span data-label="申込期限">記載なし（乗るときに愛カードを見せる）</span></li>
+<li><a href="#tamano">玉野市</a><span data-label="特典・金額">シーバス・シータクで使える乗車回数券（100円券6枚つづり＝600円分）。令和7年3月31日までは100円券5枚つづり</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#akaiwa">赤磐市</a><span data-label="特典・金額">定時定路線型は1回200円→100円、予約乗合型（のるーとあかいわ）はアプリ予約300円→150円、電話予約400円→200円。1日乗車券・定期券も半額</span><span data-label="申込期限">申し込みはいりません（乗車時におかやま愛カードを見せる）</span></li>
+<li><a href="#wake">和気町</a><span data-label="特典・金額">乗車1回200円→100円、定期券（1か月）2,400円→1,200円、3か月6,600円→3,300円、6か月12,000円→6,000円</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#kibichuo">吉備中央町</a><span data-label="特典・金額">デマンド型乗合タクシーの運賃（1人1乗車500円、2人以上で乗り合うと1人300円）の半額。へそ8バスは1乗車200円の半額</span><span data-label="申込期限">申し込みはいりません（乗るときに愛カードを見せる）</span></li>
+<li><a href="#takahashi">高梁市</a><span data-label="特典・金額">タクシー利用助成券を1月につき3,000円分。原則として、交付の日の属する月から年度末までの分をまとめて交付</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#niimi">新見市</a><span data-label="特典・金額">1枚500円分の助成券を1カ月あたり6枚（3,000円分）、最大72枚。運賃が500円未満のときは使えません</span><span data-label="申込期限">申請期限は令和9年2月26日（令和7年度までに申請済みの人は不要）</span></li>
+<li><a href="#hayashima">早島町</a><span data-label="特典・金額">500円限度のチケットカードを月4枚。申請した月の分から年度末の分までをまとめて交付</span><span data-label="申込期限">令和8年度分は4月1日から随時受け付け</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1353,7 +1372,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた30市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#hitachi">日立市</a><span data-label="特典・金額">次のどれか一つ（1〜5は各10,000円購入分）：茨城交通バスカード、椎名観光バス乗車回数券、日立市ハイヤー協会タクシー乗車券、坂下地区みなみ号乗車券、中里地区乗合タクシーなかさと号乗車券。または、この5つの中から二つ選ぶ（各5,000円購入分。組み合わせは自由）</span><span data-label="申込期限">運転免許を返納してから、1か月以内</span></li>
+<li><a href="#hitachiota">常陸太田市</a><span data-label="特典・金額">市内路線バスICカード10,000円分（満75歳以上の人は5,000円分）、または市内タクシー利用券10,000円分。希望する支援内容から一つ</span><span data-label="申込期限">記載なし（警察署・運転免許センターで返納したあと、市役所の企画課で申請）</span></li>
+<li><a href="#takahagi">高萩市</a><span data-label="特典・金額">交通利用券3万円分（タクシー利用券と交通系ICカードを自由に組み合わせ。1人1回限り）</span><span data-label="申込期限">随時受付中（返納後の申請期限は記載なし）</span></li>
+<li><a href="#kitaibaraki">北茨城市</a><span data-label="特典・金額">タクシー助成券（1枚500円。令和8年度は合計30,000円が限度）</span><span data-label="申込期限">記載なし（令和8年度は令和8年3月18日から受け付け。4月中旬以降は市役所まちづくり協働課の窓口）</span></li>
+<li><a href="#hitachiomiya">常陸大宮市</a><span data-label="特典・金額">路線バスICカード乗車券12,000円分、予約制乗合タクシー利用券12,000円分、または路線バスICカード6,000円分＋乗合タクシー利用券6,000円分のうち1つ</span><span data-label="申込期限">返納してから1年以内。警察署で返納したあと、取消通知書か運転経歴証明書を持って申請（申請から2週間から1か月ほどで受け取り）</span></li>
+<li><a href="#hitachinaka">ひたちなか市</a><span data-label="特典・金額">スマイルあおぞらバスの1年間無料乗車パスカード。啓発品（夜光反射用品）も配布</span><span data-label="申込期限">返納日から6ヶ月以内に申請（一人一回限り）</span></li>
+<li><a href="#naka">那珂市</a><span data-label="特典・金額">ひまわりタクシーの特別利用券15,000円分（100円券×150枚）。有効期限は無期限</span><span data-label="申込期限">免許を返納または失効した日から1年を経過しないうちに申請</span></li>
+<li><a href="#ibarakimachi">茨城町</a><span data-label="特典・金額">デマンド型乗合タクシー「ひぬま～る」が1回300円（町内だけ。利用券10枚綴り3,000円分）</span><span data-label="申込期限">利用者登録が必要です（申し込みの期限は記載なし）</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -2126,7 +2145,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

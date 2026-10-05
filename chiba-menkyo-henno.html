@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた39市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#ichikawa">市川市</a><span data-label="特典・金額">ICHICOポイント10,000ポイント</span><span data-label="申込期限">令和8年度分：運転経歴証明書の交付日または取消通知書の記載日が令和8年4月1日から令和9年2月26日の人は、令和9年2月26日まで。令和7年度に返納した人は令和8年9月30日まで。1人1回のみ</span></li>
+<li><a href="#yachiyo">八千代市</a><span data-label="特典・金額">500円引きのタクシー券20枚（1回の利用で運賃が1,000円未満なら1枚、1,000円以上なら2枚まで）</span><span data-label="申込期限">電子申請、郵送、窓口で申請します（運転経歴証明書の写しと交付申請書）。一人1回限り。券の有効期間は交付日から3年を経過する日の属する月の末日まで</span></li>
+<li><a href="#kashiwa">柏市</a><span data-label="特典・金額">ワニバースが割引運賃（100円）になるシルバーチケット（逆井・南増尾・沼南コースは100円か回数券1枚）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#nagareyama">流山市</a><span data-label="特典・金額">合計10,800円分。タクシー450円の助成券24枚、路線バス定期購入助成券5,400円×2枚、またはその組み合わせ（450円×12枚と5,400円×1枚）から選ぶ</span><span data-label="申込期限">記載なし（申請は一度限り）</span></li>
+<li><a href="#abiko">我孫子市</a><span data-label="特典・金額">あびバス免許返納割引証（半額）と、市内タクシー利用券200円×20枚（4,000円分）。タクシー利用券の発行は1回限り</span><span data-label="申込期限">記載なし（割引証とタクシー券の有効期限は、令和8年4月1日から令和9年3月31日の申請なら2年間、令和9年4月1日以降なら1年間）</span></li>
+<li><a href="#kamagaya">鎌ケ谷市</a><span data-label="特典・金額">ききょう号の運賃が半額の50円（通常100円）。現金払いのみ</span><span data-label="申込期限">記載なし（割引証の有効期限は交付後5年間、更新できます）</span></li>
+<li><a href="#narita">成田市</a><span data-label="特典・金額">交通系ICカード10,000円相当分を1枚（利用金額9,500円＋ICカードの預り金500円）</span><span data-label="申込期限">返納から1年以内に、市役所の交通防犯課の窓口で申請します。「申請による運転免許の取消通知書」と本人確認できるものが必要です</span></li>
+<li><a href="#sakura">佐倉市</a><span data-label="特典・金額">佐倉市コミュニティバスの運賃が無料（通常200円）。パスの有効期限は交付から1年間</span><span data-label="申込期限">都市計画課の窓口か郵送で申請します。申請書、運転経歴証明書、写真が必要です</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -2620,7 +2639,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

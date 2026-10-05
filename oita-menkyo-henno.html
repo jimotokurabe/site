@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた14市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#oita">大分市</a><span data-label="特典・金額">運転経歴証明書1,150円、マイナ経歴証明書900円の交付手数料を助成（1人1回）</span><span data-label="申込期限">運転免許を自主返納した日の翌日から1年以内</span></li>
+<li><a href="#yufu">由布市</a><span data-label="特典・金額">どちらか1つ：ユーバスの無料券10,000円分（200円券×50枚）／タクシー乗車補助券10,000円分（500円券×20枚）</span><span data-label="申込期限">返納日から90日以内</span></li>
+<li><a href="#usuki">臼杵市</a><span data-label="特典・金額">次の1〜3から希望する乗車券・回数券を合計1万円相当（1人1回のみ）：1 タクシー乗車券（500円×10枚綴）5千円分／2 臼杵市コミュニティバス回数券（200円×11枚綴）2千円相当分／3 大分県バス会社共通回数券（100円・50円・10円券が1100円分）千円相当分</span><span data-label="申込期限">警察署へ自主返納を行った日から90日以内に申請</span></li>
+<li><a href="#tsukumi">津久見市</a><span data-label="特典・金額">路線バス・乗合タクシー共通回数券（200円券×55枚）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#beppu">別府市</a><span data-label="特典・金額">運転経歴証明書の発行手数料の助成（金額は記載なし）</span><span data-label="申込期限">自己負担してから1年以内の申請が必要</span></li>
+<li><a href="#kitsuki">杵築市</a><span data-label="特典・金額">杵築市コミュニティバス回数券もしくは大分交通共通回数券のいずれか1万円分相当（1人1回限り）</span><span data-label="申込期限">免許証の自主返納の日から90日以内</span></li>
+<li><a href="#kunisaki">国東市</a><span data-label="特典・金額">運転経歴証明書などの発行手数料が無料（金額は記載なし）</span><span data-label="申込期限">記載なし（国東警察署内にある交通安全協会国東支部で手続き）</span></li>
+<li><a href="#hiji">日出町</a><span data-label="特典・金額">次のうち1つ：日出町コミュニティバスの回数券1万円相当／町内の民間路線バスの回数乗車券1万円相当／民間路線バスで使えるICカード（ニモカカード）1万円相当／町内の民間タクシーの臨時乗車券1万円相当／デマンド型地域交通サービスの利用回数券36回分</span><span data-label="申込期限">自主返納を行った日から90日以内</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -989,7 +1008,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

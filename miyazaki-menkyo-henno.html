@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた19市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#aya">綾町</a><span data-label="特典・金額">利用料金は無料（町内全域、平日の午前8時45分〜午後4時45分）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#saito">西都市</a><span data-label="特典・金額">次のどちらか：① 西都商工会議所ギフト券20,000円分（西都市内のタクシー会社〔乗車時〕や市内の参加店で使える）、② 運転経歴証明書交付手数料1,150円の助成</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#nishimera">西米良村</a><span data-label="特典・金額">①バス回数券３万円分（利用期限なし。村営バス、デマンドバス及び公共ライドシェアで利用できる）、②村内商店街で利用できる商店街利用券５万円（利用期限なし）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#shintomi">新富町</a><span data-label="特典・金額">タクシー初乗り無料券（700円×15回分）、コミュニティバス及び乗合タクシー「トヨタク」乗車回数券100回分を交付</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#kijo">木城町</a><span data-label="特典・金額">購入は購入費の2分の1（上限15万円）、レンタルは月額料金の2分の1（上限月1万円、最長15か月）。補助は一人につき購入かレンタルのどちらか1度限りが基本</span><span data-label="申込期限">記載なし（先に福祉共生課に連絡して相談し、購入・レンタルする前に申請）</span></li>
+<li><a href="#kawaminami">川南町</a><span data-label="特典・金額">タクシー・トロントロンバスで利用できる回数券5,000円分（1人1回限り）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#tsuno">都農町</a><span data-label="特典・金額">都農町コミュニティバス無料乗車証を交付（県警の一覧では「提示で運賃無料」）。支援は本人のみ</span><span data-label="申込期限">記載なし（要綱に期限の書きぶりなし）</span></li>
+<li><a href="#nobeoka">延岡市</a><span data-label="特典・金額">①割引乗車証（1年間有効）：まちなか循環バス200円→100円、コミュニティバス（北川線）100円→50円、乗合タクシー100円→50円、チョイソコのべおか（北浦町）300円→150円／②のべおかCoin 1,000ポイント／③nimoca 5,000円相当（デポジット500円を含む）／④タクシー利用券5,000円分（1年間有効。使うとき割引乗車証の提示が必要）</span><span data-label="申込期限">運転免許証の全部を返納してから1年を経過しない間に申請</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -1313,7 +1332,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

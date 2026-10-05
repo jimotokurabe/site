@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,19 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた7市町のうち、地域順の先頭7件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#akitakata">安芸高田市</a><span data-label="特典・金額">記載なし（市長コラムには「回数券を配布する」とだけ書かれています）</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#kaita">海田町</a><span data-label="特典・金額">次のどちらか。(1)1万円の交通系ICカード「MOBIRY DAYS」（カード料500円＋チャージ9,500円、有効期限なし）(2)1万円のタクシー利用助成券（500円×20枚、申請年度末まで）。支援は本人のみ1回限り</span><span data-label="申込期限">自主返納日から1年以内</span></li>
+<li><a href="#hatsukaichi">廿日市市</a><span data-label="特典・金額">次のうち1つ。(1)市自主運行バスの無料利用者証（交付日から2年間有効）(2)広島電鉄のICカード「MOBIRY DAYS」1万円（有効期限なし）(3)JR西日本の「ICOCA」1万円（デポジット500円を含む、運賃として使えるのは9,500円）(4)タクシー利用助成券1万円相当（申請年度末まで）。支援は1人1回限り</span><span data-label="申込期限">運転免許証を自主返納してから2年以内に申請</span></li>
+<li><a href="#sera">世羅町</a><span data-label="特典・金額">1人あたり最大で年間30,000ポイント（3万円分）。対象になった月で変わり、4月は30,000ポイント、5月は27,500ポイント、以後1か月ごとに2,500ポイントずつ減り、3月は2,500ポイント</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#fuchu">府中市</a><span data-label="特典・金額">おたっしゃ号の運賃が1人1乗車200円（一般300円）</span><span data-label="申込期限">記載なし（乗るときに警察の運転経歴証明書を見せる）</span></li>
+<li><a href="#jinsekikogen">神石高原町</a><span data-label="特典・金額">ふれあいタクシーのタクシー券（1回乗車券）50枚。交付は1回のみ</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#miyoshi">三次市</a><span data-label="特典・金額">次のどれか1つ。(1) 三次市民バス等の無料利用者証（申請年度から2年度間有効）(2) 1万円相当の広島県交通系ICカード「MOBIRY DAYS」(3) 1万円相当の市内タクシー利用助成券（申請から3年度間有効）。支援は1回限り</span><span data-label="申込期限">運転免許証を返納してから3か月以内に申請</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町を選んでください</h2>
@@ -1183,7 +1201,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

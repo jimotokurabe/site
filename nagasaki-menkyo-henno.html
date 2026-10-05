@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた14市町のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#nagayo">長与町</a><span data-label="特典・金額">エヌタスカード（バスカード）3,000円分を交付。1人1回限り</span><span data-label="申込期限">運転免許証を返納してから1年以内に申請</span></li>
+<li><a href="#togitsu">時津町</a><span data-label="特典・金額">年間最大9,000円分。バスは記名式エヌタスカードにVポイントまたはエヌタスマネーを付与（申請の初年度は9,000円分、翌年度以降は前年3月〜翌年2月の乗車実績額）、タクシーは600円券×15枚の助成券</span><span data-label="申込期限">返納後の申し込み期限は記載なし（令和8年度分の申請受付期間は令和8年2月2日〜2月20日と案内チラシにあります）</span></li>
+<li><a href="#hirado">平戸市</a><span data-label="特典・金額">基本券9,000円分（100円券×90枚）。バス・タクシー・フェリー・松浦鉄道・市内の温泉施設などで使える。1回の利用は20枚（2,000円）まで、おつりなし。70歳以上75歳未満の返納者には、離島在住者や老人クラブ加入者などへの加算券（1,000円分）はなし</span><span data-label="申込期限">申請・交付は年に1回限り。返納してから申し込むまでの期限は記載なし（おでかけ券の有効期限は申請年度の3月末）</span></li>
+<li><a href="#matsuura">松浦市</a><span data-label="特典・金額">外出支援券1万円分を交付</span><span data-label="申込期限">運転免許証の自主返納日から1年以内</span></li>
+<li><a href="#higashisonogi">東彼杵町</a><span data-label="特典・金額">タクシー券10,000円分（100円券5枚綴を20枚）。辺地地区に住む人は15,000円分（100円券5枚綴を30枚）。町営バスやデマンド交通でも使える。有効期限は毎年度3月31日</span><span data-label="申込期限">記載なし（タクシー券の有効期限は毎年度3月31日）</span></li>
+<li><a href="#kawatana">川棚町</a><span data-label="特典・金額">タクシー券10,000円分を交付</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#hasami">波佐見町</a><span data-label="特典・金額">次のいずれかを補助：乗合交通及びタクシー共通利用券10,000円分／ナガサキニモカICカード10,000円分／西肥バスの1年間定期券「リフレッシュパス65」10,000円分</span><span data-label="申込期限">記載なし</span></li>
+<li><a href="#isahaya">諫早市</a><span data-label="特典・金額">nimoca（ニモカ）1枚を交付。交付額10,000円（利用可能額9,500円＋保証金500円）。一人につき1回に限る</span><span data-label="申込期限">記載なし</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町を選んでください</h2>
@@ -1167,7 +1186,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");

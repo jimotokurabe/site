@@ -24,7 +24,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=726f970cbea4">
 <script>try{if(localStorage.getItem("jk-size")==="large")document.documentElement.setAttribute("data-size","large")}catch(e){}</script>
 </head>
 <body>
@@ -32,6 +32,11 @@ gtag('config', 'G-T1PQ72Q40S');
 <div class="wrap">
 <header class="topbar">
   <a class="brand" href="./">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="index.html#search">地域を探す</a>
+    <a href="index.html#return">免許返納</a>
+    <a href="mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -51,6 +56,20 @@ gtag('config', 'G-T1PQ72Q40S');
   <p class="basic-entry"><a href="menkyo-henno-guide.html">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 
 </div>
+<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた37市町村のうち、地域順の先頭8件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows"><li><a href="#gifu">岐阜市</a><span data-label="特典・金額">①マナカ新規交付：利用額2,500円＋デポジット〈預り金〉500円 ②お手持ちのマナカへのチャージ：3,000円 ③昼得きっぷ〈紙のスクラッチ式乗車券〉：3,000円分（500円×6枚） のいずれか1つ、1人1回限り</span><span data-label="申込期限">運転免許証の有効期限内に警察で取消手続きをする必要があります</span></li>
+<li><a href="#hashima">羽島市</a><span data-label="特典・金額">①市コミュニティバス無料乗車証（12ヶ月間有効） ②名阪近鉄バス乗車券10,000円分 のいずれか1つ、1人1回限り</span><span data-label="申込期限">取消通知書交付日または運転免許証の有効期限日から6か月以内に申請</span></li>
+<li><a href="#kakamigahara">各務原市</a><span data-label="特典・金額">交通系ICカード manaca 2,000円分（1,500円分の利用額＋デポジット500円分）</span><span data-label="申込期限">自主返納をした日から3か月以内に申請</span></li>
+<li><a href="#yamagata">山県市</a><span data-label="特典・金額">運賃半額（現金払いのみ）。例：美山地域デマンド型交通は通常200円→100円、平和堂・岐北厚生病院で降車する場合は300円→150円</span><span data-label="申込期限">現金払いの場合のみ運転経歴証明書の提示が必要（ICカードは使用できません）</span></li>
+<li><a href="#mizuho">瑞穂市</a><span data-label="特典・金額">運賃半額（100円→50円）。現金でのご乗車のみ割引の対象</span><span data-label="申込期限">運賃お支払い時に運転経歴証明書を提示してください。障がい者割引などの他の割引との併用はできません</span></li>
+<li><a href="#ginan">岐南町</a><span data-label="特典・金額">申請日から2年間、岐南町コミュニティタクシーが無料になる乗車証</span><span data-label="申込期限">利用者本人の写真、運転免許証の取消通知書の写しまたは運転経歴証明書の写しが必要</span></li>
+<li><a href="#kasamatsu">笠松町</a><span data-label="特典・金額">笠松町公共施設巡回町民バス使用料免除・利用証の交付（交付日から1年間に限り無料）</span><span data-label="申込期限">運転経歴証明書の交付日から1年間に申請。インターネットまたは役場建設課で申請</span></li>
+<li><a href="#kitagata">北方町</a><span data-label="特典・金額">生活応援バス券10枚つづり1冊＋タクシーチケット500円×50枚（1回1枚限り有効。申請年度から5年目の年度末まで有効）</span><span data-label="申込期限">本人確認書類と警察署発行の「申請による運転免許の取消通知書」が必要</span></li></ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの市町村を選んでください</h2>
@@ -2021,7 +2040,7 @@ gtag('config', 'G-T1PQ72Q40S');
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");
