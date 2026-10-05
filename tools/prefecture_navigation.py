@@ -1,5 +1,5 @@
 """県別設定から地域案内図と特徴付き市町村一覧を生成する。"""
-import json, shutil
+import hashlib, json, shutil
 import build as b
 from bs4 import BeautifulSoup
 
@@ -69,7 +69,7 @@ def render_prefecture(pid, out, draft=False):
   for el in s.select('script'):
    if 'gtag' in str(el) or 'googletagmanager' in el.get('src',''):el.decompose()
  for el in s.select('.draft'):el.decompose()
- s.body['class']=['pref-regional'];s.head.append(s.new_tag('link',rel='stylesheet',href='prefecture-region.css'))
+ s.body['class']=['pref-regional'];s.head.append(s.new_tag('link',rel='stylesheet',href='prefecture-region.css?v='+hashlib.sha256((b.ROOT/'assets/prefecture-region.css').read_bytes()).hexdigest()[:12]))
  nav=s.select_one('.site-nav');nav.clear();nav.append(BeautifulSoup('<a href="./">地域を探す</a><a href="https://jimotokurabe.jp/menkyo-henno-guide.html">免許返納の基本</a>','html.parser'))
  (OUT/b.list_path(pref)).write_text(str(s))
  shutil.copy(b.ROOT/"assets/prefecture-region.css",OUT/"prefecture-region.css")

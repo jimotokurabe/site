@@ -43,7 +43,7 @@ def check(pid,out,draft=False):
     if len(s.select('h1'))!=1:issues.append('H1件数')
     analytics=any('G-T1PQ72Q40S' in str(el) for el in s.select('script'))
     if analytics==draft:issues.append('アクセス解析設定')
-    if not s.select_one('link[rel=stylesheet][href="prefecture-region.css"]'):issues.append('地域図スタイル欠落')
+    if not s.select_one('link[rel=stylesheet][href^="prefecture-region.css"]'):issues.append('地域図スタイル欠落')
     if bool(s.select_one('meta[name=robots][content*=noindex]'))!=draft:issues.append('検索設定')
     if s.select_one('link[rel=canonical]')['href']!=b.SITE+file.name:issues.append('正規URL')
     for row in rows:
