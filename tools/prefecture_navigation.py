@@ -3,6 +3,14 @@ import json, shutil
 import build as b
 from bs4 import BeautifulSoup
 
+def benefit_stamp(city):
+ if city.get('k') not in b.HAS_BENEFIT:return ''
+ # 高齢者向けの一般支援も含む既存分類は、返納限定特典と区別する。
+ general=city.get('k')=='elder'
+ top,bottom=('返納後','支援あり') if general else ('返納','特典あり')
+ label='返納後に使える移動支援あり' if general else '免許返納特典あり'
+ return f'<svg class="benefit-stamp" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="40"/><text x="50" y="43" class="stamp-top">{top}</text><text x="50" y="65" class="stamp-main">{bottom}</text></svg><span class="sr-only">{label}。 </span>'
+
 def render_prefecture(pid, out, draft=False):
  OUT=out
  cfg=json.loads((b.ROOT/'data/prefecture-navigation.json').read_text())[pid]
@@ -40,7 +48,7 @@ def render_prefecture(pid, out, draft=False):
  for r in regions:
   main+=f'<button type="button" data-region="{r["id"]}" aria-pressed="{str(r["id"]==default).lower()}">{r["name"]}</button>'
  main+=f'''<button type="button" data-region="all" aria-pressed="false">{scope}すべて</button></div></section>
- <section class="city-panel" aria-labelledby="city-heading"><div class="search-line"><label for="pref-query">市町村名で探す</label><input id="pref-query" type="search" placeholder="{b.e(cfg["placeholder"])}" autocomplete="off"></div><div class="city-title"><div><p id="region-caption">{b.e(cfg.get("captions",{}).get(default,name+"の地域"))}</p><h2 id="city-heading">{b.e(region_name)}</h2></div><span id="city-count" role="status" aria-live="polite">{default_count}{unit}</span></div><p class="city-instruction">気になる市町村を選び、対象条件や公式案内をご確認ください。</p><ul class="city-lines">'''
+ <section class="city-panel" aria-labelledby="city-heading"><div class="search-line"><label for="pref-query">市町村名で探す</label><input id="pref-query" type="search" placeholder="{b.e(cfg["placeholder"])}" autocomplete="off"></div><div class="city-title"><div><p id="region-caption">{b.e(cfg.get("captions",{}).get(default,name+"の地域"))}</p><h2 id="city-heading">{b.e(region_name)}</h2></div><span id="city-count" role="status" aria-live="polite">{default_count}{unit}</span></div><p class="city-instruction">気になる市町村を選び、対象条件や公式案内をご確認ください。</p><p class="stamp-legend">朱色の印は、返納特典や返納後に使える支援がある目印です。対象条件は各市町村のページでご確認ください。</p><ul class="city-lines">'''
  for c in cities:
   # 既存掲載内容の冒頭文を利用。金額だけで制度を比較しない。
   summary=c['what'].split('。')[0]+'。'
@@ -48,7 +56,9 @@ def render_prefecture(pid, out, draft=False):
    ride=mobility[c['slug']];summary='移動案内：'+ride['name']+'。'+ride.get('summary','').split('。')[0]+'。'
   summary=overrides.get(c['slug'],summary)
   if len(summary)>95:summary=summary[:92]+'…'
-  main+=f'<li id="{c["slug"]}" data-city="{b.e(c["n"])}" data-city-region="{c["r"]}"'+(' hidden' if c['r']!=default else '')+f'><a href="{b.guide_dir(pref)}/{c["slug"]}.html"><div><h3>{b.e(c["n"])}</h3><p>{b.e(summary)}</p></div><span class="row-arrow" aria-hidden="true">→</span><span class="sr-only">の特典・助成・移動手段を見る</span></a></li>'
+  stamp=benefit_stamp(c)
+  mark_class=' class="has-benefit-stamp"' if stamp else ''
+  main+=f'<li{mark_class} id="{c["slug"]}" data-city="{b.e(c["n"])}" data-city-region="{c["r"]}"'+(' hidden' if c['r']!=default else '')+f'><a href="{b.guide_dir(pref)}/{c["slug"]}.html">{stamp}<div><h3>{b.e(c["n"])}</h3><p>{b.e(summary)}</p></div><span class="row-arrow" aria-hidden="true">→</span><span class="sr-only">の特典・助成・移動手段を見る</span></a></li>'
  main+=f'''</ul><noscript><style>.city-lines li[hidden]{{display:list-item}}</style><p>すべての市町村を表示しています。</p></noscript><p id="no-cities" hidden>該当する市町村が見つかりません。名前を短くしてお試しください。</p><p class="list-note">ここでは掲載内容の一部をご紹介しています。対象年齢・期限・最新の確認状況は、個別ページでご確認ください。</p></section></div>
 '''
  if pref.get('statewide'):
