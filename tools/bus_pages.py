@@ -130,7 +130,7 @@ def bus_page(pref_data, bus, draft, shell, jdate):
 <h1>高齢者のバス代、<br>住むまちでどう違う？</h1>
 <p class="lead">敬老パス・運賃の割引・バス券の助成を、対象、助成の中身、料金、使えるバス、申し込みの5項目で比べられます。</p></div>
 <section class="pick" id="pick" aria-labelledby="pick-h"><h2 class="section-title" id="pick-h">お住まいのまちを探す</h2>
-<div class="bus-controls"><div class="search"><label for="bus-q">市町村の名前（ひらがなでも検索）</label><input id="bus-q" type="search" autocomplete="off" placeholder="例：あかし、神戸"></div>
+<div class="bus-controls"><div class="search"><label for="bus-q">市町村の名前（ひらがなでも検索）</label><input id="bus-q" type="search" autocomplete="off" placeholder="{e(pref.get('placeholder', '例：あかし、神戸'))}"></div>
 <div class="search"><label for="bus-region">地域で絞る</label><select id="bus-region"><option value="">すべての地域</option>{options}</select></div></div>
 <div class="filters" role="group" aria-label="支援の種類で絞る">{filters}</div>
 <p class="count" id="bus-count" aria-live="polite">{total}{e(pref['unit'])}を表示しています。</p><p id="bus-empty" hidden>条件に合う市町村がありません。名前や絞り込みを変えてください。</p></section>

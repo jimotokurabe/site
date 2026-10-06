@@ -36,10 +36,13 @@ def main():
         else:
             text, error = page_text(url)
             row = {'url': url, 'text': text, 'error': error}
-        if not row['text'] and not row['error'] and url in ocr_sources:
+        if not row['error'] and url in ocr_sources:
             pages = ocr_sources[url]['pages']
-            row.update(text=norm('\n'.join(p['text'] for p in pages)),
-                       error='', method='OCR: macOS Vision', ocr_pages=pages)
+            # 見本の文字層だけがある画像PDFも、目視したページのOCRで照合する。
+            # 元の抽出本文は残し、manual_pdf を付けた引用だけ指定ページを使う。
+            row.update(ocr_pages=pages, method='OCR assisted: macOS Vision')
+            if not row['text']:
+                row['text'] = norm('\n'.join(p['text'] for p in pages))
         path.write_text(json.dumps(row, ensure_ascii=False), encoding='utf-8')
         return row
 
