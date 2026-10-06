@@ -41,7 +41,7 @@ def page_text(url):
                 CACHE[url] = None, "Word 文書を読めない"
                 return CACHE[url]
             text = html.unescape(re.sub(r"<[^>]+>", "", xml))
-        elif "pdf" in ctype or url.lower().endswith(".pdf"):
+        elif "pdf" in ctype or url.lower().endswith(".pdf") or raw.startswith(b"%PDF-"):
             p = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, text=True)
             if p.returncode:
                 CACHE[url] = None, "PDF を読めない（pdftotext がない）"
