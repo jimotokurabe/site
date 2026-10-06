@@ -129,6 +129,47 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
+# First measurement cohort: pages selected from the Search Console / GA4 review.
+MEASURED_PAGES = {"hyogo-menkyo-henno/kobe.html", "hyogo-menkyo-henno/nishinomiya.html",
+                  "saitama-taxi.html", "hyogo-taxi.html", "nagasaki-taxi.html"}
+ACTION_SCRIPT = r"""<script>
+(function () {
+  // Local checks must never send production analytics events.
+  if (location.hostname !== "jimotokurabe.jp" && location.hostname !== "www.jimotokurabe.jp") return;
+  document.addEventListener("click", function (event) {
+    var target = event.target;
+    if (!target || !target.closest) return;
+    var control = target.closest("a, button");
+    if (!control || !control.closest("main") || typeof window.gtag !== "function") return;
+    var name = "", params = {page_path: location.pathname};
+    if (control.matches("[data-print]")) {
+      name = "print_request";
+    } else if (control.tagName === "A") {
+      var href = control.getAttribute("href") || "";
+      if (href.indexOf("tel:") === 0) {
+        name = "phone_click";
+      } else {
+        var url;
+        try { url = new URL(href, location.href); } catch (_) { return; }
+        if (url.protocol !== "https:" && url.protocol !== "http:") return;
+        if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
+          name = "share_line";
+        } else if (url.origin !== location.origin && /(^|\.)((lg|go)\.jp)$/.test(url.hostname)) {
+          name = "official_info_click";
+          params.link_domain = url.hostname;
+          params.link_path = url.pathname;
+        } else if (control.closest("[data-related-support]")) {
+          name = "related_support_click";
+          params.link_path = url.pathname;
+        }
+      }
+    }
+    if (name) window.gtag("event", name, params);
+  });
+})();
+</script>"""
+
+
 def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class="", body_class="", styles=""):
     """base は、サイトの直下から見たこのページの位置（下の階層のページなら "../"）。"""
     canonical = SITE + path
@@ -200,7 +241,7 @@ gtag('config', 'G-T1PQ72Q40S');
   <p>© 2026 じもとくらべ</p>
 </footer>
 </div>
-{SIZE_SCRIPT}
+{SIZE_SCRIPT}{chr(10) + ACTION_SCRIPT if path in MEASURED_PAGES and not draft else ""}
 {scripts}
 </body>
 </html>
@@ -762,6 +803,15 @@ def taxi_page(data, draft):
         f'    <div><dt><span class="chip t-{k}">{e(v[0])}</span></dt><dd>{e(v[1])}</dd></div>'
         for k, v in TAXI_KINDS.items() if k != "none")
     flagged = "・".join(c["n"] for c in cities if taxi[c["slug"]].get("flag"))
+    related_support = ""
+    if P["id"] in {"saitama", "hyogo", "nagasaki"}:
+        bus_link = (f'<a href="{bus_path(P)}">{e(pn)}のバス助成・敬老パスを比較する →</a>'
+                    if data.get("bus") and not P.get("draft") else "")
+        related_support = f"""<section class="answer" data-related-support aria-labelledby="related-support-h">
+  <h2 id="related-support-h">タクシー以外の支援も探す</h2>
+  <p>免許を返納した人向けの特典と、返納しなくても条件を満たせば使える交通費の助成は、対象が異なります。お住まいの市や町の条件を確認してください。</p>
+  <p class="src-links"><a href="{list_path(P)}">{e(pn)}の免許返納特典を探す →</a> {bus_link} <a href="mobility.html">通院・買い物の移動手段を探す →</a></p>
+</section>"""
     y, m, d = checked.split("-")
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {pn}の高齢者のタクシー代の助成</nav>
 <div class="hero">
@@ -771,7 +821,7 @@ def taxi_page(data, draft):
   </div>
   <h1>高齢者のタクシー代、市や町が助成してくれる？</h1>
   <p class="lead">{pn}の{total}{pu}が、高齢者に出しているタクシー券やタクシー代の助成を、対象の年齢・金額・申し込み先をそろえて並べました。</p>
-</div>
+</div>{chr(10) + related_support if related_support else ""}
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの{pu}を選んでください</h2>
@@ -1135,6 +1185,9 @@ def city_page(c, data, draft, base="../"):
       </ul>
     </li>"""
 
+    summary_links = ('\n      <p class="src-links">' + " ".join(
+        f'<a href="{e(href)}">{e(label)}</a>' for href, label in g.get("summary_links", [])) + '</p>') if g.get("summary_links") else ""
+
     fieldsets = [f"""    <fieldset>
       <legend>警察へ（手順1・2）</legend>
 {checks(cm.get("checklist", POLICE_CHECKLIST))}
@@ -1211,7 +1264,7 @@ def city_page(c, data, draft, base="../"):
 <section class="answer" aria-labelledby="ans-h">
   <h2 id="ans-h">まとめ</h2>
   <dl class="facts">
-{"".join(fact(k, v) for k, v in g["facts"])}  </dl>{calc_link}
+{"".join(fact(k, v) for k, v in g["facts"])}  </dl>{calc_link}{summary_links}
 </section>
 
 <section class="cautions" aria-labelledby="cau-h">
