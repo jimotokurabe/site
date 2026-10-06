@@ -14,6 +14,16 @@ STATUS = {
 KINDS = {"pass": "乗車証", "discount": "運賃割引", "voucher": "乗車券",
          "reimbursement": "購入・利用費の助成", "henno": "免許返納が条件"}
 
+# 県の公式市町村リンクで確認したHTTP専用サイト。読めないHTTPSへ置換しない。
+HTTP_OFFICIAL_HOSTS = {"town.mihama.wakayama.jp", "town.wakayama-hidaka.lg.jp", "town.yura.wakayama.jp"}
+
+
+def valid_source_url(url):
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").removeprefix("www.")
+    return bool(parsed.netloc and (parsed.scheme == "https" or
+                (parsed.scheme == "http" and (host.endswith(".lg.jp") or host in HTTP_OFFICIAL_HOSTS))))
+
 
 def validate_bus(data, pref_data):
     """欠落自治体・根拠のない現行表示・データ型の誤りを生成前に止める。"""
@@ -58,7 +68,7 @@ def validate_bus(data, pref_data):
         if c["status"] in {"none", "ended"}:
             assert c.get("sources"), "explicit none/ended requires source"
         for s in sources:
-            assert urlparse(s["url"]).scheme == "https" and urlparse(s["url"]).netloc, "invalid source URL"
+            assert valid_source_url(s["url"]), "invalid source URL"
             date.fromisoformat(s["checked"])
             assert s.get("label"), "source label required"
             updated = s.get("updated", "")
