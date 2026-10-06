@@ -1451,6 +1451,38 @@
             }
           ],
           "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉タクシー・バス券・65歳未満の要介護認定者",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "町内に住所がある在宅の方。当該年度末に65歳未満の要介護認定者。燃料費助成・人工透析通院費助成と同年度の併給不可。",
+          "benefit": "年度に500円券60枚（30,000円相当）、年度末まで。町内月2回以上又は町外月1回以上の定期通院が必要と医師に診断された場合、申請で追加30枚（15,000円）を年度1回まで。",
+          "fare": "本人のバス運賃に券を使用。不足分・釣銭の扱いは窓口確認。",
+          "routes": "町と契約するバス事業者の指定路線。具体的路線は窓口確認。にしやま・いずもざき通勤通学ライナーでは使用不可。",
+          "apply": "役場保健福祉課又は海岸公民館で申請。マイナンバーカード等の身分証（写真なしは2点）。追加交付は医師の通院証明を受けた申請書を提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.izumozaki.niigata.jp/kurashi/fukushi/taxi-bus.html",
+              "label": "福祉タクシー・バス利用券",
+              "updated": "2024-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.izumozaki.niigata.jp/reiki/reiki_honbun/e459RG00000281.html",
+              "label": "利用料金助成実施要綱",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.izumozaki.niigata.jp/_files/00077941/koureiguidebook_.pdf",
+              "label": "令和8年度までのシニアサポートガイド",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
         }
       ],
       "sources": [
