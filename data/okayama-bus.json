@@ -1,0 +1,983 @@
+{
+  "checked": "2026-10-06",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "okayama",
+      "name": "岡山市",
+      "status": "active",
+      "summary": "65歳以上の市民はハレカハーフで対象路線バスの通常運賃半額。",
+      "programs": [
+        {
+          "name": "ハレカハーフ",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の岡山市民。カード利用かつ乗降のいずれかが岡山市内。",
+          "benefit": "割引用ICカードを交付。",
+          "fare": "通常運賃の半額。",
+          "routes": "中鉄・宇野・両備・岡電・下電・めぐりん全路線、備北地頭線・中鉄北部勝山線。コミュニティバスは対象外。",
+          "apply": "65歳になる2週間前から。顔写真付き申込書を交通政策課へ郵送・電子申請・窓口。原則約2週間で郵送。",
+          "sources": [
+            {
+              "url": "https://www.city.okayama.jp/shisei/0000031610.html",
+              "label": "ハレカハーフ運賃割引",
+              "updated": "2022-07-20",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "市案内は2022年7月と古い。現行の対象路線・カード手続きは交通政策課086-803-1374へ確認。"
+    },
+    {
+      "slug": "tamano",
+      "name": "玉野市",
+      "status": "active",
+      "summary": "愛カード取得者にシーバス回数券。シーバスの愛カード提示割引もある。",
+      "programs": [
+        {
+          "name": "愛カード取得者シーバス回数券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "現在玉野市に居住し、おかやま愛カードを取得した人。市の交付枠として独立した年齢条件は記載なし。",
+          "benefit": "シーバス・シータクに使える100円券6枚つづりを配布。",
+          "fare": "交付券で支払い。",
+          "routes": "玉野市コミュニティバスシーバス",
+          "apply": "交付窓口・期限・回数制限は協働・交通政策課へ確認。",
+          "sources": [
+            {
+              "url": "https://www.city.tamano.lg.jp/soshiki/8/1774.html",
+              "label": "おかやま愛カード取得者回数券",
+              "updated": "2025-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "愛カード所持者シーバス半額割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。居住条件は本文記載なし。",
+          "benefit": "運賃5割引き。",
+          "fare": "通常運賃から半額。",
+          "routes": "玉野市コミュニティバスシーバス",
+          "apply": "乗車時に愛カード提示。",
+          "sources": [
+            {
+              "url": "https://www.city.tamano.lg.jp/site/timetable/",
+              "label": "シーバス運賃・割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "回数券案内は2025年4月、運賃案内は更新日なし。現行の割引・交付条件は協働・交通政策課公共交通係0863-32-5567へ確認。2026年7月18日～10月31日の全年齢無償期間は別途要確認。"
+    },
+    {
+      "slug": "bizen",
+      "name": "備前市",
+      "status": "active",
+      "summary": "70歳以上に割引フリー定期。愛カード所持者は普通運賃や定期券も半額。",
+      "programs": [
+        {
+          "name": "70歳以上高齢者フリー定期乗車券",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上。市民に限る条件の記載なし。",
+          "benefit": "全路線フリー定期を高齢者価格で販売。",
+          "fare": "1か月2,400円・3か月6,600円・6か月12,000円。",
+          "routes": "備前市営バス全路線",
+          "apply": "交通政策課・市営バス管理事務所・総合支所・三国出張所で購入。",
+          "sources": [
+            {
+              "url": "https://www.city.bizen.okayama.jp/uploaded/attachment/29185.pdf",
+              "label": "備前市営バス料金表",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "愛カード所持者市営バス普通運賃割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。",
+          "benefit": "普通運賃・一日券等の半額割引。",
+          "fare": "普通100円、乗継50円、一日乗り放題200円。",
+          "routes": "備前市営バス。一日券は片上和気線除く。",
+          "apply": "愛カードを提示。",
+          "sources": [
+            {
+              "url": "https://www.city.bizen.okayama.jp/uploaded/attachment/29185.pdf",
+              "label": "備前市営バス料金表",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "愛カード所持者市営バス定期券割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。",
+          "benefit": "定期券の各区分の金額を半額。高齢者定期とも別のカード要件。",
+          "fare": "料金表の適用区分の1/2。",
+          "routes": "備前市営バス",
+          "apply": "販売窓口で愛カードを提示。",
+          "sources": [
+            {
+              "url": "https://www.city.bizen.okayama.jp/uploaded/attachment/29185.pdf",
+              "label": "備前市営バス料金表",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "料金表は更新日なし。現行料金・市民要件は交通政策課（市代表0869-64-3301）または市営バス管理事務所0869-92-4892へ確認。"
+    },
+    {
+      "slug": "setouchi",
+      "name": "瀬戸内市",
+      "status": "notfound",
+      "summary": "市営バスや高齢者福祉の案内で高齢者限定のバス助成は未発見。前島バスは年齢を限らない地域輸送。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.setouchi.lg.jp/soshiki/90/130678.html",
+          "label": "令和8年4月市営バス路線・時刻表",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市独自の高齢者バス助成の有無は企画振興課（代表0869-22-1111）へ確認。"
+    },
+    {
+      "slug": "akaiwa",
+      "name": "赤磐市",
+      "status": "active",
+      "summary": "65歳以上または愛カード所持者は市民バスの普通運賃・一日券・定期券半額。",
+      "programs": [
+        {
+          "name": "65歳以上市民バス普通運賃割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。居住要件は本文記載なし。年齢確認書類提示。",
+          "benefit": "普通運賃半額。",
+          "fare": "定時定路線型100円。デマンド型はウェブ予約150円・電話予約200円。",
+          "routes": "赤磐市民バス（デマンド型含む）。",
+          "apply": "乗車時に年齢確認書類または愛カードを提示。",
+          "sources": [
+            {
+              "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
+              "label": "赤磐市民バス運賃",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上市民バス一日券割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。居住要件は本文記載なし。年齢確認書類提示。",
+          "benefit": "一日乗り放題券を半額。",
+          "fare": "通常400円の半額。",
+          "routes": "赤磐市民バス定時定路線型。デマンド型対象外。",
+          "apply": "車内販売、年齢確認書類または愛カード提示。",
+          "sources": [
+            {
+              "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
+              "label": "赤磐市民バス運賃",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上市民バス定期券割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。居住要件は本文記載なし。年齢確認書類提示。",
+          "benefit": "定期券の料金を半額。",
+          "fare": "通常1か月2,400円・3か月6,600円・6か月12,000円の半額。",
+          "routes": "赤磐市民バス定時定路線型。デマンド型対象外。",
+          "apply": "市役所・支所で購入。車内更新は希望日の5営業日前まで申請書と証明書。",
+          "sources": [
+            {
+              "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
+              "label": "赤磐市民バス運賃",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "愛カード所持者市民バス普通運賃割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。居住要件の記載なし。カード提示。",
+          "benefit": "普通運賃半額。",
+          "fare": "定時定路線型100円。デマンド型はウェブ予約150円・電話予約200円。",
+          "routes": "赤磐市民バス（デマンド型含む）。",
+          "apply": "乗車時に年齢確認書類または愛カードを提示。",
+          "sources": [
+            {
+              "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
+              "label": "赤磐市民バス運賃",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "愛カード所持者市民バス一日券割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。居住要件の記載なし。カード提示。",
+          "benefit": "一日乗り放題券を半額。",
+          "fare": "通常400円の半額。",
+          "routes": "赤磐市民バス定時定路線型。デマンド型対象外。",
+          "apply": "車内販売、年齢確認書類または愛カード提示。",
+          "sources": [
+            {
+              "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
+              "label": "赤磐市民バス運賃",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "愛カード所持者市民バス定期券割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。居住要件の記載なし。カード提示。",
+          "benefit": "定期券の料金を半額。",
+          "fare": "通常1か月2,400円・3か月6,600円・6か月12,000円の半額。",
+          "routes": "赤磐市民バス定時定路線型。デマンド型対象外。",
+          "apply": "市役所・支所で購入。車内更新は希望日の5営業日前まで申請書と証明書。",
+          "sources": [
+            {
+              "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
+              "label": "赤磐市民バス運賃",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "運賃本文は更新日なし。現行料金・年齢書類・対象路線は政策推進課086-955-2692へ確認。"
+    },
+    {
+      "slug": "wake",
+      "name": "和気町",
+      "status": "active",
+      "summary": "愛カード所持者は町営バスの普通運賃・定期券が半額。",
+      "programs": [
+        {
+          "name": "愛カード普通運賃割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。",
+          "benefit": "普通運賃が半額。",
+          "fare": "1回200円→100円。",
+          "routes": "和気町営バスわけまろ号",
+          "apply": "乗車時に愛カード提示。",
+          "sources": [
+            {
+              "url": "https://www.town.wake.lg.jp/soshiki/somu/gyomunaiyo/5_1/101.html",
+              "label": "わけまろ号の運賃",
+              "updated": "2026-09-19",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        },
+        {
+          "name": "愛カード定期券割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。",
+          "benefit": "定期券が半額。",
+          "fare": "1か月1,200円、3か月3,300円、6か月6,000円。",
+          "routes": "和気町営バスわけまろ号",
+          "apply": "購入窓口・手続は総務課くらし安全係へ確認。",
+          "sources": [
+            {
+              "url": "https://www.town.wake.lg.jp/soshiki/somu/gyomunaiyo/5_1/101.html",
+              "label": "わけまろ号の運賃",
+              "updated": "2026-09-19",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "定期券購入方法は総務課くらし安全係0869-93-1123へ確認。"
+    },
+    {
+      "slug": "kibichuo",
+      "name": "吉備中央町",
+      "status": "active",
+      "summary": "へそ8バスは愛カード提示で半額。",
+      "programs": [
+        {
+          "name": "へそ8バス愛カード割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カードを提示する人。",
+          "benefit": "運賃半額。",
+          "fare": "1乗車200円→100円。",
+          "routes": "町営バス町内巡回バスへそ8バス",
+          "apply": "乗車時に提示。",
+          "sources": [
+            {
+              "url": "https://www.town.kibichuo.lg.jp/soshiki/2/9182.html",
+              "label": "へそ8バスの運賃（令和8年10月改正）",
+              "updated": "2026-10-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": ""
+    },
+    {
+      "slug": "kurashiki",
+      "name": "倉敷市",
+      "status": "notfound",
+      "summary": "調査した公式案内では、市独自の高齢者向けバス助成は未発見。乗合タクシーの割引は対象外。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004328/1004317.html",
+          "label": "高齢者向け福祉サービス",
+          "updated": "2025-01-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "福祉案内は2025年1月更新。健康長寿課086-426-3315で現行のバス助成の有無を確認。"
+    },
+    {
+      "slug": "kasaoka",
+      "name": "笠岡市",
+      "status": "notfound",
+      "summary": "調査した交通・高齢者支援案内では、市独自の高齢者向けバス助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.kasaoka.okayama.jp/life/1/8/35/index.html",
+          "label": "公共交通案内",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "案内一覧に更新日なし。笠岡市役所0865-69-2121で交通担当に現行のバス助成の有無を確認。"
+    },
+    {
+      "slug": "ibara",
+      "name": "井原市",
+      "status": "active",
+      "summary": "非課税で交通手段がなく、定期通院が必要な65歳以上に最低運賃のバス券を月8枚。",
+      "programs": [
+        {
+          "name": "福祉基金の福祉バス乗車券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "市内住所の在宅の市県民税非課税者。65歳以上で交通手段がなく、おおむね週1回以上の定期通院と通院費助成が必要と認められる人。",
+          "benefit": "バス最低運賃の乗車券を月8枚。タクシー券との選択。",
+          "fare": "最低運賃を超える利用の差額取扱いは記載なし。",
+          "routes": "バス（具体的路線・事業者は記載なし）。",
+          "apply": "直近3か月分で月4回以上の通院がわかる病院領収証と本人確認書類を持ち福祉課または各支所市民福祉係で申請。代理申請可。",
+          "sources": [
+            {
+              "url": "https://www.city.ibara.okayama.jp/soshiki/16/1173.html",
+              "label": "福祉基金の福祉バス料金助成",
+              "updated": "2019-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "2019年4月の案内で現行性未確認。福祉課障害福祉係0866-62-9518へ現行条件・対象路線・差額取扱いを確認。"
+    },
+    {
+      "slug": "soja",
+      "name": "総社市",
+      "status": "ended",
+      "summary": "70歳以上等への旧バス・タクシー券は平成23年3月31日廃止と明記。新たな高齢者向けバス助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.soja.okayama.jp/soshiki/15/2370.html",
+          "label": "新生活交通と旧バス券の廃止",
+          "updated": "2025-11-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "交通政策課0866-92-8249へ新たなバス助成の有無を確認。 県警協賛PDFに旧共通券の利用案内も残るため、市の廃止案内との違いも確認。"
+    },
+    {
+      "slug": "takahashi",
+      "name": "高梁市",
+      "status": "notfound",
+      "summary": "生活福祉バスの案内・条例では高齢者専用の運賃助成は未発見。高齢者タクシー支援は対象外。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.takahashi.lg.jp/soshiki/54/koukyokoutsu.html",
+          "label": "地域公共交通",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.takahashi.lg.jp/reiki_int/reiki_honbun/r052RG00000895.html",
+          "label": "生活福祉バス運行条例",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "交通案内・条例の現行日付が未確認。協働定住課市民協働係0866-21-0254へ高齢者向けバス助成の有無を確認。"
+    },
+    {
+      "slug": "niimi",
+      "name": "新見市",
+      "status": "active",
+      "summary": "ら・くるっとは愛カード所持者1乗車100円。",
+      "programs": [
+        {
+          "name": "ら・くるっと愛カード割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カード所持者。",
+          "benefit": "1乗車の運賃を半額。",
+          "fare": "200円→100円。",
+          "routes": "市街地循環バスら・くるっと",
+          "apply": "乗車時のカード提示手順は記載なし。",
+          "sources": [
+            {
+              "url": "https://lib.city.niimi.okayama.jp/rakuruto.html",
+              "label": "市街地循環バスら・くるっとの運賃（令和8年4月路線案内）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "図書館案内は更新日なし。高齢者支援課0867-72-6125で交通担当への照会先・現行条件と提示方法を確認。旧バスカード交付の現行案内は未発見。"
+    },
+    {
+      "slug": "asakuchi",
+      "name": "浅口市",
+      "status": "notfound",
+      "summary": "市営バス浅口ふれあい号は全年齢無料。調査した案内では高齢者専用のバス助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.asakuchi.lg.jp/page/1752.html",
+          "label": "市営バス浅口ふれあい号",
+          "updated": "2024-03-19",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "交通案内は2024年3月更新。地域創造課0865-44-9034へ現行の運行条件と高齢者専用助成の有無を確認。"
+    },
+    {
+      "slug": "hayashima",
+      "name": "早島町",
+      "status": "notfound",
+      "summary": "町コミュニティバスは全年齢無料。調査した案内では高齢者専用のバス助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.hayashima.lg.jp/kurashi/doro_kotsu/kokyo_kotsu/community_bus/3068.html",
+          "label": "早島町コミュニティバス",
+          "updated": "2026-05-18",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "企画課086-482-0612へ高齢者専用のバス支援の有無を確認。"
+    },
+    {
+      "slug": "satosho",
+      "name": "里庄町",
+      "status": "notfound",
+      "summary": "調査した交通・高齢者案内では高齢者専用のバス助成は未発見。タクシー券は対象外。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.satosho.okayama.jp/soshiki/3/1094.html",
+          "label": "寄島～里庄線の運賃",
+          "updated": "2025-04-30",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "交通案内は2025年4月更新。企画商工課0865-64-3114へ現行のバス助成の有無を確認。"
+    },
+    {
+      "slug": "yakage",
+      "name": "矢掛町",
+      "status": "active",
+      "summary": "65歳以上と免許不保有者等が地域福祉バスを無料利用できる。",
+      "programs": [
+        {
+          "name": "65歳以上のふれ愛バス無料利用",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "町内住所の65歳以上。原則当該路線上の町民。",
+          "benefit": "地域福祉バス無料。",
+          "fare": "無料。",
+          "routes": "美川・矢掛三谷・山田・川面中川・小田の5路線。",
+          "apply": "乗車証は老人福祉センターへ印鑑持参で申請。65歳以上はマイナンバーカード等の身分証明書で代用可。一部停留所は事前予約。",
+          "sources": [
+            {
+              "url": "https://www.town.yakage.okayama.jp/health/koreisha/bus.html",
+              "label": "地域福祉バスの利用対象",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.yakage.okayama.jp/files/%E5%9C%B0%E5%9F%9F%E7%A6%8F%E7%A5%89%E3%83%90%E3%82%B9%E9%81%8B%E8%A1%8C%E8%A1%A8%EF%BC%88%E4%BB%A4%E5%92%8C6%E5%B9%B410%E6%9C%881%E6%97%A5%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
+              "label": "ふれ愛バス案内（令和6年10月改正）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "免許不保有者等のふれ愛バス無料利用",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "町内住所の免許証自主返納者または免許証不保有者。年齢記載なし。原則当該路線上の町民。",
+          "benefit": "地域福祉バス無料。",
+          "fare": "無料。",
+          "routes": "同5路線。",
+          "apply": "老人福祉センターで乗車証申請。印鑑持参。一部停留所は事前予約。",
+          "sources": [
+            {
+              "url": "https://www.town.yakage.okayama.jp/health/koreisha/bus.html",
+              "label": "地域福祉バスの利用対象",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.yakage.okayama.jp/files/%E5%9C%B0%E5%9F%9F%E7%A6%8F%E7%A5%89%E3%83%90%E3%82%B9%E9%81%8B%E8%A1%8C%E8%A1%A8%EF%BC%88%E4%BB%A4%E5%92%8C6%E5%B9%B410%E6%9C%881%E6%97%A5%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
+              "label": "ふれ愛バス案内（令和6年10月改正）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "本文は日付なし、チラシは2024年10月改正。老人福祉センター0866-83-1170へ現行の利用条件・予約を確認。"
+    },
+    {
+      "slug": "tsuyama",
+      "name": "津山市",
+      "status": "unknown",
+      "summary": "市独自の高齢者向けバス助成の現行条件は確認できず。のるイコつやまの高齢者料金は交通の種類を含め要確認。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.tsuyama.lg.jp/common/photo/free/files/17725/839_08-09.pdf",
+          "label": "広報津山2024年10月・のるイコつやま案内",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "広報は2024年資料。75歳以上等ののるイコ料金と、ごんごバスの高齢者割引の有無は津山市役所代表0868-32-2111から交通担当へ確認。"
+    },
+    {
+      "slug": "maniwa",
+      "name": "真庭市",
+      "status": "active",
+      "summary": "コミュニティバスまにわくんは愛カードで半額。",
+      "programs": [
+        {
+          "name": "まにわくん愛カード運賃割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カードの交付を受けている人。",
+          "benefit": "運賃半額。",
+          "fare": "大人1回200円→100円。",
+          "routes": "真庭市コミュニティバスまにわくん",
+          "apply": "降車の際に毎回カード提示。",
+          "sources": [
+            {
+              "url": "https://www.city.maniwa.lg.jp/soshiki/12/1764.html",
+              "label": "まにわくんの運賃",
+              "updated": "2026-03-18",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "チョイソコまにわ・イコーデの交通種別は別途確認。共生社会推進課公共交通対策室0867-42-1017へ。"
+    },
+    {
+      "slug": "mimasaka",
+      "name": "美作市",
+      "status": "active",
+      "summary": "65歳以上の市シルバーカードと、65歳以上返納者の証明書で市営バス割引。",
+      "programs": [
+        {
+          "name": "シルバーカード普通運賃割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "市内住所の65歳以上で美作市シルバーカードを交付された人。",
+          "benefit": "普通運賃を5割引。",
+          "fare": "通常運賃半額。10円未満端数切上げ。",
+          "routes": "美作市営バス。",
+          "apply": "乗車時にカードまたは証明書提示。シルバーカードは本人確認資料を添えて市へ申請。",
+          "sources": [
+            {
+              "url": "https://www.city.mimasaka.lg.jp/soshiki/seisaku/sogoseisaku/koukyokotsu/1455580122810.html",
+              "label": "美作市営バスの割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mimasaka.lg.jp/section/reiki/reiki_honbun/r140RG00001115.html",
+              "label": "市営バス条例（令和2年施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mimasaka.lg.jp/section/reiki/reiki_honbun/r140RG00000859.html",
+              "label": "シルバーカード交付要綱（令和7年12月施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "シルバーカード定期・回数券割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "市内住所の65歳以上で美作市シルバーカードを交付された人。",
+          "benefit": "定期・回数券も割引対象。券種別の販売価格は窓口確認。",
+          "fare": "市案内は5割引と記載。具体的券価格は確認。",
+          "routes": "美作市営バス。",
+          "apply": "券購入申請時および乗車時にカード・証明書提示。",
+          "sources": [
+            {
+              "url": "https://www.city.mimasaka.lg.jp/soshiki/seisaku/sogoseisaku/koukyokotsu/1455580122810.html",
+              "label": "美作市営バスの割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mimasaka.lg.jp/section/reiki/reiki_honbun/r140RG00001115.html",
+              "label": "市営バス条例（令和2年施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mimasaka.lg.jp/section/reiki/reiki_honbun/r140RG00000859.html",
+              "label": "シルバーカード交付要綱（令和7年12月施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上返納者普通運賃割引",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上で免許を自主返納し、運転経歴証明書またはおかやま愛カードを交付された人（条例の条件）。",
+          "benefit": "普通運賃を5割引。",
+          "fare": "通常運賃半額。10円未満端数切上げ。",
+          "routes": "美作市営バス。",
+          "apply": "乗車時にカードまたは証明書提示。シルバーカードは本人確認資料を添えて市へ申請。",
+          "sources": [
+            {
+              "url": "https://www.city.mimasaka.lg.jp/soshiki/seisaku/sogoseisaku/koukyokotsu/1455580122810.html",
+              "label": "美作市営バスの割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mimasaka.lg.jp/section/reiki/reiki_honbun/r140RG00001115.html",
+              "label": "市営バス条例（令和2年施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上返納者定期・回数券割引",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上で免許を自主返納し、運転経歴証明書またはおかやま愛カードを交付された人（条例の条件）。",
+          "benefit": "定期・回数券も割引対象。券種別の販売価格は窓口確認。",
+          "fare": "市案内は5割引と記載。具体的券価格は確認。",
+          "routes": "美作市営バス。",
+          "apply": "券購入申請時および乗車時にカード・証明書提示。",
+          "sources": [
+            {
+              "url": "https://www.city.mimasaka.lg.jp/soshiki/seisaku/sogoseisaku/koukyokotsu/1455580122810.html",
+              "label": "美作市営バスの割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mimasaka.lg.jp/section/reiki/reiki_honbun/r140RG00001115.html",
+              "label": "市営バス条例（令和2年施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "バス案内は日付なし、条例は令和2年施行。市案内は愛カード所持者と記すが条例は65歳以上の自主返納者と規定。総合政策課0868-72-6696へ現行対象・券価格・カード申請窓口を確認。"
+    },
+    {
+      "slug": "shinjo",
+      "name": "新庄村",
+      "status": "unknown",
+      "summary": "村独自の高齢者向けバス助成の利用条件は確認できず。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "http://www.vill.shinjo.okayama.jp/",
+          "label": "新庄村公式案内",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "資料の現行性とバス助成の利用条件は総務企画課0867-56-2626へ確認。"
+    },
+    {
+      "slug": "kagamino",
+      "name": "鏡野町",
+      "status": "notfound",
+      "summary": "町営バス運賃案内では高齢者向け割引を未発見。高齢者タクシー助成は対象外。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kagamino.lg.jp/soshiki/22/1034.html",
+          "label": "町営バス運賃",
+          "updated": "2025-03-10",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "運賃案内は2025年3月更新。まちづくり課0868-54-2982へ現行の高齢者向けバス助成の有無を確認。"
+    },
+    {
+      "slug": "shoo",
+      "name": "勝央町",
+      "status": "notfound",
+      "summary": "ふれあいバスは無料運行。調査した案内では高齢者専用のバス助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.shoo.lg.jp/soshiki/16/8211.html",
+          "label": "ふれあいバス実証運行",
+          "updated": "2026-09-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "健康福祉部環境班0868-38-7102へ高齢者専用のバス助成の有無を確認。"
+    },
+    {
+      "slug": "nagi",
+      "name": "奈義町",
+      "status": "active",
+      "summary": "町営なぎバスは愛カードで半額。さと丸乗り合い交通は70歳以上・愛カード所持者150円（町内在住者一律100円枠除く）。",
+      "programs": [
+        {
+          "name": "なぎバス愛カード運賃割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カードの交付を受けている人。",
+          "benefit": "料金半額。",
+          "fare": "通常運賃の半額。区間別運賃。",
+          "routes": "美作市林野を経由して勝央町勝間田へ運行する町営なぎバス",
+          "apply": "降車時に愛カードを提示。",
+          "sources": [
+            {
+              "url": "https://www.town.nagi.okayama.jp/gyousei/kurashi/sumai/seikatsukankyou/nagibus.html",
+              "label": "町営なぎバス減免制度",
+              "updated": "2025-03-06",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "さと丸乗り合い交通70歳以上割引",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上。町内在住者一律100円の対象者を除く。",
+          "benefit": "通常300円から150円へ減免。",
+          "fare": "1乗車150円。",
+          "routes": "町内エリア型予約交通さと丸乗り合い交通（県警のバス欄掲載）。",
+          "apply": "利用登録は役場総務課、乗車は電話予約。年齢またはカードの確認方法は総務課へ。",
+          "sources": [
+            {
+              "url": "https://www.town.nagi.okayama.jp/gyousei/kurashi/sumai/seikatsukankyou/satomarubus_unkouhyou.html",
+              "label": "さと丸乗り合い交通の現行料金",
+              "updated": "2026-01-09",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.okayama.jp/uploaded/attachment/413199.pdf",
+              "label": "県警協賛一覧・バス欄（美作署）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "さと丸乗り合い交通愛カード所持者割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "おかやま愛カードを所持する人。町内在住者一律100円の対象者を除く。",
+          "benefit": "通常300円から150円へ減免。",
+          "fare": "1乗車150円。",
+          "routes": "町内エリア型予約交通さと丸乗り合い交通（県警のバス欄掲載）。",
+          "apply": "利用登録は役場総務課、乗車は電話予約。年齢またはカードの確認方法は総務課へ。",
+          "sources": [
+            {
+              "url": "https://www.town.nagi.okayama.jp/gyousei/kurashi/sumai/seikatsukankyou/satomarubus_unkouhyou.html",
+              "label": "さと丸乗り合い交通の現行料金",
+              "updated": "2026-01-09",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.okayama.jp/uploaded/attachment/413199.pdf",
+              "label": "県警協賛一覧・バス欄（美作署）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [],
+      "flag": "なぎバスは2025年3月更新、さと丸は2026年1月案内だが県警PDFは日付なし。総務課0868-36-4111へ現行運賃・年齢やカード確認方法を確認。"
+    },
+    {
+      "slug": "nishiawakura",
+      "name": "西粟倉村",
+      "status": "notfound",
+      "summary": "福祉バスは一般の人も乗車できる案内。高齢者専用のバス料金助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.nishiawakura.okayama.jp/wp/wp-content/uploads/2019/01/f2392b5d265a8090de5093039bc75180.pdf",
+          "label": "広報にしあわくら2019年2月福祉バス",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.vill.nishiawakura.okayama.jp/wp/",
+          "label": "村公式案内",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "バス資料は2019年、公式案内は更新日なし。総務企画課0868-79-2111へ現在の対象者・運賃と高齢者専用助成の有無を確認。"
+    },
+    {
+      "slug": "kumenan",
+      "name": "久米南町",
+      "status": "notfound",
+      "summary": "調査した公共交通・福祉案内では高齢者向けバス助成は未発見。カッピーのりあい号は乗合タクシーとして案内。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kumenan.lg.jp/living/traffic/public-transport/demand_taxi.html",
+          "label": "カッピーのりあい号（デマンドタクシー）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "案内は更新日なし。総務企画課086-728-2111へバスに分類される交通と高齢者向けバス助成の有無を確認。"
+    },
+    {
+      "slug": "misaki",
+      "name": "美咲町",
+      "status": "notfound",
+      "summary": "令和8年度町営バス案内では高齢者専用割引を未発見。愛カードの町支援券はタクシー用。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.okayama-misaki.lg.jp/kakuka/kurashianzen/gyomu/3/2/2/975.html",
+          "label": "令和8年度美咲町営バス",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "くらし安全課0868-66-1112へ高齢者向けバス助成の有無を確認。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.okayama.jp/page/279623.html",
+    "label": "県警のおかやま愛カード協賛割引（自治体制度とは別）",
+    "checked": "2026-10-06"
+  }
+}

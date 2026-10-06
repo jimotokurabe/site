@@ -1,0 +1,1021 @@
+{
+  "checked": "2026-10-06",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "iwakuni",
+      "name": "岩国市",
+      "status": "active",
+      "summary": "70歳以上の市民は、市内バスを1乗車100円で利用できます。",
+      "programs": [
+        {
+          "name": "敬老優待乗車証",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "市内に住所を有する70歳以上。",
+          "benefit": "対象バスを優待料金で利用。",
+          "fare": "1乗車100円。",
+          "routes": "岩国市・いわくにバス・防長交通が運行する岩国市内のバス。高速バス不可。",
+          "apply": "70歳誕生月の前月末に郵送、初回申請不要。70歳以上転入者は転入翌月以降。再交付は本人確認書類（代理は双方）を市高齢者支援課・各支所等へ持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.iwakuni.lg.jp/site/koureihoken/2293.html",
+              "label": "岩国市・高齢者等優待乗車証",
+              "updated": "2023-04-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・支援一覧（令和8年9月30日現在）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.iwakuni.lg.jp/site/koureihoken/2293.html",
+          "label": "岩国市・高齢者等優待乗車証",
+          "updated": "2023-04-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+          "label": "山口県警・支援一覧（令和8年9月30日現在）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2023年案内の対象・運賃は令和8年県一覧で補強。再交付書類の現在の扱いは高齢者支援課（0827-29-2588）へ確認してください。"
+    },
+    {
+      "slug": "waki",
+      "name": "和木町",
+      "status": "active",
+      "summary": "75歳以上の町民と、返納して所定の証明書を持つ町民はあいあいバスが無料です。",
+      "programs": [
+        {
+          "name": "あいあいバス75歳以上免除",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上の和木町民。",
+          "benefit": "あいあいバスの運賃免除。",
+          "fare": "無料。",
+          "routes": "和木町コミュニティバス「あいあいバス」。",
+          "apply": "本人確認書類を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・支援一覧（令和8年9月30日現在）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "あいあいバス返納者免除",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証を自主返納した町民。警察等で返納して運転卒業者サポート手帳または運転経歴証明書の交付を受ける。年齢明記なし。",
+          "benefit": "あいあいバスの運賃免除。",
+          "fare": "無料。",
+          "routes": "和木町コミュニティバス「あいあいバス」。",
+          "apply": "役場への申請不要。サポート手帳または運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・支援一覧（令和8年9月30日現在）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+          "label": "山口県警・支援一覧（令和8年9月30日現在）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "返納者の免除は令和8年県警一覧で確認。利用方法は企画総務課（0827-52-2136）へ確認してください。"
+    },
+    {
+      "slug": "yanai",
+      "name": "柳井市",
+      "status": "notfound",
+      "summary": "令和8年度のYANACAはタクシー・フェリー向けです。高齢者向けバス助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city-yanai.jp/soshiki/15/unntinnjyoseiken-yanaca.html",
+          "label": "柳井市・運賃助成YANACA",
+          "updated": "2026-05-12",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "県警一覧の旧おでかけサポートにはバス用途がありますが、市は令和8年4月にYANACAへ統合しています。バス支援の継続有無は商工観光課（0820-22-2111・内線364、365）へ確認してください。"
+    },
+    {
+      "slug": "suooshima",
+      "name": "周防大島町",
+      "status": "notfound",
+      "summary": "高齢者の外出支援はタクシー向けです。高齢者向けバス助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.suo-oshima.lg.jp/soshiki/14/1013.html",
+          "label": "周防大島町・高齢者へのサービス",
+          "updated": "2026-02-26",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "スクールバス混乗は住民共通です。追加のバス支援は地域交通課（0820-79-1015）へ確認してください。"
+    },
+    {
+      "slug": "kaminoseki",
+      "name": "上関町",
+      "status": "active",
+      "summary": "65歳以上の町民は、乗車証で町内100円・町外300円のバス運賃になります。",
+      "programs": [
+        {
+          "name": "福祉優待バス乗車証",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "町内に住所を有する満65歳以上。",
+          "benefit": "対象バスを優待料金で利用。当該年度3月31日まで。",
+          "fare": "町内1乗車100円、町外1乗車300円。乗車証を提示。",
+          "routes": "防長バス柳井駅前～上関線、町営バス。",
+          "apply": "随時、保健福祉課社会福祉係・各支所分室で申請。本人確認書類、代理の場合は代理人の本人確認書類。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kaminoseki.lg.jp/福祉優待バス乗車証.html",
+              "label": "上関町・福祉優待バス乗車証",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・支援一覧（令和8年9月30日現在）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kaminoseki.lg.jp/福祉優待バス乗車証.html",
+          "label": "上関町・福祉優待バス乗車証",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+          "label": "山口県警・支援一覧（令和8年9月30日現在）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町案内に更新日がないため、現年度の運賃は保健福祉課社会福祉係（0820-62-0184）へ確認してください。"
+    },
+    {
+      "slug": "tabuse",
+      "name": "田布施町",
+      "status": "notfound",
+      "summary": "外出支援はタクシー向けです。高齢者向けバス助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.tabuse.lg.jp/soshiki/7/1438.html",
+          "label": "田布施町・高齢者福祉タクシー",
+          "updated": "2025-09-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "現行のバス支援の有無は健康保険課（0820-52-5809）へ確認してください。案内は1年以上前です。"
+    },
+    {
+      "slug": "hirao",
+      "name": "平生町",
+      "status": "active",
+      "summary": "75歳以上や要介護・要支援の人で、免許がなく家族の移動支援が受けられない場合にバス券を交付します。",
+      "programs": [
+        {
+          "name": "外出サポート助成券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "75歳以上。免許を持たず、長期入院・施設入所中でない町民。同居家族全員免許なし又は独居。家族が免許ありでも就労等の日中不在で支援を受けられない場合は民生委員の確認が必要。",
+          "benefit": "400円券と100円券を各32枚、佐賀・佐合島各36枚、小郡・尾国各40枚。日中不在家族の枠は町全域各16枚。令和9年3月31日まで。",
+          "fare": "1乗車2枚まで。運賃を超える券は不可、残りは現金。",
+          "routes": "防長交通路線バスで乗降の一方又は両方が町内。",
+          "apply": "町民福祉課・健康保険課・佐賀出張所に年齢確認書類又は介護保険証等で申請。代理可。民生委員の現況未確認の場合は後日郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.hirao.lg.jp/soshiki/chomin/fukushi/shakaifukushi/2918.html",
+              "label": "平生町・外出サポート",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "外出サポート助成券（要介護・要支援）",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "要介護又は要支援認定者（年齢明記なし）。免許を持たず、長期入院・施設入所中でない町民。同居家族全員免許なし又は独居。家族が免許ありでも就労等の日中不在で支援を受けられない場合は民生委員の確認が必要。",
+          "benefit": "400円券と100円券を各32枚、佐賀・佐合島各36枚、小郡・尾国各40枚。日中不在家族の枠は町全域各16枚。令和9年3月31日まで。",
+          "fare": "1乗車2枚まで。運賃を超える券は不可、残りは現金。",
+          "routes": "防長交通路線バスで乗降の一方又は両方が町内。",
+          "apply": "町民福祉課・健康保険課・佐賀出張所に年齢確認書類又は介護保険証等で申請。代理可。民生委員の現況未確認の場合は後日郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.hirao.lg.jp/soshiki/chomin/fukushi/shakaifukushi/2918.html",
+              "label": "平生町・外出サポート",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.hirao.lg.jp/soshiki/chomin/fukushi/shakaifukushi/2918.html",
+          "label": "平生町・外出サポート",
+          "updated": "2026-03-30",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "hikari",
+      "name": "光市",
+      "status": "active",
+      "summary": "65歳以上で免許を持たない市民に、最大9,600円分のバス等助成券を交付します。",
+      "programs": [
+        {
+          "name": "高齢者バス・タクシー等運賃助成",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "光市居住、満65歳以上で原付・バイクを含む免許なし。福祉タクシー券・寝たきり老人リフト券・離島航路定期船補助との併給不可。",
+          "benefit": "200円券48枚9,600円分。10月以降新規は24枚4,800円。4月15日～令和9年3月31日。",
+          "fare": "1乗車1枚のみ。残額現金、つり銭なし。",
+          "routes": "防長バス、光市役所前～周南市熊毛方面バス、ひかりぐるりん、光市営バス。乗降のいずれかが光市内。",
+          "apply": "前年受給者は申請不要。新規は公共交通政策課（0833-72-8980）へ連絡し郵送申請、各支所・出張所や担当課窓口も可。窓口では本人確認書類、代理は事前連絡。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hikari.lg.jp/soshiki/11/kokyokotsu/1/1/12957.html",
+              "label": "光市・令和8年度高齢者運賃助成",
+              "updated": "2026-03-25",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.hikari.lg.jp/soshiki/11/kokyokotsu/1/1/12957.html",
+          "label": "光市・令和8年度高齢者運賃助成",
+          "updated": "2026-03-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "県警一覧は最大24枚ですが、現行の令和8年度市案内は48枚（10月以降新規24枚）です。公共交通政策課（0833-72-8980）へ確認してください。"
+    },
+    {
+      "slug": "kudamatsu",
+      "name": "下松市",
+      "status": "active",
+      "summary": "70歳以上にバス券を交付し、65歳以上の返納者は米泉号回数券等の記念品を選べます。",
+      "programs": [
+        {
+          "name": "高齢者バス・タクシー助成券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "下松市在住満70歳以上で障害者福祉タクシー券を受けていない人。",
+          "benefit": "200円券を年最大60枚（申請月による）。4月1日～翌年3月31日。",
+          "fare": "1乗車1枚。残額現金、IC不可、つり銭なし。",
+          "routes": "防長交通（高速不可）と米泉号・かさど号（令和8年10月1日追加）。乗降いずれか市内。周南市坂本入口・久米鳥越も対象。",
+          "apply": "市高齢福祉課・出張所へ申請書を持参、郵送・オンラインも可。翌年度以降自動更新。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kudamatsu.lg.jp/chouju/shien/koureisyabustaxi.html",
+              "label": "下松市・高齢者バス助成",
+              "updated": "2026-08-26",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "返納記念品の米泉号回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "全免許自主返納、返納時満65歳以上、返納時・申請時下松市住民登録。取消通知書発行から1年以内、1人1回限り。記念品いずれか一つ。",
+          "benefit": "米泉号回数券を選択。金額の記載なし。",
+          "fare": "回数券を利用。不足分の支払方法は記載なし。",
+          "routes": "下松市コミュニティバス米泉号。",
+          "apply": "生活安全課へ申請書と取消通知書又は経歴証の写し。代理は身分証。原則当日受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kudamatsu.lg.jp/seikatsu/seikatsu/seikatsu/anzenp3/jisyuhennnou.html",
+              "label": "下松市・返納記念品",
+              "updated": "2026-06-24",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kudamatsu.lg.jp/chouju/shien/koureisyabustaxi.html",
+          "label": "下松市・高齢者バス助成",
+          "updated": "2026-08-26",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.kudamatsu.lg.jp/seikatsu/seikatsu/seikatsu/anzenp3/jisyuhennnou.html",
+          "label": "下松市・返納記念品",
+          "updated": "2026-06-24",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "返納回数券の額や期限は生活安全課（0833-45-1828）へ確認してください。"
+    },
+    {
+      "slug": "shunan",
+      "name": "周南市",
+      "status": "active",
+      "summary": "75歳以上の市民と、65～74歳で所定の免許を持たない市民に年9,600円分のバス助成券を交付します。",
+      "programs": [
+        {
+          "name": "高齢者バス助成券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "市内在住75歳以上。",
+          "benefit": "200円券48枚9,600円分、申請月によらず。令和8年4月～令和9年3月。",
+          "fare": "1乗車1枚。つり銭なし、残りの運賃を支払い。",
+          "routes": "市内で乗車又は降車する路線バス。高速不可。",
+          "apply": "前年受給者へ郵送。新規は市高齢者支援課・総合支所各支所に本人確認書類、代理は双方の本人確認書類を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shunan.lg.jp/soshiki/25/116171.html",
+              "label": "周南市・令和8年度運賃助成",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.shunan.lg.jp/uploaded/life/143927_429217_misc.pdf",
+              "label": "周南市・対象者と新規申請案内",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "高齢者バス助成券（65～74歳免許なし）",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "市内在住65～74歳で、大型・中型・準中型・普通自動車免許を受けていない人。",
+          "benefit": "200円券48枚9,600円分、申請月によらず。令和8年4月～令和9年3月。",
+          "fare": "1乗車1枚。つり銭なし、残りの運賃を支払い。",
+          "routes": "市内で乗車又は降車する路線バス。高速不可。",
+          "apply": "前年受給者へ郵送。新規は市高齢者支援課・総合支所各支所に本人確認書類、代理は双方の本人確認書類を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shunan.lg.jp/soshiki/25/116171.html",
+              "label": "周南市・令和8年度運賃助成",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.shunan.lg.jp/uploaded/life/143927_429217_misc.pdf",
+              "label": "周南市・対象者と新規申請案内",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.shunan.lg.jp/soshiki/25/116171.html",
+          "label": "周南市・令和8年度運賃助成",
+          "updated": "2026-03-30",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.shunan.lg.jp/uploaded/life/143927_429217_misc.pdf",
+          "label": "周南市・対象者と新規申請案内",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "券で支払う際の残額の支払い方法は高齢者支援課（0834-22-8461）へ確認してください。"
+    },
+    {
+      "slug": "yamaguchi",
+      "name": "山口市",
+      "status": "active",
+      "summary": "70歳以上の市民は、対象バスを1乗車100円で利用できます。",
+      "programs": [
+        {
+          "name": "敬老福祉優待バス乗車証",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "山口市に居住する70歳以上。",
+          "benefit": "対象バスを優待料金で利用。",
+          "fare": "証を提示し1乗車100円を現金支払い。",
+          "routes": "防長、JRバス中国、宇部市営（特急除く）、宇部市生活交通、山口コミュニティ、徳地生活、阿東生活。乗降一方市内。高速・特急・空港連絡不可。",
+          "apply": "対象者へ郵送。転入翌月上旬に郵送。再交付は各総合支所等、本人は本人確認書類、同一世帯代理は代理ID、別世帯代理は不要で後日本人へ郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.yamaguchi.lg.jp/site/korei/4723.html",
+              "label": "山口市・敬老福祉優待バス乗車証",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.yamaguchi.lg.jp/site/korei/4723.html",
+          "label": "山口市・敬老福祉優待バス乗車証",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "hofu",
+      "name": "防府市",
+      "status": "active",
+      "summary": "70歳以上の免許なしの人と65歳以上の返納者は、バス専用券か共通券を選べます。",
+      "programs": [
+        {
+          "name": "運賃助成券バス専用（70歳以上）",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "市民で70歳以上、免許なし。福祉タクシー助成との併給不可。専用又は共通の一方を選択。",
+          "benefit": "年最大96枚、1枚100円引き（申請月により減少）。",
+          "fare": "1乗車2枚まで。対象者証を提示して助成券と残りの運賃を支払い。",
+          "routes": "防長交通・JRバス中国。防府市内で乗車又は降車する場合。",
+          "apply": "新規は本館2階高齢福祉課に身分証（返納枠は返納証明も）。代理は委任状・代理身分証・対象者顔写真、返納証明など。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi.html",
+              "label": "防府市・高齢者運賃助成",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-shinki.html",
+              "label": "防府市・新規申請",
+              "updated": "2025-03-10",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-riyou.html",
+              "label": "防府市・助成対象会社",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145360.pdf",
+              "label": "防府市・令和8年度継続事業説明",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "運賃助成券バス・タクシー共通（70歳以上）",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "市民で70歳以上、免許なし。福祉タクシー助成との併給不可。専用又は共通の一方を選択。",
+          "benefit": "年最大48枚、1枚200円引き（申請月により減少）。",
+          "fare": "1乗車1枚まで。対象者証を提示して助成券と残りの運賃を支払い。",
+          "routes": "防長交通・JRバス中国。防府市内で乗車又は降車する場合。",
+          "apply": "新規は本館2階高齢福祉課に身分証（返納枠は返納証明も）。代理は委任状・代理身分証・対象者顔写真、返納証明など。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi.html",
+              "label": "防府市・高齢者運賃助成",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-shinki.html",
+              "label": "防府市・新規申請",
+              "updated": "2025-03-10",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-riyou.html",
+              "label": "防府市・助成対象会社",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145360.pdf",
+              "label": "防府市・令和8年度継続事業説明",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "運賃助成券バス専用（返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市民で65歳以上、全運転免許を自主返納。福祉タクシー助成との併給不可。専用又は共通の一方を選択。",
+          "benefit": "年最大96枚、1枚100円引き（申請月により減少）。",
+          "fare": "1乗車2枚まで。対象者証を提示して助成券と残りの運賃を支払い。",
+          "routes": "防長交通・JRバス中国。防府市内で乗車又は降車する場合。",
+          "apply": "新規は本館2階高齢福祉課に身分証（返納枠は返納証明も）。代理は委任状・代理身分証・対象者顔写真、返納証明など。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi.html",
+              "label": "防府市・高齢者運賃助成",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-shinki.html",
+              "label": "防府市・新規申請",
+              "updated": "2025-03-10",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-riyou.html",
+              "label": "防府市・助成対象会社",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145360.pdf",
+              "label": "防府市・令和8年度継続事業説明",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "運賃助成券バス・タクシー共通（返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市民で65歳以上、全運転免許を自主返納。福祉タクシー助成との併給不可。専用又は共通の一方を選択。",
+          "benefit": "年最大48枚、1枚200円引き（申請月により減少）。",
+          "fare": "1乗車1枚まで。対象者証を提示して助成券と残りの運賃を支払い。",
+          "routes": "防長交通・JRバス中国。防府市内で乗車又は降車する場合。",
+          "apply": "新規は本館2階高齢福祉課に身分証（返納枠は返納証明も）。代理は委任状・代理身分証・対象者顔写真、返納証明など。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi.html",
+              "label": "防府市・高齢者運賃助成",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-shinki.html",
+              "label": "防府市・新規申請",
+              "updated": "2025-03-10",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-riyou.html",
+              "label": "防府市・助成対象会社",
+              "updated": "2026-09-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145360.pdf",
+              "label": "防府市・令和8年度継続事業説明",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi.html",
+          "label": "防府市・高齢者運賃助成",
+          "updated": "2026-09-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-shinki.html",
+          "label": "防府市・新規申請",
+          "updated": "2025-03-10",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.hofu.yamaguchi.jp/soshiki/60/kourei-bustaxi-riyou.html",
+          "label": "防府市・助成対象会社",
+          "updated": "2026-09-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145360.pdf",
+          "label": "防府市・令和8年度継続事業説明",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "新規申請書類の案内は2025年です。現行の本人確認書類・助成券の支払い方法は高齢福祉課（0835-25-2973）へ確認してください。"
+    },
+    {
+      "slug": "ube",
+      "name": "宇部市",
+      "status": "active",
+      "summary": "70歳の誕生月からバスを100円で利用でき、返納者にはデマンドバス等のお試し券があります。",
+      "programs": [
+        {
+          "name": "高齢者バス優待乗車証",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "宇部市民、70歳になる誕生月から利用可。",
+          "benefit": "対象バスを優待料金で利用。",
+          "fare": "1乗車100円。",
+          "routes": "宇部市営バス全線、船鉄バス宇部駅経由船木～宇部市役所前・際波台～宇部駅、小野きずな号（一部区間）。",
+          "apply": "誕生月の前月末に郵送。未交付・紛失は高齢福祉課に本人確認書類。同一世帯以外の代理は委任状と来庁者の身分証。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ube.yamaguchi.jp/faq/kenkou/koureifukushi/1009735.html",
+              "label": "宇部市・高齢者バス優待",
+              "updated": "2025-03-12",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・令和8年支援一覧",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "返納者のお試し無料乗車券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "令和6年5月1日以降に宇部警察署で免許自主返納した人。年齢明記なし。",
+          "benefit": "無料乗車券2枚、1人1回限り。",
+          "fare": "券で無料。",
+          "routes": "小野きずな号デマンド運行、二俣瀬地区、吉部・万倉地区デマンドバス。",
+          "apply": "宇部警察署で返納手続時に配布。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ube.yamaguchi.jp/kurashi/koutsuuchuushajou/koukyoukoutsuu/1002826.html",
+              "label": "宇部市・返納お試し乗車券",
+              "updated": "2026-10-06",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.ube.yamaguchi.jp/faq/kenkou/koureifukushi/1009735.html",
+          "label": "宇部市・高齢者バス優待",
+          "updated": "2025-03-12",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+          "label": "山口県警・令和8年支援一覧",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.ube.yamaguchi.jp/kurashi/koutsuuchuushajou/koukyoukoutsuu/1002826.html",
+          "label": "宇部市・返納お試し乗車券",
+          "updated": "2026-10-06",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "優待証の市案内は2025年ですが令和8年県一覧で補強。区間詳細と確認書類は高齢福祉課（0836-34-8302）へ確認してください。県一覧の返納時ICチャージは、バス利用条件の詳細を交通局へ確認してください。"
+    },
+    {
+      "slug": "sanyoonoda",
+      "name": "山陽小野田市",
+      "status": "notfound",
+      "summary": "高齢者向けのバス運賃助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.sanyo-onoda.lg.jp/soshiki/18/koureisyahukusi.html",
+          "label": "山陽小野田市・高齢者福祉サービス",
+          "updated": "2025-10-20",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "デマンド交通の300円運賃は住民共通です。追加の支援は高齢福祉課（0836-82-1173）へ確認してください。"
+    },
+    {
+      "slug": "mine",
+      "name": "美祢市",
+      "status": "active",
+      "summary": "70歳の誕生月から、対象バスを現金100円で利用できます。",
+      "programs": [
+        {
+          "name": "福祉優待バス乗車証",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "市住民基本台帳に登録のある70歳以上。70歳の誕生月から使用可。",
+          "benefit": "回数制限なし、令和9年3月末まで。",
+          "fare": "証を運転士に提示し100円を現金払い。",
+          "routes": "市内を走る防長・JRバス中国・サンデン・ブルーライン・あんもないと号・宇部市交通局の路線バスとジオバス。乗換なしで市内発又は着。ジオタク、JR美祢線代行、高速除外。",
+          "apply": "初回申請不要、誕生月の前月末までに郵送。転入は1か月程度遅れる場合あり。再交付は福祉課等で本人確認書類（代理は双方）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.city.mine.lg.jp/kenko_fukushi/fukushi/fukushi/10065.html",
+              "label": "美祢市・高齢者外出支援",
+              "updated": "2026-01-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www2.city.mine.lg.jp/kenko_fukushi/fukushi/fukushi/10065.html",
+          "label": "美祢市・高齢者外出支援",
+          "updated": "2026-01-30",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "shimonoseki",
+      "name": "下関市",
+      "status": "active",
+      "summary": "70歳以上の市民は、毎週火曜日に対象バスを現金100円で利用できます。",
+      "programs": [
+        {
+          "name": "いきいきシルバー100",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "下関市住民基本台帳に登録する70歳以上。毎週火曜日のみ。",
+          "benefit": "対象バスを優待料金で利用。使用期限なし。",
+          "fare": "利用者証を提示し1乗車現金100円。IC支払い不可。",
+          "routes": "サンデン交通（福岡線不可）・ブルーライン交通路線バス。市外のみの乗車不可。",
+          "apply": "電子申請、窓口、郵送又はFAXで申請書（住所氏名生年月日電話番号）を提出。窓口は長寿支援課・総合支所・支所・サテライト・指定公民館。70歳誕生日のおおむね2週間前から申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shimonoseki.lg.jp/soshiki/40/3494.html",
+              "label": "下関市・いきいきシルバー100",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.shimonoseki.lg.jp/soshiki/40/3494.html",
+          "label": "下関市・いきいきシルバー100",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "nagato",
+      "name": "長門市",
+      "status": "notfound",
+      "summary": "高齢者の外出支援はタクシー向けです。福祉バスの借上補助は団体向けで、個人のバス助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.nagato.yamaguchi.jp/soshiki/70/36829.html",
+          "label": "長門市・令和8年度タクシー助成",
+          "updated": "2025-03-25",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.nagato.yamaguchi.jp/soshiki/1/42755.html",
+          "label": "長門市・デマンド交通",
+          "updated": "2026-10-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "バス運賃の高齢者支援の有無は高齢福祉課（0837-23-1157）へ確認してください。日付の古い資料を含みます。"
+    },
+    {
+      "slug": "hagi",
+      "name": "萩市",
+      "status": "active",
+      "summary": "70歳の誕生月から、HAGICA乗車証で対象バスを現金100円で利用できます。",
+      "programs": [
+        {
+          "name": "HAGICAバス乗車証",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "70歳以上の萩市民。70歳になる誕生月から使用可。",
+          "benefit": "有効期限・使用回数制限なし。",
+          "fare": "降車時に乗車証を提示し現金100円。",
+          "routes": "防長交通・JRバス中国・石見交通の路線バスで萩市内発又は着。高速・特急・スーパーはぎ号除外。",
+          "apply": "初回手続不要、誕生月の前月末に郵送。再交付は高齢者支援課・各事務所支所出張所等に来庁者の本人確認書類。別世帯代理は後日本人へ郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hagi.lg.jp/soshiki/96/h30991.html",
+              "label": "萩市・HAGICA",
+              "updated": "2024-04-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・令和8年支援一覧",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.hagi.lg.jp/soshiki/96/h30991.html",
+          "label": "萩市・HAGICA",
+          "updated": "2024-04-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+          "label": "山口県警・令和8年支援一覧",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市案内は2024年ですが令和8年県警一覧で制度を補強。路線詳細は高齢者支援課（0838-25-3137）へ確認してください。"
+    },
+    {
+      "slug": "abu",
+      "name": "阿武町",
+      "status": "active",
+      "summary": "75歳以上・返納者・要介護者は福祉交通券を申請でき、返納者には回数券の記念品もあります。",
+      "programs": [
+        {
+          "name": "福祉交通券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "在宅の75歳以上。",
+          "benefit": "100円券144枚（1か月12枚相当）。",
+          "fare": "一度に何枚でも利用可。不足分の支払いの記載なし。",
+          "routes": "町営バス、なごやか便・ふくすけ便・宇田ふれあい便。",
+          "apply": "役場本庁・各支所に本人確認書類と対象が分かる書類を持参して申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.abu.lg.jp/wp/wp-content/uploads/2023/03/7fcdac28c7886547b77eacf25c14d162.jpg",
+              "label": "阿武町・福祉交通券案内（令和5年変更）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉交通券（返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "在宅の65歳以上の免許自主返納者。",
+          "benefit": "100円券144枚（1か月12枚相当）。",
+          "fare": "一度に何枚でも利用可。不足分の支払いの記載なし。",
+          "routes": "町営バス、なごやか便・ふくすけ便・宇田ふれあい便。",
+          "apply": "役場本庁・各支所に本人確認書類と対象が分かる書類を持参して申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.abu.lg.jp/wp/wp-content/uploads/2023/03/7fcdac28c7886547b77eacf25c14d162.jpg",
+              "label": "阿武町・福祉交通券案内（令和5年変更）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉交通券（要介護者）",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "在宅の要介護1～5認定者。年齢明記なし。",
+          "benefit": "100円券144枚（1か月12枚相当）。",
+          "fare": "一度に何枚でも利用可。不足分の支払いの記載なし。",
+          "routes": "町営バス、なごやか便・ふくすけ便・宇田ふれあい便。",
+          "apply": "役場本庁・各支所に本人確認書類と対象が分かる書類を持参して申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.abu.lg.jp/wp/wp-content/uploads/2023/03/7fcdac28c7886547b77eacf25c14d162.jpg",
+              "label": "阿武町・福祉交通券案内（令和5年変更）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "返納者のデマンド交通回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "返納時町内住民登録する65歳以上。有効期間内に自主返納してサポート手帳又は運転経歴証明書の交付を受ける。記念品の一つを選択、1回限り。",
+          "benefit": "5,000円分のデマンド交通回数券。",
+          "fare": "回数券で支払い。差額の記載なし。",
+          "routes": "なごやか便・ふくすけ便・宇田ふれあい便（県一覧は有料デマンドバスと明記）。",
+          "apply": "役場本庁又は支所で、認印とサポート手帳又は運転経歴証明書を持参して申請。代理は委任状（県一覧）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.abu.lg.jp/guide/menkyozishuhennou/",
+              "label": "阿武町・返納支援",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+              "label": "山口県警・令和8年支援一覧",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.abu.lg.jp/wp/wp-content/uploads/2023/03/7fcdac28c7886547b77eacf25c14d162.jpg",
+          "label": "阿武町・福祉交通券案内（令和5年変更）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.abu.lg.jp/guide/menkyozishuhennou/",
+          "label": "阿武町・返納支援",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/uploaded/life/364269_704106_misc.pdf",
+          "label": "山口県警・令和8年支援一覧",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "福祉券は令和5年の案内画像、返納町案内は更新日なしで旧コミュニティワゴンの表記です。現行の枚数・対象・期限・併給可否は健康福祉課（08388-2-3115）、返納記念品は総務課（08388-2-3110）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.yamaguchi.lg.jp/site/police/10409.html",
+    "label": "山口県・運転免許返納者支援",
+    "checked": "2026-10-06"
+  }
+}
