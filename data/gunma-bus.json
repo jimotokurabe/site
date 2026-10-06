@@ -1,0 +1,2181 @@
+{
+  "checked": "2026-10-07",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "maebashi",
+      "name": "前橋市",
+      "status": "active",
+      "summary": "年度末70歳以上の市民は、GunMaaS登録で対象路線バスのIC運賃が原則10%割引になります。",
+      "programs": [
+        {
+          "name": "GunMaaS敬老割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "前橋市内在住で各年度末時点に70歳以上となる方。GunMaaSにICカードとマイナンバーカードの事前登録が必要。",
+          "benefit": "対象路線バスIC運賃を原則10%割引。回数制限なし。",
+          "fare": "登録ICで精算。関越交通・群馬中央バスは10円単位切上げで割引率10%未満の場合あり（180円→170円）。",
+          "routes": "前橋市内の対象路線バス。ふるさと・るんるん・城南あおぞらのデマンドバス対象外。前橋玉村線の玉村町役場～新町駅間は通常料金。",
+          "apply": "利用前日までにGunMaaSで会員・IC・マイナンバーカード登録し電子券使用開始。スマホなしは市交通政策課へ。市役所1階平日9～17時登録相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://maebashimobility.jp/2995",
+              "label": "敬老割引でおトクにバスに乗ろう!! | 前橋交通ポータル",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://maebashimobility.jp/2995",
+          "label": "敬老割引でおトクにバスに乗ろう!! | 前橋交通ポータル",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.maebashi.gunma.jp/soshiki/shimin/kyouseishakaisuishinka/gyomu/7/27654.html",
+          "label": "運転免許証自主返納について／前橋市",
+          "updated": "2026-08-24",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "敬老割引案内は2024年掲載で更新日なし。現行の対象路線・登録方法は交通政策課027-898-6263へ確認してください。"
+    },
+    {
+      "slug": "isesaki",
+      "name": "伊勢崎市",
+      "status": "active",
+      "summary": "コミュニティバスあおぞらは65歳以上の人が市内外とも無料。正式返納者にも経歴証明書提示の無料枠があります。",
+      "programs": [
+        {
+          "name": "あおぞら65歳以上無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。伊勢崎市内・市外とも対象。年齢証明等の提示が必要。",
+          "benefit": "あおぞらを無料利用。",
+          "fare": "証明書提示で無料（通常1日200円）。",
+          "routes": "いせさきしコミュニティバスあおぞら全11路線。",
+          "apply": "乗車時、寿証（市内）・ぐーちょきシニアパスポート又は年齢証明を運転手へ提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.isesaki.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/communitybus_aozora/16850.html",
+              "label": "いせさきしコミュニティバス「あおぞら」／伊勢崎市",
+              "updated": "2026-08-14",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "あおぞら運転免許自主返納者無料",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許自主返納者。年齢・居住条件は無料対象表に記載なし。運転経歴証明書を提示。",
+          "benefit": "あおぞらを無料利用。",
+          "fare": "証明書提示で無料（通常1日200円）。",
+          "routes": "いせさきしコミュニティバスあおぞら全11路線。",
+          "apply": "乗車時運転経歴証明書を運転手へ提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.isesaki.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/communitybus_aozora/16850.html",
+              "label": "いせさきしコミュニティバス「あおぞら」／伊勢崎市",
+              "updated": "2026-08-14",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.isesaki.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/communitybus_aozora/16850.html",
+          "label": "いせさきしコミュニティバス「あおぞら」／伊勢崎市",
+          "updated": "2026-08-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.isesaki.lg.jp/soshiki/tokeibu/kotsu/anzen/6505.html",
+          "label": "運転免許証自主返納した人を支援します／伊勢崎市",
+          "updated": "2026-06-09",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納者枠は運転経歴証明書提示で、失効者の証明書でも利用できるかは交通政策課0270-27-2734へ確認してください。"
+    },
+    {
+      "slug": "shibukawa",
+      "name": "渋川市",
+      "status": "active",
+      "summary": "年度内65歳以上の市民は登録ICで対象バス運賃を原則半額にできます。旧敬老回数券の新規販売は終了しています。",
+      "programs": [
+        {
+          "name": "バス高齢者割引（GunMaaS）",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "渋川市内在住の65歳以上（令和9年3月31日までに65歳になる方を含む）。免許の有無にかかわらず対象。登録ICが必要。",
+          "benefit": "対象バス運賃の50%割引。",
+          "fare": "登録ICで割引後運賃を精算。関越交通は10円未満を10円単位に切上げ。",
+          "routes": "市内運行の関越交通・群馬バス・日本中央交通路線バス、予約型デマンドバス含む。市外乗降も対象。高崎駅～原美術館ARC線・高崎駅～伊香保温泉直通は除外。",
+          "apply": "GunMaaSでIC・マイナンバーカードを登録。スマホなしは市交通政策課（第二庁舎）又は行政センターで登録、マイナンバーカードなしでもICのみ年度ごと登録可。行政センターは事前連絡。高齢者パスを使用開始して利用。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shibukawa.lg.jp/kurashi/000054/000055/p010585.html",
+              "label": "バス・タクシー高齢者割引について | 渋川市公式ホームページ",
+              "updated": "2026-09-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.shibukawa.lg.jp/kurashi/000054/000055/p010585.html",
+          "label": "バス・タクシー高齢者割引について | 渋川市公式ホームページ",
+          "updated": "2026-09-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.shibukawa.lg.jp/kurashi/000054/000055/p010659.html",
+          "label": "バス敬老割引回数券について(日本中央交通(株)・(株)群馬バス) | 渋川市公式ホームページ",
+          "updated": "2025-07-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "旧回数券は日本中央交通分のみ使用期限なし、群馬バス分は2026/3/31使用終了。旧券の扱いは交通政策課0279-22-2264へ確認してください。"
+    },
+    {
+      "slug": "shinto",
+      "name": "榛東村",
+      "status": "notfound",
+      "summary": "確認した返納支援は10,000円助成金又は福祉タクシー券で、バス用途限定の支援は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.shinto.gunma.jp/life/100085/000190/000194/p000037.html",
+          "label": "運転免許証自主返納者支援事業について | 榛東村公式ホームページ",
+          "updated": "2022-07-06",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.shinto.gunma.jp/helth/000443/p000155.html",
+          "label": "福祉タクシー利用助成制度 | 榛東村公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は2022年。バス高齢者助成の現行有無は総務企画課生活安全係0279-26-2195へ確認してください。"
+    },
+    {
+      "slug": "yoshioka",
+      "name": "吉岡町",
+      "status": "active",
+      "summary": "満65歳以上で町税滞納のない町民は、登録ICで支払った乗合バス運賃の約2割、年度上限8,000円を後日請求できます。",
+      "programs": [
+        {
+          "name": "高齢者ICカード乗車券運賃助成",
+          "kind": "reimbursement",
+          "age_min": 65,
+          "eligibility": "吉岡町に住民登録があり申請日時点で満65歳以上、町税滞納なし。本人名義の記名式ICを年度ごとに登録。",
+          "benefit": "対象費用1,000円（1,000円未満切捨て）につき200円、年度上限8,000円を助成。",
+          "fare": "いったん記名ICで乗合バスの運賃を支払い、履歴を添えて年度末までに助成請求。登録前利用は対象外。",
+          "routes": "記名式IC（モバイルSuica/PASMO含む）で支払う乗合バス。個別対象路線一覧は記載なし。鉄道等・買物は対象外。",
+          "apply": "電子申請又は役場企画財政課窓口4番でIC写し等を提出して事前利用登録。利用年度3/31までにICと利用明細を添えて助成請求。登録は毎年度。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.yoshioka.lg.jp/kurashi/kotsu/kotsu/post_179.html",
+              "label": "吉岡町高齢者ICカード乗車券の利用に係る運賃助成事業|吉岡町ホームページ",
+              "updated": "2026-03-13",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.yoshioka.lg.jp/kurashi/kotsu/kotsu/post_179.html",
+          "label": "吉岡町高齢者ICカード乗車券の利用に係る運賃助成事業|吉岡町ホームページ",
+          "updated": "2026-03-13",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.yoshioka.lg.jp/kurashi/kotsu/kotsu/koureisya_menkyo.html",
+          "label": "高齢者運転免許証自主返納者支援事業|吉岡町ホームページ",
+          "updated": "2025-12-10",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "対象乗合バスの個別路線一覧は記載なし。利用予定路線の対象可否は企画財政課0279-26-2241へ確認してください。"
+    },
+    {
+      "slug": "tamamura",
+      "name": "玉村町",
+      "status": "active",
+      "summary": "免許のない満65歳以上の町民に、500円チャージ済みnolbéを1回配布しています。数量限定です。",
+      "programs": [
+        {
+          "name": "免許のない65歳以上へnolbé配布",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "玉村町在住65歳以上、免許を持たず、町税滞納なし、過去に配布を受けていない方。",
+          "benefit": "nolbé1枚、500円チャージ済み。1回のみ、先着数量限定、なくなり次第終了。",
+          "fare": "IC残高で運賃支払。残高不足時精算は記載なし。コンビニ等でチャージ可。",
+          "routes": "路線バス・鉄道等のnolbé対応交通。個別路線一覧は記載なし。",
+          "apply": "申請書を町役場環境安全課2階4番へ提出。カードは郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tamamura.lg.jp/docs/2025072500010/",
+              "label": "運転免許のない６５歳以上の方に交通系ICカードを配布します | 玉村町",
+              "updated": "2026-03-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.tamamura.lg.jp/docs/2025072500010/",
+          "label": "運転免許のない６５歳以上の方に交通系ICカードを配布します | 玉村町",
+          "updated": "2026-03-30",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.tamamura.lg.jp/docs/2018040100602/",
+          "label": "運転経歴証明書の交付手数料を助成します | 玉村町",
+          "updated": "2026-06-04",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "数量限定のため現在の残数、残高不足時の精算は環境安全課0270-64-7708へ確認してください。"
+    },
+    {
+      "slug": "takasaki",
+      "name": "高崎市",
+      "status": "active",
+      "summary": "市の年度対象年齢65歳以上はGunMaaSで原則2割引。正式返納65歳以上はバス券又はポイントの選択枠、経歴証明提示で購入する専用回数券・よしいバス半額もあります。",
+      "programs": [
+        {
+          "name": "GunMaaS路線バス敬老割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "高崎市に住所を有する65歳以上（昭和37年4月1日までに生まれた方を含む）。ICとマイナンバーカードの登録必要。",
+          "benefit": "対象バス運賃を原則20%割引。",
+          "fare": "登録ICで割引精算。関越交通は10円単位切上げ、群馬中央バスは四捨五入で2割未満の割引の場合あり。残高不足は割引されない場合あり。",
+          "routes": "ぐるりん・対象一般路線、高崎市内のほか前橋・渋川市内運行対象路線。よしい全線・権田萩生線・奥多野線は除外。",
+          "apply": "利用前日までGunMaaSへ会員・IC・マイナンバーカード登録、敬老パス受取と使用開始。スマホなしはGunMaaSタッチ会員を市9階地域交通課へ相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/78846.html",
+              "label": "路線バス運賃の敬老割引について（GunMaaS） - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-09-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/79048.html",
+              "label": "敬老割引対象路線バス一覧 - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-02-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納ぐるりん回数券交付",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "返納時に高崎市住民登録のある満65歳以上で、H22/4/1以降、有効な全免許を自主返納した方。失効対象外。返納時1回、他の奨励品と選択制、本人のみ使用。",
+          "benefit": "経歴証明交付・郵送費補助ありは6,000円分、補助なしは8,000円分。",
+          "fare": "回数券で支払、釣銭・現金引換なし。通常ぐるりん大人200円（一部100円）。券期限は記載なし。",
+          "routes": "自主返納者等専用ぐるりん回数券。ぐるりん・高崎アリーナシャトル・はるバス。",
+          "apply": "取消通知書と無効免許又は免許情報記録確認書を、市9階地域交通課・交通安全協会内分室・各支所地域振興課へ。代理人身分証で代理可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
+              "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-02-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/3982.html",
+              "label": "市内循環バス「ぐるりん」運賃・乗り継ぎ割引・回数券・定期券等の案内 - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-09-14",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納よしいバス回数券交付",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "返納時に高崎市住民登録のある満65歳以上で、H22/4/1以降、有効な全免許を自主返納した方。失効対象外。返納時1回、他の奨励品と選択制、本人のみ使用。",
+          "benefit": "経歴証明交付・郵送費補助ありは6,000円分、補助なしは7,200円分。",
+          "fare": "券で支払、釣銭・現金引換なし。通常200円、経歴証明提示で半額。券期限は記載なし。",
+          "routes": "よしいバス5路線。",
+          "apply": "取消通知書と無効免許又は免許情報記録確認書を、市9階地域交通課・交通安全協会内分室・各支所地域振興課へ。代理人身分証で代理可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
+              "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-02-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/1955.html",
+              "label": "よしいバス（自家用有償バス） - 高崎市公式ホームページ（吉井支所）",
+              "updated": "2026-08-31",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納GunMaaSポイント",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "返納時に高崎市住民登録のある満65歳以上で、H22/4/1以降、有効な全免許を自主返納した方。失効対象外。返納時1回、他の奨励品と選択制、本人のみ使用。経歴証明交付・郵送費の補助を受けない方。",
+          "benefit": "8,000ポイント。1ポイント1円、有効期限なし。",
+          "fare": "IC対応バス運賃に使用。通信エラー時は現金等で支払。敬老割引との同時適用は確認必要。",
+          "routes": "交通系IC対応路線バス（ぐるりん等）、一部タクシー。",
+          "apply": "市9階地域交通課のみ。取消通知書・無効免許等・交通系IC（モバイル可）を提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
+              "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-02-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/41589.pdf",
+              "label": "高崎市運転免許証自主返納奨励品 GunMaaSポイントのご案内（令和8年4月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者等専用ぐるりん回数券購入",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "運転免許証自主返納者等で購入時運転経歴証明書提示。年齢・居住限定の記載なし。失効者の経歴証明の対象可否は要確認。",
+          "benefit": "100円券20枚つづり（2,000円分）を1,000円で購入。",
+          "fare": "基本200円、都心循環・一部区間100円を券で支払。障害者割引と併用不可。",
+          "routes": "ぐるりん、高崎アリーナシャトル、はるバス。",
+          "apply": "経歴証明書を提示して各バス会社営業所、高崎駅バス総合案内所、市9階地域交通課・指定市民サービスセンターで購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/3982.html",
+              "label": "市内循環バス「ぐるりん」運賃・乗り継ぎ割引・回数券・定期券等の案内 - 高崎市公式ホームページ（地域交通課）",
+              "updated": "2026-09-14",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "よしいバス自主返納者半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証自主返納者。年齢・居住限定は運賃案内に記載なし。経歴証明書提示。",
+          "benefit": "よしいバス使用料を半額。",
+          "fare": "通常大人1回200円を半額。障害者割引と併用不可。",
+          "routes": "よしいバス5路線。",
+          "apply": "使用料支払時運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takasaki.gunma.jp/page/1955.html",
+              "label": "よしいバス（自家用有償バス） - 高崎市公式ホームページ（吉井支所）",
+              "updated": "2026-08-31",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.takasaki.gunma.jp/page/78846.html",
+          "label": "路線バス運賃の敬老割引について（GunMaaS） - 高崎市公式ホームページ（地域交通課）",
+          "updated": "2026-09-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.takasaki.gunma.jp/page/79048.html",
+          "label": "敬老割引対象路線バス一覧 - 高崎市公式ホームページ（地域交通課）",
+          "updated": "2026-02-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
+          "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
+          "updated": "2026-02-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.takasaki.gunma.jp/page/3982.html",
+          "label": "市内循環バス「ぐるりん」運賃・乗り継ぎ割引・回数券・定期券等の案内 - 高崎市公式ホームページ（地域交通課）",
+          "updated": "2026-09-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.takasaki.gunma.jp/page/1955.html",
+          "label": "よしいバス（自家用有償バス） - 高崎市公式ホームページ（吉井支所）",
+          "updated": "2026-08-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/41589.pdf",
+          "label": "高崎市運転免許証自主返納奨励品 GunMaaSポイントのご案内（令和8年4月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納交付回数券の有効期限、専用回数券の失効者利用、GunMaaSポイントと敬老割引の同時適用は地域交通課027-321-1231へ確認してください。ポイント資料は更新日なし。旧敬老回数券の新規販売は終了（既存券利用可）。"
+    },
+    {
+      "slug": "fujioka",
+      "name": "藤岡市",
+      "status": "active",
+      "summary": "65歳以上の市民はめぐるん2路線・三波川デマンドバスの回数券を2割引で購入できます。",
+      "programs": [
+        {
+          "name": "めぐるん高齢者回数券割引",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "藤岡市内在住の65歳以上。",
+          "benefit": "回数券販売価格の2割引。",
+          "fare": "割引購入した回数券で支払。額面・現在運賃・不足額精算は記載なし。",
+          "routes": "めぐるん三ツ木～高山線・藤岡～上平線。市内循環線・神流線には回数券不可。",
+          "apply": "身分証を市役所地域安全課へ持参し購入証明証（3年有効）を交付。車内で提示して回数券購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fujioka.gunma.jp/soshiki/somubu/chiikianzen/2/1/946.html",
+              "label": "高齢者バス利用割引／藤岡市",
+              "updated": "2024-05-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "三波川線高齢者回数券割引",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "藤岡市内在住の65歳以上。",
+          "benefit": "回数券販売価格の2割引。",
+          "fare": "割引購入した回数券で支払。額面・現在運賃・不足額精算は記載なし。",
+          "routes": "デマンドバス三波川線。",
+          "apply": "身分証を提示してバス車内又は鬼石タクシー事務所で回数券購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fujioka.gunma.jp/soshiki/somubu/chiikianzen/2/1/946.html",
+              "label": "高齢者バス利用割引／藤岡市",
+              "updated": "2024-05-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fujioka.gunma.jp/soshiki/somubu/chiikianzen/2/1/946.html",
+          "label": "高齢者バス利用割引／藤岡市",
+          "updated": "2024-05-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.fujioka.gunma.jp/soshiki/somubu/chiikianzen/1/1/992.html",
+          "label": "藤岡市高齢者運転免許証自主返納支援事業／藤岡市",
+          "updated": "2025-03-24",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "割引案内は2024年。現在の回数券額面・期限・乗車運賃、不足額精算は地域安全課0274-40-2245へ確認してください。奥多野線返納半額は広域組合の共通制度です。"
+    },
+    {
+      "slug": "tomioka",
+      "name": "富岡市",
+      "status": "notfound",
+      "summary": "確認した高齢者・返納支援はタクシー券等です。愛タクは公式で乗合タクシーと案内され、バス助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "現在のバス助成の有無は確認できていません。高齢介護課0274-62-1511へ確認してください。"
+    },
+    {
+      "slug": "annaka",
+      "name": "安中市",
+      "status": "notfound",
+      "summary": "確認した返納・高齢者助成はタクシー券です。公共交通案内では旧共通/敬老バスカード利用終了を確認しました。バス独自助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.annaka.lg.jp/saigai_byouki_kinkyuji/license.html",
+          "label": "安中市高齢者運転免許証自主返納支援事業を行っています - 安中市ホームページ",
+          "updated": "2025-03-17",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.annaka.lg.jp/page/1909.html",
+          "label": "タクシー料金補助 - 安中市ホームページ",
+          "updated": "2026-01-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.annaka.lg.jp/page/2441.html",
+          "label": "安中市内の公共交通のご案内 - 安中市ホームページ",
+          "updated": "2026-08-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "バス助成の現行有無は企画課又は高齢者支援課027-382-1111へ確認してください。"
+    },
+    {
+      "slug": "ueno",
+      "name": "上野村",
+      "status": "notfound",
+      "summary": "確認した村交通は乗合タクシーの65歳以上回数券です。バス独自助成は未発見。奥多野線の返納者半額は広域組合の共通制度です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.uenomura.jp/admin/kourei.html",
+          "label": "高齢・介護 | 上野村",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.uenomura.jp/admin/life/seikatsu/traffic/taxi.html",
+          "label": "乗合タクシー（上野村～下仁田・富岡方面） | 上野村",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村交通案内は更新日なし。現行のバス敬老支援は振興課0274-59-2111へ確認してください。"
+    },
+    {
+      "slug": "kanna",
+      "name": "神流町",
+      "status": "active",
+      "summary": "65歳以上の町民に奥多野線の申請区間半額となる町敬老乗車証明書を交付します。",
+      "programs": [
+        {
+          "name": "奥多野線町敬老割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "神流町内に住所を有する65歳以上。町敬老乗車証明書を申請し、指定乗降区間を守ること。",
+          "benefit": "申請した乗車運行区間の運賃半額。",
+          "fare": "降車時に証明書を渡し、申請区間の半額運賃を支払。現在の区間別金額は記載なし。",
+          "routes": "多野藤岡地域代替バス奥多野線（かんながわ号）の申請区間。証明書記載以外は対象外の場合あり。",
+          "apply": "乗降停留所を確認し町保健福祉課へ電話。職員が聞取りで申請書作成、証明書を自宅へ郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kanna.gunma.jp/soshiki/hokenfukushika/2/29.html",
+              "label": "高齢者福祉／神流町",
+              "updated": "2025-02-27",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kanna.gunma.jp/soshiki/hokenfukushika/2/29.html",
+          "label": "高齢者福祉／神流町",
+          "updated": "2025-02-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kanna.gunma.jp/iryou_kennkou_fukushi/koureisyahukusi_kaigo/573.html",
+          "label": "高齢者福祉／神流町",
+          "updated": "2025-02-27",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内は2025年2月。現在の区間運賃・証明書期限は保健福祉課0274-57-2111へ確認してください。返納半額は別の広域組合共通制度。"
+    },
+    {
+      "slug": "shimonita",
+      "name": "下仁田町",
+      "status": "active",
+      "summary": "しもにたバスは70歳以上と正式返納者が証明提示で無料。11/1から日中等がねぎまるへ移行し、70歳以上の町民は100円になる予定です。",
+      "programs": [
+        {
+          "name": "しもにたバス70歳以上無料",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上。居住限定は現在の無料対象一覧に記載なし。証明書提示。",
+          "benefit": "通常大人200円を無料。",
+          "fare": "証明できるものを提示して無料。",
+          "routes": "しもにたバス（現在町内5地域運行）。11/1以降の日中・土日祝はねぎまるへ移行予定で運賃変更。",
+          "apply": "乗車時に対象を証明できるものを提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shimonita.lg.jp/shimonita-bus/20170404110712.html",
+              "label": "下仁田町ホームページ ： 運賃・時刻表",
+              "updated": "2025-02-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demandbus.html",
+              "label": "下仁田町ホームページ ： デマンドバスの実証運行について",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demando_setsumei.pdf",
+              "label": "下仁田町ねぎまる（デマンド運行バス）案内（令和8年11月1日開始）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "しもにたバス自主返納者無料",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証自主返納者。年齢・居住限定は現在の無料対象一覧に記載なし。証明書提示。",
+          "benefit": "通常大人200円を無料。",
+          "fare": "証明できるものを提示して無料。",
+          "routes": "しもにたバス（現在町内5地域運行）。11/1以降の日中・土日祝はねぎまるへ移行予定で運賃変更。",
+          "apply": "乗車時に対象を証明できるものを提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shimonita.lg.jp/shimonita-bus/20170404110712.html",
+              "label": "下仁田町ホームページ ： 運賃・時刻表",
+              "updated": "2025-02-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demandbus.html",
+              "label": "下仁田町ホームページ ： デマンドバスの実証運行について",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demando_setsumei.pdf",
+              "label": "下仁田町ねぎまる（デマンド運行バス）案内（令和8年11月1日開始）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.shimonita.lg.jp/shimonita-bus/20170404110712.html",
+          "label": "下仁田町ホームページ ： 運賃・時刻表",
+          "updated": "2025-02-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demandbus.html",
+          "label": "下仁田町ホームページ ： デマンドバスの実証運行について",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demando_setsumei.pdf",
+          "label": "下仁田町ねぎまる（デマンド運行バス）案内（令和8年11月1日開始）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shimonita.lg.jp/soumu/m02/m03/koutsuanzenundo/01.html",
+          "label": "下仁田町ホームページ ： 運転免許証を自主返納された方を支援します！",
+          "updated": "2025-04-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "既存運賃案内は2025年。11/1からデマンド運行へ移行、ねぎまるは町民70歳以上100円（町外500円）で、正式返納者無料の記載なし。新しい定時スクール混乗便は全年齢無料と案内。移行後の対象・年齢証明は企画課0274-82-2111へ確認してください。"
+    },
+    {
+      "slug": "nanmoku",
+      "name": "南牧村",
+      "status": "notfound",
+      "summary": "南牧バスの現行交通ページ・運賃表と県返納表を確認しましたが、高齢者向けバス独自助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://nanmoku.ne.jp/lifehealth/koutsu/",
+          "label": "交通案内 - 群馬県なんもく村",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://nanmoku.ne.jp/lifehealth/koutsu/charge_timeline/",
+          "label": "南牧バス　料金・時刻表 - 群馬県なんもく村",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://nanmoku.ne.jp/wp-content/uploads/2026/08/時刻表_バス.pdf",
+          "label": "               ◎南牧バス時刻表(雨沢ハイヤー)",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村ページは更新日なし。画像運賃表には高齢者割引表示を確認できず。現行支援の有無は総務課0274-87-2011へ確認してください。"
+    },
+    {
+      "slug": "kanra",
+      "name": "甘楽町",
+      "status": "notfound",
+      "summary": "確認した交通・返納支援は愛のりくん等のデマンドタクシーです。高齢者向けバス助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kanra.lg.jp/kikaku/chousei/traffic/20260708160828.html",
+          "label": "甘楽町 | 甘楽町の観光スポット巡りに「愛のりくん」をご利用ください！",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "バス独自助成の現行有無は企画課0274-74-3133へ確認してください。"
+    },
+    {
+      "slug": "nakanojo",
+      "name": "中之条町",
+      "status": "notfound",
+      "summary": "デマンドバスの65歳以上は年間登録料無料ですが、乗車料金は町内300円等です。確認した返納支援は町内金券で、乗車料金の高齢者助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.nakanojo.gunma.jp/soshiki/4/1487.html",
+          "label": "中之条町デマンドバスの運行について - 中之条町公式サイト",
+          "updated": "2022-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.nakanojo.gunma.jp/soshiki/16/1159.html",
+          "label": "高齢者運転免許証自主返納支援事業 - 中之条町公式サイト",
+          "updated": "2022-08-18",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内2022年。乗車料金の高齢者助成の現行有無は地域振興課又は防災安全課0279-75-2111へ確認してください。"
+    },
+    {
+      "slug": "naganohara",
+      "name": "長野原町",
+      "status": "active",
+      "summary": "登録した65歳以上の方は、地区別の通院福祉バスを無料利用できます。",
+      "programs": [
+        {
+          "name": "65歳以上福祉バス",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "在宅で生活する65歳以上の方。本文の対象者欄に町内居住限定の明記なし、地区ごとの乗車登録が必要。通院交通支援。",
+          "benefit": "福祉バスを無料で利用。",
+          "fare": "無料。",
+          "routes": "地区別4コース、西吾妻福祉病院・櫻井医院・萩原歯科・長野原草津口駅等。",
+          "apply": "健康福祉課へ登録申請。町から指定乗車場所・時刻と日程を郵送。毎回3日前まで委託業者草津観光自動車0120-37-2450へ電話予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.naganohara.gunma.jp/welfare/?content=113",
+              "label": "福祉バスについて｜移動支援｜群馬県長野原町",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.naganohara.gunma.jp/welfare/?content=113",
+          "label": "福祉バスについて｜移動支援｜群馬県長野原町",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.naganohara.gunma.jp/life/?content=231",
+          "label": "運転免許証の自主返納支援事業について｜交通安全｜群馬県長野原町",
+          "updated": "2026-03-25",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "本文は2026/4/1更新ですが運行日程リンクは令和7年度。町内居住要件と今年度の日程は健康福祉課0279-82-2246へ確認してください。"
+    },
+    {
+      "slug": "tsumagoi",
+      "name": "嬬恋村",
+      "status": "notfound",
+      "summary": "確認した返納支援は村内感謝券等。乗合送迎チョイソコ・タクシー助成はありますが、高齢者バス乗車料金助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.tsumagoi.gunma.jp/reiki_int/reiki_honbun/e246RG00000640.html",
+          "label": "嬬恋村高齢者運転免許証自主返納支援事業実施要綱",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.tsumagoi.gunma.jp/www/contents/1000000000496/index.html",
+          "label": "乗り合い送迎サービス『チョイソコつまごい』 | 嬬恋村役場",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納要綱は2018年施行で更新日なし。バス助成の現行有無は健康福祉課又は未来創造課0279-96-0511へ確認してください。"
+    },
+    {
+      "slug": "kusatsu",
+      "name": "草津町",
+      "status": "henno",
+      "summary": "正式返納時65歳以上の町民に、町内商品券と巡回バス回数券合計11,000円分を1回交付します。",
+      "programs": [
+        {
+          "name": "自主返納巡回バス回数券等",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "草津町に居住・住民登録、町税滞納なし。自主返納時65歳以上で有効な全免許を自主返納し取消通知書を受けた方。H31/4/1以降、返納1年以内に申請、1回のみ。",
+          "benefit": "草津町商品券＋町内巡回バス回数券の合計11,000円分（経歴証明申請代を含む）。バス券配分額は記載なし。",
+          "fare": "巡回バス通常1回100円を回数券で支払。券枚数・不足額精算・期限は記載なし。",
+          "routes": "草津温泉町内巡回バス。商品券は宿泊・飲食・土産店のみ。",
+          "apply": "取消通知書・無効免許写し又は生年月日確認書類を町役場総務課へ。取消日1年以内（閉庁日は翌開庁日）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kusatsu.gunma.jp/s001/010/010/1756360299460/index.html",
+              "label": "草津町高齢者運転免許証自主返納支援事業について｜草津町",
+              "updated": "2021-08-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kusatsu.gunma.jp/s001/010/010/1756360299460/youkou.pdf",
+              "label": "草津町高齢者運転免許証自主返納支援事業実施要綱（令和3年8月1日）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kusatsu.gunma.jp/s007/010/020/1485418959224/rosenzikokuhyou.pdf",
+              "label": "草津温泉町内巡回バス路線図・時刻表",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kusatsu.gunma.jp/s001/010/010/1756360299460/index.html",
+          "label": "草津町高齢者運転免許証自主返納支援事業について｜草津町",
+          "updated": "2021-08-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kusatsu.gunma.jp/s001/010/010/1756360299460/youkou.pdf",
+          "label": "草津町高齢者運転免許証自主返納支援事業実施要綱（令和3年8月1日）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kusatsu.gunma.jp/s007/010/020/1485418959224/index.html",
+          "label": "草津温泉町内巡回バス【路線図・時刻表】｜草津町",
+          "updated": "2026-09-04",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kusatsu.gunma.jp/s007/010/020/1485418959224/rosenzikokuhyou.pdf",
+          "label": "草津温泉町内巡回バス路線図・時刻表",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "要綱は2021年、バス資料は更新日なし。11,000円全額がバス券ではありません。商品券/バス券の配分、券期限・精算は総務課0279-88-0001へ確認してください。"
+    },
+    {
+      "slug": "takayama",
+      "name": "高山村",
+      "status": "active",
+      "summary": "65歳以上の村民に割引回数券、正式返納者には高山運輸倉庫の老人特殊回数券等の選択支援があります。",
+      "programs": [
+        {
+          "name": "高齢者バス回数券割引",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "高山村に住所を有する65歳以上。",
+          "benefit": "通常価格3,000円の回数券を2,000円で販売。",
+          "fare": "割引購入した回数券で支払。額面・区間運賃・不足額精算は記載なし。",
+          "routes": "村の代替バス。制度ページに対象路線名の明記なし。",
+          "apply": "制度ページに申請手順なし。住民課0279-63-2111へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.takayama.gunma.jp/04juumin/korei-fukushi/kaisuken-waribiki.html",
+              "label": "高齢者バス回数券割引事業｜高山村公式サイト｜群馬県",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納老人特殊回数乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "H23/4/1以降に全免許を自主返納した高山村住民登録者65歳以上。1回のみ、他の券/30,000円助成金と選択制。",
+          "benefit": "高山運輸倉庫老人特殊回数券3,000円券（4,500円分）を10枚。",
+          "fare": "交付券で支払。払戻し不可、乗車運賃・券期限・不足額精算は記載なし。",
+          "routes": "中山本宿から東吾妻町方面の高山運輸倉庫バス。",
+          "apply": "村総務課へ申請書、取消通知書・返納免許、通帳・印鑑等。経歴証明手数料助成を併せる場合領収書。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.takayama.gunma.jp/01soumu/menkyo-henno/henno.html",
+              "label": "高齢者の運転免許証自主返納｜高山村公式サイト｜群馬県",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.vill.takayama.gunma.jp/01soumu/zaisei/yosan/r8yosan.pdf",
+              "label": "令和8年度当初予算の概要",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.gunma.jp/page/3211.html",
+              "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+              "updated": "2026-07-02",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "北部地区高齢者IC割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "高山村在住の65歳以上。敬老割引乗車登録証と登録カード型ICが必要、モバイルIC不可。",
+          "benefit": "対象関越交通路線バス運賃5割引。",
+          "fare": "登録証提示して運転手の設定後登録ICで支払。区間運賃・端数処理は案内に記載なし。",
+          "routes": "沼田市・利根郡・高山村一部の関越交通路線バス（高速除く）。",
+          "apply": "関越交通沼田営業所で登録証発行・IC登録。再発行時登録証再発行必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://kan-etsu.net/publics/index/114/",
+              "label": "関越交通株式会社｜乗合バス",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.takayama.gunma.jp/04juumin/korei-fukushi/kaisuken-waribiki.html",
+          "label": "高齢者バス回数券割引事業｜高山村公式サイト｜群馬県",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.takayama.gunma.jp/02chiiki/rosen-bus/annai.html",
+          "label": "路線バス案内｜高山村公式サイト｜群馬県",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.takayama.gunma.jp/01soumu/menkyo-henno/henno.html",
+          "label": "高齢者の運転免許証自主返納｜高山村公式サイト｜群馬県",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.takayama.gunma.jp/01soumu/zaisei/yosan/r8yosan.pdf",
+          "label": "令和8年度当初予算の概要",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://vill.takayama.gunma.jp/08hokenmirai/fureai-bus/fureai-bus.html",
+          "label": "福祉バス「事前予約制」｜高山村公式サイト｜群馬県",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://kan-etsu.net/publics/index/114/",
+          "label": "関越交通の路線バス運賃・北部地区高齢者割引",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村案内は更新日なし、返納案内に廃止済み敬老バスカードも残っています。通常券の対象路線/額面/申込、返納券の期限・現行内容は住民課/総務課0279-63-2111へ確認してください。全村民無料の福祉バスは全年齢のためこの助成に含めていません。関越交通の高齢者IC割引対象路線・端数は沼田営業所0278-23-1111へ。"
+    },
+    {
+      "slug": "higashiagatsuma",
+      "name": "東吾妻町",
+      "status": "henno",
+      "summary": "正式返納時65歳以上の町民には町商品券とバス券。県の現行一覧はバス1日乗車券6,000円相当と案内します。",
+      "programs": [
+        {
+          "name": "自主返納バス券交付",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "東吾妻町に住民登録、返納時65歳以上、申請1年以内に免許自主返納した方。失効対象外。",
+          "benefit": "町商品券10,000円とバス券。県一覧ではバス1日乗車券6,000円相当と記載、町本文は回数乗車券等で券種照合必要。",
+          "fare": "通常バス1路線200円。一般1日券400円、交付券の利用時支払・期限は記載なし。",
+          "routes": "町内路線バス。1日券は町内全路線・坂上地区デマンドバスに利用可。",
+          "apply": "返納後1年以内、申請書・取消通知書写し・印鑑を役場総務課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.higashiagatsuma.gunma.jp/www/contents/1669100645801/index.html",
+              "label": "運転免許証自主返納者支援について  | 東吾妻町",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.higashiagatsuma.gunma.jp/www/contents/1740449923994/index.html",
+              "label": "町内路線バス運賃の路線内200円均一化について（令和７年４月１日から） | 東吾妻町",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.gunma.jp/page/3211.html",
+              "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+              "updated": "2026-07-02",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.higashiagatsuma.gunma.jp/www/contents/1669100645801/index.html",
+          "label": "運転免許証自主返納者支援について  | 東吾妻町",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.higashiagatsuma.gunma.jp/www/contents/1740449923994/index.html",
+          "label": "町内路線バス運賃の路線内200円均一化について（令和７年４月１日から） | 東吾妻町",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.higashiagatsuma.gunma.jp/www/contents/1404088799422/index.html",
+          "label": "東吾妻町の路線バス（トップページ） | 東吾妻町",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町本文は更新日なしで回数券等表記、県一覧は1日券6,000円相当。交付される券種・枚数・期限は総務課0279-68-2111へ確認してください。一般回数券は2025/3/31販売終了、旧券利用期限2027/3/31。"
+    },
+    {
+      "slug": "numata",
+      "name": "沼田市",
+      "status": "active",
+      "summary": "65歳以上の市民は登録ICと高齢者証提示で、市内対象関越交通バス運賃が原則半額になります。デマンドバスは65歳以上の県シニアパスポート提示でも現金等払いで半額です。",
+      "programs": [
+        {
+          "name": "高齢者バス利用助成",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "沼田市に住民登録のある65歳以上。記名式Suica/PASMO/nolbéと高齢者証を登録。モバイルIC不可。",
+          "benefit": "対象バス運賃の半額補助。",
+          "fare": "割引後10円未満切上げ。降車時高齢者証を提示し半額設定後、登録ICで決済。新規ICは1,000円（預り金500＋最小チャージ500）必要。",
+          "routes": "市内運行の関越交通IC対応路線（アップル号除外）。",
+          "apply": "関越交通沼田営業所で身分証・記名ICを持参して登録（8:30～17:00無休）。鎌田営業所も可、利用開始まで時間要する場合あり。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.numata.gunma.jp/life/fukushi/zaitaku/1013093.html",
+              "label": "高齢者バス利用助成｜沼田市公式ホームページ",
+              "updated": "2025-10-22",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "デマンドバス65歳以上運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上でぐーちょきシニアパスポートを提示。居住限定の記載なし。IC助成を使う場合は市民登録等の別条件。",
+          "benefit": "通常1乗車400円を200円に割引。",
+          "fare": "パスポート提示で200円（現金又はtengooスマホ版のみ）。交通系ICの高齢者助成は別途登録、CエリアIC非対応。",
+          "routes": "沼田市デマンドバスA旧沼田・B白沢/利根南・C利根北。同一エリア内のみ。",
+          "apply": "シニアパスポート提示で利用。MONET・市LINE・電話で7日前～当日希望30分前に予約。パスポート取得手順は市企画政策課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.numata.gunma.jp/life/kotsu/bus/1012934.html",
+              "label": "デマンドバスの運行内容｜沼田市公式ホームページ",
+              "updated": "2026-01-27",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.numata.gunma.jp/life/fukushi/zaitaku/1013093.html",
+          "label": "高齢者バス利用助成｜沼田市公式ホームページ",
+          "updated": "2025-10-22",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.numata.gunma.jp/life/kotsu/bus/1013859.html",
+          "label": "沼田市委託路線バスへの交通系ICカード決済導入及びバスカードの利用終了について｜沼田市公式ホームページ",
+          "updated": "2024-02-09",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.numata.gunma.jp/life/kotsu/anzen/1007660.html",
+          "label": "沼田市高齢者運転免許証自主返納支援事業｜沼田市公式ホームページ",
+          "updated": "2025-03-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.numata.gunma.jp/life/kotsu/bus/1012934.html",
+          "label": "デマンドバスの運行内容｜沼田市公式ホームページ",
+          "updated": "2026-01-27",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "旧敬老カードは販売・利用終了。登録IC紛失・更新等は関越交通沼田営業所0278-23-1111へ。シニアパスポート取得手順は企画政策課0278-23-2111へ確認してください。"
+    },
+    {
+      "slug": "katashina",
+      "name": "片品村",
+      "status": "active",
+      "summary": "65歳以上の村民は、登録ICで利根沼田エリア路線バスが半額になります。村内無料バスは別の全年齢サービスです。",
+      "programs": [
+        {
+          "name": "敬老者路線バス割引補助",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の片品村民。記名Suica/PASMO/nolbé登録、モバイルIC不可。",
+          "benefit": "利根沼田エリア路線バス運賃半額。",
+          "fare": "降車時登録証提示、半額設定後IC支払。残高不足はチャージ必要。端数処理は記載なし。",
+          "routes": "利根沼田エリア路線バス。個別路線一覧は制度チラシに記載なし。",
+          "apply": "関越交通鎌田営業所等で本人確認書類を持参、割引乗車登録証とIC登録。登録証は取得から2回目誕生月末まで有効。新規IC1,000円（預り金500＋チャージ500）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.katashina.gunma.jp/gaiyou/kakuka/hoken/files/koureibus.pdf",
+              "label": "敬老者路線バス割引補助制度について（2023年3月版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.vill.katashina.gunma.jp/gaiyou/kakuka/hoken/files/service_pamphlet_r7.pdf",
+              "label": "片品村福祉サービスパンフレット（令和7年度）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.katashina.gunma.jp/gaiyou/kakuka/hoken/2025-0219-1433-38.html",
+          "label": "敬老者 路線バス割引補助制度について｜役場の概要｜片品村役場ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.katashina.gunma.jp/gaiyou/kakuka/hoken/files/koureibus.pdf",
+          "label": "敬老者路線バス割引補助制度について（2023年3月版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.katashina.gunma.jp/gaiyou/kakuka/hoken/files/service_pamphlet_r7.pdf",
+          "label": "片品村福祉サービスパンフレット（令和7年度）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "割引説明資料は2023年版、福祉パンフレット令和7年で更新日なし。対象路線・現行IC/端数条件は保健福祉課0278-58-2115へ確認してください。"
+    },
+    {
+      "slug": "kawaba",
+      "name": "川場村",
+      "status": "active",
+      "summary": "満65歳以上の村民は登録証提示とカード型IC支払いで対象バス運賃が半額です。",
+      "programs": [
+        {
+          "name": "高齢者バス路線利用促進事業",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "川場村に住民登録のある満65歳以上。敬老割引乗車登録証とカード型IC登録必要。モバイルSuica/PASMO不可。",
+          "benefit": "通常運賃の半額。",
+          "fare": "村の案内では1円未満の端数を切り捨て。運転手へ登録証提示後、機器設定を待って登録ICで支払。村案内と近隣の同事業者制度で端数処理が異なるため、実際の料金は関越交通沼田営業所0278-23-1111へ確認してください。",
+          "routes": "沼田市・利根郡・吾妻郡高山村の一部を運行する路線バス。高速バス除く。",
+          "apply": "関越交通沼田営業所で敬老割引乗車登録証を発行・IC登録。IC再発行時は登録証再発行が必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.kawaba.gunma.jp/kurashi/fukushi/fukushi/post_26.html",
+              "label": "高齢者（６５歳以上）のバス路線利用促進事業補助金｜川場村",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kan-etsu.net/publics/index/114/",
+              "label": "関越交通の路線バス運賃・北部地区高齢者割引",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.kawaba.gunma.jp/kurashi/fukushi/fukushi/post_26.html",
+          "label": "高齢者（６５歳以上）のバス路線利用促進事業補助金｜川場村",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.kawaba.gunma.jp/kurashi/tetsuzuki/folder/post_12.html",
+          "label": "川場村 高齢者運転免許証自主返納支援事業について｜川場村",
+          "updated": "2025-03-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://kan-etsu.net/publics/index/114/",
+          "label": "関越交通の路線バス運賃・北部地区高齢者割引",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2026/8/20村案内は1円未満切捨てですが、同じ関越交通の近隣制度は10円単位切上げのため、実際の端数処理は関越交通沼田営業所0278-23-1111又はむらづくり振興課0278-25-5071へ確認してください。"
+    },
+    {
+      "slug": "showa",
+      "name": "昭和村",
+      "status": "active",
+      "summary": "65歳以上の村民は登録証とカード型ICで対象路線バスが半額。デマンドバスは通常400円を200円です。",
+      "programs": [
+        {
+          "name": "デマンドバス65歳以上割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "昭和村在住の65歳以上。登録したカード型ICと敬老割引乗車登録証が必要。モバイルIC不可。",
+          "benefit": "対象路線運賃5割引。",
+          "fare": "デマンドバス通常400円を200円。登録証提示し設定後、登録ICで支払。一般路線バスの端数処理は記載なし。",
+          "routes": "昭和村デマンドバス（ベジバス）：村内全域及び沼田市一部、市内バス停間のみ不可。登録ICによる北部地区路線バス割引もあり、沼田市・利根郡・高山村一部（高速除く）。",
+          "apply": "関越交通沼田営業所で敬老割引乗車登録証を発行。乗車1時間前までに電話又はMONETアプリで予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/bus/2022-1209-1651-21.html",
+              "label": "デマンドバスの運行について｜くらし・手続き ｜群馬県昭和村公式ホームページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kan-etsu.net/publics/index/114/",
+              "label": "関越交通の路線バス運賃・北部地区高齢者割引",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/bus/2022-1209-1651-21.html",
+          "label": "デマンドバスの運行について｜くらし・手続き ｜群馬県昭和村公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/bus/2017-0224-1350-29.html",
+          "label": "路線バス時刻表｜くらし・手続き ｜群馬県昭和村公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/bus/2022-1212-2308-21.html",
+          "label": "デマンドバスご利用ガイド｜くらし・手続き ｜群馬県昭和村公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.gunma.jp/page/3211.html",
+          "label": "高齢者の運転免許証自主返納サポート - 群馬県ホームページ(道路管理課)",
+          "updated": "2026-07-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://kan-etsu.net/publics/index/114/",
+          "label": "関越交通の路線バス運賃・北部地区高齢者割引",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "資料は更新日なし。対象路線・現行端数処理は企画課0278-25-3442又は関越交通沼田営業所0278-23-1111へ確認してください。"
+    },
+    {
+      "slug": "minakami",
+      "name": "みなかみ町",
+      "status": "notfound",
+      "summary": "路線バス半額助成は年齢を問わず全町民が対象です。返納支援は商品券等で、高齢者独自のバス乗車料金助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.minakami.gunma.jp/politics/06gyousei/koutsuu/2023-0322-1947-26.html",
+          "label": "みなかみ町路線バス運賃助成事業 | みなかみ町",
+          "updated": "2025-06-26",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.minakami.gunma.jp/politics/05kouhou/files/20260216_kuchoukairan_menkyo_1.pdf",
+          "label": "みなかみ町高齢者運転免許証自主返納支援事業チラシ（2026年2月回覧）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "路線バス案内2025/6/26。高齢者独自支援の現行有無は企画課0278-25-5001へ確認してください。"
+    },
+    {
+      "slug": "kiryu",
+      "name": "桐生市",
+      "status": "active",
+      "summary": "70歳以上の市民には安価な敬老パスポート。正式返納した市民は年齢を問わず1年分のおりひめバス定期券を選べます。",
+      "programs": [
+        {
+          "name": "おりひめ敬老パスポート",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "桐生市内の70歳以上。購入時年齢確認書類必要、券面本人のみ利用。",
+          "benefit": "1か月500円、3か月1,460円、6か月2,850円で全線乗り放題。",
+          "fare": "有効な定期券を運転手へ提示。通常大人1路線200円。",
+          "routes": "おりひめバス全線共通（予約制乗合タクシーを含む）。",
+          "apply": "年齢が確認できる健康保険証等を提示、市役所売店・市民活動推進センターゆい・公民館等販売場所で購入。車内購入不可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/bus/1000998.html",
+              "label": "おりひめバスの運賃と各種乗車券｜桐生市ホームページ",
+              "updated": "2026-06-24",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/bus/1000992.html",
+              "label": "おりひめバスの利用方法について｜桐生市ホームページ",
+              "updated": "2025-04-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納おりひめ1年定期券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "有効期間内の免許を自主返納した桐生市民（年齢制限なし）。返納から1か月以内申請。タクシー券との選択制、市外転出時券返還。",
+          "benefit": "1年間分：70歳以上は6か月敬老パスポート2枚、70歳未満は3か月通勤定期券4枚。",
+          "fare": "定期券提示で無料乗車、本人のみ。",
+          "routes": "おりひめバス全線。",
+          "apply": "交通安全協会又は大間々分庁舎で返納し交付申請書写しを受領。1か月以内に市役所3階交通ビジョン推進室へ提出。代理申請可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/1000999.html",
+              "label": "運転免許証自主返納に係る路線バス等無料乗車券の交付｜桐生市ホームページ",
+              "updated": "2025-06-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/bus/1000992.html",
+              "label": "おりひめバスの利用方法について｜桐生市ホームページ",
+              "updated": "2025-04-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/bus/1000998.html",
+          "label": "おりひめバスの運賃と各種乗車券｜桐生市ホームページ",
+          "updated": "2026-06-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/bus/1000992.html",
+          "label": "おりひめバスの利用方法について｜桐生市ホームページ",
+          "updated": "2025-04-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kiryu.lg.jp/kurashi/kotsu/1000999.html",
+          "label": "運転免許証自主返納に係る路線バス等無料乗車券の交付｜桐生市ホームページ",
+          "updated": "2025-06-27",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "利用方法2025/4/16、返納案内2025/6/27。定期券の現行手続きは交通ビジョン推進室0277-48-9041へ確認してください。"
+    },
+    {
+      "slug": "ota",
+      "name": "太田市",
+      "status": "henno",
+      "summary": "正式返納した市民に公共バス回数券5,500円分を交付。おうかがい市バスは高齢者等向けサービスですが別の高齢者運賃助成は未発見です。",
+      "programs": [
+        {
+          "name": "自主返納公共バス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "住民票が太田市にあり自主返納した方。免許証・取消通知書の住所とも太田市。年齢制限の明記なし。返納後90日以内申請。",
+          "benefit": "市公共バス回数券5,500円分。",
+          "fare": "回数券で乗車料金に充当。おうかがい市バス通常200～300円。券期限・枚数・不足額精算は記載なし。",
+          "routes": "シティライナーおおた・おうかがい市バス。おうかがいは70歳以上等、利用登録・自力乗降が別途必要。",
+          "apply": "取消通知書原本・無効免許証・申請書を市役所5階地域モビリティ戦略課へ90日以内提出。代理人は委任欄記載押印・本人確認書類。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ota.gunma.jp/page/1043261.html",
+              "label": "運転免許証自主返納支援事業 - 太田市ホームページ（地域モビリティ戦略課）",
+              "updated": "2026-08-18",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.ota.gunma.jp/page/2270.html",
+              "label": "おうかがい市バスのご案内 - 太田市ホームページ（地域モビリティ戦略課）",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.ota.gunma.jp/page/1043261.html",
+          "label": "運転免許証自主返納支援事業 - 太田市ホームページ（地域モビリティ戦略課）",
+          "updated": "2026-08-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ota.gunma.jp/page/2270.html",
+          "label": "おうかがい市バスのご案内 - 太田市ホームページ（地域モビリティ戦略課）",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ota.gunma.jp/page/2282.html",
+          "label": "市営無料バスのご案内 - 太田市ホームページ（地域モビリティ戦略課）",
+          "updated": "2026-06-17",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "回数券の期限・枚数・不足額精算は地域モビリティ戦略課0276-47-1826へ確認してください。"
+    },
+    {
+      "slug": "tatebayashi",
+      "name": "館林市",
+      "status": "active",
+      "summary": "広域公共路線バスは65歳以上1回100円。65～69歳向け定期券と70歳以上の格安定期券があります。",
+      "programs": [
+        {
+          "name": "65歳以上普通運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上。運賃欄に町市内居住限定の記載なし。年齢確認書類・利用時の提示方法は窓口確認。",
+          "benefit": "一般200円を100円に割引。",
+          "fare": "1乗車100円、現金又は回数券で支払。",
+          "routes": "館林都市圏の広域公共路線バス。",
+          "apply": "乗車時利用。年齢確認方法はつゝじ観光バス等へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65～69歳定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "満65歳以上70歳未満。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月3,000円、3か月8,550円、6か月16,200円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上シニア定期券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "70歳以上。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月500円、3か月1,500円、6か月3,000円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "高齢者路線バス無料定期券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "館林市内に居住・住民登録の満70歳以上。①免許・自動車を持たず運転できる者と同居していない、又は②日常的に公共交通以外の交通手段を有していない方。",
+          "benefit": "全路線利用可能な6か月分定期券を無料交付。",
+          "fare": "有効定期券提示で無料。",
+          "routes": "館林都市圏の公共路線バス全路線。",
+          "apply": "初回は身分証持参し市役所3階安全安心課で申請書記入。審査後約2週間で郵送。更新は窓口又はオンライン、代理可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/030/20200107225000.html",
+              "label": "高齢者路線バス定期券の無料交付｜館林市",
+              "updated": "2025-09-12",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+          "label": "路線バスの乗り方・運賃｜館林市",
+          "updated": "2025-12-11",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/030/20200107225000.html",
+          "label": "高齢者路線バス定期券の無料交付｜館林市",
+          "updated": "2025-09-12",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tatebayashi.gunma.jp/s015/anzen/050/010/20200109233000.html",
+          "label": "運転免許返納者に対するタクシー券の交付｜館林市",
+          "updated": "2026-05-29",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "無料定期案内2025/9/12。年齢確認手順・現行交付は安全安心課0276-47-5115へ。"
+    },
+    {
+      "slug": "midori",
+      "name": "みどり市",
+      "status": "active",
+      "summary": "東町路線バスは市内70歳以上150円。正式返納時65歳以上の市民には共通回数券、80歳以上は増額されます。",
+      "programs": [
+        {
+          "name": "東町路線バス70歳以上割引",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "みどり市内在住の70歳以上。身分証等年齢確認書類を提示。",
+          "benefit": "通常大人300円を150円に割引。",
+          "fare": "1乗車150円。",
+          "routes": "東町路線バス。電話でバス・大間々笠懸路線にはこの割引適用記載なし。",
+          "apply": "乗車時に年齢を確認できる身分証明書等を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002133.html",
+              "label": "東町路線バス",
+              "updated": "2026-08-28",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納乗合バス共通回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "みどり市住民基本台帳記載者、免許返納時満65歳以上。有効期間内免許を自主返納、返納30日以内申請。",
+          "benefit": "3,600円分共通回数券を65～79歳2セット、80歳以上3セット交付。",
+          "fare": "券で支払。東町通常300円（市内70以上150円）、電話でバス300円、大間々笠懸100円。返納券期限・不足額精算は記載なし。",
+          "routes": "東町路線バス・大間々笠懸路線バス・電話でバス（デマンドバス）。",
+          "apply": "有効な免許証を桐生交通安全協会（月～金）又は大間々分庁舎（火曜）へ持参し返納・申請。返納30日以内。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.midori.gunma.jp/kurashi/1001628/1002066.html",
+              "label": "高齢者運転免許証自主返納支援事業",
+              "updated": "2026-08-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002133.html",
+              "label": "東町路線バス",
+              "updated": "2026-08-28",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002181.html",
+              "label": "電話でバス（デマンドバス）",
+              "updated": "2026-09-18",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002151.html",
+              "label": "大間々・笠懸路線バス",
+              "updated": "2026-09-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002133.html",
+          "label": "東町路線バス",
+          "updated": "2026-08-28",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002151.html",
+          "label": "大間々・笠懸路線バス",
+          "updated": "2026-09-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002181.html",
+          "label": "電話でバス（デマンドバス）",
+          "updated": "2026-09-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.midori.gunma.jp/kurashi/1001628/1002066.html",
+          "label": "高齢者運転免許証自主返納支援事業",
+          "updated": "2026-08-05",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納回数券の期限・不足額精算は防災危機管理課0277-76-0960へ確認してください。通常割引は企画課0277-76-0962へ。"
+    },
+    {
+      "slug": "itakura",
+      "name": "板倉町",
+      "status": "active",
+      "summary": "広域公共路線バスは65歳以上1回100円。65～69歳向け定期券と70歳以上の格安定期券があります。",
+      "programs": [
+        {
+          "name": "65歳以上普通運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上。運賃欄に町市内居住限定の記載なし。年齢確認書類・利用時の提示方法は窓口確認。",
+          "benefit": "一般200円を100円に割引。",
+          "fare": "1乗車100円、現金又は回数券で支払。",
+          "routes": "館林都市圏の広域公共路線バス。",
+          "apply": "乗車時利用。年齢確認方法はつゝじ観光バス等へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.itakura.gunma.jp/cont/s002000/d002010/20160331123926.html",
+              "label": "路線バス運賃 - 板倉町",
+              "updated": "2025-07-23",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65～69歳定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "満65歳以上70歳未満。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月3,000円、3か月8,550円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.itakura.gunma.jp/cont/s002000/d002010/20160331123926.html",
+              "label": "路線バス運賃 - 板倉町",
+              "updated": "2025-07-23",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上シニア定期券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "70歳以上。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月500円、3か月1,500円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.itakura.gunma.jp/cont/s002000/d002010/20160331123926.html",
+              "label": "路線バス運賃 - 板倉町",
+              "updated": "2025-07-23",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.itakura.gunma.jp/cont/s002000/d002010/20160331123926.html",
+          "label": "路線バス運賃 - 板倉町",
+          "updated": "2025-07-23",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.itakura.gunma.jp/cont/s016000/d016010/20211215115007.html",
+          "label": "福祉タクシー利用券の交付 - 板倉町",
+          "updated": "2026-08-18",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内2025/7/23。現行料金・本人確認・対象路線は総務課安全安心係0276-82-6129又はつゝじ観光バス0276-74-6555へ確認してください。"
+    },
+    {
+      "slug": "meiwa",
+      "name": "明和町",
+      "status": "active",
+      "summary": "広域公共路線バスは65歳以上1回100円。65～69歳向け定期券と70歳以上の格安定期券があります。",
+      "programs": [
+        {
+          "name": "65歳以上普通運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上。運賃欄に町市内居住限定の記載なし。年齢確認書類・利用時の提示方法は窓口確認。",
+          "benefit": "一般200円を100円に割引。",
+          "fare": "1乗車100円、現金又は回数券で支払。",
+          "routes": "館林都市圏の広域公共路線バス。",
+          "apply": "乗車時利用。年齢確認方法はつゝじ観光バス等へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65～69歳定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "満65歳以上70歳未満。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月3,000円、3か月8,550円、6か月16,200円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上シニア定期券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "70歳以上。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月500円、3か月1,500円、6か月3,000円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+              "label": "路線バスの乗り方・運賃｜館林市",
+              "updated": "2025-12-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.meiwa.gunma.jp/life/soshiki/somu/1/2/674.html",
+          "label": "広域公共路線バス／群馬県明和町｜公式ホームページ",
+          "updated": "2023-09-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
+          "label": "路線バスの乗り方・運賃｜館林市",
+          "updated": "2025-12-11",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.meiwa.gunma.jp/life/kenko_fukushi/10/4509.html",
+          "label": "福祉タクシー利用料金助成事業／群馬県明和町｜公式ホームページ",
+          "updated": "2025-04-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町案内2023/9/1。現行対象路線・年齢確認方法は総務課危機管理係0276-84-3111へ確認してください。"
+    },
+    {
+      "slug": "chiyoda",
+      "name": "千代田町",
+      "status": "active",
+      "summary": "広域公共路線バスは65歳以上1回100円。65～69歳向け定期券と70歳以上の格安定期券があります。",
+      "programs": [
+        {
+          "name": "65歳以上普通運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上。運賃欄に町市内居住限定の記載なし。年齢確認書類・利用時の提示方法は窓口確認。",
+          "benefit": "一般200円を100円に割引。",
+          "fare": "1乗車100円、現金又は回数券で支払。",
+          "routes": "館林都市圏の広域公共路線バス。",
+          "apply": "乗車時利用。年齢確認方法はつゝじ観光バス等へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.chiyoda.gunma.jp/kikakuzaisei/kikaku/bus/kikaku028.html",
+              "label": "【運賃】館林・千代田線、館林・明和・千代田線　共通 | 群馬県千代田町公式ウェブサイト",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65～69歳定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "満65歳以上70歳未満。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月3,000円、3か月8,550円、6か月16,200円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.chiyoda.gunma.jp/kikakuzaisei/kikaku/bus/kikaku028.html",
+              "label": "【運賃】館林・千代田線、館林・明和・千代田線　共通 | 群馬県千代田町公式ウェブサイト",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上シニア定期券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "70歳以上。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月500円、3か月1,500円、6か月3,000円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "館林都市圏の広域公共路線バス全線。",
+          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.chiyoda.gunma.jp/kikakuzaisei/kikaku/bus/kikaku028.html",
+              "label": "【運賃】館林・千代田線、館林・明和・千代田線　共通 | 群馬県千代田町公式ウェブサイト",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.chiyoda.gunma.jp/kikakuzaisei/kikaku/bus/kikaku028.html",
+          "label": "【運賃】館林・千代田線、館林・明和・千代田線　共通 | 群馬県千代田町公式ウェブサイト",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.chiyoda.gunma.jp/kikakuzaisei/kikaku/bus/kikaku023.html",
+          "label": "館林・千代田線 | 群馬県千代田町公式ウェブサイト",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.chiyoda.gunma.jp/kenkou/chiiki/chiiki004.html",
+          "label": "高齢者等生活支援事業（福祉タクシー券・買い物券交付） | 群馬県千代田町公式ウェブサイト",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町案内は更新日なし。現行路線・年齢確認方法は総合政策課まちづくり戦略室0276-86-7007へ確認してください。"
+    },
+    {
+      "slug": "oizumi",
+      "name": "大泉町",
+      "status": "active",
+      "summary": "65歳以上の町民等向け乗合バス「ほほえみ」はR9/2/26まで無料。正式返納時65歳以上の町民にはバス券も交付します。",
+      "programs": [
+        {
+          "name": "ほほえみ期間限定運賃補助",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "町内在住の65歳以上で1人で乗り降りできる方。事前登録必要。町内妊婦・未就学児も別資格で対象。",
+          "benefit": "R8/3/2～R9/2/26の1年間、町内・対象町外移動を無料。",
+          "fare": "期間中無料。通常町内100円、町外300円。",
+          "routes": "乗合バスほほえみ：町全域、県立がんセンター・堀江病院。自宅又は指定乗降所間のみ。",
+          "apply": "高齢介護課窓口・電話又はオンラインで利用登録。予約センターへ1週間前～当日希望時刻1時間前に電話予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.oizumi.gunma.jp/s014/kurashi/010/010/010/20200730120027.html",
+              "label": "高齢者等デマンド交通運行事業｜大泉町",
+              "updated": "2026-06-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.oizumi.gunma.jp/s014/kurashi/010/010/060/20220630165213.html",
+              "label": "デマンド交通「ほほえみ」の運賃を補助します｜大泉町",
+              "updated": "2026-02-10",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納バス回数券交付",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "大泉町に居住・住所があり返納時65歳以上、町税滞納なし、過去同支援未利用。正式自主返納。",
+          "benefit": "あおぞら回数券2,200円分＋ほほえみ回数券3,300円分。タクシー券10,000円分も併せて交付、申請時1回のみ。",
+          "fare": "回数券支払。ほほえみはR9/2/26まで無料運行、券利用期限・枚数精算・不足額は記載なし。",
+          "routes": "広域公共バスあおぞら、高齢者デマンド交通ほほえみ。",
+          "apply": "取消通知書・返納免許証又は身分証・申請書等を町役場2階安全安心課へ、原則本人。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.oizumi.gunma.jp/s004/anzen/030/010/20200826090127.html",
+              "label": "運転免許自主返納支援事業｜大泉町",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.oizumi.gunma.jp/s014/kurashi/010/010/060/20220630165213.html",
+              "label": "デマンド交通「ほほえみ」の運賃を補助します｜大泉町",
+              "updated": "2026-02-10",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.oizumi.gunma.jp/s014/kurashi/010/010/060/20220630165213.html",
+          "label": "デマンド交通「ほほえみ」の運賃を補助します｜大泉町",
+          "updated": "2026-02-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.oizumi.gunma.jp/s014/kurashi/010/010/010/20200730120027.html",
+          "label": "高齢者等デマンド交通運行事業｜大泉町",
+          "updated": "2026-06-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.oizumi.gunma.jp/s004/anzen/030/010/20200826090127.html",
+          "label": "運転免許自主返納支援事業｜大泉町",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納回数券の利用期限・枚数精算は安全安心課0276-63-3111へ確認してください。ほほえみの無料期間後の料金は高齢介護課へ。"
+    },
+    {
+      "slug": "ora",
+      "name": "邑楽町",
+      "status": "active",
+      "summary": "広域公共路線バスは65歳以上1回100円。65～69歳向け定期券と70歳以上の格安定期券があります。",
+      "programs": [
+        {
+          "name": "65歳以上普通運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上。運賃欄に町市内居住限定の記載なし。年齢確認書類・利用時の提示方法は窓口確認。",
+          "benefit": "一般200円を100円に割引。",
+          "fare": "1乗車100円、現金又は回数券で支払。",
+          "routes": "邑楽町内循環線。定期券は館林都市圏の公共路線バスでも利用可能。",
+          "apply": "普通運賃は乗車時利用。定期券は矢島タクシーへ。町役場企画課申込後車内支払・券受渡しも可。年齢確認方法は窓口確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
+              "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
+              "updated": "2025-01-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65～69歳定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "満65歳以上70歳未満。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月3,000円、3か月8,550円、6か月16,200円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "邑楽町内循環線。定期券は館林都市圏の公共路線バスでも利用可能。",
+          "apply": "普通運賃は乗車時利用。定期券は矢島タクシーへ。町役場企画課申込後車内支払・券受渡しも可。年齢確認方法は窓口確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
+              "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
+              "updated": "2025-01-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上シニア定期券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "70歳以上。居住限定の記載なし、購入時の年齢確認方法は窓口確認。",
+          "benefit": "1か月500円、3か月1,500円、6か月3,000円。",
+          "fare": "有効な定期券提示で対象全線に乗車。",
+          "routes": "邑楽町内循環線。定期券は館林都市圏の公共路線バスでも利用可能。",
+          "apply": "普通運賃は乗車時利用。定期券は矢島タクシーへ。町役場企画課申込後車内支払・券受渡しも可。年齢確認方法は窓口確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
+              "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
+              "updated": "2025-01-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
+          "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
+          "updated": "2025-01-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ora.gunma.jp/s022/030/010/hukushitakusi-ken.html",
+          "label": "福祉タクシー利用券の交付｜群馬県邑楽町",
+          "updated": "2026-03-03",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "循環線案内2025/1/20。現行運賃・年齢確認方法は企画課0276-47-5009又は矢島タクシー0276-60-1212へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.gunma.jp/page/3211.html",
+    "label": "県の運転免許返納支援案内",
+    "checked": "2026-10-07"
+  }
+}
