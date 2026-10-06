@@ -11,6 +11,7 @@ import shutil
 from html import escape
 from pathlib import Path
 from urllib.parse import quote
+from bus_pages import bus_page, bus_path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://jimotokurabe.jp/"
@@ -1350,13 +1351,17 @@ def top_page(data, draft, others=()):
   </ul>
 </details>"""
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
+    bus_links = ''.join(f'<li><a href="{bus_path(d["pref"])}"><b>{e(d["pref"]["name"])}の高齢者バス助成・敬老パス</b>'
+                        f'<span>対象・料金・使えるバス・申し込みを比べる{"（確認用下書き）" if d["bus"].get("draft") else ""}</span></a></li>'
+                        for d in [data, *others] if d.get('bus') and (draft or (not d['bus'].get('draft') and not d['pref'].get('draft'))))
+    bus_block = f'\n<section class="theme" aria-labelledby="th-bus-h"><h2 id="th-bus-h">高齢者のバス支援を比べる</h2><ul class="theme-links">{bus_links}</ul></section>' if bus_links else ''
     main = f"""<section class="top-hero">
   <h1 class="name">じもと<span>くらべ</span></h1>
   <p class="tagline">免許返納の特典・タクシー代の助成を市町村ごとに</p>
   <p class="lead">住んでいる市や町によって、使える特典や助成はちがいます。市町村の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
 </section>
 
-{pref_picker([data, *others])}
+{pref_picker([data, *others])}{bus_block}
 
 <section class="theme" aria-labelledby="th-car-h">
   <h2 id="th-car-h">家族で読む</h2>
@@ -1817,6 +1822,9 @@ def load_pref(henno_file):
         taxi = json.loads(taxi_file.read_text(encoding="utf-8"))
         data["taxi_checked"] = taxi["checked"]
         data["taxi"] = {slug: {"checked": taxi["checked"], **t} for slug, t in taxi["cities"].items()}
+    bus_file = henno_file.with_name(henno_file.name.replace("-menkyo-henno", "-bus"))
+    if bus_file.exists():
+        data['bus'] = json.loads(bus_file.read_text(encoding='utf-8'))
     return data
 
 
@@ -1847,6 +1855,11 @@ def main():
     }
     # 下書きの県（pref.draft が true）は、検索に出さず、サイトマップとトップにも載せない
     hidden = set()
+    for d in [data, *others]:
+        if d.get('bus'):
+            pages[bus_path(d['pref'])] = bus_page(d, d['bus'], a.draft or d['pref'].get('draft', False), shell, jdate)
+            if d['bus'].get('draft') or d['pref'].get('draft'):
+                hidden.add(bus_path(d['pref']))
     for d in others:
         dr = a.draft or d["pref"].get("draft", False)
         pages[list_path(d["pref"])] = list_page(d, dr)
