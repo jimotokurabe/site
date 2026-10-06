@@ -1,0 +1,21 @@
+/* バス支援：既存のカードと文字サイズを使い、5項目を読み比べる。 */
+.bus-controls { display: flex; flex-wrap: wrap; gap: .8rem 1.2rem; }
+.bus-controls .search { flex: 1 1 15rem; min-width: 0; }
+.bus-controls input, .bus-controls select { width: 100%; min-height: 48px; box-sizing: border-box; font: inherit; }
+.bus-controls input { border: 2px solid var(--line); border-radius: .5rem; padding: .65rem; background: var(--surface); color: var(--ink); }
+.bus-controls select { border: 2px solid var(--line); border-radius: .5rem; padding: .65rem; background: var(--surface); color: var(--ink); }
+.bus-program { margin-top: .8rem; }
+.bus-program h4 { margin: 0 0 .65rem; font-size: 1.1rem; }
+.bus-program h4 .chip { display: inline-block; margin: .3rem .5rem; }
+.bus-sources { margin: .8rem 0 0; padding-left: 1.2rem; overflow-wrap: anywhere; }
+.bus-sources li + li { margin-top: .7rem; }
+.bus-sources .dates { display: block; }
+.bus-card .chip { white-space: normal; }
+.bus-card .card-head { flex-wrap: wrap; }
+.bus-page [hidden] { display: none !important; }
+.bus-page .filters button { min-height: 48px; }
+.bus-card > .card-head > .chip { background: var(--elder-bg); color: var(--elder-fg); }
+.bus-card.is-notfound > .card-head > .chip { background: var(--nf-bg); color: var(--nf-fg); }
+.bus-scope { margin-top: 1.2rem; padding: .7rem 1rem; border: 1px solid var(--line); border-radius: .6rem; }
+.bus-scope summary { cursor: pointer; font-weight: 700; }
+

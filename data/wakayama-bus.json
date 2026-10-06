@@ -1,0 +1,1744 @@
+{
+  "checked": "2026-10-06",
+  "draft": false,
+  "cities": [
+    {
+      "slug": "wakayama",
+      "name": "和歌山市",
+      "status": "active",
+      "summary": "70歳以上の市民は元気70パスで対象路線バスを1乗車100円で利用できます。",
+      "programs": [
+        {
+          "name": "元気70パス（バスカード）",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "和歌山市に住民登録がある70歳以上。年度中に70歳になる人は誕生月以降。駐車場利用券との選択制。",
+          "benefit": "対象路線バスを1乗車100円で利用できるカードを交付。",
+          "fare": "1乗車100円。",
+          "routes": "市内の区域を運行する和歌山バス・和歌山バス那賀。",
+          "apply": "高齢者・地域福祉課または支所・連絡所で受取。初回は老人優待利用券（なければ本人確認書類）、印鑑または署名、顔写真が必要。",
+          "notes": [
+            "利用時は写真付き老人優待利用券を提示。令和2年度以降のバスカードは期限なく利用可、毎年度受取不要。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.wakayama.wakayama.jp/kurashi/kourei_kaigo/1001096/1006021.html",
+              "label": "元気70パス",
+              "updated": "2025-10-03",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.wakayama.wakayama.jp/kurashi/kourei_kaigo/1001096/1006021.html",
+          "label": "元気70パス",
+          "updated": "2025-10-03",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "ページ更新から1年以上が経過しています。高齢者・地域福祉課（073-435-1063）で現行条件を確認してください。"
+    },
+    {
+      "slug": "kainan",
+      "name": "海南市",
+      "status": "henno",
+      "summary": "運転経歴証明書を持つ人は市コミュニティバスを1乗車50円で利用できます。",
+      "programs": [
+        {
+          "name": "コミュニティバス運転経歴証明書割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書所持者。年齢・居住条件の記載なし。",
+          "benefit": "通常100円の運賃が50円。50円券11枚の回数券は500円。",
+          "fare": "全区間1乗車50円。",
+          "routes": "海南市コミュニティバス全路線。",
+          "apply": "回数券購入時に運転経歴証明書を提示。購入は現金のみ、車内または海南市物産観光センター。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kainan.lg.jp/kakubusho/soumubu/shiminkoryugakari/shiminkoryugakaritorikumi/komyuniti/6167.html",
+              "label": "コミュニティバス回数券の発行について",
+              "updated": "2026-04-10",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kainan.lg.jp/kakubusho/soumubu/shiminkoryugakari/shiminkoryugakaritorikumi/komyuniti/6167.html",
+          "label": "コミュニティバス回数券の発行について",
+          "updated": "2026-04-10",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "年齢・居住条件は市民交流課（073-483-8455）で確認してください。"
+    },
+    {
+      "slug": "kimino",
+      "name": "紀美野町",
+      "status": "active",
+      "summary": "条件を満たす高齢者に年18,000円のバス助成券。別に返納者はふれあい号100円です。",
+      "programs": [
+        {
+          "name": "高齢者等外出支援タクシー・バス助成券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "町内在住。満65歳以上（年度内到達含む）で普通自動車運転免許を持たない人（返納・失効・原付やバイクのみ含む）。または満75歳以上（年度内到達含む）で75歳以上のみの世帯、同居75歳未満全員が普通免許なし又は対象障害者の世帯。",
+          "benefit": "100円券180枚（18,000円分）を交付。令和8年4月1日〜令和9年3月31日に利用可。",
+          "fare": "運賃の一部・全部を助成券で支払い。1回の枚数制限なし、おつりなし。",
+          "routes": "大十オレンジバス・紀美野町コミュニティバス（指定タクシーでも利用可）。",
+          "apply": "4月1日受付開始。企画管財課・保健福祉課・美里支所住民室へ窓口・郵送又はオンライン申請。本人確認書類や免許返納証明等を対象区分ごとに準備。",
+          "notes": [
+            "高齢者区分の券は本人と同一世帯員も使用可。再発行不可。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.town.kimino.wakayama.jp/sagasu/kikakukanzaika/koutsuu/2177.html",
+              "label": "令和8年度高齢者等外出支援タクシー・バス助成券事業",
+              "updated": "2026-03-27",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "ふれあい号の運転経歴証明書割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書所持者。年齢・居住条件の記載なし。",
+          "benefit": "通常大人200円の町内運賃を100円に割引。",
+          "fare": "1乗車100円。",
+          "routes": "紀美野町コミュニティバス（ふれあい号）町内一律。",
+          "apply": "乗車時に運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kimino.wakayama.jp/material/files/group/4/communitybustimeschedule.pdf",
+              "label": "コミュニティバス運行時刻表（令和6年8月1日改正）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kimino.wakayama.jp/sagasu/kikakukanzaika/koutsuu/2177.html",
+          "label": "令和8年度高齢者等外出支援タクシー・バス助成券事業",
+          "updated": "2026-03-27",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kimino.wakayama.jp/material/files/group/4/communitybustimeschedule.pdf",
+          "label": "コミュニティバス運行時刻表（令和6年8月1日改正）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "令和8年度の助成券条件は確認済み。ふれあい号時刻表は令和6年8月改正で更新日がなく、割引の現行条件は企画管財課（073-489-5913）で確認してください。"
+    },
+    {
+      "slug": "kinokawa",
+      "name": "紀の川市",
+      "status": "notfound",
+      "summary": "確認した交通・高齢者福祉の案内では、市独自の高齢者向けバス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.kinokawa.lg.jp/007/kinokawa-community-bus.html",
+          "label": "紀の川コミュニティバス",
+          "updated": "2026-03-31",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.kinokawa.lg.jp/024/hukusijigyou.html",
+          "label": "高齢者福祉事業のご紹介",
+          "updated": "2025-04-10",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "貴志川線70おでかけ回数券は鉄道の制度です。地域巡回バス等の割引・新設助成の有無は交通政策課（0736-77-2511）へ確認してください。高齢者福祉ページは更新日の記載がありません。"
+    },
+    {
+      "slug": "iwade",
+      "name": "岩出市",
+      "status": "active",
+      "summary": "市内在住の満65歳以上はあいあいカードで市巡回バスが無料になります。",
+      "programs": [
+        {
+          "name": "あいあいカード",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "岩出市内に住所を有する満65歳以上の人。",
+          "benefit": "市巡回バスに無料で乗れるカードを交付。",
+          "fare": "無料。",
+          "routes": "岩出市巡回バス（西・中央・東の3コース）。",
+          "apply": "本人確認書類を持ち市役所保険介護課へ申請。降車時にカードを運転手に提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.iwade.lg.jp/soshiki/3/2588.html",
+              "label": "岩出市巡回バスのご利用案内",
+              "updated": "2026-05-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.iwade.lg.jp/soshiki/3/2588.html",
+          "label": "岩出市巡回バスのご利用案内",
+          "updated": "2026-05-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "hashimoto",
+      "name": "橋本市",
+      "status": "ended",
+      "summary": "敬老バス乗車券事業の廃止が市広報に明記されています。現在の運賃案内では高齢者向けの割引は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.hashimoto.lg.jp/kurashi_tetsuduki/koukyoukoutsuu/15875.html",
+          "label": "コミュニティバス・デマンドタクシーのごあんない",
+          "updated": "2025-01-27",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.hashimoto.lg.jp/material/files/group/28/2016-03-00.pdf",
+          "label": "広報はしもと平成28年3月号",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市広報は平成28年3月号、現運賃ページも1年以上前です。新しい助成・割引の有無は地域振興室（0736-33-7117）へ確認してください。返納時のHashi-Moポイントはバス利用用途の明記を確認できませんでした。"
+    },
+    {
+      "slug": "katsuragi",
+      "name": "かつらぎ町",
+      "status": "notfound",
+      "summary": "確認した町の交通案内・県の高齢者支援一覧では、高齢者向けバス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.katsuragi.wakayama.jp/010/070/2023-0816-0925-18.html",
+          "label": "コミュニティバス・デマンド乗合交通「かつらいど」",
+          "updated": "2026-09-02",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "新しい助成の有無は企画公室交通政策係（0736-22-0300）へ確認してください。県一覧は更新日の記載がありません。"
+    },
+    {
+      "slug": "kudoyama",
+      "name": "九度山町",
+      "status": "notfound",
+      "summary": "高齢者の移動支援としてシルバータクシー助成はありますが、確認した公式資料ではバス運賃の助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kudoyama.lg.jp/fukushi/kaigo-hoken/files/kaigokeikaku9.pdf",
+          "label": "第9期介護保険事業計画（令和6〜8年度）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kudoyama.lg.jp/bousai/koutu/jisyuhennoseido.html",
+          "label": "運転免許の自主返納・運転経歴証明書について",
+          "updated": "2024-08-13",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "令和6年の計画・返納案内で確認しました。新しいバス助成の有無は福祉課（0736-54-2019）へ確認してください。"
+    },
+    {
+      "slug": "koya",
+      "name": "高野町",
+      "status": "active",
+      "summary": "80歳以上の人と80歳未満の免許返納者等に、年18,000円の外出支援助成券があります。",
+      "programs": [
+        {
+          "name": "外出支援助成券（80歳以上）",
+          "kind": "voucher",
+          "age_min": 80,
+          "eligibility": "4月1日現在で満80歳以上、施設入所者を除く。居住条件は記載なし。",
+          "benefit": "年間18,000円分の外出支援助成券。",
+          "fare": "運賃への券利用。自己負担・1回の利用枚数は記載なし。",
+          "routes": "登録事業者（バス等）。個別路線は記載なし。",
+          "apply": "申請に基づき交付。介護福祉課（0736-56-2933）へ。詳細書類は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.koya.wakayama.jp/img_data/2026/03/76082c2138d6b7f9ad71e893f3398371.pdf",
+              "label": "令和8年度予算説明資料（外出支援助成券交付事業）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "外出支援助成券（免許返納）",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "4月1日現在満80歳未満で運転免許証を返納した人。県一覧では年齢制限なし。",
+          "benefit": "年間18,000円分の外出支援助成券。",
+          "fare": "運賃への券利用。自己負担・1回の利用枚数は記載なし。",
+          "routes": "登録事業者（バス等）。個別路線は記載なし。",
+          "apply": "申請に基づき交付。介護福祉課（0736-56-2933）へ。詳細書類は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.koya.wakayama.jp/img_data/2026/03/76082c2138d6b7f9ad71e893f3398371.pdf",
+              "label": "令和8年度予算説明資料（外出支援助成券交付事業）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "外出支援助成券（医師の診断による運転自粛）",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "4月1日現在満80歳未満で医師の診断により運転を自粛する人。診断書が必要（県一覧）。",
+          "benefit": "年間18,000円分の外出支援助成券。",
+          "fare": "運賃への券利用。自己負担・1回の利用枚数は記載なし。",
+          "routes": "登録事業者（バス等）。個別路線は記載なし。",
+          "apply": "申請に基づき交付。介護福祉課（0736-56-2933）へ。詳細書類は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.koya.wakayama.jp/img_data/2026/03/76082c2138d6b7f9ad71e893f3398371.pdf",
+              "label": "令和8年度予算説明資料（外出支援助成券交付事業）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.koya.wakayama.jp/img_data/2026/03/76082c2138d6b7f9ad71e893f3398371.pdf",
+          "label": "令和8年度予算説明資料（外出支援助成券交付事業）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "令和8年度予算で対象と金額を確認。バス用途は更新日不明の県一覧によるため、登録バス・利用方法・居住条件を介護福祉課（0736-56-2933）で確認してください。"
+    },
+    {
+      "slug": "arida",
+      "name": "有田市",
+      "status": "active",
+      "summary": "75歳以上の市民にありバス無料チケット。返納証明書による100円運賃と市立病院の乗車券サービスもあります。",
+      "programs": [
+        {
+          "name": "デマンドバス無料チケット",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "75歳以上の有田市民。",
+          "benefit": "33枚綴りの無料乗車券を支給。",
+          "fare": "券で無料。",
+          "routes": "有田市デマンドバス（ありバス）。",
+          "apply": "市役所福祉課で本人確認書類を示して受取。電話申込により住民登録地への郵送も可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.arida.lg.jp/kurashi/chiikifukushi/1004920.html",
+              "label": "デマンドバス無料チケットについて",
+              "updated": "2024-08-19",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
+              "label": "有田市デマンドバス（ありバス）",
+              "updated": "2026-07-03",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "ありバス免許返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "高齢者運転免許証返納証明書保持者。具体的な年齢・居住条件は記載なし。",
+          "benefit": "通常大人200円の運賃が100円。",
+          "fare": "1乗車100円。",
+          "routes": "有田市デマンドバス（ありバス）。",
+          "apply": "乗車時に運転手へ証明書等を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
+              "label": "有田市デマンドバス（ありバス）",
+              "updated": "2026-07-03",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "市立病院受診者へのありバス乗車券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を返納した市立病院受診者。県一覧では運転経歴証明書提示。",
+          "benefit": "ありバス乗車券を1枚配布（県一覧）。",
+          "fare": "券で利用。券の区間・追加負担は記載なし。",
+          "routes": "有田市デマンドバス（ありバス）。",
+          "apply": "市立病院に問い合わせ（0737-82-2151）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
+              "label": "有田市デマンドバス（ありバス）",
+              "updated": "2026-07-03",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.arida.lg.jp/kurashi/chiikifukushi/1004920.html",
+          "label": "デマンドバス無料チケットについて",
+          "updated": "2024-08-19",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
+          "label": "有田市デマンドバス（ありバス）",
+          "updated": "2026-07-03",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "無料チケットの数量・対象ページは1年以上前です。福祉課（0737-22-3541）で現行条件を確認してください。病院乗車券の具体条件は県一覧によるため市立病院へ確認してください。県一覧に更新日の記載なし。"
+    },
+    {
+      "slug": "yuasa",
+      "name": "湯浅町",
+      "status": "notfound",
+      "summary": "確認した町の高齢者施策・県の支援一覧では、バス運賃助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.yuasa.wakayama.jp/soshiki/7/4820.html",
+          "label": "湯浅町の高齢者のための施策",
+          "updated": "2022-03-18",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町の高齢者外出支援はリフト付き移送車両による送迎です。バス助成の有無は健康福祉課（0737-64-1120）へ確認してください。県一覧に更新日の記載なし。"
+    },
+    {
+      "slug": "hirogawa",
+      "name": "広川町",
+      "status": "notfound",
+      "summary": "確認した町の交通・福祉案内では、高齢者向けバス運賃助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.hirogawa.wakayama.jp/kankou/access/idoushudan.html",
+          "label": "移動手段のご案内",
+          "updated": "2026-07-29",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.hirogawa.wakayama.jp/kurashi/",
+          "label": "くらし・福祉の案内",
+          "updated": "2026-10-06",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "返納支援はタクシー専用。県一覧のバス停送迎実証は年齢制限なしです。資料に更新日の記載がなく、新しい高齢者向けバス助成の有無は企画政策課（0737-23-7731）へ確認してください。"
+    },
+    {
+      "slug": "aridagawa",
+      "name": "有田川町",
+      "status": "henno",
+      "summary": "免許を返納した高齢者はコミュニティバス運賃が半額の150円になります。",
+      "programs": [
+        {
+          "name": "コミュニティバス免許返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を自主返納した高齢者で運転経歴証明書を持つ人。町ページに具体的年齢の記載なし、県一覧は年齢制限なし。",
+          "benefit": "通常300円の運賃が半額。",
+          "fare": "1人1乗車150円。",
+          "routes": "有田川町コミュニティバス。",
+          "apply": "運転経歴証明書を乗車時に提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.aridagawa.lg.jp/top/kurashi/2/2065.html",
+              "label": "コミュニティバス",
+              "updated": "2025-11-07",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.aridagawa.lg.jp/top/kurashi/2/2065.html",
+          "label": "コミュニティバス",
+          "updated": "2025-11-07",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "和歌山県・運転免許証自主返納者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市町の表現は「高齢者」、県一覧は年齢制限なしのため、年齢条件を企画調整課（0737-22-3293）で確認してください。県一覧に更新日の記載なし。"
+    },
+    {
+      "slug": "gobo",
+      "name": "御坊市",
+      "status": "active",
+      "summary": "在宅の75歳以上で住民税非課税の人に年10,000円の外出支援券があります。",
+      "programs": [
+        {
+          "name": "高齢者外出支援事業",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "在宅で生活する75歳以上で住民税非課税の人。居住条件の詳細は記載なし。",
+          "benefit": "100円のチケットを年間100枚（10,000円分）。",
+          "fare": "券で運賃を支払い。追加負担・おつり等は記載なし。",
+          "routes": "バス・タクシー・紀州鉄道等。県一覧では市の登録を受けた会社。",
+          "apply": "記載なし。健康長寿課（0738-23-5851）へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.gobo.lg.jp/sosiki/siminfukusi/kaigo/tanto/kourei/koureihukushi/1383098631604.html",
+              "label": "介護保険とは関係なく利用できる福祉サービス",
+              "updated": "2024-08-28",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.gobo.lg.jp/sosiki/siminfukusi/kaigo/tanto/kourei/koureihukushi/1383098631604.html",
+          "label": "介護保険とは関係なく利用できる福祉サービス",
+          "updated": "2024-08-28",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "和歌山県・高齢者に対する支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市ページは1年以上前で県一覧も更新日なし。現行条件・登録バス・申請方法を健康長寿課（0738-23-5851）で確認してください。"
+    },
+    {
+      "slug": "mihama",
+      "name": "美浜町",
+      "status": "active",
+      "summary": "75歳以上の在宅町民と70〜74歳の免許返納者・失効者に、年15,000円の外出支援券があります。",
+      "programs": [
+        {
+          "name": "外出支援券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "在宅の高齢者等。75歳以上（今年度中75歳を含む）。",
+          "benefit": "年間15,000円分（100円券150枚）の外出支援券を交付。",
+          "fare": "券で運賃を支払い。詳細は記載なし。",
+          "routes": "バス・タクシー。登録バス名・区間は記載なし。",
+          "apply": "本人確認書類を持ち、かがやく長寿課で申請。返納者は返納証明等も必要。代理人は委任状が必要。乗務員に券を渡して運賃を支払う。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "http://www.town.wakayama-mihama.lg.jp/docs/2022041400012/",
+              "label": "美浜町外出支援事業（令和8年度対象者）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "外出支援券（免許返納者）",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "在宅で免許を自主返納した70歳以上75歳未満（年度中70歳を含む）の人。運転経歴証明書又は取消通知書等を取得。",
+          "benefit": "年間15,000円分（100円券150枚）の外出支援券を交付。",
+          "fare": "券で運賃を支払い。詳細は記載なし。",
+          "routes": "バス・タクシー。登録バス名・区間は記載なし。",
+          "apply": "本人確認書類を持ち、かがやく長寿課で申請。返納者は返納証明等も必要。代理人は委任状が必要。乗務員に券を渡して運賃を支払う。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "http://www.town.wakayama-mihama.lg.jp/docs/2022041400012/",
+              "label": "美浜町外出支援事業（令和8年度対象者）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "外出支援券（免許失効者）",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "在宅の70歳以上75歳未満（年度中70歳を含む）で、運転免許証を更新せず失効し、運転経歴証明書を取得した人。",
+          "benefit": "年間15,000円分（100円券150枚）の外出支援券を交付。",
+          "fare": "券で運賃を支払い。詳細は記載なし。",
+          "routes": "バス・タクシー。登録バス名・区間は記載なし。",
+          "apply": "本人確認書類を持ち、かがやく長寿課で申請。返納者は返納証明等も必要。代理人は委任状が必要。乗務員に券を渡して運賃を支払う。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "http://www.town.wakayama-mihama.lg.jp/docs/2022041400012/",
+              "label": "美浜町外出支援事業（令和8年度対象者）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://www.town.wakayama-mihama.lg.jp/docs/2022041400012/",
+          "label": "美浜町外出支援事業（令和8年度対象者）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町の令和8年度対象者の案内で確認しましたが更新日は記載なし。登録バス・詳細条件はかがやく長寿課（0738-23-4950）へ確認してください。県一覧の12,000円と町の15,000円が異なるため現行額は窓口で確認してください。"
+    },
+    {
+      "slug": "hidaka",
+      "name": "日高町",
+      "status": "active",
+      "summary": "75歳以上の町民、または65歳以上で免許を持たない町民に、バスで使える年12,000円の助成券があります。",
+      "programs": [
+        {
+          "name": "高齢者外出支援事業（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "町内に住民登録があり、75歳以上（令和8年度は昭和27年4月1日以前生まれ）。",
+          "benefit": "1冊目12,000円分を無料交付。追加は12,000円分を8,000円、3,000円分を2,000円で購入。",
+          "fare": "利用者証を提示し助成券で運賃の一部を支払い。",
+          "routes": "熊野御坊南海バス・中紀バス（指定タクシーも可）。",
+          "apply": "申請方法の詳細は記載なし。いきいき長寿課（0738-63-3807）へ。",
+          "notes": [
+            "有効期間は令和8年4月1日〜令和9年3月31日。"
+          ],
+          "sources": [
+            {
+              "url": "http://www.town.wakayama-hidaka.lg.jp/docs/2026032500019/files/hojojigyoupanfuR80701.pdf",
+              "label": "令和8年度日高町補助事業パンフレット（令和8年7月1日時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "高齢者外出支援事業（65〜74歳・免許なし）",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "町内に住民登録があり、65歳以上75歳未満で運転免許を保有しない人（令和8年度は昭和37年4月1日以前生まれの65歳以上）。",
+          "benefit": "1冊目12,000円分を無料交付。追加は12,000円分を8,000円、3,000円分を2,000円で購入。",
+          "fare": "利用者証を提示し助成券で運賃の一部を支払い。",
+          "routes": "熊野御坊南海バス・中紀バス（指定タクシーも可）。",
+          "apply": "申請方法の詳細は記載なし。いきいき長寿課（0738-63-3807）へ。",
+          "notes": [
+            "有効期間は令和8年4月1日〜令和9年3月31日。"
+          ],
+          "sources": [
+            {
+              "url": "http://www.town.wakayama-hidaka.lg.jp/docs/2026032500019/files/hojojigyoupanfuR80701.pdf",
+              "label": "令和8年度日高町補助事業パンフレット（令和8年7月1日時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://www.town.wakayama-hidaka.lg.jp/docs/2026032500019/files/hojojigyoupanfuR80701.pdf",
+          "label": "令和8年度日高町補助事業パンフレット（令和8年7月1日時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "令和8年度資料で確認しましたが資料の更新日は記載なし。申請方法は、いきいき長寿課（0738-63-3807）で確認してください。"
+    },
+    {
+      "slug": "yura",
+      "name": "由良町",
+      "status": "active",
+      "summary": "本年度中に75歳以上になる人と70歳以上の免許返納者に年15,000円のバス・タクシー券があります。",
+      "programs": [
+        {
+          "name": "福祉バス・タクシー券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "本年度中に75歳以上となる人。居住・施設条件は本文に記載なし。",
+          "benefit": "100円券150枚（15,000円分）を年度に1冊交付。",
+          "fare": "助成券以外の金額は自己負担。",
+          "routes": "バス・タクシー。個別バス会社・路線は記載なし。",
+          "apply": "住民福祉課へ申請。返納者は運転経歴証明書又は取消通知書が必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "http://www.town.yura.wakayama.jp/docs/2020062500018/",
+              "label": "福祉バス・タクシー券助成事業",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉バス・タクシー券（免許返納者）",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "70歳以上で免許を自主返納した人。居住・施設条件は記載なし。",
+          "benefit": "100円券150枚（15,000円分）を年度に1冊交付。",
+          "fare": "助成券以外の金額は自己負担。",
+          "routes": "バス・タクシー。個別バス会社・路線は記載なし。",
+          "apply": "住民福祉課へ申請。返納者は運転経歴証明書又は取消通知書が必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "http://www.town.yura.wakayama.jp/docs/2020062500018/",
+              "label": "福祉バス・タクシー券助成事業",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://www.town.yura.wakayama.jp/docs/2020062500018/",
+          "label": "福祉バス・タクシー券助成事業",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "ページ更新日の記載がありません。登録バス・居住条件・現行条件は住民福祉課（0738-65-0201）で確認してください。"
+    },
+    {
+      "slug": "inami",
+      "name": "印南町",
+      "status": "active",
+      "summary": "在宅75歳以上と70歳以上の免許返納者におでかけサポート券。別に返納者はコミュニティバスが半額です。",
+      "programs": [
+        {
+          "name": "おでかけサポート券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "印南町に住民登録があり在宅で生活する満75歳以上の人。",
+          "benefit": "年度に1冊20,000円分（500円券40枚、県一覧）。",
+          "fare": "1回最大4枚（2,000円分）、おつりなし。乗車時に券表紙を提示。",
+          "routes": "御坊南海バス等。登録会社で利用可。",
+          "apply": "町ページに申請方法の詳細は記載なし。印南町社会福祉協議会（0738-42-1433）へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.wakayama-inami.lg.jp/0000001280.html",
+              "label": "おでかけサポート券のご案内",
+              "updated": "2024-11-27",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "県の高齢者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "おでかけサポート券（免許返納者）",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "印南町に住民登録があり在宅で生活する70歳以上の免許自主返納者。",
+          "benefit": "年度に1冊20,000円分（500円券40枚、県一覧）。",
+          "fare": "1回最大4枚（2,000円分）、おつりなし。乗車時に券表紙を提示。",
+          "routes": "御坊南海バス等。登録会社で利用可。",
+          "apply": "町ページに申請方法の詳細は記載なし。印南町社会福祉協議会（0738-42-1433）へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.wakayama-inami.lg.jp/0000001280.html",
+              "label": "おでかけサポート券のご案内",
+              "updated": "2024-11-27",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "コミュニティバス返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書所持者。年齢制限なし（県一覧）。",
+          "benefit": "通常300円の運賃が半額。",
+          "fare": "1乗車150円。",
+          "routes": "印南町コミュニティバス。",
+          "apply": "運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.wakayama-inami.lg.jp/cmsfiles/contents/0000000/159/komibasusaisin.pdf",
+              "label": "印南町コミュニティバス・リーフレット",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.wakayama-inami.lg.jp/0000001280.html",
+          "label": "おでかけサポート券のご案内",
+          "updated": "2024-11-27",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.wakayama-inami.lg.jp/cmsfiles/contents/0000000/159/komibasusaisin.pdf",
+          "label": "印南町コミュニティバス・リーフレット",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "県の高齢者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "券の町ページは1年以上前で金額は更新日なしの県一覧によります。コミュニティバス資料にも更新日なし。券は社会福祉協議会（0738-42-1433）、バスは企画産業課（0738-42-1737）へ現行条件を確認してください。"
+    },
+    {
+      "slug": "minabe",
+      "name": "みなべ町",
+      "status": "active",
+      "summary": "一般交通機関を使うことが難しい在宅高齢者にコミバス助成券。県一覧には65歳以上返納者の乗車券もあります。",
+      "programs": [
+        {
+          "name": "外出支援サービス（コミバス助成券）",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "町内在住の高齢者等で、通院などの外出が必要なのに一般交通機関の利用が困難な人。家族等の支援が受けられる人は原則対象外。町ページに年齢の数値なし、県一覧は概ね65歳以上。",
+          "benefit": "町が必要と認めた範囲でコミバス助成券を発行。県一覧は通院時のみ片道200円分。",
+          "fare": "券を利用。追加負担の詳細は記載なし。",
+          "routes": "町が運行するコミバス（デマンドタクシー方式）。",
+          "apply": "申請方法の詳細は記載なし。健康長寿課（0739-74-3337）へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.minabe.lg.jp/kenko_fukushi/02/05/2013091000017.html",
+              "label": "外出支援サービス事業",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "県の高齢者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許返納者へのコミバス等乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "運転免許返納者65歳以上（県一覧）。居住・返納日・期限等の詳細は記載なし。",
+          "benefit": "南部タクシーのコミバス・定期便・タクシーで使える乗車券15,000円分（県一覧）。",
+          "fare": "券で運賃を支払い。追加負担・おつり等の記載なし。",
+          "routes": "南部タクシーのコミバス・定期便（タクシーも可）。",
+          "apply": "記載なし。総務課（0739-72-2051）へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.minabe.lg.jp/kenko_fukushi/02/05/2013091000017.html",
+          "label": "外出支援サービス事業",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "県の高齢者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町の案内・県一覧とも更新日なし。外出支援券は健康長寿課（0739-74-3337）、返納券の現行条件・申請方法は総務課（0739-72-2051）へ確認してください。"
+    },
+    {
+      "slug": "hidakagawa",
+      "name": "日高川町",
+      "status": "active",
+      "summary": "在宅の65歳以上で免許未取得・返納の人に区域別バス券。返納者は別にコミュニティバス100円です。",
+      "programs": [
+        {
+          "name": "福祉バス・タクシー券（免許未取得者）",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "町内に住所を有する在宅の満65歳以上で、自動車運転免許（二輪を除く）を取得していない人。",
+          "benefit": "区域①年15,000円、②20,000円、③25,000円、④30,000円（500円券）。",
+          "fare": "1回の枚数制限なし、おつりなし。年度末まで使用可。",
+          "routes": "福祉バス・タクシー券対応のバス。個別路線・事業者は記載なし。",
+          "apply": "窓口又は郵送申請。前年交付を受け条件に変更がなければ電話申請可。毎年申請が必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.hidakagawa.lg.jp/iryo_kenko_fukushi/koureisya/hukusitakusi.html",
+              "label": "福祉バス・タクシー券",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉バス・タクシー券（免許返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内に住所を有する在宅の満65歳以上で、免許（二輪のみ含む）を返納して運転経歴証明書又は取消通知書を取得した人。",
+          "benefit": "区域①年15,000円、②20,000円、③25,000円、④30,000円（500円券）。",
+          "fare": "1回の枚数制限なし、おつりなし。年度末まで使用可。",
+          "routes": "福祉バス・タクシー券対応のバス。個別路線・事業者は記載なし。",
+          "apply": "窓口又は郵送申請。前年交付を受け条件に変更がなければ電話申請可。毎年申請が必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.hidakagawa.lg.jp/iryo_kenko_fukushi/koureisya/hukusitakusi.html",
+              "label": "福祉バス・タクシー券",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "コミュニティバス返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "免許を自主返納し警察署から運転経歴証明書を受けた人。町ページに年齢条件なし、県一覧は65歳以上。",
+          "benefit": "通常200円の利用料を100円に割引。",
+          "fare": "1乗車100円。",
+          "routes": "日高川町コミュニティバス（定時・デマンド運行）。",
+          "apply": "利用時に運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.hidakagawa.lg.jp/kurashi/doro_koutsu/communitybus.html",
+              "label": "コミュニティバス",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+              "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.hidakagawa.lg.jp/iryo_kenko_fukushi/koureisya/hukusitakusi.html",
+          "label": "福祉バス・タクシー券",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.hidakagawa.lg.jp/kurashi/doro_koutsu/communitybus.html",
+          "label": "コミュニティバス",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町ページ・県一覧に更新日の記載なし。返納割引の年齢は町ページと県一覧で記載差があります。券は保健福祉課（0738-22-9041）、バスは企画政策課（0738-22-2041）で現行条件を確認してください。"
+    },
+    {
+      "slug": "tanabe",
+      "name": "田辺市",
+      "status": "notfound",
+      "summary": "確認したバス運賃・高齢者福祉の案内では、高齢者向けバス運賃助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.tanabe.lg.jp/soshiki/kikaku/1/1_1/337.html",
+          "label": "田辺市内の路線バス・住民バスのご案内",
+          "updated": "2026-09-30",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.tanabe.lg.jp/iryo_kenko_fukushi/kaigo/2/4763.html",
+          "label": "高齢者の福祉サービスについて",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
+          "label": "県の免許返納者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "外出支援は一部地域で医療機関への送迎、返納支援は奨励金です。バス助成の有無は自治振興課（0739-26-9911）で確認してください。バス案内は2026年9月30日更新ですが、高齢者バス助成の記載は見つかりませんでした。"
+    },
+    {
+      "slug": "shirahama",
+      "name": "白浜町",
+      "status": "active",
+      "summary": "65歳以上町民は明光バス町内路線半額。日置川コミュニティバスは65歳以上・返納者とも100円です。",
+      "programs": [
+        {
+          "name": "明光バス優待証",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "町内在住の65歳以上の人。",
+          "benefit": "町内路線の運賃が半額となる優待証を交付。",
+          "fare": "町内路線の運賃半額。",
+          "routes": "明光バスの町内路線。",
+          "apply": "本人確認書類と旧優待証（所持者）を持って民生課福祉係・各事務所等で申請。",
+          "notes": [
+            "優待証の有効期間は発行日から令和11年3月31日まで。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.town.shirahama.wakayama.jp/soshiki/minsei/fukushi/gyomu/1674016532495.html",
+              "label": "優待証の発行及び更新手続き",
+              "updated": "2026-03-02",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "日置川コミュニティバス高齢者割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。居住条件の記載なし。",
+          "benefit": "通常大人200円を100円に割引（令和8年2月1日から）。",
+          "fare": "1人1乗車100円。",
+          "routes": "日置川コミュニティバス三舞線・川添線。",
+          "apply": "運転免許証又は町発行の優待証等で年齢確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shirahama.wakayama.jp/soshiki/hikigawa/sangyo/gyomu/1625638052608.html",
+              "label": "日置川コミュニティバス",
+              "updated": "2026-05-26",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "日置川コミュニティバス免許返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証返納者。年齢・居住条件の記載なし。",
+          "benefit": "通常大人200円を100円に割引。",
+          "fare": "1人1乗車100円。",
+          "routes": "日置川コミュニティバス三舞線・川添線。",
+          "apply": "町ページに返納者の提示書類の記載なし。日置川事務所へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shirahama.wakayama.jp/soshiki/hikigawa/sangyo/gyomu/1625638052608.html",
+              "label": "日置川コミュニティバス",
+              "updated": "2026-05-26",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.shirahama.wakayama.jp/soshiki/minsei/fukushi/gyomu/1674016532495.html",
+          "label": "優待証の発行及び更新手続き",
+          "updated": "2026-03-02",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.shirahama.wakayama.jp/soshiki/hikigawa/sangyo/gyomu/1625638052608.html",
+          "label": "日置川コミュニティバス",
+          "updated": "2026-05-26",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "日置川バスの返納者提示書類・居住条件は日置川事務所（0739-52-2300）で確認してください。県一覧の年齢66歳・旧運賃とは異なる令和8年5月の町案内を採用。"
+    },
+    {
+      "slug": "kamitonda",
+      "name": "上富田町",
+      "status": "active",
+      "summary": "70歳以上はコミュニティバス100円、回数券・年パス半額。免許返納者は初年度パス無料、以降5,000円です。",
+      "programs": [
+        {
+          "name": "コミュニティバス高齢者割引",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上の人。デマンド型は町民で事前登録が必要。固定路線の居住条件は記載なし。",
+          "benefit": "回数券12枚1,000円、年間パスポート5,000円（通常2,000円・10,000円）。",
+          "fare": "1乗車100円（通常大人200円）。",
+          "routes": "くちくまのコミュニティバス・デマンド型コミュニティバス共通。",
+          "apply": "回数券・年間パスは役場振興課8番窓口で購入。デマンド型は事前利用登録・電話予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kamitonda.lg.jp/soshiki/shinkou/bus/2141.html",
+              "label": "くちくまのコミュニティバス等",
+              "updated": "2026-09-16",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "免許返納者の年間パスポート",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "町民で運転免許を自主返納した人。年齢区別なし、バイク・原付も可。初回は返納日から1年以内の手続き。",
+          "benefit": "初回申請から1年間無料パスポート（1回限り）。以降は年間5,000円、回数券12枚1,000円。",
+          "fare": "初年度パスで無料。以降年パス5,000円。パスなしの1乗車運賃は記載なし。",
+          "routes": "くちくまのコミュニティバス・デマンド型コミュニティバス共通。",
+          "apply": "返納日から1年以内に運転経歴証明書又は取消通知書を持ち役場振興課8番窓口で手続き。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kamitonda.lg.jp/soshiki/shinkou/bus/2141.html",
+              "label": "くちくまのコミュニティバス等",
+              "updated": "2026-09-16",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.kamitonda.lg.jp/material/files/group/12/bushennoushinkou.pdf",
+              "label": "コミュニティバス免許自主返納者向けチラシ",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kamitonda.lg.jp/soshiki/shinkou/bus/2141.html",
+          "label": "くちくまのコミュニティバス等",
+          "updated": "2026-09-16",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kamitonda.lg.jp/material/files/group/12/bushennoushinkou.pdf",
+          "label": "コミュニティバス免許自主返納者向けチラシ",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "返納チラシに更新日の記載なし。現行HPで料金を確認しました。具体的な登録書類等は振興課（0739-34-2370）で確認してください。"
+    },
+    {
+      "slug": "susami",
+      "name": "すさみ町",
+      "status": "active",
+      "summary": "要介護・要支援認定者と返納後1年間の運転経歴証明書所持者はコミュニティバスが100円になります。",
+      "programs": [
+        {
+          "name": "コミュニティバス要介護・要支援割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "介護保険の要介護又は要支援認定を受けた人。年齢・居住条件は記載なし。",
+          "benefit": "通常200円の運賃を100円に割引。",
+          "fare": "1乗車100円。",
+          "routes": "すさみ町コミュニティバス（デマンドタクシーと共通料金）。",
+          "apply": "乗車時に介護保険被保険者証を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.susami.lg.jp/kurashi/10/2022042100027.html",
+              "label": "すさみ町コミュニティバス・デマンドタクシー",
+              "updated": "2026-10-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.susami.lg.jp/kurashi/10/files/P2-3r7.pdf",
+              "label": "コミュニティバス等料金表（令和7年度案内）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "コミュニティバス免許返納割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書所持者で、運転免許返納後1年間。年齢・居住条件は記載なし。",
+          "benefit": "通常200円の運賃を100円に割引。",
+          "fare": "1乗車100円。",
+          "routes": "すさみ町コミュニティバス（デマンドタクシーと共通料金）。",
+          "apply": "運転経歴証明書所持者が対象。必要な提示書類は地域未来課（0739-55-4801）へ確認。乗車時に運賃箱へ料金又は利用券。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.susami.lg.jp/kurashi/10/2022042100027.html",
+              "label": "すさみ町コミュニティバス・デマンドタクシー",
+              "updated": "2026-10-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.susami.lg.jp/kurashi/10/files/P2-3r7.pdf",
+              "label": "コミュニティバス等料金表（令和7年度案内）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.susami.lg.jp/kurashi/10/2022042100027.html",
+          "label": "すさみ町コミュニティバス・デマンドタクシー",
+          "updated": "2026-10-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.susami.lg.jp/kurashi/10/files/P2-3r7.pdf",
+          "label": "コミュニティバス等料金表（令和7年度案内）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2026年10月更新の案内から参照する料金表は令和7年度資料です。現行条件と返納者提示方法は地域未来課（0739-55-4801）へ確認してください。年齢のみの割引ではありません。"
+    },
+    {
+      "slug": "shingu",
+      "name": "新宮市",
+      "status": "active",
+      "summary": "免許を持たない75歳以上の市民と75歳未満の免許返納者に、年20,000円のバス・タクシー券があります。",
+      "programs": [
+        {
+          "name": "高齢者等タクシー・バス券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "新宮市に住民票があり申請時に特養・老健・介護医療院に入所していない75歳以上。免許（原付含む）を持たない又は返納を市へ申告。",
+          "benefit": "年20,000円分（500円券40枚）を交付。",
+          "fare": "バス運賃500円以上を払う場合に利用可。1回複数枚可、おつりなし、現金と併用可。",
+          "routes": "高田地域・熊野川町地域に停留所がある路線バス（タクシーも可）。",
+          "apply": "送付された申請書を同封返信用封筒で申請。審査後に券を簡易書留で受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shingu.lg.jp/info/2592",
+              "label": "高齢者等タクシー・バス券交付事業",
+              "updated": "2026-07-31",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "高齢者等タクシー・バス券（75歳未満返納者）",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "新宮市に住民票があり申請時に特養・老健・介護医療院に入所していない75歳未満。免許（原付含む）の返納証明書類を持つ人。",
+          "benefit": "年20,000円分（500円券40枚）を交付。",
+          "fare": "バス運賃500円以上を払う場合に利用可。1回複数枚可、おつりなし、現金と併用可。",
+          "routes": "高田地域・熊野川町地域に停留所がある路線バス（タクシーも可）。",
+          "apply": "返納証明書類を持ち健康長寿課窓口へ申請。審査後に券を簡易書留で受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shingu.lg.jp/info/2592",
+              "label": "高齢者等タクシー・バス券交付事業",
+              "updated": "2026-07-31",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.shingu.lg.jp/info/2592",
+          "label": "高齢者等タクシー・バス券交付事業",
+          "updated": "2026-07-31",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2026年7月更新ページですが対象生年月日・申請年度に令和7年度表記が残っています。県一覧は旧12,000円、市ページは20,000円です。令和8年度の年齢区分・申請書送付時期・現行額は健康長寿課（0735-23-3346）で確認してください。"
+    },
+    {
+      "slug": "nachikatsuura",
+      "name": "那智勝浦町",
+      "status": "active",
+      "summary": "75歳以上の町民はカード提示で町営バスと那智山線が無料。非課税世帯の70歳以上には利用券もあります。",
+      "programs": [
+        {
+          "name": "高齢者バス利用カード",
+          "kind": "pass",
+          "age_min": 75,
+          "eligibility": "町内在住の75歳以上の人。",
+          "benefit": "高齢者バス利用カードを交付。",
+          "fare": "カード提示で無料。",
+          "routes": "町営バス全5路線と熊野御坊南海バス那智山線。",
+          "apply": "75歳になる1か月前からオンライン申請可。町営バス車内の申請書を提出、又は本庁福祉課・各出張所で申請。本庁は即日、その他は後日郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.nachikatsuura.wakayama.jp/Info/619",
+              "label": "町内路線バスのご案内",
+              "updated": "2026-10-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.nachikatsuura.wakayama.jp/info/1558",
+              "label": "高齢者バス利用カード交付のお知らせ",
+              "updated": "2024-10-25",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "福祉乗車券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "4月1日現在満70歳以上で、町内に1年以上住所があり前年度の住民税が非課税の世帯。",
+          "benefit": "年3,000円分のバス・タクシー利用券（県一覧）。",
+          "fare": "利用券で支払い。券額超過時の扱いは記載なし。",
+          "routes": "バス・タクシー。具体的な会社・路線は記載なし。",
+          "apply": "役場福祉課（0735-29-7039）又は各出張所へ申込み。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.nachikatsuura.wakayama.jp/info/910",
+              "label": "高齢者の福祉事業",
+              "updated": "2024-03-21",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "県の高齢者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.nachikatsuura.wakayama.jp/Info/619",
+          "label": "町内路線バスのご案内",
+          "updated": "2026-10-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.nachikatsuura.wakayama.jp/info/1558",
+          "label": "高齢者バス利用カード交付のお知らせ",
+          "updated": "2024-10-25",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.nachikatsuura.wakayama.jp/info/910",
+          "label": "高齢者の福祉事業",
+          "updated": "2024-03-21",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "県の高齢者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "無料運賃は2026年10月の案内で確認。カード申請案内と福祉乗車券案内は1年以上前です。利用券の現行額・対象会社は福祉課（0735-29-7039）で確認してください。"
+    },
+    {
+      "slug": "taiji",
+      "name": "太地町",
+      "status": "notfound",
+      "summary": "じゅんかんバスは一般利用も無料です。高齢者限定のバス助成は掲載案内では見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.taiji.wakayama.jp/kurashi/bus/index.html",
+          "label": "太地町じゅんかんバス（令和8年3月14日改正時刻表掲載）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "県の高齢者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "運賃無料は全年齢共通です。更新日なしの案内のため、高齢者向けの追加制度は総務課で確認してください。"
+    },
+    {
+      "slug": "kozagawa",
+      "name": "古座川町",
+      "status": "active",
+      "summary": "町内在住の後期高齢者医療対象者と要介護・要支援認定者は、ふるさとバスが無料です。",
+      "programs": [
+        {
+          "name": "ふるさとバス後期高齢者無料乗車",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "町内在住で後期高齢者医療被保険者証を所持する人。町の案内は年齢ではなく証の所持で判定。県一覧は75歳以上と記載。",
+          "benefit": "通常1乗車100円を免除。",
+          "fare": "無料。",
+          "routes": "古座川町ふるさとバス。",
+          "apply": "後期高齢者医療被保険者証を降車時に提示。無料乗車券は役場総務課（0735-72-0180）へ事前申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kozagawa.lg.jp/yakunitatu/sub001.html",
+              "label": "ふるさとバス乗車料金・無料乗車券",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+              "label": "県の高齢者支援一覧（令和7年12月末時点）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "ふるさとバス要介護・要支援無料乗車券",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "町内在住で介護保険の要介護又は要支援認定を受けた人。同乗する介護者も無料。",
+          "benefit": "通常1乗車100円を免除。",
+          "fare": "無料。",
+          "routes": "古座川町ふるさとバス。",
+          "apply": "役場総務課（0735-72-0180）へ事前申請し無料乗車券を受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kozagawa.lg.jp/yakunitatu/sub001.html",
+              "label": "ふるさとバス乗車料金・無料乗車券",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kozagawa.lg.jp/yakunitatu/sub001.html",
+          "label": "ふるさとバス乗車料金・無料乗車券",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/koureisya.pdf",
+          "label": "県の高齢者支援一覧（令和7年12月末時点）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "ページに更新日がなく、後期高齢者医療被保険者証の表記が残っています。現在使える確認書類と無料乗車券の手続きは総務課（0735-72-0180）へ確認してください。町の証所持条件と県の75歳以上という年齢表記の違いも確認してください。"
+    },
+    {
+      "slug": "kitayama",
+      "name": "北山村",
+      "status": "notfound",
+      "summary": "希望する村民には熊野市駅間の村営バス無料優待券があります。高齢者限定のバス助成は案内で見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.kitayama.wakayama.jp/jumin/files/sien.pdf",
+          "label": "北山村支援施策パンフレット・村営バス無料",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "村営バス無料優待券は全年齢の村民が対象です。資料に更新日の記載なし。高齢者向けの追加制度は住民福祉課（0735-49-2339）で確認してください。"
+    },
+    {
+      "slug": "kushimoto",
+      "name": "串本町",
+      "status": "active",
+      "summary": "75歳以上と要介護等の認定者はコミュニティバスが100円。免許返納者には1回限り4,400円分の回数券があります。",
+      "programs": [
+        {
+          "name": "コミュニティバス75歳以上割引",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上。居住条件は記載なし。後期高齢者医療被保険者証・資格確認書又は町の割引証が必要。マイナンバーカードだけでは不可。",
+          "benefit": "通常200円の運賃を100円に割引。割引回数券11枚1,000円。",
+          "fare": "1乗車100円。",
+          "routes": "串本町コミュニティバス（和深・潮岬出雲・大島・佐部上田原線）。串本駅〜町役場は一律100円で割引なし。",
+          "apply": "対象資格を示す証又は町発行の割引証を提示。割引証は役場企画課又は串本駅内の南紀串本観光協会で資格確認書類を持参し申請。初回無料、再交付200円。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kushimoto.wakayama.jp/kurashi/community-bus/",
+              "label": "コミュニティバス・料金と割引証",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.kushimoto.wakayama.jp/reiki_int/reiki_honbun/r218RG00000888.html",
+              "label": "串本町コミュニティバス条例",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "コミュニティバス介護保険認定者割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "介護保険の要介護・要支援・事業対象者認定を受けた人と付添同乗者。年齢・居住条件は記載なし。",
+          "benefit": "通常200円の運賃を100円に割引。割引回数券11枚1,000円。",
+          "fare": "1乗車100円。",
+          "routes": "串本町コミュニティバス（和深・潮岬出雲・大島・佐部上田原線）。串本駅〜町役場は一律100円で割引なし。",
+          "apply": "対象資格を示す証又は町発行の割引証を提示。割引証は役場企画課又は串本駅内の南紀串本観光協会で資格確認書類を持参し申請。初回無料、再交付200円。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kushimoto.wakayama.jp/kurashi/community-bus/",
+              "label": "コミュニティバス・料金と割引証",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.kushimoto.wakayama.jp/reiki_int/reiki_honbun/r218RG00000888.html",
+              "label": "串本町コミュニティバス条例",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許自主返納支援回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "申請時に町に住民登録があり、平成31年4月1日以後に運転経歴証明書の交付を受けた免許自主返納者本人。暴力団員等は除外。",
+          "benefit": "コミュニティバス回数券4,400円分、1回限り。再交付不可。",
+          "fare": "交付回数券で支払い。",
+          "routes": "串本町コミュニティバス。",
+          "apply": "回数券交付申請書に運転経歴証明書の原本を添え町へ申請。具体的窓口は企画課（0735-62-0556）へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kushimoto.wakayama.jp/reiki_int/reiki_honbun/r218RG00001004.html",
+              "label": "運転免許自主返納支援事業実施要綱（平成31年4月1日施行）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kushimoto.wakayama.jp/kurashi/community-bus/",
+          "label": "コミュニティバス・料金と割引証",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kushimoto.wakayama.jp/reiki_int/reiki_honbun/r218RG00000888.html",
+          "label": "串本町コミュニティバス条例",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kushimoto.wakayama.jp/reiki_int/reiki_honbun/r218RG00001004.html",
+          "label": "運転免許自主返納支援事業実施要綱（平成31年4月1日施行）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "ページ・例規に現在の更新日の記載なし。現行料金・確認書類・返納回数券の受付窓口は企画課（0735-62-0556）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.police.pref.wakayama.lg.jp/02_koutsu/driverslicense/jisyuhennou/index.html",
+    "label": "和歌山県警・運転経歴証明書所有者に対する支援",
+    "checked": "2026-10-06"
+  }
+}

@@ -12,6 +12,7 @@ import shutil
 from html import escape
 from pathlib import Path
 from urllib.parse import quote
+from bus_pages import bus_page, bus_path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://jimotokurabe.jp/"
@@ -128,7 +129,7 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
-def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class="", body_class=""):
+def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class="", body_class="", styles=""):
     """base は、サイトの直下から見たこのページの位置（下の階層のページなら "../"）。"""
     canonical = SITE + path
     home = base or "./"
@@ -166,7 +167,7 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="{css_href}">
+<link rel="stylesheet" href="{css_href}">{styles}
 {SIZE_BOOT}
 </head>
 {body_tag}
@@ -1860,6 +1861,10 @@ def top_page(data, draft, others, mobility_index):
             for detail in row["details"]) + '</nav></details>'
         for region, ids in PREF_REGIONS)
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
+    bus_links = ''.join(f'<li><a href="{bus_path(d["pref"])}"><b>{e(d["pref"]["name"])}の高齢者バス助成・敬老パス</b>'
+                        f'<span>対象・料金・使えるバス・申し込みを比べる{"（確認用下書き）" if d["bus"].get("draft") else ""}</span></a></li>'
+                        for d in [data, *others] if d.get('bus') and (draft or (not d['bus'].get('draft') and not d['pref'].get('draft'))))
+    bus_block = f'\n<section class="theme" aria-labelledby="th-bus-h"><h2 id="th-bus-h">高齢者のバス支援を比べる</h2><ul class="theme-links">{bus_links}</ul></section>' if bus_links else ''
     main = f"""<section class="top-hero">
   <p class="top-hero-kicker">全国の市区町村から</p>
   <h1 class="top-hero-title">お住まいの町で、<br>何が使える？</h1>
@@ -1929,7 +1934,7 @@ def top_page(data, draft, others, mobility_index):
 
 <details class="home-featured"><summary>移動手段・運賃支援を確認した{detailed_count}地域を見る</summary><div class="home-featured-groups">{detailed_links}</div></details>
 
-<p class="top-basic-entry"><a href="{BASIC_GUIDE_PATH}"><b>返納の手続きから知りたい方へ</b><span>免許返納の基本ガイドで、条件・警察の手続き・運転経歴証明書を確認する →</span></a></p>
+<p class="top-basic-entry"><a href="{BASIC_GUIDE_PATH}"><b>返納の手続きから知りたい方へ</b><span>免許返納の基本ガイドで、条件・警察の手続き・運転経歴証明書を確認する →</span></a></p>{bus_block}
 
 <section class="theme" aria-labelledby="th-car-h">
   <h2 id="th-car-h">家族で読む</h2>
@@ -2795,6 +2800,9 @@ def load_pref(henno_file):
         taxi = json.loads(taxi_file.read_text(encoding="utf-8"))
         data["taxi_checked"] = taxi["checked"]
         data["taxi"] = {slug: {"checked": taxi["checked"], **t} for slug, t in taxi["cities"].items()}
+    bus_file = henno_file.with_name(henno_file.name.replace("-menkyo-henno", "-bus"))
+    if bus_file.exists():
+        data['bus'] = json.loads(bus_file.read_text(encoding='utf-8'))
     return data
 
 
@@ -2882,6 +2890,11 @@ def main():
     }
     # 下書きの県（pref.draft が true）は、検索に出さず、サイトマップとトップにも載せない
     hidden = set()
+    for d in [data, *others]:
+        if d.get('bus'):
+            pages[bus_path(d['pref'])] = bus_page(d, d['bus'], a.draft or d['pref'].get('draft', False), shell, jdate)
+            if d['bus'].get('draft') or d['pref'].get('draft'):
+                hidden.add(bus_path(d['pref']))
     for d in others:
         dr = a.draft or d["pref"].get("draft", False)
         pages[list_path(d["pref"])] = list_page(d, dr)
@@ -2902,6 +2915,9 @@ def main():
         city_data.write_text(json.dumps(basic_guide_cities(d), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     if out.resolve() != ROOT:
         shutil.copy(ROOT / "site.css", out / "site.css")
+        if any(d.get('bus') for d in prefs):
+            (out / 'assets').mkdir(exist_ok=True)
+            shutil.copy(ROOT / 'assets/bus.css', out / 'assets/bus.css')
     if not a.draft:
         urls = ["" if n == "index.html" else n for n in pages if n not in hidden]
         (out / "sitemap.xml").write_text(
@@ -2924,6 +2940,9 @@ def main():
                 (art / name).parent.mkdir(parents=True, exist_ok=True)
                 (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
+        if any(d.get('bus') for d in prefs):
+            (art / 'assets').mkdir(exist_ok=True)
+            shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
     if (ROOT / 'data/municipality-supplements.json').exists():
         from build_enriched import render
         render(out, draft=a.draft, base_built=True)

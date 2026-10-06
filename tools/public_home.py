@@ -12,6 +12,10 @@ def render_home(prefs, out, draft=True):
    d=prefs[pid];main+='<li><a href="'+b.e(b.list_path(d['pref']))+'">'+b.e(d['pref']['name'])+'<span aria-hidden="true">›</span></a></li>'
   main+='</ul></section>'
  main+='''</section><section id="return" class="home-about"><h2>利用する前に、条件を確認。</h2><p>同じ支援でも、年齢、住んでいる地域、申請期限などは市町村によって異なります。各ページの確認日と対象条件を読み、申請や利用の前に公式窓口で最新の案内をご確認ください。</p></section>'''
+ bus_prefs=[d for d in prefs.values() if d.get('bus') and (draft or (not d['bus'].get('draft') and not d['pref'].get('draft')))]
+ if bus_prefs:
+  links=''.join(f'<li><a href="{b.bus_path(d["pref"])}">{b.e(d["pref"]["name"])}の高齢者バス助成・敬老パス{"（確認用下書き）" if d["bus"].get("draft") else ""}</a></li>' for d in sorted(bus_prefs,key=lambda d:d['pref']['id']))
+  main+=f'<section id="bus" class="home-about" aria-labelledby="bus-heading"><h2 id="bus-heading">高齢者のバス支援を比べる</h2><ul>{links}</ul></section>'
  cities=[]
  for pid,d in prefs.items():
   for c in d['cities']:
