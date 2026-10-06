@@ -1,0 +1,851 @@
+{
+  "checked": "2026-10-06",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "hiroshima",
+      "name": "広島市",
+      "status": "notfound",
+      "summary": "高齢者の外出支援交通費助成はタクシー・船の利用券です。市独自の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.hiroshima.lg.jp/living/fukushi-kaigo/1014902/1025759/1003204.html",
+          "label": "要支援・要介護高齢者外出支援交通費助成",
+          "updated": "2026-02-18",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "高齢福祉課（082-504-2143）へバス助成の有無を確認してください。"
+    },
+    {
+      "slug": "akitakata",
+      "name": "安芸高田市",
+      "status": "henno",
+      "summary": "古い公式広報は75歳以上の自主返納者向けに、お太助バス等の回数券と市内入浴券を合わせて1万円分まで交付する支援を案内しています。",
+      "programs": [
+        {
+          "name": "高齢者自主返納支援回数券",
+          "kind": "henno",
+          "age_min": 75,
+          "eligibility": "75歳以上の自主返納者。住所・返納期限などの詳細は記載なし。",
+          "benefit": "お太助バス等回数券と市内入浴券を合わせて10,000円分まで。",
+          "fare": "回数券による助成。乗車時差額の支払方法は記載なし。",
+          "routes": "お太助バス。",
+          "apply": "市役所危機管理課へ。書類・申請期限は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.akitakata.jp/ja/shimin/kotsu-doro/shimin_koutsuuanzen/z146/",
+              "label": "75歳以上の運転免許自主返納者への支援",
+              "updated": "2015-10-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.akitakata.jp/akitakata-media/filer_public/20/1c/201cdf6d-a9e4-48f6-a07f-ad2071042fcd/kouhou-akitakata-01gatsugou-zentai.pdf",
+              "label": "広報あきたかた平成31年1月号",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.akitakata.jp/ja/shimin/kotsu-doro/shimin_koutsuuanzen/z146/",
+          "label": "75歳以上の運転免許自主返納者への支援",
+          "updated": "2015-10-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.akitakata.jp/akitakata-media/filer_public/20/1c/201cdf6d-a9e4-48f6-a07f-ad2071042fcd/kouhou-akitakata-01gatsugou-zentai.pdf",
+          "label": "広報あきたかた平成31年1月号",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2015年の対象案内と2019年の広報に基づくため、継続状況・対象・金額を市役所（0826-42-2111）へ確認してください。"
+    },
+    {
+      "slug": "fuchucho",
+      "name": "府中町",
+      "status": "notfound",
+      "summary": "つばきバスの運賃案内と返納支援を確認しましたが、町の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.fuchu.hiroshima.jp/site/matidukuri/36194.html",
+          "label": "つばきバス運賃・乗り放題パス",
+          "updated": "2025-12-03",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "都市整備課（082-286-3181）へ年齢・返納によるバス助成の有無を確認してください。"
+    },
+    {
+      "slug": "kaita",
+      "name": "海田町",
+      "status": "henno",
+      "summary": "申請時65歳以上の町民が有効な免許を自主返納すると、バスにも使えるMOBIRY DAYSを1回受け取れます。",
+      "programs": [
+        {
+          "name": "自主返納支援MOBIRY DAYS",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請時65歳以上の町民で有効な免許を自主返納、返納から1年以内。失効は対象外。本人1回限り。タクシー券との選択。",
+          "benefit": "カード代500円とチャージ9,500円、計10,000円相当。",
+          "fare": "カードで運賃を支払う。有効期限なし。",
+          "routes": "町ふれあいバスなどMOBIRY DAYS対応交通。",
+          "apply": "取消通知書または経歴証明書と印鑑を長寿保険課へ。確認後簡易書留郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kaita.lg.jp/soshiki/19/112128.html",
+              "label": "自主返納高齢者支援事業",
+              "updated": "2025-03-31",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.kaita.lg.jp/uploaded/attachment/17696.pdf",
+              "label": "広報かいた2025年3月号・ふれあいバスの支払方法",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/684004.pdf",
+              "label": "県の海田町返納支援一覧・2026年10月1日現在",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kaita.lg.jp/soshiki/19/112128.html",
+          "label": "自主返納高齢者支援事業",
+          "updated": "2025-03-31",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kaita.lg.jp/uploaded/attachment/17696.pdf",
+          "label": "広報かいた2025年3月号・ふれあいバスの支払方法",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/684004.pdf",
+          "label": "県の海田町返納支援一覧・2026年10月1日現在",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町の詳細案内は2025年3月ですが、2026年10月の県一覧で支援継続を確認。利用できる路線や書類の変更は長寿保険課（082-823-9609）へ確認してください。"
+    },
+    {
+      "slug": "kumano",
+      "name": "熊野町",
+      "status": "notfound",
+      "summary": "返納者支援の案内は民間タクシーの割引です。町の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kumano.lg.jp/8/9/2/3/3875.html",
+          "label": "返納者支援の案内",
+          "updated": "2026-03-31",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "生活環境課（082-820-5606）へ年齢・返納によるバス助成の有無を確認してください。"
+    },
+    {
+      "slug": "saka",
+      "name": "坂町",
+      "status": "notfound",
+      "summary": "高齢者サービスと交通案内を確認しましたが、町の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.saka.lg.jp/2017/05/17/post_136/",
+          "label": "高齢者対象サービス",
+          "updated": "2024-11-07",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "保険健康課（082-820-1504）へバス助成の有無を確認してください。"
+    },
+    {
+      "slug": "akiota",
+      "name": "安芸太田町",
+      "status": "notfound",
+      "summary": "公共交通と高齢者移動支援を確認しましたが、町の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.akiota.jp/life/4/26/83/",
+          "label": "公共交通",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町役場（0826-28-2111）へバス運賃支援の有無と担当課を確認してください。"
+    },
+    {
+      "slug": "kitahiroshima",
+      "name": "北広島町",
+      "status": "notfound",
+      "summary": "ホープタクシーは町の予約制乗合バスですが、掲載割引は小児・障害者等です。高齢者向けバス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kitahiroshima.lg.jp/soshiki/5/40047.html",
+          "label": "デマンド交通ホープタクシー",
+          "updated": "2025-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町役場（0826-72-2111）へ年齢・返納によるバス支援の有無と担当課を確認してください。"
+    },
+    {
+      "slug": "otake",
+      "name": "大竹市",
+      "status": "notfound",
+      "summary": "掲載されたバス料金助成は一定の障害者手帳を持つ人への支援です。高齢者向けの市のバス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.otake.hiroshima.jp/soshiki/kenkofukushi/fukushi/gyomu/5/1613699998940.html",
+          "label": "タクシーやバスの料金助成",
+          "updated": "2026-08-26",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市役所（0827-59-2111）へ年齢・返納によるバス支援の有無と担当課を確認してください。"
+    },
+    {
+      "slug": "hatsukaichi",
+      "name": "廿日市市",
+      "status": "henno",
+      "summary": "有効な免許を自主返納した65歳以上の市民は、市自主運行バスを2年間無料で利用する証を選べます。",
+      "programs": [
+        {
+          "name": "自主返納者市自主運行バス無料利用証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請日に65歳以上の市民。有効な免許を自主返納、返納後2年以内に申請。失効は対象外。本人1回限り、ICカード・タクシー券との選択。",
+          "benefit": "交付から2年間、市自主運行バス無料。",
+          "fare": "無料利用者証による免除。",
+          "routes": "廿日市さくらバス、おおのハートバス、佐伯さくらバス/デマンドバス、吉和さくらバス、ほっとバス。路線一覧は2024年4月時点。",
+          "apply": "人権・市民生活課または各支所地域づくり係へ取消通知書写し。代理は代理人身分証と本人印鑑。約1か月後に簡易書留郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.hatsukaichi.hiroshima.jp/soshiki/30/80850.html",
+              "label": "高齢者運転免許自主返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/74483.pdf",
+              "label": "利用可能な市自主運行バス・2024年4月現在",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.hatsukaichi.hiroshima.jp/soshiki/30/80850.html",
+          "label": "高齢者運転免許自主返納支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/74483.pdf",
+          "label": "利用可能な市自主運行バス・2024年4月現在",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "無料利用証の制度は2026年4月案内ですが、対応路線表は2024年4月のため最新路線を人権・市民生活課（0829-30-9147）へ確認してください。通常70歳以上の100円制度は2027年10月予定で、今の優待ではありません。"
+    },
+    {
+      "slug": "kure",
+      "name": "呉市",
+      "status": "active",
+      "summary": "70歳以上向け敬老優待で市内対象バスが1乗車100円。申請後、専用ICカードまたは登録済みMOBIRY DAYSを使います。",
+      "programs": [
+        {
+          "name": "バス敬老優待",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "満70歳以上で高齢者・心身障害者紙おむつ券、福祉タクシー券、障害バス優待を受給していない人。優待適用は70歳の誕生月初日から。市外転出は資格削除。",
+          "benefit": "対象バス1乗車100円。",
+          "fare": "1乗車100円。MOBIRY DAYSのカードまたはアプリのQRコードを乗降時にタッチ。",
+          "routes": "呉市内の広電バス、瀬戸内産交沖友線、市生活バス。広島矢野熊野線・広島焼山線など一部区間除外、休止路線は利用不可。",
+          "apply": "誕生月の2か月前から高齢者支援課・各市民センター。申請者本人確認書類、登録済みならICカード/登録スマホも。本人・家族以外は委任状。適用に2〜3週間。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kure.lg.jp/soshiki/150/kourei-ikiikipas.html",
+              "label": "バス優待制度・敬老優待",
+              "updated": "2026-10-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kure.lg.jp/soshiki/150/kourei-ikiikipas.html",
+          "label": "バス優待制度・敬老優待",
+          "updated": "2026-10-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "利用する区間や休止路線を高齢者支援課（0823-25-3139）へ確認してください。"
+    },
+    {
+      "slug": "etajima",
+      "name": "江田島市",
+      "status": "notfound",
+      "summary": "公共交通と高齢者福祉の案内を確認しましたが、市の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.etajima.hiroshima.jp/cms/articles/show/252",
+          "label": "市内の公共交通",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.etajima.hiroshima.jp/cms/articles/show/206",
+          "label": "高齢者福祉制度",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "高齢介護課（0823-43-1651）へバス助成の有無を確認してください。"
+    },
+    {
+      "slug": "takehara",
+      "name": "竹原市",
+      "status": "active",
+      "summary": "一般の交通機関が使いにくい65歳以上の人、または40歳以上の介護認定者は、市の福祉バスを1回100円で利用できます。",
+      "programs": [
+        {
+          "name": "福祉バス・高齢者",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上で一般の交通機関を利用することが困難な人。",
+          "benefit": "市福祉バスを低額で利用。",
+          "fare": "1回100円。",
+          "routes": "福祉バス築地塩町・新庄田万里・忠海・西野宮原の曜日別コース。平日のみ、年末年始除く。",
+          "apply": "利用申請や提示書類の記載なし。地域支えあい推進課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takehara.lg.jp/soshikikarasagasu/shakaifukushika/gyomuannai/3_1/2/2770.html",
+              "label": "福祉バス",
+              "updated": "2026-06-25",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "福祉バス・介護認定者",
+          "kind": "discount",
+          "age_min": 40,
+          "eligibility": "40歳以上で介護認定を受けた人。",
+          "benefit": "市福祉バスを低額で利用。",
+          "fare": "1回100円。",
+          "routes": "福祉バス築地塩町・新庄田万里・忠海・西野宮原の曜日別コース。平日のみ、年末年始除く。",
+          "apply": "利用申請や提示書類の記載なし。地域支えあい推進課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takehara.lg.jp/soshikikarasagasu/shakaifukushika/gyomuannai/3_1/2/2770.html",
+              "label": "福祉バス",
+              "updated": "2026-06-25",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.takehara.lg.jp/soshikikarasagasu/shakaifukushika/gyomuannai/3_1/2/2770.html",
+          "label": "福祉バス",
+          "updated": "2026-06-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "停留所の一部休止があります。利用条件の確認書類と今の運行停留所は地域支えあい推進課（0846-22-7743）へ確認してください。"
+    },
+    {
+      "slug": "higashihiroshima",
+      "name": "東広島市",
+      "status": "active",
+      "summary": "70歳以上の非課税世帯でひとり暮らし等の条件を満たす人へ、年10,000円分のバスにも使える券を交付します。",
+      "programs": [
+        {
+          "name": "高齢者割引乗車券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "市内住所、70歳以上、ひとり暮らしまたは高齢者等世帯、世帯全員市民税非課税。障がい福祉課タクシー助成券は未受給。高齢者等世帯は65歳以上・18歳未満・一定の障害者・40〜64歳要介護者等のみの世帯。",
+          "benefit": "100円券100枚、10,000円。8月1日〜翌年7月31日。",
+          "fare": "1乗車枚数上限なし。残額は現金、IC/MOBIRY DAYS併用不可。介助者分は別負担。",
+          "routes": "乗降のいずれかが市内の指定事業者バス。予約制高速バス除外。",
+          "apply": "初回は地域包括ケア推進課・各支所出張所で本人確認書類。代理は本人と代理人書類。更新郵送希望は6月末まで、条件該当者は翌年から自動更新。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.higashihiroshima.lg.jp/soshiki/kenkofukushi/3/7/27328.html",
+              "label": "高齢者割引乗車券",
+              "updated": "2025-03-19",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.higashihiroshima.lg.jp/soshiki/kenkofukushi/3/7/27328.html",
+          "label": "高齢者割引乗車券",
+          "updated": "2025-03-19",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2025年3月更新のため、現年度条件・利用できる指定事業者を地域包括ケア推進課（082-420-0984）へ確認してください。"
+    },
+    {
+      "slug": "osakikamijima",
+      "name": "大崎上島町",
+      "status": "notfound",
+      "summary": "町のお出かけ支援資料は一般のバス運賃と移送・タクシーを案内しています。高齢者向けの町のバス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.osakikamijima.hiroshima.jp/material/files/group/9/odekakesien.pdf",
+          "label": "町のお出かけ支援資料",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.osakikamijima.hiroshima.jp/soshiki/fukushi/2/1_2/7842.html",
+          "label": "町のお出かけ支援",
+          "updated": "2025-12-26",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "健康福祉課（0846-62-0301）へ年齢・返納によるバス助成の有無を確認してください。"
+    },
+    {
+      "slug": "mihara",
+      "name": "三原市",
+      "status": "active",
+      "summary": "敬老優待乗車証で市内バスを優待料金で利用できます。",
+      "programs": [
+        {
+          "name": "敬老優待乗車証",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "市内に居住し住民登録している70歳以上。70歳の誕生月から申請可。重度障害者タクシー券との併給不可。",
+          "benefit": "市内運行バスの運賃を優待。",
+          "fare": "1乗車100円（交通計画による）。",
+          "routes": "市域内の路線・区域。高速バス・広島空港リムジンを除く。",
+          "apply": "本人確認書類を持参し本庁高齢者福祉課または各支所地域振興課へ申請。証の期限までに更新証を交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/soshiki/15/sonota.html",
+              "label": "三原市・敬老優待乗車証",
+              "updated": "2025-03-03",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00000365.html",
+              "label": "三原市・乗車証交付規則（令和6年改正）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/uploaded/attachment/156052.pdf",
+              "label": "三原市・交通計画の高齢者優待事業",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "佐木島循環バス敬老優待乗車証",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "鷺浦町に居住する70歳以上。",
+          "benefit": "佐木島循環バスを優待料金で利用。",
+          "fare": "乗車証を提示して100円減額。通常運賃との差額は窓口で確認。",
+          "routes": "佐木島循環バス。",
+          "apply": "敬老・障害者優待乗船券等交付申請書を市長へ提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00000366.html",
+              "label": "三原市・佐木島循環バス乗車証交付規則",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00002063.html",
+              "label": "三原市・コミュニティバス運行規則（令和7年制定）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "下徳良・垣内線の敬老証利用",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "市内に居住し住民登録している70歳以上。70歳の誕生月から申請可。重度障害者タクシー券との併給不可。",
+          "benefit": "対象停留所で乗降する敬老証所持者を無料に。",
+          "fare": "無料。",
+          "routes": "下徳良・垣内線の黒郷和木・垣内停留所で乗降する場合。",
+          "apply": "本人確認書類を持参し本庁高齢者福祉課または各支所地域振興課へ申請。証の期限までに更新証を交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/soshiki/15/sonota.html",
+              "label": "三原市・敬老優待乗車証",
+              "updated": "2025-03-03",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00000365.html",
+              "label": "三原市・乗車証交付規則（令和6年改正）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00002063.html",
+              "label": "三原市・コミュニティバス運行規則（令和7年制定）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.mihara.hiroshima.jp/soshiki/15/sonota.html",
+          "label": "三原市・敬老優待乗車証",
+          "updated": "2025-03-03",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00000365.html",
+          "label": "三原市・乗車証交付規則（令和6年改正）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.mihara.hiroshima.jp/uploaded/attachment/156052.pdf",
+          "label": "三原市・交通計画の高齢者優待事業",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00000366.html",
+          "label": "三原市・佐木島循環バス乗車証交付規則",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.mihara.hiroshima.jp/reiki_int/reiki_honbun/r150RG00002063.html",
+          "label": "三原市・コミュニティバス運行規則（令和7年制定）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "年齢と申請は2025年案内、料金と区間は日付のない計画・例規によるため、現行の運賃・対象区間・証の提示方法は高齢者福祉課（0848-67-6055）へ確認してください。"
+    },
+    {
+      "slug": "onomichi",
+      "name": "尾道市",
+      "status": "active",
+      "summary": "年度中に75歳以上になる人は、30円のバス優待証か1万円の共通券等を選べます。",
+      "programs": [
+        {
+          "name": "おのみちバス優待乗車証",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "年度中に75歳以上になる人（昭和27年4月1日以前生まれ）。高齢者かつ障害のある人は一方のみ。証または共通券等のいずれか一つを選択。",
+          "benefit": "おのみちバスの優待乗車証（有効2年間）。",
+          "fare": "1乗車30円。",
+          "routes": "おのみちバス。因島線向島BS～土生港前、瀬戸田線向島BS～瀬戸田港、松永線下西消防屯所前～松永を除く。",
+          "apply": "前年受給者へ5月末までに郵送。新たに75歳になる人は回答はがきで申請。未回答・新規等は5月29日～令和9年3月31日、市高齢者福祉課・各支所等で本人確認書類と印鑑（スタンプ印不可）を持参。代理も本人の2点を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.onomichi.hiroshima.jp/soshiki/22/1932.html",
+              "label": "尾道市・敬老優待乗車証等",
+              "updated": "2026-04-30",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.onomichi.hiroshima.jp/uploaded/attachment/59317.pdf",
+              "label": "尾道市・令和8年度詳細説明",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.onomichi.hiroshima.jp/uploaded/attachment/59059.pdf",
+              "label": "尾道市・令和8年度交付案内",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "尾道市敬老優待共通券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "年度中に75歳以上になる人（昭和27年4月1日以前生まれ）。高齢者かつ障害のある人は一方のみ。証または共通券等のいずれか一つを選択。",
+          "benefit": "100円券100枚、1万円分。令和9年5月31日まで。",
+          "fare": "バスは料金の範囲内で何枚でも利用可。100円未満は自己負担。",
+          "routes": "市と契約したバス事業者。フラワーライナー・シトラスライナー等の高速バスは不可。",
+          "apply": "前年受給者へ5月末までに郵送。新たに75歳になる人は回答はがきで申請。未回答・新規等は5月29日～令和9年3月31日、市高齢者福祉課・各支所等で本人確認書類と印鑑（スタンプ印不可）を持参。代理も本人の2点を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.onomichi.hiroshima.jp/soshiki/22/1932.html",
+              "label": "尾道市・敬老優待乗車証等",
+              "updated": "2026-04-30",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.onomichi.hiroshima.jp/uploaded/attachment/59317.pdf",
+              "label": "尾道市・令和8年度詳細説明",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.onomichi.hiroshima.jp/uploaded/attachment/59059.pdf",
+              "label": "尾道市・令和8年度交付案内",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.onomichi.hiroshima.jp/soshiki/22/1932.html",
+          "label": "尾道市・敬老優待乗車証等",
+          "updated": "2026-04-30",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.onomichi.hiroshima.jp/uploaded/attachment/59317.pdf",
+          "label": "尾道市・令和8年度詳細説明",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.onomichi.hiroshima.jp/uploaded/attachment/59059.pdf",
+          "label": "尾道市・令和8年度交付案内",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "住所要件や対象事業者の詳細は高齢者福祉課（0848-38-9137）へ確認してください。"
+    },
+    {
+      "slug": "sera",
+      "name": "世羅町",
+      "status": "notfound",
+      "summary": "現行の外出支援ポイントはタクシー等向けです。高齢者向けのバス助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.sera.hiroshima.jp/site/hukushi-kaigo/414.html",
+          "label": "世羅町・せらたすきーポイント",
+          "updated": "2026-01-05",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "県の返納支援一覧の共通利用券と町の現行ポイント案内には相違があります。バスに使える券の継続有無は福祉課高齢者地域包括支援係（0847-25-0072）へ確認してください。"
+    },
+    {
+      "slug": "fukuyama",
+      "name": "福山市",
+      "status": "active",
+      "summary": "10月1日時点で75歳以上の市民へ、年間7,000円分のおでかけ乗車券を交付します。",
+      "programs": [
+        {
+          "name": "おでかけ乗車券",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "市内に住所のある満75歳以上（10月1日時点）。",
+          "benefit": "年7,000円分（バス・タクシー共通5,000円＋バス専用2,000円）。",
+          "fare": "乗車券で支払い。差額や使用枚数の詳しい記載なし。",
+          "routes": "市内で利用できるバス。対象事業者の詳細は記載なし。",
+          "apply": "7月上旬の申請はがきに回答すると9月下旬に郵送。未申請者は10月～翌年3月末、市高齢者支援課・各保健福祉課等の窓口で申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukuyama.hiroshima.jp/site/koureisha-shien/378928.html",
+              "label": "福山市・おでかけ乗車券",
+              "updated": "2026-05-11",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fukuyama.hiroshima.jp/site/koureisha-shien/378928.html",
+          "label": "福山市・おでかけ乗車券",
+          "updated": "2026-05-11",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "券の有効期限、対象バス、差額の支払方法は高齢者支援課（084-928-1064）へ確認してください。"
+    },
+    {
+      "slug": "fuchu",
+      "name": "府中市",
+      "status": "notfound",
+      "summary": "75歳以上のおたっしゃ号運賃割引と外出支援タクシー券があります。バス向けの高齢者助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.fuchu.hiroshima.jp/kurashi/kokyokotsu/9315.html",
+          "label": "府中市・おたっしゃ号",
+          "updated": "2025-04-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.fuchu.hiroshima.jp/fukushi_kenko/koureisha_fukushi/koresya_seikatu_kazoku_sien/10506.html",
+          "label": "府中市・外出支援サービス",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "おたっしゃ号は公式案内で乗合タクシーです。バス支援の有無は地域づくり課地域交通係（0847-44-9108）へ確認してください。"
+    },
+    {
+      "slug": "jinsekikogen",
+      "name": "神石高原町",
+      "status": "notfound",
+      "summary": "高齢者・返納者向けのタクシー支援はありますが、バス向け助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.jinsekigun.jp/town/formation/soumu/03/tiikikoutu/c148/e875/",
+          "label": "神石高原町・ふれあいタクシー改正",
+          "updated": "2026-03-27",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.jinsekigun.jp/user/filer_public/c3/f6/c3f638ee-9f2f-4b75-9d71-bf30438ff503/shen-shi-gao-yuan-ting-nowai-chu-zhi-yuan-r8nian-du-ban-bian-geng-nei-rong-ming-ji-_1.pdf",
+          "label": "神石高原町・令和8年度外出支援",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "令和8年度の外出支援はタクシー向けです。バス支援の有無は総務課（0847-89-3330）へ確認してください。"
+    },
+    {
+      "slug": "miyoshi",
+      "name": "三次市",
+      "status": "henno",
+      "summary": "65歳以上の返納者は、市民バス無料証や1万円相当の交通IC等から選べます。",
+      "programs": [
+        {
+          "name": "返納者の三次市民バス無料利用者証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "免許返納時に三次市へ住民登録する65歳以上。有効期間内に自主返納し、返納後3か月以内に申請。失効・認知機能検査等による取消は対象外。支援は1回限りで無料証・IC・タクシー券の選択。",
+          "benefit": "申請年度から2年度間有効の無料利用者証。",
+          "fare": "無料。",
+          "routes": "君田・布野・作木・吉舎・三和・甲奴の三次市民バス。申請時に利用交通機関を一つ選択。",
+          "apply": "取消通知書を持参し市まちづくり交通課（東館3階）または各支所へ申請。代理の場合は取消通知書と代理人の身分証。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyoshi.hiroshima.jp/soshiki/8/1374.html",
+              "label": "三次市・高齢者運転免許自主返納支援",
+              "updated": "2026-08-13",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "返納者のMOBIRY DAYS支給",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "免許返納時に三次市へ住民登録する65歳以上。有効期間内に自主返納し、返納後3か月以内に申請。失効・認知機能検査等による取消は対象外。支援は1回限りで無料証・IC・タクシー券の選択。",
+          "benefit": "1万円相当のMOBIRY DAYS。",
+          "fare": "IC残高から支払い。残高を超える分は自己負担。",
+          "routes": "三次市内の備北交通・君田交通路線バス、三次～広島高速バス、その他県内路線バス等。",
+          "apply": "取消通知書を持参し市まちづくり交通課（東館3階）または各支所へ申請。代理の場合は取消通知書と代理人の身分証。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyoshi.hiroshima.jp/soshiki/8/1374.html",
+              "label": "三次市・高齢者運転免許自主返納支援",
+              "updated": "2026-08-13",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.miyoshi.hiroshima.jp/soshiki/8/1374.html",
+          "label": "三次市・高齢者運転免許自主返納支援",
+          "updated": "2026-08-13",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "shobara",
+      "name": "庄原市",
+      "status": "ended",
+      "summary": "返納者支援の新規受付は令和8年3月31日で終了しました。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.shobara.hiroshima.jp/main/life/post_1299.html",
+          "label": "庄原市・返納高齢者支援の受付終了",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "既に交付された券等は記載の期限まで利用できます。日付のない終了案内のため、既交付券等の利用は危機管理課（0824-73-1206）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.hiroshima.lg.jp/site/kotsu/menkyo-jisyuhennou-sien.html",
+    "label": "広島県・運転免許返納者支援",
+    "checked": "2026-10-06"
+  }
+}
