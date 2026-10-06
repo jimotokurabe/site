@@ -22,15 +22,25 @@
   "itoshima": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー料金助成は、重い障害のある人（手帳が条件）向けです。",
+   "what": "70歳以上で返納した市民には、利用可能額4,500円のSUGOCAを1回交付します。確認した福祉タクシー料金助成は障害者手帳などの条件があります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www1.g-reiki.net/itoshima/reiki_honbun/r385RG00000345.html",
-   "src": "糸島市福祉タクシー料金助成事業実施規程",
-   "upd": "記載なし"
+   "url": "https://www.city.itoshima.lg.jp/s016/20250221134104.html",
+   "src": "市の障害者向け福祉タクシーの案内",
+   "upd": "更新日の記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けSUGOCA",
+   "more_sources": [
+    {
+     "label": "糸島市の返納者向けSUGOCA",
+     "url": "https://www.city.itoshima.lg.jp/s004/010/010/090/030/20170418141620.html"
+    }
+   ]
   },
   "kasuga": {
    "k": "notfound",
@@ -63,27 +73,55 @@
   "nakagawa": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者にはnimocaかかわせみバス券を1回交付します。別に、65歳以上で介護認定を受け歩行が難しい人などには移送サービスがあります。返納だけで申請できる制度ではありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "flag": "高齢者支援課（092-953-2211）で確かめてください。"
+   "flag": "移送サービスは介護や歩行の条件があります。対象・利用回数は高齢者支援課に確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と条件付き外出支援",
+   "url": "https://www.city.nakagawa.lg.jp/soshiki/11/gaisyutsu-service.html",
+   "src": "市の高齢者外出支援サービスの案内",
+   "upd": "更新日：2025年4月1日",
+   "more_sources": [
+    {
+     "label": "那珂川市の免許返納者向け交通券",
+     "url": "https://www.city.nakagawa.lg.jp/soshiki/11/jisyuhennou.html"
+    },
+    {
+     "label": "かわせみバス・のるーとの交通案内",
+     "url": "https://www.city.nakagawa.lg.jp/soshiki/16/kawasemi-aiod-kokuchi.html"
+    }
+   ]
   },
   "munakata": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー利用券は重度の障がいがある人が対象です。",
+   "what": "70歳以上の返納者は、バス券・タクシー券・nimocaから1万円分を1回選べます。別に、70歳以上の市民は「ふれあいバスカード」を示すと市のふれあいバス・コミュニティバスにこども運賃で乗れます。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "url": "https://www.city.munakata.lg.jp/kiji0037743/index.html",
-   "src": "市の福祉タクシー利用券のページ",
-   "upd": "最終更新日：2026年2月2日",
-   "note": "70歳以上の市民は、ふれあいバスカードでバスがこども運賃になる（タクシー助成ではない）。"
+   "url": "https://www.city.munakata.lg.jp/kiji0034222/index.html",
+   "src": "市のふれあいバスカードの案内",
+   "upd": "最終更新日：2024年4月11日",
+   "note": "70歳以上の市民は、ふれあいバスカードでバスがこども運賃になる（タクシー助成ではない）。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と70歳以上のバス割引",
+   "more_sources": [
+    {
+     "label": "宗像市の免許返納者向け1万円の支援",
+     "url": "https://www.city.munakata.lg.jp/kiji003934/index.html"
+    }
+   ],
+   "flag": "返納特典の市ページは2022年更新です。券の現行条件は危機管理課に確認してください。"
   },
   "fukutsu": {
    "k": "yes",
@@ -149,20 +187,35 @@
   "kasuya": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者にはnimocaの利用額4,500円分を交付します。町の「ふれあいバス」は2025年11月30日に運行を終了し、予約型の「のるーと粕屋」が一般向けの交通として運行しています。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.town.kasuya.fukuoka.jp/s023/030/010/010/020/170/20191122220118.html",
-   "src": "町のその他の支援事業のページ",
-   "upd": "更新日：2025年06月01日"
+   "url": "https://www.town.kasuya.fukuoka.jp/s014/010/050/020/R7/file/R7-10.pdf",
+   "src": "広報かすや 2025年10月号",
+   "upd": "2025年10月",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けnimocaと町の交通",
+   "more_sources": [
+    {
+     "label": "返納者向けnimoca交付",
+     "url": "https://www.town.kasuya.fukuoka.jp/s048/020/020/030/20220419165213.html"
+    },
+    {
+     "label": "町の公共交通案内",
+     "url": "https://www.town.kasuya.fukuoka.jp/li/040/100/index.html"
+    }
+   ],
+   "flag": "返納者向けnimocaの額は町の本文が4,500円、添付PDFが5,000円相当と異なります。申請前に地域共創課に確認してください。"
   },
   "sasaguri": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町の福祉タクシー料金補助は在宅の重度障がい者が対象です。",
+   "what": "70歳以上の返納者にはSUGOCA 5,000円分を1回交付します。町営のオアシス巡回バスは施設を利用する人向けで、高齢者だけのタクシー助成とは異なります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
@@ -170,31 +223,74 @@
    "henno_earlier": false,
    "url": "https://www.town.sasaguri.fukuoka.jp/soshiki/fukushi/2/1087.html",
    "src": "町のタクシー料金補助のページ",
-   "upd": "記載なし"
+   "upd": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けSUGOCAと巡回バス",
+   "more_sources": [
+    {
+     "label": "篠栗町の返納者向けSUGOCA",
+     "url": "https://www.town.sasaguri.fukuoka.jp/soshiki/somu/3/5855.html"
+    },
+    {
+     "label": "オアシス巡回バス",
+     "url": "https://www.town.sasaguri.fukuoka.jp/soshiki/kenko/1_3/1468.html"
+    }
+   ],
+   "flag": "返納者向け案内の町ページには更新日が書かれていません。現在の条件を総務課に確認してください。"
   },
   "shime": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町の福祉タクシー利用券は障害者手帳や難病の受給者証などが条件です。",
+   "what": "70歳以上の返納者にはnimoca 5,000円分を1回交付します。別に「のるーと志免」は町内で予約して使える一般向け乗合交通で、確認した運賃案内に高齢者だけの割引はありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.town.shime.lg.jp/web-koho/kouhou/72485.html",
-   "src": "町の福祉タクシー利用券のお知らせ",
-   "upd": "掲載日：2026年3月1日更新"
+   "url": "https://www.town.shime.lg.jp/soshiki/9/knowrouteshime-start.html",
+   "src": "町ののるーと志免の案内",
+   "upd": "掲載日：2024年3月1日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けnimocaと予約型バス",
+   "more_sources": [
+    {
+     "label": "志免町の免許返納者向けnimoca",
+     "url": "https://www.town.shime.lg.jp/soshiki/8/shimematikoureishajishuhennousien20250401.html"
+    },
+    {
+     "label": "障害・難病要件のある福祉タクシー券",
+     "url": "https://www.town.shime.lg.jp/web-koho/kouhou/72485.html"
+    }
+   ]
   },
   "sue": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "75〜85歳で返納した町民には毎年度申請によりnimocaを交付します。別に、町民の65歳以上が証明書を示すとコミュニティバスの1〜7路線が無料になります。新しい佐谷〜東志免線は無料の対象外です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "note": "町の福祉タクシー料金補助は身体障害者手帳などが条件（例規）。"
+   "note": "町の福祉タクシー料金補助は身体障害者手帳などが条件（例規）。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けnimocaと65歳以上のバス無料",
+   "url": "https://www.town.sue.fukuoka.jp/soshiki/chiikikomyunityka_1/kokyokotu/komibas/qa.html",
+   "src": "町のコミュニティバスQ&A",
+   "upd": "更新日：2026年4月28日",
+   "more_sources": [
+    {
+     "label": "須恵町の免許返納者向けnimoca",
+     "url": "https://www.town.sue.fukuoka.jp/soshiki/chiikikomyunityka_1/6543.html"
+    }
+   ],
+   "flag": "返納者向けnimocaの町ページに更新日の記載がありません。毎年度の受付条件を地域コミュニティ課へ確認してください。"
   },
   "umi": {
    "k": "notfound",
@@ -210,27 +306,62 @@
   "dazaifu": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者にはnimoca 5,000円分を1回交付します。まほろば号は一般向けの100円バスで、区域を限って予約型の「のるーと太宰府」も走っています。年齢だけで受けられる別のタクシー券は確認した市の資料にありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
-   "henno_earlier": false
+   "henno_earlier": false,
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けnimocaと市の交通",
+   "url": "https://www.city.dazaifu.lg.jp/site/communitybus/16575.html",
+   "src": "市のまほろば号の案内",
+   "upd": "更新日：2026年4月1日",
+   "more_sources": [
+    {
+     "label": "太宰府市の返納者向けnimoca",
+     "url": "https://www.city.dazaifu.lg.jp/soshiki/5/15234.html"
+    },
+    {
+     "label": "のるーと太宰府",
+     "url": "https://www.city.dazaifu.lg.jp/soshiki/20/45089.html"
+    }
+   ],
+   "flag": "返納者向けnimocaの市ページは2021年更新です。現在の交付条件を防災安全課に確認してください。"
   },
   "chikushino": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上で返納または失効した人は、バス券など約1万円相当から1つを選べます。別に「つくし号」は一般向けの150円バスで、施設利用などの条件を満たす人はカミーリヤ巡回福祉バスを無料で使えます。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
-   "henno_earlier": false
+   "henno_earlier": false,
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券と市の巡回バス",
+   "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/2417.html",
+   "src": "市のつくし号の案内",
+   "upd": "更新日：2025年8月8日",
+   "more_sources": [
+    {
+     "label": "筑紫野市の返納・失効者向け交通券",
+     "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/21438.html"
+    },
+    {
+     "label": "カミーリヤ巡回福祉バス",
+     "url": "https://www.city.chikushino.fukuoka.jp/site/citypro/49078.html"
+    }
+   ]
   },
   "chikuzen": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、町の高齢者福祉サービスのページに書かれていません。",
+   "what": "70歳以上で返納した町民には、タクシー券や路線バスICカード、甘木鉄道券、オンデマンドバス券から1万円相当を1回交付します。確認した町の高齢者福祉一覧には、年齢だけで申請する別のタクシー助成は書かれていません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
@@ -239,18 +370,43 @@
    "url": "https://www.town.chikuzen.fukuoka.jp/S040/040/20180218143503.html",
    "src": "町の高齢者福祉のサービスのページ",
    "upd": "更新日：2023年6月29日",
-   "note": "返納特典でタクシー利用券（500円券20枚）を選べる。"
+   "note": "返納特典でタクシー利用券（500円券20枚）を選べる。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券",
+   "more_sources": [
+    {
+     "label": "筑前町の返納者向け交通券",
+     "url": "https://www.town.chikuzen.fukuoka.jp/S008/030/20180220124207.html"
+    }
+   ],
+   "flag": "高齢者福祉一覧は2023年更新の概略です。別制度の有無を断定せず、現在の支援は町に確認してください。"
   },
   "asakura": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上で自主返納した市民は、コミュニティバス・あいのりタクシー回数券か路線バスICカードの1万円相当を選べます。あいのりタクシーは2026年10月1日に運行内容が変わったため、利用前に新しい案内を確認してください。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "note": "あいのりタクシー（乗合）は市のコミュニティ交通で、高齢者向けの料金の記載は見つからなかった。"
+   "note": "あいのりタクシー（乗合）は市のコミュニティ交通で、高齢者向けの料金の記載は見つからなかった。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けバス・乗合タクシー券",
+   "url": "https://www.city.asakura.lg.jp/soshiki/5/3203.html",
+   "src": "市の免許返納者向け交通券の案内",
+   "upd": "更新日：2025年12月22日",
+   "more_sources": [
+    {
+     "label": "10月1日からのあいのりタクシー実証運行",
+     "url": "https://www.city.asakura.lg.jp/soshiki/5/15628.html"
+    }
+   ],
+   "flag": "あいのりタクシーは2026年10月1日から運行内容が変更されました。券を選ぶ前に対象路線・利用方法を市に確認してください。"
   },
   "toho": {
    "k": "henno_only",
@@ -269,17 +425,31 @@
   "kitakyushu": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。市のタクシー利用助成は重度の障害のある人が対象です。",
+   "what": "65歳以上の返納者には、運転経歴証明書と一緒に使う市営施設の無料利用カードがあります。公共交通の空白地域には別に予約型の「おでかけ交通」がありますが、市内一律の高齢者タクシー券ではありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
-   "henno_earlier": false
+   "henno_earlier": false,
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と地域の移動手段",
+   "url": "https://www.city.kitakyushu.lg.jp/contents/924_00479.html",
+   "src": "市のおでかけ交通の案内",
+   "upd": "更新日：2026年4月1日",
+   "more_sources": [
+    {
+     "label": "北九州市の免許返納特典カード",
+     "url": "https://www.city.kitakyushu.lg.jp/contents/26800107.html"
+    }
+   ],
+   "flag": "返納特典カードの市ページは2024年更新です。現在の交付条件を安全・安心推進課に確認してください。"
   },
   "okagaki": {
    "k": "henno_only",
    "name": "高齢者の運転免許自主返納支援",
-   "what": "65歳以上で免許を返納した人は、支援の1つとしてタクシー初乗り利用券か乗合タクシー回数券を選べます（約15,000円分）。",
+   "what": "返納特典としてタクシー初乗り券など約1万5千円分から1つを選べます。別に、免許を返納したか免許を持たない65歳以上で条件を満たす人は、購入前に申請するとシニアカー購入費を最大10万円補助されます。",
    "age": "運転免許証自主返納時に満65歳以上",
    "amt": "およそ15,000円相当分（コミュニティバス回数券・交通系ICカードとの選択）",
    "how": "長寿あんしん課に申請",
@@ -287,12 +457,23 @@
    "henno_earlier": false,
    "url": "https://www.town.okagaki.lg.jp/s012/020/030/180/20160603131716.html",
    "src": "町の運転免許自主返納支援のページ",
-   "upd": "更新日：2023年12月05日"
+   "upd": "更新日：2023年12月05日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典とシニアカー購入補助",
+   "more_sources": [
+    {
+     "label": "岡垣町のシニアカー購入補助",
+     "url": "https://www.town.okagaki.lg.jp/s012/020/030/080/060/20250416115707.html"
+    }
+   ],
+   "flag": "返納者向け券の町ページは2023年更新です。現在の券額と申請条件は長寿あんしん課に確認してください。"
   },
   "ashiya": {
    "k": "henno_only",
    "name": "高齢者運転免許証返納者支援制度",
-   "what": "65歳以上で免許を返納・失効した人は、支援の1つとしてタクシー初乗り利用券30枚を選べます。",
+   "what": "65歳以上で免許を返納または失効した町民は、バス共通乗車券かタクシー初乗り券30枚のどちらかを選べます。確認した別の福祉タクシー券には障害等の条件があります。",
    "age": "返納日または失効日に満65歳以上",
    "amt": "タクシー初乗り利用券（30枚）（バス共通乗車券との選択）",
    "how": "役場環境住宅課地域振興・交通係に申請",
@@ -300,12 +481,23 @@
    "henno_earlier": false,
    "url": "https://www.town.ashiya.lg.jp/soshiki/7/10701.html",
    "src": "町の返納者支援制度のページ",
-   "upd": "更新日：2022年4月1日更新"
+   "upd": "更新日：2022年4月1日更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納・失効者向けの交通券",
+   "more_sources": [
+    {
+     "label": "芦屋町の福祉タクシー券",
+     "url": "https://www.town.ashiya.lg.jp/site/fukushi/27062.html"
+    }
+   ],
+   "flag": "返納者向け券の町ページは2022年更新です。現在の申請条件は環境住宅課に確認してください。"
   },
   "mizumaki": {
    "k": "henno_only",
    "name": "運転免許証返納支援",
-   "what": "70歳以上で免許を返納・失効した人に、タクシー利用券1万円分を出します。",
+   "what": "70歳以上で免許を返納・失効した町民への1万円分のタクシー券は、上の返納特典と同じ制度です。利用できるタクシー会社が決まっており、返納・失効から1年以内の申請が必要です。",
    "age": "返納・失効日時点で満70歳以上",
    "amt": "タクシー利用券1万円分（500円×20枚）",
    "how": "役場（1階）高齢者支援係の窓口に申請",
@@ -313,25 +505,45 @@
    "henno_earlier": false,
    "url": "https://www.town.mizumaki.lg.jp/s012/kenko/080/020/020/20210228080030.html",
    "src": "町の高齢者支援サービスのページ",
-   "upd": "更新日：2023年4月1日"
+   "upd": "更新日：2023年4月1日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納・失効者向けのタクシー券",
+   "more_sources": [
+    {
+     "label": "水巻町の広報に掲載された返納支援",
+     "url": "https://www.town.mizumaki.lg.jp/s037/gyosei/110/130/110/750/20251110.html"
+    }
+   ]
   },
   "onga": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は、町のページで見つかりませんでした。町のデマンドバスの運賃は中学生以上1乗車300円で、高齢者の料金は書かれていません。",
+   "what": "65歳以上の返納者には町のコミュニティバス回数券50枚を1回交付します。別に、デマンドバスは中学生以上1乗車300円で利用できます。確認した案内に高齢者だけの割引はありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.town.onga.lg.jp/soshiki/12/64476.html",
-   "src": "町のデマンドバスのページ",
-   "upd": "更新日：2026年7月31日更新"
+   "src": "町のデマンドバス案内",
+   "upd": "2026年7月31日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けバス回数券とデマンドバス",
+   "more_sources": [
+    {
+     "label": "返納者向け回数券",
+     "url": "https://www.town.onga.lg.jp/soshiki/12/1383.html"
+    }
+   ]
   },
   "nakama": {
    "k": "henno_only",
    "name": "中間市高齢者運転免許証自主返納支援事業",
-   "what": "70歳以上で免許を返納した人は、支援の1つとしてタクシー回数券を選べます（10,000円相当）。",
+   "what": "70歳以上の返納者は、タクシー券やnimocaなどから1万円相当を1回選べます。市のコミュニティバスは2026年9月30日に終了し、10月1日から予約型の「のるーと中間」に変わりました。従来のバス券の扱いは市に確認してください。",
    "age": "免許自主返納時に70歳以上",
    "amt": "10,000円相当（nimoca・定期券・バス回数券などとの選択）",
    "how": "安全安心まちづくり課の窓口に申請",
@@ -339,21 +551,42 @@
    "henno_earlier": false,
    "url": "https://www.city.nakama.lg.jp/soshiki/7/1512.html",
    "src": "市の運転免許自主返納支援のページ",
-   "upd": "更新日：2026年4月1日更新"
+   "upd": "更新日：2026年4月1日更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けの交通券",
+   "more_sources": [
+    {
+     "label": "のるーと中間への交通切り替え",
+     "url": "https://www.city.nakama.lg.jp/soshiki/19/1182.html"
+    }
+   ],
+   "flag": "返納支援ページは運行終了後もコミュニティバス券を選択肢に挙げています。新交通への券の引き継ぎは確認できないため、安全安心まちづくり課に確認してください。"
   },
   "kanda": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町の福祉タクシー料金助成は障害者手帳が条件です。",
+   "what": "70歳以上の返納・失効者にはコミュニティバス回数券5,000円分を1回交付します。町の福祉タクシー助成は在宅の重度障害者等が対象で、年齢だけでは利用できません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.town.kanda.lg.jp/page/1244.html",
-   "src": "町の福祉タクシー料金助成のページ",
-   "upd": "更新日：2023年12月19日更新",
-   "note": "返納特典はコミュニティバス回数券（タクシーではない）。"
+   "src": "町の福祉タクシー案内",
+   "upd": "日付の記載なし",
+   "note": "返納特典はコミュニティバス回数券（タクシーではない）。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けバス回数券と福祉タクシー",
+   "more_sources": [
+    {
+     "label": "返納者向け回数券",
+     "url": "https://www.town.kanda.lg.jp/page/1056.html"
+    }
+   ]
   },
   "yukuhashi": {
    "k": "notfound",
@@ -369,22 +602,28 @@
   "miyako": {
    "k": "care",
    "name": "福祉タクシー利用券",
-   "what": "70歳以上だけの世帯で歩くのが難しい人などに、1か月300円分のタクシー利用券を8枚出します。",
-   "age": "70歳以上の高齢者のみの世帯に属し、歩行が困難である方など",
+   "what": "返納者向けタクシー共通券3万円分とは別に、歩行が難しい高齢者などへの福祉タクシー券があります。返納だけでは福祉券の対象になりません。",
+   "age": "70歳以上のみの世帯で歩行が難しい人、または認知症と診断され免許を返納した単身・70歳以上のみ世帯の人など。非課税世帯・車なし等の条件があります。",
    "amt": "1ヶ月あたり300円分の福祉タクシー利用券8枚（人工透析患者は月20枚）",
    "how": "保険福祉課（0930-32-2516）",
    "henno_link": "医師により認知症の診断を受けた、単身世帯または70歳以上の高齢者のみの世帯に属する方で、運転免許証を返納した方",
    "henno_earlier": false,
-   "url": "https://www.town.miyako.lg.jp/hokennfukushika3/koureisyasienn/kourei_service_2.html",
-   "src": "町の高齢者生活支援サービスのページ",
-   "upd": "記載なし",
-   "note": "住民税非課税世帯で、世帯に自動車（原付を含む）がないことが条件。認知症の診断を受けて免許を返納した人も対象（単身または70歳以上のみの世帯）。"
+   "url": "https://www.town.miyako.lg.jp/hokennfukushika3/188-1.html",
+   "src": "町の福祉タクシー利用券の案内",
+   "upd": "更新日：2025年6月2日",
+   "note": "住民税非課税世帯で、世帯に自動車（原付を含む）がないことが条件。認知症の診断を受けて免許を返納した人も対象（単身または70歳以上のみの世帯）。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の返納者向けタクシー共通回数券とは別の制度です。返納だけでは福祉タクシー券の対象になりません。",
+   "guide_details": [
+    "福祉券は300円券を月8枚交付します。認知症・世帯・税・車の保有などの条件を町に確認してください。"
+   ]
   },
   "chikujo": {
    "k": "care",
    "name": "外出支援サービス事業（タクシー利用券給付サービス）",
-   "what": "介護保険で「要支援」の人で、車がなく住民税非課税世帯の人に、通院のタクシー代に使える券を出します。",
-   "age": "記載なし（要介護認定が「要支援」の方）",
+   "what": "返納者向けのコミュニティバス無料乗車証・補助金とは別に、要支援認定などの条件を満たす人への通院用タクシー券があります。",
+   "age": "要支援認定を受け、自家用車がなく、住民税非課税世帯などの条件を満たす人",
    "amt": "タクシー利用券1枚につき500円。1人につき月3枚（年間上限33枚）",
    "how": "保険福祉課 福祉係",
    "henno_link": "記載なし",
@@ -392,46 +631,86 @@
    "url": "https://www.town.chikujo.fukuoka.jp/s017/010/040/010/020/20141209151436.html",
    "src": "町の高齢者在宅福祉サービスのページ",
    "upd": "更新日：2024年10月30日",
-   "note": "通院時だけ。生活保護受給者、福祉タクシー（障がい者）利用者は対象外。"
+   "note": "通院時だけ。生活保護受給者、福祉タクシー（障がい者）利用者は対象外。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の返納支援とは別の外出支援サービスです。返納しただけでは対象になりません。",
+   "guide_details": [
+    "通院時に限り、500円券を月3枚、年間最大33枚交付します。利用には町の事前確認が必要です。"
+   ]
   },
   "buzen": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市のタクシー料金助成は障害者手帳が条件です。",
+   "what": "70歳以上の返納者は市バス・タクシー等の乗車券から1万円相当を選べます。別に、市内に住む65歳以上は指定区間の市バスが1乗車100円になります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "url": "https://www.city.buzen.lg.jp/fukushi/shogai/taxi.html",
-   "src": "市のタクシー料金助成事業のページ",
-   "upd": "記載なし",
-   "note": "デマンド型乗合タクシーは1回300円で、年齢制限はない（高齢者料金ではない）。返納特典でタクシー乗車券を選べる。"
+   "url": "https://www.city.buzen.lg.jp/koutuu/bus/65saiijyoukoureisha.html",
+   "src": "市の高齢者バス割引案内",
+   "upd": "日付の記載なし",
+   "note": "デマンド型乗合タクシーは1回300円で、年齢制限はない（高齢者料金ではない）。返納特典でタクシー乗車券を選べる。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券と65歳以上のバス割引",
+   "more_sources": [
+    {
+     "label": "返納者向け交通券",
+     "url": "https://www.city.buzen.lg.jp/syougaigeneki/unntennmennkyojisyuhennnou.html"
+    }
+   ]
   },
   "yoshitomi": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、町のページで見つかりませんでした。",
+   "what": "70歳以上の返納・失効者向けに町は交通券などの支援を案内しています。ただし選択肢に記載された町内巡回バスは2026年3月31日に廃止されました。現在はデマンド型乗合タクシー「こまわり君」などが運行しています。申請前に使える券種を町へ確認してください。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "note": "返納特典でタクシー利用権などを選べる。"
+   "note": "返納特典でタクシー利用権などを選べる。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券と現行の乗合交通",
+   "url": "https://www.town.yoshitomi.lg.jp/gyosei/chosei/v995/y209/jumin/w121/z978/",
+   "src": "町の現行交通・巡回バス廃止案内",
+   "upd": "2026年4月30日",
+   "more_sources": [
+    {
+     "label": "返納者向け交通券",
+     "url": "https://www.town.yoshitomi.lg.jp/gyosei/chosei/v995/y209/fukushi/r132/"
+    }
+   ],
+   "flag": "町の返納支援ページは廃止済みの巡回バス乗車券も選択肢に掲載しています。現在選べる券種を福祉保険課に確認してください。"
   },
   "koge": {
    "k": "care",
    "name": "重度心身障害者等タクシー利用券交付事業",
-   "what": "障害者手帳を持つ人のほか、町の条例で定める寝たきり老人等に、初乗り料金を助成するタクシー利用券を出します。",
+   "what": "65歳以上などの返納者は乗合タクシー券・タクシー券・買い物券から1万円分を1回選べます。別の福祉タクシー券は障害者等または条例上の在宅寝たきり老人等が対象です。",
    "age": "記載なし（上毛町在宅寝たきり老人等介護手当支給条例の規定により定める寝たきり老人等）",
    "amt": "初乗り料金を助成。年間24枚",
    "how": "長寿福祉課、たいへいの里（大平支所総合窓口係）、唐原コミュニティセンター",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.town.koge.lg.jp/soshiki/chocho/9/2/2/syougaihukusi/3202.html",
-   "src": "町の重度心身障害者等タクシー利用券交付事業のページ",
-   "upd": "更新日：2021年06月23日",
-   "note": "施設入所者は対象外。ページの日付が1年以上前。返納特典でタクシー利用券を選べる。"
+   "src": "町の福祉タクシー案内",
+   "upd": "2021年6月23日",
+   "note": "施設入所者は対象外。ページの日付が1年以上前。返納特典でタクシー利用券を選べる。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と対象を限定した福祉タクシー",
+   "more_sources": [
+    {
+     "label": "返納者向け支援",
+     "url": "https://www.town.koge.lg.jp/soshiki/chocho/9/2/2/koureisyahukusi/3559.html"
+    }
+   ]
   },
   "ogori": {
    "k": "notfound",
@@ -481,140 +760,279 @@
   "ukiha": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。山間部の予約制のりあいタクシーは片道200円で、高齢者の料金は書かれていません。",
+   "what": "2026年10月1日から、返納者は「のるーとうきは」と市内タクシーで使える共通回数券11枚綴りを1冊2,400円（通常3,000円）で購入できます。山間部では予約制のりあいタクシーも運行しています。",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.ukiha.fukuoka.jp/kiji0038006/index.html",
-   "src": "市の予約制のりあいタクシーのページ",
-   "upd": "最終更新日：2026年9月3日"
+   "url": "https://www.city.ukiha.fukuoka.jp/kiji0038242/index.html",
+   "src": "市ののるタクチケット案内",
+   "upd": "2026年10月1日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けのるタクチケットと地域交通",
+   "more_sources": [
+    {
+     "label": "山間部の予約制のりあいタクシー",
+     "url": "https://www.city.ukiha.fukuoka.jp/kiji0038006/index.html"
+    }
+   ]
   },
   "okawa": {
    "k": "henno_only",
    "name": "高齢者免許証自主返納等支援事業",
-   "what": "70歳以上で運転免許を自主返納した人（失効した人も）に、タクシー利用券1万円分を出します。年齢だけで使えるタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納・失効者にはタクシー利用券1万円分を1回交付します。別に、移動に困る65歳以上の人などを対象に、無料の「おおかわ愛のりバス」が週3日運行しています。",
    "henno_link": "市内に住所がある70歳以上の方／運転免許自主返納日または失効日から1年以内の方",
    "henno_earlier": false,
-   "url": "https://www.city.okawa.lg.jp/s016/020/010/160/060/20220328165045.html",
-   "src": "市の高齢者免許証自主返納等支援事業のページ",
-   "upd": "更新日：令和5年6月1日",
-   "note": "市の生活支援バス（おおかわ愛のりバス、65歳以上で無料）はタクシー代の助成ではありません。"
+   "url": "https://www.city.okawa.lg.jp/s016/020/010/160/010/20241018120448.html",
+   "src": "市のおおかわ愛のりバス案内",
+   "upd": "2024年10月18日",
+   "note": "市の生活支援バス（おおかわ愛のりバス、65歳以上で無料）はタクシー代の助成ではありません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けタクシー券と生活支援バス",
+   "more_sources": [
+    {
+     "label": "返納者向けタクシー券",
+     "url": "https://www.city.okawa.lg.jp/s016/020/010/160/060/20220328165045.html"
+    }
+   ]
   },
   "oki": {
    "k": "henno_only",
    "name": "高齢者運転免許証自主返納支援助成事業",
-   "what": "70歳以上で運転免許を自主返納した人に、タクシー利用券（初乗り運賃分を年36枚、最大3年）を出します。町の「大木のりあい号」には高齢者の割引はないと書かれています。",
+   "what": "70歳以降に免許をすべて返納した人には、小型タクシーの初乗り運賃相当券を年36枚、最大3年間交付します（毎年申請）。別の「大木のりあい号」は誰でも1乗車500円で利用でき、高齢者だけの割引は案内されていません。",
    "henno_link": "70歳の誕生日以後に有効期間内にある運転免許証を自主返納（受けている免許の全部を取消す申請）した方",
    "henno_earlier": false,
-   "url": "https://www.town.ooki.lg.jp/kurashi/15/6151.html",
-   "src": "町の高齢者運転免許証自主返納支援助成事業のページ",
-   "upd": "記載なし"
+   "url": "https://www.town.ooki.lg.jp/soshiki/kikaku/seisaku/6/9135.html",
+   "src": "町の大木のりあい号案内",
+   "upd": "日付の記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けタクシー券と大木のりあい号",
+   "more_sources": [
+    {
+     "label": "返納者向けタクシー券",
+     "url": "https://www.town.ooki.lg.jp/soshiki/somu/syoubou/2/koureisyakoutuuanzen/1491278601134.html"
+    }
+   ]
   },
   "chikugo": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。",
+   "what": "70歳以上の返納者は、市指定のタクシー2社で使う300円券100枚か、交通系ICカード合計3万円分を選べます。返納から1年以内の申請が必要です。地域別のコミュニティ交通や、はねバスの返納者割引は別に案内されています。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "note": "返納した人へのタクシー利用券は返納特典の一覧に載せています。"
+   "note": "返納した人へのタクシー利用券は返納特典の一覧に載せています。",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け3万円分の券と地域交通",
+   "checked": "2026-10-03",
+   "url": "https://www.city.chikugo.lg.jp/bosai/_12224/_31084.html",
+   "src": "市の返納支援案内",
+   "upd": "2026年8月10日",
+   "more_sources": [
+    {
+     "label": "地域別のコミュニティ交通",
+     "url": "https://cms.city.chikugo.lg.jp/kurashi/_24191/_30806/_28405.html"
+    },
+    {
+     "label": "はねバス",
+     "url": "https://cms.city.chikugo.lg.jp/kurashi/_24191/_30805/_30518.html"
+    }
+   ]
   },
   "hirokawa": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は、町のページで見つかりませんでした。予約型乗合タクシー「ひろかわふれあいタクシー」はだれでも使え、高齢者の料金は書かれていません。",
+   "what": "70歳以上の返納・失効者には2万円分のふれあいタクシー利用券を交付します。別に、事前登録・予約で利用する乗合の「ひろかわふれあいタクシー」があります。町外へ行ける先は指定施設に限られます。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
    "url": "https://www.town.hirokawa.fukuoka.jp/kurashi_tetsuzuki/machizukuri_kotsu/1/1561.html",
-   "src": "町のふれあいタクシーの利用方法のページ",
-   "upd": "更新日：2026年06月25日",
-   "note": "料金表は画像で、高齢者向けの料金があるかは確かめられませんでした。"
+   "src": "町の予約制乗合タクシー案内",
+   "upd": "2026年6月25日",
+   "note": "料金表は画像で、高齢者向けの料金があるかは確かめられませんでした。",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け券と予約制ふれあいタクシー",
+   "checked": "2026-10-03",
+   "more_sources": [
+    {
+     "label": "返納者向け利用券",
+     "url": "https://www.town.hirokawa.fukuoka.jp/kurashi_tetsuzuki/anzen_anshin/1553.html"
+    }
+   ]
   },
   "yame": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。予約型乗合タクシーはだれでも使え、料金表に高齢者の料金はありません。",
+   "what": "70歳以上の返納者は6万円分のタクシー・路線バス共通券か、電動車いす購入補助を選べます。共通券は市の予約型乗合タクシーにも使えます。乗合タクシーの利用には登録と都度予約が必要です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
    "url": "https://www.city.yame.fukuoka.jp/kurashi/5/1457320362729.html",
-   "src": "市の予約型乗合タクシーのページ",
-   "upd": "記載なし"
+   "src": "市の予約型乗合タクシー案内",
+   "upd": "日付の記載なし",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け6万円分の券と予約制乗合タクシー",
+   "checked": "2026-10-03",
+   "more_sources": [
+    {
+     "label": "返納者向け支援",
+     "url": "https://www.city.yame.fukuoka.jp/sinsei/kotsuanzen/13619.html"
+    }
+   ]
   },
   "yanagawa": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。市の福祉タクシー助成は障害者手帳が条件です。",
-   "age": "記載なし",
-   "amt": "記載なし",
-   "how": "記載なし",
-   "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
-   "henno_earlier": false
-  },
-  "miyama": {
-   "k": "henno_only",
-   "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。",
+   "what": "70歳以上などの返納者は市内タクシー券2万円分または購入費補助を選べます。別に、コミュニティバスは年齢を問わず1乗車100円で利用できます。福祉タクシーは障害者手帳などの条件があります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "note": "市の意見への回答（2021年）では、デマンド型交通は導入していないと書かれています。"
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けタクシー券とコミュニティバス",
+   "checked": "2026-10-03",
+   "url": "https://www.city.yanagawa.fukuoka.jp/kurashi/kotsu/communitybus/community-bus.html",
+   "src": "市のコミュニティバス案内",
+   "upd": "2026年9月25日",
+   "more_sources": [
+    {
+     "label": "返納者向け支援",
+     "url": "https://www.city.yanagawa.fukuoka.jp/bosai/koutsuu/bohan__5669.html"
+    },
+    {
+     "label": "福祉タクシー",
+     "url": "https://www.city.yanagawa.fukuoka.jp/kenko/fukushi/shogaisha/shogaisha_yogu.html"
+    }
+   ]
   },
-  "omuta": {
+  "miyama": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。市の福祉タクシー利用券は重度の障害がある人向けです。",
+   "what": "70歳以上または健康上の理由で返納した人は、タクシー券・タクシー券とくすっぴー号回数券の組み合わせ・シニアカー購入補助から6万円相当を選べます。返納から3年以内に申請が必要です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
-   "henno_earlier": false
+   "henno_earlier": false,
+   "note": "市の意見への回答（2021年）では、デマンド型交通は導入していないと書かれています。",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け6万円分の選択支援と市バス",
+   "checked": "2026-10-03",
+   "url": "https://www.city.miyama.lg.jp/s024/kenko/070/050/20200107121000.html",
+   "src": "市の返納支援案内",
+   "upd": "2025年8月27日"
+  },
+  "omuta": {
+   "k": "henno_only",
+   "name": "記載なし",
+   "what": "70歳以上の返納者はタクシー券5,000円分かnimoca5,000円相当を選べます。受付数に上限があります。別の福祉タクシー券は重度障害者等に限定されます。返納者向けの民間タクシー割引も別に案内されています。",
+   "age": "記載なし",
+   "amt": "記載なし",
+   "how": "記載なし",
+   "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
+   "henno_earlier": false,
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け券と対象限定の福祉タクシー",
+   "checked": "2026-10-03",
+   "url": "https://www.city.omuta.lg.jp/kiji00317780/index.html",
+   "src": "市の返納支援案内",
+   "upd": "2025年12月26日",
+   "more_sources": [
+    {
+     "label": "対象限定の福祉タクシー",
+     "url": "https://www.city.omuta.lg.jp/kiji0032407/index.html"
+    },
+    {
+     "label": "民間の返納者割引",
+     "url": "https://www.city.omuta.lg.jp/kiji0036759/index.html"
+    }
+   ]
   },
   "kurate": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成や、デマンド交通の高齢者料金は見つかりませんでした。",
+   "what": "70歳以上の返納者は、すまいるバス・のるーと鞍手の回数券か、加盟タクシー券を選べます。旧もやいタクシーは2025年3月に終了し、予約型「のるーと鞍手」に移行しました。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
    "url": "https://www.town.kurate.lg.jp/koutuu/knowroute/index.html",
-   "src": "町の「のるーと鞍手」のページ",
-   "upd": "記載なし",
-   "note": "のるーと鞍手の運賃に高齢者の区分はない。免許返納者へのタクシー回数券は返納特典の一覧に載っている。"
+   "src": "町ののるーと鞍手案内",
+   "upd": "日付の記載なし",
+   "note": "のるーと鞍手の運賃に高齢者の区分はない。免許返納者へのタクシー回数券は返納特典の一覧に載っている。",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券とのるーと鞍手",
+   "checked": "2026-10-03",
+   "more_sources": [
+    {
+     "label": "返納者向け支援",
+     "url": "https://www.town.kurate.lg.jp/koutuu/untenmenkyo_hennousien.html"
+    },
+    {
+     "label": "旧もやいタクシーからの移行",
+     "url": "https://www.town.kurate.lg.jp/koutuu/tiikikoukyoukoutuukeikaku_r5.html"
+    }
+   ]
   },
   "miyawaka": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者はタクシー券、市乗合バス回数券、nimocaから5,000円分を選べます。乗合バス券は宮若・宗像線と宮若・飯塚線では使えません。返納者券とは別に、市のコミュニティ交通は一般向けに運行しています。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "note": "免許返納者へのタクシー利用券は返納特典の一覧に載っている。"
+   "note": "免許返納者へのタクシー利用券は返納特典の一覧に載っている。",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券と市の乗合バス",
+   "checked": "2026-10-03",
+   "url": "https://www.city.miyawaka.lg.jp/kiji003448403/index.html",
+   "src": "市の返納支援案内",
+   "upd": "2026年4月1日",
+   "more_sources": [
+    {
+     "label": "市のコミュニティ交通",
+     "url": "https://www.city.miyawaka.lg.jp/kiji003444183/index.html"
+    }
+   ]
   },
   "nogata": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市の高齢者福祉サービスのページに見つかりませんでした。",
+   "what": "75歳以上の返納者は交通系ICカードまたはコミュニティバス回数券5,000円相当を選べます。返納後1年以内の申請が必要です。市の案内では、年齢だけを条件とする一般のタクシー券は確認できませんでした。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.nogata.fukuoka.jp/kenko/_1158/_2119.html",
-   "src": "市の高齢者福祉サービスのページ",
-   "upd": "更新日 2026年07月01日"
+   "url": "https://www.city.nogata.fukuoka.jp/kurashi/_1206/_12517.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けバス券と高齢者サービス"
   },
   "kotake": {
    "k": "yes",
@@ -633,16 +1051,20 @@
   "iizuka": {
    "k": "henno_only",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成や、予約乗合タクシーの高齢者料金は見つかりませんでした。",
+   "what": "65歳以上の返納者はコミュニティ交通券7,000円分、タクシー券5,000円分、nimoca5,000円分から1種類を選べます。申請は返納後3か月以内、タクシー券の有効期限は交付年度末です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "返納した人への特典として、タクシー券を受け取れます（くわしくは返納特典の欄）",
    "henno_earlier": false,
-   "url": "https://www.city.iizuka.lg.jp/shokotaisaku/machi/kotsu/bus/taxi.html",
-   "src": "市の予約乗合タクシー・コミュニティバスのページ",
-   "upd": "更新日：2026年4月1日更新",
-   "note": "予約乗合タクシーなどの割引は障がい者手帳を持つ人と子ども向け。免許返納者へのタクシー乗車券は返納特典の一覧に載っている。"
+   "url": "https://www.city.iizuka.lg.jp/soshiki/33/1992.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "note": "予約乗合タクシーなどの割引は障がい者手帳を持つ人と子ども向け。免許返納者へのタクシー乗車券は返納特典の一覧に載っている。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けの交通券と予約乗合交通"
   },
   "fukuchi": {
    "k": "yes",
@@ -696,22 +1118,30 @@
   "keisen": {
    "k": "henno_only",
    "name": "桂川町高齢者等運転免許証自主返納支援事業",
-   "what": "運転免許を自主返納した人だけに、タクシー乗車券11,000円分を出します。年齢で使えるタクシー代の助成は見つかりませんでした。",
+   "what": "免許をすべて自主返納した人にタクシー乗車券11,000円分を1回交付します。町の案内に年齢条件は明記されていません。申請は返納後6か月以内です。",
    "henno_link": "平成 31 年 4 月 1 日以降に所有する全ての運転免許を自主返納された方",
    "henno_earlier": false,
-   "url": "https://www.town.keisen.fukuoka.jp/UPLOAD/INFF1004385.pdf",
-   "src": "町のチラシ（PDF）",
-   "upd": "記載なし"
+   "url": "https://www.town.keisen.fukuoka.jp/kurashi/senior/jisyuhennou.php",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けタクシー券"
   },
   "kama": {
    "k": "henno_only",
    "name": "高齢者運転免許証自主返納支援事業",
-   "what": "70歳以上で運転免許を自主返納した人は、タクシー乗車券5,000円分を選べます。年齢だけで使えるタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者は市バス券6,000円分、タクシー券5,000円分、路線バスICカード5,000円分から1種類を選べます。市の資料は2025年発行で、申請前に現在の受付を市へ確認してください。",
    "henno_link": "自主返納した日において70歳以上の方",
    "henno_earlier": false,
-   "url": "https://www.city.kama.lg.jp/site/koutuuannzenn/3424.html",
-   "src": "市の高齢者運転免許証自主返納支援事業のページ",
-   "upd": "更新日：2019年12月23日更新"
+   "url": "https://www.city.kama.lg.jp/uploaded/attachment/24021.pdf",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け交通券"
   },
   "kawasaki": {
    "k": "notfound",
@@ -731,17 +1161,27 @@
   "akamura": {
    "k": "yes",
    "name": "赤村タクシー利用補助事業",
-   "what": "赤村に住む75歳以上で、運転免許を持っていない人に、タクシー代の補助券（1枚500円）を年24枚出します。赤村から村外へ、村外から赤村へ行くときに使えます。",
+   "what": "村の返納支援案内には、平成筑豊鉄道の回数券9,900円分が掲載されています。別に、免許を持たない75歳以上の村民には村外との移動で使うタクシー補助券の案内があります。返納特典の現行券種は村へ確認してください。",
    "age": "赤村在住の７５歳以上の人（自動車運転免許証を所持していない人）",
    "amt": "1枚500円分の補助券を年24枚（1回の乗車で1枚）",
    "how": "住民課福祉環境係に申し込み（印鑑、本人確認書類が要る）",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.akamura.net/government/news_162/",
-   "src": "村のお知らせ（村内おでかけバスと赤村タクシー利用補助事業）",
-   "upd": "2020年01月20日",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
    "note": "チラシは画像のPDFで、令和元年度分（申請期間 令和2年3月31日まで）の案内です。使えるのは村が契約するタクシー業者（田川構内タクシー）。",
-   "flag": "ページが2020年の令和元年度分の案内です。今年度も続いているかを住民課 福祉環境係（0947-62-3000（内線210））で確かめてください。"
+   "flag": "ページが2020年の令和元年度分の案内です。今年度も続いているかを住民課 福祉環境係（0947-62-3000（内線210））で確かめてください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け鉄道券と75歳以上のタクシー補助",
+   "more_sources": [
+    {
+     "label": "村の返納支援案内",
+     "url": "https://www.akamura.net/government/news_445/"
+    }
+   ]
   },
   "soeda": {
    "k": "yes",

@@ -5,6 +5,7 @@
                                           # 下書き（検索に出さない・下書きの帯を出す）と、確認用ページの形
 """
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -15,6 +16,7 @@ from bus_pages import bus_page, bus_path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://jimotokurabe.jp/"
+CSS_REV = hashlib.sha256((ROOT / "site.css").read_bytes()).hexdigest()[:12]
 
 KINDS = {
     "give": ("もらえる", "返納した人に、券・カード・補助金などを出す"),
@@ -46,6 +48,20 @@ TAXI_KINDS = {
 }
 GUIDE_DIR = "hyogo-menkyo-henno"  # 市町ごとの手順ページを置くフォルダ（いまは兵庫県だけ）
 HOME_PREF = "hyogo"  # トップ・最初のひと言・手順ページで使う県
+BASIC_GUIDE_PATH = "menkyo-henno-guide.html"
+MOBILITY_PATH = "east-harima-mobility.html"
+MOBILITY_CITY_DIR = "hyogo-mobility"
+MUNICIPAL_MOBILITY_DATA_PATH = "data/municipal-mobility.json"
+NATIONAL_MOBILITY_PATH = "mobility.html"
+NATIONAL_MOBILITY_DATA_PATH = "mobility-city-index.json"
+
+
+def mobility_city_path(city_id):
+    return f"{MOBILITY_CITY_DIR}/{city_id}.html"
+
+
+def municipal_mobility_path(pref_id, city_slug):
+    return f"{pref_id}-mobility/{city_slug}.html"
 
 
 def guide_dir(pref):
@@ -113,11 +129,14 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
-def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class=""):
+def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class="", body_class="", styles=""):
     """base は、サイトの直下から見たこのページの位置（下の階層のページなら "../"）。"""
     canonical = SITE + path
     home = base or "./"
     wrap_class = f"wrap {page_class}".strip()
+    body_tag = f'<body class="{e(body_class)}">' if body_class else '<body>'
+    # 黒背景を全ページに反映するため、全ページでCSSの版を揃える。
+    css_href = f"{base}site.css?v={CSS_REV}"
     robots = '<meta name="robots" content="noindex">\n' if draft else ""
     banner = ""
     if draft:
@@ -148,14 +167,19 @@ gtag('config', 'G-T1PQ72Q40S');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="{base}site.css">
+<link rel="stylesheet" href="{css_href}">{styles}
 {SIZE_BOOT}
 </head>
-<body>
+{body_tag}
 <a class="skip" href="#main">本文へ移動</a>
 <div class="{wrap_class}">
 <header class="topbar">
   <a class="brand" href="{home}">じもと<span>くらべ</span></a>
+  <nav class="site-nav" aria-label="主なメニュー">
+    <a href="{base}index.html#search">地域を探す</a>
+    <a href="{base}index.html#return">免許返納</a>
+    <a href="{base}mobility.html">移動手段</a>
+  </nav>
   <div class="sizer" role="group" aria-label="文字の大きさ">
     <span>文字の大きさ</span>
     <button type="button" data-size-btn="normal" aria-pressed="true">標準</button>
@@ -258,7 +282,7 @@ def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_D
     if c.get("guide"):
         label = c["guide"].get("link_label", "返納から申し込みまでの手順を見る")
         parts.append(f'<p><a class="btn-guide" href="{gdir}/{c["slug"]}.html">'
-                     f'{e(label)}<span aria-hidden="true">→</span></a></p>')
+                     f'{e(c["n"])}の免許返納｜{e(label)}<span aria-hidden="true">→</span></a></p>')
     if c.get("url"):
         src = c.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(c["url"])}" target="_blank" rel="noopener">'
@@ -346,7 +370,7 @@ LIST_SCRIPT = """<script>
   chips.forEach(function (b) { b.addEventListener("click", function () { apply(b.getAttribute("data-f")); }); });
 
   // 絞り込み中に市町を選んだときは、その市町が見えるように絞り込みを外す
-  document.querySelectorAll(".pick-grid a, a[href='#statewide']").forEach(function (a) {
+  document.querySelectorAll(".pick-grid a, .comparison a, a[href='#statewide']").forEach(function (a) {
     a.addEventListener("click", function () {
       var t = document.getElementById(a.getAttribute("href").slice(1));
       if (t && t.closest(".card, .region") && (t.hidden || (t.closest(".region") || {}).hidden)) apply("all");
@@ -356,13 +380,14 @@ LIST_SCRIPT = """<script>
 </script>"""
 
 
-def pick_html(data, href_prefix=""):
+def pick_html(data, href_prefix="", prefer_guide=False):
     """地域ごとの市町ボタン。href_prefix を付けると、ほかのページの市町の欄へ飛ぶ。"""
     out = []
     for r in data["regions"]:
         rows = [c for c in data["cities"] if c["r"] == r["id"]]
         links = "\n        ".join(
-            f'<a href="{href_prefix}#{c["slug"]}" data-name="{e(c["n"])}" data-yomi="{e(c["y"])}">{e(c["n"])}</a>'
+            f'<a href="{guide_dir(data["pref"]) + "/" + c["slug"] + ".html" if prefer_guide and c.get("guide") else href_prefix + "#" + c["slug"]}" '
+            f'data-name="{e(c["n"])}" data-yomi="{e(c["y"])}">{e(c["n"])}</a>'
             for c in rows)
         out.append(f"""    <div class="pick-region">
       <h3>{e(r['name'])}</h3>
@@ -388,6 +413,8 @@ PICK_SCRIPT = """<script>
   q.addEventListener("input", function () {
     var v = norm(q.value), total = 0;
     groups.forEach(function (g) {
+      var block = g.closest("[data-pref-block]");
+      if (block && block.hidden) { g.hidden = false; return; }
       var n = 0;
       g.querySelectorAll("a").forEach(function (a) {
         var hit = !v || norm(a.getAttribute("data-name")).indexOf(v) >= 0 || norm(a.getAttribute("data-yomi")).indexOf(v) >= 0;
@@ -445,7 +472,7 @@ HK_BANNER_SCRIPT = """<script>
 </script>"""
 
 
-def list_page(data, draft):
+def list_page(data, draft, mobility_cities=(), mobility_scopes=None):
     P = data["pref"]
     pn, pu = P["name"], P["unit"]
     sw = P.get("statewide")
@@ -524,17 +551,60 @@ def list_page(data, draft):
     y, m, d = checked.split("-")
     flagged_names = [c["n"] for c in cities if c.get("flag")]
     flagged = f"{'と'.join(flagged_names)}は、カードに書いた方法で確かめています。" if flagged_names else ""
+    if home:
+        page_title = f"{pn}の免許返納特典一覧｜{total}{pu}の対象・金額とタクシー助成｜じもとくらべ"
+        page_description = (f"{pn}{total}{pu}の免許返納特典を、対象年齢・もらえるもの・金額・申し込み先で比較。"
+                            f"ICOCA、タクシー券、バスの無料券などを市町別に確認できます。"
+                            f"高齢者のタクシー代の助成も掲載。各市町の公式ページを{jdate(checked)}に確認しました。")
+        page_heading = f"{pn}の免許返納特典を{total}{pu}で比較"
+        page_lead = (f"{pn}の{total}{pu}について、運転免許を自主返納した人への特典を市町別に掲載。"
+                     f"対象年齢、金額、申し込み先を同じ項目で比べられます。"
+                     f"返納後の移動に役立つ、高齢者のタクシー代の助成もあわせて確認できます"
+                     f"（<a href=\"{taxi_path(P)}\">タクシー代の助成だけの一覧</a>）。")
+    else:
+        page_title = f"{pn}の免許返納特典{'と高齢者タクシー助成' if taxi else ''} {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"
+        page_description = (f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典（ICOCA、タクシー券、バスの無料券など）"
+                            + ("と、高齢者のタクシー代の助成を、金額・対象の年齢をそろえて" if taxi else "を、金額・対象の年齢・申し込み期限をそろえて")
+                            + f"比べられます。{jdate(checked)}に各市町の公式ページで確認。")
+        page_heading = "運転免許を返納したら、何がもらえる？"
+        page_lead = f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}"
+    mobility_links = "\n"
+    if mobility_cities:
+        items = "\n".join(
+            f'<li><a href="{mobility_city_path(c["id"])}">{e((mobility_scopes or {}).get(c["id"], c["name"]))}の移動手段・運賃支援を見る</a></li>'
+            for c in mobility_cities)
+        mobility_links = f'''\n<section class="mobility-entry-list" aria-labelledby="mobility-entry-h">
+  <h2 id="mobility-entry-h">地域の移動手段を探す</h2>
+  <p>確認済みの地域交通と運賃支援を、市町ごとにまとめました。神戸市西区は一部地区の案内です。</p>
+  <ul>{items}</ul>
+</section>
+'''
+    comparison_cities = [c for c in cities if c["k"] in HAS_BENEFIT]
+    comparison_html = ""
+    if comparison_cities:
+        rows = "\n".join(
+            f'<li><a href="#{e(c["slug"])}">{e(c["n"])}</a>'
+            f'<span data-label="特典・金額">{e(c.get("amt") or c.get("what") or KINDS[c["k"]][0])}</span>'
+            f'<span data-label="申込期限">{e(c.get("dl") or "記載なし")}</span></li>'
+            for c in comparison_cities[:8])
+        comparison_html = f'''\n<section class="comparison" aria-labelledby="comparison-h">
+  <h2 id="comparison-h">返納特典を短く比較</h2>
+  <p>特典が確認できた{n_benefit}{pu}のうち、地域順の先頭{min(8, n_benefit)}件です。金額の単位や条件は市町村の詳細で確認できます。</p>
+  <div class="comparison-head" aria-hidden="true"><span>市区町村</span><span>特典・金額</span><span>申込期限</span></div>
+  <ol class="comparison-rows">{rows}</ol>
+  <p class="comparison-more"><a href="#pick">町名から探す →</a> <a href="#list-h">すべての特典を見る →</a></p>
+</section>'''
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {pn}の免許返納特典</nav>
 <div class="hero">
   <div class="hero-top">
     <p class="eyebrow">{pn}・{total}{pu}</p>
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
-  <h1>運転免許を返納したら、何がもらえる？</h1>
-  <p class="lead">{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典を、同じ項目にそろえて並べました。{taxi_lead}</p>
+  <h1>{e(page_heading)}</h1>
+  <p class="lead">{page_lead}</p>
+  <p class="basic-entry"><a href="{BASIC_GUIDE_PATH}">免許返納の基本ガイド：手続き・運転経歴証明書・返納後の移動を見る →</a></p>
 {hk_banner(data.get("hk")) if home else ""}
-</div>
-
+</div>{comparison_html}{mobility_links}
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの{pu}を選んでください</h2>
   <div class="search">
@@ -573,10 +643,8 @@ def list_page(data, draft):
 </section>"""
 
     return shell(
-        title=(f"{pn}の免許返納特典{'と高齢者タクシー助成' if taxi else ''} {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"),
-        description=(f"{pn}の{total}{pu}が、運転免許を自主返納した人に出している特典（ICOCA、タクシー券、バスの無料券など）"
-                     + ("と、高齢者のタクシー代の助成を、金額・対象の年齢をそろえて" if taxi else "を、金額・対象の年齢・申し込み期限をそろえて")
-                     + f"比べられます。{jdate(checked)}に各市町の公式ページで確認。"),
+        title=page_title,
+        description=page_description,
         path=list_path(P),
         main=main, draft=draft,
         draft_note=P.get("draft_note", ""),
@@ -906,10 +974,16 @@ def deadline_calc(dl, ap, unit="市"):
 
 def contact_row(label, who, number=""):
     """who は名前1つか、[名前, 電話] の組のリスト（窓口が複数あるとき）。"""
+    def contact_value(name, phone):
+        if phone and phone in name:
+            before, _, after = name.partition(phone)
+            return f"{e(before)}{tel(phone)}{e(after)}"
+        return f"{e(name)} {tel(phone)}" if phone else e(name)
+
     if isinstance(who, list):
-        value = "<br>".join(f"{e(n)} {tel(t)}" for n, t in who)
+        value = "<br>".join(contact_value(n, t) for n, t in who)
     else:
-        value = f"{e(who)} {tel(number)}" if number else e(who)
+        value = contact_value(who, number)
     return f"    <div><dt>{e(label)}</dt><dd>{value}</dd></div>\n"
 
 
@@ -923,12 +997,12 @@ def guide_taxi_mobility(c, t, pref, base):
     <a href="#{e(t['guide_anchor'])}">制度の詳細を見る →</a>
   </div>"""
     elif same:
-        relation = (e(t["what"]) if t["k"] == "henno_only"
+        relation = (e(t["what"]) if t["k"] in ("henno_only", "notfound")
                     else "上の返納特典と、タクシー代の助成は同じ制度です。")
         henno = (f'<p>{e(t["henno_link"])}</p>'
                  if t.get("henno_link") and t["henno_link"] != "記載なし" and t["k"] != "henno_only" else "")
         taxi = f"""  <div class="mobility-panel">
-    <h3>{e(t.get('name', 'タクシー代の助成'))}</h3>
+    <h3>{e(t.get('guide_heading', t.get('name', 'タクシー代の助成')))}</h3>
     <p>{relation}</p>{henno}
     <a href="#ans-h">対象と手順を見る →</a>
   </div>"""
@@ -1042,7 +1116,7 @@ def city_page(c, data, draft, base="../"):
       <h3><span class="num" aria-hidden="true">3</span>{e(name)}に申し込む</h3>
       <p>{e(ap['write'])}{e(ap.get('choice_note', ''))}</p>
       <dl class="facts">
-{fact(ap.get("attach_label", "添えるもの"), ap.get('attach'))}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap.get('address'))}        <div><dt>問い合わせ</dt><dd>{e(ap['office'])} {tel(ap.get('tel', ''))}</dd></div>
+{fact(ap.get("attach_label", "添えるもの"), ap.get('attach'))}{dup_deadline}{fact(ap.get("address_label", "宛先"), ap.get('address'))}        {contact_row("問い合わせ", ap['office'], ap.get('tel', '')).strip()}
       </dl>{calc}
       <ul class="bullets">
 {ways}
@@ -1130,7 +1204,7 @@ def city_page(c, data, draft, base="../"):
     <p class="eyebrow">{pn}・{e(name)}</p>
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
-  <h1>{e(name)}で運転免許を返納したら</h1>
+  <h1>{e(g.get('heading', f'{name}で運転免許を返納したら'))}</h1>
   <p class="lead">{e(g['lead'])}</p>
 </div>
 
@@ -1164,7 +1238,7 @@ def city_page(c, data, draft, base="../"):
         <ul class="bullets">
 {lis(kr['proxy'], '          ')}
         </ul>
-        {f"<p>{ext(kr['proxy_form'], pol + 'の書類（PDF）')}</p>" if kr.get('proxy_form') else ""}
+{f"        <p>{ext(kr['proxy_form'], pol + 'の書類（PDF）')}</p>" if kr.get('proxy_form') else ""}
       </details>
     </li>
     <li class="step" id="step-2">
@@ -1240,6 +1314,248 @@ def city_page(c, data, draft, base="../"):
         scripts=CITY_SCRIPT + ("\n" + CALC_SCRIPT if calc_link else ""))
 
 
+# ---------------- 免許返納の基本ガイド ----------------
+
+def pref_chooser_html(prefs, scope):
+    """都道府県を地方別・名前検索で選ぶ共通の入口。リンクは JS 無効時の確認先にもなる。"""
+    on = {d["pref"]["id"]: d for d in prefs}
+    groups = []
+    for region, ids in REGIONS:
+        choices = "".join(
+            f'<a class="pref-btn" href="{list_path(on[pid]["pref"])}" data-pref-choice="{pid}" '
+            f'data-pref-name="{e(on[pid]["pref"]["name"])}"><b>{e(on[pid]["pref"]["name"])}</b>'
+            f'<span>{len(on[pid]["cities"])}{e(on[pid]["pref"]["unit"])}</span></a>'
+            for pid in ids if pid in on)
+        if choices:
+            groups.append(f'<div class="pref-region"><h3 class="pr-h">{e(region)}</h3>'
+                          f'<div class="pref-btns">{choices}</div></div>')
+    return (f'<div class="pref-chooser" data-pref-chooser id="{scope}-pref-chooser">'
+            f'<details><summary><span data-pref-current>都道府県を選ぶ</span></summary>'
+            f'<div class="pref-chooser-panel"><label for="{scope}-pref-search">都道府県名で探す</label>'
+            f'<input id="{scope}-pref-search" type="search" autocomplete="off" placeholder="例：兵庫、大阪">'
+            f'<div class="pref-regions">{"".join(groups)}</div>'
+            f'<p class="pref-chooser-none" hidden>該当する都道府県がありません。</p>'
+            f'</div></details></div>')
+
+
+PREF_CHOOSER_SCRIPT = """<script>
+(function () {
+  document.querySelectorAll("[data-pref-chooser]").forEach(function (chooser) {
+    var details = chooser.querySelector("details");
+    var search = chooser.querySelector("input[type=search]");
+    var groups = chooser.querySelectorAll(".pref-region");
+    search.addEventListener("input", function () {
+      var term = search.value.normalize("NFKC").trim().toLowerCase();
+      var total = 0;
+      groups.forEach(function (group) {
+        var found = 0;
+        group.querySelectorAll("[data-pref-choice]").forEach(function (link) {
+          var match = !term || link.dataset.prefName.normalize("NFKC").toLowerCase().includes(term);
+          link.hidden = !match;
+          if (match) found++;
+        });
+        group.hidden = !found;
+        total += found;
+      });
+      chooser.querySelector(".pref-chooser-none").hidden = !!total;
+    });
+    chooser.addEventListener("click", function (event) {
+      var link = event.target.closest("[data-pref-choice]");
+      if (!link || !chooser.contains(link)) return;
+      event.preventDefault();
+      chooser.querySelector("[data-pref-current]").textContent = link.dataset.prefName;
+      details.open = false;
+      search.value = "";
+      search.dispatchEvent(new Event("input"));
+      chooser.dispatchEvent(new CustomEvent("pref:selected", {detail: {id: link.dataset.prefChoice, name: link.dataset.prefName}}));
+    });
+  });
+})();
+</script>"""
+
+
+BASIC_GUIDE_SCRIPT = """<script>
+(function () {
+  var data = __PREF_DATA__;
+  var chooser = document.getElementById("basic-pref-chooser");
+  var pref = document.getElementById("basic-pref");
+  var city = document.getElementById("basic-city");
+  var cityField = document.getElementById("basic-city-field");
+  var citySearch = document.getElementById("basic-city-search");
+  var cityCount = document.getElementById("basic-city-count");
+  var result = document.getElementById("basic-result");
+  if (!chooser || !pref || !city || !result) return;
+  function option(value, label) { return new Option(label, value); }
+  function resetResult() { result.hidden = true; }
+  function fillCities() {
+    city.replaceChildren(option("", "市町村を選ぶ"));
+    var row = data.prefs[pref.value];
+    if (!row || !row.cities) { city.disabled = true; return; }
+    var term = citySearch.value.normalize("NFKC").toLowerCase().trim();
+    var matches = row.cities.filter(function (c) {
+      return !term || c.name.normalize("NFKC").toLowerCase().includes(term)
+        || c.yomi.normalize("NFKC").toLowerCase().includes(term);
+    });
+    matches.forEach(function (c) { city.add(option(c.slug, c.name)); });
+    city.disabled = !matches.length;
+    cityCount.textContent = matches.length ? matches.length + "市町村から選べます" : "見つかりませんでした。市町村名の一部を入力してください。";
+  }
+  chooser.addEventListener("pref:selected", function (event) {
+    pref.value = event.detail.id;
+    pref.dispatchEvent(new Event("change"));
+  });
+  pref.addEventListener("change", function () {
+    var row = data.prefs[pref.value];
+    cityField.hidden = !row;
+    citySearch.value = "";
+    resetResult();
+    city.replaceChildren(option("", "市町村を選ぶ"));
+    city.disabled = true;
+    citySearch.disabled = true;
+    cityCount.textContent = row ? "市町村を読み込み中…" : "";
+    if (!row) return;
+    var id = pref.value;
+    if (row.cities) { citySearch.disabled = false; fillCities(); return; }
+    fetch(row.dataUrl).then(function (response) {
+      if (!response.ok) throw new Error("load failed");
+      return response.json();
+    }).then(function (cities) {
+      row.cities = cities;
+      if (pref.value !== id) return;
+      citySearch.disabled = false;
+      fillCities();
+    }).catch(function () {
+      if (pref.value !== id) return;
+      cityCount.replaceChildren("市町村を読み込めませんでした。");
+      var fallback = document.createElement("a");
+      fallback.href = row.benefit;
+      fallback.textContent = row.name + "の一覧から探す →";
+      cityCount.append(" ", fallback);
+    });
+  });
+  citySearch.addEventListener("input", function () { fillCities(); resetResult(); });
+  city.addEventListener("change", function () {
+    var row = data.prefs[pref.value];
+    var selected = row && row.cities.find(function (c) { return c.slug === city.value; });
+    resetResult();
+    if (!selected) return;
+    document.getElementById("basic-result-title").textContent = selected.name + "の情報";
+    var police = document.getElementById("basic-police-link");
+    police.href = row.police;
+    police.textContent = row.policeName + "の免許返納手続き（公式） ↗";
+    var benefit = document.getElementById("basic-benefit-link");
+    benefit.href = selected.benefit;
+    benefit.textContent = selected.name + (selected.benefit.includes("#") ? "の免許返納特典を見る →" : "の免許返納の手順と特典を読む →");
+    var taxi = document.getElementById("basic-taxi-link");
+    taxi.href = selected.taxi;
+    taxi.textContent = selected.name + "の高齢者向けタクシー助成を見る →";
+    result.hidden = false;
+  });
+})();
+</script>"""
+
+
+def basic_guide_cities(data):
+    """基本ガイドで県を選んだあとだけ読み込む、軽量な市町村データ。"""
+    P = data["pref"]
+    cities = []
+    for c in data["cities"]:
+        t = data["taxi"][c["slug"]]
+        cities.append({"slug": c["slug"], "name": c["n"], "yomi": c["y"],
+                       "kind": KINDS[c["k"]][0], "what": c["what"],
+                       "benefit": f'{guide_dir(P)}/{c["slug"]}.html' if c.get("guide") else f'{list_path(P)}#{c["slug"]}',
+                       "taxiKind": TAXI_KINDS[t["k"]][0], "taxi": f'{taxi_path(P)}#{c["slug"]}'})
+    return cities
+
+
+def basic_guide_page(prefs, draft):
+    """全国共通の説明と、確認済みの47都道府県の手続き・地域情報への入口。"""
+    public = [d for d in prefs if not d["pref"].get("draft")]
+    procedure_links = json.loads((ROOT / "data" / "henno-procedure-links.json").read_text(encoding="utf-8"))
+    links = {}
+    for d in public:
+        pid = d["pref"]["id"]
+        police = d.get("common", {}).get("hennou", {}).get("url") or procedure_links.get(pid, {}).get("url")
+        if not police or not d.get("taxi"):
+            raise ValueError(f"基本ガイドの確認先が足りません: {pid}")
+        links[pid] = {"name": d["pref"]["name"], "policeName": d["pref"]["police"], "police": police,
+                      "benefit": list_path(d["pref"]), "count": len(d["cities"]),
+                      "dataUrl": f"guide-city-data/{pid}.json"}
+    regions = []
+    for region, ids in REGIONS:
+        rows = [f'<li><a href="{links[pid]["benefit"]}">{e(links[pid]["name"])}の免許返納特典と市町村別の案内</a></li>'
+                for pid in ids if pid in links]
+        if rows:
+            regions.append(f'<div><h3>{e(region)}</h3><ul>{"".join(rows)}</ul></div>')
+    payload = json.dumps({"prefs": links}, ensure_ascii=False).replace("</", "<\\/")
+    script = PREF_CHOOSER_SCRIPT + BASIC_GUIDE_SCRIPT.replace("__PREF_DATA__", payload)
+    main = f"""<article class="basic-guide">
+<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 免許返納の基本ガイド</nav>
+<header class="basic-hero">
+  <p class="basic-kicker">はじめて調べる方へ</p>
+  <h1>免許返納の基本ガイド</h1>
+  <p class="basic-answer"><strong>運転免許の自主返納は、免許が不要になった人などが本人の意思で申請する手続きです。</strong>返納する場所や必要なものは都道府県警察で確認します。返納後の移動手段と、地域で使える支援も先に調べておくと安心です。</p>
+  <nav class="basic-jump" aria-label="このページでわかること"><a href="#before">返納できるか</a><a href="#flow">手続きの流れ</a><a href="#after">返納後の支援</a><a href="#region">市町村の情報を探す</a></nav>
+</header>
+
+<section id="before" class="basic-section" aria-labelledby="basic-before-h">
+  <p class="basic-kicker">まず確認</p><h2 id="basic-before-h">自主返納できる人・できない人</h2>
+  <p>運転しなくなった人や、運転に不安を感じる人は、免許を自主的に返納できます。一方、免許の停止・取消しの行政処分中の人や、その処分の基準に該当する人などは自主返納できません。該当するか迷うときは、手続き前に住所地の都道府県警察へ確認してください。</p>
+  <p class="basic-source">出典：<a href="https://www.npa.go.jp/policies/application/license_renewal/jishuhennou.html">警察庁「運転免許証の自主返納について」</a></p>
+</section>
+
+<section id="flow" class="basic-section" aria-labelledby="basic-flow-h">
+  <p class="basic-kicker">手続きの順序</p><h2 id="basic-flow-h">返納までの3つの確認</h2>
+  <ol class="basic-steps">
+    <li><span class="basic-num" aria-hidden="true">01</span><div><h3>返納後の移動を考える</h3><p>通院、買い物、家族の送迎など、普段の行き先を書き出します。バス・タクシーや家族の送迎で移動できるかを確かめ、手続き当日の帰り道も決めておきます。返納が完了した後は運転できません。</p></div></li>
+    <li><span class="basic-num" aria-hidden="true">02</span><div><h3>住所地の警察に手続きを確認する</h3><p>申請場所、受付時間、必要な書類、代理申請の条件は都道府県警察の案内で確認します。全国共通の窓口や持ち物として決めつけず、下の地域選択から住所地の公式案内へ進んでください。</p></div></li>
+    <li><span class="basic-num" aria-hidden="true">03</span><div><h3>運転経歴証明書と地域の支援を確認する</h3><p>運転経歴証明書は、返納した人などが申請できる本人確認用の書類です。返納後5年以上たつと交付を受けられません。地域の特典で提示が必要な場合もあるため、証明書を申請するか警察の案内で確認します。</p></div></li>
+  </ol>
+  <div class="basic-check"><h3>警察の案内で確認する項目</h3><ul>
+    <li>返納できる窓口と受付日・時間</li>
+    <li>免許証の種類に応じた持ち物と、代理申請・郵送の条件</li>
+    <li>運転経歴証明書を申し込む場合の書類、写真、手数料、受け取り方</li>
+  </ul><p>返納の受付方法と証明書の申請方法は別に確認します。費用や必要書類を全国一律と考えず、住所地の案内を見てください。</p></div>
+  <p class="basic-source">証明書の対象・期限：<a href="https://www.npa.go.jp/policies/application/license_renewal/jishuhennou.html">警察庁の説明</a>。申請場所など：<a href="https://www.npa.go.jp/link/prefectural.html">各都道府県警察の案内</a>。</p>
+</section>
+
+<section id="after" class="basic-section" aria-labelledby="basic-after-h">
+  <p class="basic-kicker">返納後の暮らし</p><h2 id="basic-after-h">特典と移動支援は地域で違います</h2>
+  <p>返納した人だけを対象にする券・ポイント、運転経歴証明書を見せて使う割引、返納の有無にかかわらず高齢者が使えるタクシー助成があります。対象年齢、住所、申請期限、証明書の要否を市町村ごとに確認してください。</p>
+  <p>返納前に、お住まいの市町村の特典と移動手段を確認してください。下の地域選択から、その市町村の情報へ進めます。</p>
+</section>
+
+<section class="basic-section" aria-labelledby="basic-faq-h">
+  <p class="basic-kicker">よくある疑問</p><h2 id="basic-faq-h">手続きを進める前に</h2>
+  <div class="basic-faq"><details><summary>運転経歴証明書は必ず申請しますか？</summary><p>返納とは別に、必要かどうかを考える書類です。返納後の本人確認や地域の割引に使える場合があります。申請方法と手数料は住所地の警察の案内で確認してください。</p></details>
+  <details><summary>免許証の有効期限が切れている場合は？</summary><p>警察庁によると、免許を更新せず失効した人も、失効から5年以内なら運転経歴証明書の交付対象です。自主返納の手続きとは状況が異なるため、申請できるかと必要書類を住所地の警察に確認してください。</p></details>
+  <details><summary>家族が代わりに返納できますか？</summary><p>代理申請の扱いと必要書類は都道府県警察の案内で確認してください。本人の状況や免許証の種類で条件が変わることがあります。</p></details>
+  <details><summary>返納するか、家族でまだ迷っています</summary><p>まずは通院や買い物の移動手段を書き出してみてください。話の切り出し方は、<a href="henno-hanashikata.html">親に運転の話をはじめるためのガイド</a>でも考えられます。</p></details></div>
+</section>
+<section id="region" class="basic-section basic-destination" aria-labelledby="basic-region-h">
+  <p class="basic-kicker">お住まいの情報へ</p><h2 id="basic-region-h">市町村の手順・特典を確認する</h2>
+  <p>都道府県と市町村を選ぶと、確認したい地域のページへ進めます。都道府県名が見つからないときは、選択欄の中で名前を入力できます。</p>
+  <div class="basic-picker">
+    <div class="basic-field"><span class="basic-field-label">都道府県</span>{pref_chooser_html(public, "basic")}<input type="hidden" id="basic-pref"></div>
+    <div class="basic-field" id="basic-city-field" hidden><label for="basic-city">市町村</label>
+      <div class="basic-city-search"><label for="basic-city-search">市町村名で絞り込む（任意）</label><input id="basic-city-search" type="search" autocomplete="off" placeholder="例：あかし、明石"></div>
+      <div class="basic-select"><select id="basic-city" disabled><option value="">市町村を選ぶ</option></select></div><p class="basic-city-count" id="basic-city-count" aria-live="polite"></p>
+    </div>
+    <div class="basic-result" id="basic-result" hidden aria-live="polite"><h3 id="basic-result-title"></h3>
+      <p><a class="basic-result-main" id="basic-benefit-link" href="./">市町村の免許返納特典を見る →</a></p>
+      <p class="basic-result-more"><a id="basic-police-link" href="https://www.npa.go.jp/link/prefectural.html" target="_blank" rel="noopener">警察の免許返納手続き（公式）</a><a id="basic-taxi-link" href="./">高齢者向けタクシー助成</a></p>
+    </div>
+  </div>
+  <details class="basic-all"><summary>都道府県別の一覧から探す</summary><div class="basic-regions">{"".join(regions)}</div></details>
+  <p class="basic-source">警察の手続きURLは各都道府県警察の案内を確認したものです。市町村の制度は各自治体の原典と確認日を一覧・個別ページに記しています。</p>
+</section>
+<p class="basic-updated">全国共通の説明は、<time datetime="2026-10-04">2026年10月4日</time>に警察庁のページで確認しました。手続き前に、住所地の都道府県警察で最新情報を確認してください。</p>
+</article>"""
+    return shell(title="免許返納の基本ガイド｜手続き・運転経歴証明書・返納後の支援｜じもとくらべ",
+                 description="免許返納の条件、警察での手続き、運転経歴証明書、返納後の移動支援を順に説明。都道府県警察の公式案内と、市町村別の特典・タクシー助成へ進めます。",
+                 path=BASIC_GUIDE_PATH, main=main, draft=draft, page_class="basic-page", scripts=script)
+
+
 # ---------------- トップ ----------------
 
 # トップの「準備中」。TOPICS.md の「これから作る」と同じ順番・名前にそろえる（公開したらここから消す）
@@ -1264,22 +1580,7 @@ REGIONS = [
 
 
 def pref_picker(prefs):
-    """トップの「都道府県を選ぶ → 市町村を選ぶ」。地方ごとに、調べ終えた府県のボタンを並べる。"""
-    on = {d["pref"]["id"]: d for d in prefs}
-    groups = []
-    for rname, ids in REGIONS:
-        ds = [on[i] for i in ids if i in on]
-        if not ds:
-            continue
-        btns = "\n      ".join(
-            f'<a class="pref-btn" href="#pref-{d["pref"]["id"]}" data-pref="{d["pref"]["id"]}">'
-            f'<b>{e(d["pref"]["name"])}</b><span>{len(d["cities"])}{d["pref"]["unit"]}</span></a>' for d in ds)
-        groups.append(f"""    <div class="pref-region">
-      <h3 class="pr-h">{rname}</h3>
-      <div class="pref-btns">
-      {btns}
-      </div>
-    </div>""")
+    """トップの「都道府県 → 市町村 → 地域の情報」の入口。"""
     blocks = []
     for d in prefs:
         P = d["pref"]
@@ -1287,22 +1588,22 @@ def pref_picker(prefs):
     <h3 class="pp-h">{e(P['name'])}の{len(d['cities'])}{P['unit']}</h3>
     <p class="pp-links"><a href="{list_path(P)}">免許返納の特典の一覧</a>{f' ・ <a href="{taxi_path(P)}">タクシー代の助成の一覧</a>' if d.get("taxi") else ""}</p>
     <div class="pick-list">
-{pick_html(d, list_path(P))}
+{pick_html(d, list_path(P), prefer_guide=True)}
     </div>
   </div>""")
     return f"""<section class="pick top-pick" id="pick" aria-labelledby="pick-h">
-  <h2 class="section-title" id="pick-h">お住まいの都道府県を選んでください</h2>
-  <p class="pick-lead">いま{len(prefs)}都道府県を調べ終えています。県を押すと、市町村を選べます。</p>
-  <div class="pref-regions">
-{chr(10).join(groups)}
-  </div>
-  <p class="jm-msg" id="jm-msg" aria-live="polite"></p>
-  <div class="search">
-    <label for="q">市町村の名前で探す <span class="hint">（ひらがなでも探せます）</span></label>
-    <input id="q" type="search" autocomplete="off" placeholder="例：あかし、さかい">
-  </div>
+  <h2 class="section-title" id="pick-h">免許返納の特典を市町村で探す</h2>
+  <p class="pick-lead">都道府県を選ぶと、市町村の一覧が出ます。市町村名を押すと、特典の有無や内容を確認できます。</p>
+  <div class="top-pref-field"><span>都道府県</span>{pref_chooser_html(prefs, "top")}</div>
+  <div class="top-city-area" id="top-city-area">
+    <p class="top-city-label">市町村を選ぶ</p>
+    <div class="search">
+      <label for="q">市町村名で絞り込む <span class="hint">（ひらがなでも探せます）</span></label>
+      <input id="q" type="search" autocomplete="off" placeholder="例：あかし、さかい">
+    </div>
 {chr(10).join(blocks)}
-  <p class="pick-none" id="pick-none" hidden>見つかりませんでした。市や町の名前の一部を、ひらがなで入れてみてください。</p>
+    <p class="pick-none" id="pick-none" hidden>見つかりませんでした。市や町の名前の一部を、ひらがなで入れてみてください。</p>
+  </div>
 </section>"""
 
 
@@ -1310,58 +1611,330 @@ PREF_SCRIPT = """<script>
 (function () {
   var blocks = document.querySelectorAll("[data-pref-block]");
   if (!blocks.length) return;
-  var msg = document.getElementById("jm-msg"), q = document.getElementById("q");
-  function show(id, scroll) {
+  var chooser = document.getElementById("top-pref-chooser");
+  var cityArea = document.getElementById("top-city-area");
+  var q = document.getElementById("q");
+  function show(id) {
     blocks.forEach(function (b) { b.hidden = id ? b.getAttribute("data-pref-block") !== id : false; });
-    document.querySelectorAll("[data-pref]").forEach(function (a) {
-      a.setAttribute("aria-pressed", String(a.getAttribute("data-pref") === id));
-    });
-    msg.textContent = "";
-    if (id && scroll) document.getElementById("pref-" + id).scrollIntoView({ behavior: "smooth", block: "start" });
+    cityArea.hidden = !id;
+    q.value = "";
+    q.dispatchEvent(new Event("input"));
     try { if (id) localStorage.setItem("jk-pref", id); } catch (e) {}
   }
-  document.querySelectorAll("[data-pref]").forEach(function (a) {
-    a.addEventListener("click", function (ev) { ev.preventDefault(); q.value = ""; q.dispatchEvent(new Event("input")); show(a.getAttribute("data-pref"), true); });
-  });
-  document.querySelectorAll("[data-soon]").forEach(function (t) {
-    t.addEventListener("click", function () { msg.textContent = t.getAttribute("data-soon") + "は、まだ調べていません（準備中）。"; });
-  });
-  q.addEventListener("input", function () { if (q.value) blocks.forEach(function (b) { b.hidden = false; }); });
+  chooser.addEventListener("pref:selected", function (event) { show(event.detail.id); });
   var saved = null;
   try { saved = localStorage.getItem("jk-pref"); } catch (e) {}
   var first = location.hash.replace("#pref-", "") || saved;
-  show(document.getElementById("pref-" + first) ? first : blocks[0].getAttribute("data-pref-block"), false);
+  var savedLink = chooser.querySelector('[data-pref-choice="' + first + '"]');
+  if (first && savedLink) savedLink.click();
+  else show("");
 })();
 </script>"""
 
 
-def top_page(data, draft, others=()):
-    guides = [c for c in data["cities"] if c.get("guide")]
-    guide_block = ""
-    if guides:
-        links = "\n".join(
-            f'    <li><a href="{GUIDE_DIR}/{c["slug"]}.html"><b>{e(c["n"])}</b>'
-            f'<span>{e(c["guide"]["short"])}</span></a></li>' for c in guides)
-        guide_block = f"""
-<details class="guides">
-  <summary><h2 id="gd-h">市町ごとの、返納から申し込みまでの手順（{len(guides)}市町）</h2></summary>
-  <p>返納する場所、特典の申し込み方、持ち物を、市町ごとに1ページにまとめています。</p>
-  <ul class="guide-links">
-{links}
-  </ul>
-</details>"""
+HOME_CITY_SCRIPT = """<script>
+(function () {
+  var pref = document.getElementById('home-pref');
+  var city = document.getElementById('home-city');
+  var search = document.getElementById('home-city-search');
+  var status = document.getElementById('home-city-status');
+  var topicField = document.getElementById('home-topic');
+  var paths = document.querySelectorAll('[data-home-topic]');
+  var rows = [];
+  if (!pref || !city || !search || !status) return;
+  function normalize(value) {
+    return String(value || '').normalize('NFKC').toLowerCase().replace(/[\\s　]/g, '').replace(/[ァ-ヶ]/g, function (char) {
+      return String.fromCharCode(char.charCodeAt(0) - 96);
+    });
+  }
+  function chooseTopic(topic) {
+    topicField.value = topic;
+    paths.forEach(function (path) {
+      path.setAttribute('data-selected', String(path.getAttribute('data-home-topic') === topic));
+    });
+    document.getElementById('home-topic-label').textContent = topic === 'mobility' ? '移動手段' : topic === 'return' ? '免許返納の特典' : 'タクシー代の助成';
+    document.getElementById('home-picker-help').textContent = topic === 'mobility'
+      ? '乗れる交通を調べる町を選んでください。' : topic === 'return'
+      ? '免許返納の特典を調べる町を選んでください。' : 'タクシー代の助成を調べる町を選んでください。';
+  }
+  paths.forEach(function (path) {
+    path.addEventListener('click', function () { chooseTopic(path.getAttribute('data-home-topic')); });
+  });
+  function fillCities() {
+    var previous = city.value;
+    city.replaceChildren(new Option(pref.value ? '市区町村を選ぶ' : '先に都道府県を選ぶ', ''));
+    var q = normalize(search.value);
+    var matches = rows.filter(function (item) {
+      return item.pref === pref.value && (!q || normalize(item.name).includes(q)
+        || normalize(item.yomi).includes(q) || normalize(item.slug).includes(q));
+    });
+    matches.forEach(function (item) { city.add(new Option(item.name, item.slug)); });
+    if (matches.some(function (item) { return item.slug === previous; })) city.value = previous;
+    city.disabled = !pref.value || !matches.length;
+    status.textContent = !pref.value ? '都道府県を選んでください。'
+      : matches.length ? matches.length + '市区町村から選べます。' : '見つかりませんでした。市区町村名の一部を入れてください。';
+  }
+  pref.addEventListener('change', function () {
+    search.value = '';
+    search.disabled = !pref.value;
+    fillCities();
+    try { if (pref.value) localStorage.setItem('jk-pref', pref.value); } catch (e) {}
+  });
+  search.addEventListener('input', fillCities);
+  city.addEventListener('change', function () {
+    var item = rows.find(function (row) { return row.pref === pref.value && row.slug === city.value; });
+    if (!item) return;
+    var full = item.details.some(function (d) { return d.level === 'detailed'; });
+    var partial = item.details.some(function (d) { return d.level === 'partial'; });
+    status.textContent = full || partial ? '確認済みの移動・運賃支援の案内があります。'
+      : '交通の詳細は調査中です。確認済みの助成・返納情報は見られます。';
+  });
+  document.getElementById('home-city-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var item = rows.find(function (row) { return row.pref === pref.value && row.slug === city.value; });
+    if (!item) { status.textContent = '市区町村を選んでください。'; city.focus(); return; }
+    var detail = item.details.find(function (d) { return d.level === 'detailed'; }) || item.details[0];
+    if (topicField.value === 'return') {
+      location.href = item.return_url;
+    } else if (detail) {
+      location.href = detail.url + (topicField.value === 'support' || detail.focus === 'support' ? '#support-h' : '#ride-h');
+    } else {
+      location.href = 'mobility.html?pref=' + encodeURIComponent(item.pref)
+        + '&city=' + encodeURIComponent(item.slug) + '&topic=' + encodeURIComponent(topicField.value);
+    }
+  });
+  window.JK_CITY_DATA = window.JK_CITY_DATA || fetch('mobility-city-index.json?v=dark-20261005').then(function (response) {
+    if (!response.ok) throw new Error('load');
+    return response.json();
+  });
+  window.JK_CITY_DATA.then(function (data) {
+    rows = data.cities;
+    var saved = '';
+    try { saved = localStorage.getItem('jk-pref') || ''; } catch (e) {}
+    if (saved && pref.querySelector('option[value="' + saved + '"]')) {
+      pref.value = saved;
+      search.disabled = false;
+    }
+    fillCities();
+  }).catch(function () {
+    status.replaceChildren('市区町村の一覧を読み込めませんでした。', ' ');
+    var link = document.createElement('a');
+    link.href = 'mobility.html';
+    link.textContent = '全国の一覧から探す →';
+    status.appendChild(link);
+  });
+})();
+</script>"""
+
+
+HOME_DIRECT_SCRIPT = """<script>
+(function () {
+  var form = document.getElementById('home-direct-form');
+  var query = document.getElementById('home-direct-query');
+  var status = document.getElementById('home-direct-status');
+  var choices = document.getElementById('home-direct-choices');
+  var result = document.getElementById('home-direct-result');
+  var links = document.getElementById('home-result-links');
+  var rows = [];
+  function normalize(value) {
+    return String(value || '').normalize('NFKC').toLowerCase().replace(/[\\s　]/g, '').replace(/[ァ-ヶ]/g, function (char) {
+      return String.fromCharCode(char.charCodeAt(0) - 96);
+    });
+  }
+  function addCard(title, badge, summary, note, href, linkLabel) {
+    var card = document.createElement('article');
+    card.className = 'home-result-card';
+    var mark = document.createElement('span'); mark.className = 'home-result-badge'; mark.textContent = badge;
+    var heading = document.createElement('h3'); heading.textContent = title;
+    var body = document.createElement('p'); body.textContent = summary;
+    var detail = document.createElement('small'); detail.textContent = note;
+    var link = document.createElement('a'); link.href = href; link.textContent = linkLabel + ' →';
+    card.append(mark, heading, body, detail, link);
+    links.appendChild(card);
+  }
+  function show(item, scroll) {
+    choices.replaceChildren();
+    query.value = item.name;
+    status.textContent = item.pref_name + item.name + 'の情報を表示しました。地域を変えるには町名を入力してください。';
+    document.getElementById('home-result-city').textContent = item.pref_name + ' ' + item.name;
+    links.replaceChildren();
+    var kinds = {give:'特典あり',discount:'割引あり',elder:'高齢者向け',purchase:'購入補助',end:'終了',none:'なし',notfound:'記載なし'};
+    var hasReturn = ['give', 'discount', 'elder', 'purchase'].includes(item.return_kind);
+    addCard('免許返納の特典', kinds[item.return_kind] || '調査結果あり',
+      hasReturn ? (item.return_amount || '内容と対象を確認できます。') : '市区町村の公式ページで確認した結果を掲載しています。',
+      (hasReturn ? (item.return_deadline ? '申請期限：' + item.return_deadline + '。' : '申請期限：記載なし。') : '')
+        + (item.return_checked ? ' 確認日：' + item.return_checked : ''),
+      item.return_url, hasReturn ? '特典と手順を見る' : '調査結果を見る');
+    var taxiKinds = {yes:'助成あり',care:'条件つき',henno_only:'返納者のみ',end:'終了',none:'なし',notfound:'記載なし'};
+    addCard('タクシー代の助成', taxiKinds[item.taxi_kind] || '調査中',
+      item.taxi_url ? '対象となる年齢や利用条件を確認できます。' : 'この町の助成情報は調査中です。',
+      item.taxi_checked ? '確認日：' + item.taxi_checked : '掲載状況をご確認ください。',
+      item.taxi_url || 'mobility.html?pref=' + encodeURIComponent(item.pref) + '&city=' + encodeURIComponent(item.slug) + '&topic=support', '助成の情報を見る');
+    var full = item.details.some(function (d) { return d.level === 'detailed'; });
+    var detail = item.details.find(function (d) { return d.level === 'detailed'; }) || item.details[0];
+    addCard('乗れる交通', full ? '詳細案内あり' : detail ? (detail.focus === 'support' ? '運賃支援を確認' : '一部地域を確認') : '詳細は調査中',
+      detail ? (detail.focus === 'support' ? '運賃支援の対象範囲を確認できます。交通の詳細は調査中です。' : '対象地区や利用方法を確認できます。')
+        : '交通の詳細は調査中です。地域の掲載状況をご案内します。',
+      detail ? '対象範囲：' + detail.scope : '地域の掲載状況をご確認ください。',
+      detail ? detail.url + (detail.focus === 'support' ? '#support-h' : '#ride-h')
+        : 'mobility.html?pref=' + encodeURIComponent(item.pref) + '&city=' + encodeURIComponent(item.slug), '移動手段を見る');
+    result.hidden = false;
+    var url = new URL(location.href);
+    url.searchParams.set('pref', item.pref);
+    url.searchParams.set('city', item.slug);
+    history.replaceState(null, '', url);
+    if (scroll) result.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  function update() {
+    choices.replaceChildren();
+    result.hidden = true;
+    var q = normalize(query.value);
+    if (!q) { status.textContent = '漢字・ひらがなで全国の市区町村を探せます。同名の町は都道府県で区別します。'; return []; }
+    var matches = rows.filter(function (item) {
+      return normalize(item.name).includes(q) || normalize(item.yomi).includes(q) || normalize(item.slug).includes(q);
+    });
+    status.textContent = matches.length ? matches.length + '件見つかりました。候補から町を選んでください。'
+      : '見つかりませんでした。ひらがなや市区町村名の一部でお試しください。';
+    matches.slice(0, 12).forEach(function (item) {
+      var button = document.createElement('button'); button.type = 'button';
+      var name = document.createElement('strong'); name.textContent = item.name;
+      var area = document.createElement('span'); area.textContent = item.pref_name;
+      button.append(name, area);
+      button.addEventListener('click', function () { show(item, true); });
+      choices.appendChild(button);
+    });
+    if (matches.length > 12) status.textContent += ' 最初の12件を表示しています。';
+    return matches;
+  }
+  query.addEventListener('input', update);
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var matches = update();
+    if (matches.length === 1) show(matches[0], true);
+    else if (matches.length > 1) { status.textContent = '同じ名前の町や候補があります。都道府県を見て選んでください。'; choices.querySelector('button').focus(); }
+  });
+  window.JK_CITY_DATA = window.JK_CITY_DATA || fetch('mobility-city-index.json?v=dark-20261005').then(function (response) {
+    if (!response.ok) throw new Error('load');
+    return response.json();
+  });
+  window.JK_CITY_DATA.then(function (data) {
+    rows = data.cities;
+    var params = new URLSearchParams(location.search);
+    var selected = rows.find(function (item) { return item.pref === params.get('pref') && item.slug === params.get('city'); });
+    if (selected) show(selected, false);
+    else if (query.value) update();
+  }).catch(function () {
+    status.replaceChildren('市区町村の一覧を読み込めませんでした。 ', ' ');
+    var link = document.createElement('a'); link.href = 'mobility.html'; link.textContent = '全国の一覧から探す →';
+    status.appendChild(link);
+  });
+})();
+</script>"""
+
+
+def top_page(data, draft, others, mobility_index):
+    published = [data, *others]
+    by_id = {d["pref"]["id"]: d for d in published}
+    options = []
+    prefecture_groups = []
+    for region, ids in PREF_REGIONS:
+        group = []
+        region_links = []
+        for pid in ids.split():
+            if pid not in by_id:
+                continue
+            pref = by_id[pid]["pref"]
+            group.append(f'<option value="{e(pid)}">{e(pref["name"])}</option>')
+            region_links.append(f'<a href="{e(list_path(pref))}">{e(pref["name"])}</a>')
+        if group:
+            options.append(f'<optgroup label="{e(region)}">{"".join(group)}</optgroup>')
+            prefecture_groups.append(
+                f'<details class="home-pref-region"><summary>{e(region)}</summary>'
+                f'<nav aria-label="{e(region)}の返納特典">{" ".join(region_links)}</nav></details>')
+    city_count = len(mobility_index["cities"])
+    detailed_count = sum(bool(row["details"]) for row in mobility_index["cities"])
+    detailed_links = "\n".join(
+        f'<details><summary>{e(region)}（{sum(len(row["details"]) for row in mobility_index["cities"] if row["pref"] in ids.split())}地域）</summary>'
+        f'<nav aria-label="{e(region)}の移動案内">' + " ".join(
+            f'<a href="{e(detail["url"])}">{e(detail["scope"])}の移動案内</a>'
+            for row in mobility_index["cities"] if row["pref"] in ids.split()
+            for detail in row["details"]) + '</nav></details>'
+        for region, ids in PREF_REGIONS)
     upcoming = "\n".join(f'    <li><span class="up-tag">{e(tag)}</span>{e(name)}</li>' for name, tag in UPCOMING)
     bus_links = ''.join(f'<li><a href="{bus_path(d["pref"])}"><b>{e(d["pref"]["name"])}の高齢者バス助成・敬老パス</b>'
                         f'<span>対象・料金・使えるバス・申し込みを比べる{"（確認用下書き）" if d["bus"].get("draft") else ""}</span></a></li>'
                         for d in [data, *others] if d.get('bus') and (draft or (not d['bus'].get('draft') and not d['pref'].get('draft'))))
     bus_block = f'\n<section class="theme" aria-labelledby="th-bus-h"><h2 id="th-bus-h">高齢者のバス支援を比べる</h2><ul class="theme-links">{bus_links}</ul></section>' if bus_links else ''
     main = f"""<section class="top-hero">
-  <h1 class="name">じもと<span>くらべ</span></h1>
-  <p class="tagline">免許返納の特典・タクシー代の助成を市町村ごとに</p>
-  <p class="lead">住んでいる市や町によって、使える特典や助成はちがいます。市町村の公式ページを1つずつ開いて、同じ項目にそろえて並べています。</p>
+  <p class="top-hero-kicker">全国の市区町村から</p>
+  <h1 class="top-hero-title">お住まいの町で、<br>何が使える？</h1>
+  <p class="lead">免許返納の特典、タクシー代の助成、車を使わない移動手段を、町から探せます。</p>
 </section>
 
-{pref_picker([data, *others])}{bus_block}
+<section class="home-direct" id="search" aria-labelledby="home-direct-h">
+  <h2 id="home-direct-h">市区町村名を入力</h2>
+  <form id="home-direct-form" role="search">
+    <label class="sr-only" for="home-direct-query">市区町村名</label>
+    <div class="home-direct-fields"><input id="home-direct-query" type="search" autocomplete="off" placeholder="例：交野市、かたのし" required><button type="submit">町の情報を見る →</button></div>
+  </form>
+  <p id="home-direct-status" class="home-direct-status" role="status">漢字・ひらがなで全国の市区町村を探せます。同名の町は都道府県で区別します。</p>
+  <div id="home-direct-choices" class="home-direct-choices" aria-label="検索候補"></div>
+  <p class="home-direct-alt"><a href="#regions">都道府県別の返納特典を見る ↓</a> <a href="#pick">交通・助成を県から選ぶ ↓</a></p>
+</section>
+
+<section id="home-direct-result" class="home-direct-result" aria-live="polite" hidden>
+  <p class="home-result-kicker">この町で読める情報</p>
+  <h2 id="home-result-city"></h2>
+  <div id="home-result-links" class="home-result-links"></div>
+  <p class="home-result-note">制度の対象や期限は、各ページにある公式出典で確認してください。</p>
+</section>
+
+<h2 class="home-choose-title">何を調べますか？</h2>
+<nav class="home-paths" aria-label="調べたい内容を選ぶ">
+  <a class="home-path-primary" id="return" href="#pick" data-home-topic="return" data-selected="false">
+    <span class="home-path-kicker">返納した人へ</span>
+    <strong>免許返納の特典</strong>
+    <span>もらえるもの・対象・申請期限</span>
+    <b>地域から探す <span aria-hidden="true">↓</span></b>
+  </a>
+  <a class="home-path-secondary" href="#pick" data-home-topic="support" data-selected="false">
+    <span class="home-path-kicker">費用の支援</span>
+    <strong>タクシー代の助成</strong>
+    <span>返納しなくても使える制度も</span>
+    <b>地域から探す <span aria-hidden="true">↓</span></b>
+  </a>
+  <a class="home-path-secondary" href="#pick" data-home-topic="mobility" data-selected="true">
+    <span class="home-path-kicker">移動するために</span>
+    <strong>乗れる交通</strong>
+    <span>バス・予約交通・タクシー</span>
+    <b>地域から探す <span aria-hidden="true">↓</span></b>
+  </a>
+</nav>
+
+<section class="home-city-picker" id="pick" aria-labelledby="pick-h">
+  <div class="home-picker-heading"><div><h2 id="pick-h">お住まいの市区町村を選ぶ</h2><p id="home-picker-help">乗れる交通を調べる町を選んでください。</p></div><span id="home-topic-label">移動手段</span></div>
+  <form id="home-city-form" action="{NATIONAL_MOBILITY_PATH}" method="get">
+    <input type="hidden" id="home-topic" name="topic" value="mobility">
+    <div class="home-city-fields">
+      <div><label for="home-pref">都道府県</label><select id="home-pref" name="pref" required><option value="">選んでください</option>{''.join(options)}</select></div>
+      <div><label for="home-city-search">市区町村名で絞る <span>任意</span></label><input id="home-city-search" type="search" autocomplete="off" placeholder="例：あかし" disabled></div>
+      <div><label for="home-city">市区町村</label><select id="home-city" name="city" required disabled><option value="">先に都道府県を選ぶ</option></select></div>
+      <button type="submit">町の情報を見る →</button>
+    </div>
+  </form>
+  <p class="home-city-status" id="home-city-status" role="status">都道府県を選んでください。</p>
+  <p class="home-coverage"><span aria-hidden="true">●</span> 全国{city_count:,}市区町村から探せます。移動・支援の個別案内は現在{detailed_count}地域です。</p>
+</section>
+
+<section class="home-regions" id="regions" aria-labelledby="home-regions-h">
+  <h2 id="home-regions-h">都道府県から返納特典を探す</h2>
+  <p>地方を開くと、県別の特典一覧へ進めます。</p>
+  <div class="home-region-grid">{''.join(prefecture_groups)}</div>
+</section>
+
+<details class="home-featured"><summary>移動手段・運賃支援を確認した{detailed_count}地域を見る</summary><div class="home-featured-groups">{detailed_links}</div></details>
+
+<p class="top-basic-entry"><a href="{BASIC_GUIDE_PATH}"><b>返納の手続きから知りたい方へ</b><span>免許返納の基本ガイドで、条件・警察の手続き・運転経歴証明書を確認する →</span></a></p>{bus_block}
 
 <section class="theme" aria-labelledby="th-car-h">
   <h2 id="th-car-h">家族で読む</h2>
@@ -1377,7 +1950,6 @@ def top_page(data, draft, others=()):
 {upcoming}
   </ul>
 </section>
-{guide_block}
 
 <section class="about-list" aria-labelledby="how-h">
   <h2 id="how-h">調べ方</h2>
@@ -1388,9 +1960,415 @@ def top_page(data, draft, others=()):
   </ul>
 </section>"""
     return shell(
-        title="じもとくらべ｜免許返納の特典・タクシー代の助成を市町村ごとに",
-        description="運転免許を返納したときの特典と、高齢者のタクシー代の助成を、市町村の公式ページで確かめて、同じ項目にそろえて比べられるサイトです。",
-        path="", main=main, draft=draft, scripts=PICK_SCRIPT + PREF_SCRIPT)
+        title="じもとくらべ｜免許返納の特典・タクシー助成・移動手段を町から探す",
+        description="お住まいの市区町村から、免許返納の特典、高齢者のタクシー代の助成、乗れる交通を探せます。制度の条件と公式出典も確認できます。",
+        path="", main=main, draft=draft, scripts=HOME_CITY_SCRIPT + HOME_DIRECT_SCRIPT,
+        page_class="home-page", body_class="wayfinding")
+
+
+def national_mobility_data(prefs, coverage, regional):
+    """既存の市区町村と詳細案内を、全国検索用の共通形式にまとめる。"""
+    published = [d for d in prefs if not d["pref"].get("draft")]
+    valid_cities = {(d["pref"]["id"], c["slug"])
+                    for d in published for c in d["cities"]}
+    regional_ids = {c["id"] for c in regional["cities"]}
+    details = {}
+    for entry in coverage["entries"]:
+        key = (entry["pref"], entry["municipality"])
+        if key not in valid_cities:
+            raise ValueError(f"移動案内の市区町村が存在しません: {key}")
+        if entry["page"] == MOBILITY_PATH and entry["city"] not in regional_ids:
+            raise ValueError(f"移動案内の詳細IDが存在しません: {entry['city']}")
+        if entry["level"] not in {"detailed", "partial"}:
+            raise ValueError(f"移動案内の掲載範囲が不正です: {entry['level']}")
+        url = (f"{entry['page']}?city={quote(entry['city'])}"
+               if entry["page"] == MOBILITY_PATH else entry["page"])
+        details.setdefault(key, []).append({
+            "scope": entry["scope"],
+            "level": entry["level"],
+            "url": url,
+            "focus": entry.get("focus", "mobility"),
+        })
+    rows = []
+    for d in published:
+        pref = d["pref"]
+        for c in d["cities"]:
+            slug = c["slug"]
+            taxi = d.get("taxi", {}).get(slug, {})
+            rows.append({
+                "key": f"{pref['id']}:{slug}",
+                "pref": pref["id"],
+                "pref_name": pref["name"],
+                "slug": slug,
+                "name": c["n"],
+                "yomi": c.get("y", ""),
+                "taxi_kind": taxi.get("k", ""),
+                "taxi_checked": taxi.get("checked", ""),
+                "taxi_url": f"{taxi_path(pref)}#{slug}" if taxi else "",
+                "return_kind": c["k"],
+                "return_amount": c.get("amt", ""),
+                "return_deadline": c.get("dl", ""),
+                "return_checked": (c.get("guide") or {}).get("checked", d["checked"]),
+                "return_url": (f"{guide_dir(pref)}/{slug}.html" if c.get("guide")
+                               else f"{list_path(pref)}#{slug}"),
+                "details": details.get((pref["id"], slug), []),
+            })
+    if len(rows) != len({row["key"] for row in rows}):
+        raise ValueError("全国移動案内の市区町村キーが重複しています")
+    return {"checked": coverage["checked"], "cities": rows}
+
+
+def national_mobility_page(prefs, coverage, regional, draft):
+    by_id = {d["pref"]["id"]: d for d in prefs if not d["pref"].get("draft")}
+    options = []
+    fallback = []
+    for region, ids in PREF_REGIONS:
+        region_options = []
+        for pid in ids.split():
+            if pid not in by_id:
+                continue
+            pref = by_id[pid]["pref"]
+            region_options.append(f'<option value="{e(pid)}">{e(pref["name"])}</option>')
+            fallback.append(f'<li><a href="{e(taxi_path(pref))}">{e(pref["name"])}のタクシー助成の調査結果</a></li>')
+        options.append(f'<optgroup label="{e(region)}">{"".join(region_options)}</optgroup>')
+    regional_hints = {c["id"]: c["hint"] for c in regional["cities"]}
+    featured = "\n".join(
+        f'<details class="nation-featured-region"><summary>{e(region)}（{sum(1 for entry in coverage["entries"] if entry["pref"] in ids.split() and entry["page"] != MOBILITY_PATH)}地域）</summary>'
+        '<div class="nation-featured-grid">' + "\n".join(
+            f'<a href="{e(entry["page"])}"><strong>{e(by_id[entry["pref"]]["pref"]["name"])} {e(entry["scope"])}</strong>'
+            f'<span>{e(entry.get("hint", regional_hints.get(entry["city"], "移動・支援の確認結果")))}</span></a>'
+            for entry in coverage["entries"] if entry["pref"] in ids.split() and entry["page"] != MOBILITY_PATH)
+        + '</div></details>'
+        for region, ids in PREF_REGIONS)
+    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 市区町村の掲載状況</nav>
+<header class="nation-intro">
+  <p class="mobility-kicker">全国の市区町村から</p>
+  <h1>市区町村の掲載状況</h1>
+  <p>移動手段や運賃支援を確認した地域と、現在読める助成・返納の情報を案内します。</p>
+</header>
+<div class="nation-layout">
+  <section class="nation-search" aria-labelledby="nation-search-h">
+    <h2 id="nation-search-h">お住まいの市区町村</h2>
+    <label for="nation-query">市区町村名を入力</label>
+    <input type="search" id="nation-query" placeholder="例：明石市、あかしし" autocomplete="off">
+    <label for="nation-pref">都道府県で絞る</label>
+    <select id="nation-pref"><option value="">全国から探す</option>{''.join(options)}</select>
+    <p class="nation-search-help" id="nation-count" role="status">市区町村名を入力するか、都道府県を選んでください。</p>
+    <div class="nation-choices" id="nation-choices"></div>
+  </section>
+  <section class="nation-detail" id="nation-detail" aria-live="polite" hidden>
+    <p class="nation-status" id="nation-status"></p>
+    <h2 id="nation-city-name"></h2>
+    <p class="nation-detail-intro" id="nation-intro"></p>
+    <div id="nation-detail-links"></div>
+  </section>
+</div>
+<section class="nation-featured" aria-labelledby="nation-featured-h">
+  <h2 id="nation-featured-h">移動手段・運賃支援を確認した地域</h2>
+  <p>地域名から、確認した交通や運賃の支援を直接確認できます。</p>
+  <div class="nation-featured-regions">{featured}</div>
+</section>
+<aside class="nation-help"><h2>掲載状況について</h2><p>詳細な交通案内は、地域ごとに確認して追加しています。タクシー助成の「記載なし」は、その地域にバスや予約交通がないという意味ではありません。利用前に公式情報で区域・予約・運行日を確認してください。</p></aside>
+<noscript><section class="nation-fallback"><h2>都道府県から助成情報を見る</h2><ul>{''.join(fallback)}</ul></section></noscript>"""
+    script = """<script>
+(function () {
+  var query = document.getElementById('nation-query');
+  var pref = document.getElementById('nation-pref');
+  var count = document.getElementById('nation-count');
+  var choices = document.getElementById('nation-choices');
+  var detail = document.getElementById('nation-detail');
+  var links = document.getElementById('nation-detail-links');
+  var all = [];
+  function normalize(value) {
+    return String(value || '').normalize('NFKC').toLowerCase().replace(/[\\s　]/g, '').replace(/[ァ-ヶ]/g, function (char) {
+      return String.fromCharCode(char.charCodeAt(0) - 96);
+    });
+  }
+  function addLink(box, title, description, url, badge) {
+    var card = document.createElement('article');
+    card.className = 'nation-link-card';
+    if (badge) { var mark = document.createElement('span'); mark.className = 'nation-card-badge'; mark.textContent = badge; card.appendChild(mark); }
+    var h = document.createElement('h3'); h.textContent = title; card.appendChild(h);
+    var p = document.createElement('p'); p.textContent = description; card.appendChild(p);
+    var a = document.createElement('a'); a.href = url; a.textContent = '内容を見る →'; card.appendChild(a);
+    box.appendChild(card);
+  }
+  function show(item, scroll) {
+    detail.hidden = false;
+    links.replaceChildren();
+    document.getElementById('nation-city-name').textContent = item.pref_name + ' ' + item.name;
+    var hasFull = item.details.some(function (d) { return d.level === 'detailed'; });
+    var hasPartial = item.details.some(function (d) { return d.level === 'partial'; });
+    document.getElementById('nation-status').textContent = hasFull || hasPartial ? '確認済みの移動・運賃支援の案内あり' : '交通手段の詳細は調査中';
+    document.getElementById('nation-intro').textContent = hasFull || hasPartial ? '確認した交通・運賃支援の候補を、対象範囲とともに案内しています。' : '現在確認できる助成などの調査結果へ進めます。地域のバス・予約交通は順次確認しています。';
+    function addMobility() {
+      item.details.forEach(function (d) {
+        addLink(links, d.scope + 'の移動候補', '確認済みの交通または運賃支援。対象地区や利用条件を確認してください。', d.url + (d.focus === 'support' ? '#support-h' : '#ride-h'), '対象範囲を確認');
+      });
+    }
+    function addSupport() {
+      if (item.taxi_url) {
+        var kinds = {yes:'助成あり',care:'条件つき',henno_only:'返納者のみ',end:'終了',none:'なし',notfound:'記載なし'};
+        var kind = kinds[item.taxi_kind] || '調査結果';
+        addLink(links, '高齢者のタクシー代の助成', '調査結果：' + kind + '。' + (item.taxi_checked ? '確認日：' + item.taxi_checked + '。' : '') + '対象条件と出典を確認できます。', item.taxi_url, '助成の調査結果');
+      }
+      addLink(links, '免許返納の特典', '市区町村の特典と申請条件の調査結果を確認できます。', item.return_url, '返納の情報');
+    }
+    if (new URLSearchParams(location.search).get('topic') === 'support') { addSupport(); addMobility(); }
+    else { addMobility(); addSupport(); }
+    var url = new URL(location.href);
+    url.searchParams.set('pref', item.pref);
+    url.searchParams.set('city', item.slug);
+    history.replaceState(null, '', url);
+    if (scroll) detail.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  function update() {
+    choices.replaceChildren();
+    detail.hidden = true;
+    var q = normalize(query.value);
+    var pid = pref.value;
+    if (!q && !pid) { count.textContent = '市区町村名を入力するか、都道府県を選んでください。'; return; }
+    var matches = all.filter(function (item) {
+      return (!pid || item.pref === pid) && (!q || normalize(item.name).includes(q) || normalize(item.yomi).includes(q) || normalize(item.slug).includes(q));
+    });
+    count.textContent = matches.length ? matches.length + '件見つかりました。' + (matches.length > 20 ? '最初の20件を表示中。市区町村名を入力すると絞れます。' : '') : '該当する市区町村が見つかりません。県名や表記を変えてお試しください。';
+    matches.slice(0, 20).forEach(function (item) {
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'nation-choice';
+      var name = document.createElement('strong'); name.textContent = item.name;
+      var area = document.createElement('span'); area.textContent = item.pref_name;
+      button.append(name, area);
+      button.addEventListener('click', function () { show(item, true); });
+      choices.appendChild(button);
+    });
+  }
+  query.addEventListener('input', update);
+  pref.addEventListener('change', update);
+  query.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') { var first = choices.querySelector('button'); if (first) { event.preventDefault(); first.click(); } }
+  });
+  fetch('mobility-city-index.json').then(function (response) {
+    if (!response.ok) throw new Error('load');
+    return response.json();
+  }).then(function (data) {
+    all = data.cities;
+    var params = new URLSearchParams(location.search);
+    var selected = all.find(function (item) { return item.pref === params.get('pref') && item.slug === params.get('city'); });
+    if (selected) { pref.value = selected.pref; query.value = selected.name; update(); show(selected, false); detail.scrollIntoView({block:'start'}); }
+    else update();
+  }).catch(function () { count.textContent = '市区町村の一覧を読み込めませんでした。ページを再読み込みしてください。'; });
+})();
+</script>"""
+    return shell(title="全国の移動手段を市区町村から探す｜じもとくらべ",
+                 description="全国の市区町村から、地域交通の詳細案内と高齢者のタクシー助成・免許返納の調査結果を探せます。",
+                 path=NATIONAL_MOBILITY_PATH, main=main, draft=draft,
+                 page_class="mobility-national-page", body_class="wayfinding", scripts=script)
+
+
+def mobility_card(item, heading="h4", item_id=""):
+    tags = "".join(f'<span class="mobility-tag">{e(tag)}</span>' for tag in item["tags"])
+    purposes = " ".join(item["purposes"])
+    identifier = f' id="{e(item_id)}"' if item_id else ""
+    facts = "".join(
+        f'<div><dt>{label}</dt><dd>{e(item[key])}</dd></div>'
+        for key, label in (("service_area", "使える地域"), ("eligibility", "対象"),
+                           ("booking", "予約・申込"), ("fare", "費用"),
+                           ("operating_days", "運行日")) if item.get(key))
+    fact_list = f'<dl class="mobility-card-facts">{facts}</dl>\n  ' if facts else ""
+    return f"""<article class="mobility-card"{identifier} data-purposes="{purposes}">
+  <div class="mobility-tags">{tags}</div>
+  <{heading}>{e(item['name'])}</{heading}>
+  <p>{e(item['summary'])}</p>
+  {fact_list}<div class="mobility-check"><b>使う前に確認</b><span>{e(item['check'])}</span></div>
+  <a href="{e(item['source'])}" target="_blank" rel="noopener">公式ページで詳細を見る <span aria-hidden="true">↗</span></a>
+</article>"""
+
+
+def mobility_page(data, draft, mobility_scopes=None):
+    cities = data["cities"]
+    groups = data["groups"]
+    group_choices = "\n".join(
+        f'<button type="button" data-area-choice="{e(g["id"])}"'
+        f' aria-pressed="{"true" if i == 0 else "false"}"><b>{e(g["name"])}</b><small>{e(g["hint"])}</small></button>'
+        for i, g in enumerate(groups))
+    choices = "\n".join(
+        f'<button type="button" class="mobility-choice" data-city-choice="{e(c["id"])}"'
+        f' data-city-group="{e(c["group"])}"{" hidden" if c["group"] != groups[0]["id"] else ""}'
+        f' aria-pressed="{"true" if i == 0 else "false"}"><b>{e(c["name"])}</b><small>{e(c["hint"])}</small></button>'
+        for i, c in enumerate(cities))
+    results = "\n".join(f"""<section class="mobility-city" data-mobility-city="{e(c['id'])}"{' hidden' if i else ''}>
+  <div class="mobility-result-head"><p class="mobility-kicker">選んだ地域</p><h2>{e(c['name'])}の移動候補</h2>
+  <p>住所や停留所を入力していないため、利用できるかどうかは各公式ページで確認してください。</p>
+  <a href="{mobility_city_path(c['id'])}">{e((mobility_scopes or {}).get(c['id'], c['name']))}の情報を1ページで読む →</a></div>
+  <section class="mobility-group"><h3><span>01</span> 実際に乗る交通手段</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['rides'])}</div></section>
+  <section class="mobility-group"><h3><span>02</span> 運賃の割引・助成</h3><div class="mobility-cards">{''.join(mobility_card(x) for x in c['supports'])}</div></section>
+</section>""" for i, c in enumerate(cities))
+    city_links = "\n".join(
+        f'<a href="{mobility_city_path(c["id"])}">{e((mobility_scopes or {}).get(c["id"], c["name"]))}の移動手段を見る</a>'
+        for c in cities)
+    main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ 東播磨と周辺の移動手段</nav>
+<section class="mobility-hero">
+  <p class="mobility-kicker">東播磨と周辺の移動案内 / {jdate(data['checked'])}確認</p>
+  <h1>車を使わず、<br><em>どう行く？</em></h1>
+  <p>買い物や通院に使える地域の交通を、住む市区町から探せます。バス・予約交通と、運賃の助成を分けて案内します。</p>
+  <div class="mobility-hero-route" aria-hidden="true"><i></i><i></i><i></i><span>住む地域</span><span>外出の目的</span><span>移動候補</span></div>
+</section>
+<div class="mobility-layout">
+  <form class="mobility-form" id="mobility-form">
+    <fieldset><legend><span class="mobility-step">1</span> お住まいはどこですか？</legend>
+      <p class="mobility-field-help">地域を選んでから、市区町を選んでください。</p>
+      <div class="mobility-areas" role="group" aria-label="地域">{group_choices}</div>
+      <div class="mobility-choices">{choices}</div>
+    </fieldset>
+    <fieldset><legend><span class="mobility-step">2</span> どんな外出ですか？</legend>
+      <p class="mobility-field-help">目的に合う交通を優先して表示します。</p>
+      <div class="mobility-purpose">
+        <button type="button" data-purpose="shopping" aria-pressed="true">買い物</button>
+        <button type="button" data-purpose="hospital" aria-pressed="false">通院</button>
+        <button type="button" data-purpose="other" aria-pressed="false">その他</button>
+      </div>
+    </fieldset>
+  </form>
+  <div class="mobility-results" id="mobility-results" aria-live="polite" aria-atomic="false">{results}</div>
+</div>
+<nav class="mobility-city-links" aria-label="地域別の移動案内">
+  <h2>地域別に読む</h2><div>{city_links}</div>
+</nav>
+<aside class="mobility-note"><h2>この画面で分かること</h2><p>地域で使える可能性がある交通手段と助成の入口です。利用条件は年齢、居住日、地区、介護認定、予約、目的地などで変わります。運行時刻と停留所は公式ページで直前に確認してください。</p></aside>"""
+    script = """<script>
+(function () {
+  var form = document.getElementById('mobility-form');
+  var sections = document.querySelectorAll('[data-mobility-city]');
+  if (!form || !sections.length) return;
+  var params = new URLSearchParams(location.search);
+  var city = form.querySelector('[data-city-choice="' + params.get('city') + '"]');
+  var purpose = form.querySelector('[data-purpose="' + params.get('purpose') + '"]');
+  var selectedCity = city ? city.getAttribute('data-city-choice') : 'akashi';
+  var selectedArea = city ? city.getAttribute('data-city-group') : 'core';
+  var selectedPurpose = purpose ? purpose.getAttribute('data-purpose') : 'shopping';
+  function update() {
+    form.querySelectorAll('[data-area-choice]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-area-choice') === selectedArea));
+    });
+    form.querySelectorAll('[data-city-choice]').forEach(function (button) {
+      button.hidden = button.getAttribute('data-city-group') !== selectedArea;
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-city-choice') === selectedCity));
+    });
+    form.querySelectorAll('[data-purpose]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-purpose') === selectedPurpose));
+    });
+    sections.forEach(function (section) {
+      section.hidden = section.getAttribute('data-mobility-city') !== selectedCity;
+      section.querySelectorAll('[data-purposes]').forEach(function (card) {
+        card.hidden = card.getAttribute('data-purposes').split(' ').indexOf(selectedPurpose) < 0;
+      });
+    });
+    var next = new URL(location.href);
+    next.searchParams.set('city', selectedCity);
+    next.searchParams.set('purpose', selectedPurpose);
+    history.replaceState(null, '', next);
+  }
+  form.querySelectorAll('[data-area-choice]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      selectedArea = button.getAttribute('data-area-choice');
+      selectedCity = form.querySelector('[data-city-group="' + selectedArea + '"]').getAttribute('data-city-choice');
+      update();
+    });
+  });
+  form.querySelectorAll('[data-city-choice]').forEach(function (button) {
+    button.addEventListener('click', function () { selectedCity = button.getAttribute('data-city-choice'); selectedArea = button.getAttribute('data-city-group'); update(); });
+  });
+  form.querySelectorAll('[data-purpose]').forEach(function (button) {
+    button.addEventListener('click', function () { selectedPurpose = button.getAttribute('data-purpose'); update(); });
+  });
+  update();
+})();
+</script>"""
+    return shell(title="東播磨と周辺の移動手段を探す｜じもとくらべ",
+                 description="東播磨と周辺地域の交通手段と運賃助成を、住む市区町と外出目的から探せます。",
+                 path=MOBILITY_PATH, main=main, draft=draft, page_class="mobility-page", scripts=script)
+
+
+def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scopes, checked, draft, regional=True):
+    """地域交通の確認済みデータから、検索で直接開ける地域別ページを作る。"""
+    name = city["name"]
+    scope = coverage["scope"]
+    path = coverage["page"]
+    partial = coverage["level"] == "partial"
+    guide_city = next(c for c in pref_data["cities"] if c["slug"] == coverage["municipality"])
+    guide = (f'{guide_dir(pref_data["pref"])}/{guide_city["slug"]}.html'
+             if guide_city.get("guide") else f'{list_path(pref_data["pref"])}#{guide_city["slug"]}')
+    return_checked = guide_city.get("guide", {}).get("checked", pref_data["checked"])
+    return_summary = guide_city.get("what") or "免許返納の特典・申請条件の調査結果を確認できます。"
+    ride_links = "".join(f'<a href="#ride-{i}">{e(item["name"])}</a>'
+                         for i, item in enumerate(city["rides"], 1))
+    support_links = "".join(f'<a href="#support-{i}">{e(item["name"])}</a>'
+                            for i, item in enumerate(city["supports"], 1))
+    if not ride_links:
+        ride_links = "このページでは個別の交通手段を未掲載。運賃の支援をご確認ください。"
+    if not support_links:
+        support_links = "確認した範囲では未掲載。既存の助成調査もご覧ください。"
+    rides = "\n".join(mobility_card(item, "h3", f"ride-{i}")
+                      for i, item in enumerate(city["rides"], 1))
+    supports = "\n".join(mobility_card(item, "h3", f"support-{i}")
+                         for i, item in enumerate(city["supports"], 1))
+    other_cities = "\n".join(
+        f'<a href="{e(other["id"])}.html">{e(mobility_scopes[other["id"]])}の移動手段</a>'
+        for other in regional_cities if other["id"] != city["id"])
+    other_nav = (f'<nav class="mobility-city-nearby" aria-label="ほかの地域の移動案内"><h2>ほかの地域を見る</h2><div>{other_cities}</div></nav>'
+                 if other_cities else "")
+    purpose_link = (f'<a href="../east-harima-mobility.html?city={e(city["id"])}">外出目的で交通候補を絞る →</a>\n  '
+                    if regional else "")
+    support_note = ("" if city["supports"] else
+                    f'<p>個別の運賃助成はこのページでは掲載していません。<a href="../{e(taxi_path(pref_data["pref"]))}#{e(guide_city["slug"])}">既存のタクシー助成の調査結果</a>もご確認ください。</p>')
+    ride_note = ("" if city["rides"] else
+                 '<p>このページでは個別の交通手段を掲載していません。以下の運賃支援と公式案内をご確認ください。</p>')
+    scope_note = (f'{scope}で確認した移動・支援の候補です。この地域の全交通手段を網羅した案内ではありません。'
+                  if partial else '住む地区と目的地で使える交通が変わります。')
+    main = f'''<nav class="crumbs" aria-label="いまいる場所"><a href="../">トップ</a> ＞ <a href="../mobility.html">移動手段を探す</a> ＞ {e(scope)}</nav>
+<header class="mobility-city-hero">
+  <p class="mobility-kicker">{e(pref_data['pref']['name'])}の移動案内</p>
+  <h1>{e(scope)}の移動案内</h1>
+  <p>{e(scope_note)}</p>
+</header>
+<nav class="mobility-city-sections" aria-label="この地域で調べる内容">
+  <a href="#ride-h">移動手段</a><a href="#support-h">運賃の助成</a><a href="#return-h">免許返納</a>
+</nav>
+<section class="mobility-city-overview" aria-labelledby="overview-h">
+  <div class="mobility-city-overview-heading">
+    <h2 id="overview-h">この地域で確認した候補</h2>
+    <p>公式確認 <time datetime="{e(checked)}">{jdate(checked)}</time></p>
+  </div>
+  <dl class="mobility-city-summary">
+    <div><dt>交通</dt><dd>{ride_links}</dd></div>
+    <div><dt>割引・助成</dt><dd>{support_links}</dd></div>
+    <div><dt>対象・範囲</dt><dd>{e(city['quick_scope'])}</dd></div>
+  </dl>
+  <p>対象地区・運行日・予約などは、利用前に公式ページで確かめてください。</p>
+</section>
+<div class="mobility-city-content">
+  <section class="mobility-group" aria-labelledby="ride-h"><h2 id="ride-h">実際に乗る交通手段</h2>{ride_note}<div class="mobility-cards">{rides}</div></section>
+  <section class="mobility-group" aria-labelledby="support-h"><h2 id="support-h">運賃の割引・助成</h2>{support_note}<div class="mobility-cards">{supports}</div></section>
+</div>
+<section class="mobility-city-return" aria-labelledby="return-h">
+  <h2 id="return-h">{e(guide_city['n'])}の免許返納</h2>
+  <p>{e(return_summary)}</p>
+  <a href="../{e(guide)}">対象・申請方法と公式出典を見る →</a>
+  <p class="mobility-city-return-date">返納情報を確認した日：<time datetime="{e(return_checked)}">{jdate(return_checked)}</time></p>
+</section>
+<section class="mobility-city-next" aria-labelledby="next-h">
+  <h2 id="next-h">続けて確認する</h2>
+  {purpose_link}<a href="../{e(guide)}">{e(guide_city['n'])}の免許返納の情報 →</a>
+  <a href="../{e(taxi_path(pref_data['pref']))}#{e(guide_city['slug'])}">{e(guide_city['n'])}のタクシー助成の調査結果 →</a>
+</section>
+{other_nav}
+<p class="mobility-city-updated">公式ページを確認した日：{jdate(checked)}。運行内容や制度は変わるため、利用前に各公式ページで最新情報を確認してください。</p>'''
+    description = (f'{scope}の移動手段と運賃支援。{city["quick_scope"]}'
+                   f'公式ページを{jdate(checked)}に確認。')
+    return shell(title=f'{city["search_title"]}｜じもとくらべ',
+                 description=description, path=path, main=main, draft=draft,
+                 base='../', page_class='mobility-city-page', body_class='wayfinding')
 
 
 # ---------------- 最初のひと言（話し方のページ） ----------------
@@ -1828,6 +2806,32 @@ def load_pref(henno_file):
     return data
 
 
+def municipal_mobility_coverage(data, prefs):
+    """個別に確認した全国の交通案内を、既存の検索索引に加える。"""
+    valid = {(d["pref"]["id"], c["slug"])
+             for d in prefs if not d["pref"].get("draft") for c in d["cities"]}
+    seen = set()
+    entries = []
+    for city in data["cities"]:
+        key = (city["pref"], city["municipality"])
+        if key not in valid or key in seen:
+            raise ValueError(f"地域交通データの市区町村が不正または重複: {key}")
+        seen.add(key)
+        if city["level"] not in {"detailed", "partial"} or not (city["rides"] or city["supports"]):
+            raise ValueError(f"地域交通データの掲載範囲または交通候補が不正: {key}")
+        for service in [*city["rides"], *city["supports"]]:
+            if not service["source"].startswith("https://"):
+                raise ValueError(f"地域交通データの出典URLが不正: {key}")
+        entries.append({
+            "pref": city["pref"], "municipality": city["municipality"],
+            "scope": city["scope"], "page": municipal_mobility_path(*key),
+            "city": f"{key[0]}:{key[1]}", "level": city["level"],
+            "focus": "support" if not city["rides"] else "mobility",
+            "hint": city["hint"],
+        })
+    return entries
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(ROOT))
@@ -1839,13 +2843,44 @@ def main():
     data = next(d for d in prefs if d["pref"]["id"] == HOME_PREF)
     others = [d for d in prefs if d is not data]
     hk = json.loads((ROOT / "data" / "hanashikata.json").read_text(encoding="utf-8"))
+    mobility = json.loads((ROOT / "data" / "east-harima-mobility.json").read_text(encoding="utf-8"))
+    mobility_coverage = json.loads((ROOT / "data" / "mobility-coverage.json").read_text(encoding="utf-8"))
+    municipal_mobility = json.loads((ROOT / MUNICIPAL_MOBILITY_DATA_PATH).read_text(encoding="utf-8"))
+    all_coverage = {
+        "checked": max(mobility_coverage["checked"], municipal_mobility["checked"]),
+        "entries": [*mobility_coverage["entries"], *municipal_mobility_coverage(municipal_mobility, prefs)],
+    }
+    mobility_index = national_mobility_data(prefs, all_coverage, mobility)
+    city_coverage = {entry["city"]: entry for entry in mobility_coverage["entries"]
+                     if entry["page"].startswith(f"{MOBILITY_CITY_DIR}/")}
+    mobility_scopes = {city_id: entry["scope"] for city_id, entry in city_coverage.items()}
+    if set(city_coverage) != {c["id"] for c in mobility["cities"]}:
+        raise ValueError("地域交通データと掲載範囲の地域IDが一致しません")
+    for city_id, entry in city_coverage.items():
+        if entry["page"] != mobility_city_path(city_id):
+            raise ValueError(f"地域別ページのパスが一致しません: {city_id}")
     data["hk"] = hk
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     guides = [c for c in data["cities"] if c.get("guide")]
     pages = {
-        "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")]),
-        list_path(data["pref"]): list_page(data, a.draft),
+        "index.html": top_page(data, a.draft, [d for d in others if not d["pref"].get("draft")], mobility_index),
+        NATIONAL_MOBILITY_PATH: national_mobility_page(prefs, all_coverage, mobility, a.draft),
+        MOBILITY_PATH: mobility_page(mobility, a.draft, mobility_scopes),
+        **{mobility_city_path(c["id"]): mobility_city_page(
+            c, city_coverage[c["id"]], data, mobility["cities"], mobility_scopes, mobility["checked"], a.draft)
+           for c in mobility["cities"]},
+        **{municipal_mobility_path(c["pref"], c["municipality"]): mobility_city_page(
+            c, {"scope": c["scope"], "level": c["level"],
+                "page": municipal_mobility_path(c["pref"], c["municipality"]),
+                "municipality": c["municipality"]},
+            next(d for d in prefs if d["pref"]["id"] == c["pref"]),
+            [other for other in municipal_mobility["cities"] if other["pref"] == c["pref"]],
+            {other["id"]: other["scope"] for other in municipal_mobility["cities"] if other["pref"] == c["pref"]},
+            c["checked"], a.draft, regional=False)
+           for c in municipal_mobility["cities"]},
+        BASIC_GUIDE_PATH: basic_guide_page([data, *others], a.draft),
+        list_path(data["pref"]): list_page(data, a.draft, mobility["cities"], mobility_scopes),
         **({taxi_path(data["pref"]): taxi_page(data, a.draft)} if data.get("taxi") else {}),
         **{f"{guide_dir(d['pref'])}/{c['slug']}.html": city_page(c, d, a.draft or d["pref"].get("draft", False))
            for d in [data, *others] for c in d["cities"] if c.get("guide")},
@@ -1870,8 +2905,19 @@ def main():
     for name, html in pages.items():
         (out / name).parent.mkdir(parents=True, exist_ok=True)
         (out / name).write_text(html, encoding="utf-8")
+    (out / NATIONAL_MOBILITY_DATA_PATH).write_text(
+        json.dumps(mobility_index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    for d in [data, *others]:
+        if d["pref"].get("draft"):
+            continue
+        city_data = out / "guide-city-data" / f"{d['pref']['id']}.json"
+        city_data.parent.mkdir(parents=True, exist_ok=True)
+        city_data.write_text(json.dumps(basic_guide_cities(d), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     if out.resolve() != ROOT:
         shutil.copy(ROOT / "site.css", out / "site.css")
+        if any(d.get('bus') for d in prefs):
+            (out / 'assets').mkdir(exist_ok=True)
+            shutil.copy(ROOT / 'assets/bus.css', out / 'assets/bus.css')
     if not a.draft:
         urls = ["" if n == "index.html" else n for n in pages if n not in hidden]
         (out / "sitemap.xml").write_text(
@@ -1894,6 +2940,12 @@ def main():
                 (art / name).parent.mkdir(parents=True, exist_ok=True)
                 (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
+        if any(d.get('bus') for d in prefs):
+            (art / 'assets').mkdir(exist_ok=True)
+            shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
+    if (ROOT / 'data/municipality-supplements.json').exists():
+        from build_enriched import render
+        render(out, draft=a.draft, base_built=True)
     print("built:", ", ".join(pages), "| draft" if a.draft else "")
 
 

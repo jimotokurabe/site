@@ -2,6 +2,8 @@
 from collections import Counter
 from datetime import date
 from html import escape
+import hashlib
+from pathlib import Path
 from urllib.parse import urlparse
 
 
@@ -74,6 +76,7 @@ def bus_path(pref):
 
 def bus_page(pref_data, bus, draft, shell, jdate):
     validate_bus(bus, pref_data)
+    css_rev = hashlib.sha256((Path(__file__).resolve().parent.parent / 'assets/bus.css').read_bytes()).hexdigest()[:12]
     e = lambda s: escape(str(s), quote=True)
     pref = pref_data["pref"]
     by_slug = {c["slug"]: c for c in bus["cities"]}
@@ -145,7 +148,8 @@ def bus_page(pref_data, bus, draft, shell, jdate):
     return shell(title=f"{pref['name']}の高齢者バス助成・敬老パス {total}{pref['unit']}比較｜じもとくらべ",
                  description=f"{pref['name']}の高齢者バス助成・敬老パスを対象、料金、使える路線、申し込みで比較。{total}{pref['unit']}の公式資料を調査し、未確認の点も表示。{jdate(bus['checked'])}確認。",
                  path=bus_path(pref), main=main, draft=draft or bus.get("draft", False), scripts=BUS_SCRIPT,
-                 draft_note=f"制度の内容を確認するための{pref['name']}版です。", page_class="bus-page")
+                 draft_note=f"制度の内容を確認するための{pref['name']}版です。", page_class="bus-page",
+                 styles=f'\n<link rel="stylesheet" href="assets/bus.css?v={css_rev}">')
 
 
 BUS_SCRIPT = r'''<script>

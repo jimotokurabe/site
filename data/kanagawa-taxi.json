@@ -4,16 +4,26 @@
   "yokohama": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー利用券は障害者手帳などが条件です。",
+   "what": "75歳以上で全免許を自主返納した市民は、対象期間の条件を満たすと敬老パスが3年間無料になります。バス・市営地下鉄などで使うパスで、普通のタクシー券ではありません。障害者向け福祉タクシー券は別制度です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.pref.kanagawa.jp/docs/u6s/cnt/f536479/p1140372.html",
-   "src": "県の高齢者の外出支援サポートサイト（横浜市）",
-   "upd": "更新日：2026年8月3日",
-   "note": "敬老パスはタクシー助成ではありません。"
+   "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/menkyo.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "note": "敬老パスはタクシー助成ではありません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け敬老パス無料と福祉タクシー",
+   "more_sources": [
+    {
+     "label": "市の一般返納案内",
+     "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/anzen/korei/koureisyamenkyo.html"
+    }
+   ]
   },
   "kawasaki": {
    "k": "notfound",
@@ -201,15 +211,27 @@
    "name": "大磯町"
   },
   "ninomiya": {
-   "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。",
-   "henno_link": "記載なし",
-   "url": "https://www.town.ninomiya.kanagawa.jp/0000001354.html",
-   "src": "町のコミュニティバスのページ",
-   "upd": "更新日：2026年6月29日",
+   "k": "yes",
+   "what": "返納から1年以内の町民には、にのバスが1乗車100円引きになる12か月券を1回無料交付します。別に、住民税非課税世帯で歩行が難しく車を持たない65歳以上などを対象に、タクシー等に使う移動支援券があります。対象と併給条件は町へ確認してください。",
+   "henno_link": "返納の有無は条件に記載なし",
+   "url": "https://www.town.ninomiya.kanagawa.jp/0000002775.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
    "note": "満75歳以上はコミュニティバスの「ミーヤ手形（200円引き）」を買えますが、タクシー助成ではありません。",
    "henno_earlier": false,
-   "name": "二宮町"
+   "name": "高齢者移動支援利用助成券",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けにのバス割引と条件付きタクシー券",
+   "more_sources": [
+    {
+     "label": "返納者向けにのバス割引",
+     "url": "https://www.town.ninomiya.kanagawa.jp/0000001354.html"
+    }
+   ],
+   "age": "65歳以上の町民で、非課税世帯・歩行困難・車を持たないなどの条件を満たす人",
+   "amt": "500円券を月4枚（年48枚）、1乗車2枚まで"
   },
   "atsugi": {
    "k": "yes",
@@ -254,8 +276,21 @@
   },
   "ayase": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。市のタクシー運賃の助成は障がいのある人が対象です。",
-   "henno_link": "記載なし"
+   "what": "65歳以上の返納者はコミュニティバス乗車50回分などから1つを選べます。別に、免許を持たず自力で乗降できる市内65歳以上は、登録制の予約型交通「あやモビ」を1乗車500円で利用できます。市の案内では実証運行は2026年10月31日までです。",
+   "henno_link": "記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と65歳以上の「あやモビ」",
+   "url": "https://www.city.ayase.kanagawa.jp/kurashi_tetsuzuki/doro_kotsu/22723.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "more_sources": [
+    {
+     "label": "返納者向け支援",
+     "url": "https://www.city.ayase.kanagawa.jp/soshiki/shiminkatsudosuishinka/bosai_bohan_anzen_anshin/1/584.html"
+    }
+   ]
   },
   "aikawa": {
    "k": "yes",
@@ -277,11 +312,21 @@
   },
   "kiyokawa": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。村のタクシーの助成は障がいのある人向け（障害者安心・おでかけタクシー利用助成）です。",
+   "what": "70歳以上の返納者へのかなちゃんパス購入費助成を村が案内しています。別に、2026年度広報には一般の70歳以上向けパス購入費27,000円助成が掲載されています。返納者向け案内は更新日が古く、両制度の現行額と併給条件は村へ確認してください。",
    "henno_link": "記載なし",
-   "url": "https://www.town.kiyokawa.kanagawa.jp/soshiki/soumu/2257.html",
-   "src": "村の支援事業ガイドのページ",
-   "upd": "更新日：2025年06月02日"
+   "url": "https://www.town.kiyokawa.kanagawa.jp/material/files/group/3/20260400.pdf",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けパス助成と70歳以上の外出支援",
+   "more_sources": [
+    {
+     "label": "返納者向けパス助成",
+     "url": "https://www.town.kiyokawa.kanagawa.jp/soshiki/hokenhukushi/koureifukusi/3758.html"
+    }
+   ]
   },
   "odawara": {
    "k": "yes",
@@ -306,9 +351,22 @@
   },
   "nakai": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "免許をすべて返納した町民には、オンデマンドバス回数券5,000円分を1回交付します。通常利用は事前登録が必要で、町内間の運賃は大人200円、秦野赤十字病院区間は400円です。",
    "henno_link": "記載なし",
-   "note": "返納した人にはオンデマンドバス回数券5,000円分を配る（返納特典の欄）。"
+   "note": "返納した人にはオンデマンドバス回数券5,000円分を配る（返納特典の欄）。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け回数券と町のオンデマンドバス",
+   "url": "https://www.town.nakai.kanagawa.jp/kurashi_tetsuzuki/doro_kotsu/1044.html",
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "more_sources": [
+    {
+     "label": "返納者向け回数券",
+     "url": "https://www.town.nakai.kanagawa.jp/soshiki/kikakukaseisakuhan/doro_kotsu/413.html"
+    }
+   ]
   },
   "oi": {
    "k": "notfound",
@@ -364,26 +422,34 @@
   },
   "manazuru": {
    "k": "henno_only",
-   "what": "運転免許を返納した65歳以上の人に、バスやタクシー（真鶴タクシー・湯河原タクシー）で使える割引チケット20,000円分を配ります。年齢だけで使えるタクシー助成は見つかりませんでした。",
+   "what": "65歳以上の町民が免許を自主返納すると、バスと指定タクシーで使える200円券100枚（2万円分）を町が案内しています。案内の更新日が古いため、対象期間と申請方法を町へ確認してください。",
    "age": "満65歳以上（免許返納者）",
    "amt": "割引チケット200円を100枚（20,000円分）",
    "how": "都市計画課 都市計画係",
    "henno_link": "平成25年4月1日以降に有効期間内の自動車運転免許証返納を行った、満65歳以上の真鶴町の町民の方",
    "henno_earlier": false,
    "url": "https://www.town.manazuru.kanagawa.jp/soshiki/toshikeikaku/toshikeikaku/1463.html",
-   "src": "町の運転免許証自主返納支援事業のページ",
-   "upd": "更新日：2022年02月28日"
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けバス・タクシー割引券"
   },
   "yugawara": {
    "k": "henno_only",
-   "what": "予約して乗る乗合い交通「ゆたぽん号」は、運転経歴証明書を見せると1回300円になります（ふつうは1人で400円）。高齢者だけの料金や、年齢で使えるタクシー助成は見つかりませんでした。",
+   "what": "予約型乗合交通「ゆたぽん号」は運転経歴証明書を提示すると1乗車300円になります（通常は1人400円）。乗降場所と運行エリアは限定され、電話予約が必要です。年齢だけで使えるタクシー助成とは別です。",
    "amt": "1乗車300円",
    "how": "運転手に運転経歴証明書を提示",
    "henno_link": "運転経歴証明書（自主免許返納者）を所持している方の運賃",
    "henno_earlier": false,
    "url": "https://www.town.yugawara.kanagawa.jp/soshiki/17/2015.html",
-   "src": "町の予約型乗合い交通「ゆたぽん号」のページ",
-   "upd": "更新日：2026年3月2日更新"
+   "src": "自治体の公式案内",
+   "upd": "2026年10月3日確認",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "運転経歴証明書によるゆたぽん号割引"
   }
  }
 }

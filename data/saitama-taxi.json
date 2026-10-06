@@ -46,7 +46,7 @@
   "toda": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。寝たきりや車いすの65歳以上の人には、リフト付き車両などの移送費用を助成する移送サービスがあります（タクシー代の助成ではありません）。",
+   "what": "上のバス回数券5,000円分は返納者向けの特典です。別に、一般の交通機関を使いにくい65歳以上の寝たきり・車いすの人には、リフト付き車両などの移送費を1回2,000円まで、月2回助成するサービスがあります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
@@ -54,7 +54,11 @@
    "henno_earlier": false,
    "url": "https://www.city.toda.saitama.jp/soshiki/234/chojukaigo-shien-zaitakufukusi.html",
    "src": "市の高齢者福祉サービスのページ",
-   "upd": "更新日：2026年3月31日更新"
+   "upd": "更新日：2026年3月31日更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_heading": "返納後の移動支援",
+   "note": "高齢者移送サービスは返納だけで申請できるものではなく、対象となる身体の状態と利用先の条件があります。"
   },
   "konosu": {
    "k": "yes",
@@ -76,7 +80,7 @@
   "ageo": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー利用券は重度の障害者手帳が条件です。",
+   "what": "上の「ぐるっとくん」24回分の乗車券は、75歳以上の返納者向け特典です。確認した市の福祉タクシー券は障害者手帳などの条件があり、返納だけでは対象になりません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
@@ -84,12 +88,21 @@
    "henno_earlier": false,
    "url": "https://www.city.ageo.lg.jp/page/298548.html",
    "src": "市の福祉タクシー利用券のページ",
-   "upd": "掲載日：2026年1月15日更新"
+   "upd": "掲載日：2026年1月15日更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_heading": "返納後の移動支援",
+   "more_sources": [
+    {
+     "label": "上尾市の返納者向け「ぐるっとくん」乗車券",
+     "url": "https://www.city.ageo.lg.jp/page/03612011201.html"
+    }
+   ]
   },
   "okegawa": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は、市のページでは見つかりませんでした。市の福祉タクシー利用券は障害者手帳が条件です。",
+   "what": "運転経歴証明書などを見せると、循環バス「べにばなGO」が1回100円、1日乗車券200円になります。年齢制限はありません。確認した福祉タクシー券は障害要件がある別制度です。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
@@ -97,12 +110,23 @@
    "henno_earlier": false,
    "url": "https://www.city.okegawa.lg.jp/soshiki/fukushi/shogaifukushi/shogaifukushi/josei/11191.html",
    "src": "市の福祉タクシー利用券及び自動車燃料券のページ",
-   "upd": "更新日：2021年04月01日"
+   "upd": "更新日：2021年04月01日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "べにばなGOの返納者割引",
+   "more_sources": [
+    {
+     "label": "べにばなGOの割引運賃",
+     "url": "https://www.city.okegawa.lg.jp/kurashi/kotsu_churinjo/bus/12530.html"
+    }
+   ],
+   "flag": "福祉タクシー券の市ページは2021年更新です。現在の条件は障害福祉課に確認してください。"
   },
   "kitamoto": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。市のデマンドバス（片道500円）は、要介護・要支援の認定を受けた人や返納した人は250円です。",
+   "what": "上の返納者向けデマンドバス割引と同じ制度です。事前に利用登録をし、運転経歴証明書を示すと片道500円が250円になります。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
@@ -110,7 +134,11 @@
    "henno_earlier": false,
    "url": "https://www.city.kitamoto.lg.jp/soshiki/shiminkeizai/kurashi/gyomu/g7/1416919749711.html",
    "src": "市のデマンドバスご案内のページ",
-   "upd": "更新日：2026年04月01日"
+   "upd": "更新日：2026年04月01日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "デマンドバスの返納者割引"
   },
   "ina": {
    "k": "notfound",
@@ -338,18 +366,32 @@
    "upd": "更新日 2024年11月22日",
    "note": "利用者登録後に予約して乗車。市の案内では登録完了まで申請到着後10日～2週間程度。70歳以上は1回300円（通常500円）。返納支援補助金は2026年4月1日以降に返納した75歳以上が対象で、別途申請が必要。",
    "more_sources": [
-    {"url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003051/1003073/1003080.html", "label": "川越市・かわまる利用者登録"}
+    {
+     "url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003051/1003073/1003080.html",
+     "label": "川越市・かわまる利用者登録"
+    }
    ]
   },
   "sakado": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー利用券は障害者手帳などが条件です。",
+   "what": "70歳未満の返納者には、坂戸市民バスに70歳になるまで無料で乗れる特別乗車証があります。確認した福祉タクシー券は障害や指定難病などの条件がある別制度です。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.city.sakado.lg.jp/soshiki/34/1052.html",
    "src": "市の福祉タクシー利用券のページ",
-   "upd": "更新日：2018年11月19日更新"
+   "upd": "更新日：2018年11月19日更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納後の移動支援",
+   "more_sources": [
+    {
+     "label": "坂戸市民バスの運行案内",
+     "url": "https://www.city.sakado.lg.jp/soshiki/61/35125.html"
+    }
+   ],
+   "flag": "福祉タクシー券の市ページは2018年更新です。現在の条件は市の障害者福祉課で確認してください。"
   },
   "tsurugashima": {
    "k": "notfound",
@@ -365,10 +407,23 @@
   "moroyama": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町の福祉タクシー利用料金助成は重い障害のある人向けです。",
+   "what": "運転経歴証明書を見せると、証明書の交付から3年間「もろバス」に無料で乗れます。確認した福祉タクシー券は重い障害のある人が対象です。",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "flag": "毛呂山町役場で確かめてください。"
+   "flag": "確認した町のページには、年齢だけで申請できるタクシー券は書かれていません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "もろバスの返納者向け無料乗車",
+   "url": "https://www.town.moroyama.saitama.jp/soshikikarasagasu/fukushika/shogaishafukushi/teate/2256.html",
+   "src": "町の障害者向け福祉タクシー券の案内",
+   "upd": "更新日の記載なし",
+   "more_sources": [
+    {
+     "label": "もろバスの返納者向け無料乗車",
+     "url": "https://www.town.moroyama.saitama.jp/soshikikarasagasu/kikakuzaiseika/kikakukakari/circular_bus/3174.html"
+    }
+   ]
   },
   "ogose": {
    "k": "yes",
@@ -393,13 +448,19 @@
    "henno_earlier": true,
    "k": "care",
    "name": "東松山市デマンドタクシー（割引対象者）",
-   "what": "年齢だけで使えるタクシー代の助成は見つかりませんでした。要支援・要介護の認定を受けた人は、デマンドタクシーの料金が1割引き（上限900円）になります。",
-   "age": "要支援・要介護認定者（介護保険被保険者証を提示）",
+   "what": "市民向けデマンドタクシーは、運転経歴証明書を見せる免許返納者や要支援・要介護の認定者などが1割引になります。利用には事前登録が必要です。",
+   "age": "市内在住で利用登録した人のうち、運転経歴証明書を提示する免許返納者、または要支援・要介護認定者など",
    "amt": "利用料金が1割引、かつ上限が900円",
    "how": "利用者登録（地域支援課又は市民活動センター）",
    "url": "https://www.city.higashimatsuyama.lg.jp/soshiki/19/1622.html",
    "src": "市のデマンドタクシーのページ",
-   "upd": "更新日：2026年7月1日更新"
+   "upd": "更新日：2026年7月1日更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の免許返納者向け割引と同じデマンドタクシーです。要支援・要介護の認定者も別の対象区分として割引を利用できます。",
+   "guide_details": [
+    "利用者登録を済ませ、電話などで事前予約します。返納者は乗車時に運転経歴証明書を提示してください。"
+   ]
   },
   "namegawa": {
    "henno_link": "記載なし",
@@ -439,10 +500,20 @@
    "henno_earlier": false,
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町のデマンドタクシーは16歳以上の町民なら誰でも使え、高齢者の料金はありません。",
+   "what": "70歳以上で免許を自主返納または失効した人には、路線バス定期券購入費の3分の1か、デマンドタクシー利用費のどちらかを上限1万円まで1回補助します。一般のデマンドタクシーには高齢者だけの割引運賃はありません。",
    "url": "https://www.town.ogawa.saitama.jp/gyosei/sosiki/13/12/1/1284.html",
    "src": "町のデマンドタクシーのページ",
-   "upd": "更新日：2026年02月02日"
+   "upd": "更新日：2026年02月02日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けの交通費補助",
+   "more_sources": [
+    {
+     "label": "小川町の返納者向け交通費補助",
+     "url": "https://www.town.ogawa.saitama.jp/gyosei/kurashi_tetsuzuki/doro_kotsu/3824.html"
+    }
+   ]
   },
   "kawajima": {
    "guide_mobility": true,
@@ -490,10 +561,21 @@
    "henno_earlier": false,
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。乗合タクシーに高齢者の料金はなく、65歳以上向けの路線バス高齢者定期（タクシーではない）があります。",
+   "what": "70歳以上の返納者は、乗合タクシーと路線バスの定期券1か月分について、それぞれ上限2,500円を1回申請できます。申請は返納後6か月以内です。一般の乗合タクシーに年齢だけの割引はありません。",
    "url": "https://www.town.tokigawa.lg.jp/info/1917",
    "src": "町の乗合タクシーのページ",
-   "upd": "2024年10月11日 更新"
+   "upd": "2024年10月11日 更新",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けの定期券補助",
+   "more_sources": [
+    {
+     "label": "ときがわ町の返納者向け定期券補助",
+     "url": "https://www.town.tokigawa.lg.jp/Info/2734"
+    }
+   ],
+   "flag": "定期券補助の町ページは2023年更新です。現在の受付条件は町総務課へ確認してください。"
   },
   "higashichichibu": {
    "henno_link": "記載なし",
@@ -508,17 +590,27 @@
   "tokorozawa": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。市の福祉タクシー使用料金補助は重度障害者が対象です。",
+   "what": "65歳以上の返納者は「ところバス・ところワゴン」の無料定期券か50回券を選べます。別に、市内に住む65歳以上には100円で乗れる特別乗車証があります。確認した福祉タクシー券は重度障害者向けです。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/tokorozawacity.html",
-   "src": "県の市町村別支援施策のページ（所沢市）",
-   "upd": "掲載日：2025年12月11日",
+   "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/waribiki_tokubetsu.html",
+   "src": "市のところバス・ところワゴン特別乗車証の案内",
+   "upd": "更新日の記載なし",
    "note": "ところバス・ところワゴンの65歳以上100円の特別乗車証はタクシー代の助成ではありません。",
-   "flag": "所沢市の高齢者福祉の窓口で確かめてください。"
+   "flag": "返納者向け無料乗車券の市ページは2022年更新です。現在の交付条件を都市計画課へ確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け無料券と65歳以上の乗車証",
+   "more_sources": [
+    {
+     "label": "所沢市の返納者向け無料乗車券",
+     "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/menkyo_hennou.html"
+    }
+   ]
   },
   "hanno": {
    "k": "notfound",
@@ -538,23 +630,33 @@
   "sayama": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。",
+   "what": "70歳以上の返納者には交通系ICカードへの入金費などを最大1万円助成します。別に、75歳以上の茶の花号特別乗車証や、高齢者向け病院送迎バスの空席利用があります。確認した県の一覧だけでタクシー助成の有無は断定できません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/sayaacity01.html",
-   "src": "県の市町村別支援施策のページ（狭山市）",
-   "upd": "掲載日：2026年4月27日",
+   "url": "https://www.city.sayama.saitama.jp/kurashi/dourokotsuu/kotsu/sougeibus.html",
+   "src": "市の病院送迎バス空席利用の案内",
+   "upd": "更新日の記載なし",
    "note": "75歳以上の市内循環バス100円、70歳以上の病院送迎バスの空席利用はタクシー代の助成ではありません。",
-   "flag": "狭山市の高齢者支援課で確かめてください。"
+   "flag": "返納特典の市ページは2025年更新です。現在の募集状況を交通防犯課へ確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納特典と高齢者のバス利用",
+   "more_sources": [
+    {
+     "label": "狭山市の返納者向けICカード助成",
+     "url": "https://www.city.sayama.saitama.jp/kurashi/anshin/kotsuanzen/koureishajikobousi/menkiyo-henno.html"
+    }
+   ]
   },
   "iruma": {
    "k": "care",
    "name": "要援護高齢者等タクシー利用料金助成事業",
    "what": "要介護1以上の人が、通院や介護施設への通所でタクシーを使うとき、1枚500円の利用券を年に12枚まで出します。令和8年度末で終わります。",
-   "age": "記載なし（介護認定審査会で要介護1以上の認定を受けている人）",
+   "age": "要介護1以上と認定された人など、市の条件を満たす人",
    "amt": "1枚500円の利用券を年間最大12枚（1回2枚まで）",
    "how": "原則LOGOフォームによる電子申請。難しい場合は高齢者支援課へ申請書を提出",
    "henno_link": "記載なし",
@@ -562,22 +664,39 @@
    "url": "https://www.city.iruma.saitama.jp/soshiki/koreishashienka/kourei_fukushi_kaigo/support_koreisha/194.html",
    "src": "市の要援護高齢者等タクシー利用料金助成事業のページ",
    "upd": "更新日：2026年05月14日",
-   "note": "身体障害者手帳1・2級または療育手帳A・マルAの人は対象外（施設入所者を除く）。令和9年度以降は事業廃止。"
+   "note": "身体障害者手帳1・2級または療育手帳A・マルAの人は対象外（施設入所者を除く）。令和9年度以降は事業廃止。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の返納者向けコミュニティバス回数券とは別の制度です。返納だけでは対象になりません。",
+   "guide_details": [
+    "500円券は年度内に最大12枚。1回の乗車で2枚まで使えます。",
+    "市は2026年度末でこのタクシー助成を終了すると案内しています。"
+   ]
   },
   "hidaka": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。16歳以上の市民が登録して使える「おでかけタクシー」（メーター額に応じて500円〜3,000円）がありますが、高齢者に限った料金ではありません。",
+   "what": "75歳未満の返納者も、路線バスの定期券・回数券を買った費用の4割補助を申請できます。別に、市民が登録して使う「おでかけタクシー」がありますが、確認した案内に高齢者だけの運賃はありません。",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.hidaka.lg.jp/soshiki/shiminseikatsu/kotuseisaku/kotsuanzenbohan/kotsu/odekake/31953.html",
-   "src": "市のおでかけタクシーのページ",
-   "upd": "【令和8年9月18日更新】",
-   "note": "以前の「高齢者等のおでかけ支援（タクシー利用補助券15枚）」のページは開けなくなっています。",
-   "flag": "日高市交通政策課（042-989-2111）で、タクシー利用補助券がいまもあるか確かめてください。"
+   "url": "https://www.city.hidaka.lg.jp/life_procedure/1/5/32100.html",
+   "src": "市のおでかけタクシーの案内",
+   "upd": "更新日：2026年9月18日",
+   "note": "おでかけタクシーの運賃は利用距離などに応じて500〜3,000円です。",
+   "flag": "以前の高齢者向けタクシー券は現行市ページで確認できません。現在の制度は交通政策課に確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納後の移動支援",
+   "more_sources": [
+    {
+     "label": "返納者も対象となる路線バス購入費の補助",
+     "url": "https://www.city.hidaka.lg.jp/life_procedure/1/5/32256.html"
+    }
+   ]
   },
   "chichibu": {
    "k": "yes",
@@ -690,7 +809,7 @@
   },
   "hanyu": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。のりあいタクシーは1回500円で、高齢者の料金はありません。",
+   "what": "返納者本人の運賃は通常どおり片道500円です。利用登録時に運転経歴証明書などを示した返納者と一緒に乗る人は、1人だけ無料になります。事前登録と予約が必要です。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "name": "記載なし",
@@ -700,7 +819,12 @@
    "url": "https://www.city.hanyu.lg.jp/docs/2022062000031/",
    "src": "市ののりあいタクシーのページ",
    "upd": "更新日 2025年08月18日",
-   "note": "市のタクシー運賃の割引は障害者手帳などが条件。"
+   "note": "市のタクシー運賃の割引は障害者手帳などが条件。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "のりあいタクシーの返納者特典",
+   "flag": "のりあいタクシーの市ページは2025年更新です。現在の利用条件を交通政策課で確認してください。"
   },
   "kuki": {
    "k": "yes",
@@ -735,7 +859,7 @@
   },
   "satte": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。乗合型デマンドタクシーの実証運行は令和8年6月30日で終わりました。",
+   "what": "70歳以上で自主返納した市民には、初乗り運賃相当のタクシー券10枚を1回交付します。市の乗合型デマンドタクシーの実証運行は2026年6月30日で終了し、次のAIデマンド交通は2027年1月開始予定です。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "name": "記載なし",
@@ -745,20 +869,40 @@
    "url": "https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_2/13628.html",
    "src": "市の乗合型デマンドタクシーのページ",
    "upd": "更新日：2025年07月01日",
-   "note": "令和9年1月からAIデマンド交通の運行を予定。返納した70歳以上の人へのタクシー利用券は返納特典の一覧にある。"
+   "note": "予定段階のAIデマンド交通を、現在利用できる制度として案内していません。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向けタクシー券",
+   "more_sources": [
+    {
+     "label": "幸手市の返納者向けタクシー券",
+     "url": "https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_1/6053.html"
+    }
+   ]
   },
   "shiraoka": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は見つかりませんでした。のりあい交通は大人1回500円で、高齢者の料金はありません。",
+   "what": "自主返納した市民には、のりあい交通で使う100円券55枚を1回交付します。一般運賃は大人500円、乗合時300円で、年齢だけの割引運賃は書かれていません。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "name": "記載なし",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
-   "url": "https://www.city.shiraoka.lg.jp/soshiki/seikatsukeizaibu/chiikishinkoka/10/1/590.html",
-   "src": "市ののりあい交通のページ",
-   "upd": "更新日：2026年02月06日"
+   "url": "https://www.city.shiraoka.lg.jp/kurashi_tetsuzuki/juminkatsudo_community_kyodo/2723.html",
+   "src": "市ののりあい交通の案内",
+   "upd": "更新日：2026年2月6日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "のりあい交通の返納者向け回数券",
+   "more_sources": [
+    {
+     "label": "白岡市の返納者向け回数券",
+     "url": "https://www.city.shiraoka.lg.jp/kurashi_tetsuzuki/doro_kokyokotsu/1/2728.html"
+    }
+   ]
   },
   "miyashiro": {
    "k": "yes",
@@ -779,28 +923,51 @@
   },
   "sugito": {
    "k": "notfound",
-   "what": "高齢者向けのタクシー代の助成は、町のページで見つかりませんでした。",
+   "what": "65歳以上の返納者には町内巡回バスの回数券60枚を交付します。別に、巡回バスからタクシーへ乗り継ぐ際には300円の補助券があります。要支援・要介護の人などには巡回バス無料乗車証の制度もあります。",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "name": "記載なし",
    "age": "記載なし",
    "amt": "記載なし",
    "how": "記載なし",
-   "flag": "町役場（0480-33-1111）で確かめてください",
-   "note": "町の福祉タクシー利用料金助成は重度心身障害者が対象。"
+   "flag": "返納者向け回数券の町ページは更新日を確認できません。交付条件を住民協働課で確認してください。",
+   "note": "町の福祉タクシー利用料金助成は重度心身障害者が対象。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "返納者向け巡回バス券と乗り継ぎ補助",
+   "url": "https://www.town.sugito.lg.jp/page/16522.html",
+   "src": "町の巡回バスからのタクシー乗継補助",
+   "upd": "更新日の記載なし",
+   "more_sources": [
+    {
+     "label": "杉戸町の返納者向け巡回バス券",
+     "url": "https://www.town.sugito.lg.jp/page/1313.html"
+    },
+    {
+     "label": "要支援・要介護者向け特別乗車証",
+     "url": "https://www.town.sugito.lg.jp/page/17472.html"
+    }
+   ]
   },
   "kumagaya": {
    "k": "care",
    "name": "熊谷市要介護高齢者福祉タクシー利用料金助成事業",
    "what": "要介護1以上で非課税世帯の高齢者に、タクシーの初乗り運賃分（500円）の利用券を出します。",
-   "age": "記載なし（要介護1以上で非課税世帯のかた）",
+   "age": "熊谷市に住む65歳以上で要介護1〜5、介護保険料段階1〜3などの条件を満たす人",
    "amt": "初乗り運賃相当額（500円）の利用券を1年あたり最大36枚",
-   "how": "記載なし（申請書様式あり）",
+   "how": "長寿いきがい課などに利用申請",
    "henno_link": "記載なし",
    "henno_earlier": false,
    "url": "https://www.city.kumagaya.lg.jp/kenkouhukushi/koureisya/shien/20240601takusi.html",
    "src": "市の要介護高齢者福祉タクシーのページ",
-   "upd": "更新日：2025年5月12日"
+   "upd": "更新日：2025年5月12日",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の返納者向け「ゆうゆうバス」無料とは別の制度です。返納だけではタクシー券の対象になりません。",
+   "guide_details": [
+    "タクシー券は1枚500円で年間最大36枚です。所得・介護認定の条件を市のページで確認してください。"
+   ]
   },
   "fukaya": {
    "k": "care",
@@ -814,18 +981,29 @@
    "url": "https://www.city.fukaya.saitama.jp/soshiki/fukushikenko/chojufukushi/tanto/idoshien/13858.html",
    "src": "市の福祉タクシー利用料金助成事業のページ",
    "upd": "更新日：2023年04月11日",
-   "note": "要介護4・5の人向けには、別に「ねたきり高齢者等移動支援事業」があります。"
+   "note": "要介護4・5の人向けには、別に「ねたきり高齢者等移動支援事業」があります。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の返納者向け「くるリン」半額とは別の福祉タクシー券です。返納だけでは対象になりません。",
+   "guide_details": [
+    "70歳以上で要支援1・2または要介護1〜3の人などが対象です。2023年更新の案内なので、申請前に市へ確認してください。"
+   ],
+   "flag": "福祉タクシーの市ページは2023年更新です。現在の条件・枚数を長寿福祉課へ確認してください。"
   },
   "honjo": {
    "k": "notfound",
    "name": "記載なし",
-   "what": "年齢などで使える高齢者向けのタクシー代の助成は見つかりませんでした。市のタクシー券は障害者手帳を持つ人が対象です。",
+   "what": "運転経歴証明書を示す返納者は、はにぽん号・シャトル共通の1,000円分回数券を600円で購入できます。75歳以上の人も同額です。確認した高齢者向け交通ページには、年齢だけで使えるタクシー券は書かれていません。",
    "henno_link": "記載なし",
    "henno_earlier": false,
-   "url": "https://www.city.honjo.lg.jp/shiseijoho/shichonoheya/shimintonokoryu/shichohenotegami/1/4/1/8931.html",
-   "src": "市長への手紙の回答（無料タクシー券について）",
-   "upd": "更新日：2020年10月01日",
-   "flag": "回答が2020年のものです。本庄市役所で確かめてください。"
+   "url": "https://www.city.honjo.lg.jp/soshiki/toshiseibi/toshikeikaku/tantoujouhou/koukyoukoutuu/a/kikaku1001.html",
+   "src": "市のはにぽん号・シャトルバスの運賃案内",
+   "upd": "更新日：2026年9月13日",
+   "flag": "年齢による別のタクシー券の有無は、確認した市の交通案内の範囲です。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_heading": "はにぽん号・シャトルの回数券割引"
   },
   "misato-machi": {
    "k": "yes",
@@ -850,7 +1028,7 @@
    "name": "寄居町高齢者福祉タクシー利用助成事業",
    "what": "町民税非課税世帯で、75歳以上のひとり暮らしか高齢者だけの世帯の要介護・要支援の人、または65歳以上で返納した人に、タクシーの初乗り料金分の利用券を出します。",
    "age": "75歳以上で要介護・要支援（ひとり暮らしか高齢者のみの世帯）、または65歳以上で自主返納した方。町民税非課税世帯",
-   "amt": "初乗り料金を助成（枚数は県のまとめページでは1年度36枚）",
+   "amt": "町契約タクシーの初乗り料金相当を助成。現行ページに券の交付枚数は書かれていません。",
    "how": "寄居町役場福祉課へ申請",
    "henno_link": "(3)65歳以上で自動車運転免許証を自主返納した方。",
    "henno_earlier": true,
@@ -858,7 +1036,13 @@
    "src": "町の高齢者福祉サービスのページ",
    "upd": "更新日：2021年7月1日更新",
    "note": "愛のりタクシー（乗り合いの送迎）は町民ならだれでも使える制度で、高齢者の料金は書かれていません。",
-   "flag": "町のページが2021年の更新で、枚数は県のまとめページで確かめました。くわしくは寄居町役場福祉課（048-581-2121 内線123,124）で確かめてください。"
+   "flag": "町のページは2021年更新で、利用券の現在の枚数は確認できません。寄居町福祉課に確認してください。",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation": "same",
+   "guide_details": [
+    "町民税非課税世帯で、在宅の65歳以上の返納者も対象区分に含まれます。福祉課への申請が必要です。"
+   ]
   },
   "kamikawa": {
    "k": "yes",
@@ -881,15 +1065,22 @@
   "kamisato": {
    "k": "care",
    "name": "上里町高齢者お出かけサポート助成事業",
-   "what": "65歳以上で要支援・要介護の認定を受け、運転免許証を持っていない、ひとり暮らしか高齢者だけの世帯の人に、タクシーの初乗り分の助成券を出します。",
-   "age": "満65歳以上（要支援1・2、要介護1～5の認定、運転免許証を持っていない方）",
+   "what": "免許返納者向けのコミュニティバス無料乗車券とは別に、要支援・要介護認定などの条件を満たす高齢者にタクシー初乗り料金分を助成します。",
+   "age": "町内在住・在宅の65歳以上で、要支援1・2または要介護1〜5、単身または65歳以上のみの世帯、免許を持たないなど町の条件を満たす人",
    "amt": "1年度28枚（1枚につき初乗運賃相当額）。1回2枚まで",
    "how": "上里町役場高齢者いきいき課へ申請",
    "henno_link": "運転免許証を持っていない方",
    "henno_earlier": false,
-   "url": "https://www.town.kamisato.saitama.jp/item/5154.htm",
-   "src": "町の高齢者福祉サービスのページ",
-   "upd": "記載なし"
+   "url": "https://www.town.kamisato.saitama.jp/item/1086.htm",
+   "src": "町の高齢者お出かけサポート事業のページ",
+   "upd": "ページ内に更新日の記載なし",
+   "checked": "2026-10-03",
+   "guide_mobility": true,
+   "guide_relation_note": "上の「こむぎっち号」返納者向け無料乗車券とは別の制度です。返納だけでは対象になりません。",
+   "guide_details": [
+    "初乗り相当券を年度内28枚、1回につき2枚まで利用できます。",
+    "要介護認定、世帯、免許の有無、他のタクシー券を受けていないことなどを町に確認してください。"
+   ]
   }
  }
 }
