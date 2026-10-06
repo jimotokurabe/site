@@ -18,7 +18,7 @@ def main():
     ap.add_argument('notes')
     ap.add_argument('--cache', required=True)
     ap.add_argument('--refresh', action='store_true')
-    ap.add_argument('--ocr', help='画像PDFの読み取り結果（非公開JSON: {url,pages:[{page,text}]}）')
+    ap.add_argument('--ocr', help='画像PDFの読み取り結果（非公開JSON: {url,pages:[{page,text}]} またはその配列）')
     args = ap.parse_args()
     cache = Path(args.cache).resolve()
     root = Path(__file__).resolve().parent.parent
@@ -27,6 +27,7 @@ def main():
     notes = json.loads(Path(args.notes).read_text(encoding='utf-8'))
     urls = sorted({n['url'] for n in notes})
     ocr = json.loads(Path(args.ocr).read_text(encoding='utf-8')) if args.ocr else None
+    ocr_sources = {row['url']: row for row in (ocr if isinstance(ocr, list) else [ocr])} if ocr else {}
 
     def fetch(url):
         path = cache / (hashlib.sha256(url.encode()).hexdigest() + '.json')
@@ -35,9 +36,10 @@ def main():
         else:
             text, error = page_text(url)
             row = {'url': url, 'text': text, 'error': error}
-        if not row['text'] and not row['error'] and ocr and ocr['url'] == url:
-            row.update(text=norm('\n'.join(p['text'] for p in ocr['pages'])),
-                       error='', method='OCR: macOS Vision', ocr_pages=ocr['pages'])
+        if not row['text'] and not row['error'] and url in ocr_sources:
+            pages = ocr_sources[url]['pages']
+            row.update(text=norm('\n'.join(p['text'] for p in pages)),
+                       error='', method='OCR: macOS Vision', ocr_pages=pages)
         path.write_text(json.dumps(row, ensure_ascii=False), encoding='utf-8')
         return row
 

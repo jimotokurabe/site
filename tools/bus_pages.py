@@ -100,7 +100,7 @@ def bus_page(pref_data, bus, draft, shell, jdate):
                                 [("eligibility", "対象・条件"), ("benefit", "助成の中身"), ("fare", "乗るときの料金"),
                                  ("routes", "使えるバス"), ("apply", "申し込み")])
                 notes = ''.join(f'<li>{e(n)}</li>' for n in p["notes"])
-                current_note = '<p class="flag">この制度の現在の条件・金額は未確認です。下の出典と確認先をご覧ください。</p>' if p.get('current') == 'needs_confirmation' else ''
+                current_note = '<p class="flag">この制度には、現在の条件・金額を確認できていない項目があります。下の注意と確認先をご覧ください。</p>' if p.get('current') == 'needs_confirmation' else ''
                 programs.append(f'<section class="bus-program"><h4>{e(p["name"])}<span class="chip">{KINDS[p["kind"]]}</span></h4>{current_note}'
                                 f'<dl class="facts">{facts}</dl>' + (f'<ul class="bullets">{notes}</ul>' if notes else '') + '</section>')
             all_sources = [*c.get("sources", []), *(s for p in c["programs"] for s in p["sources"])]
@@ -136,7 +136,7 @@ def bus_page(pref_data, bus, draft, shell, jdate):
 <p class="count" id="bus-count" aria-live="polite">{total}{e(pref['unit'])}を表示しています。</p><p id="bus-empty" hidden>条件に合う市町村がありません。名前や絞り込みを変えてください。</p></section>
 <p class="note">高齢者向け支援の案内は<strong>{counts['active']}{e(pref['unit'])}</strong>で見つかりました。「記載なし」は制度がないという意味ではありません。古い資料による条件・金額は、各欄に「未確認」と表示しています。</p>
 <details class="bus-scope"><summary>掲載する制度と、県内共通の特典について</summary>
-<p>免許返納だけが条件の支援は別に表示しています。一般の住民に共通の運賃、障害者向けだけの制度、タクシー券だけの助成、民間バス会社独自のシニア定期券は、この市町村比較には含めていません。</p>
+<p>路線・コミュニティバス等の乗車料金の支援を比べています。免許返納だけが条件の支援は別に表示しています。一般の住民に共通の運賃、障害者向けだけの制度、タクシー券だけの助成、民間バス会社独自のシニア定期券、福祉バスの貸切使用は、この乗車料金の比較には含めていません。</p>
 {common_link}</details>
 {''.join(sections)}
 <section class="about-list"><h2>調べ方と、確認が必要な点</h2><ul class="bullets">

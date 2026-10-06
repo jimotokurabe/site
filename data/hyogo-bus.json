@@ -80,7 +80,7 @@
       "sources": [
         {
           "url": "https://www.city.kobe.lg.jp/a39067/kenko/fukushi/koreshafukushi/am02/yutai/keropass/index.html",
-          "label": "敬老パス制度・対象路線・申請",
+          "label": "敬老優待乗車証（敬老パス）",
           "updated": "2026-08-19",
           "checked": "2026-10-06"
         },
@@ -91,13 +91,25 @@
           "checked": "2026-10-06"
         },
         {
+          "url": "https://www.city.kobe.lg.jp/a80014/shise/kekaku/jutakutoshikyoku/sogokotsu/lrtbrt.html",
+          "label": "連節バス「Port Loop」運賃",
+          "updated": "2026-09-14",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://faq.city.kobe.lg.jp/faq/show/3359?site_domain=default",
+          "label": "運転免許返納5,000円ICOCAキャンペーン受付終了",
+          "updated": "2024-10-31",
+          "checked": "2026-10-06"
+        },
+        {
           "url": "https://www.city.kobe.lg.jp/a39067/kenko/fukushi/koreshafukushi/am02/yutai/keirou_hinndo.html",
           "label": "高齢者の定期券割引購入制度（高頻度利用者向け）",
           "updated": "2026-09-08",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "ポケットガイドは2026年8月現在。PDFに発行・更新日の記載を確認できないため、適用区間・最新条件を高齢福祉課または交通事業者へ確認。 資料の日付が古いか不明のものがあります。現在の条件は市町の交通・高齢者福祉担当窓口でご確認ください。"
+      "flag": "敬老パスポケットガイドは市ページで2026年8月現在と明記。PDF自体の発行・更新日は不明。利用時の適用区間や変更は高齢福祉課または交通事業者へ確認。"
     },
     {
       "slug": "amagasaki",
@@ -136,7 +148,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "現行ページの金額表は2026年9月1日現在。"
+      "flag": ""
     },
     {
       "slug": "nishinomiya",
@@ -175,7 +187,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "現行ページの更新日を確認（2026年8月25日）。"
+      "flag": ""
     },
     {
       "slug": "ashiya",
@@ -253,7 +265,7 @@
       "sources": [
         {
           "url": "https://www.city.ashiya.lg.jp/kounen/bus.html",
-          "label": "高齢者バス運賃助成事業",
+          "label": "高齢者バス運賃助成事業（みなと観光バス）",
           "updated": "2026-09-29",
           "checked": "2026-10-06"
         }
@@ -295,7 +307,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "現行ページの更新日は2026年6月10日。"
+      "flag": ""
     },
     {
       "slug": "takarazuka",
@@ -386,12 +398,12 @@
       "sources": [
         {
           "url": "https://www.city.sanda.lg.jp/iryo_kenko_fukushi/kourei_fukushi_kaigo/support_koreisha/8702.html",
-          "label": "高齢者運賃助成",
+          "label": "令和8年度高齢者運賃助成",
           "updated": "2026-04-01",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "令和8年度情報（2026年4月1日更新）。紙券・NicoPa別の購入方法を確認。"
+      "flag": ""
     },
     {
       "slug": "inagawa",
@@ -463,6 +475,12 @@
               "label": "2026年度敬老優待乗車券の案内",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.akashi.lg.jp/shise/koho/kohotext/2026/0301.html",
+              "label": "広報あかし（2026年3月1日・令和8年度敬老優待乗車券）",
+              "updated": "2026-03-01",
+              "checked": "2026-10-06"
             }
           ],
           "current": "document_checked"
@@ -477,18 +495,24 @@
         },
         {
           "url": "https://www.city.akashi.lg.jp/documents/4604/r8_keirouyuutai-riyouannnai.pdf",
-          "label": "令和8年度乗車券の案内",
+          "label": "2026年度敬老優待乗車券の案内",
           "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.akashi.lg.jp/shise/koho/kohotext/2026/0301.html",
+          "label": "広報あかし（2026年3月1日・令和8年度敬老優待乗車券）",
+          "updated": "2026-03-01",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "2026年度案内PDFで料金と路線条件を確認。PDF自体に発行・更新日の明記は見当たらないため、次年度の条件変更に注意。 資料の日付が古いか不明のものがあります。現在の条件は市町の交通・高齢者福祉担当窓口でご確認ください。"
+      "flag": "2026年度案内と2026年3月1日広報で現行料金を確認。案内PDF自体の発行・更新日は不明。次年度や利用時の変更は高齢者総合支援室へ確認。"
     },
     {
       "slug": "kakogawa",
       "name": "加古川市",
       "status": "notfound",
-      "summary": "個人の高齢者を対象とする市独自のバス乗車証・運賃助成・券購入補助は確認できず。高齢者団体等向け福祉バスと、一般利用者向け運賃制度は別扱い。",
+      "summary": "65歳以上の個人・団体を対象とする福祉バス貸切使用の案内あり。日常の路線・コミュニティバスの乗車証や運賃助成は、今回の公式資料では見つからず。",
       "programs": [],
       "sources": [
         {
@@ -502,9 +526,15 @@
           "label": "福祉バスの使用について（団体向け）",
           "updated": "2025-04-01",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.kakogawa.lg.jp/shiseijoho/jyoreikisokuyoko/youkousyu/29760.html",
+          "label": "高齢者支援課所管要綱一覧（令和8年度要綱を含む）",
+          "updated": "2026-05-07",
+          "checked": "2026-10-06"
         }
       ],
-      "flag": "高齢者個人向けのバス助成は検索した公式資料では見つからず、制度がないとは断定できないため市窓口へ確認。団体向け福祉バス資料は2025年4月更新のため最新運用を高齢者支援課へ確認。"
+      "flag": "高齢者個人向けのバス乗車証・運賃助成は、令和8年度を含む公式資料の再調査でも見つからず。制度がないとは断定できないため高齢者支援課・交通担当へ確認。福祉バスは貸切使用に関する制度で、日常の路線バス運賃助成とは別扱い。"
     },
     {
       "slug": "takasago",
@@ -517,18 +547,25 @@
           "kind": "discount",
           "age_min": 75,
           "eligibility": "75歳以上。居住地要件は掲載資料に記載なし。",
-          "benefit": "降車時に年齢を確認できる公的証明書またはじょうとんパス75を提示すると運賃半額。",
-          "fare": "普通運賃200円→100円、1日乗車券300円→150円。",
-          "routes": "高砂市コミュニティバス「じょうとんバス」。",
-          "apply": "証明書提示で利用可能。じょうとんパス75の発行場所は市役所、イオン高砂市民サービスコーナー、地域交流センター、市立図書館、ユーアイ帆っとセンター。",
+          "benefit": "降車時に年齢を確認できる公的証明書またはじょうとんパス75の原本を提示すると運賃半額。コピー不可。",
+          "fare": "普通運賃200円→100円、1日乗車券300円→150円。支払いは現金のみ。",
+          "routes": "高砂市コミュニティバス「じょうとんバス・じょうとんバスミニ」。",
+          "apply": "公的証明書の原本提示で利用可能。じょうとんパス75は発行場所で年齢を確認できる公的証明書を提示して取得。発行場所は市役所、イオン高砂市民サービスコーナー、各地域交流センター、市立図書館、ユーアイ帆っとセンター。",
           "notes": [
-            "ガイドの記載内容は2026年4月1日現在。"
+            "ガイドの記載内容は2026年4月1日現在。",
+            "じょうとんパス75は使用回数の制限・有効期限なし。"
           ],
           "sources": [
             {
               "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/chiikifukushika/koreishafukushi_kaigo/2/9319.html",
               "label": "令和8年度高齢者くらしの安心ガイド（テキスト版）",
               "updated": "2026-04-24",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/8850.html",
+              "label": "じょうとんバス75歳以上割引・じょうとんパス75",
+              "updated": "2025-03-21",
               "checked": "2026-10-06"
             }
           ],
@@ -538,12 +575,18 @@
       "sources": [
         {
           "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/chiikifukushika/koreishafukushi_kaigo/2/9319.html",
-          "label": "令和8年度高齢者くらしの安心ガイド",
+          "label": "令和8年度高齢者くらしの安心ガイド（テキスト版）",
           "updated": "2026-04-24",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/8850.html",
+          "label": "じょうとんバス75歳以上割引・じょうとんパス75",
+          "updated": "2025-03-21",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "居住地要件は資料に記載なし。じょうとんパス75の取得条件は都市政策課へ確認。"
+      "flag": "居住地要件は2026年度ガイドと割引専用ページに記載なし。割引専用ページは2025年3月更新だが、年齢・料金は2026年4月現在のガイドでも確認。市外居住者の利用・パス取得可否は都市政策課へ確認。"
     },
     {
       "slug": "inami",
@@ -556,12 +599,13 @@
           "kind": "voucher",
           "age_min": 65,
           "eligibility": "町内在住で居宅において外出時にバス・タクシーを必要とする人。65歳以上75歳未満は住民税非課税世帯（4〜6月は前年度分の住民税で判定）。75歳以上は非課税要件なし。重度障がい者福祉タクシー券の交付者を除く。",
-          "benefit": "バス券は申請月から年度末までの月数分交付（月1冊、1冊1,320円相当）。",
+          "benefit": "バス券のみを選ぶ場合は申請月から年度末までの月数分交付（月1冊、1冊1,320円相当）。申請書では「タクシー券のみ」「バス券のみ」「タクシー券とバス券半分ずつ」の3択。",
           "fare": "運賃相当分を利用券で支払い、差額は現金で支払う。",
           "routes": "稲美町発着の神姫バス。",
           "apply": "健康福祉課窓口、郵送（課へ連絡）、オンライン申請。本人確認書類等を提出。",
           "notes": [
             "申請する月により交付冊数が変わる。",
+            "両種類をそれぞれ満額で重複交付する案内ではなく、申請書の希望する種類を1つ選択する。",
             "返納者向け「あいのりいなみ」1年間無料は予約型乗合タクシーのため、対象外。"
           ],
           "sources": [
@@ -569,6 +613,12 @@
               "url": "https://www.town.hyogo-inami.lg.jp/0000007447.html",
               "label": "高齢者優待利用券（タクシー・バス券）",
               "updated": "2026-03-26",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.hyogo-inami.lg.jp/cmsfiles/contents/0000007/7447/sinnsei.pdf",
+              "label": "高齢者優待利用券交付申請書兼受領書（2026年度案内添付）",
+              "updated": "",
               "checked": "2026-10-06"
             }
           ],
@@ -578,12 +628,18 @@
       "sources": [
         {
           "url": "https://www.town.hyogo-inami.lg.jp/0000007447.html",
-          "label": "高齢者優待利用券",
+          "label": "高齢者優待利用券（タクシー・バス券）",
           "updated": "2026-03-26",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.hyogo-inami.lg.jp/cmsfiles/contents/0000007/7447/sinnsei.pdf",
+          "label": "高齢者優待利用券交付申請書兼受領書（2026年度案内添付）",
+          "updated": "",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "令和8年度券の有効期間は2026年4月1日～2027年3月31日。月あたり交付分は申請時期で変動。タクシー券とバス券の選択・重複条件は本文に記載がないため健康福祉課へ確認。"
+      "flag": "令和8年度券の有効期間は2026年4月1日～2027年3月31日。申請書にバスのみ・タクシーのみ・半分ずつの選択欄あり。要綱では交付枚数36枚超の分割選択を規定しているため、短期間の申請時に半分ずつを選べる条件と端数の扱いは健康福祉課へ確認。申請書自体の発行・更新日は記載なし。"
     },
     {
       "slug": "harima",
@@ -597,9 +653,15 @@
           "label": "高齢者等タクシー料金助成（バス支援ではないため除外確認）",
           "updated": "2026-07-21",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.harima.lg.jp/hoken/silverhandbook.html",
+          "label": "高齢者のためのシルバー情報ハンドブック（令和6～8年度）",
+          "updated": "2024-05-01",
+          "checked": "2026-10-06"
         }
       ],
-      "flag": "バス助成は見つからず、制度がないとは断定できないため町の保険課・交通担当へ確認。"
+      "flag": "バス助成は令和6～8年度の高齢者福祉ハンドブックと2026年度関連資料の再調査でも見つからず。制度がないとは断定できないため保険課・交通担当へ確認。ハンドブックは2024年4月改訂版のため最新運用も確認。"
     },
     {
       "slug": "nishiwaki",
@@ -725,15 +787,9 @@
           "label": "コミュニティバスらんらんバス",
           "updated": "2026-08-21",
           "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.ono.hyogo.jp/soshikikarasagasu/sogoseisakubu_kotsuseisakugroup/gyomuannai/3/1/10331.html",
-          "label": "らんらんタクシーご利用案内（タクシーのため対象外確認）",
-          "updated": "",
-          "checked": "2026-10-06"
         }
       ],
-      "flag": "2026年8月21日更新の市公式本文で65歳以上無料を確認。 資料の日付が古いか不明のものがあります。現在の条件は市町の交通・高齢者福祉担当窓口でご確認ください。"
+      "flag": "市内住所要件は市公式本文に記載なし。適用範囲は小野市交通政策グループへご確認ください。"
     },
     {
       "slug": "kasai",
@@ -787,12 +843,6 @@
           "url": "https://www.city.kasai.hyogo.jp/soshiki/3/2200.html",
           "label": "加西市内バス無料乗車券について",
           "updated": "2026-02-09",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.kasai.hyogo.jp/site/koureisyahukushi/44032.html",
-          "label": "高齢者のタクシー料金助成事業（別制度）",
-          "updated": "",
           "checked": "2026-10-06"
         }
       ],
@@ -852,7 +902,7 @@
           "name": "高齢者バス等優待乗車助成（バス選択）",
           "kind": "pass",
           "age_min": 75,
-          "eligibility": "満75歳以上。障害者バス等優待乗車助成受給者を除く。本ページの対象者欄に住所条件の明記なし。",
+          "eligibility": "姫路市の住民基本台帳に記録されている75歳以上。障害者向けのバス・鉄道・船舶優待、福祉タクシー又は自動車燃料費助成を受けている人を除く。不正使用等により助成決定を取り消された人は翌年度対象外。",
           "benefit": "神姫バス市内停留所間を1乗車150円で利用できるIC優待乗車証。",
           "fare": "市内1回150円。カードへの事前チャージが必要。",
           "routes": "神姫バス市内停留所間。",
@@ -865,6 +915,12 @@
               "url": "https://www.city.himeji.lg.jp/kurashi/0000002864.html",
               "label": "高齢者バス等優待乗車助成制度",
               "updated": "2026-06-18",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www1.g-reiki.net/city.himeji/Yoko/pdf/差替_高齢者支援課_姫路市高齢者バス等優待乗車助成事業実施要綱.pdf",
+              "label": "姫路市高齢者バス等優待乗車助成事業実施要綱（令和6年10月改正）",
+              "updated": "",
               "checked": "2026-10-06"
             }
           ],
@@ -879,76 +935,86 @@
           "checked": "2026-10-06"
         },
         {
-          "url": "https://www.city.himeji.lg.jp/kurashi/0000027547.html",
-          "label": "高齢者福祉関連事業の見直し",
+          "url": "https://www1.g-reiki.net/city.himeji/Yoko/pdf/差替_高齢者支援課_姫路市高齢者バス等優待乗車助成事業実施要綱.pdf",
+          "label": "姫路市高齢者バス等優待乗車助成事業実施要綱（令和6年10月改正）",
           "updated": "",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "2026年6月18日本文で市内1乗車150円を確認。詳細な転入・住所要件は姫路市高齢者支援課へ確認。 資料の日付が古いか不明のものがあります。現在の条件は市町の交通・高齢者福祉担当窓口でご確認ください。"
+      "flag": "居住要件・重複受給の除外条件は市の実施要綱で確認。要綱PDFの更新日は記載なし、最新の個別資格判断は姫路市高齢者支援課へご確認ください。"
     },
     {
       "slug": "ichikawa",
       "name": "市川町",
       "status": "active",
-      "summary": "現行の支援制度一覧にコミバス・買物バス無料乗車券年度48枚を掲載。75歳条件は2019年度資料由来で現行未確認。",
+      "summary": "町内在住75歳以上にコミバス・買い物バス無料券を年度48枚。65歳以上の町内免許返納者は証明書提示で半額、申請すると年度48枚の無料券。",
       "programs": [
         {
           "name": "公共交通運賃助成（高齢者）",
           "kind": "voucher",
           "age_min": 75,
-          "eligibility": "2019年度会議資料では町内在住75歳以上（現在の年齢・住所条件未確認）。",
+          "eligibility": "町内在住の75歳以上。",
           "benefit": "市川町コミバス・買物バス無料乗車券を年度内48枚交付。",
-          "fare": "年度48枚の無料乗車券を使用する乗車は無料。券なしの通常運賃は2023年ページでは片道100円（現行額未確認）。",
+          "fare": "年度48枚の無料乗車券を使う乗車は無料。券を使わない普通運賃は片道100円。",
           "routes": "市川町コミュニティバス、買い物バス。",
-          "apply": "2019年度会議資料では町役場で申請（現行の手続き詳細未確認）。",
+          "apply": "市川町役場で申請。必要書類の詳細は記載なし。",
           "notes": [
-            "2019年度の交通会議資料には免許返納者の半額割引も記録されているが、現行の町公式高齢者一覧では確認できず現行制度に含めない。無料券の申請条件の詳細は企画政策課に確認。"
+            "2026年4月～の暫定版時刻表で年齢・住所要件、年度48枚、普通片道100円を確認。"
           ],
           "sources": [
+            {
+              "url": "https://www.town.ichikawa.lg.jp/div/kikaku/pdf/koutu/jikokuhyou.pdf",
+              "label": "市川町バス運行路線＆時刻表（暫定版2026年4月～）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
             {
               "url": "https://www.town.ichikawa.lg.jp/Info/1851",
               "label": "市川町の支援制度（個人向け）",
               "updated": "2026-07-15",
               "checked": "2026-10-06"
-            },
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "公共交通運賃助成（免許返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内在住の65歳以上の運転免許返納者。運転経歴証明書が必要。",
+          "benefit": "運転経歴証明書の提示で運賃半額。町役場で申請すると年度内48枚の無料乗車券を交付。",
+          "fare": "無料乗車券を使う乗車は無料。券を使わず運転経歴証明書を提示する場合は普通運賃100円の半額（50円）。",
+          "routes": "市川町コミバス、買い物バス。",
+          "apply": "無料乗車券は市川町役場へ申請し、運転経歴証明書を提示。半額運賃は運転経歴証明書を提示。",
+          "notes": [
+            "2026年4月～の暫定版時刻表に掲載。"
+          ],
+          "sources": [
             {
-              "url": "https://www.town.ichikawa.lg.jp/info/628",
-              "label": "市川町公共交通",
-              "updated": "2023-08-14",
-              "checked": "2026-10-06"
-            },
-            {
-              "url": "https://www.town.ichikawa.lg.jp/div/kikaku/pdf/R1_1_siryou.pdf",
-              "label": "運賃改正及び助成制度拡充資料（資料年月: 2019）",
+              "url": "https://www.town.ichikawa.lg.jp/div/kikaku/pdf/koutu/jikokuhyou.pdf",
+              "label": "市川町バス運行路線＆時刻表（暫定版2026年4月～）",
               "updated": "",
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
+        {
+          "url": "https://www.town.ichikawa.lg.jp/div/kikaku/pdf/koutu/jikokuhyou.pdf",
+          "label": "市川町バス運行路線＆時刻表（暫定版2026年4月～）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
         {
           "url": "https://www.town.ichikawa.lg.jp/Info/1851",
           "label": "市川町の支援制度（個人向け）",
           "updated": "2026-07-15",
           "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.town.ichikawa.lg.jp/info/628",
-          "label": "市川町公共交通",
-          "updated": "2023-08-14",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.town.ichikawa.lg.jp/div/kikaku/pdf/R1_1_siryou.pdf",
-          "label": "運賃改正及び助成制度拡充資料（資料年月: 2019）",
-          "updated": "",
-          "checked": "2026-10-06"
         }
       ],
-      "flag": "年度48枚の無料券は2026年7月15日更新の一覧に掲載。75歳・住所条件と申請詳細は2019年度資料によるため、企画政策課（0790-26-1010）へご確認ください。券なし通常100円は2023年資料による金額で、現在の額は未確認です。"
+      "flag": "2026年4月～の暫定版時刻表で主要条件を確認。PDFの発行・更新日は記載なし。75歳以上の方の申請必要書類は企画政策課（0790-26-1010）へご確認ください。"
     },
     {
       "slug": "fukusaki",
@@ -974,9 +1040,15 @@
               "label": "町内巡回バス「サルビア号」および市町連携コミュニティバス",
               "updated": "2025-03-31",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.fukusaki.hyogo.jp/cmsfiles/contents/0000000/924/machinaka.pdf",
+              "label": "サルビア号まちなか便時刻表（令和8年4月1日改正）",
+              "updated": "",
+              "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "ふくひめ号高齢者定期券・福祉対象者割引",
@@ -986,7 +1058,7 @@
           "benefit": "65～74歳定期1か月2,000円・6か月10,000円、75歳以上定期1か月1,000円・6か月5,000円。75歳以上等は福祉対象者パス提示で普通運賃半額。",
           "fare": "65～74歳は有料定期1か月2,000円・6か月10,000円。75歳以上は有料定期1か月1,000円・6か月5,000円、福祉対象者パス提示の普通乗車1回100円（通常200円）。",
           "routes": "姫路市連携コミュニティバス「ふくひめ号」通勤便・連携便。",
-          "apply": "定期購入は役場福祉課で年齢がわかる本人確認書類を提示。普通運賃割引は降車時に福祉対象者パス等を提示。パス交付手続きの記載なし。",
+          "apply": "定期券購入・福祉対象者パス発行は福崎町役場福祉課へ。年齢がわかる保険証等の身分証明書を持参。普通運賃割引は降車時にパスを提示（障害者手帳又は優待乗車証でも可）。",
           "notes": [
             "2026年4月改正の案内に掲載された料金。"
           ],
@@ -996,9 +1068,15 @@
               "label": "町内巡回バス「サルビア号」および市町連携コミュニティバス",
               "updated": "2025-03-31",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.fukusaki.hyogo.jp/cmsfiles/contents/0000000/924/fukuhime_tsukin.pdf",
+              "label": "ふくひめ号通勤便時刻表（令和8年4月1日改正）",
+              "updated": "",
+              "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "運転免許自主返納者無料乗車券",
@@ -1008,7 +1086,7 @@
           "benefit": "返納月から3年間有効の無料乗車券を交付。",
           "fare": "無料。",
           "routes": "サルビア号。",
-          "apply": "申請し、免許取消通知書または運転経歴証明書を提示。",
+          "apply": "福崎町役場福祉課へ、警察署で交付される免許を返納された書類を持参して申請。「申請による運転免許の取り消し通知書」又は「運転経歴証明書」が必要。",
           "notes": [
             "町内在住要件あり。"
           ],
@@ -1018,9 +1096,15 @@
               "label": "町内巡回バス「サルビア号」および市町連携コミュニティバス",
               "updated": "2025-03-31",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.fukusaki.hyogo.jp/cmsfiles/contents/0000000/924/machinaka.pdf",
+              "label": "サルビア号まちなか便時刻表（令和8年4月1日改正）",
+              "updated": "",
+              "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1029,9 +1113,21 @@
           "label": "町内巡回バス「サルビア号」および市町連携コミュニティバス",
           "updated": "2025-03-31",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.fukusaki.hyogo.jp/cmsfiles/contents/0000000/924/machinaka.pdf",
+          "label": "サルビア号まちなか便時刻表（令和8年4月1日改正）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.fukusaki.hyogo.jp/cmsfiles/contents/0000000/924/fukuhime_tsukin.pdf",
+          "label": "ふくひめ号通勤便時刻表（令和8年4月1日改正）",
+          "updated": "",
+          "checked": "2026-10-06"
         }
       ],
-      "flag": "公開日は2025年3月31日だが本文に2026年4月改正時刻表と料金表を掲載。定期は有料。無料返納券はサルビア号欄のみで、ふくひめ号への適用は断定しない。福祉対象者パスの交付手続き・無料券の申請先詳細は福崎町福祉課（0790-27-8606）へ確認。 資料の日付が古いか不明のものがあります。現在の条件は市町の交通・高齢者福祉担当窓口でご確認ください。"
+      "flag": "公開日は2025年3月31日ですが、令和8年4月1日改正時刻表の料金欄で定期券・福祉パス・返納無料券を確認。無料返納券の対象はサルビア号として掲載。高齢者定期・福祉パスの町外居住者の取扱い、返納券のふくひめ号への適用は福崎町福祉課（0790-27-8606）へご確認ください。"
     },
     {
       "slug": "kamikawa",
@@ -1116,15 +1212,15 @@
       "slug": "tatsuno",
       "name": "たつの市",
       "status": "henno",
-      "summary": "2025年資料に65歳以上の免許返納者等へ市コミュニティバス・てくてくバス3年間無料定期券（現行継続未確認）。",
+      "summary": "65歳以上の免許返納者等にコミュニティバス・圏域バスてくてく3年間無料定期券。2026年5月広報で継続を確認。",
       "programs": [
         {
           "name": "高齢者運転免許証自主返納促進事業（無料バス定期券）",
           "kind": "henno",
           "age_min": 65,
-          "eligibility": "2025年資料では市内在住65歳以上で2015年4月1日以降に自主返納した人及びその配偶者で免許を持たない人。配偶者自身の年齢条件は明確に分離されていないため要確認。",
-          "benefit": "2025年3月31日資料では、交付日から3年間有効のコミュニティバス・てくてくバス無料定期券。現行継続条件未確認。",
-          "fare": "2025年資料では対象無料定期券を降車時に提示すると無料（現行条件未確認）。",
+          "eligibility": "市内在住で65歳以上、平成27年度以降に免許を自主返納した人とその配偶者で免許を有しない人。配偶者自身の年齢要件は資料でも明確に分離されていないため要確認。",
+          "benefit": "コミュニティバス・圏域バスてくてくの3年間有効の無料定期券。",
+          "fare": "無料定期券を降車時に運転士へ提示すると無料。",
           "routes": "たつの市コミュニティバス、てくてくバス。",
           "apply": "申請書と免許取消通知書の写しを提出。無料定期券は降車時に運転士へ提示、記名本人のみ利用可。",
           "notes": [
@@ -1136,9 +1232,15 @@
               "label": "高齢者運転免許証自主返納促進事業",
               "updated": "2025-03-31",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.tatsuno.lg.jp/material/files/group/9/2026_05all_smihiraki.pdf",
+              "label": "広報たつの2026年5月号8頁（高齢者サービス）",
+              "updated": "",
+              "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1147,9 +1249,15 @@
           "label": "高齢者運転免許証自主返納促進事業",
           "updated": "2025-03-31",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.tatsuno.lg.jp/material/files/group/9/2026_05all_smihiraki.pdf",
+          "label": "広報たつの2026年5月号8頁（高齢者サービス）",
+          "updated": "",
+          "checked": "2026-10-06"
         }
       ],
-      "flag": "詳細は2025年3月31日の資料による案内です。現在も利用できるか、配偶者の年齢条件、申請窓口は高年福祉課（0791-64-3152）へご確認ください。"
+      "flag": "2026年5月広報で3年間無料定期券の継続を確認。詳細ページは2025年3月31日更新です。配偶者自身の年齢要件と現在の申請窓口・必要書類の詳細は高年福祉課（0791-64-3152）へご確認ください。"
     },
     {
       "slug": "ako",
@@ -1183,12 +1291,6 @@
           "url": "https://www.city.ako.lg.jp/kenkou/ikigai_fukushi/koureishabaujosei.html",
           "label": "高齢者に対するバス運賃を助成します",
           "updated": "2026-04-01",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.ako.lg.jp/shimin/machizukuri/mennkyohennou.html",
-          "label": "高齢者運転免許証自主返納支援事業のお知らせ",
-          "updated": "2026-05-01",
           "checked": "2026-10-06"
         }
       ],
@@ -1234,6 +1336,12 @@
           "label": "日常生活のサービス、住まいのサービス",
           "updated": "",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/4/00_R8yosangaiyou_2854320_marked.pdf",
+          "label": "令和8年度予算概要",
+          "updated": "",
+          "checked": "2026-10-06"
         }
       ],
       "flag": "バス制度がないとは断定できません。高年介護課・交通担当窓口で有無をご確認ください。"
@@ -1241,9 +1349,37 @@
     {
       "slug": "kamigori",
       "name": "上郡町",
-      "status": "henno",
-      "summary": "65歳以上の自主返納者に、コミュニティバスで使える共通乗車券10,000円分を交付。",
+      "status": "active",
+      "summary": "65歳以上は愛のり号を1乗車100円で利用。免許返納者には共通乗車券10,000円分を交付。",
       "programs": [
+        {
+          "name": "コミュニティバス愛のり号の高齢者割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。マイナンバーカード等の提示で年齢を確認。居住条件は記載なし。",
+          "benefit": "通常1乗車200円を半額の100円で利用。",
+          "fare": "1乗車100円。現金または回数券で支払い。交通系ICカードでの支払い不可。",
+          "routes": "コミュニティバス愛のり号。",
+          "apply": "マイナンバーカード等を提示。事前申請の記載なし。",
+          "notes": [
+            "乗り継ぎ割引との併用可。コミュニティバス間の乗り継ぎ1回のみ無料。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.town.kamigori.hyogo.jp/soshiki/chiiki/gyomuannai/16/2_1/6140.html",
+              "label": "コミュニティバス愛のり号（高齢者割引）",
+              "updated": "2025-03-05",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.kamigori.hyogo.jp/material/files/group/62/henkouten.pdf",
+              "label": "愛のり号のICカード利用・各種割引（令和5年12月1日開始）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
         {
           "name": "高齢者運転免許証自主返納支援事業",
           "kind": "henno",
@@ -1254,7 +1390,6 @@
           "routes": "コミュニティバス愛のり号。共通券の利用案内には圏域バスていじゅうろう・てくてくバスも明示。",
           "apply": "令和9年3月31日までに申請。申請書、取消通知書または運転経歴証明書写し、印鑑。",
           "notes": [
-            "ICOCA購入費用2,000円助成はJR上郡駅の利用促進目的との記載。バス専用助成額に加算していない。",
             "共通券は通常の路線バスでは利用不可。"
           ],
           "sources": [
@@ -1276,6 +1411,18 @@
       ],
       "sources": [
         {
+          "url": "https://www.town.kamigori.hyogo.jp/soshiki/chiiki/gyomuannai/16/2_1/6140.html",
+          "label": "コミュニティバス愛のり号（高齢者割引）",
+          "updated": "2025-03-05",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kamigori.hyogo.jp/material/files/group/62/henkouten.pdf",
+          "label": "愛のり号のICカード利用・各種割引（令和5年12月1日開始）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
           "url": "https://www.town.kamigori.hyogo.jp/soshiki/chiiki/gyomuannai/16/1/1677.html",
           "label": "高齢者の運転免許証自主返納支援",
           "updated": "2026-03-16",
@@ -1288,7 +1435,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "PDFの日付記載がなく、バス各路線の現行運賃は未確認。利用区間と交付券の実際の冊数は窓口でご確認ください。"
+      "flag": "通常高齢者割引は2025年3月更新ページと2023年開始資料が根拠です。地域振興課で現行運賃・居住条件をご確認ください。返納共通券資料には更新日がなく、実際の交付冊数は窓口でご確認ください。"
     },
     {
       "slug": "sayo",
@@ -1304,9 +1451,9 @@
           "benefit": "一般4,000円の10枚綴り利用券を高齢者は3,000円で購入。",
           "fare": "1冊10枚綴り3,000円。",
           "routes": "予約制隔日運行のデマンド型乗合バス。佐用地区・上月地区の一部（月水金）、南光地区・三日月地区・上月地区の一部（火木土）。",
-          "apply": "高齢者料金の申請方法は記載なし。予約センター0790-78-8034。",
+          "apply": "利用券を社会福祉協議会本所・各センターまたは役場健康福祉課・各支所・出張所で購入。利用時は事前電話予約。社会福祉協議会0790-78-1212。",
           "notes": [
-            "2026年の払い戻し案内に3,000円・4,000円券と令和8年4月1日以降購入分の記載がある。"
+            "2026.4改正の公式資料で65歳以上・10枚綴り3,000円と購入場所を確認。"
           ],
           "sources": [
             {
@@ -1320,9 +1467,15 @@
               "label": "さよさよサービス利用券等の払い戻し",
               "updated": "2026-03-26",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.sayo.lg.jp/cms-sypher/open_imgs/service/0000028140.pdf",
+              "label": "障がい者福祉のしおり（2026.4改正・外出支援）",
+              "updated": "",
+              "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "高齢者運転免許証自主返納支援事業",
@@ -1359,21 +1512,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.town.sayo.lg.jp/cms-sypher/www/service/detail.jsp?id=551",
-          "label": "高齢者運転免許証自主返納支援事業",
-          "updated": "2025-11-17",
-          "checked": "2026-10-06"
-        },
-        {
           "url": "https://www.town.sayo.lg.jp/cms-sypher/teijyu/useful/help.jsp",
           "label": "支援制度（外出支援サービス）",
           "updated": "",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.town.sayo.lg.jp/cms-sypher/www/info/detail.jsp?id=2178",
-          "label": "コミュニティバスの利用について",
-          "updated": "2024-04-17",
           "checked": "2026-10-06"
         },
         {
@@ -1381,9 +1522,27 @@
           "label": "さよさよサービス利用券等の払い戻し",
           "updated": "2026-03-26",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.sayo.lg.jp/cms-sypher/open_imgs/service/0000028140.pdf",
+          "label": "障がい者福祉のしおり（2026.4改正・外出支援）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.sayo.lg.jp/cms-sypher/www/service/detail.jsp?id=551",
+          "label": "高齢者運転免許証自主返納支援事業",
+          "updated": "2025-11-17",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.sayo.lg.jp/cms-sypher/www/info/detail.jsp?id=2178",
+          "label": "コミュニティバスの利用について",
+          "updated": "2024-04-17",
+          "checked": "2026-10-06"
         }
       ],
-      "flag": "通常高齢者料金の根拠ページは更新日なし。2026年の券の継続は確認できるが、年齢区分・申請方法・返納支給券額は窓口でご確認ください。一般コミュニティバス料金のページは2024年更新。"
+      "flag": "通常高齢者料金は2026.4改正資料で確認。免許返納時に贈呈する利用券1冊の額は記載なし。健康福祉課・返納支援窓口で支給券額をご確認ください。一般コミュニティバス料金ページは2024年更新。"
     },
     {
       "slug": "toyooka",
@@ -1395,17 +1554,23 @@
           "name": "市営バスイナカーの運転経歴証明書所持者割引",
           "kind": "henno",
           "age_min": null,
-          "eligibility": "運転経歴証明書を所持する方。年齢・市内居住条件はこの運賃ページに記載なし。",
+          "eligibility": "運転経歴証明書または運転経歴情報が記録されたマイナンバーカードを所持し提示する方。施行規則第5条には年齢・市内居住条件の記載なし。",
           "benefit": "大人運賃の半額。",
           "fare": "大人は初乗り100円、2.5kmごと100円加算、片道上限400円。運転経歴証明書所持者は大人運賃の半額。",
           "routes": "市営バスイナカー（気比三原線、八代線、三方線、河野辺線）。",
-          "apply": "降車時に証明書等を提示。市への別途申請については記載なし。",
+          "apply": "降車時に運転経歴証明書等を提示。施行規則ではマイナ経歴証明書も対象。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.toyooka.lg.jp/kurashi/dorokotsu/buskotsu/1019743.html",
               "label": "市営バスイナカー時刻表・運賃表（2026年度）",
               "updated": "2026-04-24",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www3.city.toyooka.lg.jp/reiki/reiki_honbun/r269RG00001011.html",
+              "label": "豊岡市有償旅客運送条例施行規則（令和7年10月1日施行）",
+              "updated": "",
               "checked": "2026-10-06"
             }
           ],
@@ -1420,13 +1585,13 @@
           "checked": "2026-10-06"
         },
         {
-          "url": "https://www.city.toyooka.lg.jp/koreisha/koreifukushi/1001914.html",
-          "label": "外出支援サービス助成事業",
-          "updated": "2026-04-13",
+          "url": "https://www3.city.toyooka.lg.jp/reiki/reiki_honbun/r269RG00001011.html",
+          "label": "豊岡市有償旅客運送条例施行規則（令和7年10月1日施行）",
+          "updated": "",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "年齢・居住条件は運賃ページに記載なし。窓口で適用条件をご確認ください。外出支援サービスは福祉輸送車両の助成のため除外。"
+      "flag": "施行規則第5条にも年齢・居住条件の記載はありません。適用に迷う場合は交通政策室でご確認ください。"
     },
     {
       "slug": "yabu",
@@ -1465,12 +1630,6 @@
           "label": "高齢者等優待乗車証交付事業",
           "updated": "2026-07-02",
           "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.yabu.hyogo.jp/soshiki/kenkofukushi/shakai_shoho/11582.html",
-          "label": "移動に関する支援事業",
-          "updated": "2024-06-13",
-          "checked": "2026-10-06"
         }
       ],
       "flag": "資料に更新日がないか古いものがあります。申込前に市町の交通・高齢者福祉担当窓口で現在の条件をご確認ください。"
@@ -1479,26 +1638,38 @@
       "slug": "asago",
       "name": "朝来市",
       "status": "active",
-      "summary": "2025年4月資料に路線バス乗り放題のあこかを掲載。購入年度4月1日時点64歳以上。現行価格要確認。",
+      "summary": "あこかの路線バス年間パス5,000円、路線バスとあさGOは10,000円。現行要綱では利用期間初日65歳以上。",
       "programs": [
         {
           "name": "高齢者等優待乗車カードあこか（No.1・No.3）",
           "kind": "pass",
-          "age_min": 64,
-          "eligibility": "朝来市に住民票があり、購入年度初日（4月1日）に64歳以上。",
+          "age_min": 65,
+          "eligibility": "朝来市内に住所を有し、カードの利用期間の初日に65歳以上。現行実施要綱第2条に基づく。",
           "benefit": "路線バスが乗り放題になるカードを販売。",
-          "fare": "2025年4月1日資料では、No.1：1か月500円、10か月以上5,000円。No.3：1か月1,000円、10か月以上10,000円。八鹿病院・神崎病院までの朝来市域外区間はそれぞれ半額。 現行額は未確認。",
+          "fare": "2026.4.1公共交通情報誌ではNo.1：年間5,000円・1か月500円。No.3：年間10,000円・1か月1,000円。詳細案内では10か月以上が年間額で、八鹿病院・神崎病院までの朝来市域外区間は半額。",
           "routes": "市内を運行する路線バス（全但バス・ウイング神姫）。No.3はデマンド型乗合交通あさGOも対象。",
           "apply": "本庁都市政策課（市役所西館）または各支所で購入。年齢等を確認できるマイナンバーカード等を持参。",
           "notes": [
             "No.2（デマンド型乗合交通のみ）はバス比較から除外。",
-            "対象年齢は年度初日に64歳以上。"
+            "現行要綱は令和7年7月15日改正で利用期間初日65歳以上。2025年4月詳細案内に残る年度初日64歳以上と異なる。"
           ],
           "sources": [
             {
               "url": "https://www.city.asago.hyogo.jp/soshiki/27/17476.html",
               "label": "高齢者等優待乗車カードあこか",
               "updated": "2025-04-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.asago.hyogo.jp/uploaded/attachment/18467.pdf",
+              "label": "朝来市公共交通情報誌Vol.15（2026.4.1）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.asago.hyogo.jp/reiki/reiki_honbun/r166RG00000969.html",
+              "label": "高齢者等優待乗車カード交付事業実施要綱（令和7年7月15日施行）",
+              "updated": "",
               "checked": "2026-10-06"
             }
           ],
@@ -1513,13 +1684,19 @@
           "checked": "2026-10-06"
         },
         {
-          "url": "https://www.city.asago.hyogo.jp/life/sub/1/3/",
-          "label": "公共交通",
+          "url": "https://www.city.asago.hyogo.jp/uploaded/attachment/18467.pdf",
+          "label": "朝来市公共交通情報誌Vol.15（2026.4.1）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.asago.hyogo.jp/reiki/reiki_honbun/r166RG00000969.html",
+          "label": "高齢者等優待乗車カード交付事業実施要綱（令和7年7月15日施行）",
           "updated": "",
           "checked": "2026-10-06"
         }
       ],
-      "flag": "根拠ページは2025年4月更新で1年以上経過。現行価格と市域外区間・購入対象年齢は都市政策課でご確認ください。"
+      "flag": "価格は2026.4.1資料、年齢は令和7年7月15日改正の現行要綱で確認。2025年4月詳細案内には旧年齢条件が残っています。都市政策課で市域外病院半額区間と購入資格をご確認ください。"
     },
     {
       "slug": "kami",
@@ -1557,18 +1734,6 @@
           "label": "香美町高齢者等バス運賃助成",
           "updated": "2026-03-16",
           "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.town.mikata-kami.lg.jp/soshiki/bosaianzen/4/1/345.html",
-          "label": "運転経歴証明書所持者への特典",
-          "updated": "2026-03-31",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/doro-kotsu/1/5003.html",
-          "label": "香美町民バス時刻表・運賃表",
-          "updated": "2026-10-01",
-          "checked": "2026-10-06"
         }
       ],
       "flag": "返納ページの町民バス半額と通常乗車証の併用・優先適用は記載なし。必要時は企画課でご確認ください。"
@@ -1585,10 +1750,12 @@
           "age_min": null,
           "eligibility": "運転経歴証明書を所持し提示する方。バス運賃制度自体の年齢・居住条件は記載なし。",
           "benefit": "大人には普通旅客運賃の小人の額を適用。",
-          "fare": "日付不記載の運賃割引ページでは、割引ページの小人運賃：1.8km未満50円、1.9～2.7km50円、2.8～4.0km100円、4.1～5.2km100円、5.3km以上150円。 2026年度の額は未確認。",
+          "fare": "R8.4.1運賃案内に掲載された運賃表の小人運賃を適用。普通大人運賃100・150円区間は50円、200・250円区間は100円、300円区間は150円。",
           "routes": "新温泉町民バス夢つばめ。",
           "apply": "乗務員に運転経歴証明書を提示。バス割引への別途申請は記載なし。",
-          "notes": [],
+          "notes": [
+            "R8.4.1からの公式案内に掲載する運賃表で小人運賃の対応を確認。"
+          ],
           "sources": [
             {
               "url": "https://www.town.shinonsen.hyogo.jp/page/?mode=detail&page_id=79cfe381a8e3f058b2cf6492e41afb57",
@@ -1607,9 +1774,15 @@
               "label": "時刻・運賃について（R8.4.1～）",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.shinonsen.hyogo.jp/uppdf/1711623885.pdf",
+              "label": "夢つばめ運賃表（R8.4.1案内掲載）",
+              "updated": "",
+              "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1630,9 +1803,15 @@
           "label": "時刻・運賃について（R8.4.1～）",
           "updated": "",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.shinonsen.hyogo.jp/uppdf/1711623885.pdf",
+          "label": "夢つばめ運賃表（R8.4.1案内掲載）",
+          "updated": "",
+          "checked": "2026-10-06"
         }
       ],
-      "flag": "運賃割引ページは日付なし。支援ページの「半額」と運賃表の小人運賃には端数処理の差があり得ます。2026年度の実際の適用運賃と年齢・居住条件を企画課でご確認ください。"
+      "flag": "運賃割引制度ページには更新日がありません。2026年度案内掲載の運賃表で額は確認しました。年齢・居住条件の限定は記載なし。適用に迷う場合は企画課でご確認ください。"
     },
     {
       "slug": "tambasasayama",
@@ -1667,12 +1846,6 @@
           "label": "免許自主返納者への記念品交付",
           "updated": "2024-04-02",
           "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.tambasasayama.lg.jp/kurashi_tetsuzuki/koukyokotsu/16268.html",
-          "label": "路線バスの上限運賃制",
-          "updated": "2021-06-21",
-          "checked": "2026-10-06"
         }
       ],
       "flag": "記念品の根拠は2024年更新。現行の交付品・金額・バス利用条件は市民安全課窓口でご確認ください。"
@@ -1699,6 +1872,12 @@
               "label": "高齢者外出支援事業",
               "updated": "2026-07-21",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.tamba.lg.jp/soshiki/kaigohokenka/gyomuannai/3/3/7163.html",
+              "label": "高齢者外出支援事業",
+              "updated": "2026-07-21",
+              "checked": "2026-10-06"
             }
           ],
           "current": "document_checked"
@@ -1712,9 +1891,9 @@
           "checked": "2026-10-06"
         },
         {
-          "url": "https://www.city.tamba.lg.jp/soshiki/shimin_anzen/koutu-bohan/koutu-anzen/1378.html",
-          "label": "高齢者運転免許自主返納支援事業",
-          "updated": "2026-05-26",
+          "url": "https://www.city.tamba.lg.jp/soshiki/kaigohokenka/gyomuannai/3/3/7163.html",
+          "label": "高齢者外出支援事業",
+          "updated": "2026-07-21",
           "checked": "2026-10-06"
         }
       ],
@@ -1731,7 +1910,7 @@
           "kind": "voucher",
           "age_min": 75,
           "eligibility": "洲本市住所、交通機関等利用が特に困難で移動手段なし。世帯全員満75歳以上・世帯全員市民税非課税。入院・施設入所なし。",
-          "benefit": "2023年4月1日資料では、4月申請の場合、世帯主16,800円分、世帯員8,400円分。申請月に応じ減額。 現行交付額は未確認。",
+          "benefit": "2026年3月方針で世帯主上限16,800円、世帯員上限8,400円の交付を確認。制度案内では4月申請時の額で、申請月に応じ減額。",
           "fare": "2023年4月1日資料では、1回2,000円分まで。助成額を差し引いた残額を支払う。 現行上限額は未確認。",
           "routes": "市と契約する路線バス、コミュニティバス上灘線・五色地域コミュニティバス。路線バスは乗降のいずれかが洲本市内。高速道路利用路線不可。",
           "apply": "申請書に記載・押印し、介護福祉課、五色庁舎窓口サービス課、由良支所へ。本人確認書類を持参。年度内1回まで申請。",
@@ -1744,6 +1923,18 @@
               "url": "https://www.city.sumoto.lg.jp/soshiki/27/4997.html",
               "label": "高齢者移動手段確保事業",
               "updated": "2023-04-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.sumoto.lg.jp/uploaded/attachment/20794.pdf",
+              "label": "介護予防・生活支援サービス事業の方針（2026年3月）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.sumoto.lg.jp/uploaded/attachment/20310.pdf",
+              "label": "令和8年度予算概要",
+              "updated": "",
               "checked": "2026-10-06"
             }
           ],
@@ -1784,6 +1975,18 @@
           "checked": "2026-10-06"
         },
         {
+          "url": "https://www.city.sumoto.lg.jp/uploaded/attachment/20794.pdf",
+          "label": "介護予防・生活支援サービス事業の方針（2026年3月）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.sumoto.lg.jp/uploaded/attachment/20310.pdf",
+          "label": "令和8年度予算概要",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
           "url": "https://www.city.sumoto.lg.jp/soshiki/7/20748.html",
           "label": "洲本市コミュニティバスのご案内",
           "updated": "2026-10-01",
@@ -1796,7 +1999,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "助成券の根拠は2023年更新。2026年度の継続・配布額を介護福祉課でご確認ください。コミバス半額は2026年10月ページ確認済みだが区間金額は未確認。"
+      "flag": "2026年3月方針と令和8年度予算で継続・年間上限額を確認。1回2,000円分上限と月別交付表の根拠は2023年更新のため、介護福祉課で現行の利用条件をご確認ください。"
     },
     {
       "slug": "minamiawaji",
@@ -1851,27 +2054,15 @@
       ],
       "sources": [
         {
-          "url": "https://www.city.minamiawaji.hyogo.jp/uploaded/attachment/300500.pdf",
-          "label": "らん・らんバス運賃一覧表",
-          "updated": "2018-04-01",
+          "url": "https://www.city.minamiawaji.hyogo.jp/soshiki/koutsuu/ranranbus.html",
+          "label": "市コミュニティバスらん・らんバスの運行について",
+          "updated": "2026-09-30",
           "checked": "2026-10-06"
         },
         {
           "url": "https://www.city.minamiawaji.hyogo.jp/soshiki/koutsuu/untenmenkyozisyuhennou.html",
           "label": "高齢者運転免許自主返納サポート制度",
           "updated": "2026-08-18",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.minamiawaji.hyogo.jp/soshiki/koutsuu/faq-7745.html",
-          "label": "らんらん・バスの料金",
-          "updated": "2018-04-01",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.minamiawaji.hyogo.jp/soshiki/koutsuu/ranranbus.html",
-          "label": "市コミュニティバスらん・らんバスの運行について",
-          "updated": "2026-09-30",
           "checked": "2026-10-06"
         }
       ],
