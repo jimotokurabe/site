@@ -1,0 +1,1428 @@
+{
+  "checked": "2026-10-06",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "yokkaichi",
+      "name": "四日市市",
+      "status": "notfound",
+      "summary": "市独自の高齢者向けバス運賃助成は確認した資料で見つかりませんでした。返納支援の交通系ICカード交付はありますが、バス用途の明記を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.yokkaichi.lg.jp/www/contents/1715672832878/index.html",
+          "label": "四日市市運転免許証自主返納支援事業",
+          "updated": "2025-09-30",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www5.city.yokkaichi.mie.jp/www/contents/1561005368332/index.html",
+          "label": "運転免許返納者・高齢者への支援制度のご紹介",
+          "updated": "2024-03-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "民間の半額・定期券は市独自制度に含めません。古い案内とICカードの対象バスについて道路管理課（059-354-8154）・都市計画課へ確認してください。"
+    },
+    {
+      "slug": "kuwana",
+      "name": "桑名市",
+      "status": "henno",
+      "summary": "返納者向けにK-バス回数券の交付・割引販売と、のるーと桑名の運賃割引があります。",
+      "programs": [
+        {
+          "name": "高齢者運転免許証自主返納支援事業",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市内に住所がある満65歳以上で、2022年6月1日以降に自主返納した人。市税滞納がなく、暴力団等でないこと。",
+          "benefit": "K-バス13枚綴り回数券4冊、または交通系ICカード4,000円分（預り金500円込み）のいずれか。",
+          "fare": "K-バス回数券を利用。券の範囲を超える利用の扱いは記載なし。",
+          "routes": "K-バス",
+          "apply": "危機管理室へ申請書、取消通知書の写し、誓約書兼同意書を送付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kuwana.lg.jp/kikikanri/anzen/bouhan/menkyosoujisyuhennou.html",
+              "label": "高齢者運転免許証自主返納支援事業",
+              "updated": "2025-04-04",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "K-バス運転免許証返納者割引回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書取得者（年齢・住所地の制限なし）。本人のみ利用可能。",
+          "benefit": "通常11枚の回数券を13枚綴り1,000円で購入できる。",
+          "fare": "割引回数券を利用。",
+          "routes": "桑名市コミュニティバス全ての路線",
+          "apply": "購入時に運転経歴証明書を提示。車内、物産観光案内所、桑名駅三交バスターミナル乗車券販売所で販売。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kuwana.lg.jp/documents/681/r20901_s.pdf",
+              "label": "K-バス運転免許証返納者割引回数券",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.pref.mie.lg.jp/ANZEN/HP/m0053500172_00001.htm",
+              "label": "サポートみえ（自治体のコミュニティバス支援）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "のるーと桑名運転経歴証明書提示割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "降車時に運転経歴証明書を提示する人。年齢制限の記載なし。",
+          "benefit": "通常大人300円を200円に割引。",
+          "fare": "1乗車200円。障害者手帳も提示する場合は100円と料金表に記載。",
+          "routes": "のるーと桑名（パンフレット掲載の西部南エリア）",
+          "apply": "事前に会員登録しアプリまたは電話0594-41-2010で予約。降車時に証明書を提示。",
+          "notes": [
+            "資料中の『障がい者割引との併用は出来ません』と両証明書100円の料金表を併記。適用は窓口で確認。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.kuwana.lg.jp/documents/11949/seibupanhu.pdf",
+              "label": "のるーと桑名本格運行パンフレット（2025年2月10日開始）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kuwana.lg.jp/kikikanri/anzen/bouhan/menkyosoujisyuhennou.html",
+          "label": "高齢者運転免許証自主返納支援事業",
+          "updated": "2025-04-04",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.kuwana.lg.jp/documents/681/r20901_s.pdf",
+          "label": "K-バス運転免許証返納者割引回数券",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.kuwana.lg.jp/documents/11949/seibupanhu.pdf",
+          "label": "のるーと桑名本格運行パンフレット（2025年2月10日開始）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "支援のページは1年以上前、回数券・本格運行パンフレットは更新日がありません。現在の適用・対象エリア・併用を危機管理室（0594-24-1337）、MaaS推進室（0594-24-1425）で確認してください。"
+    },
+    {
+      "slug": "suzuka",
+      "name": "鈴鹿市",
+      "status": "henno",
+      "summary": "C-BUSは運転経歴証明書の提示で本人と同伴者1名の区間運賃が半額になります。",
+      "programs": [
+        {
+          "name": "C-BUS運転免許返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書を提示する人と同伴者1名。年齢・住所制限なし。",
+          "benefit": "区間運賃を半額。",
+          "fare": "区間運賃の半額。同伴者が小学生なら区間に関わらず1乗車100円。",
+          "routes": "鈴鹿市コミュニティバスC-BUS",
+          "apply": "運賃支払い前に乗務員へ運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.suzuka.lg.jp/shisei/cityprofile/1004196/1009619.html",
+              "label": "コミュニティバス（C-BUS）",
+              "updated": "2026-03-27",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.suzuka.lg.jp/shisei/cityprofile/1004196/1009619.html",
+          "label": "コミュニティバス（C-BUS）",
+          "updated": "2026-03-27",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "kameyama",
+      "name": "亀山市",
+      "status": "active",
+      "summary": "65歳以上または乗合タクシー登録者はコミュニティバス100円、年間定期券5,000円を利用できます。",
+      "programs": [
+        {
+          "name": "コミュニティバス高齢者等運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上、または乗合タクシー登録者。住所条件の記載なし。",
+          "benefit": "一般高校生以上200円の運賃を100円に割引。",
+          "fare": "1乗車100円。",
+          "routes": "亀山市コミュニティバス（さわやか号、東部・南部・西部、野登・白川、加太地区福祉バス、関南部地区スクールバス活用バス）",
+          "apply": "乗合タクシー登録者は利用カードを乗務員へ提示。年齢確認を行う場合あり。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kameyama.mie.jp/docs/2025061100023/",
+              "label": "亀山市コミュニティバス",
+              "updated": "2026-06-10",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "コミュニティバス高齢者等年間定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上、または乗合タクシー登録者。住所条件の記載なし。",
+          "benefit": "年間定期券5,000円。",
+          "fare": "定期券を利用。",
+          "routes": "亀山市コミュニティバス",
+          "apply": "三重交通亀山駅前出札所で購入（9:30～13:00・14:00～17:30、日曜・祝日休）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kameyama.mie.jp/docs/2025061100023/",
+              "label": "亀山市コミュニティバス",
+              "updated": "2026-06-10",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kameyama.mie.jp/docs/2025061100023/",
+          "label": "亀山市コミュニティバス",
+          "updated": "2026-06-10",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "住所条件・定期券の提示方法等は政策推進課交通政策グループ（0595-84-5066）で確認してください。"
+    },
+    {
+      "slug": "inabe",
+      "name": "いなべ市",
+      "status": "notfound",
+      "summary": "高齢者限定のバス運賃助成は確認した資料で見つかりませんでした。福祉バスは年齢・住所を問わず無料です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.inabe.mie.jp/kurashi/kotsu/kotsu/1000821.html",
+          "label": "いなべ市福祉バス",
+          "updated": "2026-05-27",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "高齢者独自の支援は交通政策課（0594-86-7808）で確認してください。"
+    },
+    {
+      "slug": "kisosaki",
+      "name": "木曽岬町",
+      "status": "active",
+      "summary": "65歳以上の自主運行バス運賃は100円です。",
+      "programs": [
+        {
+          "name": "自主運行バス高齢者運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所条件の記載なし。",
+          "benefit": "通常200円を100円に割引。",
+          "fare": "現金100円または回数券1枚。",
+          "routes": "木曽岬町自主運行バス",
+          "apply": "年齢確認できる免許証・保険証等の提示を求める場合があります。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kisosaki.lg.jp/0000000921.html",
+              "label": "木曽岬町自主運行バスのダイヤと運行経路・料金",
+              "updated": "2026-05-20",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kisosaki.lg.jp/0000000921.html",
+          "label": "木曽岬町自主運行バスのダイヤと運行経路・料金",
+          "updated": "2026-05-20",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "住所条件は危機管理課（0567-68-6101）で確認してください。トマライドは公式本文でバスと明記されていないため別扱い。"
+    },
+    {
+      "slug": "toin",
+      "name": "東員町",
+      "status": "active",
+      "summary": "75歳以上と、返納した65～74歳の町民はオレンジバス100円のおでかけ元気パスを利用できます。",
+      "programs": [
+        {
+          "name": "おでかけ元気パス（75歳以上）",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "町内在住の75歳以上。",
+          "benefit": "オレンジバスの運賃を半額。",
+          "fare": "1乗車100円。",
+          "routes": "オレンジバス",
+          "apply": "翌年度75歳になる人に毎年3月末頃郵送。申請不要。乗車時にパス提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.toin.lg.jp/soshiki/1010/2/2/751.html",
+              "label": "東員町おでかけ元気パスのご案内",
+              "updated": "2024-03-29",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "おでかけ元気パス（免許返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内在住の65歳以上75歳未満で運転免許証を返納し交付を希望する人。",
+          "benefit": "オレンジバスの運賃を半額。",
+          "fare": "1乗車100円。",
+          "routes": "オレンジバス",
+          "apply": "健康長寿課7番窓口または笹尾連絡所へ返納がわかる書類を持参し申請。乗車時パス提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.toin.lg.jp/soshiki/1010/2/2/751.html",
+              "label": "東員町おでかけ元気パスのご案内",
+              "updated": "2024-03-29",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.toin.lg.jp/soshiki/1010/2/2/751.html",
+          "label": "東員町おでかけ元気パスのご案内",
+          "updated": "2024-03-29",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2024年案内のため、現在の条件は健康長寿課（0594-86-2823）で確認してください。"
+    },
+    {
+      "slug": "komono",
+      "name": "菰野町",
+      "status": "active",
+      "summary": "65歳以上と免許返納者はかもしか号の運賃・期間券・1日券が割引になります。",
+      "programs": [
+        {
+          "name": "かもしか号運賃割引（高齢者）",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所条件記載なし。",
+          "benefit": "一般現金200円・IC180円を割引。",
+          "fare": "現金100円、交通系ICカード90円。",
+          "routes": "かもしか号",
+          "apply": "65歳以上は年齢がわかるもの、返納者は運転経歴証明書を提示。65歳以上でIC支払時は運転手に申し出てタッチ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.town.komono.mie.jp/soshiki/2/10047.html",
+              "label": "かもしか号運賃・乗車券",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "かもしか号フリー乗車券（高齢者）",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所条件記載なし。",
+          "benefit": "1か月3,000円、3か月7,500円、6か月13,000円、12か月22,000円。",
+          "fare": "フリー乗車券で乗り降り自由。",
+          "routes": "かもしか号全路線",
+          "apply": "紙・デジタル券あり。紙券は毎月1日～末日で月途中の販売なし。デジタルは開始日選択可能。購入先の詳細は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.town.komono.mie.jp/soshiki/2/10047.html",
+              "label": "かもしか号運賃・乗車券",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "かもしか号1DAY PASS（高齢者）",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所条件記載なし。",
+          "benefit": "一般500円の1日乗車券を300円で購入。",
+          "fare": "購入当日は提示で乗り放題。",
+          "routes": "かもしか号",
+          "apply": "車内で初回降車時に購入を申し出る。以後降車時に券提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.town.komono.mie.jp/soshiki/2/9881.html",
+              "label": "かもしか号1DAY PASS",
+              "updated": "2026-04-23",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "かもしか号運賃割引（返納者）",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を返納し、運転経歴証明書を提示する人。年齢条件記載なし。",
+          "benefit": "一般現金200円・IC180円を割引。",
+          "fare": "現金100円、交通系ICカード90円。",
+          "routes": "かもしか号",
+          "apply": "65歳以上は年齢がわかるもの、返納者は運転経歴証明書を提示。65歳以上でIC支払時は運転手に申し出てタッチ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.town.komono.mie.jp/soshiki/2/10047.html",
+              "label": "かもしか号運賃・乗車券",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "かもしか号フリー乗車券（返納者）",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を返納し、運転経歴証明書を提示する人。年齢条件記載なし。",
+          "benefit": "1か月3,000円、3か月7,500円、6か月13,000円、12か月22,000円。",
+          "fare": "フリー乗車券で乗り降り自由。",
+          "routes": "かもしか号全路線",
+          "apply": "紙・デジタル券あり。紙券は毎月1日～末日で月途中の販売なし。デジタルは開始日選択可能。購入先の詳細は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.town.komono.mie.jp/soshiki/2/10047.html",
+              "label": "かもしか号運賃・乗車券",
+              "updated": "2026-04-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "かもしか号1DAY PASS（返納者）",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を返納し、運転経歴証明書を提示する人。年齢条件記載なし。",
+          "benefit": "一般500円の1日乗車券を300円で購入。",
+          "fare": "購入当日は提示で乗り放題。",
+          "routes": "かもしか号",
+          "apply": "車内で初回降車時に購入を申し出る。以後降車時に券提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www2.town.komono.mie.jp/soshiki/2/9881.html",
+              "label": "かもしか号1DAY PASS",
+              "updated": "2026-04-23",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www2.town.komono.mie.jp/soshiki/2/10047.html",
+          "label": "かもしか号運賃・乗車券",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www2.town.komono.mie.jp/soshiki/2/9881.html",
+          "label": "かもしか号1DAY PASS",
+          "updated": "2026-04-23",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "フリー乗車券の購入場所・住所条件は総務課安全安心対策室（059-391-1102）で確認してください。"
+    },
+    {
+      "slug": "asahi",
+      "name": "朝日町",
+      "status": "notfound",
+      "summary": "高齢者向けバス助成は確認した資料で見つかりませんでした。75歳以上向けのタクシー助成は対象外です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www2.town.asahi.mie.jp/www/contents/1650865359464/index.html",
+          "label": "朝日町高齢者タクシー利用助成事業",
+          "updated": "2026-03-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "バス支援の有無は保険福祉課（059-377-5659）で確認してください。"
+    },
+    {
+      "slug": "kawagoe",
+      "name": "川越町",
+      "status": "notfound",
+      "summary": "高齢者限定のバス助成は確認した資料で見つかりませんでした。ふれあいバスは全年齢・町外の人も無料です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kawagoe.mie.jp/kurashi/sumaiseikatsu/1002544/1002988.html",
+          "label": "ふれあいバスをご利用ください",
+          "updated": "2026-04-13",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "高齢者独自の支援は企画情報課・福祉課で確認してください。"
+    },
+    {
+      "slug": "tsu",
+      "name": "津市",
+      "status": "active",
+      "summary": "65歳以上のシルバーエミカポイント・コミュニティバス割引、返納者割引・併用無料があります。",
+      "programs": [
+        {
+          "name": "シルバーエミカ乗車ポイント",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "市内に住所のある65歳以上（申請年度に65歳となる人を含む）。初回申請にマイナンバーカードと暗証番号が必要。",
+          "benefit": "初回2,000ポイント（1ポイント1円）。翌年度以降は前年度使用分を2,000ポイント上限に補充。2026年度は前年以前の交付者に追加500ポイント。",
+          "fare": "路線バス運賃をポイントで支払う。不足分は現金チャージして利用可能。",
+          "routes": "三重交通グループ路線バス・ぐるっとつーバス",
+          "apply": "高齢福祉課11番窓口または各総合支所市民福祉課（久居は福祉課）で申請。2026年度補充にはシルバーエミカとマイナンバーカード持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003169.html",
+              "label": "シルバーエミカの交付",
+              "updated": "2026-03-31",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003168.html",
+              "label": "乗車ポイントのチャージ",
+              "updated": "2026-05-01",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003167.html",
+              "label": "津市高齢者外出支援事業",
+              "updated": "2025-11-28",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "津市コミュニティバスシルバーエミカ割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "シルバーエミカ所持者（市内65歳以上、年度内到達者含む）。",
+          "benefit": "通常大人300円を100円に割引。",
+          "fare": "1乗車100円。",
+          "routes": "津市コミュニティバス",
+          "apply": "乗車時にシルバーエミカ提示。現金または回数乗車券で支払う。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.info.city.tsu.mie.jp/kurashi/douro_koutsuu/1002291/1011566.html",
+              "label": "令和8年4月1日以降の津市コミュニティバスの運行",
+              "updated": "2026-09-30",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003169.html",
+              "label": "シルバーエミカの交付",
+              "updated": "2026-03-31",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "津市コミュニティバス運転免許証自主返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書所持者。年齢条件記載なし。同乗者1名も割引。",
+          "benefit": "普通運賃・定期券の返納者割引。",
+          "fare": "大人150円、小学生70円。定期券は大人1か月3,750円・3か月10,500円、小学生1か月1,750円・3か月4,900円。",
+          "routes": "津市コミュニティバス。定期券は定時定路線型のみ、リクエスト型では使用不可。",
+          "apply": "乗車・定期券購入時に運転経歴証明書提示。定期券は交通政策課、各総合支所地域振興課、白山地域各出張所で販売。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.info.city.tsu.mie.jp/kurashi/douro_koutsuu/1002291/1011566.html",
+              "label": "令和8年4月1日以降の津市コミュニティバスの運行",
+              "updated": "2026-09-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "津市コミュニティバスシルバーエミカ＋返納者割引",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "シルバーエミカと運転経歴証明書を提示する人。",
+          "benefit": "普通運賃を無料。",
+          "fare": "無料。",
+          "routes": "津市コミュニティバス",
+          "apply": "シルバーエミカと運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.info.city.tsu.mie.jp/kurashi/douro_koutsuu/1002291/1011566.html",
+              "label": "令和8年4月1日以降の津市コミュニティバスの運行",
+              "updated": "2026-09-30",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003169.html",
+              "label": "シルバーエミカの交付",
+              "updated": "2026-03-31",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003169.html",
+          "label": "シルバーエミカの交付",
+          "updated": "2026-03-31",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.info.city.tsu.mie.jp/fukushi_kenkou/koureisha_fukushi/1003166/1003168.html",
+          "label": "乗車ポイントのチャージ",
+          "updated": "2026-05-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.info.city.tsu.mie.jp/kurashi/douro_koutsuu/1002291/1011566.html",
+          "label": "令和8年4月1日以降の津市コミュニティバスの運行",
+          "updated": "2026-09-30",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "コミュニティバスの提示のタイミング・返納併用時の同乗者条件は交通政策課で確認してください。"
+    },
+    {
+      "slug": "matsusaka",
+      "name": "松阪市",
+      "status": "active",
+      "summary": "65歳以上は鈴の音バス回数券を半額で購入でき、返納者は市運営バスの運賃が半額です。",
+      "programs": [
+        {
+          "name": "鈴の音バス65歳以上回数券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "年齢確認書類を提示する65歳以上の本人。住所条件記載なし。",
+          "benefit": "100円券12枚綴りを500円（一般1,000円）で購入。",
+          "fare": "1乗車2枚、返納者等の割引対象者は1枚。",
+          "routes": "鈴の音バスのみ。他の市運営バスは65歳以上券利用不可。",
+          "apply": "市役所商工政策課、松阪公民館、各地域振興局、三重交通松阪駅前出札所・松阪営業所、バス車内で購入。年齢証明提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.matsusaka.mie.jp/uploaded/attachment/107949.pdf",
+              "label": "鈴の音バス運賃・割引情報（2026年10月1日更新ページの添付資料）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.matsusaka.mie.jp/site/community-koutu/suzunone.html",
+              "label": "鈴の音バス路線（運賃資料への案内）",
+              "updated": "2026-10-01",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "市運営バス運転免許証自主返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書を提示する本人と同伴者1名。年齢制限なし。",
+          "benefit": "運賃半額。",
+          "fare": "該当運賃の半額。鈴の音バスは大人100円・小学生50円。",
+          "routes": "鈴の音バス、コミュニティバス、廃止代替バス全路線。",
+          "apply": "支払時に運転経歴証明書提示。現金、ICカード（鈴の音・廃止代替）、回数券（200円区間）で支払可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.matsusaka.mie.jp/site/community-koutu/jisyuhennouwaribiki.html",
+              "label": "運転免許証自主返納者割引",
+              "updated": "2026-03-02",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.matsusaka.mie.jp/uploaded/attachment/107949.pdf",
+              "label": "鈴の音バス運賃・割引情報（2026年10月1日更新ページの添付資料）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.matsusaka.mie.jp/uploaded/attachment/107949.pdf",
+          "label": "鈴の音バス運賃・割引情報（2026年10月1日更新ページの添付資料）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.matsusaka.mie.jp/site/community-koutu/suzunone.html",
+          "label": "鈴の音バス路線（運賃資料への案内）",
+          "updated": "2026-10-01",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.matsusaka.mie.jp/site/community-koutu/jisyuhennouwaribiki.html",
+          "label": "運転免許証自主返納者割引",
+          "updated": "2026-03-02",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "運賃PDFは更新日がありませんが2026年10月1日更新の路線ページから確認しました。回数券の住所条件は商工政策課（0598-53-4184）で確認してください。"
+    },
+    {
+      "slug": "taki",
+      "name": "多気町",
+      "status": "active",
+      "summary": "町民の70歳以上は町営幹線バスの普通運賃・回数券・定期券が半額です。",
+      "programs": [
+        {
+          "name": "町営幹線バス高齢者減額",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "多気町民の満70歳以上。",
+          "benefit": "普通・回数・定期の料金2分の1。",
+          "fare": "普通100円。回数券11枚1,000円、定期1か月3,000円・3か月9,000円。",
+          "routes": "多気勢和線（幹線バス）。でん多の年齢割引は記載なし。",
+          "apply": "料金支払い時に身分確認できるもの提示。回数・定期は町役場・勢和振興事務所で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.taki.mie.jp/section/reiki_int/reiki_honbun/r362RG00000073.html",
+              "label": "多気町町営バス設置条例（2022年4月1日施行の現行本文）",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.taki.mie.jp/life/soshiki/kankyo/1/490.html",
+              "label": "多気町の公共交通について",
+              "updated": "2024-07-16",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.taki.mie.jp/section/reiki_int/reiki_honbun/r362RG00000073.html",
+          "label": "多気町町営バス設置条例（2022年4月1日施行の現行本文）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.taki.mie.jp/life/soshiki/kankyo/1/490.html",
+          "label": "多気町の公共交通について",
+          "updated": "2024-07-16",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "案内は2024年、条例は2022年施行の現行本文です。現在の料金・減額は環境生活課で確認してください。"
+    },
+    {
+      "slug": "meiwa",
+      "name": "明和町",
+      "status": "active",
+      "summary": "75歳以上は町外の人も町民バスが無料です。",
+      "programs": [
+        {
+          "name": "町民バス高齢者無料運賃",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上。町外在住者も対象。",
+          "benefit": "運賃無料。",
+          "fare": "無料。",
+          "routes": "明和町町民バス",
+          "apply": "乗車時に年齢がわかるものを運転手に提示。証明がなければ防災安全課で無料バスカード作成。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.meiwa.mie.jp/kurashi/doro_kotsu/chomin_bus/2536.html",
+              "label": "町民バスの身体障がい者等割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.meiwa.mie.jp/main/soshiki/bousai/tiikiseisakuanzen/koutsuu/4456.html",
+              "label": "町民バス令和8年4月1日改定（75歳未満の返納無料終了）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.meiwa.mie.jp/kurashi/doro_kotsu/chomin_bus/2536.html",
+          "label": "町民バスの身体障がい者等割引",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.meiwa.mie.jp/main/soshiki/bousai/tiikiseisakuanzen/koutsuu/4456.html",
+          "label": "町民バス令和8年4月1日改定（75歳未満の返納無料終了）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "更新日のない案内のため、現行性は防災安全課（0596-52-7110）で確認してください。 75歳未満の免許返納者の無料運賃は2026年4月1日終了し、200円に改定。県サポート一覧に残る返納無料の案内とは異なるため、町の改定案内を優先。"
+    },
+    {
+      "slug": "odai",
+      "name": "大台町",
+      "status": "active",
+      "summary": "町内在住70歳以上は町営バス・対象三重交通バスが片道100円になります。",
+      "programs": [
+        {
+          "name": "町営バス運賃減額",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "町内に住所がある満70歳以上。",
+          "benefit": "通常片道300円を100円に減額。",
+          "fare": "片道100円。",
+          "routes": "大台町営バス（廃止代替路線・南岸中心路線）。デマンドタクシーはここに含めません。",
+          "apply": "生活環境課・各出張所へ本人確認書類を持参して減額対象者カード申請。利用時に赤丸付き町民カードまたは減額対象者カード提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.odaitown.jp/soshiki/yakuba/8/4/7_2/2294.html",
+              "label": "大台町営バスについて",
+              "updated": "2026-05-22",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "三重交通路線バス町内運賃負担（高齢者）",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "町内に住所がある満70歳以上で、対象区間の町内バス停間で乗降する人。",
+          "benefit": "町が運賃の一部を負担し町営バスと同額に。",
+          "fare": "片道100円。正規運賃が軽減後運賃より低い場合は正規運賃。",
+          "routes": "三重交通大杉線『三瀬谷～栃原駅口』間の町内乗降。",
+          "apply": "生活環境課・各出張所へ本人確認書類を持参し乗車補助券を申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.odaitown.jp/soshiki/yakuba/8/4/7_2/2294.html",
+              "label": "大台町営バスについて",
+              "updated": "2026-05-22",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.odaitown.jp/soshiki/yakuba/8/4/7_2/2296.html",
+              "label": "三重交通路線バス運賃負担事業について",
+              "updated": "2025-04-28",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.odaitown.jp/soshiki/yakuba/8/4/7_2/2294.html",
+          "label": "大台町営バスについて",
+          "updated": "2026-05-22",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.odaitown.jp/soshiki/yakuba/8/4/7_2/2296.html",
+          "label": "三重交通路線バス運賃負担事業について",
+          "updated": "2025-04-28",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "三重交通支援は2025年4月案内のため現在の対象停留所・利用方法は生活環境課（0598-82-3787）で確認してください。"
+    },
+    {
+      "slug": "ise",
+      "name": "伊勢市",
+      "status": "active",
+      "summary": "75歳以上へ4,000円分乗車券。65歳以上はおかげバス・デマンドが半額、日券・定期券も割引。",
+      "programs": [
+        {
+          "name": "おでかけ乗車券",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "市内に住所を有する75歳以上。令和8年度中に75歳になる人も対象。",
+          "benefit": "100円券40枚（4,000円分）。手帳所持者等は50円券80枚も選択可。",
+          "fare": "券額を運賃に充当。バスは1乗車あたり上限なし、つり銭なし。市外区間分は自己負担。",
+          "routes": "市内を運行する一般乗合バス・コミュニティバス。",
+          "apply": "電子申請または高齢・障がい福祉課へ郵送。年度途中も受付、券を郵送交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ise.mie.jp/kenkou_fukushi/koureisya/shien/1002610.html",
+              "label": "令和8年度おでかけ乗車券",
+              "updated": "2026-04-06",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "おかげバス・デマンド高齢者運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所要件の記載なし。",
+          "benefit": "普通運賃の半額。",
+          "fare": "現金100円（通常200円）。おかげバスIC90円（通常180円）、デマンドIC不可。障がい者かつ高齢者はさらに半額、バスICは40円。",
+          "routes": "おかげバス・おかげバスデマンド。",
+          "apply": "支払い時に年齢証明を提示。デマンドは事前予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
+              "label": "おかげバス高齢者運賃",
+              "updated": "2026-06-12",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
+              "label": "おかげバスデマンド高齢者運賃",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "おかげバス・デマンド高齢者1日乗車券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所要件の記載なし。",
+          "benefit": "1日乗車券200円（通常400円）。",
+          "fare": "200円。購入当日、対象全路線乗り放題。",
+          "routes": "おかげバス・おかげバスデマンド。",
+          "apply": "車内販売。年齢証明を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
+              "label": "おかげバス高齢者運賃",
+              "updated": "2026-06-12",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
+              "label": "おかげバスデマンド高齢者運賃",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "おかげバス・デマンド高齢者定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所要件の記載なし。",
+          "benefit": "1か月3,600円、3か月9,900円（通常7,200円・19,800円）。",
+          "fare": "1か月3,600円、3か月9,900円。",
+          "routes": "おかげバス・おかげバスデマンド。",
+          "apply": "三重交通定期販売所（JR伊勢市駅構内）、宇治山田駅構内案内所、伊勢営業所で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
+              "label": "おかげバス高齢者運賃",
+              "updated": "2026-06-12",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
+              "label": "おかげバスデマンド高齢者運賃",
+              "updated": "2026-03-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "おかげバス環状線の高齢者乗継無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の100円運賃対象者が路線バス、おかげバス・デマンド、地域運営乗合タクシー、鉄道と環状線を乗り継ぐ。",
+          "benefit": "環状線運賃を100円割引し無料利用。",
+          "fare": "環状線無料。乗継割引券は1乗車1枚のみ、つり銭なし。",
+          "routes": "おかげバス環状線。",
+          "apply": "前のバス等で乗継割引券を受け取る。鉄道は伊勢市駅外宮側ホームで取得。環状線から初乗りの場合は乗務員に乗継を申告。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ise.mie.jp/kurashi/koutsu/kanjo_bus/index.html",
+              "label": "おかげバス環状線乗継割引",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.ise.mie.jp/kenkou_fukushi/koureisya/shien/1002610.html",
+          "label": "令和8年度おでかけ乗車券",
+          "updated": "2026-04-06",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
+          "label": "おかげバス高齢者運賃",
+          "updated": "2026-06-12",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
+          "label": "おかげバスデマンド高齢者運賃",
+          "updated": "2026-03-30",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.ise.mie.jp/kurashi/koutsu/kanjo_bus/index.html",
+          "label": "おかげバス環状線乗継割引",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "環状線の案内に更新日なし。乗継無料条件の現行性、各割引の住所条件は交通政策課0596-21-5593へ確認。"
+    },
+    {
+      "slug": "toba",
+      "name": "鳥羽市",
+      "status": "henno",
+      "summary": "免許自主返納者にかもめバス6か月無料利用券。",
+      "programs": [
+        {
+          "name": "かもめバス無料利用券（自主返納）",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "鳥羽市民。年齢制限なし。運転経歴証明書またはマイナ経歴証明書を所持。初回・本人のみ1人1回。",
+          "benefit": "支援決定日の翌月から6か月間無料。",
+          "fare": "無料。",
+          "routes": "かもめバス。",
+          "apply": "申請書と経歴証明書を定期船課、各連絡所、市民課、ひだまり窓口へ。降車時に券を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/2393.html",
+              "label": "運転免許証自主返納者に対する支援措置",
+              "updated": "2025-03-27",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.toba.mie.jp/soshiki/t_kanri/gyomu/doro_kotsu/kokyo_kotsu/2393.html",
+          "label": "運転免許証自主返納者に対する支援措置",
+          "updated": "2025-03-27",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2025年3月の案内で制度を確認。現行条件は定期船課0599-25-4776へ確認。一般高齢者向けのバス運賃支援は未発見。"
+    },
+    {
+      "slug": "shima",
+      "name": "志摩市",
+      "status": "notfound",
+      "summary": "ハッスル号は高齢者割引なし。志島循環線と返納案内の探索でも市独自支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.shima.mie.jp/material/files/group/16/goannai260601.pdf",
+          "label": "ハッスル号利用方法・注意事項（令和8年6月1日改正）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "ハッスル号は令和8年6月改正資料で高齢者割引なしと明記。資料のページ更新日は記載なし。市独自支援の有無は総合政策課0599-44-0205へ確認。"
+    },
+    {
+      "slug": "tamaki",
+      "name": "玉城町",
+      "status": "notfound",
+      "summary": "元気バスは子どもから高齢者まで利用でき、運賃無料。高齢者固有の支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://kizuna.town.tamaki.mie.jp/kurashi/bus/index.html",
+          "label": "元気バス",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "元気バス案内は更新日なし。全年齢共通の無料運行は対象外。保健福祉課で高齢者固有支援を確認。"
+    },
+    {
+      "slug": "watarai",
+      "name": "度会町",
+      "status": "notfound",
+      "summary": "町営バスと町内移動の路線バス運賃助成は年齢を問わない100円運賃。高齢者固有の支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.watarai.lg.jp/contents_detail.php?co=cat&frmCd=1-10-1-0-0&frmId=2586",
+          "label": "度会町内のバスの運行について",
+          "updated": "2026-04-01",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "高齢者タクシー助成はバス対象外。高齢者固有の支援はみらい安心課0596-62-2423へ確認。"
+    },
+    {
+      "slug": "taiki",
+      "name": "大紀町",
+      "status": "notfound",
+      "summary": "Cバスは町民共通の無料運行。高齢者固有のバス運賃支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.taiki.mie.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/968.html",
+          "label": "Cバス",
+          "updated": "2026-01-21",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "高齢者タクシー助成はバス対象外。高齢者固有の支援は健康福祉課0598-86-2216へ確認。"
+    },
+    {
+      "slug": "minamiise",
+      "name": "南伊勢町",
+      "status": "active",
+      "summary": "町民65歳以上は町営バス・デマンドバスの年間利用券をそれぞれ2,000円で購入可能。",
+      "programs": [
+        {
+          "name": "町営バス高齢者年間利用券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "南伊勢町に住民登録のある65歳以上。",
+          "benefit": "年間利用券2,000円。",
+          "fare": "利用券提示で対象バス利用。通常町内運賃100～500円。",
+          "routes": "南伊勢町営バス。",
+          "apply": "購入窓口は本文に記載なし。券を持参し運転手へ提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.minamiise.lg.jp/admin/kotsu/3313.html",
+              "label": "町営バスについて",
+              "updated": "2026-04-27",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "デマンドバス高齢者年間利用券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "南伊勢町に住民登録のある65歳以上。",
+          "benefit": "年間利用券2,000円。",
+          "fare": "利用券提示で対象バス利用。通常200～500円。",
+          "routes": "南伊勢町デマンドバス。",
+          "apply": "購入窓口は本文に記載なし。券を持参し運転手へ提示。利用は事前予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.minamiise.lg.jp/admin/kurashi/bus/1086.html",
+              "label": "デマンドバスについて",
+              "updated": "2026-04-24",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.minamiise.lg.jp/admin/kotsu/3313.html",
+          "label": "町営バスについて",
+          "updated": "2026-04-27",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.minamiise.lg.jp/admin/kurashi/bus/1086.html",
+          "label": "デマンドバスについて",
+          "updated": "2026-04-24",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "購入窓口・有効期間の起算及び2024年度案内にあった4,000円共通券の現行販売は環境生活課0599-66-1154へ確認。"
+    },
+    {
+      "slug": "iga",
+      "name": "伊賀市",
+      "status": "notfound",
+      "summary": "返納案内は三重交通の民間割引で、にんまる・行政巡回車は対象外。市独自の高齢者バス支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.iga.lg.jp/0000004161.html",
+          "label": "運転免許を返納された方へ（民間割引対象外にんまる等）",
+          "updated": "2024-03-25",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "返納案内は2024年3月更新。現行の市独自支援は公共交通課0595-22-9663へ確認。"
+    },
+    {
+      "slug": "nabari",
+      "name": "名張市",
+      "status": "active",
+      "summary": "75歳以上向けコミュニティバス無料キャンペーンは2026年10月13日開始予定。",
+      "programs": [
+        {
+          "name": "75歳以上限定コミュニティバス無料乗車キャンペーン",
+          "kind": "pass",
+          "age_min": 75,
+          "eligibility": "75歳以上（昭和27年4月1日以前生まれ）。居住地制限の記載なし。",
+          "benefit": "2026年10月13日～2027年3月31日の平日、何度でも無料利用。",
+          "fare": "無料。土日祝は対象外。",
+          "routes": "ナッキー号、あららぎ号、ほっとバス錦、みどり号、コモコモ号、はたっこ号（案内にはコモコモらいども掲載）。",
+          "apply": "10月1日からナッキー号以外の各バス車内、市役所4階都市計画室、三重交通名張駅前出札所で配布。公的な年齢確認書類を持参、降車時に無料乗車証提示。",
+          "notes": [
+            "確認日2026年10月6日時点では開始前。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.nabari.lg.jp/s044/010/050/10/030/020/070/20251001154026.html",
+              "label": "75歳以上限定無料乗車キャンペーン",
+              "updated": "2026-09-30",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nabari.lg.jp/s044/010/050/10/030/020/070/20251001154026.html",
+          "label": "75歳以上限定無料乗車キャンペーン",
+          "updated": "2026-09-30",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "年度内75歳になる人を含む生年月日基準が記載されている。住所要件は都市計画室0595-63-7749へ確認。"
+    },
+    {
+      "slug": "owase",
+      "name": "尾鷲市",
+      "status": "active",
+      "summary": "2026年10月1日から市民65歳以上がふれあいバス無料。返納者と同伴1名は半額。",
+      "programs": [
+        {
+          "name": "ふれあいバス65歳以上フリーパス",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "尾鷲市に住所を有する65歳以上。原則65歳誕生日後に申請。",
+          "benefit": "2026年10月1日からふれあいバス運賃無料。",
+          "fare": "無料。",
+          "routes": "尾鷲市ふれあいバス。",
+          "apply": "事前申請。バス車内、市役所、各コミュニティセンターで申請書提出。降車時にフリーパス提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.owase.lg.jp/0000020490.html",
+              "label": "ふれあいバス運賃割引制度",
+              "updated": "2026-09-29",
+              "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.owase.lg.jp/0000024920.html",
+              "label": "65歳以上等の運賃無料化",
+              "updated": "2026-08-07",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "ふれあいバス運転免許自主返納割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書所持者と同伴者1名。年齢・居住地条件は本文に記載なし。他割引併用不可。",
+          "benefit": "本人と同伴1名の運賃半額。",
+          "fare": "普通運賃の半額。",
+          "routes": "尾鷲市ふれあいバス。",
+          "apply": "降車時に運転士へ運転経歴証明書提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.owase.lg.jp/0000020490.html",
+              "label": "ふれあいバス運賃割引制度",
+              "updated": "2026-09-29",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.owase.lg.jp/0000020490.html",
+          "label": "ふれあいバス運賃割引制度",
+          "updated": "2026-09-29",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.owase.lg.jp/0000024920.html",
+          "label": "65歳以上等の運賃無料化",
+          "updated": "2026-08-07",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "返納割引の年齢・住所条件は市長公室企画調整係0597-23-8134へ確認。"
+    },
+    {
+      "slug": "kumano",
+      "name": "熊野市",
+      "status": "notfound",
+      "summary": "市バスの案内・運賃表・高齢者福祉及び返納支援の探索で、高齢者固有のバス運賃支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.kumano.lg.jp/life/?content=563",
+          "label": "熊野市バスについて",
+          "updated": "2025-07-17",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.kumano.lg.jp/assets/images/content/content_20250814_133447.pdf",
+          "label": "熊野古道瀞流荘線運賃表",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "市バス案内は2025年7月、運賃表の更新日なし。市長公室企画・調整係0597-89-4111（内線313）へ現行支援の有無を確認。"
+    },
+    {
+      "slug": "kihoku",
+      "name": "紀北町",
+      "status": "henno",
+      "summary": "返納者と同伴1名はいこかバス・河合線の運賃半額。",
+      "programs": [
+        {
+          "name": "いこかバス・河合線運転免許自主返納割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書取得者。年齢・住所制限なし。同伴1名も対象。",
+          "benefit": "運賃半額割引。",
+          "fare": "普通運賃の半額。",
+          "routes": "コミュニティバスいこかバス及び自主運行バス河合線。",
+          "apply": "運賃支払時に運転経歴証明を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.mie.lg.jp/ANZEN/HP/m0053500172_00001.htm",
+              "label": "サポートみえ自治体欄（令和7年4月30日現在）",
+              "updated": "",
+              "checked": "2026-10-06"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.mie.lg.jp/ANZEN/HP/m0053500172_00001.htm",
+          "label": "サポートみえ自治体欄（令和7年4月30日現在）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "県の2025年4月30日現在一覧で確認。現行条件は企画課0597-46-3113へ確認。えがお65歳回数券は公式がタクシー的交通と説明しバス明記がないため対象外。"
+    },
+    {
+      "slug": "mihama",
+      "name": "御浜町",
+      "status": "notfound",
+      "summary": "福祉バスは無料だが、対象は自力乗降できる方で年齢要件なし。高齢者固有の運賃支援は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.mihama.mie.jp/soshikikarasagasu/kenkofukushika/iryo_kenko_fukushi/3/218.html",
+          "label": "御浜町福祉バスの運行について",
+          "updated": "2021-03-31",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "2021年3月の案内では高齢者等の生活交通が目的だが、利用者に年齢制限の記載なし。現行の条件・支援有無は健康福祉課05979-3-0515へ確認。"
+    },
+    {
+      "slug": "kiho",
+      "name": "紀宝町",
+      "status": "notfound",
+      "summary": "町民バスは小学生以上一律100円。高齢者返納支援はタクシー券・商品券でバス固有助成は未発見。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kiho.lg.jp/reiki_int/reiki_honbun/i668RG00000074.html",
+          "label": "紀宝町民バスに関する規則（平成20年4月1日施行）",
+          "updated": "",
+          "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.kiho.lg.jp/reiki_int/reiki_honbun/i668RG00000864.html",
+          "label": "高齢者運転免許証自主返納支援要綱（令和5年4月1日施行）",
+          "updated": "",
+          "checked": "2026-10-06"
+        }
+      ],
+      "flag": "町民バス規則は2008年、返納要綱は2023年施行で更新日なし。企画調整課及び総務課0735-33-0333へ現行バス支援の有無を確認。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.mie.lg.jp/ANZEN/HP/m0053500172_00001.htm",
+    "label": "運転免許証自主返納サポートみえ（民間路線バス特典）",
+    "checked": "2026-10-06"
+  }
+}
