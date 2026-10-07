@@ -2997,8 +2997,8 @@ def main():
             (art / 'assets').mkdir(exist_ok=True)
             shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
     if (ROOT / 'data/municipality-supplements.json').exists():
-        from build_enriched import render
-        render(out, draft=a.draft, base_built=True)
+        from national_pages import render
+        render(out, draft=a.draft)
     print("built:", ", ".join(pages), "| draft" if a.draft else "")
 
 
