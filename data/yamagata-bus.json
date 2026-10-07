@@ -1546,19 +1546,25 @@
       "slug": "nanyo",
       "name": "南陽市",
       "status": "henno",
-      "summary": "年齢を問わず返納から2年以内の市民は、地区バス回数券など上限12,000円分を選択できます。",
+      "summary": "免許返納から2年が経過する前の市民に、地区バス回数券などを12,000円分まで1回交付します。",
       "programs": [
         {
           "name": "自主返納地区バス回数券",
           "kind": "henno",
           "age_min": null,
-          "eligibility": "市住民で自主返納から2年以内。年齢制限なし",
+          "eligibility": "南陽市内に住所があり、自主返納した日から2年を経過しない人。免許失効は対象外。年齢条件の記載なし。",
           "benefit": "バス回数券等を選択し上限12,000円分・1回限り",
-          "fare": "上限12,000円分交付",
-          "routes": "中川地区・北部地区連絡・西部地区バス等の選択枠。対象券種を市民課確認",
-          "apply": "市民課生活係へ取消通知書提出（0238-40-8255）",
+          "fare": "利用時の料金、差額・釣銭の扱いは記載なし。",
+          "routes": "中川地区バス、北部地区連絡バス、西部地区バスの回数券を選択できます。",
+          "apply": "南陽市役所1階2番・市民課生活係へ取消通知書を持参。代理申請は代理人の本人確認書類も必要。0238-40-8255。",
           "notes": [],
           "sources": [
+            {
+              "url": "http://www.city.nanyo.yamagata.jp/kotuanzen/2001",
+              "label": "南陽市の運転免許証自主返納支援",
+              "updated": "2025-12-01",
+              "checked": "2026-10-07"
+            },
             {
               "url": "https://www.pref.yamagata.jp/documents/18244/sityousonn.pdf",
               "label": "県返納支援一覧 令和8年7月1日",
@@ -1566,10 +1572,16 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "document_checked"
+          "current": "needs_confirmation"
         }
       ],
       "sources": [
+        {
+          "url": "http://www.city.nanyo.yamagata.jp/kotuanzen/2001",
+          "label": "南陽市の運転免許証自主返納支援",
+          "updated": "2025-12-01",
+          "checked": "2026-10-07"
+        },
         {
           "url": "https://www.pref.yamagata.jp/documents/18244/sityousonn.pdf",
           "label": "県返納支援一覧 令和8年7月1日",
@@ -1577,7 +1589,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "市案内HTTPS本文接続不能（HTTP版2025年12月更新は読解）、県2026年一覧を根拠採用。地区の現行券種を市民課へ確認。"
+      "flag": "回数券を使う際の料金・差額・釣銭の扱いは市民課生活係（0238-40-8255）へ確認してください。"
     },
     {
       "slug": "takahata",

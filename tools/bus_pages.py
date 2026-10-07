@@ -15,7 +15,7 @@ KINDS = {"pass": "乗車証", "discount": "運賃割引", "voucher": "乗車券"
          "reimbursement": "購入・利用費の助成", "henno": "免許返納が条件"}
 
 # 県の公式市町村リンクで確認したHTTP専用サイト。読めないHTTPSへ置換しない。
-HTTP_OFFICIAL_HOSTS = {"town.mihama.wakayama.jp", "town.wakayama-hidaka.lg.jp", "town.yura.wakayama.jp", "vill.shinjo.okayama.jp", "town.anan.nagano.jp", "vill.miyada.nagano.jp", "vill.sakae.nagano.jp", "town.minamitane.kagoshima.jp", "town.toyo.kochi.jp", "bus.saga.saga.jp", "town.itano.tokushima.jp"}
+HTTP_OFFICIAL_HOSTS = {"town.mihama.wakayama.jp", "town.wakayama-hidaka.lg.jp", "town.yura.wakayama.jp", "vill.shinjo.okayama.jp", "town.anan.nagano.jp", "vill.miyada.nagano.jp", "vill.sakae.nagano.jp", "town.minamitane.kagoshima.jp", "town.toyo.kochi.jp", "bus.saga.saga.jp", "town.itano.tokushima.jp", "town.toyako.hokkaido.jp", "city.nanyo.yamagata.jp", "samani.jp", "town.hamatonbetsu.hokkaido.jp"}
 
 
 def valid_source_url(url):
