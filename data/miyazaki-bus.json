@@ -1,0 +1,1495 @@
+{
+  "checked": "2026-10-07",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "miyazaki",
+      "name": "宮崎市",
+      "status": "active",
+      "summary": "70歳以上には市内乗降で1乗車100円の敬老バスカがあります。免許返納後の購入助成は2024年度末で終了しました。",
+      "programs": [
+        {
+          "name": "敬老バスカ",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "宮崎市に引き続き3か月以上住所を有する満70歳以上の方。",
+          "benefit": "対象路線を1乗車100円で利用。",
+          "fare": "1乗車100円、乗換の都度100円。回数券不可。新規nimocaカードは預かり料500円。",
+          "routes": "宮崎交通の路線バス（予約型乗合バス宮交のるーとを含む）で乗車・降車どちらかが市内。県外特急・高速・定期観光バスを除く。市外同士は通常運賃。",
+          "apply": "市の資格証と公的身分証を用意し、宮交シティ・宮崎駅・県庁店・西都のバス窓口へ。資格証未取得は福祉総務課または総合支所、郵送相談可。カードは3年ごとに更新。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyazaki.miyazaki.jp/health/elderly_welfare/vivid/705.html",
+              "label": "高齢者のバス料金を助成しています（敬老バスカ） -  宮崎市 [Miyazaki City]",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.miyazaki.miyazaki.jp/health/elderly_welfare/vivid/705.html",
+          "label": "高齢者のバス料金を助成しています（敬老バスカ） -  宮崎市 [Miyazaki City]",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.miyazaki.miyazaki.jp/health/elderly_welfare/vivid/388557.html",
+          "label": "宮崎市高齢者移動安全確保事業について（運転免許の自主返納に対する助成） -  宮崎市 [Miyazaki City]",
+          "updated": "2024-11-18",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納助成の案内は2024年更新で受付・利用とも終了が明記されています。通常の敬老バスカの問い合わせは福祉総務課（0985-21-1754）です。"
+    },
+    {
+      "slug": "kunitomi",
+      "name": "国富町",
+      "status": "active",
+      "summary": "満70歳以上の町民は活き行きバスカードで対象路線を1乗車100円で利用できます。",
+      "programs": [
+        {
+          "name": "活き行きバスカード",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "国富町に住所（住民票）がある満70歳以上の方。",
+          "benefit": "町内の乗車・降車のいずれかを条件に1乗車100円。",
+          "fare": "1乗車100円、乗換の都度100円。新規カードの預かり料500円。",
+          "routes": "宮崎交通の路線バスで乗車・降車いずれかが町内。県外特急・高速・定期観光を除く。町外同士は通常運賃。",
+          "apply": "福祉課の資格証と公的身分証を用意し、宮交シティ・宮崎駅バスセンターまたは町の臨時窓口で交付。カードは3年間有効、資格証は6か月有効。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kunitomi.miyazaki.jp/main/health/page001670.html",
+              "label": "活き行きバスカードについて - 宮崎県国富町ホームページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kunitomi.miyazaki.jp/main/health/page001670.html",
+          "label": "活き行きバスカードについて - 宮崎県国富町ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内に更新日の記載がありません。現在の受付窓口・料金やカード更新は福祉課（0985-75-9403）へ確認してください。"
+    },
+    {
+      "slug": "aya",
+      "name": "綾町",
+      "status": "active",
+      "summary": "70歳以上には路線バスを100円にするおでかけバスカがあります。町内の無料乗合バスぐるっとあやは、70歳以上または免許返納者等が利用できます。",
+      "programs": [
+        {
+          "name": "綾町おでかけバスカ",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "綾町に居住する70歳以上の方。本人のみ利用可。",
+          "benefit": "宮崎交通の対象路線が1乗車100円。",
+          "fare": "1乗車100円。nimocaカードを持たない場合はカード作成500円。町外同士は通常運賃。",
+          "routes": "宮崎交通の路線バスで乗車・降車どちらかが町内。特急・高速・定期観光バスを除く。",
+          "apply": "町から届く資格証、公的身分証、持っているnimocaを宮交シティまたは宮崎駅バスセンターへ。資格証紛失等は福祉保健課へ。カードは3年間有効。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.aya.miyazaki.jp/soshiki/hukusihokenka/4138.html",
+              "label": "綾町おでかけバスカ - 綾町ホームページ",
+              "updated": "2022-06-27",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "ぐるっとあやの高齢者枠",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "綾町内在住の70歳以上で停留所まで歩いて行ける方。",
+          "benefit": "町内の予約型乗合バスを無料利用。回数制限なし。",
+          "fare": "無料。",
+          "routes": "ぐるっとあや。町内全域の指定停留所。平日8時45分～16時45分、年金支給月やイベント等の特別運行あり。",
+          "apply": "利用希望日の7日前～当日15分前まで、0985-77-1133または専用アプリで予約。年齢・住所の確認方法は町へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.aya.miyazaki.jp/soshiki/hukusihokenka/9031.html",
+              "label": "綾オンデマンド交通「ぐるっとあや」 - 綾町ホームページ",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.aya.miyazaki.jp/uploaded/attachment/5201.pdf",
+              "label": "綾オンデマンド交通ぐるっとあや 乗り方ガイド",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "ぐるっとあやの免許返納者枠",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "綾町内在住の運転免許返納者で停留所まで歩いて行ける方。年齢条件は記載なし。",
+          "benefit": "町内の予約型乗合バスを無料利用。回数制限なし。",
+          "fare": "無料。",
+          "routes": "ぐるっとあや。町内全域の指定停留所。平日8時45分～16時45分、年金支給月やイベント等の特別運行あり。",
+          "apply": "利用希望日の7日前～当日15分前まで、0985-77-1133または専用アプリで予約。返納者の証明書類は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.aya.miyazaki.jp/soshiki/hukusihokenka/9031.html",
+              "label": "綾オンデマンド交通「ぐるっとあや」 - 綾町ホームページ",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.aya.miyazaki.jp/uploaded/attachment/5201.pdf",
+              "label": "綾オンデマンド交通ぐるっとあや 乗り方ガイド",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.aya.miyazaki.jp/soshiki/hukusihokenka/4138.html",
+          "label": "綾町おでかけバスカ - 綾町ホームページ",
+          "updated": "2022-06-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.aya.miyazaki.jp/soshiki/hukusihokenka/9031.html",
+          "label": "綾オンデマンド交通「ぐるっとあや」 - 綾町ホームページ",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.aya.miyazaki.jp/uploaded/attachment/5201.pdf",
+          "label": "綾オンデマンド交通ぐるっとあや 乗り方ガイド",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "おでかけバスカは2022年更新、乗り方ガイドは日付の記載がありません。現在のカード交付や、返納者の確認書類は福祉保健課福祉児童家庭係（0985-77-1114）へ確認してください。"
+    },
+    {
+      "slug": "saito",
+      "name": "西都市",
+      "status": "active",
+      "summary": "満65歳以上の市民には市内1乗車200円の敬老カードと、バス定期券購入への5,000円補助があります。",
+      "programs": [
+        {
+          "name": "西都市敬老バスカード",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "市内に住所を有する満65歳以上の方。",
+          "benefit": "市内の対象バスを1乗車200円で利用。",
+          "fare": "1乗車200円。",
+          "routes": "コミュニティバスや路線バス（デマンド型を含む）の西都市内での利用。",
+          "apply": "健康ほけん課高齢者支援係へ本人の身分証を持参。本人自署は印鑑不要。代理は本人の身分証・印鑑と代理人身分証を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.saito.lg.jp/kenko_kyoiku/fukushi/post_2002.html",
+              "label": "敬老バス事業について | 宮崎県西都市",
+              "updated": "2026-03-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "宮交スマート65購入費補助",
+          "kind": "reimbursement",
+          "age_min": 65,
+          "eligibility": "市内に住所を有する満65歳以上の方。同一年度につき1人1回。",
+          "benefit": "1年定期券購入に5,000円を補助。",
+          "fare": "年会費10,000円から補助5,000円を差し引き5,000円。乗車の都度200円をチャージまたは現金で支払う。nimoca未所持は預かり金500円。",
+          "routes": "宮崎交通の県内路線・臨時・AIデマンドバス。高速・コミュニティバス・他社路線・会場駐車場シャトルを除く。",
+          "apply": "本人が宮崎交通西都営業所窓口へ身分証と印鑑を持参。新規・継続とも通用開始日の10日前から購入可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.saito.lg.jp/kenko_kyoiku/fukushi/post_2002.html",
+              "label": "敬老バス事業について | 宮崎県西都市",
+              "updated": "2026-03-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+              "label": "宮交スマート65のご案内",
+              "updated": "2026-01-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "三和交通半年定期券購入費補助",
+          "kind": "reimbursement",
+          "age_min": 65,
+          "eligibility": "市内に住所を有する満65歳以上の方。同一年度につき1人2回まで。",
+          "benefit": "半年定期券購入に1回5,000円を補助。",
+          "fare": "販売額・補助後の購入負担額と乗車時の運賃は記載なし。",
+          "routes": "三和交通の対象バス半年定期券。利用可能路線は記載なし。",
+          "apply": "購入3日前までに三和交通へ連絡し、本人が西都本社窓口へ身分証と印鑑を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.saito.lg.jp/kenko_kyoiku/fukushi/post_2002.html",
+              "label": "敬老バス事業について | 宮崎県西都市",
+              "updated": "2026-03-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.saito.lg.jp/kenko_kyoiku/fukushi/post_2002.html",
+          "label": "敬老バス事業について | 宮崎県西都市",
+          "updated": "2026-03-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+          "label": "宮交スマート65のご案内",
+          "updated": "2026-01-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "三和交通の半年定期券の販売額と利用範囲は三和交通（0983-43-1222）、市の補助は健康ほけん課高齢者支援係（0983-32-1028）へ確認してください。"
+    },
+    {
+      "slug": "nishimera",
+      "name": "西米良村",
+      "status": "active",
+      "summary": "70歳以上には村営バス等で使う券があり、返納者への3万円分のバス回数券も県警の一覧で案内されています。",
+      "programs": [
+        {
+          "name": "寿乗車券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "70～74歳の方。居住条件は記載なし。",
+          "benefit": "寿乗車券を交付。額・枚数・期限は記載なし。",
+          "fare": "券利用時の支払額・差額負担は記載なし。",
+          "routes": "村営バスのみ。",
+          "apply": "申請方法・必要書類は記載なし。村保健センター福祉健康課（0983-36-1114）へ相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/a-05/10001312",
+              "label": "バス・タクシー券 – 西米良村",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "バス・タクシー兼用券の高齢者枠",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "75歳以上の方。居住条件は記載なし。",
+          "benefit": "バス・タクシー兼用利用券を交付。額・枚数・期限は記載なし。",
+          "fare": "券利用時の支払額・差額負担は記載なし。",
+          "routes": "村営バス、村内タクシー。",
+          "apply": "申請方法・必要書類は記載なし。村保健センター福祉健康課（0983-36-1114）へ相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/a-05/10001312",
+              "label": "バス・タクシー券 – 西米良村",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許自主返納のバス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "西米良村居住の運転免許自主返納者。個別の対象年齢は記載なし。",
+          "benefit": "バス回数券30,000円分を交付。商店街利用券50,000円分との選択。利用期限なし。",
+          "fare": "券利用時の支払額・差額負担は記載なし。",
+          "routes": "村営バス、デマンドバスおよび公共ライドシェアで利用可能。",
+          "apply": "申請方法・期限・書類は記載なし。村民課（0983-36-1111）へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/a-05/10001312",
+          "label": "バス・タクシー券 – 西米良村",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村の通常券の案内は更新日がありません。交付枚数・支払方法・申請と居住条件は福祉健康課（0983-36-1114）、返納支援の年齢・申請等は村民課（0983-36-1111）へ確認してください。"
+    },
+    {
+      "slug": "takanabe",
+      "name": "高鍋町",
+      "status": "notfound",
+      "summary": "確認した高齢者福祉案内や返納支援一覧では、高齢者・返納者向けのバス乗車料金助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.takanabe.lg.jp/kenko_iryo_fukushi/2047.html",
+          "label": "高齢者福祉／高鍋町",
+          "updated": "2021-02-17",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.takanabe.lg.jp/soshiki/kenkohoken/1/3/2045.html",
+          "label": "高鍋町高齢者おたすけ便利帳／高鍋町",
+          "updated": "2025-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "現在のバス助成の有無は健康保険課介護・高齢者福祉係（0983-26-2008）へ確認してください。"
+    },
+    {
+      "slug": "shintomi",
+      "name": "新富町",
+      "status": "henno",
+      "summary": "免許返納者にコミュニティバス等の乗車回数券100回分を交付する支援が県警の一覧で案内されています。",
+      "programs": [
+        {
+          "name": "免許自主返納のコミュニティバス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "新富町居住の運転免許自主返納者。個別の対象年齢は記載なし。",
+          "benefit": "コミュニティバスと乗合タクシー「トヨタク」で使える乗車回数券100回分を交付。別にタクシー初乗り無料券の支援もあります。",
+          "fare": "回数券利用時の追加負担の記載なし。",
+          "routes": "新富町コミュニティバスと乗合タクシー「トヨタク」。",
+          "apply": "申請方法・期限・必要書類は記載なし。総合政策課（0983-33-6012）へ相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shintomi.lg.jp/kurashi/kokyokotsu/1810.html",
+              "label": "コミュニティバス／新富町",
+              "updated": "2026-08-07",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shintomi.lg.jp/kurashi/kokyokotsu/1810.html",
+          "label": "コミュニティバス／新富町",
+          "updated": "2026-08-07",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納支援の個別年齢条件・申請書類・利用期限と乗車時の支払額は総合政策課（0983-33-6012）へ確認してください。"
+    },
+    {
+      "slug": "kijo",
+      "name": "木城町",
+      "status": "notfound",
+      "summary": "木城おでかけバスカは町内在住の小学生以上が対象の1乗車200円の交通です。確認した本文では高齢者・返納者だけの別のバス料金助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kijo.lg.jp/sosikikarasagasu/tiikiseisakuka/7/1/2150.html",
+          "label": "「木城おでかけバスカ」が4/1から65歳以上も対象となります／木城町",
+          "updated": "2025-04-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kijo.lg.jp/sosikikarasagasu/hukushikyoseika/koureisyahukusi/3416.html",
+          "label": "シニアカー購入・レンタル補助制度／木城町",
+          "updated": "2026-10-06",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "現在の高齢者向けバス助成の有無は地域政策課（0983-32-4727）へ確認してください。"
+    },
+    {
+      "slug": "kawaminami",
+      "name": "川南町",
+      "status": "henno",
+      "summary": "満75歳以上の町民で2024年4月以降に免許返納した方に、トロントロンバス等の回数券5,000円分を交付します。",
+      "programs": [
+        {
+          "name": "高齢者免許自主返納のトロントロンバス回数券",
+          "kind": "henno",
+          "age_min": 75,
+          "eligibility": "町内に住所を有する満75歳以上で、2024年4月1日以降に運転免許を自主返納した方。1人1回限り。",
+          "benefit": "トロントロンバスと町内指定タクシーに使える回数券5,000円分。",
+          "fare": "券利用時の差額負担・利用上限は記載なし。",
+          "routes": "トロントロンバス。タクシーは三和交通児湯営業所、あい交通川南営業所。",
+          "apply": "総務課地域あんしん係へ交付申請書を提出。2025年5月1日から受付。添付書類・申請期限は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kawaminami.miyazaki.jp/soshiki/1/1226.html",
+              "label": "川南町高齢者運転免許証自主返納支援事業を再開します - 川南町",
+              "updated": "2025-05-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kawaminami.miyazaki.jp/soshiki/1/1226.html",
+          "label": "川南町高齢者運転免許証自主返納支援事業を再開します - 川南町",
+          "updated": "2025-05-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納支援の案内は2025年5月更新です。回数券の利用方法・有効期限や現在の受付は総務課地域あんしん係（0983-32-0871）へ確認してください。"
+    },
+    {
+      "slug": "tsuno",
+      "name": "都農町",
+      "status": "active",
+      "summary": "町内に住民票がある65歳以上の返納者、または高齢で更新しなかった方には、コミュニティバス無料乗車証があります。",
+      "programs": [
+        {
+          "name": "コミュニティバス無料乗車証の自主返納枠",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "都農町に住民票がある65歳以上で、すべての運転免許を自主返納した方。本人のみ。",
+          "benefit": "コミュニティバス無料乗車証を交付。",
+          "fare": "乗車証の提示で運賃無料。",
+          "routes": "都農町コミュニティバス（県警一覧では地域福祉バス）。",
+          "apply": "総務課へ相談。無料乗車証交付申請書に取消通知書の写しを添付し、官公署発行の身分証を提示して町へ提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tsuno.lg.jp/reiki/reiki_honbun/q632RG00000598.html",
+              "label": "都農町高齢者運転免許証自主返納支援事業実施要綱（2026年4月施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "コミュニティバス無料乗車証の未更新枠",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "都農町に住民票がある65歳以上で、高齢のため免許更新をしなかった方。本人のみ。",
+          "benefit": "コミュニティバス無料乗車証を交付。",
+          "fare": "乗車証の提示で運賃無料。",
+          "routes": "都農町コミュニティバス（県警一覧では地域福祉バス）。",
+          "apply": "総務課へ相談。無料乗車証交付申請書を町へ提出。要綱の申請条文は取消通知書の写しと公的身分証を要求するため、未更新者の代替書類は窓口確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tsuno.lg.jp/reiki/reiki_honbun/q632RG00000598.html",
+              "label": "都農町高齢者運転免許証自主返納支援事業実施要綱（2026年4月施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.tsuno.lg.jp/reiki/reiki_honbun/q632RG00000598.html",
+          "label": "都農町高齢者運転免許証自主返納支援事業実施要綱（2026年4月施行）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "要綱の更新日は記載されていません。現行要綱は2026年4月施行です。失効者に必要な返納通知書以外の書類、乗車証の提示方法や現在の対象路線は総務課（町代表0983-25-5710）へ確認してください。"
+    },
+    {
+      "slug": "nobeoka",
+      "name": "延岡市",
+      "status": "active",
+      "summary": "年度内70歳以上の市民には所得条件付きのバス券等があります。65歳以降の免許全部返納者には市内対象バスの1年間の半額乗車証もあります。",
+      "programs": [
+        {
+          "name": "高齢者バス乗車券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "市に住民票があり現に居住し、2026年度に70歳以上となる方（昭和32年4月1日以前生まれ）。介護保険料第1～第5段階。バス券と悠々パス購入助成のどちらかを選択。",
+          "benefit": "4,000円分を年度内1回交付。",
+          "fare": "券利用時の差額負担・枚数制限の記載なし。",
+          "routes": "対象となる具体的なバス路線は記載なし。",
+          "apply": "本人確認書類を用意（代理の場合も必要）。総合福祉課・各総合支所市民サービス課で申請・受領。2026年4月1日から交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nobeoka.miyazaki.jp/soshiki/27/2038.html",
+              "label": "高齢者バス利用助成事業 - 延岡市公式ホームページ",
+              "updated": "2011-11-22",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/26036.pdf",
+              "label": "広報のべおか2026年3月号（13頁）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "悠々パス6か月券購入助成",
+          "kind": "reimbursement",
+          "age_min": null,
+          "eligibility": "市に住民票があり現に居住し、2026年度に70歳以上となる方（昭和32年4月1日以前生まれ）。介護保険料第1～第5段階。バス券と悠々パス購入助成のどちらかを選択。",
+          "benefit": "6か月券購入費15,000円に対し3,500円助成。年度内2回。",
+          "fare": "市の案内では購入後の負担は11,500円。現在の対象定期券の販売・乗車時の運賃は確認が必要。",
+          "routes": "現在の助成対象定期券の利用路線は記載なし。",
+          "apply": "本人確認書類を用意し総合福祉課または各総合支所市民サービス課へ。購入助成券の現在の受付を確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nobeoka.miyazaki.jp/soshiki/27/2038.html",
+              "label": "高齢者バス利用助成事業 - 延岡市公式ホームページ",
+              "updated": "2011-11-22",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/26036.pdf",
+              "label": "広報のべおか2026年3月号（13頁）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許全部自主返納のバス割引乗車証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市に住民票があり、65歳になった日以降にすべての運転免許を自主返納して1年以内の方。",
+          "benefit": "対象公共交通の料金を半額にする割引乗車証を交付。1年間有効。",
+          "fare": "まちなか循環バスは200円から100円、コミュニティバス北川線は100円から50円。",
+          "routes": "まちなか循環バス、コミュニティバス北川線。別に乗合タクシー等の割引もあります。",
+          "apply": "地域・離島・交通政策課（本庁6階）、北方・北浦・北川総合支所または島浦支所へ申請書、取消通知書、住所氏名がわかる書類、6か月以内の写真縦3cm×横2.4cmを提出。本人来庁なら窓口撮影可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nobeoka.miyazaki.jp/soshiki/24/2868.html",
+              "label": "運転免許証自主返納支援制度について - 延岡市公式ホームページ",
+              "updated": "2025-06-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nobeoka.miyazaki.jp/soshiki/27/2038.html",
+          "label": "高齢者バス利用助成事業 - 延岡市公式ホームページ",
+          "updated": "2011-11-22",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/26036.pdf",
+          "label": "広報のべおか2026年3月号（13頁）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nobeoka.miyazaki.jp/soshiki/24/2868.html",
+          "label": "運転免許証自主返納支援制度について - 延岡市公式ホームページ",
+          "updated": "2025-06-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "通常助成の案内は2011年更新、2026年3月広報にも4月交付が記載されています。バス券の対象路線・利用方法と悠々パス購入補助の現在の対象商品は総合福祉課（0982-22-7016）、返納割引は地域・離島・交通政策課（0982-22-7039）へ確認してください。"
+    },
+    {
+      "slug": "hyuga",
+      "name": "日向市",
+      "status": "active",
+      "summary": "70歳以上の市民には宮交スマート65年会費の半額補助があります。65歳以降の返納者には市民バスの半額券20枚もあります。",
+      "programs": [
+        {
+          "name": "宮交スマート65購入費半額補助",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "日向市の住民基本台帳に記録されている70歳以上の方。",
+          "benefit": "年会費の2分の1を助成。端数10円未満切り捨て。10,000円に対し5,000円。",
+          "fare": "年会費の自己負担5,000円、1乗車200円。nimoca未所持は預かり金500円。",
+          "routes": "宮崎交通の県内路線・臨時・AIデマンドバス。高速・コミュニティバス・他社路線・シャトルを除く。",
+          "apply": "市へ補助券交付申請書を提出し、購入時に補助券を宮崎交通へ提出。必要な添付書類・市の受付窓口は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.hyugacity.jp/reiki_new/reiki_honbun/q607RG00000782.html",
+              "label": "日向市宮交スマート65購入費補助事業要綱（2026年4月施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+              "label": "宮交スマート65のご案内",
+              "updated": "2026-01-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許自主返納の市民バス半額券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "日向市在住で65歳になった日以降に自主返納し、返納から半年以内の方。交付は1度限り。",
+          "benefit": "市民バス使用料を半額にする割引乗車券20枚。",
+          "fare": "割引乗車券で通常使用料の半額。具体的な支払額は記載なし。",
+          "routes": "ぷらっとバス、南部ぷらっとバス、乗合バスとうごう・なんぶ。乗合タクシーほそしまにも利用可。宮崎交通バスは対象外。",
+          "apply": "返納後半年以内に日向警察署交通課へ。別の警察署で返納した方は取消通知書を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.hyugacity.jp/sp/display.php?cont=211214171207",
+              "label": "運転免許証の自主返納をした方に市民バス半額割引券を交付しています - 日向市ホームページ - HYUGA CITY",
+              "updated": "2022-12-15",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hyugacity.jp/reiki_new/reiki_honbun/q607RG00000782.html",
+          "label": "日向市宮交スマート65購入費補助事業要綱（2026年4月施行）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+          "label": "宮交スマート65のご案内",
+          "updated": "2026-01-08",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.hyugacity.jp/sp/display.php?cont=211214171207",
+          "label": "運転免許証の自主返納をした方に市民バス半額割引券を交付しています - 日向市ホームページ - HYUGA CITY",
+          "updated": "2022-12-15",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "購入助成の要綱は更新日記載なしで2026年4月施行、返納券の案内は2022年12月更新です。購入補助券の受付書類・窓口や返納券の期限は市役所（0982-52-2111）または都市政策課（0982-66-1030）へ確認してください。"
+    },
+    {
+      "slug": "kadogawa",
+      "name": "門川町",
+      "status": "active",
+      "summary": "町に住民登録がある70歳以上の方には宮交スマート65年会費の半額補助があります。",
+      "programs": [
+        {
+          "name": "宮交スマート65購入費補助",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "門川町に住民登録がある70歳以上の方。",
+          "benefit": "年会費10,000円の半額5,000円を補助。",
+          "fare": "年会費の自己負担5,000円。1乗車200円。nimoca未所持は預かり金500円。",
+          "routes": "宮崎交通の県内路線・臨時・AIデマンドバス。高速・コミュニティバス・他社路線・シャトルを除く。",
+          "apply": "購入前に本人確認書類を持って役場で申請。補助券を日向市観光協会・延岡バスセンター等の販売窓口へ提出し半額で購入。利用開始日から1年間。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kadogawa.lg.jp/live/traffic/page005540.html",
+              "label": "宮交スマート65購入費補助のお知らせ | 門川町",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+              "label": "宮交スマート65のご案内",
+              "updated": "2026-01-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kadogawa.lg.jp/live/traffic/page005540.html",
+          "label": "宮交スマート65購入費補助のお知らせ | 門川町",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+          "label": "宮交スマート65のご案内",
+          "updated": "2026-01-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の補助案内は更新日が記載されていません。現在の補助券交付は企画戦略課（0982-63-1140）へ確認してください。"
+    },
+    {
+      "slug": "morotsuka",
+      "name": "諸塚村",
+      "status": "active",
+      "summary": "70歳以上または運転できない65～69歳の村民には宮交スマート65購入補助が案内されています。",
+      "programs": [
+        {
+          "name": "宮交スマート65購入補助の70歳以上枠",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "諸塚村の70歳以上の村民。",
+          "benefit": "運行者の案内では購入費7,000円補助。村の案内は半年定期10,000円補助・年2回の旧券種の記載があり、現在の適用を確認。",
+          "fare": "スマート65年会費10,000円のうち自己負担3,000円、1乗車200円。nimoca未所持は預かり金500円。",
+          "routes": "宮崎交通の県内路線・臨時・AIデマンドバス。高速・コミュニティバス・他社路線・シャトルを除く。",
+          "apply": "申請の必要書類は記載なし。住民生活課福祉係へ相談し、購入前に補助の手続きを確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.morotsuka.miyazaki.jp/soshiki/1003/9/205.html",
+              "label": "高齢者福祉について／諸塚村公式ホームページ",
+              "updated": "2025-07-04",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/rosen/ticket/koureisya.html",
+              "label": "市町村の高齢者助成制度",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+              "label": "宮交スマート65のご案内",
+              "updated": "2026-01-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "宮交スマート65購入補助の運転できない65～69歳枠",
+          "kind": "reimbursement",
+          "age_min": 65,
+          "eligibility": "諸塚村の65歳以上70歳未満で車の運転ができない村民。免許返納だけを条件とする記載ではありません。",
+          "benefit": "運行者の案内では購入費7,000円補助。村の案内は半年定期10,000円補助・年2回の旧券種の記載があり、現在の適用を確認。",
+          "fare": "スマート65年会費10,000円のうち自己負担3,000円、1乗車200円。nimoca未所持は預かり金500円。",
+          "routes": "宮崎交通の県内路線・臨時・AIデマンドバス。高速・コミュニティバス・他社路線・シャトルを除く。",
+          "apply": "申請の必要書類は記載なし。住民生活課福祉係へ相談し、購入前に補助の手続きを確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.morotsuka.miyazaki.jp/soshiki/1003/9/205.html",
+              "label": "高齢者福祉について／諸塚村公式ホームページ",
+              "updated": "2025-07-04",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/rosen/ticket/koureisya.html",
+              "label": "市町村の高齢者助成制度",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+              "label": "宮交スマート65のご案内",
+              "updated": "2026-01-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.morotsuka.miyazaki.jp/soshiki/1003/9/205.html",
+          "label": "高齢者福祉について／諸塚村公式ホームページ",
+          "updated": "2025-07-04",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.miyakoh.co.jp/rosen/ticket/koureisya.html",
+          "label": "市町村の高齢者助成制度 | ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+          "label": "宮交スマート65のご案内",
+          "updated": "2026-01-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村の2025年7月案内は半年定期1万円・年2回、運行者の現行案内はスマート65に7,000円・自己負担3,000円と記載が異なります。現在の補助券種・回数・申請書類は住民生活課福祉係（0982-65-1119）へ確認してください。"
+    },
+    {
+      "slug": "shiiba",
+      "name": "椎葉村",
+      "status": "active",
+      "summary": "村に住民票がある70歳以上の方には宮交スマート65の5,000円補助があります。",
+      "programs": [
+        {
+          "name": "宮交スマート65購入費補助",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "椎葉村に住民票がある70歳以上の方。",
+          "benefit": "年会費10,000円に対し5,000円補助。",
+          "fare": "補助後の購入費5,000円。1乗車200円。nimoca未所持は預かり金500円。",
+          "routes": "宮崎交通の県内路線・臨時・AIデマンドバス。高速・コミュニティバス・他社路線・シャトルを除く。",
+          "apply": "購入前にすこやか館（福祉保健課）で申請。本人確認書類と印鑑を持参し、補助券を延岡バスセンターまたは日向市観光案内所へ提出して購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.shiiba.miyazaki.jp/welfare/2026/03/post_100.php",
+              "label": "高齢者用バス定期券購入費補助のお知らせ｜福祉保健課｜椎葉村",
+              "updated": "2026-03-18",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.vill.shiiba.miyazaki.jp/welfare/2026/03/18/img/%E9%AB%98%E9%BD%A2%E8%80%85%E7%94%A8%E3%83%8F%E3%82%99%E3%82%B9_%E3%83%81%E3%83%A9%E3%82%B7_%E3%82%AA%E3%83%A2%E3%83%86.png",
+              "label": "高齢者用バス定期券購入費補助のお知らせ（チラシ）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+              "label": "宮交スマート65のご案内",
+              "updated": "2026-01-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.shiiba.miyazaki.jp/welfare/2026/03/post_100.php",
+          "label": "高齢者用バス定期券購入費補助のお知らせ｜福祉保健課｜椎葉村",
+          "updated": "2026-03-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.shiiba.miyazaki.jp/welfare/2026/03/18/img/%E9%AB%98%E9%BD%A2%E8%80%85%E7%94%A8%E3%83%8F%E3%82%99%E3%82%B9_%E3%83%81%E3%83%A9%E3%82%B7_%E3%82%AA%E3%83%A2%E3%83%86.png",
+          "label": "高齢者用バス定期券購入費補助のお知らせ（チラシ）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.miyakoh.co.jp/news/2025/02/post-257.html",
+          "label": "宮交スマート65のご案内",
+          "updated": "2026-01-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "チラシには更新日の記載がありませんが、2026年3月の村の案内から現行制度として掲載されています。問い合わせは福祉保健課福祉グループ（0982-68-7512）です。"
+    },
+    {
+      "slug": "misato",
+      "name": "美郷町",
+      "status": "active",
+      "summary": "70歳以上で運転が困難な住民税非課税の人に、バス・タクシー利用券を交付します。",
+      "programs": [
+        {
+          "name": "高齢者乗合バス・タクシー利用券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "町内に居住し住民基本台帳に登録された70歳以上で、自ら車を運転し利用することが困難、かつ各年度4月1日時点で住民税非課税の人。",
+          "benefit": "総額5,000円の利用券。利用期間は1年以内。",
+          "fare": "券の額面・枚数、運賃との差額支払いは記載なし。",
+          "routes": "乗合バス。対象事業者・路線は記載なし。",
+          "apply": "認定申請書を提出。まず町健康福祉課または社会福祉協議会に問い合わせ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.miyazaki-misato.lg.jp/kiji003131/index.html",
+              "label": "バス・タクシ-利用券交付事業 / 宮崎県美郷町ホームページ",
+              "updated": "2021-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.miyazaki-misato.lg.jp/kiji003131/index.html",
+          "label": "バス・タクシ-利用券交付事業 / 宮崎県美郷町ホームページ",
+          "updated": "2021-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2021年の案内です。対象バス・券の枚数と利用時の支払い、現在の交付条件は町健康福祉課または社会福祉協議会（0982-68-2900）へ確認してください。"
+    },
+    {
+      "slug": "takachiho",
+      "name": "高千穂町",
+      "status": "henno",
+      "summary": "免許の自主返納者は、ふれあいバス回数券2万円分、またはバス1万円分とタクシー1万円分の組み合わせを選べます。",
+      "programs": [
+        {
+          "name": "自主返納者へのふれあいバス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "高千穂町に居住し、運転免許証を自主返納した人。個別の対象年齢は記載なし。",
+          "benefit": "ふれあいバス回数券20,000円分、タクシー券20,000円分、またはバス10,000円分とタクシー10,000円分から1つ選択。",
+          "fare": "券の枚数、差額支払い、有効期限は記載なし。",
+          "routes": "町のふれあいバス。",
+          "apply": "返納後1年以内。印鑑と取消通知書を用意して総務課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town-takachiho.jp/top/soshiki/somu/2/2/3/2047.html",
+              "label": "運転免許証自主返納者への支援内容が変わります／高千穂町",
+              "updated": "2021-02-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town-takachiho.jp/top/soshiki/somu/2/2/3/2047.html",
+          "label": "運転免許証自主返納者への支援内容が変わります／高千穂町",
+          "updated": "2021-02-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の案内は2021年更新です。対象年齢、券の有効期限・利用時の差額、現在の申請条件は総務課（0982-73-1200）へ確認してください。"
+    },
+    {
+      "slug": "hinokage",
+      "name": "日之影町",
+      "status": "henno",
+      "summary": "免許の自主返納者に、すまいるバス券50枚とタクシー券を交付する案内があります。",
+      "programs": [
+        {
+          "name": "自主返納者へのすまいるバス券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "日之影町に居住する運転免許自主返納者。個別の対象年齢は記載なし。",
+          "benefit": "すまいるバス券10枚×5組（50枚）と、タクシー500円券20枚×5組を交付。",
+          "fare": "通常片道300円。支援券で利用する際の追加負担や券の期限は記載なし。",
+          "routes": "日之影町コミュニティバス「すまいるバス」。",
+          "apply": "県警の一覧は町総務課を案内。申請期限・必要書類は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.hinokage.lg.jp/docs/2016020200106/",
+              "label": "日之影町コミュニティバス「すまいるバス」について【令和6年10月改正】 | 日之影町",
+              "updated": "2024-09-25",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.hinokage.lg.jp/docs/2016020200106/",
+          "label": "日之影町コミュニティバス「すまいるバス」について【令和6年10月改正】 | 日之影町",
+          "updated": "2024-09-25",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県警の令和8年一覧に支援が掲載されていますが、個別の対象年齢・申請方法・券の期限は記載がありません。町総務課（町代表0982-87-3800）へ確認してください。バス案内は2024年掲載です。"
+    },
+    {
+      "slug": "gokase",
+      "name": "五ヶ瀬町",
+      "status": "active",
+      "summary": "要介護・要支援認定者はGラインの運賃が半額。高齢者福祉計画には返納者へのバス乗車券支援もあります。",
+      "programs": [
+        {
+          "name": "Gラインの要介護・要支援認定者運賃減免",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "要介護認定または要支援認定を受けている人。年齢・居住条件は記載なし。",
+          "benefit": "コミュニティバスの運賃を半額に減免。",
+          "fare": "通常大人1回200円の半額。定期券への適用は記載なし。",
+          "routes": "五ヶ瀬町コミュニティバス（Gライン）。",
+          "apply": "運賃を支払う際に、身分を証明する手帳等を運転手に提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.gokase.miyazaki.jp/kakuka/kikaku/110.html",
+              "label": "コミュニティバス(Gライン)について／五ヶ瀬町",
+              "updated": "2024-08-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納高齢者へのコミュニティバス乗車券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証を自主返納した高齢者。具体的な年齢・居住条件は計画に記載なし。",
+          "benefit": "タクシー券またはコミュニティバス乗車券の配付。額・枚数は記載なし。",
+          "fare": "券の利用時の支払い、有効期限は記載なし。",
+          "routes": "コミュニティバス。具体的な路線は記載なし。",
+          "apply": "申請窓口・必要書類は記載なし。町福祉課に確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.gokase.miyazaki.jp/material/files/group/5/9kikeikaku.pdf",
+              "label": "五ヶ瀬町高齢者福祉計画・第9期介護保険事業計画（令和6〜8年度）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.gokase.miyazaki.jp/kakuka/kikaku/110.html",
+          "label": "コミュニティバス(Gライン)について／五ヶ瀬町",
+          "updated": "2024-08-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.gokase.miyazaki.jp/material/files/group/5/9kikeikaku.pdf",
+          "label": "五ヶ瀬町高齢者福祉計画・第9期介護保険事業計画（令和6〜8年度）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "バス案内は2024年更新で、返納者へのバス券は令和6〜8年度計画に掲載されています。一方、県警の令和8年一覧は商工会商品券を案内しています。バス券の継続・交付額・対象年齢・申請は福祉課（0982-82-1702）、Gラインの現行減免は企画課（0982-82-1717）へ確認してください。"
+    },
+    {
+      "slug": "miyakonojo",
+      "name": "都城市",
+      "status": "active",
+      "summary": "敬老特別乗車券で市内の路線バスに1回100円で乗れます。70歳以上と、65〜69歳の免許非所持者・返納者が対象です。",
+      "programs": [
+        {
+          "name": "70歳以上の敬老特別乗車券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "都城市在住の満70歳以上の人。",
+          "benefit": "敬老特別乗車券を交付。有効期限は交付日から当該年度3月31日。",
+          "fare": "1回100円。回数券・バスカードでの支払い不可。新規・更新時に年1回1,000円（生活保護受給者は保護証明書を提出して免除申請）。",
+          "routes": "都城市内の宮崎交通・鹿児島交通・本村交通・高崎観光の路線バス。高速バスと特急バスの高速道路区間を除く。特急バスは一部停留所に乗降制限あり。",
+          "apply": "本人確認書類を持参。新規・再交付は代理申請不可。本庁福祉課、各総合支所地域生活課、各地区市民センターで手続き。顔写真は窓口で無料撮影可。更新は現在の券を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyakonojo.miyazaki.jp/soshiki/34/2232.html",
+              "label": "敬老特別乗車券(バス券)を交付します - 宮崎県都城市ホームページ",
+              "updated": "2026-06-25",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "65〜69歳の免許非所持者の敬老特別乗車券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "都城市在住の満65歳以上70歳未満で運転免許証を所持していない人。",
+          "benefit": "敬老特別乗車券を交付。有効期限は交付日から当該年度3月31日。",
+          "fare": "1回100円。回数券・バスカードでの支払い不可。新規・更新時に年1回1,000円（生活保護受給者は保護証明書を提出して免除申請）。",
+          "routes": "都城市内の宮崎交通・鹿児島交通・本村交通・高崎観光の路線バス。高速バスと特急バスの高速道路区間を除く。特急バスは一部停留所に乗降制限あり。",
+          "apply": "本人確認書類を持参。新規・再交付は代理申請不可。本庁福祉課、各総合支所地域生活課、各地区市民センターで手続き。顔写真は窓口で無料撮影可。更新は現在の券を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyakonojo.miyazaki.jp/soshiki/34/2232.html",
+              "label": "敬老特別乗車券(バス券)を交付します - 宮崎県都城市ホームページ",
+              "updated": "2026-06-25",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "65〜69歳の自主返納者の敬老特別乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "都城市在住の満65歳以上70歳未満で運転免許証を自主返納した人。",
+          "benefit": "敬老特別乗車券を交付。有効期限は交付日から当該年度3月31日。",
+          "fare": "1回100円。回数券・バスカードでの支払い不可。新規・更新時に年1回1,000円（生活保護受給者は保護証明書を提出して免除申請）。",
+          "routes": "都城市内の宮崎交通・鹿児島交通・本村交通・高崎観光の路線バス。高速バスと特急バスの高速道路区間を除く。特急バスは一部停留所に乗降制限あり。",
+          "apply": "顔写真付きの身分証明書と、取消通知書または運転経歴証明書を持参。新規・再交付は代理申請不可。本庁福祉課、各総合支所地域生活課、各地区市民センターで手続き。顔写真は窓口で無料撮影可。更新は現在の券を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyakonojo.miyazaki.jp/soshiki/34/2232.html",
+              "label": "敬老特別乗車券(バス券)を交付します - 宮崎県都城市ホームページ",
+              "updated": "2026-06-25",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.miyakonojo.miyazaki.jp/soshiki/34/2232.html",
+          "label": "敬老特別乗車券(バス券)を交付します - 宮崎県都城市ホームページ",
+          "updated": "2026-06-25",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "mimata",
+      "name": "三股町",
+      "status": "henno",
+      "summary": "70歳以上で免許を自主返納した人に、くいまーるの回数券160回分を交付します。",
+      "programs": [
+        {
+          "name": "自主返納者へのくいまーる回数券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "三股町居住者で、自主返納した日に満70歳以上、かつ町税等の滞納がない人。免許の有効期限が切れた後の返納は対象外。",
+          "benefit": "町の案内は回数券16回分×10冊（160回分）を交付。",
+          "fare": "支援券で利用する際の追加負担や有効期限は記載なし。",
+          "routes": "町コミュニティバス「くいまーる」。",
+          "apply": "返納日の翌日から起算して1年以内に、申請書と取消通知書など返納が分かる資料を提出。申請書は総務課行政係。代理申請は代理人の身分証明書が必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.mimata.lg.jp/contents/824.html",
+              "label": "高齢者運転免許証自主返納支援事業について - 三股町公式ホームページ",
+              "updated": "2025-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.mimata.lg.jp/contents/824.html",
+          "label": "高齢者運転免許証自主返納支援事業について - 三股町公式ホームページ",
+          "updated": "2025-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.mimata.lg.jp/contents/2496.html",
+          "label": "令和8年4月からの「くいまーる」時刻表 - 三股町公式ホームページ",
+          "updated": "2026-04-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の返納支援案内は2025年更新で160回分、県警の令和8年一覧は120回分です。現在の枚数、券の期限・利用時の支払いは総務課行政係（0986-52-1112）へ確認してください。"
+    },
+    {
+      "slug": "kobayashi",
+      "name": "小林市",
+      "status": "active",
+      "summary": "自主返納者向け乗車証でコミュニティバスが1回100円。悠々パス所持者向けの100円運賃も案内されています。",
+      "programs": [
+        {
+          "name": "自主返納者のコミュニティバス割引",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上で運転免許証を自主返納した人。市の料金案内に居住条件は記載なし。",
+          "benefit": "返納後3年間、専用乗車証提示で割引運賃。",
+          "fare": "1回100円。県警の一覧には半額と記載。",
+          "routes": "小林市コミュニティバス。",
+          "apply": "運賃支払い時に小林市コミュニティバス運転免許証返納者乗車証を提示。乗車証の発行手続きは記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/2/2632.html",
+              "label": "コミュニティバス(料金など)／宮崎県小林市公式ホームページ -Kobayashi City-",
+              "updated": "2022-02-18",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "悠々パス所持者のコミュニティバス割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "宮崎交通発行の特殊定期券「悠々パス」を所持している人。市の案内に年齢・居住条件は記載なし。",
+          "benefit": "市コミュニティバス全路線を割引運賃で利用。",
+          "fare": "1回100円。",
+          "routes": "小林市コミュニティバス全路線。",
+          "apply": "運転士に悠々パスを提示。対象商品の現在の取扱いは市に確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/2/2632.html",
+              "label": "コミュニティバス(料金など)／宮崎県小林市公式ホームページ -Kobayashi City-",
+              "updated": "2022-02-18",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/2/2632.html",
+          "label": "コミュニティバス(料金など)／宮崎県小林市公式ホームページ -Kobayashi City-",
+          "updated": "2022-02-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の料金案内は2022年更新です。返納者乗車証の発行方法・居住条件、県警の「半額」と市の「100円」の対応、悠々パスの現行対象商品は企画政策課（0984-23-0456）へ確認してください。"
+    },
+    {
+      "slug": "ebino",
+      "name": "えびの市",
+      "status": "notfound",
+      "summary": "確認した高齢者福祉・路線バスの案内では、市独自の高齢者バス運賃助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.ebino.lg.jp/soshiki/fukushi/2/1/1148.html",
+          "label": "高齢者のための福祉／えびの市",
+          "updated": "2023-07-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ebino.lg.jp/soshiki/kikaku/17/bus/index.html",
+          "label": "路線バス／えびの市",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の高齢者福祉案内は2023年更新です。バス助成の有無は福祉課（0984-35-1115）または市民協働課（市代表0984-35-1111）へ確認してください。"
+    },
+    {
+      "slug": "takaharu",
+      "name": "高原町",
+      "status": "notfound",
+      "summary": "町の交通・高齢者福祉・返納支援を確認しましたが、町独自の高齢者バス運賃助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.takaharu.lg.jp/soshiki/20230403/index-2.html",
+          "label": "福祉課（高齢者あんしん係・助成案内）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "高齢者バス助成の有無は総務課または福祉課（町代表0984-42-2111）へ確認してください。福祉課一覧のページ更新日は記載されていません。"
+    },
+    {
+      "slug": "nichinan",
+      "name": "日南市",
+      "status": "henno",
+      "summary": "県警の令和8年一覧では、免許返納者がコミュニティバス券などを合計1万円分選べます。",
+      "programs": [
+        {
+          "name": "自主返納者へのコミュニティバス券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "日南市に居住する運転免許返納者。個別の対象年齢は一覧に記載なし。",
+          "benefit": "タクシー券、コミュニティバス券、宮交ニモカカードから合計10,000円分を交付。",
+          "fare": "バス券利用時の追加負担、額面・枚数・有効期限は記載なし。",
+          "routes": "日南市コミュニティバス。ニモカカードが使えるバスは支援一覧に記載なし。",
+          "apply": "地域自治課市民生活係へ問い合わせ。申請期限・必要書類は一覧に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nichinan.lg.jp/soshikikarasagasu/miraisoseika/2/2/1124.html",
+              "label": "日南市コミュニティバス／日南市ホームページ",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nichinan.lg.jp/soshikikarasagasu/miraisoseika/2/2/1124.html",
+          "label": "日南市コミュニティバス／日南市ホームページ",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の返納支援の詳細は確認できていません。対象年齢、申請期限・必要書類、券の額面・有効期限・利用時の負担は地域自治課市民生活係（0987-31-1176）へ確認してください。県警PDFは更新日記載なしで令和8年4月7日現在の一覧です。"
+    },
+    {
+      "slug": "kushima",
+      "name": "串間市",
+      "status": "henno",
+      "summary": "免許返納者に、よかバス回数券3組を交付する案内があります。",
+      "programs": [
+        {
+          "name": "自主返納者へのよかバス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "串間市に居住する運転免許返納者。個別の対象年齢は一覧に記載なし。",
+          "benefit": "コミュニティバス「よかバス」の回数券3組。支援券1組の枚数は記載なし。",
+          "fare": "通常運賃は市街地循環線100円・集落線200円。支援券での追加負担や有効期限は記載なし。",
+          "routes": "串間市コミュニティバス「よかバス」。",
+          "apply": "市民協働課へ問い合わせ。必要書類・申請期限は一覧に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+              "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kushima.lg.jp/main/city/tiitki/bus/post-60.html",
+              "label": "コミュニティバス「よかバス」の乗車運賃",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
+          "label": "高齢者運転免許証返納メリット一覧表（令和8年4月7日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kushima.lg.jp/main/city/tiitki/bus/post-60.html",
+          "label": "コミュニティバス「よかバス」の乗車運賃",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県警の令和8年一覧に支援がありますが、対象年齢、支援券1組の枚数・期限・使い方や申請手続きは記載がありません。市民協働課（市代表0987-72-1111）へ確認してください。乗車運賃の案内は更新日記載なしです。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.miyazaki.lg.jp/police/kotsuanzen/koreisha/hennou.html",
+    "label": "県の運転免許返納支援案内",
+    "checked": "2026-10-07"
+  }
+}
