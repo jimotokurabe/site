@@ -69,7 +69,7 @@
 
 ### これから作る
 
-2026年10月6日の指示により、**高齢者バス助成を兵庫県41市町から作り、全国へ展開する**ことを最優先にする。比較項目は対象・条件、助成の中身、乗車時の料金、使えるバス、申し込み。通常の高齢者向け支援と免許返納限定の支援を分ける。公開ページは `hyogo-bus.html`・`osaka-bus.html`・`kyoto-bus.html`・`nara-bus.html`・`shiga-bus.html`・`wakayama-bus.html`・`mie-bus.html`・`aichi-bus.html`・`gifu-bus.html`・`shizuoka-bus.html`・`tottori-bus.html`・`shimane-bus.html`・`okayama-bus.html`・`hiroshima-bus.html`・`yamaguchi-bus.html`（15府県465市町村、2026年10月6日調査）。調査・照合・府県追加の手順は [BUS.md](BUS.md)。2026年10月7日、関東・北陸甲信13都県501区市町村を追加下書きとして作成。追加分はdraft/noindexを維持し、公開済み465と合わせ966自治体。今回の追加分の公開指示はまだ受けていない。2026年10月6日にオーナーの公開指示を受け、15府県の `data/<県>-bus.json` は `draft: false` に変更して公開。下の他テーマの順番は、バス助成の初期展開後に見直す。
+2026年10月6日の指示により、**高齢者バス助成を兵庫県41市町から作り、全国へ展開する**ことを最優先にする。比較項目は対象・条件、助成の中身、乗車時の料金、使えるバス、申し込み。通常の高齢者向け支援と免許返納限定の支援を分ける。公開ページは `hyogo-bus.html`・`osaka-bus.html`・`kyoto-bus.html`・`nara-bus.html`・`shiga-bus.html`・`wakayama-bus.html`・`mie-bus.html`・`aichi-bus.html`・`gifu-bus.html`・`shizuoka-bus.html`・`tottori-bus.html`・`shimane-bus.html`・`okayama-bus.html`・`hiroshima-bus.html`・`yamaguchi-bus.html`（15府県465市町村、2026年10月6日調査）。調査・照合・府県追加の手順は [BUS.md](BUS.md)。2026年10月7日、関東・北陸甲信13都県501区市町村を追加下書きとして作成。追加分はdraft/noindexを維持し、公開済み465と合わせ966自治体。続けて九州・四国・福島12県387自治体を下書き追加し、累計40都府県1,353自治体（公開済み465・下書き888）。残り7道県388自治体で全国調査が完了する。追加下書きの公開指示はまだ受けていない。2026年10月6日にオーナーの公開指示を受け、15府県の `data/<県>-bus.json` は `draft: false` に変更して公開。下の他テーマの順番は、バス助成の初期展開後に見直す。
 
 | 順 | 制度 | 検索の多さ | 5年での増え方 | 選んだ理由 | 作る前に確かめること |
 |---|---|---:|---|---|---|
