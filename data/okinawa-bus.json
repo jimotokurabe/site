@@ -1,0 +1,1185 @@
+{
+  "checked": "2026-10-07",
+  "draft": false,
+  "cities": [
+    {
+      "slug": "naha",
+      "name": "那覇市",
+      "status": "active",
+      "summary": "市内在住60歳以上は、福祉施設等を巡回する「ふくちゃん号」を無料で利用できます。",
+      "programs": [
+        {
+          "name": "福祉バスふくちゃん号",
+          "kind": "discount",
+          "age_min": 60,
+          "eligibility": "那覇市民で60歳以上の人。",
+          "benefit": "福祉バスに無料乗車。福祉施設のほか病院・買物にも利用可。",
+          "fare": "無料。",
+          "routes": "首里・本庁（月水金）、真和志・小禄（火木土）の4コース。",
+          "apply": "所定バス停で手を上げて乗車。事前申請の記載なし。ちゃーがんじゅう課098-862-9010へ利用確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.info.city.naha.okinawa.jp/kurashi/y001087.html",
+              "label": "公式案内",
+              "updated": "2024-09-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.info.city.naha.okinawa.jp/kurashi/y001087.html",
+          "label": "公式案内",
+          "updated": "2024-09-04",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "FAQは2024年回答で、現在変更の可能性と明記。現行の対象・ルートをちゃーがんじゅう課098-862-9010へ確認してください。"
+    },
+    {
+      "slug": "nago",
+      "name": "名護市",
+      "status": "active",
+      "summary": "65歳以上はコミュニティバス「なご丸」の3路線を無料で利用できます。乗降時に年齢確認書類が必要です。",
+      "programs": [
+        {
+          "name": "なご丸高齢者無料乗車",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の人。市民限定の記載なし。年齢を確認できるものが必要。",
+          "benefit": "なご丸を無料で利用。",
+          "fare": "無料（一般は循環線200円、他2線同一エリア200円・エリア移動400円）。",
+          "routes": "循環線、二見以北線、羽地・屋我地線。",
+          "apply": "乗降時に免許証・保険証・年金手帳のいずれか提示、確認できない場合一般運賃。まちなか再開発・公共交通課0980-54-1313。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nago.okinawa.jp/articles/2024121600046/",
+              "label": "公式案内",
+              "updated": "2026-02-02",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nago.okinawa.jp/articles/2024121600046/file_contents/hutamiisoku_leafle2.pdf",
+              "label": "二見以北線リーフレット（2025年版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nago.okinawa.jp/articles/2024121600046/",
+          "label": "公式案内",
+          "updated": "2026-02-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nago.okinawa.jp/articles/2024121600046/file_contents/hutamiisoku_leafle2.pdf",
+          "label": "二見以北線リーフレット（2025年版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "リーフレットの更新日記載なし。現行案内は2026年2月更新。利用時の運行は公共交通課0980-54-1313へ確認してください。"
+    },
+    {
+      "slug": "motobu",
+      "name": "本部町",
+      "status": "notfound",
+      "summary": "町の福祉案内などを確認しましたが、高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.motobu.okinawa.jp/doc/2023112800038/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "制度の不存在を示すものではありません。町福祉課又は町役場0980-47-2101へ確認してください。"
+    },
+    {
+      "slug": "nakijin",
+      "name": "今帰仁村",
+      "status": "notfound",
+      "summary": "高齢者支援ガイドを確認しましたが、高齢者個人向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.nakijin.jp/material/files/group/1/reiwa7nenndogaido.pdf",
+          "label": "令和7年度高齢者支援ガイド",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "制度の不存在を示すものではありません。村地域包括支援センター0980-51-5744へ確認してください。"
+    },
+    {
+      "slug": "kunigami",
+      "name": "国頭村",
+      "status": "active",
+      "summary": "村営バス定期路線は65歳以上無料、正式返納者は半額です。現在の利用手続きは確認が必要です。",
+      "programs": [
+        {
+          "name": "村営バス65歳以上無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上の人。2023年支援一覧では村内外を問わない。",
+          "benefit": "定期路線村営バス無料。",
+          "fare": "無料。",
+          "routes": "国頭村営バス奥線・東線。",
+          "apply": "年齢確認書類・申請方法は総務課0980-41-2101へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.kunigami.okinawa.jp/sisetu/",
+              "label": "公式案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.vill.kunigami.okinawa.jp/kunigami-village/wp-content/uploads/2023/03/f74490d243b1d82b0ae3d17bec018fcb.pdf",
+              "label": "2023年4月時点定住支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "村営バス自主返納者半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を自主返納した人。",
+          "benefit": "村営バス運賃半額。",
+          "fare": "通常区間運賃の半額。",
+          "routes": "国頭村営バス奥線・東線。",
+          "apply": "証明書・申請方法・期間は総務課0980-41-2101へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.kunigami.okinawa.jp/sisetu/",
+              "label": "公式案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.kunigami.okinawa.jp/sisetu/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.kunigami.okinawa.jp/kunigami-village/wp-content/uploads/2023/03/f74490d243b1d82b0ae3d17bec018fcb.pdf",
+          "label": "2023年4月時点定住支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村営バス施設案内は更新日なし。2023年一覧に予約デマンドバス65歳半額もありますが、その後2025年AIバス導入があるため現行関係は未確認。総務課0980-41-2101へ対象・手続き・運賃を確認してください。"
+    },
+    {
+      "slug": "ogimi",
+      "name": "大宜味村",
+      "status": "notfound",
+      "summary": "村の外出支援はリフト付き車両等による送迎です。高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.ogimi.okinawa.jp/section/reiki_int/reiki_honbun/q913RG00000309.html",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。村福祉保健課・地域包括支援センター0980-44-3011へ確認。"
+    },
+    {
+      "slug": "higashi",
+      "name": "東村",
+      "status": "notfound",
+      "summary": "村コミュニティバスは誰でも無料です。高齢者に限定したバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.higashi.okinawa.jp/soshikikarasagasu/somuzaiseika/11/468.html",
+          "label": "公式案内",
+          "updated": "2026-03-09",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。総務財政課0980-43-2201へ確認。"
+    },
+    {
+      "slug": "iheya",
+      "name": "伊平屋村",
+      "status": "notfound",
+      "summary": "コミュニティバスの公式運行案内を確認しましたが、高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.iheya.okinawa.jp/soshiki/9/1156.html",
+          "label": "公式案内",
+          "updated": "2026-08-03",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。観光交通課0980-46-2177へ確認。"
+    },
+    {
+      "slug": "izena",
+      "name": "伊是名村",
+      "status": "notfound",
+      "summary": "村の福祉案内等を確認しましたが、高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://vill.izena.okinawa.jp/lifeevent/fukushi/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。村役場0980-45-2001へ確認。"
+    },
+    {
+      "slug": "ie",
+      "name": "伊江村",
+      "status": "notfound",
+      "summary": "高齢者福祉の公式サービス案内を確認しましたが、バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.iejima.org/document/2024091000037/file_contents/20251218.pdf",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。住民課0980-49-2002へ確認。"
+    },
+    {
+      "slug": "kin",
+      "name": "金武町",
+      "status": "notfound",
+      "summary": "町の高齢者通院支援はリフト車両送迎です。高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kin.okinawa.jp/iryo_kenko_fukushi/koreishafukushi_kaigo/koureisya-sa-bisu/2244.html",
+          "label": "公式案内",
+          "updated": "2026-03-06",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。保健福祉課098-968-3559へ確認。"
+    },
+    {
+      "slug": "ginoza",
+      "name": "宜野座村",
+      "status": "active",
+      "summary": "村内の65歳以上や免許返納・特定の失効者は、登録と予約により「ぎ～のくんバス」を無料で利用できる要綱があります。現在の実証継続は確認が必要です。",
+      "programs": [
+        {
+          "name": "ぎ～のくんバス高齢者無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "村内に住所がある満65歳以上で介助なしに一人で乗降できる人。通学目的は除外。",
+          "benefit": "デマンドバスの実証運行を無料利用。",
+          "fare": "無料。",
+          "routes": "村内の指定場所等。",
+          "apply": "事前に利用登録申請し登録者証交付。おおむね30分前まで予約、9時台は前日まで。村役場098-968-5111へ現行の登録・予約先を確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www1.g-reiki.net/vill.ginoza/reiki_honbun/q918RG00000936.html",
+              "label": "実証無償運行要綱（2023年11月施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "ぎ～のくんバス返納・失効者無料",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "村内に住所がある満16歳以上の免許返納者又は病気等（近視等）による免許失効者で、介助なしに一人で乗降できる人。通学目的は除外。",
+          "benefit": "デマンドバスの実証運行を無料利用。",
+          "fare": "無料。",
+          "routes": "村内の指定場所等。",
+          "apply": "事前に利用登録申請し登録者証交付。おおむね30分前まで予約、9時台は前日まで。村役場098-968-5111へ現行の登録・予約先を確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www1.g-reiki.net/vill.ginoza/reiki_honbun/q918RG00000936.html",
+              "label": "実証無償運行要綱（2023年11月施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www1.g-reiki.net/vill.ginoza/reiki_honbun/q918RG00000936.html",
+          "label": "実証無償運行要綱（2023年11月施行）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2023年施行の実証要綱で対象・無料を確認しましたが、2026年の継続期間・登録窓口は未確認。村役場098-968-5111へ確認してください。"
+    },
+    {
+      "slug": "onna",
+      "name": "恩納村",
+      "status": "notfound",
+      "summary": "村の高齢者福祉案内では買物等タクシー助成を確認しました。バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.onna.okinawa.jp/living/nursing/1716529434/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。福祉課098-966-1207へ確認。"
+    },
+    {
+      "slug": "uruma",
+      "name": "うるま市",
+      "status": "notfound",
+      "summary": "市の高齢者外出支援は福祉車両送迎です。自治体独自の高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.uruma.lg.jp/1004003000/contents/5867.html",
+          "label": "公式案内",
+          "updated": "2026-05-12",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.uruma.lg.jp/1009001000/contents/22444.html",
+          "label": "市の免許返納者割引制度のページ",
+          "updated": "2023-12-07",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。介護長寿課098-973-3208へ確認。"
+    },
+    {
+      "slug": "okinawa",
+      "name": "沖縄市",
+      "status": "active",
+      "summary": "循環バスは65歳以上100円、正式返納者50円です。乗車時の証明提示が必要で、それぞれお得な回数券もあります。",
+      "programs": [
+        {
+          "name": "循環バス65歳以上割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の人。市民限定の記載なし。",
+          "benefit": "循環バス1回100円。100円券11枚を1,000円で販売。",
+          "fare": "通常200円が100円、先払い。",
+          "routes": "沖縄市循環バス北部・中部・西部・東部の4ルート。",
+          "apply": "乗車時に免許証・保険証・年金手帳等提示。回数券は市役所5F都市交通窓口（平日9～17時）、利用時も証明提示。098-939-1212内線2519・2520。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.okinawa.okinawa.jp/k036-001/chiikikankyou/koukyoukoutsuu/shibus/25042.html",
+              "label": "市の沖縄市循環バスのページ",
+              "updated": "2026-05-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "循環バス自主返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "免許を自主返納し運転経歴証明書を提示する人。",
+          "benefit": "循環バス1回50円。50円券11枚を500円で販売。",
+          "fare": "通常200円が50円、先払い。",
+          "routes": "沖縄市循環バス4ルート（路線バスでは券使用不可）。",
+          "apply": "乗車時に運転経歴証明書提示。回数券は市役所5F都市交通窓口で購入、利用時も証明提示。098-939-1212。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.okinawa.okinawa.jp/k036-001/chiikikankyou/koukyoukoutsuu/shibus/25042.html",
+              "label": "市の沖縄市循環バスのページ",
+              "updated": "2026-05-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.okinawa.okinawa.jp/k036-001/chiikikankyou/koukyoukoutsuu/shibus/25042.html",
+          "label": "市の沖縄市循環バスのページ",
+          "updated": "2026-05-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "yomitan",
+      "name": "読谷村",
+      "status": "active",
+      "summary": "65歳以上は鳳バス1回100円です。1日券・回数券・定期券にも高齢者料金があります。",
+      "programs": [
+        {
+          "name": "鳳バス65歳以上割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。村民限定の記載なし。",
+          "benefit": "1回100円、1日券200円、回数券11枚1,000円、1月定期2,500円。",
+          "fare": "一般1回200円に対し100円。",
+          "routes": "鳳バス北・東西・南・休日南北ルート。",
+          "apply": "1日券は車内、回数券・定期券は読谷バスターミナル098-958-2015で販売。年齢確認の方法は生活環境課098-982-9214へ確認。",
+          "notes": [
+            "2026年9月1日にルート改定。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.vill.yomitan.okinawa.jp/soshiki/seikatsukankyo/gyomu/doro_kotsu/7100.html",
+              "label": "公式案内",
+              "updated": "2026-09-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.yomitan.okinawa.jp/soshiki/seikatsukankyo/gyomu/doro_kotsu/7100.html",
+          "label": "公式案内",
+          "updated": "2026-09-04",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2026年9月の料金を確認しましたが、年齢証明の提示方法は本文に記載なし。生活環境課098-982-9214へ確認してください。"
+    },
+    {
+      "slug": "kadena",
+      "name": "嘉手納町",
+      "status": "notfound",
+      "summary": "町の高齢者福祉事業は送迎やタクシー助成を案内しています。バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kadena.okinawa.jp/life/kur2855.html",
+          "label": "公式案内",
+          "updated": "2025-03-31",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。福祉課（町役場098-956-1111）へ確認。"
+    },
+    {
+      "slug": "chatan",
+      "name": "北谷町",
+      "status": "active",
+      "summary": "65歳以上と介助者、免許自主返納者はC-BUS1回150円です。事前登録と予約が必要です。",
+      "programs": [
+        {
+          "name": "C-BUS高齢者割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上及びその介助者。町民限定の記載なし。",
+          "benefit": "C-BUS1回150円。",
+          "fare": "基本300円の半額150円。",
+          "routes": "町コミュニティバスの指定乗降所。",
+          "apply": "事前利用登録が必要。電話098-936-8651、Web又は町企画財政課へ用紙（FAX可）で登録。一週間前から当日30分前まで予約。証明の提示方法は企画財政課098-936-1234へ確認。",
+          "notes": [
+            "月～土8～18時。日曜・祝日・慰霊の日・12月30日～1月3日は運休。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.chatan.jp/seikatsuguide/communitybus/demand_c-bus/chousei2588.html",
+              "label": "町のC-BUSのページ",
+              "updated": "2026-06-10",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.chatan.jp/seikatsuguide/communitybus/demand_c-bus/2202106210.html",
+              "label": "公式案内",
+              "updated": "2024-12-09",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "C-BUS自主返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証の自主返納者。町民限定の記載なし。返納割引の年齢条件は要確認。",
+          "benefit": "C-BUS1回150円。",
+          "fare": "基本300円の半額150円。",
+          "routes": "町コミュニティバスの指定乗降所。",
+          "apply": "事前利用登録が必要。電話098-936-8651、Web又は町企画財政課へ用紙（FAX可）で登録。一週間前から当日30分前まで予約。証明の提示方法は企画財政課098-936-1234へ確認。",
+          "notes": [
+            "月～土8～18時。日曜・祝日・慰霊の日・12月30日～1月3日は運休。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.chatan.jp/seikatsuguide/communitybus/demand_c-bus/chousei2588.html",
+              "label": "町のC-BUSのページ",
+              "updated": "2026-06-10",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.chatan.jp/seikatsuguide/communitybus/demand_c-bus/2202106210.html",
+              "label": "公式案内",
+              "updated": "2024-12-09",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.chatan.jp/seikatsuguide/communitybus/demand_c-bus/chousei2588.html",
+          "label": "町のC-BUSのページ",
+          "updated": "2026-06-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.chatan.jp/seikatsuguide/communitybus/demand_c-bus/2202106210.html",
+          "label": "公式案内",
+          "updated": "2024-12-09",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.okinawa.jp/docs/2026021700024/file_contents/R80929.pdf",
+          "label": "沖縄県警・自主返納者優遇措置一覧",
+          "updated": "2026-09-29",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の2026年6月料金表は自主返納者の年齢を明記していませんが、県警の2026年9月一覧は65歳以上としています。返納割引の年齢条件と証明の提示方法は企画財政課（098-936-1234）へ確認してください。登録・予約案内は2024年更新です。"
+    },
+    {
+      "slug": "kitanakagusuku",
+      "name": "北中城村",
+      "status": "unknown",
+      "summary": "現在の公式案内は65歳以上・返納者200円の予約型乗合タクシーmobiです。従来のグスクめぐりんの現行バス助成は確認を保留しています。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.kitanakagusuku.lg.jp/kakuka/kikaku/kikaku/bascycle/4610.html",
+          "label": "村のAIオンデマンド交通のページ",
+          "updated": "2026-07-10",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "旧めぐりんの終了時期・支援の扱いを確認できていません。現在の町内移動の案内は乗合タクシーです。バス向け支援の有無は企画振興課（098-935-2269）に確認してください。"
+    },
+    {
+      "slug": "nakagusuku",
+      "name": "中城村",
+      "status": "active",
+      "summary": "65歳以上は護佐丸バス1回100円です。予約不要で、同バス同士の乗継は無料です。",
+      "programs": [
+        {
+          "name": "護佐丸バス65歳以上割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。村民限定の記載なし。",
+          "benefit": "護佐丸バス1回100円。回数券も1回100円相当。",
+          "fare": "現金・回数券・キャッシュレスとも100円（一般現金200円）。バス同士乗継無料。",
+          "routes": "村の護佐丸バス。",
+          "apply": "予約不要。回数券は役場企画課（10枚綴）や案内の販売店（50枚5,000円）で購入。年齢証明は企画課098-895-2138へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.nakagusuku.okinawa.jp/sangyo/koukyokotsu/bus/",
+              "label": "村の護佐丸バスのページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.nakagusuku.okinawa.jp/sangyo/koukyokotsu/bus/",
+          "label": "村の護佐丸バスのページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "本文に更新日なし（掲載時刻表は令和7年10月版）。現行料金と年齢証明の提示方法は企画課098-895-2138へ確認してください。"
+    },
+    {
+      "slug": "nishihara",
+      "name": "西原町",
+      "status": "notfound",
+      "summary": "町の高齢者福祉案内等を確認しましたが、バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.nishihara.okinawa.jp/soshiki/7/index.html",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。福祉課098-945-4791へ確認。"
+    },
+    {
+      "slug": "ginowan",
+      "name": "宜野湾市",
+      "status": "notfound",
+      "summary": "令和8年度の高齢者福祉パンフレットを確認しましたが、バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.ginowan.lg.jp/material/files/group/25/R8_chuishiji.pdf",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。介護長寿課（市役所098-893-4411）へ確認。"
+    },
+    {
+      "slug": "urasoe",
+      "name": "浦添市",
+      "status": "notfound",
+      "summary": "市の外出支援は移送車による送迎サービスです。高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.urasoe.lg.jp/doc/609e86213d59ae2434c000a1/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。いきいき高齢支援課098-876-1292へ確認。"
+    },
+    {
+      "slug": "tomigusuku",
+      "name": "豊見城市",
+      "status": "notfound",
+      "summary": "市の高齢者福祉案内は介護の通院等送迎を支援しています。バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.tomigusuku.lg.jp/soshiki/3/1016/gyomuannai/4/3/1317.html",
+          "label": "公式案内",
+          "updated": "2023-02-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。障がい長寿課098-856-4292へ確認。"
+    },
+    {
+      "slug": "haebaru",
+      "name": "南風原町",
+      "status": "notfound",
+      "summary": "町の現行外出支援はタクシー料金の助成です。高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.haebaru.lg.jp/soshiki/10/3337.html",
+          "label": "公式案内",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。福祉課098-889-4416へ確認。"
+    },
+    {
+      "slug": "yonabaru",
+      "name": "与那原町",
+      "status": "active",
+      "summary": "町内の65歳以上で自分で乗降できる人は、申請した乗車券で町内バスを無料利用できる規則があります。2026年度の条件は確認が必要です。",
+      "programs": [
+        {
+          "name": "町内バス高齢者無料",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "与那原町に住所を有する65歳以上で自分で乗降できる人と、その付添い者。",
+          "benefit": "申請し乗車券交付を受けて町内バス無料。",
+          "fare": "無料。",
+          "routes": "与那原小学校区の西コース・与那原東小学校区の東コース。役場・マリンプラザ東浜で乗継可。",
+          "apply": "福祉課・ふれあいサロン・バス車内で申請書配布と受付。審査後乗車券郵送、乗車時提示。福祉課098-945-1525。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www1.g-reiki.net/yonabaru/reiki_honbun/q935RG00000946.html",
+              "label": "町内バス実証実験事業規則",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.yonabaru.okinawa.jp/soshiki/10/1306.html",
+              "label": "公式案内",
+              "updated": "2025-05-02",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.yonabaru.okinawa.jp/uploaded/attachment/6244.pdf",
+              "label": "令和8年度総合計画実施計画",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www1.g-reiki.net/yonabaru/reiki_honbun/q935RG00000946.html",
+          "label": "町内バス実証実験事業規則",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.yonabaru.okinawa.jp/soshiki/10/1306.html",
+          "label": "公式案内",
+          "updated": "2025-05-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.yonabaru.okinawa.jp/uploaded/attachment/6244.pdf",
+          "label": "令和8年度総合計画実施計画",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "規則で無料を確認し、令和8年度実施計画にも継続の記載があります。ただし申請案内の実証期限は令和8年3月末のまま。2026年度の利用条件は福祉課098-945-1525へ確認してください。"
+    },
+    {
+      "slug": "yaese",
+      "name": "八重瀬町",
+      "status": "active",
+      "summary": "町内の65歳以上で自分で乗降できる人は、病院送迎バスの空席を無料で買物等に使えます。通院以外は乗車証の申請が必要です。",
+      "programs": [
+        {
+          "name": "送迎バス活用モデル事業",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "八重瀬町に住所がある65歳以上で、自身で送迎バスに乗降できる人。",
+          "benefit": "病院送迎バスの空席を買物・外出に無料利用。",
+          "fare": "無料。",
+          "routes": "南部徳洲会病院の送迎バス対象ルート。",
+          "apply": "通院以外の利用は本人確認資料を持参して社会福祉課で乗車証を申請。乗車時提示し目的地を伝える。社会福祉課098-998-9598。",
+          "notes": [
+            "病院利用者の座席を優先し、空席があっても乗車できない場合あり。日祝・年末年始・荒天等運休。"
+          ],
+          "sources": [
+            {
+              "url": "https://yaese.bus-location.coconile.com/guide/",
+              "label": "町公式サイトからリンクするバスロケ利用の手引き",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://yaese.bus-location.coconile.com/guide/",
+          "label": "町公式サイトからリンクするバスロケ利用の手引き",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町公式サイトに掲載された利用案内に更新日なし。現行の対象ルート・乗車証手続きは社会福祉課098-998-9598へ確認してください。"
+    },
+    {
+      "slug": "itoman",
+      "name": "糸満市",
+      "status": "unknown",
+      "summary": "いとちゃんminiには65歳以上の免許返納者への割引案内があります。現行料金表を取得できなかったため、具体条件の掲載を保留しています。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.itoman.lg.jp/soshiki/11/19764.html",
+          "label": "市のいとちゃんmini利用上の注意",
+          "updated": "2023-11-10",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "今回の調査では現行の高齢者向けバス助成条件を確認できませんでした。制度の不存在を示すものではありません。市民生活環境課098-840-8123へ運賃と証明の種類を確認。"
+    },
+    {
+      "slug": "nanjo",
+      "name": "南城市",
+      "status": "active",
+      "summary": "65歳以上の市民は、NバスOKICAを使うとNバス1回80円です。2026年4月～2029年3月の実証支援です。",
+      "programs": [
+        {
+          "name": "Nバス高齢者運賃半額支援",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "南城市民の65歳以上でNバスOKICAを使用する人。",
+          "benefit": "2026年4月～2029年3月は市民運賃160円の半額80円。",
+          "fare": "80円。専用OKICAに事前チャージが必要。",
+          "routes": "南城市内線Nバス。",
+          "apply": "新たな対象者やカード未所持者は市役所1階生きがい推進課098-917-5341で事前手続き。乗車時に所定ボタンを押しNバスOKICAで支払う。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nanjo.okinawa.jp/kurashi/koutsu/1770340041/",
+              "label": "公式案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nanjo.okinawa.jp/kurashi/koutsu/1770340041/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "更新日表示なし。本文の2026年4月～2029年3月の実証期間を確認しました。カード取得時の必要書類は生きがい推進課098-917-5341へ確認してください。"
+    },
+    {
+      "slug": "kumejima",
+      "name": "久米島町",
+      "status": "active",
+      "summary": "町内に住民票がある75歳以上は町営バス無料の案内があります。現在の証明書類は確認が必要です。",
+      "programs": [
+        {
+          "name": "町営バス75歳以上無料",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "久米島町に住民票がある75歳以上の人。",
+          "benefit": "町営バス無料。",
+          "fare": "無料。",
+          "routes": "空港線、兼城港イーフ線、島尻線等の町営バス。",
+          "apply": "後期高齢者医療被保険者証又は町交付の有償バス使用料免除証明書を提示。商工観光課098-985-7131。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kumejima.okinawa.jp/docs/busunchin/",
+              "label": "公式案内",
+              "updated": "2025-08-06",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kumejima.okinawa.jp/docs/busunchin/",
+          "label": "公式案内",
+          "updated": "2025-08-06",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2025年8月更新で1年以上経過しています。現行の無料資格と保険証制度変更後の提示書類は商工観光課098-985-7131へ確認してください。"
+    },
+    {
+      "slug": "tokashiki",
+      "name": "渡嘉敷村",
+      "status": "notfound",
+      "summary": "村の2026年高齢者ケアマップと介護サービス一覧を確認しましたが、バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.tokashiki.okinawa.jp/iryo_kyoiku_fukushi/seikatsufukushi/3156.html",
+          "label": "公式案内",
+          "updated": "2026-04-06",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "今回の調査では現行の高齢者向けバス助成条件を確認できませんでした。制度の不存在を示すものではありません。民生課098-987-2322へ確認。"
+    },
+    {
+      "slug": "zamami",
+      "name": "座間味村",
+      "status": "active",
+      "summary": "75歳以上の村民は村営バス無料です。無料利用時の証明・乗車券の扱いは確認が必要です。",
+      "programs": [
+        {
+          "name": "村営バス75歳以上無料",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "島割料金（座間味村民）の75歳以上。",
+          "benefit": "村営バス無料。",
+          "fare": "無料（村民大人通常150円）。",
+          "routes": "座間味島の村営バス。",
+          "apply": "一般の有料乗車は青のゆくる館の券売機でチケット購入。高齢者無料利用の確認・証明方法は船舶観光課098-987-2614へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.zamami.okinawa.jp/kurashi/shisetsu_kotsu/kokyokotsu/bus/",
+              "label": "公式案内",
+              "updated": "2025-12-09",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.zamami.okinawa.jp/kurashi/shisetsu_kotsu/kokyokotsu/bus/",
+          "label": "公式案内",
+          "updated": "2025-12-09",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "75歳無料の記載は村民料金欄にありますが、無料利用時の証明・乗車券扱いは本文に記載なし。船舶観光課098-987-2614へ確認してください。"
+    },
+    {
+      "slug": "aguni",
+      "name": "粟国村",
+      "status": "active",
+      "summary": "75歳以上は村営バス「アニー号」1回50円です。年齢の確認方法は村へ確認してください。",
+      "programs": [
+        {
+          "name": "アニー号75歳以上割引",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上。村民限定の記載なし。",
+          "benefit": "村営バス「アニー号」1回50円。",
+          "fare": "通常大人100円が50円。",
+          "routes": "コミュニティバスの港・空港線等。",
+          "apply": "年齢証明の提示方法は村船舶課098-988-2495又は総務課098-988-2016へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.aguni.okinawa.jp/sonsei/60.html",
+              "label": "公式案内",
+              "updated": "2026-09-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.aguni.okinawa.jp/sonsei/60.html",
+          "label": "公式案内",
+          "updated": "2026-09-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "現行の料金表を確認しましたが、年齢証明の方法は本文に記載なし。船舶課098-988-2495へ確認してください。"
+    },
+    {
+      "slug": "tonaki",
+      "name": "渡名喜村",
+      "status": "notfound",
+      "summary": "村の高齢者・介護の公式案内を確認しましたが、バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.tonaki.okinawa.jp/sp/detail.jsp?funcid=1&id=57521&menuid=12294",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "今回の調査では現行の高齢者向けバス助成条件を確認できませんでした。制度の不存在を示すものではありません。民生課098-989-2317へ確認。"
+    },
+    {
+      "slug": "kitadaito",
+      "name": "北大東村",
+      "status": "notfound",
+      "summary": "村の福祉衛生課の公式案内等を確認しましたが、バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://vill.kitadaito.okinawa.jp/soshiki/fukushi/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "今回の調査では現行の高齢者向けバス助成条件を確認できませんでした。制度の不存在を示すものではありません。福祉衛生課（村役場09802-3-4001）へ確認。"
+    },
+    {
+      "slug": "minamidaito",
+      "name": "南大東村",
+      "status": "notfound",
+      "summary": "村の高齢者の日常生活支援は診療所送迎や買物同行等です。高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.minamidaito.okinawa.jp/site/navi/982.html",
+          "label": "公式案内",
+          "updated": "2026-01-29",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。福祉民生課09802-2-2036内線174へ確認。"
+    },
+    {
+      "slug": "miyakojima",
+      "name": "宮古島市",
+      "status": "notfound",
+      "summary": "市は65歳以上を減免するチョイソコ乗合送迎を実施しています。公式本文でバスと明記された制度は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.miyakojima.lg.jp/soshiki/shityo/kikaku/tyousei/oshirase/2025-0815-1147-12.html",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。企画調整課0980-72-4878へ車両・バス制度の有無を確認。"
+    },
+    {
+      "slug": "tarama",
+      "name": "多良間村",
+      "status": "notfound",
+      "summary": "村有償バスの2026年運行案内等を確認しましたが、高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.tarama.okinawa.jp/news/5731/",
+          "label": "公式案内",
+          "updated": "2026-02-10",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。村役場0980-79-2011へ確認。"
+    },
+    {
+      "slug": "ishigaki",
+      "name": "石垣市",
+      "status": "active",
+      "summary": "65歳以上の非課税世帯と75歳以上の市民は、申請したバスチケットで東バス路線バスが無料になる案内があります。2026年度のカード移行状況は確認が必要です。",
+      "programs": [
+        {
+          "name": "高齢者バスチケット65歳以上非課税世帯",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "石垣市内在住の65歳以上で非課税世帯に属する高齢者。",
+          "benefit": "利用決定後の市高齢者バスチケットで東バス路線バス運賃全額免除。",
+          "fare": "無料。",
+          "routes": "東バスの路線バス。",
+          "apply": "市役所介護長寿課窓口へ申請。代理人の申請可、可能なら本人同行。2022年案内では持参物不要。チケットに利用日・バス停等必要事項を記入して利用。がんじゅう係0980-83-1682。",
+          "notes": [
+            "2026年度にシニア・モビリティQRカード化への移行予定との記載あり。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.ishigaki.okinawa.jp/soshiki/kaigo_choju/1/7931.html",
+              "label": "公式案内",
+              "updated": "2022-10-26",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.ishigaki.okinawa.jp/info/12158.html",
+              "label": "令和7年度ふるさと納税活用事業",
+              "updated": "2026-06-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "高齢者バスチケット75歳以上",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "石垣市内在住の75歳以上の高齢者。課税世帯も対象。",
+          "benefit": "利用決定後の市高齢者バスチケットで東バス路線バス運賃全額免除。",
+          "fare": "無料。",
+          "routes": "東バスの路線バス。",
+          "apply": "市役所介護長寿課窓口へ申請。代理人の申請可、可能なら本人同行。2022年案内では持参物不要。チケットに利用日・バス停等必要事項を記入して利用。がんじゅう係0980-83-1682。",
+          "notes": [
+            "2026年度にシニア・モビリティQRカード化への移行予定との記載あり。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.ishigaki.okinawa.jp/soshiki/kaigo_choju/1/7931.html",
+              "label": "公式案内",
+              "updated": "2022-10-26",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.ishigaki.okinawa.jp/info/12158.html",
+              "label": "令和7年度ふるさと納税活用事業",
+              "updated": "2026-06-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.ishigaki.okinawa.jp/soshiki/kaigo_choju/1/7931.html",
+          "label": "公式案内",
+          "updated": "2022-10-26",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ishigaki.okinawa.jp/info/12158.html",
+          "label": "令和7年度ふるさと納税活用事業",
+          "updated": "2026-06-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "申請案内は2022年更新、2026年実績報告にカード化への移行予定あり。現在の券・カード、有効期限・発行枚数・申請書類は介護長寿課0980-83-1682へ確認してください。"
+    },
+    {
+      "slug": "taketomi",
+      "name": "竹富町",
+      "status": "notfound",
+      "summary": "町民全員向けの通院送迎バスは無料です。高齢者に限定したバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.taketomi.lg.jp/soshiki/seisakusuishin/1537955774/1754359971/",
+          "label": "公式案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。企画政策課0980-83-0507へ確認。"
+    },
+    {
+      "slug": "yonaguni",
+      "name": "与那国町",
+      "status": "notfound",
+      "summary": "町の生活路線バスの公式案内を確認しましたが、高齢者に限定したバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.yonaguni.okinawa.jp/docs/2018042400199/",
+          "label": "公式案内",
+          "updated": "2018-08-28",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "確認した公式本文では高齢者向けバス助成を確認できませんでした。制度の不存在を示すものではありません。企画財政課0980-87-3577へ確認。"
+    }
+  ]
+}
