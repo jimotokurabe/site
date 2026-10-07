@@ -1,0 +1,60 @@
+/* 県の支援を、市町村ごとの3つの行で読み分ける。共通の文字拡大を継承。 */
+.support-page { --return-mark:#a8cdeb; --bus-mark:#c3d8ad; --taxi-mark:#d4bce2; }
+.support-page [hidden] { display:none !important; }
+.support-hero { padding:2rem 0 1.8rem; }
+.support-hero h1 { font-size:clamp(2rem,4.4vw,3.15rem); line-height:1.45; margin:.7rem 0 1rem; }
+.support-hero .lead { max-width:42rem; margin-bottom:1.2rem; }
+.support-key { display:flex; gap:1.3rem; flex-wrap:wrap; margin:1.4rem 0; font-weight:700; }
+.support-key span { border-bottom:3px solid var(--return-mark); padding-bottom:.3rem; }
+.support-key span:nth-child(2) { border-color:var(--bus-mark); }
+.support-key span:nth-child(3) { border-color:var(--taxi-mark); }
+.support-search { border:1px solid var(--line); padding:1.4rem; background:var(--surface); border-radius:12px; scroll-margin-top:1rem; }
+.support-search h2 { margin:0 0 1rem; font-size:1.35rem; }
+.support-inputs { display:grid; grid-template-columns:1.3fr 1fr; gap:1rem; }
+.support-inputs label { display:block; margin-bottom:.5rem; font-weight:700; }
+.support-inputs input,.support-inputs select { width:100%; min-height:52px; box-sizing:border-box; font:inherit; color:var(--ink); background:var(--bg); border:2px solid var(--line); border-radius:7px; padding:.65rem; }
+.support-search .filters { margin:1rem 0; }
+.support-search .filters button { min-height:48px; }
+.support-search #count { margin:1rem 0 0; }
+.support-help { color:var(--muted); margin:1.3rem 0 2rem; font-size:.94rem; line-height:1.8; }
+.support-page .card { padding:1.25rem; margin-bottom:1.5rem; }
+.support-page .card.is-notfound { opacity:1; }
+.support-page .card-head { margin-bottom:1rem; }
+.support-panel { border:1px solid var(--line); border-left:4px solid var(--return-mark); border-radius:6px; overflow:hidden; margin:0; }
+.support-bus { border-left-color:var(--bus-mark); }
+.support-taxi { border-left-color:var(--taxi-mark); }
+.support-panel > summary { list-style:none; display:grid; grid-template-columns:10rem 1fr auto; align-items:start; gap:.8rem; padding:1rem; cursor:pointer; line-height:1.7; }
+.support-panel > summary::-webkit-details-marker { display:none; }
+.support-label { color:var(--return-mark); font-weight:700; }
+.support-bus .support-label { color:var(--bus-mark); }
+.support-taxi .support-label { color:var(--taxi-mark); }
+.support-teaser { overflow-wrap:anywhere; }
+.support-action { font-size:.84rem; white-space:nowrap; padding-top:.15rem; text-decoration:underline; text-underline-offset:4px; }
+.support-action::after { content:' ＋'; }
+.support-panel[open] .support-action::after { content:' −'; }
+.support-panel[open] > summary { background:rgba(255,255,255,.04); border-bottom:1px solid var(--line); }
+.support-body { padding:1.1rem; overflow-wrap:anywhere; }
+.support-body > :first-child { margin-top:0; }
+.support-body .taxi { border:0; padding:0; margin:0; background:transparent; }
+.support-body .taxi-head { display:none; }
+.support-body .bus-program + .bus-program { margin-top:1.6rem; padding-top:1.2rem; border-top:1px solid var(--line); }
+.support-body h4 { margin:0 0 1rem; line-height:1.6; }
+.support-body .chip { white-space:normal; }
+.support-body .bus-sources { padding-left:1.3rem; }
+.support-body .dates { display:block; }
+.support-status { color:var(--muted); font-size:.9rem; }
+.support-common { margin:2rem 0; padding:1rem; border:1px solid var(--line); border-radius:8px; }
+.support-common > summary { cursor:pointer; font-weight:700; min-height:44px; display:flex; align-items:center; }
+.support-page :is(summary,input,select,button,a):focus-visible { outline:3px solid var(--return-mark); outline-offset:4px; }
+@media(max-width:600px) {
+ .support-search { padding:1rem; }
+ .support-inputs { grid-template-columns:1fr; }
+ .support-page .card { padding:1rem .8rem; }
+ .support-panel > summary { grid-template-columns:1fr; gap:.45rem; padding:.85rem; }
+ .support-label { grid-column:1; }
+ .support-action { grid-column:1; grid-row:3; justify-self:end; }
+ .support-teaser { grid-column:1 / -1; }
+ .support-body { padding:.85rem; }
+ .support-key { gap:.9rem; font-size:.9rem; }
+}
+@media print { .support-label { color:inherit; } .support-search,.support-action { display:none; } .support-panel > .support-body { display:block !important; } }

@@ -97,12 +97,14 @@ def render(out=None,draft=True,base_built=False):
   link=soup.new_tag('link',rel='stylesheet',href='../notice.css');soup.head.append(link)
   (OUT/path).parent.mkdir(exist_ok=True,parents=True);(OUT/path).write_text(str(soup))
  for pid,items in by_pref.items():
+  if prefs[pid].get('bus') and not prefs[pid]['bus'].get('draft',False):continue
   file=OUT/b.list_path(prefs[pid]['pref']);soup=BeautifulSoup(file.read_text(),'html.parser');nav='<section><h2>市町村の特典・助成・移動手段</h2><ul>'+''.join(f'<li><a href="{path}">{b.e(r["city"])}</a></li>' for r,path in items)+'</ul></section>';soup.main.insert(0,BeautifulSoup(nav,'html.parser'));file.write_text(str(soup))
  from public_home import render_home
  render_home(prefs,OUT,draft=draft)
  from prefecture_navigation import render_prefecture
  for pid in load(ROOT/'data/prefecture-navigation.json'):
-  render_prefecture(pid,OUT,draft=draft)
+  if not (prefs[pid].get('bus') and not prefs[pid]['bus'].get('draft',False)):
+   render_prefecture(pid,OUT,draft=draft)
  shutil.copy(ROOT/'assets/notice.css',OUT/'notice.css')
  (OUT/'notice.css').write_text((OUT/'notice.css').read_text()+'.local-menu{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.local-menu a{padding:12px;border-bottom:1px solid #607080}.city-section{margin:36px 0;border-top:1px solid #52616d;padding-top:24px}section[id]{scroll-margin-top:20px}')
  if not draft:

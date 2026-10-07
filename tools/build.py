@@ -13,6 +13,7 @@ from html import escape
 from pathlib import Path
 from urllib.parse import quote
 from bus_pages import bus_page, bus_path
+from support_pages import panel as support_panel, bus_panel, integrated_main, SCRIPT as SUPPORT_SCRIPT
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://jimotokurabe.jp/"
@@ -297,7 +298,7 @@ def taxi_block(t, unit):
   </section>"""
 
 
-def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_DIR, area="県内"):
+def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_DIR, area="県内", bus=None):
     kind_label = KINDS[c["k"]][0]
     unit = city_unit(c["n"])
     benefit = c["k"] in HAS_BENEFIT
@@ -344,13 +345,21 @@ def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_D
     {henno_body}
   </section>"""]
     t = (taxi or {}).get(c["slug"])
+    if bus:
+        blocks = [support_panel("免許返納の特典", (c.get("amt") if benefit and c.get("amt") != "記載なし" else c["what"]) or c["what"], henno_body, "return", marker=f'<p class="support-status">{e(kind_label)}</p>')]
+        blocks.append(bus_panel(bus, bus["checked"]))
     if t:
-        blocks.append(taxi_block(t, unit))
+        blocks.append(support_panel("タクシー助成", (t.get("amt") if t["k"] in {"yes", "care", "henno_only"} and t.get("amt") != "記載なし" else t["what"]) or t["what"], taxi_block(t, unit), "taxi", marker=f'<p class="support-status">{e(TAXI_KINDS[t["k"]][0])}</p>') if bus else taxi_block(t, unit))
+    if bus:
+        blocks.append(f'<p><a href="{gdir}/{c["slug"]}.html">{e(c["n"])}の特典・助成・移動手段を詳しく見る →</a></p>')
     if back:
         blocks.append(back)
     body = "\n  ".join(blocks)
     notfound = " is-notfound" if c["k"] == "notfound" else ""
     tk = f' data-taxi="{t["k"]}"' if t else ""
+    if bus:
+        tk += f' data-region="{e(c["r"])}" data-search="{e(c["n"] + " " + c["y"])}" data-return="{str(benefit).lower()}" data-bus="{str(bus["status"] in {"active", "henno"}).lower()}"'
+        tk = tk.replace(f'data-taxi="{t["k"]}"', f'data-taxi="{str(t["k"] in {"yes", "care", "henno_only"}).lower()}"') if t else tk
     return f"""<article class="card{notfound}" id="{c['slug']}" data-k="{c['k']}"{tk} aria-labelledby="{c['slug']}-h">
   <div class="card-head">
     <h3 class="city" id="{c['slug']}-h">{e(c['n'])}<span class="yomi">{e(c['y'])}</span></h3>
@@ -525,6 +534,8 @@ def list_page(data, draft, mobility_cities=(), mobility_scopes=None):
     n_benefit = sum(1 for c in cities if c["k"] in HAS_BENEFIT)
     taxi = data.get("taxi", {})
     n_taxi = sum(1 for t in taxi.values() if t["k"] == "yes")
+    unified = data.get("bus") and not data["bus"].get("draft", False)
+    bus_by_slug = {c["slug"]: {**c, "checked": data["bus"]["checked"]} for c in data["bus"]["cities"]} if unified else {}
 
     pick = []
     for r in regions:
@@ -550,7 +561,7 @@ def list_page(data, draft, mobility_cities=(), mobility_scopes=None):
     sections = []
     for r in regions:
         rows = [c for c in cities if c["r"] == r["id"]]
-        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS, gdir=guide_dir(P), area=area_word(P)) for c in rows)
+        cards = "\n".join(card(c, checked, taxi, statewide=bool(sw), hk=hk_key(P, c), back=BACK_LINKS, gdir=guide_dir(P), area=area_word(P), bus=bus_by_slug.get(c["slug"])) for c in rows)
         sections.append(f"""<section class="region" id="r-{r['id']}" aria-labelledby="r-{r['id']}-h">
   <div class="region-head">
     <h2 id="r-{r['id']}-h">{e(r['name'])}<span class="rc">{len(rows)}{region_unit(rows)}</span></h2>
@@ -683,13 +694,19 @@ def list_page(data, draft, mobility_cities=(), mobility_scopes=None):
   </ul>
 </section>"""
 
+    if unified:
+        main = integrated_main(data, sections, sw_html, (hk_banner(data.get("hk")) if home else "") + mobility_links, jdate)
+        page_title = f"{pn}の免許返納特典・バス助成・タクシー助成 {total}{pu}比較｜じもとくらべ"
+        page_description = f"{pn}の{total}{pu}について、免許返納の特典と高齢者のバス・タクシー助成を市町村ごとに比較。対象条件・金額・申請方法・公式出典と未確認事項をまとめて確認できます。"
+    support_styles = '<link rel="stylesheet" href="assets/support.css?v=' + hashlib.sha256((ROOT / "assets/support.css").read_bytes()).hexdigest()[:12] + '">' if unified else ""
     return shell(
         title=page_title,
         description=page_description,
         path=list_path(P),
         main=main, draft=draft,
         draft_note=P.get("draft_note", ""),
-        scripts=LIST_SCRIPT + (HK_BANNER_SCRIPT if home else ""))
+        scripts=(SUPPORT_SCRIPT if unified else LIST_SCRIPT) + (HK_BANNER_SCRIPT if home else ""),
+        page_class="support-page" if unified else "", styles=support_styles)
 
 
 # ---------------- 高齢者のタクシー代の助成の一覧 ----------------
@@ -2971,6 +2988,7 @@ def main():
         if any(d.get('bus') for d in prefs):
             (out / 'assets').mkdir(exist_ok=True)
             shutil.copy(ROOT / 'assets/bus.css', out / 'assets/bus.css')
+            shutil.copy(ROOT / 'assets/support.css', out / 'assets/support.css')
     if not a.draft:
         urls = ["" if n == "index.html" else n for n in pages if n not in hidden]
         (out / "sitemap.xml").write_text(
@@ -2996,6 +3014,7 @@ def main():
         if any(d.get('bus') for d in prefs):
             (art / 'assets').mkdir(exist_ok=True)
             shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
+            shutil.copy(ROOT / 'assets/support.css', art / 'assets/support.css')
     if (ROOT / 'data/municipality-supplements.json').exists():
         from build_enriched import render
         render(out, draft=a.draft, base_built=True)
