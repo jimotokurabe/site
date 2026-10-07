@@ -36,17 +36,26 @@ def check(pid,out,draft=False):
     for slug,text in cfg.get('summaries',{}).items():
         if slug not in slugs or not isinstance(text,str) or not 0<len(text)<=95:issues.append([slug,'短文設定'])
     file=out/b.list_path(data['pref']);s=BeautifulSoup(file.read_text(),'html.parser')
-    rows=s.select('[data-city]')
+    integrated=bool(s.select_one('.support-page'))
+    rows=s.select('.card') if integrated else s.select('[data-city]')
     if {r['id'] for r in rows}!=slugs or len(rows)!=len(cities):issues.append('生成市町村の不一致')
-    if Counter(r['data-city-region'] for r in rows)!=Counter(c['r'] for c in cities):issues.append('生成地域の不一致')
-    if len(s.select('g[data-region]'))!=len(regions):issues.append('図の地域数')
+    if Counter(r['data-region' if integrated else 'data-city-region'] for r in rows)!=Counter(c['r'] for c in cities):issues.append('生成地域の不一致')
+    if not integrated and len(s.select('g[data-region]'))!=len(regions):issues.append('図の地域数')
     if len(s.select('h1'))!=1:issues.append('H1件数')
     analytics=any('G-T1PQ72Q40S' in str(el) for el in s.select('script'))
     if analytics==draft:issues.append('アクセス解析設定')
-    if not s.select_one('link[rel=stylesheet][href^="prefecture-region.css"]'):issues.append('地域図スタイル欠落')
+    style='assets/support.css' if integrated else 'prefecture-region.css'
+    if not s.select_one(f'link[rel=stylesheet][href^="{style}"]'):issues.append('県ページのスタイル欠落')
     if bool(s.select_one('meta[name=robots][content*=noindex]'))!=draft:issues.append('検索設定')
     if s.select_one('link[rel=canonical]')['href']!=b.SITE+file.name:issues.append('正規URL')
-    for row in rows:
+    if integrated:
+        if len(s.select('#support-region option'))!=len(regions)+1:issues.append('地域選択肢の不一致')
+        if len(s.select('#filters button[aria-pressed]'))!=4:issues.append('支援の絞り込み欠落')
+        for row in rows:
+            if len(row.select('.support-panel'))!=3:issues.append([row['id'],'支援欄の欠落'])
+            path=b.guide_dir(data['pref'])+'/'+row['id']+'.html'
+            if not row.select_one(f'a[href="{path}"]') or not (out/path).exists():issues.append([row['id'],'個別ページ欠落'])
+    for row in ([] if integrated else rows):
         if not (out/row.a['href']).exists():issues.append([row['id'],'個別ページ欠落'])
         if not row.p.get_text(strip=True):issues.append([row['id'],'紹介文欠落'])
     ids=[e['id'] for e in s.select('[id]')]
