@@ -1,0 +1,1674 @@
+{
+  "checked": "2026-10-07",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "muroto",
+      "name": "室戸市",
+      "status": "active",
+      "summary": "むろはぴ号は65歳以上と免許返納者が1乗車100円。",
+      "programs": [
+        {
+          "name": "65歳以上のむろはぴ号半額",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。市外からの来訪者も利用できます。",
+          "benefit": "通常200円の運賃が半額の100円。",
+          "fare": "1乗車100円。",
+          "routes": "室戸市コミュニティバスむろはぴ号の定期路線・区域デマンド運行。",
+          "apply": "定期路線は停留所から乗車。デマンド運行は運行会社へ電話予約。割引の確認書類はまちづくり推進課0887-22-5147へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.muroto.kochi.jp/pages/page3735.php",
+              "label": "室戸市・むろはぴ号令和8年10月運行",
+              "updated": "2026-10-02",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許返納者のむろはぴ号半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証を返納した方。年齢・住所制限の記載はありません。",
+          "benefit": "通常200円の運賃が半額の100円。",
+          "fare": "1乗車100円。",
+          "routes": "室戸市コミュニティバスむろはぴ号の定期路線・区域デマンド運行。",
+          "apply": "定期路線は停留所から乗車。デマンド運行は運行会社へ電話予約。割引の確認書類はまちづくり推進課0887-22-5147へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.muroto.kochi.jp/pages/page3735.php",
+              "label": "室戸市・むろはぴ号令和8年10月運行",
+              "updated": "2026-10-02",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.muroto.kochi.jp/pages/page3735.php",
+          "label": "室戸市・むろはぴ号令和8年10月運行",
+          "updated": "2026-10-02",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年10月の運行案内を確認。年齢・返納を確認する提示書類は市へ確認してください。"
+    },
+    {
+      "slug": "aki",
+      "name": "安芸市",
+      "status": "notfound",
+      "summary": "元気バスの割引は子ども・障害者等向け。高齢者向け市独自バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.aki.kochi.jp/life/dtl.php?hdnKey=8895",
+          "label": "安芸市・元気バス運賃",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.aki.kochi.jp/life/dtl.php?hdnKey=3918",
+          "label": "安芸市・返納サポート",
+          "updated": "2018-07-04",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納サポートの掲載はタクシー・鉄道等。未掲載のバス支援の有無は総務課へ確認してください。"
+    },
+    {
+      "slug": "toyo",
+      "name": "東洋町",
+      "status": "active",
+      "summary": "60歳以上の町民は固定路線の福祉バスが無料。",
+      "programs": [
+        {
+          "name": "60歳以上の町民の福祉バス無料",
+          "kind": "discount",
+          "age_min": 60,
+          "eligibility": "東洋町住民で60歳以上。",
+          "benefit": "町の福祉バスを無料で利用できます。",
+          "fare": "無料。",
+          "routes": "町福祉バスの真砂瀬線・別役線。定められた停留所から乗車。",
+          "apply": "時刻表の停留所から利用。事前登録・年齢確認書類の要否は町総務課0887-29-3111へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "http://www.town.toyo.kochi.jp/contents/info0773.php",
+              "label": "東洋町・福祉バス案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "http://www.town.toyo.kochi.jp/pbfile/m000773/pbf20251024153909_ydApYJyIiokG.pdf",
+              "label": "東洋町・福祉バス運行要綱",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "http://www.town.toyo.kochi.jp/pbfile/m000773/pbf20251024153901_qN4KUse5iKKT.pdf",
+              "label": "東洋町・真砂瀬線時刻表",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://www.town.toyo.kochi.jp/contents/info0773.php",
+          "label": "東洋町・福祉バス案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "http://www.town.toyo.kochi.jp/pbfile/m000773/pbf20251024153909_ydApYJyIiokG.pdf",
+          "label": "東洋町・福祉バス運行要綱",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "http://www.town.toyo.kochi.jp/pbfile/m000773/pbf20251024153901_qN4KUse5iKKT.pdf",
+          "label": "東洋町・真砂瀬線時刻表",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町が現在案内する要綱・時刻表を確認。要綱は平成20年施行、時刻表は令和6年12月からの表示で、最新の運行日と登録・提示書類は町へ確認してください。"
+    },
+    {
+      "slug": "nahari",
+      "name": "奈半利町",
+      "status": "notfound",
+      "summary": "高齢者向け外出支援はタクシー利用の案内。バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.nahari.kochi.jp/life/dtl.php?hdnKey=1367",
+          "label": "奈半利町・外出支援サービス",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和5年12月掲載のタクシー支援を確認。バス向け制度の有無は住民福祉課へ確認してください。"
+    },
+    {
+      "slug": "tano",
+      "name": "田野町",
+      "status": "henno",
+      "summary": "免許返納者はたのくるバス半額。",
+      "programs": [
+        {
+          "name": "免許返納者のたのくるバス半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許返納者。年齢・住所制限なし。",
+          "benefit": "たのくるバスの運賃が半額。",
+          "fare": "通常大人100円の半額50円。",
+          "routes": "田野町コミュニティーバスたのくるバスの大野線・土生岡線。",
+          "apply": "運転経歴証明書を提示して利用。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://tanocho.jp/life/detail.php?hdnKey=418",
+              "label": "田野町・令和8年10月たのくるバス",
+              "updated": "2026-10-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://tanocho.jp/download/?t=LD&id=418&fid=2769",
+              "label": "田野町・現行路線図と利用案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "高知県警・令和8年9月25日移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tanocho.jp/life/detail.php?hdnKey=418",
+          "label": "田野町・令和8年10月たのくるバス",
+          "updated": "2026-10-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://tanocho.jp/download/?t=LD&id=418&fid=2769",
+          "label": "田野町・現行路線図と利用案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "高知県警・令和8年9月25日移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年10月1日からの町の路線図・利用案内と、県警の令和8年9月25日現在の一覧を確認。PDF自体の更新日表示はありません。"
+    },
+    {
+      "slug": "yasuda",
+      "name": "安田町",
+      "status": "henno",
+      "summary": "町内の免許返納者はやすら号半額、証明書取得から3年間。",
+      "programs": [
+        {
+          "name": "免許返納者のやすら号半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "安田町内居住の運転免許返納者。年齢条件の記載はありません。",
+          "benefit": "減免証明書の取得から3年間、町コミュニティバスの運賃半額。",
+          "fare": "減免証明書を提示し半額を支払います。通常額は利用区間により町へ確認してください。",
+          "routes": "安田町コミュニティバスやすら号。定期路線と区域デマンド運行。",
+          "apply": "取消通知書または運転経歴証明書を役場に提示し減免証明書を取得。乗車時に提示。定期路線は予約不要、デマンド予約は対象地区の居住者のみ。地域創生課0887-38-6713。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.yasuda.kochi.jp/life/dtl.php?hdnKey=1576",
+              "label": "安田町・やすら号案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "高知県警・令和8年9月25日移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.yasuda.kochi.jp/life/dtl.php?hdnKey=1576",
+          "label": "安田町・やすら号案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "高知県警・令和8年9月25日移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町案内は2024年10月掲載、減免内容は県警令和8年9月25日一覧。現行の通常運賃と申請詳細は町へ確認してください。"
+    },
+    {
+      "slug": "kitagawa",
+      "name": "北川村",
+      "status": "active",
+      "summary": "村内在住の後期高齢者医療被保険者は村営バス半額。",
+      "programs": [
+        {
+          "name": "後期高齢者医療被保険者の村営バス半額",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "村内在住の後期高齢者医療の被保険者。村の資料は年齢ではなく加入資格で判定しています。",
+          "benefit": "村営バス料金が半額免除。",
+          "fare": "半額運賃を現金で支払い。端数処理が高齢者枠にも適用されるかは村へ確認してください。",
+          "routes": "北川村営バス。現在案内される久木線・宗ノ上線・野川線。",
+          "apply": "乗車のたびに対象資格の確認。資格確認書等の現行提示書類は村役場0887-32-1212へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=932",
+              "label": "北川村・村営バス案内",
+              "updated": "2026-09-02",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.kitagawamura.jp/download/?t=LD&id=932&fid=4516",
+              "label": "北川村・運賃表と半額免除取扱",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=932",
+          "label": "北川村・村営バス案内",
+          "updated": "2026-09-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.kitagawamura.jp/download/?t=LD&id=932&fid=4516",
+          "label": "北川村・運賃表と半額免除取扱",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村の現行案内がリンクする運賃表は平成29年10月改正。後期高齢者資格の現行確認書類、端数処理と受付条件は村へ確認してください。"
+    },
+    {
+      "slug": "umaji",
+      "name": "馬路村",
+      "status": "notfound",
+      "summary": "村の福祉案内と県警一覧で高齢者向け村独自バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://vill.umaji.lg.jp/info/category/cat3/",
+          "label": "馬路村・健康福祉案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "未掲載の支援の有無は健康福祉課へ確認してください。"
+    },
+    {
+      "slug": "geisei",
+      "name": "芸西村",
+      "status": "active",
+      "summary": "65歳以上の村民は村おでかけバスが無料。",
+      "programs": [
+        {
+          "name": "65歳以上の村民のおでかけバス無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "芸西村の住民基本台帳に登録される65歳以上。",
+          "benefit": "村おでかけバスの運賃が無料。",
+          "fare": "対象確認書類の提示で無料。",
+          "routes": "芸西村おでかけバスの西分乙・瓜生谷・和食乙方面線。予約運行便は別の交通区分。",
+          "apply": "対象の年齢・村民資格が確認できる書類を乗務員へ提示。提示が難しい場合は企画振興課0887-33-2114へ減免申請し証明書取得。証明書は資格喪失日または年度末まで。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.vill.geisei.kochi.jp/pages/m000780.php",
+              "label": "芸西村・おでかけバス利用案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.vill.geisei.kochi.jp/reiki_int/reiki_honbun/o317RG00001056.html",
+              "label": "芸西村営バス等運行要綱",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.geisei.kochi.jp/pages/m000780.php",
+          "label": "芸西村・おでかけバス利用案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.geisei.kochi.jp/reiki_int/reiki_honbun/o317RG00001056.html",
+          "label": "芸西村営バス等運行要綱",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和7年3月掲載の案内と同年4月施行の現行掲載要綱を確認。令和8年度の運行・必要書類の変更は村へ確認してください。"
+    },
+    {
+      "slug": "nankoku",
+      "name": "南国市",
+      "status": "henno",
+      "summary": "免許返納者と同伴者1名はNACOバス半額。",
+      "programs": [
+        {
+          "name": "免許返納者と同伴者のNACOバス半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書または市発行の自主返納証明書を持つ本人と同伴者1名。住所制限なし。年齢条件は資料に記載なし。他の割引との併用不可。",
+          "benefit": "NACOバス運賃半額。",
+          "fare": "通常運賃の半額を支払います。区間別の最新運賃は市へ確認してください。",
+          "routes": "南国市コミュニティバスNACOバス。とさでん交通・高知東部交通・JR・土佐くろしお鉄道は対象外。",
+          "apply": "運転経歴証明書があれば市への申請不要、運転手へ提示。証明書がない返納者は取消通知書を市に提出し自主返納証明書を取得。企画課088-880-6553。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=7517",
+              "label": "南国市・免許返納者運賃半額",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "高知県警・令和8年9月25日移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=7517",
+          "label": "南国市・免許返納者運賃半額",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "高知県警・令和8年9月25日移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市案内は2022年9月掲載、県警令和8年9月25日一覧でも半額を確認。区間運賃等の最新内容は市へ確認してください。"
+    },
+    {
+      "slug": "konan",
+      "name": "香南市",
+      "status": "active",
+      "summary": "市内の75歳以上、65歳以上の免許返納者は市営バス50円・フリー定期月1,000円。",
+      "programs": [
+        {
+          "name": "75歳以上の市営バス普通運賃半額",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "香南市在住の75歳以上。",
+          "benefit": "通常1路線100円が半額50円。",
+          "fare": "降車時に半額乗車券を提示し50円を支払い。",
+          "routes": "香南市営バス。予約式乗合タクシーでは回数券・フリー定期は使えません。",
+          "apply": "市役所本庁地域支援課または支所で半額乗車券の発行・定期購入。申請の本人確認書類は地域支援課0887-57-8503へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/material/files/group/17/20260916_jikokuhyou.pdf",
+              "label": "香南市・令和8年10月改正利用案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/bus/index.html",
+              "label": "香南市・現行時刻表案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "75歳以上の市営バスフリー定期月1,000円",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "香南市在住の75歳以上。",
+          "benefit": "一般月2,000円のフリー定期が月1,000円。期間は1か月単位、払戻不可。",
+          "fare": "定期券を購入し期間中の対象市営バスに乗車。",
+          "routes": "香南市営バス。予約式乗合タクシーでは回数券・フリー定期は使えません。",
+          "apply": "市役所本庁地域支援課または支所で半額乗車券の発行・定期購入。申請の本人確認書類は地域支援課0887-57-8503へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/material/files/group/17/20260916_jikokuhyou.pdf",
+              "label": "香南市・令和8年10月改正利用案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/bus/index.html",
+              "label": "香南市・現行時刻表案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65歳以上の返納者の市営バス普通運賃半額",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "香南市在住の65歳以上で運転免許を返納した方。",
+          "benefit": "通常1路線100円が半額50円。",
+          "fare": "降車時に半額乗車券を提示し50円を支払い。",
+          "routes": "香南市営バス。予約式乗合タクシーでは回数券・フリー定期は使えません。",
+          "apply": "市役所本庁地域支援課または支所で半額乗車券の発行・定期購入。申請の本人確認書類と返納証明は地域支援課0887-57-8503へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/material/files/group/17/20260916_jikokuhyou.pdf",
+              "label": "香南市・令和8年10月改正利用案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/bus/index.html",
+              "label": "香南市・現行時刻表案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65歳以上の返納者の市営バスフリー定期月1,000円",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "香南市在住の65歳以上で運転免許を返納した方。",
+          "benefit": "一般月2,000円のフリー定期が月1,000円。期間は1か月単位、払戻不可。",
+          "fare": "定期券を購入し期間中の対象市営バスに乗車。",
+          "routes": "香南市営バス。予約式乗合タクシーでは回数券・フリー定期は使えません。",
+          "apply": "市役所本庁地域支援課または支所で半額乗車券の発行・定期購入。申請の本人確認書類と返納証明は地域支援課0887-57-8503へ確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/material/files/group/17/20260916_jikokuhyou.pdf",
+              "label": "香南市・令和8年10月改正利用案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kochi-konan.lg.jp/bus/index.html",
+              "label": "香南市・現行時刻表案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kochi-konan.lg.jp/material/files/group/17/20260916_jikokuhyou.pdf",
+          "label": "香南市・令和8年10月改正利用案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kochi-konan.lg.jp/bus/index.html",
+          "label": "香南市・現行時刻表案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年10月1日改正冊子を確認。半額乗車券・定期購入時の申請書類は市へ確認してください。"
+    },
+    {
+      "slug": "kami",
+      "name": "香美市",
+      "status": "active",
+      "summary": "75歳以上の市民は、市営バスが無料です。",
+      "programs": [
+        {
+          "name": "市営バス75歳以上無料",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上の香美市民。",
+          "benefit": "市営バス運賃無料。",
+          "fare": "公的機関が発行する証明書等を乗務員へ提示。",
+          "routes": "市営路線バス13路線と3エリアのデマンドバス。栃本線・神池線とデマンドバスは電話予約が必要。",
+          "apply": "公的証明書等を提示。お持ちでない方は地域創生課・香北支所・物部支所へ問い合わせ、無料乗車券を受領。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kami.lg.jp/soshiki/11/citybus.html",
+              "label": "香美市営バス",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kami.lg.jp/soshiki/11/citybus.html",
+          "label": "香美市営バス",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "kochi",
+      "name": "高知市",
+      "status": "unknown",
+      "summary": "市の長寿手帳には65歳以上の第3日曜バス半額の案内があります。市独自の運賃助成かは確認中。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.kochi.kochi.jp/soshiki/130/tyojyu-tecyou.html",
+          "label": "高知市・長寿手帳",
+          "updated": "2026-01-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kochi.kochi.jp/soshiki/130/koureihukushiichiran.html",
+          "label": "高知市・高齢者福祉一覧",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "長寿手帳によるとさでん交通の割引を補足案内。市の購入費補助・運賃負担主体は確認できず、自治体助成枠への掲載を保留しています。高齢者支援課088-823-9441へ確認してください。"
+    },
+    {
+      "slug": "motoyama",
+      "name": "本山町",
+      "status": "active",
+      "summary": "70歳以上の通院バス助成と、65歳以上の返納者向けさくらバス無料証があります。",
+      "programs": [
+        {
+          "name": "福祉バス通院利用券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "70歳以上で町税等に滞納のない方。居住条件は県一覧に明記なし。",
+          "benefit": "年60枚。本山町・土佐町・大豊町内の病院へ通院した際のバス代を全額補助。",
+          "fare": "利用券による助成。利用時の券の渡し方・立替の有無は県資料に記載なし。",
+          "routes": "本山町・土佐町・大豊町内の病院への通院バス。対象事業者は町へ確認。",
+          "apply": "県資料に申請方法・必要書類の記載なし。健康福祉課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+              "label": "県・移動手段確保対策の手引き（令和7年4月）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65歳以上の自主返納者のさくらバス1年間無料",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "本山町内居住の65歳以上。令和7年4月1日以降に有効期間内の全ての運転免許を自主返納した方。",
+          "benefit": "減免証明書の取得後1年間、さくらバス運賃を全額減免。",
+          "fare": "利用時に減免証明書を提示し無料。",
+          "routes": "本山町コミュニティバスさくらバス。嶺北観光自動車の私営路線バスは別制度。",
+          "apply": "取消通知書または運転経歴証明書を本山町健康福祉課へ提示して減免証明書を取得。健康福祉課0887-70-1060。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.motoyama.kochi.jp/soshikikarasagasu/seisakukikakuka/1_1/2532.html",
+              "label": "本山町・さくらバス返納減免",
+              "updated": "2025-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "高知県警・令和8年9月25日移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.motoyama.kochi.jp/soshikikarasagasu/seisakukikakuka/1_1/2532.html",
+          "label": "本山町・さくらバス返納減免",
+          "updated": "2025-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "高知県警・令和8年9月25日移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町案内は令和7年4月更新、県警令和8年9月25日一覧でも1年間全額減免を確認。返納時期・必要書類等の変更は町へ確認してください。 通院利用券は令和7年4月の県資料による案内です。現行の資格・対象路線・使用方法・申請書類を町へ確認してください。"
+    },
+    {
+      "slug": "otoyo",
+      "name": "大豊町",
+      "status": "notfound",
+      "summary": "町の公共交通案内は乗合タクシー。町独自の高齢者バス助成は見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=488",
+          "label": "大豊町・公共交通案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "平成30年7月掲載の案内を確認。県警一覧の嶺北観光バス割引は民間特典。町独自のバス支援は総務課へ確認してください。"
+    },
+    {
+      "slug": "tosa",
+      "name": "土佐町",
+      "status": "active",
+      "summary": "70歳以上の通院に、路線バス片道分の助成があります。",
+      "programs": [
+        {
+          "name": "高齢者通院バス料金助成",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "70歳以上で、土佐町・本山町・大川村の病院、医院、診療所へ通院する方。他の制度による通院手当の受領者は対象外。居住条件は条文に記載なし。",
+          "benefit": "通院に使ったバス料金の片道分を助成。",
+          "fare": "乗車時に料金を払い、乗車証を渡します。乗車証控と通院証明を添えて請求し、翌月に口座振込。",
+          "routes": "要綱は嶺北観光バス・県交通バスを指定。現在の対象事業者と路線は町へ確認。",
+          "apply": "通院前に助成交付申請書を町へ提出し、バス使用乗車証を受領。当該年度利用分の請求書を提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tosa.kochi.jp/reiki/H406902600006/H406902600006_j.html",
+              "label": "高齢者通院バス料金助成実施要綱（平成23年改正）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+              "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.tosa.kochi.jp/reiki/H406902600006/H406902600006_j.html",
+          "label": "高齢者通院バス料金助成実施要綱（平成23年改正）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県の令和7年4月資料と古い改正の要綱を確認。現行の居住条件・対象路線・申請窓口を土佐町役場（0887-82-0480）へ確認してください。"
+    },
+    {
+      "slug": "okawa",
+      "name": "大川村",
+      "status": "active",
+      "summary": "70歳以上の嶺北中央病院への通院に、バス料金の助成が案内されています。",
+      "programs": [
+        {
+          "name": "通院バス料金助成",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "70歳以上の方。県資料には居住条件や所得条件の記載なし。",
+          "benefit": "大川村から嶺北中央病院（本山町）までの通院バス料金96回分を助成。回数の対象期間は記載なし。",
+          "fare": "助成後の支払い・請求方法は記載なし。",
+          "routes": "大川村から嶺北中央病院への通院バス。",
+          "apply": "県資料には申請手順・必要書類の記載なし。村へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+              "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和7年4月の県資料による案内です。現在の対象条件・回数の期間・申請方法を大川村役場（0887-84-2211）へ確認してください。"
+    },
+    {
+      "slug": "tosashi",
+      "name": "土佐市",
+      "status": "active",
+      "summary": "75歳以上のドラゴンバス無料証と、65歳以上の返納者向け乗車券があります。",
+      "programs": [
+        {
+          "name": "75歳以上ドラゴンバス無料乗車証",
+          "kind": "pass",
+          "age_min": 75,
+          "eligibility": "75歳以上の方。市ページには居住条件の明記なし。",
+          "benefit": "令和8年3月16日から対象路線の運賃無料。",
+          "fare": "交付された無料乗車証を利用。",
+          "routes": "市ドラゴンバス全路線。とさでん交通・高陵交通のバス、電車、JRは対象外。",
+          "apply": "本人が公的な本人確認書類（マイナンバーカード・運転免許証等）を持参し、市役所長寿政策課・USAくろしおセンター・戸波総合市民センターで申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=6348",
+              "label": "75歳以上のドラゴンバス無料乗車証（令和8年3月16日開始）",
+              "updated": "2026-02-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "返納支援（令和7年3月24日以降返納・共通券）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "土佐市に住所があり、返納時満65歳以上。平成25年4月1日以降、有効期限内に自主返納した方。対象者欄には運転経歴証明書交付も記載。令和7年3月24日以降に返納。",
+          "benefit": "1人1回、バス・タクシー共通券7,500円分。",
+          "fare": "券を利用。差額・釣銭の扱いは記載なし。",
+          "routes": "ドラゴンバス。共通券の県警一覧にはドラゴンバス・タクシーを記載。",
+          "apply": "取消通知書を持参し、市役所総務課総務班へ申請。券は郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=1986",
+              "label": "高齢者運転免許証自主返納支援",
+              "updated": "2025-03-24",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "返納支援（令和7年3月23日以前返納・バス券選択）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "土佐市に住所があり、返納時満65歳以上。平成25年4月1日以降、有効期限内に自主返納した方。対象者欄には運転経歴証明書交付も記載。令和7年3月23日以前に返納。",
+          "benefit": "1人1回、ドラゴンバス券6,000円分（買物券・タクシー券との選択）。経歴証明書手数料助成も別途案内。",
+          "fare": "券を利用。差額・釣銭の扱いは記載なし。",
+          "routes": "ドラゴンバス。",
+          "apply": "取消通知書・振込先の分かるもの・交付を受けた方は経歴証明書を持参して総務課交通担当へ申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=1986",
+              "label": "高齢者運転免許証自主返納支援",
+              "updated": "2025-03-24",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=1986",
+          "label": "高齢者運転免許証自主返納支援",
+          "updated": "2025-03-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=6348",
+          "label": "75歳以上のドラゴンバス無料乗車証（令和8年3月16日開始）",
+          "updated": "2026-02-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は2025年3月更新で、県警の令和8年一覧と必要書類に違いがあります。新しい返納枠は申込欄が取消通知書だけですが、対象欄は経歴証明書交付を条件としています。共通券の取扱いは総務課（088-852-7602）、無料証の居住条件は市へ確認してください。"
+    },
+    {
+      "slug": "ino",
+      "name": "いの町",
+      "status": "notfound",
+      "summary": "公共交通や福祉の案内では、高齢者向け・返納者向けのバス助成を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.ino.kochi.jp/kurashi/traffic/1756/",
+          "label": "町営バス（伊野地区）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "日付のない交通案内と県の令和7年4月資料を確認。追加の高齢者バス支援について役場へ確認してください。"
+    },
+    {
+      "slug": "niyodogawa",
+      "name": "仁淀川町",
+      "status": "notfound",
+      "summary": "公共交通や福祉の案内では、高齢者向け・返納者向けのバス助成を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.niyodogawa.lg.jp/life/life_dtl.php?hdnKey=2426",
+          "label": "町民バス",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "日付のない交通案内と県の令和7年4月資料を確認。追加の高齢者バス支援について役場へ確認してください。"
+    },
+    {
+      "slug": "sakawa",
+      "name": "佐川町",
+      "status": "henno",
+      "summary": "自主返納した方は、ぐるぐるバスが半額です。",
+      "programs": [
+        {
+          "name": "さかわぐるぐるバス返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許を自主返納した方。年齢条件は記載なし。県警一覧には住所制限なしと記載。",
+          "benefit": "運賃半額。",
+          "fare": "大人200円が100円。",
+          "routes": "さかわぐるぐるバス。",
+          "apply": "運転経歴証明書を乗務員に提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1605",
+              "label": "さかわぐるぐるバス",
+              "updated": "2025-12-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1605",
+          "label": "さかわぐるぐるバス",
+          "updated": "2025-12-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の令和8年3月16日からの運行案内と県警一覧を確認。資料に年齢条件の明記がないため、まちづくり推進課（0889-22-7740）へ確認してください。"
+    },
+    {
+      "slug": "ochi",
+      "name": "越知町",
+      "status": "henno",
+      "summary": "返納者は町民バスの運賃が半額になります。",
+      "programs": [
+        {
+          "name": "町民バス返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "自主返納者。県警一覧は年齢・住所制限なしを明示。",
+          "benefit": "町民バス運賃半額。",
+          "fare": "通常区間運賃の半額。路線別料金は町の料金表で確認。",
+          "routes": "越知町町民バス。",
+          "apply": "運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ochi.kochi.jp/soumu/912",
+              "label": "町民バスの料金表・路線時刻表",
+              "updated": "2026-09-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ochi.kochi.jp/soumu/912",
+          "label": "町民バスの料金表・路線時刻表",
+          "updated": "2026-09-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県警の令和8年一覧と町の令和8年9月料金表案内を確認。具体的な区間運賃は町の総務課（0889-26-1111）へ確認してください。"
+    },
+    {
+      "slug": "hidaka",
+      "name": "日高村",
+      "status": "notfound",
+      "summary": "公共交通や福祉の案内では、高齢者向け・返納者向けのバス助成を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/free/demand_bus_moheikun/202661218551.pdf",
+          "label": "デマンドバスもへいくん（令和8年6月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "日付のない交通案内と県の令和7年4月資料を確認。追加の高齢者バス支援について役場へ確認してください。"
+    },
+    {
+      "slug": "susaki",
+      "name": "須崎市",
+      "status": "active",
+      "summary": "70歳以上の在宅の方に、バスにも使えるおでかけ応援チケットがあります。",
+      "programs": [
+        {
+          "name": "高齢者おでかけ応援チケット",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "申請月に満70歳以上。市に住民票があり自宅で生活し、市税と介護保険料の滞納がない方。入院・施設入所は対象外ですが、指定の有料老人ホーム等は対象。他の福祉タクシー制度との併用・年度途中移行不可。",
+          "benefit": "居住地区により3,000円・6,000円・9,000円分。",
+          "fare": "券を利用。差額支払い・釣銭の扱いは記載なし。",
+          "routes": "バスとタクシー。利用できるバス路線の詳細は市へ確認。",
+          "apply": "本人確認書類を持参し、長寿介護課窓口で申請。令和8年5月11日～令和9年3月31日、平日9～12時・13～17時。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5952",
+              "label": "令和8年度・高齢者おでかけ応援チケット（掲載2026年5月1日）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5952",
+          "label": "令和8年度・高齢者おでかけ応援チケット（掲載2026年5月1日）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年度案内ですがページの更新日表示はありません。対象バス路線や券の支払い方法は長寿介護課（0889-42-1205）へ確認してください。"
+    },
+    {
+      "slug": "nakatosa",
+      "name": "中土佐町",
+      "status": "active",
+      "summary": "年度末までに65歳になる町民は、バスパスによる無料乗車の対象です。",
+      "programs": [
+        {
+          "name": "路線バス無料乗車証（バスパス・マイナンバーカード）",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "町に住所があり、その事業年度の3月31日までに65歳以上に達する方。",
+          "benefit": "対象区間のバス無料。紙のバスパスは交付年度末まで、マイナンバーIDはカード有効期間まで。",
+          "fare": "紙のバスパスと乗車区間を記入した利用報告書を提示。マイナンバーID利用は乗車時と運賃支払時に端末へかざします。",
+          "routes": "高知高陵交通・四万十交通・中土佐ハイヤーの町が補助対象とする路線。県の令和7年資料では町内発着に限定、コミュニティバスも利用可。",
+          "apply": "所定の無料乗車証交付兼ID交付申請書を町へ提出。本人確認書類を提示し、希望者はマイナンバーカードへID付与。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www1.g-reiki.net/town.nakatosa/reiki_honbun/r249RG00000604.html",
+              "label": "高齢者等外出支援・路線バス無料化事業要綱（令和7年4月改正）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.nakatosa.lg.jp/life/detail.php?hdnKey=1248",
+              "label": "町内の公共交通（掲載2025年10月16日）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+              "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www1.g-reiki.net/town.nakatosa/reiki_honbun/r249RG00000604.html",
+          "label": "高齢者等外出支援・路線バス無料化事業要綱（令和7年4月改正）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.nakatosa.lg.jp/life/detail.php?hdnKey=1248",
+          "label": "町内の公共交通（掲載2025年10月16日）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月改訂）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "更新日表示のない要綱・交通案内と令和7年県資料を確認。要綱の医療保険証等に代わる現在の本人確認書類と無料の対象区間を健康福祉課（0889-52-2662）へ確認してください。"
+    },
+    {
+      "slug": "yusuhara",
+      "name": "梼原町",
+      "status": "active",
+      "summary": "75歳以上の方へのバスチケットが、県の資料に案内されています。",
+      "programs": [
+        {
+          "name": "高齢者バスチケット",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "75歳以上の方。居住条件・他制度との併用条件は県資料に記載なし。",
+          "benefit": "100円券24枚。交付期間の記載なし。",
+          "fare": "券を利用。差額・釣銭の扱いは記載なし。",
+          "routes": "町のバスチケット。対象路線は県一覧に記載なし。",
+          "apply": "県一覧には申請手順・必要書類の記載なし。保健福祉課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+              "label": "県・移動手段確保対策の手引き（令和7年4月）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和7年4月の県資料による案内です。現行の対象条件、交付期間、使える路線と申請方法を町役場（0889-65-1111）へ確認してください。"
+    },
+    {
+      "slug": "tsuno",
+      "name": "津野町",
+      "status": "active",
+      "summary": "高齢者の福祉バス券と返納支援券が案内されています。年度により額や条件の確認が必要です。",
+      "programs": [
+        {
+          "name": "福祉タクシー・バス利用券（80歳以上・令和7年度案内）",
+          "kind": "voucher",
+          "age_min": 80,
+          "eligibility": "津野町に住所があり、満80歳以上の方。",
+          "benefit": "令和7年度は100円×最大170枚、17,000円。初めて年度途中に申請する場合は申請月～3月の月数分。令和8年度の額と受付は未確認。",
+          "fare": "1回に何枚でも使え、釣銭なし。令和7年度券の期限は令和8年3月31日で既に過ぎています。",
+          "routes": "令和7年度案内は津野町コミュニティバス・高知高陵交通を指定。",
+          "apply": "本庁・西庁窓口で本人確認書類を持参し申請。新たに80歳になる方は誕生日の翌日以降。令和8年度の受付は介護福祉課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://town.kochi-tsuno.lg.jp/cms/wp-content/uploads/2025/10/d03e452706353dab1fd1b1fcf33aa3c7.pdf",
+              "label": "広報2025年10月・令和7年度福祉タクシー・バス利用券",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://town.kochi-tsuno.lg.jp/reiki/reiki_honbun/r088RG00000451.html",
+              "label": "津野町コミュニティバス条例",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉タクシー・バス利用券（65歳以上返納者・令和7年度案内）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "津野町に住所があり、運転免許を返納した65歳以上の方。",
+          "benefit": "令和7年度は100円×最大170枚、17,000円。初めて年度途中に申請する場合は申請月～3月の月数分。令和8年度の額と受付は未確認。",
+          "fare": "1回に何枚でも使え、釣銭なし。令和7年度券の期限は令和8年3月31日で既に過ぎています。",
+          "routes": "令和7年度案内は津野町コミュニティバス・高知高陵交通を指定。",
+          "apply": "本庁・西庁窓口で本人確認書類を持参し申請。経歴証明書など返納を証明する書類も必要。令和8年度の受付は介護福祉課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://town.kochi-tsuno.lg.jp/cms/wp-content/uploads/2025/10/d03e452706353dab1fd1b1fcf33aa3c7.pdf",
+              "label": "広報2025年10月・令和7年度福祉タクシー・バス利用券",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://town.kochi-tsuno.lg.jp/reiki/reiki_honbun/r088RG00000451.html",
+              "label": "津野町コミュニティバス条例",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納支援コミュニティバス乗車券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "津野町内居住の自主返納者。県警一覧には年齢条件の記載なし。",
+          "benefit": "100円×120枚、12,000円分。",
+          "fare": "乗車券を利用。通常運賃と差額・釣銭の扱いは県一覧に記載なし。",
+          "routes": "津野町コミュニティバス。",
+          "apply": "運転経歴証明書・印鑑・振込先が分かる物を持参して総務課へ。交付申請手数料補助の手続きをすれば自動的に支援。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://town.kochi-tsuno.lg.jp/cms/wp-content/uploads/2025/10/d03e452706353dab1fd1b1fcf33aa3c7.pdf",
+          "label": "広報2025年10月・令和7年度福祉タクシー・バス利用券",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://town.kochi-tsuno.lg.jp/reiki/reiki_honbun/r088RG00000451.html",
+          "label": "津野町コミュニティバス条例",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "福祉券の個別案内は令和7年度で券の期限が過ぎています。令和8年度の通常券・返納者福祉券の受付と額は介護福祉課（0889-62-2313）へ確認してください。県警の令和8年9月一覧には別に返納コミュニティバス券12,000円があり、旧年度福祉券17,000円との併用可否や交付条件は総務課へ確認してください。"
+    },
+    {
+      "slug": "shimanto",
+      "name": "四万十町",
+      "status": "active",
+      "summary": "年度内80歳の方と65歳以上の返納者に、町内バスにも使える利用券があります。",
+      "programs": [
+        {
+          "name": "福祉タクシー・バス利用券（年度内80歳）",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "町内に住所があり、年度内に80歳に達する方を含む80歳以上。",
+          "benefit": "旧町村の役場庁舎からの距離により年6,000円（5km未満）・9,000円（5～10km未満）・12,000円（10～15km未満）・15,000円（15km以上）。1枚100円。本人のみ使用。",
+          "fare": "券を利用。差額・釣銭の扱いは記載なし。",
+          "routes": "町内の路線バス・コミュニティバス・タクシー。対象便は町へ確認。",
+          "apply": "通常80歳枠は個別案内で申請不要とされ、毎年郵送。未着の場合は高齢者支援課へ。町ページでは3月下旬、県警一覧では4月下旬郵送と記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=1405",
+              "label": "福祉タクシー・バス利用券（掲載2017年4月）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shimanto.lg.jp/download/?fid=64628&id=1614&t=LD",
+              "label": "高齢者福祉サービス一覧（令和8年3月1日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "福祉タクシー・バス利用券（65歳以上返納者）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内に住所があり、運転免許を自主返納した65歳以上の方。",
+          "benefit": "旧町村の役場庁舎からの距離により年6,000円（5km未満）・9,000円（5～10km未満）・12,000円（10～15km未満）・15,000円（15km以上）。1枚100円。本人のみ使用。",
+          "fare": "券を利用。差額・釣銭の扱いは記載なし。",
+          "routes": "町内の路線バス・コミュニティバス・タクシー。対象便は町へ確認。",
+          "apply": "初回は取消通知書又は運転経歴証明書を持参し役場へ申請。次回から不要。町ページでは3月下旬、県警一覧では4月下旬郵送と記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=1405",
+              "label": "福祉タクシー・バス利用券（掲載2017年4月）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shimanto.lg.jp/download/?fid=64628&id=1614&t=LD",
+              "label": "高齢者福祉サービス一覧（令和8年3月1日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=1405",
+          "label": "福祉タクシー・バス利用券（掲載2017年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shimanto.lg.jp/download/?fid=64628&id=1614&t=LD",
+          "label": "高齢者福祉サービス一覧（令和8年3月1日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年3月の一覧は年15,000円まで、県警の9月一覧は12,000円までと記載。町の個別案内は2017年掲載で、郵送月にも違いがあります。対象便・券の支払い方法と現行の額・郵送月を高齢者支援課（0880-22-3900）へ確認してください。"
+    },
+    {
+      "slug": "sukumo",
+      "name": "宿毛市",
+      "status": "active",
+      "summary": "65歳以上の方と免許返納者は、はなちゃんバスが半額です。",
+      "programs": [
+        {
+          "name": "はなちゃんバス高齢者割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "満65歳以上の方。市案内には住所条件の記載なし。",
+          "benefit": "料金表の半額。10円未満の端数切捨て。",
+          "fare": "路線別の普通運賃を半額で支払い。",
+          "routes": "宿毛市はなちゃんバス。",
+          "apply": "65歳以上を証明する提示書類は市案内に記載なし。企画課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.sukumo.kochi.jp/docs-05/2685.html",
+              "label": "はなちゃんバス運賃（令和8年4月1日時点）",
+              "updated": "2026-04-09",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "はなちゃんバス返納者割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "有効期間内のすべての運転免許を自主返納し、経歴証明書の交付を受けた方。県警一覧は住所制限なしを明示。",
+          "benefit": "料金表の半額。10円未満の端数切捨て。",
+          "fare": "路線別の普通運賃を半額で支払い。",
+          "routes": "宿毛市はなちゃんバス。",
+          "apply": "運転経歴証明書を提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.sukumo.kochi.jp/docs-05/2685.html",
+              "label": "はなちゃんバス運賃（令和8年4月1日時点）",
+              "updated": "2026-04-09",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.sukumo.kochi.jp/docs-05/2685.html",
+          "label": "はなちゃんバス運賃（令和8年4月1日時点）",
+          "updated": "2026-04-09",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年4月の市運賃表を確認。通常65歳以上枠の住所条件・確認書類は企画課（0880-62-1255）へ確認してください。"
+    },
+    {
+      "slug": "tosashimizu",
+      "name": "土佐清水市",
+      "status": "henno",
+      "summary": "65歳以上の返納者向けバス券と、おでかけ号の返納者割引があります。",
+      "programs": [
+        {
+          "name": "返納者バス・タクシーチケット",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市内居住の65歳以上で運転経歴証明書が交付された方。県警一覧では同一世帯の方も対象。",
+          "benefit": "年間6,000円分（100円券60枚）。",
+          "fare": "チケットを利用。家族との配分・差額・釣銭の扱いは記載なし。",
+          "routes": "高知西南交通の路線バス、おでかけ号等。市の指定事業所で利用。",
+          "apply": "運転経歴証明書を持参して企画財政課へ。代理申請可。家族については同一世帯の方の身分証明書も提示。現在の保険証に代わる書類は市へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tosashimizu.kochi.jp/kurashi/section/kikaku/12621.html",
+              "label": "65歳以上の自主返納支援",
+              "updated": "2024-08-13",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "おでかけ号返納者半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書のある返納者。市の運行案内に年齢条件なし、県警一覧は65歳以上の市内居住者と記載。",
+          "benefit": "運賃半額。",
+          "fare": "対象区間の普通運賃の半額。",
+          "routes": "おでかけ号（三崎・下川口・下ノ加江）。県資料はデマンドバスとして掲載。",
+          "apply": "経歴証明書を提示し、利用区間の窓口へ9～17時に電話予約。朝11時までの出発は前日までに予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tosashimizu.kochi.jp/kurashi/section/kikaku/12668.html",
+              "label": "デマンド交通おでかけ号の運行",
+              "updated": "2024-08-15",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+              "label": "県警・令和8年9月25日現在の返納移動支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+              "label": "県・移動手段確保対策の手引き（令和7年4月）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.tosashimizu.kochi.jp/kurashi/section/kikaku/12621.html",
+          "label": "65歳以上の自主返納支援",
+          "updated": "2024-08-13",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tosashimizu.kochi.jp/kurashi/section/kikaku/12668.html",
+          "label": "デマンド交通おでかけ号の運行",
+          "updated": "2024-08-15",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
+          "label": "県警・令和8年9月25日現在の返納移動支援",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の個別案内は2024年で、令和8年県警一覧により継続を確認。おでかけ号の年齢・住所条件が市案内と県警一覧で異なります。チケットの家族への配分、対象路線、現在の必要書類と支払い方法を企画財政課（0880-82-1217）へ確認してください。"
+    },
+    {
+      "slug": "shimantoshi",
+      "name": "四万十市",
+      "status": "unknown",
+      "summary": "市のバス案内では、高齢者向け・返納者向け助成の現行条件を確定できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.shimanto.lg.jp/uploaded/attachment/14746.pdf",
+          "label": "ふれ愛号利用案内（令和8年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県の令和7年資料には市運行バス返納者半額もありますが、現在のふれ愛号案内では小人・障害者の半額だけを確認。対象便や返納者割引の継続を企画広報課（0880-34-1129）へ確認してください。民間の西南交通の返納者割引は別途あります。"
+    },
+    {
+      "slug": "otsuki",
+      "name": "大月町",
+      "status": "active",
+      "summary": "70歳以上の町民は、町内区間の生活交通バスを無料で利用できます。",
+      "programs": [
+        {
+          "name": "生活交通バス70歳以上無料乗車券",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "町内に住所を有する満70歳以上の方。",
+          "benefit": "対象バスを無料で利用。新たに70歳になる方は誕生月の翌月から交付。",
+          "fare": "無料乗車券を使用。乗車・降車時に提示。",
+          "routes": "町が西南交通へ委託する生活交通バスの指定区間。町の支援案内は町内区間を指定。",
+          "apply": "町民福祉課へ無料乗車券の交付を申し出ます。本人確認書類は要綱に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.otsuki.kochi.jp/download/?t=LD&id=1794&fid=8688",
+              "label": "生活交通バス運行要綱（平成26年改正）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.otsuki.kochi.jp/life/dtl.php?hdnKey=2058",
+              "label": "支援制度いろいろ（2026年案内）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.otsuki.kochi.jp/download/?t=LD&id=1794&fid=8688",
+          "label": "生活交通バス運行要綱（平成26年改正）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.otsuki.kochi.jp/life/dtl.php?hdnKey=2058",
+          "label": "支援制度いろいろ（2026年案内）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の支援案内と古い改正の要綱を確認しましたが、更新日表示がありません。無料の対象便と現在の提示・申請書類を町民福祉課（町役場0880-73-1111）へ確認してください。"
+    },
+    {
+      "slug": "mihara",
+      "name": "三原村",
+      "status": "notfound",
+      "summary": "村の公共交通と県の支援一覧では、高齢者・返納者のバス助成を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.mihara.kochi.jp/life/detail.php?hdnKey=154",
+          "label": "三原村地域公共交通計画",
+          "updated": "2025-02-08",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月）",
+          "updated": "2025-02-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "更新日表示のない村の交通計画案内と県の令和7年資料を確認。村の返納支援はタクシー利用券です。追加のバス支援について地域振興課（村役場0880-46-2111）へ確認してください。"
+    },
+    {
+      "slug": "kuroshio",
+      "name": "黒潮町",
+      "status": "notfound",
+      "summary": "くじらんの運行・返納支援案内では、高齢者や返納者に限定したバス助成を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.kuroshio.lg.jp/img/files/pv/sosiki/2025/11/kujiran_flyer20251101.pdf",
+          "label": "くじらん運行案内（2025年11月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kuroshio.lg.jp/reiki_int/reiki_honbun/r256RG00001040.html",
+          "label": "運転免許証返納支援制度補助金要綱",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.kochi.lg.jp/doc/2020040700294/file_contents/file_2025724411730_1.pdf",
+          "label": "県・移動手段確保対策の手引き（令和7年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "資料に更新日表示はありません。返納支援要綱は経歴証明書等の交付手数料助成です。追加のバス支援について企画調整室（0880-43-2177）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/",
+    "label": "高知県警・自主返納協賛店一覧",
+    "checked": "2026-10-07"
+  }
+}
