@@ -1,0 +1,1449 @@
+{
+  "checked": "2026-10-07",
+  "draft": false,
+  "cities": [
+    {
+      "slug": "fukui",
+      "name": "福井市",
+      "status": "henno",
+      "summary": "有効な全免許を正式返納した65歳以上の市民にICOCA2,000円分（預り金500円含む）。一般高齢者向けいきいき定期は民間事業者の制度です。",
+      "programs": [
+        {
+          "name": "自主返納ICOCA交付",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "福井市内住所、H28/4/1以降に有効期限内の全種類の免許を返納した満65歳以上。1人1回。",
+          "benefit": "ICOCA2,000円分（デポジット500円含む）。",
+          "fare": "利用可能残高1,500円からIC対応バス運賃を支払。残高不足時精算は制度案内に記載なし。",
+          "routes": "京福バス・福鉄バス。地域コミュニティバス（京福バス）は利用不可。対象路線の現行確認が必要。",
+          "apply": "返納と同時に警察署/運転者教育センターで申請、又は取消通知書写しと申請書を市本館6階自転車利用推進課・連絡所へ。郵送・電子申請可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukui.lg.jp/kurasi/koutu/koutu-a/koureisyamennkyohennnou.html",
+              "label": "福井市運転免許自主返納支援事業のご案内",
+              "updated": "2026-06-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fukui.lg.jp/kurasi/koutu/koutu-a/koureisyamennkyohennnou.html",
+          "label": "福井市運転免許自主返納支援事業のご案内",
+          "updated": "2026-06-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.fukui.lg.jp/fukusi/kfukusi/ikigai/p020159_d/fil/BOOK2025.pdf",
+          "label": "高齢者の生活を支えるサービス（2025年版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市案内の一部路線名は旧表記。ICOCA残高不足時支払・現行対応路線は自転車利用推進課0776-20-5387へ確認してください。高齢者生活サービス冊子2025年・更新日なし。"
+    },
+    {
+      "slug": "eiheiji",
+      "name": "永平寺町",
+      "status": "active",
+      "summary": "60歳以上の町民はコミュニティバス無料。返納・失効の65歳以上支援は鉄道又はタクシー券で、バス助成とは別です。",
+      "programs": [
+        {
+          "name": "コミュニティバス60歳以上無料",
+          "kind": "pass",
+          "age_min": 60,
+          "eligibility": "永平寺町の60歳以上の町民（県一覧）。無料パス券等を提示。",
+          "benefit": "通常1乗車100円を無料。",
+          "fare": "降車時無料パス券・利用券等を提示して無料。",
+          "routes": "町コミュニティバス：松岡・吉野・御陵・永平寺・福井大学病院・上志比各コース。永平寺南地区京福バスとの差額助成は別案内。",
+          "apply": "無料パス券の発行申請手順は本文に記載なし。総合政策課公共交通対策室0776-61-3942へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.eiheiji.lg.jp/900/905/p011763.html",
+              "label": "永平寺町コミュニティバスの運行時間・コース | 永平寺町",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.eiheiji.lg.jp/900/905/p011763.html",
+          "label": "永平寺町コミュニティバスの運行時間・コース | 永平寺町",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.eiheiji.lg.jp/950/p010547.html",
+          "label": "高齢者運転免許証自主返納を支援 | 永平寺町",
+          "updated": "2024-07-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内2024/7/1、県一覧はR8/6/1。無料パス券の申請・本人確認手順は総合政策課公共交通対策室0776-61-3942へ確認してください。"
+    },
+    {
+      "slug": "awara",
+      "name": "あわら市",
+      "status": "notfound",
+      "summary": "確認した高齢者/返納支援は乗合タクシーの割引・タクシー外出助成です。高齢者バス乗車料金助成は未発見です。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.awara.lg.jp/mokuteki/life/life0701/noriaitakusi.html",
+          "label": "乗合タクシー（デマンド交通）について | あわら市ホームページ",
+          "updated": "2026-07-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "現在のバス助成の有無は生活環境課0776-73-8017へ確認してください。"
+    },
+    {
+      "slug": "sakai",
+      "name": "坂井市",
+      "status": "active",
+      "summary": "65歳以上の市民は正式返納又は失効後の経歴証明取得でコミュニティバス無料券。ICOCA支給もありますがバス用途の明示を確認できていません。",
+      "programs": [
+        {
+          "name": "自主返納コミュニティバス無料券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "満65歳以上の坂井市民。運転免許を自主返納した方。返納日から1年以内申請。",
+          "benefit": "コミュニティバス無料乗車券（無期限）。他にICOCA5,000円分（市案内は500円の補償料を含むと記載）・行政ポイントも併せて支給。",
+          "fare": "無料乗車券で無料。提示等の詳しい乗車手順は制度ページに記載なし。",
+          "routes": "コミュニティバス木部ルート及び竹田乗合タクシー線。",
+          "apply": "市内警察署又は運転者教育センターの返納時ワンストップ窓口で申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukui-sakai.lg.jp/anzen/untenmenkyo/2023hennou.html",
+              "label": "福井県坂井市／運転免許自主返納支援事業について",
+              "updated": "2024-10-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許失効コミュニティバス無料券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "満65歳以上の坂井市民。免許を失効させて運転者教育センターで経歴証明を取得した方。失効日から1年以内申請。",
+          "benefit": "コミュニティバス無料乗車券（無期限）。他にICOCA5,000円分（市案内は500円の補償料を含むと記載）・行政ポイントも併せて支給。",
+          "fare": "無料乗車券で無料。提示等の詳しい乗車手順は制度ページに記載なし。",
+          "routes": "コミュニティバス木部ルート及び竹田乗合タクシー線。",
+          "apply": "経歴証明写しを市役所3階危機管理対策課又は三国/丸岡/春江支所へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukui-sakai.lg.jp/anzen/untenmenkyo/2023hennou.html",
+              "label": "福井県坂井市／運転免許自主返納支援事業について",
+              "updated": "2024-10-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fukui-sakai.lg.jp/anzen/untenmenkyo/2023hennou.html",
+          "label": "福井県坂井市／運転免許自主返納支援事業について",
+          "updated": "2024-10-04",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市案内2024/10/4、県一覧R8/6/1。現行対象ルート・無料券の提示手順は危機管理対策課0776-50-3525へ確認してください。"
+    },
+    {
+      "slug": "ono",
+      "name": "大野市",
+      "status": "active",
+      "summary": "65歳以上の市民は京福バス市内区間100円。正式返納者には市内各バスの無料券があります。",
+      "programs": [
+        {
+          "name": "京福バス市内区間65歳以上100円",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "大野市在住の満65歳以上。事前申請して助成資格者証・利用券を取得。",
+          "benefit": "対象市内区間を100円で利用。",
+          "fare": "降車時カード提示、氏名・乗降場所記入済み利用券と100円を運賃箱へ。",
+          "routes": "京福バス大野線・勝山大野線の大野市内区間のみ。福井市/勝山市への利用は割引なし。",
+          "apply": "申請書・誕生日確認書類を交通住宅まちづくり課11番窓口へ又はメール提出。利用券不足時は窓口・メール・電話で追加。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ono.fukui.jp/kurashi/douro-kotsu/bus/kehukubasu.html",
+              "label": "京福バス 大野線、勝山大野線　大野市公式ウェブサイト",
+              "updated": "2025-12-22",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納市内バス無料乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "大野市住民登録の満65歳以上で正式自主返納した方。失効対象外。返納翌日から1年以内申請。",
+          "benefit": "市内バス無料券と利用券交付、利用券枚数上限なし。県一覧は10年更新制。",
+          "fare": "降車時無料乗車券を提示、氏名記入済み無料利用券を運転手へ渡して無料。",
+          "routes": "まちなか循環、市営下庄/和泉大野、京福大野/勝山大野（両発着市内）。案内の乗合タクシー線も別途対象。",
+          "apply": "取消通知書写しを市民生活統計課へ。警察署・奥越センター返納時ワンストップ申請可。利用券不足時追加交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ono.fukui.jp/kurashi/bousai-anzen/koutsuanzen/jishuhenno.html",
+              "label": "65歳以上の運転免許自主返納支援事業について　大野市公式ウェブサイト",
+              "updated": "2025-04-04",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.ono.fukui.jp/kurashi/douro-kotsu/bus/kehukubasu.html",
+          "label": "京福バス 大野線、勝山大野線　大野市公式ウェブサイト",
+          "updated": "2025-12-22",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ono.fukui.jp/kurashi/bousai-anzen/koutsuanzen/jishuhenno.html",
+          "label": "65歳以上の運転免許自主返納支援事業について　大野市公式ウェブサイト",
+          "updated": "2025-04-04",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内2025/4/4、県一覧R8/6/1では10年更新制。現行無料券の更新・対象路線は市民生活統計課0779-64-4810へ確認してください。"
+    },
+    {
+      "slug": "katsuyama",
+      "name": "勝山市",
+      "status": "active",
+      "summary": "65歳以上の市民の正式返納者に市内バス無料券。例規は免許失効者も対象ですが市案内との相違があります。",
+      "programs": [
+        {
+          "name": "自主返納市内バス無料券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "勝山市住民票に記載される満65歳以上。有効期間内の全免許を正式自主返納した方。申請1人1回。",
+          "benefit": "写真付き無料乗車券。住民票から削除されるまで有効。希望者に広域路線用補助券も交付。",
+          "fare": "無料券提示で無料。勝山大野広域路線は補助券も提出。",
+          "routes": "市コミュニティバスと勝山大野広域路線バス。具体的な無料区間・直通便適用は要確認。",
+          "apply": "返納時警察署/免許センターで同時申請、又は申請書・取消通知書・顔写真4×3cmを未来創造課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.katsuyama.fukui.jp/site/shinsei-navi/563.html",
+              "label": "高齢者運転免許証自主返納支援事業 - 恐竜のまち 勝山市公式ホームページ",
+              "updated": "2025-03-28",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.g-reiki.net/city.katsuyama/reiki_honbun/i207RG00000715.html",
+              "label": "運転免許証自主返納等支援事業実施要綱",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許失効市内バス無料券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "勝山市住民票に記載される満65歳以上。免許失効し経歴証明を取得した方（例規）。市の申請案内は返納のみのため受付要確認。申請1人1回。",
+          "benefit": "写真付き無料乗車券。住民票から削除されるまで有効。希望者に広域路線用補助券も交付。",
+          "fare": "無料券提示で無料。勝山大野広域路線は補助券も提出。",
+          "routes": "市コミュニティバスと勝山大野広域路線バス。具体的な無料区間・直通便適用は要確認。",
+          "apply": "申請書・経歴証明書写し・顔写真を市へ。写真寸法等は未来創造課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.katsuyama.fukui.jp/site/shinsei-navi/563.html",
+              "label": "高齢者運転免許証自主返納支援事業 - 恐竜のまち 勝山市公式ホームページ",
+              "updated": "2025-03-28",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.g-reiki.net/city.katsuyama/reiki_honbun/i207RG00000715.html",
+              "label": "運転免許証自主返納等支援事業実施要綱",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.katsuyama.fukui.jp/site/shinsei-navi/563.html",
+          "label": "高齢者運転免許証自主返納支援事業 - 恐竜のまち 勝山市公式ホームページ",
+          "updated": "2025-03-28",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www1.g-reiki.net/city.katsuyama/reiki_honbun/i207RG00000715.html",
+          "label": "運転免許証自主返納等支援事業実施要綱",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.katsuyama.fukui.jp/site/koukyou-koutsu/704.html",
+          "label": "勝山市コミュニティバス 時刻表・バス停留所・運賃等（令和8年5月7日～） - 恐竜のまち 勝山市公式ホームページ",
+          "updated": "2026-05-07",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市案内2025/3/28、例規更新日なし・R5施行。失効者の現在の受付、写真寸法、恐竜博物館直通便等の対象区間は未来創造課0779-88-8114へ確認してください。"
+    },
+    {
+      "slug": "sabae",
+      "name": "鯖江市",
+      "status": "active",
+      "summary": "75歳以上は毎月10・20・30日につつじバス無料。65歳以上の正式返納市民にも無料証を交付。",
+      "programs": [
+        {
+          "name": "75歳以上つつじバス指定日無料",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上の後期高齢者。居住限定は運賃欄に記載なし。",
+          "benefit": "毎月10日・20日・30日は通常100円の乗車無料。",
+          "fare": "指定日の料金支払い時に後期高齢者医療被保険者証を提示して無料。現行代替書類は要確認。",
+          "routes": "鯖江市コミュニティバスつつじバス。運休日は利用不可。",
+          "apply": "乗車時証明書提示。現在の代替確認書類は市へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.sabae.fukui.jp/users/tutujibus/price/price.html",
+              "label": "つつじバス / 鯖江市｜利用料金",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納つつじバス利用者無料証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "有効期間内のすべての免許を自主返納する満65歳以上の鯖江市民。",
+          "benefit": "つつじバス利用者無料証を交付（県一覧は無期限）。",
+          "fare": "無料証で無料。具体的な提示手順は返納案内に記載なし。",
+          "routes": "つつじバス。",
+          "apply": "警察署/丹南センターで返納時同時手続き、又は届出書と取消通知書写し/経歴証明を市民主役推進課へ。オンライン・家族代理可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.sabae.fukui.jp/anzen_anshin/kotsuanzen/seido_shinsei/jishuhenno_shien.html",
+              "label": "運転免許を自主返納される65歳以上の高齢者の方を支援します – めがねのまちさばえ 鯖江市",
+              "updated": "2025-03-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.sabae.fukui.jp/users/tutujibus/price/price.html",
+          "label": "つつじバス / 鯖江市｜利用料金",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.sabae.fukui.jp/anzen_anshin/kotsuanzen/seido_shinsei/jishuhenno_shien.html",
+          "label": "運転免許を自主返納される65歳以上の高齢者の方を支援します – めがねのまちさばえ 鯖江市",
+          "updated": "2025-03-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "料金ページ更新日なし、返納案内2025/3/5。後期高齢者医療証の現在の代替確認書類、無料証の提示/期限は市民主役推進課0778-53-2214へ確認してください。"
+    },
+    {
+      "slug": "echizen",
+      "name": "越前市",
+      "status": "henno",
+      "summary": "65歳以上の正式返納市民はのろっさ無期限無料。",
+      "programs": [
+        {
+          "name": "自主返納のろっさ無料",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "有効期間内のすべての運転免許を正式自主返納した65歳以上の越前市民。",
+          "benefit": "市民バスのろっさが無期限無料。",
+          "fare": "降車時、運転経歴証明書又は市の運転免許自主返納証明証を運転手に提示して無料。",
+          "routes": "越前市市民バスのろっさ。現行各便の適用詳細は市へ確認。",
+          "apply": "経歴証明書取得済みなら市証の申請不要。市証は取消通知書・本人確認書類を地域交通課又は今立総合支所へ持参、約30分で交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.echizen.lg.jp/office/030/015/communitybus.html",
+              "label": "運転免許自主返納者を支援しています - 越前市",
+              "updated": "2025-08-07",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.echizen.lg.jp/office/030/015/communitybus.html",
+          "label": "運転免許自主返納者を支援しています - 越前市",
+          "updated": "2025-08-07",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.echizen.lg.jp/office/030/015/shiminbasujikokuhyou.html",
+          "label": "市民バス「のろっさ」について - 越前市",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内2025/8/7。現在の無料対象便の詳細は地域交通課0778-22-3704へ確認してください。"
+    },
+    {
+      "slug": "ikeda",
+      "name": "池田町",
+      "status": "active",
+      "summary": "70歳以上の正式返納者にマイバス運賃8割補助パス。失効1か月以内も案内にあります。制度はR10/3/31終了予定。",
+      "programs": [
+        {
+          "name": "自主返納マイバス8割補助パス",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "申請時池田町住民登録、町税等滞納なし。有効期間内に正式自主返納し、返納時満70歳以上。タクシー券との選択制。制度R10/3/31終了予定。",
+          "benefit": "片道1,000円運賃の8割を補助するパス、交付から3年間。",
+          "fare": "対象運賃1,000円の自己負担200円。パス提示等の精算手順は記載なし。",
+          "routes": "町民協働バスマイバス。現行対象便は要確認。",
+          "apply": "申請書に返納を示す書類写しを添え町へ提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1383/p002811.html",
+              "label": "池田町高齢者交通安全支援制度 | 福井県池田町",
+              "updated": "2023-08-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1375/p002468.html",
+              "label": "町民協働バス「マイバス」 | 福井県池田町",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許失効マイバス8割補助パス",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "申請時池田町住民登録、町税等滞納なし。失効1か月以内も対象と記載。年齢条件は「自主返納した時点で満70歳以上」とされ、失効者の判定日・手続きは要確認。タクシー券との選択制。制度R10/3/31終了予定。",
+          "benefit": "片道1,000円運賃の8割を補助するパス、交付から3年間。",
+          "fare": "対象運賃1,000円の自己負担200円。パス提示等の精算手順は記載なし。",
+          "routes": "町民協働バスマイバス。現行対象便は要確認。",
+          "apply": "申請書を町へ提出。失効者の添付書類は総務財政課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1383/p002811.html",
+              "label": "池田町高齢者交通安全支援制度 | 福井県池田町",
+              "updated": "2023-08-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1375/p002468.html",
+              "label": "町民協働バス「マイバス」 | 福井県池田町",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1383/p002811.html",
+          "label": "池田町高齢者交通安全支援制度 | 福井県池田町",
+          "updated": "2023-08-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1375/p002468.html",
+          "label": "町民協働バス「マイバス」 | 福井県池田町",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内2023/8/16。失効者の年齢判定・必要書類、パス提示手順と現在の対象便は総務財政課0778-44-8003へ確認してください。"
+    },
+    {
+      "slug": "minamiechizen",
+      "name": "南越前町",
+      "status": "henno",
+      "summary": "65歳以上の正式返納町民はらくらくおでかけバス無料。年15,000円利用券は福鉄王子保・河野海岸線にも利用できます。",
+      "programs": [
+        {
+          "name": "自主返納らくらくおでかけバス無料",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "有効期間内の全免許を自主返納した満65歳以上の南越前町民。H23/4/1～H30/3/31に支援済みの方も対象。",
+          "benefit": "住民利用バス乗車料無料、無期限。",
+          "fare": "無料。証明の提示等の詳細は返納ページに記載なし。",
+          "routes": "南越前町らくらくおでかけバス。予約利用。",
+          "apply": "取消通知書写しと申請書を総務課防災安全室/今庄・河野事務所、又は返納した越前警察署へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.minamiechizen.lg.jp/bousai/203/p001254.html",
+              "label": "運転免許自主返納者を支援しています | 南越前町ホームページ",
+              "updated": "2023-11-28",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.minamiechizen.lg.jp/kurasi/101/119/p004140.html",
+              "label": "「南越前町らくらくおでかけバス」運行の継続について | 南越前町ホームページ",
+              "updated": "2026-05-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納年15,000円券（福鉄路線にも利用可）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "有効期間内の全免許を自主返納した満65歳以上の南越前町民。H23/4/1～H30/3/31に支援済みの方も対象。",
+          "benefit": "年15,000円相当利用券。新規10年間、H29年度までの支援者9年間交付。",
+          "fare": "利用券を運賃に充当。1枚額・年度券の期限・不足額精算は記載なし。",
+          "routes": "バスは福井鉄道王子保・河野海岸線のみ。指定タクシーも別途対象。",
+          "apply": "申請書・取消通知書写しを防災安全室/各事務所又は返納した越前警察署へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.minamiechizen.lg.jp/bousai/203/p001254.html",
+              "label": "運転免許自主返納者を支援しています | 南越前町ホームページ",
+              "updated": "2023-11-28",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.minamiechizen.lg.jp/bousai/203/p001254.html",
+          "label": "運転免許自主返納者を支援しています | 南越前町ホームページ",
+          "updated": "2023-11-28",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.minamiechizen.lg.jp/kurasi/101/119/p004140.html",
+          "label": "「南越前町らくらくおでかけバス」運行の継続について | 南越前町ホームページ",
+          "updated": "2026-05-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内2023/11/28。年利用券の現在の枚数・期限・不足額精算は防災安全室0778-47-8016へ確認してください。"
+    },
+    {
+      "slug": "echizen-cho",
+      "name": "越前町",
+      "status": "active",
+      "summary": "70歳以上は公共交通割引カードでフレンドリー号・町内福鉄/京福100円。65歳以上の正式返納町民に無料定期。",
+      "programs": [
+        {
+          "name": "70歳以上フレンドリー号100円",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上の高齢者、公共交通割引カードが必要。町から事前送付、居住条件の詳細は記載なし。",
+          "benefit": "コミュニティバスを100円で利用。",
+          "fare": "カードを使い1乗車100円。",
+          "routes": "越前町コミュニティバスフレンドリー号。",
+          "apply": "70歳以上へ町からカード事前送付。未着・転入者等は企画振興課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.echizen.fukui.jp/kurashi/04/04/p006505.html",
+              "label": "制度について｜越前町公式ホームページ",
+              "updated": "2022-04-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上生活路線バス町内100円",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上の高齢者で公共交通割引カードと生活路線バス運賃補助券の所持者。居住条件の詳細は記載なし。",
+          "benefit": "町内区間は100円。",
+          "fare": "運転手へカード提示・補助券提出、100円支払。町外区間分は別途必要。",
+          "routes": "福鉄バス・京福バスの越前町内区間。",
+          "apply": "カードと補助券を町から送付。券不足時カード・印鑑を企画振興課/各コミュニティセンター/織田病院へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.echizen.fukui.jp/kurashi/04/04/p006505.html",
+              "label": "制度について｜越前町公式ホームページ",
+              "updated": "2022-04-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納コミュニティバス無料定期",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "全免許を自主返納する満65歳以上の越前町民。",
+          "benefit": "無料定期。町制度案内は返納日から10年・3年ごと自動更新、県R8一覧は無期限と異なる。",
+          "fare": "無料定期で無料。提示手順は記載なし。",
+          "routes": "町コミュニティバス。",
+          "apply": "申請書・取消通知書写しを企画振興課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.echizen.fukui.jp/kurashi/04/04/p001245.html",
+              "label": "運転免許自主返納者に対する支援について｜越前町公式ホームページ",
+              "updated": "2024-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.echizen.fukui.jp/kurashi/04/04/p006505.html",
+              "label": "制度について｜越前町公式ホームページ",
+              "updated": "2022-04-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.echizen.fukui.jp/kurashi/04/04/p006505.html",
+          "label": "制度について｜越前町公式ホームページ",
+          "updated": "2022-04-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.echizen.fukui.jp/kurashi/04/04/p001245.html",
+          "label": "運転免許自主返納者に対する支援について｜越前町公式ホームページ",
+          "updated": "2024-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "制度案内2022/4/5、返納案内2024/4/1。返納無料期限が町案内10年（3年ごと更新）と県R8無期限で異なります。現行期限、70歳カードの居住条件・自動送付を企画振興課0778-34-8702へ確認してください。"
+    },
+    {
+      "slug": "tsuruga",
+      "name": "敦賀市",
+      "status": "active",
+      "summary": "年度中80歳到達を含む在宅市民へ2,400円外出券。65歳以上の正式返納者に20,000円券。県一覧の失効枠も別に留保。",
+      "programs": [
+        {
+          "name": "R8高齢者外出支援券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "R8/1/1以前から敦賀市住所、在宅80歳以上（R8年度中80歳になる方含む）。施設入所入居・重度障がい者タクシー券交付者は対象外。本人のみ。",
+          "benefit": "2,400円分、R9/3/31まで。",
+          "fare": "券でバス運賃に充当。券枚数・不足額精算は記載なし。",
+          "routes": "市コミュニティバス・ぐるっと敦賀周遊バス・福井鉄道バス市内各路線。",
+          "apply": "申請不要、R8/4月上中旬に郵送。未着は長寿健康課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tsuruga.lg.jp/page/2547.html",
+              "label": "高齢者外出支援券の交付及び利用について - 敦賀市ホームページ（長寿健康課）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納バス・タクシー券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "満65歳以上の敦賀市民。有効期限内の全運転免許を正式自主返納した方。1人1回。",
+          "benefit": "20,000円分、有効期限3年間。紛失再発行不可。",
+          "fare": "利用券を運賃に充当。枚数・不足額精算は記載なし。",
+          "routes": "敦賀市内コミュニティバス各路線・ぐるっと敦賀・福井鉄道若狭線。",
+          "apply": "警察署/教育センター返納時に同時申請可。別途市生活安全課でも申請可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tsuruga.lg.jp/page/1299.html",
+              "label": "運転免許自主返納支援事業 - 敦賀市ホームページ（生活安全課）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許失効バス・タクシー券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "満65歳以上の敦賀市民。R2/4/1以降に失効して経歴証明を取得した方（県一覧）。市の現行ページは返納者のみ記載、受付要確認。1人1回。",
+          "benefit": "20,000円分、有効期限3年間。紛失再発行不可。",
+          "fare": "利用券を運賃に充当。枚数・不足額精算は記載なし。",
+          "routes": "敦賀市内コミュニティバス各路線・ぐるっと敦賀・福井鉄道若狭線。",
+          "apply": "失効者の必要書類・申請窓口は生活安全課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tsuruga.lg.jp/page/1299.html",
+              "label": "運転免許自主返納支援事業 - 敦賀市ホームページ（生活安全課）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.tsuruga.lg.jp/page/2547.html",
+          "label": "高齢者外出支援券の交付及び利用について - 敦賀市ホームページ（長寿健康課）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tsuruga.lg.jp/page/1299.html",
+          "label": "運転免許自主返納支援事業 - 敦賀市ホームページ（生活安全課）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "外出券・返納券のバスでの枚数/不足額精算、県一覧のR2/4/1以降失効者の現行受付を長寿健康課0770-22-8124（外出券）又は生活安全課0770-22-8115（返納等）へ確認してください。県PDF更新日なし。"
+    },
+    {
+      "slug": "mihama",
+      "name": "美浜町",
+      "status": "active",
+      "summary": "65歳以上はシルバーパス1月3,520円。65歳以上の正式返納町民には無料定期と20,000円券、免許のない配偶者にも10,000円券。",
+      "programs": [
+        {
+          "name": "65歳以上シルバーパス",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。利用会員登録が必要（定期便は登録不要）。居住限定はシルバーパス欄に記載なし。",
+          "benefit": "普通定期1月4,400円に対しシルバーパス1月3,520円。例規は3/6月券も規定。",
+          "fare": "購入定期で利用、1月3,520円。",
+          "routes": "美浜町コミュニティバス・チョイソコ/美浜ブルーライン。現行各便の定期適用範囲は要確認。",
+          "apply": "生年月日のわかる書類を持参し役場/美浜自動車/オオギ観光タクシー/佐田出張所で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukui-mihama.lg.jp/soshiki/9/9932.html",
+              "label": "美浜町コミュニティバス「チョイソコみはま」、「美浜ブルーライン」について - 福井県美浜町",
+              "updated": "2026-08-24",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fukui-mihama.lg.jp/uploaded/attachment/7413.pdf",
+              "label": "美浜町コミュニティバスご利用ガイド（2025年4月）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.g-reiki.net/mihama/reiki_honbun/i232RG00000342.html",
+              "label": "美浜町コミュニティバスの運行に関する条例施行規則",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納コミュニティバス無料定期",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "有効期限内のすべての運転免許を自主返納した満65歳以上の美浜町民。",
+          "benefit": "返納前免許の有効期限まで無料定期、残存1年未満なら1年保障。県一覧は最長5年。",
+          "fare": "無料定期で無料。提示詳細は記載なし。",
+          "routes": "美浜町コミュニティバス。",
+          "apply": "返納前に免許コピーを取得し、返納後取消通知書写し・本人確認書類等を住民環境課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukui-mihama.lg.jp/soshiki/9/7327.html",
+              "label": "美浜町ドライバー等卒業支援サービス事業 - 福井県美浜町",
+              "updated": "2024-01-17",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納バス・タクシー券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "有効期限内のすべての運転免許を自主返納した満65歳以上の美浜町民。",
+          "benefit": "20,000円分、県一覧は無期限。",
+          "fare": "利用券を運賃に充当。枚数・不足額精算は記載なし。",
+          "routes": "バス及びタクシー。対象バス事業者/区間の記載なし、住民環境課へ確認。",
+          "apply": "返納後、取消通知書写し・本人確認書類を町住民環境課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukui-mihama.lg.jp/soshiki/9/7327.html",
+              "label": "美浜町ドライバー等卒業支援サービス事業 - 福井県美浜町",
+              "updated": "2024-01-17",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "無免許配偶者バス・タクシー券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "上記返納支援対象者の配偶者で運転免許非保有者。配偶者自身の年齢・居住条件詳細は記載なし。",
+          "benefit": "10,000円分、県一覧は無期限。",
+          "fare": "利用券を運賃に充当。枚数・不足額精算は記載なし。",
+          "routes": "バス及びタクシー。対象バス事業者/区間の記載なし、住民環境課へ確認。",
+          "apply": "配偶者の必要書類は住民環境課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukui-mihama.lg.jp/soshiki/9/7327.html",
+              "label": "美浜町ドライバー等卒業支援サービス事業 - 福井県美浜町",
+              "updated": "2024-01-17",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.fukui-mihama.lg.jp/soshiki/9/9932.html",
+          "label": "美浜町コミュニティバス「チョイソコみはま」、「美浜ブルーライン」について - 福井県美浜町",
+          "updated": "2026-08-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fukui-mihama.lg.jp/uploaded/attachment/7413.pdf",
+          "label": "美浜町コミュニティバスご利用ガイド（2025年4月）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www1.g-reiki.net/mihama/reiki_honbun/i232RG00000342.html",
+          "label": "美浜町コミュニティバスの運行に関する条例施行規則",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fukui-mihama.lg.jp/soshiki/9/7327.html",
+          "label": "美浜町ドライバー等卒業支援サービス事業 - 福井県美浜町",
+          "updated": "2024-01-17",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内2024/1/17、ガイド2025/4・例規更新日なし。返納券の使える具体的バス・枚数精算、無免許配偶者の居住条件と申請詳細は住民環境課0770-32-6703へ確認してください。シルバーパスは町企画政策課へ現行対象便を確認。"
+    },
+    {
+      "slug": "obama",
+      "name": "小浜市",
+      "status": "active",
+      "summary": "65歳以上の市民はJRバス若江線運賃50%助成。正式返納者にはあいあいバス無料パスとバス回数券等の選択。",
+      "programs": [
+        {
+          "name": "シニアJRバス若江線運賃助成",
+          "kind": "reimbursement",
+          "age_min": 65,
+          "eligibility": "小浜市内住所の65歳以上。R8/4/1以降利用分、定期乗車券は対象外。",
+          "benefit": "若江線の運賃50%を助成。広報は限度額なし。サポーター加算2%はJR鉄道のみ。",
+          "fare": "乗車時は通常運賃を支払い、領収書を取得して後日50%を口座還付。IC乗車は降車時領収書。",
+          "routes": "西日本JRバス若江線。",
+          "apply": "申請書兼請求書・領収書を市3階新幹線/交通政策課へ。購入後6か月又は年度2月末の早い日まで、3月利用は4月以降申請。翌々月まで振込。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www1.city.obama.fukui.jp/kurashi/kokyokotsu/riyoujosei/p005685.html",
+              "label": "JR小浜線・若江線｜シニア向け運賃賃助成 | 小浜市公式ホームページ",
+              "updated": "2026-03-25",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.city.obama.fukui.jp/obm/teiju/wp-content/uploads/2026/04/e45370e9d7e1c1b8e52301aa52714442.pdf",
+              "label": "広報おばま2026年5月号",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納あいあいバス無料パス",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の小浜市民、全免許自主返納から1年以内申請（県一覧）。",
+          "benefit": "あいあいバス無料定期券、3年間。",
+          "fare": "無料定期で無料。提示手順は記載なし。",
+          "routes": "あいあいバス。",
+          "apply": "取消通知書・年齢確認書類で申請。窓口等の詳細は市防災安全課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納バス回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の小浜市民、全免許自主返納から1年以内申請。バス回数券又はタクシー券を選択（県一覧）。",
+          "benefit": "10,000円分バス回数券（無期限）。あいあい無料定期と併せて選択交付。",
+          "fare": "回数券を運賃に充当。枚数・不足額精算は記載なし。",
+          "routes": "あいあいバス・流星号。",
+          "apply": "取消通知書・年齢確認書類で申請。窓口等は市防災安全課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www1.city.obama.fukui.jp/kurashi/kokyokotsu/riyoujosei/p005685.html",
+          "label": "JR小浜線・若江線｜シニア向け運賃賃助成 | 小浜市公式ホームページ",
+          "updated": "2026-03-25",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www1.city.obama.fukui.jp/obm/teiju/wp-content/uploads/2026/04/e45370e9d7e1c1b8e52301aa52714442.pdf",
+          "label": "広報おばま2026年5月号",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県一覧R8/6/1は更新日なし。返納支援の現行申請場所、パス提示方法、回数券枚数/不足額精算は防災安全課0770-64-6007へ確認してください。"
+    },
+    {
+      "slug": "takahama",
+      "name": "高浜町",
+      "status": "active",
+      "summary": "65歳以上は赤ふんバス150円。正式返納者に18,000円回数券の選択と赤ふん半額カード。",
+      "programs": [
+        {
+          "name": "65歳以上赤ふんバス割引カード",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の赤ふん300円利用者。原則町内在住で登録。町外の人は町内登録利用者の紹介が必要。",
+          "benefit": "通常300円を150円、割引カード無期限。",
+          "fare": "乗車ごと高齢者割引カードを運転手へ提示し150円。",
+          "routes": "町内一円を運行するオンデマンド赤ふんバス。",
+          "apply": "生年月日確認書類を総合政策課へ。利用登録と電話/インターネット予約も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p008131.html",
+              "label": "赤ふんバス高齢者割引制度について｜高浜町公式ホームページ",
+              "updated": "2026-09-28",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007860.html",
+              "label": "赤ふんバスについて｜高浜町公式ホームページ",
+              "updated": "2024-12-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納赤ふんバス回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "満65歳以上で免許自主返納。居住条件は返納チラシに記載なし。赤ふん又は京都交通回数券を選択。",
+          "benefit": "18,000円分。赤ふん券の期限は記載なし。",
+          "fare": "回数券を運賃に充当。券額・不足額精算は記載なし。",
+          "routes": "赤ふんバス。原則町内登録、町外は紹介利用。",
+          "apply": "取消通知書・印鑑を町防災安全課へ。審査後券交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/bousai/p003124_d/fil/mennkyohennnou.pdf",
+              "label": "高浜町運転免許自主返納支援事業案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007860.html",
+              "label": "赤ふんバスについて｜高浜町公式ホームページ",
+              "updated": "2024-12-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納京都交通回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "満65歳以上で免許自主返納。居住条件は返納チラシに記載なし。赤ふん又は京都交通回数券を選択。",
+          "benefit": "18,000円分。京都交通券の使用期限は半年。",
+          "fare": "回数券を運賃に充当。券額・不足額精算は記載なし。",
+          "routes": "京都交通バス（対象路線は記載なし）。",
+          "apply": "取消通知書・印鑑を町防災安全課へ。審査後券交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/bousai/p003124_d/fil/mennkyohennnou.pdf",
+              "label": "高浜町運転免許自主返納支援事業案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007860.html",
+              "label": "赤ふんバスについて｜高浜町公式ホームページ",
+              "updated": "2024-12-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納赤ふんバス半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "免許自主返納者。回数券チラシは65歳以上の支援案内、現行バス運賃案内の半額欄には年齢限定記載なし。年齢・居住要件は町へ確認。赤ふん事前登録・予約が必要。",
+          "benefit": "赤ふん運賃300円を150円。県一覧は無期限。",
+          "fare": "運転経歴証明書又は半額利用カードを乗車時提示し150円。",
+          "routes": "赤ふんバス。",
+          "apply": "経歴証明書がない人は防災安全課で半額カード発行。券申請は取消通知書・印鑑持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/bousai/p003124_d/fil/mennkyohennnou.pdf",
+              "label": "高浜町運転免許自主返納支援事業案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007860.html",
+              "label": "赤ふんバスについて｜高浜町公式ホームページ",
+              "updated": "2024-12-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p008131.html",
+          "label": "赤ふんバス高齢者割引制度について｜高浜町公式ホームページ",
+          "updated": "2026-09-28",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007860.html",
+          "label": "赤ふんバスについて｜高浜町公式ホームページ",
+          "updated": "2024-12-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.takahama.fukui.jp/page/bousai/p003124_d/fil/mennkyohennnou.pdf",
+          "label": "高浜町運転免許自主返納支援事業案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "赤ふん利用案内2024/12/16、返納チラシ更新日なし。返納回数券の枚数/不足額精算、赤ふん券期限・京都交通の対象路線は防災安全課0770-72-7701へ確認してください。"
+    },
+    {
+      "slug": "oi",
+      "name": "おおい町",
+      "status": "active",
+      "summary": "70歳以上等に町内路線バス無料、70歳以上町民にデマンド300円。正式返納又は失効者はデマンド実質無料の5年割引証。",
+      "programs": [
+        {
+          "name": "高齢者町内路線バス無料",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "70歳以上の方、又は65歳以上70歳未満で有効な普通自動車免許の交付を受けていない方。町の在宅高齢者支援案内。居住条件詳細は記載なし。",
+          "benefit": "町内路線バス運賃無料。",
+          "fare": "無料。無料資格の提示方法は記載なし。",
+          "routes": "町内路線バス。具体的路線名は制度案内に記載なし。",
+          "apply": "取得申請・書類は記載なし。地域包括支援センター0770-77-2770へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ohi.fukui.jp/mobile/1201/lifeevent07/p11903.html",
+              "label": "在宅高齢者支援サービス（外出支援） - おおい町公式携帯サイト",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+              "label": "市町によるサービス（令和8年6月1日版）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上うみりんスマイル号300円",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "おおい町内に住む70歳以上。事前利用者登録が必要。",
+          "benefit": "通常単独500円を、乗合の有無によらず1人1回300円。",
+          "fare": "1人1回300円。年齢/居住証明の提示手順は記載なし。",
+          "routes": "デマンドバスうみりんスマイル号。大飯地域又は名田庄地域内、両地域相互乗入不可。",
+          "apply": "事前登録して大飯0770-77-1955又は名田庄0770-67-3395へ電話予約。高齢割引の確認書類は町へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ohi.fukui.jp/1001/1208/53/p21038.html",
+              "label": "おおい町デマンドバス「うみりんスマイル号」の運行について | おおい町公式ホームページ",
+              "updated": "2023-01-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納デマンドバス300円助成",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "おおい町住民基本台帳に記録される満70歳以上。有効期間内のすべての運転免許を正式自主返納した方。転出・死亡等で支援取消。",
+          "benefit": "乗車1回300円を助成。一般高齢者200円助成と合わせ実質無料。支援決定から5年間。",
+          "fare": "高齢者運賃300円分を助成して実質無料。割引証の提示方法等は案内に記載なし。",
+          "routes": "おおい町デマンドバスうみりんスマイル号。大飯又は名田庄地域内、相互乗入不可。",
+          "apply": "申請書に取消通知書又は経歴証明書写しを添えて町へ。決定通知と割引証を交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ohi.fukui.jp/object/object01/8018/p21584.html",
+              "label": "高齢者運転免許自主返納等支援事業について | おおい町公式ホームページ",
+              "updated": "2021-09-24",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ohi.fukui.jp/object/object01/8018/p21584_d/fil/6.pdf",
+              "label": "おおい町高齢者運転免許自主返納等支援事業実施要綱（R8/6/19改正）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ohi.fukui.jp/1001/1208/53/p21038.html",
+              "label": "おおい町デマンドバス「うみりんスマイル号」の運行について | おおい町公式ホームページ",
+              "updated": "2023-01-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許失効デマンドバス300円助成",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "おおい町住民基本台帳に記録される満70歳以上。運転免許を失効した方。経歴証明書が必要。転出・死亡等で支援取消。",
+          "benefit": "乗車1回300円を助成。一般高齢者200円助成と合わせ実質無料。支援決定から5年間。",
+          "fare": "高齢者運賃300円分を助成して実質無料。割引証の提示方法等は案内に記載なし。",
+          "routes": "おおい町デマンドバスうみりんスマイル号。大飯又は名田庄地域内、相互乗入不可。",
+          "apply": "申請書に経歴証明書写しを添えて町へ。決定通知と割引証を交付。窓口詳細は防災安全課へ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ohi.fukui.jp/object/object01/8018/p21584.html",
+              "label": "高齢者運転免許自主返納等支援事業について | おおい町公式ホームページ",
+              "updated": "2021-09-24",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ohi.fukui.jp/object/object01/8018/p21584_d/fil/6.pdf",
+              "label": "おおい町高齢者運転免許自主返納等支援事業実施要綱（R8/6/19改正）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ohi.fukui.jp/1001/1208/53/p21038.html",
+              "label": "おおい町デマンドバス「うみりんスマイル号」の運行について | おおい町公式ホームページ",
+              "updated": "2023-01-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ohi.fukui.jp/mobile/1201/lifeevent07/p11903.html",
+          "label": "在宅高齢者支援サービス（外出支援） - おおい町公式携帯サイト",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ohi.fukui.jp/1001/1208/53/p21038.html",
+          "label": "おおい町デマンドバス「うみりんスマイル号」の運行について | おおい町公式ホームページ",
+          "updated": "2023-01-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ohi.fukui.jp/object/object01/8018/p21584.html",
+          "label": "高齢者運転免許自主返納等支援事業について | おおい町公式ホームページ",
+          "updated": "2021-09-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ohi.fukui.jp/object/object01/8018/p21584_d/fil/6.pdf",
+          "label": "おおい町高齢者運転免許自主返納等支援事業実施要綱（R8/6/19改正）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi_d/fil/simachi080601.pdf",
+          "label": "市町によるサービス（令和8年6月1日版）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "外出支援の携帯版は更新日なし、デマンド案内2023年・返納案内2021年。要綱はR8/6/19改正。路線バス無料の申請・対象路線、デマンド割引証提示方法の現行詳細は地域包括支援センター0770-77-2770又は防災安全課0770-77-4054へ確認してください。"
+    },
+    {
+      "slug": "wakasa",
+      "name": "若狭町",
+      "status": "active",
+      "summary": "満65歳以上の町民で正式返納又は更新せず失効した方に、町営バス等で使える5,000円分割引券。",
+      "programs": [
+        {
+          "name": "自主返納町営バス等割引乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "若狭町内に住所を有する満65歳以上。運転免許を正式自主返納した方。交付1回限り。",
+          "benefit": "100円×50枚（5,000円分）。有効期限なし、釣り銭なし。",
+          "fare": "割引券を運賃に充当、釣り銭なし。不足額精算方法は記載なし。",
+          "routes": "若狭町営バス又はデマンドタクシー。具体的バス路線名は記載なし。",
+          "apply": "申請書・本人確認書類と取消通知書又は経歴証明書コピーを三方庁舎環境安全課又は上中庁舎上中窓口へ。上中受付は書類確認後記録郵便で券発送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukui-wakasa.lg.jp/soshiki/kankyoanzenka/gyomuannai/7/486.html",
+              "label": "運転免許自主返納サポート制度／若狭町",
+              "updated": "2026-06-08",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fukui-wakasa.lg.jp/material/files/group/8/hennnousupport.pdf",
+              "label": "若狭町運転免許自主返納サポート制度チラシ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "免許失効町営バス等割引乗車券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "若狭町内に住所を有する満65歳以上。更新を受けず免許失効し経歴証明書を作成した方。交付1回限り。",
+          "benefit": "100円×50枚（5,000円分）。有効期限なし、釣り銭なし。",
+          "fare": "割引券を運賃に充当、釣り銭なし。不足額精算方法は記載なし。",
+          "routes": "若狭町営バス又はデマンドタクシー。具体的バス路線名は記載なし。",
+          "apply": "申請書・本人確認書類と経歴証明書コピーを三方庁舎環境安全課又は上中庁舎上中窓口へ。上中受付は書類確認後記録郵便で券発送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukui-wakasa.lg.jp/soshiki/kankyoanzenka/gyomuannai/7/486.html",
+              "label": "運転免許自主返納サポート制度／若狭町",
+              "updated": "2026-06-08",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fukui-wakasa.lg.jp/material/files/group/8/hennnousupport.pdf",
+              "label": "若狭町運転免許自主返納サポート制度チラシ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.fukui-wakasa.lg.jp/soshiki/kankyoanzenka/gyomuannai/7/486.html",
+          "label": "運転免許自主返納サポート制度／若狭町",
+          "updated": "2026-06-08",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fukui-wakasa.lg.jp/material/files/group/8/hennnousupport.pdf",
+          "label": "若狭町運転免許自主返納サポート制度チラシ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "現行ページ2026/6/8、リンクされたチラシは更新日なし。100円券不足額の精算、現在の対象バス路線は環境安全課0770-45-9126へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.fukui.lg.jp/doc/kenan/koutuu/menkyohennoutirasi.html",
+    "label": "県の運転免許返納支援案内",
+    "checked": "2026-10-07"
+  }
+}

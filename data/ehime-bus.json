@@ -1,0 +1,1013 @@
+{
+  "checked": "2026-10-07",
+  "draft": false,
+  "cities": [
+    {
+      "slug": "imabari",
+      "name": "今治市",
+      "status": "notfound",
+      "summary": "高齢者・返納者の割引がある乗合交通は市公式ではタクシーです。高齢者向けのバス助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.imabari.ehime.jp/kotsus/taxi/",
+          "label": "市・乗合タクシー",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.imabari.ehime.jp/fukusis/siryo/",
+          "label": "市・令和8年4月高齢者福祉案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "更新日が不明な案内もあります。バス向け制度の有無は交通政策課0898-36-1632へ確認してください。"
+    },
+    {
+      "slug": "niihama",
+      "name": "新居浜市",
+      "status": "notfound",
+      "summary": "返納者向け運賃割引はデマンドタクシーです。別子山地域バスの条例にも高齢者専用の運賃助成は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.niihama.lg.jp/soshiki/koutsu/damandotakushii.html",
+          "label": "市・おでかけタクシー",
+          "updated": "2026-06-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.niihama.lg.jp/reiki_honbun/o206RG00000783.html?id=j7",
+          "label": "市・別子山地域バス条例（現行表示）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "条例の更新日は不明です。高齢者向けのバス助成は地域交通課へ確認してください。"
+    },
+    {
+      "slug": "saijo",
+      "name": "西条市",
+      "status": "active",
+      "summary": "75歳以上の市民に、3,000円分のいきいきバス乗車券を1,000円で購入する制度が案内されています。",
+      "programs": [
+        {
+          "name": "いきいきバス乗車券購入助成",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "市内に住所がある満75歳以上の方。返納不要。",
+          "benefit": "3,000円分の乗車券を1,000円で購入。旧計画では1回3冊まで、購入冊数・期限に制限なし。",
+          "fare": "利用者証を提示し乗車券で支払い。釣銭なし。",
+          "routes": "市内を運行する路線バス（高速バスを除く）。",
+          "apply": "市から利用者証を送付し、市役所・公民館等で乗車券を購入する案内です。現在の購入窓口・発行方法は地域福祉課0897-52-1292へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.saijo.ehime.jp/soshiki/citypromo/r5kocho-2.html",
+              "label": "市・いきいきバスへの回答",
+              "updated": "2023-11-06",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.saijo.ehime.jp/uploaded/attachment/40079.pdf",
+              "label": "市・2020年3月交通計画素案の制度概要",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.saijo.ehime.jp/soshiki/citypromo/r5kocho-2.html",
+          "label": "市・いきいきバスへの回答",
+          "updated": "2023-11-06",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.saijo.ehime.jp/uploaded/attachment/40079.pdf",
+          "label": "市・2020年3月交通計画素案の制度概要",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "対象・額を記す市の回答は2023年、路線・券の使い方は2020年資料です。現在の額・対象区間・受付を地域福祉課へ確認してください。"
+    },
+    {
+      "slug": "shikokuchuo",
+      "name": "四国中央市",
+      "status": "active",
+      "summary": "65歳以上は年2冊、75歳以上は年3冊まで、せとうちバス組合せ乗車券の購入費を半額補助します。",
+      "programs": [
+        {
+          "name": "高齢者バス利用費助成・65歳以上",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "65～74歳の方。返納不要。居住条件は市へ確認。",
+          "benefit": "1冊購入価格2,000円、額面2,200円のせとうちバス組合せ乗車券を半額補助。年間2冊まで。",
+          "fare": "1冊1,000円を申請時に負担し、10円・50円・100円券を運賃に使用。期限・不足額の扱いは市へ確認。",
+          "routes": "せとうちバス。対象区間は長寿支援課へ確認。",
+          "apply": "高齢者バス組み合せ乗車券利用費助成申請書と購入費を用意。本人以外の申請には委任状。長寿支援課0896-28-6024。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shikokuchuo.ehime.jp/soshiki/62/26167.html",
+              "label": "市・高齢者福祉サービス",
+              "updated": "2025-10-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "高齢者バス利用費助成・75歳以上",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "75歳以上の方。返納不要。居住条件は市へ確認。",
+          "benefit": "1冊購入価格2,000円、額面2,200円のせとうちバス組合せ乗車券を半額補助。年間3冊まで。",
+          "fare": "1冊1,000円を申請時に負担し、10円・50円・100円券を運賃に使用。期限・不足額の扱いは市へ確認。",
+          "routes": "せとうちバス。対象区間は長寿支援課へ確認。",
+          "apply": "高齢者バス組み合せ乗車券利用費助成申請書と購入費を用意。本人以外の申請には委任状。長寿支援課0896-28-6024。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.shikokuchuo.ehime.jp/soshiki/62/26167.html",
+              "label": "市・高齢者福祉サービス",
+              "updated": "2025-10-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.shikokuchuo.ehime.jp/soshiki/62/26167.html",
+          "label": "市・高齢者福祉サービス",
+          "updated": "2025-10-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "居住条件、対象路線・区間、券の期限と不足額の扱いは長寿支援課へ確認してください。"
+    },
+    {
+      "slug": "kamijima",
+      "name": "上島町",
+      "status": "henno",
+      "summary": "自主返納者は、町有バス回数券3,000円分か町商工会商品券3,000円分を選べます。",
+      "programs": [
+        {
+          "name": "自主返納・町有バス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "上島町に住む方で、有効な免許を2018年10月1日以降に自主返納した方。年齢条件は明記なし。経歴証明書を作らない返納だけの申請手順もあります。",
+          "benefit": "町有バス回数券又は町商工会商品券のどちらか3,000円分。",
+          "fare": "交付されたバス回数券で乗車。券の期限と差額の扱いは町へ確認。",
+          "routes": "上島町有バス。",
+          "apply": "返納のみは取消通知書・自主返納申請受理書・印鑑を各総合支所へ提出し、特典を簡易書留で郵送。経歴証の手数料補助も申請する場合は預金通帳を追加。総務課0897-77-2504。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kamijima.lg.jp/soshiki/2/13762.html",
+              "label": "町・返納推進事業",
+              "updated": "2019-01-11",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kamijima.lg.jp/soshiki/4/27622.html",
+              "label": "町・令和8年度補助一覧",
+              "updated": "2026-06-26",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kamijima.lg.jp/soshiki/2/13762.html",
+          "label": "町・返納推進事業",
+          "updated": "2019-01-11",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kamijima.lg.jp/soshiki/4/27622.html",
+          "label": "町・令和8年度補助一覧",
+          "updated": "2026-06-26",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2026年度一覧で3,000円の支援を確認しました。2019年更新の詳細案内には現在のマイナ手続きも追記されていますが、対象・必要書類・券の期限は総務課へ確認してください。"
+    },
+    {
+      "slug": "matsuyama",
+      "name": "松山市",
+      "status": "notfound",
+      "summary": "市の返納案内は協賛事業者の特典を紹介しています。市独自の高齢者向けバス運賃助成は確認した案内では見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.matsuyama.ehime.jp/kurashi/kurashi/seibi/anzen/menkyohennou.html",
+          "label": "運転免許証の自主返納制度",
+          "updated": "2026-09-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.matsuyama.ehime.jp/kurashi/fukushi/korei/koureishakazoku/index.html",
+          "label": "高齢者やその家族向けの事業",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "高齢福祉一覧に更新日の表示がありません。新しいバス支援の有無は都市・交通計画課（089-948-6446）へ確認してください。"
+    },
+    {
+      "slug": "iyo",
+      "name": "伊予市",
+      "status": "henno",
+      "summary": "65歳以上の自主返納者に、市コミュニティバス等の利用券10回分を交付します。",
+      "programs": [
+        {
+          "name": "自主返納者のバス利用券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "伊予市に住民登録がある65歳以上で、有効な運転免許証を自主返納した方。失効後の返納は対象に含めない。",
+          "benefit": "市コミュニティバス又はデマンドタクシーの利用券10回分を無料交付。1人1回限り。",
+          "fare": "利用券で乗車。券1回分での支払い範囲・追加料金の有無は記載なし。",
+          "routes": "伊予市コミュニティバス「あいくる」。デマンドタクシーにも利用できる。",
+          "apply": "都市整備課・中山地域事務所・双海地域事務所へ。本人確認書類と、取消通知書・四隅に穴の空いた旧免許証・返納証明のある住基カード・経歴証明書のいずれか1点を持参。代理は代理人の本人確認書類も必要。健康保険証等の現在の代替書類は都市整備課（089-909-6360）へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.iyo.lg.jp/keizaikoyou/matidukuri/untenmenkyojisyuhennou.html",
+              "label": "自主返納者への利用券",
+              "updated": "2026-09-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.iyo.lg.jp/keizaikoyou/matidukuri/documents/mennkyohnnnou_tirasi20260901.pdf",
+              "label": "利用券交付チラシ（2026年9月案内からのリンク）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.iyo.lg.jp/keizaikoyou/matidukuri/untenmenkyojisyuhennou.html",
+          "label": "自主返納者への利用券",
+          "updated": "2026-09-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.iyo.lg.jp/keizaikoyou/matidukuri/documents/mennkyohnnnou_tirasi20260901.pdf",
+          "label": "利用券交付チラシ（2026年9月案内からのリンク）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県警一覧は66歳以上、市の2026年9月案内は65歳以上と異なり、市の案内を優先しています。チラシに発行日がなく、利用期限・券の支払い範囲と本人確認書類の扱いは都市整備課（089-909-6360）へ確認してください。"
+    },
+    {
+      "slug": "toon",
+      "name": "東温市",
+      "status": "henno",
+      "summary": "65歳以上で全ての運転免許を返納した方に、全国交通系ICカードへ入金する5,000円のチャージ券を選択交付します。",
+      "programs": [
+        {
+          "name": "自主返納者の交通系ICチャージ券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "東温市に住民登録し、返納時に満65歳以上。2017年9月1日以降に全ての免許を自主返納した方。失効は対象外。本人利用に限る。",
+          "benefit": "5,000円分の全国交通系ICカードのチャージ券。タクシー券との選択で1人1回。現金引換不可。",
+          "fare": "チャージ後のIC残高で運賃を支払う。伊予鉄では現金との併用不可。不足時はチャージするか全額現金払い。",
+          "routes": "全国交通系ICに対応するバス。伊予鉄は新居浜特急バスの瀬戸内バス運行便・高速バスを除く。",
+          "apply": "返納と同時なら松山南警察署、後日なら市危機管理課へ申請書・取消通知書原本・穴のあいた旧免許証。同時申請は後2点省略可能。交付後は横河原駅・川内バスターミナル等でチャージ。カード購入費・チャージ券期限は市危機管理課（089-964-4483）へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.toon.ehime.jp/soshiki/5/17272.html",
+              "label": "運転免許返納サポート事業",
+              "updated": "2025-04-18",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.iyotetsu.co.jp/railbus/ticket/",
+              "label": "伊予鉄・全国交通系ICカードが使えるバス",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.iyotetsu.co.jp/railbus/icoca/guide.html",
+              "label": "伊予鉄・ICカードの運賃精算",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.toon.ehime.jp/soshiki/5/17272.html",
+          "label": "運転免許返納サポート事業",
+          "updated": "2025-04-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.iyotetsu.co.jp/railbus/ticket/",
+          "label": "伊予鉄・全国交通系ICカードが使えるバス",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.iyotetsu.co.jp/railbus/icoca/guide.html",
+          "label": "伊予鉄・ICカードの運賃精算",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の対象・金額案内は2025年4月更新、IC利用案内は更新日未表示です。カード購入費とチャージ券の期限は危機管理課（089-964-4483）へ確認してください。タクシー券の1年期限をIC券に流用していません。"
+    },
+    {
+      "slug": "kumakogen",
+      "name": "久万高原町",
+      "status": "active",
+      "summary": "年度末までに75歳となる町民と75歳未満の自主返納者に交通利用券。町営バスには返納者の半額割引もあります。",
+      "programs": [
+        {
+          "name": "年度末75歳以上の交通利用券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "町内に住所を有し、2027年3月31日までに75歳以上となる方。返納不要。",
+          "benefit": "令和8年度の交通利用券。4〜6月申請24,000円、7〜9月18,000円、10〜12月12,000円、1〜3月6,000円。利用は2027年3月31日まで。",
+          "fare": "交通利用券を利用。1乗車の利用枚数・差額負担・釣銭は記載なし。",
+          "routes": "JR四国バス・町営バスなど町内の掲載交通機関。伊予鉄南予バスの現在使える路線は町へ確認。",
+          "apply": "住所・年齢を証する原本（マイナンバーカード・免許証等）を持ち、本庁保健福祉課又は各支所へ。受付2026年4月1日〜2027年3月31日の平日。事前記入の申請書も誓約欄は本人自署。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.kumakogen.jp/soshiki/3/26036.html",
+              "label": "令和8年度・交通利用券",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.kumakogen.jp/uploaded/image/9084.jpg",
+              "label": "令和8年度・申請時期別交付金額",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "75歳未満の自主返納者の交通利用券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "町内に住所を有し、75歳未満で身体・療育・精神の障害者手帳を持たず、免許を自主返納した方。",
+          "benefit": "令和8年度の交通利用券。4〜6月申請24,000円、7〜9月18,000円、10〜12月12,000円、1〜3月6,000円。利用は2027年3月31日まで。",
+          "fare": "交通利用券を利用。1乗車の利用枚数・差額負担・釣銭は記載なし。",
+          "routes": "JR四国バス・町営バスなど町内の掲載交通機関。伊予鉄南予バスの現在使える路線は町へ確認。",
+          "apply": "返納を証明する運転経歴証明書等の原本を持ち、本庁保健福祉課又は各支所へ。受付2026年4月1日〜2027年3月31日の平日。事前記入の申請書も誓約欄は本人自署。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.kumakogen.jp/soshiki/3/26036.html",
+              "label": "令和8年度・交通利用券",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.kumakogen.jp/uploaded/image/9084.jpg",
+              "label": "令和8年度・申請時期別交付金額",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "町営バスの免許返納割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転免許証の返納が確認できるものを提示する方。年齢・居住条件は記載なし。",
+          "benefit": "町営バス普通運賃を5割引。",
+          "fare": "乗車時に降りる停留所を伝え、半額の運賃を支払う。",
+          "routes": "久万落出線・古味線・岩川線の町営バス。",
+          "apply": "運転経歴証明書など返納が確認できるものを乗車時に提示。別途の事前申請は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.kumakogen.jp/soshiki/2/14210.html",
+              "label": "町営バス・免許返納割引",
+              "updated": "2025-03-19",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kumakogen.jp/soshiki/3/26036.html",
+          "label": "令和8年度・交通利用券",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.kumakogen.jp/uploaded/image/9084.jpg",
+          "label": "令和8年度・申請時期別交付金額",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.kumakogen.jp/soshiki/2/14210.html",
+          "label": "町営バス・免許返納割引",
+          "updated": "2025-03-19",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "交通利用券の差額・釣銭と現行の伊予鉄南予バス対象路線は保健福祉課へ確認してください。失効した免許証も申請書類として記載されますが、対象欄は自主返納とあり、失効者の資格は別途確認が必要です。町営バス割引の詳細は2025年3月案内で、居住条件や券との併用は総務課（0892-21-1111）へ確認してください。金額画像は日付未表示ですが令和8年度の内容です。"
+    },
+    {
+      "slug": "masaki",
+      "name": "松前町",
+      "status": "active",
+      "summary": "65歳以上の町民はひまわりバス無料。65歳になってから返納した方には1万円分のICチャージ券を選択交付します。",
+      "programs": [
+        {
+          "name": "65歳以上のひまわりバス無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "町内在住の65歳以上。返納不要。",
+          "benefit": "ひまわりバス無料。",
+          "fare": "身分証明書を提示すると0円。",
+          "routes": "松前町ひまわりバス。",
+          "apply": "乗車時に身分証明書を提示。別途申請は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.masaki.ehime.jp/soshiki/3/6920.html",
+              "label": "ひまわりバスの運賃",
+              "updated": "2022-03-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のICチャージ引換券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町の住民基本台帳に記録があり、65歳になってから自主返納した方。失効者及び重度障害者タクシー助成対象者は除外。",
+          "benefit": "1万円分の全国交通系ICカードへのチャージ引換券。タクシー券と選択し1人1回。交付から6か月以内にチャージ。",
+          "fare": "券のまま乗車不可。入金後IC残高で支払い。カードなしは2,000円（保証金500円・入金1,500円）でICOCA購入が必要。不足時はチャージ又は全額現金。",
+          "routes": "IC対応の伊予鉄バス等。新居浜特急バスの瀬戸内バス運行便・高速バスを除く。",
+          "apply": "返納同時は伊予警察署、後日は町危機管理課に申請書と返納証明4種類のいずれかの写し（取消通知書又は運転免許経歴証明書の場合は別途本人確認）。10月15日までは松前駅、16日から古泉駅でカード販売・チャージ。代理は委任状等を事前相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.masaki.ehime.jp/soshiki/47/31412.html",
+              "label": "自主返納支援・2026年4月IC追加",
+              "updated": "2026-03-30",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.iyotetsu.co.jp/railbus/ticket/",
+              "label": "伊予鉄・全国交通系ICが使える路線",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.iyotetsu.co.jp/railbus/icoca/guide.html",
+              "label": "伊予鉄・IC精算",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.masaki.ehime.jp/soshiki/3/6920.html",
+          "label": "ひまわりバスの運賃",
+          "updated": "2022-03-30",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.masaki.ehime.jp/soshiki/47/31412.html",
+          "label": "自主返納支援・2026年4月IC追加",
+          "updated": "2026-03-30",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.iyotetsu.co.jp/railbus/ticket/",
+          "label": "伊予鉄・全国交通系ICが使える路線",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.iyotetsu.co.jp/railbus/icoca/guide.html",
+          "label": "伊予鉄・IC精算",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "ひまわりバスは2022年3月更新、IC運賃案内は更新日未表示のため現行の取扱いは財政課又は危機管理課（089-989-5103）へ確認してください。ICチャージ窓口は2026年10月16日から古泉駅へ変わります。"
+    },
+    {
+      "slug": "tobe",
+      "name": "砥部町",
+      "status": "active",
+      "summary": "町内在住65歳以上の方は、とべ温泉・買い物・通院に使える定時バスが無料です。返納支援事業は2026年3月31日終了。",
+      "programs": [
+        {
+          "name": "とべ温泉行きバスの高齢者無料利用",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "砥部町内在住の65歳以上。返納不要。",
+          "benefit": "とべ温泉行きバス乗車無料。",
+          "fare": "0円。",
+          "routes": "月曜：広田・万年・大南、火曜：大角蔵・七折・宮内・高尾田、金曜：外山・五本松・岩谷口・八倉。温泉だけでなく買い物・通院にも利用可。",
+          "apply": "予約不要。運行日・停留所を確認して乗車。本人確認書類の提示要否は記載なし。介護福祉課（089-962-7255）へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tobe.ehime.jp/iryo_kenko_fukushi/koreinokatanoshien/7/3476.html",
+              "label": "令和8年度とべ温泉行きバス",
+              "updated": "2026-04-30",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.tobe.ehime.jp/material/files/group/8/R8thirashi.pdf",
+              "label": "令和8年度とべ温泉行きバス案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.tobe.ehime.jp/iryo_kenko_fukushi/koreinokatanoshien/7/3476.html",
+          "label": "令和8年度とべ温泉行きバス",
+          "updated": "2026-04-30",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.tobe.ehime.jp/material/files/group/8/R8thirashi.pdf",
+          "label": "令和8年度とべ温泉行きバス案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.tobe.ehime.jp/soshikikarasagasu/kaigofukushika/4/7/695.html",
+          "label": "自主返納支援の受付終了",
+          "updated": "2026-03-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "令和8年度の無料バス案内ですがチラシは発行日未表示です。本人確認書類の提示方法は介護福祉課（089-962-7255）へ確認してください。返納支援終了後、既発行券は券の期限まで利用できます。"
+    },
+    {
+      "slug": "uwajima",
+      "name": "宇和島市",
+      "status": "notfound",
+      "summary": "市の返納支援は運転経歴証明書等の手数料補助で、令和7年度で終了しています。高齢者向けバス運賃の市独自助成は確認した案内では見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.uwajima.ehime.jp/info/menkyohennou.html",
+          "label": "自主返納支援・令和7年度終了",
+          "updated": "2026-02-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.uwajima.ehime.jp/soshiki/19/index.html",
+          "label": "高齢者福祉課の事業一覧",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "福祉事業一覧にページ全体の更新日がありません。新たなバス支援の有無は市高齢者福祉課（0895-49-7018）へ確認してください。"
+    },
+    {
+      "slug": "yawatahama",
+      "name": "八幡浜市",
+      "status": "active",
+      "summary": "75歳以上・所得割非課税の方に外出支援チケット。65歳以上の自主返納者には5,000円分のタクシー・バス券も案内されています。",
+      "programs": [
+        {
+          "name": "75歳以上の高齢者外出支援",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "75歳以上で市民税所得割非課税。介護保険施設等入所者又は他の外出支援利用者は対象外。市外居住者の申請可否は窓口確認。",
+          "benefit": "4〜9月申請18,000円、10〜3月申請9,000円。年度途中で対象となった方は月割り。",
+          "fare": "チケットを利用。バスでの1回利用上限・不足額の支払い・釣銭は記載なし。タクシーの1,000円上限とは区別。",
+          "routes": "市内の移動に使うバス等。市内に営業所等がある取扱業者。具体的バス路線は窓口確認。",
+          "apply": "資格証明書交付申請書を市保健センター高齢者福祉係（0894-24-6626）へ。代理は本人の本人確認書類と代理の本人確認書類・認印を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.yawatahama.ehime.jp/doc/2022042500018/",
+              "label": "家族介護支援・高齢者外出支援",
+              "updated": "2026-06-18",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "高齢者の自主返納タクシー・バス券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上で2012年4月1日以降に有効期間内に自主返納。返納時と申請時の両方で市内在住。",
+          "benefit": "100円券50枚、5,000円分。1人1回。",
+          "fare": "バス券で支払い。利用枚数・差額・釣銭は記載なし。",
+          "routes": "指定のタクシー・バス。バスの路線・業者は記載なし。",
+          "apply": "八幡浜警察署交通課へ。既返納者は印鑑と取消通知書又は経歴証明書。これから返納する方は印鑑と有効な免許証で返納と同時に申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.yawatahama.ehime.jp/doc/2017100600014/",
+              "label": "高齢者運転免許自主返納支援",
+              "updated": "2017-10-06",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.yawatahama.ehime.jp/doc/2022042500018/",
+          "label": "家族介護支援・高齢者外出支援",
+          "updated": "2026-06-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.yawatahama.ehime.jp/doc/2017100600014/",
+          "label": "高齢者運転免許自主返納支援",
+          "updated": "2017-10-06",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "外出支援は2026年6月の18,000円案内を優先しています。バスの対象路線・支払い方法と居住条件は保健センター（0894-24-6626）へ確認してください。返納枠の市案内は2017年公開で県警の2026年9月一覧にも掲載されますが、現行路線・期限等は総務課（0894-22-3111）へ確認してください。"
+    },
+    {
+      "slug": "ozu",
+      "name": "大洲市",
+      "status": "notfound",
+      "summary": "返納支援は経歴証明書の申請費助成です。循環バスは一般共通の運賃・通院割引があり、高齢者に限った市独自バス運賃支援は確認した案内では見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.ozu.ehime.jp/soshiki/kikikanri/57318.html",
+          "label": "返納支援・経歴証手数料",
+          "updated": "2025-03-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ozu.ehime.jp/soshiki/chiikishinkou/31044.html",
+          "label": "市内循環バスぐるりんおおず",
+          "updated": "2023-06-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は2025年3月、循環バスは2023年6月更新です。新しい高齢者向けバス支援は地域振興課（0893-57-9989）へ確認してください。"
+    },
+    {
+      "slug": "seiyo",
+      "name": "西予市",
+      "status": "active",
+      "summary": "65歳以上の市民に、市内の対象路線・片道260円以上の区間の運賃半額を年度内72回まで助成します。",
+      "programs": [
+        {
+          "name": "高齢者バス運賃半額助成",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "西予市内に住所があり申請日に65歳以上。他の障害者割引や自主返納割引などを既に利用している方は除外。",
+          "benefit": "片道260円以上の対象区間の運賃半額を助成。年度内72回、36枚綴り2冊まで。毎年度3月31日まで有効。",
+          "fare": "降車時に資格証明書を提示し、乗車地・目的地を記入した助成券を渡して半額を支払う。10円未満切り上げ（270円なら140円）。",
+          "routes": "宇和島自動車のバス（急行・特急は除外）、野村ツーリストの野村地区代替バス。西予市内の区間のみ。",
+          "apply": "申請書と本人確認書類（マイナンバーカード・介護保険証等）で長寿介護課・各支所地域生活課・各地域づくり活動センターへ。翌年度も改めて申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.seiyo.ehime.jp/kakuka/fukushi_jimusho/choju_kaigo/koureisyafukusi/1124.html",
+              "label": "65歳以上のバス運賃補助",
+              "updated": "2026-02-03",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.seiyo.ehime.jp/kakuka/fukushi_jimusho/choju_kaigo/koureisyafukusi/1124.html",
+          "label": "65歳以上のバス運賃補助",
+          "updated": "2026-02-03",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "uchiko",
+      "name": "内子町",
+      "status": "henno",
+      "summary": "65歳以上で返納した町民に、町営バス・デマンドバス等で使える15,000円分の助成券を選択交付します。",
+      "programs": [
+        {
+          "name": "自主返納者の町営バス等助成券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内に住所があり、返納時満65歳以上。町の詳細案内は2022年4月1日以降の自主返納を対象とする。",
+          "benefit": "100円券150枚、15,000円分。給油券との選択で1人1回。有効期間は発行から1年。",
+          "fare": "助成券を利用。釣銭なし。券を超える運賃の支払い方法は記載なし。",
+          "routes": "内子町営バス・デマンドバス。町内の指定タクシーにも利用可能。",
+          "apply": "内子交番で返納時に申請。大洲警察署・免許センターで返納した方は町本庁総務課・分庁総合窓口センター・小田支所又は内子交番へ取消通知書又は経歴証明書を提示し申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.uchiko.ehime.jp/soshiki/1/jisyuhennou.html",
+              "label": "高齢者の自主返納支援",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.uchiko.ehime.jp/soshiki/53/144208.html",
+              "label": "令和8年・町の支援事業一覧",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.uchiko.ehime.jp/soshiki/1/jisyuhennou.html",
+          "label": "高齢者の自主返納支援",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.uchiko.ehime.jp/soshiki/53/144208.html",
+          "label": "令和8年・町の支援事業一覧",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "詳細は2022年4月更新です。2026年の町支援一覧に事業は掲載されますが、県警一覧は2019年4月以降、町は2022年4月以降と対象返納日が異なります。該当日と現行の利用路線・差額支払いは総務課（0893-44-2111）へ確認してください。"
+    },
+    {
+      "slug": "ikata",
+      "name": "伊方町",
+      "status": "henno",
+      "summary": "65歳以上の自主返納者に、町内バス等の交通利用券を毎年15,000円分、3年を限度に選択交付します。",
+      "programs": [
+        {
+          "name": "自主返納者の交通利用券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内に住所がある満65歳以上で、2017年4月1日以降に全ての運転免許を自主返納した方。年齢の判定時点は記載なし。",
+          "benefit": "町内バス・タクシー交通利用券又は地域商品券のいずれか。毎年15,000円分、3年を限度。",
+          "fare": "交通利用券を使う。1回利用枚数・差額・釣銭は記載なし。",
+          "routes": "伊方町内のバス及びタクシー。具体的事業者・路線は記載なし。",
+          "apply": "年度ごとに申請書と取消通知書の写し又は経歴証明書の写しを提出。町総務課（0894-38-2655）又は瀬戸・三崎支所へ相談。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ikata.ehime.jp/soshiki/1/8561.html",
+              "label": "高齢者運転免許自主返納支援",
+              "updated": "2019-10-07",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ikata.ehime.jp/soshiki/1/8561.html",
+          "label": "高齢者運転免許自主返納支援",
+          "updated": "2019-10-07",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の詳細案内は2019年10月更新です。県警2026年9月一覧にも掲載されますが、対象の年齢判定時点、現行路線・利用期限・支払い方法は総務課（0894-38-2655）へ確認してください。"
+    },
+    {
+      "slug": "matsuno",
+      "name": "松野町",
+      "status": "active",
+      "summary": "65歳以上は平日の定時定路線バスが100円。月3,000円の共通定額券があり、自主返納・病気等による取消者のバス利用券も案内しています。",
+      "programs": [
+        {
+          "name": "65歳以上の定時定路線バス割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。返納不要。居住条件は記載なし。",
+          "benefit": "通常200円の定時定路線バスを100円で利用。",
+          "fare": "1回100円。年齢が分かる登録証又は生年月日等が記載された本人確認書類を支払い時に提示。",
+          "routes": "平日のコミュニティバス目黒循環線・蕨奥循環線の1・2便、葛川線・上家地線の1便。10月1日から土曜の定路便は運行しない。",
+          "apply": "定路便は利用登録・予約不要。年齢が分かる証明を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.matsuno.ehime.jp/soshiki/3/17912.html",
+              "label": "2026年10月本格運行・定路バスと共通定額券",
+              "updated": "2026-09-07",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.matsuno.ehime.jp/uploaded/attachment/7295.pdf",
+              "label": "定時定路線時刻表・令和8年10月1日改正",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65歳以上のバス共通定額券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。返納不要。居住条件は記載なし。",
+          "benefit": "1か月3,000円でコミュニティバスと「あいBusまつの」共通の定額乗り放題。",
+          "fare": "定額券購入後、期間中は追加料金なし。",
+          "routes": "平日のコミュニティバス目黒循環線・蕨奥循環線の1・2便、葛川線・上家地線の1便。10月1日から土曜の定路便は運行しない。 共通券はデマンド交通にも利用可能。",
+          "apply": "定期券購入申込書を町ふるさと創生課窓口へ。必要な年齢証明や期間の開始日は記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.matsuno.ehime.jp/soshiki/3/17912.html",
+              "label": "2026年10月本格運行・定路バスと共通定額券",
+              "updated": "2026-09-07",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のコミュニティバス利用券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "松野町に住所があり現に居住し、返納時に満65歳以上。2012年4月1日以降に自主返納した方。",
+          "benefit": "コミュニティバスの利用券を交付。定路バス1回100円。通常65歳以上割引と同額。温泉券とは両方又は片方を申請可。",
+          "fare": "バス利用券を運転手へ提示し1回100円を支払う。",
+          "routes": "平日のコミュニティバス目黒循環線・蕨奥循環線の1・2便、葛川線・上家地線の1便。10月1日から土曜の定路便は運行しない。",
+          "apply": "自主返納した免許証の写し又は取消通知書又は経歴証明書と松野町高齢者運転免許自主返納等支援事業申請書を防災安全課へ。決定通知と券が郵送される。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.matsuno.ehime.jp/soshiki/3/17912.html",
+              "label": "2026年10月本格運行・定路バスと共通定額券",
+              "updated": "2026-09-07",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.matsuno.ehime.jp/uploaded/attachment/7107.pdf",
+              "label": "広報まつの令和8年5月・返納等支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "病気等による免許取消者のバス利用券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "町内に住所があり現に居住する65歳以上の方。2012年4月1日以降に道路交通法103条1項1号・1号の2・2号により取消となった方。年齢は原文が返納時と記すため取消時の判定は確認が必要。",
+          "benefit": "コミュニティバスの利用券を交付。定路バス1回100円。通常65歳以上割引と同額。温泉券とは両方又は片方を申請可。",
+          "fare": "バス利用券を運転手へ提示し1回100円を支払う。",
+          "routes": "平日のコミュニティバス目黒循環線・蕨奥循環線の1・2便、葛川線・上家地線の1便。10月1日から土曜の定路便は運行しない。",
+          "apply": "松野町高齢者運転免許自主返納等支援事業申請書を防災安全課へ提出。病気等による取消しを証明する書類は町へ確認してください。決定通知と券が郵送されます。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.matsuno.ehime.jp/soshiki/3/17912.html",
+              "label": "2026年10月本格運行・定路バスと共通定額券",
+              "updated": "2026-09-07",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.matsuno.ehime.jp/uploaded/attachment/7107.pdf",
+              "label": "広報まつの令和8年5月・返納等支援",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.matsuno.ehime.jp/soshiki/3/17912.html",
+          "label": "2026年10月本格運行・定路バスと共通定額券",
+          "updated": "2026-09-07",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.matsuno.ehime.jp/uploaded/attachment/7295.pdf",
+          "label": "定時定路線時刻表・令和8年10月1日改正",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.matsuno.ehime.jp/uploaded/attachment/7107.pdf",
+          "label": "広報まつの令和8年5月・返納等支援",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.matsuno.ehime.jp/site/chocho/15977.html",
+          "label": "町長・あいBusを乗合タクシー方式と説明",
+          "updated": "2025-08-29",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "時刻表と5月広報は発行日の表示がありませんが令和8年の内容です。通常割引の居住条件、定額券の必要書類・期間開始日、医療上の取消者の年齢判定・必要書類はふるさと創生課（0895-42-1116）又は防災安全課（0895-42-1110）へ確認してください。あいBusは乗合タクシー方式と町が説明しており、単発のデマンド運賃はここに含めていません。"
+    },
+    {
+      "slug": "kihoku",
+      "name": "鬼北町",
+      "status": "active",
+      "summary": "運転免許を持たない65歳以上の町民は、対象バスをKIHOCAで支払うと1回200円、回数制限なしで利用できます。",
+      "programs": [
+        {
+          "name": "免許非保有65歳以上のバス運賃割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "鬼北町内在住の65歳以上で運転免許証を持っていない方。免許の保有状況を照会する。返納者だけでなく非保有者も対象。",
+          "benefit": "対象バス全線一律200円。回数制限なし。障害者割引との併用不可。",
+          "fare": "事前に入金したKIHOCAカード・アプリで支払い。乗降時にカード裏面QRをかざす。残高不足は割引されず通常運賃を現金で払う。",
+          "routes": "宇和島自動車の虹の森線・日吉線・野村病院線。町外の路線内バス停での乗降も対象。",
+          "apply": "町企画振興課・日吉支所・好藤/愛治/三島/泉公民館へ本人又は代理の本人確認書類。自主返納者だけ返納証明書類が必要。代理は委任状。照会に数日かかる場合あり。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kihoku.ehime.jp/soshiki/kikaku/24550.html",
+              "label": "KIHOCAを活用したバス運賃割引",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kihoku.ehime.jp/soshiki/kikaku/24550.html",
+          "label": "KIHOCAを活用したバス運賃割引",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kihoku.ehime.jp/soshiki/kikaku/33122.html",
+          "label": "KIHOCAポイント事業",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県警一覧の返納者向け10,000円分ポイントは、町の案内でバス運賃への利用を確認できていません。ここでは200円割引を案内しています。返納ポイントの用途は企画振興課（0895-45-1111）へ確認してください。"
+    },
+    {
+      "slug": "ainan",
+      "name": "愛南町",
+      "status": "notfound",
+      "summary": "あいなんバスは一般共通の1回100円です。高齢者・返納者の町助成はタクシー向けで、バス運賃に限った高齢者支援は確認した案内では見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.ainan.ehime.jp/kurashi/tetsuduki/seikatsu/ainanbus/bus.html",
+          "label": "あいなんバス運行と運賃",
+          "updated": "2026-06-09",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ainan.ehime.jp/kurashi/kenko/fukushi/koreifukushi/2017-0630-1150.html",
+          "label": "高齢者返納支援・タクシー補助",
+          "updated": "2024-10-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は2024年10月更新です。新たなバス支援の有無は総務課（0895-72-1211）又は高齢者支援課（0895-73-7125）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.police.pref.ehime.jp/menkyokanri/maina/new/hennou/01jititai.pdf",
+    "label": "愛媛県警・自治体返納支援",
+    "checked": "2026-10-07"
+  }
+}

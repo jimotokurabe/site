@@ -1,0 +1,1405 @@
+{
+  "checked": "2026-10-07",
+  "draft": false,
+  "cities": [
+    {
+      "slug": "kofu",
+      "name": "甲府市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者にバス利用可能なPASMOを1回贈呈。",
+      "programs": [
+        {
+          "name": "自主返納者PASMO支給",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "甲府市に住民登録する70歳以上で、有効な全免許を自主返納。失効者対象外。",
+          "benefit": "10,000円相当（利用分9,500円と保証金500円）、返納時1回のみ。",
+          "fare": "PASMO利用分で運賃支払い",
+          "routes": "山梨交通・富士急山梨バス等、PASMO対応交通",
+          "apply": "免許返納窓口で用紙を受取り受領印を得て記入、専用封筒で郵送。約1～1か月半後自宅へ送付。",
+          "sources": [
+            {
+              "url": "https://www.city.kofu.yamanashi.jp/shohisha/menkyohennou.html",
+              "label": "運転免許証返納高齢者支援",
+              "updated": "2025-12-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kofu.yamanashi.jp/shohisha/menkyohennou.html",
+          "label": "運転免許証返納高齢者支援",
+          "updated": "2025-12-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "nirasaki",
+      "name": "韮崎市",
+      "status": "active",
+      "summary": "市民バス65歳以上100円、民営バス助成と70歳返納無料券があります。",
+      "programs": [
+        {
+          "name": "自主返納者市民バス1年無料券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "韮崎市住民登録があり返納時70歳以上、有効な全免許を自主返納。返納日から1年以内申請。",
+          "benefit": "市民バス無料乗車券1年分を選択可（タクシー券・PASMO・Suicaとの択一）、1人1回。",
+          "fare": "選択した券で無料",
+          "routes": "韮崎市民バス",
+          "apply": "総務課へ取消通知書又は運転経歴証明書と本人確認書類。代理可、審査後郵送又は窓口受取。",
+          "sources": [
+            {
+              "url": "https://www.city.nirasaki.lg.jp/soshikiichiran/somuka/kikikanritanto/1/2157.html",
+              "label": "自主返納支援",
+              "updated": "2023-07-31",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/10584.html",
+              "label": "生涯支援年表（令和8年4月現在）",
+              "updated": "2026-04-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上の市民バス割引・高齢者パス",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の方。市外を除外する条件は本文に記載なし。",
+          "benefit": "全区間1回100円、3か月パス3,000円・年パス12,000円。",
+          "fare": "1乗車100円又は購入したパス",
+          "routes": "韮崎市民バス全区間",
+          "apply": "パスは印鑑・年齢確認書類を持ち韮崎駅前案内所又は韮崎営業所へ。利用開始14日前から、代理購入可。",
+          "sources": [
+            {
+              "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/seikatsu_kotsu/3/2636.html",
+              "label": "韮崎市民バス",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        },
+        {
+          "name": "65歳以上の民営バス助成（選択制）",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "市内住民票65歳以上で市内民営バスを利用、世帯員も含め市税等滞納なし。",
+          "benefit": "ゴールド定期の月3,000円購入助成又は指定市内区間を100円で乗れる券月10枚。申請月から年度末分。",
+          "fare": "指定区間100円（区間超過は追加負担）又は助成後定期購入",
+          "routes": "山梨交通の下教来石・増富温泉郷百観音・浅尾仁田平・敷島経由甲府駅・大草経由甲府駅線。市民バス対象外。",
+          "apply": "申請書・住民記録と収納状況確認同意書を財務政策課へ、郵送可。登録審査後カードと助成券。",
+          "sources": [
+            {
+              "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/seikatsu_kotsu/3/5817.html",
+              "label": "民営バス助成（対象期間は令和7年度）",
+              "updated": "2025-04-02",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/10584.html",
+              "label": "生涯支援年表（令和8年4月現在）",
+              "updated": "2026-04-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nirasaki.lg.jp/soshikiichiran/somuka/kikikanritanto/1/2157.html",
+          "label": "自主返納支援",
+          "updated": "2023-07-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/seikatsu_kotsu/3/2636.html",
+          "label": "韮崎市民バス",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/seikatsu_kotsu/3/5817.html",
+          "label": "民営バス助成（対象期間は令和7年度）",
+          "updated": "2025-04-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nirasaki.lg.jp/kurashi_tetsuzuki/10584.html",
+          "label": "生涯支援年表（令和8年4月現在）",
+          "updated": "2026-04-16",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納詳細は2023年、民営詳細は令和7年度期間のまま。令和8年年表に継続記載がありますが現在の詳細条件は総務課（0551-45-9368）又は財務政策課（0551-45-9223）へ確認してください。"
+    },
+    {
+      "slug": "minamialps",
+      "name": "南アルプス市",
+      "status": "henno",
+      "summary": "運転経歴証明書提示で市コミュニティバス年間定期が2,500円。",
+      "programs": [
+        {
+          "name": "自主返納者の応援定期券割引",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書を提示する方。独立した年齢・居住要件の記載なし。",
+          "benefit": "通常3,000円の定期を2,500円で販売。有効2026年10月1日～2027年9月30日。",
+          "fare": "購入した定期で乗り放題",
+          "routes": "南アルプス市コミュニティバス全路線",
+          "apply": "市民活動支援課21番窓口又は各窓口サービスセンターで証明書提示し購入。車内販売なし。",
+          "sources": [
+            {
+              "url": "https://www.city.minami-alps.yamanashi.jp/docs/22070.html",
+              "label": "R8-R9コミュニティバス応援定期券",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.minami-alps.yamanashi.jp/docs/22070.html",
+          "label": "R8-R9コミュニティバス応援定期券",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "更新日は記載なし。令和8～9年有効期間を確認済み。条件は市民活動支援課（055-282-6493）へ確認してください。"
+    },
+    {
+      "slug": "hokuto",
+      "name": "北杜市",
+      "status": "active",
+      "summary": "返納後12,000円券と継続半額購入のほか、免許非保有者・自主返納者向け、75歳以上向けの幹線福祉パス減免があります。",
+      "programs": [
+        {
+          "name": "自主返納者乗り物チケット",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市の住民基本台帳に記載する65歳以上の自主返納者。本人のみ使用。",
+          "benefit": "初回12,000円分。2回目以降は本人が何回でも半額購入可能。",
+          "fare": "100円券を使用し差額現金。経歴証明書又は自主返納者証を提示。",
+          "routes": "市民バス幹線・支線、市内の山梨交通3路線（タクシーも可）",
+          "apply": "企画課又は総合支所へ取消通知書。再購入時は取消通知書又は自主返納者証等と本人確認書類。",
+          "sources": [
+            {
+              "url": "https://www.city.hokuto.yamanashi.jp/docs/1483938797-84.html",
+              "label": "返納者乗り物チケット",
+              "updated": "2026-01-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        },
+        {
+          "name": "免許非保有者・自主返納者の幹線福祉パスポート減免",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "65歳以上で運転免許証を保有していない方（交通違反等での失効を除く）、又は運転免許証を自主返納した方。自主返納者にも65歳以上の条件がかかるか、居住条件・申請書類は企画課へ確認。",
+          "benefit": "1年用福祉パスポートを19,200円から15,360円に減免。",
+          "fare": "購入したパスポートで乗車",
+          "routes": "北杜市民バス全幹線",
+          "apply": "本庁企画課又は総合支所地域市民課で購入。詳しい申請書類は要確認。",
+          "sources": [
+            {
+              "url": "https://www.city.hokuto.yamanashi.jp/fs/4/9/8/7/7/4/_/______________A4_________260401_ver1.0.pdf",
+              "label": "令和8年4月1日幹線時刻表",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "75歳以上の幹線福祉パスポート減免",
+          "kind": "pass",
+          "age_min": 75,
+          "eligibility": "75歳以上の方。免許非保有・自主返納の条件は付いていません。居住条件と必要書類は企画課へ確認。",
+          "benefit": "1年用福祉パスポートを19,200円から15,360円に減免。",
+          "fare": "購入したパスポートで乗車",
+          "routes": "北杜市民バス全幹線",
+          "apply": "本庁企画課又は総合支所地域市民課で購入。詳しい申請書類は要確認。",
+          "sources": [
+            {
+              "url": "https://www.city.hokuto.yamanashi.jp/fs/4/9/8/7/7/4/_/______________A4_________260401_ver1.0.pdf",
+              "label": "令和8年4月1日幹線時刻表",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.hokuto.yamanashi.jp/docs/1483938797-84.html",
+          "label": "返納者乗り物チケット",
+          "updated": "2026-01-30",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.hokuto.yamanashi.jp/fs/4/9/8/7/7/4/_/______________A4_________260401_ver1.0.pdf",
+          "label": "令和8年4月1日幹線時刻表",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "幹線福祉パスポートの居住条件・必要書類と、自主返納者の対象年齢は企画課（0551-42-1321）へ確認してください。時刻表は令和8年4月1日版です。"
+    },
+    {
+      "slug": "kai",
+      "name": "甲斐市",
+      "status": "active",
+      "summary": "返納者市民バス半額と、75歳以上非課税高齢者世帯のバス券があります。",
+      "programs": [
+        {
+          "name": "自主返納者の市民バス半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "自主返納し運転経歴証明書を提示する方。独立した年齢・居住条件記載なし。",
+          "benefit": "運賃と各乗車券を半額。",
+          "fare": "1回100円、1日券250円、1か月定期2,500円、11枚回数券1,000円（通常料金の半額）。",
+          "routes": "甲斐市民バス各路線",
+          "apply": "乗車時運転手へ経歴証明書。各乗車券は車内購入。",
+          "sources": [
+            {
+              "url": "https://www.city.kai.yamanashi.jp/page/4542.html",
+              "label": "甲斐市民バス",
+              "updated": "2026-03-10",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        },
+        {
+          "name": "75歳以上非課税高齢者世帯バス券",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "市内在住75歳以上の高齢者世帯で世帯全員住民税非課税、自ら運転しない方。重度心身障がい者等タクシー助成利用者除外。",
+          "benefit": "バスのみ月1,460円分1冊、タクシーと併用選択はバス月730円分1冊とタクシー月1枚。",
+          "fare": "利用券で支払い",
+          "routes": "山梨交通路線バス（甲斐市民バス含む）",
+          "apply": "申請書でタクシー券・バス券等を選択し申し込み。長寿推進課へ。",
+          "sources": [
+            {
+              "url": "https://www.city.kai.yamanashi.jp/page/4344.html",
+              "label": "在宅福祉サービス",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kai.yamanashi.jp/page/4542.html",
+          "label": "甲斐市民バス",
+          "updated": "2026-03-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kai.yamanashi.jp/page/4344.html",
+          "label": "在宅福祉サービス",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "chuo",
+      "name": "中央市",
+      "status": "ended",
+      "summary": "とまチュウバスは2025年11月29日最終便で終了。現在の高齢者向け市独自バス助成は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.chuo.yamanashi.jp/soshiki/kikaku/kikakusoumu/sitei_2/communitybus/12658.html",
+          "label": "とまチュウバス運行終了",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内に更新日の記載なし。代替交通の対象条件は企画課（055-274-8523）へ確認してください。"
+    },
+    {
+      "slug": "showa",
+      "name": "昭和町",
+      "status": "active",
+      "summary": "65歳以上免許非保有のモニター向け無料コミュニティバス実証を9～11月実施。",
+      "programs": [
+        {
+          "name": "高齢者モニターの実証バス無料乗車",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "昭和町住民登録があり2026年9月1日時点65歳以上、普通免許非保有、自力乗降・停留所待機が可能、アンケート協力するモニター。定員50名、多数は抽選。",
+          "benefit": "実証期間2026年9月1日～11月27日の火曜・金曜（祝日除く）、無料乗車。",
+          "fare": "無料。乗車証提示必須、モニター以外乗車不可。",
+          "routes": "総合会館発着の町内A～Dルート",
+          "apply": "福祉介護課へ申請書窓口又は郵送。受付延長し随時募集中、審査結果と乗車証郵送。代理可。 運転経歴証明書の提示は不要で、免許非保有は自己申告。",
+          "sources": [
+            {
+              "url": "https://www.town.showa.yamanashi.jp/soshiki/12/14273.html",
+              "label": "令和8年高齢者バス実証モニター",
+              "updated": "2026-06-25",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.showa.yamanashi.jp/uploaded/attachment/8063.pdf",
+              "label": "実証バスQ&A",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.showa.yamanashi.jp/soshiki/12/14273.html",
+          "label": "令和8年高齢者バス実証モニター",
+          "updated": "2026-06-25",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.showa.yamanashi.jp/uploaded/attachment/8063.pdf",
+          "label": "実証バスQ&A",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "Q&Aに更新日記載なし。令和8年の対象期間を確認済み。モニター募集状況は福祉介護課（055-275-8784）へ確認してください。"
+    },
+    {
+      "slug": "yamanashi",
+      "name": "山梨市",
+      "status": "active",
+      "summary": "65歳以上に市民バス定期券割引、返納者には市民バス券12,000円相当。",
+      "programs": [
+        {
+          "name": "自主返納者の市民バス券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "山梨市住民登録の65歳以上で2018年4月1日以降、有効な全免許を自主返納。",
+          "benefit": "市民バス券12,000円相当（200円券60枚）、1人1回。",
+          "fare": "利用券で支払い",
+          "routes": "山梨市民バス（デマンド型交通も使用可）",
+          "apply": "返納1年以内に市民課又は各支所へ取消通知書又は経歴証明書、印鑑、本人確認書類。代理委任状。",
+          "sources": [
+            {
+              "url": "https://www.city.yamanashi.yamanashi.jp/soshiki/10/2056.html",
+              "label": "自主返納者市民バス券",
+              "updated": "2025-03-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上市民バス定期券割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。住民限定条件は県一覧に記載なし。",
+          "benefit": "市民バス定期券を一般より高い割引率で販売。県一覧の高齢者割引率は50～60%。",
+          "fare": "定期券の現行販売価格・区間別金額は要確認。",
+          "routes": "山梨市民バス。対象の現行区間は要確認。",
+          "apply": "現行申請方法・販売窓口は県一覧に記載なし。",
+          "sources": [
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.yamanashi.yamanashi.jp/soshiki/10/2056.html",
+          "label": "自主返納者市民バス券",
+          "updated": "2025-03-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2025年3月の案内です。現行条件を市民課公共交通担当（0553-22-1111内線1145～1146）へ確認してください。 県の令和8年3月一覧に65歳以上定期券割引あり。市民バスの再編後の販売価格・対象区間・購入方法も同担当へ確認してください。"
+    },
+    {
+      "slug": "fuefuki",
+      "name": "笛吹市",
+      "status": "notfound",
+      "summary": "75歳以上割引のあるのるーと笛吹はAIデマンド交通と案内され、バスと明記した本文を確認できませんでした。高齢者向け市独自バス助成は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.fuefuki.yamanashi.jp/kikaku/bus/knowroute.html",
+          "label": "のるーと笛吹",
+          "updated": "2026-03-31",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "バス助成の有無は企画課（055-261-2032）へ確認してください。"
+    },
+    {
+      "slug": "koshu",
+      "name": "甲州市",
+      "status": "henno",
+      "summary": "65歳以上の返納者に市バス60回分回数券。",
+      "programs": [
+        {
+          "name": "自主返納後の市バス回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の甲州市民で有効期間中の免許を自主返納。2017年4月1日以降の取消通知書交付者。",
+          "benefit": "市路線バス60回分又はデマンドバス60回分、本人1回。",
+          "fare": "回数券で乗車",
+          "routes": "甲州市が運行する路線バス又はデマンドバス",
+          "apply": "返納1年以内、印鑑と取消通知書又は経歴証明書写し。代理委任状を添え市へ申請。",
+          "sources": [
+            {
+              "url": "https://www.city.koshu.yamanashi.jp/docs/2018040400429/",
+              "label": "高齢者免許返納支援",
+              "updated": "2018-04-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.koshu.yamanashi.jp/docs/2018040400429/",
+          "label": "高齢者免許返納支援",
+          "updated": "2018-04-04",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "2018年案内です。現在の条件・具体路線・窓口を都市整備課（0553-32-5072）又は県警掲載の市民課（0553-32-5061）へ確認してください。"
+    },
+    {
+      "slug": "ichikawamisato",
+      "name": "市川三郷町",
+      "status": "active",
+      "summary": "町コミュニティバスは75歳以上無料です。",
+      "programs": [
+        {
+          "name": "75歳以上コミュニティバス無料",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上で自ら乗降できる方。町民限定条件は本文に記載なし。",
+          "benefit": "通常全区間100円を無料",
+          "fare": "無料",
+          "routes": "市川三郷町コミュニティバス山保線・六郷線",
+          "apply": "年齢確認方法・申請の要否は記載なし。",
+          "sources": [
+            {
+              "url": "https://www.town.ichikawamisato.yamanashi.jp/02topics/2017-0406-1607-23.html",
+              "label": "町コミュニティバス（六郷線令和8年3月改正）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.ichikawamisato.yamanashi.jp/reiki_int/reiki_honbun/r209RG00000638.html",
+              "label": "コミュニティバス条例（令和7年改正掲載）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ichikawamisato.yamanashi.jp/02topics/2017-0406-1607-23.html",
+          "label": "町コミュニティバス（六郷線令和8年3月改正）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ichikawamisato.yamanashi.jp/reiki_int/reiki_honbun/r209RG00000638.html",
+          "label": "コミュニティバス条例（令和7年改正掲載）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "両案内に更新日記載なし。年齢確認方法・申請の要否を防災交通課（055-272-1175）へ確認してください。"
+    },
+    {
+      "slug": "hayakawa",
+      "name": "早川町",
+      "status": "active",
+      "summary": "75歳以上は早川町乗合バスの運賃半額。",
+      "programs": [
+        {
+          "name": "75歳以上乗合バス半額",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "75歳以上。町内者・町外者とも同じ料金。",
+          "benefit": "通常運賃の半額。",
+          "fare": "通常運賃の半額。",
+          "routes": "早川町奈良田身延駅線乗合バス",
+          "apply": "年齢確認方法・申請の要否は記載なし。",
+          "sources": [
+            {
+              "url": "https://www.town.hayakawa.yamanashi.jp/people/pdf/1.pdf",
+              "label": "早川町乗合バス運賃表",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.hayakawa.yamanashi.jp/people/pdf/1.pdf",
+          "label": "早川町乗合バス運賃表",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "運賃表は更新日記載なし。県の令和8年3月一覧にも半額を確認。年齢確認方法・申請の要否は町役場（0556-45-2511）へ確認してください。"
+    },
+    {
+      "slug": "minobu",
+      "name": "身延町",
+      "status": "notfound",
+      "summary": "返納支援はみのぶ乗合タクシー1年間無料券です。高齢者向け町独自バス助成は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.minobu.lg.jp/page/1472.html",
+          "label": "自主返納高齢者支援",
+          "updated": "2025-12-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "バス助成の有無を交通防災課（0556-42-4809）へ確認してください。"
+    },
+    {
+      "slug": "nanbu",
+      "name": "南部町",
+      "status": "notfound",
+      "summary": "町営バス条例の運賃は通常100円で、高齢者年齢による免除は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.nanbu.yamanashi.jp/reiki_int/reiki_honbun/e632RG00000063.html",
+          "label": "町営バス設置条例",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "条例に更新日記載なし。高齢者バス助成の有無を交通防災課（0556-66-3417）へ確認してください。"
+    },
+    {
+      "slug": "fujikawa",
+      "name": "富士川町",
+      "status": "active",
+      "summary": "65歳以上乗車証明書又は運転経歴証明書でホリデーバス無料。区域デマンドは町本文で乗合タクシー方式と案内。",
+      "programs": [
+        {
+          "name": "65歳以上乗車証明書のホリデーバス無料",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上で町デマンド交通乗車証明書を提示する方。証明書交付の住民条件は要確認。",
+          "benefit": "通常大人200円を無料",
+          "fare": "無料",
+          "routes": "鰍沢口駅と小室・平林・十谷を結ぶホリデーバス（土日祝日、年末年始除く）",
+          "apply": "乗車時証明書提示。証明書は防災交通課へ印鑑、発行手数料300円。",
+          "sources": [
+            {
+              "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600462/",
+              "label": "ホリデーバス案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600462/file_contents/R8annai.pdf",
+              "label": "ホリデーバス令和8年6月案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600363/",
+              "label": "デマンド交通乗車証明書",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "自主返納者ホリデーバス無料",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書提示者。独立した年齢条件なし、町外も利用可。",
+          "benefit": "通常大人200円を無料",
+          "fare": "無料",
+          "routes": "ホリデーバス小室・平林・十谷各線（土日祝日）",
+          "apply": "乗車時に運転経歴証明書を提示。",
+          "sources": [
+            {
+              "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600462/",
+              "label": "ホリデーバス案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600462/file_contents/R8annai.pdf",
+              "label": "ホリデーバス令和8年6月案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600462/",
+          "label": "ホリデーバス案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600462/file_contents/R8annai.pdf",
+          "label": "ホリデーバス令和8年6月案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023081600363/",
+          "label": "デマンド交通乗車証明書",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内は2023年公開、令和8年6月資料に発行更新日の記載なし。無料運賃は令和8年資料で確認済み。65歳証明書の住民条件は防災交通課（0556-22-7218）へ確認してください。"
+    },
+    {
+      "slug": "fujiyoshida",
+      "name": "富士吉田市",
+      "status": "active",
+      "summary": "70歳以上の市民にタウンスニーカーの無料回数券100枚。",
+      "programs": [
+        {
+          "name": "70歳以上タウンスニーカー無料回数券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "満70歳以上の富士吉田市住民。",
+          "benefit": "市内循環バス回数券100枚交付、有効期限なし。交付周期は要確認。",
+          "fare": "回数券で乗車。",
+          "routes": "市内循環バスタウンスニーカー",
+          "apply": "本人確認書類（健康保険証、マイナンバーカード等）で申請。オンライン申請可。",
+          "sources": [
+            {
+              "url": "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7941.pdf",
+              "label": "高齢者サービス・外出を支援するサービス",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7941.pdf",
+          "label": "高齢者サービス・外出を支援するサービス",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市資料は更新日なし、県令和8年3月一覧にも通常70歳以上枠を確認。100枚の再交付時期・窓口は健康長寿課（0555-22-1111代表）へ確認してください。"
+    },
+    {
+      "slug": "tsuru",
+      "name": "都留市",
+      "status": "notfound",
+      "summary": "現行の返納支援はAI乗合タクシー又は予約型乗合タクシー券です。旧一覧の市内バス券は現行案内にありません。高齢者向け市独自バス助成は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/chiikishinkou_t/1_1/619.html",
+          "label": "高齢者運転免許証自主返納支援",
+          "updated": "2026-05-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/chiikishinkou_t/2_1/14351.html",
+          "label": "令和8年4月から公共交通",
+          "updated": "2026-09-07",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県令和8年3月一覧には旧バス回数券が掲載されていますが、市の5月案内ではタクシー券のみです。バス支援の有無を地域環境課地域振興担当（0554-43-1111内線174・175）へ確認してください。"
+    },
+    {
+      "slug": "otsuki",
+      "name": "大月市",
+      "status": "active",
+      "summary": "65歳以上に年5,000円又は半年2,500円のお出かけパス。パス対象者には深城ダム～小菅の湯の無料券も交付。",
+      "programs": [
+        {
+          "name": "シルバーお出かけパス",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "大月市住民登録があり4月1日現在65歳以上（10月1日までに65歳になった方は半年用）。市税等完納、寝たきり等で利用困難でない方。",
+          "benefit": "年間5,000円、半年2,500円の負担で対象路線無料。年用4月1日～翌3月31日、半年用10月1日～翌3月31日。",
+          "fare": "対象区間無料。",
+          "routes": "富士急山梨バスが運行する大月市内の停留所相互区間。",
+          "apply": "申請書、本人確認書類、縦3cm横2.4cm写真を市役所福祉介護課又は出張所へ。年用1～2月中旬、半年用7～8月中旬に申請し、決定通知後に負担金支払い。",
+          "sources": [
+            {
+              "url": "https://www.city.otsuki.yamanashi.jp/health/korei/odekakepass_tuunen.html",
+              "label": "シルバーお出かけパス",
+              "updated": "2025-01-31",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.otsuki.yamanashi.jp/reiki/reiki_honbun/e607RG00000753.html",
+              "label": "シルバーお出かけパス条例",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.otsuki.yamanashi.jp/reiki/reiki_honbun/e607RG00000754.html",
+              "label": "シルバーお出かけパス条例施行規則",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "お出かけパス所持者の区間外バス券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "シルバーお出かけパス又は障害者お出かけパス交付対象者。券単独の年齢条件なし。",
+          "benefit": "年間パスは12枚、後期パスは6枚の無料利用券。",
+          "fare": "券で対象区間無料。",
+          "routes": "お出かけパス対象区間外の深城ダム～小菅の湯。",
+          "apply": "交付方法・申請の要否は県一覧に記載なし。",
+          "sources": [
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.otsuki.yamanashi.jp/health/korei/odekakepass_tuunen.html",
+          "label": "シルバーお出かけパス",
+          "updated": "2025-01-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.otsuki.yamanashi.jp/reiki/reiki_honbun/e607RG00000753.html",
+          "label": "シルバーお出かけパス条例",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.otsuki.yamanashi.jp/reiki/reiki_honbun/e607RG00000754.html",
+          "label": "シルバーお出かけパス条例施行規則",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市案内は2025年1月、条例は更新日なし。現在の受付時期・区間外券交付は福祉介護課（0554-23-8030）へ確認してください。返納支援Suicaは市・県で額が異なり、今回確認した本文ではバス用途を特定できませんでした。"
+    },
+    {
+      "slug": "uenohara",
+      "name": "上野原市",
+      "status": "active",
+      "summary": "70歳以上又は65～69歳返納者にシルバー定期2万円助成。別に65歳以上返納者のバス共通券12,000円。",
+      "programs": [
+        {
+          "name": "70歳以上シルバー定期購入助成",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "市内に住所があり申請日現在市税等滞納がない、70歳以上方。",
+          "benefit": "富士急シルバー定期券1年用に20,000円助成。",
+          "fare": "定期券代金の差額を自己負担。",
+          "routes": "富士急グループ一般路線全線（一部除く）。高速・登山・コミュニティバス・定期設定なし路線は除外、市外対象路線も可。",
+          "apply": "総合福祉センターふじみ長寿介護課1番窓口へ本人証、返納枠は返納証明も。審査後助成券を上野原営業所又は上野原駅前営業所へ出し差額支払い。",
+          "sources": [
+            {
+              "url": "https://www.city.uenohara.yamanashi.jp/page/1017573.html",
+              "label": "高齢者外出支援事業",
+              "updated": "2024-11-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65～69歳返納者のシルバー定期購入助成",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市内に住所があり申請日現在市税等滞納がない、65歳以上70歳未満で自主返納、取消通知書又は運転経歴証明書がある方。",
+          "benefit": "富士急シルバー定期券1年用に20,000円助成。",
+          "fare": "定期券代金の差額を自己負担。",
+          "routes": "富士急グループ一般路線全線（一部除く）。高速・登山・コミュニティバス・定期設定なし路線は除外、市外対象路線も可。",
+          "apply": "総合福祉センターふじみ長寿介護課1番窓口へ本人証、返納枠は返納証明も。審査後助成券を上野原営業所又は上野原駅前営業所へ出し差額支払い。",
+          "sources": [
+            {
+              "url": "https://www.city.uenohara.yamanashi.jp/page/1017573.html",
+              "label": "高齢者外出支援事業",
+              "updated": "2024-11-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "65歳以上自主返納のバス共通券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "上野原市住民登録の65歳以上で2019年4月1日以降自主返納。",
+          "benefit": "バス・タクシー共通利用券12,000円相当、1人1回。",
+          "fare": "券で運賃支払い。",
+          "routes": "市内富士急バス（ほか市内タクシー・デマンドタクシーにも利用可）。",
+          "apply": "現行の必要書類・申請期限は確認先へ。",
+          "sources": [
+            {
+              "url": "https://www.pref.yamanashi.jp/police/pk_kikaku/jishuhennou.html",
+              "label": "県警・自治体自主返納支援（令和7年4月一覧）",
+              "updated": "2025-12-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.uenohara.yamanashi.jp/page/1017573.html",
+          "label": "高齢者外出支援事業",
+          "updated": "2024-11-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/police/pk_kikaku/jishuhennou.html",
+          "label": "県警・自治体自主返納支援（令和7年4月一覧）",
+          "updated": "2025-12-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の定期案内は2024年11月、県の令和8年3月一覧にも制度あり。定期の現行条件を長寿介護課（0554-62-3128）、返納共通券の書類・期限を生活環境課（0554-62-3114）へ確認してください。"
+    },
+    {
+      "slug": "doshi",
+      "name": "道志村",
+      "status": "active",
+      "summary": "70歳以上免許非保有者又は60～69歳返納者に富士急シルバー定期購入助成。",
+      "programs": [
+        {
+          "name": "70歳以上免許非保有者の外出支援",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "道志村に住所を有する、70歳以上で運転免許証を所有していない方。",
+          "benefit": "富士急シルバー定期1年用27,500円の3分の2、18,330円助成。",
+          "fare": "購入価格から助成を差し引いた額を自己負担。",
+          "routes": "富士急グループのほとんどの路線で共通利用できる定期券。除外路線詳細は要確認。",
+          "apply": "県一覧に申請方法・必要書類の記載なし。",
+          "sources": [
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "60～69歳返納者の外出支援",
+          "kind": "henno",
+          "age_min": 60,
+          "eligibility": "道志村に住所を有する、60歳以上70歳未満で運転免許証を返納した方。",
+          "benefit": "富士急シルバー定期1年用27,500円の3分の2、18,330円助成。",
+          "fare": "購入価格から助成を差し引いた額を自己負担。",
+          "routes": "富士急グループのほとんどの路線で共通利用できる定期券。除外路線詳細は要確認。",
+          "apply": "県一覧に申請方法・必要書類の記載なし。",
+          "sources": [
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県の令和8年3月一覧で制度を確認。村の申請案内を確認できず、現在の価格・対象路線・申請方法を村役場（0554-52-2111）へ確認してください。"
+    },
+    {
+      "slug": "nishikatsura",
+      "name": "西桂町",
+      "status": "notfound",
+      "summary": "県の移動支援は予約による送迎で、バス料金の助成と確認できませんでした。高齢者向け町独自バス助成は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.nishikatsura.yamanashi.jp/Info/59",
+          "label": "福祉保健課の業務",
+          "updated": "2023-04-26",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町の業務案内は2023年4月。バス助成の有無を福祉保健課（0555-25-4000）へ確認してください。"
+    },
+    {
+      "slug": "oshino",
+      "name": "忍野村",
+      "status": "active",
+      "summary": "65歳以上の村民は乗車証でふじっ湖号1回100円。",
+      "programs": [
+        {
+          "name": "65歳以上ふじっ湖号100円",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "忍野村在住の65歳以上で、新ぐるりん・循環バス乗車証明書を提示。",
+          "benefit": "ふじっ湖号を1回100円で利用。",
+          "fare": "1乗車100円。",
+          "routes": "ふじっ湖号。村案内ではどこで乗降しても100円。",
+          "apply": "年度中に65歳になる方へ村が乗車証作成・配布、申請不要。紛失時は申請書記入・押印し企画課へ。",
+          "sources": [
+            {
+              "url": "https://www.vill.oshino.lg.jp/page/1113.html",
+              "label": "ふじっ湖号の村運賃助成",
+              "updated": "2023-11-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.oshino.lg.jp/page/1113.html",
+          "label": "ふじっ湖号の村運賃助成",
+          "updated": "2023-11-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村案内は2023年11月。県令和8年3月一覧にも100円助成あり（県一覧では忍野村・山中湖村利用の場合）。市外区間の現行適用範囲は企画課（0555-84-7738）へ確認してください。"
+    },
+    {
+      "slug": "yamanakako",
+      "name": "山中湖村",
+      "status": "active",
+      "summary": "村民証明書提示でふじっ湖号の一部運賃割引。県一覧は1回100円。",
+      "programs": [
+        {
+          "name": "村民証明書のふじっ湖号割引",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "村に住民登録し半年経過、発行年度末までに70歳になる方へ白色村民証明書。案内のバス利用条件は70歳以上・証明書提示。",
+          "benefit": "県一覧ではふじっ湖号1回100円。",
+          "fare": "1乗車100円（県令和8年3月一覧）。",
+          "routes": "ふじっ湖号の忍野村・山中湖村利用区間。村案内ではふじっ湖号等の一部。",
+          "apply": "白色村民証明書を福祉健康課で発行。乗車時提示、必要書類は要確認。",
+          "sources": [
+            {
+              "url": "https://www.vill.yamanakako.lg.jp/docs/2021033100015/files/2021koureisya.pdf",
+              "label": "山中湖村高齢者生活案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.yamanakako.lg.jp/docs/2021033100015/files/2021koureisya.pdf",
+          "label": "山中湖村高齢者生活案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村案内は更新日なし。年度末70歳の証明書発行条件と70歳以上のバス条件が別記です。利用開始年齢・区間・発行書類を福祉健康課（0555-62-9976）へ確認してください。"
+    },
+    {
+      "slug": "narusawa",
+      "name": "鳴沢村",
+      "status": "active",
+      "summary": "70歳以上免許非保有者又は60～69歳返納者の年定期購入を上限17,760円助成。",
+      "programs": [
+        {
+          "name": "70歳以上免許非保有者の定期助成",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "鳴沢村に住所を有する、70歳以上で運転免許証を所持していない方。重度心身障害者等福祉タクシー助成を受けていない、バス又はタクシー助成の選択制。",
+          "benefit": "富士急シルバー定期券1年用の購入費を17,760円上限で助成。",
+          "fare": "購入費と助成額の差額を負担し、降車時は定期券を乗務員に提示。旧案内の定期価格26,200円は現在の価格を確認。",
+          "routes": "富士急バスのシルバー定期券対象路線。具体的除外路線は要確認。",
+          "apply": "村へ利用承認申請書と、運転経歴証明書写し・取消通知書写し・確認書（様式2）・その他村長が認めるもののいずれかを提出。免許非保有者は確認書等について窓口へ相談。承認後1か月以内に引換券・年齢証明を富士急窓口へ。更新は満了1か月前から、定期券写し等を添付。",
+          "sources": [
+            {
+              "url": "https://www.vill.narusawa.yamanashi.jp/gyosei/hoken_fukushi_iryo/fukushi/koreishafukushi/4/2381.html",
+              "label": "高齢者外出支援事業",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.g-reiki.net/vill.narusawa/reiki_honbun/e662RG00000586.html",
+              "label": "高齢者外出支援実施要綱（令和7年改正掲載）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "60～69歳返納者の定期助成",
+          "kind": "henno",
+          "age_min": 60,
+          "eligibility": "鳴沢村に住所を有する、60歳以上70歳未満で運転免許証を返納した方。重度心身障害者等福祉タクシー助成を受けていない、バス又はタクシー助成の選択制。",
+          "benefit": "富士急シルバー定期券1年用の購入費を17,760円上限で助成。",
+          "fare": "購入費と助成額の差額を負担し、降車時は定期券を乗務員に提示。旧案内の定期価格26,200円は現在の価格を確認。",
+          "routes": "富士急バスのシルバー定期券対象路線。具体的除外路線は要確認。",
+          "apply": "村へ利用承認申請書と、運転経歴証明書写し・取消通知書写し・確認書（様式2）・その他村長が認めるもののいずれかを提出。免許非保有者は確認書等について窓口へ相談。承認後1か月以内に引換券・年齢証明を富士急窓口へ。更新は満了1か月前から、定期券写し等を添付。",
+          "sources": [
+            {
+              "url": "https://www.vill.narusawa.yamanashi.jp/gyosei/hoken_fukushi_iryo/fukushi/koreishafukushi/4/2381.html",
+              "label": "高齢者外出支援事業",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.g-reiki.net/vill.narusawa/reiki_honbun/e662RG00000586.html",
+              "label": "高齢者外出支援実施要綱（令和7年改正掲載）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vill.narusawa.yamanashi.jp/gyosei/hoken_fukushi_iryo/fukushi/koreishafukushi/4/2381.html",
+          "label": "高齢者外出支援事業",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www1.g-reiki.net/vill.narusawa/reiki_honbun/e662RG00000586.html",
+          "label": "高齢者外出支援実施要綱（令和7年改正掲載）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村案内は2022年、要綱は2025年改正で上限17,760円を確認。県令和8年3月一覧にも対象枠あり。現行定期価格・対象路線を福祉保健課（0555-85-3081）へ確認してください。"
+    },
+    {
+      "slug": "fujikawaguchiko",
+      "name": "富士河口湖町",
+      "status": "active",
+      "summary": "75歳以上免許非保有者又は返納者の富士急年定期27,500円を全額助成。",
+      "programs": [
+        {
+          "name": "75歳以上免許非保有者の定期全額助成",
+          "kind": "reimbursement",
+          "age_min": 75,
+          "eligibility": "町内に住所があり、75歳以上で運転免許証を所持していない方。バス又はタクシー助成の選択制。",
+          "benefit": "富士急シルバー定期1年用27,500円を全額助成。定期価格で助成額変動の場合あり。",
+          "fare": "対象定期購入費の自己負担なし。",
+          "routes": "富士急バスのシルバー定期券で利用できる路線。除外路線詳細は要確認。",
+          "apply": "町へ利用承認申請し決定後、引換券と年齢のわかる身分証を河口湖駅窓口へ。更新は定期期限1か月前から、現定期持参。",
+          "sources": [
+            {
+              "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=4849",
+              "label": "高齢者外出支援（令和7年4月拡充）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fujikawaguchiko.lg.jp/upload/file/R8syuyou.pdf",
+              "label": "令和8年度主要事業",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        },
+        {
+          "name": "返納者の定期全額助成",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "町内に住所があり、運転免許証を返納し、取消通知書又は経歴証明書等を所持（75歳未満を含む）方。バス又はタクシー助成の選択制。",
+          "benefit": "富士急シルバー定期1年用27,500円を全額助成。定期価格で助成額変動の場合あり。",
+          "fare": "対象定期購入費の自己負担なし。",
+          "routes": "富士急バスのシルバー定期券で利用できる路線。除外路線詳細は要確認。",
+          "apply": "町へ利用承認申請し決定後、引換券と年齢のわかる身分証を河口湖駅窓口へ。更新は定期期限1か月前から、現定期持参。",
+          "sources": [
+            {
+              "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=4849",
+              "label": "高齢者外出支援（令和7年4月拡充）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.fujikawaguchiko.lg.jp/upload/file/R8syuyou.pdf",
+              "label": "令和8年度主要事業",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=4849",
+          "label": "高齢者外出支援（令和7年4月拡充）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fujikawaguchiko.lg.jp/upload/file/R8syuyou.pdf",
+          "label": "令和8年度主要事業",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "更新日記載なし。令和8年度資料でも対象・27,500円確認、県3月一覧の高齢者のみ世帯条件より町現行案内を優先。定期の対象路線は福祉推進課（0555-72-6028）へ確認してください。"
+    },
+    {
+      "slug": "kosuge",
+      "name": "小菅村",
+      "status": "active",
+      "summary": "65歳以上にバス助成券10,000円分。",
+      "programs": [
+        {
+          "name": "65歳以上高齢者交通弱者のバス券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "65歳以上の方全員。県一覧に住民登録の詳細条件記載なし。",
+          "benefit": "バス助成券10,000円分（500円券20枚）。交付周期・有効期間は要確認。",
+          "fare": "助成券で運賃支払い。",
+          "routes": "西東京バス奥多摩駅発着便、富士急山梨バス大月市・上野原市～小菅村間便。",
+          "apply": "県一覧に申請方法・必要書類の記載なし。",
+          "sources": [
+            {
+              "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+              "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation",
+          "notes": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県令和8年3月一覧で確認。村の申請本文を確認できず、住所要件・交付周期・有効期限・書類を村役場住民課（0428-87-0111代表）へ確認してください。"
+    },
+    {
+      "slug": "tabayama",
+      "name": "丹波山村",
+      "status": "notfound",
+      "summary": "県の路線バス券販売は全年齢の村民共通制度です。高齢者向け村独自バス助成は今回見つかりませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.vill.tabayama.yamanashi.jp/gyousei/soshiki.html",
+          "label": "村行政組織（令和6年5月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "県内市町村交通利用促進施策（令和8年3月現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "村組織案内・県施策一覧に更新日記載なし。高齢者専用の支援の有無を村役場（0428-88-0211）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.yamanashi.jp/police/pk_kikaku/jishuhennou.html",
+    "label": "山梨県警自主返納支援一覧（令和7年4月時点）",
+    "checked": "2026-10-07"
+  }
+}

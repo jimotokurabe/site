@@ -1,0 +1,1489 @@
+{
+  "checked": "2026-10-07",
+  "draft": false,
+  "cities": [
+    {
+      "slug": "uozu",
+      "name": "魚津市",
+      "status": "active",
+      "summary": "自主返納者と希望する配偶者に市民バス1年間無料券があります。",
+      "programs": [
+        {
+          "name": "自主返納者の市民バス1年間フリーパス",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "市の住民基本台帳に登録され、有効期限内に免許を自主返納した人。年齢制限なし。",
+          "benefit": "市民バス1年間フリーパス。",
+          "fare": "市民バス無料。",
+          "routes": "魚津市民バス。",
+          "apply": "防災安全課へ申請書、取消通知書、本人確認書類を提出。インターネット申請も可。審査後約2週間で郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=1557",
+              "label": "魚津市・自主返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納者の配偶者への市民バスフリーパス",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "返納支援を受ける人の配偶者で希望する人。配偶者本人の返納は明記されていません。",
+          "benefit": "市民バス1年間フリーパス。",
+          "fare": "市民バス無料。",
+          "routes": "魚津市民バス。",
+          "apply": "返納者の配偶者への交付を希望する場合は、防災安全課へ相談してください。配偶者の居住条件と必要書類は窓口へ確認。返納者本人の取消通知書等と、配偶者の書類は区別して確認してください。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=1557",
+              "label": "魚津市・自主返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=1557",
+          "label": "魚津市・自主返納支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "配偶者枠の居住条件・確認書類は市へ確認してください。"
+    },
+    {
+      "slug": "kurobe",
+      "name": "黒部市",
+      "status": "active",
+      "summary": "自主返納者向け無料パス・選択支援のほか、70歳以上にはふれあい福祉券と高齢者定期の購入費助成があります。",
+      "programs": [
+        {
+          "name": "自主返納者の市内バスフリーパス",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の黒部市民。有効期間内に保有する免許の全部を自主返納した人。失効は対象外。",
+          "benefit": "希望者全員に無期限の無料乗車券。",
+          "fare": "対象バス無料。",
+          "routes": "新幹線市街地線、新幹線生地線、生地循環線、石田三日市線、池尻線、南北循環線、電動ミニバス。愛本コミュニティタクシーの支援は別に案内されています。",
+          "apply": "市役所市民環境課へ取消通知書、返納免許又は経歴証明書の写し、3か月以内の顔写真（3cm×2.4cm程度）を提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurobe.toyama.jp/category/page.aspx?servno=9810",
+              "label": "黒部市・自主返納支援",
+              "updated": "2023-12-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のえこまいか交付",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の黒部市民。有効期間内に保有する免許の全部を自主返納した人。失効は対象外。",
+          "benefit": "フリーパスに加えて選ぶ支援の1つ。ICカード1万5千円相当。",
+          "fare": "ICカードで通常のIC運賃を支払い。残高不足時の扱いは確認。",
+          "routes": "えこまいか対応バス。事業者がフィーダーバスでの対応を明記。他の利用路線は市・事業者へ確認。",
+          "apply": "市役所市民環境課へ取消通知書、返納免許又は経歴証明書の写し、3か月以内の顔写真（3cm×2.4cm程度）を提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurobe.toyama.jp/category/page.aspx?servno=9810",
+              "label": "黒部市・自主返納支援",
+              "updated": "2023-12-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.chitetsu.co.jp/?page_id=47335",
+              "label": "富山地方鉄道・フィーダーバス",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のゴールドパス購入費助成",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の黒部市民。有効期間内に保有する免許の全部を自主返納した人。失効は対象外。",
+          "benefit": "フリーパスに加えて選ぶ支援の1つ。購入費上限1万5千円。",
+          "fare": "2026年10月1日以降の定価は1か月9,000円、3か月25,700円、6か月48,600円、12か月86,400円。助成との差額は購入者負担。",
+          "routes": "地鉄バス全線。高速、季節運行、臨時など特殊路線とコミュニティバスを除く。",
+          "apply": "市役所市民環境課へ取消通知書、返納免許又は経歴証明書の写し、3か月以内の顔写真（3cm×2.4cm程度）を提出。購入したゴールドパスの写しも必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurobe.toyama.jp/category/page.aspx?servno=9810",
+              "label": "黒部市・自主返納支援",
+              "updated": "2023-12-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.chitetsu.co.jp/?p=957",
+              "label": "富山地方鉄道・ゴールドパス",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "令和8年度ふれあい福祉券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "令和8年4月1日現在70歳以上。要介護認定者、障害者手帳所持者を除く。居住条件の詳細は確認。",
+          "benefit": "100円割引券を1人30枚。令和9年3月31日まで。",
+          "fare": "券1枚につき100円引き。1乗車の使用枚数と運賃との差額は窓口へ確認。",
+          "routes": "黒部市内の公共交通機関。電動ミニバスにも使用可。具体的対象路線は福祉課へ確認。",
+          "apply": "令和8年度分は4月7日から郵送。転入等で未受取の場合は福祉課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurobe.toyama.jp/contents/kouhou/202604/202604.pdf",
+              "label": "広報くろべ2026年4月号5頁",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "70歳以上の地鉄高齢者定期購入費助成",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "70歳以上で対象定期券を購入した人。居住条件は福祉課へ確認。",
+          "benefit": "対象定期購入費の一部、1人年上限1万円。具体的助成割合は確認。",
+          "fare": "定期代を購入し助成申請。現在のゴールドパスは1か月9,000円〜。",
+          "routes": "ゴールドパス・夫婦deゴールドの地鉄バス全線。高速・季節・臨時など特殊路線とコミュニティバスは除外。鉄道専用いきいきパスの支援とは区別。",
+          "apply": "購入定期写し又は発行証明書、振込口座通帳を用意し福祉課へ申請。申請期限と助成割合は確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurobe.toyama.jp/category/page.aspx?servno=38",
+              "label": "黒部市・高齢者定期購入費助成",
+              "updated": "2026-09-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kurobe.toyama.jp/contents/kouhou/202604/202604.pdf",
+              "label": "広報くろべ2026年4月号5頁",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.chitetsu.co.jp/?p=957",
+              "label": "富山地方鉄道・ゴールドパス",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kurobe.toyama.jp/category/page.aspx?servno=9810",
+          "label": "黒部市・自主返納支援",
+          "updated": "2023-12-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.chitetsu.co.jp/?p=957",
+          "label": "地鉄・ゴールドパス",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.chitetsu.co.jp/?page_id=47335",
+          "label": "地鉄・フィーダーバス",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kurobe.toyama.jp/category/page.aspx?servno=38",
+          "label": "黒部市・高齢者定期購入費助成",
+          "updated": "2026-09-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kurobe.toyama.jp/contents/kouhou/202604/202604.pdf",
+          "label": "広報くろべ2026年4月号5頁",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "県警の2026年一覧で支援を確認しましたが、市の詳細案内は2023年更新です。対象路線・必要書類・選択支援の利用条件は市民環境課へ確認してください。ふれあい福祉券の居住条件・対象路線・1乗車の使用枚数、定期費助成の居住条件・割合・申請期限は福祉課へ確認してください。"
+    },
+    {
+      "slug": "nyuzen",
+      "name": "入善町",
+      "status": "active",
+      "summary": "返納者には3年間の利用券と5割引カードがあります。返納を求めない65歳以上のシルバー定期も案内されています。",
+      "programs": [
+        {
+          "name": "自主返納者の公共交通利用券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上の入善町民。2017年4月1日以降に全免許を自主返納。失効は対象外。",
+          "benefit": "年3万円分を3年間継続交付（合計9万円分）。各交付分は交付年度の翌年度末まで有効。",
+          "fare": "本人確認書類を提示し、その場で券を切り離して支払う。釣銭なし。",
+          "routes": "のらんマイ・カーの運賃、回数券、定期券に使えます。",
+          "apply": "キラキラ商工観光課へ申請書、取消通知書、印鑑を提出。継続申請書は郵送。手続き後その場で交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/doro_kotsu/2/1908.html",
+              "label": "入善町・返納高齢者支援",
+              "updated": "2026-08-31",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.nyuzen.toyama.jp/gyosei/soshiki/hisho/4/3/3/2026_1/6732.html",
+              "label": "広報入善2026年4月号",
+              "updated": "2026-04-10",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.nyuzen.toyama.jp/gyosei/soshiki/hisho/4/3/3/2025/6630.html",
+              "label": "広報入善2026年1月号・総額9万円の案内",
+              "updated": "2025-12-27",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納者の町営バス5割引カード",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内に住む65歳以上で全免許を自主返納した人。他の障害者割引等の対象者は除外。",
+          "benefit": "運賃・回数券・定期券代金が5割引。カード無料・無期限。",
+          "fare": "支払い又は購入時にカードと経歴証明書やマイナンバーカード等を提示。",
+          "routes": "のらんマイ・カー。",
+          "apply": "キラキラ商工観光課へ取消通知書等の返納確認書類コピーを提出。カードは後日郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/doro_kotsu/2/1908.html",
+              "label": "入善町・返納高齢者支援",
+              "updated": "2026-08-31",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "のらんマイ・カーのシルバー定期",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。住所条件は町の案内に明記されていません。",
+          "benefit": "1か月2,000円、3か月5,700円、6か月11,300円。一般定期は3,000円、8,600円、17,000円。",
+          "fare": "定期券購入後、記名本人が利用。通常1乗車の割引ではありません。",
+          "routes": "のらんマイ・カーの新屋線、舟見線。",
+          "apply": "生年月日を確認できる身分証明書を持参し、役場等の販売所で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.nyuzen.toyama.jp/gyosei/soshiki/kirakira/1/5/2/1692.html",
+              "label": "入善町・のらんマイ・カー",
+              "updated": "2024-05-27",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/doro_kotsu/2/1908.html",
+          "label": "入善町・返納高齢者支援",
+          "updated": "2026-08-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.nyuzen.toyama.jp/gyosei/soshiki/hisho/4/3/3/2026_1/6732.html",
+          "label": "広報入善2026年4月号",
+          "updated": "2026-04-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.nyuzen.toyama.jp/gyosei/soshiki/kirakira/1/5/2/1692.html",
+          "label": "入善町・のらんマイ・カー",
+          "updated": "2024-05-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.nyuzen.toyama.jp/gyosei/soshiki/hisho/4/3/3/2025/6630.html",
+          "label": "広報入善2026年1月号・総額9万円の案内",
+          "updated": "2025-12-27",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "シルバー定期の案内は2024年更新です。現在の価格、対象者の居住条件はキラキラ商工観光課へ確認してください。"
+    },
+    {
+      "slug": "asahi",
+      "name": "朝日町",
+      "status": "active",
+      "summary": "70歳以上で世帯条件を満たす人の共通券と、65歳以上の自主返納者のバス券・定期があります。",
+      "programs": [
+        {
+          "name": "自主返納者のあさひまちバス回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請時65歳以上の朝日町民で全種類の有効な免許を自主返納した人。6種の支援から1つ選択。",
+          "benefit": "12枚つづり8セット。町表記1万6千円相当。",
+          "fare": "回数券で乗車。券の利用期限は窓口へ確認。",
+          "routes": "あさひまちバス。",
+          "apply": "返納後1年以内に商工観光課へ申請書、取消通知書を提出。代理申請は代理人の身分証明書写しも必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.asahi.toyama.jp/soshiki/shokokanko/1453187486982.html",
+              "label": "朝日町・自主返納支援",
+              "updated": "2021-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.asahi.toyama.jp/soshiki/shokokanko/kotsu/2566.html",
+              "label": "朝日町・公共バス",
+              "updated": "2026-03-13",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のあさひまちバス定期券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請時65歳以上の朝日町民で全種類の有効な免許を自主返納した人。6種の支援から1つ選択。",
+          "benefit": "6か月定期1枚（町表記1万8千円相当）。",
+          "fare": "定期券で乗車。",
+          "routes": "あさひまちバス。利用区間は窓口へ確認。",
+          "apply": "返納後1年以内に商工観光課へ申請書、取消通知書を提出。代理申請は代理人の身分証明書写しも必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.asahi.toyama.jp/soshiki/shokokanko/1453187486982.html",
+              "label": "朝日町・自主返納支援",
+              "updated": "2021-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.asahi.toyama.jp/soshiki/shokokanko/kotsu/2566.html",
+              "label": "朝日町・公共バス",
+              "updated": "2026-03-13",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "シルバータクシー・公共バス共通利用券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "70歳以上で、世帯全員65歳以上、自家用車なし、同一町内会に扶養義務者の子がいない、前年所得税非課税世帯、障害者交通助成なし、介護老人福祉施設・軽費老人ホーム入所なしの全条件を満たす人。",
+          "benefit": "200円券を1人年間60枚まで。",
+          "fare": "対象バスで券を使用。差額・有効期限は確認。",
+          "routes": "朝日町公共バス（まちバス）。",
+          "apply": "居住条件・申請場所・書類は健康課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.asahi.toyama.jp/soshiki/kenko/kourei/1449206449381.html",
+              "label": "朝日町・シルバー共通券",
+              "updated": "2026-06-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.asahi.toyama.jp/soshiki/shokokanko/1453187486982.html",
+          "label": "朝日町・自主返納支援",
+          "updated": "2021-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.asahi.toyama.jp/soshiki/shokokanko/kotsu/2566.html",
+          "label": "朝日町・公共バス",
+          "updated": "2026-03-13",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.asahi.toyama.jp/soshiki/kenko/kourei/1449206449381.html",
+          "label": "朝日町・シルバー共通券",
+          "updated": "2026-06-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納支援の詳細は2021年更新で、県警の2026年一覧が支援を補強しています。現在の申請条件と券の期限・定期の利用区間は商工観光課へ、シルバー共通券の居住条件・申請書類は健康課へ確認してください。公共バス購入費半額助成は旧案内を現在取得できず、受付状況を健康課へ確認してください。"
+    },
+    {
+      "slug": "toyama",
+      "name": "富山市",
+      "status": "active",
+      "summary": "年度中に65歳となる市内在住者もおでかけ定期券の対象です。指定バスを降車9〜17時に1乗車100円で利用できます。大山・八尾・山田地域コミュニティバスも65歳以上100円です。",
+      "programs": [
+        {
+          "name": "令和8年度おでかけ定期券",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "市内在住の65歳以上（年度中に満65歳以上となる人を含む）。",
+          "benefit": "年度負担金1,000円で交付。令和9年3月31日まで有効。",
+          "fare": "降車9〜17時に1乗車100円。負担金1,000円は運賃に使えず、別途カード入金が必要。",
+          "routes": "地鉄路線バスは市内各停留所と中心市街地指定18停留所又は市民病院指定3停留所の間。フィーダーバス・まいどはやバスは全区間。",
+          "apply": "地区センター（大長谷除く）、各中核型地区センター・行政サービスセンター、市役所8階まちづくり推進課、CiC市民サービスコーナーで申込書、負担金、氏名住所生年月日の公的書類を提出。健康保険証不可、資格確認書等可。更新時は既存カードも持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.toyama.lg.jp/kurashi/road/1010282/1006518.html",
+              "label": "富山市・令和8年度おでかけ定期券",
+              "updated": "2026-03-19",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "大山・八尾・山田地域コミュニティバス高齢者割引",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "65歳以上。案内に居住条件は明記されていません。",
+          "benefit": "大人通常200円が100円。",
+          "fare": "1乗車100円。高齢者割引用回数券も利用可。",
+          "routes": "富山市営コミュニティバスの大山・八尾・山田地域。デマンド区間は予約が必要。",
+          "apply": "年齢確認方法・居住条件は交通政策課へ確認。大山のデマンド区間は当日の乗車1時間前まで、山田の清水線・谷牛岳温泉スキー場線の土曜デマンドは前日の正午までに予約。八尾の路線別予約は八尾バス管理センターへ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.toyama.lg.jp/shisei/machizukuri/1015396/1010291/1015788/1010292/1006264.html",
+              "label": "富山市・市営コミュニティバス（大山地域）",
+              "updated": "2026-07-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.toyama.lg.jp/shisei/machizukuri/1015396/1010291/1015788/1010292/1016993.html",
+              "label": "富山市・市営コミュニティバス（八尾地域）",
+              "updated": "2026-04-06",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.toyama.lg.jp/shisei/machizukuri/1015396/1010291/1015788/1010292/1006265.html",
+              "label": "富山市・市営コミュニティバス（山田地域）",
+              "updated": "2026-07-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.toyama.lg.jp/kurashi/road/1010282/1006518.html",
+          "label": "富山市・令和8年度おでかけ定期券",
+          "updated": "2026-03-19",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.toyama.lg.jp/shisei/machizukuri/1015396/1010291/1015788/1010292/1006264.html",
+          "label": "富山市・市営コミュニティバス（大山地域）",
+          "updated": "2026-07-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.toyama.lg.jp/shisei/machizukuri/1015396/1010291/1015788/1010292/1016993.html",
+          "label": "富山市・市営コミュニティバス（八尾地域）",
+          "updated": "2026-04-06",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.toyama.lg.jp/shisei/machizukuri/1015396/1010291/1015788/1010292/1006265.html",
+          "label": "富山市・市営コミュニティバス（山田地域）",
+          "updated": "2026-07-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "地域コミュニティバスの高齢者割引の居住条件・年齢確認書類は交通政策課へ確認してください。"
+    },
+    {
+      "slug": "namerikawa",
+      "name": "滑川市",
+      "status": "active",
+      "summary": "返納者の無料乗車証と、令和8年度の高齢者無料乗車券があります。",
+      "programs": [
+        {
+          "name": "自主返納者ののるマイカーフリー乗車証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請時65歳以上の市内在住者。有効期間内の免許を自主返納した人。",
+          "benefit": "市案内では1人1回、5年間有効の無料乗車証。県一覧は70歳以上を3年間としています。",
+          "fare": "対象コミュニティバス無料。",
+          "routes": "のるmy car。",
+          "apply": "生活環境課窓口へ取消通知書（コピー可）、返納前の免許コピー又は経歴証明書コピー、原則3か月以内の顔写真（縦3cm×横2.4cm）を提出。郵送不可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.namerikawa.toyama.jp/kenko/7/2052.html",
+              "label": "滑川市・自主返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.namerikawa.toyama.jp/soshiki/10/5/3/1/880.html",
+              "label": "滑川市・のるmy car",
+              "updated": "2026-08-31",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・令和8年8月返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "令和8年度高齢者のるmy car無料乗車券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "昭和31年12月31日以前生まれの在宅者。令和8年4月1日以降の市転入者・施設入所者と障がい者福祉利用券対象者を除く。",
+          "benefit": "入浴用の高齢者福祉利用券の代わりに無料乗車券を選択。令和9年3月31日まで。交付枚数は年齢により異なるため確認。",
+          "fare": "本人1回乗車につき券1枚で無料。",
+          "routes": "のるmy car。",
+          "apply": "本人の氏名・生年月日・住所が分かるものを持参し、市役所東別館福祉課で受取。代理も本人確認書類等を持参。バス用の紙券を希望する旨を窓口へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.namerikawa.toyama.jp/soshiki/10/5/3/1/880.html",
+              "label": "滑川市・のるmy car",
+              "updated": "2026-08-31",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.namerikawa.toyama.jp/soshiki/11/1/5023.html",
+              "label": "滑川市・令和8年度福祉券",
+              "updated": "2026-02-26",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.namerikawa.toyama.jp/material/files/group/11/R8fukushiriyoukennnituite.pdf",
+              "label": "滑川市・令和8年度福祉券配布資料",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.namerikawa.toyama.jp/kenko/7/2052.html",
+          "label": "滑川市・自主返納支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.namerikawa.toyama.jp/soshiki/10/5/3/1/880.html",
+          "label": "滑川市・のるmy car",
+          "updated": "2026-08-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.namerikawa.toyama.jp/soshiki/11/1/5023.html",
+          "label": "滑川市・令和8年度福祉券",
+          "updated": "2026-02-26",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.namerikawa.toyama.jp/material/files/group/11/R8fukushiriyoukennnituite.pdf",
+          "label": "滑川市・令和8年度福祉券配布資料",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・令和8年8月返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納券は市の2026年4月案内が5年間、県警8月一覧が70歳以上3年間と異なります。生活環境課へ確認してください。高齢者無料券の交付枚数は福祉課へ確認してください。"
+    },
+    {
+      "slug": "funahashi",
+      "name": "舟橋村",
+      "status": "notfound",
+      "summary": "県警一覧では従来の返納支援金は令和6年度で終了と案内されています。10月5日〜11月30日は村民無料のコミュニティバス実証運行があり、高齢者専用助成とは区別しています。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・令和8年8月返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.funahashi.toyama.jp/wp/wp-content/uploads/2026/09/7b9d0fb0b9d9f237832760b2c87830c0.pdf",
+          "label": "広報ふなはし2026年10月号3頁",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "高齢者向けの個別バス助成は今回見つかりませんでした。新しい支援の有無は住民生活課・総務課へ確認してください。"
+    },
+    {
+      "slug": "kamiichi",
+      "name": "上市町",
+      "status": "henno",
+      "summary": "65歳以上の自主返納者に町営バス無料乗車証を交付します。",
+      "programs": [
+        {
+          "name": "自主返納者の町営バス無料乗車証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請時に町に住所があり65歳以上。交付された全免許を自主返納し、経歴証明書又は取消通知書の交付を受けた人。",
+          "benefit": "1人1回。経歴証明書交付日から5年後の月末まで無料。",
+          "fare": "町営バス無料。",
+          "routes": "上市町営バス。",
+          "apply": "町民課生活環境班へ経歴証明書又は取消通知書の写しと写真（3cm×2.4cm）を提出。取消通知書で申請する場合はマイナンバーカードを持参。1〜2週間で交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kamiichi.toyama.jp/page/15592.html",
+              "label": "上市町・高齢者返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kamiichi.toyama.jp/page/15592.html",
+          "label": "上市町・高齢者返納支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "取消通知書のみで申請する場合の有効期限の起算日は町民課へ確認してください。"
+    },
+    {
+      "slug": "tateyama",
+      "name": "立山町",
+      "status": "active",
+      "summary": "65歳以上の町民向け定期券・お気軽パスと、免許を持たない75歳以上の交通ポイントがあります。",
+      "programs": [
+        {
+          "name": "65歳以上の町営バス定期券",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上の町民。",
+          "benefit": "月1,500円。最大12か月購入。",
+          "fare": "定期券で乗車。払い戻し不可。",
+          "routes": "町営バス全路線。",
+          "apply": "役場1階住民課で購入。年齢・居住条件の確認書類は窓口へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/4818.html",
+              "label": "立山町・高齢者定期とお気軽パス",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "地鉄電車・バスの町民お気軽パス",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上の町民。",
+          "benefit": "電車・バス併用は月2,200円。バスだけの販売なし。",
+          "fare": "対象内乗り放題。対象区間外は一切使えず、乗車区間全額の通常運賃が必要。",
+          "routes": "町内停留所間の五百石〜日置、五百石〜一夜泊、五百石〜蔵本新。",
+          "apply": "年齢確認書類を持参し住民課で登録証を取得。その登録証を提示し寺田・五百石・岩峅寺駅又は役場住民課で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/4818.html",
+              "label": "立山町・高齢者定期とお気軽パス",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "免許を持たない75歳以上の交通ポイント",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "町内在住で町に住民票があり、在宅生活中の75歳以上。免許を持たない又は返納した人。施設入所・入院中は退所・退院後に申請。",
+          "benefit": "月2,000ポイント（1P=1円）。偶数月4,000P、奇数月申請時は当月2,000P。有効は付与日の翌月末。",
+          "fare": "本人の運賃等をポイントで支払い。残高不足は現金。",
+          "routes": "立山町営バス路線、役場での地鉄電車・バスお気軽パス購入、町営バス回数券購入。",
+          "apply": "町元気交流ステーション3階健康福祉課社会福祉係へ、たてポカード、経歴証明書（持つ人）等を持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/8737.html",
+              "label": "立山町・交通ポイント",
+              "updated": "2025-08-26",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/4818.html",
+          "label": "立山町・高齢者定期とお気軽パス",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/8737.html",
+          "label": "立山町・交通ポイント",
+          "updated": "2025-08-26",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/juminka/kankyo_anzenkakari/4/1/794.html",
+          "label": "立山町・自主返納支援",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・令和8年8月返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町営定期の確認書類は住民課へ確認してください。交通ポイントの詳細は2025年更新のため現在の条件を健康福祉課へ確認してください。県警8月一覧の返納者向け3年無料パスは、町の10月1日返納案内には掲載されていません。現在の受付を住民課へ確認してください。"
+    },
+    {
+      "slug": "takaoka",
+      "name": "高岡市",
+      "status": "active",
+      "summary": "自主返納・失効者への回数券と、65歳以上の令和8年度ゴールドパス7割引があります。",
+      "programs": [
+        {
+          "name": "自主返納者のバス共通回数券（65〜74歳）",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "全免許の有効期間内自主返納日に65〜74歳の高岡市民。令和4年4月1日以降の自主返納から5年以内に申請。",
+          "benefit": "16,500円分を1回交付。タクシー等利用券との選択。",
+          "fare": "券で支払い、釣銭なし。本人のみ、払い戻し不可。",
+          "routes": "万葉線・加越能バス共通回数乗車券の対象路線。券の対象外路線・利用期限は確認。",
+          "apply": "市民生活課へ取消通知書又は運転経歴証明書を持参。代理人は自分の身分証明書も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+              "label": "高岡市・返納及び失効者支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のバス共通回数券（75歳以上）",
+          "kind": "henno",
+          "age_min": 75,
+          "eligibility": "全免許の有効期間内自主返納日に75歳以上の高岡市民。令和4年4月1日以降の自主返納から5年以内に申請。",
+          "benefit": "11,000円分を1回交付。タクシー等利用券との選択。",
+          "fare": "券で支払い、釣銭なし。本人のみ、払い戻し不可。",
+          "routes": "万葉線・加越能バス共通回数乗車券の対象路線。券の対象外路線・利用期限は確認。",
+          "apply": "市民生活課へ取消通知書又は運転経歴証明書を持参。代理人は自分の身分証明書も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+              "label": "高岡市・返納及び失効者支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効者のバス共通回数券（65〜74歳）",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "失効後の運転経歴証明書交付日に65〜74歳の高岡市民。令和4年4月1日以降の経歴証明書交付から5年以内に申請。",
+          "benefit": "16,500円分を1回交付。タクシー等利用券との選択。",
+          "fare": "券で支払い、釣銭なし。本人のみ、払い戻し不可。",
+          "routes": "万葉線・加越能バス共通回数乗車券の対象路線。券の対象外路線・利用期限は確認。",
+          "apply": "市民生活課へ運転経歴証明書を持参。代理人は自分の身分証明書も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+              "label": "高岡市・返納及び失効者支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効者のバス共通回数券（75歳以上）",
+          "kind": "voucher",
+          "age_min": 75,
+          "eligibility": "失効後の運転経歴証明書交付日に75歳以上の高岡市民。令和4年4月1日以降の経歴証明書交付から5年以内に申請。",
+          "benefit": "11,000円分を1回交付。タクシー等利用券との選択。",
+          "fare": "券で支払い、釣銭なし。本人のみ、払い戻し不可。",
+          "routes": "万葉線・加越能バス共通回数乗車券の対象路線。券の対象外路線・利用期限は確認。",
+          "apply": "市民生活課へ運転経歴証明書を持参。代理人は自分の身分証明書も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+              "label": "高岡市・返納及び失効者支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "令和8年度高齢者ゴールドパス割引販売",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "高岡市内に住む65歳以上。令和9年2月28日まで販売、予算到達で終了。",
+          "benefit": "1か月1,350円、3か月3,600円、通常6か月6,600円、12か月12,000円。通常価格の7割引。",
+          "fare": "定期代を支払い、対象内乗り放題。",
+          "routes": "加越能路線バス全線、世界遺産バス、わくライナー。高速（東京・名古屋・金沢・高山）及び臨時便は対象外。",
+          "apply": "住所・年齢の公的書類を持参し加越能乗車券センター、かえつのう旅行センター、氷見又は砺波営業所で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takaoka.toyama.jp/soshiki/sogokotsuuka/2/3/1/6/4944.html",
+              "label": "高岡市・令和8年度ゴールドパス割引",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "令和8年度経歴証明書所持者ゴールドパス割引販売",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "市内在住65歳以上で運転経歴証明書を提示できる人。失効による経歴証明書の扱いは確認。販売は令和9年2月28日まで、予算到達で終了。",
+          "benefit": "6か月4,500円、12か月7,500円（通常の返納者用価格15,000円、25,000円の7割引）。",
+          "fare": "定期代を支払い、対象内乗り放題。",
+          "routes": "加越能路線バス全線、世界遺産バス、わくライナー。高速（東京・名古屋・金沢・高山）及び臨時便は対象外。",
+          "apply": "上記販売所で住所・年齢の公的書類と運転経歴証明書を提示して購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.takaoka.toyama.jp/soshiki/sogokotsuuka/2/3/1/6/4944.html",
+              "label": "高岡市・令和8年度ゴールドパス割引",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+          "label": "高岡市・返納及び失効者支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.takaoka.toyama.jp/soshiki/sogokotsuuka/2/3/1/6/4944.html",
+          "label": "高岡市・令和8年度ゴールドパス割引",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納・失効交付券の使える路線、券の利用期限は市民生活課へ確認してください。ゴールドパスの経歴証明書所持者向け価格に失効者が該当するかは総合交通課・加越能バスへ確認してください。"
+    },
+    {
+      "slug": "himi",
+      "name": "氷見市",
+      "status": "active",
+      "summary": "70歳以上の自主返納者は2万円分の加越能バス券又はNPOバス券等を選べます。交付券は配偶者も利用できます。",
+      "programs": [
+        {
+          "name": "自主返納者の加越能バス回数券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "満70歳以上の氷見市民で、2013年4月1日以降、有効期間内の全免許を自主返納した人。",
+          "benefit": "2万円分を1回。バス券又はタクシー券から1つ選択。",
+          "fare": "利用券で支払い。不足額等は窓口へ確認。",
+          "routes": "加越能バス回数券の対象路線。対象外路線・券の期限は確認。",
+          "apply": "氷見警察署内の市交通安全協会へ取消通知書写し・身分証明書を持参して申請。後日身分証を提示して支援券受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.himi.toyama.jp/gyosei/raifu/korei/3/4792.html",
+              "label": "氷見市・自主返納支援",
+              "updated": "2026-07-21",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.himi.toyama.jp/material/files/group/49/202607211.pdf",
+              "label": "氷見市・返納支援の現掲載チラシ（令和6年発行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者の配偶者による加越能バス回数券の利用",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "対象返納者の配偶者。配偶者本人の返納は明記されていません。本人に交付した券を共有して利用。",
+          "benefit": "2万円分を1回。バス券又はタクシー券から1つ選択。別途同額を追加交付する案内ではありません。",
+          "fare": "利用時に券と身分証明書を提示。",
+          "routes": "加越能バス回数券の対象路線。対象外路線・券の期限は確認。",
+          "apply": "支援申請書に配偶者氏名を記入。令和3年3月31日以前の交付者は配偶者利用申請書を交通安全協会又は市民課へ提出。配偶者の確認書類は窓口へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.himi.toyama.jp/gyosei/raifu/korei/3/4792.html",
+              "label": "氷見市・自主返納支援",
+              "updated": "2026-07-21",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.himi.toyama.jp/material/files/group/49/202607211.pdf",
+              "label": "氷見市・返納支援の現掲載チラシ（令和6年発行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者のNPOバス利用券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "満70歳以上の氷見市民で、2013年4月1日以降、有効期間内の全免許を自主返納した人。",
+          "benefit": "2万円分を1回。バス券又はタクシー券から1つ選択。有効3年。",
+          "fare": "利用券で支払い。不足額等は窓口へ確認。",
+          "routes": "市内NPOバス。利用できる団体・路線は確認。",
+          "apply": "氷見警察署内の市交通安全協会へ取消通知書写し・身分証明書を持参して申請。後日身分証を提示して支援券受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.himi.toyama.jp/gyosei/raifu/korei/3/4792.html",
+              "label": "氷見市・自主返納支援",
+              "updated": "2026-07-21",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.himi.toyama.jp/material/files/group/49/202607211.pdf",
+              "label": "氷見市・返納支援の現掲載チラシ（令和6年発行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者の配偶者によるNPOバス利用券の利用",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "対象返納者の配偶者。配偶者本人の返納は明記されていません。本人に交付した券を共有して利用。",
+          "benefit": "2万円分を1回。バス券又はタクシー券から1つ選択。有効3年。別途同額を追加交付する案内ではありません。",
+          "fare": "利用時に券と身分証明書を提示。",
+          "routes": "市内NPOバス。利用できる団体・路線は確認。",
+          "apply": "支援申請書に配偶者氏名を記入。令和3年3月31日以前の交付者は配偶者利用申請書を交通安全協会又は市民課へ提出。配偶者の確認書類は窓口へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.himi.toyama.jp/gyosei/raifu/korei/3/4792.html",
+              "label": "氷見市・自主返納支援",
+              "updated": "2026-07-21",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.himi.toyama.jp/material/files/group/49/202607211.pdf",
+              "label": "氷見市・返納支援の現掲載チラシ（令和6年発行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.himi.toyama.jp/gyosei/raifu/korei/3/4792.html",
+          "label": "氷見市・自主返納支援",
+          "updated": "2026-07-21",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.himi.toyama.jp/material/files/group/49/202607211.pdf",
+          "label": "氷見市・返納支援の現掲載チラシ（令和6年発行）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "バス券の対象路線・差額の支払いと配偶者の利用条件は市民課へ確認してください。NPO券は3年間、加越能券の期限は窓口へ確認してください。"
+    },
+    {
+      "slug": "imizu",
+      "name": "射水市",
+      "status": "henno",
+      "summary": "65歳以上の自主返納者は5年無料証、加越能券、地鉄IC等から1つを選べます。",
+      "programs": [
+        {
+          "name": "自主返納者のコミュニティバス等無料乗車証",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市に住民票があり申請時65歳以上、自主返納した人。返納後1年以内に申請。4種支援から1つ選択。",
+          "benefit": "5年間無料乗車証。",
+          "fare": "対象バス無料。",
+          "routes": "射水市コミュニティバス。のるーと射水も対象と市が明記。",
+          "apply": "生活安全課へ窓口・郵送・オンラインで申請。申請書、取消通知書、公的身分証明書等、写真（3cm×2.4cm）が必要。郵送は返納後1年以内の消印有効。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=25693",
+              "label": "射水市・自主返納支援",
+              "updated": "2026-07-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納者の加越能バス回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市に住民票があり申請時65歳以上、自主返納した人。返納後1年以内に申請。4種支援から1つ選択。",
+          "benefit": "2万円相当分。",
+          "fare": "回数券で運賃を支払い。不足額・期限は確認。",
+          "routes": "加越能バス回数券の対象路線。",
+          "apply": "生活安全課へ窓口・郵送・オンラインで申請。申請書、取消通知書、公的身分証明書等、写真（3cm×2.4cm）が必要。郵送は返納後1年以内の消印有効。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=25693",
+              "label": "射水市・自主返納支援",
+              "updated": "2026-07-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者の地鉄ICカード",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "市に住民票があり申請時65歳以上、自主返納した人。返納後1年以内に申請。4種支援から1つ選択。",
+          "benefit": "2万円相当分。",
+          "fare": "ICで対象交通機関運賃を支払い。残高不足時の扱いは確認。",
+          "routes": "富山地方鉄道の対象ICバス。事業者はフィーダーバスのえこまいか対応を明記。具体的対象路線は確認。",
+          "apply": "生活安全課へ窓口・郵送・オンラインで申請。申請書、取消通知書、公的身分証明書等、写真（3cm×2.4cm）が必要。郵送は返納後1年以内の消印有効。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=25693",
+              "label": "射水市・自主返納支援",
+              "updated": "2026-07-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.chitetsu.co.jp/?page_id=47335",
+              "label": "富山地方鉄道・IC対応フィーダーバス",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=25693",
+          "label": "射水市・自主返納支援",
+          "updated": "2026-07-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.chitetsu.co.jp/?page_id=47335",
+          "label": "富山地方鉄道・IC対応フィーダーバス",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "回数券・ICカードの対象路線、有効期限、差額の支払いは生活安全課・交通事業者へ確認してください。"
+    },
+    {
+      "slug": "tonami",
+      "name": "砺波市",
+      "status": "active",
+      "summary": "年齢制限なしの自主返納支援と、65歳以上の市営バス定期があります。",
+      "programs": [
+        {
+          "name": "自主返納者の市独自支援券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "市民で有効期間内の全免許を自主返納した人。年齢制限は県警一覧でなし。返納後60日以内、2種支援から1つ選択。",
+          "benefit": "500円券20枚、1万円相当。",
+          "fare": "本人のみ、1回複数券可、釣銭なし、現金併用可。バス車内の運賃直接払いには使えません。",
+          "routes": "市営バス回数券・定期券の購入。市民生活課又は庄川支所市民福祉課の2窓口以外での購入不可。",
+          "apply": "取消通知書を持参し市民生活課、庄川支所市民福祉課又は砺波警察署内の交通安全協会で返納後60日以内に申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tonami.lg.jp/service/2371p/",
+              "label": "砺波市・令和8年自主返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.tonami.lg.jp/wp-content/uploads/HP用【改定】支援券について（申請者に渡す）2026年4月から-2.jpg",
+              "label": "砺波市・令和8年支援券利用表",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・令和8年8月返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者の加越能バス回数券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "市民で有効期間内の全免許を自主返納した人。年齢制限は県警一覧でなし。返納後60日以内、2種支援から1つ選択。",
+          "benefit": "1万円相当。",
+          "fare": "回数券で運賃を支払い。不足額等は確認。",
+          "routes": "加越能バス回数券の対象路線。利用可能区間は確認。",
+          "apply": "取消通知書を持参し市民生活課、庄川支所市民福祉課又は砺波警察署内の交通安全協会で返納後60日以内に申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tonami.lg.jp/service/2371p/",
+              "label": "砺波市・令和8年自主返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・令和8年8月返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "65歳以上の市営バス定期パス",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。市民限定かは案内に明記されていません。",
+          "benefit": "1か月2,000円、3か月5,700円。片道は1か月1,000円、3か月2,850円。一般は3,500円、9,980円。",
+          "fare": "定期券購入後、券で乗車。通常1乗車は200円で、高齢者普通運賃半額の案内ではありません。",
+          "routes": "砺波市営バス。",
+          "apply": "令和7年4月1日現在の販売表では、市民生活課・庄川支所市民福祉課・中野地区自治振興会・東般若自治振興会・砺波駅観光案内所で定期券を販売。現在の販売状況と年齢確認書類は企画政策課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.tonami.lg.jp/info/73101p/",
+              "label": "砺波市・市営バス定期等",
+              "updated": "2025-05-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.tonami.lg.jp/wp-content/uploads/砺波市営バス回数券・定期券の販売先.pdf",
+              "label": "市営バス券販売場所（令和7年4月1日現在）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.tonami.lg.jp/service/2371p/",
+          "label": "砺波市・令和8年自主返納支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tonami.lg.jp/wp-content/uploads/HP用【改定】支援券について（申請者に渡す）2026年4月から-2.jpg",
+          "label": "砺波市・令和8年支援券利用表",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・令和8年8月返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tonami.lg.jp/info/73101p/",
+          "label": "砺波市・市営バス定期等",
+          "updated": "2025-05-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.tonami.lg.jp/wp-content/uploads/砺波市営バス回数券・定期券の販売先.pdf",
+          "label": "市営バス券販売場所（令和7年4月1日現在）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市独自支援券には有効期限がありますが具体的期限は市民生活課へ確認してください。加越能回数券の対象路線・差額・期限も確認してください。定期の案内は2025年掲載のため現在の価格・居住条件・購入手順は企画政策課へ確認してください。"
+    },
+    {
+      "slug": "oyabe",
+      "name": "小矢部市",
+      "status": "active",
+      "summary": "65〜74歳の自主返納者には定期券、後期高齢者医療加入者には通常の無料乗車があります。",
+      "programs": [
+        {
+          "name": "自主返納者の市営バス1年定期",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上75歳未満の小矢部市民。有効な全免許を自主返納し、市税等滞納なし。後期高齢者医療被保険者は通常無料で別対象。",
+          "benefit": "1年定期を交付。75歳又は後期高齢者医療加入まで更新可。",
+          "fare": "定期券で市営バス無料。",
+          "routes": "小矢部市営バス。",
+          "apply": "返納後1年以内に生活環境課へ取消通知書写し、取消申請書写し又は返納前の免許コピーを提出。定期は最長約1か月後に郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.oyabe.toyama.jp/kurashi/1002393/1002397.html",
+              "label": "小矢部市・自主返納と後期高齢者無料",
+              "updated": "2023-03-06",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・令和8年8月返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "後期高齢者医療加入者の市営バス無料",
+          "kind": "pass",
+          "age_min": null,
+          "eligibility": "後期高齢者医療の被保険者証を持つ人。市は年齢より証で案内しています。",
+          "benefit": "市営バス無料。",
+          "fare": "旧案内では運転手へ保険証提示で無料。現在の提示方法は確認。",
+          "routes": "小矢部市営バス。",
+          "apply": "旧案内では申請不要。資格確認書やマイナンバーカード等の現行確認方法、居住条件は生活環境課へ確認。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.oyabe.toyama.jp/kurashi/1002393/1002397.html",
+              "label": "小矢部市・自主返納と後期高齢者無料",
+              "updated": "2023-03-06",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.oyabe.toyama.jp/kurashi/1002393/1002397.html",
+          "label": "小矢部市・自主返納と後期高齢者無料",
+          "updated": "2023-03-06",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・令和8年8月返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "市の詳細は2023年更新です。返納定期の現在の手続き、後期高齢者無料の現在の提示書類・居住条件は生活環境課へ確認してください。"
+    },
+    {
+      "slug": "nanto",
+      "name": "南砺市",
+      "status": "active",
+      "summary": "70歳以上の市民は年5,090円のシルバーパスを購入できます。自主返納者は2年パス又は加越能回数券等を選べます。",
+      "programs": [
+        {
+          "name": "なんバスシルバーパス",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "購入時満70歳以上で市内に住所がある人。",
+          "benefit": "年5,090円。",
+          "fare": "なんバスでは降車時パス提示、民間バスはパス提示と民間路線バス利用券1枚を手渡す。追加券は無料で受取。",
+          "routes": "なんバス全路線全区間、南砺市内を経由する加越能バスの市内乗降区間。市外で乗降すると全区間通常運賃。",
+          "apply": "住所・氏名・生年月日の身分証を持参し各市民センター、JR城端・福光駅、井波観光案内所で購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nanto.toyama.jp/soshiki/miraisouzou/18/1/1248.html",
+              "label": "南砺市・なんバスシルバーパス",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "自主返納者の2年間シルバーパス",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "県警一覧では70歳以上。市の自主返納者で4種支援から1つ選択、一人1回。",
+          "benefit": "2年間有効のシルバーパス。",
+          "fare": "なんバス降車時パス提示。市内民間バスでは民間路線利用券も必要。",
+          "routes": "なんバス全路線全区間、南砺市内を経由する加越能バスの市内乗降区間。市外で乗降すると全区間通常運賃。",
+          "apply": "申請書、取消通知書写し、返納前の免許写しを市交通安全協会、最寄り市民センター又は統合庁舎市民協働課へ提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nanto.toyama.jp/kurashi-tetsuzuki/anzen-anshin/1/3209.html",
+              "label": "南砺市・令和8年度返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nanto.toyama.jp/soshiki/miraisouzou/18/1/1248.html",
+              "label": "南砺市・なんバスシルバーパス",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・令和8年8月返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "自主返納者の加越能バス回数券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "県警一覧では70歳以上。市の自主返納者で4種支援から1つ選択、一人1回。",
+          "benefit": "1万円相当分。",
+          "fare": "券で運賃を支払い。券の差額等は確認。",
+          "routes": "加越能バス回数券の対象路線。適用区間は確認。",
+          "apply": "申請書、取消通知書写し、返納前の免許写しを市交通安全協会、市民センター又は市民協働課へ提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nanto.toyama.jp/kurashi-tetsuzuki/anzen-anshin/1/3209.html",
+              "label": "南砺市・令和8年度返納支援",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+              "label": "富山県警・令和8年8月返納支援一覧",
+              "updated": "2026-08-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nanto.toyama.jp/kurashi-tetsuzuki/anzen-anshin/1/3209.html",
+          "label": "南砺市・令和8年度返納支援",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nanto.toyama.jp/soshiki/miraisouzou/18/1/1248.html",
+          "label": "南砺市・なんバスシルバーパス",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+          "label": "富山県警・令和8年8月返納支援一覧",
+          "updated": "2026-08-20",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納支援の対象年齢70歳は県警一覧で確認しましたが、市本文の詳細条件・申請期限は市民協働課へ確認してください。加越能回数券の対象路線・差額・期限も確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
+    "label": "富山県警・運転免許返納者支援",
+    "checked": "2026-10-07"
+  }
+}
