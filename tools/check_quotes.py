@@ -54,15 +54,25 @@ def page_text(url):
             try:
                 doc = raw.decode(enc)
             except (UnicodeDecodeError, LookupError):
-                # 古い広報のプレーンテキストは、charsetなしのCP932がある。
+                # 本文がUTF-8でも、古いmeta属性だけCP932が混在するサイトがある。
+                # メタ情報を根拠本文に含めず、文字の置換なしで再読解する。
                 try:
-                    doc = raw.decode("cp932")
-                except UnicodeDecodeError:
-                    CACHE[url] = None, "文字コードを判別できない"
-                    return CACHE[url]
+                    body = re.sub(rb"<meta\b[^>]*>", b"", raw, flags=re.I)
+                    doc = body.decode(enc)
+                except (UnicodeDecodeError, LookupError):
+                    # 古い広報のプレーンテキストは、charsetなしのCP932がある。
+                    try:
+                        doc = raw.decode("cp932")
+                    except UnicodeDecodeError:
+                        CACHE[url] = None, "文字コードを判別できない"
+                        return CACHE[url]
             doc = re.sub(r"(?is)<(script|style)\b.*?</\1>", "", doc)
             text = html.unescape(re.sub(r"<[^>]+>", "", doc))
-    CACHE[url] = norm(text), ""
+    text = norm(text)
+    if "AttackDetectedBlockedbecauseofDoSAttack" in text:
+        CACHE[url] = None, "サイトがアクセス制限のページを返した"
+        return CACHE[url]
+    CACHE[url] = text, ""
     return CACHE[url]
 
 
