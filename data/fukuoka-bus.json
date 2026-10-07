@@ -1,0 +1,3184 @@
+{
+  "checked": "2026-10-07",
+  "draft": true,
+  "cities": [
+    {
+      "slug": "fukuoka",
+      "name": "福岡市",
+      "status": "active",
+      "summary": "所得区分等を満たす70歳以上へ年1回の高齢者乗車券。ICカード又はなぎさ号等の共通券を選べます。",
+      "programs": [
+        {
+          "name": "高齢者乗車券・交通用福祉ICカード",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "福岡市に居住し住民登録がある満70歳以上、令和8年度の市介護保険料所得段階1～7。70歳誕生日前日から申請可。身体障害者手帳1～3級・療育手帳A・精神障害者保健福祉手帳1級・戦傷病者手帳・被爆者健康手帳所持者は福祉乗車券対象のため除外。",
+          "benefit": "年1回、券種は1種類を選択し申請後変更不可。令和8年7～12月／令和9年1～3月／4～6月／7～9月の申請順に、所得段階1～5は12,000／9,000／6,000／3,000円、6・7は8,000／6,000／4,000／2,000円。",
+          "fare": "カード残額から運賃を支払い。現金チャージ・払い戻し・電子マネー利用不可。紛失再発行時は助成額から500円減額。",
+          "routes": "市地下鉄、JR、西鉄電車・バス、昭和バス、JR九州バス、のるーと等の全国交通系IC相互利用対象路線。なぎさ号等のその他共通利用券対象交通では使用不可。",
+          "apply": "令和8年7月15日～令和9年9月30日、毎年オンライン又は郵送申請。介護保険被保険者番号が必要、不明又は他市保険なら本人確認書類写し。令和8年1月2日以降転入者は前住所所得証明が必要な場合あり。交付後、既存ICカードは地下鉄券売機等でポイントチャージ。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukuoka.lg.jp/fukushi/oldage-welfare/health/00/01/1-010207_5_3_2_2-2-3.html",
+              "label": "福岡市 令和8年度高齢者乗車券",
+              "updated": "2026-07-13",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "高齢者乗車券・その他共通利用券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "福岡市に居住し住民登録がある満70歳以上、令和8年度の市介護保険料所得段階1～7。70歳誕生日前日から申請可。身体障害者手帳1～3級・療育手帳A・精神障害者保健福祉手帳1級・戦傷病者手帳・被爆者健康手帳所持者は福祉乗車券対象のため除外。",
+          "benefit": "年1回、券種は1種類を選択し申請後変更不可。令和8年7～12月／令和9年1～3月／4～6月／7～9月の申請順に、所得段階1～5は12,000／9,000／6,000／3,000円、6・7は8,000／6,000／4,000／2,000円。 共通利用券の有効期限は令和9年9月30日。",
+          "fare": "券額を超える運賃の具体的支払方法は案内に記載なし。本人確認証明書を携帯。",
+          "routes": "バス用途は今宿姪浜線乗合バスなぎさ号。市営渡船・指定乗合タクシー等にも使える共通券。",
+          "apply": "令和8年7月15日～令和9年9月30日、毎年オンライン又は郵送申請。介護保険被保険者番号が必要、不明又は他市保険なら本人確認書類写し。令和8年1月2日以降転入者は前住所所得証明が必要な場合あり。審査後、簡易書留で郵送交付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukuoka.lg.jp/fukushi/oldage-welfare/health/00/01/1-010207_5_3_2_2-2-3.html",
+              "label": "福岡市 令和8年度高齢者乗車券",
+              "updated": "2026-07-13",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fukuoka.lg.jp/fukushi/oldage-welfare/health/00/01/1-010207_5_3_2_2-2-3.html",
+          "label": "福岡市 令和8年度高齢者乗車券",
+          "updated": "2026-07-13",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "その他共通利用券の差額支払方法は本文に詳しい記載がありません。高齢者乗車券郵送受付センター（0120-502-633）へ確認してください。"
+    },
+    {
+      "slug": "itoshima",
+      "name": "糸島市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へSUGOCAを1回交付。市の案内で九大線での使用を確認できます。",
+      "programs": [
+        {
+          "name": "正式返納後のSUGOCA交付",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "自主返納日及び申請日に糸島市住民基本台帳登録がある70歳以上。有効期間が残る免許を本人意思で返納。",
+          "benefit": "1人1回、SUGOCA利用可能4,500円＋預り金500円。",
+          "fare": "カードから運賃を支払い。九大線の市案内運賃は200円。",
+          "routes": "市案内でSUGOCAを確認できる九大線。九大線以外の市内コミュニティバスは同カード払いの記載なし。",
+          "apply": "返納から6か月以内に市4階危機管理課へ申請書と取消通知書写し、郵送可。返納後免許写しは任意。取消通知書紛失時は運転免許経歴証明書（運転経歴証明書とは別）。審査後簡易書留、発送まで約1か月。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.itoshima.lg.jp/s004/010/010/090/030/20170418141620.html",
+              "label": "運転免許証を自主返納された70歳以上の方へ支援を行います - 糸島市",
+              "updated": "2026-04-13",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.itoshima.lg.jp/s006/010/020/020/050/bus.html",
+              "label": "市内バス路線（定時定路線バス、オンデマンドバス等）等の運行について - 糸島市",
+              "updated": "2026-04-30",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.itoshima.lg.jp/s004/010/010/090/030/20170418141620.html",
+          "label": "運転免許証を自主返納された70歳以上の方へ支援を行います - 糸島市",
+          "updated": "2026-04-13",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.itoshima.lg.jp/s006/010/020/020/050/bus.html",
+          "label": "市内バス路線（定時定路線バス、オンデマンドバス等）等の運行について - 糸島市",
+          "updated": "2026-04-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": ""
+    },
+    {
+      "slug": "kasuga",
+      "name": "春日市",
+      "status": "active",
+      "summary": "70歳以上の市居住者は高齢者ICカードでコミュニティバス無料。旧返納支援は令和7年3月末終了。",
+      "programs": [
+        {
+          "name": "70歳以上の高齢者ICカード",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "春日市に居住する70歳以上。事前申請で高齢者ICカードの交付が必要。",
+          "benefit": "コミュニティバス運賃無料。",
+          "fare": "カードを降車時にかざして無料。未交付の場合100円と利用案内に記載。",
+          "routes": "春日市コミュニティバス「やよい」。",
+          "apply": "市役所都市計画課へ住所・氏名・生年月日を確認できる公的本人確認書類。代理は本人記載委任状＋本人と代理の確認書類。平日8:30～17:00。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kasuga.fukuoka.jp/kurashi/douro/yayoi/1014883.html",
+              "label": "春日市コミュニティバス70歳以上運賃無料化｜春日市",
+              "updated": "2026-10-07",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kasuga.fukuoka.jp/miryoku/yayoi/1002693.html",
+              "label": "利用案内｜春日市",
+              "updated": "2025-10-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kasuga.fukuoka.jp/kurashi/douro/yayoi/1014883.html",
+          "label": "春日市コミュニティバス70歳以上運賃無料化｜春日市",
+          "updated": "2026-10-07",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kasuga.fukuoka.jp/miryoku/yayoi/1002693.html",
+          "label": "利用案内｜春日市",
+          "updated": "2025-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kasuga.fukuoka.jp/kurashi/anzen/koutsuanzen/1001425.html",
+          "label": "交通安全対策｜春日市",
+          "updated": "2026-02-18",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "無料乗車証の条件は令和8年10月7日更新の案内で確認。通常運賃の利用案内は1年以上前のため、都市計画課（092-584-1135）へ確認してください。 旧返納支援の終了案内もあわせてご確認ください。"
+    },
+    {
+      "slug": "onojo",
+      "name": "大野城市",
+      "status": "active",
+      "summary": "東地区65歳以上はおげんき号無料。70歳以上の返納者・失効者へバス券等の択一支援。",
+      "programs": [
+        {
+          "name": "正式返納後の公共交通利用助成",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "申請日及び返納日に大野城市民、返納時70歳以上。令和2年4月1日以降の自主返納又はマイナ免許情報の抹消。",
+          "benefit": "1人1回、4種から1つ。バス向けはまどか号回数券5,000円分、nimoca（利用4,500円＋預り500円）、グランドパス65・75購入費上限5,000円。",
+          "fare": "まどか号は通常全区間100円、回数券・交通系IC払い可。グランドパス対象運賃・路線の詳細は本文記載なし。",
+          "routes": "まどか号、グランドパス65・75対象路線。nimocaの全利用可能路線は本文に記載なし。",
+          "apply": "申請書・印鑑・返納確認書類（経歴証原本又は取消通知書等）・本人確認書類。グランドパスは加えて口座情報・パス・領収書又はレシート、返納等以後の購入が対象。審査後郵送又は振込。具体的窓口・期限は案内本文記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.onojo.fukuoka.jp/s059/20221227095530.html",
+              "label": "大野城市運転免許証自主返納等支援事業について / 大野城市役所公式ホームページ",
+              "updated": "2024-01-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.onojo.fukuoka.jp/kiji0036166/index.html",
+              "label": "まどか号の運賃・回数券・乗降方法・忘れ物の問合せ先など / 大野城市役所公式ホームページ",
+              "updated": "2026-06-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後の公共交通利用助成",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "申請日及び失効日に大野城市民、失効時70歳以上。令和2年4月1日以降の期限切れ失効。",
+          "benefit": "1人1回、4種から1つ。バス向けはまどか号回数券5,000円分、nimoca（利用4,500円＋預り500円）、グランドパス65・75購入費上限5,000円。",
+          "fare": "まどか号は通常全区間100円、回数券・交通系IC払い可。グランドパス対象運賃・路線の詳細は本文記載なし。",
+          "routes": "まどか号、グランドパス65・75対象路線。nimocaの全利用可能路線は本文に記載なし。",
+          "apply": "申請書・印鑑・失効確認書類（失効した免許証等）・本人確認書類。グランドパスは加えて口座情報・パス・領収書又はレシート、返納等以後の購入が対象。審査後郵送又は振込。具体的窓口・期限は案内本文記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.onojo.fukuoka.jp/s059/20221227095530.html",
+              "label": "大野城市運転免許証自主返納等支援事業について / 大野城市役所公式ホームページ",
+              "updated": "2024-01-20",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.onojo.fukuoka.jp/kiji0036166/index.html",
+              "label": "まどか号の運賃・回数券・乗降方法・忘れ物の問合せ先など / 大野城市役所公式ホームページ",
+              "updated": "2026-06-04",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "東地区高齢者移動支援・おげんき号",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "大野城市東地区に住む65歳以上の高齢者。",
+          "benefit": "おげんき号の運賃無料。",
+          "fare": "無料。",
+          "routes": "東地区のバス「おげんき号」。イオン乙金店を出発し東地区内周回、同店へ帰着。",
+          "apply": "具体的な利用登録・乗車手続は市FAQに記載なし。東地区コミュニティ運営協議会へ確認。",
+          "notes": [
+            "月曜～土曜運行。日祝日・お盆・年末年始は運休。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.onojo.fukuoka.jp/dynamic/faq2/pub/detail.aspx?c_id=30&id=1513&mst_pt=18&pg=1",
+              "label": "FAQ / 大野城市役所公式ホームページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.onojo.fukuoka.jp/s059/20221227095530.html",
+          "label": "大野城市運転免許証自主返納等支援事業について / 大野城市役所公式ホームページ",
+          "updated": "2024-01-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.onojo.fukuoka.jp/kiji0036166/index.html",
+          "label": "まどか号の運賃・回数券・乗降方法・忘れ物の問合せ先など / 大野城市役所公式ホームページ",
+          "updated": "2026-06-04",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.onojo.fukuoka.jp/dynamic/faq2/pub/detail.aspx?c_id=30&id=1513&mst_pt=18&pg=1",
+          "label": "FAQ / 大野城市役所公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "支援本文の更新日は1年以上前です。申請窓口・期限、グランドパスとnimocaの対象路線は市代表（092-501-2211）へ確認してください。 おげんき号の案内は更新日記載なしです。利用手続は東地区コミュニティ運営協議会（092-504-1430）、市地域行政センター統括課東地区担当（092-504-1433）へ確認してください。"
+    },
+    {
+      "slug": "nakagawa",
+      "name": "那珂川市",
+      "status": "active",
+      "summary": "予約制かわせみバスは65歳以上100円。70歳以上の正式返納者には専用券又はnimoca。",
+      "programs": [
+        {
+          "name": "かわせみバス65歳以上割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上。利用割引証又はその他年齢確認できる公的証明書を提示。市内居住条件は運行案内に記載なし。",
+          "benefit": "一般300円に対し高齢者100円。",
+          "fare": "1乗車100円。",
+          "routes": "那珂川のるーと「かわせみバス」（市が予約制乗合バスと明記）。",
+          "apply": "LINE・アプリ・電話で初回利用登録後予約。のるーとダッシュは利用登録不要。電話050-3098-0913、乗車6日前から予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nakagawa.lg.jp/soshiki/16/kawasemi-aiod-kokuchi.html",
+              "label": "那珂川のるーと「かわせみバス」利用案内 - 那珂川市ホームページ（都市計画課）",
+              "updated": "2026-05-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "正式返納後のバス券・nimoca支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "自主返納時70歳以上、有効な全免許を返納、返納日及び申請日に市に住所。失効は対象外。",
+          "benefit": "1人1回、nimoca利用9,500円＋預り500円、又はかわせみ専用券（10,000円分の支援で利用11,000円）を選択。",
+          "fare": "利用券又はカードで支払い。高齢者は割引証等で100円。",
+          "routes": "かわせみバス。新しいバス案内パンフレットでnimoca決済と従来専用乗車券の継続利用を確認。",
+          "apply": "返納から6か月以内に高齢者支援課へ申請書・取消通知書原本・本人確認書類・印鑑。代理は委任状＋代理確認書類＋代理印。原則当日交付、在庫により後日。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nakagawa.lg.jp/soshiki/11/jisyuhennou.html",
+              "label": "高齢者の運転免許証の自主返納を支援します～支援事業の申請はお済みですか？～ - 那珂川市ホームページ（高齢者支援課）",
+              "updated": "2024-10-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nakagawa.lg.jp/soshiki/16/kawasemi-aiod-kokuchi.html",
+              "label": "那珂川のるーと「かわせみバス」利用案内 - 那珂川市ホームページ（都市計画課）",
+              "updated": "2026-05-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nakagawa.lg.jp/uploaded/attachment/31674.pdf",
+              "label": "那珂川のるーと「かわせみバス」利用パンフレット（令和7年10月運行開始）",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nakagawa.lg.jp/soshiki/16/kawasemi-aiod-kokuchi.html",
+          "label": "那珂川のるーと「かわせみバス」利用案内 - 那珂川市ホームページ（都市計画課）",
+          "updated": "2026-05-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nakagawa.lg.jp/soshiki/11/jisyuhennou.html",
+          "label": "高齢者の運転免許証の自主返納を支援します～支援事業の申請はお済みですか？～ - 那珂川市ホームページ（高齢者支援課）",
+          "updated": "2024-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nakagawa.lg.jp/uploaded/attachment/31674.pdf",
+          "label": "那珂川のるーと「かわせみバス」利用パンフレット（令和7年10月運行開始）",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納支援案内は1年以上前、パンフレットの更新日は記載なしです。支援額等は高齢者支援課（092-953-2211）、運行は都市計画課（092-408-7994）へ確認してください。"
+    },
+    {
+      "slug": "munakata",
+      "name": "宗像市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へバス回数券又はnimoca等の択一支援。",
+      "programs": [
+        {
+          "name": "正式返納者のバス券・nimoca支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "70歳以上の市民。有効期間内の免許を自主返納し6か月以内に申請。期限切れ失効は対象外。",
+          "benefit": "ふれあいバス・コミュニティバス回数券1万円分、nimoca1万円（利用9,500円＋預り金500円）、又はタクシー回数券1万円から1つ選択。",
+          "fare": "回数券又はカードで支払い。各路線の運賃・差額の取扱いは支援案内に記載なし。",
+          "routes": "ふれあいバス、コミュニティバス。nimocaは西鉄バス等。",
+          "apply": "返納から6か月以内に危機管理課窓口で申請書を記入。取消通知書と、返納免許又は公的本人確認書類。代理は委任状。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.munakata.lg.jp/kiji003934/index.html",
+              "label": "高齢者運転免許証自主返納支援 / 福岡県宗像市公式サイト",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.munakata.lg.jp/kiji003934/index.html",
+          "label": "高齢者運転免許証自主返納支援 / 福岡県宗像市公式サイト",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "支援案内は1年以上前です。現在の支援内容、対象路線と運賃は危機管理課（市代表0940-36-1121）へ確認してください。"
+    },
+    {
+      "slug": "fukutsu",
+      "name": "福津市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へふくつミニバスの1年間無料乗車券。",
+      "programs": [
+        {
+          "name": "正式返納後のふくつミニバス無料乗車券",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "市内に住み70歳以上（誕生月有効）。有効期限内の免許を自主返納し6か月以内。期限切れ不可。",
+          "benefit": "ふくつミニバスの1年間無料乗車券。市要綱では併せてnimoca2,000円分（保証金500円含む）を1回交付と規定。",
+          "fare": "交付乗車券で無料。",
+          "routes": "ふくつミニバス。",
+          "apply": "市役所別館1階都市計画課へ、免許取消通知とマイナンバーカード等の公的証明書。 要綱では取消通知書又は運転経歴証明書若しくは免許情報記録個人番号カードに、本人確認書類を添えて申請。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.fukutsu.lg.jp/kurashi/kotsu/minibus.html",
+              "label": "ふくつミニバス／福津市",
+              "updated": "2025-09-30",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www1.g-reiki.net/city.fukutsu/reiki_honbun/r163RG00000841.html",
+              "label": "自主返納支援要綱・令和7年4月1日施行",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.fukutsu.lg.jp/kurashi/kotsu/minibus.html",
+          "label": "ふくつミニバス／福津市",
+          "updated": "2025-09-30",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www1.g-reiki.net/city.fukutsu/reiki_honbun/r163RG00000841.html",
+          "label": "自主返納支援要綱・令和7年4月1日施行",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "ミニバス案内は1年以上前で、要綱の更新日は記載なしです。要綱にはnimocaの併給もありますが案内本文に記載なく、誕生月の年齢判定・申請書類の取扱いも要綱と表現が異なります。現在の交付条件とIC対象区間は都市計画課（0940-62-5036）へ確認してください。"
+    },
+    {
+      "slug": "koga",
+      "name": "古賀市",
+      "status": "active",
+      "summary": "在住70歳以上が登録すると西鉄古賀市内線・コガバスを100円で利用。",
+      "programs": [
+        {
+          "name": "70歳おでかけバス",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "古賀市在住の70歳以上。事前登録が必要。本人のみ、他の障がい者・被救護者割引と併用不可。",
+          "benefit": "対象バスを1乗車100円で利用。",
+          "fare": "本来運賃を記入したチケットと現金100円を運賃箱へ。定期券・ICカード・回数券払いは対象外。",
+          "routes": "西鉄バス古賀市内線とコガバス。天神・赤間営業所など古賀市外行きは対象外。",
+          "apply": "住所・年齢確認書類を持って市役所なんでもきくコーナー又はサンコスモ古賀健康介護課で登録、チケット付きシートを受領。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.koga.fukuoka.jp/cityhall/work/kikaku/012.php",
+              "label": "公共交通｜\n経営戦略課｜\n市役所の仕事としくみ｜\n行政情報｜\n古賀市オフィシャルページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.koga.fukuoka.jp/cityhall/work/kikaku/012.php",
+          "label": "公共交通｜\n経営戦略課｜\n市役所の仕事としくみ｜\n行政情報｜\n古賀市オフィシャルページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしです。現在の登録・利用条件は健康介護課（092-942-1144）又は交通担当（092-942-1113）へ確認してください。"
+    },
+    {
+      "slug": "shingu",
+      "name": "新宮町",
+      "status": "active",
+      "summary": "70歳以上にマリンクス運賃助成券。正式返納者へは別途回数券又は交通系ICカード。",
+      "programs": [
+        {
+          "name": "高齢者移動支援・マリンクス助成券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "町内居住かつ住民登録の70歳以上。70歳誕生日の前月から申請可、利用は誕生日以降。本人のみ。",
+          "benefit": "マリンクスのみ選択なら申請4月60枚、以後月ごと5枚減り3月5枚。タクシーとの併用選択も可能で枚数は減る。追加交付・交付後の選択変更不可、年度毎に申請。",
+          "fare": "1乗車につき100円助成。券を乗車時に提出し残りの運賃は本人負担。",
+          "routes": "町コミュニティバス「マリンクス」。",
+          "apply": "オンライン又は郵送申請。やむを得ない場合は同居家族等の代理可。有効期限は交付年度末（令和8年度は令和9年3月31日）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shingu.fukuoka.jp/iryo_kenko_fukushi/korei_kaigo/2/8157.html",
+              "label": "令和8年度新宮町高齢者移動支援事業／新宮町",
+              "updated": "2026-07-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shingu.fukuoka.jp/section/reiki_int/reiki_honbun/q031RG00001198.html",
+              "label": "高齢者移動支援助成券規則（令和8年4月1日施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.shingu.fukuoka.jp/material/files/group/6/20260127-2.pdf",
+              "label": "高齢者移動支援・令和8年1月30日Q&A",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "正式返納後のマリンクス券・ICカード",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "自主返納時に町住民登録、満70歳以上。正式返納から6か月以内。罰則・期限切れは対象外。",
+          "benefit": "1人1回、マリンクス回数券2万円相当又はSUGOCA・nimoca各1万5,000円相当から1つ。IC額は預り金500円を含む。",
+          "fare": "回数券で支払い。具体的運賃は支援本文に記載なし。",
+          "routes": "マリンクス回数券。ICカードの具体的バス路線は支援本文未記載。",
+          "apply": "本館2階地域協働課へ取消通知書と申請書、写真不要。必要書類がそろえば代理申請可、受取は本人のみ。審査後通知し窓口又は郵送受取。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shingu.fukuoka.jp/soshiki/chiiki_kyodo/1/1_1/1840.html",
+              "label": "運転免許証を自主返納した満70歳以上の人を支援します／新宮町",
+              "updated": "2025-09-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.shingu.fukuoka.jp/iryo_kenko_fukushi/korei_kaigo/2/8157.html",
+          "label": "令和8年度新宮町高齢者移動支援事業／新宮町",
+          "updated": "2026-07-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shingu.fukuoka.jp/section/reiki_int/reiki_honbun/q031RG00001198.html",
+          "label": "高齢者移動支援助成券規則（令和8年4月1日施行）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shingu.fukuoka.jp/material/files/group/6/20260127-2.pdf",
+          "label": "高齢者移動支援・令和8年1月30日Q&A",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.shingu.fukuoka.jp/soshiki/chiiki_kyodo/1/1_1/1840.html",
+          "label": "運転免許証を自主返納した満70歳以上の人を支援します／新宮町",
+          "updated": "2025-09-11",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "通常枠は令和8年度案内と改正規則で確認。Q&A・規則の更新日は記載なし、返納案内は1年以上前です。通常枠は健康福祉課（092-710-8286）、返納枠の現在の条件・運賃は地域協働課（092-963-1734）へ確認してください。"
+    },
+    {
+      "slug": "hisayama",
+      "name": "久山町",
+      "status": "active",
+      "summary": "年度の70歳以上へイコバス無料券24枚。正式返納者は別枠でイコバス回数券1万円分。",
+      "programs": [
+        {
+          "name": "シニアチャレンジ応援・イコバス無料券",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "町に住民票がある70歳以上（令和8年度は昭和32年4月1日以前生まれ）。",
+          "benefit": "イコバス無料券24枚を交付。バス券又は別途交付のチャレンジ応援クーポンのどちらかを使い切ると、バス券又は応援クーポンの2,000円分を選べる追加交付が1回のみ。",
+          "fare": "バス無料券を提出し無料。",
+          "routes": "ひさやまイコバス。",
+          "apply": "町福祉課窓口へ本人確認書類。令和8年4月1日受付開始。無料券の利用期限は案内で確認できず。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.hisayama.fukuoka.jp/soshiki/fukushi/gyomu/kourei_fukushi_kaigo/3199.html",
+              "label": "シニアチャレンジ応援事業／久山町",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.hisayama.fukuoka.jp/material/files/group/6/zigyougaiyou.pdf",
+              "label": "令和8年度シニアチャレンジ応援事業概要",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納後のイコバス回数券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "全免許を正式自主返納。返納日に町住民基本台帳登録、満70歳以上。要綱の暴力団排除条件あり。",
+          "benefit": "ひさやまイコバス回数券1万円分を1回交付。",
+          "fare": "回数券で運賃を支払い。運行案内は1乗車100円。",
+          "routes": "ひさやまイコバス。",
+          "apply": "返納日から6か月以内に町長へ申請書・取消通知書・顔写真で本人確認できる書類。取消通知書がない場合は返納日確認書類で代用可。具体的受付窓口は要綱に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www1.g-reiki.net/town.hisayama/reiki_honbun/q032RG00000705.html",
+              "label": "高齢者運転免許証自主返納支援事業要綱（令和3年7月1日施行）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.hisayama.fukuoka.jp/soshiki/keiei_design/gyomu/ikobass/2352.html",
+              "label": "運賃／久山町",
+              "updated": "2023-09-28",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.hisayama.fukuoka.jp/soshiki/fukushi/gyomu/kourei_fukushi_kaigo/3199.html",
+          "label": "シニアチャレンジ応援事業／久山町",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.hisayama.fukuoka.jp/material/files/group/6/zigyougaiyou.pdf",
+          "label": "令和8年度シニアチャレンジ応援事業概要",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www1.g-reiki.net/town.hisayama/reiki_honbun/q032RG00000705.html",
+          "label": "高齢者運転免許証自主返納支援事業要綱（令和3年7月1日施行）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.hisayama.fukuoka.jp/soshiki/keiei_design/gyomu/ikobass/2352.html",
+          "label": "運賃／久山町",
+          "updated": "2023-09-28",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "事業概要・要綱の更新日は記載なし、運行案内は1年以上前です。通常枠の券の利用期限と返納支援の現在の条件は福祉課（092-976-1111、内線216）へ確認してください。"
+    },
+    {
+      "slug": "kasuya",
+      "name": "粕屋町",
+      "status": "henno",
+      "summary": "住民登録のある70歳以上の正式返納者にnimoca乗車券4,500円分。",
+      "programs": [
+        {
+          "name": "正式返納後のnimoca支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "町に住民登録がある70歳以上。有効期限内の免許を自主返納。交通違反による取消しは対象外。",
+          "benefit": "4,500円分のICカード乗車券nimocaを交付。預り金の内訳は案内に記載なし。",
+          "fare": "カード残額で支払い。不足時は入金して繰返し使用できると案内。",
+          "routes": "電車・バス・地下鉄で利用可。具体的バス路線は案内に記載なし。",
+          "apply": "返納から6か月以内に庁舎2階地域共創課へ取消通知書と、身分証明書又は穴の開いた返却免許。代理は代理人の身分証明書も持参。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kasuya.fukuoka.jp/s048/020/020/030/20220419165213.html",
+              "label": "高齢者運転免許証自主返納支援のご案内｜粕屋町",
+              "updated": "2025-06-25",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kasuya.fukuoka.jp/s048/020/020/030/20220419165213.html",
+          "label": "高齢者運転免許証自主返納支援のご案内｜粕屋町",
+          "updated": "2025-06-25",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "支援案内は1年以上前です。現在の支援内容と使用できるバス路線は地域共創課危機管理係（092-938-0173）へ確認してください。"
+    },
+    {
+      "slug": "sasaguri",
+      "name": "篠栗町",
+      "status": "unknown",
+      "summary": "70歳以上の正式返納者へSUGOCA5,000円分の案内がありますが、今回確認した町の本文ではカードのバス用途を確認できません。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.sasaguri.fukuoka.jp/soshiki/somu/3/5855.html",
+          "label": "高齢者運転免許証自主返納支援事業について／篠栗町",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしです。SUGOCA支援の現在の条件と利用できるバスは総務課消防防災係（092-947-1113）へ確認してください。"
+    },
+    {
+      "slug": "shime",
+      "name": "志免町",
+      "status": "henno",
+      "summary": "住民登録のある70歳以上の正式返納者に西鉄バスIC乗車カード。",
+      "programs": [
+        {
+          "name": "正式返納後の西鉄バスnimoca",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "町在住かつ住民基本台帳登録、満70歳以上。有効期限内の全免許を自主返納（マイナ免許情報抹消含む）。期限切れ・取消停止処分等は対象外。",
+          "benefit": "1人1回、利用4,500円＋預り金500円のnimoca。",
+          "fare": "nimoca残額から運賃を支払い。具体的対象路線の運賃は本文に記載なし。",
+          "routes": "西鉄バスIC乗車カード。具体的対象路線は支援本文未記載。",
+          "apply": "返納から6か月以内に役場2階生活安全課へ取消通知書・返納免許（所持時のみ）・顔写真付き本人確認書類（返納免許代用可）。代理は本人と代理人の身分証明書。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.shime.lg.jp/soshiki/8/shimematikoureishajishuhennousien20250401.html",
+              "label": "高齢者運転免許証自主返納支援を行っています - 志免町ホームページ",
+              "updated": "2025-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.shime.lg.jp/soshiki/8/shimematikoureishajishuhennousien20250401.html",
+          "label": "高齢者運転免許証自主返納支援を行っています - 志免町ホームページ",
+          "updated": "2025-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "支援案内は1年以上前です。現在の支援条件、対象路線と運賃は生活安全課安全安心係（092-935-1181）へ確認してください。"
+    },
+    {
+      "slug": "sue",
+      "name": "須恵町",
+      "status": "active",
+      "summary": "町内の65歳以上は介護保険証等の提示で対象7路線無料。75～85歳の正式返納者へは対象年齢内で毎年度IC乗車カード。",
+      "programs": [
+        {
+          "name": "コミュニティバス高齢者減免",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "町内者で65歳以上、町福祉課交付の介護保険被保険者証又は減免証を提示。同乗介助者1人まで無料。",
+          "benefit": "対象路線の運賃無料。",
+          "fare": "降車時に介護保険被保険者証又は減免証を乗務員へ提示。",
+          "routes": "町コミュニティバス路線番号1～7。路線8（佐谷～東志免線）は町内高齢者も有料で対象外。",
+          "apply": "所持する証を降車時提示。減免証の新規交付手続は利用案内に詳しい記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.sue.fukuoka.jp/soshiki/chiikikomyunityka_1/kokyokotu/komibas/qa.html",
+              "label": "コミュニティバスQ&A／須恵町",
+              "updated": "2026-04-28",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納後の毎年度nimoca交付",
+          "kind": "henno",
+          "age_min": 75,
+          "eligibility": "有効期限内の全免許を正式返納。返納時満75～85歳、町在住かつ住民基本台帳登録。以後も対象年齢内が条件。",
+          "benefit": "対象年齢内で毎年度、nimoca2万円分を2枚（計4万円）。各枚は利用19,500円＋預り金500円で、利用額合計39,000円。",
+          "fare": "西鉄バスIC乗車カードで運賃を支払い。具体的対象路線の運賃は本文記載なし。",
+          "routes": "西鉄バスIC乗車カード。具体的対象路線は支援本文に記載なし。",
+          "apply": "初回は返納日から6か月以内、以後毎年度申請。地域コミュニティ課へ申請書兼受領書・取消通知書・返納免許。代理は委任状と代理の顔写真付きID、初回は本人穴あき免許と取消通知書も必要。本人顔写真付きIDは不要。審査後郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.sue.fukuoka.jp/soshiki/chiikikomyunityka_1/6543.html",
+              "label": "高齢者運転免許証自主返納の支援について／須恵町",
+              "updated": "2026-10-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.sue.fukuoka.jp/soshiki/chiikikomyunityka_1/kokyokotu/komibas/qa.html",
+          "label": "コミュニティバスQ&A／須恵町",
+          "updated": "2026-04-28",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.sue.fukuoka.jp/soshiki/chiikikomyunityka_1/6543.html",
+          "label": "高齢者運転免許証自主返納の支援について／須恵町",
+          "updated": "2026-10-05",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "無料枠の減免証交付は公共交通係（092-932-1151、内線312）へ、返納枠の具体的対象路線・運賃は生活安全係（同、内線314）へ確認してください。"
+    },
+    {
+      "slug": "umi",
+      "name": "宇美町",
+      "status": "active",
+      "summary": "正式返納又は失効者にのるーと宇美の1万円クーポン。令和9年2月1日改定・廃止予定が公表されています。",
+      "programs": [
+        {
+          "name": "正式返納後のるーと宇美クーポン",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "有効期間中に免許を自主返納した方。対象年齢・町内住所条件はクーポン案内に記載なし。",
+          "benefit": "10,000円分の運賃クーポン。改定資料では令和9年2月1日に廃止予定。",
+          "fare": "現在の町運行案内は大人200円。クーポンで運賃支払い。",
+          "routes": "AIオンデマンドバス「のるーと宇美」。",
+          "apply": "申請書と取消通知書・返納免許写し・運転経歴証明書写しのいずれか1つ。申込期限・クーポン期限・受付場所はクーポン案内に詳しい記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.umi.lg.jp/soshiki/60/37464.html",
+              "label": "AIオンデマンドバス「のるーと宇美」お得な運賃クーポンについて - 宇美町ホームページ（シティプロモーション課）",
+              "updated": "2025-02-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.umi.lg.jp/soshiki/60/39237.html",
+              "label": "AIオンデマンドバス「のるーと宇美」 - 宇美町ホームページ（シティプロモーション課）",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.umi.lg.jp/uploaded/attachment/23481.pdf",
+              "label": "令和8年7月21日運賃協議会資料・改定予定令和9年2月1日",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後のるーと宇美クーポン",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "更新を受けず免許失効した方。対象年齢・町内住所条件はクーポン案内に記載なし。",
+          "benefit": "10,000円分の運賃クーポン。改定資料では令和9年2月1日に廃止予定。",
+          "fare": "現在の町運行案内は大人200円。クーポンで運賃支払い。",
+          "routes": "AIオンデマンドバス「のるーと宇美」。",
+          "apply": "申請書と運転経歴証明書写し。申込期限・クーポン期限・受付場所はクーポン案内に詳しい記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.umi.lg.jp/soshiki/60/37464.html",
+              "label": "AIオンデマンドバス「のるーと宇美」お得な運賃クーポンについて - 宇美町ホームページ（シティプロモーション課）",
+              "updated": "2025-02-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.umi.lg.jp/soshiki/60/39237.html",
+              "label": "AIオンデマンドバス「のるーと宇美」 - 宇美町ホームページ（シティプロモーション課）",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.umi.lg.jp/uploaded/attachment/23481.pdf",
+              "label": "令和8年7月21日運賃協議会資料・改定予定令和9年2月1日",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.umi.lg.jp/soshiki/60/37464.html",
+          "label": "AIオンデマンドバス「のるーと宇美」お得な運賃クーポンについて - 宇美町ホームページ（シティプロモーション課）",
+          "updated": "2025-02-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.umi.lg.jp/soshiki/60/39237.html",
+          "label": "AIオンデマンドバス「のるーと宇美」 - 宇美町ホームページ（シティプロモーション課）",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.umi.lg.jp/uploaded/attachment/23481.pdf",
+          "label": "令和8年7月21日運賃協議会資料・改定予定令和9年2月1日",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "クーポン案内は1年以上前、改定会議資料の更新日は記載なしです。現在の対象年齢・住所条件・期限・申込先はシティプロモーション課（092-934-2370）へ確認してください。"
+    },
+    {
+      "slug": "dazaifu",
+      "name": "太宰府市",
+      "status": "henno",
+      "summary": "70歳到達後の正式返納者へnimoca。まほろば号で使用できます。",
+      "programs": [
+        {
+          "name": "正式返納後のnimoca交付",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "返納時70歳以上。令和2年4月1日以降、有効期限内の全免許を自主返納。返納日と申請日に市住民基本台帳記載。失効・暴力団関係者除外。",
+          "benefit": "1人1回nimoca5,000円分（利用4,500円＋預り金500円）。",
+          "fare": "まほろば号は全区間100円。乗降時にICカードをタッチ。",
+          "routes": "市運行案内でnimoca使用を確認できるコミュニティバス「まほろば号」。",
+          "apply": "市役所3階防災安全課へ取消通知書、申請書と本人確認書類1つ。代理は専用委任状と代理の身分証明書。申込期限は市案内に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.dazaifu.lg.jp/soshiki/5/15234.html",
+              "label": "運転免許証を自主返納された高齢者の皆さんを支援します - 福岡県太宰府市公式ホームページ",
+              "updated": "2021-09-15",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.dazaifu.lg.jp/site/communitybus/16575.html",
+              "label": "コミュニティバス「まほろば号」利用案内 - 福岡県太宰府市公式ホームページ",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.dazaifu.lg.jp/soshiki/5/15234.html",
+          "label": "運転免許証を自主返納された高齢者の皆さんを支援します - 福岡県太宰府市公式ホームページ",
+          "updated": "2021-09-15",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.dazaifu.lg.jp/site/communitybus/16575.html",
+          "label": "コミュニティバス「まほろば号」利用案内 - 福岡県太宰府市公式ホームページ",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は1年以上前です。現在の支援内容と申込期限は防災安全課防犯安全係（092-921-2121）へ確認してください。"
+    },
+    {
+      "slug": "chikushino",
+      "name": "筑紫野市",
+      "status": "active",
+      "summary": "70歳以上の正式返納・失効者へつくし号券、御笠自治会バス券又はnimocaを択一交付。",
+      "programs": [
+        {
+          "name": "正式返納後の公共交通支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "令和2年4月1日以降に免許自主返納。返納日に70歳以上、同日と申請日に市民。",
+          "benefit": "1人1回、つくし号回数券10,050円相当、御笠自治会バス回数券10,000円相当、nimoca10,000円相当（利用9,500円＋保証金500円）から1つ。",
+          "fare": "つくし号大人150円、回数券利用。交通系ICカードはつくし号では利用不可。御笠自治会バス運賃は支援案内に記載なし。",
+          "routes": "コミュニティバス「つくし号」、御笠自治会バス。nimocaの具体的利用可能バス路線は支援案内に記載なし。",
+          "apply": "市役所4階危機管理課へ申請書・取消通知書／運転経歴証明書／運転免許経歴証明書のいずれか1つ原本・本人確認書類。代理は委任状と代理本人確認書類も必要。平日8:30～17:00。期限は支援案内に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/21438.html",
+              "label": "70歳以上の運転免許証自主返納などをした人に支援します - 筑紫野市ホームページ",
+              "updated": "2025-12-02",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/2417.html",
+              "label": "筑紫野市コミュニティバス「つくし号」 - 筑紫野市ホームページ",
+              "updated": "2025-08-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後の公共交通支援",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "令和2年4月1日以降に更新を受けず免許失効。失効日に70歳以上、同日と申請日に市民。",
+          "benefit": "1人1回、つくし号回数券10,050円相当、御笠自治会バス回数券10,000円相当、nimoca10,000円相当（利用9,500円＋保証金500円）から1つ。",
+          "fare": "つくし号大人150円、回数券利用。交通系ICカードはつくし号では利用不可。御笠自治会バス運賃は支援案内に記載なし。",
+          "routes": "コミュニティバス「つくし号」、御笠自治会バス。nimocaの具体的利用可能バス路線は支援案内に記載なし。",
+          "apply": "市役所4階危機管理課へ申請書・運転経歴証明書又は運転免許経歴証明書のいずれか1つ原本・本人確認書類。代理は委任状と代理本人確認書類も必要。平日8:30～17:00。期限は支援案内に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/21438.html",
+              "label": "70歳以上の運転免許証自主返納などをした人に支援します - 筑紫野市ホームページ",
+              "updated": "2025-12-02",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/2417.html",
+              "label": "筑紫野市コミュニティバス「つくし号」 - 筑紫野市ホームページ",
+              "updated": "2025-08-08",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/21438.html",
+          "label": "70歳以上の運転免許証自主返納などをした人に支援します - 筑紫野市ホームページ",
+          "updated": "2025-12-02",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.chikushino.fukuoka.jp/soshiki/3/2417.html",
+          "label": "筑紫野市コミュニティバス「つくし号」 - 筑紫野市ホームページ",
+          "updated": "2025-08-08",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "一部の案内は更新日記載なし又は1年以上前です。申請期限、御笠自治会バスの運賃とnimoca利用路線は危機管理課（092-923-1111）へ確認してください。"
+    },
+    {
+      "slug": "chikuzen",
+      "name": "筑前町",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へ路線バスIC又はチョイソコちくちゃん回数乗車券などを択一交付。",
+      "programs": [
+        {
+          "name": "正式返納後のバス支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "町に住民票があり、有効期限内の全免許を自主返納。返納時満70歳以上、返納から1年以内。",
+          "benefit": "1人1回1万円相当を択一。バス用途は路線バスIC（カード代500円を引き利用9,500円）又はチョイソコちくちゃん回数乗車券2,000円券5冊。他にタクシー・甘木鉄道券選択も可。",
+          "fare": "チョイソコちくちゃんは1乗車200円。カード・券で支払い、路線バスの具体的運賃は支援案内未記載。",
+          "routes": "路線バスIC乗車カード、町オンデマンドバス「チョイソコちくちゃん」。",
+          "apply": "本庁1階環境防災課へ申請書・取消通知書・返納後の取消記載免許。代理は任意様式の委任状と代理本人確認書類。チョイソコ乗車は事前会員登録・予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.chikuzen.fukuoka.jp/S008/030/20180220124207.html",
+              "label": "運転免許証を自主的に返納された70歳以上の人を支援します｜福岡県筑前町",
+              "updated": "2024-07-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.chikuzen.fukuoka.jp/S021/choisoko_brochure.pdf",
+              "label": "チョイソコちくちゃん案内・会員規約2024年4月1日",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.chikuzen.fukuoka.jp/S008/030/20180220124207.html",
+          "label": "運転免許証を自主的に返納された70歳以上の人を支援します｜福岡県筑前町",
+          "updated": "2024-07-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.chikuzen.fukuoka.jp/S021/choisoko_brochure.pdf",
+          "label": "チョイソコちくちゃん案内・会員規約2024年4月1日",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は1年以上前、バス案内の更新日は記載なしです。現在の支援内容と路線バスの対象路線は環境防災課消防安全係（0946-42-6609）、運行は企画課（0946-42-6601）へ確認してください。"
+    },
+    {
+      "slug": "asakura",
+      "name": "朝倉市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へコミュニティバス回数券又は路線バスIC1万円相当。朝倉地域では10月から交通体系の見直しがあります。",
+      "programs": [
+        {
+          "name": "正式返納後のバス券・IC支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "市に住民登録があり、有効期限内の全免許を自主返納。返納時満70歳以上、返納から6か月以内。",
+          "benefit": "1人1回、コミュニティバス（あいのりタクシー含む）回数券又は路線バスIC乗車カード、いずれも1万円相当。",
+          "fare": "券・カードで支払い。各路線の具体的運賃、ICの預り金内訳は支援本文に記載なし。",
+          "routes": "コミュニティバス回数券又は路線バスIC。朝倉地域は令和8年10月に乗合交通へ見直し、支援券の現利用範囲は要確認。",
+          "apply": "返納から6か月以内、市役所4階防災交通課又は本庁1階・朝倉/杷木支所市民窓口係へ取消通知書、返納免許又は本人確認書類。代理は委任状と代理確認書類、交付は本人へ後日郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.asakura.lg.jp/soshiki/5/3203.html",
+              "label": "高齢者の運転免許証の自主返納の支援 - 朝倉市（防災交通課）",
+              "updated": "2025-12-22",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.asakura.lg.jp/uploaded/attachment/8763.docx",
+              "label": "高齢者免許自主返納支援・申請にあたって（市公式Word）",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.asakura.lg.jp/soshiki/5/2570.html",
+              "label": "朝倉市の公共交通について - 朝倉市（防災交通課）",
+              "updated": "2025-12-22",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.asakura.lg.jp/soshiki/5/15628.html",
+              "label": "【令和8年10月1日～】あいのりタクシー朝倉エリア　実証運行を開始します - 朝倉市（防災交通課）",
+              "updated": "2026-09-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.asakura.lg.jp/soshiki/5/3203.html",
+          "label": "高齢者の運転免許証の自主返納の支援 - 朝倉市（防災交通課）",
+          "updated": "2025-12-22",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.asakura.lg.jp/uploaded/attachment/8763.docx",
+          "label": "高齢者免許自主返納支援・申請にあたって（市公式Word）",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.asakura.lg.jp/soshiki/5/2570.html",
+          "label": "朝倉市の公共交通について - 朝倉市（防災交通課）",
+          "updated": "2025-12-22",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.asakura.lg.jp/soshiki/5/15628.html",
+          "label": "【令和8年10月1日～】あいのりタクシー朝倉エリア　実証運行を開始します - 朝倉市（防災交通課）",
+          "updated": "2026-09-16",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "添付申請案内の更新日は記載なしです。朝倉地域の交通見直し後の利用範囲・高齢者運賃・支援額内訳は防災交通課交通対策係（0946-28-7556）へ確認してください。"
+    },
+    {
+      "slug": "toho",
+      "name": "東峰村",
+      "status": "notfound",
+      "summary": "確認した返納支援はタクシー専用。現在の村の交通案内も乗合タクシーのため、高齢者向けバス支援を今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://vill.toho-info.com/60000/cat/post-726.html",
+          "label": "高齢者運転免許証自主返納支援事業 | 東峰村役場ホームぺージ",
+          "updated": "2024-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://vill.toho-info.com/10000/11000/cat/791.html",
+          "label": "乗合タクシー杷木便の通過時刻について〜令和8年4月1日より改訂〜 | 東峰村役場ホームぺージ",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は1年以上前、交通案内は更新日記載なしです。バス向けの独自支援は総務企画課（0946-72-2311）、交通はふるさと推進課（0946-72-2312）へ確認してください。"
+    },
+    {
+      "slug": "kitakyushu",
+      "name": "北九州市",
+      "status": "active",
+      "summary": "市営バスの70～74歳と75歳以上定期。正式返納・経歴証交付1年以内は各定期半額。",
+      "programs": [
+        {
+          "name": "ふれあい定期70",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "70～74歳。市外居住者も購入可。",
+          "benefit": "北九州市内区間乗り放題の定期。3か月16,000円、6か月28,000円、1年48,000円。",
+          "fare": "定期の期間内は市内区間追加運賃なし。市外停留所で乗降時は市外区間運賃を別途負担。新規nimocaは別途預り金500円。",
+          "routes": "北九州市営バスの北九州市内区間。",
+          "apply": "氏名・年齢を確認できる公的本人確認書類、nimoca（所持時）を発売窓口へ。新規定期は若松・向田営業所、NC若松商連、二島、折尾駅前。代理購入可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
+              "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/10024/",
+              "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
+              "updated": "2026-02-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/ticket/customerservice/",
+              "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
+              "updated": "2025-02-12",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納割引・ふれあい定期70",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "70～74歳。市外居住者も購入可。正式自主返納し運転経歴証明書交付から1年以内。",
+          "benefit": "北九州市内区間乗り放題の定期。3か月8,000円、6か月14,000円、1年24,000円。通常の半額、割引期間は最大12か月分。",
+          "fare": "定期の期間内は市内区間追加運賃なし。市外停留所で乗降時は市外区間運賃を別途負担。新規nimocaは別途預り金500円。",
+          "routes": "北九州市営バスの北九州市内区間。",
+          "apply": "氏名・年齢を確認できる公的本人確認書類、nimoca（所持時）を発売窓口へ。運転経歴証明書を提示。新規定期は若松・向田営業所、NC若松商連、二島、折尾駅前。代理購入可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
+              "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/10024/",
+              "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
+              "updated": "2026-02-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/ticket/customerservice/",
+              "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
+              "updated": "2025-02-12",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "ふれあい定期",
+          "kind": "pass",
+          "age_min": 75,
+          "eligibility": "75歳以上。市外居住者も購入可。",
+          "benefit": "北九州市内区間乗り放題の定期。3か月8,000円、6か月14,000円、1年24,000円。",
+          "fare": "定期の期間内は市内区間追加運賃なし。市外停留所で乗降時は市外区間運賃を別途負担。新規nimocaは別途預り金500円。",
+          "routes": "北九州市営バスの北九州市内区間。",
+          "apply": "氏名・年齢を確認できる公的本人確認書類、nimoca（所持時）を発売窓口へ。新規定期は若松・向田営業所、NC若松商連、二島、折尾駅前。代理購入可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
+              "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/10024/",
+              "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
+              "updated": "2026-02-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/ticket/customerservice/",
+              "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
+              "updated": "2025-02-12",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納割引・ふれあい定期",
+          "kind": "henno",
+          "age_min": 75,
+          "eligibility": "75歳以上。市外居住者も購入可。正式自主返納し運転経歴証明書交付から1年以内。",
+          "benefit": "北九州市内区間乗り放題の定期。3か月4,000円、6か月7,000円、1年12,000円。通常の半額、割引期間は最大12か月分。",
+          "fare": "定期の期間内は市内区間追加運賃なし。市外停留所で乗降時は市外区間運賃を別途負担。新規nimocaは別途預り金500円。",
+          "routes": "北九州市営バスの北九州市内区間。",
+          "apply": "氏名・年齢を確認できる公的本人確認書類、nimoca（所持時）を発売窓口へ。運転経歴証明書を提示。新規定期は若松・向田営業所、NC若松商連、二島、折尾駅前。代理購入可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
+              "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/10024/",
+              "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
+              "updated": "2026-02-16",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://kitakyushucity.jp/ticket/customerservice/",
+              "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
+              "updated": "2025-02-12",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
+          "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://kitakyushucity.jp/10024/",
+          "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
+          "updated": "2026-02-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://kitakyushucity.jp/ticket/customerservice/",
+          "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
+          "updated": "2025-02-12",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "定期詳細の更新日は記載なし、発売窓口案内は1年以上前です。現在の購入・利用条件は交通局総務経営課（093-771-8401）へ確認してください。"
+    },
+    {
+      "slug": "okagaki",
+      "name": "岡垣町",
+      "status": "henno",
+      "summary": "正式返納した65歳以上又は若年性認知症の方へ約1万5千円相当のバス券等を択一支援。",
+      "programs": [
+        {
+          "name": "65歳以上・正式返納後のバス支援",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "申請時に町に住民票。有効期限内の全免許を福岡県公安委員会へ自主返納。返納時満65歳以上。返納から6か月未満。",
+          "benefit": "1人1回、約15,000円相当のコミュニティバス回数券又は交通系ICカード等から1つ選択。",
+          "fare": "コミュニティバス大人180円。異なる表示料金の券は不足額を現金払い。ICの預り金内訳は支援案内未記載。",
+          "routes": "岡垣コミュニティバスふれあい。交通系ICカードの具体的対象路線は支援案内に記載なし。",
+          "apply": "長寿あんしん課へ取消通知書と取消後免許又は身分証明書。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.okagaki.lg.jp/s012/020/030/180/20160603131716.html",
+              "label": "高齢者の運転免許自主返納を支援します - 岡垣町",
+              "updated": "2023-12-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.okagaki.lg.jp/s029/010/050/070/20150710093311.html",
+              "label": "岡垣コミュニティバスふれあい - 岡垣町",
+              "updated": "2026-03-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "若年性認知症・正式返納後のバス支援",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "申請時に町に住民票。有効期限内の全免許を福岡県公安委員会へ自主返納。64歳以下で若年性認知症の診断。返納から6か月未満。",
+          "benefit": "1人1回、約15,000円相当のコミュニティバス回数券又は交通系ICカード等から1つ選択。",
+          "fare": "コミュニティバス大人180円。異なる表示料金の券は不足額を現金払い。ICの預り金内訳は支援案内未記載。",
+          "routes": "岡垣コミュニティバスふれあい。交通系ICカードの具体的対象路線は支援案内に記載なし。",
+          "apply": "長寿あんしん課へ取消通知書と取消後免許又は身分証明書。認知症診断が分かる書類の写しも必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.okagaki.lg.jp/s012/020/030/180/20160603131716.html",
+              "label": "高齢者の運転免許自主返納を支援します - 岡垣町",
+              "updated": "2023-12-05",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.okagaki.lg.jp/s029/010/050/070/20150710093311.html",
+              "label": "岡垣コミュニティバスふれあい - 岡垣町",
+              "updated": "2026-03-11",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.okagaki.lg.jp/s012/020/030/180/20160603131716.html",
+          "label": "高齢者の運転免許自主返納を支援します - 岡垣町",
+          "updated": "2023-12-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.okagaki.lg.jp/s029/010/050/070/20150710093311.html",
+          "label": "岡垣コミュニティバスふれあい - 岡垣町",
+          "updated": "2026-03-11",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納支援案内は1年以上前です。現在の条件とIC対象路線・内訳は長寿あんしん課長寿支援係（093-282-1211）へ確認してください。"
+    },
+    {
+      "slug": "ashiya",
+      "name": "芦屋町",
+      "status": "active",
+      "summary": "60歳以上は町巡回バス無料。65歳以上の正式返納・失効者は共通バス券等を選択。",
+      "programs": [
+        {
+          "name": "町巡回バス高齢者無料",
+          "kind": "discount",
+          "age_min": 60,
+          "eligibility": "60歳以上。町内居住条件は巡回バス案内本文に記載なし。",
+          "benefit": "町巡回バス無料。",
+          "fare": "無料。",
+          "routes": "芦屋町巡回バス。北・南・東コースの時刻表と路線図を案内。",
+          "apply": "利用登録・証明書等の必要手続は案内に記載なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ashiya.lg.jp/soshiki/7/1268.html",
+              "label": "芦屋町巡回バス - 芦屋町",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納後の共通バス乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町民、返納日に満65歳以上。平成28年4月1日以降の有効期限内の全免許返納。",
+          "benefit": "芦屋タウンバス・北九州市営バス共通乗車券100円×200枚（2万円）又はタクシー初乗券30枚から1つ。",
+          "fare": "共通乗車券で支払い。差額負担・使用期限は支援案内に詳しい記載なし。",
+          "routes": "芦屋タウンバス・北九州市営バス。具体的利用区間は支援案内未記載。",
+          "apply": "環境住宅課地域振興・交通係へ申請書と取消通知書又は運転経歴証明書写し。代理は本人からの委任状・身分証明書、同一世帯は委任状不要。申請期限は支援本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ashiya.lg.jp/soshiki/7/10701.html",
+              "label": "運転免許証を返納した高齢者の方にバス共通乗車券などを交付します - 芦屋町",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後の共通バス乗車券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "町民、失効日に満65歳以上。平成28年4月1日以降の更新せず免許失効。",
+          "benefit": "芦屋タウンバス・北九州市営バス共通乗車券100円×200枚（2万円）又はタクシー初乗券30枚から1つ。",
+          "fare": "共通乗車券で支払い。差額負担・使用期限は支援案内に詳しい記載なし。",
+          "routes": "芦屋タウンバス・北九州市営バス。具体的利用区間は支援案内未記載。",
+          "apply": "環境住宅課地域振興・交通係へ申請書と運転経歴証明書写し。代理は本人からの委任状・身分証明書、同一世帯は委任状不要。申請期限は支援本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.ashiya.lg.jp/soshiki/7/10701.html",
+              "label": "運転免許証を返納した高齢者の方にバス共通乗車券などを交付します - 芦屋町",
+              "updated": "2022-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.ashiya.lg.jp/soshiki/7/1268.html",
+          "label": "芦屋町巡回バス - 芦屋町",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.ashiya.lg.jp/soshiki/7/10701.html",
+          "label": "運転免許証を返納した高齢者の方にバス共通乗車券などを交付します - 芦屋町",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "両案内は1年以上前です。巡回バスの居住・利用手続、支援券の現在の期限・差額・区間は環境住宅課地域振興・交通係（093-223-3539）へ確認してください。"
+    },
+    {
+      "slug": "mizumaki",
+      "name": "水巻町",
+      "status": "notfound",
+      "summary": "令和7年4月から町巡回バスは全年齢無料。今回読んだ案内では高齢者限定のバス助成を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.mizumaki.lg.jp/s036/business/050/040/20200108061000.html",
+          "label": "みずまきのバスと電車｜水巻町",
+          "updated": "2026-06-30",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町独自の高齢者向けバス支援は企画課企画係（093-201-4321）へ確認してください。"
+    },
+    {
+      "slug": "onga",
+      "name": "遠賀町",
+      "status": "henno",
+      "summary": "65歳以上の町内正式返納者へコミュニティバス50枚又はデマンドバス無料券30枚を択一交付。",
+      "programs": [
+        {
+          "name": "正式返納後のバス乗車券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "町内在住の65歳以上、免許自主返納から1年以内。",
+          "benefit": "1人1回、コミュニティバス回数乗車券50枚又はデマンドバス無料乗車券30枚のどちらか。",
+          "fare": "デマンド券は無料乗車券。コミュニティ券の差額・使用期限は支援案内に記載なし。",
+          "routes": "遠賀町コミュニティバス、遠賀町デマンドバス。デマンドは町内在住の利用登録者対象。",
+          "apply": "取消日から1年以内、都市計画課へ申請書・取消通知書又は運転経歴証明書・印鑑。デマンド乗車は登録後、乗車時間帯30分前まで電話又はスマートフォン予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.onga.lg.jp/soshiki/12/1383.html",
+              "label": "遠賀町コミュニティバス利用促進支援事業 - 遠賀町公式ホームページ",
+              "updated": "2024-08-29",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.onga.lg.jp/uploaded/attachment/12145.pdf",
+              "label": "遠賀町高齢者福祉サービス案内・印刷11ページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.onga.lg.jp/soshiki/12/64476.html",
+              "label": "遠賀町デマンドバス - 遠賀町公式ホームページ",
+              "updated": "2026-07-31",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.onga.lg.jp/soshiki/12/1382.html",
+              "label": "遠賀町コミュニティバス - 遠賀町公式ホームページ",
+              "updated": "2026-03-14",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.onga.lg.jp/soshiki/12/1383.html",
+          "label": "遠賀町コミュニティバス利用促進支援事業 - 遠賀町公式ホームページ",
+          "updated": "2024-08-29",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.onga.lg.jp/uploaded/attachment/12145.pdf",
+          "label": "遠賀町高齢者福祉サービス案内・印刷11ページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.onga.lg.jp/soshiki/12/64476.html",
+          "label": "遠賀町デマンドバス - 遠賀町公式ホームページ",
+          "updated": "2026-07-31",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.onga.lg.jp/soshiki/12/1382.html",
+          "label": "遠賀町コミュニティバス - 遠賀町公式ホームページ",
+          "updated": "2026-03-14",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "旧支援ページは1年以上前、福祉案内等の更新日は記載なしです。券の現在の期限・利用条件は都市計画課都市計画係（093-293-1317）へ確認してください。"
+    },
+    {
+      "slug": "nakama",
+      "name": "中間市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へnimoca又は西鉄バス定期など1万円相当。旧コミュニティバスは9月末に廃止。",
+      "programs": [
+        {
+          "name": "正式返納後のバスIC・定期支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "免許自主返納時70歳以上、申請時市住民票あり。返納から1年以内。",
+          "benefit": "1人1回1万円相当。バス用途はnimoca又は西鉄バスグランドパス65・75。鉄道定期・タクシー券も選択可。",
+          "fare": "IC・定期で支払い。預り金、具体的運賃・区間は支援本文に記載なし。",
+          "routes": "西鉄バス定期・nimoca。支援案内に残る旧コミュニティバスは令和8年9月30日廃止。後継のるーと中間への支援適用は未記載。",
+          "apply": "市本館2階安全安心まちづくり課へ本人確認書類と取消通知書又は穴あき取消日記載免許。代理は委任状。受付証を受け交通事業者窓口でIC・定期を受領。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nakama.lg.jp/soshiki/7/1512.html",
+              "label": "運転を卒業される70歳以上の方を応援します - 中間市公式ホームページ",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nakama.lg.jp/soshiki/19/1182.html",
+              "label": "中間市内の公共交通 - 中間市公式ホームページ",
+              "updated": "2026-09-07",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.nakama.lg.jp/soshiki/19/20311.html",
+              "label": "AIオンデマンドバス（のるーと中間） - 中間市公式ホームページ",
+              "updated": "2026-09-14",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nakama.lg.jp/soshiki/7/1512.html",
+          "label": "運転を卒業される70歳以上の方を応援します - 中間市公式ホームページ",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nakama.lg.jp/soshiki/19/1182.html",
+          "label": "中間市内の公共交通 - 中間市公式ホームページ",
+          "updated": "2026-09-07",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.nakama.lg.jp/soshiki/19/20311.html",
+          "label": "AIオンデマンドバス（のるーと中間） - 中間市公式ホームページ",
+          "updated": "2026-09-14",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "新交通への支援適用、対象区間・運賃とIC内訳は安全安心まちづくり課市民協働係（093-246-2017）へ確認してください。"
+    },
+    {
+      "slug": "kanda",
+      "name": "苅田町",
+      "status": "active",
+      "summary": "70歳以上の正式返納・失効者へコミュニティバス回数券5千円。",
+      "programs": [
+        {
+          "name": "正式返納後のコミュニティバス券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "有効な免許を自主返納。返納日に満70歳以上、同日と申請日に町住民登録。返納から6か月以内。",
+          "benefit": "町コミュニティバス回数券5,000円分、1人1回。",
+          "fare": "一般運賃200円。回数券で支払い、支援券の差額・利用期限は本文未記載。",
+          "routes": "苅田町コミュニティバス。",
+          "apply": "総務課危機管理室生活安全担当へ取消通知書と自主返納記載免許。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kanda.lg.jp/page/1056.html",
+              "label": "苅田町高齢者運転免許自主返納支援事業 - 苅田町（総務課　危機管理室）",
+              "updated": "2023-12-19",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kanda.lg.jp/page/1395.html",
+              "label": "コミュニティバス - 苅田町（交通商工課）",
+              "updated": "2026-02-17",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後のコミュニティバス券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "免許を更新せず失効。失効日に満70歳以上、同日と申請日に町住民登録。失効から6か月以内。",
+          "benefit": "町コミュニティバス回数券5,000円分、1人1回。",
+          "fare": "一般運賃200円。回数券で支払い、支援券の差額・利用期限は本文未記載。",
+          "routes": "苅田町コミュニティバス。",
+          "apply": "総務課危機管理室生活安全担当へ運転経歴証明書と失効記載免許。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kanda.lg.jp/page/1056.html",
+              "label": "苅田町高齢者運転免許自主返納支援事業 - 苅田町（総務課　危機管理室）",
+              "updated": "2023-12-19",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kanda.lg.jp/page/1395.html",
+              "label": "コミュニティバス - 苅田町（交通商工課）",
+              "updated": "2026-02-17",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kanda.lg.jp/page/1056.html",
+          "label": "苅田町高齢者運転免許自主返納支援事業 - 苅田町（総務課　危機管理室）",
+          "updated": "2023-12-19",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kanda.lg.jp/page/1395.html",
+          "label": "コミュニティバス - 苅田町（交通商工課）",
+          "updated": "2026-02-17",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "支援案内は1年以上前です。現在の支援条件、券の差額・利用期限は総務課危機管理室生活安全担当（093-588-1037）へ確認してください。"
+    },
+    {
+      "slug": "yukuhashi",
+      "name": "行橋市",
+      "status": "notfound",
+      "summary": "返納案内で確認したバス割引は交通事業者の特典。高齢者向けの市独自バス支援は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.yukuhashi.fukuoka.jp/soshiki/23/1313.html",
+          "label": "運転免許証返納をお考えの方へ - 行橋市ホームページ",
+          "updated": "2022-08-12",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.yukuhashi.fukuoka.jp/soshiki/18/1350.html",
+          "label": "障害者手帳による各種交通の割引 - 行橋市ホームページ",
+          "updated": "2023-02-20",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は1年以上前です。市独自の高齢者向けバス支援は都市政策課（市代表0930-25-1111）へ確認してください。"
+    },
+    {
+      "slug": "miyako",
+      "name": "みやこ町",
+      "status": "notfound",
+      "summary": "返納・高齢者福祉の案内で確認した交通支援はタクシー専用。高齢者向けバス支援は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.miyako.lg.jp/hokennfukushika3/koureisyasienn/koureishaunntennmennkyoshoujishuhennnousiennjigyou.html",
+          "label": "高齢者運転免許証自主返納支援事業 - みやこ町役場",
+          "updated": "2026-08-19",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.miyako.lg.jp/hokennfukushika3/188-1.html",
+          "label": "高齢者福祉サービス事業 - みやこ町役場",
+          "updated": "2026-08-19",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "町独自の高齢者向けバス支援は保険福祉課（0930-32-2516）へ確認してください。"
+    },
+    {
+      "slug": "chikujo",
+      "name": "築上町",
+      "status": "active",
+      "summary": "正式返納者へ2年間の町コミュニティバス無料証。期限切れ失効の申請書類も掲載。",
+      "programs": [
+        {
+          "name": "正式返納後の無料乗車証",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "築上町在住。満70歳以上、免許自主返納から6か月以内。",
+          "benefit": "町コミュニティバスの2年間無料乗車証、1人1回。",
+          "fare": "乗車証で無料。",
+          "routes": "築上町コミュニティバス。",
+          "apply": "本庁3階総務課地域安全係で申請書を作成。取消通知書写しと返納免許写し又は公的顔写真付き身分証明書写し。乗車写真（役場撮影可）、印鑑、本人名義口座が分かるもの。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.chikujo.fukuoka.jp/s008/030/020/010/010/20170501112253.html",
+              "label": "築上町高齢者運転免許自主返納支援制度｜福岡県築上町",
+              "updated": "2023-10-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "期限切れ失効後の無料乗車証",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "築上町在住。期限切れ失効の申請書類も掲載。対象年齢・申請期限は失効枠として独立した明記なし。",
+          "benefit": "町コミュニティバスの2年間無料乗車証、1人1回。",
+          "fare": "乗車証で無料。",
+          "routes": "築上町コミュニティバス。",
+          "apply": "本庁3階総務課地域安全係で申請書を作成。運転経歴証明書。乗車写真（役場撮影可）、印鑑、本人名義口座が分かるもの。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.chikujo.fukuoka.jp/s008/030/020/010/010/20170501112253.html",
+              "label": "築上町高齢者運転免許自主返納支援制度｜福岡県築上町",
+              "updated": "2023-10-05",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.chikujo.fukuoka.jp/s008/030/020/010/010/20170501112253.html",
+          "label": "築上町高齢者運転免許自主返納支援制度｜福岡県築上町",
+          "updated": "2023-10-05",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内は1年以上前です。現在の条件、とくに失効枠の年齢・申請期限は総務課地域安全係（0930-56-0300）へ確認してください。"
+    },
+    {
+      "slug": "buzen",
+      "name": "豊前市",
+      "status": "active",
+      "summary": "65歳以上の市民は豊前・中津線の対象区間100円。70歳以上の正式返納者へは別途バス券。",
+      "programs": [
+        {
+          "name": "65歳以上高齢者チケット",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の豊前市民。",
+          "benefit": "対象区間を一律100円で利用するチケット。1冊1,000円（100円券10枚）、使用期限なし。",
+          "fare": "通常140～230円区間を100円。",
+          "routes": "コミュニティバス豊前・中津線の東本町（JR中津駅北口）～中津市民病院前。",
+          "apply": "市役所1階交通政策室又は宇島駅前豊前観光まちづくり協会で年齢証明書提示し購入。車内販売なし。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.buzen.lg.jp/koutuu/bus/65saiijyoukoureisha.html",
+              "label": "豊前市公式ホームページ／65歳以上高齢者チケット",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納後のバス券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "免許返納時70歳以上、申請時市住民登録あり。有効期間内に全部を自主返納、失効不可。6か月以内。",
+          "benefit": "1人1回バス券1万円、又はバス券5千円＋タクシー券5千円。他にタクシー専用の選択可。",
+          "fare": "券で支払い。支援券の期限・差額は本文未記載。",
+          "routes": "豊前市バス乗車券。具体的対象路線・区間は支援本文未記載。",
+          "apply": "長寿支援課長寿介護係20番窓口へ取消通知書、返納免許写し又は公的顔写真付き身分証明書写し。本人申請なら印鑑不要。代理受領は委任状と代理本人確認書類。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.buzen.lg.jp/syougaigeneki/unntennmennkyojisyuhennnou.html",
+              "label": "豊前市公式ホームページ／高齢者運転免許証自主返納支援事業",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.buzen.lg.jp/syougaigeneki/unntennmennkyojisyuhennnou.html",
+          "label": "豊前市公式ホームページ／高齢者運転免許証自主返納支援事業",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.buzen.lg.jp/koutuu/bus/65saiijyoukoureisha.html",
+          "label": "豊前市公式ホームページ／65歳以上高齢者チケット",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "両案内の更新日は記載なしです。高齢者チケットは交通政策室（0979-33-7183）、返納券の現在の期限・区間等は長寿支援課長寿介護係（0979-82-8112）へ確認してください。"
+    },
+    {
+      "slug": "yoshitomi",
+      "name": "吉富町",
+      "status": "active",
+      "summary": "70歳以上の正式返納・失効者へ巡回バス券等1万円分を択一支援。",
+      "programs": [
+        {
+          "name": "正式返納後のバス券支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "満70歳以上。免許自主返納。返納から6か月以内。町内住所条件は本文に明記なし。",
+          "benefit": "1万円分を択一。バス用途は吉富町巡回バス乗車券又はコミュニティバス豊前・中津線乗車券。他にタクシー券も可。",
+          "fare": "券で支払い。券の期限・差額・具体的運賃は支援本文未記載。",
+          "routes": "吉富町巡回バス又はコミュニティバス豊前・中津線。",
+          "apply": "返納から6か月以内に福祉保険課へ。必要書類は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.yoshitomi.lg.jp/gyosei/chosei/v995/y209/fukushi/r132/",
+              "label": "運転免許証の自主返納を考えてみませんか？ | 福岡県築上郡 吉富町行政サイト",
+              "updated": "2024-08-06",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後のバス券支援",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "満70歳以上。免許更新を受けず失効。失効から6か月以内。町内住所条件は本文に明記なし。",
+          "benefit": "1万円分を択一。バス用途は吉富町巡回バス乗車券又はコミュニティバス豊前・中津線乗車券。他にタクシー券も可。",
+          "fare": "券で支払い。券の期限・差額・具体的運賃は支援本文未記載。",
+          "routes": "吉富町巡回バス又はコミュニティバス豊前・中津線。",
+          "apply": "失効から6か月以内に福祉保険課へ。必要書類は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.yoshitomi.lg.jp/gyosei/chosei/v995/y209/fukushi/r132/",
+              "label": "運転免許証の自主返納を考えてみませんか？ | 福岡県築上郡 吉富町行政サイト",
+              "updated": "2024-08-06",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.yoshitomi.lg.jp/gyosei/chosei/v995/y209/fukushi/r132/",
+          "label": "運転免許証の自主返納を考えてみませんか？ | 福岡県築上郡 吉富町行政サイト",
+          "updated": "2024-08-06",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内は1年以上前です。現在の住所条件、申請書類、券の期限・差額と運賃は福祉保険課（0979-24-1123）へ確認してください。"
+    },
+    {
+      "slug": "koge",
+      "name": "上毛町",
+      "status": "notfound",
+      "summary": "確認した返納支援は乗合・一般タクシーと買物券。町独自の高齢者向けバス支援は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.koge.lg.jp/life/7/3586.html",
+          "label": "高齢者等の運転免許証自主返納の奨励について／上毛町",
+          "updated": "2022-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内は1年以上前です。バス向けの独自支援は長寿福祉課（0979-72-3188）へ確認してください。"
+    },
+    {
+      "slug": "ogori",
+      "name": "小郡市",
+      "status": "notfound",
+      "summary": "今回確認した返納特典はタクシーの割引。従来のコミュニティバスは廃止され、高齢者限定の市独自バス支援は確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.ogori.fukuoka.jp/197/704/5174",
+          "label": "運転経歴証明書の提示によるタクシー料金の割引について :: 小郡市役所",
+          "updated": "2025-01-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ogori.fukuoka.jp/?cID=659",
+          "label": "市の公共交通 :: 小郡市役所",
+          "updated": "2026-09-24",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.ogori.fukuoka.jp/202/886/906",
+          "label": "高齢者福祉サービス :: 小郡市役所",
+          "updated": "2025-06-09",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は1年以上前、高齢者福祉案内の更新日は記載なしです。高齢者向けバス支援は防災安全課（0942-73-9109）へ確認してください。"
+    },
+    {
+      "slug": "tachiarai",
+      "name": "大刀洗町",
+      "status": "active",
+      "summary": "70歳以上の正式返納・失効者へ西鉄nimoca1万円相当を択一支援。",
+      "programs": [
+        {
+          "name": "正式返納後の西鉄nimoca支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "返納時70歳以上、同日から1年以内。申請時町民、暴力団員等除外。全免許を自主返納、一部返納不可。",
+          "benefit": "1人1回、西鉄nimoca1万円相当又はタクシー券1万円を選択。預り金内訳は本文未記載。",
+          "fare": "ICで支払い。具体的対象路線・運賃は支援案内未記載。",
+          "routes": "ICカード乗車券（西鉄nimoca）。具体的対象バス路線は支援本文未記載。",
+          "apply": "1年以内、役場1階総務課消防防災安全係へ申請書と取消通知書／パンチ穴あき返納免許／運転経歴証明書のいずれか1つ、本人確認書類。代理は代理本人確認書類。郵送可、審査約1か月後簡易書留送付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tachiarai.fukuoka.jp/kiji003268/index.html",
+              "label": "運転免許の自主返納等を行う高齢者の方を支援します / 大刀洗町公式サイト",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後の西鉄nimoca支援",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "失効時70歳以上、同日から1年以内。申請時町民、暴力団員等除外。免許期限切れ失効。",
+          "benefit": "1人1回、西鉄nimoca1万円相当又はタクシー券1万円を選択。預り金内訳は本文未記載。",
+          "fare": "ICで支払い。具体的対象路線・運賃は支援案内未記載。",
+          "routes": "ICカード乗車券（西鉄nimoca）。具体的対象バス路線は支援本文未記載。",
+          "apply": "期限切れ失効日から1年以内、役場1階総務課消防防災安全係へ申請書・運転免許経歴証明書・本人確認書類。証明書は警察署又は運転免許試験場で事前に交付申請（別途手数料）。代理は代理人の本人確認書類。郵送も可、審査約1か月後に簡易書留送付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.tachiarai.fukuoka.jp/kiji003268/index.html",
+              "label": "運転免許の自主返納等を行う高齢者の方を支援します / 大刀洗町公式サイト",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.tachiarai.fukuoka.jp/kiji003268/index.html",
+          "label": "運転免許の自主返納等を行う高齢者の方を支援します / 大刀洗町公式サイト",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "ICの現在の利用路線・運賃と預り金内訳は総務課消防防災安全係（町代表0942-77-0101）へ確認してください。"
+    },
+    {
+      "slug": "kurume",
+      "name": "久留米市",
+      "status": "active",
+      "summary": "返納・失効年度末75歳以上へnimoca。別に経歴証提示で市よりみちバス半額。",
+      "programs": [
+        {
+          "name": "正式返納後の令和8年度nimoca支援",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "令和7年4月1日以降に全免許を自主返納。返納年度末に75歳以上。申請時市住民基本台帳登録、暴力団等除外、同支援未受給。令和7年度の日付なら昭和26年4月1日以前、令和8年度なら昭和27年4月1日以前生まれ。",
+          "benefit": "1人1回、nimoca1万円相当（利用9,500円＋預り金500円）。",
+          "fare": "カードでバス運賃を支払い。個別路線の運賃は支援本文未記載。",
+          "routes": "バスや電車などに使えるnimoca。具体的バス区間は支援本文未記載。",
+          "apply": "令和8年6月15日～令和9年2月26日（予算上限で終了）。電子・郵送・市役所6階安全安心推進課又は各総合支所地域振興課へ。申請書と取消通知書又は穴あき免許、紛失時は運転免許経歴証明書。市民センター不可。審査後1～2か月で簡易書留。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
+              "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
+              "updated": "2026-06-15",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "失効後の令和8年度nimoca支援",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "令和7年4月1日以降に免許更新せず期限切れ失効。失効年度末に75歳以上。申請時市住民基本台帳登録、暴力団等除外、同支援未受給。令和7年度の日付なら昭和26年4月1日以前、令和8年度なら昭和27年4月1日以前生まれ。",
+          "benefit": "1人1回、nimoca1万円相当（利用9,500円＋預り金500円）。",
+          "fare": "カードでバス運賃を支払い。個別路線の運賃は支援本文未記載。",
+          "routes": "バスや電車などに使えるnimoca。具体的バス区間は支援本文未記載。",
+          "apply": "令和8年6月15日～令和9年2月26日（予算上限で終了）。電子・郵送・市役所6階安全安心推進課又は各総合支所地域振興課へ。申請書と失効免許写し又は運転免許経歴証明書（紛失時）。市民センター不可。審査後1～2か月で簡易書留。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
+              "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
+              "updated": "2026-06-15",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "経歴証提示・よりみちバス半額",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書を提示する方。支援本文に独立した対象年齢・住所条件なし。",
+          "benefit": "よりみちバス利用料金半額。",
+          "fare": "通常料金の半額。具体的料金は支援本文未記載。",
+          "routes": "市コミュニティバス「よりみちバス」。北野地域・城島地域。",
+          "apply": "運転経歴証明書提示。通常バス停は予約不要、要予約バス停から乗る時は運行事業者へ事前電話、降車時は乗車時申告。割引の追加手続は支援本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
+              "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
+              "updated": "2026-06-15",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2070machi/3035koutsu/yorimichibus_201603.html",
+              "label": "久留米市：生活支援交通「よりみちバス」の運行について",
+              "updated": "2026-08-25",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
+          "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
+          "updated": "2026-06-15",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2070machi/3035koutsu/yorimichibus_201603.html",
+          "label": "久留米市：生活支援交通「よりみちバス」の運行について",
+          "updated": "2026-08-25",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "ICの対象バス区間・運賃は安全安心推進課（0942-30-9094）、よりみちバスの現在の割引手続・運賃は交通政策課（0942-30-9328）へ確認してください。"
+    },
+    {
+      "slug": "ukiha",
+      "name": "うきは市",
+      "status": "henno",
+      "summary": "10月から返納者の半額運賃を廃止し、のるタクチケットの返納者向け割引販売へ移行。",
+      "programs": [
+        {
+          "name": "正式返納者のるタクチケット割引購入",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "運転経歴証明書、又は自主返納が分かる取消通知書、無効免許のいずれかを提示。購入本人のみ。年齢・住所条件の独立した明記なし。",
+          "benefit": "300円券11枚綴りを返納者価格で購入：1冊2,400円、2冊4,600円、3冊6,700円。通常は各3,000円・5,800円・8,400円。",
+          "fare": "1人1回1枚まで利用。大人5km未満300円、5km以上500円、本庁便300円。差額は現金又は電子決済。",
+          "routes": "AIオンデマンドバス「のるーと うきは」。市内民間タクシーにも利用可。バス運行は市平野部と朝倉市一部、山間部等は対象外。",
+          "apply": "返納割引購入は市役所企画政策課交通政策係で証明書を提示（現金・PayPay）。車内は通常大人1冊のみ。券の期限は購入年度末。乗車は初回登録後7日前～30分前に予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.ukiha.fukuoka.jp/kiji0038242/index.html",
+              "label": "令和8年10月から「のるーと うきは」を一部見直して運行します / うきは市",
+              "updated": "2026-10-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.ukiha.fukuoka.jp/kiji0038242/index.html",
+          "label": "令和8年10月から「のるーと うきは」を一部見直して運行します / うきは市",
+          "updated": "2026-10-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納割引購入の年齢・住所条件に独立した明記はありません。企画政策課交通政策係（0943-73-9021）へ確認してください。"
+    },
+    {
+      "slug": "okawa",
+      "name": "大川市",
+      "status": "active",
+      "summary": "移動手段に困る65歳以上は市内を巡回する愛のりバスを無料利用。返納券はタクシー専用。",
+      "programs": [
+        {
+          "name": "おおかわ愛のりバス無料利用",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "移動手段に困る65歳以上の高齢者。歩行介助を要する場合は介助者同乗で可、車いす持込不可。居住条件の明記なし。",
+          "benefit": "生活支援バス無料。",
+          "fare": "無料。",
+          "routes": "市内巡回の生活支援バス「おおかわ愛のりバス」。田口北島、川口小保、大野島、大川、三又、木室の6線。",
+          "apply": "電話予約不要、初利用は事前連絡。指定乗降場所で手を挙げる等の意思表示。各路線週3日、午前午後各1往復。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.okawa.lg.jp/s016/020/010/160/010/20241018120448.html",
+              "label": "おおかわ愛のりバス（生活支援バス） - 大川市",
+              "updated": "2024-10-18",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.okawa.lg.jp/s016/020/010/160/010/20241018120448.html",
+          "label": "おおかわ愛のりバス（生活支援バス） - 大川市",
+          "updated": "2024-10-18",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.okawa.lg.jp/s016/020/010/160/060/20220328165045.html",
+          "label": "高齢者免許証自主返納等支援事業 - 大川市",
+          "updated": "2023-06-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "各案内は1年以上前です。現在の対象・利用条件は健康課介護保険係（0944-85-5522）へ確認してください。"
+    },
+    {
+      "slug": "oki",
+      "name": "大木町",
+      "status": "notfound",
+      "summary": "確認した返納助成はタクシー専用。高齢者向けの町独自バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.ooki.lg.jp/soshiki/somu/syoubou/2/koureisyakoutuuanzen/1491278601134.html",
+          "label": "高齢者運転免許証自主返納支援助成事業／大木町",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしです。バス向けの独自支援は総務課消防防災係（0944-32-1035）へ確認してください。"
+    },
+    {
+      "slug": "chikugo",
+      "name": "筑後市",
+      "status": "active",
+      "summary": "はねバスの65歳以上定期と正式返納割引。70歳以上返納者へ別にIC3万円分。",
+      "programs": [
+        {
+          "name": "正式返納後のIC乗車券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "市住民基本台帳登録、返納時満70歳以上、返納から1年以内。市税・国保税滞納なし、暴力団関係者除外。",
+          "benefit": "ICカード3万円分（預り金含む）又はタクシー券を択一。SUGOCA又はnimoca、2万円分と1万円分のカード各1枚。利用額の正確な内訳は本文未記載。",
+          "fare": "カードで運賃支払い。",
+          "routes": "バスや電車に使えるICカード。具体的バス区間は支援本文未記載。",
+          "apply": "申請書と取消通知書又は経歴証写しを防災安全課窓口へ。審査後約1か月で郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.chikugo.lg.jp/bosai/_12224/_31084/",
+              "label": "運転免許証を自主返納した方にタクシー利用券などを交付します|筑後市公式ホームページ",
+              "updated": "2026-08-10",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "はねバス・おでかけパス65",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "65歳以上。年齢を確認できる公的書類。市内居住条件の明記なし。",
+          "benefit": "1か月3,000円、3か月8,000円の定期。一般19～64歳は4,000円・11,000円。",
+          "fare": "定期期間内ははねバス乗り放題。",
+          "routes": "羽犬塚駅周辺循環バス「はねバス」。",
+          "apply": "nimoca定期は堀川バス羽犬塚待合所、デジタル定期はRYDE PASS。年齢確認書類を提出。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.chikugo.lg.jp/kurashi/_24191/_30805/_30518.html",
+              "label": "はねバス（羽犬塚駅周辺循環バス）運行について|筑後市公式ホームページ",
+              "updated": "2026-09-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "はねバス・正式返納割引",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "65歳以上、平成22年10月1日以降に有効な免許を自主返納。堀川バス発行の返納割引証を所持。",
+          "benefit": "1乗車100円、1日券200円。",
+          "fare": "通常大人200円を100円。令和8年10月1～14日は全員無料の別キャンペーン。",
+          "routes": "羽犬塚駅周辺循環バス「はねバス」。",
+          "apply": "取消通知書を堀川バス羽犬塚待合所へ持参し割引証受領、本人同席が必要。支払い前に乗務員へ割引証提示。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.chikugo.lg.jp/kurashi/_24191/_30805/_30518.html",
+              "label": "はねバス（羽犬塚駅周辺循環バス）運行について|筑後市公式ホームページ",
+              "updated": "2026-09-16",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.chikugo.lg.jp/bosai/_12224/_31084/",
+          "label": "運転免許証を自主返納した方にタクシー利用券などを交付します|筑後市公式ホームページ",
+          "updated": "2026-08-10",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.chikugo.lg.jp/kurashi/_24191/_30805/_30518.html",
+          "label": "はねバス（羽犬塚駅周辺循環バス）運行について|筑後市公式ホームページ",
+          "updated": "2026-09-16",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.chikugo.lg.jp/kurashi/_24191/_30806/_28405.html?media=pc",
+          "label": "コミュニティ自動車を運行しています|筑後市公式ホームページ",
+          "updated": "2025-11-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "IC支援の利用額内訳・対象区間は防災安全課（0942-65-7260）へ。コミュニティ自動車会員の条件・会費等は交通担当（市代表0942-53-4111）へ確認してください。"
+    },
+    {
+      "slug": "hirokawa",
+      "name": "広川町",
+      "status": "notfound",
+      "summary": "確認した高齢者返納支援はふれあいタクシー等専用。高齢者向けの町独自バス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.hirokawa.fukuoka.jp/kurashi_tetsuzuki/machizukuri_kotsu/1/2121.html",
+          "label": "高齢者の運転免許証の自主返納（期限切れを含む）を支援します／広川町",
+          "updated": "2024-05-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内は1年以上前です。バス向けの独自支援は企画課企画係（0943-32-1196）へ確認してください。"
+    },
+    {
+      "slug": "yame",
+      "name": "八女市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へタクシー・路線バス共通券6万円分。",
+      "programs": [
+        {
+          "name": "正式返納後の路線バス共通回数券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "八女市に住所がある70歳以上。有効な免許を自主返納、返納から6か月以内。本人のみ利用。",
+          "benefit": "300円券200枚（6万円分）又はハンドル形電動車椅子購入補助金6万円を選択。",
+          "fare": "券で支払い。使用期限、運賃との差額・お釣りの扱いは本文未記載。",
+          "routes": "堀川バス全路線、西鉄バス久留米の指定福島線30・31・32。タクシーにも利用可。",
+          "apply": "6か月以内に防災安全課又は各支所総務係へ取消通知書、本人確認書類。代理は委任状と代理本人確認書類。支所申請は後日郵送。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.yame.fukuoka.jp/kurashi/5/13621.html",
+              "label": "八女市高齢者運転免許自主返納支援事業／八女市ホームページ",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.yame.fukuoka.jp/kurashi/5/13621.html",
+          "label": "八女市高齢者運転免許自主返納支援事業／八女市ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしです。券の現在の使用期限、差額・お釣り等は防災安全課生活安全係（0943-24-8146）へ確認してください。"
+    },
+    {
+      "slug": "yanagawa",
+      "name": "柳川市",
+      "status": "notfound",
+      "summary": "返納支援はタクシー・車両等向け。コミュニティバスは一般100円で、高齢者限定の独自支援は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.city.yanagawa.fukuoka.jp/bosai/koutsuu/bohan__5669.html",
+          "label": "令和8年4月1日返納支援案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.yanagawa.fukuoka.jp/kurashi/kotsu/communitybus/community-bus.html",
+          "label": "柳川市コミュニティバスの利用 -  柳川市",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "各案内に更新日表示はありません。高齢者向けバス助成は総合政策課（0944-77-8423）へ確認してください。"
+    },
+    {
+      "slug": "miyama",
+      "name": "みやま市",
+      "status": "active",
+      "summary": "65歳以上はくすっぴー号50円。70歳以上又は健康上運転に不安のある正式返納者へはバス券を含む6万円相当選択。",
+      "programs": [
+        {
+          "name": "くすっぴー号・高齢者運賃",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上で介護保険被保険者証を提示。同乗介助者1名も同料金。市内住所条件の明記なし。",
+          "benefit": "1乗車50円、一般は100円。",
+          "fare": "降車時に証を運転手に提示し50円。50円券11枚の回数券は500円で販売。",
+          "routes": "市コミュニティバス「くすっぴー号」。",
+          "apply": "介護保険被保険者証を運転手へ提示。回数券は市総合政策課、山川・高田支所市民サービス係又は車内。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyama.lg.jp/s067/kurashi/140/030/20200108075000.html",
+              "label": "コミュニティバス「くすっぴー号」｜みやま市",
+              "updated": "2026-06-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "document_checked"
+        },
+        {
+          "name": "70歳以上・正式返納支援",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "市に住所があり全ての有効な免許を自主返納。返納時満70歳以上。返納から3年以内。",
+          "benefit": "6万円相当のタクシー券＋くすっぴー号回数券を選択可。他にタクシーのみ又はシニアカー補助。バス分の配分は本文未記載。",
+          "fare": "回数券で支払い。支援券の期限・差額は本文未記載。",
+          "routes": "コミュニティバス「くすっぴー号」。",
+          "apply": "3年以内、市介護支援課高齢者支援係へ取消通知書。代理は代理本人確認書類。経歴証発行手数料助成を申請する場合は証又は領収証等、本人口座・印鑑も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyama.lg.jp/s024/kenko/070/050/20200107121000.html",
+              "label": "高齢者等運転免許証自主返納支援事業｜みやま市",
+              "updated": "2025-08-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.miyama.lg.jp/s067/kurashi/140/030/20200108075000.html",
+              "label": "コミュニティバス「くすっぴー号」｜みやま市",
+              "updated": "2026-06-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "健康上の不安・正式返納支援",
+          "kind": "henno",
+          "age_min": null,
+          "eligibility": "市に住所があり全ての有効な免許を自主返納。健康上の理由で運転に不安を感じる方。返納から3年以内。",
+          "benefit": "6万円相当のタクシー券＋くすっぴー号回数券を選択可。他にタクシーのみ又はシニアカー補助。バス分の配分は本文未記載。",
+          "fare": "回数券で支払い。支援券の期限・差額は本文未記載。",
+          "routes": "コミュニティバス「くすっぴー号」。",
+          "apply": "3年以内、市介護支援課高齢者支援係へ取消通知書。代理は代理本人確認書類。経歴証発行手数料助成を申請する場合は証又は領収証等、本人口座・印鑑も必要。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyama.lg.jp/s024/kenko/070/050/20200107121000.html",
+              "label": "高齢者等運転免許証自主返納支援事業｜みやま市",
+              "updated": "2025-08-27",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.miyama.lg.jp/s067/kurashi/140/030/20200108075000.html",
+              "label": "コミュニティバス「くすっぴー号」｜みやま市",
+              "updated": "2026-06-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.miyama.lg.jp/s024/kenko/070/050/20200107121000.html",
+          "label": "高齢者等運転免許証自主返納支援事業｜みやま市",
+          "updated": "2025-08-27",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.miyama.lg.jp/s067/kurashi/140/030/20200108075000.html",
+          "label": "コミュニティバス「くすっぴー号」｜みやま市",
+          "updated": "2026-06-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "返納案内は1年以上前です。返納支援のバス券配分・現在の券条件は介護支援課高齢者支援係（0944-64-1570）、通常運賃の居住条件は総合政策課（0944-64-1550）へ確認してください。"
+    },
+    {
+      "slug": "omuta",
+      "name": "大牟田市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へnimoca5千円分を択一交付。",
+      "programs": [
+        {
+          "name": "正式返納後のnimoca交付",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "市内に住所を有し現に居住、返納時70歳以上、全免許自主返納から1年以内。失効不可。",
+          "benefit": "1人1回nimoca5,000円分（預り金500円含む）又はタクシー券を選択。予定数超過で終了。",
+          "fare": "カードで運賃支払い、有効期限なし。",
+          "routes": "西鉄バス・電車、JR九州等の公共交通。",
+          "apply": "1年以内に大牟田警察署1階交通安全協会へ、平日9:00～16:30。申請書・取消通知書・返納免許又は本人確認書類。代理は本人が記入した委任状と代理本人確認書類1点。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.omuta.lg.jp/kiji00317780/index.html",
+              "label": "高齢者運転免許自主返納支援事業のお知らせ  / 大牟田市",
+              "updated": "2025-12-26",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.omuta.lg.jp/kiji00317780/index.html",
+          "label": "高齢者運転免許自主返納支援事業のお知らせ  / 大牟田市",
+          "updated": "2025-12-26",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "具体的バス区間・運賃や受付状況は生活安全推進課（0944-41-2730）又は大牟田交通安全協会（0944-54-6373）へ確認してください。"
+    },
+    {
+      "slug": "kurate",
+      "name": "鞍手町",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へすまいるバス・のるーと鞍手共通回数券を20冊。",
+      "programs": [
+        {
+          "name": "正式返納後のバス回数券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "町内住居・住民基本台帳登録、満70歳以上、全種類の免許自主返納。期限切れ失効不可。",
+          "benefit": "1人1回、100円券12枚綴り回数券20冊（240枚・額面2万4千円）、又はタクシー券2万円を選択。",
+          "fare": "すまいるバスは1乗車200円、現金又は回数券。支援券の利用期限は本文未記載。",
+          "routes": "町すまいるバス、のるーと鞍手。",
+          "apply": "返納から1年以内に役場まちづくり課安全安心係へ取消通知書写し。代理は代理顔写真付き身分証明書。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kurate.lg.jp/koutuu/untenmenkyo_hennousien.html",
+              "label": "鞍手町オフィシャル：運転免許証を返納した70歳以上の人を支援します",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kurate.lg.jp/koutuu/smilebus/syousai-20260401.html",
+              "label": "すまいるバス令和8年4月1日からの案内",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kurate.lg.jp/koutuu/untenmenkyo_hennousien.html",
+          "label": "鞍手町オフィシャル：運転免許証を返納した70歳以上の人を支援します",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kurate.lg.jp/koutuu/smilebus/syousai-20260401.html",
+          "label": "すまいるバス令和8年4月1日からの案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしです。現在の支援条件と券の期限はまちづくり課安全安心係（0949-42-2033）へ確認してください。"
+    },
+    {
+      "slug": "miyawaka",
+      "name": "宮若市",
+      "status": "henno",
+      "summary": "70歳以上の正式返納者へ市乗合バス回数券5千円分等の択一支援。",
+      "programs": [
+        {
+          "name": "正式返納後の市乗合バス券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "令和5年4月1日以降全免許自主返納。返納時70歳以上、返納時と申請時に市住民登録、返納から1年以内。",
+          "benefit": "1人1回、市乗合バス回数券5,000円分又はnimoca5,000円分（保証金含む）、又はタクシー券を選択。",
+          "fare": "券又はICで支払い。具体的な券の期限・差額、IC内訳は支援本文未記載。",
+          "routes": "宮若市乗合バス（宮若宗像線・宮若飯塚線を除く）。nimocaの具体的バス区間は支援本文未記載。",
+          "apply": "本庁高齢者福祉係9番窓口へ取消通知書原本と本人確認書類。代理は委任状と代理確認書類。平日8:30～17:15。若宮総合支所・郵送不可。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.miyawaka.lg.jp/kiji003448403/index.html",
+              "label": "運転免許を自主返納した高齢者を支援します【高齢者運転免許自主返納支援事業】 / 宮若市",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.miyawaka.lg.jp/kiji003444183/index.html",
+              "label": "宮若市コミュニティバス（乗合バス・乗合タクシー）時刻表・料金表・路線図 / 宮若市",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.miyawaka.lg.jp/kiji003448403/index.html",
+          "label": "運転免許を自主返納した高齢者を支援します【高齢者運転免許自主返納支援事業】 / 宮若市",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.miyawaka.lg.jp/kiji003444183/index.html",
+          "label": "宮若市コミュニティバス（乗合バス・乗合タクシー）時刻表・料金表・路線図 / 宮若市",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "運行案内の更新日は記載なしです。券の現在の利用期限・差額とIC利用区間は高齢者福祉係（市代表0949-32-0510）へ確認してください。"
+    },
+    {
+      "slug": "nogata",
+      "name": "直方市",
+      "status": "henno",
+      "summary": "75歳以上の正式返納者へ市コミュニティバス券5千円購入分（5,500円相当）等を択一支援。",
+      "programs": [
+        {
+          "name": "正式返納後のコミュニティバス回数券",
+          "kind": "henno",
+          "age_min": 75,
+          "eligibility": "令和5年4月1日以降の有効な免許自主返納。返納日に満75歳以上、返納日から申請日まで市住民票登録。失効不可。",
+          "benefit": "1人択一、市コミュニティバス回数券5,000円分（5,500円相当）又は交通系IC5,000円分（保証料500円含む）。",
+          "fare": "券で運賃支払い。運賃・券期限・差額は支援本文未記載。",
+          "routes": "直方市コミュニティバス。ICのバス用途は支援本文に具体的明記なし。",
+          "apply": "1年以内、市庁舎3階35番防災地域安全課へ申請書・取消通知書原本・身分証明書。代理は委任状。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.nogata.fukuoka.jp/kurashi/_1206/_12517.html",
+              "label": "直方市公式ホームページ｜運転免許証の自主返納をお考えの方へ",
+              "updated": "2026-07-13",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.nogata.fukuoka.jp/kurashi/_1206/_12517.html",
+          "label": "直方市公式ホームページ｜運転免許証の自主返納をお考えの方へ",
+          "updated": "2026-07-13",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "券の現在の運賃・利用期限等は防災地域安全課防災安全係（0949-25-2223）へ確認してください。"
+    },
+    {
+      "slug": "kotake",
+      "name": "小竹町",
+      "status": "notfound",
+      "summary": "巡回バスは年齢限定の記載なく無料。75歳以上向け券はタクシー専用で、高齢者限定のバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://town.kotake.lg.jp/hpkiji/pub/detail.aspx?c_id=3&class_id=519&class_set_id=1&id=403",
+          "label": "小竹町巡回バスについて / 小竹町",
+          "updated": "2026-04-03",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://town.kotake.lg.jp/hpkiji/pub/detail.aspx?c_id=3&class_id=577&class_set_id=2&id=3451",
+          "label": "小竹町高齢者タクシー利用券を販売します / 小竹町",
+          "updated": "2026-07-10",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "高齢者向けのバス支援は福祉課高齢者福祉係（0949-62-1219）へ確認してください。"
+    },
+    {
+      "slug": "iizuka",
+      "name": "飯塚市",
+      "status": "henno",
+      "summary": "65歳以上の正式返納者へコミュニティ交通券7千円分等を択一支援。",
+      "programs": [
+        {
+          "name": "正式返納後のコミュニティ交通回数券",
+          "kind": "henno",
+          "age_min": 65,
+          "eligibility": "自主返納日に65歳以上、申請時市住民登録、有効期限内の免許自主返納。返納から3か月以内。",
+          "benefit": "1人1回、コミュニティ交通券7,000円分（100円70枚）又はnimoca5,000円分（保証金500円含む）又はタクシー券5,000円を択一。",
+          "fare": "回数券で支払い。券の利用期限・差額は支援本文未記載。",
+          "routes": "市コミュニティ交通回数券。運行案内では宮若飯塚線を除くコミュニティバス等で共通利用。nimocaの具体的バス区間は支援本文未記載。",
+          "apply": "3か月以内、本庁1階14番高齢者支援課又は各支所市民窓口課へ取消通知書、本人確認書類又は返納記載穴あき免許、印鑑。代理は取消通知書・委任状・代理確認書類・代理印鑑。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.iizuka.lg.jp/soshiki/33/1992.html",
+              "label": "高齢者運転免許自主返納支援事業 - 飯塚市（高齢者支援課）",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.iizuka.lg.jp/soshiki/16/2030.html",
+              "label": "予約乗合タクシー、エリアワゴン・路線ワゴン、コミュニティバス - 飯塚市（地域公共交通対策課）",
+              "updated": "2026-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.iizuka.lg.jp/soshiki/33/1992.html",
+          "label": "高齢者運転免許自主返納支援事業 - 飯塚市（高齢者支援課）",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.iizuka.lg.jp/soshiki/16/2030.html",
+          "label": "予約乗合タクシー、エリアワゴン・路線ワゴン、コミュニティバス - 飯塚市（地域公共交通対策課）",
+          "updated": "2026-04-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "支援券の現在の期限・差額、ICの対象路線は高齢者支援課高齢総務係（0948-96-8233）へ確認してください。"
+    },
+    {
+      "slug": "fukuchi",
+      "name": "福智町",
+      "status": "active",
+      "summary": "町内65歳以上は利用者カード提示でふく～るバス100円。返納支援券はタクシー専用。",
+      "programs": [
+        {
+          "name": "ふく～るバス高齢者運賃",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "町内65歳以上、利用者カード所持・提示。カード申請は65歳誕生日30日前から可能。",
+          "benefit": "1乗車100円（一般200円）。",
+          "fare": "乗車時に利用者カードを運転手へ提示して100円。",
+          "routes": "町AIオンデマンドバス「ふく～るバス」。",
+          "apply": "町役場企画振興課又は町社会福祉協議会へ本人確認書類、平日9～17時。代理は本人確認書類コピーと代理確認書類。乗車は事前予約。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.fukuchi.lg.jp/soshiki/machi/tiikisinkou/koukyoukoutuu/3463.html",
+              "label": "福智町のAIオンデマンドバス「ふく～るバス」について／福智町",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.fukuchi.lg.jp/soshiki/machi/tiikisinkou/koukyoukoutuu/3463.html",
+          "label": "福智町のAIオンデマンドバス「ふく～るバス」について／福智町",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.fukuchi.lg.jp/soshiki/kanzai/bousaikanri/koutuanzen_bouhaninformation/3365.html",
+          "label": "高齢者運転免許証自主返納支援事業／福智町",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "各案内の更新日は記載なしです。現在の登録・予約条件は企画振興課（町代表0947-22-0555）へ確認してください。"
+    },
+    {
+      "slug": "kawara",
+      "name": "香春町",
+      "status": "active",
+      "summary": "町内70歳以上はかわらくバスの町内移動200円。正式返納者へ別にバス回数券1万円等。",
+      "programs": [
+        {
+          "name": "かわらくバス高齢者運賃",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上の香春町民、利用者カード提示。",
+          "benefit": "町内のみの移動1乗車200円（一般400円）。令和8年10月に100円から改定。",
+          "fare": "カード提示し200円。町と田川市間・田川市内の運賃は500円。",
+          "routes": "AIオンデマンドバス「かわらくバス」。高齢者減免は香春町内のみの移動。",
+          "apply": "利用者カード申請は役場総合政策課。電話又はウェブ事前予約。自宅付近利用は事前登録（町民のみ）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kawara.fukuoka.jp/s008/kurashi/020/909/20240104171830.html",
+              "label": "かわらくバス10月1日改定・公開2026年9月1日",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納後のかわらくバス券",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "申請時町内住所、70歳以上で取消通知書又は経歴証交付、交付日から1年以内。",
+          "benefit": "1人1回、バス券1万円又はバス券5千円＋タクシー補助券5千円を択一。",
+          "fare": "回数券で支払い、町内一般400円・町内高齢者カード所持200円。支援券の期限・差額は支援本文未記載。",
+          "routes": "かわらくバス。町内全域・田川市内5停留所。",
+          "apply": "役場総務課へ取消通知書又は経歴証。約1～2週間で決定通知と券を簡易書留送付。代理手続は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.kawara.fukuoka.jp/s001/090/020/010/20200421200550.html",
+              "label": "返納支援追加・公開2026年4月9日",
+              "updated": "",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.kawara.fukuoka.jp/s008/kurashi/020/909/20240104171830.html",
+              "label": "かわらくバス10月1日改定・公開2026年9月1日",
+              "updated": "",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.kawara.fukuoka.jp/s001/090/020/010/20200421200550.html",
+          "label": "返納支援追加・公開2026年4月9日",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.kawara.fukuoka.jp/s008/kurashi/020/909/20240104171830.html",
+          "label": "かわらくバス10月1日改定・公開2026年9月1日",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "各案内の更新日は記載なしです。現在のカード交付は総合政策課（0947-32-8408）、返納券期限・差額と代理申請は総務課防災安全係（0947-32-2511）へ確認してください。"
+    },
+    {
+      "slug": "itoda",
+      "name": "糸田町",
+      "status": "unknown",
+      "summary": "長時間歩行が困難な方等向け福祉バスの古い案内はありますが、現在の料金・対象・手続を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.itoda.lg.jp/residents/fitness_healthcare/nursing_welfare/bus_route_b.html",
+          "label": "福祉バスBコース・平成14年9月24日現在",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.itoda.lg.jp/residents/living/traffic/public_traffic/page_00950.html",
+          "label": "いっとこカー案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "福祉バス案内は1年以上前で、現在の町公式案内本文を十分に確認できません。町福祉課（代表0947-26-1231）又は社会福祉協議会（0947-26-4540）へ確認してください。"
+    },
+    {
+      "slug": "tagawa",
+      "name": "田川市",
+      "status": "notfound",
+      "summary": "現在の市コミュニティバスは一般200円。高齢者限定のバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.joho.tagawa.fukuoka.jp/kiji0032272/index.html",
+          "label": "田川市コミュニティバスのお知らせ / 福岡県田川市",
+          "updated": "2026-10-05",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.joho.tagawa.fukuoka.jp/kiji00310142/index.html",
+          "label": "広報たがわ1月号（第1585号)   / 福岡県田川市",
+          "updated": "2024-01-01",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "旧広報は1年以上前です。高齢者向けの独自バス支援は市交通担当（代表0947-44-2000）へ確認してください。"
+    },
+    {
+      "slug": "keisen",
+      "name": "桂川町",
+      "status": "notfound",
+      "summary": "返納券はタクシー専用。福祉バスはどなたでも利用可と案内され、高齢者限定のバス支援は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.keisen.fukuoka.jp/kurashi/senior/jisyuhennou.php",
+          "label": "桂川町高齢者等運転免許証自主返納支援事業-仕事・生きがい-くらしの情報-福岡県嘉穂郡桂川町公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.keisen.fukuoka.jp/townspeople/keisenbus.php",
+          "label": "福祉バス、買い物・通院バス-福岡県嘉穂郡桂川町公式ホームページ",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "各案内の更新日は記載なしです。高齢者向けバス支援は健康福祉課高齢者女性係（0948-65-0001）へ確認してください。"
+    },
+    {
+      "slug": "kama",
+      "name": "嘉麻市",
+      "status": "active",
+      "summary": "市のグランドパス購入補助、70歳以上定期、65歳以上回数券追加交付と正式返納支援。",
+      "programs": [
+        {
+          "name": "市のグランドパス65購入補助",
+          "kind": "pass",
+          "age_min": 65,
+          "eligibility": "嘉麻市内の65歳以上。1か月券は補助対象外。",
+          "benefit": "3か月4,500円、6か月9,000円、1年16,000円を定価から控除して購入。",
+          "fare": "補助額を差し引いた価格を支払う。新規nimocaカードは別に500円必要。現在の定価・自己負担額は要確認。",
+          "routes": "西鉄グランドパス65の対象路線バス。具体的な対象区間は市本文未記載。",
+          "apply": "本人確認書類を持って高齢者介護課又は各庁舎市民サービス課へ申請し補助証明書を受領。証明書と西鉄指定書類を飯塚バスターミナルへ持参して購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kama.lg.jp/soshiki/15/21207.html",
+              "label": "西鉄グランドパス65・75の購入補助事業について - 嘉麻市ホームページ",
+              "updated": "2024-01-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "市のグランドパス75購入補助",
+          "kind": "pass",
+          "age_min": 75,
+          "eligibility": "嘉麻市内の75歳以上。1か月券は補助対象外。",
+          "benefit": "3か月3,500円、6か月7,000円、1年13,000円を定価から控除して購入。",
+          "fare": "補助額を差し引いた価格を支払う。新規nimocaカードは別に500円必要。現在の定価・自己負担額は要確認。",
+          "routes": "西鉄グランドパス75の対象路線バス。具体的な対象区間は市本文未記載。",
+          "apply": "本人確認書類を持って高齢者介護課又は各庁舎市民サービス課へ申請し補助証明書を受領。証明書と西鉄指定書類を飯塚バスターミナルへ持参して購入。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kama.lg.jp/soshiki/15/21207.html",
+              "label": "西鉄グランドパス65・75の購入補助事業について - 嘉麻市ホームページ",
+              "updated": "2024-01-20",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "市内乗降高齢者定期",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "満70歳以上。住所条件は定期券本文未記載。",
+          "benefit": "6か月定期券2万円。",
+          "fare": "購入定期券を乗車時運転手へ提示。",
+          "routes": "嘉麻市内の市バスのみ（笹尾橋・坂谷を含む）。桂川町内・デマンド運行型バスは不可。",
+          "apply": "市役所3階31番交通政策課、各総合支所市民サービス係又は桂川町役場企画財政課の販売窓口で購入申込書を記入し支払い。年齢確認書類は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kama.lg.jp/soshiki/41/28498.html",
+              "label": "定期券、回数乗車券の買い方について - 嘉麻市ホームページ",
+              "updated": "2025-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "市バスフリー高齢者定期",
+          "kind": "pass",
+          "age_min": 70,
+          "eligibility": "満70歳以上。住所条件は定期券本文未記載。",
+          "benefit": "6か月定期券3万円。",
+          "fare": "購入定期券を乗車時運転手へ提示。",
+          "routes": "嘉麻市内の市バス及びデマンド運行型バス。高齢者券の市外区分は設定なし。",
+          "apply": "市役所3階31番交通政策課、各総合支所市民サービス係又は桂川町役場企画財政課の販売窓口で購入申込書を記入し支払い。年齢確認書類は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kama.lg.jp/soshiki/41/28498.html",
+              "label": "定期券、回数乗車券の買い方について - 嘉麻市ホームページ",
+              "updated": "2025-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "高齢者交通支援証明書による追加回数券",
+          "kind": "voucher",
+          "age_min": 65,
+          "eligibility": "嘉麻市に住民票がある65歳以上。高齢者交通支援証明書の有効期限内。",
+          "benefit": "回数券購入時に証明書を提示するともう1冊交付。通常1冊は100円12枚又は50円24枚で販売価格1,000円。",
+          "fare": "回数券を運賃箱へ。回数券に使用期限なし。証明書の有効期限内は何度でも利用可。",
+          "routes": "嘉麻市バス及びデマンド運行型バス。",
+          "apply": "本庁2階25番高齢者介護課又は各総合支所で証明書申請。発行されたピンク色カードを車内・市窓口・桂川町役場・鴨生/千手/宮野郵便局等の回数券購入時提示。証明書申請書類・有効期間は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kama.lg.jp/soshiki/41/28498.html",
+              "label": "定期券、回数乗車券の買い方について - 嘉麻市ホームページ",
+              "updated": "2025-04-01",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "正式返納後の市バス券等",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "平成30年7月1日以降全免許を自主返納。市住民基本台帳登録、返納日に70歳以上、返納から6か月以内。",
+          "benefit": "1回のみ、市バス券6,000円分（100円60枚）又は路線バスICカード5,000円分（保証金500円含む）又はタクシー券5,000円を択一。",
+          "fare": "券又はICで支払い。支援券の期限・差額は本文未記載。",
+          "routes": "嘉麻市バス又は路線バスICカード。ICの具体的対象区間は本文未記載。",
+          "apply": "防災対策課又は各総合支所へ取消通知書原本。代理人は委任状と印鑑（認め印可）。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.kama.lg.jp/site/koutuuannzenn/3424.html",
+              "label": "高齢者運転免許証自主返納支援事業 - 嘉麻市ホームページ",
+              "updated": "2019-12-23",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.city.kama.lg.jp/soshiki/15/21207.html",
+          "label": "西鉄グランドパス65・75の購入補助事業について - 嘉麻市ホームページ",
+          "updated": "2024-01-20",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kama.lg.jp/soshiki/41/28498.html",
+          "label": "定期券、回数乗車券の買い方について - 嘉麻市ホームページ",
+          "updated": "2025-04-01",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kama.lg.jp/site/koutuuannzenn/3424.html",
+          "label": "高齢者運転免許証自主返納支援事業 - 嘉麻市ホームページ",
+          "updated": "2019-12-23",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内はすべて1年以上前です。現在の購入補助・証明書条件は高齢者介護課（0948-42-7432）、定期券・運賃は交通政策課（0948-42-7404）、返納支援は防災対策課（0948-42-7418）へ確認してください。"
+    },
+    {
+      "slug": "kawasaki",
+      "name": "川崎町",
+      "status": "notfound",
+      "summary": "ふれあいバスは中学生以上100円と案内。高齢者限定のバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town-kawasaki.com/kurashi/joho/167",
+          "label": "ふれあいバス時刻表・路線図 ｜ ReBorn！KAWASAKIMACHI：福岡県田川郡川崎町",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしです。現在の高齢者向けバス支援は防災管財課消防防災係（0947-72-3000、内線233）へ確認してください。"
+    },
+    {
+      "slug": "oto",
+      "name": "大任町",
+      "status": "unknown",
+      "summary": "町福祉バスの古い案内はありますが、現在の対象者・料金・申請を確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.town.oto.fukuoka.jp/kiji003167/3_167_15_1430736.pdf",
+          "label": "広報おおとう2022年4月・福祉バス購入案内",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "資料は2022年4月の広報です。現在の福祉バスの対象・料金・手続は福祉課福祉係（0947-63-3004）へ確認してください。"
+    },
+    {
+      "slug": "akamura",
+      "name": "赤村",
+      "status": "notfound",
+      "summary": "返納支援として確認できた回数券は平成筑豊鉄道用。高齢者向けバス助成は今回確認できませんでした。",
+      "programs": [],
+      "sources": [
+        {
+          "url": "https://www.akamura.net/government/news_445/",
+          "label": "免許自主返納支援・公開2022年9月2日",
+          "updated": "",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "案内の更新日は記載なしで、公開日は1年以上前です。高齢者向けバス支援は総務課企画調整係（0947-62-3000、内線710・711）へ確認してください。"
+    },
+    {
+      "slug": "soeda",
+      "name": "添田町",
+      "status": "active",
+      "summary": "75歳以上の町内登録者・要支援要介護認定者は町バスを75％減免。",
+      "programs": [
+        {
+          "name": "75歳以上の町バス減免",
+          "kind": "discount",
+          "age_min": 75,
+          "eligibility": "添田町在住かつ町内住民登録の75歳以上。町バス使用料減免証明書が必要。",
+          "benefit": "町バス運賃を75％減免。",
+          "fare": "乗車時に減免証明書提示。通常大人は10km未満200円、10km以上300円。",
+          "routes": "添田町バス（川崎・田川、ひこさん、まちなか各コース）。乗合タクシー「まちいこカー」は別。",
+          "apply": "様式第4号の1に記入し本人確認書類を添えてまちづくり課へ提出。証明書の有効期間・代理申請は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3460.html",
+              "label": "添田町バスの減免申請をするには - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+              "updated": "2025-01-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3452.html",
+              "label": "添田町バスの紹介 - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+              "updated": "2025-01-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3456.html",
+              "label": "町バス時刻表 - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+              "updated": "2026-07-07",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        },
+        {
+          "name": "要支援・要介護認定者の町バス減免",
+          "kind": "discount",
+          "age_min": null,
+          "eligibility": "添田町在住、介護保険法に基づく要支援・要介護認定。独立した年齢条件は本文未記載。町バス使用料減免証明書が必要。",
+          "benefit": "町バス運賃を75％減免。",
+          "fare": "乗車時に減免証明書提示。通常大人は10km未満200円、10km以上300円。",
+          "routes": "添田町バス（川崎・田川、ひこさん、まちなか各コース）。乗合タクシー「まちいこカー」は別。",
+          "apply": "様式第4号の1に記入し本人確認書類を添えてまちづくり課へ提出。証明書の有効期間・代理申請は本文未記載。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3460.html",
+              "label": "添田町バスの減免申請をするには - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+              "updated": "2025-01-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3452.html",
+              "label": "添田町バスの紹介 - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+              "updated": "2025-01-14",
+              "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3456.html",
+              "label": "町バス時刻表 - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+              "updated": "2026-07-07",
+              "checked": "2026-10-07"
+            }
+          ],
+          "current": "needs_confirmation"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3460.html",
+          "label": "添田町バスの減免申請をするには - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+          "updated": "2025-01-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3452.html",
+          "label": "添田町バスの紹介 - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+          "updated": "2025-01-14",
+          "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.town.soeda.fukuoka.jp/site/koutsu-nabi/3456.html",
+          "label": "町バス時刻表 - そえだ交通ナビ - 添田町公式ホームページ（まちづくり課）",
+          "updated": "2026-07-07",
+          "checked": "2026-10-07"
+        }
+      ],
+      "flag": "運行時刻は2026年の案内で確認できましたが、減免・運賃案内は1年以上前です。現在の減免証明書条件と手続はまちづくり課まちづくり推進係（0947-82-5965）へ確認してください。"
+    }
+  ],
+  "common": {
+    "url": "https://www.pref.fukuoka.lg.jp/contents/koureishajiko-shien.html",
+    "label": "福岡県・返納等高齢者の支援サービス",
+    "checked": "2026-10-07"
+  }
+}
