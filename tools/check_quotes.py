@@ -49,8 +49,17 @@ def page_text(url):
             text = p.stdout
         else:
             m = re.search(rb'charset=["\']?([\w-]+)', raw[:3000], re.I)
-            enc = (m.group(1).decode() if m else "utf-8").lower().replace("shift_jis", "cp932").replace("sjis", "cp932")
-            doc = raw.decode(enc, errors="replace")
+            header_charset = re.search(r'charset=["\']?([\w-]+)', ctype, re.I)
+            enc = (m.group(1).decode() if m else header_charset.group(1) if header_charset else "utf-8").lower().replace("shift_jis", "cp932").replace("sjis", "cp932")
+            try:
+                doc = raw.decode(enc)
+            except (UnicodeDecodeError, LookupError):
+                # 古い広報のプレーンテキストは、charsetなしのCP932がある。
+                try:
+                    doc = raw.decode("cp932")
+                except UnicodeDecodeError:
+                    CACHE[url] = None, "文字コードを判別できない"
+                    return CACHE[url]
             doc = re.sub(r"(?is)<(script|style)\b.*?</\1>", "", doc)
             text = html.unescape(re.sub(r"<[^>]+>", "", doc))
     CACHE[url] = norm(text), ""
