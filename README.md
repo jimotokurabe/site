@@ -43,3 +43,22 @@ GitHub Pages（main ブランチの直下）で公開しています。
 `python3 tools/build.py` で、トップ → 都道府県 → 1741市町村のページとサイトマップを生成します。`beautifulsoup4` が必要です（`python3 -m pip install beautifulsoup4`）。確認用は `python3 tools/build.py --out preview --draft` で生成します。
 
 `data/municipality-supplements.json` に市町村の一覧と、公式出典・原文根拠を確認して採用した補足を保存しています。既存制度の確認日と、補足情報の確認日は分けて表示します。未確認事項は未確認のまま掲載します。採用する補足には `reviewed: true` と `safety_accepted: true`、内容・出典・原文根拠が必要です。`assets/notice.css` が個別ページの表示を定義します。生成HTMLを直接編集せず、データと生成処理を更新してください。
+
+## 市町村中心の支援案内
+
+トップは市町村名の検索、都道府県ページは市町村を選ぶ入口です。市町村ページで免許返納特典、バス助成・敬老パス、タクシー支援、通院・買い物の交通を確認できます。
+
+`tools/national_pages.py` が `tools/national_navigation.py`、`tools/national_city.py`、`tools/seo_content.py` を通じて47都道府県・1,741市区町村を生成します。`python3 tools/build.py` から呼び出すため、通常の更新手順で再生成できます。表示には `assets/national-city.css`、`assets/national-city.js`、`assets/seo.css` を使用します。
+
+検索タイトルと冒頭の質問・回答は既存データから生成します。同名自治体には都道府県名を添え、終了・未発見・未掲載・要確認を区別します。金額だけを取り出さず、対象条件・期限・注意事項・出典と確認日を併記します。神戸・横浜・鹿児島の詳細レイアウトは `tools/templates/national/` のテンプレートを使うため、これらの制度データを更新した際は表示内容も照合してください。公開前の生成結果は `--out preview --draft` で確認できます。
+
+公開前の確認：
+
+```sh
+python3 tools/build.py
+python3 tools/check_publication.py
+python3 tools/check_national_records.py
+python3 tools/validate_bus.py
+```
+
+既存のURL・ページ内リンク、canonical、サイトマップ、計測、運営者情報とプライバシーポリシーへの導線を保持します。制度の再調査を行わない画面変更では、データの確認日を書き換えません。

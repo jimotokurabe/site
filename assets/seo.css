@@ -1,0 +1,26 @@
+/* Search answers inherit the existing 18px / 22px reading controls. */
+.hero h1{font-size:1.85rem;max-width:34ch;line-height:1.55;overflow-wrap:anywhere}
+.search-answer{border-top:2px solid var(--link,#9cd4e8);padding:24px 0 12px;margin:6px 0 28px;min-width:0}
+.search-answer h2{font-size:1.35rem;margin:0 0 10px}
+.answer-intro{color:var(--muted,#b5c7d0);margin:0 0 20px}
+.answer-item{padding:22px 0;border-top:1px solid var(--line,#425b69);min-width:0;max-width:100%}
+.answer-item h3{font-size:1.08rem;line-height:1.65;margin:0 0 12px}
+.answer-text{margin:0 0 14px;line-height:1.9;max-width:76ch}
+.answer-conditions{margin:14px 0}
+.answer-conditions>div{display:grid;grid-template-columns:130px minmax(0,1fr);gap:18px;margin:10px 0}
+.answer-conditions dt{font-size:1rem;color:var(--muted,#b5c7d0)}
+.answer-conditions dd{margin:0;min-width:0}
+.answer-cautions{padding:12px 18px;border-left:3px solid var(--warn,#f2d397);background:var(--surface,#16252e);color:var(--warn,#f2d397);margin:16px 0}
+.answer-cautions p{margin:6px 0;font-size:1rem}
+.answer-sources{list-style:none;margin:12px 0 8px;padding:0}
+.answer-sources li{margin:8px 0}
+.answer-sources a,.answer-detail{display:inline-flex;align-items:center;min-height:48px;max-width:100%;overflow-wrap:anywhere;font-size:1rem}
+.answer-sources span,.answer-date{display:block;color:var(--muted,#b5c7d0);font-size:.9rem;line-height:1.8;margin:0 0 8px}
+.answer-detail{font-weight:700}
+.search-answer p,.search-answer dd,.search-answer h3,.search-answer a{overflow-wrap:anywhere;word-break:normal}
+@media(max-width:700px){.hero h1{font-size:1.65rem}.search-answer{padding-top:20px}.answer-item{padding:20px 0}.answer-conditions>div{display:block}.answer-conditions dt{margin-bottom:4px}.answer-cautions{padding:10px 12px}.search-answer h2{font-size:1.2rem}}
+@media print{.search-answer{color:#000}.answer-cautions{background:#fff;color:#000;border-color:#555}.answer-sources span,.answer-date,.answer-intro,.answer-conditions dt{color:#444}}
+.answer-evidence{font-size:1rem;margin:12px 0;padding:0 14px;max-width:76ch}
+.answer-evidence summary{font-size:1rem;min-height:48px;padding:10px 0}
+.answer-evidence p{font-size:1rem;line-height:1.9}
+.answer-caution-detail{color:var(--warn,#f2d397)}
