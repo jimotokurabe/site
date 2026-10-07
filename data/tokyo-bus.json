@@ -1,6 +1,6 @@
 {
   "checked": "2026-10-07",
-  "draft": true,
+  "draft": false,
   "cities": [
     {
       "slug": "chiyoda",
@@ -723,23 +723,10 @@
       "slug": "kodaira",
       "name": "小平市",
       "status": "notfound",
-      "summary": "にじバスは大人150円、シルバーパス使用不可。市独自の高齢者バス助成は今回の本文で未発見。",
+      "summary": "市独自の高齢者向けバス助成は確認できませんでした。公式のバス案内は現在開けず、最新の運賃・割引条件は市へ確認が必要です。",
       "programs": [],
-      "sources": [
-        {
-          "url": "https://www.city.kodaira.tokyo.jp/kurashi/000/000137.html",
-          "label": "高齢者・交通案内",
-          "updated": "",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.kodaira.tokyo.jp/kurashi/052/052765.html",
-          "label": "運転免許自主返納案内",
-          "updated": "",
-          "checked": "2026-10-06"
-        }
-      ],
-      "flag": "更新日なし又は1年以上前の資料があり現行性・独自制度の有無を確認。確認先：都市開発部交通対策課042-341-1211（代表）。"
+      "sources": [],
+      "flag": "確認に用いた市のバス・返納案内は、公開前の再確認時に開けませんでした。市独自の助成の有無、にじバスの運賃・シルバーパス利用の可否は小平市の交通担当（042-341-1211・代表）へ確認してください。"
     },
     {
       "slug": "higashimurayama",

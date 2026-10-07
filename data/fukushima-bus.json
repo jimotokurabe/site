@@ -1,6 +1,6 @@
 {
   "checked": "2026-10-07",
-  "draft": true,
+  "draft": false,
   "cities": [
     {
       "slug": "fukushima",
@@ -142,13 +142,13 @@
               "checked": "2026-10-07"
             },
             {
-              "url": "https://www.city.motomiya.lg.jp/soshiki/10/combus.html",
-              "label": "市・コミュニティバス",
-              "updated": "2026-05-25",
+              "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
+              "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
+              "updated": "",
               "checked": "2026-10-07"
             }
           ],
-          "current": "document_checked"
+          "current": "needs_confirmation"
         },
         {
           "name": "自主返納者・NORUCA引換券",
@@ -168,13 +168,13 @@
               "checked": "2026-10-07"
             },
             {
-              "url": "https://www.city.motomiya.lg.jp/soshiki/10/combus.html",
-              "label": "市・コミュニティバス",
-              "updated": "2026-05-25",
+              "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
+              "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
+              "updated": "",
               "checked": "2026-10-07"
             }
           ],
-          "current": "document_checked"
+          "current": "needs_confirmation"
         },
         {
           "name": "免許失効者・共通乗車券",
@@ -194,9 +194,9 @@
               "checked": "2026-10-07"
             },
             {
-              "url": "https://www.city.motomiya.lg.jp/soshiki/10/combus.html",
-              "label": "市・コミュニティバス",
-              "updated": "2026-05-25",
+              "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
+              "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
+              "updated": "",
               "checked": "2026-10-07"
             },
             {
@@ -226,9 +226,9 @@
               "checked": "2026-10-07"
             },
             {
-              "url": "https://www.city.motomiya.lg.jp/soshiki/10/combus.html",
-              "label": "市・コミュニティバス",
-              "updated": "2026-05-25",
+              "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
+              "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
+              "updated": "",
               "checked": "2026-10-07"
             },
             {
@@ -249,9 +249,9 @@
           "checked": "2026-10-07"
         },
         {
-          "url": "https://www.city.motomiya.lg.jp/soshiki/10/combus.html",
-          "label": "市・コミュニティバス",
-          "updated": "2026-05-25",
+          "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
+          "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
+          "updated": "",
           "checked": "2026-10-07"
         },
         {
@@ -261,7 +261,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "失効者の条件は令和5年10月の市チラシにあり、現在の受付・必要書類を生活環境課へ確認してください。"
+      "flag": "失効者の条件は令和5年10月の市チラシにあり、現在の受付・必要書類を生活環境課へ確認してください。 コミュニティバスの詳細ページは現在開けないため、市の公共交通案内からリンクされている利用ガイドを参照しています。現在の運賃・利用券の扱いは生活環境課へ確認してください。"
     },
     {
       "slug": "koori",
