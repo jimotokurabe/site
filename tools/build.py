@@ -129,9 +129,6 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
-# First measurement cohort: pages selected from the Search Console / GA4 review.
-MEASURED_PAGES = {"hyogo-menkyo-henno/kobe.html", "hyogo-menkyo-henno/nishinomiya.html",
-                  "saitama-taxi.html", "hyogo-taxi.html", "nagasaki-taxi.html"}
 ACTION_SCRIPT = r"""<script>
 (function () {
   // Local checks must never send production analytics events.
@@ -154,7 +151,7 @@ ACTION_SCRIPT = r"""<script>
         if (url.protocol !== "https:" && url.protocol !== "http:") return;
         if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
           name = "share_line";
-        } else if (url.origin !== location.origin && /(^|\.)((lg|go)\.jp)$/.test(url.hostname)) {
+        } else if (url.origin !== location.origin && (/(^|\.)(lg|go)\.jp$/.test(url.hostname) || /(^|\.)(city|town|vill|pref)\.[a-z0-9-]+(?:\.[a-z0-9-]+)?\.jp$/.test(url.hostname) || /(^|\.)nishi\.or\.jp$/.test(url.hostname))) {
           name = "official_info_click";
           params.link_domain = url.hostname;
           params.link_path = url.pathname;
@@ -191,7 +188,7 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts="", b
 window.dataLayer = window.dataLayer || [];
 function gtag(){{dataLayer.push(arguments);}}
 gtag('js', new Date());
-gtag('config', 'G-T1PQ72Q40S');
+if (/^(www\\.)?jimotokurabe\\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ72Q40S');
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -241,7 +238,7 @@ gtag('config', 'G-T1PQ72Q40S');
   <p>© 2026 じもとくらべ</p>
 </footer>
 </div>
-{SIZE_SCRIPT}{chr(10) + ACTION_SCRIPT if path in MEASURED_PAGES and not draft else ""}
+{SIZE_SCRIPT}{chr(10) + ACTION_SCRIPT if not draft else ""}
 {scripts}
 </body>
 </html>

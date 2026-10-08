@@ -16,4 +16,39 @@ if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ
 const input=document.getElementById('city-query'),area=document.getElementById('area');let composing=false;
 function filter(){const q=normalize(input.value);let n=0;document.querySelectorAll('.city-group').forEach(group=>{let gn=0;group.querySelectorAll('li').forEach(li=>{const ok=(!area.value||group.dataset.region===area.value)&&[li.dataset.name,li.dataset.kana].some(v=>normalize(v).includes(q));li.hidden=!ok;if(ok)gn++;});group.hidden=!gn;n+=gn;});document.getElementById('count').textContent=n+'市区町村を表示しています。';document.getElementById('empty').hidden=n!==0;}
 input.addEventListener('compositionstart',()=>composing=true);input.addEventListener('compositionend',()=>{composing=false;filter();});input.addEventListener('input',()=>{if(!composing)filter();});area.addEventListener('change',filter);document.getElementById('filter-form').addEventListener('submit',ev=>{ev.preventDefault();filter();document.querySelector('.city-group:not([hidden]) li:not([hidden]) a')?.focus();});function reset(){input.value='';area.value='';filter();input.focus();}document.getElementById('reset').addEventListener('click',reset);document.getElementById('empty-reset').addEventListener('click',reset);
+</script><script>
+(function () {
+  // Local checks must never send production analytics events.
+  if (location.hostname !== "jimotokurabe.jp" && location.hostname !== "www.jimotokurabe.jp") return;
+  document.addEventListener("click", function (event) {
+    var target = event.target;
+    if (!target || !target.closest) return;
+    var control = target.closest("a, button");
+    if (!control || !control.closest("main") || typeof window.gtag !== "function") return;
+    var name = "", params = {page_path: location.pathname};
+    if (control.matches("[data-print]")) {
+      name = "print_request";
+    } else if (control.tagName === "A") {
+      var href = control.getAttribute("href") || "";
+      if (href.indexOf("tel:") === 0) {
+        name = "phone_click";
+      } else {
+        var url;
+        try { url = new URL(href, location.href); } catch (_) { return; }
+        if (url.protocol !== "https:" && url.protocol !== "http:") return;
+        if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
+          name = "share_line";
+        } else if (url.origin !== location.origin && (/(^|\.)(lg|go)\.jp$/.test(url.hostname) || /(^|\.)(city|town|vill|pref)\.[a-z0-9-]+(?:\.[a-z0-9-]+)?\.jp$/.test(url.hostname) || /(^|\.)nishi\.or\.jp$/.test(url.hostname))) {
+          name = "official_info_click";
+          params.link_domain = url.hostname;
+          params.link_path = url.pathname;
+        } else if (control.closest("[data-related-support]")) {
+          name = "related_support_click";
+          params.link_path = url.pathname;
+        }
+      }
+    }
+    if (name) window.gtag("event", name, params);
+  });
+})();
 </script></body></html>
