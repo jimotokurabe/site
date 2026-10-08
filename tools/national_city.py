@@ -114,11 +114,14 @@ def recursive(data, checked='', depth=0, skip=()):
             result += date_line(data, checked)
         return result
     if isinstance(data, list):
+        # Guide action rows carry title, explanation, fragment, link label.
+        if len(data) == 4 and all(isinstance(x, str) for x in data) and data[2].startswith('#'):
+            return '<strong>'+e(data[0])+'</strong><p>'+text_value(data[1])+'</p>'+link(data[2],data[3])
         # Named pairs in guide facts, fees, application ways etc. stay readable.
         if data and all(isinstance(x, list) and len(x)==2 and isinstance(x[0],str) for x in data):
             return '<dl class="facts">'+''.join(
-                '<div><dt>公式案内</dt><dd>'+link(a,b)+'</dd></div>'
-                if a.startswith(('https://','http://','tel:')) and isinstance(b,str) and not re.search(r'\s',a)
+                '<div><dt>'+('ページ内の案内' if a.startswith('#') else '公式案内')+'</dt><dd>'+link(a,b)+'</dd></div>'
+                if a.startswith(('https://','http://','tel:','#')) and isinstance(b,str) and not re.search(r'\s',a)
                 else '<div><dt>'+e(a)+'</dt><dd>'+recursive(b,checked,depth+1)+'</dd></div>'
                 for a,b in data)+'</dl>'
         return '<ul class="record-list">'+''.join('<li>'+recursive(x,checked,depth+1)+'</li>' for x in unique(data))+'</ul>'
@@ -135,6 +138,7 @@ def unique(items):
 def section(anchor, title, body):
     alias = {'support':'bus','procedure':'step-3'}.get(anchor)
     prefix = '<span id="'+alias+'" class="legacy-anchor"></span>' if alias else ''
+    if anchor == 'procedure': prefix += '<span id="steps-h" class="legacy-anchor"></span>'
     return f'<section class="block" id="{e(anchor)}">{prefix}<h2>{e(title)}</h2>{body}</section>'
 
 def details(title, body):
@@ -224,7 +228,7 @@ def guide_body(g, common, checked, common_checked):
         body+=details('市町村内の警察署・電話番号',recursive(g['stations'],checked))
     body+=recursive({k:v for k,v in g.items() if k in ('sources','summary_links','links','mobility')},checked)
     extra={k:v for k,v in g.items() if k in ('extra','extras','extra_title','extra_src')}
-    if extra:body+='<h3>市町村の手順案内にある関連制度・補足</h3>'+recursive(extra,checked)
+    if extra:body+='<span id="extra" class="legacy-anchor"></span><h3>市町村の手順案内にある関連制度・補足</h3>'+recursive(extra,checked)
     body+=details('都道府県の返納・経歴証明書の共通手続き',recursive({k:v for k,v in common.items() if k not in ('tokuten','checked')},common_checked))
     return body
 
@@ -290,7 +294,7 @@ def render_generic(pid,c,d,a,prototype):
         municipal+='<h4>同じ支援のタクシーに関する補足</h4><p class="mini-note">返納特典と同じ支援の案内です。追加の給付ではありません。</p>'+recursive(t,a['taxi_checked'])+date_line(t,a['taxi_checked'])
     benefit+=card('市町村の返納支援',municipal,'return-record')
     if a['statewide'] or common.get('tokuten'):
-        benefit+=card(d['pref']['name']+'で共通の返納支援', '<p class="mini-note">利用できる店舗・事業者と対象条件を確認してください。市町村独自の給付とは別の案内です。</p>'+recursive(a['statewide'],a['common_checked'])+recursive(common.get('tokuten',{}),a['common_checked'])+date_line({},a['common_checked']))
+        benefit+=card(d['pref']['name']+'で共通の返納支援', '<p class="mini-note">利用できる店舗・事業者と対象条件を確認してください。市町村独自の給付とは別の案内です。</p>'+recursive(a['statewide'],a['common_checked'])+recursive(common.get('tokuten',{}),a['common_checked'])+date_line({},a['common_checked']), 'statewide')
     busbody=''
     if not b:busbody='<div class="unknown"><h3>バス支援の詳細は未掲載</h3><p>この道県の自治体別バス調査データは未収録です。支援制度の有無を示すものではありません。</p></div>'
     else:
@@ -335,6 +339,12 @@ def leaves(data,path=()):
 
 def render_hand(source,pid,c,d,a):
     soup=BeautifulSoup(source.read_text(encoding='utf-8'),'html.parser')
+    # Internal comparison dumps are not reader-facing guidance. Missing facts
+    # are rendered below from the current source records instead.
+    for dump in soup.find_all('pre'):
+        if dump.get_text(strip=True).startswith('{'):
+            container = dump.find_parent('details')
+            (container if container is not None else dump).decompose()
     for x in soup.select('.city-switch'):
         x.clear();x.append(BeautifulSoup(f'<a href="../index.html">トップから探す</a><a href="../{pid}-menkyo-henno.html">{e(d["pref"]["name"])}の市町村を選ぶ</a>','html.parser'))
     for x in soup.select('.hero-tools'):

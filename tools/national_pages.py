@@ -24,8 +24,6 @@ def finalize(path, relative, legacy_ids, draft):
         for script in shell.head.find_all('script'):
             if 'gtag' in str(script) or 'googletagmanager' in str(script):
                 node = copy.copy(script)
-                if node.string and "gtag('config'" in node.string:
-                    node.string = node.string.replace("gtag('config', 'G-T1PQ72Q40S');", "if (/^(www\\.)?jimotokurabe\\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ72Q40S');")
                 soup.head.append(node)
     for banner in soup.select('.draft, .draftbar'):
         if draft:
@@ -58,7 +56,7 @@ def finalize(path, relative, legacy_ids, draft):
         target = target or soup.main
         alias = soup.new_tag('span', id=old_id, attrs={'class':'legacy-anchor','aria-hidden':'true'})
         target.insert(0, alias)
-    if relative in b.MEASURED_PAGES and not draft:
+    if not draft:
         for button in soup.select('button.print'):
             button['data-print'] = ''
         related = soup.select_one('#related')

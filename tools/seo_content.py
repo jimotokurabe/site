@@ -266,7 +266,6 @@ def make_city_content(pid,city,pref_data,adopted):
         questions[0]['cautions']=[v for v in questions[0]['cautions'] if not v['key'].startswith('return.guide.cautions')]
         questions[0]['sources']=sources(p,a.get('bus_checked'),path)
         questions[0]['checked']=p.get('checked') or a.get('bus_checked')
-        questions[0]['cautions'].append(part('資料の違い','返納記録では令和8年度以降、バス調査記録では令和9年度以降の予算議決を条件としています。資料の確認時期が異なるため、対象年度・受付期限は市の案内と窓口で確認してください。','return.note;bus.programs[1].benefit'))
         questions[-1]['question']='70歳以上の通常の敬老パスは無料ですか？'
     if key==('hyogo','kobe'):
         questions[0]['question']='返納するとICOCA 5,000円分はもらえますか？'

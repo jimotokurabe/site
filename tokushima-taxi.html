@@ -7,7 +7,7 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-T1PQ72Q40S');
+if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ72Q40S');
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -639,6 +639,42 @@ gtag('config', 'G-T1PQ72Q40S');
   set(root.getAttribute("data-size") === "large" ? "large" : "normal", false);
   buttons.forEach(function (b) {
     b.addEventListener("click", function () { set(b.getAttribute("data-size-btn"), true); });
+  });
+})();
+</script>
+<script>
+(function () {
+  // Local checks must never send production analytics events.
+  if (location.hostname !== "jimotokurabe.jp" && location.hostname !== "www.jimotokurabe.jp") return;
+  document.addEventListener("click", function (event) {
+    var target = event.target;
+    if (!target || !target.closest) return;
+    var control = target.closest("a, button");
+    if (!control || !control.closest("main") || typeof window.gtag !== "function") return;
+    var name = "", params = {page_path: location.pathname};
+    if (control.matches("[data-print]")) {
+      name = "print_request";
+    } else if (control.tagName === "A") {
+      var href = control.getAttribute("href") || "";
+      if (href.indexOf("tel:") === 0) {
+        name = "phone_click";
+      } else {
+        var url;
+        try { url = new URL(href, location.href); } catch (_) { return; }
+        if (url.protocol !== "https:" && url.protocol !== "http:") return;
+        if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
+          name = "share_line";
+        } else if (url.origin !== location.origin && (/(^|\.)(lg|go)\.jp$/.test(url.hostname) || /(^|\.)(city|town|vill|pref)\.[a-z0-9-]+(?:\.[a-z0-9-]+)?\.jp$/.test(url.hostname) || /(^|\.)nishi\.or\.jp$/.test(url.hostname))) {
+          name = "official_info_click";
+          params.link_domain = url.hostname;
+          params.link_path = url.pathname;
+        } else if (control.closest("[data-related-support]")) {
+          name = "related_support_click";
+          params.link_path = url.pathname;
+        }
+      }
+    }
+    if (name) window.gtag("event", name, params);
   });
 })();
 </script>
