@@ -57,7 +57,7 @@ def family_dialog(base=''):
     </div>
     <div class="family-reply" data-family-reply hidden><h3>こんな返し方も</h3><p data-family-reply-output aria-live="polite"></p></div>
   </details>
-  <div class="family-next"><h3>次に一緒にできること</h3><p data-family-next>これからも続けたいお出かけを、一つ聞いてみる。</p></div>
+  <div class="family-next"><h3>次に一緒にできること</h3><p data-family-next>これからも続けたいお出かけを、一つ聞いてみる。</p><a href="{base}outing-plan.html">車なしのお出かけ計画を作る →</a></div>
   <details class="family-tips"><summary>話す前に、ひとつだけ</summary><ul>
     <li>「危ないから返して」より、「私はあの場面が心配だった」と具体的に。</li>
     <li>本人の話を聞く時間を。今日、結論が出なくても大丈夫。</li>

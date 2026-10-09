@@ -31,6 +31,7 @@ def apply_site_header(soup, base='', home=False):
         nav.append(local.extract())
         switch.decompose()
     for label, href in (
+        ('車なしのお出かけ計画', base+'outing-plan.html'),
         ('免許返納の手続き', base+'menkyo-henno-guide.html'),
         ('家族と確認する' if soup.select_one('#family') else '家族への話し方', '#family' if soup.select_one('#family') else base+'henno-hanashikata.html'),
     ):
