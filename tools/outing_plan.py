@@ -22,10 +22,22 @@ def outing_plan_page(shell, draft=False):
 <p class="outing-note">分からないところは空欄で大丈夫。あとで確認するメモに残せます。</p>
 <noscript><p>計画をまとめるにはJavaScriptを有効にしてください。行き先・行きと帰りの交通・費用・予約・困ったときの代案を紙に書いて準備することもできます。</p></noscript>
 <div id="outing-app" hidden>
-<ol class="outing-progress" aria-label="計画づくりの進み具合"><li aria-current="step"><span class="outing-step-number" aria-hidden="true">1</span>行き先</li><li><span class="outing-step-number" aria-hidden="true">2</span>行きと帰り</li><li><span class="outing-step-number" aria-hidden="true">3</span>準備</li></ol>
+<ol class="outing-progress" aria-label="計画づくりの進み具合"><li aria-current="step"><span class="outing-step-number" aria-hidden="true">1</span>地域・行き先</li><li><span class="outing-step-number" aria-hidden="true">2</span>行きと帰り</li><li><span class="outing-step-number" aria-hidden="true">3</span>準備</li></ol>
 <form id="outing-form" autocomplete="off">
 <section class="outing-step" data-step="0" aria-labelledby="outing-step-0">
-  <h2 class="outing-step-title" id="outing-step-0" tabindex="-1">どこへ出かけますか？</h2>
+  <h2 class="outing-step-title" id="outing-step-0" tabindex="-1">地元の支援も、計画に。</h2>
+  <section class="outing-local" aria-labelledby="outing-local-title">
+    <h3 id="outing-local-title">住んでいる市町村を選ぶ</h3>
+    <p class="outing-note">お出かけする本人の地域です。支援を選ばずに進めることもできます。</p>
+    <div class="outing-region-fields"><label class="outing-field">都道府県<select id="outing-pref" disabled><option value="">読み込み中…</option></select></label><label class="outing-field">市町村<select id="outing-city" disabled><option value="">都道府県を選んでください</option></select></label></div>
+    <p id="outing-support-status" class="outing-note" role="status"></p><button type="button" id="outing-support-retry" class="outing-secondary" hidden>支援情報を読み直す</button>
+    <div id="outing-support-area" hidden>
+      <div class="outing-local-heading"><h4>計画に入れて考える支援</h4><a id="outing-city-link" target="_blank" rel="noopener">地域の詳しい条件 ↗</a></div>
+      <p class="outing-note">対象者と使える交通を確認して選びます。選ぶだけでは利用資格の判定や割引計算はしません。</p>
+      <div id="outing-support-list"></div>
+    </div>
+  </section>
+  <h3>どこへ出かけますか？</h3>
   <fieldset class="outing-purpose"><legend>お出かけの目的</legend><div class="outing-choices">
     <label><input type="radio" name="purpose" value="買い物"><span>買い物</span></label>
     <label><input type="radio" name="purpose" value="通院"><span>通院</span></label>
@@ -38,10 +50,11 @@ def outing_plan_page(shell, draft=False):
 </section>
 <section class="outing-step" data-step="1" aria-labelledby="outing-step-1" hidden>
   <h2 class="outing-step-title" id="outing-step-1" tabindex="-1">行きも、帰りも。</h2>
-  <p class="outing-note">交通費は1人・片道分。無料と確認できた場合は「0」を入れてください。</p>
+  <p class="outing-note">交通費は1人・片道分。支援を使う場合は、自分で確かめた支払額を入力します。無料と確認できたら「0」を入れてください。</p>
   <div class="outing-legs">__LEGS__</div>
+  <div id="outing-combination" class="outing-caution" hidden><strong>別の支援を行き・帰りに使う計画です</strong><p>片道ずつでも、同時に利用・交付を受けられない制度があります。</p><label class="outing-check-label"><input type="checkbox" id="outing-combination-confirmed"><span>この2つの支援を併用できる条件を窓口で確認した</span></label><p class="outing-note">未確認の間は、往復の支援利用後の合計を出しません。</p></div>
   <p class="outing-note">運行日・帰りの便・予約の要否は、利用する交通の公式案内で確認しましょう。</p>
-  <div class="outing-actions"><button type="button" class="outing-secondary" data-back>← 行き先へ</button><button type="button" class="outing-primary" data-next>準備を確認する →</button></div>
+  <div class="outing-actions"><button type="button" class="outing-secondary" data-back>← 地域・行き先へ</button><button type="button" class="outing-primary" data-next>準備を確認する →</button></div>
 </section>
 <section class="outing-step" data-step="2" aria-labelledby="outing-step-2" hidden>
   <h2 class="outing-step-title" id="outing-step-2" tabindex="-1">出かける前に、もう少し。</h2>
@@ -56,6 +69,7 @@ def outing_plan_page(shell, draft=False):
   <div class="outing-ticket"><header><p class="outing-kicker">家族と確認する、お出かけメモ</p><h2 id="outing-result-title" tabindex="-1">ひとつの外出から、試してみよう。</h2><p id="outing-result-destination"></p></header>
   <p class="outing-summary-route" id="outing-result-route"></p>
   <div class="outing-result-grid" id="outing-result-details"></div>
+  <section id="outing-result-supports" class="outing-result-supports" hidden></section>
   <section><h3>あとで確認すること</h3><ul class="outing-checks" id="outing-result-checks"></ul></section>
   <p class="outing-note">このメモは入力内容をまとめたものです。運行・予約・運賃は、利用前に公式案内で確かめてください。</p>
   <p class="outing-note">じもとくらべ · https://jimotokurabe.jp/outing-plan.html</p></div>
@@ -64,7 +78,7 @@ def outing_plan_page(shell, draft=False):
   <details class="outing-memo"><summary>コピー用の文章を見る</summary><textarea id="outing-memo" rows="12" readonly aria-label="コピー用の計画"></textarea></details>
 </section>
 </div>
-<p class="outing-note outing-privacy">入力内容はサイトに送信・保存されません。ページを再読み込みすると消えるため、必要な計画はコピーか印刷で残してください。</p>
+<p class="outing-note outing-privacy">行き先・日時・費用などの計画入力は送信・保存されません。選んだ都道府県の公開制度データを読み込みます。ページを再読み込みすると消えるため、必要な計画はコピーか印刷で残してください。</p>
 </div>
 <aside class="outing-help" aria-labelledby="outing-help-title"><h2 id="outing-help-title">調べたいときは</h2><div class="outing-links"><a href="index.html#prefectures" target="_blank" rel="noopener">地域の交通・支援を探す ↗</a><a href="henno-hanashikata.html" target="_blank" rel="noopener">家族へのひと言を考える ↗</a></div><p class="outing-note">別のタブで開きます。計画の入力を残したまま調べられます。</p><details><summary>計画を立てる小さなヒント</summary><p>まずは行き慣れた場所をひとつ。家から乗り場まで、降りてから目的地までの道も確認しましょう。</p><p>帰りの時間が読めない日は、次の便や別の交通も調べておくと相談しやすくなります。</p></details><details><summary>このページについて</summary><p>じもとくらべが作成した準備用のメモです。免許を返納するか決まっていなくても使えます。</p><p>移動を事前に試す考え方は、<a href="https://www.city.tajimi.lg.jp/kurashi_tetsuduzuki/machizukuri/1005719/1005780/1010861.html" target="_blank" rel="noopener">多治見市のおためし事業（公式・別タブ）</a>も参考にしています。自治体の割引事業への申込みではありません。</p></details></aside>
 </div>'''
@@ -74,7 +88,10 @@ def outing_plan_page(shell, draft=False):
         legs.append(f'''<fieldset><legend>{label}</legend>
         <label class="outing-field">{label}の交通<select id="outing-{key}-mode">{options}</select></label>
         <label class="outing-field">{label}の時間・乗り場<input id="outing-{key}-time" type="text" maxlength="120" placeholder="{hint}"></label>
-        <label class="outing-field">{label}の交通費（円）<input id="outing-{key}-cost" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="未確認"></label>
+        <label class="outing-field">{label}に使う支援<select id="outing-{key}-support"><option value="">支援を指定しない</option></select></label>
+        <p id="outing-{key}-support-help" class="outing-note">支援を使う場合は、最初の画面で選べます。</p>
+        <label class="outing-field"><span id="outing-{key}-cost-label">{label}の交通費（円）</span><input id="outing-{key}-cost" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="未確認"></label>
+        <label class="outing-check-label" id="outing-{key}-confirmed-wrap" hidden><input type="checkbox" id="outing-{key}-confirmed"><span>この片道で使える条件・自己負担額を確認した</span></label>
         </fieldset>''')
     raw = shell(title='車なしのお出かけ計画｜行き帰りと費用を家族で確認｜じもとくらべ',
                 description='通院・買い物・趣味のお出かけを、車以外の交通で考える無料の準備メモ。行き帰り・交通費・予約・雨の日の代案をまとめてコピー・印刷できます。',
@@ -94,8 +111,8 @@ def outing_plan_page(shell, draft=False):
     boot = soup.new_tag('script')
     boot.string = "try{document.documentElement.classList.toggle('large',sessionStorage.getItem('jk-national-size')==='large')}catch(e){}"
     soup.head.append(boot)
-    soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261009'))
+    soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261009-supports'))
     apply_site_header(soup)
-    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261009'):
+    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261009-supports'):
         soup.body.append(soup.new_tag('script', src=src, defer=True))
     return str(soup)
