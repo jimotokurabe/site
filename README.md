@@ -48,7 +48,7 @@ GitHub Pages（main ブランチの直下）で公開しています。
 
 トップは地域・都道府県を選ぶ入口です。市町村名・よみがなの検索も折りたたみから使えます。都道府県ページでは市町村を選べます。市町村ページで免許返納特典、バス助成・敬老パス、タクシー支援、通院・買い物の交通を確認できます。
 
-`tools/national_pages.py` が `tools/national_navigation.py`、`tools/national_city.py`、`tools/seo_content.py` を通じて47都道府県・1,741市区町村を生成します。`python3 tools/build.py` から呼び出すため、通常の更新手順で再生成できます。基本表示には `assets/national-city.css`、`assets/national-city.js`、`assets/seo.css` を使用します。全国共通の配色とレイアウトは `assets/warm-navigation.css`、`assets/warm-city.css`、`assets/warm-shared.css`、家族向けヒント・確認チェックの端末保存・出典付き共有メモは `assets/warm-experience.js` が担当します。`tools/warm_components.py` と `tools/warm_city.py` で共通部品を組み込み、自治体ごとの背景画像は使いません。
+`tools/national_pages.py` が `tools/national_navigation.py`、`tools/national_city.py`、`tools/seo_content.py` を通じて47都道府県・1,741市区町村を生成します。`python3 tools/build.py` から呼び出すため、通常の更新手順で再生成できます。基本表示には `assets/national-city.css`、`assets/national-city.js`、`assets/seo.css` を使用します。全国共通の配色とレイアウトは `assets/warm-navigation.css`、`assets/warm-city.css`、`assets/warm-shared.css`、家族向けヒント・確認チェックの端末保存・出典付き共有メモは `assets/warm-experience.js` が担当します。`tools/warm_components.py` と `tools/warm_city.py` で共通部品を組み込み、自治体ごとの背景画像は使いません。`tools/visual_city.py` と `assets/visual-city.css` は、4種類の支援の図付き入口と、元の条件・支援内容・本人負担を読み分けるパネルを生成します。金額の推測・合算や対象資格の判定は行いません。
 
 検索タイトルと冒頭の質問・回答は既存データから生成します。同名自治体には都道府県名を添え、終了・未発見・未掲載・要確認を区別します。金額だけを取り出さず、対象条件・期限・注意事項・出典と確認日を併記します。神戸・横浜・鹿児島の詳細レイアウトは `tools/templates/national/` のテンプレートを使うため、これらの制度データを更新した際は表示内容も照合してください。公開前の生成結果は `--out preview --draft` で確認できます。
 
