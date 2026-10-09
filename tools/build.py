@@ -2746,90 +2746,13 @@ def hanashi_page(data, hk, draft, prefs=None):
 # ---------------- 運営者情報 ----------------
 
 def about_page(draft):
-    main = f"""<article class="prose">
-  <h1>運営者情報</h1>
-  <section aria-label="基本の情報">
-    <dl class="info">
-      <div><dt>サイト名</dt><dd>じもとくらべ</dd></div>
-      <div><dt>アドレス</dt><dd>https://jimotokurabe.jp/</dd></div>
-      <div><dt>運営</dt><dd>個人で運営しています</dd></div>
-      <div id="contact"><dt>連絡先</dt><dd><a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>（Googleフォーム）</dd></div>
-    </dl>
-  </section>
-  <section>
-    <h2>このサイトについて</h2>
-    <p>住んでいる市や町によって、使える制度はちがいます。けれども、市町ごとのページを1つずつ開いて比べるのは大変です。このサイトは、市町の公式ページで確かめた内容を、同じ項目にそろえて並べ、比べられるようにしています。</p>
-  </section>
-  <section>
-    <h2>情報の調べ方</h2>
-    <ul class="bullets">
-      <li>市町の公式ページを開いて、原文で確かめます。</li>
-      <li>確かめた日を、ページごとに書きます。</li>
-      <li>ページに書かれていないことは「記載なし」とし、推測で埋めません。</li>
-      <li>公式ページを原文で確かめられなかったときは、どう確かめたかを、その市町の欄に書きます。</li>
-    </ul>
-  </section>
-  <section>
-    <h2>間違いを見つけたら</h2>
-    <p>内容の間違いや、制度が変わったことに気づいたら、<a href="{CONTACT_URL}" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。確かめて直し、直した日をページに書きます。</p>
-  </section>
-  <section>
-    <h2>広告について</h2>
-    <p>いまは広告を載せていません。載せる場合も、広告の都合で内容を変えることはしません。</p>
-  </section>
-  <section>
-    <h2>ご利用にあたって</h2>
-    <p>掲載している情報は、確かめた日の時点のものです。制度は変わることがあるため、申し込む前に、市町の公式ページか窓口で確かめてください。このサイトの情報を使ったことで生じた損害について、責任を負いかねます。</p>
-  </section>
-  <p class="updated">2026年9月26日 作成</p>
-</article>"""
-    return shell(
-        title="運営者情報｜じもとくらべ",
-        description="じもとくらべの運営者と、情報の調べ方、間違いを見つけたときの連絡について。",
-        path="about.html", main=main, draft=draft)
+    from site_info import info_page
+    return info_page(shell, CONTACT_URL, draft)
 
-
-# ---------------- プライバシーポリシー ----------------
 
 def privacy_page(draft):
-    main = f"""<article class="prose">
-  <h1>プライバシーポリシー</h1>
-  <p>じもとくらべ（以下「このサイト」）で扱う情報について説明します。</p>
-  <section>
-    <h2>集める情報</h2>
-    <p>このサイトには、会員登録やサイト内の入力フォームはありません。サイトの利用状況を知るために Google アナリティクス 4 を使っています。広告は掲載していません。</p>
-  </section>
-  <section>
-    <h2>アクセス解析</h2>
-    <p>Google アナリティクス 4 は、Cookie などを使って、閲覧したページ、アクセス日時、お使いの端末やブラウザ、参照元、ページ内での操作などを記録します。これらの情報は Google に送信され、個人を特定しない形でサイトの改善に利用します。</p>
-    <p>Google による情報の取り扱いは<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google のプライバシーポリシー</a>をご確認ください。計測を避けたい場合は、<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a>を利用できます。</p>
-  </section>
-  <section>
-    <h2>外部のサービス</h2>
-    <ul class="bullets">
-      <li>文字の表示に Google Fonts を使っています。ページを開くと、文字のデータを受け取るためにGoogleのサーバーに接続するので、IPアドレスなどがGoogleに送られます。</li>
-      <li>このサイトは GitHub Pages で公開しています。GitHubは、セキュリティのために、閲覧した人のIPアドレスを記録しています（<a href="https://docs.github.com/ja/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noopener">GitHubの説明</a>）。</li>
-    </ul>
-  </section>
-  <section>
-    <h2>文字の大きさの設定</h2>
-    <p>「大きく」を選ぶと、その設定をお使いのブラウザの中に保存します。このサイトに送られることはありません。</p>
-  </section>
-  <section>
-    <h2>お問い合わせでいただいた情報</h2>
-    <p>お問い合わせは、<a href="{CONTACT_URL}" target="_blank" rel="noopener">Googleフォーム</a>で受け付けています。送られた内容は、Googleのサーバーに保存されます。</p>
-    <p>お問い合わせでいただいた内容やメールアドレスは、お問い合わせへの対応のためだけに使い、ほかの目的には使いません。</p>
-  </section>
-  <section>
-    <h2>このページの変更</h2>
-    <p>内容を変えるときは、このページを書き換えて日付を更新します。広告を始めるときは、始める前にこのページに書きます。</p>
-  </section>
-  <p class="updated">2026年10月3日 更新</p>
-</article>"""
-    return shell(
-        title="プライバシーポリシー｜じもとくらべ",
-        description="じもとくらべで扱う情報と、使っている外部のサービスについて。",
-        path="privacy.html", main=main, draft=draft)
+    from site_info import info_page
+    return info_page(shell, CONTACT_URL, draft, privacy=True)
 
 
 def to_artifact_fragment(doc, title):
@@ -2945,7 +2868,7 @@ def main():
     pages[HANASHI_PATH] = apply_warm_guide(pages[HANASHI_PATH], family=True)
     if out.resolve() != ROOT:
         (out / 'assets').mkdir(exist_ok=True)
-        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js'):
+        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css'):
             shutil.copy(ROOT / 'assets' / asset, out / 'assets' / asset)
     # 下書きの県（pref.draft が true）は、検索に出さず、サイトマップとトップにも載せない
     hidden = set()
@@ -3000,7 +2923,7 @@ def main():
                 (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
         (art / 'assets').mkdir(exist_ok=True)
-        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js'):
+        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css'):
             shutil.copy(ROOT / 'assets' / asset, art / 'assets' / asset)
         from outing_supports import write_catalog
         write_catalog(ROOT, art)
