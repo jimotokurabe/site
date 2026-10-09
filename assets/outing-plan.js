@@ -173,10 +173,95 @@
     }
     refreshSupportOptions();
   }
+  const kanaRows = {'あ': 'あいうえおぁぃぅぇぉ', 'か': 'かきくけこ', 'さ': 'さしすせそ', 'た': 'たちつてとっ', 'な': 'なにぬねの', 'は': 'はひふへほ', 'ま': 'まみむめも', 'や': 'やゆよゃゅょ', 'ら': 'らりるれろ', 'わ': 'わをんゎ'};
+  let cityGroup = '', cityOffset = 0, browsedRegion = '';
+  function normalizePlace(text) {
+    return (text || '').normalize('NFKC').toLowerCase().replace(/[ァ-ヶ]/g, char => String.fromCharCode(char.charCodeAt(0) - 96)).replace(/[\s　]/g, '');
+  }
+  function cityMatches(city, query) {
+    const q = normalizePlace(query);
+    return [city.name, city.kana].some(text => normalizePlace(text).includes(q));
+  }
+  function cityInitial(city) {
+    const first = normalizePlace(city.kana || city.name).normalize('NFD').replace(/[\u3099\u309a]/g, '').charAt(0);
+    return Object.keys(kanaRows).find(row => kanaRows[row].includes(first)) || 'その他';
+  }
+  function choiceButton(label, onClick, pressed = false) {
+    const button = node('button', label); button.type = 'button';
+    button.setAttribute('aria-pressed', String(pressed));
+    button.addEventListener('click', onClick); return button;
+  }
+  function updatePickerSummary() {
+    const pref = indexData?.prefectures.find(item => item.id === value('pref'));
+    $('picker-summary').textContent = cityData ? '選択中：' + pref.name + ' ' + cityData.name : pref ? pref.name + 'の市町村を選んでください' : '地域はまだ選んでいません';
+    $('picker-toggle').hidden = !cityData;
+    $('picker-clear').hidden = !pref;
+  }
+  function renderPrefChoices(region) {
+    browsedRegion = region;
+    const prefs = indexData?.prefectures || [];
+    const regions = [...new Set(prefs.map(pref => pref.region || 'その他'))];
+    $('region-options').replaceChildren(...regions.map(label => choiceButton(label, () => { renderPrefChoices(label); $('pref-options').firstElementChild?.focus(); }, label === region)));
+    $('pref-options').replaceChildren(...prefs.filter(pref => (pref.region || 'その他') === region).map(pref => choiceButton(pref.name, () => {
+      if (value('pref') === pref.id && prefectureData) { $('city-search').focus(); return; }
+      $('pref').value = pref.id; renderPrefChoices(region); setPref(pref.id, '', '', true);
+    }, value('pref') === pref.id)));
+  }
+  function renderCityChoices(reset = true) {
+    if (reset) cityOffset = 0;
+    const cities = prefectureData?.cities || [];
+    const query = value('city-search');
+    const matches = cities.filter(city => cityMatches(city, query) && (!cityGroup || cityInitial(city) === cityGroup));
+    if (cityOffset >= matches.length) cityOffset = 0;
+    const rows = ['', ...Object.keys(kanaRows), ...(cities.some(city => cityInitial(city) === 'その他') ? ['その他'] : [])];
+    $('city-initials').replaceChildren(...rows.map(row => choiceButton(row ? row === 'その他' ? row : row + '行' : 'すべて', () => {
+      cityGroup = row; renderCityChoices();
+      $('city-count').focus();
+    }, cityGroup === row)));
+    $('city-results').replaceChildren(...matches.slice(cityOffset, cityOffset + 12).map(city => {
+      const button = choiceButton(city.name, () => {
+        setCity(city.id); $('picker-summary').focus();
+      }, city.id === value('city'));
+      if (city.kana) button.append(node('small', city.kana));
+      return button;
+    }));
+    $('city-count').textContent = matches.length ? matches.length + '件中 ' + (cityOffset + 1) + '〜' + Math.min(cityOffset + 12, matches.length) + '件' : '見つかりませんでした。文字を短くするか、絞り込みを解除してください。';
+    $('city-prev').hidden = cityOffset === 0;
+    $('city-more').hidden = cityOffset + 12 >= matches.length;
+    $('city-reset').hidden = !query && !cityGroup;
+  }
+  function showCityPicker(show) {
+    $('city-picker').hidden = !show;
+    $('city-search').disabled = !show;
+    if (!show) { $('city-search').value = ''; cityGroup = ''; cityOffset = 0; }
+  }
+  $('city-search').addEventListener('input', () => { cityGroup = ''; renderCityChoices(); });
+  $('city-more').addEventListener('click', () => { cityOffset += 12; renderCityChoices(false); $('city-count').focus(); });
+  $('city-prev').addEventListener('click', () => { cityOffset = Math.max(0, cityOffset - 12); renderCityChoices(false); $('city-count').focus(); });
+  $('city-reset').addEventListener('click', () => { $('city-search').value = ''; cityGroup = ''; renderCityChoices(); $('city-search').focus(); });
+  $('picker-toggle').addEventListener('click', () => {
+    const open = $('picker-body').hidden;
+    $('picker-body').hidden = !open; $('picker-toggle').setAttribute('aria-expanded', String(open));
+    if (open) {
+      renderPrefChoices(indexData?.prefectures.find(pref => pref.id === value('pref'))?.region || browsedRegion);
+      renderCityChoices(); $('city-search').focus();
+    }
+  });
+  $('picker-clear').addEventListener('click', () => {
+    $('pref').value = ''; setPref('');
+    $('picker-body').hidden = false; $('picker-toggle').setAttribute('aria-expanded', 'true');
+    renderPrefChoices(browsedRegion); $('picker-summary').focus();
+  });
+
   function setCity(id, supportId) {
+    if (cityData?.id === id && !supportId) {
+      $('picker-body').hidden = true; $('picker-toggle').setAttribute('aria-expanded', 'false'); return;
+    }
     clearRegion(); supportProblem = '';
     cityData = prefectureData?.cities.find(city => city.id === id) || null;
     $('city').value = cityData ? id : '';
+    updatePickerSummary();
+    if (cityData) { $('picker-body').hidden = true; $('picker-toggle').setAttribute('aria-expanded', 'false'); }
     if (!cityData && id) supportProblem = '引き継ぐ市町村・支援を選び直す';
     if (!cityData) { $('support-status').textContent = id ? '指定された市町村が見つかりません。選び直してください。' : ''; return; }
     const valid = cityData.programs.find(program => program.id === supportId && program.selectable);
@@ -194,21 +279,25 @@
     if (!response.ok) throw new Error('catalog unavailable');
     return response.json();
   }
-  async function setPref(id, cityId, supportId) {
+  async function setPref(id, cityId, supportId, focusCity = false) {
     const token = ++requestId;
     clearRegion(); prefectureData = null; supportProblem = '';
+    showCityPicker(false); updatePickerSummary();
     $('city').disabled = true;
     $('city').replaceChildren(option('', id ? '読み込み中…' : '都道府県を選んでください'));
     $('support-retry').hidden = true;
     if (!indexData?.prefectures.some(pref => pref.id === id)) { loadingSupports = false; $('support-status').textContent = ''; return; }
     loadingSupports = true; $('support-status').textContent = '地域の支援情報を読み込んでいます。';
     try {
-      const data = await fetchJSON('assets/outing-supports/' + encodeURIComponent(id) + '.json');
+      const data = await fetchJSON('assets/outing-supports/' + encodeURIComponent(id) + '.json?v=20261009-picker');
       if (token !== requestId) return;
       if (!Array.isArray(data.cities)) throw new Error('invalid catalog');
       prefectureData = data; loadingSupports = false;
       $('city').replaceChildren(option('', '市町村を選ぶ'), ...data.cities.map(city => option(city.id, city.name)));
-      $('city').disabled = false; setCity(cityId || '', supportId);
+      $('city').disabled = false; showCityPicker(true);
+      $('city-picker-title').textContent = (indexData.prefectures.find(pref => pref.id === id)?.name || '') + 'の市町村を選ぶ';
+      setCity(cityId || '', supportId); renderCityChoices();
+      if (focusCity) $('city-search').focus();
     } catch (_) {
       if (token !== requestId) return;
       loadingSupports = false;
@@ -221,13 +310,15 @@
   async function initSupports() {
     $('support-retry').hidden = true; loadingSupports = true;
     try {
-      indexData = await fetchJSON('assets/outing-supports/index.json');
+      indexData = await fetchJSON('assets/outing-supports/index.json?v=20261009-picker');
       if (!Array.isArray(indexData.prefectures)) throw new Error('invalid catalog');
       $('pref').replaceChildren(option('', '都道府県を選ぶ'), ...indexData.prefectures.map(pref => option(pref.id, pref.name)));
       $('pref').disabled = false; loadingSupports = false;
+      renderPrefChoices('');
       const pref = params.get('pref');
       if (pref && indexData.prefectures.some(item => item.id === pref)) {
-        $('pref').value = pref; await setPref(pref, params.get('city'), params.get('support'));
+        $('pref').value = pref; renderPrefChoices(indexData.prefectures.find(item => item.id === pref).region || 'その他');
+        await setPref(pref, params.get('city'), params.get('support'));
       } else if (pref || params.has('city') || params.has('support')) {
         supportProblem = '引き継ぐ地域・支援を選び直す';
         $('support-status').textContent = '指定された地域を引き継げませんでした。都道府県から選んでください。';

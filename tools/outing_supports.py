@@ -132,7 +132,7 @@ def catalog(root):
     order = [pid for _, ids in REGIONS for pid in ids]
     for pid in [pid for pid in order if pid in prefs] + sorted(set(prefs) - set(order)):
         data = prefs[pid]
-        pref = {'id': pid, 'name': data['pref']['name'], 'cities': []}
+        pref = {'id': pid, 'name': data['pref']['name'], 'region': next((label for label, ids in REGIONS if pid in ids), 'その他'), 'cities': []}
         cities = []
         for city in data['cities']:
             slug = city['slug']
@@ -147,7 +147,7 @@ def catalog(root):
                         programs.append(p)
             if a['taxi']:
                 programs.append(program(pid, slug, 'taxi', a['taxi'], a['taxi_checked']))
-            item = {'id': slug, 'name': city['n'], 'key': f'{pid}:{slug}',
+            item = {'id': slug, 'name': city['n'], 'kana': city.get('y', ''), 'key': f'{pid}:{slug}',
                     'page': f'{pid}-menkyo-henno/{slug}.html', 'programs': programs}
             city_supplements = []
             for update in a['accepted_supplements']:
@@ -162,7 +162,7 @@ def catalog(root):
                     item['supplements'].append({'label': 'まだ確認できていないこと', 'text': unresolved,
                                                 'source': '', 'checked': a['supplement_checked'] or ''})
             cities.append(item)
-            pref['cities'].append({'id': slug, 'name': city['n']})
+            pref['cities'].append({'id': slug, 'name': city['n'], 'kana': city.get('y', '')})
         index['prefectures'].append(pref)
         by_pref[pid] = {'cities': cities}
     return index, by_pref

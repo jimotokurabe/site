@@ -10,14 +10,28 @@ class Element {
     this.tagName = tag; this.children = []; this.listeners = {}; this.attributes = {};
     this.value = ''; this.checked = false; this.hidden = false; this.disabled = false;
     this.validity = {valid: true}; this.selectedIndex = 0; this.textContent = '';
+    this.className = '';
+    this.classList = {
+      contains: name => this.className.split(/\s+/).includes(name),
+      toggle: (name, force) => {
+        const names = new Set(this.className.split(/\s+/).filter(Boolean));
+        const active = force === undefined ? !names.has(name) : force;
+        if (active) names.add(name); else names.delete(name);
+        this.className = [...names].join(' ');
+        return active;
+      },
+      add: (...names) => names.forEach(name => this.classList.toggle(name, true)),
+      remove: (...names) => names.forEach(name => this.classList.toggle(name, false))
+    };
   }
   append(...children) { this.children.push(...children); if (this.tagName === 'select' && this.children.length === children.length) this.value = children[0]?.value || ''; }
   replaceChildren(...children) { this.children = []; this.append(...children); }
   addEventListener(type, fn) { (this.listeners[type] ||= []).push(fn); }
-  emit(type) { for (const fn of this.listeners[type] || []) fn({preventDefault() {}}); }
+  emit(type) { for (const fn of this.listeners[type] || []) fn({target: this, currentTarget: this, preventDefault() {}}); }
   setAttribute(key, value) { this.attributes[key] = value; }
   removeAttribute(key) { delete this.attributes[key]; }
-  focus() {}
+  get firstElementChild() { return this.children[0] || null; }
+  focus() { Element.activeElement = this; }
   reportValidity() {}
 }
 function fixture() {
@@ -36,7 +50,7 @@ function fixture() {
       querySelectorAll: selector => selector === '[data-step]' ? [new Element(), new Element(), new Element()] : []},
     fetch: url => new Promise((resolve, reject) => pending.push({url, resolve: data => resolve({ok: true, json: async () => data}), reject}))});
   const script = fs.readFileSync(path.join(__dirname, '../assets/outing-plan.js'), 'utf8')
-    .replace('  app.hidden = false;', '  globalThis.testApi = {collect, setPref, selected, amount, normalCost, comparison, setIndex(data) {indexData = data;}}; app.hidden = false;');
+    .replace('  app.hidden = false;', '  globalThis.testApi = {collect, setPref, setCity, selected, amount, normalCost, comparison, normalizePlace, cityMatches, cityInitial, renderCityChoices, setIndex(data) {indexData = data;}}; app.hidden = false;');
   vm.runInContext(script, context);
   for (const key of ['out', 'back']) get('outing-' + key + '-mode').value = 'まだ決めていない';
   return {get: id => get('outing-' + id), api: context.testApi, pending};
@@ -45,6 +59,23 @@ const support = id => ({id, name: '支援' + id, type: 'bus', selectable: true, 
 const flush = () => new Promise(resolve => setImmediate(resolve));
 
 async function run() {
+  {
+    const {api} = fixture();
+    const city = {name: '神戸市', kana: 'こうべし'};
+    for (const query of ['神戸', 'こうべ', 'コウベ', 'ｺｳﾍﾞ', '  こう べ　し  ']) {
+      assert.equal(api.cityMatches(city, query), true, 'municipality search matches ' + query);
+    }
+    assert.equal(api.cityMatches(city, '京都'), false);
+    assert.equal(api.cityMatches(city, ''), true);
+    assert.equal(api.cityMatches({name: '神戸市'}, '神戸'), true, 'older catalog remains searchable by name');
+    assert.equal(api.cityMatches({name: '神戸市'}, 'こうべ'), false, 'missing reading must not invent a match');
+    assert.equal(api.normalizePlace(' Ａ ﾊﾟ　ン '), 'aぱん', 'search folds width, case, katakana and spaces');
+    for (const [kana, expected] of [['あきたし', 'あ'], ['いこまし', 'あ'], ['がまごおりし', 'か'],
+      ['ギフシ', 'か'], ['ざまし', 'さ'], ['ぢ', 'た'], ['ぬまづし', 'な'], ['ぱ', 'は'],
+      ['ぼ', 'は'], ['む', 'ま'], ['ゆ', 'や'], ['れ', 'ら'], ['を', 'わ']]) {
+      assert.equal(api.cityInitial({name: '市', kana}), expected, 'kana group for ' + kana);
+    }
+  }
   {
     const {get, api} = fixture();
     const total = () => api.collect().groups[2][1][0][1];
@@ -238,6 +269,98 @@ async function run() {
     assert.equal(get('city').disabled, true, 'clearing the region must invalidate an older pending request');
     assert.equal(get('city').children.length, 1);
   }
-  console.log('Planner behavior tests passed: unknown/zero, readiness, combination totals, reset events, stale requests, normal/planned fare comparisons and monthly limits.');
+  {
+    const {get, api, pending} = fixture();
+    const button = (id, label) => {
+      const found = get(id).children.find(child => child.textContent === label);
+      assert.ok(found, id + ' has choice ' + label);
+      return found;
+    };
+    pending.shift().resolve({prefectures: [
+      {id: 'hyogo', name: '兵庫県', region: '近畿'},
+      {id: 'kyoto', name: '京都府', region: '近畿'},
+      {id: 'tokyo', name: '東京都', region: '関東'}
+    ]});
+    await flush();
+    assert.equal(get('pref-options').children.length, 0, 'prefecture choices follow a region choice');
+    button('region-options', '近畿').emit('click');
+    assert.equal(get('pref-options').children.length, 2);
+    assert.equal(Element.activeElement, get('pref-options').children[0], 'region choice moves keyboard focus to its prefectures');
+    button('pref-options', '兵庫県').emit('click');
+    assert.equal(get('pref').value, 'hyogo', 'visible choice updates the native state');
+    assert.equal(get('city-search').disabled, true, 'search stays disabled while loading');
+    const cities = [{id: 'kobe', name: '神戸市', kana: 'こうべし', programs: [support('a')]},
+      ...Array.from({length: 24}, (_, i) => ({id: 'city-' + i, name: '甲市' + i, kana: 'かし' + i, programs: []})),
+      {id: 'akashi', name: '明石市', kana: 'あかしし', programs: []}];
+    pending.shift().resolve({cities}); await flush();
+    assert.equal(Element.activeElement, get('city-search'), 'loaded prefecture focuses the city search');
+    assert.equal(get('city').children.length, 27, 'native city state retains all choices');
+    assert.equal(get('city-results').children.length, 12, 'city buttons render one bounded page');
+    assert.match(get('city-count').textContent, /26件中 1〜12件/);
+    get('city-more').emit('click');
+    assert.match(get('city-count').textContent, /13〜24件/);
+    assert.equal(Element.activeElement, get('city-count'), 'pagination announces the result range');
+    assert.equal(get('city-results').children.length, 12);
+    get('city-more').emit('click');
+    assert.equal(get('city-results').children.length, 2);
+    assert.equal(get('city-more').hidden, true);
+    get('city-prev').emit('click');
+    assert.match(get('city-count').textContent, /13〜24件/);
+    get('city-search').value = 'ｺｳﾍﾞ'; get('city-search').emit('input');
+    assert.match(get('city-count').textContent, /1件中 1〜1件/);
+    button('city-results', '神戸市').emit('click');
+    assert.equal(get('city').value, 'kobe');
+    assert.equal(get('picker-body').hidden, true);
+    assert.match(get('picker-summary').textContent, /兵庫県 神戸市/);
+    assert.equal(Element.activeElement, get('picker-summary'), 'selected city summary receives focus outside the closed picker');
+    assert.equal(get('picker-toggle').attributes['aria-expanded'], 'false');
+    const choice = {program: support('a'), ready: 'held'};
+    api.selected.set('a', choice); get('out-support').value = 'a';
+    get('out-cost').value = '100'; get('out-normal-cost').value = '500';
+    get('out-confirmed').checked = true; get('monthly-confirmed').checked = true;
+    const preservesPlan = () => {
+      assert.equal(api.selected.get('a'), choice, 'browsing must preserve selected support and readiness');
+      assert.equal(get('out-support').value, 'a');
+      assert.equal(get('out-cost').value, '100');
+      assert.equal(get('out-normal-cost').value, '500');
+      assert.equal(get('out-confirmed').checked, true);
+      assert.equal(get('monthly-confirmed').checked, true);
+    };
+    get('picker-toggle').emit('click'); preservesPlan();
+    assert.equal(get('picker-body').hidden, false);
+    get('city-reset').emit('click'); preservesPlan();
+    button('city-initials', 'あ行').emit('click'); preservesPlan();
+    assert.equal(get('city-results').children.length, 1);
+    assert.equal(get('city-results').children[0].textContent, '明石市');
+    get('city-search').value = '甲'; get('city-search').emit('input'); preservesPlan();
+    assert.equal(get('city-results').children.length, 12, 'typing clears the previous kana filter');
+    get('city-more').emit('click'); preservesPlan();
+    button('region-options', '関東').emit('click'); preservesPlan();
+    button('region-options', '近畿').emit('click'); preservesPlan();
+    button('pref-options', '兵庫県').emit('click'); preservesPlan();
+    get('city-search').value = '見つからない市'; get('city-search').emit('input'); preservesPlan();
+    assert.equal(get('city-results').children.length, 0);
+    assert.match(get('city-count').textContent, /見つかりません/);
+    get('city-reset').emit('click');
+    button('city-results', '神戸市').emit('click'); preservesPlan();
+    get('picker-toggle').emit('click');
+    button('city-initials', 'あ行').emit('click');
+    button('city-results', '明石市').emit('click');
+    assert.equal(api.selected.size, 0, 'changing the actual municipality clears its support selections');
+    assert.equal(get('out-cost').value, '');
+    assert.equal(get('out-normal-cost').value, '');
+    assert.equal(get('monthly-confirmed').checked, false);
+    api.selected.set('a', choice); get('out-support').value = 'a'; get('out-cost').value = '100';
+    get('picker-toggle').emit('click'); button('pref-options', '京都府').emit('click');
+    assert.equal(api.selected.size, 0, 'changing the actual prefecture clears its support selections');
+    assert.equal(get('out-cost').value, '');
+    pending.shift().resolve({cities: []}); await flush();
+    get('picker-clear').emit('click');
+    assert.equal(get('pref').value, '');
+    assert.equal(get('city').disabled, true);
+    assert.equal(get('city-search').disabled, true);
+    assert.equal(get('picker-body').hidden, false);
+  }
+  console.log('Planner behavior tests passed: unknown/zero, readiness, combination totals, reset events, stale requests, fare comparisons, monthly limits, kana search, paged region choices and browsing-state preservation.');
 }
 run().catch(error => { console.error(error); process.exitCode = 1; });
