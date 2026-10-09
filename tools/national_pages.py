@@ -65,6 +65,9 @@ def finalize(path, relative, legacy_ids, draft):
             related['data-related-support'] = ''
         soup.body.append(BeautifulSoup(b.ACTION_SCRIPT, 'html.parser'))
     apply_site_header(soup, base=base, home=relative == 'index.html')
+    if relative == 'index.html':
+        from colorful_home import apply_colorful_home
+        apply_colorful_home(soup)
     path.write_text(str(soup), encoding='utf-8')
 
 
@@ -72,7 +75,7 @@ def render(out, draft=False):
     out = Path(out)
     import shutil
     (out/'assets').mkdir(exist_ok=True)
-    for name in ('site-header.css', 'site-header.js'):
+    for name in ('site-header.css', 'site-header.js', 'colorful-home.css', 'family-home-color.webp', 'town-mobility-home.webp'):
         if (b.ROOT/'assets'/name).resolve() != (out/'assets'/name).resolve():
             shutil.copy2(b.ROOT/'assets'/name, out/'assets'/name)
     dataset = json.loads((b.ROOT/'data/municipality-supplements.json').read_text())
