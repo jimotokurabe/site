@@ -7,6 +7,7 @@ import sys
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import build as b
+from site_header import apply_site_header
 
 
 def finalize(path, relative, legacy_ids, draft):
@@ -63,11 +64,17 @@ def finalize(path, relative, legacy_ids, draft):
         if related:
             related['data-related-support'] = ''
         soup.body.append(BeautifulSoup(b.ACTION_SCRIPT, 'html.parser'))
+    apply_site_header(soup, base=base, home=relative == 'index.html')
     path.write_text(str(soup), encoding='utf-8')
 
 
 def render(out, draft=False):
     out = Path(out)
+    import shutil
+    (out/'assets').mkdir(exist_ok=True)
+    for name in ('site-header.css', 'site-header.js'):
+        if (b.ROOT/'assets'/name).resolve() != (out/'assets'/name).resolve():
+            shutil.copy2(b.ROOT/'assets'/name, out/'assets'/name)
     dataset = json.loads((b.ROOT/'data/municipality-supplements.json').read_text())
     paths = {row['key']:row['key'].replace(':', '-menkyo-henno/')+'.html' for row in dataset['municipalities']}
     targets = ['index.html', *sorted({key.split(':')[0]+'-menkyo-henno.html' for key in paths}), *paths.values()]
