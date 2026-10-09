@@ -2938,6 +2938,13 @@ def main():
         "about.html": about_page(a.draft),
         "privacy.html": privacy_page(a.draft),
     }
+    from warm_guides import apply_warm_guide
+    pages[BASIC_GUIDE_PATH] = apply_warm_guide(pages[BASIC_GUIDE_PATH])
+    pages[HANASHI_PATH] = apply_warm_guide(pages[HANASHI_PATH], family=True)
+    if out.resolve() != ROOT:
+        (out / 'assets').mkdir(exist_ok=True)
+        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js'):
+            shutil.copy(ROOT / 'assets' / asset, out / 'assets' / asset)
     # 下書きの県（pref.draft が true）は、検索に出さず、サイトマップとトップにも載せない
     hidden = set()
     for d in [data, *others]:
@@ -2990,6 +2997,9 @@ def main():
                 (art / name).parent.mkdir(parents=True, exist_ok=True)
                 (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
+        (art / 'assets').mkdir(exist_ok=True)
+        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js'):
+            shutil.copy(ROOT / 'assets' / asset, art / 'assets' / asset)
         if any(d.get('bus') for d in prefs):
             (art / 'assets').mkdir(exist_ok=True)
             shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
