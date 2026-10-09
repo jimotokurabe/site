@@ -176,3 +176,23 @@ body.outing-page {
 .outing-retained-conditions summary { min-height: 48px; padding-block: .5rem; cursor: pointer; }
 .outing-retained-conditions dd { margin: .2rem 0 1rem; white-space: pre-wrap; overflow-wrap: anywhere; }
 @media print { .outing-retained-conditions > * { display: block !important; } }
+/* Before/after costs share the same round trip and monthly frequency. */
+.outing-field[hidden] { display: none !important; }
+.outing-monthly { margin-top: 1.5rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: 10px; background: #f6f4e9; }
+.outing-monthly h3 { font-size: 1.1rem; margin-top: 0; }
+.outing-monthly input[type="number"] { max-width: 12rem; }
+.outing-comparison { margin-block: 1.5rem; }
+.outing-comparison[hidden] { display: none !important; }
+.outing-comparison h3 { font-size: 1.1rem; line-height: 1.7; margin: .4rem 0 1rem; }
+.outing-comparison-state { display: inline-block; margin: 0; padding: .3rem .65rem; font-size: .8rem; font-weight: 700; background: #f6edcc; color: #58481f; border-radius: 5px; }
+.outing-compare-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .75rem; }
+.outing-compare-card { border: 1px solid #d5cdb5; border-radius: 10px; background: #faf4e3; padding: 1rem; }
+.outing-compare-card:nth-child(2) { border-color: #adc9b6; background: #e8f2ea; }
+.outing-compare-card h4 { font-size: .95rem; margin: 0; line-height: 1.6; }
+.outing-compare-card .outing-note { margin: 1rem 0 .2rem; }
+.outing-compare-amount, .outing-compare-month { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); overflow-wrap: anywhere; }
+.outing-compare-amount { font-size: clamp(1.15rem, 2vw, 1.65rem); line-height: 1.5; margin: 0; }
+.outing-compare-month { font-size: 1.12rem; margin: 0; }
+.outing-compare-difference { padding: .7rem .9rem; border-left: 4px solid #285b40; background: #eff4eb; font-weight: 700; }
+@media(max-width:640px) { .outing-compare-grid { grid-template-columns: minmax(0,1fr); } .outing-monthly { padding: .9rem; } }
+@media print { .outing-compare-grid { display: grid; grid-template-columns: 1fr 1fr; } .outing-compare-card { break-inside: avoid; border: .5pt solid black; } .outing-comparison-state { border: .5pt solid black; } }

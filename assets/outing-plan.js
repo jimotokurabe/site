@@ -11,18 +11,18 @@
   const shown = id => value(id) || '未確認';
   const mode = key => value(key + '-mode') === 'まだ決めていない' ? '未定' : value(key + '-mode');
   const yen = number => number.toLocaleString('ja-JP') + '円';
-  function cost(key) {
-    const input = $(key + '-cost');
-    return input.value !== '' && input.validity.valid ? Number(input.value) : null;
+  function amount(id, max = 1000000, min = 0) {
+    const input = $(id), number = Number(input.value);
+    return input.value.trim() !== '' && input.validity.valid && Number.isInteger(number) && number >= min && number <= max ? number : null;
   }
-  function costText(key) { const amount = cost(key); return amount === null ? '未確認' : yen(amount); }
+  function cost(key) { return amount(key + '-cost'); }
+  function costText(key) { const number = cost(key); return number === null ? '未確認' : yen(number); }
   function validateCosts() {
-    for (const key of ['out', 'back']) {
-      const input = $(key + '-cost');
+    const ids = ['out-cost', 'back-cost', 'monthly-trips', ...legs.filter(key => programForLeg(key)).map(key => key + '-normal-cost')];
+    for (const id of ids) {
+      const input = $(id);
       if (!input.validity.valid) {
-        showStep(1);
-        input.reportValidity();
-        return false;
+        showStep(1); input.reportValidity(); return false;
       }
     }
     return true;
@@ -37,6 +37,7 @@
       if (i === index) node.setAttribute('aria-current', 'step');
       else node.removeAttribute('aria-current');
     });
+    if (index === 1) refreshComparison();
     $('step-' + index).focus();
   }
   // Only public municipality/program identifiers are read from the URL.
@@ -82,6 +83,7 @@
     for (const [key, label] of [['out', '行き'], ['back', '帰り']]) {
       const choice = programForLeg(key);
       $(key + '-confirmed-wrap').hidden = !choice;
+      $(key + '-normal-wrap').hidden = !choice;
       $(key + '-cost-label').textContent = label + (choice ? 'の自己負担額（円）' : 'の交通費（円）');
       $(key + '-support-help').textContent = choice
         ? readiness[choice.ready] + '。' + (choice.ready === 'held' ? '今回の路線・目的で使えるかも確認しましょう。' : '使えるようになった場合の仮の計画として残します。')
@@ -89,9 +91,13 @@
     }
     $('combination').hidden = !distinctSupports();
     if (resetCombination || !distinctSupports()) $('combination-confirmed').checked = false;
+    if (resetCombination) resetMonthly();
+    refreshComparison();
   }
   function clearLeg(key) {
     $(key + '-cost').value = '';
+    $(key + '-normal-cost').value = '';
+    resetMonthly();
     $(key + '-confirmed').checked = false;
   }
   function refreshSupportOptions() {
@@ -239,9 +245,13 @@
   for (const key of legs) {
     $(key + '-support').addEventListener('change', () => { clearLeg(key); updateLegs(true); });
     $(key + '-mode').addEventListener('change', () => { clearLeg(key); updateLegs(true); });
-    for (const field of ['cost', 'time']) $(key + '-' + field).addEventListener('input', () => { $(key + '-confirmed').checked = false; });
+    $(key + '-normal-cost').addEventListener('input', resetMonthly);
+    for (const field of ['cost', 'time']) $(key + '-' + field).addEventListener('input', () => { $(key + '-confirmed').checked = false; resetMonthly(); });
   }
+  $('monthly-trips').addEventListener('input', resetMonthly);
+  $('combination-confirmed').addEventListener('change', resetMonthly);
   function invalidateTrip() {
+    resetMonthly();
     for (const key of legs) $(key + '-confirmed').checked = false;
     $('combination-confirmed').checked = false;
   }
@@ -249,8 +259,73 @@
   document.querySelectorAll('input[name="purpose"]').forEach(input => input.addEventListener('change', invalidateTrip));
   initSupports();
 
+  function normalCost(key) {
+    return programForLeg(key) ? amount(key + '-normal-cost') : cost(key);
+  }
+  function comparison() {
+    const enabled = legs.some(key => !!programForLeg(key));
+    const provisional = legs.some(key => !legConfirmed(key));
+    const count = amount('monthly-trips', 100, 1);
+    const sum = values => values.every(n => n !== null) ? values.reduce((a, b) => a + b, 0) : null;
+    const normal = sum(legs.map(normalCost));
+    const blocked = distinctSupports() && !$('combination-confirmed').checked;
+    const planned = blocked ? null : sum(legs.map(cost));
+    const monthlyPending = enabled && !$('monthly-confirmed').checked;
+    const monthlyNormal = count !== null && normal !== null ? count * normal : null;
+    const monthlyPlanned = count !== null && planned !== null && !monthlyPending ? count * planned : null;
+    const difference = enabled && normal !== null && planned !== null ? normal - planned : null;
+    const monthlyDifference = enabled && monthlyNormal !== null && monthlyPlanned !== null ? monthlyNormal - monthlyPlanned : null;
+    return {enabled, provisional, count, normal, planned, monthlyNormal, monthlyPlanned, difference, monthlyDifference, blocked, monthlyPending};
+  }
+  function differenceText(number) {
+    return number === null ? '未確認' : number === 0 ? '差額なし' : yen(Math.abs(number)) + (number > 0 ? '少ない' : '多い');
+  }
+  function comparisonFields(c) {
+    const monthlyMissing = c.count === null ? '回数が未入力・無効' : c.blocked ? '併用条件が未確認' : c.monthlyPending ? '券の残数・利用上限等が未確認' : '費用が未確認';
+    return [
+      ['計画の状態', c.provisional || c.blocked ? '申請・条件確認後の仮の計画' : '利用準備を確認した計画（本人の入力）'],
+      ['通常の往復費用（1人）', c.normal === null ? '未確認' : yen(c.normal)],
+      ['支援利用後の往復費用（1人）', c.blocked ? '併用条件が未確認のため合計しません' : c.planned === null ? '未確認' : yen(c.planned)],
+      ['1回の往復の差額', differenceText(c.difference)],
+      ['月の往復回数', c.count === null ? '未確認' : c.count + '回'],
+      ['通常の月額', c.monthlyNormal === null ? '未確認' : yen(c.monthlyNormal)],
+      ['支援利用後の月額', c.monthlyPlanned === null ? monthlyMissing : yen(c.monthlyPlanned)],
+      ['月の差額', differenceText(c.monthlyDifference)],
+      ['試算の範囲', '同じ往復を同じ料金で繰り返す交通費のみ。パスの購入・更新費や申請費などは含みません。実際の支給額や利用資格を保証するものではありません。']
+    ];
+  }
+  function renderComparison(target, c, isResult = false) {
+    target.replaceChildren(); target.hidden = isResult && !c.enabled;
+    if (!c.enabled) {
+      if (!isResult) target.append(node('p', '支援を片道に指定すると、通常の費用と比べられます。', 'outing-note'));
+      return;
+    }
+    target.append(node('p', c.provisional || c.blocked ? '申請・条件確認後の仮の計画' : '利用準備を確認した計画（本人の入力）', 'outing-comparison-state'), node('h3', '同じお出かけ、費用はどう変わる？'));
+    const grid = node('div', undefined, 'outing-compare-grid');
+    for (const [label, round, month, planned] of [['支援を使わない場合', c.normal, c.monthlyNormal, false], ['支援を使う場合', c.planned, c.monthlyPlanned, true]]) {
+      const card = node('section', undefined, 'outing-compare-card');
+      card.append(node('h4', label), node('p', '1人・1回の往復', 'outing-note'), node('p', round === null ? '未確認' : yen(round), 'outing-compare-amount'));
+      if (planned && c.blocked) card.append(node('p', '併用条件が未確認のため合計しません', 'outing-note'));
+      card.append(node('p', c.count === null ? '月の目安' : '月' + c.count + '回の目安', 'outing-note'));
+      card.append(node('p', month === null ? '未確認' : yen(month), 'outing-compare-month'));
+      grid.append(card);
+    }
+    target.append(grid);
+    if (c.difference !== null) target.append(node('p', '1回の往復：' + differenceText(c.difference) + (c.monthlyDifference !== null ? ' ／ 月：' + differenceText(c.monthlyDifference) : ''), 'outing-compare-difference'));
+    if (c.monthlyPending && c.count !== null) target.append(node('p', '支援利用後の月額は、券の残数・利用上限・有効期限を確認すると表示します。', 'outing-note'));
+    target.append(node('p', '入力した交通費だけの比較です。パスの購入・更新費や申請費などは含みません。', 'outing-note'));
+  }
+  function resetMonthly() { $('monthly-confirmed').checked = false; }
+  function refreshComparison() {
+    const c = comparison();
+    $('monthly-confirmed-wrap').hidden = !c.enabled;
+    $('monthly-limit-help').hidden = !c.enabled;
+    renderComparison($('comparison-preview'), c);
+  }
+
   function collect() {
     const purpose = document.querySelector('input[name="purpose"]:checked');
+    const comparisonData = comparison();
     const outCost = cost('out'), backCost = cost('back');
     const combinationPending = distinctSupports() && !$('combination-confirmed').checked;
     const provisional = legs.some(key => !legConfirmed(key));
@@ -261,6 +336,7 @@
       const fields = [['交通', mode(key)], ['時間・乗り場', shown(key + '-time')],
         ['使う支援', choice ? choice.program.name : '指定なし'],
         [choice ? (legConfirmed(key) ? '入力した自己負担額' : '仮の自己負担額') : '片道の交通費', costText(key)]];
+      if (choice) fields.push(['支援を使わない場合の片道費用', normalCost(key) === null ? '未確認' : yen(normalCost(key))]);
       if (choice) fields.push(['支援利用の確認', legConfirmed(key) ? '準備・片道の条件と費用を本人が確認済み' : '申請・今回の利用条件などを確認してから使う計画']);
       return [index === 0 ? '行き' : '帰り', fields];
     });
@@ -281,18 +357,23 @@
       if (ready !== 'held') checks.push(program.name + '：対象条件と申請・交付の準備を確認する');
       else checks.push(program.name + '：必要なパス・券などの持ち物と有効期限・残数を確認する');
     }
+    if (comparisonData.enabled) {
+      if (comparisonData.normal === null) checks.push('比較する通常の交通費を、同じ交通・区間・条件で確認する');
+      if (comparisonData.count !== null && comparisonData.monthlyPending) checks.push('月の回数すべてで使える券の残数・利用上限・有効期限を確認する');
+    }
     if (supportProblem) checks.push(supportProblem);
     if (loadingSupports) checks.push('地域の支援情報が読み込み中のため、読み込み後に支援を選び直す');
     if ($('booking').selectedIndex === 0 || $('booking').selectedIndex === 2) checks.push('行きと帰りの予約・送迎のお願いを確認する');
     if (!value('backup')) checks.push('雨の日・予定が変わったときの代案を考える');
     checks.push('出発前に運行日・時刻・運賃をもう一度確かめる');
     const prefName = indexData?.prefectures.find(pref => pref.id === value('pref'))?.name;
-    return {purpose: purpose ? purpose.value : '未定', place: shown('place'), day: shown('day'), region: cityData ? prefName + ' ' + cityData.name : '指定なし', groups, checks};
+    return {purpose: purpose ? purpose.value : '未定', place: shown('place'), day: shown('day'), region: cityData ? prefName + ' ' + cityData.name : '指定なし', groups, checks, comparison: comparisonData};
   }
   function render() {
     const plan = collect();
     $('result-destination').textContent = plan.region + ' ／ ' + plan.purpose + ' ／ ' + plan.place + ' ／ ' + plan.day;
     $('result-route').textContent = '家 → ' + plan.place + ' → 家';
+    renderComparison($('result-comparison'), plan.comparison, true);
     const container = $('result-details');
     container.replaceChildren();
     for (const [title, fields] of plan.groups) {
@@ -338,6 +419,7 @@
     for (const [title, fields] of plan.groups) {
       lines.push('', '【' + title + '】', ...fields.map(([label, text]) => label + '：' + text));
     }
+    if (plan.comparison.enabled) lines.push('', '【交通費の比較】', ...comparisonFields(plan.comparison).map(([label, text]) => label + '：' + text));
     if (selected.size) {
       lines.push('', '【検討する支援と準備】');
       for (const {program, ready} of selected.values()) {
@@ -392,5 +474,8 @@
     printHidden = null;
     document.querySelectorAll('#outing-result .outing-retained-conditions').forEach(details => { details.open = false; });
   });
+  $('form').addEventListener('input', refreshComparison);
+  $('form').addEventListener('change', refreshComparison);
+  refreshComparison();
   app.hidden = false;
 })();

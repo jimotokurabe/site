@@ -51,8 +51,17 @@ def outing_plan_page(shell, draft=False):
 <section class="outing-step" data-step="1" aria-labelledby="outing-step-1" hidden>
   <h2 class="outing-step-title" id="outing-step-1" tabindex="-1">行きも、帰りも。</h2>
   <p class="outing-note">交通費は1人・片道分。支援を使う場合は、自分で確かめた支払額を入力します。無料と確認できたら「0」を入れてください。</p>
+  <p class="outing-note" id="outing-normal-help">通常の費用も、同じ交通・区間・条件で確かめた金額を入力します。</p>
   <div class="outing-legs">__LEGS__</div>
   <div id="outing-combination" class="outing-caution" hidden><strong>別の支援を行き・帰りに使う計画です</strong><p>片道ずつでも、同時に利用・交付を受けられない制度があります。</p><label class="outing-check-label"><input type="checkbox" id="outing-combination-confirmed"><span>この2つの支援を併用できる条件を窓口で確認した</span></label><p class="outing-note">未確認の間は、往復の支援利用後の合計を出しません。</p></div>
+  <section class="outing-monthly" aria-labelledby="outing-monthly-title">
+    <h3 id="outing-monthly-title">月に何回、出かけますか？</h3>
+    <label class="outing-field">同じ往復のお出かけ回数（月）<input id="outing-monthly-trips" type="number" min="1" max="100" step="1" inputmode="numeric" placeholder="例：4" aria-describedby="outing-monthly-help"></label>
+    <p class="outing-note" id="outing-monthly-help">1回は「行き＋帰り」。同じ交通・料金で出かける回数です。月額を比べない場合は空欄で進めます。</p>
+    <label class="outing-check-label" id="outing-monthly-confirmed-wrap" hidden><input type="checkbox" id="outing-monthly-confirmed"><span>この回数すべてで支援を使えることを、券の残数・利用上限・有効期限まで確認した</span></label>
+    <p class="outing-note" id="outing-monthly-limit-help" hidden>申請前は、交付後の想定で確認します。未確認の間は、支援利用後の月額を出しません。</p>
+  </section>
+  <section id="outing-comparison-preview" class="outing-comparison" aria-label="入力した交通費の比較"></section>
   <p class="outing-note">運行日・帰りの便・予約の要否は、利用する交通の公式案内で確認しましょう。</p>
   <div class="outing-actions"><button type="button" class="outing-secondary" data-back>← 地域・行き先へ</button><button type="button" class="outing-primary" data-next>準備を確認する →</button></div>
 </section>
@@ -68,6 +77,7 @@ def outing_plan_page(shell, draft=False):
 <section class="outing-result" id="outing-result" aria-labelledby="outing-result-title" hidden>
   <div class="outing-ticket"><header><p class="outing-kicker">家族と確認する、お出かけメモ</p><h2 id="outing-result-title" tabindex="-1">ひとつの外出から、試してみよう。</h2><p id="outing-result-destination"></p></header>
   <p class="outing-summary-route" id="outing-result-route"></p>
+  <section id="outing-result-comparison" class="outing-comparison" aria-label="交通費の比較" hidden></section>
   <div class="outing-result-grid" id="outing-result-details"></div>
   <section id="outing-result-supports" class="outing-result-supports" hidden></section>
   <section><h3>あとで確認すること</h3><ul class="outing-checks" id="outing-result-checks"></ul></section>
@@ -90,6 +100,7 @@ def outing_plan_page(shell, draft=False):
         <label class="outing-field">{label}の時間・乗り場<input id="outing-{key}-time" type="text" maxlength="120" placeholder="{hint}"></label>
         <label class="outing-field">{label}に使う支援<select id="outing-{key}-support"><option value="">支援を指定しない</option></select></label>
         <p id="outing-{key}-support-help" class="outing-note">支援を使う場合は、最初の画面で選べます。</p>
+        <label class="outing-field" id="outing-{key}-normal-wrap" hidden>{label}の通常の交通費（円）<input id="outing-{key}-normal-cost" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="支援を使わない場合" aria-describedby="outing-normal-help"></label>
         <label class="outing-field"><span id="outing-{key}-cost-label">{label}の交通費（円）</span><input id="outing-{key}-cost" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="未確認"></label>
         <label class="outing-check-label" id="outing-{key}-confirmed-wrap" hidden><input type="checkbox" id="outing-{key}-confirmed"><span>この片道で使える条件・自己負担額を確認した</span></label>
         </fieldset>''')
@@ -111,8 +122,8 @@ def outing_plan_page(shell, draft=False):
     boot = soup.new_tag('script')
     boot.string = "try{document.documentElement.classList.toggle('large',sessionStorage.getItem('jk-national-size')==='large')}catch(e){}"
     soup.head.append(boot)
-    soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261009-supports'))
+    soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261009-comparison'))
     apply_site_header(soup)
-    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261009-supports'):
+    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261009-comparison'):
         soup.body.append(soup.new_tag('script', src=src, defer=True))
     return str(soup)
