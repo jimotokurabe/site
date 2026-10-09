@@ -384,6 +384,8 @@ def render_hand(source,pid,c,d,a):
 
 def build_all(root:Path,out:Path,draft:bool=False)->dict:
     from seo_content import make_city_content
+    from warm_city import apply_warm_city
+    import shutil
     root=Path(root);out=Path(out);out.mkdir(parents=True,exist_ok=True)
     reference=Path(__file__).resolve().parent/'templates'/'national'
     kobe=BeautifulSoup((reference/'hyogo-kobe.txt').read_text(encoding='utf-8'),'html.parser')
@@ -396,6 +398,9 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
     (assets/'national-city.css').write_text(base_css+css_add,encoding='utf-8')
     js=city_js(kobe.find_all('script')[-1].string)
     (assets/'national-city.js').write_text(js,encoding='utf-8')
+    for name in ('warm-shared.css', 'warm-city.css', 'warm-experience.js', 'family-guide.webp'):
+        if (root/'assets'/name).resolve() != (assets/name).resolve():
+            shutil.copy2(root/'assets'/name, assets/name)
     prefs,bus,taxi,supp,mobility=gather(root)
     indexed={(pid,c['slug']):(c,d) for pid,d in prefs.items() for c in d['cities']}
     wanted=[tuple(row['key'].split(':')) for row in supp['municipalities']]
@@ -422,6 +427,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
             extra_heading.name='h3'
         soup.select_one('.hero').insert_after(BeautifulSoup(content['intro_html'],'html.parser'))
         soup.head.append(soup.new_tag('link',rel='stylesheet',href='../assets/seo.css'))
+        apply_warm_city(soup)
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:
