@@ -5,7 +5,7 @@ from warm_components import family_dialog
 
 def apply_warm_city(soup):
     for filename in ('warm-shared.css', 'warm-city.css'):
-        soup.head.append(soup.new_tag('link', rel='stylesheet', href='../assets/' + filename))
+        soup.head.append(soup.new_tag('link', rel='stylesheet', href='../assets/' + filename + ('?v=conversation-20261009' if filename == 'warm-shared.css' else '')))
     layout = soup.select_one('.layout')
     content = layout.select_one('.content')
     nav = layout.select_one('.side')
@@ -33,5 +33,5 @@ def apply_warm_city(soup):
         share.string = '家族に共有するメモを作る'
         family.append(share)
     layout.append(sidebar)
-    soup.body.append(BeautifulSoup(family_dialog(), 'html.parser'))
-    soup.body.append(soup.new_tag('script', src='../assets/warm-experience.js', defer=True))
+    soup.body.append(BeautifulSoup(family_dialog(base='../'), 'html.parser'))
+    soup.body.append(soup.new_tag('script', src='../assets/warm-experience.js?v=conversation-20261009', defer=True))
