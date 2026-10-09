@@ -196,3 +196,22 @@ body.outing-page {
 .outing-compare-difference { padding: .7rem .9rem; border-left: 4px solid #285b40; background: #eff4eb; font-weight: 700; }
 @media(max-width:640px) { .outing-compare-grid { grid-template-columns: minmax(0,1fr); } .outing-monthly { padding: .9rem; } }
 @media print { .outing-compare-grid { display: grid; grid-template-columns: 1fr 1fr; } .outing-compare-card { break-inside: avoid; border: .5pt solid black; } .outing-comparison-state { border: .5pt solid black; } }
+/* A short regional choice, then a searchable list of up to twelve places. */
+.outing-picked { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-block: 1rem; }
+.outing-picked p { flex: 1 1 100%; margin: 0; font-weight: 700; color: var(--accent); }
+.outing-picked button { font-size: .82rem; padding: .5rem .8rem; }
+.outing-region-buttons, .outing-place-buttons { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .55rem; margin-block: .8rem 1.2rem; }
+.outing-region-buttons button, .outing-place-buttons button, .outing-kana-buttons button { background: #fffefb; color: var(--accent); text-align: left; border-color: #b7cbbd; padding: .7rem .65rem; }
+.outing-region-buttons button:nth-child(4n+1) { background: #e1f0e8; }
+.outing-region-buttons button:nth-child(4n+2) { background: #e6eff7; }
+.outing-region-buttons button:nth-child(4n+3) { background: #faf0d3; }
+.outing-region-buttons button:nth-child(4n) { background: #f6e6dd; }
+.outing-local button[aria-pressed="true"] { background: #285b40; border-color: #285b40; color: #fffefb; }
+.outing-place-buttons button small { display: block; font-size: .75rem; font-weight: 400; line-height: 1.6; margin-top: .2rem; }
+.outing-kana-buttons { display: flex; flex-wrap: wrap; gap: .4rem; }
+.outing-kana-buttons button { font-size: .8rem; text-align: center; min-width: 48px; padding: .5rem; }
+.outing-city-pages { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.outing-city-pages button { font-size: .82rem; }
+#outing-city-picker { border-top: 1px solid var(--line); padding-top: 1rem; }
+.outing-local [hidden] { display: none !important; }
+@media(max-width:380px) { .outing-region-buttons { grid-template-columns: minmax(0,1fr); } }

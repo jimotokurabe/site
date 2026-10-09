@@ -29,7 +29,22 @@ def outing_plan_page(shell, draft=False):
   <section class="outing-local" aria-labelledby="outing-local-title">
     <h3 id="outing-local-title">住んでいる市町村を選ぶ</h3>
     <p class="outing-note">お出かけする本人の地域です。支援を選ばずに進めることもできます。</p>
-    <div class="outing-region-fields"><label class="outing-field">都道府県<select id="outing-pref" disabled><option value="">読み込み中…</option></select></label><label class="outing-field">市町村<select id="outing-city" disabled><option value="">都道府県を選んでください</option></select></label></div>
+    <div class="outing-picked"><p id="outing-picker-summary" tabindex="-1">地域はまだ選んでいません</p><button type="button" id="outing-picker-toggle" class="outing-secondary" aria-expanded="true" aria-controls="outing-picker-body" hidden>地域を変更</button><button type="button" id="outing-picker-clear" class="outing-secondary" hidden>選択を解除</button></div>
+    <div id="outing-picker-body">
+      <h4>地方から都道府県を選ぶ</h4>
+      <div id="outing-region-options" class="outing-region-buttons" aria-label="地方"></div>
+      <div id="outing-pref-options" class="outing-place-buttons" aria-label="都道府県"></div>
+      <section id="outing-city-picker" hidden aria-labelledby="outing-city-picker-title">
+        <h4 id="outing-city-picker-title">市町村を選ぶ</h4>
+        <label class="outing-field">市町村名で絞り込む<input id="outing-city-search" type="search" maxlength="40" placeholder="例：西宮、にしのみや" aria-describedby="outing-city-search-help" disabled></label>
+        <p id="outing-city-search-help" class="outing-note">漢字・ひらがな・カタカナで探せます。</p>
+        <div id="outing-city-initials" class="outing-kana-buttons" aria-label="市町村の頭文字"></div>
+        <p id="outing-city-count" class="outing-note" role="status" tabindex="-1"></p>
+        <div id="outing-city-results" class="outing-place-buttons" aria-label="市町村の候補"></div>
+        <div class="outing-city-pages"><button type="button" id="outing-city-prev" class="outing-secondary" hidden>← 前の12件</button><button type="button" id="outing-city-more" class="outing-secondary" hidden>次の12件 →</button><button type="button" id="outing-city-reset" class="outing-secondary" hidden>絞り込みを解除</button></div>
+      </section>
+    </div>
+    <select id="outing-pref" hidden aria-hidden="true" tabindex="-1" disabled><option value="">読み込み中…</option></select><select id="outing-city" hidden aria-hidden="true" tabindex="-1" disabled><option value="">都道府県を選んでください</option></select>
     <p id="outing-support-status" class="outing-note" role="status"></p><button type="button" id="outing-support-retry" class="outing-secondary" hidden>支援情報を読み直す</button>
     <div id="outing-support-area" hidden>
       <div class="outing-local-heading"><h4>計画に入れて考える支援</h4><a id="outing-city-link" target="_blank" rel="noopener">地域の詳しい条件 ↗</a></div>
@@ -122,8 +137,8 @@ def outing_plan_page(shell, draft=False):
     boot = soup.new_tag('script')
     boot.string = "try{document.documentElement.classList.toggle('large',sessionStorage.getItem('jk-national-size')==='large')}catch(e){}"
     soup.head.append(boot)
-    soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261009-comparison'))
+    soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261009-picker'))
     apply_site_header(soup)
-    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261009-comparison'):
+    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261009-picker'):
         soup.body.append(soup.new_tag('script', src=src, defer=True))
     return str(soup)

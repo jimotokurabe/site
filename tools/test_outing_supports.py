@@ -79,15 +79,25 @@ class OutingSupportTests(unittest.TestCase):
 
     def test_empty_city_retained_and_writer_reusable(self):
         d = {'pref': {'id': 'hyogo', 'name': '兵庫県'}, 'checked': '2026-10-06',
-             'cities': [{'slug': 'kobe', 'n': '神戸市'}]}
+             'cities': [{'slug': 'kobe', 'n': '神戸市', 'y': 'こうべし'}]}
         gathered = ({'hyogo': d}, {}, {}, {'records': {}}, {})
         with patch('outing_supports.gather', return_value=gathered), tempfile.TemporaryDirectory() as directory:
             index, prefs = write_catalog('.', directory)
-            self.assertEqual(index['prefectures'][0]['cities'], [{'id': 'kobe', 'name': '神戸市'}])
+            self.assertEqual(index['prefectures'][0]['region'], '近畿')
+            self.assertEqual(index['prefectures'][0]['cities'], [{'id': 'kobe', 'name': '神戸市', 'kana': 'こうべし'}])
             city = prefs['hyogo']['cities'][0]
+            self.assertEqual(city['kana'], 'こうべし')
             self.assertEqual(city['programs'], [])
             self.assertEqual(city['page'], 'hyogo-menkyo-henno/kobe.html')
             self.assertEqual(json.loads((Path(directory) / 'assets/outing-supports/hyogo.json').read_text()), prefs['hyogo'])
+
+    def test_missing_city_reading_is_retained_as_empty(self):
+        d = {'pref': {'id': 'hyogo', 'name': '兵庫県'}, 'checked': '2026-10-06',
+             'cities': [{'slug': 'kobe', 'n': '神戸市'}]}
+        with patch('outing_supports.gather', return_value=({'hyogo': d}, {}, {}, {'records': {}}, {})):
+            index, prefs = catalog('.')
+        self.assertEqual(index['prefectures'][0]['cities'][0]['kana'], '')
+        self.assertEqual(prefs['hyogo']['cities'][0]['kana'], '')
 
     def test_exact_heading_and_section_fallback_links(self):
         p = program('hyogo', 'kobe', 'bus', self.bus(), '2026-10-06')
@@ -140,6 +150,14 @@ class OutingSupportTests(unittest.TestCase):
         self.assertEqual(len(index['prefectures']), 47)
         self.assertEqual([p['id'] for p in index['prefectures'][:3]], ['hokkaido', 'aomori', 'iwate'])
         self.assertEqual(index['prefectures'][-1]['id'], 'okinawa')
+        from build import REGIONS
+        regions = {pid: label for label, ids in REGIONS for pid in ids}
+        for pref in index['prefectures']:
+            self.assertEqual(pref['region'], regions[pref['id']])
+            detailed = {city['id']: city for city in prefs[pref['id']]['cities']}
+            for city in pref['cities']:
+                self.assertEqual(city['kana'], detailed[city['id']]['kana'])
+                self.assertIsInstance(city['kana'], str)
         for pref in prefs.values():
             for city in pref['cities']:
                 self.assertTrue((root / city['page']).is_file(), city['page'])

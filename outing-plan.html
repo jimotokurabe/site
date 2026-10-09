@@ -27,7 +27,7 @@ if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ
 
 <link href="site.css?v=726f970cbea4" rel="stylesheet"/>
 
-<script>try{document.documentElement.classList.toggle('large',sessionStorage.getItem('jk-national-size')==='large')}catch(e){}</script><link href="assets/outing-plan.css?v=20261009-comparison" rel="stylesheet"/><link href="assets/site-header.css" rel="stylesheet"/></head>
+<script>try{document.documentElement.classList.toggle('large',sessionStorage.getItem('jk-national-size')==='large')}catch(e){}</script><link href="assets/outing-plan.css?v=20261009-picker" rel="stylesheet"/><link href="assets/site-header.css" rel="stylesheet"/></head>
 <body class="outing-page">
 <a class="skip" href="#main">本文へ移動</a>
 <div class="wrap">
@@ -62,7 +62,22 @@ if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ
 <section aria-labelledby="outing-local-title" class="outing-local">
 <h3 id="outing-local-title">住んでいる市町村を選ぶ</h3>
 <p class="outing-note">お出かけする本人の地域です。支援を選ばずに進めることもできます。</p>
-<div class="outing-region-fields"><label class="outing-field">都道府県<select disabled="" id="outing-pref"><option value="">読み込み中…</option></select></label><label class="outing-field">市町村<select disabled="" id="outing-city"><option value="">都道府県を選んでください</option></select></label></div>
+<div class="outing-picked"><p id="outing-picker-summary" tabindex="-1">地域はまだ選んでいません</p><button aria-controls="outing-picker-body" aria-expanded="true" class="outing-secondary" hidden="" id="outing-picker-toggle" type="button">地域を変更</button><button class="outing-secondary" hidden="" id="outing-picker-clear" type="button">選択を解除</button></div>
+<div id="outing-picker-body">
+<h4>地方から都道府県を選ぶ</h4>
+<div aria-label="地方" class="outing-region-buttons" id="outing-region-options"></div>
+<div aria-label="都道府県" class="outing-place-buttons" id="outing-pref-options"></div>
+<section aria-labelledby="outing-city-picker-title" hidden="" id="outing-city-picker">
+<h4 id="outing-city-picker-title">市町村を選ぶ</h4>
+<label class="outing-field">市町村名で絞り込む<input aria-describedby="outing-city-search-help" disabled="" id="outing-city-search" maxlength="40" placeholder="例：西宮、にしのみや" type="search"/></label>
+<p class="outing-note" id="outing-city-search-help">漢字・ひらがな・カタカナで探せます。</p>
+<div aria-label="市町村の頭文字" class="outing-kana-buttons" id="outing-city-initials"></div>
+<p class="outing-note" id="outing-city-count" role="status" tabindex="-1"></p>
+<div aria-label="市町村の候補" class="outing-place-buttons" id="outing-city-results"></div>
+<div class="outing-city-pages"><button class="outing-secondary" hidden="" id="outing-city-prev" type="button">← 前の12件</button><button class="outing-secondary" hidden="" id="outing-city-more" type="button">次の12件 →</button><button class="outing-secondary" hidden="" id="outing-city-reset" type="button">絞り込みを解除</button></div>
+</section>
+</div>
+<select aria-hidden="true" disabled="" hidden="" id="outing-pref" tabindex="-1"><option value="">読み込み中…</option></select><select aria-hidden="true" disabled="" hidden="" id="outing-city" tabindex="-1"><option value="">都道府県を選んでください</option></select>
 <p class="outing-note" id="outing-support-status" role="status"></p><button class="outing-secondary" hidden="" id="outing-support-retry" type="button">支援情報を読み直す</button>
 <div hidden="" id="outing-support-area">
 <div class="outing-local-heading"><h4>計画に入れて考える支援</h4><a id="outing-city-link" rel="noopener" target="_blank">地域の詳しい条件 ↗</a></div>
@@ -189,5 +204,5 @@ if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ
   });
 })();
 </script>
-<script defer="True" src="assets/site-header.js"></script><script defer="True" src="assets/warm-guides.js"></script><script defer="True" src="assets/outing-plan.js?v=20261009-comparison"></script></body>
+<script defer="True" src="assets/site-header.js"></script><script defer="True" src="assets/warm-guides.js"></script><script defer="True" src="assets/outing-plan.js?v=20261009-picker"></script></body>
 </html>
