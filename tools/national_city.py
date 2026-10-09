@@ -386,6 +386,7 @@ def build_all(root:Path,out:Path,draft:bool=False)->dict:
     from seo_content import make_city_content
     from warm_city import apply_warm_city
     from visual_city import apply_visual_city
+    from outing_supports import write_catalog, city_links
     import shutil
     root=Path(root);out=Path(out);out.mkdir(parents=True,exist_ok=True)
     reference=Path(__file__).resolve().parent/'templates'/'national'
@@ -403,6 +404,8 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         if (root/'assets'/name).resolve() != (assets/name).resolve():
             shutil.copy2(root/'assets'/name, assets/name)
     prefs,bus,taxi,supp,mobility=gather(root)
+    _, outing_catalog = write_catalog(root, out)
+    outing_cities = {(pid, city["id"]): city for pid, pref in outing_catalog.items() for city in pref["cities"]}
     indexed={(pid,c['slug']):(c,d) for pid,d in prefs.items() for c in d['cities']}
     wanted=[tuple(row['key'].split(':')) for row in supp['municipalities']]
     assert len(wanted)==1741 and len(set(wanted))==1741
@@ -430,6 +433,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         soup.head.append(soup.new_tag('link',rel='stylesheet',href='../assets/seo.css'))
         apply_warm_city(soup)
         apply_visual_city(soup, a)
+        city_links(soup, pid, slug, outing_cities.get((pid, slug)))
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:

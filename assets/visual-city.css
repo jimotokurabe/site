@@ -84,3 +84,7 @@
 @media print{.visual-program-picture{display:none}}
 /* Keep fragment destinations paintable when a page opens directly at a section. */
 .content>.block{overflow:visible}
+/* Carry this municipality's recorded support into a personal outing memo. */
+a.outing-support-cta { display: inline-flex; align-items: center; min-height: 48px; max-width: 100%; margin: .8rem 0; padding: .65rem .9rem; border: 1px solid #285b40; border-radius: 8px; background: #e8f2ea; color: #285b40; font-weight: 700; font-size: .9rem; text-decoration: none; overflow-wrap: anywhere; }
+a.outing-support-cta:focus-visible { outline: 3px solid #285b40; outline-offset: 3px; }
+@media print { a.outing-support-cta { display: none; } }

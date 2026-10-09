@@ -3002,6 +3002,8 @@ def main():
         (art / 'assets').mkdir(exist_ok=True)
         for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js'):
             shutil.copy(ROOT / 'assets' / asset, art / 'assets' / asset)
+        from outing_supports import write_catalog
+        write_catalog(ROOT, art)
         if any(d.get('bus') for d in prefs):
             (art / 'assets').mkdir(exist_ok=True)
             shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
