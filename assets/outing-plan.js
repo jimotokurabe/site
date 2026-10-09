@@ -22,7 +22,9 @@
     for (const id of ids) {
       const input = $(id);
       if (!input.validity.valid) {
-        showStep(1); input.reportValidity(); return false;
+        showStep(1);
+        if (id === 'monthly-trips') input.closest('details').open = true;
+        input.reportValidity(); return false;
       }
     }
     return true;
@@ -37,7 +39,7 @@
       if (i === index) node.setAttribute('aria-current', 'step');
       else node.removeAttribute('aria-current');
     });
-    if (index === 1) refreshComparison();
+    if (index === 1) { refreshComparison(); updateTripContext(); }
     $('step-' + index).focus();
   }
   // Only public municipality/program identifiers are read from the URL.
@@ -53,6 +55,23 @@
     if (className) el.className = className;
     return el;
   };
+  const purposeHints = {
+    '通院': '診察が長引いても帰れるか。帰りの別の便や、タクシーの呼び方も確認しましょう。',
+    '買い物': '荷物を持って帰れるか。帰りだけバスやタクシーにする方法も考えられます。',
+    '趣味・人に会う': '帰りたい時間に便があるか。最終便や、遅くなったときの帰り方を確認しましょう。',
+    'その他': '用事が終わる時間に帰れるか。乗り場まで歩く道も含めて考えましょう。'
+  };
+  function purposeHint() {
+    const purpose = document.querySelector('input[name="purpose"]:checked');
+    return purposeHints[purpose?.value] || '行きと帰りは違う交通でも大丈夫。分からないところは空欄にして、調べることとして残せます。';
+  }
+  function updateTripContext() {
+    $('trip-context').textContent = '家 → ' + (value('place') || '行きたい場所') + ' → 家';
+    $('trip-hint').textContent = purposeHint();
+  }
+  document.querySelectorAll('input[name="purpose"]').forEach(input => input.addEventListener('change', () => {
+    $('purpose-hint').textContent = purposeHint();
+  }));
   function option(value, text) { const el = node('option', text); el.value = value; return el; }
   function safeLink(url, label) {
     const link = node('a', label);
@@ -82,12 +101,14 @@
   function updateLegs(resetCombination = false) {
     for (const [key, label] of [['out', '行き'], ['back', '帰り']]) {
       const choice = programForLeg(key);
+      $(key + '-support-field').hidden = !selected.size;
+      $(key + '-support-help').hidden = !selected.size;
       $(key + '-confirmed-wrap').hidden = !choice;
       $(key + '-normal-wrap').hidden = !choice;
       $(key + '-cost-label').textContent = label + (choice ? 'の自己負担額（円）' : 'の交通費（円）');
       $(key + '-support-help').textContent = choice
         ? readiness[choice.ready] + '。' + (choice.ready === 'held' ? '今回の路線・目的で使えるかも確認しましょう。' : '使えるようになった場合の仮の計画として残します。')
-        : (selected.size ? '選んだ支援から、この片道で使うものを指定できます。' : '支援を使う場合は、最初の画面で選べます。');
+        : (selected.size ? '選んだ支援から、この片道で使うものを指定できます。' : '支援を使う場合は、この画面の「バス助成・タクシー支援も調べる」を開いてください。');
     }
     $('combination').hidden = !distinctSupports();
     if (resetCombination || !distinctSupports()) $('combination-confirmed').checked = false;
@@ -196,6 +217,8 @@
     $('picker-summary').textContent = cityData ? '選択中：' + pref.name + ' ' + cityData.name : pref ? pref.name + 'の市町村を選んでください' : '地域はまだ選んでいません';
     $('picker-toggle').hidden = !cityData;
     $('picker-clear').hidden = !pref;
+    $('inherited-region').hidden = !cityData;
+    $('inherited-region').textContent = cityData ? cityData.name + 'の地域情報は、次の「往復・費用」で確認できます。' : '';
   }
   function renderPrefChoices(region) {
     browsedRegion = region;
@@ -319,6 +342,7 @@
       if (pref && indexData.prefectures.some(item => item.id === pref)) {
         $('pref').value = pref; renderPrefChoices(indexData.prefectures.find(item => item.id === pref).region || 'その他');
         await setPref(pref, params.get('city'), params.get('support'));
+        $('local-disclosure').open = true;
       } else if (pref || params.has('city') || params.has('support')) {
         supportProblem = '引き継ぐ地域・支援を選び直す';
         $('support-status').textContent = '指定された地域を引き継げませんでした。都道府県から選んでください。';
@@ -386,9 +410,13 @@
     ];
   }
   function renderComparison(target, c, isResult = false) {
-    target.replaceChildren(); target.hidden = isResult && !c.enabled;
+    target.replaceChildren(); target.hidden = !c.enabled && c.count === null;
     if (!c.enabled) {
-      if (!isResult) target.append(node('p', '支援を片道に指定すると、通常の費用と比べられます。', 'outing-note'));
+      if (c.count !== null) {
+        target.append(node('h3', 'この往復を続けた場合の交通費'));
+        target.append(node('p', '月' + c.count + '回：' + (c.monthlyPlanned === null ? '未確認（片道の費用が空欄です）' : yen(c.monthlyPlanned)), 'outing-compare-difference'));
+        target.append(node('p', '入力した1人分の往復交通費 × 月の回数。同じ交通・料金で出かける想定です。', 'outing-note'));
+      }
       return;
     }
     target.append(node('p', c.provisional || c.blocked ? '申請・条件確認後の仮の計画' : '利用準備を確認した計画（本人の入力）', 'outing-comparison-state'), node('h3', '同じお出かけ、費用はどう変わる？'));
@@ -409,6 +437,7 @@
   function resetMonthly() { $('monthly-confirmed').checked = false; }
   function refreshComparison() {
     const c = comparison();
+    $('normal-help').hidden = !c.enabled;
     $('monthly-confirmed-wrap').hidden = !c.enabled;
     $('monthly-limit-help').hidden = !c.enabled;
     renderComparison($('comparison-preview'), c);
@@ -436,7 +465,6 @@
     groups.push(['費用と準備', preparation]);
     const checks = [];
     if (!value('place')) checks.push('行き先を決める');
-    if (!value('day')) checks.push('出かける日・曜日を決める');
     for (const [key, label] of [['out', '行き'], ['back', '帰り']]) {
       if (mode(key) === '未定') checks.push(label + 'の交通を決める');
       if (!value(key + '-time')) checks.push(label + 'の時間・乗り場を調べる');
@@ -456,14 +484,24 @@
     if (loadingSupports) checks.push('地域の支援情報が読み込み中のため、読み込み後に支援を選び直す');
     if ($('booking').selectedIndex === 0 || $('booking').selectedIndex === 2) checks.push('行きと帰りの予約・送迎のお願いを確認する');
     if (!value('backup')) checks.push('雨の日・予定が変わったときの代案を考える');
+    if (!value('day')) checks.push('日程が決まったら、その曜日・時間の便が使えるか確認する');
     checks.push('出発前に運行日・時刻・運賃をもう一度確かめる');
     const prefName = indexData?.prefectures.find(pref => pref.id === value('pref'))?.name;
-    return {purpose: purpose ? purpose.value : '未定', place: shown('place'), day: shown('day'), region: cityData ? prefName + ' ' + cityData.name : '指定なし', groups, checks, comparison: comparisonData};
+    return {purpose: purpose ? purpose.value : '未定', place: shown('place'), day: value('day') || '日程はこれから相談', region: cityData ? prefName + ' ' + cityData.name : '指定なし', groups, checks, comparison: comparisonData};
   }
   function render() {
     const plan = collect();
-    $('result-destination').textContent = plan.region + ' ／ ' + plan.purpose + ' ／ ' + plan.place + ' ／ ' + plan.day;
-    $('result-route').textContent = '家 → ' + plan.place + ' → 家';
+    $('result-destination').textContent = [plan.region !== '指定なし' ? 'お住まい：' + plan.region : '', plan.purpose !== '未定' ? plan.purpose : '', plan.place, plan.day].filter(Boolean).join(' ／ ');
+    $('result-route').textContent = '家 → ' + (value('place') || '行き先はこれから相談') + ' → 家';
+    $('result-next').textContent = plan.checks[0];
+    const overview = [
+      ['往復の方法', legs.every(key => mode(key) !== '未定') ? mode('out') + 'で行き、' + mode('back') + 'で帰る案' : 'まだ決めていない交通があります'],
+      ['1人の往復費用', plan.groups[2][1][0][1] + (plan.comparison.provisional && plan.comparison.planned !== null ? '（仮の費用）' : '')],
+      ['予約・送迎', value('booking') || 'まだ未確認']
+    ];
+    $('result-overview').replaceChildren(...overview.map(([label, text]) => {
+      const card = node('section'); card.append(node('h3', label), node('p', text)); return card;
+    }));
     renderComparison($('result-comparison'), plan.comparison, true);
     const container = $('result-details');
     container.replaceChildren();
@@ -506,11 +544,12 @@
       }
       supportResult.append(extra);
     }
-    const lines = ['車なしのお出かけ計画', '本人の地域：' + plan.region, '目的：' + plan.purpose, '行き先：' + plan.place, '日・曜日：' + plan.day];
+    const lines = ['車なしで通うための検討メモ', 'まず確認すること：' + plan.checks[0], '本人の地域：' + plan.region, '目的：' + plan.purpose, '行き先：' + plan.place, '利用する日・時間の目安：' + plan.day];
     for (const [title, fields] of plan.groups) {
       lines.push('', '【' + title + '】', ...fields.map(([label, text]) => label + '：' + text));
     }
     if (plan.comparison.enabled) lines.push('', '【交通費の比較】', ...comparisonFields(plan.comparison).map(([label, text]) => label + '：' + text));
+    else if (plan.comparison.count !== null) lines.push('', '【続けた場合の交通費】', '月' + plan.comparison.count + '回：' + (plan.comparison.monthlyPlanned === null ? '未確認' : yen(plan.comparison.monthlyPlanned)), '入力した1人分の往復交通費 × 月の回数。同じ交通・料金で出かける想定です。');
     if (selected.size) {
       lines.push('', '【検討する支援と準備】');
       for (const {program, ready} of selected.values()) {
@@ -521,7 +560,7 @@
       lines.push('', '【地域の補足・追加の条件】');
       for (const item of cityData.supplements) lines.push(item.label + '：' + item.text, item.source, '確認日：' + (item.checked || '記載なし'));
     }
-    lines.push('', '【あとで確認すること】', ...plan.checks.map(text => '・' + text), '', '入力内容をまとめたメモです。運行・予約・運賃は利用前に公式案内で確認してください。', 'じもとくらべ https://jimotokurabe.jp/outing-plan.html');
+    lines.push('', '【調べること・出発前に確かめること】', ...plan.checks.map(text => '・' + text), '', '入力内容をまとめたメモです。運行・予約・運賃は利用前に公式案内で確認してください。', 'じもとくらべ https://jimotokurabe.jp/outing-plan.html');
     $('memo').value = lines.join('\n');
     $('status').textContent = '';
   }
@@ -544,7 +583,7 @@
     try {
       if (!navigator.clipboard) throw new Error('clipboard unavailable');
       await navigator.clipboard.writeText($('memo').value);
-      $('status').textContent = '計画をコピーしました。メモなどに貼り付けて使えます。';
+      $('status').textContent = '検討メモをコピーしました。家族との相談や、交通・支援の窓口への確認に使えます。';
     } catch (error) {
       document.querySelector('.outing-memo').open = true;
       $('memo').focus(); $('memo').select();
