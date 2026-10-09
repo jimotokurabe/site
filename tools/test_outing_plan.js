@@ -41,24 +41,82 @@ function fixture() {
     return elements.get(name);
   };
   const progress = new Element(); progress.children = [new Element(), new Element(), new Element()];
+  const purposes = ['通院', '買い物', '趣味・人に会う', 'その他'].map(value => {
+    const input = new Element('input'); input.value = value; return input;
+  });
+  const next = new Element('button');
   const pending = [];
   const context = vm.createContext({URL, URLSearchParams, Map, Set, console,
     location: {href: 'https://jimotokurabe.jp/outing-plan.html', search: ''}, navigator: {},
     window: {addEventListener() {}, print() {}},
     document: {getElementById: get, createElement: tag => new Element(tag),
-      querySelector: selector => selector === '.outing-progress' ? progress : null,
-      querySelectorAll: selector => selector === '[data-step]' ? [new Element(), new Element(), new Element()] : []},
+      querySelector: selector => selector === '.outing-progress' ? progress : selector === 'input[name="purpose"]:checked' ? purposes.find(input => input.checked) || null : null,
+      querySelectorAll: selector => selector === '[data-step]' ? [new Element(), new Element(), new Element()] : selector === 'input[name="purpose"]' ? purposes : selector === '[data-next]' ? [next] : []},
     fetch: url => new Promise((resolve, reject) => pending.push({url, resolve: data => resolve({ok: true, json: async () => data}), reject}))});
   const script = fs.readFileSync(path.join(__dirname, '../assets/outing-plan.js'), 'utf8')
     .replace('  app.hidden = false;', '  globalThis.testApi = {collect, setPref, setCity, selected, amount, normalCost, comparison, normalizePlace, cityMatches, cityInitial, renderCityChoices, setIndex(data) {indexData = data;}}; app.hidden = false;');
   vm.runInContext(script, context);
   for (const key of ['out', 'back']) get('outing-' + key + '-mode').value = 'まだ決めていない';
-  return {get: id => get('outing-' + id), api: context.testApi, pending};
+  return {get: id => get('outing-' + id), api: context.testApi, pending, purposes, next};
 }
 const support = id => ({id, name: '支援' + id, type: 'bus', selectable: true, details: [], sources: [], checked: '2026-10-06'});
 const flush = () => new Promise(resolve => setImmediate(resolve));
 
 async function run() {
+  {
+    const {get, api} = fixture();
+    get('monthly-trips').value = '4';
+    get('out-cost').value = '200'; get('back-cost').value = '300';
+    get('finish').emit('click');
+    assert.equal(api.comparison().enabled, false, 'ordinary monthly planning requires no support');
+    assert.equal(api.comparison().planned, 500);
+    assert.equal(api.comparison().monthlyPlanned, 2000);
+    assert.equal(get('result-overview').children[1].children[1].textContent, '500円');
+    assert.equal(get('result-comparison').hidden, false);
+    assert.equal(get('result-comparison').children[1].textContent, '月4回：2,000円');
+    assert.ok(get('memo').value.includes('月4回：2,000円'), 'copy retains the same ordinary monthly total');
+    get('back-cost').value = ''; get('finish').emit('click');
+    assert.equal(api.comparison().monthlyPlanned, null);
+    assert.match(get('result-comparison').children[1].textContent, /未確認/);
+    assert.ok(get('memo').value.includes('月4回：未確認'), 'missing fare must not be treated as free');
+    get('out-cost').value = '0'; get('back-cost').value = '0'; get('finish').emit('click');
+    assert.equal(get('result-comparison').children[1].textContent, '月4回：0円');
+    assert.ok(get('memo').value.includes('月4回：0円'));
+    get('monthly-trips').value = ''; get('finish').emit('click');
+    assert.equal(get('result-comparison').hidden, true, 'monthly section is optional');
+    assert.ok(!get('memo').value.includes('【続けた場合の交通費】'));
+  }
+  {
+    const {get, api, purposes, next} = fixture();
+    const destination = '<img src=x onerror=alert(1)>病院';
+    get('place').value = destination;
+    for (const [purpose, hint] of [['通院', /診察が長引いても/], ['買い物', /荷物を持って/], ['趣味・人に会う', /最終便/]]) {
+      purposes.forEach(input => { input.checked = input.value === purpose; });
+      purposes.find(input => input.checked).emit('change');
+      assert.match(get('purpose-hint').textContent, hint, 'purpose change explains the relevant return-trip concern');
+    }
+    next.emit('click');
+    assert.equal(get('trip-context').textContent, '家 → ' + destination + ' → 家');
+    assert.match(get('trip-hint').textContent, /最終便/);
+    assert.equal(get('trip-context').children.length, 0, 'destination remains text, not HTML');
+    get('out-mode').value = 'バス'; get('back-mode').value = 'タクシー';
+    get('out-time').value = '9時の便'; get('back-time').value = '診察後に呼ぶ';
+    get('out-cost').value = '0';
+    let plan = api.collect();
+    assert.equal(plan.day, '日程はこれから相談');
+    assert.equal(plan.checks[0], '帰りの交通費を確認する', 'undecided date does not block concrete transport planning');
+    assert.ok(plan.checks.includes('日程が決まったら、その曜日・時間の便が使えるか確認する'));
+    get('finish').emit('click');
+    assert.equal(get('result-next').textContent, plan.checks[0]);
+    assert.ok(get('memo').value.includes('まず確認すること：' + plan.checks[0]));
+    assert.ok(get('memo').value.includes('行き先：' + destination));
+    assert.equal(get('result-route').textContent, '家 → ' + destination + ' → 家');
+    const overview = get('result-overview').children;
+    assert.equal(overview[0].children[1].textContent, 'バスで行き、タクシーで帰る案');
+    assert.match(overview[1].children[1].textContent, /未確認/);
+    get('back-cost').value = '0'; get('finish').emit('click');
+    assert.equal(get('result-overview').children[1].children[1].textContent, '0円', 'explicit zero survives the result overview');
+  }
   {
     const {api} = fixture();
     const city = {name: '神戸市', kana: 'こうべし'};
