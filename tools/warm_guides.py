@@ -59,6 +59,7 @@ def warm_basic(soup):
         nav.append(fragment(f'<a href="{href}"><svg viewBox="0 0 32 32" aria-hidden="true">{drawing}</svg><span class="guide-overview-label">0{n}　{label}</span><strong>{text}</strong><span aria-hidden="true">↓</span></a>').a)
     hero.append(nav)
     hero.append(fragment('<p class="guide-caution">返納が完了した後は運転できません。手続き当日の帰り道も先に決めましょう。</p>').p)
+    hero.append(fragment('<p class="guide-planner-link"><a href="outing-plan.html">車なしのお出かけ計画を作る →</a></p>').p)
     region = soup.select_one('#region').extract()
     hero.insert_after(region)
     region.select_one('#basic-region-h').string = 'お住まいの手続き・特典を探す'
@@ -91,6 +92,7 @@ def warm_family(soup):
     hero.append(intro)
     hero.append(fragment(family_hero()).div)
     hero.append(fragment('<p class="guide-family-note">返納を決める前に、これからの移動を一緒に考えるための道具です。</p>').p)
+    hero.append(fragment('<p class="guide-family-note"><a href="outing-plan.html">話した後は、車なしのお出かけ計画を作る →</a></p>').p)
     stats_fold = fragment('<details class="guide-fold guide-stat"><summary>全国の返納状況と出典</summary></details>').details
     stats_fold.append(stats)
     hero.append(stats_fold)
