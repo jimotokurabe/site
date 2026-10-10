@@ -8,9 +8,58 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import build as b
 from site_header import apply_site_header
+from seo_markup import apply as apply_seo_markup
+
+SIBLINGS_EACH_SIDE = 4
 
 
-def finalize(path, relative, legacy_ids, draft):
+def pref_orders(paths):
+    """県ごとの市町村の並び（各県の返納データの順）。公開ページがあるものだけ。"""
+    orders = {}
+    for key in paths:
+        pid = key.split(':')[0]
+        if pid in orders:
+            continue
+        data = json.loads((b.ROOT/f'data/{pid}-menkyo-henno.json').read_text(encoding='utf-8'))
+        orders[pid] = (data['pref'], [(c['slug'], c['n']) for c in data['cities']
+                                      if f"{pid}:{c['slug']}" in paths])
+    return orders
+
+
+def siblings_section(soup, relative, orders):
+    """同じ県のほかの市町村へのリンク。隣接は確かめていないので「近く」とは書かない。"""
+    if '-menkyo-henno/' not in relative:
+        return
+    pid, slug = relative.split('-menkyo-henno/')
+    slug = slug.removesuffix('.html')
+    pref, cities = orders.get(pid, (None, []))
+    slugs = [c[0] for c in cities]
+    if slug not in slugs or len(cities) < 2:
+        return
+    i = slugs.index(slug)
+    n = len(cities)
+    picks = []
+    for offset in range(1, SIBLINGS_EACH_SIDE + 1):
+        for j in (i - offset, i + offset):
+            c = cities[j % n]
+            if c[0] != slug and c not in picks:
+                picks.append(c)
+    picks = picks[:SIBLINGS_EACH_SIDE * 2] if n > SIBLINGS_EACH_SIDE * 2 else [c for c in cities if c[0] != slug]
+    picks.sort(key=lambda c: slugs.index(c[0]))
+    unit = pref.get('unit', '市町村')
+    html = (f'<section class="block siblings" id="siblings" aria-labelledby="siblings-title">'
+            f'<h2 id="siblings-title">{b.e(pref["name"])}のほかの{b.e(unit)}</h2>'
+            f'<p class="note">制度は{b.e(unit)}ごとにちがいます。同じ{b.e(pref["name"])}のページを続けて確認できます。</p>'
+            '<ul>' + ''.join(f'<li><a href="{b.e(s)}.html">{b.e(name)}</a></li>' for s, name in picks) + '</ul>'
+            f'<p><a class="all" href="../{pid}-menkyo-henno.html">{b.e(pref["name"])}の{b.e(unit)}の一覧へ</a></p></section>')
+    for old in soup.select('#siblings'):
+        old.decompose()
+    target = soup.select_one('.content') or soup.main
+    if target is not None:
+        target.append(BeautifulSoup(html, 'html.parser'))
+
+
+def finalize(path, relative, legacy_ids, draft, orders=None):
     soup = BeautifulSoup(path.read_text(encoding='utf-8'), 'html.parser')
     base = '../' if '/' in relative else ''
     description = soup.select_one('meta[name="description"]')['content']
@@ -68,6 +117,8 @@ def finalize(path, relative, legacy_ids, draft):
     if relative == 'index.html':
         from colorful_home import apply_colorful_home
         apply_colorful_home(soup)
+    siblings_section(soup, relative, orders or {})
+    apply_seo_markup(soup, relative)
     path.write_text(str(soup), encoding='utf-8')
 
 
@@ -88,8 +139,9 @@ def render(out, draft=False):
     subprocess.run([sys.executable, str(b.ROOT/'tools/national_navigation.py'), '--root', str(b.ROOT), '--out', str(out)], check=True)
     from national_city import build_all
     result = build_all(b.ROOT, out, draft=draft)
+    orders = pref_orders(paths)
     for relative in targets:
-        finalize(out/relative, relative, old_ids[relative], draft)
+        finalize(out/relative, relative, old_ids[relative], draft, orders)
     (out/'enriched-pages.json').write_text(json.dumps(paths, ensure_ascii=False, indent=2), encoding='utf-8')
     if not draft:
         ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'

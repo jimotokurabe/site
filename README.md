@@ -24,6 +24,8 @@ GitHub Pages（main ブランチの直下）で公開しています。
 | `docs/mobility-data.md` | 全国検索の元データ、地域交通の掲載範囲、追加手順 |
 | `menkyo-henno-guide.html` | 免許返納の基本ガイド。警察庁の全国共通の説明と、都道府県警察・市町村別ページへの入口。`tools/build.py` から生成する |
 | `guide-city-data/*.json` | 基本ガイドで都道府県を選んだときに読み込む市町村データ。`tools/build.py` から生成する |
+| `tools/seo_markup.py` | 生成したページに、共有画像（`og:image`）と構造化データ（パンくず・冒頭の質問と回答・サイト名）を足す。本文に見えている内容だけを使う。`tools/build.py` と `tools/national_pages.py` から呼ぶ |
+| `assets/og-image.png`、`tools/og_image.py` | LINE・X などでリンクを貼ったときに出る共有画像（1200×630）と、それを作る道具。日本語フォントのファイルが要るので、ふだんの build では作り直さない |
 | `tools/build.py` | データからページを作るスクリプト |
 | `tools/check_guide.js`、`tools/check_links.py` | 手順ページをブラウザで開いて確かめる道具と、ページのリンクが開けるかを確かめる道具 |
 | `GUIDES.md` | 手順ページを作る順番と作り方 |
