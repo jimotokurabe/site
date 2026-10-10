@@ -94,6 +94,8 @@ def finalize(path, relative, legacy_ids, draft, orders=None):
     if footer:
         footer.append(copy.copy(shell.footer.nav))
         footer.append(copy.copy(shell.footer.find('p')))
+    # 「ほかの市町村」は、古い id の照合より前に足す（照合後に足すと id が二重になる）
+    siblings_section(soup, relative, orders or {})
     # Keep pre-existing deep links working when sections move into city pages.
     ids = {node['id'] for node in soup.select('[id]')}
     for old_id in sorted(legacy_ids - ids):
@@ -117,7 +119,6 @@ def finalize(path, relative, legacy_ids, draft, orders=None):
     if relative == 'index.html':
         from colorful_home import apply_colorful_home
         apply_colorful_home(soup)
-    siblings_section(soup, relative, orders or {})
     apply_seo_markup(soup, relative)
     path.write_text(str(soup), encoding='utf-8')
 

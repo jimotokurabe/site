@@ -278,12 +278,34 @@ def overview(a):
     rows=[('benefit','免許返納の特典',short(return_condition),return_text),('support','バス助成・敬老パス',short(bus_condition),bus_text),('taxi','タクシー支援',short(taxi_condition),taxi_text),('rides','通院・買い物の足',short(ride_condition),ride_text)]
     return '<section class="intro" aria-labelledby="overview-title"><div class="section-head"><h2 id="overview-title">まずは、支援の見取り図</h2><p>項目を選ぶと、条件・申請先へ進みます。</p></div><ul class="overview">'+''.join(f'<li><a href="#{i}"><strong>{e(label)}</strong><span class="condition">{e(condition)}</span><span class="value">{e(short(value))}<small>掲載情報に基づく案内</small></span><span class="arrow" aria-hidden="true">↓</span></a></li>' for i,label,condition,value in rows)+'</ul></section>'
 
+def verify_steps(c,d,a):
+    """独自特典が見つからなかった市町村で、本人・家族が次に確かめる手順。
+    載せるのは、記録にある問い合わせ先・県共通の特典・県警の手続き・バスとタクシーの確認状況だけ（新しい事実は書かない）。"""
+    pref=d['pref'];unit=pref.get('unit','市町村');common=a.get('common',{});b=a.get('bus');t=a.get('taxi')
+    steps=[]
+    apply=c.get('apply');apply='、'.join(str(x) for x in apply) if isinstance(apply,list) else str(apply or '')
+    where=(e(c.get('apply_label') or '問い合わせ先')+'「'+e(apply)+'」') if apply and apply!='記載なし' else e(c['n'])+'の役所（高齢者福祉か交通の担当）'
+    steps.append('<li><strong>'+e(c['n'])+'に聞く</strong>　'+where+'に、運転免許を自主返納した人への'+e(unit)+'独自の支援があるか確かめます。'+('公式ページの確認日：'+e(a.get('return_checked') or '未記録')+'。' if a.get('return_checked') else '')+'</li>')
+    sw=a.get('statewide') or {}
+    if sw or common.get('tokuten'):
+        name=sw.get('title') or (common.get('tokuten') or {}).get('name') or pref['name']+'共通の特典'
+        steps.append('<li><strong>'+e(pref['name'])+'共通の特典を使う</strong>　'+e(name)+'は、'+e(unit)+'の制度とは別の案内です。<a href="#statewide">対象と使える店舗を確認 ↓</a></li>')
+    if common.get('hennou'):
+        steps.append('<li><strong>返納の手続きをする</strong>　'+e(common['hennou'].get('name') or pref.get('police','県警')+'の案内')+'の案内を、下の手順欄にまとめています。<a href="#procedure">手順と持ち物を確認 ↓</a></li>')
+    bus_state='未掲載' if not b else {'notfound':'掲載調査では未確認','active':'掲載あり','unknown':'要確認'}.get(b.get('status'),'詳細を確認')
+    taxi_state='未掲載' if not t else ('掲載調査では未確認' if t.get('k')=='notfound' else '掲載あり')
+    steps.append('<li><strong>返納を条件にしない支援も見る</strong>　高齢者向けのバス助成は'+e(bus_state)+'、タクシー支援は'+e(taxi_state)+'です。<a href="#support">バス ↓</a>・<a href="#taxi">タクシー ↓</a></li>')
+    return ('<div class="verify-steps" id="verify"><h3>'+e(c['n'])+'で返納の支援を確かめる手順</h3>'
+            '<p class="mini-note">掲載している記録と公式案内をもとにした手順です。制度は変わることがあるので、申請前に窓口でご確認ください。</p>'
+            '<ol>'+''.join(steps)+'</ol></div>')
+
 def render_generic(pid,c,d,a,prototype):
     checked=a['return_checked'];g=c.get('guide',{});b=a['bus'];t=a['taxi'];common=a['common']
     grouped=[p for p in unique(b.get('programs',[])) if aligned(c,p)] if b else []
     benefit='<p class="mini-note">市町村独自の支援と、都道府県共通の特典を分けて確認します。</p>'
     if c.get('k')=='notfound':
         benefit+='<div class="unknown"><h3>市町村独自の返納特典は、掲載調査では未確認</h3><p>制度がないと断定するものではありません。下の記録・県共通の支援と、公式窓口でご確認ください。</p></div>'
+        benefit+=verify_steps(c,d,a)
     if c.get('k')=='end':benefit+='<p class="important">受付を終了した特典の案内を含みます。終了・期限の案内をご確認ください。</p>'
     municipal=recursive(c,checked,skip=('guide',))+date_line(c,checked)
     if g.get('facts'):municipal+='<h4>市町村の手順案内に記載された条件</h4>'+recursive(g['facts'],g.get('checked') or checked)
@@ -394,6 +416,8 @@ def build_all(root:Path,out:Path,draft:bool=False)->dict:
     base_css=kobe.style.string
     css_add='''\n/* Nationwide city page extensions: records are readable at 320px. */
 button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.record-list a,.cross a{display:inline-flex;align-items:center;min-height:48px;max-width:100%;overflow-wrap:anywhere}.side a{min-height:48px}.hero-tools a{display:inline-flex;align-items:center;min-height:48px}p,li,dd{overflow-wrap:anywhere}.record-fields .record-fields{margin:0}.record-fields .record-fields>div{display:block;padding:10px 0}.record-fields .record-fields dt{margin-bottom:4px}.record-list{padding-left:22px}.record-list li{margin:10px 0}.subprogram{min-width:0}.mini-note{overflow-wrap:anywhere}.facts{min-width:0}.facts dd{min-width:0}.subprogram h4{margin-top:24px}
+.siblings ul{list-style:none;padding:0;margin:18px 0;display:flex;flex-wrap:wrap;gap:10px}.siblings li a{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border:1px solid var(--line);border-radius:999px;text-decoration:none}.siblings li a:hover{border-color:var(--link)}.siblings .all{display:inline-flex;align-items:center;min-height:48px}
+.verify-steps{border:1px solid var(--line);border-left:4px solid var(--link);border-radius:var(--radius);padding:20px 24px;margin:22px 0}.verify-steps h3{margin:0 0 8px;font-size:1.12rem}.verify-steps ol{margin:12px 0 0;padding-left:24px}.verify-steps li{margin:12px 0}.verify-steps li a{display:inline-flex;align-items:center;min-height:48px}
 @media(max-width:700px){.wrap{padding:0 16px}.city-switch a{flex:1 1 100%;white-space:normal}.brand{white-space:normal}.facts .facts>div{display:block}.record-list{padding-left:18px}.subprogram{padding-left:12px}.sources a,.facts a{word-break:break-word}.utilities{justify-content:flex-start;gap:8px}.utilities button{flex:1 1 auto}.mast{min-width:0}.hero h1{overflow-wrap:anywhere}}
 '''
     assets=out/'assets';assets.mkdir(parents=True,exist_ok=True)

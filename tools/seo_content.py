@@ -162,6 +162,15 @@ TITLE_OVERRIDES={
 }
 
 
+def notfound_parts(a,prefname):
+    """独自特典が見つからなかった市町村のページに、実際に載っているものだけを並べる。"""
+    c=a['return'];parts=[]
+    if a.get('statewide') or a.get('common',{}).get('tokuten'):parts.append(prefname+'共通の特典')
+    if a.get('common',{}).get('hennou'):parts.append('返納手続き')
+    if values(c.get('apply')) and '記載なし' not in values(c.get('apply')):parts.append('問い合わせ先')
+    return parts
+
+
 def title_content(pid,city,a):
     c=a['return'];state=c.get('k');b=a.get('bus');text=' '.join(values(c.get('what'))+values(c.get('amt')))
     key=(pid,city['slug'])
@@ -177,13 +186,15 @@ def title_content(pid,city,a):
         if re.search(pattern,text):labels.append(label)
     topic='・'.join(labels[:2])
     if state in ('end','notfound','none'):
-        prefix={'end':'免許返納支援の終了情報','notfound':'免許返納特典の確認','none':'免許返納の市町村独自特典なし'}[state]
+        prefix={'end':'免許返納支援の終了情報','notfound':'免許返納の支援','none':'免許返納の市町村独自特典なし'}[state]
+        prefname=a.get('prefname','')
         if b and b.get('status')=='active':
             regular=[p for p in b.get('programs',[]) if p.get('kind')!='henno']
             suffix='敬老パスの対象・条件' if any('敬老' in p.get('name','') and 'パス' in p.get('name','') for p in regular) else 'バス支援の対象・条件'
         elif a.get('statewide') or a.get('common',{}).get('tokuten'):
-            suffix='都道府県の支援情報'
-        else:suffix='手続きと支援情報'
+            # 独自特典が見つからなかった市町村は、ページに載っている県共通の特典・手続き・問い合わせ先を題名にする
+            suffix=('・'.join(notfound_parts(a,prefname))) if state=='notfound' and prefname else '都道府県の支援情報'
+        else:suffix=('・'.join(notfound_parts(a,prefname)) or '支援の確認状況') if state=='notfound' else '手続きと支援情報'
         content=prefix+'｜'+suffix
     elif state=='elder':content='免許返納と'+(topic or '高齢者支援')+'の条件'
     elif state=='discount':content='免許返納の割引｜'+(topic+'の条件' if topic else '対象・利用条件')
@@ -233,8 +244,8 @@ def render_question(q,index):
 
 
 def make_city_content(pid,city,pref_data,adopted):
-    a=adopted;key=(pid,city['slug']);c=a['return'];title,title_keys=title_content(pid,city,a)
-    prefname=pref_data['pref']['name']
+    a=adopted;key=(pid,city['slug']);c=a['return'];prefname=pref_data['pref']['name'];a['prefname']=prefname
+    title,title_keys=title_content(pid,city,a)
     title=title.replace(city['n']+'の',city['n']+'（'+prefname+'）の',1)
     questions=[return_question(city,a)]
     state=c.get('k')
@@ -246,7 +257,7 @@ def make_city_content(pid,city,pref_data,adopted):
     if tq and (not a.get('bus') or a['bus'].get('status')=='notfound'):
         bq=tq
         if c.get('k') in ('end','notfound','none'):
-            title=re.sub(r'｜(?:都道府県の支援情報|手続きと支援情報)｜じもとくらべ$', '｜タクシー支援の対象・条件｜じもとくらべ',title)
+            title=re.sub(r'｜(?:都道府県の支援情報|手続きと支援情報|.+共通の特典・返納手続き・問い合わせ先|返納手続き・問い合わせ先)｜じもとくらべ$', '｜タクシー支援の対象・条件｜じもとくらべ',title)
             title_keys.append('taxi')
     # Henno-only bus records repeat the same municipal benefit. Show their
     # distinction as one concise note on the first answer, not another overview.
@@ -288,7 +299,12 @@ def make_city_content(pid,city,pref_data,adopted):
     description=prefname+'の'+city['n']+'。'+topic+'を、掲載情報から確認できます。'
     status_line={'end':'終了した返納支援の案内を含みます。','notfound':'市町村独自の返納特典は掲載調査では確認できていません。',
                  'none':'市町村独自の返納特典がないとする公式案内を掲載しています。'}.get(state,'対象・申請期限・公式出典と確認日を掲載しています。')
-    description+=status_line
+    if state=='notfound':
+        # 何が載っているかを先に書く（独自特典の有無だけで終わらせない）
+        parts=notfound_parts(a,prefname);parts.insert(len(parts)-1 if '問い合わせ先' in parts else len(parts),'バス・タクシー支援の確認状況')
+        description=(prefname+'の'+city['n']+'。独自の返納特典は公式ページで確認できませんでした（確認日 '+str(a.get('return_checked') or '未記録')+'）。'
+                     +'・'.join(parts)+'を掲載しています。')
+    else:description+=status_line
     if a.get('bus') and a['bus'].get('status')=='unknown':description+='バス支援の現在の条件は要確認です。'
     intro='<aside class="search-answer" id="quick-answer" aria-labelledby="quick-answer-title"><h2 id="quick-answer-title">まず知っておきたいこと</h2><p class="answer-intro">掲載情報から、よくある疑問を確認できます。</p>'+''.join(render_question(q,i) for i,q in enumerate(questions))+'</aside>'
     audit={'key':pid+':'+city['slug'],'title':title,'title_evidence_keys':title_keys,'return_state':state,
