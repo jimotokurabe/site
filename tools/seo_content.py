@@ -152,13 +152,30 @@ def bus_question(a):
     return q
 
 
+# 2026-10-10 Search Console（9/25〜10/6）で表示が多くクリックが少なかった市の題名。
+# 実際の検索語（手続き・特典・タクシー・敬老パス）に合わせ、掲載記録にある制度名だけを使う。
 TITLE_OVERRIDES={
-    ('hyogo','kobe'):'免許返納のICOCA配布終了・県内割引と敬老パス',
-    ('kanagawa','yokohama'):'敬老パス｜通常の負担と免許返納者の無料交付条件',
-    ('hyogo','nishinomiya'):'免許返納特典｜市独自特典なし・県内割引とバス助成',
+    ('hyogo','kobe'):'免許返納特典｜ICOCA配布は終了・県内割引・敬老パスと返納手続き',
+    ('kanagawa','yokohama'):'免許返納特典と手続き｜敬老パス3年間無料の条件・県内割引',
+    ('hyogo','nishinomiya'):'免許返納特典｜市独自の特典はなし・県内割引と高齢者バス助成',
     ('hyogo','akashi'):'免許返納特典｜ICOCAか図書カード3,000円分・申請期限',
     ('hyogo','kawanishi'):'免許返納特典｜ICOCA・hanica・定期券支援の選択と条件',
+    ('hyogo','himeji'):'免許返納特典｜市独自の特典は未確認・県内割引と75歳以上のバス・タクシー優待',
+    ('hokkaido','sapporo'):'免許返納特典と手続き｜運転経歴証明書で協力店割引・敬老パス',
+    ('aichi','nagoya'):'免許返納特典｜マナカチャージ券5,000円分の対象・期間・申請方法',
+    ('shizuoka','hamamatsu'):'免許返納特典｜みをつくしバス半額・70歳以上のタクシー券・県内割引',
     ('kagoshima','kagoshima'):'免許返納者割引と敬老パス｜対象・負担・変更予定',
+}
+
+# 題名を手で決めた市の説明文。掲載記録に書かれている内容だけを、検索語に対する答えの順に並べる。
+DESCRIPTION_OVERRIDES={
+    ('kanagawa','yokohama'):'横浜市で運転免許を返納したときの特典と手続き。75歳以上で自主返納した人は敬老パスの交付負担が3年間無料（令和9年度以降は各年度の予算議決が条件）。返納の窓口と運転経歴証明書、神奈川県内で使える割引も掲載。敬老パスはバス・地下鉄用で、タクシー券とは別の制度です。',
+    ('hyogo','kobe'):'神戸市の免許返納特典。ICOCA 5,000円分の配布は2023年12月28日で受付を終えています。兵庫県内で使える運転経歴証明書の割引、70歳以上の敬老パス、返納の手続きと窓口を掲載。年齢で使える高齢者向けタクシー券は掲載調査では見つかっていません。',
+    ('hyogo','nishinomiya'):'西宮市の免許返納特典。市のページには「西宮市の特典はありません」と記載があります。代わりに、兵庫県内で使える運転経歴証明書の割引、70歳以上の高齢者バス運賃助成（年5,000円まで）、返納の手続きを掲載しています。',
+    ('hyogo','himeji'):'姫路市の免許返納特典。市独自の特典は公式ページで確認できていません（確認日 2026-09-26）。兵庫県内で使える運転経歴証明書の割引と、75歳以上が選べる交通優待（神姫バス市内区間1乗車150円、またはタクシーカード年7,000円分）を掲載しています。',
+    ('hokkaido','sapporo'):'札幌市の免許返納特典と手続き。運転経歴証明書を協力店で見せると割引や無料サービスが受けられます（さっぽろ圏12市町村共通）。北海道の自主返納サポート制度、敬老パスの負担額、返納の窓口・申請方法も掲載しています。',
+    ('aichi','nagoya'):'名古屋市の免許返納特典。昭和32年4月1日以前生まれの70歳以上の市民が令和8年3月14日〜令和9年3月16日に自主返納すると、マナカチャージ券5,000円分がもらえます。65歳以上の敬老パス、敬老パス利用時のタクシー1割引、返納の手続きも掲載しています。',
+    ('shizuoka','hamamatsu'):'浜松市の免許返納特典。運転経歴証明書の交付から1年未満の人は、細江みをつくしバスの運賃が半額です。70歳以上で所得条件を満たす市民が選べるタクシー利用券（6,000円分）、静岡県警のサポート店割引、返納の手続きも掲載しています。',
 }
 
 
@@ -306,6 +323,7 @@ def make_city_content(pid,city,pref_data,adopted):
                      +'・'.join(parts)+'を掲載しています。')
     else:description+=status_line
     if a.get('bus') and a['bus'].get('status')=='unknown':description+='バス支援の現在の条件は要確認です。'
+    if key in DESCRIPTION_OVERRIDES:description=DESCRIPTION_OVERRIDES[key]
     intro='<aside class="search-answer" id="quick-answer" aria-labelledby="quick-answer-title"><h2 id="quick-answer-title">まず知っておきたいこと</h2><p class="answer-intro">掲載情報から、よくある疑問を確認できます。</p>'+''.join(render_question(q,i) for i,q in enumerate(questions))+'</aside>'
     audit={'key':pid+':'+city['slug'],'title':title,'title_evidence_keys':title_keys,'return_state':state,
            'bus_state':a['bus'].get('status') if a.get('bus') else 'unlisted',
