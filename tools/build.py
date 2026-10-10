@@ -2884,9 +2884,10 @@ def main():
             pages[taxi_path(d["pref"])] = taxi_page(d, dr)
         if d["pref"].get("draft"):
             hidden |= {list_path(d["pref"]), taxi_path(d["pref"])}
+    from seo_markup import inject as seo_inject
     for name, html in pages.items():
         (out / name).parent.mkdir(parents=True, exist_ok=True)
-        (out / name).write_text(html, encoding="utf-8")
+        (out / name).write_text(seo_inject(html, name), encoding="utf-8")
     (out / NATIONAL_MOBILITY_DATA_PATH).write_text(
         json.dumps(mobility_index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     for d in [data, *others]:
