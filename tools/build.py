@@ -2809,9 +2809,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(ROOT))
     ap.add_argument("--draft", action="store_true")
+    ap.add_argument("--gomi-preview", action="store_true", help="未承認のごみ支援5ページを別出力の下書きに含める")
     ap.add_argument("--artifact")
     ap.add_argument("--artifact-main", help="確認用ページで最初に出す市町の slug（省くとトップページ）")
     a = ap.parse_args()
+    from gomi_integration import prepare as prepare_gomi
+    if a.gomi_preview and a.artifact:
+        ap.error('--gomi-preview は --artifact と併用せず、--out で確認してください')
+    try:
+        gomi_data = prepare_gomi(ROOT, a.out, draft=a.draft, preview=a.gomi_preview)
+    except ValueError as error:
+        ap.error(str(error))
     prefs = [load_pref(f) for f in sorted((ROOT / "data").glob("*-menkyo-henno.json"))]
     data = next(d for d in prefs if d["pref"]["id"] == HOME_PREF)
     others = [d for d in prefs if d is not data]
@@ -2934,6 +2942,9 @@ def main():
     if (ROOT / 'data/municipality-supplements.json').exists():
         from national_pages import render
         render(out, draft=a.draft)
+    if gomi_data is not None:
+        from gomi_integration import render as render_gomi
+        render_gomi(out, ROOT, gomi_data, draft=a.draft)
     print("built:", ", ".join(pages), "| draft" if a.draft else "")
 
 

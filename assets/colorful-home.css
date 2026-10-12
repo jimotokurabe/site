@@ -43,3 +43,15 @@
 .colorful-home .warm-home-hero .warm-portrait img{border-radius:22px}
 
 @media(max-width:700px){html.large .colorful-home .hero h1{text-wrap:balance}}
+
+/* Two topics with different coverage; the national picker remains mobility-only. */
+.home-topic-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.home-topic-jump a{display:block;border-bottom:2px solid #60917b;padding:10px 3px;font-size:.86rem;color:#183f35;font-weight:700}
+.home-gomi-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.42fr);gap:26px;margin:26px 0 0;padding:28px;border:1px solid #cbd8d2;border-left:5px solid #75aaa1;border-radius:18px;background:#edf4f1;color:#183f35;scroll-margin-top:24px}
+.home-gomi-entry h2{font-size:1.4rem;margin:6px 0 12px}.home-gomi-entry p{font-size:.91rem;line-height:1.9;margin:10px 0}
+.home-gomi-entry .eyebrow{font-size:.79rem;color:#446651}.home-gomi-entry .home-gomi-coverage{font-size:.8rem;color:#526552}
+.home-gomi-main{display:inline-flex;gap:20px;align-items:center;padding:13px 20px;background:#286548;color:#fff!important;border-radius:9px;font-weight:700;margin-top:8px}
+.home-gomi-cities{display:flex;gap:8px 18px;flex-wrap:wrap;margin-top:12px}.home-gomi-cities a{font-size:.84rem;padding:8px 0;text-decoration:underline;text-underline-offset:4px}
+.home-gomi-distinction{align-self:center;border-left:1px solid #b2c7bd;padding-left:24px}.home-gomi-distinction p{font-size:.8rem;margin:0 0 5px}.home-gomi-distinction strong{font-size:1.05rem}.home-gomi-distinction hr{border:0;border-top:1px solid #b2c7bd;margin:20px 0}.home-gomi-distinction span{display:block;font-size:.74rem;margin-top:18px}
+.home-topic-jump a:focus-visible,.home-gomi-entry a:focus-visible{outline:3px solid #286548;outline-offset:4px}
+@media(max-width:700px){.home-gomi-entry{grid-template-columns:1fr;padding:22px 18px;gap:18px}.home-gomi-entry h2{font-size:1.22rem}.home-gomi-distinction{border-left:0;border-top:1px solid #b2c7bd;padding:14px 0 0;display:grid;grid-template-columns:1fr;gap:0}.home-gomi-distinction hr{margin:12px 0}.home-gomi-entry p{font-size:.88rem}.home-topic-jump a{font-size:.81rem}}
