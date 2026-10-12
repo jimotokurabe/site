@@ -24,3 +24,16 @@ html.gomi-document.large{font-size:22px}html.gomi-document.large .gomi-support-b
 @media print{.gomi-memo-shortcut{display:none}.gomi-print-memo-only .gomi-city>:not(.gomi-memo),.gomi-print-memo-only .gomi-memo>:not(.gomi-print-memo),.gomi-print-memo-only .crumbs,.gomi-print-memo-only .draft,.gomi-print-memo-only footer{display:none!important}.gomi-print-memo-only .gomi-memo{border:0;padding:0;margin:0;break-inside:auto}.gomi-print-memo-only .gomi-print-memo{border:0;padding:0}}
 @page{size:A4;margin:14mm}
 @media print{body.gomi-support-body{background:white}.gomi-print-memo{font:10pt/1.65 "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif!important}.gomi-print-memo-only .gomi-research-note{display:none}}
+
+/* Nested conditions keep AND/OR and group boundaries visible on small screens. */
+.gomi-condition-group{margin:10px 0;padding-left:12px;border-left:2px solid #c9d6c8}
+.gomi-condition-title{margin:12px 0 4px!important}.gomi-condition-operator{font-size:.88rem;color:#405d49;margin:4px 0!important}
+.gomi-condition-list{margin:6px 0 12px;padding-left:1.2em}.gomi-condition-list>li+li{margin-top:10px}
+.gomi-condition-list .gomi-condition-list{padding-left:.8em}
+.gomi-field-value{white-space:normal;overflow-wrap:anywhere}
+.gomi-contact-link{display:block;margin:12px 0;padding:12px 14px;background:#e8f0e7;border:1px solid #afc5b0;border-radius:6px;font-weight:700;overflow-wrap:anywhere}
+.gomi-service-questions{padding:14px 16px!important;margin:16px 0!important;background:#f4f3e9!important}
+.gomi-questions h4{font-size:1rem;margin:0 0 8px}.gomi-questions ul{padding-left:1.2em;margin:0}.gomi-questions li+li{margin-top:6px}
+.gomi-unconfirmed-details{margin:16px 0;border-top:1px solid #c9d6c8}.gomi-unconfirmed-details>summary{cursor:pointer;padding:14px 0;min-height:48px;font-weight:700}
+@media(max-width:650px){.gomi-condition-group{padding-left:8px}.gomi-condition-list .gomi-condition-group{padding-left:6px}}
+@media print{.gomi-contact-link:after{content:" " attr(href);font-size:8pt;overflow-wrap:anywhere}.gomi-condition-group{break-inside:avoid}}

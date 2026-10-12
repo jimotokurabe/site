@@ -91,7 +91,8 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": []
         },
         {
           "id": "kobe-drop",
@@ -173,7 +174,8 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": []
         },
         {
           "id": "kobe-daily",
@@ -265,7 +267,10 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "日常収集の品目・料金・立会い"
+          ]
         },
         {
           "id": "kobe-carry",
@@ -347,19 +352,19 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "モデル実施の受付継続・終了予定",
+            "宅内支援での別居家族の協力条件"
+          ]
         }
-      ],
-      "questions_for_office": [
-        "モデル実施の受付継続・終了予定",
-        "日常収集の品目・料金・立会い",
-        "宅内支援での別居家族の協力条件"
       ],
       "pref_name": "兵庫県",
       "priority_notes": [
         "大型ごみの宅内からの持ち出しは、対象世帯が限られる有料のモデル実施です。電話で受付状況と条件を確認してください。",
         "日常のひまわり収集は支援者経由の申込みです。本人・家族から直接申し込むことはできません。"
-      ]
+      ],
+      "common_questions_for_office": []
     },
     {
       "id": "hyogo:nishinomiya",
@@ -449,7 +454,10 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "粗大ごみの収集と持込の大きさ基準の適用範囲"
+          ]
         },
         {
           "id": "nishi-drop",
@@ -531,7 +539,10 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "粗大ごみの収集と持込の大きさ基準の適用範囲"
+          ]
         },
         {
           "id": "nishi-daily",
@@ -613,7 +624,10 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "日常支援の料金・頻度・立会い・年齢定義"
+          ]
         },
         {
           "id": "nishi-carry",
@@ -706,19 +720,19 @@
             }
           },
           "search_scope": "通常収集・日常支援の公式本文と関連リンク、自治体名＋粗大ごみ＋運び出し／高齢者のWeb検索。不存在の確認ではない。",
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "室内搬出ができない場合の公式案内先",
+            "粗大ごみを室内から運び出す支援の有無、対象条件・費用・申込方法"
+          ]
         }
-      ],
-      "questions_for_office": [
-        "粗大ごみの収集と持込の大きさ基準の適用範囲",
-        "日常支援の料金・頻度・立会い・年齢定義",
-        "室内搬出ができない場合の公式案内先"
       ],
       "pref_name": "兵庫県",
       "priority_notes": [
         "日常のにこやか収集は玄関先の回収です。粗大ごみ・片づけごみは対象外です。",
         "別の公的な粗大ごみ室内搬出制度は今回の資料では未発見です。制度がないとは断定せず、粗大ごみ受付へ相談してください。"
-      ]
+      ],
+      "common_questions_for_office": []
     },
     {
       "id": "hyogo:akashi",
@@ -807,7 +821,8 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": []
         },
         {
           "id": "akashi-drop",
@@ -889,7 +904,10 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "市外家族の代理持込手続き"
+          ]
         },
         {
           "id": "akashi-daily",
@@ -927,29 +945,42 @@
             "eligibility": {
               "value": {
                 "all": [
-                  "自力排出困難",
-                  "ひとり暮らし又は同居者も排出困難"
-                ],
-                "any": [
                   {
+                    "label": "全員に共通する条件",
                     "all": [
-                      "65歳以上",
-                      "要介護2以上",
-                      "ホームヘルプ受給"
+                      "自らごみをステーションに排出することが困難であること",
+                      "ひとり暮らしであること（同居する人が高齢・障害・年少等によりごみを排出できない場合を含む）"
                     ]
                   },
                   {
-                    "all": [
-                      "障害者",
-                      "居宅介護又は生活介護の給付"
+                    "label": "対象者ごとの条件",
+                    "any": [
+                      {
+                        "label": "高齢者の場合に必要な条件",
+                        "all": [
+                          "65歳以上であること",
+                          "介護保険認定で要介護2以上であること",
+                          "介護保険のホームヘルプサービスを受給していること"
+                        ]
+                      },
+                      {
+                        "label": "障害のある方の場合に必要な条件",
+                        "all": [
+                          "障害のある方であること",
+                          "障害者総合支援法第28条第1項に規定する障害福祉サービスのうち、「居宅介護」または「生活介護」に係る介護給付費の支給を受けていること"
+                        ]
+                      }
                     ]
                   }
-                ]
+                ],
+                "exclusion": "親族等や近隣住民の協力を得ることができる方は対象外です。",
+                "note": "申請による審査があります。利用できるかは市に確認してください。"
               },
               "state": "explicit",
               "source_ids": [
                 "akashi-daily"
-              ]
+              ],
+              "reviewed_at": "2026-10-12"
             },
             "family_help": {
               "value": "親族・近隣の協力が得られる人は除く。",
@@ -1000,7 +1031,12 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "ふれあい収集の粗大ごみ可否・具体的な回収位置",
+            "画像パンフレットの現行性・頻度",
+            "料金・立会い"
+          ]
         },
         {
           "id": "akashi-carry",
@@ -1103,20 +1139,19 @@
             }
           },
           "search_scope": "通常収集・日常支援の公式本文と関連リンク、自治体名＋粗大ごみ＋運び出し／高齢者のWeb検索。不存在の確認ではない。",
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "粗大ごみを室内から運び出す支援の有無、対象条件・費用・申込方法",
+            "ふれあい収集で粗大ごみの室内搬出に対応するか、別の相談先があるか"
+          ]
         }
-      ],
-      "questions_for_office": [
-        "ふれあい収集の粗大ごみ可否・具体的な回収位置",
-        "画像パンフレットの現行性・頻度",
-        "料金・立会い",
-        "市外家族の代理持込手続き"
       ],
       "pref_name": "兵庫県",
       "priority_notes": [
         "日常のふれあい収集は、世帯・介護状態・ホームヘルプ利用などの条件があります。年齢だけでは決まりません。",
         "ふれあい収集の回収位置・粗大ごみの扱いは、確認した資料だけでは確定できません。収集事業課に相談してください。"
-      ]
+      ],
+      "common_questions_for_office": []
     },
     {
       "id": "kanagawa:yokohama",
@@ -1215,7 +1250,8 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": []
         },
         {
           "id": "yokohama-drop",
@@ -1297,7 +1333,8 @@
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": []
         },
         {
           "id": "yokohama-daily",
@@ -1375,11 +1412,21 @@
               "value": "居住区の資源循環局事務所一覧から選択",
               "state": "explicit",
               "source_ids": [
-                "yokohama-daily"
+                "yokohama-daily",
+                "yokohama-offices"
+              ],
+              "links": [
+                {
+                  "source_id": "yokohama-offices",
+                  "label": "お住まいの区の事務所・電話番号を確認する（横浜市公式）"
+                }
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "日常支援の料金・立会い"
+          ]
         },
         {
           "id": "yokohama-carry",
@@ -1457,23 +1504,30 @@
               "value": "居住区の資源循環局事務所。月～土・祝日含む8:00～16:45",
               "state": "explicit",
               "source_ids": [
-                "yokohama-carry"
+                "yokohama-carry",
+                "yokohama-offices"
+              ],
+              "links": [
+                {
+                  "source_id": "yokohama-offices",
+                  "label": "お住まいの区の事務所・電話番号を確認する（横浜市公式）"
+                }
               ]
             }
           },
-          "ai_reviewed_at": "2026-10-12"
+          "ai_reviewed_at": "2026-10-12",
+          "questions_for_office": [
+            "室内支援の点数・重量制限と階段条件",
+            "希望日と事前調査の要否"
+          ]
         }
-      ],
-      "questions_for_office": [
-        "室内支援の点数・重量制限と階段条件",
-        "希望日と事前調査の要否",
-        "日常支援の料金・立会い"
       ],
       "pref_name": "神奈川県",
       "priority_notes": [
         "日常のふれあい収集と、粗大ごみの持ち出し収集は別の案内です。玄関先と室内からの搬出を分けて確認してください。",
         "粗大ごみの室内搬出は条件付き。通常の受付センターではなく、住んでいる区の資源循環局事務所へ相談します。"
-      ]
+      ],
+      "common_questions_for_office": []
     }
   ],
   "sources": [
@@ -1544,26 +1598,29 @@
     {
       "id": "yokohama-daily",
       "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/hureai.html",
-      "title": "横浜市トップページ",
+      "title": "家庭ごみを自宅からごみ集積場所まで持ち出すことができない方（ふれあい収集）",
       "source_updated": "2025-08-19",
       "checked": "2026-10-11",
-      "source_kind": "official"
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
     },
     {
       "id": "yokohama-carry",
       "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/motidasi.html",
-      "title": "横浜市トップページ",
+      "title": "粗大ごみを自宅の外まで持ち出せない方（粗大ごみ持ち出し収集）",
       "source_updated": "2025-08-19",
       "checked": "2026-10-11",
-      "source_kind": "official"
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
     },
     {
       "id": "yokohama-bulky",
       "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/sodaigomi.html",
-      "title": "横浜市トップページ",
+      "title": "粗大ごみの申込み",
       "source_updated": "2026-10-02",
       "checked": "2026-10-11",
-      "source_kind": "official"
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
     },
     {
       "id": "kobe-daily",
@@ -1584,18 +1641,20 @@
     {
       "id": "yokohama-drop",
       "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/mochikomi.html",
-      "title": "横浜市トップページ",
+      "title": "粗大ごみの持込みをしたい（自己搬入）",
       "source_updated": "2026-08-21",
       "checked": "2026-10-11",
-      "source_kind": "official"
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
     },
     {
       "id": "yokohama-collection",
       "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/shuushuu.html",
-      "title": "横浜市トップページ",
+      "title": "粗大ごみの収集をしてほしい",
       "source_updated": "2026-08-21",
       "checked": "2026-10-11",
-      "source_kind": "official"
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
     },
     {
       "id": "akashi-leaflet",
@@ -1603,6 +1662,14 @@
       "title": "ふれあい収集 パンフレット",
       "source_updated": null,
       "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokohama-offices",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shokai/jimusho/jimusho.html",
+      "title": "資源循環局事務所一覧",
+      "source_updated": "2025-08-29",
+      "checked": "2026-10-12",
       "source_kind": "official"
     }
   ],
@@ -1620,5 +1687,6 @@
     "accepts_ai_reviewed_pilot": true,
     "basis": "ローカル試作の確認後、ユーザーが「公開して」と明示。人手による原文検品の完了を意味しない。"
   },
-  "review_note": "16サービス160項目を独立AIレビューで保存済み公式原文と照合。人手原文検品は未実施。情報確認日は原文取得時点を維持。"
+  "review_note": "16サービス160項目を独立AIレビューで保存済み公式原文と照合。人手原文検品は未実施。情報確認日は原文取得時点を維持。",
+  "revision_note": "2026-10-12：レビュー5指摘を修正。明石対象条件・横浜出典名と窓口一覧を抜き取り確認。全項目再検証・人手検品完了を意味しない。既存の情報確認日は維持。"
 }
