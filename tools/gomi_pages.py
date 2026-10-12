@@ -41,7 +41,11 @@ def _slug(city):
     return f'{pref}-gomi-support/{slug}.html'
 
 
+LOGIC_LABELS = {'all': '次の条件をすべて満たす必要があります', 'any': '次のいずれかを満たす必要があります', 'exception': '例外・相談', 'exclusion': '対象外となる条件', 'note': '申請・確認について'}
+
+
 def _value(value):
+    """Plain-text conditions retain both group boundaries and AND/OR for memos."""
     if value is None:
         return '未確認'
     if value is True:
@@ -49,17 +53,37 @@ def _value(value):
     if value is False:
         return 'いいえ（対象外）'
     if isinstance(value, (list, tuple)):
-        return '、'.join(_value(v) for v in value)
+        return '\n'.join('・' + _value(v).replace('\n', '\n  ') for v in value)
     if isinstance(value, dict):
-        chunks = []
-        if value.get('all'):
-            chunks.append('すべて必要：' + _value(value['all']))
-        if value.get('any'):
-            chunks.append('いずれか：' + _value(value['any']))
-        if value.get('exception'):
-            chunks.append('例外：' + _value(value['exception']))
-        return '。'.join(chunks) if chunks else '、'.join(f'{k}：{_value(v)}' for k, v in value.items())
+        parts = [str(value['label'])] if value.get('label') else []
+        for key, child in value.items():
+            if key == 'label':
+                continue
+            parts.append(LOGIC_LABELS.get(key, key) + '：\n' + _value(child))
+        return '\n'.join(parts)
     return str(value)
+
+
+def _value_html(value):
+    """Render the same nested condition tree as readable groups, never flatten it."""
+    if isinstance(value, (list, tuple)):
+        return '<ul class="gomi-condition-list">' + ''.join('<li>' + _value_html(v) + '</li>' for v in value) + '</ul>'
+    if isinstance(value, dict):
+        parts = [f'<p class="gomi-condition-title"><strong>{_e(value["label"])}</strong></p>'] if value.get('label') else []
+        for key, child in value.items():
+            if key == 'label':
+                continue
+            parts.append(f'<div class="gomi-condition-group" data-condition="{_e(key)}"><p class="gomi-condition-operator">{_e(LOGIC_LABELS.get(key, key))}</p>{_value_html(child)}</div>')
+        return ''.join(parts)
+    return _e(_value(value))
+
+
+def _questions_html(questions, *, common=False):
+    if not questions:
+        return ''
+    css = 'gomi-common-questions' if common else 'gomi-service-questions'
+    title = '市内の各方法に共通する確認事項' if common else 'この方法について問い合わせること'
+    return f'<section class="gomi-questions {css}"><h4>{title}</h4><ul>' + ''.join(f'<li>{_e(q)}</li>' for q in questions) + '</ul></section>'
 
 
 def _field_html(key, item, source_map, source_numbers, source_keys):
@@ -72,13 +96,14 @@ def _field_html(key, item, source_map, source_numbers, source_keys):
         content = '—'
     source_ids = [sid for sid in item.get('source_ids', []) if sid in source_numbers]
     refs = ' '.join(f'<a href="#source-{_e(source_keys[sid])}" aria-label="出典 {source_numbers[sid]}">[{source_numbers[sid]}]</a>' for sid in source_ids)
-    display = _e(content)
+    display = _value_html(item.get('value')) if isinstance(item.get('value'), (dict, list)) else _e(content)
     if key == 'contact':
         display = re.sub(r'0\d{1,4}-\d{1,4}-\d{3,4}', lambda m: f'<a href="tel:{m[0]}">{m[0]}</a>', display)
+    links = ''.join(f'<a class="gomi-contact-link" href="{_e(source_map[link["source_id"]]["url"])}" target="_blank" rel="noopener">{_e(link["label"])}</a>' for link in item.get('links', []))
     cite_html = '<div class="gomi-field-sources"><span>根拠：</span>' + (refs or '<span>出典未登録</span>') + '</div>'
     return (f'<div class="gomi-fact gomi-state-{_e(state_class)}" data-field="{_e(key)}" data-source-ids="{_e(" ".join(source_keys[sid] for sid in source_ids))}">'
             f'<dt>{_e(FIELD_LABELS.get(key,key))}<span class="gomi-state-label">{_e(state_label)}</span></dt>'
-            f'<dd>{display}{cite_html}</dd></div>')
+            f'<dd><div class="gomi-field-value" data-memo-value="{_e(content)}">{display}</div>{links}{cite_html}</dd></div>')
 
 
 def _service_html(service, source_map, checked, human_reviewed):
@@ -91,8 +116,8 @@ def _service_html(service, source_map, checked, human_reviewed):
                 used_ids.append(sid)
     source_numbers = {sid: i + 1 for i, sid in enumerate(used_ids)}
     source_keys = {sid: f'{service["id"]}--{sid}' for sid in used_ids}
-    facts = ''.join(_field_html(key, fields.get(key, {'state':'not_stated','value':None,'source_ids':[]}), source_map, source_numbers, source_keys)
-                    for key in FIELD_ORDER)
+    fact_html = {key: _field_html(key, fields.get(key, {'state':'not_stated','value':None,'source_ids':[]}), source_map, source_numbers, source_keys) for key in FIELD_ORDER}
+    facts = ''.join(fact_html.values())
     review_date = service.get('checked') or checked or '未記載'
     notes = ''
     if service.get('search_scope'):
@@ -101,7 +126,7 @@ def _service_html(service, source_map, checked, human_reviewed):
     evidence = service.get('evidence_status', '')
     banner = ''
     if evidence == 'searched_not_found':
-        banner = '<p class="gomi-not-found"><strong>制度未発見</strong> 今回調べた範囲で見つからなかった状態です。制度がないと確定した案内ではありません。</p>'
+        banner = '<p class="gomi-not-found"><strong>該当制度を確認できていません</strong><br>調べた公式情報では、粗大ごみを室内から運び出す支援を確認できていません。制度が存在しないと断定するものではありません。</p>'
     elif evidence == 'official_listing':
         banner = '<p class="gomi-evidence">公式案内をもとに整理しています。利用条件は窓口で確認してください。</p>'
     source_list = ''.join(
@@ -111,9 +136,19 @@ def _service_html(service, source_map, checked, human_reviewed):
         + f'</small> <a href="{_e(source_map[sid]["url"])}" target="_blank" rel="noopener">公式ページを開く</a></li>'
         for sid in used_ids)
     source_html = '<details class="gomi-route-sources" open><summary>この経路で参照した出典</summary><ol>' + source_list + '</ol></details>'
+    questions = _questions_html(service.get('questions_for_office', []))
+    if evidence == 'searched_not_found':
+        # Keep contact and questions immediately usable; retain all other facts
+        # and the search evidence in a native, keyboard-accessible disclosure.
+        other_facts = ''.join(html for key, html in fact_html.items() if key != 'contact')
+        body = (f'{banner}<dl class="gomi-facts">{fact_html["contact"]}</dl>{questions}'
+                f'<details class="gomi-unconfirmed-details"><summary>未確認項目の詳細・調査根拠を開く</summary>'
+                f'{notes}<dl class="gomi-facts">{other_facts}</dl>{source_html}</details>')
+    else:
+        body = f'{banner}{notes}<dl class="gomi-facts">{facts}</dl>{source_html}{questions}'
     return (f'<article class="gomi-route-card" id="route-{_e(service["id"])}" data-route="{_e(service["id"])}" data-kind="{_e(kind)}">'
             f'<header><p class="gomi-route-type">{_e(KIND_LABELS.get(kind,kind))}</p><h3>{_e(service.get("name","制度名未記載"))}</h3></header>'
-            f'{banner}{notes}<dl class="gomi-facts">{facts}</dl>{source_html}'
+            f'{body}'
             f'<a class="gomi-memo-shortcut" href="#gomi-memo" data-gomi-memo-route="route-{_e(service["id"])}">この方法の相談メモを作る →</a>'
             f'<p class="gomi-review-date">情報確認日：{_e(review_date)}</p>'
             f'</article>')
@@ -165,8 +200,7 @@ def _city_main(city, sources, hub_rel, checked, human_reviewed):
             sections.append(f'<section class="gomi-kind" id="{_e(kind)}"><h2>{_e(label)}</h2><p class="gomi-not-stated">この種類は今回の調査データに掲載していません。支援がないという意味ではありません。</p></section>')
         else:
             sections.append(f'<section class="gomi-kind" id="{_e(kind)}"><h2>{_e(label)}</h2>' + ''.join(_service_html(s,source_map,checked,human_reviewed) for s in group) + '</section>')
-    questions = city.get('questions_for_office', [])
-    question_html = ''.join(f'<li>{_e(q)}</li>' for q in questions)
+    question_html = _questions_html(city.get('common_questions_for_office', []), common=True)
     memo = f'''<section class="gomi-memo" id="gomi-memo" aria-labelledby="memo-title">
 <p class="gomi-kicker">本人と家族で確認する</p><h2 id="memo-title">相談メモを作る</h2>
 <p>選んだ経路の条件・費用・制限・窓口・出典をまとめます。入力内容はこの画面内だけで扱い、自動保存や送信はしません。</p>
@@ -192,7 +226,7 @@ def _city_main(city, sources, hub_rel, checked, human_reviewed):
 <p>玄関先まで運べることと、自治体の指定する屋外まで出せることは同じとは限りません。分からない場合は無理に運ばず、窓口へ回収場所を確認してください。</p></section>
 <nav class="gomi-route-nav" aria-label="ごみの種類から選ぶ">{anchors}</nav>
 {''.join(sections)}
-<section class="gomi-kind gomi-questions"><h2>申込前に窓口へ確認すること</h2><p>調査中に残った確認事項です。条件に当てはまるかは自動判定しません。</p><ul>{question_html}</ul></section>
+{question_html}
 {memo}
 <section class="gomi-sources"><h2>出典と確認日</h2><p>項目ごとの根拠リンクと確認日を各制度の欄に記載しています。公式ページの更新日が確認できない場合は、調査データに記載の確認日だけを示しています。</p></section>
 </div>'''

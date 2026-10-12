@@ -89,3 +89,12 @@ python3 tools/check_gomi.py . --publication
 python3 tools/check_publication.py
 python3 tools/check_national_records.py
 ```
+
+
+## 条件表示・窓口リンク・確認事項（2026年10月12日レビュー修正）
+
+- 条件値の `all` はAND、`any` はOR。入れ子を維持し、`label` で共通条件や対象者区分の見出しを付けます。`exclusion` は対象外条件、`exception` は例外・相談案内、`note` は補足です。画面と相談メモの両方でグループの境界を保持します。条件をサイトで判定する機能ではありません。
+- `fields.contact.links` は `source_id` と `label` の配列。登録済みの公式出典からURLを解決し、問い合わせ欄の行動リンクとして表示します。根拠用の出典リンクとは別に配置し、メモにもURLを含めます。
+- サービス固有の確認事項は各 `services[].questions_for_office` に置きます。市全体に共通する確認事項だけを `common_questions_for_office` に置きます。メモは選択中のサービス→市共通の順で出力します。空配列の場合に別サービスの質問を流用しません。
+- `searched_not_found` の経路は、未確認であること・不存在の断定ではないこと・問い合わせ先・質問を先に表示します。残り9項目、探索範囲と出典をネイティブdetails内に保持します。
+- 今回の再確認は明石の対象条件、横浜の出典正式名・窓口一覧に限定。全160項目の正確性を改めて確認した記録ではありません。出典名だけの確認には `title_checked`、対象条件だけの確認にはフィールドの `reviewed_at` を使い、元の情報確認日を書き換えません。

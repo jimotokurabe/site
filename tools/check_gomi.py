@@ -12,6 +12,16 @@ from gomi_pages import _value
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def fact_leaves(value):
+    # A rich condition layout may add headings and line breaks; verify every
+    # source value survives, rather than requiring the old flattened sentence.
+    if isinstance(value, dict):
+        return [leaf for child in value.values() for leaf in fact_leaves(child)]
+    if isinstance(value, list):
+        return [leaf for child in value for leaf in fact_leaves(child)]
+    return [_value(value)] if value is not None else []
+
+
 def check(out, publication=False):
     out = Path(out).resolve()
     data = json.loads((ROOT / 'data/gomi-support.json').read_text())
@@ -68,9 +78,9 @@ def check(out, publication=False):
                 if fact is None:
                     errors.append([relative, 'missing fact', key])
                     continue
-                normalized_value = re.sub(r'\s+', '', _value(field['value']))
+                normalized_values = [re.sub(r'\s+', '', leaf) for leaf in fact_leaves(field['value'])]
                 normalized_fact = re.sub(r'\s+', '', fact.get_text(' ', strip=True))
-                if field['value'] is not None and normalized_value not in normalized_fact:
+                if any(value not in normalized_fact for value in normalized_values):
                     errors.append([relative, 'fact value lost', service['id'], key])
                 retained += 1
                 for sid in field['source_ids']:
@@ -78,7 +88,8 @@ def check(out, publication=False):
                         errors.append([relative, 'source lost', sid])
                     if source_map[sid]['checked'] not in route.get_text():
                         errors.append([relative, 'source date lost', sid])
-        for question in city.get('questions_for_office', []):
+        questions = city.get('common_questions_for_office', []) + [q for service in city['services'] for q in service.get('questions_for_office', [])]
+        for question in questions:
             if question not in soup.get_text():
                 errors.append([relative, 'question lost', question])
         mobility = BeautifulSoup((out / city['id'].replace(':', '-menkyo-henno/')).with_suffix('.html').read_text(), 'html.parser')

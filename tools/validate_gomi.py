@@ -42,6 +42,29 @@ def _nonempty(value: Any) -> bool:
     return True  # False and 0 can be intentional, explicit facts.
 
 
+def _validate_conditions(value, path, errors):
+    if isinstance(value, dict):
+        allowed = {'label', 'all', 'any', 'exception', 'exclusion', 'note'}
+        if not set(value) <= allowed or not any(key in value for key in allowed - {'label'}):
+            errors.append(f"{path}: unknown or empty condition group")
+        for key, child in value.items():
+            if key in {'all', 'any'} and (not isinstance(child, list) or not child):
+                errors.append(f"{path}.{key}: expected non-empty condition list")
+            if key == 'label' and (not isinstance(child, str) or not child.strip()):
+                errors.append(f"{path}.label: expected non-empty heading")
+            _validate_conditions(child, f"{path}.{key}", errors)
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            _validate_conditions(child, f"{path}[{index}]", errors)
+    elif not isinstance(value, (str, bool, int, float)) and value is not None:
+        errors.append(f"{path}: unsupported condition value")
+
+
+def _validate_questions(value, path, errors):
+    if not isinstance(value, list) or any(not isinstance(q, str) or not q.strip() for q in value):
+        errors.append(f"{path}: expected a list of non-empty questions")
+
+
 def _known_city_ids(root: Path) -> set[str]:
     """Read source regional master records from data/*-menkyo-henno.json."""
     known: set[str] = set()
@@ -137,6 +160,7 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
             errors.append(f"{cp}.publication_status: must be approved for publication")
         if publication and cid not in approval.get("city_ids", []):
             errors.append(f"{cp}: city is outside the approved publication scope")
+        _validate_questions(city.get("common_questions_for_office", []), f"{cp}.common_questions_for_office", errors)
         services = city.get("services")
         if not isinstance(services, list) or not services:
             errors.append(f"{cp}.services: expected a non-empty list")
@@ -175,6 +199,7 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
                     errors.append(f"{sp}: recorded review status and date required for publication")
                 if review_status == "ai_reviewed" and approval.get("accepts_ai_reviewed_pilot") is not True:
                     errors.append(f"{sp}: AI-reviewed pilot needs explicit owner publication approval")
+            _validate_questions(service.get("questions_for_office", []), f"{sp}.questions_for_office", errors)
             fields = service.get("fields")
             if not isinstance(fields, dict):
                 errors.append(f"{sp}.fields: expected an object")
@@ -187,6 +212,7 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
                     continue
                 state = fact.get("state")
                 value = fact.get("value")
+                _validate_conditions(value, fp + ".value", errors)
                 if not isinstance(state, str) or state not in REVIEW_STATES:
                     errors.append(f"{fp}.state: unknown evidence state")
                 if state in {"explicit", "explicit_exclusion"} and not _nonempty(value):
@@ -204,6 +230,15 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
                     for ref in refs:
                         if not isinstance(ref, str) or ref not in source_by_id:
                             errors.append(f"{fp}.source_ids: unresolved source {ref!r}")
+                links = fact.get("links", [])
+                if not isinstance(links, list):
+                    errors.append(f"{fp}.links: expected a list")
+                else:
+                    for link in links:
+                        if not isinstance(link, dict) or not isinstance(link.get('source_id'), str) or link['source_id'] not in source_by_id or not _nonempty(link.get('label')):
+                            errors.append(f"{fp}.links: expected a labeled official source reference")
+                        elif not isinstance(refs, list) or link['source_id'] not in refs:
+                            errors.append(f"{fp}.links: contact source must also be included in source_ids")
                 if state == "explicit_exclusion" and value is not False and not _nonempty(value):
                     errors.append(f"{fp}: explicit exclusion needs a stated value")
     if publication:

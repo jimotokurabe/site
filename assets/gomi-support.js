@@ -28,6 +28,14 @@
       empty.hidden = visible > 0;
     });
   }
+  const revealFragment = () => {
+    let target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (_) { return; }
+    if (!target) return;
+    for (let node = target.parentElement; node; node = node.parentElement) if (node.tagName === 'DETAILS') node.open = true;
+  };
+  window.addEventListener('hashchange', revealFragment);
+  revealFragment();
   const root = document.querySelector('.gomi-city');
   if (!root) return;
 
@@ -79,10 +87,11 @@
       const label = text(fact.querySelector('dt')).replace(text(fact.querySelector('.gomi-state-label')), '').trim();
       const valueNode = fact.querySelector('dd').cloneNode(true);
       valueNode.querySelector('.gomi-field-sources')?.remove();
-      const value = text(valueNode);
+      const value = fact.querySelector('[data-memo-value]')?.dataset.memoValue || text(valueNode);
       const refs = text(fact.querySelector('.gomi-field-sources'));
       const state = text(fact.querySelector('.gomi-state-label'));
       lines.push(`・${label}［${state}］：${value}（${refs}）`);
+      fact.querySelectorAll('.gomi-contact-link').forEach(link => lines.push(`${text(link)}: ${link.href}`));
     });
     lines.push('', '出典と確認日');
     const allSources = new Set();
@@ -91,8 +100,10 @@
     const date = text(card.querySelector('.gomi-review-date'));
     if (date) lines.push('', date);
     card.querySelectorAll('.gomi-not-found, .gomi-search-scope, .gomi-evidence').forEach(note => lines.push('', '調査状況：' + text(note)));
-    const questions = [...root.querySelectorAll('.gomi-questions li')].map(text).filter(Boolean);
-    lines.push('', 'この地域で窓口へ確認したいこと', questions.length ? questions.map(question => '・' + question).join('\n') : '・対象条件、回収場所、費用、受付状況を確認する');
+    const questions = [...card.querySelectorAll('.gomi-service-questions li')].map(text).filter(Boolean);
+    lines.push('', 'この方法について問い合わせること', questions.length ? questions.map(question => '・' + question).join('\n') : '個別の確認事項は登録されていません。利用条件と受付状況は公式窓口で確認してください。');
+    const commonQuestions = [...root.querySelectorAll('.gomi-common-questions li')].map(text).filter(Boolean);
+    if (commonQuestions.length) lines.push('', '市内の各方法に共通する確認事項', ...commonQuestions.map(question => '・' + question));
     if (notesInput.value.trim()) lines.push('', '自分で追加した確認事項', notesInput.value.trim());
     lines.push('', 'このメモは利用決定・予約ではありません。掲載情報をもとにした相談用メモです。利用条件と受付状況は公式窓口で確認してください。');
     return lines.join('\n');
