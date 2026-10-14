@@ -98,3 +98,11 @@ python3 tools/validate_bus.py
 空欄の表示抑制と、出典を持たない単純な未発見文の扱いは `tools/compact_records.py` に集約しています。年齢・期限などの条件を含む原文は保持します。今後もHTMLを直接直さず、通常の `python3 tools/build.py` で再生成してください。
 
 検査はビルド完了後に実行します。`python3 tools/check_compact_city.py` は採用前の `d3a2d002` と比較し、原文保持の既存検査に加えて4入口・家族機能・県の手続き欄を検証します。結果は `docs/compact-rollout-check.json` に記録します。`tools/check_compact_browser.cjs` はローカルサイト（既定8766番）で320px・390px・1440px、文字拡大、確認チェック・共有メモ・印刷を検査します。
+
+## 支援を選んで読む詳細ページ（2026-10-15）
+
+短文化済みの1,741市町村ページに、`tools/benefit_integration.py` が4種類の支援を選んで読む表示を追加します。既存の条件・金額・出典・確認日をそのまま使用し、地域ごとの要約や対象資格を自動推測しません。既知の支援を先に並べ、未確認を「支援なし」に置き換えません。県共通の手続きへのリンクを表示し、市町村独自の長い手順は開閉して確認できます。
+
+`assets/benefit-integration.css` と `assets/benefit-integration.js` が表示切替、既存のページ内リンクの展開、家族用メモへの支援選択を担当します。選択した項目IDは市町村ごとにブラウザ内へ保存します。共有メモには選んだ掲載記録の条件・注意点・出典URL・確認日を保持し、金額は合算しません。JavaScriptが使えない場合と印刷時は全4項目を表示します。プライバシーポリシーにも保存内容を記載しています。
+
+通常の `python3 tools/build.py` で再生成してください。`python3 tools/check_benefit_integration.py` は短文化済みの `8765f097` と全市町村の4記録を比較し、原文・リンク・確認日とデータファイルの不変を検証します。旧HTMLで他の支援欄が入れ子になっていた場合は、各支援の原文を個別に一度ずつ比較します。従来の `check_compact_city.py` と `check_publication.py` も併用します。

@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-15",
+  "checks": [
+    {
+      "page": "kobe",
+      "action": "support",
+      "focus": "support",
+      "selected": [
+        "support"
+      ]
+    },
+    {
+      "page": "kobe",
+      "action": "taxi",
+      "focus": "taxi",
+      "selected": [
+        "taxi"
+      ]
+    },
+    {
+      "page": "kobe",
+      "action": "rides",
+      "focus": "rides",
+      "selected": [
+        "rides"
+      ]
+    },
+    {
+      "page": "kobe",
+      "action": "benefit",
+      "focus": "benefit",
+      "selected": [
+        "benefit"
+      ]
+    },
+    {
+      "action": "memo",
+      "hasCashCondition": true,
+      "hasDate": true,
+      "hasSource": true,
+      "open": true
+    },
+    {
+      "page": "ogimi",
+      "width": 390,
+      "overflow": false,
+      "svg": 4,
+      "visiblePanels": 1
+    },
+    {
+      "page": "ogimi",
+      "action": "support",
+      "overflow": false,
+      "selected": [
+        "support"
+      ]
+    },
+    {
+      "page": "ogimi",
+      "action": "taxi",
+      "overflow": false,
+      "selected": [
+        "taxi"
+      ]
+    },
+    {
+      "page": "ogimi",
+      "action": "rides",
+      "overflow": false,
+      "selected": [
+        "rides"
+      ]
+    },
+    {
+      "page": "ogimi",
+      "action": "benefit",
+      "overflow": false,
+      "selected": [
+        "benefit"
+      ]
+    },
+    {
+      "page": "fukui-menkyo-henno/eiheiji.html",
+      "width": 320,
+      "font": "22px",
+      "overflow": false,
+      "visiblePanels": 1
+    },
+    {
+      "page": "fukui-menkyo-henno/eiheiji.html",
+      "action": "support",
+      "overflow": false,
+      "selected": [
+        "support"
+      ]
+    },
+    {
+      "page": "fukui-menkyo-henno/eiheiji.html",
+      "action": "taxi",
+      "overflow": false,
+      "selected": [
+        "taxi"
+      ]
+    },
+    {
+      "page": "fukui-menkyo-henno/eiheiji.html",
+      "action": "rides",
+      "overflow": false,
+      "selected": [
+        "rides"
+      ]
+    },
+    {
+      "page": "fukui-menkyo-henno/eiheiji.html",
+      "action": "benefit",
+      "overflow": false,
+      "selected": [
+        "benefit"
+      ]
+    },
+    {
+      "page": "kanagawa-menkyo-henno/yokohama.html",
+      "width": 320,
+      "font": "22px",
+      "overflow": false,
+      "visiblePanels": 1
+    },
+    {
+      "page": "kanagawa-menkyo-henno/yokohama.html",
+      "action": "support",
+      "overflow": false,
+      "selected": [
+        "support"
+      ]
+    },
+    {
+      "page": "kanagawa-menkyo-henno/yokohama.html",
+      "action": "taxi",
+      "overflow": false,
+      "selected": [
+        "taxi"
+      ]
+    },
+    {
+      "page": "kanagawa-menkyo-henno/yokohama.html",
+      "action": "rides",
+      "overflow": false,
+      "selected": [
+        "rides"
+      ]
+    },
+    {
+      "page": "kanagawa-menkyo-henno/yokohama.html",
+      "action": "benefit",
+      "overflow": false,
+      "selected": [
+        "benefit"
+      ]
+    },
+    {
+      "page": "hyogo-menkyo-henno/kobe.html",
+      "width": 320,
+      "font": "22px",
+      "overflow": false,
+      "visiblePanels": 1
+    },
+    {
+      "page": "hyogo-menkyo-henno/kobe.html",
+      "action": "support",
+      "overflow": false,
+      "selected": [
+        "support"
+      ]
+    },
+    {
+      "page": "hyogo-menkyo-henno/kobe.html",
+      "action": "taxi",
+      "overflow": false,
+      "selected": [
+        "taxi"
+      ]
+    },
+    {
+      "page": "hyogo-menkyo-henno/kobe.html",
+      "action": "rides",
+      "overflow": false,
+      "selected": [
+        "rides"
+      ]
+    },
+    {
+      "page": "hyogo-menkyo-henno/kobe.html",
+      "action": "benefit",
+      "overflow": false,
+      "selected": [
+        "benefit"
+      ]
+    },
+    {
+      "page": "kagoshima-menkyo-henno/kagoshima.html",
+      "width": 320,
+      "font": "22px",
+      "overflow": false,
+      "visiblePanels": 1
+    },
+    {
+      "page": "kagoshima-menkyo-henno/kagoshima.html",
+      "action": "support",
+      "overflow": false,
+      "selected": [
+        "support"
+      ]
+    },
+    {
+      "page": "kagoshima-menkyo-henno/kagoshima.html",
+      "action": "taxi",
+      "overflow": false,
+      "selected": [
+        "taxi"
+      ]
+    },
+    {
+      "page": "kagoshima-menkyo-henno/kagoshima.html",
+      "action": "rides",
+      "overflow": false,
+      "selected": [
+        "rides"
+      ]
+    },
+    {
+      "page": "kagoshima-menkyo-henno/kagoshima.html",
+      "action": "benefit",
+      "overflow": false,
+      "selected": [
+        "benefit"
+      ]
+    },
+    {
+      "page": "eiheiji",
+      "action": "two-choice-memo",
+      "hasLimit": true,
+      "length": 2094,
+      "noSum": true,
+      "open": true
+    },
+    {
+      "page": "kobe",
+      "action": "legacy-step-hash",
+      "procedureOpen": true
+    },
+    {
+      "page": "kobe",
+      "action": "desktop-width",
+      "overflow": false,
+      "selected": "support",
+      "width": 1280
+    }
+  ],
+  "limitations": [
+    "印刷はCSSと既存の全展開処理を点検。実紙出力は未実施。",
+    "制度の現行性を再調査したものではない。"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-15",
+  "publication": {
+    "municipalities": 1741,
+    "prefectures": 47,
+    "public_html_pages": 2109,
+    "sitemap_urls": 2109,
+    "issues": []
+  },
+  "national_records": {
+    "municipalities": 1741,
+    "prefectures": 47,
+    "checks": {
+      "texts": 26489,
+      "urls": 6077,
+      "dates": 4678
+    },
+    "issues": []
+  },
+  "compact": {
+    "baseline_commit": "d3a2d002",
+    "cities": 1741,
+    "prefectures": 47,
+    "shared_values_checked": 939,
+    "totals": {
+      "before": {
+        "characters": 10715003,
+        "未掲載です": 2712,
+        "記載なし": 8541,
+        "掲載調査では未確認": 4291,
+        "断定するものではありません": 1787
+      },
+      "after": {
+        "characters": 7611183,
+        "未掲載です": 67,
+        "記載なし": 3047,
+        "掲載調査では未確認": 1,
+        "断定するものではありません": 0
+      }
+    },
+    "issues": [],
+    "measurement": "main text excluding whitespace, includes collapsed text; not an AdSense or user-effect measurement"
+  },
+  "unit_tests": {
+    "benefit_integration": 8,
+    "compact_city": 8,
+    "visual_city": 8,
+    "outing_supports": 11
+  },
+  "outing_plan_behavior": "passed",
+  "bus_validation": "47 prefectures passed",
+  "limits": [
+    "UI integration only; source dates not refreshed",
+    "Printed paper output and user-effect measurement not performed"
+  ]
+}
