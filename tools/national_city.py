@@ -426,6 +426,7 @@ def build_all(root:Path,out:Path,draft:bool=False)->dict:
     from warm_city import apply_warm_city
     from visual_city import apply_visual_city
     from compact_city import apply_compact_city, add_prefecture_procedures
+    from benefit_integration import apply_benefit_integration
     from outing_supports import write_catalog, city_links
     import shutil
     root=Path(root);out=Path(out);out.mkdir(parents=True,exist_ok=True)
@@ -442,7 +443,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
     (assets/'national-city.css').write_text(base_css+css_add,encoding='utf-8')
     js=city_js(kobe.find_all('script')[-1].string)
     (assets/'national-city.js').write_text(js,encoding='utf-8')
-    for name in ('warm-shared.css', 'warm-city.css', 'visual-city.css', 'warm-experience.js', 'family-guide.webp', 'compact-city.css'):
+    for name in ('warm-shared.css', 'warm-city.css', 'visual-city.css', 'warm-experience.js', 'family-guide.webp', 'compact-city.css', 'benefit-integration.css', 'benefit-integration.js'):
         if (root/'assets'/name).resolve() != (assets/name).resolve():
             shutil.copy2(root/'assets'/name, assets/name)
     prefs,bus,taxi,supp,mobility=gather(root)
@@ -478,6 +479,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         apply_visual_city(soup, a)
         apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
+        apply_benefit_integration(soup)
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:
