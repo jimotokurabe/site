@@ -6,6 +6,7 @@ extraction that could omit a restriction, closure, or uncertainty.
 """
 import html
 import re
+from compact_records import has_sources
 
 
 def e(value):
@@ -87,7 +88,7 @@ def return_question(city,a):
         answer='終了した返納支援の記録です。'+answer
     elif state=='notfound':
         heading=f'{name}独自の免許返納特典はありますか？'
-        answer='掲載調査では、市町村独自の返納特典を確認できていません。'+answer
+        answer=('掲載調査では、市町村独自の返納特典を確認できていません。'+answer if has_sources(c) else '市町村独自の返納特典について、確認先の記録が不足しています。')
     elif state=='none':
         heading=f'{name}独自の免許返納特典はありますか？'
     elif state=='elder':
@@ -319,8 +320,9 @@ def make_city_content(pid,city,pref_data,adopted):
     if state=='notfound':
         # 何が載っているかを先に書く（独自特典の有無だけで終わらせない）
         parts=notfound_parts(a,prefname);parts.insert(len(parts)-1 if '問い合わせ先' in parts else len(parts),'バス・タクシー支援の確認状況')
-        description=(prefname+'の'+city['n']+'。独自の返納特典は公式ページで確認できませんでした（確認日 '+str(a.get('return_checked') or '未記録')+'）。'
-                     +'・'.join(parts)+'を掲載しています。')
+        conclusion = ('独自の返納特典は掲載記録で確認できていません（内容の確認日 '+str(a.get('return_checked') or '未記録')+'）。'
+                      if has_sources(a['return']) else '独自の返納特典は確認先の記録が不足しています。')
+        description = prefname+'の'+city['n']+'。'+conclusion+'・'.join(parts)+'を掲載しています。'
     else:description+=status_line
     if a.get('bus') and a['bus'].get('status')=='unknown':description+='バス支援の現在の条件は要確認です。'
     if key in DESCRIPTION_OVERRIDES:description=DESCRIPTION_OVERRIDES[key]

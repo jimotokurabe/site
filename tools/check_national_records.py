@@ -9,6 +9,7 @@ import json
 import re
 import sys
 from html.parser import HTMLParser
+from compact_records import EMPTY_VALUES, unsupported_negative
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT
@@ -69,7 +70,7 @@ def collect(record, required, inherited='', category='', trail=''):
             # Substantive conditions and warnings must remain in readable text.
             if field in {'what', 'note', 'notes', 'flag', 'henno_link', 'eligibility', 'benefit', 'fare', 'routes', 'apply', 'cautions', 'unresolved'}:
                 for item in scalars(value):
-                    if not item.startswith(('https://', 'http://')):
+                    if item not in EMPTY_VALUES and not unsupported_negative(record, field, item) and not item.startswith(('https://', 'http://')):
                         required['texts'].add((label, norm(item)))
             collect(value, required, checked, category, trail + field + '.')
     elif isinstance(record, list):

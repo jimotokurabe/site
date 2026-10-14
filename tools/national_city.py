@@ -12,11 +12,12 @@ import json
 import re
 import unicodedata
 from bs4 import BeautifulSoup
+from compact_records import display_record, EMPTY_VALUES
 
 BASE = 'https://jimotokurabe.jp/'
 HAND = {('hyogo', 'kobe'), ('kanagawa', 'yokohama'), ('kagoshima', 'kagoshima')}
 LABELS = {
-    'what':'内容', 'age':'対象・年齢', 'amt':'支援内容', 'dl':'申請期限',
+    'record_status':'掲載状況', 'what':'内容', 'age':'対象・年齢', 'amt':'支援内容', 'dl':'申請期限',
     'apply':'申請・問い合わせ', 'how':'申請方法', 'henno_link':'免許返納との関係',
     'note':'補足・注意', 'notes':'補足・注意', 'flag':'確認が必要な点',
     'name':'制度・窓口の名前', 'summary':'概要', 'eligibility':'対象・条件',
@@ -90,11 +91,12 @@ def recursive(data, checked='', depth=0, skip=()):
 
     Source-local checked dates take priority over item and file dates.
     """
-    if data is None or data == '' or data == [] or data == {}:
+    if data is None or data == '' or data == [] or data == {} or (isinstance(data, str) and data in EMPTY_VALUES):
         return ''
     if isinstance(data, bool):
         return ''
     if isinstance(data, dict):
+        data = display_record(data)
         local = data.get('checked') or checked
         rows=[]
         for key, value in data.items():
@@ -219,9 +221,10 @@ def supplements_body(a):
         body+='<h3>まだ確認できていないこと</h3>'+recursive(a['supplement_unresolved'],a['supplement_checked'])
     return section('confirmed','公式情報で確認した補足',body)
 
-def guide_body(g, common, checked, common_checked):
+def guide_body(g, common, checked, common_checked, pid):
+    shared = '<p><a class="compact-action" href="../'+pid+'-menkyo-henno.html#return-procedure">県の案内で、返納窓口・受付時間・持ち物を確認 →</a></p>'
     if not g:
-        return '<p>この市町村の独自の手順案内は未掲載です。返納の受付・必要書類は、県警の案内と窓口でご確認ください。</p>'+details('都道府県の返納・経歴証明書の手続き',recursive({k:v for k,v in common.items() if k not in ('tokuten','checked')},common_checked))
+        return '<p>免許の返納と、支援の申請は別の手続きです。利用したい支援の対象・期限・必要書類を先に確認してください。</p>'+shared
     primary={k:v for k,v in g.items() if k not in ('sources','stations','summary_links','links','mobility','title','description','facts','local_discounts','extras','extra','extra_title','extra_src')}
     body='<p>免許の返納と、支援制度の申請は別の手続きです。まず対象・期限を確認し、受付窓口で必要書類を確かめてください。</p>'+date_line(g,checked)+recursive(primary,checked)
     if g.get('stations'):
@@ -229,7 +232,7 @@ def guide_body(g, common, checked, common_checked):
     body+=recursive({k:v for k,v in g.items() if k in ('sources','summary_links','links','mobility')},checked)
     extra={k:v for k,v in g.items() if k in ('extra','extras','extra_title','extra_src')}
     if extra:body+='<span id="extra" class="legacy-anchor"></span><h3>市町村の手順案内にある関連制度・補足</h3>'+recursive(extra,checked)
-    body+=details('都道府県の返納・経歴証明書の共通手続き',recursive({k:v for k,v in common.items() if k not in ('tokuten','checked')},common_checked))
+    body+=shared
     return body
 
 def mobility_body(a):
@@ -305,7 +308,6 @@ def render_generic(pid,c,d,a,prototype):
     benefit='<p class="mini-note">市町村独自の支援と、都道府県共通の特典を分けて確認します。</p>'
     if c.get('k')=='notfound':
         benefit+='<div class="unknown"><h3>市町村独自の返納特典は、掲載調査では未確認</h3><p>制度がないと断定するものではありません。下の記録・県共通の支援と、公式窓口でご確認ください。</p></div>'
-        benefit+=verify_steps(c,d,a)
     if c.get('k')=='end':benefit+='<p class="important">受付を終了した特典の案内を含みます。終了・期限の案内をご確認ください。</p>'
     municipal=recursive(c,checked,skip=('guide',))+date_line(c,checked)
     if g.get('facts'):municipal+='<h4>市町村の手順案内に記載された条件</h4>'+recursive(g['facts'],g.get('checked') or checked)
@@ -339,7 +341,7 @@ def render_generic(pid,c,d,a,prototype):
     taxibody=recursive(t,a['taxi_checked'])+date_line(t,a['taxi_checked']) if t else '<p>タクシー支援の詳細は未掲載です。</p>'
     if t and t.get('k')=='notfound':taxibody='<div class="unknown"><h3>掲載調査では未確認</h3><p>すべての助成制度がないと断定するものではありません。</p></div>'+taxibody
     if t and t.get('guide_relation')=='same':taxibody='<p class="cross">返納特典と同じ支援の案内です。'+link('#return-record','同じ支援の対象・条件・申請先を確認 ↑')+'。タクシー支援の内容と出典も、同じ欄で確認できます。</p>'
-    body=section('benefit','免許返納の特典',benefit)+section('support','バス助成・敬老パス',busbody)+section('taxi','タクシー支援',taxibody)+section('rides','通院・買い物に使う交通',mobility_body(a))+supplements_body(a)+section('procedure','返納の手順・持ち物',guide_body(g,common,a['guide_checked'],a['common_checked']))+str(prototype.select_one('#family'))
+    body=section('benefit','免許返納の特典',benefit)+section('support','バス助成・敬老パス',busbody)+section('taxi','タクシー支援',taxibody)+section('rides','通院・買い物に使う交通',mobility_body(a))+supplements_body(a)+section('procedure','返納の手順・持ち物',guide_body(g,common,a['guide_checked'],a['common_checked'],pid))+str(prototype.select_one('#family'))
     related='<p>出典の更新日と内容の確認日は、それぞれの制度・手順の欄に表示しています。公式ページ・窓口で最新の条件をご確認ください。</p>'
     related+='<ul class="sources">'+''.join('<li>'+link(BASE+f'{pid}-{topic}.html#'+c['slug'],label+' ↗')+'</li>' for topic,label in [('menkyo-henno','県の返納案内'),('taxi','県のタクシー案内')])+('</ul>')
     if b:related+=link(BASE+pid+'-bus.html#'+c['slug'],'県のバス調査の記録 ↗')
@@ -352,7 +354,7 @@ def render_generic(pid,c,d,a,prototype):
 
 def leaves(data,path=()):
     if isinstance(data,dict):
-        for k,v in data.items():
+        for k,v in display_record(data).items():
             if k not in META and k != 'guide':yield from leaves(v,path+(k,))
     elif isinstance(data,list):
         for v in data:yield from leaves(v,path)
@@ -361,6 +363,21 @@ def leaves(data,path=()):
 
 def render_hand(source,pid,c,d,a):
     soup=BeautifulSoup(source.read_text(encoding='utf-8'),'html.parser')
+    for archive in list(soup.select('.archive')):
+        parent = archive.find_parent('details')
+        (parent if parent is not None else archive).decompose()
+    procedure = soup.select_one('#procedure')
+    if procedure is None:
+        procedure = soup.new_tag('section', id='procedure', attrs={'class': 'block'})
+        target = soup.select_one('#related')
+        if target:
+            target.insert_before(procedure)
+        else:
+            (soup.select_one('.content') or soup.main).append(procedure)
+    if procedure is not None:
+        procedure.clear()
+        procedure.append(BeautifulSoup('<h2>返納前に、条件と手続きを確認</h2>'+guide_body(
+            c.get('guide',{}), {}, a['guide_checked'], a['common_checked'], pid), 'html.parser'))
     # Internal comparison dumps are not reader-facing guidance. Missing facts
     # are rendered below from the current source records instead.
     for dump in soup.find_all('pre'):
@@ -377,7 +394,7 @@ def render_hand(source,pid,c,d,a):
     visible=copy.copy(soup)
     for x in visible.select('script,style'):x.decompose()
     present=normalize(visible.get_text(' ',strip=True));hrefs={x.get('href') for x in visible.select('a[href]')}
-    candidates=[('返納支援',a['return'],a['return_checked']),('バス支援',a['bus'],a['bus_checked']),('タクシー支援',a['taxi'],a['taxi_checked']),('都道府県共通の案内',a['statewide'],a['common_checked']),('県内共通のバス案内',a['bus_common'],a['bus_checked']),('返納・証明書の共通手続き',a['common'],a['common_checked'])]
+    candidates=[('返納支援',a['return'],a['return_checked']),('バス支援',a['bus'],a['bus_checked']),('タクシー支援',a['taxi'],a['taxi_checked']),('都道府県共通の案内',a['statewide'],a['common_checked']),('県内共通のバス案内',a['bus_common'],a['bus_checked'])]
     supplement=''
     for title,record,checked in candidates:
         missing=[]
@@ -408,6 +425,7 @@ def build_all(root:Path,out:Path,draft:bool=False)->dict:
     from seo_content import make_city_content
     from warm_city import apply_warm_city
     from visual_city import apply_visual_city
+    from compact_city import apply_compact_city, add_prefecture_procedures
     from outing_supports import write_catalog, city_links
     import shutil
     root=Path(root);out=Path(out);out.mkdir(parents=True,exist_ok=True)
@@ -424,10 +442,11 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
     (assets/'national-city.css').write_text(base_css+css_add,encoding='utf-8')
     js=city_js(kobe.find_all('script')[-1].string)
     (assets/'national-city.js').write_text(js,encoding='utf-8')
-    for name in ('warm-shared.css', 'warm-city.css', 'visual-city.css', 'warm-experience.js', 'family-guide.webp'):
+    for name in ('warm-shared.css', 'warm-city.css', 'visual-city.css', 'warm-experience.js', 'family-guide.webp', 'compact-city.css'):
         if (root/'assets'/name).resolve() != (assets/name).resolve():
             shutil.copy2(root/'assets'/name, assets/name)
     prefs,bus,taxi,supp,mobility=gather(root)
+    add_prefecture_procedures(out, prefs)
     _, outing_catalog = write_catalog(root, out)
     outing_cities = {(pid, city["id"]): city for pid, pref in outing_catalog.items() for city in pref["cities"]}
     indexed={(pid,c['slug']):(c,d) for pid,d in prefs.items() for c in d['cities']}
@@ -457,6 +476,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         soup.head.append(soup.new_tag('link',rel='stylesheet',href='../assets/seo.css'))
         apply_warm_city(soup)
         apply_visual_city(soup, a)
+        apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
