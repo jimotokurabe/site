@@ -479,7 +479,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         apply_visual_city(soup, a)
         apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
-        apply_benefit_integration(soup)
+        apply_benefit_integration(soup, pid, slug)
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:

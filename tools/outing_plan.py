@@ -131,6 +131,7 @@ def outing_plan_page(shell, draft=False):
         <label class="outing-field"><span id="outing-{key}-cost-label">{label}の交通費（円）</span><input id="outing-{key}-cost" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="未確認"></label>
         <label class="outing-check-label" id="outing-{key}-confirmed-wrap" hidden><input type="checkbox" id="outing-{key}-confirmed"><span>この片道で使える条件・自己負担額を確認した</span></label>
         </fieldset>''')
+    main = main.replace('<div class="outing-links">', '<div class="outing-links"><a href="transport-cost.html" target="_blank" rel="noopener">移動費の目安を見る ↗</a>', 1)
     raw = shell(title='いつもの病院やお店へ車なしで通うには？｜お出かけ計画｜じもとくらべ',
                 description='具体的な病院やお店への往復を、車以外の交通で検討。地元のバス助成・タクシー支援、入力した費用、次に調べることを本人や家族で整理し、コピー・印刷できます。',
                 path='outing-plan.html', main=main.replace('__LEGS__', ''.join(legs)), draft=draft)

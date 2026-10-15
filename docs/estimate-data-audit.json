@@ -1,0 +1,83 @@
+{
+  "title": "全国の外出支援データ試算候補監査",
+  "audit_date": "2026-10-15",
+  "repository_base": "fafc5001c570dc9e2bd6a39258995029783d69a3",
+  "scope": {
+    "source": "assets/outing-supports/index.json と同ディレクトリの都道府県JSON 47件",
+    "municipalities_in_index": 1741,
+    "municipalities_in_prefecture_files": 1741,
+    "taxi_records": 1741,
+    "method": "全件をPythonで機械集計。taxi typeの選択状態、status、詳細ラベル別の語句・数値パターンを集計。制度の文章をLLMで全件読解したり、ネットで全件再確認したりしていない。候補件数は計算可能件数を意味しない。"
+  },
+  "record_status": {
+    "掲載記録あり・対象条件を確認": 1093,
+    "掲載調査では未確認": 638,
+    "終了・受付終了の記録あり": 9,
+    "支援なしの案内あり": 1,
+    "selectable_true": 1093,
+    "selectable_false": 648
+  },
+  "machine_detected_candidates": {
+    "description": "候補集合は重複し、文字列パターンによる概数。対象者・期間・制度の重複や選択条件を判定していない。",
+    "support_content_has_ticket_face_value_and_numeric_quantity": {
+      "all_records": 176,
+      "selectable_records": 173,
+      "pattern": "支援内容欄に『1枚○円』相当と枚数の双方"
+    },
+    "support_content_has_per_trip_or_per_ride_fixed_yen_candidate": {
+      "all_records": 484,
+      "selectable_records": 387,
+      "pattern": "『1乗車/1回/片道』近傍に円額"
+    },
+    "support_content_has_percentage_or_rate_candidate": {
+      "all_records": 239,
+      "selectable_records": 182,
+      "pattern": "割・半額・%を含む"
+    },
+    "support_content_has_annual_or_monthly_limit_candidate": {
+      "all_records": 566,
+      "selectable_records": 545,
+      "pattern": "年/月・枚数等の数量候補"
+    },
+    "support_content_has_explicit_cap_candidate": {
+      "all_records": 204,
+      "selectable_records": 204,
+      "pattern": "最大/上限/まで近傍に枚数または円額"
+    },
+    "explicit_one_time_driver_return_relationship_candidate": {
+      "all_records": 23,
+      "selectable_records": 22,
+      "pattern": "免許返納の関係などに1回/一度/限り"
+    }
+  },
+  "reliable_expansion_approach": [
+    "まず『1枚あたり額×固定交付枚数』を計算する定型を追加する。176件は機械抽出候補、うち173件は掲載記録ありだが、申請月変動、所得/通院区分、年度限定、複数交通共通券、1回上限、年度内終了をルール属性として確認してから有効化する。",
+    "次に『乗車ごとの固定負担額』を扱う定型を追加する。候補は484件（掲載記録あり387件）。同乗人数、区域、予約条件、年齢段階、運賃改定、介助料別、通常運賃との比較条件を一つずつ明示できるものだけ計算対象にする。",
+    "『率引き/半額＋1回上限＋年間回数または年度予算』は別の定型で対応する。候補239件（掲載記録あり182件）だが、率・上限・回数が同じ条件に適用されるか、交通系IC登録や利用者負担があるかを確認し、単純な率掛けで済ませない。",
+    "全国化は自治体数の上限で絞らず、必要な入力が固定できる制度を個別に有効化する。年齢・要介護度・所得・居住/利用区域・返納歴などの適格条件、計算式、期間、交付上限、1回上限、出典と既存確認日を機械可読なルールにする。入力を求めず、既定の代表条件による参考試算と明記し、条件が複数で安全に選べない場合は結果を出さず対象制度を選ぶ導線または説明にする。"
+  ],
+  "known_traps": [
+    "638件は調査で未確認、9件は終了/受付終了、1件は支援なし案内。これらを現行助成として計算しない。",
+    "都道府県共通制度や近隣自治体共同事業は市町村記録に重複掲載されうる。市町村数を制度数とみなさず、制度ID/実施主体/対象区域で重複を束ねる。",
+    "免許返納時の一度限りの支援と、毎年・毎月の継続支援を分ける。返納歴があるだけで毎年の額へ加算しない。",
+    "姫路市のようにバス・船・タクシーから一つを選ぶ制度、尼崎市のように定期方式と乗車払方式を選ぶ制度がある。排他的選択を合算しない。",
+    "最大交付数は実残数ではない。申請月、年度途中、利用済み、期限切れ、対象経費、運賃を超えない制限を反映しない金額は最大ケースとしてだけ表示する。",
+    "タクシー車両のデマンド乗合運賃、福祉タクシー券、年齢条件の助成、免許返納特典は別の制度類型。名称に『タクシー』があることだけで同一計算式に入れない。"
+  ],
+  "representative_records": [
+    {"prefecture": "富山", "municipality": "朝日町", "program": "シルバータクシー・公共バス共通利用券", "pattern": "固定額券×年間枚数", "recorded_rule": "1枚200円、年間60枚まで", "caveat": "70歳以上に加えて世帯・車保有・所得等の条件。バス等と共通。"},
+    {"prefecture": "宮崎", "municipality": "小林市", "program": "福祉タクシー料金助成事業", "pattern": "固定額券×年間枚数＋1回上限", "recorded_rule": "1枚500円、年間最大30枚、1回4枚まで", "caveat": "乗車料金を超える使用不可。"},
+    {"prefecture": "福島", "municipality": "川俣町", "program": "介護支援タクシー利用助成事業", "pattern": "月ごと交付×年度末まで", "recorded_rule": "1枚500円、申請月から年度末まで月3枚", "caveat": "年齢だけの制度ではなく、別に免許返納時1回限りの乗合券あり。"},
+    {"prefecture": "富山", "municipality": "入善町", "program": "デマンド交通『ウチマエくん』", "pattern": "乗車ごとの固定負担額・年齢段階", "recorded_rule": "通常500円、75歳以上または65歳以上の返納者300円", "caveat": "乗合交通。返納者区分と年齢区分を重複適用しない。"},
+    {"prefecture": "宮崎", "municipality": "えびの市", "program": "タクシー利用料金助成事業", "pattern": "定率助成＋上限＋回数上限", "recorded_rule": "約4割、1回上限1,500円、年96枚まで", "caveat": "市内利用。別制度と併用可能との記録があるため重複ルールも保持。"},
+    {"prefecture": "群馬", "municipality": "渋川市", "program": "バス・タクシー高齢者割引", "pattern": "年齢別率＋年度上限", "recorded_rule": "65〜74歳3割・上限5,000円、75歳以上5割・上限12,000円", "caveat": "別の500円券24枚は75歳以上かつ免許なし。令和8・9年度限定で令和10年度移行予定。"},
+    {"prefecture": "兵庫", "municipality": "姫路市", "program": "高齢者バス等優待乗車助成制度", "pattern": "固定額券×枚数＋選択制", "recorded_rule": "タクシー選択時7,000円分（500円×14枚）、1乗車3枚まで", "caveat": "バス・船・タクシーのいずれか一つを選択。"},
+    {"prefecture": "兵庫", "municipality": "尼崎市", "program": "高齢者移送サービス・チケットの交付", "pattern": "固定額券×年間枚数＋1回上限", "recorded_rule": "1枚600円、年48枚、1回4枚まで", "caveat": "65歳以上かつ要介護4/5など。介護タクシー限定。"},
+    {"prefecture": "兵庫", "municipality": "相生市", "program": "タクシー利用補助事業", "pattern": "返納時一度限り", "recorded_rule": "500円券6枚（3,000円分）", "caveat": "免許返納者向けの一回限り。継続的な年額として扱わない。"},
+    {"prefecture": "岐阜", "municipality": "高山市", "program": "おでかけパスポート", "pattern": "有料年間パス＋乗車ごとの値引き＋返納時特典", "recorded_rule": "年間6,000円、タクシー1回100円引き。返納者は無料交付1回限り", "caveat": "パス購入費と乗車ごとの割引は別項目。無料交付は一回限り。"}
+  ],
+  "limitations": [
+    "語句検出は詳細文字列上の候補であり、機械抽出件数には誤検出が含まれる。数値の意味、同じ制度に属するか、適用条件の論理は個別レビューが必要。",
+    "各市町村の元データに記録された確認日を保持し、今回の監査を制度の再確認として扱っていない。"
+  ]
+}

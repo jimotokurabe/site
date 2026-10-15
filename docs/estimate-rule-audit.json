@@ -1,0 +1,302 @@
+{
+  "title": "全国交通費概算ルールの抽出監査",
+  "auditDate": "2026-10-15",
+  "catalogScope": "assets/outing-supports の47都道府県JSON。データ記録だけを使用し、外部確認や確認日の更新なし。",
+  "prefectureFiles": 47,
+  "municipalitiesInIndex": 1741,
+  "recordsScanned": 4298,
+  "rulesIncluded": 16,
+  "candidateRuleCountsBeforeDedup": {
+    "coupon": 4,
+    "fixed": 5,
+    "percent": 9
+  },
+  "rulesByKind": {
+    "coupon": 4,
+    "fixed": 5,
+    "percent": 7
+  },
+  "rulesByPrefecture": {
+    "aichi": 2,
+    "gifu": 3,
+    "gunma": 1,
+    "hokkaido": 1,
+    "ibaraki": 3,
+    "kagawa": 1,
+    "miyagi": 1,
+    "miyazaki": 1,
+    "nara": 1,
+    "okayama": 1,
+    "tottori": 1
+  },
+  "classificationCounts": {
+    "accepted_coupon": 4,
+    "accepted_fixed": 5,
+    "accepted_percent": 9,
+    "coupon_has_monthly_or_additional_limit": 1,
+    "coupon_has_multiple_recipient_or_value_tiers": 3,
+    "coupon_missing_explicit_per_ride_cap": 1,
+    "cross_program_relation_needs_review": 10,
+    "duplicate_or_competing_identical_records": 2,
+    "fee_not_represented_in_schema": 1,
+    "fixed_fare_has_conditions_or_caps": 7,
+    "fixed_fare_is_service_fare_not_subsidy": 3,
+    "formula_not_a_supported_single_pattern": 117,
+    "multiple_modes_share_or_mix_support": 3,
+    "multiple_tiers_or_components": 72,
+    "no_explicit_support_formula": 104,
+    "not_selectable_or_not_current_record": 2571,
+    "pilot_rule_owned_elsewhere": 16,
+    "record_explicitly_requires_confirmation": 125,
+    "time_variant_choice_or_cross_program_ambiguity": 1246
+  },
+  "exclusionCounts": {
+    "coupon_has_monthly_or_additional_limit": 1,
+    "coupon_has_multiple_recipient_or_value_tiers": 3,
+    "coupon_missing_explicit_per_ride_cap": 1,
+    "cross_program_relation_needs_review": 10,
+    "duplicate_or_competing_identical_records": 2,
+    "fee_not_represented_in_schema": 1,
+    "fixed_fare_has_conditions_or_caps": 7,
+    "fixed_fare_is_service_fare_not_subsidy": 3,
+    "formula_not_a_supported_single_pattern": 117,
+    "multiple_modes_share_or_mix_support": 3,
+    "multiple_tiers_or_components": 72,
+    "no_explicit_support_formula": 104,
+    "not_selectable_or_not_current_record": 2571,
+    "pilot_rule_owned_elsewhere": 16,
+    "record_explicitly_requires_confirmation": 125,
+    "time_variant_choice_or_cross_program_ambiguity": 1246
+  },
+  "strictGates": [
+    "selectable=true、statusが掲載記録あり・対象条件を確認、sourceと既存checkedあり。",
+    "親が別管理する10自治体を除外。別制度はrule idと対象条件ごとに保持し、同じ自治体でも自動合算しない。数値と式が同一の重複レコードは全て除外。",
+    "券: 支援内容に単一の1枚額、固定の年間枚数、明示された1乗車上限枚数があり、月ごとの交付条件がない。",
+    "定額: 支援内容に1乗車/1回あたりの単一本人運賃が明記され、割引・助成額・料金段階・地域別額・上限ではない。",
+    "率: 単一率で、円上限・年回数・条件分岐がない。",
+    "終了、年度限定、申請月/交付月変動、選択制、段階別、他制度との関係が記録される場合は安全側に除外。"
+  ],
+  "schemaInterpretation": {
+    "coupon": "faceは券面額、stockは1年間の最大交付枚数、capは元記録に明記された1乗車の最大枚数。capが不明な券はルール化しない。運賃→割引→min(floor又はceil(運賃÷face), cap, 残枚数)→助成額min(運賃, 枚数×face)の順。",
+    "percent": "percentは割引率の整数（50=50%）。",
+    "fixed": "fixedFareは対象者の1乗車あたり本人運賃（円）。乗合交通そのものの運賃は、比較前運賃が明確でない場合に負担減と誤称するため除外。",
+    "rounding": "floor。",
+    "cycle": "couponはannual、rate/fixedはongoing。いずれも比較期間は1年。"
+  },
+  "reviewedExamples": [
+    {
+      "key": "aichi:togo",
+      "programId": "taxi-7b0e99a1561f3ff7",
+      "type": "taxi",
+      "program": "高齢者タクシー料金助成事業",
+      "supportContentFull": "1枚200円の利用券を年間60枚（1乗車で最大60枚まで利用可）",
+      "decision": "採用",
+      "reason": "accepted_coupon",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "chiba:chosei",
+      "programId": "taxi-cc448cfc6041151b",
+      "type": "taxi",
+      "program": "福祉タクシー事業",
+      "supportContentFull": "タクシー1回につき1,500円まで。年間最大48枚（月4枚）",
+      "decision": "除外",
+      "reason": "time_variant_choice_or_cross_program_ambiguity",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "gifu:tarui",
+      "programId": "taxi-d4418aba0526b04e",
+      "type": "taxi",
+      "program": "垂井町高齢者タクシー利用助成事業",
+      "supportContentFull": "1回の乗車につき1枚560円分の助成券を年24枚",
+      "decision": "採用",
+      "reason": "accepted_coupon",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "gunma:yoshioka",
+      "programId": "taxi-2e7d3ffaa24e5406",
+      "type": "taxi",
+      "program": "タクシー運賃等助成事業《よしタク》",
+      "supportContentFull": "助成券（1枚500円相当）を年間72枚まで。一人で乗るときは1回に最大4枚まで使えます",
+      "decision": "採用",
+      "reason": "accepted_coupon",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "hokkaido:date",
+      "programId": "taxi-7d3fbd12873eb7d2",
+      "type": "taxi",
+      "program": "伊達版ライフモビリティサービス（愛のりタクシー）",
+      "supportContentFull": "おひとり1回につき500円（乗車場所に関わらず）",
+      "decision": "除外",
+      "reason": "fixed_fare_is_service_fare_not_subsidy",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "hokkaido:higashikawa",
+      "programId": "taxi-c6caa7fbed64415a",
+      "type": "taxi",
+      "program": "高齢者福祉ハイヤー利用料金助成",
+      "supportContentFull": "1枚500円を限度とするハイヤー料金助成券を、1世帯年間30枚",
+      "decision": "除外",
+      "reason": "coupon_has_multiple_recipient_or_value_tiers",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "hokkaido:nakatonbetsu",
+      "programId": "taxi-efedc6a060d70698",
+      "type": "taxi",
+      "program": "ハイヤー乗車券",
+      "supportContentFull": "年間48枚（1枚520円）。夫か妻のどちらかが免許証を持たない場合は24枚",
+      "decision": "除外",
+      "reason": "coupon_has_multiple_recipient_or_value_tiers",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "hyogo:amagasaki",
+      "programId": "taxi-b592907a1ca9a2f9",
+      "type": "taxi",
+      "program": "高齢者移送サービス・チケットの交付",
+      "supportContentFull": "1枚600円のチケットを年48枚（月4枚）。車いすのまま乗れる介護タクシーで使う。1回4枚まで",
+      "decision": "除外",
+      "reason": "time_variant_choice_or_cross_program_ambiguity",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "hyogo:kasai",
+      "programId": "taxi-f51d54c26b9103eb",
+      "type": "taxi",
+      "program": "高齢者タクシー料金助成事業",
+      "supportContentFull": "タクシー代の半分（1回2,000円まで）。回数の制限なし。乗るか降りるかのどちらかが市内のとき",
+      "decision": "除外",
+      "reason": "time_variant_choice_or_cross_program_ambiguity",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "ibaraki:koga",
+      "programId": "bus-183203bae05c6c74",
+      "type": "bus",
+      "program": "65歳以上ぐるりん号シルバーパス",
+      "supportContentFull": "全コース1乗車100円",
+      "decision": "採用",
+      "reason": "accepted_fixed",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "ibaraki:omitama",
+      "programId": "bus-80ea9efa7499ba44",
+      "type": "bus",
+      "program": "おみたん号65歳以上半額",
+      "supportContentFull": "運賃半額",
+      "decision": "採用",
+      "reason": "accepted_percent",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "kagawa:higashikagawa",
+      "programId": "bus-5dcd345e0bc46021",
+      "type": "bus",
+      "program": "70歳以上の福祉バス",
+      "supportContentFull": "対象区間は1乗車100円。資格者証は有効期限なし。",
+      "decision": "採用",
+      "reason": "accepted_fixed",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "kanagawa:yugawara",
+      "programId": "taxi-c319bd321b0c2cdb",
+      "type": "taxi",
+      "program": "タクシー支援の掲載状況",
+      "supportContentFull": "1乗車300円",
+      "decision": "除外",
+      "reason": "fixed_fare_is_service_fare_not_subsidy",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "miyagi:taiwa",
+      "programId": "bus-07d3069978c4f955",
+      "type": "bus",
+      "program": "町民バス70歳以上割引",
+      "supportContentFull": "町民バス運賃半額。",
+      "decision": "除外",
+      "reason": "duplicate_or_competing_identical_records",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "miyazaki:kobayashi",
+      "programId": "taxi-e10ce3f863f9ff15",
+      "type": "taxi",
+      "program": "福祉タクシー料金助成事業",
+      "supportContentFull": "利用券1枚500円、年間最大30枚。乗車料金を超えない範囲で1回あたり1人4枚まで使える",
+      "decision": "採用",
+      "reason": "accepted_coupon",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "nagano:tateshina",
+      "programId": "taxi-01fc90717c65a9b1",
+      "type": "taxi",
+      "program": "立科町タクシー利用サポート",
+      "supportContentFull": "町内の移動に限り1乗車600円（県の一覧では月8回まで）",
+      "decision": "除外",
+      "reason": "time_variant_choice_or_cross_program_ambiguity",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "shimane:matsue",
+      "programId": "bus-2f9c8e56ea8c583c",
+      "type": "bus",
+      "program": "高齢者優待ICOCA",
+      "supportContentFull": "市内対象路線バス普通運賃から1乗車120円引き",
+      "decision": "除外",
+      "reason": "fixed_fare_has_conditions_or_caps",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "tottori:wakasa",
+      "programId": "taxi-114fc19f6ca2caf0",
+      "type": "taxi",
+      "program": "若桜町タクシー利用料金助成事業",
+      "supportContentFull": "助成券は500円分を1枚とし、1人につき年間20枚（年10,000円分）。1回の乗車に何枚でも使える。利用期限は令和9年3月31日まで",
+      "decision": "除外",
+      "reason": "time_variant_choice_or_cross_program_ambiguity",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "toyama:asahi",
+      "programId": "taxi-a94758ff376e663b",
+      "type": "taxi",
+      "program": "シルバータクシー・公共バス共通利用券",
+      "supportContentFull": "1枚200円の利用券を1人につき年間60枚まで",
+      "decision": "除外",
+      "reason": "multiple_modes_share_or_mix_support",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    },
+    {
+      "key": "shizuoka:kawazu",
+      "programId": "taxi-c6df78086510c7c2",
+      "type": "taxi",
+      "program": "高齢者等おでかけ支援タクシー",
+      "supportContentFull": "1乗車1,000円（現金のみ）。利用日時は毎日8:30〜17:00、1日に何回でも利用可能",
+      "decision": "除外",
+      "reason": "time_variant_choice_or_cross_program_ambiguity",
+      "review": "単一式と必須数値を保持できるか、複数額・段階・月別配布・終了/選択・返納一回限り・追加確認事項がないかを確認。"
+    }
+  ],
+  "excludedReasons": {
+    "data_text_is_not_a_formula": "カタログは制度説明文であり、全文を計算式とみなさない。文面から対象者の適格性や利用条件を判定できないときはルール化せず除外。",
+    "provincial_common_and_duplicates": "市町村単位のレコードに県共通・広域・共同運行制度が重複しうる。制度IDだけでなく対象区域/実施主体を照合しない限り、市町村ごとの独立制度として重複計上しない。",
+    "ended_or_unconfirmed": "未確認・終了・支援なしは計算対象にしない。",
+    "once_or_annual": "返納時1回限りは毎年の概算へ加算しない。",
+    "choice_and_tiers": "交通種別・運賃方式・年齢区分・申請月による選択や段階を合算しない。返納後の期限付き割引は継続制度と混同しない。",
+    "caps_and_actual_usage": "最大交付数から実残数は分からない。年間枠、1乗車あたり枚数上限、運賃を超えない制限の範囲で利用する前提で表示し、実利用・年度途中申請・期限切れを推定しない。",
+    "separate_programs": "同じ自治体に複数ルールがある場合も、対象条件ごとに別に表示する。明示的な併用可の記録がない限り助成額を合算しない。詳細欄には元の全詳細文を保持する。"
+  },
+  "limitations": [
+    "ルールは既存カタログの記録に基づく保守的な候補で、公式ページの現在状態を再確認したものではない。checkedとsourcesは元記録の値を保持する。",
+    "eligibility文字列は記録上の対象条件であり、計算画面に入力を要求せず、対象条件を満たす人の参考比較として提示する。",
+    "支援額の計算には利用回数・通常運賃が必要な類型があり、結果は仮の条件での比較。実際の利用可否や残高を示さない。"
+  ]
+}

@@ -2871,12 +2871,14 @@ def main():
     }
     from outing_plan import outing_plan_page
     pages['outing-plan.html'] = outing_plan_page(shell, a.draft)
+    from transport_cost import transport_cost_page
+    pages['transport-cost.html'] = transport_cost_page(shell, a.draft)
     from warm_guides import apply_warm_guide
     pages[BASIC_GUIDE_PATH] = apply_warm_guide(pages[BASIC_GUIDE_PATH])
     pages[HANASHI_PATH] = apply_warm_guide(pages[HANASHI_PATH], family=True)
     if out.resolve() != ROOT:
         (out / 'assets').mkdir(exist_ok=True)
-        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css'):
+        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css', 'transport-cost.css', 'transport-cost-engine.js', 'transport-cost.js', 'transport-estimates.json'):
             shutil.copy(ROOT / 'assets' / asset, out / 'assets' / asset)
     # 下書きの県（pref.draft が true）は、検索に出さず、サイトマップとトップにも載せない
     hidden = set()
@@ -2932,7 +2934,7 @@ def main():
                 (art / name).write_text(html, encoding="utf-8")
         shutil.copy(ROOT / "site.css", art / "site.css")
         (art / 'assets').mkdir(exist_ok=True)
-        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css'):
+        for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css', 'transport-cost.css', 'transport-cost-engine.js', 'transport-cost.js', 'transport-estimates.json'):
             shutil.copy(ROOT / 'assets' / asset, art / 'assets' / asset)
         from outing_supports import write_catalog
         write_catalog(ROOT, art)

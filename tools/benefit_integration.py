@@ -6,6 +6,7 @@ claims, eligibility parsing, or inferred application/source associations.
 """
 
 import copy
+from urllib.parse import urlencode
 from bs4 import BeautifulSoup
 
 ITEMS = ('benefit', 'support', 'taxi', 'rides')
@@ -15,7 +16,7 @@ def fragment(value):
     return BeautifulSoup(value, 'html.parser')
 
 
-def apply_benefit_integration(soup):
+def apply_benefit_integration(soup, pref_id=None, city_slug=None):
     """Enhance four existing entrances; without JS every record remains visible."""
     if soup.select_one('#benefit-browser'):
         return
@@ -48,6 +49,13 @@ def apply_benefit_integration(soup):
     intro.replace_with(browser)
     intro['class'] = intro.get('class', []) + ['benefit-list']
     browser.append(intro)
+    if pref_id is not None and city_slug is not None:
+        href = '../transport-cost.html?' + urlencode({'pref': pref_id, 'city': city_slug})
+        estimate = soup.new_tag('p', attrs={'class': 'cross transport-cost-link'})
+        link = soup.new_tag('a', href=href)
+        link.string = 'この地域の移動費の目安を見る →'
+        estimate.append(link)
+        browser.insert_before(estimate)
     panels = soup.new_tag('div', attrs={'class': 'benefit-panels'})
     browser.append(panels)
     for key in order:

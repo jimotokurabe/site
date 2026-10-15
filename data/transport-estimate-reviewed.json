@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    {
+      "id": "transport:aichi:nagoya:taxi-00b01ff2ed465611",
+      "key": "aichi:nagoya",
+      "programId": "taxi-00b01ff2ed465611",
+      "type": "taxi",
+      "kind": "percent",
+      "percent": 10,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "敬老パス利用時のタクシー運賃1割引",
+      "headline": "運賃の10%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "内容: 65歳以上の人がもらえる敬老パスにチャージした電子マネーで運賃を全額支払うと、市内の提携タクシー会社10社で運賃が1割引になります。\n対象・年齢: 名古屋市にお住まいの65歳以上の方（敬老パスの対象年齢）\n支援内容: 運賃1割引（敬老パスの電子マネーで全額支払う場合のみ）\n申請方法: 敬老パスへの電子マネーのチャージが必要。申し込みはいりません（敬老パスを使うだけ）\n免許返納との関係: 記載なし（自主返納の有無にかかわらず65歳以上なら敬老パスの対象）\n出典の更新日: 2026年8月25日",
+      "checked": "2026-09-28",
+      "sources": [
+        {
+          "url": "https://www.city.nagoya.jp/kenkofukushi/koureisha/1016534/1016539.html",
+          "label": "市の「タクシー会社による高齢者タクシー優待の取り組みのご案内」のページ",
+          "checked": "2026-09-28",
+          "updated": "2026年8月25日"
+        }
+      ],
+      "evidence": "運賃1割引（敬老パスの電子マネーで全額支払う場合のみ）",
+      "origin": "record"
+    },
+    {
+      "id": "transport:aichi:togo:taxi-7b0e99a1561f3ff7",
+      "key": "aichi:togo",
+      "programId": "taxi-7b0e99a1561f3ff7",
+      "type": "taxi",
+      "kind": "coupon",
+      "face": 200,
+      "stock": 60,
+      "cap": 60,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "annual",
+      "title": "高齢者タクシー料金助成事業",
+      "headline": "年間最大12,000円分（利用券）",
+      "assumption": "年度初めに未使用の年間交付券が揃い、掲載記録の対象条件を満たす場合の参考比較。利用回数と実際の残数は利用者の状況で変わります。",
+      "eligibility": "内容: 75歳以上のひとり暮らし、または世帯全員が75歳以上で、自家用車がなく近くに車を持つ親族もいない、町民税非課税世帯の人に、タクシー料金助成利用券（1枚200円）を年間60枚交付します。\n対象・年齢: 75歳以上のひとり暮らしの人、または世帯全員が75歳以上の人（ほか要件あり）\n支援内容: 1枚200円の利用券を年間60枚（1乗車で最大60枚まで利用可）\n申請方法: 高齢者支援課に申請書を提出\n免許返納との関係: 記載なし\n出典の更新日: 2026年07月17日",
+      "checked": "2026-09-28",
+      "sources": [
+        {
+          "url": "https://www.town.aichi-togo.lg.jp/soshikikarasagasu/koreishashienka/gyomuannai/4/3/4053.html",
+          "label": "町の「高齢者タクシー料金助成事業」のページ",
+          "checked": "2026-09-28",
+          "updated": "2026年07月17日"
+        }
+      ],
+      "evidence": "1枚200円の利用券を年間60枚（1乗車で最大60枚まで利用可）",
+      "origin": "record"
+    },
+    {
+      "id": "transport:gifu:tarui:taxi-d4418aba0526b04e",
+      "key": "gifu:tarui",
+      "programId": "taxi-d4418aba0526b04e",
+      "type": "taxi",
+      "kind": "coupon",
+      "face": 560,
+      "stock": 24,
+      "cap": 1,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "annual",
+      "title": "垂井町高齢者タクシー利用助成事業",
+      "headline": "年間最大13,440円分（利用券）",
+      "assumption": "年度初めに未使用の年間交付券が揃い、掲載記録の対象条件を満たす場合の参考比較。利用回数と実際の残数は利用者の状況で変わります。",
+      "eligibility": "内容: 満80歳以上で在宅の人は、通院や買い物にタクシーを使うとき、料金の一部を助成してもらえます。\n対象・年齢: 垂井町に住所があり在宅で生活している、申請日の年度末日において満80歳以上の人（障害者社会参加助成事業タクシー乗車券の交付を受けていない人。町県民税や介護保険料などの滞納がない人。施設入所・入院中の人は対象外）\n支援内容: 1回の乗車につき1枚560円分の助成券を年24枚\n申請方法: 健康福祉課 高齢福祉係（0584-22-7504）に申請。使えるタクシー会社は、岐阜近鉄タクシー・大垣タクシー・スイトタクシー・中部交通など8社\n免許返納との関係: 記載なし（免許返納の特典は垂井町巡回バスの定期券で、タクシーとは別）\n補足・注意: 助成の中身（対象・金額・使えるタクシー会社）は、ページの中の画像に書かれています。\n出典の更新日: 2026年5月29日",
+      "checked": "2026-09-28",
+      "sources": [
+        {
+          "url": "https://www.town.tarui.lg.jp/page/1521.html",
+          "label": "町の垂井町高齢者タクシー利用助成事業のページ（申請書とあわせて掲載されている案内）",
+          "checked": "2026-09-28",
+          "updated": "2026年5月29日"
+        }
+      ],
+      "evidence": "1回の乗車につき1枚560円分の助成券を年24枚",
+      "origin": "record"
+    },
+    {
+      "id": "transport:gifu:yamagata:bus-f1fbc4552d3ad2cb",
+      "key": "gifu:yamagata",
+      "programId": "bus-f1fbc4552d3ad2cb",
+      "type": "bus",
+      "kind": "percent",
+      "percent": 50,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "自主運行バス免許返納割引",
+      "headline": "運賃の50%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 運転経歴証明書を提示し現金払いする人。年齢・居住条件は記載なし。\n支援内容: 自主運行バスの運賃半額。\n本人負担・運賃: 通常運賃の半額、現金のみ。\n利用できる交通: 岐北線、岐阜板取線、ハーバス各線、市街地巡回線、神崎山県BT線、美山地域デマンド型交通。\n申請・問い合わせ: 警察署交付の運転経歴証明書を運転手へ提示。企画財政課0581-22-6825。\n概要: 後期高齢者はハーバスなどの指定路線が無料。運転経歴証明書の提示者は自主運行バス運賃が半額です。",
+      "checked": "2026-10-06",
+      "sources": [
+        {
+          "url": "https://www.city.yamagata.gifu.jp/soshiki/kikaku/22812.html",
+          "label": "自主運行バス時刻表 - 山県市ホームページ",
+          "checked": "2026-10-06",
+          "updated": "2026-04-01"
+        }
+      ],
+      "evidence": "自主運行バスの運賃半額。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:gifu:yoro:bus-663e53c08151acaf",
+      "key": "gifu:yoro",
+      "programId": "bus-663e53c08151acaf",
+      "type": "bus",
+      "kind": "percent",
+      "percent": 50,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "オンデマンドバス返納者普通運賃割引",
+      "headline": "運賃の50%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 運転経歴証明書を提示し、事前利用者登録と予約をした人。居住・年齢制限なし。\n支援内容: 1乗車運賃半額。\n本人負担・運賃: 100円（普通200円）。\n利用できる交通: 養老町オンデマンドバス、町内全域（一部町外停留所）。\n申請・問い合わせ: 電話・窓口・ネット・養老Payで登録。前日から乗りたい時刻30分前までに予約。証明書提示。\n概要: 運転経歴証明書を提示すると、オンデマンドバスの1乗車料金・月パスポートが半額です。",
+      "checked": "2026-10-06",
+      "sources": [
+        {
+          "url": "https://www.town.yoro.gifu.jp/life/traffic/1001782/1001784/1001790.html",
+          "label": "オンデマンドバスの運行をしています｜養老町公式ホームページ",
+          "checked": "2026-10-06",
+          "updated": "2026-02-24"
+        }
+      ],
+      "evidence": "1乗車運賃半額。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:gunma:yoshioka:taxi-2e7d3ffaa24e5406",
+      "key": "gunma:yoshioka",
+      "programId": "taxi-2e7d3ffaa24e5406",
+      "type": "taxi",
+      "kind": "coupon",
+      "face": 500,
+      "stock": 72,
+      "cap": 4,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "annual",
+      "title": "タクシー運賃等助成事業《よしタク》",
+      "headline": "年間最大36,000円分（利用券）",
+      "assumption": "年度初めに未使用の年間交付券が揃い、掲載記録の対象条件を満たす場合の参考比較。利用回数と実際の残数は利用者の状況で変わります。",
+      "eligibility": "内容: 70歳以上の人や、19歳以上で運転免許証を持っていない人などが、タクシーの助成券をもらえます。\n対象・年齢: 満70歳以上の人、満19歳以上で運転免許証を持たない人、身体障害者手帳・精神障害者保健福祉手帳1・2級、療育手帳Aをもつ人\n支援内容: 助成券（1枚500円相当）を年間72枚まで。一人で乗るときは1回に最大4枚まで使えます\n申請方法: 電子申請か、役場企画財政課の窓口で申し込みます。助成券は即日ではもらえません。乗車地か目的地のどちらかが町内であれば使えます\n免許返納との関係: 「運転免許証を持たない人」が対象ですが、返納した人については記載なし。\n補足・注意: 手帳だけが条件の人もこの制度の対象に入っていますが、ここでは年齢と免許の条件を書いています。\n出典の更新日: 最終更新日 2026年09月14日",
+      "checked": "2026-09-29",
+      "sources": [
+        {
+          "url": "https://www.town.yoshioka.lg.jp/kurashi/kotsu/kotsu/group_taxi.html",
+          "label": "町のタクシー運賃等助成事業《よしタク》のページ",
+          "checked": "2026-09-29",
+          "updated": "最終更新日 2026年09月14日"
+        }
+      ],
+      "evidence": "助成券（1枚500円相当）を年間72枚まで。一人で乗るときは1回に最大4枚まで使えます",
+      "origin": "record"
+    },
+    {
+      "id": "transport:hokkaido:wakkanai:bus-c6f9de78c4c696c3",
+      "key": "hokkaido:wakkanai",
+      "programId": "bus-c6f9de78c4c696c3",
+      "type": "bus",
+      "kind": "fixed",
+      "fixedFare": 100,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "高齢者バス乗車証（シルバーカード）",
+      "headline": "1回100円",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 満70歳以上で稚内市に住民登録されている方。\n記録上の対象年齢の下限: 70\n支援内容: 対象バスが1回100円、回数制限なし。\n本人負担・運賃: 1回100円。有効期限なし。\n利用できる交通: 宗谷バスの定期路線（稚内市区域内）。東浦地区の住民は東浦～鬼志別も対象。緑・富岡線から市内線への指定乗継ぎは1回分で利用可。\n申請・問い合わせ: 市役所1階長寿あんしん課へ身分証明書（保険証等）と1年以内の無帽・無背景・正面写真（縦3cm×横2.4cm）を持参。70歳誕生日前月に案内はがき。\n概要: 70歳以上の市民はシルバーカードで対象バスが1回100円。生活保護・要保護状態の方には無料制度があります。",
+      "checked": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.city.wakkanai.hokkaido.jp/fukushi/koreishashien/ikigaidukuri/basucard.html",
+          "label": "高齢者バス乗車証",
+          "checked": "2026-10-07",
+          "updated": "2025-12-26"
+        },
+        {
+          "url": "https://www.city.wakkanai.hokkaido.jp/fukushi/koreishashien/ikigaidukuri/basumenjo.html",
+          "label": "社会参加活動事業利用者負担免除制度",
+          "checked": "2026-10-07",
+          "updated": "2025-12-26"
+        }
+      ],
+      "evidence": "対象バスが1回100円、回数制限なし。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:ibaraki:goka:bus-48fb2e8e1febdee4",
+      "key": "ibaraki:goka",
+      "programId": "bus-48fb2e8e1febdee4",
+      "type": "bus",
+      "kind": "percent",
+      "percent": 50,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "シニアカードによるごかりん号半額",
+      "headline": "運賃の50%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: いばらきシニアカードを提示する方。券そのものに独立した年齢条件の記載なし。\n支援内容: 運賃半額\n本人負担・運賃: 通常1回200円の半額\n利用できる交通: ごかりん号の朝晩・日中ルート（ノンステップバスと案内）\n申請・問い合わせ: シニアカードを提示。日中は完全予約制。返納だけでカード不要となるとは本文から確認できない。\n概要: シニアカードを提示するとごかりん号を半額で利用できます。",
+      "checked": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.town.goka.lg.jp/kurashi-machi-shigoto/kurashi/kurashi-tetsuzuki/lifeline/koukyoukoutsuu/gokaringou/page001833.html",
+          "label": "コミュニティ交通ごかりん号",
+          "checked": "2026-10-07",
+          "updated": "2026-08-04"
+        }
+      ],
+      "evidence": "運賃半額",
+      "origin": "record"
+    },
+    {
+      "id": "transport:ibaraki:koga:bus-183203bae05c6c74",
+      "key": "ibaraki:koga",
+      "programId": "bus-183203bae05c6c74",
+      "type": "bus",
+      "kind": "fixed",
+      "fixedFare": 100,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "65歳以上ぐるりん号シルバーパス",
+      "headline": "1回100円",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 古河市在住の65歳以上。\n記録上の対象年齢の下限: 65\n支援内容: 全コース1乗車100円\n本人負担・運賃: 1乗車100円\n利用できる交通: 古河市循環バスぐるりん号全コース\n申請・問い合わせ: 各庁舎・車内にあるシルバーパスに氏名・住所・生年月日を記入して提示。繰り返し使用可。\n概要: 返納・運転をやめた失効者のバス利用券と、65歳以上シルバーパスがあります。",
+      "checked": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.city.ibaraki-koga.lg.jp/soshiki/koutuu/3/16925.html",
+          "label": "ぐるりん号のご案内",
+          "checked": "2026-10-07",
+          "updated": "2026-09-25"
+        },
+        {
+          "url": "https://www.city.ibaraki-koga.lg.jp/soshiki/koutuu/3/11396.html",
+          "label": "高齢者運転免許自主返納支援",
+          "checked": "2026-10-07",
+          "updated": "2025-12-26"
+        }
+      ],
+      "evidence": "全コース1乗車100円",
+      "origin": "record"
+    },
+    {
+      "id": "transport:ibaraki:omitama:bus-80ea9efa7499ba44",
+      "key": "ibaraki:omitama",
+      "programId": "bus-80ea9efa7499ba44",
+      "type": "bus",
+      "kind": "percent",
+      "percent": 50,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "おみたん号65歳以上半額",
+      "headline": "運賃の50%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 小美玉市在住の65歳以上。\n記録上の対象年齢の下限: 65\n支援内容: 運賃半額\n本人負担・運賃: 1乗車200円→100円\n利用できる交通: 小美玉市コミュニティバスおみたん号\n申請・問い合わせ: 割引適用者カード申請書を都市整備課に提出しカード交付を受ける。\n概要: 市内在住の65歳以上はおみたん号の運賃が半額です。",
+      "checked": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.city.omitama.lg.jp/0102/info-0000007825-0.html",
+          "label": "コミュニティバスおみたん号",
+          "checked": "2026-10-07",
+          "updated": "2026-09-24"
+        }
+      ],
+      "evidence": "運賃半額",
+      "origin": "record"
+    },
+    {
+      "id": "transport:kagawa:higashikagawa:bus-5dcd345e0bc46021",
+      "key": "kagawa:higashikagawa",
+      "programId": "bus-5dcd345e0bc46021",
+      "type": "bus",
+      "kind": "fixed",
+      "fixedFare": 100,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "70歳以上の福祉バス",
+      "headline": "1回100円",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 東かがわ市に住所がある70歳以上の人。福祉バス資格者証が必要。\n記録上の対象年齢の下限: 70\n支援内容: 対象区間は1乗車100円。資格者証は有効期限なし。\n本人負担・運賃: 資格者証を運転手へ提示し、利用券と100円を運賃箱へ。対象区間を越える場合は久保田からの普通運賃。\n利用できる交通: 大川バス五名福栄線と引田線の市内指定区間。令和8年4月1日現在の路線図で確認。\n申請・問い合わせ: 写真（おおむね1年以内、縦3cm×横2.5cm）と年齢等を証明する書類を福祉課・市民課・引田窓口・大内窓口・福栄郵便局・五名郵便局へ。\n概要: 市内の70歳以上は資格者証で対象区間の大川バスを1乗車100円で利用できます。",
+      "checked": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.higashikagawa.jp/soshikikarasagasu/fukushika/gyomuannai/7/891.html",
+          "label": "市・福祉バスのご利用案内",
+          "checked": "2026-10-07",
+          "updated": "2026-04-01"
+        }
+      ],
+      "evidence": "対象区間は1乗車100円。資格者証は有効期限なし。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:miyagi:tome:bus-b165af0b4c097945",
+      "key": "miyagi:tome",
+      "programId": "bus-b165af0b4c097945",
+      "type": "bus",
+      "kind": "fixed",
+      "fixedFare": 100,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "市民バス75歳以上運賃",
+      "headline": "1回100円",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 75歳以上の人。\n記録上の対象年齢の下限: 75\n支援内容: 市民バス1回100円。\n本人負担・運賃: 通常200円が100円。\n利用できる交通: 登米市市民バス。\n申請・問い合わせ: 降車時に生年月日の分かる公的身分証明書等提示。市民協働課0220-22-2173。\n概要: 75歳以上の市民バス運賃は100円です。正式返納者には1年間無料の「あしがるくん」が交付されます。",
+      "checked": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.city.tome.miyagi.jp/shiminkyodo/shiminbusnituite.html",
+          "label": "公式案内",
+          "checked": "2026-10-07",
+          "updated": "2026-09-17"
+        },
+        {
+          "url": "https://www.city.tome.miyagi.jp/simin/kurashi/anzen/kotsu/asigarukun.html",
+          "label": "市の交通安全のページ",
+          "checked": "2026-10-07",
+          "updated": "2026-04-01"
+        }
+      ],
+      "evidence": "市民バス1回100円。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:miyazaki:kobayashi:taxi-e10ce3f863f9ff15",
+      "key": "miyazaki:kobayashi",
+      "programId": "taxi-e10ce3f863f9ff15",
+      "type": "taxi",
+      "kind": "coupon",
+      "face": 500,
+      "stock": 30,
+      "cap": 4,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "annual",
+      "title": "福祉タクシー料金助成事業",
+      "headline": "年間最大15,000円分（利用券）",
+      "assumption": "年度初めに未使用の年間交付券が揃い、掲載記録の対象条件を満たす場合の参考比較。利用回数と実際の残数は利用者の状況で変わります。",
+      "eligibility": "内容: 75歳以上で、住民税がかからない世帯などの条件を満たす人に、タクシー利用券（1枚500円）を年間最大30枚交付します。\n対象・年齢: 小林市に住所がある75歳以上の高齢者（障がい者等も対象）。前年度の住民税所得割が課税されていない世帯、75歳以上は本人が運転免許又は車両を持っていないこと、同居等の親族がいないか全員が免許・車両なし・週5日以上就労などの条件あり\n支援内容: 利用券1枚500円、年間最大30枚。乗車料金を超えない範囲で1回あたり1人4枚まで使える\n申請方法: お近くの施設へ連絡：小林市地域包括支援センター（0984-25-0707）、長寿介護課（0984-23-1140）、須木庁舎住民生活課（0984-48-3111）、野尻庁舎住民生活課（0984-44-1100）ほか\n免許返納との関係: 記載なし（返納が条件ではありません）\n補足・注意: 須木地域には、おおむね65歳以上で介護認定や障がい者手帳がある人向けの外出支援サービス（片道100円）もありますが、体の状態が条件なので数えていません。\n出典の更新日: 更新日：2026年04月01日",
+      "checked": "2026-09-29",
+      "sources": [
+        {
+          "url": "https://www.city.kobayashi.lg.jp/iryo_kenko_fukushi/koreishafukushi_kaigo/koreishamukenosupport/3588.html",
+          "label": "市の福祉タクシー料金助成事業のページ",
+          "checked": "2026-09-29",
+          "updated": "更新日：2026年04月01日"
+        }
+      ],
+      "evidence": "利用券1枚500円、年間最大30枚。乗車料金を超えない範囲で1回あたり1人4枚まで使える",
+      "origin": "record"
+    },
+    {
+      "id": "transport:nara:nara:bus-3b8ccde542b59e93",
+      "key": "nara:nara",
+      "programId": "bus-3b8ccde542b59e93",
+      "type": "bus",
+      "kind": "fixed",
+      "fixedFare": 100,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "ななまるカード（奈良市優待乗車証）",
+      "headline": "1回100円",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 奈良市内に3か月以上居住し住民登録がある70歳以上。優遇措置は誕生日の翌月から（1日生まれはその日から）。\n記録上の対象年齢の下限: 70\n支援内容: 奈良交通路線バスを1乗車100円で利用できる。\n本人負担・運賃: 1乗車100円。乗り換えごとに100円。利用前に現金をチャージ。\n利用できる交通: 奈良交通路線バスの市内停留所間、または市内停留所で乗車・降車する区間。高速・リムジン・定期観光・深夜急行バスは除外。市外から市外では利用不可。\n申請・問い合わせ: 市から手続き案内が届いたら新規申請。オンライン申請可。老春手帳所持者で優待乗車証のない人は長寿福祉課・出張所・連絡所・行政センターで申請。\n補足・注意: ななまるカードと老春手帳奈良市優待乗車証は同じ優遇措置で利用できる。\n概要: 70歳以上のななまるカードで1乗車100円。免許返納者には別に2,000円分のチャージ券。",
+      "checked": "2026-10-06",
+      "sources": [
+        {
+          "url": "https://www.city.nara.lg.jp/soshiki/36/205690.html",
+          "label": "市のななまるカード優遇措置",
+          "checked": "2026-10-06",
+          "updated": "2025-12-18"
+        },
+        {
+          "url": "https://www.city.nara.lg.jp/soshiki/36/3642.html",
+          "label": "市のななまる運転免許証自主返納支援事業",
+          "checked": "2026-10-06",
+          "updated": "2026-04-01"
+        }
+      ],
+      "evidence": "奈良交通路線バスを1乗車100円で利用できる。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:okayama:kibichuo:bus-8dc500029278baae",
+      "key": "okayama:kibichuo",
+      "programId": "bus-8dc500029278baae",
+      "type": "bus",
+      "kind": "percent",
+      "percent": 50,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "へそ8バス愛カード割引",
+      "headline": "運賃の50%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: おかやま愛カードを提示する人。\n支援内容: 運賃半額。\n本人負担・運賃: 1乗車200円→100円。\n利用できる交通: 町営バス町内巡回バスへそ8バス\n申請・問い合わせ: 乗車時に提示。\n概要: へそ8バスは愛カード提示で半額。",
+      "checked": "2026-10-06",
+      "sources": [
+        {
+          "url": "https://www.town.kibichuo.lg.jp/soshiki/2/9182.html",
+          "label": "へそ8バスの運賃（令和8年10月改正）",
+          "checked": "2026-10-06",
+          "updated": "2026-10-01"
+        }
+      ],
+      "evidence": "運賃半額。",
+      "origin": "record"
+    },
+    {
+      "id": "transport:tottori:wakasa:bus-a760d3e48e72920f",
+      "key": "tottori:wakasa",
+      "programId": "bus-a760d3e48e72920f",
+      "type": "bus",
+      "kind": "percent",
+      "percent": 50,
+      "rounding": "floor",
+      "annualFee": 0,
+      "cycle": "ongoing",
+      "title": "町営バスデマンド便自主返納割引",
+      "headline": "運賃の50%を割引",
+      "assumption": "乗車証等を持っている人の乗車料金だけの例。掲載記録の対象条件を満たし、同じ条件が1年間続く場合の参考比較です。",
+      "eligibility": "対象・条件: 運転免許を自主返納し、運転経歴証明書の交付を受けている人。年齢・居住要件は案内に記載なし。\n支援内容: 手帳等確認後に片道運賃半額\n本人負担・運賃: 通常片道200円から100円。待機料金は15分100円（待機料金の割引は記載なし）\n利用できる交通: 若桜町全域。町外は運行不可\n申請・問い合わせ: 乗車時に運転経歴証明書提示。受付8～17時、希望時刻30～60分前までに電話予約（0858-71-1133）。7～8時乗車は前日17時、平日17～19時乗車は当日17時まで\n概要: 65歳以上のシルバー定期券と、免許自主返納者向けデマンド便半額があります。",
+      "checked": "2026-10-06",
+      "sources": [
+        {
+          "url": "https://www.town.wakasa.tottori.jp/soshikikarasagasu/kikakuseisakuka/1/jouhokoutuukakari/10/2/choueibasu/1420.html",
+          "label": "町営バス（デマンド便）／若桜町",
+          "checked": "2026-10-06",
+          "updated": "2026-01-27"
+        },
+        {
+          "url": "https://www.town.wakasa.tottori.jp/soshikikarasagasu/kikakuseisakuka/1/jouhokoutuukakari/10/2/choueibasu/1038.html",
+          "label": "町営バス（定時運行路線バス）／若桜町",
+          "checked": "2026-10-06",
+          "updated": "2026-08-25"
+        }
+      ],
+      "evidence": "手帳等確認後に片道運賃半額",
+      "origin": "record"
+    }
+  ]
+}
