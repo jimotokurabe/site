@@ -1,0 +1,365 @@
+[
+  {
+    "key": "hyogo:akashi",
+    "title": "寿タクシー利用券",
+    "face": 500,
+    "stock": 4,
+    "cap": 99,
+    "headline": "年2,000円分",
+    "assumption": "1年分・未使用の4枚を使う例。乗車・降車とも明石市内、指定事業者のみ。",
+    "eligibility": "1月1日から継続して市内在住で、4月1日現在70歳以上。ほかの市優待制度との重複交付不可。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-7de9e5ec2e21f093",
+    "programId": "taxi-7de9e5ec2e21f093",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "ceil",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.city.akashi.lg.jp/fukushi/k_kaigo_shitsu/kenko/koresha/jose/josesedo.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      },
+      {
+        "url": "https://www.city.akashi.lg.jp/documents/4604/r8_keirouyuutai-riyouannnai.pdf",
+        "label": "利用案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "70歳以上など",
+    "annualFee": 0
+  },
+  {
+    "key": "hyogo:akashi",
+    "id": "akashi-bus",
+    "programId": null,
+    "type": "bus",
+    "kind": "fixed",
+    "fixedFare": 120,
+    "annualFee": 0,
+    "cycle": "ongoing",
+    "title": "神姫・山陽バス",
+    "headline": "1乗車120円",
+    "assumption": "対象乗車証を持ち、同じ運賃と回数で12か月使う例。次年度の運賃を確定するものではありません。",
+    "eligibility": "市内在住の70歳以上で本人のバス共通寿優待乗車証を利用。神姫・山陽バスは市内乗降・現金120円。神戸市バス対象外、IC・回数券等との併用不可。たこバス・たこバスミニは対象乗車無料。",
+    "checked": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://www.city.akashi.lg.jp/fukushi/k_kaigo_shitsu/kenko/koresha/jose/josesedo.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      },
+      {
+        "url": "https://www.city.akashi.lg.jp/documents/4604/r8_keirouyuutai-riyouannnai.pdf",
+        "label": "利用案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "70歳以上・対象乗車証を持つ方"
+  },
+  {
+    "key": "hyogo:akashi",
+    "id": "akashi-tako",
+    "programId": null,
+    "type": "bus",
+    "kind": "fixed",
+    "fixedFare": 0,
+    "annualFee": 0,
+    "cycle": "ongoing",
+    "title": "たこバス・たこバスミニ",
+    "headline": "対象乗車が無料",
+    "assumption": "対象乗車証を持ち、同じ運賃と回数で12か月使う例。次年度の運賃を確定するものではありません。",
+    "eligibility": "市内在住の70歳以上で本人のバス共通寿優待乗車証を利用。神姫・山陽バスは市内乗降・現金120円。神戸市バス対象外、IC・回数券等との併用不可。たこバス・たこバスミニは対象乗車無料。",
+    "checked": "2026-10-15",
+    "sources": [
+      {
+        "url": "https://www.city.akashi.lg.jp/fukushi/k_kaigo_shitsu/kenko/koresha/jose/josesedo.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      },
+      {
+        "url": "https://www.city.akashi.lg.jp/documents/4604/r8_keirouyuutai-riyouannnai.pdf",
+        "label": "利用案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "70歳以上・対象乗車証を持つ方"
+  },
+  {
+    "key": "hyogo:nishinomiya",
+    "title": "福祉タクシー利用券・定額制",
+    "face": 500,
+    "stock": 72,
+    "cap": 3,
+    "headline": "年最大36,000円分",
+    "assumption": "年度初めに最大72枚を交付され、すべて未使用の例。年度途中の申請では枚数が減ります。",
+    "eligibility": "一般交通の利用が困難な在宅の方。高齢者枠は65歳以上・要介護3〜5で介助者が添乗できる方。対象手帳等による別枠あり。入院・施設入所、市外居住、ガソリン費助成・高齢者バス助成の利用者は対象外。予約制とは別です。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-349d626fe4c4c871",
+    "programId": "taxi-349d626fe4c4c871",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "floor",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.nishi.or.jp/kenko/koreishafukushi/ido/taxi.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      },
+      {
+        "url": "https://www.nishi.or.jp/kenko/koreishafukushi/ido/taxi.files/2026taxiteigakusei.pdf",
+        "label": "利用案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "要介護などの条件あり",
+    "annualFee": 0
+  },
+  {
+    "key": "hyogo:sanda",
+    "title": "高齢者運賃助成（タクシー利用）",
+    "face": 500,
+    "stock": 15,
+    "cap": 3,
+    "headline": "年7,500円分",
+    "assumption": "年15枚をすべてタクシーに使う例。バス・鉄道と共通の券なので、そちらで使った分は減ります。",
+    "eligibility": "2026年3月31日時点で70歳以上、4月1日現在市内に住所がある方。市内で乗車または降車し、契約事業者を利用。重度障害者タクシー券との同時利用不可。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-f26cf455d91e8971",
+    "programId": "taxi-f26cf455d91e8971",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": "sanda",
+    "rounding": "ceil",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.city.sanda.lg.jp/soshiki/35/gyomu/kourei_fukushi_kaigo/support_koreisha/3771.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "70歳以上など",
+    "annualFee": 0
+  },
+  {
+    "key": "hyogo:takasago",
+    "title": "高齢者福祉タクシー料金助成",
+    "face": 500,
+    "stock": 24,
+    "cap": 3,
+    "headline": "年最大12,000円分",
+    "assumption": "4月申請で24枚を受け取り、未使用から使う例。申請月が遅いと2枚ずつ減ります。",
+    "eligibility": "65歳以上で要支援・要介護認定、または運転経歴証明書があり、市民税非課税世帯の方。障害者福祉タクシー助成との重複不可。指定事業者のみ。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-1ec88fe5909661dc",
+    "programId": "taxi-1ec88fe5909661dc",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "floor",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/chiikifukushika/koreishafukushi_kaigo/2/1/5866.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "返納・介護＋非課税など",
+    "annualFee": 0
+  },
+  {
+    "key": "hyogo:himeji",
+    "title": "ひめじウェルカード（タクシー）",
+    "face": 500,
+    "stock": 14,
+    "cap": 3,
+    "headline": "年7,000円分",
+    "assumption": "タクシーを選び、年間14枚分を未使用から使う例。バス・船舶の助成とは選択制です。",
+    "eligibility": "75歳以上の対象市民でタクシーの助成を選んだ方。本人が対象事業者で利用。年度途中に別の交通への変更はできません。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-153b09afe9ff1e51",
+    "programId": "taxi-153b09afe9ff1e51",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "ceil",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.city.himeji.lg.jp/kurashi/0000002864.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      },
+      {
+        "url": "https://giftpad-benefit.com/special/himeji/",
+        "label": "利用案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "75歳以上など",
+    "annualFee": 0
+  },
+  {
+    "key": "hyogo:aioi",
+    "title": "タクシー利用補助事業",
+    "face": 500,
+    "stock": 6,
+    "cap": 1,
+    "headline": "1回限り3,000円分",
+    "assumption": "500円券6枚と、対象会社の返納特典1割引を組み合わせる例。券は交付から1年間・1人1回限りです。",
+    "eligibility": "2024年4月1日以降に免許返納し、運転経歴証明書を交付された市民。相生タクシー・神姫第一交通が対象。精算時に証明書を提示。",
+    "checked": "2026-10-15",
+    "baseDiscount": 10,
+    "id": "taxi-685dbcd38bf32856",
+    "programId": "taxi-685dbcd38bf32856",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "ceil",
+    "cycle": "once",
+    "sources": [
+      {
+        "url": "https://www.city.aioi.lg.jp/soshiki/chiikishinko/takusi-hojo.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "免許を返納した方",
+    "annualFee": 0
+  },
+  {
+    "key": "hyogo:inami",
+    "title": "高齢者優待利用券（タクシー）",
+    "face": 500,
+    "stock": 72,
+    "cap": 3,
+    "headline": "1年分で最大36,000円分",
+    "assumption": "月あたり6枚×12か月分を年度初めから使う例。申請月により交付枚数が変わります。",
+    "eligibility": "外出にタクシー・バスが必要な75歳以上の在宅の方。65〜74歳は住民税非課税世帯。重度障害者福祉タクシー券の受給者は対象外。契約事業者のみ。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-31d0a9ac2246c8d5",
+    "programId": "taxi-31d0a9ac2246c8d5",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": "inami",
+    "rounding": "ceil",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.town.hyogo-inami.lg.jp/0000007447.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "75歳以上／65歳以上は条件あり",
+    "annualFee": 0
+  },
+  {
+    "key": "nara:kawanishi",
+    "title": "地域公共交通タクシー利用料金助成",
+    "face": 500,
+    "stock": 24,
+    "cap": 1,
+    "headline": "年12,000円分",
+    "assumption": "年24枚を未使用から使う例。1乗車1人1枚、登録事業者のみです。",
+    "eligibility": "当該年度に75歳になる方を含む町民。運転免許がない、または自家用車を所有しない方。施設入所・入院等は対象外。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-40dca4cc25725192",
+    "programId": "taxi-40dca4cc25725192",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "ceil",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.town.nara-kawanishi.lg.jp/0000007970.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "75歳以上＋免許・車の条件",
+    "annualFee": 0
+  },
+  {
+    "key": "nara:miyake",
+    "title": "地域公共交通タクシー利用料金補助",
+    "face": 750,
+    "stock": 48,
+    "cap": 2,
+    "headline": "年36,000円分",
+    "assumption": "2026年度の750円券48枚を未使用から使う例。1乗車最大2枚、運賃に応じて使用します。",
+    "eligibility": "65歳以上で、免許がない・車を所有しない・病気等で2か月以上運転できない、のいずれか。妊娠中の対象枠もあり。乗車か降車の少なくとも一方が町内。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-bd96fbccfa17247f",
+    "programId": "taxi-bd96fbccfa17247f",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "floor",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.town.miyake.lg.jp/soshiki/3/8645.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "65歳以上＋免許・車などの条件",
+    "annualFee": 0
+  },
+  {
+    "key": "nara:tawaramoto",
+    "title": "タワラモトンタクシー",
+    "face": 500,
+    "stock": 36,
+    "cap": 1,
+    "headline": "年18,000円分",
+    "assumption": "年度分36枚を未使用から使う例。1乗車1枚。次年度へ繰り越せません。",
+    "eligibility": "2026年度に71歳以上となる町民（昭和31年4月1日以前生まれ）。移動困難者・妊婦・就学前児童の枠もあり。町内指定事業者、出発か到着が町内。登録証が必要。",
+    "checked": "2026-10-15",
+    "baseDiscount": 0,
+    "id": "taxi-01848ab195b53f1f",
+    "programId": "taxi-01848ab195b53f1f",
+    "type": "taxi",
+    "kind": "coupon",
+    "tier": null,
+    "rounding": "ceil",
+    "cycle": "annual",
+    "sources": [
+      {
+        "url": "https://www.town.tawaramoto.nara.jp/kurashi/koutsu/tawaramotontaxi/7656.html",
+        "label": "公式案内",
+        "checked": "2026-10-15"
+      }
+    ],
+    "origin": "verified",
+    "tag": "2026年度71歳以上など",
+    "annualFee": 0
+  }
+]
