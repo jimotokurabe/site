@@ -122,6 +122,20 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
         url = src.get("url")
         hostname = (urlsplit(url).hostname or "").lower().rstrip(".") if isinstance(url, str) else ""
         official_host = hostname.endswith((".lg.jp", ".go.jp")) or hostname in {"lg.jp", "go.jp", "www.nishi.or.jp", "nishi.or.jp"}
+        if hostname == 'www.city.amagasaki.hyogo.jp' or (sid == 'amagasaki-faq287' and url == 'https://faq.city.amagasaki.hyogo.jp/faq/detail.aspx?id=287'):
+            owners = {c.get('id') for c in cities if isinstance(c, dict)
+                      for service in c.get('services', [])
+                      for fact in service.get('fields', {}).values()
+                      if sid in fact.get('source_ids', [])}
+            official_host = owners == {'hyogo:amagasaki'}
+        # Kawasaki uses .jp, including its city-linked bulky-waste reception FAQ.
+        # Permit only this municipality; this is provenance, not publication approval.
+        if hostname == 'www.city.kawasaki.jp' or (sid == 'kawasaki-dropoff-faq' and url == 'https://www.sodai.city.kawasaki.jp/eco/view/kawasaki/faq.html'):
+            owners = {c.get('id') for c in cities if isinstance(c, dict)
+                      for service in c.get('services', [])
+                      for fact in service.get('fields', {}).values()
+                      if sid in fact.get('source_ids', [])}
+            official_host = owners == {'kanagawa:kawasaki'}
         if not isinstance(url, str) or urlsplit(url).scheme not in {"http", "https"} or not official_host:
             errors.append(f"{path}.url: expected an official municipal/prefectural government hostname")
         if src.get("source_kind") != "official":

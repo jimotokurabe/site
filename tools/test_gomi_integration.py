@@ -30,7 +30,7 @@ class GomiIntegrationTests(unittest.TestCase):
 
     def test_preview_accepts_research_but_public_gate_rejects_flag_only_change(self):
         with tempfile.TemporaryDirectory() as out:
-            self.assertEqual(len(prepare(ROOT, out, draft=True, preview=True)['cities']), 4)
+            self.assertEqual(prepare(ROOT, out, draft=True, preview=True)['cities'], DATA['cities'])
             temp_root = Path(out) / 'repo'
             (temp_root / 'data').mkdir(parents=True)
             changed = copy.deepcopy(DATA)

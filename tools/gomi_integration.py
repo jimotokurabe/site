@@ -7,10 +7,16 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 
 
-def prepare(root, out, *, draft=False, preview=False):
+def prepare(root, out, *, draft=False, preview=False, data_path=None):
     path = Path(root) / 'data/gomi-support.json'
     if preview and (not draft or Path(out).resolve() == Path(root).resolve()):
         raise ValueError('--gomi-preview requires --draft and a separate --out directory')
+    if data_path is not None:
+        if not (draft and preview):
+            raise ValueError('--gomi-data requires --draft and --gomi-preview')
+        if Path(root).resolve() in Path(out).resolve().parents:
+            raise ValueError('Candidate output must be outside the repository')
+        path = Path(data_path).resolve()
     if not path.exists():
         if preview:
             raise ValueError('Missing gomi-support.json')
@@ -110,6 +116,8 @@ def render(out, root, data, *, draft=True):
     update_home(soup, data)
     home_path.write_text(str(soup), encoding='utf-8')
     for city in data['cities']:
+        if city['id'] not in data.get('related_city_ids', [c['id'] for c in data['cities']]):
+            continue
         pref, slug = city['id'].split(':')
         page = out / f'{pref}-menkyo-henno/{slug}.html'
         soup = BeautifulSoup(page.read_text(), 'html.parser')
