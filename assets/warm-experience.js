@@ -113,6 +113,7 @@
           `\n\n次に一緒にできること\n${familyDialog.querySelector('[data-family-next]').textContent}\n\nじもとくらべが作成した会話の例です。`
         : item.openings[variant];
       const copied = await copyText(text);
+      if (copied) window.jkAnalytics?.memoCopied('family_hint');
       status.textContent = copied ? (memo ? '選んだ会話をコピーしました。メモやメッセージに貼り付けられます。' : 'ひと言をコピーしました。') : 'コピーできませんでした。文章を選択してコピーしてください。';
     }
     familyDialog.querySelector('[data-family-copy]').addEventListener('click', () => copyConversation(false));
@@ -166,6 +167,7 @@
     shareDialog.querySelector('[data-share-close]').addEventListener('click', () => shareDialog.close?.());
     shareDialog.querySelector('[data-share-copy]').addEventListener('click', async () => {
       const copied = await copyText(shareText.value);
+      if (copied) window.jkAnalytics?.memoCopied('city_guide');
       shareStatus.textContent = copied ? '案内文をコピーしました。' : 'コピーできませんでした。案内文を選択してコピーしてください。';
     });
     return shareDialog;

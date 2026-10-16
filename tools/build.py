@@ -129,42 +129,11 @@ def jdate(iso):
     return f"{y}年{m}月{d}日"
 
 
-ACTION_SCRIPT = r"""<script>
-(function () {
-  // Local checks must never send production analytics events.
-  if (location.hostname !== "jimotokurabe.jp" && location.hostname !== "www.jimotokurabe.jp") return;
-  document.addEventListener("click", function (event) {
-    var target = event.target;
-    if (!target || !target.closest) return;
-    var control = target.closest("a, button");
-    if (!control || !control.closest("main") || typeof window.gtag !== "function") return;
-    var name = "", params = {page_path: location.pathname};
-    if (control.matches("[data-print]")) {
-      name = "print_request";
-    } else if (control.tagName === "A") {
-      var href = control.getAttribute("href") || "";
-      if (href.indexOf("tel:") === 0) {
-        name = "phone_click";
-      } else {
-        var url;
-        try { url = new URL(href, location.href); } catch (_) { return; }
-        if (url.protocol !== "https:" && url.protocol !== "http:") return;
-        if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
-          name = "share_line";
-        } else if (url.origin !== location.origin && (/(^|\.)(lg|go)\.jp$/.test(url.hostname) || /(^|\.)(city|town|vill|pref)\.[a-z0-9-]+(?:\.[a-z0-9-]+)?\.jp$/.test(url.hostname) || /(^|\.)nishi\.or\.jp$/.test(url.hostname))) {
-          name = "official_info_click";
-          params.link_domain = url.hostname;
-          params.link_path = url.pathname;
-        } else if (control.closest("[data-related-support]")) {
-          name = "related_support_click";
-          params.link_path = url.pathname;
-        }
-      }
-    }
-    if (name) window.gtag("event", name, params);
-  });
-})();
-</script>"""
+def analytics_tag(base, draft):
+    if draft:
+        return ""
+    rev = hashlib.sha256((ROOT / "assets/analytics.js").read_bytes()).hexdigest()[:12]
+    return f'<script data-jk-analytics="gtag" src="{base}assets/analytics.js?v={rev}"></script>'
 
 
 def shell(*, title, description, path, main, draft, draft_note="", scripts="", base="", page_class="", body_class="", styles=""):
@@ -182,20 +151,13 @@ def shell(*, title, description, path, main, draft, draft_note="", scripts="", b
     return f"""<!doctype html>
 <html lang="ja">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T1PQ72Q40S"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){{dataLayer.push(arguments);}}
-gtag('js', new Date());
-if (/^(www\\.)?jimotokurabe\\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ72Q40S');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="google-adsense-account" content="ca-pub-2542211932832864">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 {robots}<link rel="canonical" href="{canonical}">
+{analytics_tag(base, draft)}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="じもとくらべ">
 <meta property="og:title" content="{e(title)}">
@@ -238,7 +200,7 @@ if (/^(www\\.)?jimotokurabe\\.jp$/.test(location.hostname)) gtag('config', 'G-T1
   <p>© 2026 じもとくらべ</p>
 </footer>
 </div>
-{SIZE_SCRIPT}{chr(10) + ACTION_SCRIPT if not draft else ""}
+{SIZE_SCRIPT}
 {scripts}
 </body>
 </html>
@@ -2623,8 +2585,9 @@ def hanashi_page(data, hk, draft, prefs=None):
     b.innerHTML = "<span></span><small>押すとコピーできます</small>";
     b.firstChild.textContent = "「" + x + "」";
     b.addEventListener("click", function () {
-      var done = function () { b.classList.add("copied"); b.lastChild.textContent = "コピーしました"; };
-      if (navigator.clipboard) navigator.clipboard.writeText(x).then(done, done); else done();
+      var done = function () { window.jkAnalytics?.memoCopied("family_hint"); b.classList.add("copied"); b.lastChild.textContent = "コピーしました"; };
+      var failed = function () { b.lastChild.textContent = "コピーできませんでした。文章を選択してコピーしてください。"; };
+      if (navigator.clipboard) navigator.clipboard.writeText(x).then(done, failed); else failed();
     });
     $("hk-phrases").innerHTML = "";
     $("hk-phrases").appendChild(b);
@@ -2814,6 +2777,8 @@ def main():
     ap.add_argument("--artifact-main", help="確認用ページで最初に出す市町の slug（省くとトップページ）")
     ap.add_argument("--gomi-data", type=Path, help="別のごみ候補JSON（下書き専用）")
     a = ap.parse_args()
+    from national_pages import capture_legacy_ids
+    legacy_ids = capture_legacy_ids(ROOT)
     from gomi_integration import prepare as prepare_gomi
     if a.gomi_preview and a.artifact:
         ap.error('--gomi-preview は --artifact と併用せず、--out で確認してください')
@@ -2879,6 +2844,7 @@ def main():
     pages[HANASHI_PATH] = apply_warm_guide(pages[HANASHI_PATH], family=True)
     if out.resolve() != ROOT:
         (out / 'assets').mkdir(exist_ok=True)
+        shutil.copy(ROOT / 'assets/analytics.js', out / 'assets/analytics.js')
         for asset in ('warm-guides.css', 'warm-guides.js', 'warm-shared.css', 'family-guide.webp', 'site-header.css', 'site-header.js', 'outing-plan.css', 'outing-plan.js', 'site-info.css', 'transport-cost.css', 'transport-cost-engine.js', 'transport-cost.js', 'transport-estimates.json'):
             shutil.copy(ROOT / 'assets' / asset, out / 'assets' / asset)
     # 下書きの県（pref.draft が true）は、検索に出さず、サイトマップとトップにも載せない
@@ -2944,7 +2910,7 @@ def main():
             shutil.copy(ROOT / 'assets/bus.css', art / 'assets/bus.css')
     if (ROOT / 'data/municipality-supplements.json').exists():
         from national_pages import render
-        render(out, draft=a.draft)
+        render(out, draft=a.draft, legacy_ids=legacy_ids)
     if gomi_data is not None:
         from gomi_integration import render as render_gomi
         render_gomi(out, ROOT, gomi_data, draft=a.draft)

@@ -78,7 +78,7 @@
     try {
       const parsed = new URL(url, location.href);
       if (!['https:', 'http:'].includes(parsed.protocol)) return node('span', label);
-      link.href = parsed.href; link.target = '_blank'; link.rel = 'noopener';
+      link.href = parsed.href; link.dataset.officialSource = ''; link.target = '_blank'; link.rel = 'noopener';
     } catch (_) { return node('span', label); }
     return link;
   }
@@ -583,6 +583,7 @@
     try {
       if (!navigator.clipboard) throw new Error('clipboard unavailable');
       await navigator.clipboard.writeText($('memo').value);
+      window.jkAnalytics?.memoCopied('outing_plan');
       $('status').textContent = '検討メモをコピーしました。家族との相談や、交通・支援の窓口への確認に使えます。';
     } catch (error) {
       document.querySelector('.outing-memo').open = true;

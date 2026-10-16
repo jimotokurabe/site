@@ -47,7 +47,8 @@ for f in sorted(OUT.rglob('*.html')):
     robots = [m.get('content', '').lower() for m in s.select('meta[name="robots"],meta[name="googlebot"]')]
     if any('noindex' in r or 'nofollow' in r for r in robots):
         issues.append([str(rel), 'public robots'])
-    if not s.select_one('script[src="https://www.googletagmanager.com/gtag/js?id=' + GA + '"]') or not re.search(r"gtag\(\s*['\"]config['\"]\s*,\s*['\"]" + GA, raw):
+    trackers = s.select('script[data-jk-analytics="gtag"]')
+    if len(trackers) != 1 or 'assets/analytics.js?v=' not in trackers[0].get('src', '') or 'googletagmanager.com/gtag/js' in raw:
         issues.append([str(rel), 'analytics'])
     ad = s.select_one('meta[name="google-adsense-account"]')
     if not ad or ad.get('content') != ADS:

@@ -1,20 +1,13 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T1PQ72Q40S"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ72Q40S');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="google-adsense-account" content="ca-pub-2542211932832864">
 <title>西之表市の移動手段と運賃支援｜じもとくらべ</title>
 <meta name="description" content="西之表市の移動手段と運賃支援。種子島温泉赤尾木の湯、市丸タクシー、はやしタクシーで利用可能。公式ページを2026年10月5日に確認。">
 <link rel="canonical" href="https://jimotokurabe.jp/kagoshima-mobility/nishinoomote.html">
+<script data-jk-analytics="gtag" src="../assets/analytics.js?v=5689b7059fdd"></script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="じもとくらべ">
 <meta property="og:title" content="西之表市の移動手段と運賃支援｜じもとくらべ">
@@ -123,42 +116,6 @@ if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ
   set(root.getAttribute("data-size") === "large" ? "large" : "normal", false);
   buttons.forEach(function (b) {
     b.addEventListener("click", function () { set(b.getAttribute("data-size-btn"), true); });
-  });
-})();
-</script>
-<script>
-(function () {
-  // Local checks must never send production analytics events.
-  if (location.hostname !== "jimotokurabe.jp" && location.hostname !== "www.jimotokurabe.jp") return;
-  document.addEventListener("click", function (event) {
-    var target = event.target;
-    if (!target || !target.closest) return;
-    var control = target.closest("a, button");
-    if (!control || !control.closest("main") || typeof window.gtag !== "function") return;
-    var name = "", params = {page_path: location.pathname};
-    if (control.matches("[data-print]")) {
-      name = "print_request";
-    } else if (control.tagName === "A") {
-      var href = control.getAttribute("href") || "";
-      if (href.indexOf("tel:") === 0) {
-        name = "phone_click";
-      } else {
-        var url;
-        try { url = new URL(href, location.href); } catch (_) { return; }
-        if (url.protocol !== "https:" && url.protocol !== "http:") return;
-        if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
-          name = "share_line";
-        } else if (url.origin !== location.origin && (/(^|\.)(lg|go)\.jp$/.test(url.hostname) || /(^|\.)(city|town|vill|pref)\.[a-z0-9-]+(?:\.[a-z0-9-]+)?\.jp$/.test(url.hostname) || /(^|\.)nishi\.or\.jp$/.test(url.hostname))) {
-          name = "official_info_click";
-          params.link_domain = url.hostname;
-          params.link_path = url.pathname;
-        } else if (control.closest("[data-related-support]")) {
-          name = "related_support_click";
-          params.link_path = url.pathname;
-        }
-      }
-    }
-    if (name) window.gtag("event", name, params);
   });
 })();
 </script>

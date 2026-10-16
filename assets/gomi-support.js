@@ -190,6 +190,7 @@
     try {
       if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(value);
+        window.jkAnalytics?.memoCopied('gomi_consultation');
         setStatus('相談メモをコピーしました。');
         return;
       }
@@ -206,7 +207,7 @@
     let copied = false;
     try { copied = document.execCommand('copy'); } catch (_) { copied = false; }
     helper.remove();
-    if (copied) setStatus('相談メモをコピーしました。');
+    if (copied) { window.jkAnalytics?.memoCopied('gomi_consultation'); setStatus('相談メモをコピーしました。'); }
     else {
       preview.focus();
       preview.select();

@@ -114,7 +114,6 @@ def finalize(path, relative, legacy_ids, draft, orders=None):
         related = soup.select_one('#related')
         if related:
             related['data-related-support'] = ''
-        soup.body.append(BeautifulSoup(b.ACTION_SCRIPT, 'html.parser'))
     apply_site_header(soup, base=base, home=relative == 'index.html')
     if relative == 'index.html':
         from colorful_home import apply_colorful_home
@@ -123,7 +122,20 @@ def finalize(path, relative, legacy_ids, draft, orders=None):
     path.write_text(str(soup), encoding='utf-8')
 
 
-def render(out, draft=False):
+def capture_legacy_ids(root):
+    """Capture anchors BEFORE build.py overwrites its intermediate pages."""
+    from html.parser import HTMLParser
+    class IDs(HTMLParser):
+        def __init__(self, html):
+            super().__init__(); self.ids = set(); self.feed(html)
+        def handle_starttag(self, tag, attrs):
+            self.ids.update(value for key, value in attrs if key == 'id')
+    root = Path(root)
+    return {p.relative_to(root).as_posix(): IDs(p.read_text()).ids
+            for p in root.glob('*-menkyo-henno/*.html')}
+
+
+def render(out, draft=False, legacy_ids=None):
     out = Path(out)
     import shutil
     (out/'assets').mkdir(exist_ok=True)
@@ -137,6 +149,7 @@ def render(out, draft=False):
     for relative in targets:
         path = out/relative
         old_ids[relative] = {node['id'] for node in BeautifulSoup(path.read_text(), 'html.parser').select('[id]')} if path.exists() else set()
+        old_ids[relative].update((legacy_ids or {}).get(relative, set()))
     subprocess.run([sys.executable, str(b.ROOT/'tools/national_navigation.py'), '--root', str(b.ROOT), '--out', str(out)], check=True)
     from national_city import build_all
     result = build_all(b.ROOT, out, draft=draft)
