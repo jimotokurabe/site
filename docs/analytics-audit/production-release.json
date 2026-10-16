@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-16T22:07:38.785618+09:00",
+  "merge_commit": "575c762c494f2de2e0d5d8ae645628308f3bcedb",
+  "pages_run": 38905243863,
+  "files": [
+    {
+      "file": "assets/analytics.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "5689b7059fdd1785e7d5fc8cc68fde6389f7c542c9e61e0d2a5e5e7e49d13183"
+    },
+    {
+      "file": "assets/transport-cost.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "fbdf76e937dc291593e3ae1bcd9652c2ab1f0135057cf606c5d9616280406f4b"
+    },
+    {
+      "file": "assets/warm-experience.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "1995e15c24980a7ec3ec66977e23e1214ae69db94ad4cc8b2af23eb0c10464f7"
+    },
+    {
+      "file": "assets/benefit-integration.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "a10487007e7eb2cf2afb74f281eee29d7bbf1bf6519b8565955859d053a0dae6"
+    },
+    {
+      "file": "assets/gomi-support.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "7350cdcd3f79d8e3819b5338f5502c8f85206d59b0f463f43b1d9944cf724c44"
+    },
+    {
+      "file": "assets/outing-plan.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "6602a35d97700f8aa74efa890c3afee00fd13780407df5e1b2258da28f5d1fe3"
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "0796fa88d534961ec9d8b63dcedc1c1f9dd74786424b546cc728e09041b3bff7"
+    },
+    {
+      "file": "transport-cost.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "e78695e036628e6d06f9bf1a5d0959b453822632d93d884eae17502084be397f"
+    },
+    {
+      "file": "hyogo-menkyo-henno/nishinomiya.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "c01af84fa5d4b3ebfbb2b3c51cc2e9e5d89f321f60fbd72cd070d5ab0be0c643"
+    },
+    {
+      "file": "hyogo-gomi-support/kobe.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "0d2b79436aea23b84dc5773b6fb6d9480a3ebf6e6d1578c18fea694881af4d7a"
+    }
+  ]
+}
