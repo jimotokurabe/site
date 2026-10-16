@@ -44,6 +44,8 @@ def transport_cost_page(shell, draft=False):
     apply_site_header(soup)
     for script in source.select('script[src]'):
         if script['src'].split('?', 1)[0] in ('assets/transport-cost-engine.js', 'assets/transport-cost.js'):
+            if script['src'].split('?', 1)[0] == 'assets/transport-cost.js':
+                script['src'] = 'assets/transport-cost.js?v=analytics-20261016'
             soup.body.append(script)
     return str(soup)
 

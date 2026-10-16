@@ -34,4 +34,4 @@ def apply_warm_city(soup):
         family.append(share)
     layout.append(sidebar)
     soup.body.append(BeautifulSoup(family_dialog(base='../'), 'html.parser'))
-    soup.body.append(soup.new_tag('script', src='../assets/warm-experience.js?v=conversation-20261009', defer=True))
+    soup.body.append(soup.new_tag('script', src='../assets/warm-experience.js?v=analytics-20261016', defer=True))

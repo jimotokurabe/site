@@ -152,6 +152,6 @@ def outing_plan_page(shell, draft=False):
     soup.head.append(boot)
     soup.head.append(soup.new_tag('link', rel='stylesheet', href='assets/outing-plan.css?v=20261010-purpose'))
     apply_site_header(soup)
-    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=20261010-purpose'):
+    for src in ('assets/warm-guides.js', 'assets/outing-plan.js?v=analytics-20261016'):
         soup.body.append(soup.new_tag('script', src=src, defer=True))
     return str(soup)

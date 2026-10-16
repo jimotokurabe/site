@@ -8,8 +8,8 @@ urls = [x.text for x in ET.parse(ROOT/'sitemap.xml').findall('.//s:loc', ns)]
 for url in urls:
     path = url.removeprefix('https://jimotokurabe.jp/') or 'index.html'
     html = (ROOT/path).read_text()
-    assert html.count('name = "official_info_click"') == 1, path
-    assert "if (/^(www\\.)?jimotokurabe\\.jp$/.test(location.hostname)) gtag('config'" in html, path
+    assert html.count('data-jk-analytics="gtag"') == 1, path
+    assert 'assets/analytics.js?v=' in html and 'googletagmanager.com/gtag/js' not in html, path
 s = BeautifulSoup((ROOT/'kanagawa-menkyo-henno/yokohama.html').read_text(), 'html.parser')
 for tag in s(['script', 'style']): tag.decompose()
 text = s.get_text(' ', strip=True)

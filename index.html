@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>免許返納・移動・ごみ出しの支援を地域から探す｜じもとくらべ</title><meta content="免許返納の特典や移動支援を全国の市町村から探せます。ごみ出し支援は掲載地域を確認し、日常ごみ・粗大ごみの条件、回収場所、相談先を調べられます。" name="description"/><link href="assets/warm-shared.css?v=conversation-20261009" rel="stylesheet"/><link href="assets/warm-navigation.css" rel="stylesheet"/><meta content="ca-pub-2542211932832864" name="google-adsense-account"/><link href="https://jimotokurabe.jp/" rel="canonical"/><meta content="website" property="og:type"/><meta content="じもとくらべ" property="og:site_name"/><meta content="免許返納・移動・ごみ出しの支援を地域から探す｜じもとくらべ" property="og:title"/><meta content="免許返納の特典や移動支援を全国の市町村から探せます。ごみ出し支援は掲載地域を確認し、日常ごみ・粗大ごみの条件、回収場所、相談先を調べられます。" property="og:description"/><meta content="https://jimotokurabe.jp/" property="og:url"/><meta content="ja_JP" property="og:locale"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-T1PQ72Q40S"></script><script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-if (/^(www\.)?jimotokurabe\.jp$/.test(location.hostname)) gtag('config', 'G-T1PQ72Q40S');
-</script><link href="assets/site-header.css" rel="stylesheet"/><link href="assets/colorful-home.css" rel="stylesheet"/><meta content="https://jimotokurabe.jp/assets/og-image.png" property="og:image"/>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>免許返納・移動・ごみ出しの支援を地域から探す｜じもとくらべ</title><meta content="免許返納の特典や移動支援を全国の市町村から探せます。ごみ出し支援は掲載地域を確認し、日常ごみ・粗大ごみの条件、回収場所、相談先を調べられます。" name="description"/><link href="assets/warm-shared.css?v=conversation-20261009" rel="stylesheet"/><link href="assets/warm-navigation.css" rel="stylesheet"/><meta content="ca-pub-2542211932832864" name="google-adsense-account"/><link href="https://jimotokurabe.jp/" rel="canonical"/><meta content="website" property="og:type"/><meta content="じもとくらべ" property="og:site_name"/><meta content="免許返納・移動・ごみ出しの支援を地域から探す｜じもとくらべ" property="og:title"/><meta content="免許返納の特典や移動支援を全国の市町村から探せます。ごみ出し支援は掲載地域を確認し、日常ごみ・粗大ごみの条件、回収場所、相談先を調べられます。" property="og:description"/><meta content="https://jimotokurabe.jp/" property="og:url"/><meta content="ja_JP" property="og:locale"/><script data-jk-analytics="gtag" src="assets/analytics.js?v=5689b7059fdd"></script><link href="assets/site-header.css" rel="stylesheet"/><link href="assets/colorful-home.css" rel="stylesheet"/><meta content="https://jimotokurabe.jp/assets/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="じもとくらべ：免許返納の特典・バス・タクシーの支援を市町村ごとに、公式ページで確かめて比べる" property="og:image:alt"/>
@@ -68,39 +63,4 @@ const regionButtons=[...document.querySelectorAll('[data-region-toggle]')];
 regionButtons.forEach(button=>button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';for(const other of regionButtons){const active=open&&other===button;other.setAttribute('aria-expanded',String(active));other.querySelector('.region-indicator').textContent=active?'−':'＋';document.getElementById(other.getAttribute('aria-controls')).hidden=!active;}}));
 function openHashSearch(){if(location.hash==='#search'||location.hash==='#city-query'){document.getElementById('search').open=true;if(location.hash==='#city-query')requestAnimationFrame(()=>document.getElementById('city-query').scrollIntoView());}}
 window.addEventListener('hashchange',openHashSearch);openHashSearch();
-</script><script defer="" src="assets/warm-experience.js?v=conversation-20261009"></script><script>
-(function () {
-  // Local checks must never send production analytics events.
-  if (location.hostname !== "jimotokurabe.jp" && location.hostname !== "www.jimotokurabe.jp") return;
-  document.addEventListener("click", function (event) {
-    var target = event.target;
-    if (!target || !target.closest) return;
-    var control = target.closest("a, button");
-    if (!control || !control.closest("main") || typeof window.gtag !== "function") return;
-    var name = "", params = {page_path: location.pathname};
-    if (control.matches("[data-print]")) {
-      name = "print_request";
-    } else if (control.tagName === "A") {
-      var href = control.getAttribute("href") || "";
-      if (href.indexOf("tel:") === 0) {
-        name = "phone_click";
-      } else {
-        var url;
-        try { url = new URL(href, location.href); } catch (_) { return; }
-        if (url.protocol !== "https:" && url.protocol !== "http:") return;
-        if (url.hostname === "line.me" && url.pathname.indexOf("/R/share") === 0) {
-          name = "share_line";
-        } else if (url.origin !== location.origin && (/(^|\.)(lg|go)\.jp$/.test(url.hostname) || /(^|\.)(city|town|vill|pref)\.[a-z0-9-]+(?:\.[a-z0-9-]+)?\.jp$/.test(url.hostname) || /(^|\.)nishi\.or\.jp$/.test(url.hostname))) {
-          name = "official_info_click";
-          params.link_domain = url.hostname;
-          params.link_path = url.pathname;
-        } else if (control.closest("[data-related-support]")) {
-          name = "related_support_click";
-          params.link_path = url.pathname;
-        }
-      }
-    }
-    if (name) window.gtag("event", name, params);
-  });
-})();
-</script><script defer="True" src="assets/site-header.js"></script></body></html>
+</script><script defer="" src="assets/warm-experience.js?v=analytics-20261016"></script><script defer="True" src="assets/site-header.js"></script></body></html>

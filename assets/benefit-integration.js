@@ -103,7 +103,7 @@
   }, true);
   dialog.addEventListener('close', () => share.focus({preventScroll:true}));
   document.getElementById('selection-copy').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(memo.value); copyStatus.textContent = 'コピーしました。連絡アプリなどに貼り付けられます。'; }
+    try { await navigator.clipboard.writeText(memo.value); window.jkAnalytics?.memoCopied('selected_supports'); copyStatus.textContent = 'コピーしました。連絡アプリなどに貼り付けられます。'; }
     catch { memo.focus(); memo.select(); copyStatus.textContent = '自動コピーできませんでした。選択した文章を手動でコピーしてください。'; }
   });
   render();
