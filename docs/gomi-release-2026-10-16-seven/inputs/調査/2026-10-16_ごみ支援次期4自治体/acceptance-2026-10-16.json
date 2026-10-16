@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-16",
+  "candidate_sha256": "aa590ea7eafe51aa199426cd18a31dda66625388085ed9870d66bda137bf0d79",
+  "status": "ready_for_owner_preview_approval",
+  "proposed_new_cities": [
+    "tokyo:setagaya",
+    "hokkaido:sapporo",
+    "aichi:nagoya",
+    "hyogo:kakogawa"
+  ],
+  "production_published": false,
+  "human_source_review": false,
+  "review_scope": "旧候補の5サービス限定重点確認に、残110フィールドの原典照合を追加。最終変更を差分確認。160フィールド全件の最終版独立再読ではない。",
+  "changed_ids": [
+    "setagaya-bulky-regular.indoor_carry",
+    "setagaya-bulky-regular.questions_for_office",
+    "setagaya-bulky-carry.collection_location",
+    "setagaya-bulky-carry.indoor_carry",
+    "setagaya-bulky-carry.eligibility",
+    "setagaya-bulky-carry.family_help",
+    "setagaya-bulky-carry.fees",
+    "setagaya-bulky-carry.limits",
+    "setagaya-self.questions_for_office",
+    "sapporo-bulky-regular.questions_for_office",
+    "sapporo-self.limits",
+    "sapporo-self.questions_for_office",
+    "nagoya-regular.application",
+    "nagoya-regular.questions_for_office",
+    "nagoya-drop.limits",
+    "nagoya-drop.questions_for_office"
+  ],
+  "parent_final_diff": {
+    "accepted": true,
+    "scope": "札幌・名古屋の持込制限2項目、世田谷の冊子基準日表示/状態、相談質問、名古屋通常粗大application",
+    "nagoya_phone_deadline_evidence": "B03 cities/nagoya/v2/raw/bulky-phone.txt:215。電話も収集日の7日前。親が保存原典確認してapplicationへ反映。",
+    "supersedes": "final-diff-sapporo-nagoya.jsonの電話期限質問の指摘を解消。他の同市差分は不変。"
+  },
+  "remaining_questions_are_not_answered": true,
+  "existing_8_cities_equal": true,
+  "existing_58_sources_equal": true
+}

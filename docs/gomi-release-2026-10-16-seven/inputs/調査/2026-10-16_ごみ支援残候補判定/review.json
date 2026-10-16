@@ -1,0 +1,31 @@
+{
+  "review_date": "2026-10-16",
+  "candidate": "new-cities.json",
+  "candidate_sha256": "c9ab5f9051d4a74a238bcb99ff31fbb478ab7fc43da109b786c0d6ba219891be",
+  "scope": {
+    "included": "猪名川町の4経路・40項目と松本市保留理由のみ",
+    "excluded": "既存14市。猪名川町の2026-10-13 Astraレビューは独立した今回の承認根拠として不使用",
+    "evidence": "official-refresh/ の取得済み公式原典9件（猪名川町7件、松本市2件）"
+  },
+  "assessment": {
+    "supported": [
+      {"topic":"ふれあい収集の対象世帯AND/OR・収集方法", "locator":"official-refresh/inagawa-fureai.txt:89-112"},
+      {"topic":"町長裁量世帯の現行ページと旧パンフの差を要確認として保持", "locator":"official-refresh/inagawa-fureai.txt:92-103; official-refresh/inagawa-fureai-leaflet.txt:13-38"},
+      {"topic":"通常大型ごみの集合住宅区分、搬出場所、屋内補助なし、品目・料金・数量・申込・立会い", "locator":"official-refresh/inagawa-large.txt:115-184; official-refresh/inagawa-large-fees.txt:1-46"},
+      {"topic":"ふれあい利用者の大型ごみは有料・事前連絡。専用の搬出支援、料金適用等を通常ルートから推定していない", "locator":"official-refresh/inagawa-fureai.txt:108-112; official-refresh/inagawa-large.txt:151-177"},
+      {"topic":"国崎の家族搬入、別居家族の書類、本人確認、自己荷下ろし、予約・時間・車種・現行料金と2027年改定", "locator":"official-refresh/inagawa-dropoff.txt:47-65; official-refresh/kunisaki-handcarried.txt:80-121"}
+    ],
+    "unresolved": [
+      {"topic":"ふれあい収集の現行対象に旧パンフ記載の町長裁量世帯が含まれるか", "locator":"official-refresh/inagawa-fureai.txt:92-103; official-refresh/inagawa-fureai-leaflet.txt:13-24"},
+      {"topic":"ふれあい利用者の大型ごみの受付後の手順、専用料金・上限・立会い・搬出支援", "locator":"official-refresh/inagawa-fureai.txt:112; official-refresh/inagawa-large.txt:151-184"},
+      {"topic":"電子申込ページは候補基準日より後の2026-10-19改訂表示。基準日現在の対象・締切は確定不可。候補が電話経路を案内し、利用日確認を付す扱いは妥当", "locator":"official-refresh/inagawa-electronic.txt:86-121; official-refresh/inagawa-large.txt:120-124"},
+      {"topic":"具体的品目の受入可否、町クリーンセンター搬入の古紙・剪定枝条件", "locator":"official-refresh/inagawa-dropoff.txt:80-121"}
+    ],
+    "revise": [],
+    "coverage_note": "40項目は項目ごとの正解率として集計していない。上記のとおり、主要な経路・条件は原典で追跡でき、未記載・記載差は未解決として適切に限定されている。"
+  },
+  "matsumoto_hold": [
+    "通常粗大ごみ・自己搬入は既存入力にあり、利用者に有用な経路。",
+    "日常支援・搬出支援は保留妥当。daily原典は寿地区の有償ボランティアによるゴミ出し（150円/回）に限られ、light-support原典は草取り・周囲の片付け等でゴミ出しや大型ごみ搬出の利用入口を裏付けない。支援の入口不足が理由であり、支援が存在しないとの断定ではない。locator: official-refresh/matsumoto-daily.txt:125-143; official-refresh/matsumoto-light-support.txt:125-137"
+  ]
+}

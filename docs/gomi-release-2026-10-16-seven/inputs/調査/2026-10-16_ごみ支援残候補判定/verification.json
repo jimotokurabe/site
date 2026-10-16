@@ -1,0 +1,31 @@
+{
+  "candidate_sha256": "3b4d0e0ce20a5deecd7563275a214757b4141fed4be30448fca8cc16a1a19d12",
+  "base14_city_objects_unchanged": true,
+  "base_sources_unchanged": true,
+  "field_values_checked": 40,
+  "questions_preserved": true,
+  "source_fragments_present": true,
+  "official_host_positive": true,
+  "cross_city_host_rejected": true,
+  "alternate_path_rejected": true,
+  "http": {
+    "8844": 200,
+    "8845": 200,
+    "8846": 200
+  },
+  "tests": "28 gomi tests passed",
+  "local_link_errors": [],
+  "transport_pages_regenerated": 0,
+  "ui": {
+    "widths": [
+      320,
+      390
+    ],
+    "large_font": "22px",
+    "horizontal_overflow": false,
+    "copy_matches": 4,
+    "print_dom_matches": 4,
+    "native_print": "未実施",
+    "scope": "cuaで猪名川町の表示と4経路。旧14地域は再確認していない"
+  }
+}

@@ -1,0 +1,962 @@
+{
+  "review_date": "2026-10-16",
+  "scope": {
+    "coverage": "限定範囲",
+    "cities": [
+      "fukuoka:fukuoka",
+      "miyagi:sendai"
+    ],
+    "services": 8,
+    "fields": 80,
+    "excluded": "既存12市およびその他自治体の全体レビューではない"
+  },
+  "candidate_sha256": "30579a9103305b2e61fa677a0e81a4126989b1f1c4966ec589393e398245bff8",
+  "official_metadata_sha256": "af9c1017fcbc4e7f503af2584c45291f05831fb24a4abae183155df722ebcd68",
+  "official_source_sha256": {
+    "fukuoka-bulky": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/fukuoka-bulky.txt",
+      "sha256": "e6e1916883b7657a5fe3b95d983466e1f89a6a715112335b1a86502a2629166b"
+    },
+    "fukuoka-self-dropoff": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/fukuoka-self-dropoff.txt",
+      "sha256": "779273d782943240c2aa164acfbb99f00a24dc88c9a5525ad1227cba4e7fbcf7"
+    },
+    "fukuoka-silver-contact": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/fukuoka-silver-contact.txt",
+      "sha256": "f9530fd46586ae8089a63580908ae650b5cc1a528e064a1f03c333c091d8bfc9"
+    },
+    "fukuoka-daily-support-council-record": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/fukuoka-daily-support-council-record.txt",
+      "sha256": "26860186dd674142482891e6a94beecea5156c8bd9ab5b3fe35fad9525a2df52"
+    },
+    "sendai-bulky": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/sendai-bulky.txt",
+      "sha256": "fa8ff2ef97a71b10e4a8799d444fb6f03ee357cde5d7fb9386a7979badfea675"
+    },
+    "sendai-daily": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/sendai-daily.txt",
+      "sha256": "278c0bd17eb694e290a6350b1ff2d5df7256f7873381d671476865bae55414b3"
+    },
+    "sendai-drop": {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/official-refresh/sendai-drop.txt",
+      "sha256": "a4e24950a5f6d288282c9d484f110b5bd38e691e7167bbe60d67fd7ef4ac4c51"
+    }
+  },
+  "counts": {
+    "supported": 53,
+    "unresolved": 27,
+    "problematic": 0
+  },
+  "critical_findings": [],
+  "minor_findings": [
+    {
+      "id": "fukuoka-daily-currentness",
+      "detail": "福岡日常支援は2023年12月13日の議会答弁が根拠。シルバー人材センター公式案内は窓口確認に使えるが、現在のごみ出し支援制度の継続・地域・料金等を裏付けない。候補は全項目をneeds_confirmationとしており、現行事実に昇格していない。社会福祉協議会・ボランティア・訪問介護の言及も同答弁由来で質問扱い。"
+    },
+    {
+      "id": "sendai-separate-carry-routes",
+      "detail": "仙台の通常収集に付く屋内搬出例外（65歳以上または障がい者のみ世帯、指定場所へ出せない等・2点以内等）と、団体支援（別対象要件・住居/敷地等から指定場所へ運搬）は別経路。候補はanyで区別し、団体支援の奨励金を利用者料金や世帯上限と誤読していない。"
+    },
+    {
+      "id": "questions",
+      "detail": "相談質問は対象・経路・屋内/階段作業・点数/重量・処理料と支援料・申込/立会いを全体として概ね含む。通常粗大の質問は代理申込・排出と搬出支援の選択を尋ねる一方、世帯構成や年齢条件の例外を利用者自身が確認する問いは明示されない。実利用時は窓口へ「世帯に対象条件外の家族（年少者等）がいる場合も対象か」を加えると誤解を減らせる。"
+    },
+    {
+      "id": "states-and-logic",
+      "detail": "明示条件はAND/ORを入れ子または経路別に保持。福岡粗大搬出は「必要性AND対象者いずれか」、仙台日常は市内AND（単身者条件OR全員該当条件）。明示的な年少者例外は原典7件内に見当たらず、候補でも主張していない。"
+    },
+    {
+      "id": "source-coverage",
+      "detail": "候補が参照するsource_idは7件すべて公式原典スナップショットに対応。福岡日常の古い議会記録以外の主要経路は現行ページで確認した内容を限定付きで記載。"
+    }
+  ],
+  "fields": [
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "attendance",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "eligibility",
+      "classification": "unresolved",
+      "candidate_state": "not_stated",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典記載なし。未記載を不可・無料・制度なしと解釈しない"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "family_help",
+      "classification": "unresolved",
+      "candidate_state": "not_stated",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典記載なし。未記載を不可・無料・制度なしと解釈しない"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "fees",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "indoor_carry",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "limits",
+      "classification": "unresolved",
+      "candidate_state": "not_stated",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典記載なし。未記載を不可・無料・制度なしと解釈しない"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-regular",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "attendance",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "eligibility",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "family_help",
+      "classification": "supported",
+      "candidate_state": "explicit_exclusion",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "fees",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "indoor_carry",
+      "classification": "unresolved",
+      "candidate_state": "not_stated",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典記載なし。未記載を不可・無料・制度なしと解釈しない"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "limits",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-drop",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-self-dropoff"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "application",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-silver-contact"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "attendance",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "collection_location",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "contact",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-silver-contact"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "eligibility",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "family_help",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "fees",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "indoor_carry",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "limits",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-daily",
+      "field": "waste_scope",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-daily-support-council-record"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "attendance",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "eligibility",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "family_help",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "fees",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "indoor_carry",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "limits",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "福岡市",
+      "service_id": "fukuoka-carry",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "fukuoka-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "attendance",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "eligibility",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "family_help",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "fees",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "indoor_carry",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "limits",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-regular",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "attendance",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "eligibility",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "family_help",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "fees",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "indoor_carry",
+      "classification": "supported",
+      "candidate_state": "explicit_exclusion",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "limits",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-drop",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-drop"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "attendance",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "eligibility",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "family_help",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "fees",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "indoor_carry",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "limits",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-daily",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "application",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky",
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "attendance",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "collection_location",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "contact",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky",
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "eligibility",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-bulky",
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "family_help",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "fees",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-bulky",
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "indoor_carry",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-bulky",
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "limits",
+      "classification": "unresolved",
+      "candidate_state": "needs_confirmation",
+      "source_ids": [
+        "sendai-bulky",
+        "sendai-daily"
+      ],
+      "note": "候補自体が要確認として限定"
+    },
+    {
+      "city": "仙台市",
+      "service_id": "sendai-carry",
+      "field": "waste_scope",
+      "classification": "supported",
+      "candidate_state": "explicit",
+      "source_ids": [
+        "sendai-daily"
+      ],
+      "note": "原典で値を確認"
+    }
+  ],
+  "review_basis": "保存済み公式原典7件とメタデータ、および候補JSONを照合。内容レビューは福岡・仙台の8経路80フィールドに限定。"
+}
