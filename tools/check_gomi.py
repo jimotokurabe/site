@@ -22,9 +22,9 @@ def fact_leaves(value):
     return [_value(value)] if value is not None else []
 
 
-def check(out, publication=False):
+def check(out, publication=False, data_path=None):
     out = Path(out).resolve()
-    data = json.loads((ROOT / 'data/gomi-support.json').read_text())
+    data = json.loads((Path(data_path) if data_path else ROOT / 'data/gomi-support.json').read_text())
     errors = []
     paths = ['index.html', 'gomi-support.html', *(city_path(c) for c in data['cities'])]
     parsed = {}
@@ -93,7 +93,7 @@ def check(out, publication=False):
             if question not in soup.get_text():
                 errors.append([relative, 'question lost', question])
         mobility = BeautifulSoup((out / city['id'].replace(':', '-menkyo-henno/')).with_suffix('.html').read_text(), 'html.parser')
-        if not mobility.find('a', href='../' + relative):
+        if city['id'] in data.get('related_city_ids', [c['id'] for c in data['cities']]) and not mobility.find('a', href='../' + relative):
             errors.append([relative, 'missing related link'])
     if not publication and 'Disallow: /' not in (out / 'robots.txt').read_text():
         errors.append(['robots.txt', 'draft must be blocked'])
@@ -111,7 +111,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('out', type=Path)
     parser.add_argument('--publication', action='store_true')
+    parser.add_argument('--data', type=Path, help='候補JSON')
     args = parser.parse_args()
-    result = check(args.out, publication=args.publication)
+    result = check(args.out, publication=args.publication, data_path=args.data)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     raise SystemExit(bool(result['issues']))

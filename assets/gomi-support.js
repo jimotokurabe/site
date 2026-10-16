@@ -39,7 +39,38 @@
   const root = document.querySelector('.gomi-city');
   if (!root) return;
 
+  const picks = [...root.querySelectorAll('[data-gomi-pick]')];
+  const panels = [...root.querySelectorAll('.gomi-kind')];
+  const showKind = (kind) => {
+    if (!panels.some(panel => panel.id === kind)) return;
+    panels.forEach(panel => { panel.hidden = panel.id !== kind; });
+    picks.forEach(pick => pick.setAttribute('aria-current', String(pick.dataset.gomiPick === kind)));
+  };
+  const showFragmentPanel = () => {
+    let target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (_) { return; }
+    const panel = target?.closest('.gomi-kind');
+    if (panel) showKind(panel.id);
+  };
+  showKind('daily_support');
+  showFragmentPanel();
+  window.addEventListener('hashchange', showFragmentPanel);
+  picks.forEach(pick => pick.addEventListener('click', () => {
+    showKind(pick.dataset.gomiPick);
+    const service = root.querySelector('#' + pick.dataset.gomiPick + ' .gomi-route-card');
+    if (service) { routeSelect.value = service.id; updatePreview(); }
+  }));
+  // Print all records, including disclosure content; restore the screen state after printing.
+  let printDetails = [];
+  window.addEventListener('beforeprint', () => {
+    printDetails = [...root.querySelectorAll('details')].map(node => [node, node.open]);
+    printDetails.forEach(([node]) => { node.open = true; });
+  });
+  window.addEventListener('afterprint', () => { printDetails.forEach(([node, open]) => { node.open = open; }); });
+
   const routeSelect = root.querySelector('[data-gomi-route]');
+  const initialCard = root.querySelector('.gomi-kind:not([hidden]) .gomi-route-card');
+  if (initialCard) routeSelect.value = initialCard.id;
   const jumpSelect = root.querySelector('[data-gomi-jump]');
   const locationSelect = root.querySelector('[data-gomi-location]');
   const preview = root.querySelector('[data-gomi-preview]');
@@ -53,6 +84,7 @@
   const scrollToCard = (id, hash = false) => {
     const card = root.querySelector(`#${CSS.escape(id)}`);
     if (!card) return;
+    showKind(card.closest('.gomi-kind').id);
     card.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
     card.classList.add('gomi-relevant');
     window.setTimeout(() => card.classList.remove('gomi-relevant'), 3500);
@@ -123,7 +155,7 @@
     scrollToCard(id, hash);
   };
 
-  routeSelect.addEventListener('change', () => { updatePreview(); });
+  routeSelect.addEventListener('change', () => { showKind(selectedCard().closest('.gomi-kind').id); updatePreview(); });
   root.querySelectorAll('[data-gomi-memo-route]').forEach(link => link.addEventListener('click', () => {
     routeSelect.value = link.dataset.gomiMemoRoute;
     updatePreview();

@@ -2812,12 +2812,13 @@ def main():
     ap.add_argument("--gomi-preview", action="store_true", help="未承認のごみ支援5ページを別出力の下書きに含める")
     ap.add_argument("--artifact")
     ap.add_argument("--artifact-main", help="確認用ページで最初に出す市町の slug（省くとトップページ）")
+    ap.add_argument("--gomi-data", type=Path, help="別のごみ候補JSON（下書き専用）")
     a = ap.parse_args()
     from gomi_integration import prepare as prepare_gomi
     if a.gomi_preview and a.artifact:
         ap.error('--gomi-preview は --artifact と併用せず、--out で確認してください')
     try:
-        gomi_data = prepare_gomi(ROOT, a.out, draft=a.draft, preview=a.gomi_preview)
+        gomi_data = prepare_gomi(ROOT, a.out, draft=a.draft, preview=a.gomi_preview, data_path=a.gomi_data)
     except ValueError as error:
         ap.error(str(error))
     prefs = [load_pref(f) for f in sorted((ROOT / "data").glob("*-menkyo-henno.json"))]

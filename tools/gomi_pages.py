@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from html import escape
 import json
+import hashlib
 import re
 
 from bs4 import BeautifulSoup
@@ -14,9 +15,10 @@ FIELD_LABELS = {
     'family_help': '家族・周囲の手伝い', 'fees': '費用', 'limits': '点数・重量などの制限',
     'application': '申込み方法', 'attendance': '立会い・当日の対応', 'contact': '相談・申込先',
 }
-FIELD_ORDER = tuple(FIELD_LABELS)
+FIELD_ORDER = ('eligibility', 'family_help', 'collection_location', 'indoor_carry',
+               'fees', 'limits', 'application', 'contact', 'waste_scope', 'attendance')
 FIELD_STATES = {
-    'explicit': ('確認できた内容', 'known'),
+    'explicit': ('公式記載', 'known'),
     'explicit_exclusion': ('対象外の案内', 'excluded'),
     'not_stated': ('公式案内に記載なし', 'unknown'),
     'not_found': ('今回確認した資料では見つからず', 'not-found'),
@@ -31,6 +33,21 @@ KIND_LABELS = {
 }
 KIND_ORDER = tuple(KIND_LABELS)
 
+# Match the illustrated entrances used on the transport pages; labels carry meaning.
+ROUTE_PICTURES = {
+    'daily_support': '<path d="M28 105h134M35 94V44l32-23 32 23v50M56 94V65h24v29"/><path d="M118 50l-9-15h31l-9 15c25 23 30 48 1 48h-15c-28 0-22-25 1-48Z" fill="#e5efdd"/><path d="M115 51h20"/>',
+    'bulky_carry_support': '<path d="M25 106h140M39 99V20h72v79M49 99V31h52v68"/><path d="M117 70h37v28h-37z" fill="#e7f0f1"/><path d="M126 70V57h21v13M126 98v8m21-8v8M65 66h60m-12-10 12 10-12 10"/>',
+    'regular_bulky': '<path d="M25 106h140"/><rect x="40" y="55" width="110" height="39" rx="9" fill="#f6eddb"/><path d="M55 55V33h80v22M55 94v12m80-12v12M40 71h110M61 36v33m69-33v33"/>',
+    'self_dropoff': '<path d="M25 106h140M100 62V24h58v68M111 38h12m12 0h12M111 51h12m12 0h12"/><path d="m28 76 13-25h39l15 25v20H28Z" fill="#e5efdd"/><path d="M34 76h55"/><circle cx="43" cy="96" r="8" fill="#fffef9"/><circle cx="81" cy="96" r="8" fill="#fffef9"/>',
+}
+ROUTE_SHORT = {
+    'daily_support': ('日常の袋ごみ', '玄関先などの収集支援'),
+    'bulky_carry_support': ('室内から出せない', '搬出支援の条件を確認'),
+    'regular_bulky': ('粗大ごみを出す', '指定場所での通常収集'),
+    'self_dropoff': ('施設へ持ち込む', '車・料金・予約を確認'),
+}
+
+
 
 def _e(value):
     return escape(str(value), quote=True)
@@ -41,7 +58,7 @@ def _slug(city):
     return f'{pref}-gomi-support/{slug}.html'
 
 
-LOGIC_LABELS = {'all': '次の条件をすべて満たす必要があります', 'any': '次のいずれかを満たす必要があります', 'exception': '例外・相談', 'exclusion': '対象外となる条件', 'note': '申請・確認について'}
+LOGIC_LABELS = {'all': 'すべて必要', 'any': 'いずれかに該当', 'exception': '例外・相談', 'exclusion': '対象外となる条件', 'note': '申請・確認について'}
 
 
 def _value(value):
@@ -135,7 +152,7 @@ def _service_html(service, source_map, checked, human_reviewed):
         + (f' 確認 {_e(source_map[sid]["checked"])}' if source_map[sid].get('checked') else '')
         + f'</small> <a href="{_e(source_map[sid]["url"])}" target="_blank" rel="noopener">公式ページを開く</a></li>'
         for sid in used_ids)
-    source_html = '<details class="gomi-route-sources" open><summary>この経路で参照した出典</summary><ol>' + source_list + '</ol></details>'
+    source_html = '<details class="gomi-route-sources"><summary>この経路で参照した出典</summary><ol>' + source_list + '</ol></details>'
     questions = _questions_html(service.get('questions_for_office', []))
     if evidence == 'searched_not_found':
         # Keep contact and questions immediately usable; retain all other facts
@@ -217,9 +234,9 @@ def _city_main(city, sources, hub_rel, checked, human_reviewed):
 <nav class="gomi-breadcrumb" aria-label="現在のページ"><a href="../index.html">トップ</a><span aria-hidden="true">›</span><a href="{_e(hub_rel)}">ごみ出し支援</a><span aria-hidden="true">›</span><span aria-current="page">{_e(city['name'])}</span></nav>
 <p class="gomi-kicker">{_e(city['kana'])} ／ ごみ出しの相談先</p>
 <h1>{_e(city['name'])}で、ごみを運び出せないとき</h1>
-<p class="gomi-lead">まず、ごみの種類と「どこまで運べるか」を分けて確認します。袋ごみの日常支援と、家具などの粗大ごみの搬出支援は別の制度です。</p>
+<p class="gomi-lead">ごみの種類と、運べる場所から選べます。</p>
 {_city_notice(city)}
-<div class="gomi-research-note"><strong>{'調査用プレビュー' if city.get('publication_status') == 'research_only' else '掲載情報'}</strong><span>{'内容は' + _e(checked or '確認日未記載') + '時点の調査データです。' if city.get('publication_status') == 'research_only' else ''}「未記載」「今回未発見」は情報状態で、制度なし・無料・利用可能の確定を意味しません。制度の対象や受付状況は公式窓口で確認してください。{'項目は人手確認前です。' if not human_reviewed else '人手確認済みです。'}</span></div>
+<div class="gomi-research-note"><strong>{'調査用プレビュー' if city.get('publication_status') == 'research_only' else '掲載情報'}</strong><span>{'制度と出典ごとの確認日は、それぞれの案内に記載しています。' if city.get('publication_status') == 'research_only' else ''}「未記載」「今回未発見」は情報状態で、制度なし・無料・利用可能の確定を意味しません。制度の対象や受付状況は公式窓口で確認してください。{'項目は人手確認前です。' if not human_reviewed else '人手確認済みです。'}</span></div>
 <section class="gomi-first"><h2>先に、ごみの種類と運べる場所を選ぶ</h2>
 <div class="gomi-choice"><a href="#daily_support"><strong>袋ごみ・日常ごみ</strong><span>玄関先などで回収する支援</span></a><a href="#regular_bulky"><strong>家具・粗大ごみ</strong><span>指定場所への通常収集</span></a><a href="#bulky_carry_support"><strong>室内から出せない</strong><span>搬出支援の対象条件</span></a></div>
 <label class="gomi-jump">確認したい経路へ移動<select data-gomi-jump><option value="">選択してください</option>{route_select}</select></label>
@@ -257,11 +274,13 @@ def _finish(html, relative, title, description, draft, is_index=False, draft_not
     import build as b
     from site_header import apply_site_header
     base = '../' if '/' in relative else ''
+    css_version = hashlib.sha256((b.ROOT / 'assets/gomi-support.css').read_bytes()).hexdigest()[:12]
+    js_version = hashlib.sha256((b.ROOT / 'assets/gomi-support.js').read_bytes()).hexdigest()[:12]
     soup = BeautifulSoup(b.shell(title=title, description=description, path=relative,
                                  main=html, draft=draft,
                                  draft_note=draft_note or ('ごみ出し支援の調査用プレビューです。' if draft else ''),
                                  base=base, page_class='gomi-shell',
-                                 styles=f'<link rel="stylesheet" href="{base}assets/warm-shared.css"><link rel="stylesheet" href="{base}assets/gomi-support.css">'), 'html.parser')
+                                 styles=f'<link rel="stylesheet" href="{base}assets/warm-shared.css"><link rel="stylesheet" href="{base}assets/gomi-support.css?v={css_version}">'), 'html.parser')
     if draft:
         soup.select_one('.draft').string = '公開前の確認用｜掲載情報は人手確認前です。'
     if is_index:
@@ -274,6 +293,29 @@ def _finish(html, relative, title, description, draft, is_index=False, draft_not
         lead = soup.select_one('.gomi-lead')
         if route_nav and lead:
             lead.insert_after(route_nav.extract())
+        if route_nav:
+            route_nav['id'] = 'gomi-route-picker'
+            for link in route_nav.select('a[href]'):
+                kind = link['href'].lstrip('#')
+                title, hint = ROUTE_SHORT[kind]
+                link['data-gomi-pick'] = kind
+                link['aria-controls'] = kind
+                link.clear()
+                link.append(BeautifulSoup('<svg viewBox="0 0 190 125" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">' + ROUTE_PICTURES[kind] + '</svg><strong>' + title + '</strong><span>' + hint + '</span>', 'html.parser'))
+        local = soup.select_one('.gomi-local-notice')
+        if local:
+            local.name = 'details'
+            heading = local.find('strong')
+            heading.name = 'summary'
+            heading.string = 'この地域の注意点・制度の違い'
+        for section in soup.select('.gomi-kind'):
+            section['tabindex'] = '-1'
+            heading = section.find('h2', recursive=False)
+            picture = ROUTE_PICTURES.get(section.get('id'))
+            if heading and picture:
+                heading.insert(0, BeautifulSoup('<svg class="gomi-heading-picture" viewBox="0 0 190 125" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">' + picture + '</svg>', 'html.parser'))
+            back = BeautifulSoup('<a class="gomi-back" href="#gomi-route-picker">↑ ごみの種類を選び直す</a>', 'html.parser')
+            section.append(back)
         duplicate_picker = soup.select_one('.gomi-first')
         if duplicate_picker:
             duplicate_picker.decompose()
@@ -322,7 +364,7 @@ def _finish(html, relative, title, description, draft, is_index=False, draft_not
     if region:
         region['href'] = '#prefectures' if is_index else f'{base}gomi-support.html#prefectures'
     # Local script only: no storage, requests or telemetry.
-    script = soup.new_tag('script', src=f'{base}assets/gomi-support.js', defer=True)
+    script = soup.new_tag('script', src=f'{base}assets/gomi-support.js?v={js_version}', defer=True)
     soup.body.append(script)
     return str(soup)
 

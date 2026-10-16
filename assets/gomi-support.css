@@ -37,3 +37,26 @@ html.gomi-document.large{font-size:22px}html.gomi-document.large .gomi-support-b
 .gomi-unconfirmed-details{margin:16px 0;border-top:1px solid #c9d6c8}.gomi-unconfirmed-details>summary{cursor:pointer;padding:14px 0;min-height:48px;font-weight:700}
 @media(max-width:650px){.gomi-condition-group{padding-left:8px}.gomi-condition-list .gomi-condition-group{padding-left:6px}}
 @media print{.gomi-contact-link:after{content:" " attr(href);font-size:8pt;overflow-wrap:anywhere}.gomi-condition-group{break-inside:avoid}}
+
+/* Same four illustrated entrances and one selected record as the transport theme. */
+.gomi-route-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0}
+.gomi-route-nav a{display:flex;flex-direction:column;gap:5px;padding:12px 8px;border:1px solid #c7d3c2;border-radius:12px;background:#fffef9;text-align:center;line-height:1.5}
+.gomi-route-nav svg{display:block;width:100%;max-width:145px;height:90px;color:#315e46}
+.gomi-route-nav strong{font-size:1rem}.gomi-route-nav span{font-size:.76rem;font-weight:400;color:#526356}
+.gomi-route-nav a[aria-current="true"]{background:#e8efe3;border:2px solid #315e46;padding:11px 7px;box-shadow:0 0 0 2px #315e4612}
+.gomi-local-notice summary{cursor:pointer;font-weight:700;min-height:32px}
+.gomi-local-notice{margin:12px 0;padding:12px 16px}
+.gomi-research-note{margin:12px 0 20px;padding:10px 12px;font-size:.82rem}
+.gomi-back{display:inline-block;padding:10px 0;font-size:.9rem;font-weight:700}
+.gomi-city-switch,.gomi-city .gomi-kicker{display:none}
+.gomi-city .gomi-lead{font-size:1rem;margin-bottom:12px}
+.gomi-route-sources a[href^="http"]:after{content:none}
+@media(max-width:650px){.gomi-route-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gomi-route-nav svg{height:76px}.gomi-route-nav a{min-height:145px}.gomi-route-nav strong{font-size:.92rem}.gomi-route-nav span{font-size:.72rem}}
+@media print{.gomi-city .gomi-kind[hidden]{display:block!important}.gomi-back{display:none}.gomi-local-notice>ul,.gomi-route-sources>ol{display:block!important}.gomi-route-sources a[href^="http"]:after{content:" " attr(href)}}
+
+/* Route headings repeat the entrance pictogram, alongside the full text label. */
+.gomi-kind>h2:before{display:none}
+.gomi-heading-picture{display:block;flex:0 0 76px;width:76px;height:54px;color:#315e46}
+.gomi-kind>h2{align-items:center;gap:12px}
+@media(max-width:650px){.gomi-heading-picture{flex-basis:60px;width:60px;height:44px}.gomi-kind>h2{gap:9px}}
+@media print{.gomi-heading-picture{flex-basis:50px;width:50px;height:36px}}
