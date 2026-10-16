@@ -1,0 +1,3793 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-11",
+  "human_reviewed": false,
+  "not_for_publication": false,
+  "cities": [
+    {
+      "id": "hyogo:kobe",
+      "name": "神戸市",
+      "kana": "こうべし",
+      "selection_reason": "既存地域。日常支援と有料室内搬出の資格・申込経路の相違。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "kobe-regular",
+          "kind": "regular_bulky",
+          "name": "通常の大型ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "45L指定袋に入らない、又は単品5kg超。家電リサイクル対象・パソコン等は別経路。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "指定された屋外。路地等では広い道路沿い・クリーンステーション。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目別処理料。申込時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回5点。原則70kg超・2.5m³超不可、市が認める例外あり。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "application": {
+              "value": "電話・ネット・FAXで事前申込。収集日朝5～8時に排出。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "通常収集は立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            },
+            "contact": {
+              "value": "大型ごみ受付センター 078-392-7953",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-bulky"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "kobe-drop",
+          "kind": "self_dropoff",
+          "name": "布施畑環境センター持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "市内家庭からの大型ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "collection_location": {
+              "value": "車で施設へ搬入、荷下ろしは自身。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "fees": {
+              "value": "10kgごと140円、端数切上げ。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "limits": {
+              "value": "原則1日5点。6点以上の引越し等は別手続き。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "application": {
+              "value": "e-KOBE品目審査→日時予約。代理は家族・親族、書類確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者が荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ]
+            },
+            "contact": {
+              "value": "家庭系大型ごみの持込予約：神戸市環境局業務課 078-595-6122。搬入管理事務所078-974-2411は事業系の相談先。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-drop-detail"
+              ],
+              "reviewed_at": "2026-10-13"
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "kobe-daily",
+          "kind": "daily_support",
+          "name": "ひまわり収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "燃えるごみ、容器包装プラスチック、缶・びん・ペットボトル、燃えないごみ、カセットボンベ・スプレー缶。大型ごみも申告制（面談時に相談）。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "collection_location": {
+              "value": "玄関先",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "原則玄関先。大型ごみは屋内からの排出支援の申出→環境局との面談等→第三者立会いで収集する記載あり。適用・費用は支援者へ確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "自力で集積所へ排出困難",
+                  "原則ひとり暮らし。同居者が高齢者・障がい者・虚弱者・年少者等で、同様に排出困難な場合を含む",
+                  "親族・地域・介護福祉サービス等の支援でも対応できない"
+                ],
+                "any": [
+                  "65歳以上かつ要介護1以上",
+                  "障がいがあり障害支援区分1以上"
+                ],
+                "exception": "要件外も支援者へ相談。詳細は面談で確認。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "family_help": {
+              "value": "親族・地域・身近な人や介護保険・障害福祉・制度外サービスによって排出支援を受けられないか事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-daily"
+              ]
+            },
+            "limits": {
+              "value": "燃えるごみは原則週1回1袋、量等の事情で相談。その他の日常ごみは申告制で原則各1袋、面談時相談。大型ごみは申告制。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "application": {
+              "value": "担当支援者へ相談→条件確認・事前確認書→本人面談（支援者同席）→収集決定。本人・家族からの直接申込不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "attendance": {
+              "value": "申込時の面談には支援者同席。大型ごみの屋内排出支援は第三者立会い。毎回の日常ごみ収集時の立会い要否は未確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kobe-daily",
+                "kobe-daily-manual",
+                "kobe-disability-manual"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "contact": {
+              "value": "担当支援者／あんしんすこやかセンター等",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-daily"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "日常ごみの利用料金、通常収集当日の立会い要否は。",
+            "ひまわりの大型ごみ屋内排出支援と有料持ち出しモデルの適用関係、手数料、支援範囲は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "kobe-carry",
+          "kind": "bulky_carry_support",
+          "name": "大型ごみ宅内持ち出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "大型ごみ",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "collection_location": {
+              "value": "宅内から",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "要介護・要支援認定者・障がい者のみの世帯。16歳未満同居を含む。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "fees": {
+              "value": "品目別処理手数料＋1点600円。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "limits": {
+              "value": "1回3点。2人で運べない／取外し解体／動線なし／玄関から出ない場合不可。 当日も安全上の理由等で収集できない場合があります。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "application": {
+              "value": "大型ごみ受付センターへ電話で持ち出し希望を申込。ネット申込不可。聴覚・言語障害者向けFAXあり。民間業者による有料のモデル実施で、受付継続は窓口へ要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "attendance": {
+              "value": "必ず本人が在宅し証明書類を準備。当日安全上の理由で収集不可の場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            },
+            "contact": {
+              "value": "大型ごみ受付センター 078-392-7953",
+              "state": "explicit",
+              "source_ids": [
+                "kobe-carry"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "モデル実施の受付継続・終了予定",
+            "宅内支援での別居家族の協力条件",
+            "ひまわり収集マニュアルにある大型ごみ屋内排出支援との適用関係・手数料の違いは。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ],
+      "pref_name": "兵庫県",
+      "priority_notes": [
+        "ひまわり収集は原則玄関先。マニュアルには大型ごみの屋内排出支援（申出・面談等・第三者立会い）もあります。有料の大型ごみ持ち出しモデルとは適用・費用を区別し、担当支援者へ確認してください。",
+        "ひまわり収集は支援者経由で条件確認し、本人面談に支援者が同席。本人・家族の直接申込は不可。"
+      ],
+      "common_questions_for_office": []
+    },
+    {
+      "id": "hyogo:nishinomiya",
+      "name": "西宮市",
+      "kana": "にしのみやし",
+      "selection_reason": "既存地域。日常支援で粗大ごみ除外、集合住宅制限、施設料金変更。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "nishi-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "収集案内は重量5kg以上／指定袋に入らない／棒状1m以上。持込ページの40cm基準と差異。",
+              "state": "conflicting",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-drop"
+              ]
+            },
+            "collection_location": {
+              "value": "受付時の指定場所。朝8時まで。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目別。処理券は300円単位、LINE電子決済あり。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "学習机2台程度、品目別個数制限。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "application": {
+              "value": "電話／市LINEで予約。当日収集なし。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            },
+            "contact": {
+              "value": "ごみ電話受付センター 0798-33-6776",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-bulky"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "粗大ごみの収集と持込の大きさ基準の適用範囲"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "nishi-drop",
+          "kind": "self_dropoff",
+          "name": "東部総合処理センター持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "市内家庭ごみ。品目と境界は予約時確認。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "collection_location": {
+              "value": "施設。自身で荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "fees": {
+              "value": "50kgまで450円、超過10kgまでごと90円。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "limits": {
+              "value": "マットレス・布団・自転車・ブロック・土砂・スプレー缶等は1日搬入量制限あり。具体量は予約時確認。DIY機器・廃材等は現地立会い調査の場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop",
+                "nishi-drop-limits"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "application": {
+              "value": "前日までに電話予約、14日前から受付。本人搬入・同乗原則、高齢等で不可なら2親等内親族・姻族代理と書類。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者自身で積み下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            },
+            "contact": {
+              "value": "持込予約 0798-22-6600",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-drop"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "粗大ごみの収集と持込の大きさ基準の適用範囲"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "nishi-daily",
+          "kind": "daily_support",
+          "name": "にこやか収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "日常ごみ。粗大・片づけごみ対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関先収集。福祉総合案内は住戸内立入不可と記載するが、同ページの申請・対象条件に現行主担当案内との相違あり。室内搬出は利用可能と扱わず窓口へ確認。",
+              "state": "conflicting",
+              "source_ids": [
+                "nishi-daily",
+                "nishi-welfare"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "eligibility": {
+              "value": {
+                "label": "にこやか収集（主担当案内・2026年4月施行要綱）",
+                "all": [
+                  "市内に住民票があり居住",
+                  "世帯で集積所へのごみ出しが困難",
+                  "協力者がいない"
+                ],
+                "any": [
+                  {
+                    "label": "高齢者世帯（全て）",
+                    "all": [
+                      "65歳以上",
+                      "介護サービスを受けている",
+                      "要介護1以上"
+                    ]
+                  },
+                  "身体障害者手帳1・2級の世帯",
+                  "療育手帳重度Aの世帯",
+                  "精神障害者保健福祉手帳1級の世帯"
+                ],
+                "exclusion": [
+                  "福祉施設に入居している場合",
+                  "オートロック集合住宅"
+                ],
+                "note": "主担当ページ・要綱と福祉総合案内の記載差は窓口確認。"
+              },
+              "state": "conflicting",
+              "source_ids": [
+                "nishi-daily",
+                "nishi-daily-rules",
+                "nishi-welfare"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "family_help": {
+              "value": "親族・地域・身近な人等からごみ出しの協力を受けられる世帯は除外。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            },
+            "limits": {
+              "value": "もやすごみは週2回を基本（少量なら週1回）。その他不燃は月1回の指定水曜。指定袋に入れ、決まった収集日の午前8時までに蓋付き容器等で排出。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-daily",
+                "nishi-daily-rules"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "application": {
+              "value": "スマート申請又は郵送。代理条件・証明書類・集合住宅の通行同意書あり。持参の記載もあり窓口確認。",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            },
+            "contact": {
+              "value": "美化第2課 0798-41-6265",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-daily"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "日常支援の料金・収集当日の立会い要否は。",
+            "主担当ページ・2026年4月施行要綱と福祉総合案内の対象・申請条件の相違、住戸内不立入の現在の取扱いは。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "nishi-carry",
+          "kind": "bulky_carry_support",
+          "name": "公的な粗大ごみ室内搬出の別制度は今回未発見",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_found",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "application": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付 0798-33-6776で相談先・処理方法を確認",
+              "state": "explicit",
+              "source_ids": [
+                "nishi-bulky",
+                "nishi-daily"
+              ]
+            }
+          },
+          "search_scope": "通常収集・日常支援の公式本文と関連リンク、自治体名＋粗大ごみ＋運び出し／高齢者のWeb検索。不存在の確認ではない。",
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "室内搬出ができない場合の公式案内先",
+            "粗大ごみを室内から運び出す支援の有無、対象条件・費用・申込方法"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ],
+      "pref_name": "兵庫県",
+      "priority_notes": [
+        "日常のにこやか収集は玄関先の回収です。粗大ごみ・片づけごみは対象外です。",
+        "別の公的な粗大ごみ室内搬出制度は今回の資料では未発見です。制度がないとは断定せず、粗大ごみ受付へ相談してください。"
+      ],
+      "common_questions_for_office": []
+    },
+    {
+      "id": "hyogo:akashi",
+      "name": "明石市",
+      "kana": "あかしし",
+      "selection_reason": "既存地域。要介護とサービス利用のAND条件、画像PDF、不明事項。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "akashi-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "45L標準袋に入らない又は約5kg超。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "所定の屋外。狭い路地では広い道路まで必要な場合。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目別。受付指定の処理券。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回5点。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "application": {
+              "value": "電話／ネットの事前予約。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "立会い不要。収集日朝8時までに受付で決めた場所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-phone"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 078-937-0937",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "akashi-drop",
+          "kind": "self_dropoff",
+          "name": "明石クリーンセンター持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "市内発生家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "collection_location": {
+              "value": "施設。自身で荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "eligibility": {
+              "value": "市内発生ごみ。搬入者は排出者本人（親族含む）または一般廃棄物収集運搬許可業者。友人等の運転による持込不可。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop",
+                "akashi-drop-faq"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "family_help": {
+              "value": "市外親族による市内実家の粗大ごみ持込は可能。運転者の住所と発生場所が異なる場合は電話予約。友人運転不可。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop",
+                "akashi-drop-faq"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "fees": {
+              "value": "家庭系10kg当たり可燃50円・不燃破砕60円・埋立60円。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "limits": {
+              "value": "家具・ベッド・ソファー等は200×100×80cm以内。品目別制限。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみは電話／ネット事前予約。当日予約不可。本人確認書類。親族代理は電話で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者が荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 078-937-0937",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-drop"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "親族以外の搬入や住所・発生場所が異なるなど特殊な事情がある場合の予約手続きは。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "akashi-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "パンフレットには燃やせる・燃やせない・資源ごみ。粗大ごみの扱い未確認。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "collection_location": {
+              "value": "戸別訪問まで確認。玄関先／室内等の詳細未確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  {
+                    "label": "全員に共通する条件",
+                    "all": [
+                      "自らごみをステーションに排出することが困難であること",
+                      "ひとり暮らしであること（同居する人が高齢・障害・年少等によりごみを排出できない場合を含む）"
+                    ]
+                  },
+                  {
+                    "label": "対象者ごとの条件",
+                    "any": [
+                      {
+                        "label": "高齢者の場合に必要な条件",
+                        "all": [
+                          "65歳以上であること",
+                          "介護保険認定で要介護2以上であること",
+                          "介護保険のホームヘルプサービスを受給していること"
+                        ]
+                      },
+                      {
+                        "label": "障害のある方の場合に必要な条件",
+                        "all": [
+                          "障害のある方であること",
+                          "障害者総合支援法第28条第1項に規定する障害福祉サービスのうち、「居宅介護」または「生活介護」に係る介護給付費の支給を受けていること"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "exclusion": "親族等や近隣住民の協力を得ることができる方は対象外です。",
+                "note": "申請による審査があります。利用できるかは市に確認してください。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "akashi-daily"
+              ],
+              "reviewed_at": "2026-10-12"
+            },
+            "family_help": {
+              "value": "親族・近隣の協力が得られる人は除く。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "application": {
+              "value": "申請・審査。PDFでは担当ケアマネ等経由、本人困難時代理、三者面談・決定通知。",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "contact": {
+              "value": "収集事業課 078-918-5780",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "ふれあい収集の粗大ごみ可否・具体的な回収位置",
+            "画像パンフレットの現行性・頻度",
+            "料金・立会い"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "akashi-carry",
+          "kind": "bulky_carry_support",
+          "name": "公的な粗大ごみ室内搬出の別制度は今回未発見",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_found",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "application": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            },
+            "contact": {
+              "value": "収集事業課 078-918-5780に粗大ごみ・回収位置の扱いを確認",
+              "state": "explicit",
+              "source_ids": [
+                "akashi-bulky",
+                "akashi-daily",
+                "akashi-leaflet"
+              ]
+            }
+          },
+          "search_scope": "通常収集・日常支援の公式本文と関連リンク、自治体名＋粗大ごみ＋運び出し／高齢者のWeb検索。不存在の確認ではない。",
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "粗大ごみを室内から運び出す支援の有無、対象条件・費用・申込方法",
+            "ふれあい収集で粗大ごみの室内搬出に対応するか、別の相談先があるか"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ],
+      "pref_name": "兵庫県",
+      "priority_notes": [
+        "日常のふれあい収集は、世帯・介護状態・ホームヘルプ利用などの条件があります。年齢だけでは決まりません。",
+        "ふれあい収集の回収位置・粗大ごみの扱いは、確認した資料だけでは確定できません。収集事業課に相談してください。"
+      ],
+      "common_questions_for_office": []
+    },
+    {
+      "id": "kanagawa:yokohama",
+      "name": "横浜市",
+      "kana": "よこはまし",
+      "selection_reason": "県外対照。室内支援が明記され、日常と粗大で条件差・区別窓口。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "yokohama-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "金属最長辺30cm以上、それ以外50cm以上。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅前道路際又は集積場所。朝8時まで。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection",
+                "yokohama-faq69"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "fees": {
+              "value": "品目別処理手数料。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "limits": {
+              "value": "通常収集は9個まで。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "application": {
+              "value": "LINE・チャット・ネット・電話で事前申込。約2週間の案内、日程保証なし。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            },
+            "attendance": {
+              "value": "立会い不要。品物がない場合などに電話確認することがある。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection",
+                "yokohama-faq99"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 0570-200-530／045-330-3953",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-bulky",
+                "yokohama-collection"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "yokohama-drop",
+          "kind": "self_dropoff",
+          "name": "粗大ごみ自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "市内家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "collection_location": {
+              "value": "自己搬入ヤード、自身で荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "fees": {
+              "value": "市収集と同じ処理手数料。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "limits": {
+              "value": "通常1日20個、栄の簡易申込10個。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "application": {
+              "value": "事前申込。原則本人、他者は委任状。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者が荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 0570-200-530／045-330-3953",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-drop"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "yokohama-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみ、週1回。粗大は別支援。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "敷地内・玄関先",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "label": "ふれあい収集（通常の対象区分）",
+                "all": [
+                  "単身、又は本人と同居人とも対象要件に該当",
+                  "自力で家庭ごみを持ち出せない",
+                  "家族や身近な人の協力を受けることが困難"
+                ],
+                "any": [
+                  "身体障害者手帳の交付",
+                  "愛の手帳の交付",
+                  "精神障害者保健福祉手帳の交付",
+                  "要介護又は要支援の認定",
+                  "65歳以上",
+                  "これらに準じ、事務所長が認める事由"
+                ],
+                "note": "別に条例による排出支援終了者の対象区分がある。適用区分は住んでいる区の事務所で確認。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-daily",
+                "yokohama-daily-rule"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "family_help": {
+              "value": "通常の対象区分では、家族・身近な人の協力が困難で自力排出も困難なことが必要。条例による排出支援終了者は別区分として区事務所で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-daily",
+                "yokohama-daily-rule"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-daily"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-daily"
+              ]
+            },
+            "application": {
+              "value": "住んでいる区の事務所へ相談。本人又は親族が申込み、同意を得た第三者の申込みも可。訪問等の事前調査で対象を確認。本人以外が申し込んだ場合は申込者が事前調査に立ち会う。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-daily",
+                "yokohama-daily-rule"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "yokohama-daily"
+              ]
+            },
+            "contact": {
+              "value": "居住区の資源循環局事務所一覧から選択",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-daily",
+                "yokohama-offices"
+              ],
+              "links": [
+                {
+                  "source_id": "yokohama-offices",
+                  "label": "お住まいの区の事務所・電話番号を確認する（横浜市公式）"
+                }
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "日常支援の料金・収集当日の立会い要否は（本人以外の申込者は事前調査への立会いが必要）。",
+            "条例による排出支援終了者の対象区分に該当する場合、適用条件・手順は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "yokohama-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみ持ち出し収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-11",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみ",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅内",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "単身等、手帳／要介護要支援／搬出困難な65歳以上／妊婦・けが等で事務所長認定等。同居例外あり。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "family_help": {
+              "value": "家族・身近な人の協力困難、自力搬出困難。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "fees": {
+              "value": "通常の粗大収集と同額。減免は別条件。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "limits": {
+              "value": "解体・他家具移動・ロープ重機による窓搬出など不可。独自点数・重量上限は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "application": {
+              "value": "居住区の資源循環局事務所に電話等。必要時事前調査。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "attendance": {
+              "value": "原則対象者又は申込者の立会い。確認資料への記名又は押印。",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry"
+              ]
+            },
+            "contact": {
+              "value": "居住区の資源循環局事務所。月～土・祝日含む8:00～16:45",
+              "state": "explicit",
+              "source_ids": [
+                "yokohama-carry",
+                "yokohama-offices"
+              ],
+              "links": [
+                {
+                  "source_id": "yokohama-offices",
+                  "label": "お住まいの区の事務所・電話番号を確認する（横浜市公式）"
+                }
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "室内支援の点数・重量制限と階段条件",
+            "希望日と事前調査の要否"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ],
+      "pref_name": "神奈川県",
+      "priority_notes": [
+        "日常のふれあい収集と、粗大ごみの持ち出し収集は別の案内です。玄関先と室内からの搬出を分けて確認してください。",
+        "粗大ごみの室内搬出は条件付き。通常の受付センターではなく、住んでいる区の資源循環局事務所へ相談します。"
+      ],
+      "common_questions_for_office": []
+    },
+    {
+      "id": "hyogo:amagasaki",
+      "name": "尼崎市",
+      "kana": "あまがさきし",
+      "pref_name": "兵庫県",
+      "selection_reason": "阪神間の近隣都市で、家庭ごみの各戸収集、支援制度、大型ごみの収集・持込み条件の違いを比較できるため。",
+      "publication_status": "approved",
+      "priority_notes": [
+        "家庭ごみは自宅前からの各戸収集が基本。車両進入が困難な地域の「持ち出し協力場所」は住民が地域で決める排出場所で、高齢者等向け宅内搬出支援とは区別が必要。",
+        "大型ごみ収集は品目別料金・事前予約で、屋内や敷地内からの運び出しは行いません。持込みは2日前までに予約し、家庭系は10kgにつき103円、搬入後に大高洲庁舎の自動精算機で現金精算。個別大型品の受入可否・端数扱い等は窓口確認。",
+        "高齢者等向けには地域団体の訪問型支え合い活動があり、ごみ捨てを含む。市直営の戸別収集と同一ではなく、申込前に地域包括支援センター/ケアマネジャーへ相談後、地区ごとの実施団体へ連絡する。宅内からの大型品搬出・粗大ごみの運搬は対応範囲と料金を個別団体へ確認。"
+      ],
+      "services": [
+        {
+          "id": "amagasaki-regular",
+          "kind": "regular_bulky",
+          "name": "大型ごみ（有料・申込制）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "大型ごみ種類別料金表掲載品、または最大の辺・径が50cmを超えるもの。家電リサイクル法対象品、家庭用パソコン、二輪車等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            },
+            "collection_location": {
+              "value": "予約した収集日に指定場所まで出す。具体的な場所は申込時に確認する。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-large",
+                "amagasaki-dashikata"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "indoor_carry": {
+              "value": "屋内や敷地内からの運び出しは行わない。予約した収集日に指定場所まで出す。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-large",
+                "amagasaki-dashikata"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            },
+            "fees": {
+              "value": "品目・個数ごとの処理券。料金表は1点300～1,800円の品目別設定（例：ふとん300円、和だんす1,800円）。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-large-fees"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            },
+            "application": {
+              "value": "電話またはインターネットで事前予約。ごみ処理券を購入して受付番号を記入し、1点ごとに必要枚数を貼る。土日収集なし・時間指定不可。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            },
+            "contact": {
+              "value": "家庭ごみ案内センター 06-6374-9999（電話受付：平日8:00–16:45、土曜・祝日9:00–16:45、年末年始除く）",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-large"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "料金表対象外の品、個別品目の処理券枚数、1回の数量上限、収集時の立会い要否は。",
+            "予約時に指定された排出場所へ運べない場合、どこへ相談できますか。"
+          ],
+          "ai_reviewed_at": "2026-10-16",
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "amagasaki-dropoff",
+          "kind": "self_dropoff",
+          "name": "家庭ごみの持込み（予約制）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "尼崎市内の家庭由来ごみを対象とする持込み案内。大型ごみの持込可否は案内ページ上で品目別に明確化されていないため要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "大高洲庁舎（尼崎市大高洲町2番地）へ利用者が車両で持ち込む。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "尼崎市内の家庭から発生したごみ。搬入時に住所・氏名が分かる本人確認書類を提示。ごみ所有者または親族以外は持込み不可。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "ごみ所有者の親族は持込み可能。親族以外の人は持込み不可。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "家庭系は10kgにつき103円。搬入後、大高洲庁舎の自動精算機で現金精算。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff",
+                "amagasaki-faq287"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "limits": {
+              "value": "最大積載量2,000kg以下かつ全長5m以下の車両。持込日は月～金（祝日含む、年末年始除く）、30分枠。市職員の荷下ろしなし。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "application": {
+              "value": "搬入2日前までにインターネットまたは電話で予約。電話は月～金（祝日含む、年末年始除く）9:00–17:00。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者が現地で住所確認書類を提示し、車両から自分で荷下ろしする。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "クリーンセンター 06-6409-0101（電話予約：月～金、祝日含む、年末年始除く、9:00–17:00）",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "家庭系10kg103円の端数扱い、個別大型品の受入可否・処理券の扱い、分別や予約条件の詳細は。"
+          ],
+          "ai_reviewed_at": "2026-10-16",
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "amagasaki-daily",
+          "kind": "daily_support",
+          "name": "訪問型支え合い活動（地域団体のごみ捨て支援）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "市の補助事業で対象活動にごみ捨て（家庭ごみ・粗大ごみ等）を含む。実施団体一覧は「ごみ捨て」支援の有無を団体別に掲載。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "eligibility": {
+              "value": "補助事業対象者は、要支援1・2または事業対象者、要介護1～5、65歳以上の虚弱高齢者（いずれも市発行の介護保険被保険者証を所持）。活動利用は地域包括支援センターまたはケアマネジャーへ相談。各団体の利用条件は要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "fees": {
+              "value": "実施団体ごとに異なる。公開一覧にはごみ捨て支援の無料例、1,000円/月の例、100円～（訪問距離で変動）の例などがあり、地域・団体・活動で確認が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual-groups"
+              ]
+            },
+            "limits": {
+              "value": "提供地区・受付時間・会費・料金は団体ごとに異なり、地区限定の団体あり。2026年9月3日現在の団体一覧から居住地区別に確認する。 例：地域支えあいの会「やまびこ」の活動地区は小田地区・園田地区の各全域。団体ごとに提供地区が異なるため、下の公式団体一覧で住所に対応する団体を確認してください。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual-groups"
+              ]
+            },
+            "application": {
+              "value": "利用者は担当の地域包括支援センターまたはケアマネジャーに相談後、実施団体一覧から活動団体を確認して団体へ連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "contact": {
+              "value": "利用申込みは担当の地域包括支援センター/ケアマネジャーに相談してから地域の実施団体へ。制度相談先：尼崎市 高齢介護課・包括支援担当 06-6489-6356。実施団体の連絡先は2026-09-03現在の一覧を参照。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual",
+                "amagasaki-mutual-groups"
+              ],
+              "links": [
+                {
+                  "source_id": "amagasaki-mutual-groups",
+                  "label": "地区別の支援団体・連絡先を公式一覧で確認（PDF）"
+                }
+              ]
+            }
+          },
+          "questions_for_office": [
+            "支援団体ごとの最新の受入れ状況、利用料と会費、対象地区・対象者、日常ごみの集積場所までの搬出範囲、家族同席の要否。",
+            "地域の訪問型支え合い活動のごみ捨ては、利用対象となる具体条件、家族からの申込可否、通常ごみの種類、玄関内/玄関先/集積所のどこから運ぶか、収集頻度、立会い条件を教えてください。"
+          ],
+          "ai_reviewed_at": "2026-10-16",
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "amagasaki-carry",
+          "kind": "bulky_carry_support",
+          "name": "訪問型支え合い活動（粗大ごみ捨て・家具移動の候補）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "地域団体の支援対象活動には家庭ごみ・粗大ごみ等のごみ捨てと家具移動を含む。団体ごとの実施内容一覧で受入れを確認。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual-groups"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "eligibility": {
+              "value": "補助事業対象者は、要支援1・2または事業対象者、要介護1～5、65歳以上の虚弱高齢者（市発行の介護保険被保険者証所持）。具体的な大型品支援の受入れ・対象は各団体へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "fees": {
+              "value": "支援団体ごとに異なる。公開一覧にはごみ捨て0円、500円（1時間以内）、1,000円/月、訪問距離で変わる100円～等の例。家具移動・粗大ごみ作業に適用される料金かは各団体へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual-groups"
+              ]
+            },
+            "limits": {
+              "value": "実施地区・活動時間・受入内容は団体ごとに異なる。公式一覧は2026年9月3日現在。大型ごみの重量・サイズ・階段搬出上限は未記載。 例：地域支えあいの会「やまびこ」の活動地区は小田地区・園田地区の各全域。団体ごとに提供地区が異なるため、下の公式団体一覧で住所に対応する団体を確認してください。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "amagasaki-mutual-groups"
+              ]
+            },
+            "application": {
+              "value": "担当の地域包括支援センターまたはケアマネジャーへ相談後、活動団体一覧で実施団体を確認して連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "amagasaki-mutual"
+              ]
+            },
+            "contact": {
+              "value": "利用申込みは担当の地域包括支援センター/ケアマネジャーに相談後、活動団体へ連絡。制度問い合わせ：尼崎市 高齢介護課・包括支援担当 06-6489-6356。団体別の窓口は実施団体一覧。",
+              "state": "explicit",
+              "source_ids": [
+                "amagasaki-mutual",
+                "amagasaki-mutual-groups"
+              ],
+              "links": [
+                {
+                  "source_id": "amagasaki-mutual-groups",
+                  "label": "地区別の支援団体・連絡先を公式一覧で確認（PDF）"
+                }
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ごみ捨て支援として粗大ごみの運搬や屋内搬出まで対応する団体、料金・階段条件・家族立会い、活動地区ごとの受付状況。",
+            "訪問型支え合い活動の参加団体は、粗大ごみと家具を室内から屋外へ搬出・運搬できますか。地区、重さ・寸法・階段の上限、料金、立会いを教えてください。"
+          ],
+          "ai_reviewed_at": "2026-10-16",
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ],
+      "common_questions_for_office": []
+    },
+    {
+      "id": "hyogo:ashiya",
+      "name": "芦屋市",
+      "kana": "あしやし",
+      "selection_reason": "近隣都市の制度差を比較する候補。高齢者向けの簡単なごみ出し支援と粗大ごみ収集・持込み経路を公式情報から対照できる。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "ashiya-daily-support",
+          "kind": "daily_support",
+          "name": "さわやか収集（家庭ごみ）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみ。分別されていないごみは収集しない。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "collection_location": {
+              "value": "週1回、決められた曜日に自宅の玄関先で収集。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家庭ごみは玄関先等で収集。屋内からの運び出しはこの家庭ごみ案内に明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  {
+                    "label": "全員に共通する条件",
+                    "all": [
+                      "自ら家庭ごみステーションに家庭ごみを出すことが困難",
+                      "親族等による協力を得ることができない",
+                      "単身世帯（同居する方が高齢等の理由により家庭ごみの排出が難しい世帯を含む）"
+                    ]
+                  },
+                  {
+                    "label": "対象者ごとの条件",
+                    "any": [
+                      {
+                        "label": "高齢者の場合",
+                        "all": [
+                          "おおむね65歳以上",
+                          "要介護2以上の認定",
+                          "訪問介護を利用している"
+                        ]
+                      },
+                      {
+                        "label": "障がいのある方・難病患者の場合",
+                        "all": [
+                          {
+                            "any": [
+                              "身体障害者手帳を有する",
+                              "療育手帳を有する",
+                              "精神障害者保健福祉手帳を有する",
+                              "難病患者"
+                            ]
+                          },
+                          "居宅介護を利用している"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "exception": "以上の条件に該当しなくても、実態として家庭ごみの排出が難しい場合は対象となる場合があるため相談してください。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "family_help": {
+              "value": "親族等の協力を得られないことが条件。高齢等で排出困難な同居者がいる世帯も単身世帯扱いに含む。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "fees": {
+              "value": "家庭ごみのさわやか収集の案内では料金を確認できていません。無料とは判断せず、相談時に確認してください。",
+              "state": "not_stated",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "limits": {
+              "value": "週1回、決められた曜日。分別されていないごみは収集不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "application": {
+              "value": "ケアマネジャー・相談支援専門員または収集事業課へ相談し、利用申請書と関係書類を収集事業課へ提出。市担当者が自宅訪問して本人等と面談・調査し、可否通知。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "attendance": {
+              "value": "申請時は市担当者が自宅を訪問し、ご本人及びケアマネジャー又は相談支援専門員と面談・調査。収集日の立会い要否はこの案内に記載がないため相談時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "contact": {
+              "value": "収集事業課 0797-22-2155、FAX 0797-32-6247。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "利用者負担の有無、1回あたりのごみ量・袋数の上限を確認してください。",
+            "利用曜日と安否確認の方法・希望の伝え方を確認してください。",
+            "申請時の面談とは別に、収集日に本人や家族の立会いが必要ですか。",
+            "さわやか収集の利用者負担と家庭ごみの袋数・重量上限は。",
+            "別制度のひとり一役活動の利用可否・費用・調整方法は、芦屋市社会福祉協議会（0797-32-7525）へ確認してください。"
+          ],
+          "search_scope": null,
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "ashiya-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみは一番長い辺が50cm以上の燃やすごみ、または一番長い辺が30cm以上の燃やさないごみ（傘・蛍光灯を除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-fees"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日当日8時30分までに、予約時に指定された敷地外の場所へ出す。指定場所以外では回収不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-flow",
+                "ashiya-reception-notes"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "indoor_carry": {
+              "value": "通常収集では個人の敷地内へ立ち入らない。屋内からの搬出は行わず、敷地外の指定場所へ出す。搬出困難な場合はさわやか収集の対象を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-flow",
+                "ashiya-reception-notes"
+              ],
+              "reviewed_at": "2026-10-13"
+            },
+            "eligibility": {
+              "value": "市の粗大ごみ規定に該当する家庭ごみ。市で収集・処理できないごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-fees"
+              ]
+            },
+            "family_help": {
+              "value": "申込時に申請者情報と出す場所・品目等を伝える。家族による代理申込み条件は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ashiya-bulky-flow"
+              ]
+            },
+            "fees": {
+              "value": "品目別手数料。処理券は1枚300円、必要枚数は申込時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-flow"
+              ]
+            },
+            "limits": {
+              "value": "申込点数や重量等の上限は確認した案内に記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ashiya-bulky-flow"
+              ]
+            },
+            "application": {
+              "value": "処理券を買う前に電話申込み。電話困難な場合はFAX仮申込み後、予約センターの連絡で内容確認し完了。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-flow"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は案内に記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ashiya-bulky-flow"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ予約センター 0797-22-2166、FAX 0797-32-6247。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-bulky-flow"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "敷地外の予約時指定場所へ準備できない場合、さわやか収集等のどの窓口へ相談できますか。",
+            "家族による代理申込みと収集時の立会い要否、1回の点数・重量制限は。"
+          ],
+          "search_scope": null,
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "ashiya-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "環境処理センターへの直接持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "芦屋市内で発生し、市で処理可能なごみ。処理困難物・危険物・自動車部品・建築廃材・在宅医療廃棄物・有害物質・PC等は不可。木くず寸法条件あり。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "芦屋市環境処理センター（浜風町31-1）。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "持込者自身が車両から積み下ろし・廃棄を行う。自宅内からの運び出しは対象外の持込方式。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "芦屋市内で発生したごみ。持込時に本人確認書類提示。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "予約時に持込者を伝える。同居家族以外が持ち込む場合は委任状が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "10kgまで無料（1日1回1車両）。10kg超100kgまで1,080円、100kgを超える場合は100kgごと1,080円追加。現金払い。複数回の搬入は都度精算、2台なら各車両で計算。持込みごみには粗大ごみ処理券を貼らないでください。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "予約可能日数は最大6日間。品目により数量規制があるため予約時確認。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "application": {
+              "value": "電話で事前予約。平日持込は当日正午まで予約可、土曜は前日16:30まで。当日持込可否は予約枠による。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者自身が積み下ろし・廃棄を行う。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "持ち込みごみ予約センター 0797-32-5375。環境施設課 0797-32-5391。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-dropoff"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "予約時に品目ごとの数量規制と受入可否を確認してください。",
+            "車両の大きさ・利用可能な車種、本人以外が持ち込む場合の委任状書式を確認してください。"
+          ],
+          "search_scope": null,
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "ashiya-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "さわやか収集（粗大ごみ・屋内搬出）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-12",
+          "fields": {
+            "waste_scope": {
+              "value": "市の粗大ごみ。通常の品目区分に加え、担当者が無理なく運べる大きさ・重さに限ります。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka",
+                "ashiya-bulky-fees"
+              ]
+            },
+            "collection_location": {
+              "value": "市担当者が自宅内から収集。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市担当者が自宅内から搬出。担当者が無理なく運べる大きさ・重さに限り、室内解体・特殊搬出不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  {
+                    "label": "全員に共通する条件",
+                    "all": [
+                      "単身世帯（同居する方が高齢等の理由により粗大ごみの排出が難しい世帯を含む）"
+                    ]
+                  },
+                  {
+                    "label": "対象者ごとの条件",
+                    "any": [
+                      {
+                        "label": "高齢者の場合",
+                        "all": [
+                          "おおむね65歳以上",
+                          {
+                            "any": [
+                              "要支援認定",
+                              "要介護認定"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "障がいのある方・難病患者の場合",
+                        "all": [
+                          {
+                            "any": [
+                              "身体障害者手帳を有する",
+                              "療育手帳を有する",
+                              "精神障害者保健福祉手帳を有する",
+                              "難病患者"
+                            ]
+                          },
+                          "居宅介護を利用している"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "family_help": {
+              "value": "単身世帯が条件。ただし同居者が高齢等の理由で粗大ごみ排出困難な世帯を含む。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみ処理券を貼る必要があります。処理券は1枚300円で、必要枚数は予約時に確認してください。持出しの追加料金の有無はこの支援案内では確認できないため、予約時に確認してください。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "ashiya-sawayaka",
+                "ashiya-bulky-flow"
+              ]
+            },
+            "limits": {
+              "value": "担当者が無理なく運べる大きさ・重さ。室内解体・特殊な方法での搬出は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ予約センターで収集予約し、申込み時に「さわやか収集希望」と伝える。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "attendance": {
+              "value": "収集日に電話で在宅確認を行い、市担当者が自宅内から収集。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ予約センター 0797-22-2166。市収集事業課 0797-22-2155。",
+              "state": "explicit",
+              "source_ids": [
+                "ashiya-sawayaka"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "対象物の寸法・重量を伝え、担当者が無理なく運べるか予約時に確認してください。",
+            "粗大ごみ処理券の金額と在宅確認の電話方法を確認してください。",
+            "粗大ごみ処理券の料金とは別に、屋内持出しの追加料金がかかりますか。",
+            "粗大ごみの品目別券料金、寸法・重量目安、予約時の在宅確認手順は。"
+          ],
+          "search_scope": null,
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ],
+      "pref_name": "兵庫県",
+      "priority_notes": [
+        "さわやか収集には、日常の家庭ごみの玄関先収集と、粗大ごみの屋内からの持出しがあります。対象者の条件は同じではないため、それぞれ確認してください。",
+        "粗大ごみ処理券はさわやか粗大ごみ・通常粗大ごみで必要です。直接持込みは処理券不要。持出し作業の追加料金、職員が運べる大きさ・重さは予約時確認。",
+        "「ひとり一役活動」の簡単なごみ出しは、さわやか収集とは別に芦屋市社会福祉協議会（0797-32-7525）へ相談。65歳以上の単身・高齢者のみ・昼間独居等の世帯について調整する活動で、利用可否・費用は未確認。"
+      ],
+      "common_questions_for_office": []
+    },
+    {
+      "id": "osaka:osaka",
+      "name": "大阪市",
+      "kana": "おおさかし",
+      "selection_reason": "新規自治体運用試験。行政区別の収集担当区分・処理施設割当と福祉的搬出支援の案内を調査。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "osaka-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集（普通ごみ・資源ごみ等）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "普通ごみ、資源ごみ、プラスチック資源、古紙・衣類。粗大ごみは別申込書・別要件で扱う。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-daily",
+                "osaka-fureai-guideline"
+              ]
+            },
+            "collection_location": {
+              "value": "環境事業センター職員が対象者宅の玄関先で収集。玄関先で困難なら本人と協議して場所変更。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "indoor_carry": {
+              "value": "日常ごみの屋内からの搬出可否は明記なし。通常の回収場所まで出せない場合は窓口へ相談。",
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "eligibility": {
+              "value": "大阪市内居住の一人暮らしで、親族または介護関係者の協力が得られず、自分で所定場所へ出すのが困難な人のうち、65歳以上、障害者手帳所持、要支援・要介護認定、または環境局長が認める人。同居者がいても、その人がこれらの条件に該当する人や年少者等で、ごみの排出が困難な場合は対象。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "family_help": {
+              "value": "親族・介護関係者による協力が得られないことが基本条件。同居者が対象条件に該当する人や年少者等で、排出困難な場合も利用可能。親族等が申請を代理できる。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "limits": {
+              "value": "粗大ごみ・引越しごみは本サービスの通常収集の範囲外。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "osaka-daily"
+              ]
+            },
+            "application": {
+              "value": "居住区を担当する環境事業センターへ相談・申込み。申込書あり。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-daily",
+                "osaka-fureai-guideline",
+                "osaka-centers"
+              ]
+            },
+            "attendance": {
+              "value": "申込み後、本人と日程調整して面談（申込前に相談・面談済みなら省略可）。収集時の立会い要否は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "contact": {
+              "value": "各区担当の環境事業センター（担当区別窓口）。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-centers"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "日常ごみのふれあい収集に料金はかかりますか。収集時の立会いは必要ですか。",
+            "日常ごみを通常の回収場所まで出せません。室内からの搬出や回収場所の調整を相談できますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "osaka-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ戸別収集（事前申込・有料）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-13",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る、最大の辺または径が30cmを超えるもの。品目別対象表・収集不可品あり。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-regular",
+                "osaka-normal-rules"
+              ]
+            },
+            "collection_location": {
+              "value": "申込時に指定する収集場所。収集車が家の前まで入れない場合は原則として普通ごみ置場。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-bulky-apply"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "osaka-regular",
+                "osaka-bulky-apply"
+              ]
+            },
+            "eligibility": {
+              "value": "大阪市内の家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-regular"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-regular",
+                "osaka-bulky-apply"
+              ]
+            },
+            "fees": {
+              "value": "1点200円・400円・700円・1,000円の品目別区分。申込後に案内された額の処理券を購入。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fees",
+                "osaka-bulky-apply"
+              ]
+            },
+            "limits": {
+              "value": "品目・サイズにより手数料と収集可否が異なる。1回の点数上限は今回の公開ページで確認できず。",
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-regular",
+                "osaka-fees"
+              ]
+            },
+            "application": {
+              "value": "ネット・チャットボット・電話・FAX・はがきで事前申込。最短で申込日から3日後（日曜を挟む場合4日後）以降の収集日。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-bulky-apply"
+              ]
+            },
+            "attendance": {
+              "value": "受付指定日に指定場所へ出す。本人立会いの要否は明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-regular",
+                "osaka-bulky-apply"
+              ]
+            },
+            "contact": {
+              "value": "大阪市粗大ごみ収集受付センター。固定電話0120-79-0053、携帯電話06-6530-1530。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-bulky-apply"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "家族が代理で申し込む場合、必要な手続きはありますか。",
+            "1回に申し込める点数と、収集時の立会いの要否を教えてください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "osaka-carry",
+          "kind": "bulky_carry_support",
+          "name": "ふれあい収集（粗大ごみ持ち出し）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "ふれあい収集利用対象者の粗大ごみ。引越しに伴う場合や量により対応できない場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-daily",
+                "osaka-fureai-bulky",
+                "osaka-fureai-guideline"
+              ]
+            },
+            "collection_location": {
+              "value": "通常は対象者宅玄関先。本人が玄関先まで出せない場合、職員が屋内から持ち出して収集可能。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-bulky",
+                "osaka-fureai-guideline"
+              ]
+            },
+            "eligibility": {
+              "value": "大阪市内在住で、親族または介護関係者の協力が得られず、自身で排出困難な一人暮らしの人（65歳以上、障害者手帳所持、要支援・要介護認定、環境局長認定）。同居者がいても、その人がこれらの条件に該当する人や年少者等で、ごみの排出が困難な場合は対象。粗大ごみは専用申込・現地調査の上決定。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "family_help": {
+              "value": "親族等の協力が得られないことが基本要件。親族等は本人に代わって申込み可能。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "limits": {
+              "value": "市の排出禁止物・事業系廃棄物、取り外し・解体作業が必要な品、通常の出入口から出せない品は対象外。市の案内では引越しに伴う場合や量により対応できないことがあるとし、個別判断。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline",
+                "osaka-fureai-bulky"
+              ]
+            },
+            "application": {
+              "value": "居住地域を担当する環境事業センターへ相談。粗大ごみ用申込書（第2号様式）を使用。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline",
+                "osaka-fureai-bulky",
+                "osaka-centers"
+              ]
+            },
+            "attendance": {
+              "value": "申込み後、面談・可否決定がある。収集時の本人立会い要否は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-fureai-guideline"
+              ]
+            },
+            "contact": {
+              "value": "各区担当の環境事業センター。区により担当センターが異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-centers"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "ふれあい収集で粗大ごみを室内から搬出する場合、処理手数料・搬出料金はかかりますか。処理券は必要ですか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "osaka-drop",
+          "kind": "self_dropoff",
+          "name": "家庭系ごみの処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-13",
+          "fields": {
+            "waste_scope": {
+              "value": "大阪市内で発生した家庭系ごみ。粗大ごみは最大辺1m超など破砕設備を要する物があり受入基準確認が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "collection_location": {
+              "value": "予約した焼却工場・破砕設備へ自ら搬入し、自分で荷下ろし。行政区・ごみ種類で施設が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "eligibility": {
+              "value": "大阪市内居住者が自ら搬入。市内排出物の本人持込が前提。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "family_help": {
+              "value": "当日、ごみを出す本人が予約施設へ持込むと案内。家族代理の扱いは明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "fees": {
+              "value": "10kgごと90円、搬入時に現金払い。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "limits": {
+              "value": "1日1回・1台、4t車まで。ダンプ車以外は2人以上で搬入。受入時間は火〜金の9-11時・13-15時（祝日・年末年始除外）。禁忌品・紙類等の搬入制限あり。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "application": {
+              "value": "ごみ発生区を担当する処理施設へ前日までに電話予約（受付平日9-12時、13-16時）。粗大破砕物は舞洲工場へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "attendance": {
+              "value": "本人が搬入し、自ら荷下ろし。車検証持参。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            },
+            "contact": {
+              "value": "区担当焼却工場または舞洲工場（粗大破砕）。区担当施設一覧・電話番号を公式ページで案内。",
+              "state": "explicit",
+              "source_ids": [
+                "osaka-self-drop"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "本人が搬入できない場合、家族の代理搬入は認められますか。事前に何を確認すればよいですか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ]
+    },
+    {
+      "id": "kanagawa:kawasaki",
+      "name": "川崎市",
+      "kana": "かわさきし",
+      "selection_reason": "新規自治体運用試験。7区を4生活環境事業所が担当する収集・ふれあい支援・自己搬入例外を調査。",
+      "publication_status": "approved",
+      "services": [
+        {
+          "id": "kawasaki-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集（普通ごみ・資源物）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "普通ごみ・資源物。粗大ごみは独立区分として同制度の実施方法を定める。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "collection_location": {
+              "value": "車両通行可能地域は対象者宅玄関先等、狭隘地域は玄関先等に出したもの、集合住宅は原則階段下（1階）。事情があれば相談。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "日常ごみの屋内からの搬出可否は明記なし。通常の回収場所まで出せない場合は窓口へ相談。",
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-daily-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "身近な人の協力が困難で自ら一定の場所まで出せない人。高齢者は65歳以上一人暮らし、または同居家族も搬出できない場合。障がい者は一人暮らし、または同居家族も搬出できない場合。事前訪問調査あり。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "family_help": {
+              "value": "身近な人の協力が困難であること。65歳以上は同居家族がいても家族がごみを持ち出せない場合が対象。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "fees": {
+              "value": "料金記載なし（市の実施要綱上、利用料の記載なし）。",
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "limits": {
+              "value": "引越し・片付けなど一度に多量に出る物、部屋の片付け作業には対応不可。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kawasaki-daily-bulky"
+              ]
+            },
+            "application": {
+              "value": "地域所管の生活環境事業所へ電話等で相談・申込み。職員が訪問し現場状況を調査、収集回数・出し方・場所を調整。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-faq-fureai",
+                "kawasaki-contacts"
+              ]
+            },
+            "attendance": {
+              "value": "訪問調査あり。通常の収集日に毎回立会いが必要かは明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky"
+              ]
+            },
+            "contact": {
+              "value": "地域所管の生活環境事業所（区別連絡先）。問い合わせ先区割りは7区を4事業所で分担。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-contacts"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "日常ごみを通常の回収場所まで出せません。室内からの搬出や回収場所の調整を相談できますか。",
+            "日常ごみのふれあい収集に料金はかかりますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "kawasaki-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集（申込制）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "最長辺が30cm以上の物。金属を含まない木製・プラスチック製等は50cm未満は普通ごみ、金属含有品は30cm以上で粗大等。詳細は品目・材質区分表による。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-regular-faq",
+                "kawasaki-fees"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日に指定場所へ排出。粗大ごみ通常収集は個別収集となるが、排出場所は玄関前等を申込時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-regular-faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kawasaki-regular-faq",
+                "kawasaki-daily-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "川崎市の家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-regular-faq"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-regular-faq"
+              ]
+            },
+            "fees": {
+              "value": "材質・寸法区分により1点300円、600円または1,200円。インターネット申込ではキャッシュレス決済も選択可能。処理券を買う場合は市内コンビニで購入（郵便局での販売は2026年3月31日終了。既購入分は引き続き使用可）。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-fees",
+                "kawasaki-regular-faq",
+                "kawasaki-online-payment",
+                "kawasaki-dropoff-faq"
+              ]
+            },
+            "limits": {
+              "value": "申込個数は基本的に上限なし。家電リサイクル対象等の対象外品あり。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-regular-faq"
+              ]
+            },
+            "application": {
+              "value": "インターネット・電話・FAXで事前申込。処理券を購入するか、インターネット申込時にキャッシュレス決済を選択。キャッシュレスは受付完了後に別途決済手続きが必要で、収集日前日までに完了する。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-regular-faq",
+                "kawasaki-online-payment"
+              ]
+            },
+            "attendance": {
+              "value": "現金払いは処理券を貼付。キャッシュレス決済は処理券に代えて、受付番号・収集日・金額を記入した任意用紙を各品に貼付し、収集日当日朝8時までに指定場所へ排出。用紙は1辺20cm程度、水性インクを避けてしっかり貼る。用紙の剥がれ・必要事項の未記入は収集不可。立会い要否の明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-regular-faq",
+                "kawasaki-online-payment"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 0570-044-530／携帯・IP電話044-930-5300。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-regular-faq",
+                "kawasaki-contacts"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "家族が代理で申し込む場合、必要な手続きはありますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "kawasaki-carry",
+          "kind": "bulky_carry_support",
+          "name": "ふれあい収集（粗大ごみ屋内搬出）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-13",
+          "fields": {
+            "waste_scope": {
+              "value": "ふれあい収集の対象者の家庭系粗大ごみ。一度に多量の物・引越し等の部屋片付け作業は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "collection_location": {
+              "value": "原則、対象者宅屋内から粗大ごみを持ち出して収集。対象者が集合住宅内から玄関先へ出せる場合は玄関先等から収集。必要に応じ第三者立会い。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "eligibility": {
+              "value": "身近な人の協力が困難で、自らごみを持ち出せない人。65歳以上の高齢者、または障がい者で、一人暮らし、もしくは同居家族もごみを持ち出せない場合。訪問調査・事前調整の上で実施。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "family_help": {
+              "value": "身近な人の協力が困難であることが共通条件。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "fees": {
+              "value": "通常の粗大ごみ手数料について適用関係の明記なし。要事前確認（ふれあい収集の料金は別途記載なし）。",
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "limits": {
+              "value": "有害物質等の処理困難物・危険物、長さ2m以上・体積1m³以上・重量100kg以上の物、出入口から持ち出せない物、取り外し工事や解体作業が必要な物、家の増改築に伴う建築廃材、片付け・引越し等により一度に多量に出る物は原則対象外。部屋の片付け作業には対応不可。集合住宅は本人が玄関先まで出せる場合その場所から収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-guideline"
+              ]
+            },
+            "application": {
+              "value": "地域所管の生活環境事業所に相談・申込。職員が訪問調査し搬出方法・場所等を調整。粗大ごみは特別事情時の相談も同窓口。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky",
+                "kawasaki-faq-fureai",
+                "kawasaki-contacts"
+              ]
+            },
+            "attendance": {
+              "value": "必要に応じ第三者立会い。利用者本人の立会い要否は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-daily-bulky"
+              ]
+            },
+            "contact": {
+              "value": "地域所管の生活環境事業所。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-contacts"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "ふれあい収集で粗大ごみを室内から搬出する場合、通常の粗大ごみ手数料はかかりますか。処理券は必要ですか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        },
+        {
+          "id": "kawasaki-drop",
+          "kind": "self_dropoff",
+          "name": "家庭ごみ自己搬入（粗大ごみは特別事情のみ事前相談）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-13",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみの処理施設への市民直接搬入は原則不可。粗大ごみは特別な事情がある場合に限り、生活環境事業所へ事前相談のうえ持込が認められる場合あり。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-general-faq"
+              ]
+            },
+            "collection_location": {
+              "value": "通常の市民向け自己搬入先は設定なし。例外的な粗大ごみ持込先・条件は所管生活環境事業所との事前相談で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-general-faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kawasaki-dropoff-faq"
+              ]
+            },
+            "eligibility": {
+              "value": "通常の自己搬入制度は市民向けには原則なし。粗大ごみの特別事情相談時に個別確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-general-faq"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-dropoff-faq"
+              ]
+            },
+            "fees": {
+              "value": "特例持込時の手数料・減免の公表条件は確認できず、事前確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-general-faq"
+              ]
+            },
+            "limits": {
+              "value": "引越しなど特別事情がある場合に限り事前相談。一般家庭ごみ・粗大ごみの自由搬入を受付けていない。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-general-faq"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ通常収集申込が基本。引越し等で間に合わない場合など特別事情時は、住所地所管の生活環境事業所へ事前相談。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-dropoff-faq",
+                "kawasaki-general-faq",
+                "kawasaki-contacts"
+              ]
+            },
+            "attendance": {
+              "value": "特別搬入の運搬者・当日手続は公表一般案内に記載なし。事前相談時に確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "kawasaki-dropoff-faq"
+              ]
+            },
+            "contact": {
+              "value": "住所地所管の生活環境事業所（区により4窓口分担）。",
+              "state": "explicit",
+              "source_ids": [
+                "kawasaki-contacts"
+              ]
+            }
+          },
+          "ai_reviewed_at": "2026-10-16",
+          "questions_for_office": [
+            "この事情で粗大ごみの特例持込みを相談できますか。",
+            "認められる場合、料金・減免、搬入先、家族の代理運搬、車両、当日の手続きを教えてください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "akashi-daily",
+      "url": "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/fureai.html",
+      "title": "ふれあい収集（要援護者ごみ戸別収集）／明石市",
+      "source_updated": "2024-03-21",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "akashi-bulky",
+      "url": "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/sodai.html",
+      "title": "粗大ごみの出し方／明石市",
+      "source_updated": "2026-08-07",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "akashi-drop",
+      "url": "https://www.city.akashi.lg.jp/kankyou/clean_cen/kurashi/gomi/dashikata/acc_mochikomi.html",
+      "title": "明石クリーンセンターへの直接持ち込みについて／明石市",
+      "source_updated": "2026-08-07",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "akashi-leaflet",
+      "url": "https://www.city.akashi.lg.jp/documents/12680/hureaipannhu.pdf",
+      "title": "ふれあい収集 パンフレット",
+      "source_updated": null,
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "akashi-drop-faq",
+      "url": "https://www.city.akashi.lg.jp/documents/39581/yokuarusitumonn2.pdf",
+      "title": "明石市 よくある質問（クリーンセンター持込み）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "akashi-phone",
+      "url": "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/sodai-dennwademousikomu.html",
+      "title": "明石市 粗大ごみを電話で申し込む",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-large",
+      "url": "https://www.city.amagasaki.hyogo.jp/kurashi/gomi/manner/bunbetu/036_oogata.html",
+      "title": "尼崎市：大型ごみ（有料・申込制）",
+      "source_updated": "2025-12-09",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-dropoff",
+      "url": "https://www.city.amagasaki.hyogo.jp/kurashi/gomi/seido/1040112/index.html",
+      "title": "尼崎市：家庭から出たごみを持ち込む場合",
+      "source_updated": "2026-10-08",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-mutual",
+      "url": "https://www.city.amagasaki.hyogo.jp/kurashi/koreisya/sumai/1004062.html",
+      "title": "尼崎市：訪問型支え合い活動補助事業",
+      "source_updated": "2026-09-03",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-large-fees",
+      "url": "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/003/616/ogata_ryoukinhyouR712.pdf",
+      "title": "尼崎市：大型ごみ種類別料金表（令和7年12月）",
+      "source_updated": "2025-12-09",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-mutual-groups",
+      "url": "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/004/062/houmonn0903.pdf",
+      "title": "尼崎市訪問型支え合い活動事業 実施団体（2026年9月3日現在）",
+      "source_updated": "2026-09-03",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-dashikata",
+      "url": "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/003/616/benricho_dashikata.pdf",
+      "title": "尼崎市 家庭ごみべんりちょう（大型ごみの出し方）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "amagasaki-faq287",
+      "url": "https://faq.city.amagasaki.hyogo.jp/faq/detail.aspx?id=287",
+      "title": "尼崎市 大高洲庁舎へのごみ持込み（FAQ 287）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "ashiya-home",
+      "url": "https://www.city.ashiya.lg.jp/kaigo/chiikihukushi/hitorihitoyaku.html",
+      "title": "芦屋市／ひとり一役活動推進事業",
+      "source_updated": null,
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "ashiya-bulky-flow",
+      "url": "https://www.city.ashiya.lg.jp/kankyoushori/sodai.html",
+      "title": "芦屋市／粗大ごみ収集までの流れ",
+      "source_updated": null,
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "ashiya-bulky-fees",
+      "url": "https://www.city.ashiya.lg.jp/kankyoushori/sodai_tesuuryou.html",
+      "title": "芦屋市／粗大ごみ品目別手数料一覧表",
+      "source_updated": null,
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "ashiya-dropoff",
+      "url": "https://www.city.ashiya.lg.jp/kankyoushori/mochikomi/index.html",
+      "title": "芦屋市／ごみの直接持ち込みについて（予約制）",
+      "source_updated": null,
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "ashiya-sawayaka",
+      "url": "https://www.city.ashiya.lg.jp/kankyoushori/syuusyuu/sawayaka.html",
+      "title": "芦屋市／さわやか収集",
+      "source_updated": "2021-11-11",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "ashiya-reception-notes",
+      "url": "https://www.city.ashiya.lg.jp/kankyoushori/oshirase/uketukejyouhou.html",
+      "title": "芦屋市 粗大ごみ収集の受付情報・当日の注意事項",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "kobe-bulky",
+      "url": "https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/dashikata/bunbetsukubun/hinmokugoto/ogatagomi/index.html",
+      "title": "神戸市：大型ごみ",
+      "source_updated": null,
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "kobe-carry",
+      "url": "https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/dashikata/bunbetsukubun/hinmokugoto/ogatagomi/mochidashi.html",
+      "title": "神戸市：大型ごみの宅内からの持ち出し支援",
+      "source_updated": "2023-11-14",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "kobe-daily",
+      "url": "https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/shisetsu/cleanstation/himawarishushu.html",
+      "title": "神戸市：ひまわり収集（高齢者・障がい者等へのごみ出し支援）",
+      "source_updated": "2025-11-05",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "kobe-drop-detail",
+      "url": "https://www.city.kobe.lg.jp/a70503/shise/about/construction/soshiki/1900/1900/1907jigyoukanri_fusehata.html",
+      "title": "神戸市：布施畑環境センターへのごみの持込み",
+      "source_updated": "2026-08-27",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "kobe-daily-manual",
+      "url": "https://www.city.kobe.lg.jp/documents/30259/20220401_koureisya.pdf",
+      "title": "神戸市 ひまわり収集マニュアル（介護関係事業者用・第4版）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "kobe-disability-manual",
+      "url": "https://www.city.kobe.lg.jp/documents/30259/20220401_syougaisya.pdf",
+      "title": "神戸市 ひまわり収集マニュアル（障害福祉事業者用）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "nishi-daily",
+      "url": "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/tetsuzuki/nikoyaka.html",
+      "title": "にこやか収集",
+      "source_updated": "2026-07-21",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "nishi-bulky",
+      "url": "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/seikatsugomi/moshikomi.html",
+      "title": "粗大ごみの収集には、申し込み予約が必要です。",
+      "source_updated": "2026-07-24",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "nishi-drop",
+      "url": "https://www.nishi.or.jp/kurashi/gomi/shisetsu/nishi-shori.html",
+      "title": "ごみの持込みについて【一般家庭の方】",
+      "source_updated": "2026-10-09",
+      "checked": "2026-10-11",
+      "source_kind": "official"
+    },
+    {
+      "id": "nishi-daily-rules",
+      "url": "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/tetsuzuki/nikoyaka.files/nikoyakazissiyoukou0721.pdf",
+      "title": "西宮市 にこやか収集実施要綱",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "nishi-welfare",
+      "url": "https://www.nishi.or.jp/kenko/fukushi/nichijoseikatsu/shogaijujitsu.html",
+      "title": "西宮市 障害のある人の日常生活の充実（にこやか収集）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "nishi-drop-limits",
+      "url": "https://www.nishi.or.jp/kurashi/gomi/shisetsu/nishi-shori.files/genchikakunin.pdf",
+      "title": "西宮市 西部総合処理センターへの搬入制限・現地確認",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokohama-daily",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/hureai.html",
+      "title": "家庭ごみを自宅からごみ集積場所まで持ち出すことができない方（ふれあい収集）",
+      "source_updated": "2025-08-19",
+      "checked": "2026-10-11",
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
+    },
+    {
+      "id": "yokohama-carry",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/motidasi.html",
+      "title": "粗大ごみを自宅の外まで持ち出せない方（粗大ごみ持ち出し収集）",
+      "source_updated": "2025-08-19",
+      "checked": "2026-10-11",
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
+    },
+    {
+      "id": "yokohama-bulky",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/sodaigomi.html",
+      "title": "粗大ごみの申込み",
+      "source_updated": "2026-10-02",
+      "checked": "2026-10-11",
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
+    },
+    {
+      "id": "yokohama-drop",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/mochikomi.html",
+      "title": "粗大ごみの持込みをしたい（自己搬入）",
+      "source_updated": "2026-08-21",
+      "checked": "2026-10-11",
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
+    },
+    {
+      "id": "yokohama-collection",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/shuushuu.html",
+      "title": "粗大ごみの収集をしてほしい",
+      "source_updated": "2026-08-21",
+      "checked": "2026-10-11",
+      "source_kind": "official",
+      "title_checked": "2026-10-12"
+    },
+    {
+      "id": "yokohama-offices",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shokai/jimusho/jimusho.html",
+      "title": "資源循環局事務所一覧",
+      "source_updated": "2025-08-29",
+      "checked": "2026-10-12",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokohama-daily-rule",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/hureai.files/0014_20250328.pdf",
+      "title": "横浜市 ふれあい収集実施要綱",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokohama-faq99",
+      "url": "https://www.sodai-faq.city.yokohama.lg.jp/faq/show/99?category_id=13&site_domain=default",
+      "title": "横浜市 粗大ごみ収集時の立会い（FAQ 99）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokohama-faq69",
+      "url": "https://www.sodai-faq.city.yokohama.lg.jp/faq/show/69?category_id=14&site_domain=default",
+      "title": "横浜市 粗大ごみの運び出し（FAQ 69）",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "source_kind": "official"
+    },
+    {
+      "id": "osaka-bulky-apply",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000515879.html",
+      "title": "大阪市：粗大ごみ収集の申込みに関すること （…>ご家庭で出るごみ>分別・出し方のルールと収集カレンダー）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "f1b207d6c8d5bc3586e19d1e6da343180fcac42a828ce41d455adde73bcb5a91",
+      "cache_file": "osaka/evidence-cache/osaka-bulky-apply.html"
+    },
+    {
+      "id": "osaka-centers",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000454118.html",
+      "title": "大阪市：ごみの出し方や収集曜日などのお問合せ先 （…>ごみ・環境保全>相談窓口一覧）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "c561b63b7b413da78d914a5be9f5836e2efc41c1c1dee87df898f8df7cabbd76",
+      "cache_file": "osaka/evidence-cache/osaka-centers.html"
+    },
+    {
+      "id": "osaka-daily",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000370525.html",
+      "title": "大阪市：ふれあいや安否確認のサービス （…>在宅で生活するための福祉サービス>緊急時の安心サポート）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "980c60760b8b8ca2e423193998934223acbe96ac68acc0fa4ab5b82731749450",
+      "cache_file": "osaka/evidence-cache/osaka-daily.html"
+    },
+    {
+      "id": "osaka-fees",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000384507.html",
+      "title": "大阪市：粗大ごみ処理手数料一覧表 （…>ご家庭で出るごみ>分別・出し方のルールと収集カレンダー）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "2d12887062e467db810a07e10eabe9094620f56eb01aa0b94c9f4b3351e4ddd3",
+      "cache_file": "osaka/evidence-cache/osaka-fees.html"
+    },
+    {
+      "id": "osaka-fureai-bulky",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000595748.html",
+      "title": "大阪市：【粗大ごみのふれあい収集】対象要件を拡大しました （…>ご家庭で出るごみ>お知らせ）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "82f306f4629eaf55ef216cedf7667c8933c9305b637397fa9e4fc5024cc1c775",
+      "cache_file": "osaka/evidence-cache/osaka-fureai-bulky.html"
+    },
+    {
+      "id": "osaka-fureai-guideline",
+      "url": "https://www.city.osaka.lg.jp/kankyo/cmsfiles/contents/0000669/669800/1_02.pdf",
+      "title": "大阪市ふれあい収集実施要綱",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "50b776fff33df5e0a065907b189f5836c6d72c6a65f272146f0782bb58940472",
+      "cache_file": "osaka/evidence-cache/osaka-fureai-guideline.pdf"
+    },
+    {
+      "id": "osaka-normal-rules",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000009337.html",
+      "title": "大阪市：ごみの出し方 （…>ご家庭で出るごみ>分別・出し方のルールと収集カレンダー）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "c5a5f6720ca59f84d6b5d321d019ebf40b203d5e63b0d147027424b814bd92a5",
+      "cache_file": "osaka/evidence-cache/osaka-normal-rules.html"
+    },
+    {
+      "id": "osaka-regular",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000369355.html",
+      "title": "大阪市：粗大ごみの収集について （…>ご家庭で出るごみ>分別・出し方のルールと収集カレンダー）",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "0dbe784b0cb1bea8b5ce668adae340452faac0c889bb3976e9da441a7f87d634",
+      "cache_file": "osaka/evidence-cache/osaka-regular.html"
+    },
+    {
+      "id": "osaka-self-drop",
+      "url": "https://www.city.osaka.lg.jp/kankyo/page/0000007810.html",
+      "title": "大阪市：ごみの持込み （…>施設・コミュニティ>ごみ処理施設（清掃工場））",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "ba07f1af11a839be7979ff8bac8ad60c2a9d1136607e2f6caff4642501972515",
+      "cache_file": "osaka/evidence-cache/osaka-self-drop.html"
+    },
+    {
+      "id": "kawasaki-contacts",
+      "url": "https://www.city.kawasaki.jp/300/page/0000005226.html",
+      "title": "川崎市 : 生活環境事業所一覧",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "b59312b291f1d587edc812c363bd07336e941be9b9e16fd63717e4d046dd9e34",
+      "cache_file": "osaka/evidence-cache/kawasaki-contacts.html",
+      "content_type": "text/html",
+      "http_status": 200,
+      "bytes": null
+    },
+    {
+      "id": "kawasaki-daily-bulky",
+      "url": "https://www.city.kawasaki.jp/kurashi/category/261-1-2-0-0-0-0-0-0-0.html",
+      "title": "川崎市 : ふれあい収集",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "0348587248d75e2d3c4a934416b30def72c09bd22d8fbf0b0330243967f1de75",
+      "cache_file": "osaka/evidence-cache/kawasaki-daily-bulky.html",
+      "content_type": "text/html",
+      "http_status": 200,
+      "bytes": null
+    },
+    {
+      "id": "kawasaki-dropoff-faq",
+      "url": "https://www.sodai.city.kawasaki.jp/eco/view/kawasaki/faq.html",
+      "title": "FAQ（よくあるお問い合わせ）｜川崎市粗大ごみインターネット受付",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-16",
+      "sha256": "74e1a8afc6de6cb355996907a2595ed1466374b2476a41aa802c4d1c039e525c",
+      "cache_file": "source-cache/kawasaki-dropoff-faq.html",
+      "bytes": 28235,
+      "content_type": "text/html;charset=UTF-8",
+      "http_status": 200,
+      "final_url": "https://www.sodai.city.kawasaki.jp/eco/view/kawasaki/faq.html"
+    },
+    {
+      "id": "kawasaki-faq-fureai",
+      "url": "https://www.city.kawasaki.jp/templates/faq/300/0000149262.html",
+      "title": "川崎市 : ふれあい収集について教えてほしい。",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "b6b223d481e0d0e74a091104d2153933841b838400e8e9c8e3cfc30ce7156309",
+      "cache_file": "osaka/evidence-cache/kawasaki-faq-fureai.html"
+    },
+    {
+      "id": "kawasaki-fees",
+      "url": "https://www.city.kawasaki.jp/templates/faq/300/0000013379.html",
+      "title": "川崎市 : 粗大ごみ処理手数料について知りたい。",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "13f7a0cc8622f9e1a75981a467c6109a52875507e603d68b4ebc918decc0948e",
+      "cache_file": "osaka/evidence-cache/kawasaki-fees.html",
+      "content_type": "text/html",
+      "http_status": 200,
+      "bytes": null
+    },
+    {
+      "id": "kawasaki-general-faq",
+      "url": "https://www.city.kawasaki.jp/300/page/0000005235.html",
+      "title": "川崎市 : よく寄せられる質問",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "42d3e439358e450f1c1f7d1417b38f38678e0b7c3ef7f15732e8faa65ce93b68",
+      "cache_file": "osaka/evidence-cache/kawasaki-general-faq.html"
+    },
+    {
+      "id": "kawasaki-guideline",
+      "url": "https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000002/2746/fureai.pdf",
+      "title": "家庭系ごみの「ふれあい収集」実施要綱",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "7cd3ca5678c4eb3a3a676c3ece3089d302ffbd145a6c772614099403d01438d9",
+      "cache_file": "osaka/evidence-cache/kawasaki-guideline.pdf",
+      "content_type": "application/pdf",
+      "http_status": 200,
+      "bytes": null
+    },
+    {
+      "id": "kawasaki-online-payment",
+      "url": "https://www.city.kawasaki.jp/300/page/0000154967.html",
+      "title": "粗大ごみの申し込みでオンライン決済が使えるようになりました",
+      "source_kind": "official",
+      "source_updated": "2026-05-01",
+      "checked": "2026-10-16",
+      "sha256": "41c682216f2f8c33f122b75be99b46103a2a0920aa2217ac31ecf159f0739232",
+      "bytes": 56460,
+      "content_type": "text/html",
+      "http_status": 200,
+      "final_url": "https://www.city.kawasaki.jp/300/page/0000154967.html",
+      "cache_file": "source-cache/kawasaki-online-payment.html"
+    },
+    {
+      "id": "kawasaki-regular-faq",
+      "url": "https://www.city.kawasaki.jp/templates/faq/300/0000013341.html",
+      "title": "川崎市 : 粗大ごみの出し方について知りたい。",
+      "source_kind": "official",
+      "source_updated": null,
+      "checked": "2026-10-13",
+      "sha256": "82169c4c27e97e31e88d0b1ec95159d945a91ec3e2b62ba7e8fa9a7ea2d9b00e",
+      "cache_file": "osaka/evidence-cache/kawasaki-regular-faq.html"
+    }
+  ],
+  "draft": false,
+  "review_note": "AIによる原典照合と範囲を記録した差分検査に基づく8市版。未確定項目は相談事項として保持。人手原文全件検品は未実施。",
+  "revision_note": "最新公開main 3b0f5bd2を基点に公開4市20指摘と尼崎・芦屋を選定。制度・出典確認日は元の確認範囲を維持。",
+  "related_city_ids": [
+    "hyogo:kobe",
+    "hyogo:nishinomiya",
+    "hyogo:akashi",
+    "kanagawa:yokohama"
+  ],
+  "publication_approval": {
+    "status": "approved",
+    "by": "site_owner",
+    "approved_at": "2026-10-16",
+    "city_ids": [
+      "hyogo:kobe",
+      "hyogo:nishinomiya",
+      "hyogo:akashi",
+      "kanagawa:yokohama",
+      "hyogo:amagasaki",
+      "hyogo:ashiya",
+      "osaka:osaka",
+      "kanagawa:kawasaki"
+    ],
+    "accepts_ai_reviewed_pilot": true,
+    "basis": "運営者が8市プレビューと変更範囲を確認後、2026-10-16に「公開して」と指示。",
+    "reviewed_candidate_sha256": "0a087ffc8288de48780a5c59f11494a99068c2cedca294c837f3f1d518296395"
+  }
+}

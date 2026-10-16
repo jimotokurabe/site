@@ -1,0 +1,101 @@
+{
+  "review_date": "2026-10-16",
+  "scope": "差分限定: 仙台 sendai-carry の親指摘4フィールドのみ。候補80項目全体の再レビューではない。",
+  "candidate_sha256": "8c5c3667861cf24d9546e27aea3bcba77eb51d41e4cd6b11d9f20f9abdb6b019",
+  "before_parent_diff_sha256": "30579a9103305b2e61fa677a0e81a4126989b1f1c4966ec589393e398245bff8",
+  "official_source_sha256": {
+    "sendai-bulky": "fa8ff2ef97a71b10e4a8799d444fb6f03ee357cde5d7fb9386a7979badfea675",
+    "sendai-daily": "278c0bd17eb694e290a6350b1ff2d5df7256f7873381d671476865bae55414b3"
+  },
+  "parent_findings_history": {
+    "prior_review_problematic_count": 0,
+    "qualification": "旧レビューの問題0は当時の限定レビュー範囲で根拠誤りを特定しなかったという記録に過ぎず、候補全体の正確性の証明ではない。今回の親指摘で旧値の経路欠落が見つかったため、その履歴を保持する。"
+  },
+  "findings": [
+    {
+      "field": "collection_location",
+      "before": {
+        "value": "団体活動は粗大ごみ等を住居・敷地等から受付センター指定場所へ運搬。",
+        "state": "explicit",
+        "source_ids": [
+          "sendai-daily"
+        ]
+      },
+      "after": {
+        "value": "市の搬出例外は家から指定場所までの搬出。団体支援は住居・敷地等から受付センター指定場所までの運搬。",
+        "state": "explicit",
+        "source_ids": [
+          "sendai-bulky",
+          "sendai-daily"
+        ]
+      },
+      "locator": "sendai-bulky.txt:80; sendai-daily.txt:75",
+      "quote": "市は要件時に「家からの運び出し」を行う。団体活動は「粗大ごみ等を住居や敷地等から…指定する場所まで運ぶ」。",
+      "assessment": "旧値は団体活動の記述だけで市の例外経路が欠落。新値は両方を列挙し、それぞれの出発・到着範囲を分離。"
+    },
+    {
+      "field": "waste_scope",
+      "before": {
+        "value": "受付センター受付済みの粗大ごみ・せん定枝を含む団体支援活動。",
+        "state": "explicit",
+        "source_ids": [
+          "sendai-daily"
+        ]
+      },
+      "after": {
+        "value": "市の搬出例外は通常粗大ごみ収集に申し込む粗大ごみ。団体支援は受付センター受付済みの粗大ごみ・せん定枝。",
+        "state": "explicit",
+        "source_ids": [
+          "sendai-bulky",
+          "sendai-daily"
+        ]
+      },
+      "locator": "sendai-bulky.txt:71-80; sendai-daily.txt:75",
+      "quote": "市ページは粗大ごみ収集と家からの運び出し例外を案内。団体支援の対象は「粗大ごみ」「せん定枝」（受付センター受付済み）。",
+      "assessment": "旧値は団体対象品だけ。新値は市収集の粗大ごみと団体支援の受付済み粗大ごみ・せん定枝を区別。"
+    },
+    {
+      "field": "family_help",
+      "before": {
+        "value": "単身または全員該当世帯を含む。家族が支援者になる条件は未記載。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "sendai-daily"
+        ]
+      },
+      "after": {
+        "value": "市の搬出例外は65歳以上又は障がい者のみ世帯が対象。団体支援の世帯要件は別。各経路で家族が援助できる場合や代理申込の追加条件は窓口へ確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "sendai-bulky",
+          "sendai-daily"
+        ]
+      },
+      "locator": "sendai-bulky.txt:80; sendai-daily.txt:76-82",
+      "quote": "市の搬出例外は「65歳以上または障がい者の方のみで構成される世帯」。団体支援は一人暮らし、または要件該当者のみの世帯が対象。家族の支援者条件は記載なし。",
+      "assessment": "旧値は団体世帯条件のみ。新値が市例外の対象条件を補い、代理申込・家族援助の詳細は未確認のまま保持。"
+    },
+    {
+      "field": "attendance",
+      "before": {
+        "value": "在宅・立会い条件は未記載。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "sendai-daily"
+        ]
+      },
+      "after": {
+        "value": "市の搬出例外と団体支援それぞれの在宅・立会い・当日の対応は窓口へ確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "sendai-bulky",
+          "sendai-daily"
+        ]
+      },
+      "locator": "sendai-bulky.txt:177; sendai-daily.txt:75",
+      "quote": "通常収集時は「立ち会いは不要」。団体活動の定義は運搬内容を示すが、在宅・立会い条件を示さない。搬出例外訪問時の在宅条件も明記なし。",
+      "assessment": "新値は二経路それぞれの当日条件を窓口確認に分けており、通常収集の立会い不要を例外搬出や団体活動へ誤って一般化していない。"
+    }
+  ],
+  "result": "4項目とも差分補完は原典に沿う。内容再確認が必要な詳細（家族支援者条件、搬出例外・団体活動の在宅/立会い条件）は未確認のまま。候補は編集していない。"
+}

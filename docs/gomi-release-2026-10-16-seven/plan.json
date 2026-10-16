@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-16",
+  "status": "awaiting_owner_approval",
+  "pre_release_head": "988173439fde62f4a8d948e42f70232ef551b2a7",
+  "base_data_sha256": "fdeb195d08427eec34afa4960558991d86b6d3ad2afb4507a735171325d54247",
+  "candidate": {
+    "path": "調査/2026-10-16_ごみ支援残候補判定/candidate.json",
+    "sha256": "3b4d0e0ce20a5deecd7563275a214757b4141fed4be30448fca8cc16a1a19d12"
+  },
+  "existing_city_ids": [
+    "hyogo:kobe",
+    "hyogo:nishinomiya",
+    "hyogo:akashi",
+    "kanagawa:yokohama",
+    "hyogo:amagasaki",
+    "hyogo:ashiya",
+    "osaka:osaka",
+    "kanagawa:kawasaki"
+  ],
+  "new_city_ids": [
+    "tokyo:setagaya",
+    "hokkaido:sapporo",
+    "aichi:nagoya",
+    "hyogo:kakogawa",
+    "fukuoka:fukuoka",
+    "miyagi:sendai",
+    "hyogo:inagawa"
+  ],
+  "held_city_ids": [
+    "nagano:matsumoto"
+  ],
+  "review_files": [
+    {
+      "path": "調査/2026-10-16_ごみ支援次期4自治体/acceptance-2026-10-16.json",
+      "sha256": "e8cf61c7a8b9e278b956cbf5e8cda5929a869bb1dbe2dc70b71fc33010707cd8"
+    },
+    {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/review.json",
+      "sha256": "713027abc30938f836f7237d6509ce5cf9907918c476694d26dd61911758a374"
+    },
+    {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/diff-review.json",
+      "sha256": "cb4423eff00c4482f470b0bc1decb16216f82d514b1d43406fb48ca436e7fd11"
+    },
+    {
+      "path": "調査/2026-10-16_ごみ支援省消費運用試験/parent-focused-check.json",
+      "sha256": "b5860afd9b38a64ccdb7eff14d58522f847d5ab15afdcc261cb70a50cadaf09b"
+    },
+    {
+      "path": "調査/2026-10-16_ごみ支援残候補判定/review.json",
+      "sha256": "bb704a662e16f8e653a8cd7897302652b3388ffb6d36f51f4e02e537da83491e"
+    },
+    {
+      "path": "調査/2026-10-16_ごみ支援残候補判定/verification.json",
+      "sha256": "64d16f0c1f53bcd44c01b67f125005fae583f1983ae05002da9da8d4f7adad3f"
+    }
+  ],
+  "review_groups": [
+    {
+      "cities": [
+        "tokyo:setagaya",
+        "hokkaido:sapporo",
+        "aichi:nagoya",
+        "hyogo:kakogawa"
+      ],
+      "candidate_sha256": "aa590ea7eafe51aa199426cd18a31dda66625388085ed9870d66bda137bf0d79",
+      "state": "ready_for_owner_preview_approval",
+      "review_refs": [
+        "調査/2026-10-16_ごみ支援次期4自治体/acceptance-2026-10-16.json"
+      ]
+    },
+    {
+      "cities": [
+        "fukuoka:fukuoka",
+        "miyagi:sendai"
+      ],
+      "candidate_sha256": "0cc165080f450d60d049ade2a3f774bdbb1cacba961e5bc0d6235766ec471af9",
+      "state": "draft_reviewed_awaiting_owner_scope_acceptance",
+      "review_refs": [
+        "調査/2026-10-16_ごみ支援省消費運用試験/review.json",
+        "調査/2026-10-16_ごみ支援省消費運用試験/diff-review.json",
+        "調査/2026-10-16_ごみ支援省消費運用試験/parent-focused-check.json"
+      ]
+    },
+    {
+      "cities": [
+        "hyogo:inagawa"
+      ],
+      "candidate_sha256": "3b4d0e0ce20a5deecd7563275a214757b4141fed4be30448fca8cc16a1a19d12",
+      "state": "draft_reviewed_awaiting_owner_scope_acceptance",
+      "review_refs": [
+        "調査/2026-10-16_ごみ支援残候補判定/review.json"
+      ]
+    }
+  ],
+  "release_review_note": "既存8市の制度・出典・確認日・レビュー記録は不変。追加7地域は2026-10-16の版固定済み累積AIレビューと差分確認を受入れ。最終版全項目の同日独立再読・人手原文全件確認ではない。未確定事項・冊子基準日・将来改定を保持。公開承認は別記録。",
+  "expected_change_scope": [
+    "data/gomi-support.json",
+    "tools/validate_gomi.py（猪名川の出典URL限定許可）",
+    "tools/test_gomi_data.py（限定許可の拒否検査）",
+    "tools/build_gomi_preview.py（既存未commitのpreview専用生成）",
+    "docs/gomi-release-2026-10-16.md または新公開記録",
+    "index.html（掲載地域欄）",
+    "gomi-support.html（一覧）",
+    "7地域の*-gomi-support/*.html（新規）",
+    "sitemap.xml（新規7ページの追加）"
+  ],
+  "must_remain_unchanged": [
+    "既存8市のcity/source object",
+    "既存8市のごみページ本文（生成時の差分検査）",
+    "交通1741ページの本文・リンク",
+    "assets/gomi-support.js",
+    "assets/gomi-support.css",
+    "松本未掲載"
+  ],
+  "gates": [
+    "候補SHA/レビューSHA/基準HEAD/既存8保持検査",
+    "本候補7地域に対する実際の運営者承認とAIレビュー受入れ",
+    "公開メタデータのみ変更しpublication validate通過",
+    "承認後のみ全国生成とcheck_gomi --publication/回帰テスト",
+    "生成差分が上記範囲内で交通・既存8に不要変更なし",
+    "公開先の最新HEAD確認と競合調整。commit/push/公開は別工程"
+  ],
+  "current_unknowns_reference": "../2026-10-16_ごみ支援残候補判定/公開待ち地域一覧.md",
+  "preview": "http://127.0.0.1:8846/gomi-support.html",
+  "production_changed": false,
+  "national_regeneration_performed": false,
+  "current_unknowns": {
+    "tokyo:setagaya": [
+      "2024年冊子の細かな資格・料金の現行適用",
+      "頻度・立会い・屋内作業"
+    ],
+    "hokkaido:sapporo": [
+      "袋数・重量・曜日",
+      "費用・立会い・処理料と搬出料の区分"
+    ],
+    "aichi:nagoya": [
+      "屋内範囲・費用・頻度・立会い",
+      "2027年予約変更の適用開始"
+    ],
+    "hyogo:kakogawa": [
+      "要介護2〜5と要綱裁量の関係",
+      "支援料金・業者作業範囲・家族代理"
+    ],
+    "fukuoka:fukuoka": [
+      "2023年議会答弁由来の日常支援の現行継続・対象・料金・受付",
+      "各経路の追加詳細"
+    ],
+    "miyagi:sendai": [
+      "市搬出例外の追加詳細",
+      "団体別負担・地域・屋内と階段の作業範囲"
+    ],
+    "hyogo:inagawa": [
+      "町長裁量の資料差",
+      "ふれあい大型専用条件・屋内範囲",
+      "2026年10月19日改訂表示の電子申込の適用日"
+    ]
+  }
+}
