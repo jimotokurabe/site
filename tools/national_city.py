@@ -421,6 +421,158 @@ def render_hand(source,pid,c,d,a):
             script.string=city_js(script.string)
     return str(soup)
 
+
+def _editorial_text_key(node):
+    return re.sub(r'\s+', ' ', node.get_text(' ', strip=True)).strip()
+
+
+def improve_shared_city_editorial_content(soup):
+    """Polish shared wording and remove only exact, already repeated archive items."""
+    replacements = {
+        '今回参照した既存記録だけでは、横浜市内の具体的なタクシー事業者・割引率を確定できません。県の協賛事業所一覧と利用先でご確認ください。':
+            '掲載情報だけでは、横浜市内で割引を使えるタクシー事業者や割引率を確認できていません。利用先と県の協賛事業所一覧でご確認ください。',
+        '年齢だけで使えるタクシー助成は、既存調査では確認できていません。障害者向けの福祉タクシー券は別制度です。':
+            '年齢を条件とするタクシー助成は、掲載情報では確認できていません。障害者向けの福祉タクシー券とは別制度です。',
+        '友愛タクシー券は障害者手帳が条件のため、既存調査では数えていません。':
+            '友愛タクシー券は障害者手帳が条件のため、高齢者向け支援には含めていません。',
+        '年齢による助成は既存調査で未発見': '掲載情報では年齢による助成を確認できていません',
+        '既存記録では予約要否は未確認': '掲載情報では予約が必要か確認できていません',
+        '既存記録では未確認': '掲載情報では確認できていません',
+        '既存記録で未確認': '掲載情報では確認できていません',
+        '既存調査で未発見': '掲載情報では確認できていません',
+        '既存調査では確認できていません': '掲載情報では確認できていません',
+        '既存記録だけでは': '掲載情報だけでは',
+        '既存調査では数えていません': 'ここでは対象に含めていません',
+        '既存の返納手順案内': '掲載中の返納手順案内',
+        '既存の手順案内では': '手順の案内では',
+        '既存の神戸市西区の交通案内': '神戸市西区の地域交通案内',
+        '以下は照合用の記録です。上で案内した制度と重複する内容を含み、追加の特典として数えるものではありません。':
+            '以下は制度の確認に使った参考情報です。上の案内と重なる内容を含みます。追加の特典ではありません。',
+        '元の市町村ページを読む（照合用）': '元の市町村ページを参考に読む',
+    }
+    for node in list(soup.find_all(string=True)):
+        text = str(node)
+        updated = text
+        for old, new in replacements.items():
+            updated = updated.replace(old, new)
+        if updated != text:
+            node.replace_with(updated)
+    for node in soup.select('meta[content]'):
+        value = node.get('content', '')
+        updated = value
+        for old, new in replacements.items():
+            updated = updated.replace(old, new)
+        if updated != value:
+            node['content'] = updated
+
+    # Keep supplemental records and sources unless their complete displayed
+    # content is already present elsewhere on this same page.
+    related = soup.select_one('#related')
+    if not related:
+        return
+    for archive in list(related.select('.archive-wrap')):
+        outside_paragraphs = {
+            _editorial_text_key(node)
+            for node in soup.select('.content p')
+            if not node.find_parent(class_='archive-wrap')
+        }
+        outside_facts = set()
+        outside_sources = set()
+        for block in soup.select('.content dl'):
+            if block.find_parent(class_='archive-wrap'):
+                continue
+            for row in block.find_all('div', recursive=False):
+                dt, dd = row.find('dt'), row.find('dd')
+                if dt and dd and not row.find('a'):
+                    outside_facts.add((_editorial_text_key(dt), _editorial_text_key(dd)))
+        for item in soup.select('.content ul.sources li'):
+            if item.find_parent(class_='archive-wrap'):
+                continue
+            anchor = item.find('a', href=True)
+            if anchor:
+                outside_sources.add((anchor['href'], _editorial_text_key(item)))
+
+        for paragraph in list(archive.select('p')):
+            key = _editorial_text_key(paragraph)
+            if key and key in outside_paragraphs and not paragraph.find('a'):
+                paragraph.decompose()
+        for block in archive.select('dl'):
+            for row in list(block.find_all('div', recursive=False)):
+                dt, dd = row.find('dt'), row.find('dd')
+                if dt and dd and not row.find('a') and (_editorial_text_key(dt), _editorial_text_key(dd)) in outside_facts:
+                    row.decompose()
+        for item in list(archive.select('ul.sources li')):
+            anchor = item.find('a', href=True)
+            if anchor and (anchor['href'], _editorial_text_key(item)) in outside_sources:
+                item.decompose()
+        for listing in list(archive.select('ul.sources')):
+            if not listing.find('li'):
+                listing.decompose()
+        for details in list(archive.select('details')):
+            remainder = BeautifulSoup(str(details), 'html.parser')
+            for summary in remainder.find_all('summary'):
+                summary.decompose()
+            if not remainder.get_text(' ', strip=True) and not remainder.find('a'):
+                details.decompose()
+        remainder = BeautifulSoup(str(archive), 'html.parser')
+        for heading in remainder.find_all(['h2', 'h3', 'h4']):
+            heading.decompose()
+        if not remainder.get_text(' ', strip=True) and not remainder.find('a'):
+            archive.decompose()
+
+
+def improve_kobe_editorial_content(soup):
+    """Separate Kobe's ended municipal campaign from current shared support."""
+
+    benefit = soup.select_one('#record-benefit')
+    if benefit:
+        county_detail = next((node for node in benefit.find_all('details')
+                              if node.find('summary') and '県内共通の案内' in node.find('summary').get_text()), None)
+        if county_detail:
+            county_detail.find('summary').string = '兵庫県内の割引を詳しく見る'
+            # The eligibility, bus fare, and usage reminders are already shown
+            # in the visible summary above this disclosure.
+            for paragraph in list(county_detail.find_all('p')):
+                text = paragraph.get_text(' ', strip=True)
+                if (text.startswith('65歳以上で「運転経歴証明書」')
+                        or text.startswith('路線バス：神姫バス')
+                        or text.startswith('割引を使う前に、お店や会社に問い合わせてください')
+                        or text.startswith('マイナ経歴証明書の人は、自分のスマホ')):
+                    paragraph.decompose()
+
+            # Move the ended municipal campaign and its dated city source into
+            # their own disclosure instead of mixing them with prefectural discounts.
+            campaign = soup.new_tag('details', attrs={'class': 'local-benefit-history'})
+            summary = soup.new_tag('summary')
+            summary.string = '神戸市独自のICOCA特典（受付終了）'
+            campaign.append(summary)
+            for record in list(county_detail.find_all('dl', class_='facts')):
+                if 'ICOCA' in record.get_text(' ', strip=True):
+                    campaign.append(record.extract())
+            for sources in list(county_detail.find_all('ul', class_='sources')):
+                for item in list(sources.find_all('li')):
+                    anchor = item.find('a', href=True)
+                    if anchor and 'faq.city.kobe.lg.jp' in anchor['href']:
+                        city_sources = soup.new_tag('ul', attrs={'class': 'sources'})
+                        city_sources.append(item.extract())
+                        campaign.append(city_sources)
+                if not sources.find('li'):
+                    sources.decompose()
+            if len(campaign.find_all('li')) or campaign.find('dl'):
+                county_detail.insert_after(campaign)
+
+    # The expired offer remains visible in the support overview and its own
+    # disclosure; remove the repeated alert and the unrelated warning under the
+    # senior pass.
+    for notice in list(soup.select('.notice')):
+        if 'ICOCA' in notice.get_text(' ', strip=True) and '2023年12月28日' in notice.get_text(' ', strip=True):
+            notice.decompose()
+    support = soup.select_one('#record-support')
+    if support:
+        for paragraph in list(support.select('p.important')):
+            if 'ICOCA' in paragraph.get_text(' ', strip=True):
+                paragraph.decompose()
+
 def build_all(root:Path,out:Path,draft:bool=False)->dict:
     from seo_content import make_city_content
     from warm_city import apply_warm_city
@@ -470,7 +622,21 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
             if meta is None:
                 meta=soup.new_tag('meta',attrs={attr:key});soup.head.append(meta)
             meta['content']=value
-        soup.h1.clear();soup.h1.append(c['n']+'の免許返納特典と移動支援')
+        soup.h1.clear()
+        if (pid, slug) == ('hyogo', 'kobe'):
+            soup.h1.append('神戸市の返納後の割引と')
+            soup.h1.append(soup.new_tag('br'))
+            soup.h1.append('返納を条件としない移動支援')
+            hero_lead=soup.select_one('.hero > div > p:not(.eyebrow)')
+            if hero_lead:
+                hero_lead.clear()
+                hero_lead.append('神戸市独自のICOCA配布は終了しています。返納後に使える県内の割引と、返納しなくても対象になる敬老パスなどを、条件・費用・申請先とあわせて確認できます。')
+        else:
+            soup.h1.append(c['n']+'の返納特典・移動支援')
+            hero_lead=soup.select_one('.hero > div > p:not(.eyebrow)')
+            if hero_lead:
+                hero_lead.clear()
+                hero_lead.append('免許返納の特典や高齢者向けの移動支援を、対象条件・費用・手続き先とあわせて確認できます。掲載情報の状態や出典も示しています。')
         for extra_heading in soup.find_all('h1')[1:]:
             extra_heading.name='h3'
         soup.select_one('.hero').insert_after(BeautifulSoup(content['intro_html'],'html.parser'))
@@ -480,6 +646,9 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
         apply_benefit_integration(soup, pid, slug)
+        improve_shared_city_editorial_content(soup)
+        if (pid, slug) == ('hyogo', 'kobe'):
+            improve_kobe_editorial_content(soup)
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:

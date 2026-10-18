@@ -43,7 +43,7 @@ def update_home(soup, data):
     for old in soup.select('.home-topic-jump, #gomi-support-entry'):
         old.decompose()
     title = '免許返納・移動・ごみ出しの支援を地域から探す｜じもとくらべ'
-    description = '免許返納の特典や移動支援を全国の市町村から探せます。ごみ出し支援は掲載地域を確認し、日常ごみ・粗大ごみの条件、回収場所、相談先を調べられます。'
+    description = '免許返納後に使える割引と、返納を条件としない高齢者の移動支援を市町村から探せます。対象条件・費用・申請先・公式出典・確認日を掲載。ごみ出し支援も掲載地域から確認できます。'
     soup.title.string = title
     for selector, value in [('meta[name="description"]', description), ('meta[property="og:title"]', title), ('meta[property="og:description"]', description)]:
         node = soup.select_one(selector)
@@ -72,7 +72,7 @@ def update_home(soup, data):
     soup.select_one('#search-title').string = '移動の支援を市町村名から探す'
     support = soup.select_one('.home-support')
     support.h2.string = '移動のページで確認できること'
-    support.select_one('p.muted').string = '免許返納の特典と、返納を条件にしない移動支援を分けて案内します。'
+    support.select_one('p.muted').string = '返納後に使える割引と、返納を条件としない支援を分けて案内します。確認できた制度は、対象条件・費用・申請先に加えて、公式出典と確認日も示します。'
     names = '・'.join(escape(c['name']) for c in data['cities'])
     links = ''.join(f'<a href="{city_path(c)}">{escape(c["name"])}</a>' for c in data['cities'])
     directory.insert_after(BeautifulSoup(f'''<section class="home-gomi-entry" id="gomi-support-entry" aria-labelledby="home-gomi-title">
