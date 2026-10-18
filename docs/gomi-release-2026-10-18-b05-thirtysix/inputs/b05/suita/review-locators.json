@@ -1,0 +1,196 @@
+[
+  {
+    "city": "osaka:suita",
+    "service": "suita-daily",
+    "service_sha256": "9be5c05bc5b5dc6fd8c26714bce12cce7905e1394754aaa0e0a5f0ca6427ef8a",
+    "sources": [
+      {
+        "id": "suita-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-daily.txt",
+        "lines": [
+          [
+            195,
+            240
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-daily.html.source",
+        "raw_sha256": "61901517e64f825b300440562d20dd9c8626eaa4609dfa6c7b8d2203d9255905",
+        "text_sha256": "4894372feed4d84f491de822be50b92cc478f0e042b3ef02a496413f56e25521",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:suita",
+    "service": "suita-carry",
+    "service_sha256": "471766a45e55e6aae39cc24336f8b10a8bce0e2f6cfd56e1759db44dbedf4d62",
+    "sources": [
+      {
+        "id": "suita-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-daily.txt",
+        "lines": [
+          [
+            203,
+            230
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-daily.html.source",
+        "raw_sha256": "61901517e64f825b300440562d20dd9c8626eaa4609dfa6c7b8d2203d9255905",
+        "text_sha256": "4894372feed4d84f491de822be50b92cc478f0e042b3ef02a496413f56e25521",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "suita-carry-pdf",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-carry-pdf.txt",
+        "lines": [
+          [
+            70,
+            101
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-carry-pdf.pdf.source",
+        "raw_sha256": "d5ac8947dd030916f2bd23d808adb81fd62f5f017b37b9bf9f71f7d0103089a8",
+        "text_sha256": "2643e24f37337c9e33d1ccd3f5b8590fd33904434e972be338a8434cd77aed08",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:suita",
+    "service": "suita-regular",
+    "service_sha256": "63af338f791918d1d44e21bd7392a49db3e8364378b40037de0430888799137a",
+    "sources": [
+      {
+        "id": "suita-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-bulky.txt",
+        "lines": [
+          [
+            200,
+            214
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-bulky.html.source",
+        "raw_sha256": "7a4edd3a722c668346b36fa9b9262621721604c7c5e21026143e31cad55ac327",
+        "text_sha256": "6ae957315a2ed30ecd024c36449b50283f1167c4fd4307c7eda34f4e260f736e",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "suita-collection-days",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-collection-days.txt",
+        "lines": [
+          [
+            239,
+            255
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-collection-days.html.source",
+        "raw_sha256": "50989bde7bd2c3b580a4f3a3e739319cfd68529bd52024681096fa7d0e797ac7",
+        "text_sha256": "d4dc0c6778721b66e52dd1cc4164efaa7fa933807ba4c9e4df71fb6b83fe664e",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "suita-self",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-self.txt",
+        "lines": [
+          [
+            200,
+            216
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-self.html.source",
+        "raw_sha256": "ebaa13b5a06a3957fad20f7f00502c8cf7eea73081e6e00f3c5467ef584c938c",
+        "text_sha256": "e22dc858d76356d74438244910263ff2fa0142b9b704e2ec118b535b0abdb6f6",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:suita",
+    "service": "suita-self",
+    "service_sha256": "2dbc539efbda86430e0a50e69a18f3672c7dd614e716232cfe167b9aa33c30d9",
+    "sources": [
+      {
+        "id": "suita-self",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-self.txt",
+        "lines": [
+          [
+            200,
+            273
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suita/official/suita-self.html.source",
+        "raw_sha256": "ebaa13b5a06a3957fad20f7f00502c8cf7eea73081e6e00f3c5467ef584c938c",
+        "text_sha256": "e22dc858d76356d74438244910263ff2fa0142b9b704e2ec118b535b0abdb6f6",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ota-bulky",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+    "final_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Fri, 16 Oct 2026 00:35:00 GMT",
+    "raw_file": "ota/official/ota-bulky.html.source",
+    "text_file": "ota/official/ota-bulky.txt",
+    "raw_sha256": "a3847b7e486cc6833dafb39ec53b3433432c88e4755609367d40961dcfc706c8",
+    "text_sha256": "cb94f9f197e048867b9cbe9f5f78e168a9f02b42b49a7a5d34194eb21f3b4cbf"
+  },
+  {
+    "id": "ota-carry",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/fukushi/shougai/seikatsushien/otetsudai/otetsudai/hakobidashi.html",
+    "final_url": "https://www.city.ota.tokyo.jp/seikatsu/fukushi/shougai/seikatsushien/otetsudai/otetsudai/hakobidashi.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Thu, 15 Oct 2026 05:35:00 GMT",
+    "raw_file": "ota/official/ota-carry.html.source",
+    "text_file": "ota/official/ota-carry.txt",
+    "raw_sha256": "76d3bfc2e3e0288c466581244403e5070c6a6b8e362b5233cc0fbe162c04d3e6",
+    "text_sha256": "4ed32616ccd3eaee21426c38246b9ef6616b828febce710bd8b175d04143e23c"
+  },
+  {
+    "id": "ota-carry-pdf",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+    "final_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Thu, 26 Oct 2023 15:00:00 GMT",
+    "raw_file": "ota/official/ota-carry-pdf.pdf",
+    "text_file": "ota/official/ota-carry-pdf.txt",
+    "raw_sha256": "4c7d0a8ce7a6aa4fe8b74940bbe80d9d5452aca5208cdba50ea55f9ec6944a60",
+    "text_sha256": "1bd7e71a94ae88c212eea89f7fd63a5e8e82c26e6c5880e04043efaca1cdf630"
+  },
+  {
+    "id": "ota-daily",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+    "final_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Thu, 08 Oct 2026 00:35:00 GMT",
+    "raw_file": "ota/official/ota-daily.html.source",
+    "text_file": "ota/official/ota-daily.txt",
+    "raw_sha256": "0254907ae733aa3993b9db712225e5a072c60cadf51971a908a5af1bbef0c8d1",
+    "text_sha256": "b33ce01730bbd8aa7389a78672f505698f30de7e9bad2ae2389df11bc075390d"
+  }
+]

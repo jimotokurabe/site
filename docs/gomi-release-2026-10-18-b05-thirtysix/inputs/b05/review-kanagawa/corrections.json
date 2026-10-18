@@ -1,0 +1,573 @@
+{
+  "reviewer": "independent AI reviewer kanagawa",
+  "date": "2026-10-18",
+  "scope": "指摘限定のレビュー者修正。各市original-draft.jsonを保全。",
+  "changes": [
+    {
+      "city": "kanagawa:sagamihara",
+      "service": "sagamihara-bulky-carry",
+      "field": "eligibility",
+      "before": {
+        "value": {
+          "all": [
+            "一人暮らし、または世帯全員が次のいずれか：65歳以上／要介護・要支援認定／身体障害者手帳／療育手帳／精神障害者保健福祉手帳"
+          ]
+        },
+        "state": "explicit",
+        "source_ids": [
+          "sagamihara-regular"
+        ]
+      },
+      "after": {
+        "value": "ひとり暮らしの65歳以上の高齢者、要介護認定者、各障害者手帳または療育手帳を持つ人で、粗大ごみを建物外へ出すことが難しい場合。原典には同居世帯員全員の条件は記載なし。",
+        "state": "explicit",
+        "source_ids": [
+          "sagamihara-regular"
+        ]
+      },
+      "reason": "regular.txt 238-241"
+    },
+    {
+      "city": "kanagawa:sagamihara",
+      "service": "sagamihara-bulky-carry",
+      "field": "family_help",
+      "before": {
+        "value": "世帯全員が対象事由に該当する必要がある。親族等の援助可能性に関する要件は記載なし。",
+        "state": "not_stated",
+        "source_ids": [
+          "sagamihara-regular"
+        ]
+      },
+      "after": {
+        "value": "同居家族全員の該当や親族等の援助可能性を要件とする記載は、この福祉ふれあい収集の案内にはない。",
+        "state": "not_stated",
+        "source_ids": [
+          "sagamihara-regular"
+        ]
+      },
+      "reason": "regular.txt 238-241"
+    },
+    {
+      "city": "kanagawa:sagamihara",
+      "service": "sagamihara-bulky-carry",
+      "field": "fees",
+      "before": {
+        "value": "搬出は無料。収集運搬等に係る処理手数料は本人負担。",
+        "state": "explicit",
+        "source_ids": [
+          "sagamihara-regular"
+        ]
+      },
+      "after": {
+        "value": "申込時に処理手数料を案内。屋内搬出の追加料金・減免の記載は確認できない。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "sagamihara-regular"
+        ]
+      },
+      "reason": "regular.txt 238-246"
+    },
+    {
+      "city": "kanagawa:yokosuka",
+      "service": "yokosuka-daily",
+      "field": "eligibility",
+      "before": {
+        "value": {
+          "all": [
+            "原則として65歳以上かつ要介護2以上",
+            "自ら集積所へ出すことが困難",
+            "親族・近隣・地域ボランティア・ホームヘルパーによる支援が困難",
+            "住民税非課税世帯"
+          ]
+        },
+        "state": "explicit",
+        "source_ids": [
+          "yokosuka-daily"
+        ]
+      },
+      "after": {
+        "value": {
+          "any": [
+            {
+              "all": [
+                "原則として65歳以上かつ要介護2以上",
+                "自ら集積所へ出すことが困難で、親族・近隣・地域ボランティア・ホームヘルパーによる支援が困難",
+                "住民税非課税世帯"
+              ]
+            },
+            "市長が特に必要と認める世帯"
+          ]
+        },
+        "state": "explicit",
+        "source_ids": [
+          "yokosuka-daily"
+        ]
+      },
+      "reason": "daily.txt 69-75"
+    },
+    {
+      "city": "kanagawa:yokosuka",
+      "service": "yokosuka-regular-bulky",
+      "field": "application",
+      "before": {
+        "value": "横須賀市公式LINE、インターネット、電話046-823-0868（8:30～16:00、月～金・祝日受付）。",
+        "state": "explicit",
+        "source_ids": [
+          "yokosuka-regular"
+        ]
+      },
+      "after": {
+        "value": "市公式LINE、インターネット、電話046-823-0868（8:30～16:00、月～金・祝日受付）。LINE・インターネットは申込時に電子決済、電話は2026年10月1日以降の申込で申込券を購入。",
+        "state": "explicit",
+        "source_ids": [
+          "yokosuka-regular"
+        ]
+      },
+      "reason": "regular.txt 119-150"
+    },
+    {
+      "city": "kanagawa:yokosuka",
+      "service": "yokosuka-regular-bulky",
+      "field": "fees",
+      "before": {
+        "value": "粗大ごみは一般品1個・1組800円（2026年10月1日以降申込）。スプリングマットレスは7,000円。",
+        "state": "explicit",
+        "source_ids": [
+          "yokosuka-regular"
+        ]
+      },
+      "after": {
+        "value": "粗大ごみは一般品1個・1組800円（2026年10月1日以降申込）。スプリングマットレスは7,000円。生活保護受給者は申込前に担当ケースワーカーへ相談。",
+        "state": "explicit",
+        "source_ids": [
+          "yokosuka-regular"
+        ]
+      },
+      "reason": "regular.txt 110-169"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "field": "eligibility",
+      "before": {
+        "value": "市民の家庭ごみ・資源。詳しい対象品目は施設へ確認。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "after": {
+        "value": "藤沢市民の家庭ごみ・資源。ただしごみの直接搬入は原則、災害・火災・引越のときに限る。資源の持込は別案内。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "reason": "dropoff.txt 49-64"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "field": "limits",
+      "before": {
+        "value": "平日9～12時・13～16時等。令和7年度より持込み先変更。2025年9月火災後、2026年5月1日から受入再開。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "after": {
+        "value": "ごみの直接搬入は原則として災害・火災・引越時に限る。平日9～12時・13～16時、祝日9～12時。火災後の持込受入は2026年5月1日再開。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "reason": "dropoff.txt 49-63,95-103"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "field": "fees",
+      "before": {
+        "value": "可燃ごみ・大型ごみ等の料金は重量制（持込ごみ処理手数料）。資源は無料。額・支払方法は搬入品目により要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "after": {
+        "value": "可燃・不燃ごみ10kgあたり110円、大型ごみ1点500円、特別大型ごみ1点1,000円。危険ごみ・テープ類と資源・剪定枝は無料。キャッシュレス決済可（一部ブランド除く）。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "reason": "dropoff.txt 103-140,153"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "field": "application",
+      "before": {
+        "value": "直接搬入。火災・災害由来ごみは事前申込と証明書が必要。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "after": {
+        "value": "直接搬入の前に、災害・火災・引越の該当条件を確認。災害・火災時は、り災証明を添えて環境総務課へ事前申込が必要。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "reason": "dropoff.txt 59-64"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "field": "contact",
+      "before": {
+        "value": "リサイクルプラザ藤沢0466-44-0702。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "after": {
+        "value": "リサイクルプラザ藤沢0466-44-0702。災害・火災時の事前申込は環境総務課0466-25-1111（内線3311）。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-dropoff"
+        ]
+      },
+      "reason": "dropoff.txt 61-64,95-97"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-regular-bulky",
+      "field": "application",
+      "before": {
+        "value": "電話、インターネット、市公式LINE等の予約導線あり。収集受付の詳細・現行予約方法を申込窓口で確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fujisawa-fees",
+          "fujisawa-regular"
+        ]
+      },
+      "after": {
+        "value": "大型ごみ・特別大型ごみは藤沢市興業公社へ電話予約（0466-23-5301）。ほかの予約方法は今回の原典では確認できない。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-fees"
+        ]
+      },
+      "reason": "fees.txt 1-22"
+    },
+    {
+      "city": "kanagawa:fujisawa",
+      "service": "fujisawa-regular-bulky",
+      "field": "contact",
+      "before": {
+        "value": "環境事業センター0466-87-3912。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-fees",
+          "fujisawa-regular"
+        ]
+      },
+      "after": {
+        "value": "大型ごみの収集予約：藤沢市興業公社0466-23-5301。制度全般：環境事業センター0466-87-3912。",
+        "state": "explicit",
+        "source_ids": [
+          "fujisawa-fees",
+          "fujisawa-regular"
+        ]
+      },
+      "reason": "fees.txt 1-22, regular.txt 105-112"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "waste_scope",
+      "before": {
+        "value": "家庭の片付け・引越しなどで臨時に多量に出る一般廃棄物。制度案内では100kg以上を臨時多量の基準とする。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "市内の家庭から出る燃やせるごみ・燃やせないごみ・大型ごみ等。令和7年度実施計画の直接搬入区分では、資源物・剪定枝等は別施設の案内。100kgは旧ガイドの料金区分であり、搬入対象の下限ではない。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-regular_current",
+          "chigasaki-guide"
+        ]
+      },
+      "reason": "regular_current.txt 568-578 (前年度資料), guide.txt 634-637"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "eligibility",
+      "before": {
+        "value": "市内家庭から出る臨時多量ごみ。市長の指示に従う。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "市内全域の直接搬入区分が令和7年度実施計画にある。2026年10月時点の対象者・搬入条件は今回の原典から確認できない。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-regular_current"
+        ]
+      },
+      "reason": "regular_current.txt 568-578 (前年度資料)"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "limits",
+      "before": {
+        "value": "臨時多量ごみ向け。一般ごみ収集の代替としての少量持込でない。持込日時・品目制限は現在の窓口へ要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "100kg以上を必要とする下限は原典にない。受付日時、少量搬入の可否、予約要否、品目別の施設は2026年10月時点の案内で要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-guide",
+          "chigasaki-regular_current"
+        ]
+      },
+      "reason": "guide.txt 634-637; regular_current.txt 568-578 (前年度資料)"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "family_help",
+      "before": {
+        "value": "排出者自身の搬入が基本と読めるが、家族等代理搬入の条件は資料に明記なし。",
+        "state": "not_stated",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "本人以外の家族等による搬入条件は今回の原典から確認できない。",
+        "state": "not_stated",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "reason": "regular_current.txt 568-578"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-daily",
+      "field": "waste_scope",
+      "before": {
+        "value": "燃やせるごみ、燃やせないごみ、資源物（びん・かん・ペットボトル・古紙・衣類布類・容器包装プラ・廃食用油・金属類）。大型ごみ等は対象外。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-daily",
+          "chigasaki-daily_rule"
+        ]
+      },
+      "after": {
+        "value": "燃やせるごみ、燃やせないごみ、資源物（びん・かん・スプレーかん・ペットボトル・古紙・衣類布類・容器包装プラ・廃食用油・金属類）。大型ごみ等は対象外。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-r8-plan",
+          "chigasaki-daily_application"
+        ]
+      },
+      "reason": "r8_plan.txt 557-572, daily_application.txt 100-107"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-regular-bulky",
+      "field": "application",
+      "before": {
+        "value": "令和7年度計画資料では電話申込。2026年度予約受付システム導入予定の記載があるため、現在のLINE等予約・決済可否は要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-guide",
+          "chigasaki-regular_current"
+        ]
+      },
+      "after": {
+        "value": "電話またはオンラインで予約。予約後に収入証紙を購入して氏名を記入・貼付。オンライン予約はキャッシュレス決済も可能で、申込内容を品物に直接書くか紙に記して貼る。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-r8-plan"
+        ]
+      },
+      "reason": "r8_plan.txt 346-354"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-regular-bulky",
+      "field": "limits",
+      "before": {
+        "value": "予約制。令和7年度の計画資料では1回5点まで、二重予約不可。収集当日午前8時30分までに指定場所へ。現行制度は要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-guide",
+          "chigasaki-regular_current"
+        ]
+      },
+      "after": {
+        "value": "1回5点まで、二重予約不可。5点超は1回目収集後に次を申込。収集日午前8時30分までに指定場所へ出す。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-r8-plan"
+        ]
+      },
+      "reason": "r8_plan.txt 346-355"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "waste_scope",
+      "before": {
+        "value": "市内の家庭から出る燃やせるごみ・燃やせないごみ・大型ごみ等。令和7年度実施計画の直接搬入区分では、資源物・剪定枝等は別施設の案内。100kgは旧ガイドの料金区分であり、搬入対象の下限ではない。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-regular_current",
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "家庭の片付け・引越し等で生じたごみの直接搬入。令和8年度計画では燃やせる・燃やせない・大型ごみ等は環境事業センターへ、資源物と剪定枝は別施設へ搬入する区分。100kgは料金区分であり、受入下限とは記載されていない。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-r8-plan",
+          "chigasaki-dropoff-fee"
+        ]
+      },
+      "reason": "r8_plan.txt 579-591, dropoff_fee.txt 1-34"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "eligibility",
+      "before": {
+        "value": "市内全域の直接搬入区分が令和7年度実施計画にある。2026年10月時点の対象者・搬入条件は今回の原典から確認できない。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-regular_current"
+        ]
+      },
+      "after": {
+        "value": "市内全域の家庭ごみ直接搬入。片付け・引越し等で臨時に出るごみ向け。ごみの排出者・搬入者の同一性、家族代理搬入の可否は原典に記載なし。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-r8-plan",
+          "chigasaki-dropoff-fee"
+        ]
+      },
+      "reason": "r8_plan.txt 579-591, dropoff_fee.txt 15-34"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "collection_location",
+      "before": {
+        "value": "環境事業センターへ直接搬入。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "燃やせるごみ・燃やせないごみ・大型ごみ等は茅ヶ崎市環境事業センターへ。資源物・剪定枝は品目ごとに別施設。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-r8-plan"
+        ]
+      },
+      "reason": "r8_plan.txt 579-591"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "limits",
+      "before": {
+        "value": "100kg以上を必要とする下限は原典にない。受付日時、少量搬入の可否、予約要否、品目別の施設は2026年10月時点の案内で要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-guide",
+          "chigasaki-regular_current"
+        ]
+      },
+      "after": {
+        "value": "家庭の片付け・引越し等の臨時ごみ向け。100kgは料金区分で、100kg未満の持込も料金表にある。受付日時・予約要否は窓口へ確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-r8-plan",
+          "chigasaki-dropoff-fee"
+        ]
+      },
+      "reason": "r8_plan.txt 579-591, dropoff_fee.txt 7-34"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "fees",
+      "before": {
+        "value": "100kg以下1,400円、100kg超は1,400円に10kg増えるごと140円加算（2022年4月改定資料）。2026年現行額は要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "2022年4月改定資料では家庭系100kg以下1,400円、100kg超は10kg増すごと140円加算。2026年10月時点の現行額は要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "chigasaki-dropoff-fee"
+        ]
+      },
+      "reason": "dropoff_fee.txt 7-14; 改定資料は2021年作成"
+    },
+    {
+      "city": "kanagawa:chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "field": "contact",
+      "before": {
+        "value": "環境事業センター管理担当0467-58-4299（直接搬入手数料資料）。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-guide"
+        ]
+      },
+      "after": {
+        "value": "環境事業センター管理担当0467-58-4299（直接搬入手数料の公式資料に記載）。",
+        "state": "explicit",
+        "source_ids": [
+          "chigasaki-dropoff-fee"
+        ]
+      },
+      "reason": "dropoff_fee.txt 45-49"
+    }
+  ],
+  "additional_retrievals": [
+    {
+      "id": "chigasaki-r8-plan",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/003/317/2026jissi.pdf"
+    },
+    {
+      "id": "chigasaki-dropoff-fee",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/045/270/2.pdf"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "research_agents": 3,
+  "research_model": "gpt-6-luna",
+  "review_agents": 3,
+  "review_model": "gpt-6-sol",
+  "effort": "medium",
+  "cities_per_agent": 4,
+  "reviewed_fields": 480,
+  "saved_official_documents": 58,
+  "additional_review_fetches": 4,
+  "parent_role": "integration, high-impact spot checks, browser, ledger",
+  "credits": null,
+  "tokens": null,
+  "cost": null,
+  "savings_measured": false,
+  "reviewer_applied_corrections": true,
+  "notes": "3調査+3検査を段階別実行。同時稼働は親+3。個別previewを省き一括生成。"
+}

@@ -1,0 +1,446 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "osaka:takatsuki",
+      "name": "高槻市",
+      "kana": "たかつきし",
+      "pref_name": "大阪府",
+      "selection_reason": "高齢者等ごみ出し支援は世帯全員が対象要件を満たす場合に週1回収集し、利用料は無料。職員は室内から運び出さない。粗大な大型品や大量の片付けごみは臨時ごみの別制度で、申込み・立会い・費用が異なる。自己搬入も前日正午までの届出と重量料金が必要。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "takatsuki-daily",
+          "kind": "daily_support",
+          "name": "高齢者等ごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃ごみ、リサイクルごみ、45リットル袋に入る程度の不燃ごみ。週1回収集。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先・門扉先に利用者が蓋つきごみ箱を用意し、そこから戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "職員による室内からのごみの運び出しは行わない。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "高槻市内居住",
+                  "世帯の全員が以下のいずれか: 要介護2以上／身体障害者手帳1級または2級／精神障害者保健福祉手帳1級／療育手帳A／妊産婦",
+                  "世帯の家庭系ごみを集積所まで出すことが困難"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "family_help": {
+              "value": "本人または同居家族がごみ出し可能な場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "fees": {
+              "value": "利用料金無料。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "limits": {
+              "value": "本人・同居家族等がごみ出し可能、施設入所、収集車が進入できない家屋は対象外。大型可燃・大きな不燃は別途相談。重度傷病により一時的に歩行やごみ出しが困難な場合も相談できる。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "application": {
+              "value": "要件別担当課窓口、郵送または簡易電子申込サービス。申込後に要件審査と職員の現地訪問を行い、可否決定。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "attendance": {
+              "value": "申込後の現地訪問は立会いが必要。定期収集時の立会いは記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            },
+            "contact": {
+              "value": "要介護2以上: 長寿介護課 072-674-7166。身体障害1・2級: 障がい福祉課 072-674-7164。精神1級・療育A・妊産婦: 子ども保健課 072-648-3272。重度傷病: 清掃業務課 072-669-1153。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯全員の対象条件と、重度の傷病で一時的にごみ出しが困難な場合の相談手順を担当課に確認してください。",
+            "玄関先・門扉先の排出場所、収集車の進入条件、現地訪問への立会いを確認してください。"
+          ]
+        },
+        {
+          "id": "takatsuki-carry",
+          "kind": "bulky_carry_support",
+          "name": "独立した屋内搬出支援（今回の公式確認で未発見）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "高齢者等ごみ出し支援は通常ごみの玄関先収集で、室内搬出を行わない。独立した粗大ごみ屋内搬出支援は今回確認した公式ページで未発見。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "collection_location": {
+              "value": "高齢者等支援は玄関先・門扉先。別の屋内搬出制度は今回の公式調査で見つからず。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "indoor_carry": {
+              "value": "高齢者等ごみ出し支援では室内から運び出さないと明記。独立する搬出支援は未発見。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "eligibility": {
+              "value": "独立した粗大ごみ屋内搬出支援の対象条件は今回の公式確認で未発見。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "family_help": {
+              "value": "独立した屋内搬出制度の親族援助条件は今回の公式確認で未発見。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "fees": {
+              "value": "独立した屋内搬出制度の料金・減免は今回の公式確認で未発見。臨時ごみ収集の料金は別制度。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "limits": {
+              "value": "支援収集は室内搬出をしない。大型品を扱う制度・例外の有無は窓口へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "application": {
+              "value": "独立した屋内搬出支援の申込方法は今回の公式確認で未発見。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "attendance": {
+              "value": "独立した屋内搬出支援の訪問・立会い条件は今回の公式確認で未発見。",
+              "state": "not_found",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            },
+            "contact": {
+              "value": "清掃業務課 072-669-1153へ大型ごみの搬出支援の有無を相談。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-daily",
+                "takatsuki-temp"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみを室内から運び出す市の独立支援や例外があるか、清掃業務課へ確認してください。"
+          ]
+        },
+        {
+          "id": "takatsuki-regular",
+          "kind": "regular_bulky",
+          "name": "臨時ごみ収集（大量の引越し・片付けごみ）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "引越しや家の片付けで大量に出る可燃・不燃・大型可燃・リサイクルごみ。単品粗大ごみの通常回収とは記載が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "collection_location": {
+              "value": "車両が進入可能な玄関前・駐車場等、交通の妨げにならない場所へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "indoor_carry": {
+              "value": "申込者が指定場所まで搬出。収集作業員は室内に入らない。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "eligibility": {
+              "value": "高槻市で引越し・片付けにより大量に発生した対象家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "family_help": {
+              "value": "家族による代理申込・立会いの扱いはページ上に記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "fees": {
+              "value": "1立方メートルにつき2,720円。現場で支払い。免除・減免の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "limits": {
+              "value": "予約状況によっては断られる場合あり。収集日は祝日を含む月〜金。午前・午後帯のみ指定可能。市で収集できない物は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "application": {
+              "value": "清掃業務課へ電話のみ。希望日の4〜5日前まで。住所・氏名・当日連絡先・希望日・ごみ種と量を伝える。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "attendance": {
+              "value": "現場で手数料を支払うため当日立会い必須。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            },
+            "contact": {
+              "value": "清掃業務課 072-669-1153。受付時間7:45〜16:15、土日・年末年始を除く。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-temp"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "大量の片付けごみが臨時収集の対象になるか、量と収集車の進入場所を清掃業務課に伝えて確認してください。",
+            "立会いと現場での手数料支払、予約可能日を確認してください。"
+          ]
+        },
+        {
+          "id": "takatsuki-self",
+          "kind": "self_dropoff",
+          "name": "エネルギーセンターへのごみ持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "高槻市内で発生した家庭ごみ等。持込不可品目があるため事前確認が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "collection_location": {
+              "value": "本人等がエネルギーセンター（前島3丁目8番1号）へ持込み。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "indoor_carry": {
+              "value": "搬入者が荷下ろしするのが原則。施設の荷下ろし支援は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "eligibility": {
+              "value": "市内で発生したごみ。自己搬入は本人が申込・搬入する区分があり、第三者搬入は別申請書類が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "family_help": {
+              "value": "本人以外が持ち込む場合は第三者搬入として別届出と廃棄物処理依頼書が必要。家族を含む代理の具体要件は様式・窓口へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply",
+                "takatsuki-self-form"
+              ]
+            },
+            "fees": {
+              "value": "家庭ごみは10kgにつき40円。事業系一般廃棄物は10kgにつき80円。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "limits": {
+              "value": "事前届出・許可が必要。希望日前日正午締切（休日時は直前平日）。受付は平日9:00〜12:00、13:00〜16:00。処理不可品あり。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "application": {
+              "value": "簡易電子申込または一般廃棄物運搬届出書をFAX・窓口・郵送で提出。家庭ごみ本人搬入と第三者搬入で申込区分が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply",
+                "takatsuki-self-form"
+              ]
+            },
+            "attendance": {
+              "value": "搬入時に本人確認書類等の提示を求められる場合あり。本人が運転する必要は記載なし。荷下ろしは搬入者自身が原則。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            },
+            "contact": {
+              "value": "エネルギーセンターごみ持込届出専用 072-669-1950、FAX 072-669-5985。",
+              "state": "explicit",
+              "source_ids": [
+                "takatsuki-self",
+                "takatsuki-self-apply"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "家族が代わりに搬入する場合に第三者搬入の届出・廃棄物処理依頼書が必要かを確認してください。",
+            "排出者本人が同乗し別の人が運転できるか、許可番号と必要書類、荷下ろしを確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "調査時点の公式ページ記載を保存。ページ更新日を確認できない場合は推測していない。",
+        "制度の現行運用と資格判定は未照会。独立した人手確認が必要。"
+      ],
+      "common_questions_for_office": [
+        "高齢者等ごみ出し支援、臨時ごみ収集、自己搬入は対象・料金・申込方法が異なるため、目的を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "takatsuki-daily",
+      "url": "https://www.city.takatsuki.osaka.jp/site/waiwai/166846.html",
+      "title": "高齢者等のごみ出しを支援します - 高槻市ホームページ",
+      "source_updated": "2026-08-14",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "takatsuki-temp",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/27/2138.html",
+      "title": "臨時ごみの収集を依頼する（有料） - 高槻市ホームページ（清掃業務課）",
+      "source_updated": "2024-08-09",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "takatsuki-self",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/28/29023.html",
+      "title": "エネルギーセンターにごみを持ち込むには - 高槻市ホームページ（エネルギーセンター）",
+      "source_updated": "2025-09-05",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "takatsuki-self-apply",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/28/2164.html",
+      "title": "エネルギーセンターへのごみの持ち込みの届出方法（「ホームページ」から申し込む） - 高槻市ホームページ（エネルギーセンター）",
+      "source_updated": "2025-12-26",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "takatsuki-self-form",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/28/2162.html",
+      "title": "エネルギーセンターへのごみの持ち込みの届出方法（「一般廃棄物運搬届出書」を提出する） - 高槻市ホームページ（エネルギーセンター）",
+      "source_updated": "2025-07-17",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "高槻市のみ調査。市公式サイト内を中心に各サービスの対象・通常収集・自己搬入を検索し、公式ページ5件を保存。原文HTML/PDFまたは抽出テキスト、URL、実取得日時、HTTP状態、原本・テキストSHA-256はofficial-metadata.json。更新表示は原典の明記がある場合のみ転記。市窓口照会、全項目の人手確認、独立レビューは未実施。AI下書き・公開不可。"
+}

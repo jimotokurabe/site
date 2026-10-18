@@ -1,0 +1,54 @@
+[
+  {
+    "id": "yokosuka-daily",
+    "url": "https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html",
+    "title": "高齢者等ごみ出し支援収集",
+    "http_status": 200,
+    "retrieved_at": "2026-10-18T07:46:02+00:00",
+    "retrieved_date": "2026-10-18",
+    "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/daily.html.source",
+    "text_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/daily.txt",
+    "raw_sha256": "429033c3be9edcd2e3dc35bca37903c4d383505aef3df196645e48b46729c746",
+    "text_sha256": "917f79c7574ee95fa88acc04251c495f39e124d354cc302da7ef1b8ab3ff9f09",
+    "source_updated": null
+  },
+  {
+    "id": "yokosuka-regular",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html",
+    "title": "粗大ごみ（有料）",
+    "http_status": 200,
+    "retrieved_at": "2026-10-18T07:46:02+00:00",
+    "retrieved_date": "2026-10-18",
+    "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/regular.html.source",
+    "text_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/regular.txt",
+    "raw_sha256": "8ad7f9bfd9ffee2e2335af3c9ca08780d0a34ca24f17cf0c676b0d4a38c1eaa4",
+    "text_sha256": "64ee03b0459b05e390cd3564dc3faad1fdd0464ff7798f64ad1e7d951c43e4e4",
+    "source_updated": null
+  },
+  {
+    "id": "yokosuka-dropoff",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4170/s-syori/03.html",
+    "title": "持ち込みごみ",
+    "http_status": 200,
+    "retrieved_at": "2026-10-18T07:46:02+00:00",
+    "retrieved_date": "2026-10-18",
+    "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/dropoff.html.source",
+    "text_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/dropoff.txt",
+    "raw_sha256": "55f0ffd5bb8c91f549366d396550f19166045fadd7f7c07440b322bbf4a239fc",
+    "text_sha256": "bb9d16d27fe66b5b9d0ab0bedebaba0d48650499a466549800a69cc4518af896",
+    "source_updated": null
+  },
+  {
+    "id": "yokosuka-bulky_faq",
+    "url": "https://www.city.yokosuka.kanagawa.jp/faq/kurashi/gomi/katei/0426.html",
+    "title": "収集を依頼した粗大ごみを家の外まで運べません",
+    "http_status": 200,
+    "retrieved_at": "2026-10-18T07:46:53+00:00",
+    "retrieved_date": "2026-10-18",
+    "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/bulky_faq.html.source",
+    "text_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/bulky_faq.txt",
+    "raw_sha256": "edd51b14ff80d1c90203698450816d22919fc7127d4197c69c1cd4cee4b77b74",
+    "text_sha256": "04546fe7164d1ae5699992a18bb234b5255463899a8b1e0e1497b32431bd2e11",
+    "source_updated": null
+  }
+]

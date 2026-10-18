@@ -1,0 +1,167 @@
+[
+  {
+    "city": "tokyo:ota",
+    "service": "ota-daily-support",
+    "service_sha256": "7e605eca09b7cf4f6729fdcda79de54f6b4f31e662bd890702baab92bf600b8b",
+    "sources": [
+      {
+        "id": "ota-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/official/ota-daily.txt",
+        "lines": [
+          [
+            1,
+            99
+          ]
+        ],
+        "raw_path": "ota/official/ota-daily.html.source",
+        "raw_sha256": "0254907ae733aa3993b9db712225e5a072c60cadf51971a908a5af1bbef0c8d1",
+        "text_sha256": "b33ce01730bbd8aa7389a78672f505698f30de7e9bad2ae2389df11bc075390d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:ota",
+    "service": "ota-bulky-carry",
+    "service_sha256": "140ef4fe9ce907eb3275594eec5165e0680290b70108939335a764004d21b45d",
+    "sources": [
+      {
+        "id": "ota-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/official/ota-carry.txt",
+        "lines": [
+          [
+            1,
+            78
+          ]
+        ],
+        "raw_path": "ota/official/ota-carry.html.source",
+        "raw_sha256": "76d3bfc2e3e0288c466581244403e5070c6a6b8e362b5233cc0fbe162c04d3e6",
+        "text_sha256": "4ed32616ccd3eaee21426c38246b9ef6616b828febce710bd8b175d04143e23c",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "limits",
+          "contact"
+        ]
+      },
+      {
+        "id": "ota-carry-pdf",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/official/ota-carry-pdf.txt",
+        "lines": [
+          [
+            1,
+            55
+          ]
+        ],
+        "raw_path": "ota/official/ota-carry-pdf.pdf",
+        "raw_sha256": "4c7d0a8ce7a6aa4fe8b74940bbe80d9d5452aca5208cdba50ea55f9ec6944a60",
+        "text_sha256": "1bd7e71a94ae88c212eea89f7fd63a5e8e82c26e6c5880e04043efaca1cdf630",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:ota",
+    "service": "ota-regular-bulky",
+    "service_sha256": "26c8ab9bdb4ea73a591cbfc6a10dccd71cd70ae1d647fdc33751a38816c200c8",
+    "sources": [
+      {
+        "id": "ota-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/official/ota-bulky.txt",
+        "lines": [
+          [
+            1,
+            288
+          ]
+        ],
+        "raw_path": "ota/official/ota-bulky.html.source",
+        "raw_sha256": "a3847b7e486cc6833dafb39ec53b3433432c88e4755609367d40961dcfc706c8",
+        "text_sha256": "cb94f9f197e048867b9cbe9f5f78e168a9f02b42b49a7a5d34194eb21f3b4cbf",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "ota-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/official/ota-carry.txt",
+        "lines": [
+          [
+            1,
+            78
+          ]
+        ],
+        "raw_path": "ota/official/ota-carry.html.source",
+        "raw_sha256": "76d3bfc2e3e0288c466581244403e5070c6a6b8e362b5233cc0fbe162c04d3e6",
+        "text_sha256": "4ed32616ccd3eaee21426c38246b9ef6616b828febce710bd8b175d04143e23c",
+        "field_names": [
+          "indoor_carry",
+          "family_help"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:ota",
+    "service": "ota-self-dropoff",
+    "service_sha256": "bae4e9f25a54021871224a17f420a67178a9383b15707375363aec252f541819",
+    "sources": [
+      {
+        "id": "ota-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/official/ota-bulky.txt",
+        "lines": [
+          [
+            1,
+            288
+          ]
+        ],
+        "raw_path": "ota/official/ota-bulky.html.source",
+        "raw_sha256": "a3847b7e486cc6833dafb39ec53b3433432c88e4755609367d40961dcfc706c8",
+        "text_sha256": "cb94f9f197e048867b9cbe9f5f78e168a9f02b42b49a7a5d34194eb21f3b4cbf",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

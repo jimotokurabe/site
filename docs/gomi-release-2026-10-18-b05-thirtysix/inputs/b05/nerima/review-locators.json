@@ -1,0 +1,163 @@
+[
+  {
+    "city": "tokyo:nerima",
+    "service": "nerima-daily-support",
+    "service_sha256": "c50e80f5930869fdda7807e734f50cbe86935b1d38a16ae751cbd675ef3c7a53",
+    "sources": [
+      {
+        "id": "nerima-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/official/nerima-daily.txt",
+        "lines": [
+          [
+            1,
+            109
+          ]
+        ],
+        "raw_path": "nerima/official/nerima-daily.html.source",
+        "raw_sha256": "6c792e18ddc3977e32d0690024faac848b3b09aa4ddc0fb6446ba53bede20672",
+        "text_sha256": "ea32853511f2aca708aef325c4ef5d13e6f2d5d1b2f7033d6ac7af22f546fc38",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:nerima",
+    "service": "nerima-bulky-carry",
+    "service_sha256": "0c434980265016fc107cf556854a782acf961348ef761a5710d7530daeaa51cd",
+    "sources": [
+      {
+        "id": "nerima-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/official/nerima-bulky.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "nerima/official/nerima-bulky.html.source",
+        "raw_sha256": "449c0b298458a1257b8a86b9a641c3d86c395f174be4bc53b4fe804cae2241ca",
+        "text_sha256": "04fdeff2c2b95174abec412a0f9a2d10fb1b7aa06fde88ca4f9568426742d20f",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:nerima",
+    "service": "nerima-regular-bulky",
+    "service_sha256": "a157cbe108c05a07098316d9ba7ecfb17b7fcb0b8fed88e30fe2a9831138bdf1",
+    "sources": [
+      {
+        "id": "nerima-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/official/nerima-bulky.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "nerima/official/nerima-bulky.html.source",
+        "raw_sha256": "449c0b298458a1257b8a86b9a641c3d86c395f174be4bc53b4fe804cae2241ca",
+        "text_sha256": "04fdeff2c2b95174abec412a0f9a2d10fb1b7aa06fde88ca4f9568426742d20f",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "nerima-fee-relief",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/official/nerima-fee-relief.txt",
+        "lines": [
+          [
+            1,
+            109
+          ]
+        ],
+        "raw_path": "nerima/official/nerima-fee-relief.html.source",
+        "raw_sha256": "91cc79da98b58d46d87b1c4e0a3da4131f88d4e0958c54d93093917e3f5e2f37",
+        "text_sha256": "cd307ceacbb877830b030f727c306a96dd0a7074ae005eeaf212f0310798a2c2",
+        "field_names": [
+          "fees",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:nerima",
+    "service": "nerima-self-dropoff",
+    "service_sha256": "9200f017e33753b9e5dbe777ea7d49b0d953c49203a10f866909b25954f34340",
+    "sources": [
+      {
+        "id": "nerima-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/official/nerima-bulky.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "nerima/official/nerima-bulky.html.source",
+        "raw_sha256": "449c0b298458a1257b8a86b9a641c3d86c395f174be4bc53b4fe804cae2241ca",
+        "text_sha256": "04fdeff2c2b95174abec412a0f9a2d10fb1b7aa06fde88ca4f9568426742d20f",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "nerima-fee-relief",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/official/nerima-fee-relief.txt",
+        "lines": [
+          [
+            1,
+            109
+          ]
+        ],
+        "raw_path": "nerima/official/nerima-fee-relief.html.source",
+        "raw_sha256": "91cc79da98b58d46d87b1c4e0a3da4131f88d4e0958c54d93093917e3f5e2f37",
+        "text_sha256": "cd307ceacbb877830b030f727c306a96dd0a7074ae005eeaf212f0310798a2c2",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  }
+]

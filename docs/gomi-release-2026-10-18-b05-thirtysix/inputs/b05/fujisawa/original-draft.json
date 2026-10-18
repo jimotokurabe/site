@@ -1,0 +1,433 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kanagawa:fujisawa",
+      "name": "藤沢市",
+      "kana": "ふじさわし",
+      "pref_name": "神奈川県",
+      "selection_reason": "日常の一声ふれあい収集、福祉大型ごみ収集、通常大型ごみ収集、直接持込みが公式に別経路として案内されているため。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "fujisawa-daily",
+          "kind": "daily_support",
+          "name": "一声ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃ごみ・不燃ごみ・資源（大型ごみ・特別大型ごみ・大型商品プラスチックを除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "市職員が玄関先から声をかけ、原則週1回戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関先から収集。屋内に入るとの記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "any": [
+                  "日常介助・介護を要する概ね65歳以上のみの世帯",
+                  "身体・療育・精神障害者手帳所持者のみの世帯",
+                  "対象高齢者・障がい者がいるが同居者が虚弱または年少者のみの世帯",
+                  "市長が特に必要と認める世帯"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "family_help": {
+              "value": "ボランティア等の協力が得られない世帯が対象。家族と同居する場合は同居者が虚弱・年少者のみ等の例外あり。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "fees": {
+              "value": "利用料の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "limits": {
+              "value": "原則週1回。大型ごみ等は別制度。市の認定が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "application": {
+              "value": "申請による市の認定。高齢者は高齢者支援課0466-50-3571、65歳未満の障がい者は障がい者支援課0466-50-3528へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "attendance": {
+              "value": "申請後の審査・訪問確認、収集時の立会い要否の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            },
+            "contact": {
+              "value": "環境事業センター0466-87-3912。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "本人・同居者の状況が世帯要件に合うか、協力者の範囲、収集場所・頻度、費用を相談してください。"
+          ]
+        },
+        {
+          "id": "fujisawa-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "福祉大型ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "大型ごみ・特別大型ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "大型ごみ収集業者が自宅内から収集。動線確保と壁等の破損リスクへの了承が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自宅の中から搬出する。作業動線確保と壁破損等の了承が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "any": [
+                  "日常介助・介護を必要とする概ね65歳以上のみの世帯",
+                  "身体・療育・精神障害者手帳所持者のみの世帯",
+                  "対象者と同居し同居者が虚弱または年少者のみの世帯",
+                  "市長が特に必要と認める世帯"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "family_help": {
+              "value": "ボランティア等の協力を得ることができない世帯。家族同居時の上記例外条件あり。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "fees": {
+              "value": "福祉収集の追加料金・減免の記載なし。通常大型ごみの品目料金は別途要確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "limits": {
+              "value": "市の対象認定、搬出動線の確保、壁等の破損リスクへの了承が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "application": {
+              "value": "環境事業センターまたは大型ごみ収集業者へ相談。具体的な予約手続きは公式案内から確認できず。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集作業時の立会い要否の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            },
+            "contact": {
+              "value": "環境事業センター0466-87-3912。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常大型ごみ予約後に福祉搬出を申し込む具体的な順序、認定方法、費用、立会いを確認してください。"
+          ]
+        },
+        {
+          "id": "fujisawa-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "大型ごみ・特別大型ごみの戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "一般家庭から出る大型ごみ、特別大型ごみ等。品目により区分。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約制の有料戸別収集。指定日時・場所へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常収集で屋内から搬出する記載なし。福祉大型ごみ収集は別制度。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "一般家庭から出る市の収集対象品目。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "family_help": {
+              "value": "排出を本人以外が行う条件の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "fees": {
+              "value": "大型ごみ1点500円、特別大型ごみ1点1,000円。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "limits": {
+              "value": "予約制。対象品・区分と収集日は予約時に確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "application": {
+              "value": "電話、インターネット、市公式LINE等の予約導線あり。収集受付の詳細・現行予約方法を申込窓口で確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "attendance": {
+              "value": "立会い要否の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            },
+            "contact": {
+              "value": "環境事業センター0466-87-3912。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-fees",
+                "fujisawa-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目判定・現行料金・個数上限・排出場所・予約可能日と、福祉大型ごみ収集との併用手順を確認してください。"
+          ]
+        },
+        {
+          "id": "fujisawa-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "ごみ・資源の直接持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市民の家庭ごみ・資源。処理困難物や家電リサイクル対象品等は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "可燃系大型ごみ・特別大型ごみ等はリサイクルプラザ藤沢へ持込み（令和7年度からの受入先）。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自分で施設へ搬入する。自宅内からの搬出支援の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "市民の家庭ごみ・資源。詳しい対象品目は施設へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "本人以外の持込み条件は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "可燃ごみ・大型ごみ等の料金は重量制（持込ごみ処理手数料）。資源は無料。額・支払方法は搬入品目により要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "平日9～12時・13～16時等。令和7年度より持込み先変更。2025年9月火災後、2026年5月1日から受入再開。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "application": {
+              "value": "直接搬入。火災・災害由来ごみは事前申込と証明書が必要。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者・運転者の条件、荷下ろし補助の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "リサイクルプラザ藤沢0466-44-0702。",
+              "state": "explicit",
+              "source_ids": [
+                "fujisawa-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目ごとの受入施設・受付日時・手数料・支払方法、搬入者と運転者の条件を施設に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "屋内搬出支援は日常の一声ふれあい収集とは別制度。",
+        "持込受入は2026-05-01に再開したとの公式更新を反映。"
+      ],
+      "common_questions_for_office": [
+        "本人・同居者・世帯全員の要件とAND/OR条件を確認してください。",
+        "親族・近隣住民・支援者の援助可能性が資格にどう影響するか確認してください。",
+        "屋内搬出範囲、本人の立会い、本人が運転する必要があるかを確認してください。",
+        "利用料・処理手数料・減免、予約方法、個数・1日あたりの回数上限、地区差を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fujisawa-daily",
+      "url": "https://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushu/hitokoe.html",
+      "title": "一声ふれあい収集のご案内",
+      "source_updated": "2026-06-17",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fujisawa-regular",
+      "url": "https://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/wakekata/wakekata.html",
+      "title": "資源とごみの分け方・出し方について",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fujisawa-dropoff",
+      "url": "https://www.city.fujisawa.kanagawa.jp/ishinaza/kurashi/gomi/shisetsu/shiminnew.html",
+      "title": "市民の方のごみ・資源の直接持込について",
+      "source_updated": "2026-05-08",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fujisawa-fees",
+      "url": "https://www.city.fujisawa.kanagawa.jp/puti/gomi/ogata.html",
+      "title": "大型ごみ・大型商品プラスチック",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "神奈川県公式サイト内の市別検索を用いて4市のごみ出し支援・粗大ごみ・自己搬入の公式ページ/資料を確認し、公式原典の取得HTML/PDF、抽出テキスト、取得日時、HTTP状態、SHA-256を各市official-metadata.jsonへ保存（2026-10-18）。更新日は公式原典に明記されたもののみ転記し、推測していない。相模原・横須賀・藤沢は各市公式ページを取得。茅ヶ崎の安心まごころ支援・大型ごみは公式PDF資料に年度差があり、予約手段・料金・持込条件は最新窓口確認を要する。制度窓口への問い合わせ、人手による全項目照合、独立レビュー未実施。プレビュー専用の未公開下書き。"
+}

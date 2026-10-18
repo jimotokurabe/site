@@ -1,0 +1,200 @@
+[
+  {
+    "city": "osaka:toyonaka",
+    "service": "toyonaka-daily",
+    "service_sha256": "94dc13a9c70aee9a49915f0520417a12e0d38c8a056bc8d9ba660989a7035b6a",
+    "sources": [
+      {
+        "id": "toyonaka-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-daily.txt",
+        "lines": [
+          [
+            238,
+            270
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-daily.html.source",
+        "raw_sha256": "dc452787d0eea65b437161156ac67e426caf5c574f72ad9b0e2ee5d969c9e992",
+        "text_sha256": "91fc1f38b742bfbff9a009900a21fdc486cb32dbedfcdc8bf24a133280ff6589",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:toyonaka",
+    "service": "toyonaka-carry",
+    "service_sha256": "12352ff00c9a38264bd23a3a7da02c49e72d375e1dea5a9268cbda06a1372af0",
+    "sources": [
+      {
+        "id": "toyonaka-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-daily.txt",
+        "lines": [
+          [
+            238,
+            270
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-daily.html.source",
+        "raw_sha256": "dc452787d0eea65b437161156ac67e426caf5c574f72ad9b0e2ee5d969c9e992",
+        "text_sha256": "91fc1f38b742bfbff9a009900a21fdc486cb32dbedfcdc8bf24a133280ff6589",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "toyonaka-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-regular.txt",
+        "lines": [
+          [
+            265,
+            303
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-regular.html.source",
+        "raw_sha256": "a653dc51d2a400d3c9fcfb30d8d4ee1e5de80ac16d2c9d2914d9c8418e6309e8",
+        "text_sha256": "7a3029d4bf79cd14f9c19abf03417c8291956fc50def3b48d0ceb39b6e74c24a",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:toyonaka",
+    "service": "toyonaka-regular",
+    "service_sha256": "35a3b60f1c34828c6c9e284af9425e3b7065a02aa9fa65e3a206e5852df903b5",
+    "sources": [
+      {
+        "id": "toyonaka-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-regular.txt",
+        "lines": [
+          [
+            265,
+            303
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-regular.html.source",
+        "raw_sha256": "a653dc51d2a400d3c9fcfb30d8d4ee1e5de80ac16d2c9d2914d9c8418e6309e8",
+        "text_sha256": "7a3029d4bf79cd14f9c19abf03417c8291956fc50def3b48d0ceb39b6e74c24a",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "toyonaka-support-index",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-support-index.txt",
+        "lines": [
+          [
+            242,
+            245
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-support-index.html.source",
+        "raw_sha256": "86d84e30bb2f77814b8704c2b280a72c8f89a0439abfa030a972ed839b4998bc",
+        "text_sha256": "496271d75a1a9843b984dcaf60d761b9830cfef66683389c1af404449dda961f",
+        "field_names": [
+          "limits"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:toyonaka",
+    "service": "toyonaka-self",
+    "service_sha256": "54ba0f41d26617ef4c94ab7d2af74f9856b0ad997a06f2bd4e2380bfb0a1233f",
+    "sources": [
+      {
+        "id": "toyonaka-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-dropoff.txt",
+        "lines": [
+          [
+            54,
+            180
+          ],
+          [
+            205,
+            210
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-dropoff.html.source",
+        "raw_sha256": "17e6769eba4bec4542cdd4dfa294951ebfa38a0a289b03f3e31028f50bea64ae",
+        "text_sha256": "d06bf59c556e199b4340e43db4cda757c466ed801bc3ba506892f1e115c09488",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "toyonaka-dropoff-net",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-dropoff-net.txt",
+        "lines": [
+          [
+            64,
+            178
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/toyonaka/official/toyonaka-dropoff-net.html.source",
+        "raw_sha256": "a35ed856ff651974ea4043cdd81ffe4fc61c520ef96b3e00e42849efd24209e0",
+        "text_sha256": "837211212fbbae1864b0601bb67ae277ab19562985446232339923abfb0ddeff",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,465 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "tokyo:ota",
+      "name": "大田区",
+      "kana": "おおたく",
+      "pref_name": "東京都",
+      "selection_reason": "公式ページで日常ごみ戸別訪問収集、粗大ごみ運び出し、通常収集、自己搬入を別々に確認でき、世帯全員要件・援助条件・立会い・回数制限も掲載されている。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "ota-daily-support",
+          "kind": "daily_support",
+          "name": "ごみの戸別訪問収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "集積所に出す家庭ごみ。事前審査のうえ戸別訪問収集。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "戸別訪問収集を実施する旨は記載。玄関前など具体的な収集場所・頻度は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "室内から運ぶか、玄関先受渡しか記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "次のいずれかに該当する方のみで構成する世帯",
+                  "本人が集積所までごみを持ち出すことが困難",
+                  "身近な人などの協力を得られない",
+                  "区による事前審査"
+                ],
+                "any": [
+                  "要介護2以上",
+                  "身体障害者障害程度1級または2級",
+                  "その他区長が認める方"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "family_help": {
+              "value": "身近な人などの協力を得られないことが要件。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "fees": {
+              "value": "戸別訪問収集サービスの利用料・減免は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "limits": {
+              "value": "世帯構成・対象者要件を限定し、事前審査あり。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "application": {
+              "value": "ページに具体的な申請手続は記載なし。担当清掃事務所へ相談。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-daily"
+              ]
+            },
+            "contact": {
+              "value": "大森清掃事務所 03-3774-3811、蒲田清掃事務所（調布地区）03-6459-8201、（蒲田地区）03-6451-9535。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯全員の要件、区長認定の判断、事前審査と申込み手順を管轄清掃事務所に確認してください。",
+            "収集場所・頻度・サービス費用・立会い、見守り声かけの有無を確認してください。"
+          ]
+        },
+        {
+          "id": "ota-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "高齢者世帯等に対する粗大ごみ運び出し収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の粗大ごみ。委託収集業者が家屋内から屋外へ運び出して収集。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry",
+                "ota-carry-pdf"
+              ]
+            },
+            "collection_location": {
+              "value": "区の担当者が下見・可否判断し、道路に面した収集車までの動線が確保できる場合に屋内から搬出。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry",
+                "ota-carry-pdf"
+              ]
+            },
+            "indoor_carry": {
+              "value": "屋内から粗大ごみを運び出す。作業員2人で運べない物、出入口から出ない物、養生が必要な経路等は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry",
+                "ota-carry-pdf"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "65歳以上の高齢者または障害者のみで構成されている世帯",
+                  "身近な人などの協力が困難",
+                  "本人が粗大ごみを屋内から運び出せない"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry",
+                "ota-carry-pdf"
+              ]
+            },
+            "family_help": {
+              "value": "親族・身近な人などの協力が困難であること。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry-pdf"
+              ]
+            },
+            "fees": {
+              "value": "運び出し作業料金は無料。粗大ごみ品目に応じた処理券が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry-pdf"
+              ]
+            },
+            "limits": {
+              "value": "原則1〜2点。立会い不可、十分な動線なし、養生必要、作業員2人で運べない、危険作業等は不可。依頼集中で次回が1か月程度先となる場合。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry",
+                "ota-carry-pdf"
+              ]
+            },
+            "application": {
+              "value": "管轄清掃事務所へ電話相談。担当者が訪問調査し、可能ならその場で粗大ごみ収集申込・依頼書記入。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry-pdf"
+              ]
+            },
+            "attendance": {
+              "value": "収集日は本人または代理人の立会いが必要。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry-pdf"
+              ]
+            },
+            "contact": {
+              "value": "大森 03-3774-3811、蒲田（調布）03-6459-8201、蒲田（蒲田）03-6451-9535。管轄は住所で異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-carry"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯の対象条件、親族援助、品目の寸法・重量・搬出経路を管轄窓口へ相談してください。",
+            "処理券の額、減免可否、訪問調査日と立会い可能者、予約待ちを確認してください。"
+          ]
+        },
+        {
+          "id": "ota-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ（おおむね一辺30cm以上）。区民向け。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日の朝8時までに予約時指定場所へ。戸建ては道路に面した敷地内、集合住宅は各戸玄関先でなく指定場所。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常は指定場所に排出。作業員が粗大ごみを持ち上げるため敷地内に必要最小限入る場合あり。屋内搬出支援は別制度。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "ota-bulky",
+                "ota-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "大田区民。事前申込制。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "通常収集の家族援助要件なし。搬出支援は別制度で親族等援助困難が条件。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-bulky",
+                "ota-carry"
+              ]
+            },
+            "fees": {
+              "value": "有料。生活保護、中国残留邦人等支援給付、児童扶養手当・特別児童扶養手当、老齢福祉年金の受給者は手数料免除申請対象。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "limits": {
+              "value": "電話申込1回20個まで、ネット1回10個まで。区収集は月〜土。申込順で日数を要することあり。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話またはネットで申込。減免希望は電話で申し出て、収集日の3日前までに申請書と証明書類を管轄清掃事務所へ提出。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "通常収集時の立会い要否は確認した案内に記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "contact": {
+              "value": "大田区粗大ごみ受付センター 0570-037-530（IP電話等 03-6631-7050）。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目別処理券、減免対象と申請期限・書類、ネット個数上限を確認してください。",
+            "作業員の敷地内立入りが難しい場合は電話申込時に相談してください。"
+          ]
+        },
+        {
+          "id": "ota-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみ自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ。大田区民が対象。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "電話申込後に案内される京浜島の指定施設へ搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "申込者本人が指定場所へ搬入する方式。現地の荷下ろし補助の有無は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "大田区民。申込者本人が指定日時に持参し、住所確認書類を提示。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "申込者本人による搬入が必要。運転者・荷下ろし同伴者に別人が加われるかは記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "fees": {
+              "value": "持込手数料は品目により免除（無料）または減額。有料品は処理券を事前購入。持込場所で券販売・現金払いなし。生活保護などの手数料免除を希望する場合は電話で要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回10個まで、1世帯年度内4回まで。月〜土13〜16時、日9〜12時・13〜16時。16時超過で自動キャンセル。自家用車または2tまでのレンタカー、事業用車不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "application": {
+              "value": "大田区粗大ごみ受付センターへ電話のみで事前申込。未申込品は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "申込者本人が搬入し、本人氏名・住所確認書類を提示。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            },
+            "contact": {
+              "value": "大田区粗大ごみ受付センター 0570-037-530（IP電話等 03-6631-7050）。",
+              "state": "explicit",
+              "source_ids": [
+                "ota-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "代理運転や荷下ろしの同伴者、減免申請を伴う持込手順、受入時間を申込時に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "日常支援と粗大ごみ搬出支援は資格条件が別。区内住所の地区ごとに清掃事務所が異なる。",
+      "common_questions_for_office": [
+        "戸別訪問収集の訪問位置・頻度・申込み・立会い",
+        "粗大ごみ搬出の本人または代理立会い、品数、動線・重量等の判定",
+        "減免と持込みでの本人搬入条件"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ota-daily",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "title": "ごみの戸別訪問収集",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-02-25",
+      "http_status": 200,
+      "final_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "ota/official/ota-daily.html.source",
+      "text_file": "ota/official/ota-daily.txt",
+      "raw_sha256": "0254907ae733aa3993b9db712225e5a072c60cadf51971a908a5af1bbef0c8d1",
+      "text_sha256": "b33ce01730bbd8aa7389a78672f505698f30de7e9bad2ae2389df11bc075390d",
+      "last_modified_header": "Thu, 08 Oct 2026 00:35:00 GMT"
+    },
+    {
+      "id": "ota-carry",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/fukushi/shougai/seikatsushien/otetsudai/otetsudai/hakobidashi.html",
+      "title": "粗大ごみの運び出し収集",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-04-15",
+      "http_status": 200,
+      "final_url": "https://www.city.ota.tokyo.jp/seikatsu/fukushi/shougai/seikatsushien/otetsudai/otetsudai/hakobidashi.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "ota/official/ota-carry.html.source",
+      "text_file": "ota/official/ota-carry.txt",
+      "raw_sha256": "76d3bfc2e3e0288c466581244403e5070c6a6b8e362b5233cc0fbe162c04d3e6",
+      "text_sha256": "4ed32616ccd3eaee21426c38246b9ef6616b828febce710bd8b175d04143e23c",
+      "last_modified_header": "Thu, 15 Oct 2026 05:35:00 GMT"
+    },
+    {
+      "id": "ota-bulky",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "title": "粗大ごみ",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-10-15",
+      "http_status": 200,
+      "final_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "ota/official/ota-bulky.html.source",
+      "text_file": "ota/official/ota-bulky.txt",
+      "raw_sha256": "a3847b7e486cc6833dafb39ec53b3433432c88e4755609367d40961dcfc706c8",
+      "text_sha256": "cb94f9f197e048867b9cbe9f5f78e168a9f02b42b49a7a5d34194eb21f3b4cbf",
+      "last_modified_header": "Fri, 16 Oct 2026 00:35:00 GMT"
+    },
+    {
+      "id": "ota-carry-pdf",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "title": "高齢者世帯等に対する粗大ごみの運び出し収集（案内）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "application/pdf",
+      "raw_file": "ota/official/ota-carry-pdf.pdf",
+      "text_file": "ota/official/ota-carry-pdf.txt",
+      "raw_sha256": "4c7d0a8ce7a6aa4fe8b74940bbe80d9d5452aca5208cdba50ea55f9ec6944a60",
+      "text_sha256": "1bd7e71a94ae88c212eea89f7fd63a5e8e82c26e6c5880e04043efaca1cdf630",
+      "last_modified_header": "Thu, 26 Oct 2023 15:00:00 GMT"
+    }
+  ],
+  "research_note": "自治体別調査用AI下書き。2026-10-18の保存公式原典と追加公式原典に基づき独立AIレビュアーが限定修正。原文、URL、取得時刻とSHA-256は各区のofficial-metadataとreview-locatorsを参照。利用料金等の未記載は無料と断定しない。窓口確認・人手全件照合・公開承認は未実施。"
+}

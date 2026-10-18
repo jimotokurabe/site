@@ -1,0 +1,38 @@
+{
+  "reviewer": "independent AI reviewer /root/b05_review_tokyo",
+  "reviewed_at": "2026-10-18",
+  "accepted": [
+    {
+      "slug": "suginami",
+      "sha256": "f736593b8f403ab67bc2cac73c80b3f0d3b74f18b0fabd1aa97882fc34150215",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-tokyo/suginami.json"
+    },
+    {
+      "slug": "nerima",
+      "sha256": "45e49d6110cb9c38cb6f825fe829ba95896d5d54bc97c135b5c7b7fb1fd522d3",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-tokyo/nerima.json"
+    },
+    {
+      "slug": "itabashi",
+      "sha256": "0ac37e2e94190ecc05e690a935bef78aefd4c147a121b6e9056065464bad008f",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-tokyo/itabashi.json"
+    },
+    {
+      "slug": "ota",
+      "sha256": "eff61d71aa1d0ef022459759dc9ba3f5e897d4ae352f53e95a77580cb0b04767",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-tokyo/ota.json"
+    }
+  ],
+  "held": [],
+  "remaining_required_findings": [],
+  "review_scope": {
+    "municipalities": 4,
+    "services": 16,
+    "fields": 160,
+    "consultation_questions": 26,
+    "bidirectional_original_text_check": true,
+    "editorial_note": "Reviewer corrected city drafts after preserving original-draft.json; parent should independently inspect major corrections before ai_reviewed status."
+  },
+  "source_count": 18,
+  "source_hash_record": "consumption.json"
+}

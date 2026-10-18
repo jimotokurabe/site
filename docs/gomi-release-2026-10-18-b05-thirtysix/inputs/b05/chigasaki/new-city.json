@@ -1,0 +1,476 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kanagawa:chigasaki",
+      "name": "茅ヶ崎市",
+      "kana": "ちがさきし",
+      "pref_name": "神奈川県",
+      "selection_reason": "安心まごころ収集と大型ごみ等・直接搬入を公式資料で確認できるため。大型ごみの予約方法・料金は資料の年度差があるため現行確認を要する。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "chigasaki-daily",
+          "kind": "daily_support",
+          "name": "安心まごころ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やせるごみ、燃やせないごみ、資源物（びん・かん・スプレーかん・ペットボトル・古紙・衣類布類・容器包装プラ・廃食用油・金属類）。大型ごみ等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-r8-plan",
+                "chigasaki-daily_application"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先等の戸別収集。収集日・時間・場所は利用者と協議して決定。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "indoor_carry": {
+              "value": "申請資料に家の中へ入っての収集は行わないと明記。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "本人または同居者だけでは集積場所へ出すことが困難",
+                  "親族・近隣住民等の協力が得られない",
+                  "次のいずれか：在宅で肢体不自由1・2級の身体障害者手帳／在宅65歳以上で要支援1～要介護5／市長が同等と認める"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "family_help": {
+              "value": "本人または同居者だけでは困難で、親族・近隣住民など身近な人の協力も得られないこと。親族等は申請代理・調査立会い可。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "fees": {
+              "value": "支援収集自体の利用料・減免は記載なし。指定ごみ袋・一般処理手数料は別制度。",
+              "state": "not_stated",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "limits": {
+              "value": "燃やせるごみ週2回、燃やせないごみ・資源は月2回。大型・特定大型・特定粗大ごみ、多量のごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "application": {
+              "value": "申請書を出張所・支所・障がい福祉課・高齢福祉課・環境事業センター等へ提出。訪問調査と審査後に可否決定。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "attendance": {
+              "value": "訪問調査では本人・関係者の立会い。収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            },
+            "contact": {
+              "value": "環境事業センター0467-57-0200。障がい福祉課0467-81-7159。高齢福祉課0467-81-7162。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-daily",
+                "chigasaki-daily_rule"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "対象要件・親族等の援助判断、収集場所、指定袋、利用料を市へ確認してください。",
+            "大型ごみは対象外のため、別途搬出方法を確認してください。"
+          ]
+        },
+        {
+          "id": "chigasaki-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "大型ごみの屋内搬出支援（制度確認できず）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "collection_location": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "indoor_carry": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "family_help": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "fees": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "limits": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "application": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "attendance": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            },
+            "contact": {
+              "value": "安心まごころ収集の申請資料では大型ごみ・特定大型ごみ・特定粗大ごみは同事業の対象外と明記。別個の市による屋内搬出支援制度は今回の公式資料検索で確認できず.",
+              "state": "not_found",
+              "source_ids": [
+                "chigasaki-daily_application",
+                "chigasaki-guide"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "安心まごころ収集とは別に、大型ごみの屋内搬出を市が支援する制度や個別例外があるか確認してください。"
+          ]
+        },
+        {
+          "id": "chigasaki-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "大型ごみ等の予約制戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "大型ごみ（一辺50cm超～2m以下）、特定大型ごみ、特定粗大ごみ等。市の品目表で区分。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "collection_location": {
+              "value": "予約時に指定された日・場所（各戸敷地内の道路に面した場所）へ出して戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常の戸別収集で屋内搬出する記載なし。安心まごころ収集でも大型ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "eligibility": {
+              "value": "市内家庭から出る市の収集対象品目。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "family_help": {
+              "value": "申込者側で指定場所へ出す。本人以外の排出条件は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "fees": {
+              "value": "大型ごみ1点700円、特定大型ごみ1点1,400円、特定粗大ごみ1点700円（令和4年改定資料）。現行料金は要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "limits": {
+              "value": "1回5点まで、二重予約不可。5点超は1回目収集後に次を申込。収集日午前8時30分までに指定場所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-r8-plan"
+              ]
+            },
+            "application": {
+              "value": "電話またはオンラインで予約。予約後に収入証紙を購入して氏名を記入・貼付。オンライン予約はキャッシュレス決済も可能で、申込内容を品物に直接書くか紙に記して貼る。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-r8-plan"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は確認できず。",
+              "state": "not_stated",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            },
+            "contact": {
+              "value": "環境事業センター業務担当0467-57-0200。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide",
+                "chigasaki-regular_current"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2026年10月時点の予約方法・手数料・個数上限と収集場所を申込窓口で確認してください。"
+          ]
+        },
+        {
+          "id": "chigasaki-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "環境事業センターへの直接搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の片付け・引越し等で生じたごみの直接搬入。令和8年度計画では燃やせる・燃やせない・大型ごみ等は環境事業センターへ、資源物と剪定枝は別施設へ搬入する区分。100kgは料金区分であり、受入下限とは記載されていない。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-r8-plan",
+                "chigasaki-dropoff-fee"
+              ]
+            },
+            "collection_location": {
+              "value": "燃やせるごみ・燃やせないごみ・大型ごみ等は茅ヶ崎市環境事業センターへ。資源物・剪定枝は品目ごとに別施設。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-r8-plan"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自分で施設へ持ち込む方式。自宅内搬出支援の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "市内全域の家庭ごみ直接搬入。片付け・引越し等で臨時に出るごみ向け。ごみの排出者・搬入者の同一性、家族代理搬入の可否は原典に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "chigasaki-r8-plan",
+                "chigasaki-dropoff-fee"
+              ]
+            },
+            "family_help": {
+              "value": "本人以外の家族等による搬入条件は今回の原典から確認できない。",
+              "state": "not_stated",
+              "source_ids": [
+                "chigasaki-guide"
+              ]
+            },
+            "fees": {
+              "value": "2022年4月改定資料では家庭系100kg以下1,400円、100kg超は10kg増すごと140円加算。2026年10月時点の現行額は要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "chigasaki-dropoff-fee"
+              ]
+            },
+            "limits": {
+              "value": "家庭の片付け・引越し等の臨時ごみ向け。100kgは料金区分で、100kg未満の持込も料金表にある。受付日時・予約要否は窓口へ確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "chigasaki-r8-plan",
+                "chigasaki-dropoff-fee"
+              ]
+            },
+            "application": {
+              "value": "直接搬入。詳細な事前申込、受付時間、支払方法の現行案内は今回の公式資料で確認できず。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "chigasaki-guide"
+              ]
+            },
+            "attendance": {
+              "value": "運転者本人とごみ排出者の関係、荷下ろし・立会い条件は資料に記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "chigasaki-guide"
+              ]
+            },
+            "contact": {
+              "value": "環境事業センター管理担当0467-58-4299（直接搬入手数料の公式資料に記載）。",
+              "state": "explicit",
+              "source_ids": [
+                "chigasaki-dropoff-fee"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "手数料改定後の現行料金、受付日・時間、対象品目、予約、本人・家族の搬入条件、荷下ろし支援を環境事業センターに確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "安心まごころ収集の公式パンフレット・実施要綱・申請書には令和4年度の要件緩和等の記載がある。日付を現行更新日とみなさず、要件と運用を窓口確認する。",
+        "大型ごみは安心まごころ収集の対象外。2026年度予約システムの現在の稼働・決済条件を再確認する。",
+        "自己搬入の100kgは料金区分であり受入下限ではない。令和8年度計画は品目別施設を示すが、搬入者条件・予約・受付日時・2026年現行料金は窓口確認が必要。",
+        "令和8年度実施計画に大型ごみの電話・オンライン予約、オンライン決済可と明記。令和7年度資料の「2026年度予定」から更新。"
+      ],
+      "common_questions_for_office": [
+        "本人・同居者・世帯全員の要件とAND/OR条件を確認してください。",
+        "親族・近隣住民・支援者の援助可能性が資格にどう影響するか確認してください。",
+        "屋内搬出範囲、本人の立会い、本人が運転する必要があるかを確認してください。",
+        "利用料・処理手数料・減免、予約方法、個数・1日あたりの回数上限、地区差を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "chigasaki-daily",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/003/258/R5magokoropanfu.pdf",
+      "title": "茅ヶ崎市安心まごころ収集事業",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chigasaki-daily_rule",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/003/258/R5youkoumagokoro.pdf",
+      "title": "茅ヶ崎市安心まごころ収集事業実施要綱",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chigasaki-guide",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/003/371/guidebook.pdf",
+      "title": "ごみ有料化スタート・ごみの分別と出し方ガイドブック",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chigasaki-daily_application",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/003/258/magokoroshinnseisyo.pdf",
+      "title": "安心まごころ収集申請書",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chigasaki-regular_current",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/065/577/1117sankou2.pdf",
+      "title": "令和7年度茅ヶ崎市一般廃棄物処理実施計画 参考資料",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chigasaki-r8-plan",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/003/317/2026jissi.pdf",
+      "title": "令和8年度茅ヶ崎市一般廃棄物処理実施計画",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chigasaki-dropoff-fee",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/045/270/2.pdf",
+      "title": "直接搬入ごみ処理手数料の改定について",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "神奈川県公式サイト内の市別検索を用いて4市のごみ出し支援・粗大ごみ・自己搬入の公式ページ/資料を確認し、公式原典の取得HTML/PDF、抽出テキスト、取得日時、HTTP状態、SHA-256を各市official-metadata.jsonへ保存（2026-10-18）。更新日は公式原典に明記されたもののみ転記し、推測していない。相模原・横須賀・藤沢は各市公式ページを取得。茅ヶ崎の安心まごころ支援・大型ごみは公式PDF資料に年度差があり、予約手段・料金・持込条件は最新窓口確認を要する。制度窓口への問い合わせ、人手による全項目照合、独立レビュー未実施。プレビュー専用の未公開下書き。"
+}

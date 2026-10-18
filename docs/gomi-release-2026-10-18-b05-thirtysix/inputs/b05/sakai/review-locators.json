@@ -1,0 +1,188 @@
+[
+  {
+    "city": "osaka:sakai",
+    "service": "sakai-daily",
+    "service_sha256": "5ad320e9fad0d54a9d12fcd446729c02920087f4091368cedbdb3213e401540d",
+    "sources": [
+      {
+        "id": "sakai-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-daily.txt",
+        "lines": [
+          [
+            28,
+            48
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-daily.html.source",
+        "raw_sha256": "edf6432f923b2a1cef7cf6e305923371987c133d8dafde2912ba88ed159aa5fd",
+        "text_sha256": "781917942626a14e10265ea32d81331e896bdbc1ebcd6597780e7a7f705560fe",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:sakai",
+    "service": "sakai-carry",
+    "service_sha256": "d6b1947e6b92c0c7734177832e9957c4a4852aac5d00c18f1a90fe905ebb7bcc",
+    "sources": [
+      {
+        "id": "sakai-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-daily.txt",
+        "lines": [
+          [
+            49,
+            78
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-daily.html.source",
+        "raw_sha256": "edf6432f923b2a1cef7cf6e305923371987c133d8dafde2912ba88ed159aa5fd",
+        "text_sha256": "781917942626a14e10265ea32d81331e896bdbc1ebcd6597780e7a7f705560fe",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "sakai-support-rule",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-support-rule.txt",
+        "lines": [
+          [
+            38,
+            91
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-support-rule.html.source",
+        "raw_sha256": "87a81584e4dbd99edff3bc0612265a7f7a6994097a706389fc39fd7b86965472",
+        "text_sha256": "21151e958030cc318fa37418b810ddf793fe95fd813ecaaaec513e1d67c061ed",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:sakai",
+    "service": "sakai-regular",
+    "service_sha256": "30df1c3d14bc1a35c6032c3ca58ee82c74901c1d6f4aa942ce70e1902a90fe38",
+    "sources": [
+      {
+        "id": "sakai-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-regular.txt",
+        "lines": [
+          [
+            26,
+            58
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-regular.html.source",
+        "raw_sha256": "bab7d1c12f1402aa9e42f714db1a4cd331a130c4cceb171c70f0f51afb1ff30e",
+        "text_sha256": "521b8301297a50785bfc69e06b1118ae8c5011b9ab74da5c71d72f982a303de8",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "sakai-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-fees.txt",
+        "lines": [
+          [
+            26,
+            45
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-fees.html.source",
+        "raw_sha256": "6aca757ab94d38604ad6102bc5718e2f391907f79f16425eaf0cdd51bdea1a45",
+        "text_sha256": "e6a2103904c2f9a919a589b21c5bf462804678efabcfce16883097a49ce58390",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:sakai",
+    "service": "sakai-self",
+    "service_sha256": "16dc62ebfbae2f7e9a466ca75fea13043f0ca3b7bddec000cfb0f45d38b9157e",
+    "sources": [
+      {
+        "id": "sakai-self",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-self.txt",
+        "lines": [
+          [
+            57,
+            75
+          ],
+          [
+            220,
+            330
+          ],
+          [
+            528,
+            578
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sakai/official/sakai-self.html.source",
+        "raw_sha256": "3c740ad0c5c4800c52f2a9ac20ce371f7fceaeb0b2bc2891bbb03974a58f37da",
+        "text_sha256": "44f04acd277d04cba20aab1848002dffdd8fbe6132b8b1c1f565cf10e663f9d0",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Author" content="Toyonaka city" />
+
+
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.wysiwyg.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.tableconverter.css" />
+
+<link rel="stylesheet" type="text/css" media="all" href="/css/n_style_base_2024.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/n_style_main_2024.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" href="/css/n_style_smph_2024.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" href="/css/n_smph_nav.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/css/n_style_print_2024.css" />
+<title>ふれあい収集（高齢者・障害者支援）　豊中市</title>
+<script type="text/javascript" src="/js/2023_jquery.min.js"></script>
+<script type="text/javascript" src="/js/id.js"></script>
+<script type="text/javascript" src="/js/n_gnavi.js"></script>
+<script type="text/javascript" src="/js/jquery.socialbutton-1.8.0.js"></script>
+<script type="text/javascript" src="/js/smph_nav.js"></script>
+<script type="text/javascript" src="/js/2024_main.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/analyticscode.js" charset="utf-8"></script>
+</head>
+<body id="base">
+
+<div class="overlay"></div>
+<!-- scs_jyogai_start -->
+<noscript>
+<p class="jsmessage">豊中市ホームページではJavaScriptを使用しています。JavaScriptの使用を有効にしていない場合は、一部の機能が正確に動作しない恐れがあります。<br />お手数ですがJavaScriptの使用を有効にしてください。</p>
+</noscript>
+<div class="blockjump"><a name="PTOP" id="PTOP"><img src="/images/spacer.gif" alt="このページの先頭です" width="1" height="1" /></a><img src="/images/spacer.gif" alt="サイトメニューここから" width="1" height="1" /></div>
+<div id="blockskip">
+<script type="text/javascript">
+// <![CDATA[
+$(function(){
+	$("#blockskip a").focus(function(){
+		$(this).parent()
+			.animate(
+				{
+					height: '1.5em'
+				},{
+					duration: 'fast'
+				}
+			)
+			.addClass("show");
+	});
+	$("#blockskip a")
+		.blur(function(){
+		$(this).parent()
+			.animate(
+				{
+					height: '1px'
+				},{
+					duration: 'fast',
+					complete: function(){
+						$(this).removeClass("show");
+					}
+				}
+			)
+	});
+});
+// ]]>
+</script>
+<a href="#CONT">このページの本文へ移動</a>
+</div>
+<div class="baseall">
+<!-- ▼ヘッダーここから▼ -->
+<div class="headbg clearfix">
+	<div class="sphead_wp sp_tablet_menu">
+	<div class="sp_head_wp">
+	<div class="sp_head_logo pc-none">
+	<h1 id="sp_header_logo">
+	<a href="/index.html">
+	<img src="/images/toyonaka_logo2024_sp.png" alt="豊中市（SP版）" />
+	</a>
+	</h1>
+	</div>
+	</div><!-- /sp_head_wp -->
+	</div><!-- /div sphead_wp -->
+
+<!--  PC用ヘッダー -->
+<div class="pchead_wp sp_none">
+	<h1 class="header_logo">
+	<a href="/index.html">
+	<img src="/images/toyonaka_logo2024.png" alt="豊中市" />
+	</a>
+	</h1>
+
+<div class="pchead_right">
+<div class="head_nav">
+<ul class="nav_lists">
+ <li class="nav_list"><a href="/multilingual/index.html"><span>Language</span></a></li>
+ <li class="nav_list"><a href="/zsmd/lang/ja/html/index.html"><span>音声読み上げ/文字拡大</span></a></li>
+</ul>
+</div>
+<ul class="pchead_right_list">
+<li>
+<button class="search-open-button">
+<span class="open">検索</span>
+<span class="close">閉じる</span>
+</button>
+
+<!-- ▽検索▽ 2024 （PC） -->
+<div class="search_area pc">
+<div class="search_wrap">
+<div class="search_box">
+<div class="search_w">
+<p class="sp_none">キーワード・ページ番号検索</p>
+<div class="search_set">
+<div class="tab01">
+<form action="/gsearch/search.html" name="SSF" id="SSF">
+<label for="query" class="echooff">
+<img src="/images/spacer.gif" alt="キーワードから探す" width="1" height="1" />
+</label>
+<input type="hidden" name="cx" value="007861693131323739414:f4jktuiwqto" />
+<input type="hidden" name="cof" value="FORID:9" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="hidden" name="oe" value="UTF-8" />
+<input type="hidden" name="whence" value="0" />
+<input type="text" name="q" value="" id="query" class="search" />
+<span class="placeholder" style="">キーワードから探す</span>
+<input type="submit" name="btnG" class="searchBtn" value="検索" />
+<span class="submit_bk"></span>
+</form>
+</div>
+<div class="tab02">
+<form action="" onsubmit="id_search(1);return false;" name="submit_search" id="submit_search" style="display: none">
+<label for="name1" class="echooff">
+<img src="/images/spacer.gif" alt="半角数字9桁を入力してください" width="1" height="1" />
+</label>
+<input type="text" id="name1" class="search" maxlength="9" value="" />
+<span class="placeholder" style="">半角数字9桁を入力してください</span>
+<input type="submit" id="btn1" class="searchBtn" value="検索" onclick="id_search(1)" />
+<span class="submit_bk"></span>
+</form>
+</div>
+<div class="search_bottom">
+<ul class="search_set_wp searchiTabItem">
+<li class="btnstyle"><a id="keyword" href="javascript:void(0)">キーワード検索</a></li>
+<li class="btnstyle tab-none"><a id="page" href="javascript:void(0)">ページ番号検索</a></li>
+</ul>
+<div class="about_search">
+<a href="/aboutweb/search.html">検索について</a>
+</div>
+</div>
+</div>
+</div><!-- /div search_set -->
+</div><!-- /div search_w -->
+
+<div class="keyword_area">
+<div class="keyword_txt">
+<p>よく検索されるキーワード</p>
+</div>
+<div class="keyword_link">
+<ul>
+<li><a class="innerLink" href="/kenko/kokuho/kanyuu/kenkouhokensyo.html">マイナ保険証</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E7%B2%97%E5%A4%A7%E3%81%94%E3%81%BF&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E7%B2%97%E5%A4%A7%E3%81%94%E3%81%BF&amp;gsc.page=1">粗大ごみ</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B%E4%BA%A4%E4%BB%98&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B%E4%BA%A4%E4%BB%98&amp;gsc.page=1">コンビニ交付</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E7%B5%A6%E4%BB%98%E9%87%91&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E7%B5%A6%E4%BB%98%E9%87%91&amp;gsc.page=1">給付金</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88&amp;gsc.page=1">パスポート</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E3%81%94%E3%81%BF%E3%81%AE%E5%88%86%E5%88%A5&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E3%81%94%E3%81%BF%E3%81%AE%E5%88%86%E5%88%A5&amp;gsc.page=1">ごみの分別</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E4%BF%9D%E9%99%BA%E6%96%99&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E4%BF%9D%E9%99%BA%E6%96%99&amp;gsc.page=1">保険料</a></li>
+<li><a class="innerLink" href="/kurashi/shimin/netyoyaku.html">来庁予約</a></li>
+<li><a class="innerLink" href="/kurashi/shimin/shimin_topics/202505kosekifurigana.html">戸籍に記載される予定のフリガナ</a></li>
+</ul>
+</div><!--/keyword_link -->
+</div><!--/keyword_area -->
+<div class="search_menu_links">
+<ul>
+	<li><a href="/tetsuduki/index.html" class="search_menu_link">手続きを探す</a></li>
+	<li><a href="/event/calendar/list_calendar.html" class="search_menu_link">イベントを探す</a></li>
+	<li><a href="https://toyonaka-callcenter.jp/" class="search_menu_link">よくある質問</a></li>
+	<li class="sp_none"><a href="/kurashi/yokuaru/soudan/index.html" class="search_menu_link">相談の窓口</a></li>
+	<li class="sp_none"><a href="/joho/sanka/koe/index.html" class="search_menu_link">市民の声</a></li>
+</ul>
+</div>
+<div class="pccall_center sp_none">
+<a href="/kurashi/toyocallcenter/index.html">
+豊中市総合コールセンター<br />
+〔TEL〕06-6858-5050
+</a>
+</div>
+
+<div class="search_area_close sp_none">
+<button class="search_close_btn">閉じる</button>
+</div>
+</div></div><!--/search_area -->
+<!-- △検索△ 2024 （PC） -->
+
+</li>
+<li>
+<a class="kinkyu-button" href="/kurashi/bosai/kinkyu_info/index.html">
+<span>緊急・災害</span>
+</a>
+</li>
+</ul>
+</div><!-- /div pchead_right -->
+
+</div><!-- /div pchead_wp -->
+
+<div class="pchead_middle">
+
+<!--  PC用グローバルナビ -->
+<div class="gnavi_wp sp_none">
+ 	<ul class="gnavi">
+	<li class="gnavi01 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/kurashi/index.html">
+	<span class="gnavi_txt">くらし・手続き</span>
+	</a>
+	<div class="sub" id="gnavi01">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/kurashi/index.html">くらし・手続き</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/kurashi/yokuaru/index.html">よくあるくらしの場面</a></li>
+	
+	<li><a href="/kurashi/shimin/index.html">戸籍・住民票など</a></li>
+	
+	<li><a href="/kurashi/gomi_risaikuru_bika/index.html">ごみ・リサイクル</a></li>
+	
+	<li><a href="/kurashi/sizei/index.html">税金</a></li>
+	
+	<li><a href="/kurashi/kokuhonenkin/index.html">国保・年金</a></li>
+	
+	<li><a href="/kurashi/bosai/index.html">防災・消防・緊急</a></li>
+	
+	<li><a href="/kurashi/onlineservice/index.html">デジタルサービス</a></li>
+	
+	<li><a href="/kurashi/roudou/index.html">くらし支援（消費生活、雇用・労働、若者支援）</a></li>
+	
+	<li><a href="/kurashi/jutaku/index.html">住まい</a></li>
+	
+	<li><a href="/kurashi/agriculture/index.html">農業</a></li>
+	
+	<li><a href="/kurashi/pettp-inuneko/index.html">ペット（犬・猫）</a></li>
+	
+	<li><a href="/kurashi/mynumber/index.html">マイナンバー（社会保障・税番号）制度</a></li>
+	
+	<li><a href="/kurashi/moushikomi/index.html">申請書・申込書ダウンロード</a></li>
+	
+	<li><a href="/kurashi/toyocallcenter/index.html">豊中市総合コールセンター</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+
+	<li class="gnavi02 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/kosodate/index.html">
+	<span class="gnavi_txt">子育て・教育</span>
+	</a>
+	<div class="sub" id="gnavi02">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/kosodate/index.html">子育て・教育</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/kosodate/boshi_kenko/index.html">おやこの健康（母子保健）</a></li>
+	
+	<li><a href="/kosodate/teate_josei/index.html">手当て・助成・支援</a></li>
+	
+	<li><a href="/kosodate/kyuujitukyuubyou/index.html">休日急病・救急病院</a></li>
+	
+	<li><a href="/kosodate/area_parenting_supp/index.html">子育て関連施設・子育て情報発信</a></li>
+	
+	<li><a href="/kosodate/kodomo/index.html">こどものページ</a></li>
+	
+	<li><a href="/kosodate/ibasyo/index.html">子どもの居場所</a></li>
+	
+	<li><a href="/kosodate/hoikusho/index.html">保育所（保育園）・認定こども園等（2号認定・3号認定）</a></li>
+	
+	<li><a href="/kosodate/yochien/index.html">幼稚園・認定こども園（1号認定）</a></li>
+	
+	<li><a href="/kosodate/gakkou/index.html">小・中学校</a></li>
+	
+	<li><a href="/kosodate/houkago/index.html">放課後こどもクラブ</a></li>
+	
+	<li><a href="/kosodate/soudan/index.html">子ども・教育相談</a></li>
+	
+	<li><a href="/kosodate/hagukumi/index.html">はぐくみセンター</a></li>
+	
+	<li><a href="/kosodate/jisou/index.html">児童相談所</a></li>
+	
+	<li><a href="/kosodate/futoukou/index.html">不登校支援</a></li>
+	
+	<li><a href="/kosodate/seishounen/index.html">青少年の育成</a></li>
+	
+	<li><a href="/kosodate/kyo_iin/index.html">教育委員会</a></li>
+	
+	<li><a href="/kosodate/kosodatetorikumi/index.html">子育て・教育の取り組み</a></li>
+	
+	<li><a href="/kosodate/hattatusien/index.html">発達支援・療育</a></li>
+	
+	<li><a href="/kosodate/kyoikucenter/index.html">教育センター</a></li>
+	
+	<li><a href="/kosodate/jigyosha/index.html">事業者向け情報</a></li>
+	
+	<li><a href="/kosodate/work/index.html">保育に関する仕事</a></li>
+	
+	<li><a href="/kosodate/kosodate_no1proj/index.html">子育てしやすさNO.1プロジェクト</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+
+	<li class="gnavi03 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/kenko/index.html">
+	<span class="gnavi_txt">健康・福祉・医療</span>
+	</a>
+	<div class="sub" id="gnavi03">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/kenko/index.html">健康・福祉・医療</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/kenko/kokuho/index.html">国民健康保険</a></li>
+	
+	<li><a href="/kenko/iryouhi/index.html">医療費の助成</a></li>
+	
+	<li><a href="/kenko/kouki/index.html">後期高齢者医療制度</a></li>
+	
+	<li><a href="/kenko/shougai/index.html">障害者福祉</a></li>
+	
+	<li><a href="/kenko/kenko_hokeneisei/index.html">健康・保健衛生</a></li>
+	
+	<li><a href="/kenko/kaigo_hukushi/index.html">介護保険・高齢者福祉</a></li>
+	
+	<li><a href="/kenko/seiho/index.html">生活保護</a></li>
+	
+	<li><a href="/kenko/iryoukikan/index.html">医療機関</a></li>
+	
+	<li><a href="/kenko/chiiki/index.html">ボランティア・地域活動</a></li>
+	
+	<li><a href="/kenko/sonota/index.html">その他の生活支援施策</a></li>
+	
+	<li><a href="/kenko/seinenkouken/index.html">成年後見制度</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+
+	<li class="gnavi04 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/jinken_gakushu/index.html">
+	<span class="gnavi_txt">人権・文化・スポーツ</span>
+	</a>
+	<div class="sub" id="gnavi04">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/jinken_gakushu/index.html">人権・文化・スポーツ</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/jinken_gakushu/jinken/index.html">人権文化のまちづくり</a></li>
+	
+	<li><a href="/jinken_gakushu/danjokyoudou/index.html">男女共同参画</a></li>
+	
+	<li><a href="/jinken_gakushu/hikakuheiwa/index.html">非核平和</a></li>
+	
+	<li><a href="/jinken_gakushu/kokusai/index.html">国際化施策</a></li>
+	
+	<li><a href="/jinken_gakushu/bunka/index.html">文化芸術振興</a></li>
+	
+	<li><a href="/jinken_gakushu/gaikokujin_joho/index.html">For Foreign Residents　（がいこくじんむけ　じょうほう）</a></li>
+	
+	<li><a href="/jinken_gakushu/shakai_kyouiku/index.html">社会教育</a></li>
+	
+	<li><a href="/jinken_gakushu/bunkazai/index.html">文化財</a></li>
+	
+	<li><a href="/jinken_gakushu/sports/index.html">スポーツ振興</a></li>
+	
+	<li><a href="/jinken_gakushu/kouminkan/index.html">公民館</a></li>
+	
+	<li><a href="/jinken_gakushu/toshokan/index.html">図書館</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+
+	<li class="gnavi05 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/machi/index.html">
+	<span class="gnavi_txt">まちづくり・環境</span>
+	</a>
+	<div class="sub" id="gnavi05">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/machi/index.html">まちづくり・環境</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/machi/kotsuanzen/index.html">交通・防犯</a></li>
+	
+	<li><a href="/machi/npo/index.html">市民公益活動・地域自治</a></li>
+	
+	<li><a href="/machi/machizukuri/index.html">まちづくり支援</a></li>
+	
+	<li><a href="/machi/sangyoushinkou/index.html">産業振興</a></li>
+	
+	<li><a href="/machi/kukou/index.html">大阪国際空港</a></li>
+	
+	<li><a href="/machi/bariafuri/index.html">バリアフリー</a></li>
+	
+	<li><a href="/machi/kankyoseisaku/index.html">環境政策</a></li>
+	
+	<li><a href="/machi/kouen_midori/index.html">公園・みどり</a></li>
+	
+	<li><a href="/machi/doro/index.html">道路・橋梁</a></li>
+	
+	<li><a href="/machi/kenchiku_kaihatsu/index.html">建築・開発</a></li>
+	
+	<li><a href="/machi/kenchikuhunsouyobou/index.html">建築紛争の予防と調整</a></li>
+	
+	<li><a href="/machi/toshikeikaku/index.html">都市計画</a></li>
+	
+	<li><a href="/machi/toshikeikan/index.html">都市景観</a></li>
+	
+	<li><a href="/machi/nanbu-a-activation/index.html">南部地域活性化</a></li>
+	
+	<li><a href="/machi/touzaiziku/index.html">東西軸活性化</a></li>
+	
+	<li><a href="/machi/senrinyutaunsaisei/index.html">千里ニュータウンの再生</a></li>
+	
+	<li><a href="/machi/senrikorabo/index.html">千里文化センター「コラボ」</a></li>
+	
+	<li><a href="/machi/shocolla/index.html">庄内コラボセンター「ショコラ」</a></li>
+	
+	<li><a href="/machi/shigaichiseibi/index.html">市街地整備</a></li>
+	
+	<li><a href="/machi/seibikatuyo/index.html">施設整備・施設活用</a></li>
+	
+	<li><a href="/machi/tochikatuyou/index.html">土地活用・国土法・公拡法</a></li>
+	
+	<li><a href="/machi/hojo_joseikin/index.html">補助・助成金等</a></li>
+	
+	<li><a href="/machi/hakkoubutu/index.html">法令・条例・計画・発行物</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+
+	<li class="gnavi06 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/joho/index.html">
+	<span class="gnavi_txt">市政情報</span>
+	</a>
+	<div class="sub" id="gnavi06">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/joho/index.html">市政情報</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/joho/kakubu/index.html">組織と業務案内</a></li>
+	
+	<li><a href="/joho/bosyu/index.html">採用情報・職員人事・人材育成</a></li>
+	
+	<li><a href="/joho/shoukai/index.html">市の紹介</a></li>
+	
+	<li><a href="/joho/keikaku/index.html">政策・方針・行政運営</a></li>
+	
+	<li><a href="/joho/zaisei/index.html">財政状況（予算・決算）</a></li>
+	
+	<li><a href="/joho/shigikai_anken/index.html">市議会提出議案など</a></li>
+	
+	<li><a href="/joho/toukei_joho/index.html">統計・調査・研究</a></li>
+	
+	<li><a href="/joho/kansa/index.html">監査</a></li>
+	
+	<li><a href="/joho/joho_koukai/index.html">情報公開・個人情報保護</a></li>
+	
+	<li><a href="/joho/kouhou/index.html">広報</a></li>
+	
+	<li><a href="/joho/sanka/index.html">市政への参加</a></li>
+	
+	<li><a href="/joho/furusato/index.html">ふるさと納税</a></li>
+	
+	<li><a href="/joho/reiki/index.html">条例・規則等</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+
+	<li class="gnavi07 menu-item-has-children">
+	<div>
+	<a class="sub-open-button" href="/shisetsu/index.html">
+	<span class="gnavi_txt">施設案内</span>
+	</a>
+	<div class="sub" id="gnavi07">
+	
+	<div class="gnavi_menuA">
+	<div class="gnav_con">
+	<div class="gnav_con_btn">
+	<a href="/shisetsu/index.html">施設案内</a>
+	</div>
+	<button class="gnav_con_close">閉じる</button>
+	</div>
+	<ul class="gnavi_menu_list">
+	
+	<li><a href="/shisetsu/shi/index.html">市役所・出張所</a></li>
+	
+	<li><a href="/shisetsu/hall/index.html">ホール・文化施設</a></li>
+	
+	<li><a href="/shisetsu/koumin_library/index.html">公民館・図書館</a></li>
+	
+	<li><a href="/shisetsu/kodomo_shounen/index.html">子育て・教育・青少年</a></li>
+	
+	<li><a href="/shisetsu/gomi/index.html">ごみ・環境・みどりの施設</a></li>
+	
+	<li><a href="/shisetsu/koen/index.html">公園</a></li>
+	
+	<li><a href="/shisetsu/sports/index.html">スポーツ施設</a></li>
+	
+	<li><a href="/shisetsu/hoken/index.html">保健・医療の施設</a></li>
+	
+	<li><a href="/shisetsu/suidou/index.html">上下水道施設</a></li>
+	
+	<li><a href="/shisetsu/shogai_korei/index.html">障害者・高齢者福祉施設</a></li>
+	
+	<li><a href="/shisetsu/shukai_shisetu/index.html">集会施設</a></li>
+	
+	<li><a href="/shisetsu/sonota/index.html">その他の施設</a></li>
+	
+	<li><a href="/shisetsu/cf/index.html">複合施設</a></li>
+	
+	<li><a href="/shisetsu/annai.html">とよなか公共施設案内予約システム(空室確認と予約)</a></li>
+	
+	</ul>
+	</div>
+	
+	</div>
+	</div>
+	</li>
+	</ul><!-- /ul gnavi -->
+
+</div><!-- /div gnavi_wp sp_none -->
+</div><!-- /div pchead_middleaera -->
+
+</div><!-- /div headbg -->
+
+
+<!-- ▼スマホ用メニューここから▼ -->
+<!-- ▽メニューバー▽ -->
+<div id="menubar_smp">
+<div class="menu_wrap">
+<div class="menu item">
+ <span class="menu-btn btn">メニュー</span>
+</div>
+
+<div class="search item">
+ <span class="search-btn btn">検索</span>
+<!-- ▽検索▽ 2024 （smp） -->
+<div class="search_area smp">
+<div class="search_wrap">
+<div class="search_box">
+<div class="search_w">
+<p class="sp_none">キーワード・ページ番号検索</p>
+<div class="search_set">
+<div class="tab01">
+<form action="/gsearch/search.html" name="SSF" id="SSF_smp">
+<label for="query_smp" class="echooff">
+<img src="/images/spacer.gif" alt="キーワードから探す" width="1" height="1" />
+</label>
+<input type="hidden" name="cx" value="007861693131323739414:f4jktuiwqto" />
+<input type="hidden" name="cof" value="FORID:9" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="hidden" name="oe" value="UTF-8" />
+<input type="hidden" name="whence" value="0" />
+<input type="text" name="q" value="" id="query_smp" class="search" />
+<span class="placeholder" style="">キーワードから探す</span>
+<input type="submit" name="btnG" class="searchBtn" value="検索" />
+<span class="submit_bk"></span>
+</form>
+</div>
+<div class="tab02">
+<form action="" onsubmit="id_search(3);return false;" name="submit_search" id="submit_search_smp" style="display: none">
+<label for="name3" class="echooff">
+<img src="/images/spacer.gif" alt="半角数字9桁を入力してください" width="1" height="1" />
+</label>
+<input type="text" id="name3" class="search" maxlength="9" value="" />
+<span class="placeholder" style="">半角数字9桁を入力してください</span>
+<input type="submit" id="btn1_smp" class="searchBtn" value="検索" onclick="id_search(3)" />
+<span class="submit_bk"></span>
+</form>
+</div>
+<div class="search_bottom">
+<ul class="search_set_wp searchiTabItem">
+<li class="btnstyle"><a id="keyword_smp" href="javascript:void(0)">キーワード検索</a></li>
+<li class="btnstyle tab-none"><a id="page_smp" href="javascript:void(0)">ページ番号検索</a></li>
+</ul>
+<div class="about_search">
+<a href="/aboutweb/search.html">検索について</a>
+</div>
+</div>
+</div>
+</div><!-- /div search_set -->
+</div><!-- /div search_w -->
+
+<div class="keyword_area">
+<div class="keyword_txt">
+<p>よく検索されるキーワード</p>
+</div>
+<div class="keyword_link">
+<ul>
+<li><a class="innerLink" href="/kenko/kokuho/kanyuu/kenkouhokensyo.html">マイナ保険証</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E7%B2%97%E5%A4%A7%E3%81%94%E3%81%BF&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E7%B2%97%E5%A4%A7%E3%81%94%E3%81%BF&amp;gsc.page=1">粗大ごみ</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B%E4%BA%A4%E4%BB%98&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B%E4%BA%A4%E4%BB%98&amp;gsc.page=1">コンビニ交付</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E7%B5%A6%E4%BB%98%E9%87%91&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E7%B5%A6%E4%BB%98%E9%87%91&amp;gsc.page=1">給付金</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88&amp;gsc.page=1">パスポート</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E3%81%94%E3%81%BF%E3%81%AE%E5%88%86%E5%88%A5&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E3%81%94%E3%81%BF%E3%81%AE%E5%88%86%E5%88%A5&amp;gsc.page=1">ごみの分別</a></li>
+<li><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/gsearch/search.html?cx=007861693131323739414%3Af4jktuiwqto&amp;cof=FORID%3A9&amp;ie=UTF-8&amp;oe=UTF-8&amp;whence=0&amp;q=%E4%BF%9D%E9%99%BA%E6%96%99&amp;btnG=%E6%A4%9C%E7%B4%A2#gsc.tab=0&amp;gsc.q=%E4%BF%9D%E9%99%BA%E6%96%99&amp;gsc.page=1">保険料</a></li>
+<li><a class="innerLink" href="/kurashi/shimin/netyoyaku.html">来庁予約</a></li>
+<li><a class="innerLink" href="/kurashi/shimin/shimin_topics/202505kosekifurigana.html">戸籍に記載される予定のフリガナ</a></li>
+</ul></div><!--/keyword_link -->
+</div><!--/keyword_area -->
+<div class="search_menu_links">
+<ul>
+	<li><a href="/tetsuduki/index.html" class="search_menu_link">手続きを探す</a></li>
+	<li><a href="/event/calendar/list_calendar.html" class="search_menu_link">イベントを探す</a></li>
+	<li><a href="https://toyonaka-callcenter.jp/" class="search_menu_link">よくある質問</a></li>
+	<li class="sp_none"><a href="/kurashi/yokuaru/soudan/index.html" class="search_menu_link">相談の窓口</a></li>
+	<li class="sp_none"><a href="/joho/sanka/koe/index.html" class="search_menu_link">市民の声</a></li>
+</ul>
+</div>
+<div class="pccall_center sp_none">
+<a href="/kurashi/toyocallcenter/index.html">
+豊中市総合コールセンター<br />
+〔TEL〕06-6858-5050
+</a>
+</div>
+
+<div class="search_area_close sp_none">
+<button class="search_close_btn">閉じる</button>
+</div>
+</div></div><!--/search_area -->
+<!-- △検索△ 2024 （smp） -->
+</div>
+
+<div class="menu-news item">
+ <a class="news-btn btn" href="/allNewsList.html">新着情報</a>
+</div>
+
+<div class="menu-kinkyu item">
+ <a class="kinkyu-btn btn" href="/kurashi/bosai/kinkyu_info/index.html">緊急・災害</a>
+</div>
+</div>
+</div><!-- /menubar_smp -->
+<!-- △メニューバー△ -->
+
+<div class="sub_menu_smp">
+<!-- ▽グローバルナビ（スマホ）▽ -->
+<div id="gnavi_menu" class="sp_open_menu" style="display: none;">
+<div class="sp_open_inner">
+<ul class="sp_nav_lists">
+<li class="sp_nav_list">
+<a href="/multilingual/index.html">
+<span>Language</span>
+</a>
+</li>
+<li class="sp_nav_list">
+<a href="/zsmd/lang/ja/html/index.html">
+<span>音声読み上げ/文字拡大</span>
+</a>
+</li>
+</ul>
+<div class="spgnavi_menu_wp">
+<ul class="spgnavi_menu_links">
+<li><a href="/kurashi/index.html" class="spgnavi_menu_link">くらし・手続き</a></li>
+<li><a href="/kosodate/index.html" class="spgnavi_menu_link">子育て・教育</a></li>
+<li><a href="/kenko/index.html" class="spgnavi_menu_link">健康・福祉・医療</a></li>
+<li><a href="/jinken_gakushu/index.html" class="spgnavi_menu_link">人権・文化・スポーツ</a></li>
+<li><a href="/machi/index.html" class="spgnavi_menu_link">まちづくり・環境</a></li>
+<li><a href="/joho/index.html" class="spgnavi_menu_link">市政情報</a></li>
+<li><a href="/shisetsu/index.html" class="spgnavi_menu_link">施設案内</a></li>
+</ul>
+</div>
+<div class="spgnavi_menu_wp_bottom">
+<ul class="spgnavi_menu_links">
+<li><a href="/joho/sanka/koe/index.html" class="spgnavi_menu_link">市民の声</a></li>
+<li><a href="/kurashi/yokuaru/soudan/index.html" class="spgnavi_menu_link">相談の窓口</a></li></ul>
+</div>
+<div class="spcall_center sp_menu">
+<div class="spcall_center_wp">
+<a href="/kurashi/toyocallcenter/index.html">
+<span class="spcenter_name">豊中市総合コールセンター</span>
+<span class="spphone_number">06-6858-5050</span>
+</a>
+</div>
+</div>
+</div>
+</div><!-- /div gnavi_menu -->
+<!-- △グローバルナビ（スマホ）△ -->
+
+</div><!-- /sub_menu_smp -->
+<!-- ▲スマホ用メニューここまで▲ -->
+
+<div id="basewrap" class="clearfix">
+<div class="guidance"><img src="/images/spacer.gif" alt="サイトメニューここまで" width="1" height="1" /></div>
+<!--▽パンくずナビ▽-->
+<ul class="pankuzu clearfix">
+<li><a href="/index.html">トップページ</a></li>
+<li><a href="../../../index.html">くらし・手続き</a></li>
+<li><a href="../../index.html">ごみ・リサイクル</a></li>
+<li><a href="../index.html">家庭から出るごみ</a></li>
+<li><a href="./index.html">市で行っているサービス</a></li>
+<li class="pk-thispage">ふれあい収集（高齢者・障害者支援）</li>
+</ul>
+<!--△パンくずナビ△-->
+<hr />
+<!-- ▲ヘッダーここまで▲ -->
+<div class="guidance"><a name="CONT" id="CONT"><img src="/images/spacer.gif" alt="本文ここから" width="1" height="1" /></a></div>
+<!-- scs_jyogai_end -->
+<div class="wrap clearfix">
+<div id="main-nosub">
+
+
+
+<div class="h1bg"><div><h1>ふれあい収集（高齢者・障害者支援）</h1></div></div>
+
+
+
+
+<script type="text/javascript" src="/js/sns_btn.js" charset="utf-8"></script><div class="date_area"><div id="sns_btn_in"></div><div class="pagenumber"><p class="date-title">ページ番号：454505885</p></div><div class="update clearfix"><p>更新日：2024年9月16日</p></div><button type="button" class="insatsu_btn_link sp-none" onclick="window.print();">印刷</button></div>
+
+
+
+
+<h2><strong class="text-color-red"><span class="text-color-red">令和5年（2023年）10月1日</span></strong>からひと声ふれあい収集の制度が<strong class="text-color-red"><span class="text-color-red">変更</span></strong>になりました</h2>
+<div class="wysiwyg_wp"><p><a href="https://apply.e-tumo.jp/toyonaka-city-u/offer/offerList_detail?tempSeq=5924" class="externalLink newWindow" target="_blank" rel="noopener noreferrer">ふれあい収集利用申込書（オンライン手続き）</a></p></div>
+<div class="img-area-r">
+<p class="imglink-txt-right"><img src="fureai.images/P5091046.JPG" width="200" height="150" alt="ふれあい収集車" /></p>
+<p>　「65歳以上の介護サービスを受けている方」及び「身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方」の在宅生活を支援するため、世帯構成員が家庭から排出されるごみをごみステーション（ごみ集積所）等に持ち出すことが困難な世帯に対して、決まった曜日にすべてのごみ種の収集を行います。</p>
+</div>
+<h3>対象となる世帯</h3>
+<div class="wysiwyg_wp"><p>市内に住民票を有し、かつ市内に居住する次のいずれかに該当する世帯で、世帯構成員が家庭系ごみ等をごみステーションまでごみ出しが困難な世帯<br />・要介護度2以上の認定を受けた65歳以上の世帯<br />・身体障害者手帳の交付を受け、障害の程度が1級または2級の身体障害者の世帯<br />・療育手帳の交付を受け、障害の程度がAの知的障害者の世帯<br />・精神障害者保健福祉手帳の交付を受け、障害の程度が1級の精神障害者の世帯<br />＊ごみ排出場所の確保ができない場合は、利用できません。</p></div>
+<h3>ごみの排出方法</h3>
+<div class="wysiwyg_wp"><p>週1回、指定した曜日に指定した場所へ専用ステッカーを貼って、12：00までに出していただきます。</p></div>
+<h3>申込方法</h3>
+<div class="wysiwyg_wp"><p>下記の申込書をダウンロードして必要事項をご記入いただき、家庭ごみ事業課へ提出してください。</p></div>
+<p class="filelink"><a class="doc" href="fureai.files/fureai.docx">（様式1）ふれあい収集利用申込書（ワード：24KB）</a></p>
+
+<p class="filelink"><a class="pdf" href="fureai.files/fureai.pdf">（様式1）ふれあい収集利用申込書（PDF：100KB）</a></p>
+
+<p class="filelink"><a class="pdf" href="fureai.files/kinyuurei.pdf">（記入例）ふれあい収集利用申込書（PDF：135KB）</a></p>
+
+<h3>電子申込システムからの申請</h3>
+<div class="wysiwyg_wp"><p><a href="https://apply.e-tumo.jp/toyonaka-city-u/offer/offerList_detail?tempSeq=5924" class="externalLink newWindow" target="_blank" rel="noopener noreferrer">ふれあい収集利用申込みはこちら</a></p></div>
+
+
+
+
+
+
+<!-- scs_jyogai_start -->
+<p class="dladobereader">
+PDF形式のファイルを開くには、Adobe Acrobat Readerが必要です。お持ちでない方は、Adobe社から無償でダウンロードできます。
+<a href="https://get.adobe.com/jp/reader/" target="_blank"><img src="/images/get_adobe_reader.png" alt="Get Adobe Acrobat Reader DC　（新規ウインドウで開きます。）" width="158" height="39" /></a></p>
+<!-- scs_jyogai_end -->
+
+
+
+
+<div id="contact">
+<h2>お問合せ</h2>
+
+<p class="soshiki2024"><a class="innerLink" href="/joho/kakubu/kankyo/kateigomi.html">環境部　家庭ごみ事業課</a>
+<br />
+〒561-0891　豊中市走井2丁目5番5号<br />
+電話：06-6843-3512<br />
+ファクス：06-6857-2767</p>
+<p class="contact-email"><a class="innerLink" href="https://www.city.toyonaka.osaka.jp/cgi-bin/formmail/formmail.cgi?d=001060040010000">このページの作成担当にメールを送る</a></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- scs_jyogai_start -->
+<div class="guidance"><img src="/images/spacer.gif" alt="本文ここまで" width="1" height="1" /></div>
+<!-- scs_jyogai_end -->
+</div><!-- /div main -->
+</div><!-- /div wrap -->
+</div><!-- /div basewrap -->
+<hr />
+<!-- scs_jyogai_start -->
+<!-- ▼フッターここから▼ -->
+<div class="page_top clearfix"><div><a href="#PTOP">ページの先頭へ戻る</a></div></div>
+<div class="footer">
+<div class="footer_wp01">
+<div class="footer_wp01_inner">
+<ul class="footer_link_list1">
+<li><a href="/aboutweb/kojin.html" class="footer_link">個人情報の取り扱いについて</a></li>
+<li><a href="/aboutweb/index.html" class="footer_link">このホームページについて</a></li>
+<li><a href="/aboutweb/link.html" class="footer_link">著作権・リンクについて</a></li>
+<li><a href="/sitemap.html" class="footer_link">サイトマップ</a></li>
+</ul>
+<ul class="footer_link_list2">
+<li><a href="/joho/kakubu/index.html" class="footer_link">組織と業務案内</a></li>
+<li><a href="/aboutweb/link2.html" class="footer_link">リンク集</a></li>
+</ul>
+</div><!-- /div footer_wp01_inner -->
+</div><!-- /div footer_wp01 -->
+
+<div class="footer_wp02">
+<div class="footer_wp02_inner">
+<div class="footer_wp_left">
+<div class="footer_logo"><img src="/images/footer_logo.png" alt="豊中市ロゴ" width="167" height="67" /></div>
+<address>
+〒561-8501　大阪府豊中市中桜塚3丁目1番1号<br />
+電話：06-6858-5050（総合コールセンター）<br />
+法人番号6000020272035
+</address>
+</div>
+<div class="footer_wp_right">
+<a href="/shisetsu/shi/map.html">
+<span>市役所のご案内</span>
+</a>
+</div>
+
+<div class="expo_img_wp">
+<a href="/joho/keikaku/sdgs_miraitoshi/index.html"><img src="/images/40baton_s.png" alt="40万人のとよなか未来バトン" width="181" height="74" /></a>
+</div>
+
+</div><!-- / div footer_wp02_inner" -->
+</div><!-- /div footer_wp02 -->
+<div class="footer_copy">
+&copy; 2024 Toyonaka City.
+</div>
+</div><!-- /div footer -->
+<!-- ▲フッターここまで▲ -->
+</div><!-- /div baseall -->
+<!-- scs_jyogai_end -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+// <![CDATA[
+var $371 = jQuery.noConflict(true);
+// ]]>
+</script>
+<script>
+// <![CDATA[
+$371(function () { var ChatBotURL ="https://chatbot.toyonaka-callcenter.jp/Chatbot/js/chatbot.js?token=20231201"; $371.getScript(ChatBotURL, function () { SetChatBotLayer(ChatBotURL); }); });
+// ]]>
+</script>
+
+</body>
+</html>

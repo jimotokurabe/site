@@ -1,0 +1,181 @@
+[
+  {
+    "city": "tokyo:suginami",
+    "service": "suginami-daily-support",
+    "service_sha256": "82ecb450b2e1017bd8830770debaec131ba93122262c69f0c510da4bc7f343ef",
+    "sources": [
+      {
+        "id": "suginami-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-daily.txt",
+        "lines": [
+          [
+            1,
+            103
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-daily.html.source",
+        "raw_sha256": "4a5876e8be3ecacaae78b067e79453962e53ae3ad0d21491676d25d20ba7f9ee",
+        "text_sha256": "a031201d351966eb375f7d26d220592df539948d1efd893b5caf0900e87a7155",
+        "field_names": [
+          "waste_scope",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "suginami-fureai-overview",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-fureai-overview.txt",
+        "lines": [
+          [
+            1,
+            93
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-fureai-overview.html.source",
+        "raw_sha256": "746bc6350ffe5a702d9c294944fdb1d8c93befd5b7e53aabac4272a6472b372e",
+        "text_sha256": "9adb0276ab930889a4707931d9555ecaf72c312ffa4a709417f24ef14ebfc56f",
+        "field_names": [
+          "collection_location",
+          "indoor_carry",
+          "family_help"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:suginami",
+    "service": "suginami-bulky-carry",
+    "service_sha256": "cce7179e8784f7bc2392f821c91354072fe41b2f2d1584da9634d12ac2ed4b14",
+    "sources": [
+      {
+        "id": "suginami-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-daily.txt",
+        "lines": [
+          [
+            1,
+            103
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-daily.html.source",
+        "raw_sha256": "4a5876e8be3ecacaae78b067e79453962e53ae3ad0d21491676d25d20ba7f9ee",
+        "text_sha256": "a031201d351966eb375f7d26d220592df539948d1efd893b5caf0900e87a7155",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "limits"
+        ]
+      },
+      {
+        "id": "suginami-calendar",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-calendar.txt",
+        "lines": [
+          [
+            1,
+            1985
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-calendar.pdf",
+        "raw_sha256": "ea5b6a8a4478f35f46130abb1863c260071fc0fbfb9e52d269e6dc62453cc821",
+        "text_sha256": "4c3c788095bf999b09b673644fcaa078ded2d16819a4cfc6f1a4ba26ec01e76e",
+        "field_names": [
+          "waste_scope",
+          "eligibility",
+          "fees",
+          "limits",
+          "application"
+        ]
+      },
+      {
+        "id": "suginami-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-bulky.txt",
+        "lines": [
+          [
+            1,
+            292
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-bulky.html.source",
+        "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+        "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b",
+        "field_names": [
+          "family_help",
+          "fees",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:suginami",
+    "service": "suginami-regular-bulky",
+    "service_sha256": "f7665bbb55d07d5c55020de117b864cd4e0f975e7d21aec5daabbed0b0eb9980",
+    "sources": [
+      {
+        "id": "suginami-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-bulky.txt",
+        "lines": [
+          [
+            1,
+            292
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-bulky.html.source",
+        "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+        "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b",
+        "field_names": [
+          "waste_scope",
+          "family_help",
+          "eligibility",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact",
+          "collection_location",
+          "indoor_carry"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:suginami",
+    "service": "suginami-self-dropoff",
+    "service_sha256": "64d1963d4567c1b341a43e827016b342421e6d2562e749494aeab8a1b65ad309",
+    "sources": [
+      {
+        "id": "suginami-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/official/suginami-bulky.txt",
+        "lines": [
+          [
+            1,
+            292
+          ]
+        ],
+        "raw_path": "suginami/official/suginami-bulky.html.source",
+        "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+        "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b",
+        "field_names": [
+          "waste_scope",
+          "family_help",
+          "eligibility",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact",
+          "collection_location",
+          "indoor_carry"
+        ]
+      }
+    ]
+  }
+]

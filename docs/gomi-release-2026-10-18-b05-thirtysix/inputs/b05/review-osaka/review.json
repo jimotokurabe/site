@@ -1,0 +1,610 @@
+{
+  "schema_version": "b05-independent-ai-review-v1",
+  "reviewer": "independent_osaka_review",
+  "review_date": "2026-10-18",
+  "scope": "大阪府4市（堺・豊中・吹田・高槻）の保存済み自治体公式原典に対する、16制度160項目と窓口確認質問の双方向照合。プレビュー用候補のみ。",
+  "method": "各市のnew-city.json全10項目×4制度と質問を読み、保存原典・実施要領・パンフレットの重要条件と照合。未記載と未発見を区別し、料金・減免・対象のAND/OR・搬出・本人搬入・運転・予約枠・窓口番号を優先確認。指摘箇所は初稿を保存しcorrections.jsonへ累積、修正後に原典とハッシュを再照合。",
+  "reviewed_fields": 160,
+  "reviewed_services": 16,
+  "official_sources": 20,
+  "official_original_bytes_total": 1168093,
+  "new_external_retrieval_count": 0,
+  "findings": [
+    {
+      "slug": "sakai",
+      "service": "sakai-carry",
+      "field": "fees",
+      "source_file": "sakai-support-rule.txt",
+      "source_lines": [
+        76,
+        78
+      ],
+      "resolution": "生活保護受給者の年度内1回・6個までの減額免除申請を追記",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "sakai",
+      "service": "sakai-self",
+      "field": "contact",
+      "source_file": "sakai-self.txt",
+      "source_lines": [
+        66,
+        73
+      ],
+      "resolution": "持込み予約問合せのクリーンセンター管理課072-355-3174へ修正",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "toyonaka",
+      "service": "toyonaka-self",
+      "field": "limits",
+      "source_file": "toyonaka-dropoff.txt",
+      "source_lines": [
+        87,
+        104
+      ],
+      "resolution": "電話の1世帯2回・1予約1台とネットの1世帯1回・1予約1台を区別",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "toyonaka",
+      "service": "toyonaka-self",
+      "field": "limits",
+      "source_file": "toyonaka-dropoff-net.txt",
+      "source_lines": [
+        81,
+        99
+      ],
+      "resolution": "ネット予約の受付期間と回数算定期間を区別",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "toyonaka",
+      "service": "toyonaka-self",
+      "field": "contact",
+      "source_file": "toyonaka-dropoff.txt",
+      "source_lines": [
+        73,
+        78
+      ],
+      "resolution": "予約専用06-6841-4498と問合せ専用06-6841-5394を区別",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "toyonaka",
+      "service": "toyonaka-regular",
+      "field": "collection_location",
+      "source_file": "toyonaka-regular.txt",
+      "source_lines": [
+        265,
+        303
+      ],
+      "resolution": "指定排出場所を原典から断定できないため未記載へ変更",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "toyonaka",
+      "service": "toyonaka-regular",
+      "field": "indoor_carry",
+      "source_file": "toyonaka-regular.txt",
+      "source_lines": [
+        265,
+        303
+      ],
+      "resolution": "申込者が室内から運ぶとの断定を削除し未記載へ変更",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-daily",
+      "field": "attendance",
+      "source_file": "suita-carry-pdf.txt",
+      "source_lines": [
+        50,
+        100
+      ],
+      "resolution": "訪問調査と屋内搬出の立会いの違いを明示",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-carry",
+      "field": "indoor_carry",
+      "source_file": "suita-carry-pdf.txt",
+      "source_lines": [
+        77,
+        99
+      ],
+      "resolution": "玄関先まで排出困難な場合に限ること、第三者立会い・本人同意書を追記",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-regular",
+      "field": "indoor_carry",
+      "source_file": "suita-bulky.txt",
+      "source_lines": [
+        200,
+        214
+      ],
+      "resolution": "通常収集で屋内搬出しないとの断定を削除し未記載へ変更",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-regular",
+      "field": "fees",
+      "source_file": "suita-self.txt",
+      "source_lines": [
+        200,
+        216
+      ],
+      "resolution": "定曜日収集無料を明記する原典を出典に追加",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-self",
+      "field": "fees",
+      "source_file": "suita-self.txt",
+      "source_lines": [
+        252,
+        257
+      ],
+      "resolution": "10kgまでごとに70円の持込み料金を追記",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-self",
+      "field": "contact",
+      "source_file": "suita-self.txt",
+      "source_lines": [
+        255,
+        260
+      ],
+      "resolution": "破砕選別工場の予約電話06-6877-7515へ修正",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "suita",
+      "service": "suita-self",
+      "field": "indoor_carry",
+      "source_file": "suita-self.txt",
+      "source_lines": [
+        267,
+        273
+      ],
+      "resolution": "本人による荷下ろしを明示し状態を修正",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takatsuki",
+      "service": "takatsuki-daily",
+      "field": "limits",
+      "source_file": "takatsuki-daily.txt",
+      "source_lines": [
+        100,
+        125
+      ],
+      "resolution": "重度傷病で一時的に排出困難な人の相談可能性を追記",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "toyonaka",
+      "service": "toyonaka-regular",
+      "field": "limits",
+      "source_file": "toyonaka-support-index.txt",
+      "source_lines": [
+        242,
+        245
+      ],
+      "resolution": "希望日の3か月前から申込可能、受付上限で希望日に収集できない場合を追記し出典引用",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takatsuki",
+      "service": "takatsuki-self",
+      "field": "family_help/application",
+      "source_file": "takatsuki-self-form.txt",
+      "source_lines": [
+        184,
+        220
+      ],
+      "resolution": "第三者搬入の廃棄物処理依頼書と紙の届出方法に原典を追加引用",
+      "status": "corrected_and_rechecked"
+    }
+  ],
+  "questions_reviewed": {
+    "city_common": 4,
+    "service_questions": 16,
+    "resolution": "制度ごとの未確定事項と適切な相談先に書き換え、原文にない資格・費用・運転条件を断定しない"
+  },
+  "accepted": [
+    {
+      "slug": "sakai",
+      "sha256": "0dd48e2cc4b9f04543d3c63494b20e3e85ea389f1bb8ca5592f0ce0a41e1c21f",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-osaka/review.json"
+    },
+    {
+      "slug": "toyonaka",
+      "sha256": "9b9081cdf759e51d37acf2ea18b410d0178927e285669eae78b6c5cb47740e52",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-osaka/review.json"
+    },
+    {
+      "slug": "suita",
+      "sha256": "6c8e2f0f2dbb0fbcb589e3a158db46c6537125e36a80b3658cc2c441d85f43b4",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-osaka/review.json"
+    },
+    {
+      "slug": "takatsuki",
+      "sha256": "50b8a8742cc5b7de6bd1d78241d5c9e4d450647ff427896963ded329a0179160",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/review-osaka/review.json"
+    }
+  ],
+  "held": [],
+  "remaining_required_findings": [],
+  "checks": [
+    {
+      "slug": "sakai",
+      "original_draft_sha256": "873803d6eb1308d567c490d1f4ec5d96706f344c3071adf8675cf54a737131c2",
+      "corrections_count": 7,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "packet_hash_verification": "passed",
+      "consumption": {
+        "city": "osaka:sakai",
+        "checked": "2026-10-18",
+        "research_only": true,
+        "official_search_terms": [
+          "site:city.sakai.lg.jp ごみ ふれあいサポート収集 粗大ごみ 屋内",
+          "site:city.sakai.lg.jp 粗大ごみ 申込 手数料 持込み",
+          "site:city.sakai.lg.jp 家庭ごみ 清掃工場 持込み 予約 手数料"
+        ],
+        "official_sources_retrieved": 5,
+        "http_200_count": 5,
+        "http_non_200_count": 0,
+        "original_bytes_total": 164665,
+        "raw_sha256_recorded": true,
+        "text_sha256_recorded": true,
+        "search_api_tokens": null,
+        "model_tokens": null,
+        "credits": null,
+        "currency_cost": null,
+        "cost_note": "検索・取得ツールの課金量やモデルトークン数は個別計測できないため未取得。推測値は記載しない。",
+        "preview_created": false,
+        "human_reviewed": false,
+        "source_ids": [
+          "sakai-daily",
+          "sakai-regular",
+          "sakai-fees",
+          "sakai-self",
+          "sakai-support-rule"
+        ],
+        "new_city_sha256": "0dd48e2cc4b9f04543d3c63494b20e3e85ea389f1bb8ca5592f0ce0a41e1c21f",
+        "source_hash_verification": "passed"
+      }
+    },
+    {
+      "slug": "toyonaka",
+      "original_draft_sha256": "1e65c21486d477526060478b0eb0a74fe9e6304dcb61fee4dfba0e1a688f776a",
+      "corrections_count": 11,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "packet_hash_verification": "passed",
+      "consumption": {
+        "city": "osaka:toyonaka",
+        "checked": "2026-10-18",
+        "research_only": true,
+        "official_search_terms": [
+          "site:city.toyonaka.osaka.jp ごみ出し支援 ふれあい収集 高齢者",
+          "site:city.toyonaka.osaka.jp 粗大ごみ 収集 申込み 手数料 豊中市",
+          "site:city.toyonaka.osaka.jp 臨時家庭ごみ 持ち込み 予約 手数料"
+        ],
+        "official_sources_retrieved": 5,
+        "http_200_count": 5,
+        "http_non_200_count": 0,
+        "original_bytes_total": 186357,
+        "raw_sha256_recorded": true,
+        "text_sha256_recorded": true,
+        "search_api_tokens": null,
+        "model_tokens": null,
+        "credits": null,
+        "currency_cost": null,
+        "cost_note": "検索・取得ツールの課金量やモデルトークン数は個別計測できないため未取得。推測値は記載しない。",
+        "preview_created": false,
+        "human_reviewed": false,
+        "source_ids": [
+          "toyonaka-daily",
+          "toyonaka-regular",
+          "toyonaka-dropoff",
+          "toyonaka-dropoff-net",
+          "toyonaka-support-index"
+        ],
+        "new_city_sha256": "9b9081cdf759e51d37acf2ea18b410d0178927e285669eae78b6c5cb47740e52",
+        "source_hash_verification": "passed"
+      }
+    },
+    {
+      "slug": "suita",
+      "original_draft_sha256": "d86271b05d9244c3071f1e6362a7969d6031018b940acf3f20d7eb0076fb9287",
+      "corrections_count": 13,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "packet_hash_verification": "passed",
+      "consumption": {
+        "city": "osaka:suita",
+        "checked": "2026-10-18",
+        "research_only": true,
+        "official_search_terms": [
+          "site:city.suita.osaka.jp 安心サポート収集 対象 申込み",
+          "site:city.suita.osaka.jp 粗大ごみ 大型複雑ごみ 収集 出し方",
+          "site:city.suita.osaka.jp 破砕選別工場 持込み 予約 手数料",
+          "site:city.suita.osaka.jp ごみ収集日 大型複雑ごみ 地区"
+        ],
+        "official_sources_retrieved": 5,
+        "http_200_count": 5,
+        "http_non_200_count": 0,
+        "original_bytes_total": 620742,
+        "raw_sha256_recorded": true,
+        "text_sha256_recorded": true,
+        "search_api_tokens": null,
+        "model_tokens": null,
+        "credits": null,
+        "currency_cost": null,
+        "cost_note": "検索・取得ツールの課金量やモデルトークン数は個別計測できないため未取得。推測値は記載しない。",
+        "preview_created": false,
+        "human_reviewed": false,
+        "source_ids": [
+          "suita-daily",
+          "suita-bulky",
+          "suita-carry-pdf",
+          "suita-self",
+          "suita-collection-days"
+        ],
+        "new_city_sha256": "6c8e2f0f2dbb0fbcb589e3a158db46c6537125e36a80b3658cc2c441d85f43b4",
+        "source_hash_verification": "passed"
+      }
+    },
+    {
+      "slug": "takatsuki",
+      "original_draft_sha256": "bb9ded1c0e2bc68179d6424ce8c21934bf4be176356d7d48cfc3fa3bf9e38856",
+      "corrections_count": 8,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "packet_hash_verification": "passed",
+      "consumption": {
+        "city": "osaka:takatsuki",
+        "checked": "2026-10-18",
+        "research_only": true,
+        "official_search_terms": [
+          "site:city.takatsuki.osaka.jp 高齢者等 ごみ出し支援 収集",
+          "site:city.takatsuki.osaka.jp 粗大ごみ 臨時ごみ 収集 高槻市",
+          "site:city.takatsuki.osaka.jp エネルギーセンター ごみ持ち込み 手数料 予約",
+          "site:city.takatsuki.osaka.jp ごみ 屋内 搬出 支援 高齢者"
+        ],
+        "official_sources_retrieved": 5,
+        "http_200_count": 5,
+        "http_non_200_count": 0,
+        "original_bytes_total": 196329,
+        "raw_sha256_recorded": true,
+        "text_sha256_recorded": true,
+        "search_api_tokens": null,
+        "model_tokens": null,
+        "credits": null,
+        "currency_cost": null,
+        "cost_note": "検索・取得ツールの課金量やモデルトークン数は個別計測できないため未取得。推測値は記載しない。",
+        "preview_created": false,
+        "human_reviewed": false,
+        "source_ids": [
+          "takatsuki-daily",
+          "takatsuki-temp",
+          "takatsuki-self",
+          "takatsuki-self-apply",
+          "takatsuki-self-form"
+        ],
+        "new_city_sha256": "50b8a8742cc5b7de6bd1d78241d5c9e4d450647ff427896963ded329a0179160",
+        "source_hash_verification": "passed"
+      }
+    }
+  ],
+  "official_source_hashes": [
+    {
+      "slug": "sakai",
+      "id": "sakai-daily",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sodaigomi/sodaifureai.html",
+      "raw_sha256": "edf6432f923b2a1cef7cf6e305923371987c133d8dafde2912ba88ed159aa5fd",
+      "text_sha256": "781917942626a14e10265ea32d81331e896bdbc1ebcd6597780e7a7f705560fe",
+      "retrieved_at": "2026-10-18T16:45:18+09:00",
+      "source_updated": "2024-11-11"
+    },
+    {
+      "slug": "sakai",
+      "id": "sakai-regular",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sodaigomi/index.html",
+      "raw_sha256": "bab7d1c12f1402aa9e42f714db1a4cd331a130c4cceb171c70f0f51afb1ff30e",
+      "text_sha256": "521b8301297a50785bfc69e06b1118ae8c5011b9ab74da5c71d72f982a303de8",
+      "retrieved_at": "2026-10-18T16:45:18+09:00",
+      "source_updated": null
+    },
+    {
+      "slug": "sakai",
+      "id": "sakai-fees",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sodaigomi/tesuryorei.html",
+      "raw_sha256": "6aca757ab94d38604ad6102bc5718e2f391907f79f16425eaf0cdd51bdea1a45",
+      "text_sha256": "e6a2103904c2f9a919a589b21c5bf462804678efabcfce16883097a49ce58390",
+      "retrieved_at": "2026-10-18T16:45:19+09:00",
+      "source_updated": "2026-07-14"
+    },
+    {
+      "slug": "sakai",
+      "id": "sakai-self",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sonotagomi/mochikomi.html",
+      "raw_sha256": "3c740ad0c5c4800c52f2a9ac20ce371f7fceaeb0b2bc2891bbb03974a58f37da",
+      "text_sha256": "44f04acd277d04cba20aab1848002dffdd8fbe6132b8b1c1f565cf10e663f9d0",
+      "retrieved_at": "2026-10-18T16:45:19+09:00",
+      "source_updated": "2026-06-24"
+    },
+    {
+      "slug": "sakai",
+      "id": "sakai-support-rule",
+      "url": "https://www.city.sakai.lg.jp/shisei/sonota/jyorei/youkou/kankyou/youryou.html",
+      "raw_sha256": "87a81584e4dbd99edff3bc0612265a7f7a6994097a706389fc39fd7b86965472",
+      "text_sha256": "21151e958030cc318fa37418b810ddf793fe95fd813ecaaaec513e1d67c061ed",
+      "retrieved_at": "2026-10-18T16:45:19+09:00",
+      "source_updated": "2026-04-01"
+    },
+    {
+      "slug": "toyonaka",
+      "id": "toyonaka-daily",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/bunbetsu_dashikata/shiservice/fureai.html",
+      "raw_sha256": "dc452787d0eea65b437161156ac67e426caf5c574f72ad9b0e2ee5d969c9e992",
+      "text_sha256": "91fc1f38b742bfbff9a009900a21fdc486cb32dbedfcdc8bf24a133280ff6589",
+      "retrieved_at": "2026-10-18T16:45:19+09:00",
+      "source_updated": "2024-09-16"
+    },
+    {
+      "slug": "toyonaka",
+      "id": "toyonaka-regular",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/bunbetsu_dashikata/sodaigomi_dashikata.html",
+      "raw_sha256": "a653dc51d2a400d3c9fcfb30d8d4ee1e5de80ac16d2c9d2914d9c8418e6309e8",
+      "text_sha256": "7a3029d4bf79cd14f9c19abf03417c8291956fc50def3b48d0ceb39b6e74c24a",
+      "retrieved_at": "2026-10-18T16:45:19+09:00",
+      "source_updated": "2026-08-05"
+    },
+    {
+      "slug": "toyonaka",
+      "id": "toyonaka-dropoff",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/tel/mochikomi.html",
+      "raw_sha256": "17e6769eba4bec4542cdd4dfa294951ebfa38a0a289b03f3e31028f50bea64ae",
+      "text_sha256": "d06bf59c556e199b4340e43db4cda757c466ed801bc3ba506892f1e115c09488",
+      "retrieved_at": "2026-10-18T16:45:19+09:00",
+      "source_updated": "2026-05-13"
+    },
+    {
+      "slug": "toyonaka",
+      "id": "toyonaka-dropoff-net",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/net/rinnjigomi.html",
+      "raw_sha256": "a35ed856ff651974ea4043cdd81ffe4fc61c520ef96b3e00e42849efd24209e0",
+      "text_sha256": "837211212fbbae1864b0601bb67ae277ab19562985446232339923abfb0ddeff",
+      "retrieved_at": "2026-10-18T16:45:20+09:00",
+      "source_updated": "2026-10-08"
+    },
+    {
+      "slug": "toyonaka",
+      "id": "toyonaka-support-index",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/gomi_recycl_bika_to/tesuryoukaitei.html",
+      "raw_sha256": "86d84e30bb2f77814b8704c2b280a72c8f89a0439abfa030a972ed839b4998bc",
+      "text_sha256": "496271d75a1a9843b984dcaf60d761b9830cfef66683389c1af404449dda961f",
+      "retrieved_at": "2026-10-18T16:45:20+09:00",
+      "source_updated": "2024-10-14"
+    },
+    {
+      "slug": "suita",
+      "id": "suita-daily",
+      "url": "https://www.city.suita.osaka.jp/kurashi/1018418/1018419/1015157.html",
+      "raw_sha256": "61901517e64f825b300440562d20dd9c8626eaa4609dfa6c7b8d2203d9255905",
+      "text_sha256": "4894372feed4d84f491de822be50b92cc478f0e042b3ef02a496413f56e25521",
+      "retrieved_at": "2026-10-18T16:45:20+09:00",
+      "source_updated": "2024-06-06"
+    },
+    {
+      "slug": "suita",
+      "id": "suita-bulky",
+      "url": "https://www.city.suita.osaka.jp/1000123/1017235/1017255/1017256/1015164.html",
+      "raw_sha256": "7a4edd3a722c668346b36fa9b9262621721604c7c5e21026143e31cad55ac327",
+      "text_sha256": "6ae957315a2ed30ecd024c36449b50283f1167c4fd4307c7eda34f4e260f736e",
+      "retrieved_at": "2026-10-18T16:45:20+09:00",
+      "source_updated": "2025-09-09"
+    },
+    {
+      "slug": "suita",
+      "id": "suita-carry-pdf",
+      "url": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/015/157/annsinnsupport.pdf",
+      "raw_sha256": "d5ac8947dd030916f2bd23d808adb81fd62f5f017b37b9bf9f71f7d0103089a8",
+      "text_sha256": "2643e24f37337c9e33d1ccd3f5b8590fd33904434e972be338a8434cd77aed08",
+      "retrieved_at": "2026-10-18T16:45:20+09:00",
+      "source_updated": null
+    },
+    {
+      "slug": "suita",
+      "id": "suita-self",
+      "url": "https://www.city.suita.osaka.jp/kurashi/1018418/1018421/1018430/1015127.html",
+      "raw_sha256": "ebaa13b5a06a3957fad20f7f00502c8cf7eea73081e6e00f3c5467ef584c938c",
+      "text_sha256": "e22dc858d76356d74438244910263ff2fa0142b9b704e2ec118b535b0abdb6f6",
+      "retrieved_at": "2026-10-18T16:45:21+09:00",
+      "source_updated": "2026-08-24"
+    },
+    {
+      "slug": "suita",
+      "id": "suita-collection-days",
+      "url": "https://www.city.suita.osaka.jp/kurashi/1018418/1020112/1015233.html",
+      "raw_sha256": "50989bde7bd2c3b580a4f3a3e739319cfd68529bd52024681096fa7d0e797ac7",
+      "text_sha256": "d4dc0c6778721b66e52dd1cc4164efaa7fa933807ba4c9e4df71fb6b83fe664e",
+      "retrieved_at": "2026-10-18T16:45:21+09:00",
+      "source_updated": "2025-11-21"
+    },
+    {
+      "slug": "takatsuki",
+      "id": "takatsuki-daily",
+      "url": "https://www.city.takatsuki.osaka.jp/site/waiwai/166846.html",
+      "raw_sha256": "6e1a9ae9df5f57789a4e5f1fc531c204130f8c51a1fa9addd52b7cb62eab2b21",
+      "text_sha256": "968657c14f2e54c33ef5d7ee29d210a2b8ed2ccec5de6cf51beea8d5b0d71694",
+      "retrieved_at": "2026-10-18T16:45:21+09:00",
+      "source_updated": "2026-08-14"
+    },
+    {
+      "slug": "takatsuki",
+      "id": "takatsuki-temp",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/27/2138.html",
+      "raw_sha256": "3e2ba222aaacbb5a8b0dc06f9a0d6cde9574e20b32b9c8a833ee659a3869aea1",
+      "text_sha256": "fd62c0c5a7c7b04556fa239e0fa3e9a21b189a43d3347be37ba86fe111b312fc",
+      "retrieved_at": "2026-10-18T16:45:21+09:00",
+      "source_updated": "2024-08-09"
+    },
+    {
+      "slug": "takatsuki",
+      "id": "takatsuki-self",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/28/29023.html",
+      "raw_sha256": "0b16af874a2210aa1e5f03a2368625a5539879bde3f642e1609fbad2f5e6aabd",
+      "text_sha256": "4737db99adcd8349028b2a04340e876a4958c1b0c550d6c6882ee7f169e41309",
+      "retrieved_at": "2026-10-18T16:45:21+09:00",
+      "source_updated": "2025-09-05"
+    },
+    {
+      "slug": "takatsuki",
+      "id": "takatsuki-self-apply",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/28/2164.html",
+      "raw_sha256": "68bf2603b6868bf75c69ee6556daf705988a0f1ec6810234aa585093136f5633",
+      "text_sha256": "306e5be6828a00587c4c9c94f8458187239b3dd399dfa34dbe41de3cd825a097",
+      "retrieved_at": "2026-10-18T16:45:22+09:00",
+      "source_updated": "2025-12-26"
+    },
+    {
+      "slug": "takatsuki",
+      "id": "takatsuki-self-form",
+      "url": "https://www.city.takatsuki.osaka.jp/soshiki/28/2162.html",
+      "raw_sha256": "334ce6d73992a9f6e4ec6548a67401d00fb4e1d6cb312ed7e0d47dd6fe30c85f",
+      "text_sha256": "abf0441d1387ce20b6770504613d8445b351e92f0e16ae5ccd19b00825a60a2a",
+      "retrieved_at": "2026-10-18T16:45:22+09:00",
+      "source_updated": "2025-07-17"
+    }
+  ],
+  "limits": [
+    "独立AI原典レビューであり人手審査・窓口照会・公開承認ではない。",
+    "未発見の屋内搬出制度は不存在の断定ではない。",
+    "本人搬入と本人運転は同義とせず、運転者の許容範囲が原典で不明な場合は質問として保持。"
+  ]
+}

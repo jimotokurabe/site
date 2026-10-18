@@ -1,0 +1,164 @@
+[
+  {
+    "city": "tokyo:itabashi",
+    "service": "itabashi-daily-support",
+    "service_sha256": "273f44a6a275b71b1d22ad1813f897ecf865f9cfc6a5d6bb18f0d2992171c76c",
+    "sources": [
+      {
+        "id": "itabashi-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/official/itabashi-daily.txt",
+        "lines": [
+          [
+            1,
+            113
+          ]
+        ],
+        "raw_path": "itabashi/official/itabashi-daily.html.source",
+        "raw_sha256": "a641f8c87d48992a18824bc903191776b34d9c467ead3fed254d1779bfabc253",
+        "text_sha256": "c9c85694bf26eaa17913548d2300469216b04986fedfa32f9940233bfe394da7",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:itabashi",
+    "service": "itabashi-bulky-carry",
+    "service_sha256": "8729c1c261257b779ee77b5fe8c882007b8da51db8fe4956590823a89396b757",
+    "sources": [
+      {
+        "id": "itabashi-carry-rule",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/official/itabashi-carry-rule.txt",
+        "lines": [
+          [
+            1,
+            110
+          ]
+        ],
+        "raw_path": "itabashi/official/itabashi-carry-rule.pdf",
+        "raw_sha256": "e74232760166fc42d7d861539f5fe856b22aa318ce5389c5a600d47a87182132",
+        "text_sha256": "54bce851e5055db303aac8d74442c9d15ccc3551562c217c82f0dde18aca1033",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance"
+        ]
+      },
+      {
+        "id": "itabashi-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/official/itabashi-carry.txt",
+        "lines": [
+          [
+            1,
+            159
+          ]
+        ],
+        "raw_path": "itabashi/official/itabashi-carry.html.source",
+        "raw_sha256": "5e22a6b7b6ca94b06f245eea68ef579ca9e40996c29a836abdd45760e93de84e",
+        "text_sha256": "c9190cb61aceced0a06bb0e0e16ffcb487af9e6a855ac0014b7b22a3d660fb98",
+        "field_names": [
+          "collection_location",
+          "indoor_carry",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:itabashi",
+    "service": "itabashi-regular-bulky",
+    "service_sha256": "92c6898d18ada95483be14029ba4158a37ea522c9aadd935ee535621f44a9e15",
+    "sources": [
+      {
+        "id": "itabashi-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/official/itabashi-bulky.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "itabashi/official/itabashi-bulky.html.source",
+        "raw_sha256": "333275770bf942f747cdaf3b1ee7b10ab47b5b673c62e6ed7c6844e4de9ff1c3",
+        "text_sha256": "c06f0c2faed62a08bfa7c895421a6458cbef68e3907b91ef0b513da41fd3b828",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "itabashi-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/official/itabashi-carry.txt",
+        "lines": [
+          [
+            1,
+            159
+          ]
+        ],
+        "raw_path": "itabashi/official/itabashi-carry.html.source",
+        "raw_sha256": "5e22a6b7b6ca94b06f245eea68ef579ca9e40996c29a836abdd45760e93de84e",
+        "text_sha256": "c9190cb61aceced0a06bb0e0e16ffcb487af9e6a855ac0014b7b22a3d660fb98",
+        "field_names": [
+          "indoor_carry",
+          "family_help"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokyo:itabashi",
+    "service": "itabashi-self-dropoff",
+    "service_sha256": "4c42f72f470311f3196caecbbf4dc450f39da2367f21e9c0799cfc159bc7ce83",
+    "sources": [
+      {
+        "id": "itabashi-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/official/itabashi-bulky.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "itabashi/official/itabashi-bulky.html.source",
+        "raw_sha256": "333275770bf942f747cdaf3b1ee7b10ab47b5b673c62e6ed7c6844e4de9ff1c3",
+        "text_sha256": "c06f0c2faed62a08bfa7c895421a6458cbef68e3907b91ef0b513da41fd3b828",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "suginami-bulky",
+    "url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+    "final_url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Tue, 04 Aug 2026 09:31:15 GMT",
+    "raw_file": "suginami/official/suginami-bulky.html.source",
+    "text_file": "suginami/official/suginami-bulky.txt",
+    "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+    "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b"
+  },
+  {
+    "id": "suginami-calendar",
+    "url": "https://www.city.suginami.tokyo.jp/documents/715/t2026zentiiki.pdf",
+    "final_url": "https://www.city.suginami.tokyo.jp/documents/715/t2026zentiiki.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Tue, 31 Mar 2026 15:08:11 GMT",
+    "raw_file": "suginami/official/suginami-calendar.pdf",
+    "text_file": "suginami/official/suginami-calendar.txt",
+    "raw_sha256": "ea5b6a8a4478f35f46130abb1863c260071fc0fbfb9e52d269e6dc62453cc821",
+    "text_sha256": "4c3c788095bf999b09b673644fcaa078ded2d16819a4cfc6f1a4ba26ec01e76e"
+  },
+  {
+    "id": "suginami-daily",
+    "url": "https://www.city.suginami.tokyo.jp/s105/8098.html",
+    "final_url": "https://www.city.suginami.tokyo.jp/s105/8098.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-18T16:44:22+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Tue, 04 Aug 2026 09:27:08 GMT",
+    "raw_file": "suginami/official/suginami-daily.html.source",
+    "text_file": "suginami/official/suginami-daily.txt",
+    "raw_sha256": "4a5876e8be3ecacaae78b067e79453962e53ae3ad0d21491676d25d20ba7f9ee",
+    "text_sha256": "a031201d351966eb375f7d26d220592df539948d1efd893b5caf0900e87a7155"
+  },
+  {
+    "id": "suginami-fureai-overview",
+    "url": "https://www.city.suginami.tokyo.jp/s105/724.html",
+    "final_url": "https://www.city.suginami.tokyo.jp/s105/724.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "retrieved_at": "2026-10-18T16:46:50+09:00",
+    "retrieved_date": "2026-10-18",
+    "last_modified_header": "Tue, 04 Aug 2026 09:27:58 GMT",
+    "raw_file": "suginami/official/suginami-fureai-overview.html.source",
+    "text_file": "suginami/official/suginami-fureai-overview.txt",
+    "raw_sha256": "746bc6350ffe5a702d9c294944fdb1d8c93befd5b7e53aabac4272a6472b372e",
+    "text_sha256": "9adb0276ab930889a4707931d9555ecaf72c312ffa4a709417f24ef14ebfc56f"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "city": "kanagawa:yokosuka",
+    "service": "yokosuka-daily",
+    "service_sha256": "87f1b7f7cccd4821b72e3049f5ae29943fc6cfcc5a04f210973caf53aeb6cb08",
+    "sources": [
+      {
+        "id": "yokosuka-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/daily.txt",
+        "lines": [
+          [
+            59,
+            86
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/daily.html.source",
+        "raw_sha256": "429033c3be9edcd2e3dc35bca37903c4d383505aef3df196645e48b46729c746",
+        "text_sha256": "917f79c7574ee95fa88acc04251c495f39e124d354cc302da7ef1b8ab3ff9f09",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:yokosuka",
+    "service": "yokosuka-bulky-carry",
+    "service_sha256": "94731e3626045dd079dd88864fe0605d583d17d817a1be5d0bf4fe8c3581651d",
+    "sources": [
+      {
+        "id": "yokosuka-bulky_faq",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/bulky_faq.txt",
+        "lines": [
+          [
+            55,
+            95
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/bulky_faq.html.source",
+        "raw_sha256": "edd51b14ff80d1c90203698450816d22919fc7127d4197c69c1cd4cee4b77b74",
+        "text_sha256": "04546fe7164d1ae5699992a18bb234b5255463899a8b1e0e1497b32431bd2e11",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "yokosuka-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/regular.txt",
+        "lines": [
+          [
+            61,
+            170
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/regular.html.source",
+        "raw_sha256": "8ad7f9bfd9ffee2e2335af3c9ca08780d0a34ca24f17cf0c676b0d4a38c1eaa4",
+        "text_sha256": "64ee03b0459b05e390cd3564dc3faad1fdd0464ff7798f64ad1e7d951c43e4e4",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:yokosuka",
+    "service": "yokosuka-regular-bulky",
+    "service_sha256": "7ee7836f719cfee2ee9997921c24492e3c8e53c744eec64ff04cb0418c02546e",
+    "sources": [
+      {
+        "id": "yokosuka-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/regular.txt",
+        "lines": [
+          [
+            61,
+            170
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/regular.html.source",
+        "raw_sha256": "8ad7f9bfd9ffee2e2335af3c9ca08780d0a34ca24f17cf0c676b0d4a38c1eaa4",
+        "text_sha256": "64ee03b0459b05e390cd3564dc3faad1fdd0464ff7798f64ad1e7d951c43e4e4",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:yokosuka",
+    "service": "yokosuka-self-dropoff",
+    "service_sha256": "833d43776df53cb99bb27b7c04a02e9e704eb2ec14fe26a98e302cb2c38530ea",
+    "sources": [
+      {
+        "id": "yokosuka-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/dropoff.txt",
+        "lines": [
+          [
+            59,
+            170
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/yokosuka/official/dropoff.html.source",
+        "raw_sha256": "55f0ffd5bb8c91f549366d396550f19166045fadd7f7c07440b322bbf4a239fc",
+        "text_sha256": "bb9d16d27fe66b5b9d0ab0bedebaba0d48650499a466549800a69cc4518af896",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

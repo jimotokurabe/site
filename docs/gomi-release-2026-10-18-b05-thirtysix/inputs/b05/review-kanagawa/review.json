@@ -1,0 +1,918 @@
+{
+  "review_id": "b05-kanagawa-independent-2026-10-18",
+  "reviewer": "independent AI source reviewer",
+  "review_date": "2026-10-18",
+  "scope": "神奈川4市の初稿16経路×10項目=160項目とサービス別・共通質問36件を、保存公式原典と双方向照合。必要な茅ヶ崎現行資料2件のみ追加取得し、初稿と修正後差分を再照合。",
+  "accepted": [
+    {
+      "slug": "sagamihara",
+      "sha256": "8937371dd468e2e9cb189d576d3896d82e8d178ee503e49c1fac0e45dba65082",
+      "review_file": "review-kanagawa/review.json",
+      "original_sha256": "aeb36adc93301f1e5849162ff4ee1f10d92a8d04a12c7bf7273cee30f50275ad"
+    },
+    {
+      "slug": "yokosuka",
+      "sha256": "8d51c8be35cda216ffa5e426a73f453485ac3e30e43396e41c6d9baaa3cb98ef",
+      "review_file": "review-kanagawa/review.json",
+      "original_sha256": "1788f44c7f68ff75baf1e469b5e3d418d8b2d8979753801db7a46441cb7b1a87"
+    },
+    {
+      "slug": "fujisawa",
+      "sha256": "8e063846afa05b086f3f03cd3247329e8b776ce9c8538bed290eabe9ab69ce0f",
+      "review_file": "review-kanagawa/review.json",
+      "original_sha256": "7bff8b4891132d0ff07fc01448bd83b84868bfcb564560cda9b91f4d67e91e8b"
+    },
+    {
+      "slug": "chigasaki",
+      "sha256": "b3a6839514e5cb804460f7a39fdeb014d5efb1a6c0e442dc78b612ad31ba07c6",
+      "review_file": "review-kanagawa/review.json",
+      "original_sha256": "6196c607ff1c7cbafbed0f6e3ff614609f3abbb56d9b7e6cc59e364c08d09775"
+    }
+  ],
+  "held": [],
+  "remaining_required_findings": [],
+  "required_findings": [
+    {
+      "id": "KG-01",
+      "slug": "sagamihara",
+      "service": "sagamihara-bulky-carry",
+      "fields": [
+        "eligibility",
+        "family_help",
+        "fees"
+      ],
+      "severity": "high",
+      "problem": "福祉粗大の世帯全員条件と搬出無料を原典なしで断定。",
+      "evidence": [
+        "sagamihara/official/regular.txt:238-246"
+      ],
+      "resolution": "対象は原典のひとり暮らし65歳以上/要介護認定/手帳保持かつ屋外へ出すことが難しい場合とし、家族全員・無料を削除。手数料は処理手数料の案内あり、追加料金は未確認とした。"
+    },
+    {
+      "id": "KG-02",
+      "slug": "yokosuka",
+      "service": "yokosuka-daily",
+      "fields": [
+        "eligibility"
+      ],
+      "severity": "high",
+      "problem": "市長が特に必要と認める世帯の例外枝がなかった。",
+      "evidence": [
+        "yokosuka/official/daily.txt:69-75"
+      ],
+      "resolution": "原則AND条件と市長例外をany構造で併記。"
+    },
+    {
+      "id": "KG-03",
+      "slug": "yokosuka",
+      "service": "yokosuka-regular-bulky",
+      "fields": [
+        "fees",
+        "application"
+      ],
+      "severity": "medium",
+      "problem": "2026年10月からの申込チャネル別決済と生活保護時の事前相談を欠落。",
+      "evidence": [
+        "yokosuka/official/regular.txt:110-153"
+      ],
+      "resolution": "LINE/ネット電子決済、電話申込券、生活保護受給者のケースワーカー相談を追記。"
+    },
+    {
+      "id": "KG-04",
+      "slug": "fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "fields": [
+        "eligibility",
+        "limits",
+        "fees",
+        "application",
+        "contact"
+      ],
+      "severity": "high",
+      "problem": "一般ごみ直接搬入の原則条件（災害・火災・引越）を欠き、大型ごみを重量制と誤記。",
+      "evidence": [
+        "fujisawa/official/dropoff.txt:49-64",
+        "fujisawa/official/dropoff.txt:95-112",
+        "fujisawa/official/dropoff.txt:153"
+      ],
+      "resolution": "原則条件、災害/火災の事前申込、品目別料金、祝日受付とキャッシュレスを明記。"
+    },
+    {
+      "id": "KG-05",
+      "slug": "fujisawa",
+      "service": "fujisawa-regular-bulky",
+      "fields": [
+        "application",
+        "contact"
+      ],
+      "severity": "high",
+      "problem": "大型ごみ予約先の興業公社0466-23-5301がなく、根拠のないLINE等予約を断定。",
+      "evidence": [
+        "fujisawa/official/fees.txt:1-22"
+      ],
+      "resolution": "公式資料の電話予約先を記載し、その他方法は未確認とした。"
+    },
+    {
+      "id": "KG-06",
+      "slug": "chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "fields": [
+        "waste_scope",
+        "eligibility",
+        "collection_location",
+        "family_help",
+        "fees",
+        "limits",
+        "contact"
+      ],
+      "severity": "high",
+      "problem": "100kgを受入下限と誤読し、現行と旧資料の区別が不十分。",
+      "evidence": [
+        "chigasaki/official/dropoff_fee.txt:7-34",
+        "chigasaki/official/r8_plan.txt:579-591"
+      ],
+      "resolution": "100kgは料金区分に修正。令和8年度計画の品目別搬入先を反映し、搬入者条件・現行料金・時間/予約は未確認として残した。"
+    },
+    {
+      "id": "KG-07",
+      "slug": "chigasaki",
+      "service": "chigasaki-regular-bulky",
+      "fields": [
+        "application",
+        "limits"
+      ],
+      "severity": "high",
+      "problem": "令和7年度資料の電話のみ/オンライン予定を現行の予約方法に使っていた。",
+      "evidence": [
+        "chigasaki/official/r8_plan.txt:346-355"
+      ],
+      "resolution": "令和8年度計画の電話/オンライン予約、オンライン決済、1回5点、二重予約不可を反映。"
+    },
+    {
+      "id": "KG-08",
+      "slug": "chigasaki",
+      "service": "chigasaki-daily",
+      "fields": [
+        "waste_scope"
+      ],
+      "severity": "medium",
+      "problem": "令和8年度計画の対象品目にスプレーかんが加わっている点を欠落。",
+      "evidence": [
+        "chigasaki/official/r8_plan.txt:557-572"
+      ],
+      "resolution": "現行計画の品目を優先して追記。"
+    }
+  ],
+  "field_count": 160,
+  "service_count": 16,
+  "question_count": 36,
+  "service_field_coverage": [
+    {
+      "slug": "sagamihara",
+      "service": "sagamihara-daily",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 2,
+      "official_locator": [
+        {
+          "source_id": "sagamihara-daily",
+          "lines": [
+            [
+              166,
+              250
+            ]
+          ],
+          "raw_sha256": "05107c770d3fbc6db2b61e96ac84d569efd624c5dd3a9c000087991f4c518c05",
+          "text_sha256": "95bb7cd0dd287fdec1f7c651ef7ac860d8a72c4c34130545e8a7d428d5020140"
+        }
+      ]
+    },
+    {
+      "slug": "sagamihara",
+      "service": "sagamihara-bulky-carry",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 2,
+      "official_locator": [
+        {
+          "source_id": "sagamihara-regular",
+          "lines": [
+            [
+              164,
+              276
+            ]
+          ],
+          "raw_sha256": "d1b69c17fb99dd8cdc886c94911ad7c9630abbd9f67c908d993c1c3c0b5c11b5",
+          "text_sha256": "0396271b286dd458520206d6085c01a37b92ac777e26d69d74aabfe7a18aa98e"
+        }
+      ]
+    },
+    {
+      "slug": "sagamihara",
+      "service": "sagamihara-regular-bulky",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "sagamihara-regular",
+          "lines": [
+            [
+              164,
+              276
+            ]
+          ],
+          "raw_sha256": "d1b69c17fb99dd8cdc886c94911ad7c9630abbd9f67c908d993c1c3c0b5c11b5",
+          "text_sha256": "0396271b286dd458520206d6085c01a37b92ac777e26d69d74aabfe7a18aa98e"
+        }
+      ]
+    },
+    {
+      "slug": "sagamihara",
+      "service": "sagamihara-self-dropoff",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "sagamihara-dropoff",
+          "lines": [
+            [
+              164,
+              227
+            ]
+          ],
+          "raw_sha256": "72509d28cb641eccfc02ae5b5795707536ca3509e00e82b26bd9cf9d59d084f9",
+          "text_sha256": "c52ed0013dba00c00a3a1565e2b9a563a14cbd54f54f47d16120f4dfb427a457"
+        }
+      ]
+    },
+    {
+      "slug": "yokosuka",
+      "service": "yokosuka-daily",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 2,
+      "official_locator": [
+        {
+          "source_id": "yokosuka-daily",
+          "lines": [
+            [
+              59,
+              86
+            ]
+          ],
+          "raw_sha256": "429033c3be9edcd2e3dc35bca37903c4d383505aef3df196645e48b46729c746",
+          "text_sha256": "917f79c7574ee95fa88acc04251c495f39e124d354cc302da7ef1b8ab3ff9f09"
+        }
+      ]
+    },
+    {
+      "slug": "yokosuka",
+      "service": "yokosuka-bulky-carry",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "yokosuka-bulky_faq",
+          "lines": [
+            [
+              55,
+              95
+            ]
+          ],
+          "raw_sha256": "edd51b14ff80d1c90203698450816d22919fc7127d4197c69c1cd4cee4b77b74",
+          "text_sha256": "04546fe7164d1ae5699992a18bb234b5255463899a8b1e0e1497b32431bd2e11"
+        },
+        {
+          "source_id": "yokosuka-regular",
+          "lines": [
+            [
+              61,
+              170
+            ]
+          ],
+          "raw_sha256": "8ad7f9bfd9ffee2e2335af3c9ca08780d0a34ca24f17cf0c676b0d4a38c1eaa4",
+          "text_sha256": "64ee03b0459b05e390cd3564dc3faad1fdd0464ff7798f64ad1e7d951c43e4e4"
+        }
+      ]
+    },
+    {
+      "slug": "yokosuka",
+      "service": "yokosuka-regular-bulky",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "yokosuka-regular",
+          "lines": [
+            [
+              61,
+              170
+            ]
+          ],
+          "raw_sha256": "8ad7f9bfd9ffee2e2335af3c9ca08780d0a34ca24f17cf0c676b0d4a38c1eaa4",
+          "text_sha256": "64ee03b0459b05e390cd3564dc3faad1fdd0464ff7798f64ad1e7d951c43e4e4"
+        }
+      ]
+    },
+    {
+      "slug": "yokosuka",
+      "service": "yokosuka-self-dropoff",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "yokosuka-dropoff",
+          "lines": [
+            [
+              59,
+              170
+            ]
+          ],
+          "raw_sha256": "55f0ffd5bb8c91f549366d396550f19166045fadd7f7c07440b322bbf4a239fc",
+          "text_sha256": "bb9d16d27fe66b5b9d0ab0bedebaba0d48650499a466549800a69cc4518af896"
+        }
+      ]
+    },
+    {
+      "slug": "fujisawa",
+      "service": "fujisawa-daily",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "fujisawa-daily",
+          "lines": [
+            [
+              47,
+              69
+            ]
+          ],
+          "raw_sha256": "81149e8faafb850493b45ac496d9610f3953cb21bd7dbb12fc1ac9ded441e33f",
+          "text_sha256": "3984d822749f7d0ac19750bdf75a356b0f67acaac06b24efa4cd9b446af9481f"
+        }
+      ]
+    },
+    {
+      "slug": "fujisawa",
+      "service": "fujisawa-bulky-carry",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "fujisawa-regular",
+          "lines": [
+            [
+              47,
+              123
+            ]
+          ],
+          "raw_sha256": "1bfbd3dfc12bade8bdf3b986300ad10e6b95dda08a1fd1d5aacca66f2084057b",
+          "text_sha256": "dd5b5fa9e5f48bcb84cfbd3327b946b42c23c111289f2f46af5e5ecbb6407b34"
+        }
+      ]
+    },
+    {
+      "slug": "fujisawa",
+      "service": "fujisawa-regular-bulky",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "fujisawa-fees",
+          "lines": [
+            [
+              1,
+              20
+            ]
+          ],
+          "raw_sha256": "ffa1fb47b1bc559e5194c9cfa4de3dfb06f259edd8b4a5cbf6bdd0f74f1224cd",
+          "text_sha256": "21fd5e41ec5f36d8356fd529793114ce17bc8a8db30ce442982dd1a9827a34a4"
+        },
+        {
+          "source_id": "fujisawa-regular",
+          "lines": [
+            [
+              47,
+              123
+            ]
+          ],
+          "raw_sha256": "1bfbd3dfc12bade8bdf3b986300ad10e6b95dda08a1fd1d5aacca66f2084057b",
+          "text_sha256": "dd5b5fa9e5f48bcb84cfbd3327b946b42c23c111289f2f46af5e5ecbb6407b34"
+        }
+      ]
+    },
+    {
+      "slug": "fujisawa",
+      "service": "fujisawa-self-dropoff",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "fujisawa-dropoff",
+          "lines": [
+            [
+              49,
+              163
+            ]
+          ],
+          "raw_sha256": "5327f7e7552cdbeb444eacd6a0625acefa9b94058ed3269873576820a9c848ae",
+          "text_sha256": "ab9b4a1d87b81911d7bf4ba29aa3d38295cd1d4cc6951425b0c21d000522c988"
+        }
+      ]
+    },
+    {
+      "slug": "chigasaki",
+      "service": "chigasaki-daily",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 2,
+      "official_locator": [
+        {
+          "source_id": "chigasaki-daily",
+          "lines": [
+            [
+              1,
+              72
+            ]
+          ],
+          "raw_sha256": "5ae817a006ba404cb67225346ae096f5fb1129638f4158eb85156d1ea8d33397",
+          "text_sha256": "57956f6e15dc6c206c49553b4afa051e8e4d45dd555254edf2fc7c31d7385151"
+        },
+        {
+          "source_id": "chigasaki-daily_rule",
+          "lines": [
+            [
+              1,
+              105
+            ]
+          ],
+          "raw_sha256": "a45427bad62cdba44bcd0bef5063e8a09923c2de80e27caf30942887317c04e9",
+          "text_sha256": "f88af49f151937209f88e19bab1ccb1a987521a2d179dcfdb5f8a113dc708911"
+        },
+        {
+          "source_id": "chigasaki-r8-plan",
+          "lines": [
+            [
+              346,
+              355
+            ],
+            [
+              557,
+              591
+            ]
+          ],
+          "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+          "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0"
+        }
+      ]
+    },
+    {
+      "slug": "chigasaki",
+      "service": "chigasaki-bulky-carry",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "chigasaki-daily_application",
+          "lines": [
+            [
+              90,
+              120
+            ]
+          ],
+          "raw_sha256": "2f5ffcfb87fd9bf5b29a539a98132f23d8f0a0e277a252492ee15eaf28780b59",
+          "text_sha256": "26e41107a0bcd1e20017aef3ccd2663639667120c4e1150ee39bd5aef40b7d2f"
+        },
+        {
+          "source_id": "chigasaki-guide",
+          "lines": [
+            [
+              620,
+              650
+            ]
+          ],
+          "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+          "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d"
+        }
+      ]
+    },
+    {
+      "slug": "chigasaki",
+      "service": "chigasaki-regular-bulky",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "chigasaki-guide",
+          "lines": [
+            [
+              620,
+              650
+            ]
+          ],
+          "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+          "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d"
+        },
+        {
+          "source_id": "chigasaki-regular_current",
+          "lines": [
+            [
+              340,
+              360
+            ]
+          ],
+          "raw_sha256": "a93f1bffb3d2c9b3ad23f58c225b78946ff9eb5573484e339da675f3aa1c0cec",
+          "text_sha256": "3ddb2d7c9adf62ef9dcd2c0761560afbde4a3ee8d0b407d6760ca4f66ae529a2"
+        },
+        {
+          "source_id": "chigasaki-r8-plan",
+          "lines": [
+            [
+              346,
+              355
+            ],
+            [
+              557,
+              591
+            ]
+          ],
+          "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+          "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0"
+        }
+      ]
+    },
+    {
+      "slug": "chigasaki",
+      "service": "chigasaki-self-dropoff",
+      "reviewed_fields": [
+        "waste_scope",
+        "collection_location",
+        "indoor_carry",
+        "eligibility",
+        "family_help",
+        "fees",
+        "limits",
+        "application",
+        "attendance",
+        "contact"
+      ],
+      "questions_reviewed": 1,
+      "official_locator": [
+        {
+          "source_id": "chigasaki-guide",
+          "lines": [
+            [
+              620,
+              650
+            ]
+          ],
+          "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+          "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d"
+        },
+        {
+          "source_id": "chigasaki-r8-plan",
+          "lines": [
+            [
+              346,
+              355
+            ],
+            [
+              557,
+              591
+            ]
+          ],
+          "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+          "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0"
+        },
+        {
+          "source_id": "chigasaki-dropoff-fee",
+          "lines": [
+            [
+              1,
+              49
+            ]
+          ],
+          "raw_sha256": "6a678cf1fa39a64548a26dfc1cb129f4454c79927dcc8f708b53252f8ed755e0",
+          "text_sha256": "d9f12fe1ab3e786485ebd4392f872dbb97c75546c8cf567efc57f9ea0c4fbaf5"
+        }
+      ]
+    }
+  ],
+  "source_hashes_verified": [
+    {
+      "slug": "sagamihara",
+      "source_id": "sagamihara-daily",
+      "raw_sha256": "05107c770d3fbc6db2b61e96ac84d569efd624c5dd3a9c000087991f4c518c05",
+      "text_sha256": "95bb7cd0dd287fdec1f7c651ef7ac860d8a72c4c34130545e8a7d428d5020140",
+      "verified": true
+    },
+    {
+      "slug": "sagamihara",
+      "source_id": "sagamihara-regular",
+      "raw_sha256": "d1b69c17fb99dd8cdc886c94911ad7c9630abbd9f67c908d993c1c3c0b5c11b5",
+      "text_sha256": "0396271b286dd458520206d6085c01a37b92ac777e26d69d74aabfe7a18aa98e",
+      "verified": true
+    },
+    {
+      "slug": "sagamihara",
+      "source_id": "sagamihara-dropoff",
+      "raw_sha256": "72509d28cb641eccfc02ae5b5795707536ca3509e00e82b26bd9cf9d59d084f9",
+      "text_sha256": "c52ed0013dba00c00a3a1565e2b9a563a14cbd54f54f47d16120f4dfb427a457",
+      "verified": true
+    },
+    {
+      "slug": "sagamihara",
+      "source_id": "sagamihara-faq",
+      "raw_sha256": "8c32ac62b07aa71f593753e2cfb3df47d12c9adadf77fd1e7ec1091f2562a3d4",
+      "text_sha256": "6d9302f3e1f09b85b923908bfea02ebcfb322b88f1305f7bb83fa93bbc85139c",
+      "verified": true
+    },
+    {
+      "slug": "yokosuka",
+      "source_id": "yokosuka-daily",
+      "raw_sha256": "429033c3be9edcd2e3dc35bca37903c4d383505aef3df196645e48b46729c746",
+      "text_sha256": "917f79c7574ee95fa88acc04251c495f39e124d354cc302da7ef1b8ab3ff9f09",
+      "verified": true
+    },
+    {
+      "slug": "yokosuka",
+      "source_id": "yokosuka-regular",
+      "raw_sha256": "8ad7f9bfd9ffee2e2335af3c9ca08780d0a34ca24f17cf0c676b0d4a38c1eaa4",
+      "text_sha256": "64ee03b0459b05e390cd3564dc3faad1fdd0464ff7798f64ad1e7d951c43e4e4",
+      "verified": true
+    },
+    {
+      "slug": "yokosuka",
+      "source_id": "yokosuka-dropoff",
+      "raw_sha256": "55f0ffd5bb8c91f549366d396550f19166045fadd7f7c07440b322bbf4a239fc",
+      "text_sha256": "bb9d16d27fe66b5b9d0ab0bedebaba0d48650499a466549800a69cc4518af896",
+      "verified": true
+    },
+    {
+      "slug": "yokosuka",
+      "source_id": "yokosuka-bulky_faq",
+      "raw_sha256": "edd51b14ff80d1c90203698450816d22919fc7127d4197c69c1cd4cee4b77b74",
+      "text_sha256": "04546fe7164d1ae5699992a18bb234b5255463899a8b1e0e1497b32431bd2e11",
+      "verified": true
+    },
+    {
+      "slug": "fujisawa",
+      "source_id": "fujisawa-daily",
+      "raw_sha256": "81149e8faafb850493b45ac496d9610f3953cb21bd7dbb12fc1ac9ded441e33f",
+      "text_sha256": "3984d822749f7d0ac19750bdf75a356b0f67acaac06b24efa4cd9b446af9481f",
+      "verified": true
+    },
+    {
+      "slug": "fujisawa",
+      "source_id": "fujisawa-regular",
+      "raw_sha256": "1bfbd3dfc12bade8bdf3b986300ad10e6b95dda08a1fd1d5aacca66f2084057b",
+      "text_sha256": "dd5b5fa9e5f48bcb84cfbd3327b946b42c23c111289f2f46af5e5ecbb6407b34",
+      "verified": true
+    },
+    {
+      "slug": "fujisawa",
+      "source_id": "fujisawa-dropoff",
+      "raw_sha256": "5327f7e7552cdbeb444eacd6a0625acefa9b94058ed3269873576820a9c848ae",
+      "text_sha256": "ab9b4a1d87b81911d7bf4ba29aa3d38295cd1d4cc6951425b0c21d000522c988",
+      "verified": true
+    },
+    {
+      "slug": "fujisawa",
+      "source_id": "fujisawa-fees",
+      "raw_sha256": "ffa1fb47b1bc559e5194c9cfa4de3dfb06f259edd8b4a5cbf6bdd0f74f1224cd",
+      "text_sha256": "21fd5e41ec5f36d8356fd529793114ce17bc8a8db30ce442982dd1a9827a34a4",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-daily",
+      "raw_sha256": "5ae817a006ba404cb67225346ae096f5fb1129638f4158eb85156d1ea8d33397",
+      "text_sha256": "57956f6e15dc6c206c49553b4afa051e8e4d45dd555254edf2fc7c31d7385151",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-daily_rule",
+      "raw_sha256": "a45427bad62cdba44bcd0bef5063e8a09923c2de80e27caf30942887317c04e9",
+      "text_sha256": "f88af49f151937209f88e19bab1ccb1a987521a2d179dcfdb5f8a113dc708911",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-guide",
+      "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+      "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-daily_application",
+      "raw_sha256": "2f5ffcfb87fd9bf5b29a539a98132f23d8f0a0e277a252492ee15eaf28780b59",
+      "text_sha256": "26e41107a0bcd1e20017aef3ccd2663639667120c4e1150ee39bd5aef40b7d2f",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-regular_current",
+      "raw_sha256": "a93f1bffb3d2c9b3ad23f58c225b78946ff9eb5573484e339da675f3aa1c0cec",
+      "text_sha256": "3ddb2d7c9adf62ef9dcd2c0761560afbde4a3ee8d0b407d6760ca4f66ae529a2",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-guide_current",
+      "raw_sha256": "2aea5d7482fd0f2e0ecf4fe57df3d45e59e81c044ec25e6f8f7ab7eaa699b765",
+      "text_sha256": "024c1d6ece96e634230efd9ddc3a5d8aa3fcf15778d195ed8c0f132270e9d1eb",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-r8-plan",
+      "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+      "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0",
+      "verified": true
+    },
+    {
+      "slug": "chigasaki",
+      "source_id": "chigasaki-dropoff-fee",
+      "raw_sha256": "6a678cf1fa39a64548a26dfc1cb129f4454c79927dcc8f708b53252f8ed755e0",
+      "text_sha256": "d9f12fe1ab3e786485ebd4392f872dbb97c75546c8cf567efc57f9ea0c4fbaf5",
+      "verified": true
+    }
+  ],
+  "corrections_file": "review-kanagawa/corrections.json",
+  "additional_official_retrievals": 2,
+  "source_reuse": "既存4市公式資料を再利用。茅ヶ崎の現行性不足のみ令和8年度実施計画と直接搬入手数料説明を追加。",
+  "limitations": [
+    "AI原典照合であり人手原文全件確認や窓口確認ではない。",
+    "茅ヶ崎の2026年10月時点の処理手数料、自己搬入の受付日時・予約要否・代理搬入、大型ごみの具体的オンライン入口は窓口/公式現行ページ確認質問として保持。",
+    "未発見の屋内大型搬出支援は、横須賀・茅ヶ崎の確認済み市公式支援・粗大ごみ案内の検索範囲に限定し不存在とは断定しない。",
+    "調査候補のレビュー受入れであり公開承認やai_reviewedの自己付与ではない。"
+  ],
+  "draft_schema_validation": {
+    "errors": 0,
+    "tool": "gomi-expansion-b05/tools/validate_gomi.py",
+    "scope": "combined four city packets, publication=False"
+  }
+}

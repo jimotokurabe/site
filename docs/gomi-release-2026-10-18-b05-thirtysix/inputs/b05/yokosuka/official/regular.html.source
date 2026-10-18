@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<title>粗大ごみ（有料）｜横須賀市</title>
+<meta name="keywords" content="粗大ごみ受付" />
+
+<meta name="author" content="横須賀市" />
+<meta name="viewport" content="width=device-width, maximum-scale=3.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="datetime" content="2026-08-25 00:00:00" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="粗大ごみ（有料）" />
+<meta property="og:url" content="https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html" />
+<meta property="og:description" content="&nbsp;" />
+<meta property="og:image" content="https://www.city.yokosuka.kanagawa.jp/shared/images/sns/logo.jpg" />
+<meta property="og:site_name" content="横須賀市" />
+<meta property="og:locale" content="ja_jp" />
+<link href="/shared/site_rn2022/style/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/site_rn2022/style/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/templates/free_rn2022/style/edit.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/site_rn2022/style/smartphone.css" rel="stylesheet" type="text/css" class="mc_css" />
+<link href="/shared/templates/free_rn2022/style/edit_sp.css" rel="stylesheet" type="text/css" class="mc_css" />
+<link href="/shared/images/favicon/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="/shared/images/favicon/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
+<script type="text/javascript" src="/shared/site_rn2022/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/site_rn2022/js/setting.js"></script>
+<script type="text/javascript" src="/shared/js/readspeaker.js"></script>
+<script type="text/javascript" src="/shared/js/ga.js"></script>
+
+
+
+
+
+</head>
+<body class="format_free no_javascript">
+<script type="text/javascript" src="/shared/site_rn2022/js/init.js"></script>
+<div id="tmp_wrapper">
+<noscript>
+<p>このサイトではJavaScriptを使用したコンテンツ・機能を提供しています。JavaScriptを有効にするとご利用いただけます。</p>
+</noscript>
+<p><a href="#tmp_honbun" class="skip">本文へスキップします。</a></p>
+
+<div id="tmp_header">
+<div class="container">
+<div id="tmp_hlogo">
+<p><a href="/top.html"><span>横須賀市</span></a></p>
+</div>
+<div class="head_social">
+<ul>
+	<li><a href="https://twitter.com/yokosuka_city" target="_blank"><img alt="X" height="32" src="/shared/site_rn2022/images/icon/sns_x_wh.png" width="32" /></a></li>
+	<li><a href="https://www.facebook.com/cocoyoko.net" target="_blank"><img alt="Facebook" height="32" src="/shared/site_rn2022/images/icon/sns_fb.png" width="32" /></a></li>
+	<li><a href="https://line.me/R/ti/p/&#64;196hbuhz" target="_blank"><img alt="LINE" height="32" src="/shared/site_rn2022/images/icon/sns_line.png" width="32" /></a></li>
+	<li><a href="https://www.youtube.com/channel/UCQDVaWThh91v2lgtCCqio5w" target="_blank"><img alt="YouTube" height="32" src="/shared/site_rn2022/images/icon/sns_yt.png" width="32" /></a></li>
+	<li><a href="https://www.instagram.com/yokosuka.gurashi/" target="_blank"><img alt="Instagram" height="32" src="/shared/site_rn2022/images/icon/sns_ins.png" width="32" /></a></li>
+</ul>
+</div>
+<div id="tmp_hnavi_s">
+<ul>
+	<li id="tmp_hnavi_top_menu"><a href="/top.html">総合<span class="sp_br">トップ</span></a></li>
+	<li id="tmp_hnavi_lmenu"><a href="javascript:void(0)"><span>検索</span></a></li>
+	<li id="tmp_hnavi_mmenu"><a href="javascript:void(0)"><span>メニュー</span></a></li>
+	<li id="tmp_hnavi_rmenu"><a href="javascript:void(0)"><span>緊急情報</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tmp_sma_menu">
+<div id="tmp_sma_lmenu" class="wrap_sma_sch">
+<div class="container">
+<div id="tmp_sma_search">
+<fieldset><legend>検索条件を選択</legend>
+<ul class="search_change">
+	<li class="search_keyword"><input checked="checked" id="search_keyword" name="search_change" type="radio" value="0" /><label for="search_keyword">キーワードで検索</label></li>
+	<li class="search_id"><input id="search_id" name="search_change" type="radio" value="1" /><label for="search_id">ページIDで検索</label></li>
+</ul>
+</fieldset>
+<div id="tmp_sma_search_input">
+<div class="wrap_search_input">
+<div class="search_input search_input_keyword">
+<form action="/search/result.html" id="tmp_sma_gsearch" name="tmp_sma_gsearch">
+<div class="wrap_sch_row">
+<div class="wrap_sch_box">
+<p class="sch_box"><label for="tmp_sma_query">絞り込みメニュー</label><input id="tmp_sma_query" name="q" size="31" type="text" /></p>
+</div>
+<div class="wrap_sch_box"><select id="tmp_select_city" name="cx" title="検索範囲選択" class="select"><option selected="selected" value="002730863616812439332:yygixzw-tzi">横須賀市サイト全体検索</option><option value="002730863616812439332:4nvhst2k3p8">施設情報内検索</option><option value="002730863616812439332:tc-ekgwl7fc">イベント情報内検索</option><option value="002730863616812439332:t_fuujf2fn0">報道発表内検索</option><option value="002730863616812439332:dqctjamgufi">FAQ内検索</option></select></div>
+<div class="wrap_sch_box">
+<p class="sch_btn"><input id="tmp_sma_func_sch_btn" name="sa" type="submit" value="検索" /></p>
+<p id="tmp_sma_search_hidden"><input id="cx" name="cx" type="hidden" value="002730863616812439332:yygixzw-tzi" /> <input name="ie" type="hidden" value="UTF-8" /> <input name="cof" type="hidden" value="FORID:9" /></p>
+</div>
+</div>
+</form>
+</div>
+<div class="search_input search_input_pageid">
+<div id="tmp_wrap_query_pageid">
+<p class="input_query_pageid"><label for="id_search_txt">ページID検索</label><input id="id_search_txt" name="q" placeholder="ページID" size="31" title="ページID検索" type="text" value="" /></p>
+<p class="submit_search_pageid"><input id="id_search_btn" type="submit" value="検索" class="id_search_btn" /></p>
+</div>
+</div>
+</div>
+<div class="how_to_use">
+<p><a href="/about_site/kensaku.html">検索の使い方</a></p>
+</div>
+</div>
+</div>
+</div>
+<p class="close_btn"><a href="javascript:void(0);"><span>閉じる</span></a></p>
+</div>
+<div id="tmp_sma_mmenu" class="wrap_sma_sch">
+<div class="container">
+<div id="tmp_sma_cnavi">
+<div id="tmp_mnavi">
+<ul>
+	<li class="mlist1"><a href="/index.html"><span>総合案内</span></a></li>
+	<li class="mlist2"><a href="/fukushi-kosodate/index.html"><span>福祉・子育て</span></a></li>
+	<li class="mlist3"><a href="/kanko-event/index.html"><span>観光・イベント</span></a></li>
+	<li class="mlist4"><a href="/business/index.html"><span>ビジネス</span></a></li>
+	<li class="mlist8"><a href="/yokosuka_plus/index.html"><span>YOKOSUKA PLUS</span></a></li>
+	<li class="mlist9"><a href="/yokosuka_kokokara/index.html"><span>ヨコスカココカラ</span></a></li>
+	<li class="mlist10"><a href="/0535/foreign_languages/index.html"><span>Living in Yokosuka</span></a></li>
+</ul>
+</div>
+<!-- <div id="tmp_gnavi">
+<div class="gnavi">
+<ul>
+	<li class="glist1"><a href="/kurashi/index.html">くらし・手続き</a></li>
+	<li class="glist2"><a href="/kenkou/index.html">健康福祉・子育て教育</a></li>
+	<li class="glist3"><a href="/kankou/index.html">観光・文化・スポーツ</a></li>
+	<li class="glist4"><a href="/sangyou/index.html">産業・まちづくり</a></li>
+	<li class="glist5"><a href="/shisei/index.html">市政情報</a></li>
+</ul>
+</div>
+</div> -->
+<div id="tmp_mean">
+<div class="mean_row">
+<div class="mean_col">
+<div id="tmp_fsize" class="font_size_change changestyle_area">
+<ul class="change_list">
+	<li class="change_ttl">
+	<p>文字サイズ</p>
+	</li>
+	<li><a href="javascript:void(0);" name="small" class="changestyle">縮小</a></li>
+	<li><a href="javascript:void(0);" name="default" class="changestyle">標準</a></li>
+	<li><a href="javascript:void(0);" name="big2" class="changestyle">拡大</a></li>
+</ul>
+</div>
+<div id="tmp_color" class="tint_change changestyle_area">
+<ul class="change_list">
+	<li class="change_ttl">
+	<p>色合い変更</p>
+	</li>
+	<li><a href="javascript:void(0);" name="default" title="default" class="changestyle">標準</a></li>
+	<li><a href="javascript:void(0);" name="blue" title="blue" class="changestyle link_blue">青</a></li>
+	<li><a href="javascript:void(0);" name="yellow" title="yellow" class="changestyle link_yellow">黄</a></li>
+	<li><a href="javascript:void(0);" name="black" title="black" class="changestyle link_black">黒</a></li>
+</ul>
+</div>
+<div class="setting_wrap">
+<ul class="setting_list">
+	<li id="tmp_setting_read" class="setting_read">
+	<div id="readspeaker_button1" class="rs_skip"><a accesskey="L" href="https://app-eas.readspeaker.com/cgi-bin/rsent?customerid=13606&amp;lang=ja_jp&amp;readid=tmp_update,tmp_cate_ttl,tmp_read_contents&amp;url=" onclick="readpage(this.href, 'tmp_readspeaker'); return false;" rel="nofollow" class="rs_href">音声読み上げ</a></div>
+	</li>
+	<li class="setting_language"><a href="https://www-city-yokosuka-kanagawa-jp.translate.goog/?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp" lang="en" xml:lang="en">Machine Translation</a></li>
+</ul>
+</div>
+</div>
+<div class="mean_col">
+<div class="panel_info">
+<div class="nav_internal">
+<ul>
+	<li><a href="/shisei/koho/goiken/feedback.html">お問い合わせ・ご意見</a></li>
+	<li><a href="/shisei/gaiyo/soshiki/index.html">組織案内</a></li>
+</ul>
+</div>
+<div class="social_cate">
+<ul>
+	<li><a href="https://twitter.com/yokosuka_city" target="_blank"><img alt="X" height="40" src="/shared/site_rn2022/images/icon/sns_x_black.png" width="40" /></a></li>
+	<li><a href="https://www.facebook.com/cocoyoko.net" target="_blank"><img alt="Facebook" height="40" src="/shared/site_rn2022/images/icon/sns_fb.png" width="40" /></a></li>
+	<li><a href="https://line.me/R/ti/p/&#64;196hbuhz" target="_blank"><img alt="LINE" height="40" src="/shared/site_rn2022/images/icon/sns_line.png" width="40" /></a></li>
+	<li><a href="https://www.youtube.com/channel/UCQDVaWThh91v2lgtCCqio5w" target="_blank"><img alt="YouTube" height="40" src="/shared/site_rn2022/images/icon/sns_yt.png" width="40" /></a></li>
+	<li><a href="https://www.instagram.com/yokosuka.gurashi/" target="_blank"><img alt="Instagram" height="40" src="/shared/site_rn2022/images/icon/sns_ins.png" width="40" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="close_btn"><a href="javascript:void(0);"><span>閉じる</span></a></p>
+</div>
+<div id="tmp_sma_rmenu" class="wrap_sma_sch">
+<div class="container">
+<div class="wrap_box_emergency">
+<div class="box_emergency">
+<div class="box_emergency_ttl">
+<p>緊急情報</p>
+</div>
+<div class="box_emergency_cnt"></div>
+</div>
+<div class="emergency_read_all">
+<ul>
+	<li><a href="/kurashi/bosai/saigai/index.html">災害・防災情報</a></li>
+	<li><a href="/camera/index.html">災害監視カメラ</a></li>
+	<li><a href="http://yokosuka-city.site.ktaiwork.jp/" target="_blank">過去の一覧（外部サイト）</a></li>
+	<li><a href="/kinkyu/mail/emergency_information.html" lang="en" xml:lang="en">English</a></li>
+</ul>
+</div>
+</div>
+<p style="display: none;" class="close_btn"><a href="javascript:void(0);"><span>閉じる</span></a></p>
+</div>
+</div>
+</div>
+
+<div id="tmp_wrap_main" class="column_rnavi">
+<div class="container">
+<div id="tmp_pankuzu">
+<p><a href="/index.html">総合案内</a> &gt; <a href="/kurashi/index.html">くらし・手続き</a> &gt; <a href="/kurashi/gomi/index.html">ごみ・リサイクル</a> &gt; <a href="/kurashi/gomi/kensaku/index.html">ごみ分別検索</a> &gt; <a href="/kurashi/gomi/kensaku/list.html">ごみの分別区分一覧</a> &gt; 粗大ごみ（有料）</p>
+</div>
+<div id="tmp_wrap_custom_update">
+<div id="tmp_custom_update">
+
+<div id="tmp_social_plugins"><div class="social_media_btn line_btn">
+<div data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;" class="line-it-button"></div>
+<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+</div><div class="social_media_btn facebook_btn">
+<div data-href="https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html" data-layout="button" data-size="small" class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェアする</a></div>
+</div><div class="social_media_btn twitter_btn">
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false" data-url="https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html" data-text="粗大ごみ（有料）" data-lang="ja" class="twitter-share-button">ツイート</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></div>
+<p id="tmp_update">更新日：2026年8月25日</p>
+<p id="tmp_pageid">ページID：1678</p>
+
+</div>
+</div>
+
+<div id="tmp_main">
+<div class="wrap_col_main">
+<div class="col_main">
+<p id="tmp_honbun" class="skip">ここから本文です。</p>
+<div id="tmp_read_contents">
+<div id="tmp_readspeaker" class="rs_preserve rs_skip rs_splitbutton rs_addtools rs_exp"></div>
+<!--index_start-->
+<div id="tmp_contents">
+
+<h1>粗大ごみとは</h1>
+<table border="0" cellpadding="0" cellspacing="1" summary="">
+	<tbody>
+		<tr>
+			<td>
+			<p>粗大ごみとは、<span class="txt_red"><strong>ご家庭で不要となったもので下記のものとなります。</strong></span></p>
+			<ul>
+				<li>一辺の長さがおおむね50cm以上2m以下の家具や遊具類など</li>
+				<li>一辺の長さがおおむね50cm以上2m以下の電化製品<br />
+				※照明器具の蛍光管は外して出してください。外した蛍光管は<a href="/4150/recycle/sigen/dashikata.html" target="_blank">集団資源回収</a>に出してください。</li>
+				<li>ガステーブル、金属性ストーブ、ファンヒーター（石油、ガス・電気）<br />
+				※石油タンクは空にしてください。</li>
+				<li>リフォーム等に伴って発生するごみは、施工業者等に処理を依頼してください。</li>
+				<li>小型家電リサイクル法に基づき、携帯音楽プレーヤー等の一部の電化製品は、回収ボックスで無料回収します。対象品目・回収場所等の詳細は、<a href="/4180/kogatakadenn/kogatakadenn.html">「使用済小型家電」</a>をご覧ください。</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+<p><a href="#moushikomi">・粗大ごみの申込</a></p>
+<p><a href="#tesuuryo">・粗大ごみの収集手数料</a></p>
+<p>&nbsp;</p>
+<h2>破砕できないごみ（有料）とは</h2>
+<p>破砕できないごみとは、ご家庭で不要になった下記のものとなります。</p>
+<ul>
+	<li>1辺の長さが50cm未満の充電式電池使用製品（電池が取り外せないもの）<br />
+	※電池が取り外せるものは電池を外し不燃ごみとして出してください。外した電池は充電式電池回収ボックスに入れてください。</li>
+	<li>破砕機で破砕できないもの<br />
+	例：ボウリングのボール、市販のつけもの石、電動工具、発電機（燃料を使うもの）コンプレッサー（1辺の長さが50cm未満でタンク付きのもの、人造大理石を使用した製品類、市販の物干し台（コンクリート製）</li>
+</ul>
+<p>注意：「破砕できないごみ」であっても、市役所、行政センターに設置してある<strong><span class="txt_red">「小型家電回収ボックス」の投入口（30cm&times;15cm）に入るものは無料で拠点回収します。詳細は<a href="https://www.city.yokosuka.kanagawa.jp/4180/kogatakadenn/kogatakadenn.html" target="_blank">こちら</a></span></strong></p>
+<p style="text-align: center;"><strong><span class="txt_red"><img alt="ボックス" height="523" src="/4150/g_info/images/image.png" width="468" /></span></strong></p>
+<h2>粗大ごみ・破砕できないごみとして処分する前に、「おいくら」で売却しリユースしましょう</h2>
+<h3><strong>「おいくら」は一度の申し込みで複数のショップの買取価格を比較し、手間なく売却ができるサービスです。</strong></h3>
+<p><span class="space_lft1">大型品も出張引取の対象となり、土日祝や最短当日の引渡しも可能です。</span></p>
+<p><span class="space_lft1">資格を持った査定員が対応するため、個人同士での取引がなく安心して不要品を売却できます。</span></p>
+<h6>&nbsp;</h6>
+<ul>
+	<li><a href="https://oikura.jp/lg/kanagawa/yokosuka/?utm_source=lg_hp&amp;utm_medium=referrm_campaign=kanagawa_yokosuka" target="_blank">「おいくら」をご利用される方はこちら（外部サイト）</a></li>
+</ul>
+<p style="text-align: center;"><a href="https://oikura.jp/lg/kanagawa/yokosuka/?utm_source=lg_hp&amp;utm_medium=referral&amp;utm_campaign=kanagawa_yokosuka" target="_blank"><img align="middle" alt="oikura" height="482" src="/4150/g_info/images/oikura_lg_img.png" width="500" />（外部サイト）</a></p>
+<p>&nbsp;</p>
+<p>（画面クリックで一括査定の専用サイトに移動します）</p>
+<p>注）再販できる品物が買取対象をなりますので、すべての品物を引き取り出来るわけではありません。</p>
+<p>注）「おいくら」のご利用に関するお問い合わせは、<a href="https://oikura.jp/form/index.html?contents_key=oikura_support" target="_blank">「おいくら」サービスカウンター（外部サイト）</a>へご連絡ください。</p>
+<h1>処分するには</h1>
+<h2><strong>粗大ごみ・破砕できないごみの処分方法</strong></h2>
+<table border="0" cellpadding="0" cellspacing="1" summary="">
+	<tbody>
+		<tr>
+			<td>
+			<ul>
+				<li><strong><span class="txt_red"><span class="txt_big">【戸別収集】</span></span></strong>・・・<strong>下記の申し込み方法により収集の依頼をしてください。</strong></li>
+			</ul>
+			<p><span class="txt_big"><strong>または</strong></span></p>
+			<ul>
+				<li><strong><span class="txt_red"><span class="txt_big">【自己搬入】</span></span></strong>・・・<strong>ご家庭のごみを本人またはご家族が<a href="/4170/ecomill/sisetu1.html">横須賀ごみ処理施設&ldquo;エコミル&rdquo;</a>へ直接持ち込んでください。</strong>（詳しくは、<a href="/4150/g_info/l100000714.html">「処理施設への持ち込み」</a>をご覧ください。）</li>
+			</ul>
+			<p>　※生活保護を受給されている方については、事前に担当のケースワーカーにご相談ください。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<h3><a id="moushikomi" name="moushikomi">&nbsp;</a>粗大ごみ・破砕できないごみ（有料）の【戸別収集】</h3>
+<table align="" border="1" cellpadding="3" cellspacing="1" summary="" class="datatable">
+	<caption>戸別収集の場合</caption>
+	<tbody>
+		<tr>
+			<th>
+			<p><strong><span class="txt_big">申し込み方法</span></strong></p>
+			</th>
+			<td>
+			<p><span class="txt_big"><strong>横須賀市LINE公式アカウントからの申し込み</strong></span></p>
+			<p>トーク画面からメニューを開き、「ごみ」をタップ。</p>
+			<p>「粗大ごみの収集申込み」をタップすると、申し込み画面に遷移します。</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><span class="txt_big"><strong>インターネット申し込み</strong></span></p>
+			<p><a href="https://www.yokosuka-sodai.com/" target="_blank">リンク（外部サイト）</a>をクリックするか、下記QRコードを読み取ると申し込み画面に遷移します。</p>
+			<p><img alt="mousikomiqr" height="145" src="/4150/g_info/images/qr.jpg" width="150" /></p>
+			<p>申し込み手順は<a href="/4150/g_info/documents/tejyunnsyo2.pdf">こちら（PDF：1,232KB）</a></p>
+			
+			<p>&nbsp;</p>
+			
+			<p><span class="txt_big"><strong>電話申し込み</strong></span></p>
+			<p>原則として、ご本人またはご家族の方が電話でお申し込みください。収集日、ごみを出す場所、手数料などをお知らせします。</p>
+			<p><br />
+			<span class="txt_big"><strong>申し込み先　<span class="underline"><span class="txt_red">粗大ごみ受付：046-823-0868</span></span></strong></span></p>
+			<p><strong>受付時間　8時30分～16時、月～金曜日（祝日も受付します）<br />
+			※土・日曜日、12月29日～1月3日は受付していません</strong></p>
+			
+			<ul>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th><span class="txt_big"><strong>手数料の支払</strong></span></th>
+			<td>
+			<p><strong>横須賀市LINE公式アカウント、インターネットからの申し込みの場合</strong></p>
+			<p>申し込み時に電子決済（クレジットカード、auPay、PayPay）でお支払いいただきます。</p>
+			<p>インターネット申込については、粗大ごみ申込券のご利用はいただけません。</p>
+			<p>&nbsp;</p>
+			
+			<p><strong>電話申し込みの場合(2026年10月1日より～)</strong></p>
+			<p><strong>※9月30日までの電話申込の場合、郵送される納付書にてお支払いください。</strong></p>
+			<p>&nbsp;</p>
+			<p>収集申込完了後、粗大ごみ申込券をご購入いただきます。</p>
+			<p>（例）チケットイメージ&darr;</p>
+			<p><img alt="sodai" height="469" src="/4150/g_info/images/sodai.png" width="952" />　<img align="left" alt="seveneleven" height="429" src="/4150/g_info/images/seven.png" width="952" /></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>【購入できる場所】</p>
+			<p>横須賀市役所分館5階廃棄物対策課・各行政センター</p>
+			<p>横須賀市内郵便局（45局）・横須賀市内セブンイレブン（マルチコピー機より申込）</p>
+			<p><a href="/4150/g_info/documents/sevensodai.jpg" target="_blank">（セブンイレブンでの発券方法はこちら）（JPG：278KB）</a><br />
+			注：収集時に現金をお預かりすることはありません。</p>
+			</td>
+		</tr>
+		<tr>
+			<th>
+			<p><strong><span class="txt_big">出し方</span></strong></p>
+			</th>
+			<td>
+			<ul>
+				<li>朝8時までに申し込み時に確認指定した場所へ出してください。</li>
+				<li>収集の時間指定はできません。</li>
+				<li>収集職員は家の中までは入りません。</li>
+				<li>敷地の道路側に出すようにしてください。</li>
+				<li>立ち合いは不要です。</li>
+				<li>インターネット申込の場合：名前または申込番号、品名を記入し、品物に貼付してください。</li>
+				<li>お電話で申込の場合：購入した申込券に名前または申込番号を記入し、品物に貼付してください。<br />
+				<strong><span class="txt_red">（※申し込みされていない品物の収集はできません。出された品物について確認がある場合、現場の収集員から電話が入ることがあります。）</span></strong></li>
+				<li>通行の妨げになったり、出したものが倒壊したりしないよう、また、収集職員が安全に収集できるように整理して出してください。</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th>
+			<p><span class="txt_big"><strong>収集</strong></span></p>
+			</th>
+			<td>
+			<ul>
+				<li>収集日は日曜日から金曜日までです。（土曜日、12月31日～1月3日は収集しません。）</li>
+				<li>各家庭ごとに収集します。</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<h4><a id="tesuuryo" name="tesuuryo">粗大ごみの収集手数料</a></h4>
+<table align="center" border="1" cellpadding="0" cellspacing="0" summary="" class="datatable">
+	<tbody>
+		<tr>
+			<th scope="col">
+			<p><strong>手数料の種類・区分</strong></p>
+			</th>
+			<th scope="col">
+			<p><strong>単位</strong></p>
+			</th>
+			<th scope="col">
+			<p><strong>手数料</strong></p>
+			</th>
+			<th scope="col">
+			<p>改定後新料金<br />
+			（10月1日～）</p>
+			</th>
+		</tr>
+		<tr>
+			<td>
+			<p><span class="txt_gray">スプリングマットレス</span></p>
+			</td>
+			<td>
+			<p><span class="txt_gray">1個</span></p>
+			</td>
+			<td>
+			<p class="clear"><span class="txt_gray">4,300円</span></p>
+			</td>
+			<td style="text-align: center;"><span class="txt_red">7,000円</span></td>
+		</tr>
+		<tr>
+			<td>その他のもの</td>
+			<td>
+			<p>1個または、1組</p>
+			</td>
+			<td>
+			<p>520円</p>
+			</td>
+			<td style="text-align: center;"><span class="txt_red">800円</span></td>
+		</tr>
+	</tbody>
+</table>
+<ul>
+	<li>粗大ごみ申込は、申込日基準で料金計算が変わります。</li>
+</ul>
+<p>9月30日までの収集申込は、改定前の料金適用となります。</p>
+<p>10月1日以降の収集申込は、新料金の適用となります。</p>
+<ul>
+	<li>スプリングマットレスは、市では処理が難しい適正処理困難物ですので、なるべく購入した販売店などの引き取りをご利用ください。</li>
+	<li>エアコン、テレビ（ブラウン管式、液晶・プラズマ式）、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は販売店の引き取りが基本です。詳しくは、<a href="/4150/g_info/l100000700.html">家電リサイクル法対象品（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の処分方法</a>をご覧ください。</li>
+	<li>パソコンは、<a href="/4150/g_info/l100000708.html">パソコンの処分方法</a>をご覧ください。</li>
+</ul>
+<p>&nbsp;</p>
+<h3>粗大ごみ・破砕できないごみ（有料）の【自己搬入】</h3>
+<table border="1" cellpadding="3" cellspacing="1" summary="" class="datatable">
+	<caption>自己搬入の場合</caption>
+	<tbody>
+		<tr>
+			<th>
+			<p><strong><span class="txt_big">持ち込み先</span></strong></p>
+			</th>
+			<td>
+			<div class="section">
+			<div class="section">
+			<p><strong><span class="txt_big"><a href="/4170/ecomill/sisetu1.html">横須賀ごみ処理施設&ldquo;エコミル&rdquo;</a></span></strong></p>
+			<p>住所：横須賀市長坂5丁目1番1号<br />
+			電話番号：046-854-4153</p>
+			</div>
+			</div>
+			<ul>
+				<li>計量方法等、詳しくは<a href="/4170/s-syori/03.html">「持ち込みごみ」</a>をご覧ください。</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p><span class="txt_red"><span class="txt_big"><span class="txt_red"><strong>～<a href="/4150/ihan-gyousya/ihan-gyousya.html">粗大ごみ収集の悪質業者にご注意を</a>～</strong></span></span></span></p>
+<p>無料で粗大ごみ等を収集するといったチラシをポストに投函して、ごみを収集しているといった報告があります。ご家庭で不要になったごみを収集するには市の許可が必要です。無許可業者に依頼することで高額な請求をされる等の事案もありますのでご注意ください。</p>
+<div class="box_link">
+			<div class="box_link_ttl">
+			<p>関連ホームページ</p>
+			</div>
+			<div class="box_link_cnt">
+			<ul>
+				<li><a href="/4170/ecomill/sisetu1.html">横須賀ごみ処理施設&rdquo;エコミル&rdquo;</a></li>
+				<li><a href="/4150/g_info/l100000708.html">パソコンの処分方法</a></li>
+				<li><a href="/4150/g_info/l100000700.html">家電リサイクル法対象品（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の処分方法</a></li>
+				<li><a href="/4150/g_info/l100000714.html" target="sisetu">処理施設への持ち込み</a></li>
+			</ul>
+			</div>
+</div>
+
+
+
+
+
+
+</div>
+<!--index_end-->
+</div>
+
+<div id="tmp_inquiry">
+<div id="tmp_inquiry_ttl">
+<p>お問い合わせ</p>
+</div>
+<div id="tmp_inquiry_cnt">
+<form method="post" action="https://www.city.yokosuka.kanagawa.jp/cgi-bin/simple_faq/form.cgi">
+<div class="inquiry_parts">
+<p>
+<a href="/4150/index.html">資源循環部廃棄物対策課</a></p>
+<p>横須賀市小川町11番地　分館5階＜郵便物：「〒238-8550　廃棄物対策課」で届きます＞</p>
+<p>内線：046-822-8469</p>
+<p class="inquiry_btn"><input type="submit" value="お問い合わせフォーム" /></p>
+</div>
+<p>
+<input type="hidden" name="code" value="001025007" />
+<input type="hidden" name="dept" value="8923:8342:8508:9670:3694:8923:8342:5271:8176:8674:9587:10002:3777:10002:9172:8840:9172:9504:9670:8840:8010:3777:8840:8010:9089:8010:8508:8010:9836:8010:3777:8757:9255" />
+<input type="hidden" name="page" value="/4150/g_info/l100000701.html" />
+<input type="hidden" name="ENQ_RETURN_MAIL_SEND_FLG" value="1" />
+<input type="hidden" name="publish_ssl_flg" value="1" />
+</p>
+</form>
+</div>
+</div>
+
+<div id="tmp_feedback">
+<div id="tmp_feedback_ttl">
+<p>より良いウェブサイトにするためにみなさまのご意見をお聞かせください</p>
+</div>
+<div id="tmp_feedback_cnt">
+<form action="/cgi-bin/feedback/feedback.cgi" id="feedback" method="post">
+<p><input name="page_id" type="hidden" value="1678" /><input name="page_title" type="hidden" value="粗大ごみ（有料）" /><input name="page_url" type="hidden" value="https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html" /><input name="item_cnt" type="hidden" value="3" /></p>
+<fieldset><legend>このページは見つけやすかったですか？ </legend>
+<p><input id="que1_1" name="item_1" type="radio" value="見つけやすかった" /><label for="que1_1">1：見つけやすかった</label></p>
+<p><input id="que1_2" name="item_1" type="radio" value="ふつう" /><label for="que1_2">2：ふつう</label></p>
+<p><input id="que1_3" name="item_1" type="radio" value="見つけにくかった" /><label for="que1_3">3：見つけにくかった</label></p>
+<p><input name="label_1" type="hidden" value="質問：このページは見つけやすかったですか？" /><input name="nes_1" type="hidden" value="1" /><input name="img_1" type="hidden" /><input name="img_alt_1" type="hidden" /><input name="mail_1" type="hidden" value="0" /></p>
+</fieldset>
+<fieldset><legend>このページは分かりやすかったですか？ </legend>
+<p><input id="que2_1" name="item_2" type="radio" value="分かりやすかった" /><label for="que2_1">1：分かりやすかった</label></p>
+<p><input id="que2_2" name="item_2" type="radio" value="ふつう" /><label for="que2_2">2：ふつう</label></p>
+<p><input id="que2_3" name="item_2" type="radio" value="分かりにくかった" /><label for="que2_3">3：分かりにくかった</label></p>
+<p><input name="label_2" type="hidden" value="質問：このページは分かりやすかったですか？" /><input name="nes_2" type="hidden" value="1" /><input name="img_2" type="hidden" /><input name="img_alt_2" type="hidden" /><input name="mail_2" type="hidden" value="0" /></p>
+</fieldset>
+<fieldset><legend>このページは役に立ちましたか？ </legend>
+<p><input id="que3_1" name="item_3" type="radio" value="役に立った" /><label for="que3_1">1：役に立った</label></p>
+<p><input id="que3_2" name="item_3" type="radio" value="ふつう" /><label for="que3_2">2：ふつう</label></p>
+<p><input id="que3_3" name="item_3" type="radio" value="役に立たなかった" /><label for="que3_3">3：役に立たなかった</label></p>
+<p><input name="label_3" type="hidden" value="質問：このページは役に立ちましたか？" /><input name="nes_3" type="hidden" value="1" /><input name="img_3" type="hidden" /><input name="img_alt_3" type="hidden" /><input name="mail_3" type="hidden" value="0" /></p>
+</fieldset>
+<p class="submit_btn"><input type="submit" value="送信" /></p>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+<div class="wrap_col_rgt_navi">
+<div class="col_rgt_navi">
+
+<div id="tmp_lnavi">
+<div id="tmp_lnavi_ttl">
+<p><a href="/kurashi/gomi/kensaku/list.html">ごみの分別区分一覧</a></p>
+</div>
+<div id="tmp_lnavi_cnt">
+<ul>
+<li><a href="/4150/g_info/l100000695.html">燃せるごみ</a></li>
+<li><a href="/4150/g_info/l100000696.html">缶・びん・ペットボトル</a></li>
+<li><a href="/4150/g_info/l100000697.html">プラスチック資源（令和5年10月～）</a></li>
+<li><a href="/4150/g_info/l100000698.html">不燃ごみ（令和5年10月～）</a></li>
+<li><a href="/4150/g_info/l100000701.html">粗大ごみ（有料）</a></li>
+<li><a href="/4150/recycle/sigen/dashikata.html">資源回収品目と出し方</a></li>
+<li><a href="/4180/kogatakadenn/kogatakadenn.html">使用済み小型家電</a></li>
+<li><a href="/4180/kurashi/gomi-kandenchi.html">乾電池、コイン電池、ボタン電池、充電式電池</a></li>
+<li><a href="/4150/g_info/l100000700.html">エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機</a></li>
+<li><a href="/4150/g_info/l100000708.html">パソコンの処分方法</a></li>
+<li><a href="/4150/g_info/shiyozumiink.html">使用済みインクカートリッジ</a></li>
+<li><a href="/4150/recycle/not-covered.html">収集できないごみ</a></li>
+</ul>
+</div>
+</div>
+<div id="tmp_idx_navi">
+<div id="tmp_idx_navi_ttl">
+<p>目的・テーマから探す</p>
+</div>
+<div id="tmp_idx_navi_cnt">
+<ul>
+	<li><a href="/kurashi/index.html">くらし・手続き</a></li>
+	<li><a href="/kenko/index.html">健康福祉・子育て教育</a></li>
+	<li><a href="/kanko/index.html">観光</a></li>
+	<li><a href="/sports/index.html">スポーツ</a></li>
+	<li><a href="/sangyo/index.html">産業・まちづくり</a></li>
+	<li><a href="/shisei/index.html">市政情報</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div id="tmp_footer">
+<div class="footer_front">
+<div class="container">
+<div class="pnavi">
+<p class="ptop used_bg_img"><a href="#tmp_header"><span>ページの先頭へ戻る</span></a></p>
+</div>
+<div class="footer_main">
+<div class="footer_info">
+<div class="footer_logo">
+<p><span>横須賀市</span></p>
+</div>
+<div class="footer_cnt">
+<address class="footer_address">
+<p><span>法人番号：3000020142018</span></p>
+<p><span>〒238-8550 神奈川県横須賀市小川町11</span></p>
+<p><span>電話番号：046-822-4000　</span><span>ファクス番号：046-822-2539</span></p>
+<p><span>開庁時間：</span> <span>月曜日から金曜日の午前8時30分から午後5時まで</span> <span class="address_sub">（土曜日・日曜日、祝日・休日、年末年始を除く）</span></p>
+</address>
+</div>
+<div class="footer_government rn2026">
+<div class="government_box footer_link_item_1">
+<p class="government_link"><a href="/shisei/gaiyo/access/index.html">庁舎案内</a></p>
+</div>
+<div class="government_box footer_link_item_2">
+<p class="government_link"><a href="/2625/syuwarinku.html">手話で電話</a></p>
+</div>
+</div>
+</div>
+<div class="footer_nav">
+<ul class="fnavi">
+	<li><a href="/about_site/menseki.html">横須賀市ホームページについて</a></li>
+	<li><a href="/sitemap.html">サイトマップ</a></li>
+</ul>
+<div class="footer_social">
+<ul>
+	<li><a href="https://twitter.com/yokosuka_city" target="_blank"><img alt="X" height="40" src="/shared/site_rn2022/images/icon/sns_x_black.png" width="40" /></a></li>
+	<li><a href="https://www.facebook.com/cocoyoko.net" target="_blank"><img alt="Facebook" height="40" src="/shared/site_rn2022/images/icon/sns_fb.png" width="40" /></a></li>
+	<li><a href="https://line.me/R/ti/p/&#64;196hbuhz" target="_blank"><img alt="LINE" height="40" src="/shared/site_rn2022/images/icon/sns_line.png" width="40" /></a></li>
+	<li><a href="https://www.youtube.com/channel/UCQDVaWThh91v2lgtCCqio5w" target="_blank"><img alt="YouTube" height="40" src="/shared/site_rn2022/images/icon/sns_yt.png" width="40" /></a></li>
+	<li><a href="https://www.instagram.com/yokosuka.gurashi/" target="_blank"><img alt="Instagram" height="40" src="/shared/site_rn2022/images/icon/sns_ins.png" width="40" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bellow">
+<div class="container">
+<p lang="en" xml:lang="en" class="copyright">Copyright &copy; Yokosuka city. All rights reserved.</p>
+</div>
+</div>
+</div>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v16.0"></script>
+</div>
+<script type="text/javascript" src="/shared/site_rn2022/js/function.js"></script>
+<script type="text/javascript" src="/shared/site_rn2022/js/main.js"></script>
+<script type="text/javascript" src="/shared/system/js/path_info/path_info.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+{
+  "slug": "itabashi",
+  "reviewed_at": "2026-10-18",
+  "decision": "accepted_as_AI_reviewed_research_draft",
+  "reviewer_edited": true,
+  "initial_sha256": "7df3e286dac9bd9841c0b11e2fe3bec2d8265b7ae57dc160dc44a6e88f0566c7",
+  "corrected_sha256": "0ac37e2e94190ecc05e690a935bef78aefd4c147a121b6e9056065464bad008f",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "questions_for_office": 6,
+    "direction": "各field→保存公式原典、保存公式原典の重要条件→対応field・相談質問を双方向照合。料金・減免、AND/OR、世帯全員、援助、屋内、持込本人/運転者、予約・上限、日付・出典を重点確認。",
+    "source_ids": [
+      "itabashi-bulky",
+      "itabashi-carry",
+      "itabashi-carry-rule",
+      "itabashi-daily"
+    ]
+  },
+  "findings": [
+    {
+      "severity": "critical",
+      "source": "itabashi-daily.txt:35-63",
+      "finding": "高齢者・障がい者世帯のごみ戸別収集の現行専用ページがあり、初稿の未発見は誤り。",
+      "resolution": "保存原典を追加し、日常経路の全10項目と相談質問を全面更新。"
+    },
+    {
+      "severity": "major",
+      "source": "itabashi-daily.txt:43-49",
+      "finding": "65歳以上のみの世帯は全員要介護・要支援、障がい者のみの世帯は全員手帳確認が必要。混合世帯・申請中・難病の例外と郵送申込あり。",
+      "resolution": "AND/ORと例外を明記。"
+    },
+    {
+      "severity": "major",
+      "source": "itabashi-carry-rule.txt:9-15,28,101",
+      "finding": "搬出対象に区長認定の例外あり。要綱本文の対象者立会いと申請書の代理人立会いが異なる。",
+      "resolution": "例外を追加し、立会いをneeds_confirmationとして窓口質問に残す。"
+    },
+    {
+      "severity": "minor",
+      "source": "itabashi-bulky.txt:151-165",
+      "finding": "持込時は処理券を品物に貼らず持参し、荷下ろしは本人が行う。",
+      "resolution": "持込料金と手順を明確化。"
+    }
+  ],
+  "remaining_required_findings": [],
+  "limits": [
+    "AI独立レビュー。人手の原典全件照合と窓口確認、公開承認は未実施。",
+    "料金・収集頻度・立会い等で原典に未記載の事項は断定せず相談質問へ残した。"
+  ],
+  "official_source_sha256": [
+    {
+      "id": "itabashi-bulky",
+      "raw_sha256": "333275770bf942f747cdaf3b1ee7b10ab47b5b673c62e6ed7c6844e4de9ff1c3",
+      "text_sha256": "c06f0c2faed62a08bfa7c895421a6458cbef68e3907b91ef0b513da41fd3b828"
+    },
+    {
+      "id": "itabashi-carry",
+      "raw_sha256": "5e22a6b7b6ca94b06f245eea68ef579ca9e40996c29a836abdd45760e93de84e",
+      "text_sha256": "c9190cb61aceced0a06bb0e0e16ffcb487af9e6a855ac0014b7b22a3d660fb98"
+    },
+    {
+      "id": "itabashi-carry-rule",
+      "raw_sha256": "e74232760166fc42d7d861539f5fe856b22aa318ce5389c5a600d47a87182132",
+      "text_sha256": "54bce851e5055db303aac8d74442c9d15ccc3551562c217c82f0dde18aca1033"
+    },
+    {
+      "id": "itabashi-waste",
+      "raw_sha256": "c0ac944201f66172097048d06e42fc47a9e925b5c56b5ceff511b7fb2e177d4d",
+      "text_sha256": "f48a08a529f9c9e32013ce0fbf241fdc4f175cee76d73c9c733c07fa1c43b447"
+    },
+    {
+      "id": "itabashi-daily",
+      "raw_sha256": "a641f8c87d48992a18824bc903191776b34d9c467ead3fed254d1779bfabc253",
+      "text_sha256": "c9c85694bf26eaa17913548d2300469216b04986fedfa32f9940233bfe394da7"
+    }
+  ],
+  "corrected_locator_sha256": "bef415cabc8c3d4652eaec00f7585234063ff7afda70369aeffd3e3956415e53",
+  "corrections_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/itabashi/corrections.json",
+  "source_retained_as_research_only": [
+    "itabashi-waste"
+  ]
+}

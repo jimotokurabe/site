@@ -1,0 +1,69 @@
+{
+  "slug": "ota",
+  "reviewed_at": "2026-10-18",
+  "decision": "accepted_as_AI_reviewed_research_draft",
+  "reviewer_edited": true,
+  "initial_sha256": "8c7ef7e8efa941f0458319005c31ff274a632cd866525b2ee0abc13aac9d6141",
+  "corrected_sha256": "eff61d71aa1d0ef022459759dc9ba3f5e897d4ae352f53e95a77580cb0b04767",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "questions_for_office": 7,
+    "direction": "各field→保存公式原典、保存公式原典の重要条件→対応field・相談質問を双方向照合。料金・減免、AND/OR、世帯全員、援助、屋内、持込本人/運転者、予約・上限、日付・出典を重点確認。",
+    "source_ids": [
+      "ota-daily",
+      "ota-carry",
+      "ota-bulky",
+      "ota-carry-pdf"
+    ]
+  },
+  "findings": [
+    {
+      "severity": "major",
+      "source": "ota-bulky.txt:128-146",
+      "finding": "自己搬入の手数料は品目によって免除または減額で、「有料処理券が必要」は誤解を招く。",
+      "resolution": "品目別の無料・減額と有料品の処理券購入を区別。"
+    },
+    {
+      "severity": "major",
+      "source": "ota-bulky.txt:160-170",
+      "finding": "通常収集の免除対象から中国残留邦人等支援給付が抜け、収集3日前までの書類提出も省略。",
+      "resolution": "対象と期限を追加。"
+    },
+    {
+      "severity": "minor",
+      "source": "ota-bulky.txt:143-149",
+      "finding": "本人による搬入は明記されるが、本人が必ず荷下ろしするとは記載されない。",
+      "resolution": "荷下ろし補助・同伴者は未記載として相談質問に残す。"
+    }
+  ],
+  "remaining_required_findings": [],
+  "limits": [
+    "AI独立レビュー。人手の原典全件照合と窓口確認、公開承認は未実施。",
+    "料金・収集頻度・立会い等で原典に未記載の事項は断定せず相談質問へ残した。"
+  ],
+  "official_source_sha256": [
+    {
+      "id": "ota-bulky",
+      "raw_sha256": "a3847b7e486cc6833dafb39ec53b3433432c88e4755609367d40961dcfc706c8",
+      "text_sha256": "cb94f9f197e048867b9cbe9f5f78e168a9f02b42b49a7a5d34194eb21f3b4cbf"
+    },
+    {
+      "id": "ota-carry",
+      "raw_sha256": "76d3bfc2e3e0288c466581244403e5070c6a6b8e362b5233cc0fbe162c04d3e6",
+      "text_sha256": "4ed32616ccd3eaee21426c38246b9ef6616b828febce710bd8b175d04143e23c"
+    },
+    {
+      "id": "ota-carry-pdf",
+      "raw_sha256": "4c7d0a8ce7a6aa4fe8b74940bbe80d9d5452aca5208cdba50ea55f9ec6944a60",
+      "text_sha256": "1bd7e71a94ae88c212eea89f7fd63a5e8e82c26e6c5880e04043efaca1cdf630"
+    },
+    {
+      "id": "ota-daily",
+      "raw_sha256": "0254907ae733aa3993b9db712225e5a072c60cadf51971a908a5af1bbef0c8d1",
+      "text_sha256": "b33ce01730bbd8aa7389a78672f505698f30de7e9bad2ae2389df11bc075390d"
+    }
+  ],
+  "corrected_locator_sha256": "ddb81f28f8cc9024b384cc63d8c29915b45c4751bac5d500d65c0121c902ddc1",
+  "corrections_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/ota/corrections.json"
+}

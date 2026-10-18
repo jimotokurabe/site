@@ -1,0 +1,22 @@
+{
+  "status": "approved",
+  "by": "site_owner",
+  "approved_at": "2026-10-18",
+  "reviewed_candidate_sha256": "ba96219ac5f31c5831448e84685ee4c13b2c3bad488933b91c2ffdfd8470a974",
+  "city_ids": [
+    "tokyo:suginami",
+    "tokyo:nerima",
+    "tokyo:itabashi",
+    "tokyo:ota",
+    "kanagawa:sagamihara",
+    "kanagawa:yokosuka",
+    "kanagawa:fujisawa",
+    "kanagawa:chigasaki",
+    "osaka:sakai",
+    "osaka:toyonaka",
+    "osaka:suita",
+    "osaka:takatsuki"
+  ],
+  "accepts_ai_reviewed_pilot": true,
+  "basis": "運営者は直前提案1「現在12自治体を公開36地域」と2「未掲載34県に掲載地域を作る」に対して「1と2を進めて」と明示承認。今回公開対象は提案1のB05既存12候補のみ。提案2の新規県調査はプレビューまでの別工程で公開対象外。新潟・松本は保留。限定AI照合を受入れる公開承認で、人手原文全件確認を示さない。"
+}

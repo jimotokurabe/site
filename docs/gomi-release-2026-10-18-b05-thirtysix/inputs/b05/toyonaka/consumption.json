@@ -1,0 +1,32 @@
+{
+  "city": "osaka:toyonaka",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "site:city.toyonaka.osaka.jp ごみ出し支援 ふれあい収集 高齢者",
+    "site:city.toyonaka.osaka.jp 粗大ごみ 収集 申込み 手数料 豊中市",
+    "site:city.toyonaka.osaka.jp 臨時家庭ごみ 持ち込み 予約 手数料"
+  ],
+  "official_sources_retrieved": 5,
+  "http_200_count": 5,
+  "http_non_200_count": 0,
+  "original_bytes_total": 186357,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "検索・取得ツールの課金量やモデルトークン数は個別計測できないため未取得。推測値は記載しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "toyonaka-daily",
+    "toyonaka-regular",
+    "toyonaka-dropoff",
+    "toyonaka-dropoff-net",
+    "toyonaka-support-index"
+  ],
+  "new_city_sha256": "9b9081cdf759e51d37acf2ea18b410d0178927e285669eae78b6c5cb47740e52",
+  "source_hash_verification": "passed"
+}

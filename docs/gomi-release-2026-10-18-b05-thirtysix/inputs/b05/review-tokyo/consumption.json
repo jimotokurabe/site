@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-18",
+  "activity": "独立AI原典レビューと指摘限定修正",
+  "reviewed_sources": [
+    {
+      "slug": "suginami",
+      "id": "suginami-bulky",
+      "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+      "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "suginami",
+      "id": "suginami-calendar",
+      "raw_sha256": "ea5b6a8a4478f35f46130abb1863c260071fc0fbfb9e52d269e6dc62453cc821",
+      "text_sha256": "4c3c788095bf999b09b673644fcaa078ded2d16819a4cfc6f1a4ba26ec01e76e",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "suginami",
+      "id": "suginami-daily",
+      "raw_sha256": "4a5876e8be3ecacaae78b067e79453962e53ae3ad0d21491676d25d20ba7f9ee",
+      "text_sha256": "a031201d351966eb375f7d26d220592df539948d1efd893b5caf0900e87a7155",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "suginami",
+      "id": "suginami-fureai-overview",
+      "raw_sha256": "746bc6350ffe5a702d9c294944fdb1d8c93befd5b7e53aabac4272a6472b372e",
+      "text_sha256": "9adb0276ab930889a4707931d9555ecaf72c312ffa4a709417f24ef14ebfc56f",
+      "retrieved_at": "2026-10-18T16:46:50+09:00"
+    },
+    {
+      "slug": "nerima",
+      "id": "nerima-bulky",
+      "raw_sha256": "449c0b298458a1257b8a86b9a641c3d86c395f174be4bc53b4fe804cae2241ca",
+      "text_sha256": "04fdeff2c2b95174abec412a0f9a2d10fb1b7aa06fde88ca4f9568426742d20f",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "nerima",
+      "id": "nerima-fee-relief",
+      "raw_sha256": "91cc79da98b58d46d87b1c4e0a3da4131f88d4e0958c54d93093917e3f5e2f37",
+      "text_sha256": "cd307ceacbb877830b030f727c306a96dd0a7074ae005eeaf212f0310798a2c2",
+      "retrieved_at": "2026-10-18T16:46:50+09:00"
+    },
+    {
+      "slug": "nerima",
+      "id": "nerima-separation-current",
+      "raw_sha256": "08241f734970522638bfde13b5eff161c098f2c2b2491b0325d0db2a7da4015e",
+      "text_sha256": "0248022297cd7cc165d5f7b9bd129709c95617e912f54656aa912a482c1b6f22",
+      "retrieved_at": "2026-10-18T16:46:50+09:00"
+    },
+    {
+      "slug": "nerima",
+      "id": "nerima-waste",
+      "raw_sha256": "bb892068636a7fd71519cc4022ff0fe8230fb22849a3a7ad52b2d1690240de8a",
+      "text_sha256": "1d2d66c4799e2c6f3d49af15b8bedab0e0d9666bc261d906dc0dceee6e76066f",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "nerima",
+      "id": "nerima-daily",
+      "raw_sha256": "6c792e18ddc3977e32d0690024faac848b3b09aa4ddc0fb6446ba53bede20672",
+      "text_sha256": "ea32853511f2aca708aef325c4ef5d13e6f2d5d1b2f7033d6ac7af22f546fc38",
+      "retrieved_at": "2026-10-18T16:49:58+09:00"
+    },
+    {
+      "slug": "itabashi",
+      "id": "itabashi-bulky",
+      "raw_sha256": "333275770bf942f747cdaf3b1ee7b10ab47b5b673c62e6ed7c6844e4de9ff1c3",
+      "text_sha256": "c06f0c2faed62a08bfa7c895421a6458cbef68e3907b91ef0b513da41fd3b828",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "itabashi",
+      "id": "itabashi-carry",
+      "raw_sha256": "5e22a6b7b6ca94b06f245eea68ef579ca9e40996c29a836abdd45760e93de84e",
+      "text_sha256": "c9190cb61aceced0a06bb0e0e16ffcb487af9e6a855ac0014b7b22a3d660fb98",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "itabashi",
+      "id": "itabashi-carry-rule",
+      "raw_sha256": "e74232760166fc42d7d861539f5fe856b22aa318ce5389c5a600d47a87182132",
+      "text_sha256": "54bce851e5055db303aac8d74442c9d15ccc3551562c217c82f0dde18aca1033",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "itabashi",
+      "id": "itabashi-waste",
+      "raw_sha256": "c0ac944201f66172097048d06e42fc47a9e925b5c56b5ceff511b7fb2e177d4d",
+      "text_sha256": "f48a08a529f9c9e32013ce0fbf241fdc4f175cee76d73c9c733c07fa1c43b447",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "itabashi",
+      "id": "itabashi-daily",
+      "raw_sha256": "a641f8c87d48992a18824bc903191776b34d9c467ead3fed254d1779bfabc253",
+      "text_sha256": "c9c85694bf26eaa17913548d2300469216b04986fedfa32f9940233bfe394da7",
+      "retrieved_at": "2026-10-18T16:49:58+09:00"
+    },
+    {
+      "slug": "ota",
+      "id": "ota-bulky",
+      "raw_sha256": "a3847b7e486cc6833dafb39ec53b3433432c88e4755609367d40961dcfc706c8",
+      "text_sha256": "cb94f9f197e048867b9cbe9f5f78e168a9f02b42b49a7a5d34194eb21f3b4cbf",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "ota",
+      "id": "ota-carry",
+      "raw_sha256": "76d3bfc2e3e0288c466581244403e5070c6a6b8e362b5233cc0fbe162c04d3e6",
+      "text_sha256": "4ed32616ccd3eaee21426c38246b9ef6616b828febce710bd8b175d04143e23c",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "ota",
+      "id": "ota-carry-pdf",
+      "raw_sha256": "4c7d0a8ce7a6aa4fe8b74940bbe80d9d5452aca5208cdba50ea55f9ec6944a60",
+      "text_sha256": "1bd7e71a94ae88c212eea89f7fd63a5e8e82c26e6c5880e04043efaca1cdf630",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    },
+    {
+      "slug": "ota",
+      "id": "ota-daily",
+      "raw_sha256": "0254907ae733aa3993b9db712225e5a072c60cadf51971a908a5af1bbef0c8d1",
+      "text_sha256": "b33ce01730bbd8aa7389a78672f505698f30de7e9bad2ae2389df11bc075390d",
+      "retrieved_at": "2026-10-18T16:44:22+09:00"
+    }
+  ],
+  "additional_network_retrievals": [
+    {
+      "slug": "nerima",
+      "id": "nerima-daily"
+    },
+    {
+      "slug": "itabashi",
+      "id": "itabashi-daily"
+    }
+  ],
+  "model_tokens": null,
+  "credits": null,
+  "research_cost": null,
+  "measurement_note": "モデルtoken、credit、金額の実測値は環境から取得できないため未計測。公式ページ2件のみ追加取得し原本・抽出文字列を保存。"
+}

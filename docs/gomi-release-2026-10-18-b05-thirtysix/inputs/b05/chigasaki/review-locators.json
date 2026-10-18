@@ -1,0 +1,289 @@
+[
+  {
+    "city": "kanagawa:chigasaki",
+    "service": "chigasaki-daily",
+    "service_sha256": "5b216f84aa95fda3f421c4abdd0c717096b2f278b04fa507717daf22a9fb993f",
+    "sources": [
+      {
+        "id": "chigasaki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/daily.txt",
+        "lines": [
+          [
+            1,
+            72
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/daily.pdf",
+        "raw_sha256": "5ae817a006ba404cb67225346ae096f5fb1129638f4158eb85156d1ea8d33397",
+        "text_sha256": "57956f6e15dc6c206c49553b4afa051e8e4d45dd555254edf2fc7c31d7385151",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "chigasaki-daily_rule",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/daily_rule.txt",
+        "lines": [
+          [
+            1,
+            105
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/daily_rule.pdf",
+        "raw_sha256": "a45427bad62cdba44bcd0bef5063e8a09923c2de80e27caf30942887317c04e9",
+        "text_sha256": "f88af49f151937209f88e19bab1ccb1a987521a2d179dcfdb5f8a113dc708911",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "chigasaki-r8-plan",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/r8_plan.txt",
+        "lines": [
+          [
+            346,
+            355
+          ],
+          [
+            557,
+            591
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/r8_plan.pdf",
+        "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+        "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0",
+        "field_names": [
+          "waste_scope"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:chigasaki",
+    "service": "chigasaki-bulky-carry",
+    "service_sha256": "516d1ec46fcd589ef9407f9f8266e253ec35f80fef95341fc3eadf4bcfee1479",
+    "sources": [
+      {
+        "id": "chigasaki-daily_application",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/daily_application.txt",
+        "lines": [
+          [
+            90,
+            120
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/daily_application.pdf",
+        "raw_sha256": "2f5ffcfb87fd9bf5b29a539a98132f23d8f0a0e277a252492ee15eaf28780b59",
+        "text_sha256": "26e41107a0bcd1e20017aef3ccd2663639667120c4e1150ee39bd5aef40b7d2f",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "chigasaki-guide",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/guide.txt",
+        "lines": [
+          [
+            620,
+            650
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/guide.pdf",
+        "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+        "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:chigasaki",
+    "service": "chigasaki-regular-bulky",
+    "service_sha256": "431164a28e202ff11e5aee715a40aa1008152e45864a9e60f63ebe1537beb67b",
+    "sources": [
+      {
+        "id": "chigasaki-guide",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/guide.txt",
+        "lines": [
+          [
+            620,
+            650
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/guide.pdf",
+        "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+        "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "chigasaki-regular_current",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/regular_current.txt",
+        "lines": [
+          [
+            340,
+            360
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/regular_current.pdf",
+        "raw_sha256": "a93f1bffb3d2c9b3ad23f58c225b78946ff9eb5573484e339da675f3aa1c0cec",
+        "text_sha256": "3ddb2d7c9adf62ef9dcd2c0761560afbde4a3ee8d0b407d6760ca4f66ae529a2",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "chigasaki-r8-plan",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/r8_plan.txt",
+        "lines": [
+          [
+            346,
+            355
+          ],
+          [
+            557,
+            591
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/r8_plan.pdf",
+        "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+        "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0",
+        "field_names": [
+          "limits",
+          "application"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:chigasaki",
+    "service": "chigasaki-self-dropoff",
+    "service_sha256": "ca9914d475ec97b67cbd730fb0a2785dfe8e0126da776223d620f842ad55a5be",
+    "sources": [
+      {
+        "id": "chigasaki-guide",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/guide.txt",
+        "lines": [
+          [
+            620,
+            650
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/guide.pdf",
+        "raw_sha256": "1ad9a77014a5bace975fba0d422948b2771e65a0ac2f1deb00bb303072655415",
+        "text_sha256": "53fe1996a692633735bb4606eef7a1069ac01a778b389fcddd98af8ef61f3d8d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "chigasaki-r8-plan",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/r8_plan.txt",
+        "lines": [
+          [
+            346,
+            355
+          ],
+          [
+            557,
+            591
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/r8_plan.pdf",
+        "raw_sha256": "9d89383a2ea854e5810aecc0e909f135e65b86ea06da3da778aa003453e383a5",
+        "text_sha256": "3bc34253a396a2cbcff5157ce7309624f7ae1046eedf5eb74b18296efb07d1b0",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "eligibility",
+          "limits"
+        ]
+      },
+      {
+        "id": "chigasaki-dropoff-fee",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/dropoff_fee.txt",
+        "lines": [
+          [
+            1,
+            49
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/chigasaki/official/dropoff_fee.pdf",
+        "raw_sha256": "6a678cf1fa39a64548a26dfc1cb129f4454c79927dcc8f708b53252f8ed755e0",
+        "text_sha256": "d9f12fe1ab3e786485ebd4392f872dbb97c75546c8cf567efc57f9ea0c4fbaf5",
+        "field_names": [
+          "waste_scope",
+          "eligibility",
+          "fees",
+          "limits",
+          "contact"
+        ]
+      }
+    ]
+  }
+]
