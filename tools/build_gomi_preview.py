@@ -24,6 +24,34 @@ def safe_write_target(out, target):
     if not target.resolve().is_relative_to(out):
         raise ValueError('Write escapes preview: ' + str(target))
 
+def replace_home_entry(raw, replacement):
+    # Locate the original bytes: HTML reserialization changes attribute order.
+    from html.parser import HTMLParser
+    class EntryParser(HTMLParser):
+        def __init__(self):
+            super().__init__(); self.depth = 0; self.start = None; self.spans = []
+            self.lines = raw.splitlines(keepends=True)
+        def source_position(self):
+            line, column = self.getpos()
+            return sum(map(len, self.lines[:line - 1])) + column
+        def handle_starttag(self, tag, attrs):
+            if tag == 'section':
+                if dict(attrs).get('id') == 'gomi-support-entry':
+                    if self.start is not None: raise ValueError('Nested duplicate entry')
+                    self.start = self.source_position(); self.depth = 1
+                elif self.start is not None: self.depth += 1
+        def handle_endtag(self, tag):
+            if tag == 'section' and self.start is not None:
+                self.depth -= 1
+                if self.depth == 0:
+                    end = raw.index('>', self.source_position()) + 1
+                    self.spans.append((self.start, end)); self.start = None
+    parser = EntryParser(); parser.feed(raw)
+    if len(parser.spans) != 1 or parser.start is not None:
+        raise ValueError('Home waste entry must occur exactly once')
+    start, end = parser.spans[0]
+    return raw[:start] + replacement + raw[end:]
+
 def build(data_path, out, base=ROOT):
     data_path=Path(data_path).resolve();out=Path(out).absolute();base=Path(base).resolve()
     if any(p.is_symlink() for p in [out,*out.parents]):
@@ -59,9 +87,7 @@ def build(data_path, out, base=ROOT):
     if home.is_symlink(): home.unlink()
     safe_write_target(out,home)
     raw=(base/'index.html').read_text()
-    old=str(BeautifulSoup(raw,'html.parser').select_one('#gomi-support-entry'))
-    if raw.count(old)!=1: raise ValueError('Home waste entry must occur exactly once')
-    home.write_text(raw.replace(old,home_entry(data)))
+    home.write_text(replace_home_entry(raw,home_entry(data)))
     errors=[]
     for relative,html in pages.items():
         soup=BeautifulSoup(html,'html.parser')

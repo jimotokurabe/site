@@ -1,0 +1,40 @@
+{
+  "searched_at_date": "2026-10-18",
+  "searched_at_time": null,
+  "time_recording_note": "検索エンジン側の検索時刻は記録されていないためnull。HTTP取得時刻は各source metadataに保存。",
+  "official_domain_scope": "さいたま市公式サイト（city.saitama.lg.jp）",
+  "query_count": 6,
+  "queries": [
+    {
+      "query": "さいたま市 ごみ ふれあい収集 対象者 同居",
+      "opened_source_id": "saitama-fureai",
+      "result": "official source opened and archived"
+    },
+    {
+      "query": "site:city.saitama.lg.jp さいたま市 粗大ごみ 屋内 搬出 高齢者 支援",
+      "opened_source_id": "saitama-bulky",
+      "result": "official source opened and archived"
+    },
+    {
+      "query": "site:city.saitama.lg.jp さいたま市 粗大ごみ 戸別収集 屋内 収集しません",
+      "opened_source_id": "saitama-bulky",
+      "result": "official source opened and archived"
+    },
+    {
+      "query": "site:city.saitama.lg.jp さいたま市 家庭ごみ 施設 直接持込み 本人 予約",
+      "opened_source_id": "saitama-self-dropoff",
+      "result": "official source opened and archived"
+    },
+    {
+      "query": "site:city.saitama.lg.jp さいたま市 ごみ 持込み 手数料 令和8年",
+      "opened_source_id": "saitama-fees",
+      "result": "official source opened and archived"
+    },
+    {
+      "query": "さいたま市 高齢者 ごみ出し支援 ふれあい収集 粗大ごみ 搬出",
+      "opened_source_id": "saitama-elderly-guide",
+      "result": "official source opened and archived"
+    }
+  ],
+  "outcome": "確認範囲では、日常ふれあい収集と通常粗大ごみ戸別収集は確認。独立した屋内搬出支援制度は公式資料・検索結果で未発見。不存在の結論にはしていない。"
+}

@@ -1,0 +1,1466 @@
+{
+  "review_id": "b03-independent-2026-10-18",
+  "reviewer": "independent AI reviewer",
+  "review_date": "2026-10-18",
+  "scope": "初稿2市×4経路×10項目＝80項目の独立原典照合。相談質問・保存原典の重要条件・保存漏れも点検。",
+  "basis": [
+    {
+      "city": "chiba",
+      "file": "chiba/original-draft.json",
+      "sha256": "63baf815b136f21aa38e19a4d9648e33d770a1d37738d3b483ca7378e8fae4fd"
+    },
+    {
+      "city": "saitama",
+      "file": "saitama/original-draft.json",
+      "sha256": "6bf9a05c3a3e73a1f06018da83720683e21befcac70af3b14da1df8560f9fc30"
+    }
+  ],
+  "field_count": 80,
+  "service_count": 8,
+  "required_findings": [
+    {
+      "id": "CH-01",
+      "kind": "required_data_fix",
+      "severity": "high",
+      "service": "chiba-self-dropoff",
+      "fields": [
+        "limits"
+      ],
+      "problem": "2026-10-13に若葉・緑環境事業所の通常粗大ごみ自己搬入は再開したが、初稿は受付停止を現行の注意としている。",
+      "correct_value": "再開済み。公式ページ内に古い停止表記も残るため、施設の受付状況を利用前に確認する。",
+      "evidence": [
+        {
+          "source": "chiba-self-dropoff-general",
+          "lines": [
+            89,
+            92
+          ]
+        },
+        {
+          "source": "chiba-self-dropoff-general",
+          "lines": [
+            97,
+            97
+          ]
+        },
+        {
+          "source": "chiba-self-dropoff-general",
+          "lines": [
+            165,
+            167
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "CH-02",
+      "kind": "required_data_fix",
+      "severity": "medium",
+      "service": "chiba-self-dropoff",
+      "fields": [
+        "collection_location"
+      ],
+      "problem": "「本人が持ち込む」は本人同行なしの市外親族による代理搬入を排除する表現。",
+      "correct_value": "搬入者が環境事業所等へ持ち込む。代理搬入時の本人確認書類は family_help に記載。",
+      "evidence": [
+        {
+          "source": "chiba-self-dropoff-faq",
+          "lines": [
+            179,
+            191
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "CH-03",
+      "kind": "required_data_fix",
+      "severity": "medium",
+      "service": "chiba-self-dropoff",
+      "fields": [
+        "limits"
+      ],
+      "problem": "1回10点だけでは同じ日の再搬入を容認するように読める。",
+      "correct_value": "環境事業所への粗大ごみ自己搬入は1日10個まで。個別窓口ページにも1回10点とある。",
+      "evidence": [
+        {
+          "source": "chiba-self-dropoff-general",
+          "lines": [
+            146,
+            162
+          ]
+        },
+        {
+          "source": "chiba-self-dropoff",
+          "lines": [
+            117,
+            122
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "CH-04",
+      "kind": "required_source_restore",
+      "severity": "high",
+      "service": "chiba-daily",
+      "fields": [
+        "eligibility",
+        "family_help",
+        "limits",
+        "application"
+      ],
+      "problem": "chiba-daily-manualのPDFと抽出TXTが両方欠落。new-city.jsonとreview-locators.jsonでは公式出典として引用される。",
+      "correct_value": "原典PDFと抽出TXTを取得・保存し、ロケーターの既存SHA-256と照合する。内容が異なる場合はロケーターと関連項目を再審査する。",
+      "evidence": [
+        {
+          "source": "review-locators.json",
+          "lines": null,
+          "note": "chiba-daily-manual raw_sha256 e5cb06242fb35da2d4e64fe1d481d492984a5141937dfd3dd749c5cbc33c7113, text_sha256 dea4714861e9052a0cc3c4eca2aa39defcd73650ab8f7a2827fed25fa0574dc1"
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "SA-01",
+      "kind": "required_data_fix",
+      "severity": "high",
+      "service": "saitama-self-dropoff",
+      "fields": [
+        "limits",
+        "application"
+      ],
+      "problem": "「完全事前予約制」は一部利用者の予約なし搬入例外を落としている。",
+      "correct_value": "聴覚・言語障害がある方は、持込み受付で証明書等を提示すれば予約なしで搬入可能。",
+      "evidence": [
+        {
+          "source": "saitama-dropoff-reservation",
+          "lines": [
+            115,
+            125
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "SA-02",
+      "kind": "required_data_fix",
+      "severity": "medium",
+      "service": "saitama-self-dropoff",
+      "fields": [
+        "fees"
+      ],
+      "problem": "10kg以下無料と10kg単位180円の併記だけでは、超過分のみ課金と誤読されうる。",
+      "correct_value": "2026年は計量表示が10kg以下なら無料。10kgを超えたら最初の10kgから10kg単位180円（税抜）を計算。表示20kgなら360円（税抜）、税相当額を加算して10円未満切捨て。",
+      "evidence": [
+        {
+          "source": "saitama-self-dropoff",
+          "lines": [
+            224,
+            240
+          ]
+        },
+        {
+          "source": "saitama-fees",
+          "lines": [
+            106,
+            112
+          ]
+        },
+        {
+          "source": "saitama-fee-policy",
+          "lines": [
+            128,
+            134
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    }
+  ],
+  "optional_suggestions": [
+    {
+      "service": "saitama-regular-bulky",
+      "field": "family_help",
+      "suggestion": "「本人または家族等が」は市ページの明示文言ではない。収集員は屋内から搬出しないため、申込者側で約束した場所へ出す必要がある、と書くと出典との距離が近い。",
+      "source": "saitama-bulky.txt:276-282"
+    },
+    {
+      "service": "chiba-self-dropoff",
+      "field": "fees",
+      "suggestion": "未使用納付券を使う場合は差額返金なし。説明が長くなりすぎない範囲で、確認質問に加える余地がある。",
+      "source": "chiba-self-dropoff.txt:117-122"
+    }
+  ],
+  "field_reviews": [
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily",
+        "chiba-daily-manual"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "CH-04"
+      ],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "family_help",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily",
+        "chiba-daily-manual"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "CH-04"
+      ],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "fees",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily",
+        "chiba-daily-manual"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "CH-04"
+      ],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily",
+        "chiba-daily-manual"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "CH-04"
+      ],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-daily",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-daily.txt:76-93"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry",
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "indoor_carry",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "family_help",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular",
+        "chiba-fees",
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-bulky-carry",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-carry.txt:50-71",
+        "chiba-regular.txt:126-150"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular",
+        "chiba-fees"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-regular",
+        "chiba-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "family_help",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-fees"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "attendance",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-regular-bulky",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-regular"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-regular.txt:109-185",
+        "chiba-fees.txt:fee table"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff",
+        "chiba-self-dropoff-general"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "CH-02"
+      ],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff",
+        "chiba-self-dropoff-faq"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "family_help",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff-faq"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff",
+        "chiba-self-dropoff-general"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff",
+        "chiba-self-dropoff-general"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "CH-01",
+        "CH-03"
+      ],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "application",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-self-dropoff",
+        "chiba-self-dropoff-general"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "chiba-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "chiba",
+      "service": "chiba-self-dropoff",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "chiba-self-dropoff",
+        "chiba-self-dropoff-general"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "chiba-self-dropoff.txt:49-124",
+        "chiba-self-dropoff-general.txt:82-175",
+        "chiba-self-dropoff-faq.txt:146-191"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "family_help",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "fees",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-daily",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-fureai"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-fureai.txt:107-165"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "waste_scope",
+      "initial_state": "not_found",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "indoor_carry",
+      "initial_state": "not_found",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "eligibility",
+      "initial_state": "not_found",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "family_help",
+      "initial_state": "not_found",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "fees",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "application",
+      "initial_state": "not_found",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-carry",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "limited_search_conclusion",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:276-292",
+        "official-search-log.json"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "indoor_carry",
+      "initial_state": "explicit_exclusion",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "family_help",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "attendance",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-regular-bulky",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-bulky"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-bulky.txt:106-122",
+        "saitama-bulky.txt:164-292"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "family_help",
+      "initial_state": "needs_confirmation",
+      "source_ids": [
+        "saitama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-self-dropoff",
+        "saitama-fees"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "SA-02"
+      ],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-self-dropoff",
+        "saitama-dropoff-reservation"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "SA-01"
+      ],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-dropoff-reservation"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "SA-01"
+      ],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "saitama-self-dropoff",
+        "saitama-dropoff-reservation"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    },
+    {
+      "city": "saitama",
+      "service": "saitama-self-dropoff",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "saitama-dropoff-reservation"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "saitama-self-dropoff.txt:134-274",
+        "saitama-dropoff-reservation.txt:104-129",
+        "saitama-fees.txt:106-112"
+      ]
+    }
+  ],
+  "source_integrity": {
+    "chiba": "初稿確認時にchiba-daily-manualのraw/textが欠落。その後、既取得資料の名称を修正して復元。現在は8出典のraw/text保存とロケーターSHA-256一致を確認。",
+    "saitama": "8公式出典のraw/text保存を確認。8件のraw SHA-256はmetadata記載値と一致。"
+  },
+  "review_limitations": [
+    "AI照合であり人手・窓口確認ではない。",
+    "さいたま屋内搬出支援は今回の公式検索範囲で未発見という限定結論。",
+    "修正差分の後続再検査は初稿80項目の全件再検査とは別記録にする。",
+    "公開適格性や公開承認を付与しない。"
+  ],
+  "recheck": {
+    "scope": "初稿から変更された千葉2項目・さいたま3項目、および千葉PDF/TXT保存だけの差分原典再検査。80項目の再全件検査ではない。",
+    "current_candidates": [
+      {
+        "city": "chiba",
+        "sha256": "ecba0688484b87160dabfa284026d9d3b8a929db78aba3a757e45f4aab944eea"
+      },
+      {
+        "city": "saitama",
+        "sha256": "b47c4fc275620f3ef9423d9de6659500b6e9ca51d664f896fc979ba3d1068bc9"
+      }
+    ],
+    "result": "初稿から変更された千葉2項目・さいたま3項目と千葉PDF/TXT保存を差分原典再検査。予約例外の冒頭表現も原則制に調整済み。必須6指摘は現候補で解決。",
+    "source_integrity": "千葉8件・さいたま8件の公式原典rawを保存確認。千葉chiba-daily-manualのraw/textが復元され、ロケーターのSHA-256双方と一致。",
+    "remaining_required_findings": [],
+    "source_integrity_check_passed": true,
+    "source_integrity_check_count": 38
+  }
+}

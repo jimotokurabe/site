@@ -1,0 +1,465 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "okayama:okayama",
+      "name": "岡山市",
+      "kana": "おかやまし",
+      "pref_name": "岡山県",
+      "selection_reason": "岡山県の初候補として、日常ごみのふれあい収集、粗大ごみの屋内搬出支援、通常の粗大ごみ戸別収集、自己搬入を公式情報で区別できる。日常支援は親族等の協力が得られないこと、粗大ごみ搬出支援は世帯員全員が対象事由に該当することが条件で、通常収集と自己搬入の費用・申込手順も明示されている。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "okayama-daily",
+          "kind": "daily_support",
+          "name": "可燃ごみ等のふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭系の可燃ごみ、不燃ごみ、資源化物（拠点のみ回収する物を除く）、廃乾電池・体温計等。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "指定曜日・時間に戸別収集。現地調査で確認した家屋の玄関先またはドア前を排出場所とし、曜日・時間は担当事業所と協議して決定。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関先等から戸別収集する。室内のどこまで入って回収するかの記載はない。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "岡山市内在住・在宅生活",
+                  "世帯員自らごみを集積場へ出すことが困難",
+                  "親族または近隣在住者等の協力を得られない",
+                  "該当者のみの世帯",
+                  {
+                    "any": [
+                      "介護保険の要介護1以上",
+                      "視覚障害または肢体不自由2級以上の身体障害者手帳"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣在住者等の協力を得られる場合は対象条件を満たさない。家族が手伝えるか確認が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "fees": {
+              "value": "収集サービス自体の利用料・減免の記載なし。可燃・不燃ごみは通常と同様に有料指定袋を使用。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "limits": {
+              "value": "市内全域。建部地区は申込方法が異なる。拠点のみ回収する資源化物は対象外。分別は通常のステーション排出と同様。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "application": {
+              "value": "ふれあい収集申請書に介護保険証または身体障害者手帳の写し等を添え、地区担当の市事業所（野殿・当新田・岡南・西大寺）へ提出。建部地区は建部支所へ。現地調査後に市が要否を決定。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "attendance": {
+              "value": "立会い要否の記載なし。排出日時は申請先と協議。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            },
+            "contact": {
+              "value": "環境局環境部環境事業課 事業係 086-803-1298。建部支所 086-722-1112。申請先は地区担当の市事業所。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯員全員が記載の対象要件を満たすか、親族・近隣の援助を得られない状態か、担当事業所へ確認してください。",
+            "玄関先・ドア前での受渡し、訪問頻度、立会い要否、サービス利用料や減免の有無を確認してください。"
+          ]
+        },
+        {
+          "id": "okayama-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ。市が屋外へ搬出したうえで戸別収集する。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "collection_location": {
+              "value": "市が屋外へ搬出し、戸別収集する。物の設置状況等によっては収集できない場合がある。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家庭から粗大ごみを屋外へ搬出する支援あり。室内の具体的な搬出経路や解体作業についての記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "世帯員全員が独自に粗大ごみを屋外へ出すことが困難",
+                  {
+                    "any": [
+                      "65歳以上",
+                      "身体障害者手帳の交付",
+                      "精神障害者保健福祉手帳の交付",
+                      "療育手帳の交付",
+                      "要介護または要支援認定",
+                      "上記1〜3に該当する人と同居する小学生以下の児童"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "family_help": {
+              "value": "世帯員全員が対象事由に該当することが要件。親族など家族の援助が可能な場合の扱いは明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "fees": {
+              "value": "戸別収集は有料。品目別手数料・手数料減免の記載はこのページにない。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "limits": {
+              "value": "粗大ごみの設置状況等により収集できない場合がある。品目や設置状況の判定基準は個別確認。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話またはファクスで申込。月〜金曜9〜16時、祝日可、年末年始を除く。電話086-227-5300、FAX 086-227-0053。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "attendance": {
+              "value": "申込後の現地確認、搬出時の立会いに関する記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 086-227-5300、FAX 086-227-0053。制度問い合わせは環境局環境部環境事業課 086-803-1297。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-carry"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯員全員の対象要件、粗大ごみの品目・設置状況による搬出可否を受付センターへ確認してください。",
+            "戸別収集の品目別料金、減免の有無、室内での作業範囲と当日の立会い要否を確認してください。"
+          ]
+        },
+        {
+          "id": "okayama-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ（目安は20リットルの有料指定ごみ袋に入りきらない物）。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular",
+                "okayama-regular-procedure"
+              ]
+            },
+            "collection_location": {
+              "value": "市が戸別収集。収集当日の午前8時までに申込時に指定した場所へ出す。立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular-procedure"
+              ]
+            },
+            "indoor_carry": {
+              "value": "申込者が指定場所まで出す通常収集。市による屋内搬出支援の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-regular",
+                "okayama-regular-procedure"
+              ]
+            },
+            "eligibility": {
+              "value": "岡山市在住の方が申込。対象品目一覧にある粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular",
+                "okayama-regular-procedure"
+              ]
+            },
+            "family_help": {
+              "value": "家族等による代理申込・代理排出の条件は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-regular-procedure"
+              ]
+            },
+            "fees": {
+              "value": "戸別収集は有料。品目別に200円・500円・1,000円・1,500円・2,500円の区分。申込時に品目と手数料を必ず確認する。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular",
+                "okayama-regular-procedure"
+              ]
+            },
+            "limits": {
+              "value": "1回10個まで。単品で100kg超または長さ1.8m超は断られる場合がある。対象外品あり（家電4品目、タイヤ、ピアノ等）。申込から収集まで10日前後。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular",
+                "okayama-regular-procedure"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話086-227-5300、FAX 086-227-0053（平日9〜16時、祝日可、12/29〜1/3除く）またはインターネット。インターネット受付は過去に電話予約で利用したことがある人が対象。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular-procedure"
+              ]
+            },
+            "attendance": {
+              "value": "収集当日の立会いは不要。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular-procedure"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 086-227-5300、FAX 086-227-0053。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-regular-procedure"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目別料金、収集日、指定排出場所、申込から収集までの日数、受付状況を申込時に確認してください。",
+            "家族等が申込み・屋外への排出を代行する場合の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "okayama-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "岡山市民が家庭から出す粗大ごみ。家電4品目、事業活動に伴うごみ、排出禁止物等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff",
+                "okayama-self-dropoff-east"
+              ]
+            },
+            "collection_location": {
+              "value": "粗大ごみ受付センターへ事前申込し、予約した施設へ持ち込む。東部リサイクルプラザでは東出入口から入り受付で職員の誘導に従う。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff",
+                "okayama-self-dropoff-east"
+              ]
+            },
+            "indoor_carry": {
+              "value": "本人または家族等が施設へ搬入する方式。自宅からの屋内搬出支援の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "okayama-self-dropoff",
+                "okayama-self-dropoff-east"
+              ]
+            },
+            "eligibility": {
+              "value": "岡山市民が家庭から出す粗大ごみ。事前申込が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff",
+                "okayama-self-dropoff-east"
+              ]
+            },
+            "family_help": {
+              "value": "受付予約をした本人が持ち込む必要がある。家族等が本人に代わって持ち込める例外の記載はない。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみの持込み手数料は無料。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "持込希望日の前日（土日を除く）までに申込み。予約状況で数日かかる場合がある。施設・車両によって持込可否が異なる場合あり。家電4品目、事業系ごみ、排出禁止物等は不可。 1日1車のみで、複数回または2台以上での持込みは不可。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff",
+                "okayama-self-dropoff-east"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話086-227-5300、FAX 086-227-0053（平日9〜16時、祝日可、12/29〜1/3除く）または24時間のインターネット受付。持込施設・希望日・住所・氏名・電話・品目・個数を伝える。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "受付予約をした本人が施設へ持ち込む必要がある。本人が運転する必要があるかは記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 086-227-5300、FAX 086-227-0053。東部リサイクルプラザ 086-944-7122。",
+              "state": "explicit",
+              "source_ids": [
+                "okayama-self-dropoff",
+                "okayama-self-dropoff-east"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "搬入予定施設の受入品目・予約状況・受付日と時間、車両条件を事前確認してください。",
+            "予約した本人が施設に来る必要があります。本人が運転する必要があるか、家族等が本人に代わって搬入できる例外があるかを確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "制度案内の公式ページ更新日が2010〜2018年のものを含む。取得時の現行表示を保存したが、受付の運用・料金を窓口に確認していない。",
+        "粗大ごみ自己搬入は無料と案内されているが、施設ごとの受付・予約条件が異なるため事前確認が必要。"
+      ],
+      "common_questions_for_office": [
+        "各支援の現行受付状況、対象条件の判定、訪問方法、申込後の調査日数を確認してください。",
+        "収集支援の利用料・減免と通常粗大ごみ処理券の適用範囲を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "okayama-daily",
+      "url": "https://www.city.okayama.jp/kurashi/0000004959.html",
+      "title": "可燃ごみ等のふれあい収集",
+      "source_updated": "2018-10-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "okayama-carry",
+      "url": "https://www.city.okayama.jp/kurashi/0000005660.html",
+      "title": "粗大ごみふれあい収集",
+      "source_updated": "2011-07-19",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "okayama-regular",
+      "url": "https://www.city.okayama.jp/kurashi/0000005008.html",
+      "title": "粗大ごみの出し方",
+      "source_updated": "2010-05-23",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "okayama-regular-procedure",
+      "url": "https://www.city.okayama.jp/kurashi/0000005035.html",
+      "title": "粗大ごみ戸別収集の手順",
+      "source_updated": "2010-05-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "okayama-self-dropoff",
+      "url": "https://www.city.okayama.jp/kurashi/0000005299.html",
+      "title": "粗大ごみ持込みの手順",
+      "source_updated": "2010-05-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "okayama-self-dropoff-east",
+      "url": "https://www.city.okayama.jp/kurashi/0000004457.html",
+      "title": "粗大ごみ・資源化物の持込み方法（東部リサイクルプラザ）",
+      "source_updated": "2016-09-30",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "base": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/gomi-expansion-b03/data/gomi-support.json",
+  "base_sha256": "1f121897a3555597d867aee94f6b3b45e9cb10e80f2f7c74a385f4ed6f080671",
+  "inputs": [
+    {
+      "path": "chiba/new-city.json",
+      "sha256": "ecba0688484b87160dabfa284026d9d3b8a929db78aba3a757e45f4aab944eea"
+    },
+    {
+      "path": "saitama/new-city.json",
+      "sha256": "b47c4fc275620f3ef9423d9de6659500b6e9ca51d664f896fc979ba3d1068bc9"
+    }
+  ],
+  "new_city_ids": [
+    "chiba:chiba",
+    "saitama:saitama"
+  ],
+  "published_count": 21
+}

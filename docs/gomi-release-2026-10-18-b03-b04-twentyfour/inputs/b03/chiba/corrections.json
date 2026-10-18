@@ -1,0 +1,29 @@
+{
+  "recorded_on": "2026-10-18",
+  "review_findings": [
+    {
+      "finding": "全市自己搬入案内の上部本文は若葉・緑環境事業所の粗大ごみ自己搬入を2026年10月13日から再開と記載する一方、同ページ下部の表は受付停止中の旧記載を保持していた。",
+      "change": "new-city.jsonの自己搬入limitsを更新案内に合わせ、ページ内の旧記載との矛盾と利用前の施設確認を併記した。questions_for_officeにも訪問前確認を追加。",
+      "source": "official/chiba-self-dropoff-general.txt lines 89-97, 165-167",
+      "status": "corrected"
+    },
+    {
+      "finding": "日常支援補助金の手引きPDF/TXTは保存されていたが、ファイル名がchiba-daily-groupsで、official-metadata.jsonおよびreview-locators.jsonが参照するchiba-daily-manualと一致せず、証拠リンクが欠落していた。",
+      "change": "取得済みの原本と抽出文をchiba-daily-manual.pdf/.txtへ改名し、メタデータとlocatorの参照名・パスを整合。内容の再取得はしていない。",
+      "status": "corrected"
+    },
+    {
+      "finding": "自己搬入のcollection_locationが「本人が持ち込む」と限定していたが、公式FAQ185-191行は市民本人が同行しない市外親族の代理搬入を認める。",
+      "change": "「搬入者が持ち込む」に変更し、代理搬入FAQを出典に追加。本人運転要件は推定していない。",
+      "source": "official/chiba-self-dropoff-faq.txt lines 185-191",
+      "status": "corrected"
+    },
+    {
+      "finding": "自己搬入limitsは環境事業所の1回10点のみで、全市案内の1日10個上限を欠いていた。",
+      "change": "1回10点と1日10個を併記し、全市案内の原典locatorを追加。",
+      "source": "official/chiba-self-dropoff-general.txt lines 155-167",
+      "status": "corrected"
+    }
+  ],
+  "preserved_original": "original-draft.json"
+}

@@ -1,0 +1,318 @@
+[
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-daily",
+    "service_sha256": "c9fa961b9a9bc62ea38819a12113d43edc10c83872e08c5db2bc3667196bf82a",
+    "sources": [
+      {
+        "id": "chiba-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-daily.txt",
+        "lines": [
+          [
+            45,
+            110
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-daily.html.source",
+        "raw_sha256": "84430e933161f37ff1d9df23e7c33bb737c767abe4821676898361be847b4dd3",
+        "text_sha256": "32f3e011cf63857203da2c14a0f3afbba26dbb06b1eaa3d1f454a17691866d09",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-bulky-carry",
+    "service_sha256": "2ea5f8a4f53684e4b8bc1214a7ea712c57fd9625f5d38cab801ce5c4a7768127",
+    "sources": [
+      {
+        "id": "chiba-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-carry.txt",
+        "lines": [
+          [
+            50,
+            77
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-carry.html.source",
+        "raw_sha256": "c65c4e7f9b73e62498985edee3b4a5c9d708690c8189c6ec25de41799615ea9b",
+        "text_sha256": "8afa76124f30f224dc38ab3f53780a65128ee8d0da5f48581b7a664cbc1ad332",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-bulky-carry",
+    "service_sha256": "2ea5f8a4f53684e4b8bc1214a7ea712c57fd9625f5d38cab801ce5c4a7768127",
+    "sources": [
+      {
+        "id": "chiba-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-fees.txt",
+        "lines": [
+          [
+            42,
+            110
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-fees.html.source",
+        "raw_sha256": "a5a419fd7d2ec55bf08f19b2631ff64eef282b7b86213d09880132b93d780485",
+        "text_sha256": "2cff15bc82518cd042a799db32e0e99deb406de31074a396efd1d384b1c5b3ad",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-bulky-carry",
+    "service_sha256": "2ea5f8a4f53684e4b8bc1214a7ea712c57fd9625f5d38cab801ce5c4a7768127",
+    "sources": [
+      {
+        "id": "chiba-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-regular.txt",
+        "lines": [
+          [
+            105,
+            200
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-regular.html.source",
+        "raw_sha256": "a6331f0ba02f228c8001551880259b2552d245ea01b60b248540347a7792c435",
+        "text_sha256": "dedc232641c49d125658bf941039a77b5c3666530ca680cfa3ffba9e558f5f15",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-regular-bulky",
+    "service_sha256": "831b2040397ccf5fd742582c4fa8dfb64e17a5c8bb98d9dfb326aa8d3775df92",
+    "sources": [
+      {
+        "id": "chiba-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-carry.txt",
+        "lines": [
+          [
+            50,
+            77
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-carry.html.source",
+        "raw_sha256": "c65c4e7f9b73e62498985edee3b4a5c9d708690c8189c6ec25de41799615ea9b",
+        "text_sha256": "8afa76124f30f224dc38ab3f53780a65128ee8d0da5f48581b7a664cbc1ad332",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-regular-bulky",
+    "service_sha256": "831b2040397ccf5fd742582c4fa8dfb64e17a5c8bb98d9dfb326aa8d3775df92",
+    "sources": [
+      {
+        "id": "chiba-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-fees.txt",
+        "lines": [
+          [
+            42,
+            110
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-fees.html.source",
+        "raw_sha256": "a5a419fd7d2ec55bf08f19b2631ff64eef282b7b86213d09880132b93d780485",
+        "text_sha256": "2cff15bc82518cd042a799db32e0e99deb406de31074a396efd1d384b1c5b3ad",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-regular-bulky",
+    "service_sha256": "831b2040397ccf5fd742582c4fa8dfb64e17a5c8bb98d9dfb326aa8d3775df92",
+    "sources": [
+      {
+        "id": "chiba-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-regular.txt",
+        "lines": [
+          [
+            105,
+            200
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-regular.html.source",
+        "raw_sha256": "a6331f0ba02f228c8001551880259b2552d245ea01b60b248540347a7792c435",
+        "text_sha256": "dedc232641c49d125658bf941039a77b5c3666530ca680cfa3ffba9e558f5f15",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-self-dropoff",
+    "service_sha256": "021e7b9d4ae163111f68f447b7c6226ed97731f36961e8a4f680950d93405df6",
+    "sources": [
+      {
+        "id": "chiba-self-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-self-dropoff.txt",
+        "lines": [
+          [
+            55,
+            95
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-self-dropoff.html.source",
+        "raw_sha256": "2c06d38426c7f4c87507504cd9f88028f3dc87ef867c5532a0449211ef2e30c9",
+        "text_sha256": "7c5fd1131d04abb30fd59cef2d42971129d1a48bdb8d17ab7d5d5ef37f491056",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-self-dropoff",
+    "service_sha256": "021e7b9d4ae163111f68f447b7c6226ed97731f36961e8a4f680950d93405df6",
+    "sources": [
+      {
+        "id": "chiba-self-dropoff-faq",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-self-dropoff-faq.txt",
+        "lines": [
+          [
+            65,
+            195
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-self-dropoff-faq.html.source",
+        "raw_sha256": "7c3b83122ef40292b4c60102a96bb0a9e31769a48be98f30ddcc8ea247abaf44",
+        "text_sha256": "25249d226502b77683c9a4b5277ef307e6092075c86a90bb47db93f364927311",
+        "field_names": [
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "collection_location"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-self-dropoff",
+    "service_sha256": "021e7b9d4ae163111f68f447b7c6226ed97731f36961e8a4f680950d93405df6",
+    "sources": [
+      {
+        "id": "chiba-self-dropoff-general",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-self-dropoff-general.txt",
+        "lines": [
+          [
+            75,
+            130
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-self-dropoff-general.html.source",
+        "raw_sha256": "689717bf6dad72307fe3f550af6f059ee561992ac26f8de79f50a9de95a77fb6",
+        "text_sha256": "f88d138716a8c1cea099efc16886ce51b98f70a3c647efec0b923f1297134141",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "limits",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "chiba:chiba",
+    "service": "chiba-daily",
+    "service_sha256": "c9fa961b9a9bc62ea38819a12113d43edc10c83872e08c5db2bc3667196bf82a",
+    "sources": [
+      {
+        "id": "chiba-daily-manual",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-daily-manual.txt",
+        "lines": [
+          [
+            23,
+            74
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B03/chiba/official/chiba-daily-manual.pdf",
+        "raw_sha256": "e5cb06242fb35da2d4e64fe1d481d492984a5141937dfd3dd749c5cbc33c7113",
+        "text_sha256": "dea4714861e9052a0cc3c4eca2aa39defcd73650ab8f7a2827fed25fa0574dc1",
+        "field_names": [
+          "eligibility",
+          "family_help",
+          "limits",
+          "application"
+        ]
+      }
+    ]
+  }
+]

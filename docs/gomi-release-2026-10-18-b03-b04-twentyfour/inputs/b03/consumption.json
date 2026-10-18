@@ -1,0 +1,19 @@
+{
+  "research_agents": 2,
+  "research_model": "gpt-6-luna",
+  "research_effort": "medium",
+  "review_agents": 1,
+  "review_model": "gpt-6-sol",
+  "review_effort": "medium",
+  "parent_setting": "unchanged",
+  "search_queries": 12,
+  "official_documents": 16,
+  "correction_refetches": 0,
+  "initial_fields_reviewed": 80,
+  "required_findings": 6,
+  "recheck": "changed fields and source integrity only",
+  "credits": null,
+  "tokens": null,
+  "cost": null,
+  "savings_measured": false
+}

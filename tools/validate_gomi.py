@@ -147,6 +147,8 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
         # Accept them only when the source is referenced exclusively by that city.
         municipal_hosts = {
             'www.city.sapporo.jp': 'hokkaido:sapporo',
+            'www.city.chiba.jp': 'chiba:chiba',
+            'www.city.okayama.jp': 'okayama:okayama',
             'www.city.nagoya.jp': 'aichi:nagoya',
             'www.city.sendai.jp': 'miyagi:sendai',
             'www.city.takarazuka.hyogo.jp': 'hyogo:takarazuka',

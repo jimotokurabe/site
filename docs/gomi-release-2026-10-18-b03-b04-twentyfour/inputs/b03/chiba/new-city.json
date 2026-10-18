@@ -1,0 +1,521 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "chiba:chiba",
+      "name": "千葉市",
+      "kana": "ちばし",
+      "pref_name": "千葉県",
+      "selection_reason": "千葉県の初候補として、公式資料で地域団体による日常ごみ出し支援、条件付き粗大ごみ室内搬出、通常戸別収集、自己搬入の4経路を区別できる。日常支援は登録団体との地域マッチングが必要で、市内全域をカバーしない点も明示されている。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "chiba-daily",
+          "kind": "daily_support",
+          "name": "高齢者等ごみ出し支援事業",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみを除く家庭系ごみのうち、可燃ごみ、不燃・有害ごみ、資源物（びん・缶・ペットボトル、古紙・布類）。登録団体が週1回以上、対象世帯からごみステーションへ運ぶ。希望世帯にはごみ出しとあわせて声かけを行う。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "地域ボランティアが世帯から収集し、ごみステーションへ排出。収集頻度は週1回以上。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "世帯からごみを収集する案内はあるが、住宅内のどこから運び出すかの記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "ごみ出しが困難である",
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          "単身世帯",
+                          {
+                            "any": [
+                              "介護保険の要支援1・2または要介護1～5",
+                              "身体障害者手帳1級または2級",
+                              "精神障害者保健福祉手帳1級",
+                              "療育手帳○AまたはA",
+                              "その他市長が認める者"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          "同様の要件を満たす同居人がいる世帯",
+                          {
+                            "any": [
+                              "介護保険の要支援1・2または要介護1～5",
+                              "身体障害者手帳1級または2級",
+                              "精神障害者保健福祉手帳1級",
+                              "療育手帳○AまたはA",
+                              "その他市長が認める者"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "居住地域で活動するごみ出し支援事業登録団体がある"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily",
+                "chiba-daily-manual"
+              ]
+            },
+            "family_help": {
+              "value": "単身世帯が基本。例外として、同様の要件を満たす同居人がいる世帯も対象。さらに居住地域で活動する登録団体が必要で、市内全域をカバーする事業ではない。希望者は高齢福祉課が登録団体とマッチングする。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily",
+                "chiba-daily-manual"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-daily"
+              ]
+            },
+            "limits": {
+              "value": "粗大ごみは対象外。登録団体が活動する地域に限られ、市内全域をカバーしない。団体側には事前登録が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily",
+                "chiba-daily-manual"
+              ]
+            },
+            "application": {
+              "value": "支援希望者は高齢福祉課（043-245-5250）へ問い合わせ。対象要件を満たす場合、登録団体とのマッチングを行う。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily",
+                "chiba-daily-manual"
+              ]
+            },
+            "attendance": {
+              "value": "地域ボランティアによる支援。具体的な訪問時の立会い要否は記載なし。希望世帯にはごみ出しにあわせた声かけを実施。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-daily"
+              ]
+            },
+            "contact": {
+              "value": "千葉市保健福祉局 高齢福祉課 043-245-5250。支援対象・地域の登録団体・マッチングを相談。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "対象要件を満たすか、居住地域を担当する登録団体があるか、団体とのマッチング可否を高齢福祉課へ確認してください。",
+            "訪問時の玄関先受渡し方法、声かけの希望、頻度、費用負担を登録団体に確認してください。",
+            "市ページでは対象外の方にシルバー人材センターのワンコインサービス（500円／回・30分以内）も案内されています。利用条件とごみ出し対応を同センターへ確認してください。"
+          ]
+        },
+        {
+          "id": "chiba-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内からの運び出し収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "千葉市で収集する粗大ごみ。市の排出禁止物、家電リサイクル法対象品目は室内搬出の対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry",
+                "chiba-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "市職員または委託業者が室内から指定排出場所まで運び出す。申込後に区担当の環境事業所職員または委託業者が訪問して品目・数量・現地状況を確認し、収集日を調整する。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "粗大ごみを自ら指定排出場所まで運び出すことが難しい",
+                  "身近な方の協力を得られない",
+                  {
+                    "any": [
+                      "障害者のみの世帯",
+                      {
+                        "all": [
+                          "65歳以上の高齢者世帯",
+                          {
+                            "any": [
+                              "一人暮らし",
+                              "高齢者のみの世帯"
+                            ]
+                          }
+                        ]
+                      },
+                      "その他、運び出し収集が必要と認められる場合"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "family_help": {
+              "value": "身近な方の協力を得られないことが条件。世帯区分は障害者のみ、65歳以上の高齢者（単身または高齢者のみ）、その他必要と認められる場合。対象判定は受付センターへ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "fees": {
+              "value": "通常の粗大ごみ処理手数料は品目に応じ390円・780円・1,170円・1,560円。室内搬出支援自体の追加料金・免除の記載は確認できず、通常手数料と分けて要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular",
+                "chiba-fees",
+                "chiba-carry"
+              ]
+            },
+            "limits": {
+              "value": "市の排出禁止物、家電リサイクル法対象品、玄関口から運び出せない物、取り外し工事・解体作業が必要な物、その他搬出に支障がある物は対象外。現地確認後に収集日を調整。搬出経路の確保が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センター（043-302-5374）へ通常収集を申し込む際、室内からの運び出し収集も申し出る。訪問確認後に日程を決定。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "attendance": {
+              "value": "申込後、職員または委託業者が申込者宅を訪問して品目・数量・現地状況を確認する。実際の搬出収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 043-302-5374。制度・申込は各区担当環境事業所にも相談可能。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-carry"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯条件（障害者のみ、65歳以上の単身または高齢者のみ等）と「身近な方の協力なし」の判定を受付へ確認してください。",
+            "室内搬出支援の追加料金または免除、通常の粗大ごみ処理手数料、搬出経路・対象外品、訪問・収集時の立会い要否を確認してください。"
+          ]
+        },
+        {
+          "id": "chiba-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみの戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "千葉市の家庭から出る粗大ごみ。指定ごみ袋に入れて口が結べない、または口が結べてもはみ出す物など。品目ごとに対象・手数料を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular",
+                "chiba-fees"
+              ]
+            },
+            "collection_location": {
+              "value": "申込時に指定された場所へ、収集日の早朝から朝8時までに排出。ごみステーションには出せない。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常の戸別収集の案内では、収集員による室内からの搬出可否の記載なし。対象世帯向けの室内搬出は別途「運び出し収集」。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-regular",
+                "chiba-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "千葉市の家庭から出る粗大ごみ。事業ごみ等の扱いは本資料の範囲外として受付へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            },
+            "family_help": {
+              "value": "身近な方が屋外の指定場所まで運び出す場合の条件や代理申込要件の記載なし。室内からの搬出が必要な場合は別制度を申出。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目に応じ390円・780円・1,170円・1,560円の4段階。電話は納付券、インターネット・LINEは納付券または電子決済。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-fees"
+              ]
+            },
+            "limits": {
+              "value": "1回合計10個まで。受付完了から収集まで約1～2週間、申込集中時は2週間以上の場合あり。指定日の朝8時までに排出。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話（043-302-5374、月～金9:00～16:00、土9:00～11:30）、またはインターネット・LINEで申込。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            },
+            "attendance": {
+              "value": "通常収集時の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 043-302-5374。電話受付は月～金9:00～16:00、土9:00～11:30（日曜・祝日・年末年始を除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目ごとの手数料、収集日、指定排出場所、受付から収集までの日数を申し込み時に確認してください。",
+            "家族等による代理申込や屋外排出の条件は公式資料で確認できないため、必要な場合は受付センターへ確認してください。"
+          ]
+        },
+        {
+          "id": "chiba-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "千葉市内の家庭から出た粗大ごみ。環境事業所への持込みは品目ごとの粗大ごみ処理手数料。施設ごとに取扱品目や受付状況が異なるため事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-general"
+              ]
+            },
+            "collection_location": {
+              "value": "搬入者が粗大ごみを環境事業所等へ持ち込む。中央・美浜環境事業所は平日9:00～16:00、土曜9:00～12:00（祝日・休日・年末年始を除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自宅から施設までの搬出支援に関する記載なし。搬入先での荷下ろし支援範囲も記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-self-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "対象は千葉市内の家庭から出たごみ。市内在住者が対象で、事業者は搬入不可。受付で市民確認書類を求められる。市外居住の親族が代理搬入する場合は、市民本人の同行がない場合の必要書類をFAQで案内。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-faq"
+              ]
+            },
+            "family_help": {
+              "value": "市外在住の親族等が、市内在住者に代わり本人の同行なしで搬入する場合、搬入者本人の身分証明書と、排出者である市民本人の身分が分かるもの（身分証の写しや公共料金領収書等）を受付で提示すれば搬入可能。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff-faq"
+              ]
+            },
+            "fees": {
+              "value": "環境事業所への粗大ごみ持込みは自宅収集申込と同額の品目別390円・780円・1,170円・1,560円。現地で現金・キャッシュレス決済または未使用納付券で支払う。新浜リサイクルセンターは対象品目が異なり、10kgまでごとに270円（税別）。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-general"
+              ]
+            },
+            "limits": {
+              "value": "環境事業所への持込みは、1回10点までかつ1日10個まで。全市ページは10月13日（火）から若葉・緑環境事業所の粗大ごみ自己搬入を再開すると記載する一方、同じページの下部表には「受付停止中」と旧記載が残る。2026年10月18日現在は再開案内を記録しつつ、訪問前に施設へ当日の受付状況を確認。受入品目・受付時間も事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-general"
+              ]
+            },
+            "application": {
+              "value": "中央・美浜環境事業所への粗大ごみ持込みはページに事前予約要件の記載なし。受付で品目確認と支払い。事前に受入可否・施設状況を確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-general"
+              ]
+            },
+            "attendance": {
+              "value": "受付時に職員が粗大ごみの品目を確認。搬入者が車両を運転する要件か、本人運転が必要かの記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "chiba-self-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "中央・美浜環境事業所 043-231-6342。その他の搬入先は「ごみを自ら持ち込む」ページで施設別連絡先を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "chiba-self-dropoff",
+                "chiba-self-dropoff-general"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "搬入予定施設の受入品目・受付状況・営業時間、10点制限と処理手数料を事前確認してください。",
+            "市外在住の親族等が本人に代わって搬入する場合の提示書類を持参してください。本人自身の運転義務は資料に記載がないため、運転者要件を必要に応じて確認してください。",
+            "若葉・緑環境事業所は全市ページ上部に10月13日再開とある一方、同ページ下部表は受付停止中のままです。訪問日時点の受付状況を事前に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "日常の高齢者等ごみ出し支援は単身世帯が基本で、同様の要件を満たす同居人がいる場合を含む。資格要件はOR、対象者要件と登録団体の地域活動有無はAND。",
+        "日常支援は地域ボランティアが週1回以上収集。市内全域をカバーしない。登録団体の有無は高齢福祉課への問合せでマッチング。",
+        "粗大ごみ室内搬出支援は身近な方の協力が得られないことが条件。障害者のみ、65歳以上の単身または高齢者のみ等。玄関から出せない物・解体等が必要な物は対象外。",
+        "室内搬出支援にかかる追加料金・免除は確認できず。通常粗大ごみ処理手数料の有無・免除と混同しない。通常収集・自己搬入では品目別390～1,560円。",
+        "自己搬入は市民本人が施設へ搬入する案内であり、本人自身が運転する要件は記載されていない。市外親族による代理搬入はFAQ所定の身分証等を要する。",
+        "免除制度は今回保存した公式資料から確認できず、制度なしとは扱わない。"
+      ],
+      "common_questions_for_office": [
+        "日常支援の登録団体が活動する対象地域、現在の受入れ可否、訪問方法、費用負担は。",
+        "粗大ごみ室内搬出支援の追加料金・免除、個別の世帯判定、運び出せる物と搬出経路、立会い要否は。",
+        "自己搬入の本人運転要件、家族等代理搬入の必要書類、搬入先の現在の受入状況は。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "chiba-daily",
+      "url": "https://www.city.chiba.jp/hokenfukushi/koreishogai/korei/gomidashishienhojokin.html",
+      "title": "高齢者等ごみ出し支援事業補助金",
+      "source_updated": "2026-07-01",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-daily-manual",
+      "url": "https://www.city.chiba.jp/hokenfukushi/koreishogai/korei/documents/gomitebiki_r8-1.pdf",
+      "title": "高齢者等ごみ出し支援事業補助金申請の手引き",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-carry",
+      "url": "https://www.city.chiba.jp/faq/kankyo/junkan/shushugyomu/1100.html",
+      "title": "よくあるご質問：粗大ごみの運び出し収集について教えてください",
+      "source_updated": "2024-01-01",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-regular",
+      "url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/sodaigomi.html",
+      "title": "粗大ごみの出し方",
+      "source_updated": "2025-08-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-fees",
+      "url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/sodaigomitesuryo.html",
+      "title": "粗大ごみ処理手数料一覧",
+      "source_updated": "2026-01-15",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-self-dropoff",
+      "url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/chuo-mihama/sodaigomitojikohannyu.html",
+      "title": "粗大ごみ・資源物等の自己搬入（中央・美浜環境事業所）",
+      "source_updated": "2026-08-17",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-self-dropoff-general",
+      "url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/jikohannyu.html",
+      "title": "ごみを自ら持ち込む",
+      "source_updated": "2026-10-08",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "chiba-self-dropoff-faq",
+      "url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/jikohannyu-q-a.html",
+      "title": "ごみの自己搬入に関するQ＆A",
+      "source_updated": "2026-10-02",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "千葉市の公式サイト・公式PDFに限定して検索6クエリ、資料8点を取得。取得日時・URL・HTTP状態・原典と抽出テキストのSHA-256はofficial-metadata.json。原典の取得時刻は取得端末時刻のJSTで記録し、資料に記載のない改訂日はnull。制度窓口への問合せ、人手による全項目照合、独立レビューは未実施。プレビュー用ai_draftで公開不可。"
+}

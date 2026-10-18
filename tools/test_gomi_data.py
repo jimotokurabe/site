@@ -98,6 +98,23 @@ class GomiValidationTests(unittest.TestCase):
         data["sources"][0]["url"] = "https://www.city.sapporo.jp/gomi/example.html"
         self.assertTrue(any("expected an official municipal/prefectural government hostname" in e for e in validate(data, root=ROOT)))
 
+    def test_chiba_hostname_is_allowed_only_for_chiba_owned_source(self):
+        data = copy.deepcopy(DATA)
+        source = data["sources"][0]
+        source["url"] = "https://www.city.chiba.jp/gomi/example.html"
+        owners = [city for city in data["cities"] if any(
+            source["id"] in fact.get("source_ids", [])
+            for service in city["services"]
+            for fact in service["fields"].values()
+        )]
+        owners[0]["id"] = "chiba:chiba"
+        self.assertFalse(any("expected an official municipal/prefectural government hostname" in e for e in validate(data, root=ROOT)))
+
+    def test_chiba_hostname_fails_for_a_different_city_source(self):
+        data = copy.deepcopy(DATA)
+        data["sources"][0]["url"] = "https://www.city.chiba.jp/gomi/example.html"
+        self.assertTrue(any("expected an official municipal/prefectural government hostname" in e for e in validate(data, root=ROOT)))
+
     def test_publication_gate_rejects_unreviewed_draft(self):
         data = copy.deepcopy(DATA)
         data.update(draft=True, not_for_publication=True)

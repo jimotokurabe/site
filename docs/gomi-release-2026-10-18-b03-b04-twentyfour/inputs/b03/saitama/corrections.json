@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "review_finding": "直接持込み予約には、聴覚・言語に障害がある人が搬入時に証明書等を受付提示すれば予約なしで持ち込める例外がある。元草稿では不記載。",
+  "files_preserved": {
+    "original_draft": "original-draft.json",
+    "original_draft_sha256": "6bf9a05c3a3e73a1f06018da83720683e21befcac70af3b14da1df8560f9fc30"
+  },
+  "change": {
+    "service_id": "saitama-self-dropoff",
+    "fields": [
+      "limits",
+      "application",
+      "questions_for_office",
+      "common_questions_for_office"
+    ],
+    "detail": "予約制の記述を残したまま、公式ページの例外を明記。証明書の種類は原文で特定されていないため窓口質問に保持。locatorを該当する原典行125へ対応。"
+  },
+  "source_id": "saitama-dropoff-reservation",
+  "source_text_line": 125,
+  "source_quote": "聴覚・言語に障害がある方につきましては、ごみの持込みの際に、受付において証明書等を提示していただければ、予約がなくても搬入可能です。",
+  "before_sha256": "6bf9a05c3a3e73a1f06018da83720683e21befcac70af3b14da1df8560f9fc30",
+  "after_sha256": "121624595883899185fd9bad5d8a709673ca85510c26f5946be1e036f1c61f6d",
+  "followup_changes": [
+    {
+      "finding": "「180円/10kg」は10kgを超えた重量だけに課金するとの誤読余地がある。",
+      "change": "無料枠を超えた場合に、超過分のみでなく最初の10kgから課金することをfeesへ明記。2026年の単価・税・端数処理と処理施設の計量表示に基づくことも保持。出典ID saitama-fee-policy と該当行134を追加。",
+      "source_ids": [
+        "saitama-self-dropoff",
+        "saitama-fee-policy"
+      ],
+      "source_text_lines": {
+        "saitama-self-dropoff": [
+          230,
+          235,
+          238,
+          239
+        ],
+        "saitama-fee-policy": [
+          127,
+          128,
+          129,
+          133,
+          134
+        ]
+      },
+      "before_sha256": "87ee7752480dd17a23c5423202846536c5f26210878b670d54133f2b7d757664",
+      "after_sha256": "121624595883899185fd9bad5d8a709673ca85510c26f5946be1e036f1c61f6d"
+    }
+  ],
+  "first_change_after_sha256": "87ee7752480dd17a23c5423202846536c5f26210878b670d54133f2b7d757664"
+}

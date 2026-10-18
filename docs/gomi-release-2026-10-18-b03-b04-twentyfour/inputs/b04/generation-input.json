@@ -1,0 +1,15 @@
+{
+  "base": "調査/2026-10-18_ごみ支援拡大B03/candidate.json",
+  "base_sha256": "32e91f467b0d35538309b4b411a6c2d41b611deca88215db282eb27ebf8bb8a3",
+  "inputs": [
+    {
+      "path": "okayama/new-city.json",
+      "sha256": "2384ef97f24229847a9879ff23dab9126e060307b18c9a86ee25d9eca673a952"
+    }
+  ],
+  "new_city_ids": [
+    "okayama:okayama"
+  ],
+  "published_count": 21,
+  "previous_preview_count": 23
+}
