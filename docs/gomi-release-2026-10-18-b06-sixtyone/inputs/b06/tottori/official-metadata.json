@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tottori-daily",
+    "url": "https://www.city.tottori.lg.jp/page/4130.html",
+    "title": "ふれあい収集について - 鳥取市公式ウェブサイト（生活環境課）",
+    "source_updated": "2026年8月4日",
+    "http_status": 200,
+    "final_url": "https://www.city.tottori.lg.jp/page/4130.html",
+    "retrieved_at": "2026-10-18T19:21:46+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "tottori-daily.html.source",
+    "text_file": "tottori-daily.txt",
+    "raw_sha256": "b625d69730f5bfa682573c3c5a895c98033cf9dc3ab566a82c694cfdff59a910",
+    "text_sha256": "66aedf29f9341d4efa9586e9fcb518b76fce007464f14c744da3121c63308036",
+    "bytes": 43174
+  },
+  {
+    "id": "tottori-regular",
+    "url": "https://www.city.tottori.lg.jp/page/4042.html",
+    "title": "大型ごみの出し方について - 鳥取市公式ウェブサイト（生活環境課）",
+    "source_updated": "2025年10月20日",
+    "http_status": 200,
+    "final_url": "https://www.city.tottori.lg.jp/page/4042.html",
+    "retrieved_at": "2026-10-18T19:21:46+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "tottori-regular.html.source",
+    "text_file": "tottori-regular.txt",
+    "raw_sha256": "2425ec927d8b66bf2d8eb51ee3a08504f7f6156bfbf7fb63ba9bd489f714015f",
+    "text_sha256": "a4605368dcd27f71155883bc3143a09473eeda1f46add2fc419f0f29b099ae45",
+    "bytes": 56119
+  },
+  {
+    "id": "tottori-self",
+    "url": "https://www.city.tottori.lg.jp/uploaded/attachment/46220.pdf",
+    "title": "tottori-self",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.tottori.lg.jp/uploaded/attachment/46220.pdf",
+    "retrieved_at": "2026-10-18T19:21:49+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "application/pdf",
+    "raw_file": "tottori-self.pdf.source",
+    "text_file": "tottori-self.txt",
+    "raw_sha256": "8d2399f2b8f0a08634e4989980efcde6cb1143ea29bc0350e4c54daefd9626e5",
+    "text_sha256": "25f5195d112a75c8675cde0f4efb9a93ab5beeead1ffbb5b448898cf89a64c20",
+    "bytes": 8185229
+  }
+]

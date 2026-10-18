@@ -1,0 +1,283 @@
+[
+  {
+    "service": null,
+    "field": "sources",
+    "before": null,
+    "after": {
+      "id": "kagawa-flyer",
+      "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/gomi/oshirase/recycl_up20240409.files/R7tirasi.pdf",
+      "title": "たかまつごみ出しサポート事業のご案内（第2期）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/gomi/oshirase/recycl_up20240409.files/R7tirasi.pdf",
+      "retrieved_at": "2026-10-18T19:30:34+09:00",
+      "content_type": "application/pdf",
+      "raw_file": "takamatsu/official/flyer.pdf",
+      "text_file": "takamatsu/official/flyer.txt",
+      "raw_sha256": "e241e92e6d68316c08f3eadbaea2d8dddf53bccdb948d63f804e60873cd51d48",
+      "text_sha256": "3817739f4a60172d3fd684d2c859905100a84daf4f6f61ab23f8e85aca8f417c",
+      "last_modified_header": "Thu, 28 Aug 2025 05:49:06 GMT"
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": null,
+    "field": "sources",
+    "before": null,
+    "after": {
+      "id": "kagawa-faq",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/gomidashiqa.html",
+      "title": "ごみ出しQ&A｜高松市",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-02-13",
+      "http_status": 200,
+      "final_url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/gomidashiqa.html",
+      "retrieved_at": "2026-10-18T19:31:02+09:00",
+      "content_type": "text/html",
+      "raw_file": "takamatsu/official/faq.html.source",
+      "text_file": "takamatsu/official/faq.txt",
+      "raw_sha256": "c773f404faba2844485e6281e0b8e08523a197a2540fad840adca71c0237ca31",
+      "text_sha256": "a36c45bdc42d9cd2b05091c6ce35b3064e3148e151ca3c4285820e425f3b1474",
+      "last_modified_header": "Sat, 17 Oct 2026 15:01:45 GMT"
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-daily-support",
+    "field": "eligibility",
+    "before": {
+      "value": {
+        "all": [
+          "対象地区に居住",
+          "自力でステーションに出せず家族・地域の支援がない",
+          "世帯員が全員65歳以上で要介護1以上",
+          "居宅サービス利用"
+        ]
+      },
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-daily"
+      ]
+    },
+    "after": {
+      "value": {
+        "all": [
+          "第2期実証対象の古高松・屋島・牟礼・庵治・木太・日新・二番丁・四番丁・亀阜・築地・花園・松島・新塩屋町・栗林・女木・男木・太田・太田南・円座・川岡・檀紙・仏生山・多肥・三谷・川島・十河・東植田・西植田・香川町の各地区に居住（町名の範囲は市の対象地区一覧で確認。地区外は利用対象外）",
+          "自力でステーションに出せず家族・地域の支援が受けられない",
+          "世帯員全員が65歳以上で要介護1以上の認定を受けている",
+          "居宅サービスを利用している"
+        ]
+      },
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-daily",
+        "kagawa-flyer"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-daily-support",
+    "field": "limits",
+    "before": {
+      "value": "令和7年9月1日から令和8年12月31日予定。対象地区限定。1回3袋・各袋10kg以内。収集希望日の2営業日前までに電話依頼。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-daily"
+      ]
+    },
+    "after": {
+      "value": "第2期実証は2025年9月1日～2026年12月31日（予定）。対象地区外は対象外で、終了後の継続は未定。原則金曜（地区により変更、祝日除く）、1回3袋・各10kg以内。必要な日の2営業日前までに電話依頼。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-daily",
+        "kagawa-flyer"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-daily-support",
+    "field": "application",
+    "before": {
+      "value": "利用申請後、市職員が自宅を訪問し可否決定。代理申請可。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-daily"
+      ]
+    },
+    "after": {
+      "value": "環境業務課へ申請書を窓口・郵送・FAX・ネットで提出。代理申請可。書類審査と市職員の現地調査後に可否決定。登録後も収集が必要な日の2営業日前までに電話依頼。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-daily",
+        "kagawa-flyer"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-daily-support",
+    "field": "contact",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagawa-daily"
+      ]
+    },
+    "after": {
+      "value": "利用登録の相談は高松市環境業務課（戸別第一・第二係）087-861-4524。粗大ごみは別窓口087-834-0366。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-flyer"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-daily-support",
+    "field": "questions_for_office",
+    "before": [
+      "住所が第2期実証の対象地区か、令和8年末以降の継続方針を確認してください。",
+      "訪問型サービスBと居宅サービスの扱いを確認してください。",
+      "居住地が第2期対象地区か、年末予定後も支援を継続するか確認してください。"
+    ],
+    "after": [
+      "住所が第2期対象地区の町名範囲内か、公式の対象地区一覧で確認してください。",
+      "収集曜日・2営業日前の電話連絡先を環境業務課に確認してください。",
+      "2026年12月31日予定の実証終了後も利用できるか、継続方針が発表された時点で確認してください。"
+    ],
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-regular-bulky",
+    "field": "contact",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagawa-regular"
+      ]
+    },
+    "after": {
+      "value": "高松市粗大ごみ受付センター 087-834-0366。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-self-dropoff",
+    "field": "collection_location",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagawa-dropoff"
+      ]
+    },
+    "after": {
+      "value": "燃やせるごみは西部・南部クリーンセンターへ。破砕ごみは施設ごとに受入日が異なり、紙類等は南部の案内を確認。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-dropoff"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-self-dropoff",
+    "field": "fees",
+    "before": {
+      "value": "施設での処理手数料は収集シールとは別。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-dropoff"
+      ]
+    },
+    "after": {
+      "value": "車1台ごとに100kgまで1,700円、100kg超は20kgまでごとに340円加算。収集用処理シールは自己搬入に使えない。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-faq",
+        "kagawa-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-self-dropoff",
+    "field": "eligibility",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagawa-dropoff"
+      ]
+    },
+    "after": {
+      "value": "高松市内で発生した一般廃棄物を受け入れ。家族による代理搬入の可否は確認原典に明記なし。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-faq"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-self-dropoff",
+    "field": "contact",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagawa-dropoff"
+      ]
+    },
+    "after": {
+      "value": "南部クリーンセンター087-890-2190、西部クリーンセンター087-885-2727。",
+      "state": "explicit",
+      "source_ids": [
+        "kagawa-dropoff",
+        "kagawa-faq"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "takamatsu-self-dropoff",
+    "field": "questions_for_office",
+    "before": [
+      "自己搬入は収集シールを使用できないため、施設別料金と受入品目を確認してください。"
+    ],
+    "after": [
+      "持込品目・施設ごとの受入曜日を確認してください。",
+      "排出者本人以外の家族が搬入する場合の条件と必要書類を施設に確認してください。"
+    ],
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": null,
+    "field": "cities[0].priority_notes",
+    "before": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+    "after": [
+      "第2期実証の対象は公式の29地区だけ。地区外は日常支援の対象外。町名の境界は市の別紙一覧で確認。",
+      "実施期間は2026年12月31日までの予定。終了後の継続は未定で、期限前に公式更新を再確認。",
+      "日常収集は1回510円、必要日の2営業日前までに電話依頼。粗大ごみの通常収集・持込みと料金を混同しない。"
+    ],
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": null,
+    "field": "research_note",
+    "before": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。",
+    "after": "2026-10-18取得の自治体公式原典に基づく独立AIレビュー済みプレビュー候補。高松市の日常支援は第2期実証の対象地区限定で2026-12-31まで予定。地区外は利用不可、終了後継続未定。公式対象地区別紙・raw/text/SHA-256はofficial-metadata.jsonを参照。人手原文確認・窓口確認・公開承認は未実施。",
+    "reviewer": "independent_west_review"
+  }
+]

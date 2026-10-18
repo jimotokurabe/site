@@ -1,0 +1,155 @@
+[
+  {
+    "city": "yamaguchi:yamaguchi",
+    "service": "yamaguchi-daily-support",
+    "service_sha256": "d3a9fbf63bd960f4d9a8686e00f45e0fca26686f43c77c9bc75c5675b2cfa788",
+    "sources": [
+      {
+        "id": "yamaguchi-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/yamaguchi/official/daily.txt",
+        "lines": [
+          [
+            1,
+            185
+          ]
+        ],
+        "raw_path": "yamaguchi/official/daily.html.source",
+        "raw_sha256": "9f87a0ad5e516c1ca51ae0a81f269d745476650f7683833df14936186a235670",
+        "text_sha256": "93ed66e063205f5ef838ccf050a8f56c7d10ff71f1650b79cfda7dad22819cff",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "yamaguchi:yamaguchi",
+    "service": "yamaguchi-bulky-carry-support",
+    "service_sha256": "e22f0938d30d434768fcce3d0b40132515fd837593b6d91fe50c918fc724f6e7",
+    "sources": [
+      {
+        "id": "yamaguchi-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/yamaguchi/official/daily.txt",
+        "lines": [
+          [
+            1,
+            185
+          ]
+        ],
+        "raw_path": "yamaguchi/official/daily.html.source",
+        "raw_sha256": "9f87a0ad5e516c1ca51ae0a81f269d745476650f7683833df14936186a235670",
+        "text_sha256": "93ed66e063205f5ef838ccf050a8f56c7d10ff71f1650b79cfda7dad22819cff",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "yamaguchi-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/yamaguchi/official/regular.txt",
+        "lines": [
+          [
+            1,
+            300
+          ]
+        ],
+        "raw_path": "yamaguchi/official/regular.html.source",
+        "raw_sha256": "10a2753227b1afb7cd4621735a16f9c972e36754fd62c0a5bec335d5b875017f",
+        "text_sha256": "65b8431fc87197361039de5d060b54d46ba05e95e18d7d16f37ad7ef4b080729",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "yamaguchi:yamaguchi",
+    "service": "yamaguchi-regular-bulky",
+    "service_sha256": "cdc704d4d3d98c2e95bb6cdf3a4b94a324505c5a823f0c81d6a526b35c7a563e",
+    "sources": [
+      {
+        "id": "yamaguchi-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/yamaguchi/official/regular.txt",
+        "lines": [
+          [
+            1,
+            300
+          ]
+        ],
+        "raw_path": "yamaguchi/official/regular.html.source",
+        "raw_sha256": "10a2753227b1afb7cd4621735a16f9c972e36754fd62c0a5bec335d5b875017f",
+        "text_sha256": "65b8431fc87197361039de5d060b54d46ba05e95e18d7d16f37ad7ef4b080729",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "yamaguchi:yamaguchi",
+    "service": "yamaguchi-self-dropoff",
+    "service_sha256": "304c39fb588d76a608d7690780bd6086f0101f99541b1dff20558afbdc84b6d3",
+    "sources": [
+      {
+        "id": "yamaguchi-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/yamaguchi/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            204
+          ]
+        ],
+        "raw_path": "yamaguchi/official/dropoff.html.source",
+        "raw_sha256": "f8896f18b99875263d8c9ea922705f570f89884767fc7225b9c9e695b56038f0",
+        "text_sha256": "002d4e70c86c32affd4662e23a13b00d00b02e0327935e971d47f80585d17bdf",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

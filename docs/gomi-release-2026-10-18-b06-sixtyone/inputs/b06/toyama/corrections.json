@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "dbc2d6429bd8ac584b00908c23e89e757bc9b557f77856896437067b05a40ee7",
+  "corrections": [
+    {
+      "service_id": "toyama-daily",
+      "field": "eligibility",
+      "old": {
+        "value": "定期戸別支援の資格は確認できない。",
+        "state": "explicit",
+        "source_ids": [
+          "toyama-daily-policy"
+        ]
+      },
+      "new": {
+        "value": "今回保存した公式案内から高齢者向け定期戸別支援の資格要件は確認できない。制度不存在の断定ではない。",
+        "state": "not_found",
+        "source_ids": [
+          "toyama-daily-policy"
+        ]
+      },
+      "reason": "未確認を明示事実扱いしていたため、未発見へ補正"
+    }
+  ]
+}

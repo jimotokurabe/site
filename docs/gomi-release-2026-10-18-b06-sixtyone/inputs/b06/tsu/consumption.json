@@ -1,0 +1,32 @@
+{
+  "city": "mie:tsu",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "津市 ごみ出し支援 対象 申込",
+    "津市 粗大ごみ 収集 搬出",
+    "津市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 5,
+  "http_200_count": 5,
+  "http_non_200_count": 0,
+  "original_bytes_total": 324666,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "tsu-daily",
+    "tsu-furniture",
+    "tsu-self",
+    "tsu-carry",
+    "tsu-carry-guide"
+  ],
+  "new_city_sha256": "4b5258f99bb8831de7c2048df94bc5595677c7c1ab8c6b7be0fa2b4f76614707",
+  "source_hash_verification": "passed"
+}

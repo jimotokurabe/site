@@ -1,0 +1,433 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "yamagata:yamagata",
+  "slug": "yamagata",
+  "first_input_sha256": "d6f30af64290be77ccbe045afc24d49fae9aec801f2a5b1afe5b8a09b21c2c45",
+  "accepted_input_sha256": "fadd34067b9d158fe47120d1fb634f02e0e9605b918ef8437865d9e2ce28c7ba",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 3,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "高齢者・障がい者とも資格群内のいずれかと指定サービスの利用が必要。原則世帯全員、親族の協力なし、特別事情例外を保持。オンライン完了メール条件を電話申込と区別。",
+  "corrections_file": "yamagata/corrections.json",
+  "correction_count": 1,
+  "field_inventory": [
+    {
+      "service_id": "yamagata-daily",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "9da25408f76da7ac8f16e4710cc39125a11e28cceeaeff38f09836c478392666"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "c68e67f1ac81ac9d95f8fcadc09d803bb63ef5bdab5e773885e5724f75dfc68b"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "5f5b8b80300fb77c8837e8903dd73df77c4ad04a516e6a8ebad7f6cb1ebc28d7"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "330d524f683decd66516f02475f316a0ae6fa1bd019bb21d40a9459f50cb1901"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "fees",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "49ca51126d8ae69111e955bc87085289222b5b5b2cb636e4276a953082aab745"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "d52b94e428e38459fe7ec5fcb706ba688ce9fddb8818b5ec41b4cfdabd7e822a"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "8d8d6d3929884fb808e495f90e5dba4f40781c0e97c915d223638af62cecebe7"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "yamagata-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-daily"
+      ],
+      "value_sha256": "071c82d7c9432ac051123817c3f23076ade61142d92573e2bf95fa8790fadf42"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "yamagata-daily",
+        "yamagata-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "028cd34eb998657ed2e15e54a020b7a22280d88dbd7bce21e56b4f038395b19f"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "4225decba967844cc2eed1946c1c77ded8ac3ec6831a25caf9be953ccbee0868"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "e61dc5ab5c80308acd9984d8732dc402e9be1cc59fab687dc3529f24ee3d37bd"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "051f89f30afb8060cabea29e07e1336ff6b5578a046871573a13eda0542346f3"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "8879fcf2355cf2df705c6c2fd541261eb0372747f83a58b3699efcbbb08eb73f"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "f36c83bd42481d9571a5893461110d750421eaeb18853d284dacd72c4adc8574"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "dabe2ef72cb77fedccec40f637532cee12347419848794a95a8bfdc265e4257d"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "77d91e02e0cbb6a0448c8959ed7156e5ace353b669e18ead8e1a346e0f748a6c"
+    },
+    {
+      "service_id": "yamagata-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-bulky"
+      ],
+      "value_sha256": "9dbf4c17499095627c7fa7893cddc61b7ce917375777e41a76878e670dc307ae"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "5b63591d10f87358b3adb24b85b2735e9db1d7fa79c8ba7bf52eeaf6957339dc"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "aaec6a0f2219a721ad23aefa91c909cacb7d11f7dc59723b88cbc85a564c4c1a"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "eligibility",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "a01404673f3513d8aa39a1cc5ef801a42f3dbd301d4fc5b6120ac037744768f9"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "b356a4ec36a299982a5de11677b622c3313df48bc6a51c89262a3ff2164b85b1"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "53b7a0c46006d09ba7d4f4b06e87c37bb8368646aae4546e4cfd458628244378"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "9d3e66a3909dead5cab93b430ce0d9988e12eeaa365768128d65d4689d31deb1"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "yamagata-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "yamagata-self"
+      ],
+      "value_sha256": "21d6bfa1c7de476444ee1e578bd2a7cbd3590cc548cfad40ec92c982329a96ee"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "yamagata-bulky",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006508/1017713.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-07-22",
+      "raw_file": "yamagata/official/yamagata-bulky.html.source",
+      "raw_sha256": "33a31d4ba7c2376ea2fe25d49ea973b6d907304a71490194ac58239af961a362",
+      "text_file": "yamagata/official/yamagata-bulky.txt",
+      "text_sha256": "19c490aeaa76fb6b69ae9a4cb763a4bfaef10157cd49fd00d1a64d7a4fdb9a95"
+    },
+    {
+      "id": "yamagata-daily",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006511/1006513/1001858.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-05-07",
+      "raw_file": "yamagata/official/yamagata-daily.html.source",
+      "raw_sha256": "b45f1cd019d00cc2432cfcf99ec5abca02bce28ac09d8f669ce61f3e9eb3d1df",
+      "text_file": "yamagata/official/yamagata-daily.txt",
+      "text_sha256": "3a8b39b9f87050502a005c55e0ff6e212e99b6d29c2d7d8c341ca1afc6235d8b"
+    },
+    {
+      "id": "yamagata-self",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006507/1017679.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-04-08",
+      "raw_file": "yamagata/official/yamagata-self.html.source",
+      "raw_sha256": "c6c90bb53277fcbaaf903e4180b768e7f37e4c7e056a84b8d7e2450ded8c5d82",
+      "text_file": "yamagata/official/yamagata-self.txt",
+      "text_sha256": "66d7949aad4c5e5eb23f42de7daa2b1610f19baf84658f0abbd97061bbc1ec04"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "日常支援の利用者負担、自己搬入者資格は未記載。"
+  ]
+}

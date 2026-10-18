@@ -1,0 +1,53 @@
+[
+  {
+    "id": "kumamoto-daily",
+    "url": "https://www.city.kumamoto.jp/kankyo/kiji0031428/index.html",
+    "title": "ごみ出しが困難な方に対して「ふれあい収集」を実施しています / 熊本市の環境TOP / 熊本市公式サイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2024-01-11",
+    "http_status": 200,
+    "final_url": "https://www.city.kumamoto.jp/kankyo/kiji0031428/index.html",
+    "retrieved_at": "2026-10-18T19:19:23+09:00",
+    "content_type": "text/html",
+    "raw_file": "kumamoto/official/daily.html.source",
+    "text_file": "kumamoto/official/daily.txt",
+    "raw_sha256": "1829b7b77a9a8787d8368f43e4cbdabf37926d41cc02efb3730eb918fb680b8a",
+    "text_sha256": "6bf347b0cb727c6eca920087da8d041fea97fe6fbf7e29aed3a0a981a844dfdb",
+    "last_modified_header": "Mon, 24 Aug 2026 10:53:30 GMT"
+  },
+  {
+    "id": "kumamoto-dropoff",
+    "url": "https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html",
+    "title": "熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター） / 熊本市の環境TOP / 熊本市公式サイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2025-09-08",
+    "http_status": 200,
+    "final_url": "https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "kumamoto/official/dropoff.html.source",
+    "text_file": "kumamoto/official/dropoff.txt",
+    "raw_sha256": "75328e19679e50fa1f0c7678f04a0234dbac4675d64abf2854d88b4a70fe142c",
+    "text_sha256": "521e081d3368b0120bee60ebe0b6bacbc147fd3e6cc070cb120c050fe25fc803",
+    "last_modified_header": "Mon, 24 Aug 2026 11:48:46 GMT"
+  },
+  {
+    "id": "kumamoto-regular",
+    "url": "https://www.city.kumamoto.jp/kiji003552/index.html",
+    "title": "「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】 / 熊本市公式サイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2023-10-16",
+    "http_status": 200,
+    "final_url": "https://www.city.kumamoto.jp/kiji003552/index.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "kumamoto/official/regular.html.source",
+    "text_file": "kumamoto/official/regular.txt",
+    "raw_sha256": "61b562b33038832674c2b69e84921b8ee6d29dc1c63e37a1196ffe7df73d9279",
+    "text_sha256": "35d8900363d906d492ebe3324c77eb557633f495760395475d4e8541a8b594c4",
+    "last_modified_header": "Wed, 14 Oct 2026 15:17:06 GMT"
+  }
+]

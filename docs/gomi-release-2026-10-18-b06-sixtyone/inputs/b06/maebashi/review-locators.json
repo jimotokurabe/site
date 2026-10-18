@@ -1,0 +1,47 @@
+[
+  {
+    "service_id": "maebashi-daily",
+    "field": "contact",
+    "source_id": "maebashi-daily",
+    "matches": [
+      {
+        "line": 57,
+        "excerpt": "ごみ収集課（大渡町一丁目19番地5、電話番号 027-253-1009）"
+      },
+      {
+        "line": 67,
+        "excerpt": "027-253-1009"
+      }
+    ]
+  },
+  {
+    "service_id": "maebashi-regular",
+    "field": "contact",
+    "source_id": "maebashi-bulky",
+    "matches": [
+      {
+        "line": 23,
+        "excerpt": "電話番号：027-253-1009（ごみ収集課）"
+      },
+      {
+        "line": 51,
+        "excerpt": "027-253-1009"
+      }
+    ]
+  },
+  {
+    "service_id": "maebashi-self",
+    "field": "contact",
+    "source_id": "maebashi-self",
+    "matches": [
+      {
+        "line": 43,
+        "excerpt": "六供清掃工場（電話：027-224-0130）"
+      },
+      {
+        "line": 59,
+        "excerpt": "荻窪清掃工場（電話：027-269-0621）"
+      }
+    ]
+  }
+]

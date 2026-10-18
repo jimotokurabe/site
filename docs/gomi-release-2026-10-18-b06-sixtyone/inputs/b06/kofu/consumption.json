@@ -1,0 +1,30 @@
+{
+  "city": "yamanashi:kofu",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "甲府市 ごみ出し支援 対象 申込",
+    "甲府市 粗大ごみ 収集 搬出",
+    "甲府市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 3,
+  "http_200_count": 3,
+  "http_non_200_count": 0,
+  "original_bytes_total": 4310354,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "kofu-guide",
+    "kofu-self",
+    "kofu-collection-time"
+  ],
+  "new_city_sha256": "5336b8a64e61b60d02047244a6fe0560a2631e8ca1832fd7dca070f2bbbab512",
+  "source_hash_verification": "passed"
+}

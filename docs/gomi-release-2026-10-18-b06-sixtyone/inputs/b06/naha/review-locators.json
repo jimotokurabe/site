@@ -1,0 +1,155 @@
+[
+  {
+    "city": "okinawa:naha",
+    "service": "naha-daily-support",
+    "service_sha256": "5ef7ffb8dee7d3588c0c8cfcfa039742a70e73d048a7f8f09a14e92af7038df0",
+    "sources": [
+      {
+        "id": "okinawa-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/naha/official/daily.txt",
+        "lines": [
+          [
+            1,
+            3074
+          ]
+        ],
+        "raw_path": "naha/official/daily.pdf",
+        "raw_sha256": "19fb5581f2ac86417222e7c80f6110e8b6807f8318cfb56d5412b76855366d12",
+        "text_sha256": "f81593f2b2ad21ffbdac99f6469fb07f9e1411388d029bd521bb23378c3225d8",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "okinawa:naha",
+    "service": "naha-bulky-carry-support",
+    "service_sha256": "59d4b1f404e7c0a8ee8debad6fe229247a6eb4f677dd7a1b575f5484bffcb4db",
+    "sources": [
+      {
+        "id": "okinawa-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/naha/official/daily.txt",
+        "lines": [
+          [
+            1,
+            3074
+          ]
+        ],
+        "raw_path": "naha/official/daily.pdf",
+        "raw_sha256": "19fb5581f2ac86417222e7c80f6110e8b6807f8318cfb56d5412b76855366d12",
+        "text_sha256": "f81593f2b2ad21ffbdac99f6469fb07f9e1411388d029bd521bb23378c3225d8",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "okinawa-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/naha/official/regular.txt",
+        "lines": [
+          [
+            1,
+            63
+          ]
+        ],
+        "raw_path": "naha/official/regular.html.source",
+        "raw_sha256": "b633adc64b13b0077e95435eab7f9c70a4cc7961deaa5162d669e24f689e4b19",
+        "text_sha256": "96a70bd43f3b0797645190202430bb5683c06b33f743d3f6e857e38f7ea0a318",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "okinawa:naha",
+    "service": "naha-regular-bulky",
+    "service_sha256": "4334f6bcc06b7833d0fef8f8780800173b8fbb10a8112ce01c94616f4108852d",
+    "sources": [
+      {
+        "id": "okinawa-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/naha/official/regular.txt",
+        "lines": [
+          [
+            1,
+            63
+          ]
+        ],
+        "raw_path": "naha/official/regular.html.source",
+        "raw_sha256": "b633adc64b13b0077e95435eab7f9c70a4cc7961deaa5162d669e24f689e4b19",
+        "text_sha256": "96a70bd43f3b0797645190202430bb5683c06b33f743d3f6e857e38f7ea0a318",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "okinawa:naha",
+    "service": "naha-self-dropoff",
+    "service_sha256": "1dffa62d77e18e478a8ebd7bd67ececac14bc043b99f3215fc23de68e5f3b002",
+    "sources": [
+      {
+        "id": "okinawa-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/naha/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            51
+          ]
+        ],
+        "raw_path": "naha/official/dropoff.html.source",
+        "raw_sha256": "5867edfcd4bdfe8180ba5f9c2ce76952fe430b43428fc7b8336ee12f3d6828cb",
+        "text_sha256": "b2790b33abdcf7e6e8472a679a92877479f321207ba7872c7047900fb22990bf",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

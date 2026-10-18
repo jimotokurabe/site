@@ -1,0 +1,423 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "aomori:aomori",
+      "name": "青森市",
+      "kana": "あおもりし",
+      "pref_name": "青森県",
+      "selection_reason": "青森市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "aomori-daily",
+          "kind": "daily_support",
+          "name": "あすかプラン",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "日常のごみ出しを老人クラブ会員が手伝い、安否確認も行う。対象品目の詳細は要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "活動者が利用者宅を訪問してごみ出しを支援。集積所までの経路は要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "浪岡地区を除く青森市内で日常的なごみ出しが困難な、65歳以上単身、世帯全員65歳以上、または老人クラブ連合会が準ずると認める世帯。利用者と活動者の条件調整が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "fees": {
+              "value": "利用者負担なし。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "limits": {
+              "value": "浪岡地区は原則対象外。活動者との調整が成立することが必要。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "application": {
+              "value": "青森市老人クラブ連合会に電話し、状況確認・活動者との調整後に利用可否を決定。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            },
+            "contact": {
+              "value": "青森市老人クラブ連合会 017-723-7285（平日9～16時、祝日・お盆除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "浪岡地区の高齢者が同等のごみ出し支援を相談できる窓口はどこか。",
+            "最終処分場へ案内される粗大ごみと搬入者本人・家族の条件を確認。"
+          ]
+        },
+        {
+          "id": "aomori-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "aomori-daily",
+                "aomori-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "浪岡地区の高齢者が同等のごみ出し支援を相談できる窓口はどこか。",
+            "最終処分場へ案内される粗大ごみと搬入者本人・家族の条件を確認。",
+            "青森市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "aomori-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "最大辺おおむね60cm以上の粗大ごみ（一部例外）。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日朝8時30分までに自宅前へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "住宅・集合住宅など建物内に入っての収集はしない。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "青森市の家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみ収集手数料納付券1個820円。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "limits": {
+              "value": "月2回の地区別収集。申込期限後の品目追加・変更不可。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話申込後に納付券を購入・貼付。FAX・電子メール申込不可。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "立会い不要、収集時間指定不可。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 017-718-1184。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "浪岡地区の高齢者が同等のごみ出し支援を相談できる窓口はどこか。",
+            "最終処分場へ案内される粗大ごみと搬入者本人・家族の条件を確認。"
+          ]
+        },
+        {
+          "id": "aomori-self",
+          "kind": "self_dropoff",
+          "name": "粗大ごみの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみ。施設により受入品目が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "原則、青森市清掃工場。受入困難品は一般廃棄物最終処分場へ案内。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "青森市内から出た粗大ごみ。搬入者の資格はこの案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "fees": {
+              "value": "清掃工場は無料。最終処分場は10kgまでごと110円。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "limits": {
+              "value": "清掃工場は月～土曜8:30～16:30、日曜不可。最終処分場は別の受入時間。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "application": {
+              "value": "品目・搬入先を清掃工場に事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            },
+            "contact": {
+              "value": "青森市清掃工場 017-757-8840。",
+              "state": "explicit",
+              "source_ids": [
+                "aomori-self",
+                "aomori-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "浪岡地区の高齢者が同等のごみ出し支援を相談できる窓口はどこか。",
+            "最終処分場へ案内される粗大ごみと搬入者本人・家族の条件を確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "浪岡地区の高齢者が同等のごみ出し支援を相談できる窓口はどこか。",
+        "最終処分場へ案内される粗大ごみと搬入者本人・家族の条件を確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "aomori-bulky",
+      "url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001953.html",
+      "title": "粗大ごみ │ 青森市",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "aomori-daily",
+      "url": "https://www.city.aomori.aomori.jp/hukushi_kenkou/hukushi/1002786/1002811/1009166.html",
+      "title": "あすかプラン（高齢者の見守りを兼ねたごみ出し支援活動） │ 青森市",
+      "source_updated": "2025-05-26",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "aomori-self",
+      "url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001950.html",
+      "title": "引越し等により一時的に大量に出るごみの処理（自己搬入） │ 青森市",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "青森市の保存済み公式ページ3件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

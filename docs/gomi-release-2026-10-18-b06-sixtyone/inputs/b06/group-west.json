@@ -1,0 +1,78 @@
+{
+  "checked": "2026-10-18",
+  "prepared": [
+    {
+      "slug": "yamaguchi",
+      "sha256": "35cdb892353851b3a590a5285ec3919bc142b952a9fd548463060ee42019f29a"
+    },
+    {
+      "slug": "tokushima",
+      "sha256": "d50a1cd451c79599b1ae8b8b87241357bd82da7db9a1915a5e175518a4f52deb"
+    },
+    {
+      "slug": "takamatsu",
+      "sha256": "4e9fd060f14a0e3564cf9b61ec942adb84b44e9137aa26024bdbd009309f92b0"
+    },
+    {
+      "slug": "matsuyama",
+      "sha256": "f1483fd518242dd368fb1784c54a19531049189f15cae3e6128e9184a9b0e0f7"
+    },
+    {
+      "slug": "kochi",
+      "sha256": "cca8ed231a742439d942c09340a2965f8f320c45a8121dcff1c0351db65cbe56"
+    },
+    {
+      "slug": "saga",
+      "sha256": "5e64b695878f92e731814233eae8ae3c0c15eaaf06dd3bcd32346f3c3ad208e6"
+    },
+    {
+      "slug": "nagasaki",
+      "sha256": "6e65499296cfad8c999d86c409575ef8530d488f555f449cd9364e735d29a704"
+    },
+    {
+      "slug": "kumamoto",
+      "sha256": "897b49fb320885aad61832a7b9d84c12ee7c251ded33f30b11661f3baed963a6"
+    },
+    {
+      "slug": "oita",
+      "sha256": "988cf190159c5c9ad955d7e5d2967680713f679e532a0374885742e6046decd0"
+    },
+    {
+      "slug": "miyazaki",
+      "sha256": "d066059218fa27e8bbba1d0056c505c36c01bc284943d99349d6f074393609d1"
+    },
+    {
+      "slug": "kagoshima",
+      "sha256": "4f17decf76f517b2d0e20776deda348b045c29b79e8d9a184565fac645fc9fb5"
+    },
+    {
+      "slug": "naha",
+      "sha256": "8d5722154b60b9870ba826ebfa751f89a8d056d023c489de8baaf8ea97671984"
+    }
+  ],
+  "held": [
+    {
+      "slug": "takamatsu",
+      "reason": "日常支援は地区限定・2026年12月末までの第2期実証であり継続未確認。"
+    },
+    {
+      "slug": "saga",
+      "reason": "日常の市営戸別支援を公式原典で特定できていない。"
+    },
+    {
+      "slug": "miyazaki",
+      "reason": "日常は個別相談案内で、制度の可否・条件が未確認。"
+    },
+    {
+      "slug": "naha",
+      "reason": "アシスト収集は計画資料のみで現行の申請・資格一次案内が不足。"
+    }
+  ],
+  "consumption": {
+    "model_tokens": "unavailable",
+    "credits": "unavailable",
+    "source_requests": 37,
+    "unique_official_sources": 36,
+    "note": "12市の公式原典36件を保存。熊本の一覧ページを1回取得後、本文ページへ差し替えて再取得したためHTTP取得は計37回。独立レビュー未実施。"
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "held_for_substantive_evidence",
+  "city_id": "akita:akita",
+  "slug": "akita",
+  "first_input_sha256": "92646d01b7c1c7365e62370c3998abbbe28cbd80c7188513afd7205f9fa0fa76",
+  "accepted_input_sha256": null,
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 3,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "保存した高齢者生活支援体制整備事業は課題討議の事業であり、個別利用できる日常収集制度とは扱わない。家族の自己搬入は原典に明記。",
+  "remaining_required_findings": [
+    "高齢者向け日常搬出支援の現行制度があるか、市の環境・福祉窓口または現行公式案内で確認。",
+    "制度があれば対象資格、世帯・家族条件、収集場所、費用、回数、申請窓口を原典で取得。",
+    "屋内搬出の公的制度有無と、ない場合の利用可能な許可業者への案内・料金条件を確認。"
+  ],
+  "corrections_file": null,
+  "correction_count": 0,
+  "field_inventory": [
+    {
+      "service_id": "akita-daily",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-daily",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "e976a7bcb12e4a1c195f7f7ed0484cdb25d6bfde30981169efce83da32139ac3"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "akita-bulky",
+        "akita-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "74619b90ced916711829d8bd390abe53e2ea9806225d723dc59589ba71b59643"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "7fa1de56ca5b4a71233b130ec2334aa9a5722acb22d7ffd5916b178725c7cdce"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "d25f61cf232ce970bb7e903553be7b4ba8a18cddafb138c1ccace8bc32898b7e"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "2816c65d85dcf10bcbe134834497d981fe560034937ff76b381f74f569f3c39b"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "a294f21fff04eeae7e665a4647f11a46197880464011c42522a78b9397da494b"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "7a28a6802ffa6583072c5b8b0c82a79bf3cd184ec49841e91afd96970c0ff2f7"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "52b4cb519d59f77d11152231cbe879c0f502920f8cfed4c905fe05cc1563c10f"
+    },
+    {
+      "service_id": "akita-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "akita-bulky"
+      ],
+      "value_sha256": "c2c90440457755664da477ead58ff3109cdfd1eff43e605696928a521cb96c8a"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "4bb5940bcd1ec64e38523a18611ae1c3df35ca446f40825cd017f8169d74acd9"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "9ee7412eaa3e5a1fe7477246fd96e10e818a816f1ab783db3bcbfb064738bcde"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "204f250665ef8319e09dfe0aec33fc26fe5536bde2db137b0b560eecec7dea9f"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "656d3adaf9347fb94c27ee34196f5d3ae6ba074748a0a1676ba2efc00e9f71d8"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "family_help",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "94961d4d8d168b0b307a57ae82fc5556ca4174930e5e574ced27d27b8e66a4fd"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "d92c7ea6ff5c2a7559763bae0f19fadf62f59208a571d4ac5e6863114f2d9750"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "d1e744553f0d635293296afe5786428379473d3de00614d9202668a546441016"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "bfbfcd49505a63df0c485fea6dbff0ca7489c26fe62b9e2b7e1da5570be9fb9f"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "7524868013f809f529cc160439cc2e65b3bad3db9a37656da8be48a9490c6d71"
+    },
+    {
+      "service_id": "akita-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "akita-self"
+      ],
+      "value_sha256": "43bf05d4bcf8572d2b34eb9711200118cb10afe30dd5401424ccc86ac74700b7"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "akita-bulky",
+      "url": "https://www.city.akita.lg.jp/kurashi/recycle/1006080/1006201.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-04-24",
+      "raw_file": "akita/official/akita-bulky.html.source",
+      "raw_sha256": "ee7bc8b97a07a16b2cb5733805e94cc10bfa1991f8972662dfbd1b7df8586294",
+      "text_file": "akita/official/akita-bulky.txt",
+      "text_sha256": "496aaa97a79849f4e8c46f0e5dcb8d5b0f6efb8af4eababf30089b4c898fd849"
+    },
+    {
+      "id": "akita-daily-policy",
+      "url": "https://www.city.akita.lg.jp/kurashi/koreishafukushi/1006009/1039112.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "source_updated": "2026-03-31",
+      "raw_file": "akita/official/akita-daily-policy.html.source",
+      "raw_sha256": "ae4027086b77eb7442f63fd5eba2ca9ca8f905cb7cf817760629f5ac0032802b",
+      "text_file": "akita/official/akita-daily-policy.txt",
+      "text_sha256": "7c9f4af396270ffdc562dd21f21730e35ec6e60c66683a0380dfbcf5ad8a041f"
+    },
+    {
+      "id": "akita-self",
+      "url": "https://www.city.akita.lg.jp/kurashi/recycle/1006078/1034538/1034539.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-08-05",
+      "raw_file": "akita/official/akita-self.html.source",
+      "raw_sha256": "d4bf8349abbff38807f3159e0999a648116201a32760d11ac42d34ef7435ed09",
+      "text_file": "akita/official/akita-self.txt",
+      "text_sha256": "4baf771372ea1f19cec1ab6fb65e68b834fca89ec32e09da6f336d813a800472"
+    }
+  ],
+  "current_draft_sha256": "92646d01b7c1c7365e62370c3998abbbe28cbd80c7188513afd7205f9fa0fa76",
+  "hold_reason": "高齢者の日常ごみ搬出支援と粗大ごみ屋内搬出支援の各10フィールドがすべてnot_found。保存資料は生活支援体制整備の課題協議であり、利用できる具体制度・資格・申請・費用を提示できない。通常粗大収集と自己搬入だけでは今回の支援ページとしての実用性が不足。"
+}

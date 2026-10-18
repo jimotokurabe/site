@@ -1,0 +1,106 @@
+[
+  {
+    "service_id": "mito-daily",
+    "field": "eligibility",
+    "source_id": "mito-daily",
+    "matches": [
+      {
+        "line": 8,
+        "excerpt": "水戸市では，介護予防の取り組みを推進するため，本サービスを介護予防・日常生活支援総合事業における「訪問型サービスＢ」に位置づけ，要支援者等の居宅において生活支援サービスを提供しているボランティア団体等に，活動費の一部を補助しています。"
+      },
+      {
+        "line": 13,
+        "excerpt": "・要支援者"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-daily",
+    "field": "limits",
+    "source_id": "mito-daily",
+    "matches": [
+      {
+        "line": 16,
+        "excerpt": "月8単位まで"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-daily",
+    "field": "contact",
+    "source_id": "mito-daily",
+    "matches": [
+      {
+        "line": 43,
+        "excerpt": "Tel：029-232-9110"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-regular",
+    "field": "collection_location",
+    "source_id": "mito-bulky",
+    "matches": [
+      {
+        "line": 7,
+        "excerpt": "（玄関先など自宅敷地内の道路に面した場所まで、粗大ごみを出すことができる場合）→"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-regular",
+    "field": "contact",
+    "source_id": "mito-bulky",
+    "matches": [
+      {
+        "line": 94,
+        "excerpt": "コールセンター（電話：029-350-8101）に電話し、以下の7点を伝えてください。"
+      },
+      {
+        "line": 114,
+        "excerpt": "電話／029-350-8101"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-self",
+    "field": "eligibility",
+    "source_id": "mito-self",
+    "matches": [
+      {
+        "line": 63,
+        "excerpt": "処理対象物／水戸市内で発生した一般廃棄物（ごみ及び資源物）のうち、清掃工場で処理が可能なもの"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-self",
+    "field": "contact",
+    "source_id": "mito-self",
+    "matches": [
+      {
+        "line": 91,
+        "excerpt": "清掃工場「えこみっと」 電話：029-297-6760"
+      },
+      {
+        "line": 216,
+        "excerpt": "Tel：029-297-6760"
+      }
+    ]
+  },
+  {
+    "service_id": "mito-self",
+    "field": "contact",
+    "source_id": "mito-fee",
+    "matches": [
+      {
+        "line": 6,
+        "excerpt": "令和8年4月1日から，水戸市清掃工場えこみっとに直接ごみを持ち込むときのごみ処理手数料を改定します。"
+      },
+      {
+        "line": 17,
+        "excerpt": "Tel：029-297-6760"
+      }
+    ]
+  }
+]

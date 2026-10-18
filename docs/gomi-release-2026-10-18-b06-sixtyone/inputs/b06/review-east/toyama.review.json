@@ -1,0 +1,456 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "held_for_substantive_evidence",
+  "city_id": "toyama:toyama",
+  "slug": "toyama",
+  "first_input_sha256": "dbc2d6429bd8ac584b00908c23e89e757bc9b557f77856896437067b05a40ee7",
+  "accepted_input_sha256": null,
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 4,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "2023年の市回答はステーション方式原則と当時の個別定期収集方針を示す資料。現行制度不存在の根拠にはしない。有料戸別収集は少量も可、屋外排出・立会いを照合。",
+  "remaining_required_findings": [
+    "2023年の市回答後に高齢者等の定期ごみ出し支援が開始・変更されたか、現行公式案内と市窓口で確認。",
+    "日常支援があれば資格、世帯・家族条件、収集場所、費用、頻度、申請先を原典で取得。",
+    "屋内搬出の可否・代替経路と、粗大ごみ自己搬入の施設別受入、料金、家族代理条件を公式原典または窓口で確認。"
+  ],
+  "corrections_file": "toyama/corrections.json",
+  "correction_count": 1,
+  "field_inventory": [
+    {
+      "service_id": "toyama-daily",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "8d9c07b562b845db2af2cbe38ec8d50040c3780809d5a9037022257f2eb72b79"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "a72833628ba8dd183fde539b7913465536e40e6a10b3882ac6507941045d36a7"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "f26f7d0396bd63df226d9c9ab34480c8e1306febd901474097bd9e8b5b0cd248"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "fees",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "02524e3cd88d9df254040cf4f9db2e17b48fee95332233d0e0490db9cdef345d"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "b5c94bc100251d74f5c7a21fc5a15b8f636fd3aaf678447f4ddc8db9c21dd2ce"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "application",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "646f3fb049e69d1aa165de086f8cb8355c8ed0c219845eeee918340126e218f7"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "toyama-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-daily-policy"
+      ],
+      "value_sha256": "76faf1401c4cbe9d9bd0413a26c17f2471021b2440f4a48f747ef941c7804dc0"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "toyama-bulky",
+        "toyama-self"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "023550f9c2e23bd476733dc803bfadf7747b0c184077c571369ebe888582d8b1"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "377585316c3ed555539919a196d88540c8878e5987ca37155113792baf0c84bf"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "a2a88b694f69fa280adae1ea0f7f7adbf5a4ff9adab3bb599902b2251257be18"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "d52396f16405dd62cf5fe984db1d8351b66dc01cb98cf02a259a0174d81af3ce"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "11e43f177575fa2ffd7d4acb84e8f2f7cfaf7518313637e74284d83e0306a652"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "ff908a6ab538a9342319f48c59a82aff3d20ce713d32e9dd9f2d7f2a0c8c0f6c"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "0934d343ec2648bc81d53560d983980622475a6654579dd758af466eb48fe51a"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "520220dadbb661882c2e3ef7a7528c393d95c8924b4393d3aaf2889f3cad49e4"
+    },
+    {
+      "service_id": "toyama-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-bulky"
+      ],
+      "value_sha256": "6fddb0edebe728ca7b3d7ea69d96aa1e4e31f9b95e6bc9b66f5d71a20ed16525"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "b9d3d00507751877784585c66f1218d1c593a91b6e04ee42f3b8357dfa53cc4b"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "7875530926b373b9792109dc894e58e068f1072606abcd4507dea2a70ba2af24"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "eligibility",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "73178db1410b9ff0d515f705ad06526959613b0232c697a2954b39e7f0346a7a"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "fees",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "a52205982da14df6df8a480de967eae58b8c558e08aadd05646950c45dbdce9d"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "a6102f5ce26a6753ed8fbeee3ddaabc0e80c3ebd7e72c4cbf6fa42d4e52d9a49"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "37ec1e79de6f453724becef97e974c5c6260daaefdf287c6aa16803d7ea9b77f"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "toyama-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "toyama-self-details",
+        "toyama-self"
+      ],
+      "value_sha256": "93fd083de831859eb11d93ecfefd9e3baa6d0c74dd53483491aa14b31b47cbd7"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "toyama-bulky",
+      "url": "https://www.city.toyama.lg.jp/kurashi/gomi/1010228/1005357.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2023-12-05",
+      "raw_file": "toyama/official/toyama-bulky.html.source",
+      "raw_sha256": "cbde536d0fa8c781de60c5a36df6584d258f2d45b9d6019f667c36145775daf3",
+      "text_file": "toyama/official/toyama-bulky.txt",
+      "text_sha256": "a42ef195668c484586423f3421451f5600d3c62ff1739f094f20a1e46615c3e1"
+    },
+    {
+      "id": "toyama-daily-policy",
+      "url": "https://www.city.toyama.lg.jp/shisei/koho/1010862/1012156/1010863/1013569/1013641.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2023-09-14",
+      "raw_file": "toyama/official/toyama-daily-policy.html.source",
+      "raw_sha256": "515481d2e39a0d158a6a9673d6c1ed207c1975c6817db3716ef69e1e27e96915",
+      "text_file": "toyama/official/toyama-daily-policy.txt",
+      "text_sha256": "61c60430c27050fac9d58992b57b7b5294b8550a048c28da17c4154d8dc46e72"
+    },
+    {
+      "id": "toyama-self",
+      "url": "https://www.city.toyama.lg.jp/faq/1008441/1009895/1008850.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-09-19",
+      "raw_file": "toyama/official/toyama-self.html.source",
+      "raw_sha256": "c7e60df8632fe5eb85934ecfd463c90b76fb4c6e4aa93ec09781721d6f8378cd",
+      "text_file": "toyama/official/toyama-self.txt",
+      "text_sha256": "3a850cc21ccf73d7f4c35357ef5a6b9a40adc1df8ff92aa96705ed1e74b00d27"
+    },
+    {
+      "id": "toyama-self-details",
+      "url": "https://www.city.toyama.lg.jp/kurashi/gomi/1010228/1005384.html",
+      "retrieved_at": "2026-10-18T19:24:41+09:00",
+      "source_updated": "2026-03-23",
+      "raw_file": "toyama/official/toyama-self-details.html.source",
+      "raw_sha256": "73f02bd2ba62ee9c6190faae2e3df150e685f16025d342f136f617c5bb900e88",
+      "text_file": "toyama/official/toyama-self-details.txt",
+      "text_sha256": "f693d44cfd5da3e17f4af5e59598c93f46fe5c035d5a0fbf67628cad2f578775"
+    }
+  ],
+  "current_draft_sha256": "0ce5c02985046f1d7fb0ea5474dfc8f059c9e4628e98a494eff8028126713895",
+  "hold_reason": "高齢者向け定期戸別支援は2023年の市回答しか保存されておらず現行性未確認。日常資格は未発見で屋内搬出経路10フィールドもnot_found。自己搬入の代理資格・粗大受入・料金も要確認。通常有料戸別収集だけでは今回の支援ページとしての実用性が不足。"
+}

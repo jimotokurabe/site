@@ -1,0 +1,155 @@
+[
+  {
+    "city": "miyazaki:miyazaki",
+    "service": "miyazaki-daily-support",
+    "service_sha256": "5b8165bc325238a18d08c2c70c4e135ff96d245e4a5bc6f439a69bd2e1c12cb0",
+    "sources": [
+      {
+        "id": "miyazaki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/miyazaki/official/daily.txt",
+        "lines": [
+          [
+            1,
+            45
+          ]
+        ],
+        "raw_path": "miyazaki/official/daily.html.source",
+        "raw_sha256": "7fd87330a617989f7002ca7ddfd016671487bad101dca97faa834f45c5fc29ab",
+        "text_sha256": "328e85af794c86657e897808a6428c75224d6024f6b461a42babcd5a66a05c2c",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "miyazaki:miyazaki",
+    "service": "miyazaki-bulky-carry-support",
+    "service_sha256": "3a3be7d7aa8434e3f6c43b5f7f1d90879bb8b8be872806cc80f79f21a395ed2c",
+    "sources": [
+      {
+        "id": "miyazaki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/miyazaki/official/daily.txt",
+        "lines": [
+          [
+            1,
+            45
+          ]
+        ],
+        "raw_path": "miyazaki/official/daily.html.source",
+        "raw_sha256": "7fd87330a617989f7002ca7ddfd016671487bad101dca97faa834f45c5fc29ab",
+        "text_sha256": "328e85af794c86657e897808a6428c75224d6024f6b461a42babcd5a66a05c2c",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "miyazaki-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/miyazaki/official/regular.txt",
+        "lines": [
+          [
+            1,
+            124
+          ]
+        ],
+        "raw_path": "miyazaki/official/regular.html.source",
+        "raw_sha256": "07534dc23f2928f6c20ce6b3a6a7da542a821c577f705d6ff79d4c6fc704315e",
+        "text_sha256": "b65d1dd113bc95057abb8e70eb75bf8e07a852c7d8c54a991590e57611875906",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "miyazaki:miyazaki",
+    "service": "miyazaki-regular-bulky",
+    "service_sha256": "887d3564b1d4664b969925f2bec0cdc795469ee4d5ff928bbd6aba501057a3a5",
+    "sources": [
+      {
+        "id": "miyazaki-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/miyazaki/official/regular.txt",
+        "lines": [
+          [
+            1,
+            124
+          ]
+        ],
+        "raw_path": "miyazaki/official/regular.html.source",
+        "raw_sha256": "07534dc23f2928f6c20ce6b3a6a7da542a821c577f705d6ff79d4c6fc704315e",
+        "text_sha256": "b65d1dd113bc95057abb8e70eb75bf8e07a852c7d8c54a991590e57611875906",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "miyazaki:miyazaki",
+    "service": "miyazaki-self-dropoff",
+    "service_sha256": "a25c918acd074cc74a001d518e34793e0d0f21f29476669d64378d04d57c865e",
+    "sources": [
+      {
+        "id": "miyazaki-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/miyazaki/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            121
+          ]
+        ],
+        "raw_path": "miyazaki/official/dropoff.html.source",
+        "raw_sha256": "5d1887f1edcfb34de13750f0fdbc5b5aada6bb20c49378a09c38652d7160a248",
+        "text_sha256": "d3a741e61a41ce10dbc2feb9a2fdf8abd3cc0e621c9617a134c6c2a7cb7608ca",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "base_sha256": "74660b7b73108a446bf33488f6a4b81d82b49c0a591890d59f90ddad05da2883",
+  "inputs": [
+    {
+      "slug": "aomori",
+      "sha256": "21f6169ded1388db85428e9650478e914fc891beccd5ec23fd6df62d0873c7bd",
+      "review_file": "review-east/aomori.review.json",
+      "review_sha256": "bcbdcc06cbbde351bdacb3f9ecf90a87fbc78438b5161a0b528b765d47fd8991"
+    },
+    {
+      "slug": "morioka",
+      "sha256": "d0430319f6d4a1c69a76fb94e2979017167ae2cd82e874baf86dda11943d43bf",
+      "review_file": "review-east/morioka.review.json",
+      "review_sha256": "b4beb4f154d86aa0804f5a9162bd34811bf905b254fbb5157bc672fe11efe886"
+    },
+    {
+      "slug": "yamagata",
+      "sha256": "fadd34067b9d158fe47120d1fb634f02e0e9605b918ef8437865d9e2ce28c7ba",
+      "review_file": "review-east/yamagata.review.json",
+      "review_sha256": "81dccddb80f12b8cf676fed5e320458613ae7d2ed398ecd3d2767e4e58f094ee"
+    },
+    {
+      "slug": "fukushima",
+      "sha256": "9c78f56cc59c3a988df02f9095b98f0cc836cd8bc08849e54f50cb63d3bead33",
+      "review_file": "review-east/fukushima.review.json",
+      "review_sha256": "c325e3549573402320c1a5a21390209a6ba469a7d0f7140dbf7e7a9dda116ebc"
+    },
+    {
+      "slug": "mito",
+      "sha256": "466e71514e11c3c7470772f642fcabb0b349acd9cb8ded01ee5f98ac7aae57f1",
+      "review_file": "review-east/mito.review.json",
+      "review_sha256": "cc77a8780364353b6e361f3891bac6936a64e4006438b3336444bf79e142e2ab"
+    },
+    {
+      "slug": "utsunomiya",
+      "sha256": "189112f0a0a3f4503ed40064c64880d48925f50edf3a0a7893abb88fe8652f43",
+      "review_file": "review-east/utsunomiya.review.json",
+      "review_sha256": "8f8903ed409c48b024fb644cff1cc0321a9df9d4a9e36fbefb0c0431c891bc71"
+    },
+    {
+      "slug": "maebashi",
+      "sha256": "4359621bedde230ebf5c29f1b571e722323b098d563087e29e61b6f808a88a05",
+      "review_file": "review-east/maebashi.review.json",
+      "review_sha256": "a554067be7e03176e7f88098b30e5070e085132dc3132588603e12c94e3ecfc8"
+    },
+    {
+      "slug": "nagaoka",
+      "sha256": "4558416b1f2364a8094f7f6d5454eb93ebceffd42de543084d522daaa8d1d4b1",
+      "review_file": "review-east/nagaoka.review.json",
+      "review_sha256": "e0042fddaf6bb296be4d1553e35cce41f7e35399e5c8606e302b1ed645c68529"
+    },
+    {
+      "slug": "kanazawa",
+      "sha256": "768c72a65a416f69e07fa9886a14a3504d968f6f6bff9e47eb09e5f94e192733",
+      "review_file": "review-east/kanazawa.review.json",
+      "review_sha256": "89885837bffc2fe4ef647fa6891655d1bf888c2d19088be44f9c2d1386c5d6de"
+    },
+    {
+      "slug": "fukui",
+      "sha256": "c0636379323d2363fa94b62e2b193d0c1dc097051f8e581d464e1f7a3e3fed71",
+      "review_file": "review-east/fukui.review.json",
+      "review_sha256": "49a53ecda8767ba2c837bbe3ed6fb935924a2f69f81da7978bea6c3f4b027010"
+    },
+    {
+      "slug": "shizuoka",
+      "sha256": "aa0825f04e25c296866ac7cf83079da2c0f016e26c23bdad408d6acfe340886f",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "3233de63d7c5944599a8cae41d895d57a4d9d96fbec716cf27aa757c1c015494",
+      "corrections_sha256": "f50dd99c3937e8663afee130febdb72126cfcf40f9b04962723ffc4328775941",
+      "locator_sha256": "5851b577f057d7b79055d7d5f51d59593b2ddb6519176abe63c718352b312195",
+      "official_source_count": 3,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "tsu",
+      "sha256": "35cd19982e23b3138181e01f95c07855f136c6b2fe33b0a9ddbb8a0eec64cbf5",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "4b5258f99bb8831de7c2048df94bc5595677c7c1ab8c6b7be0fa2b4f76614707",
+      "corrections_sha256": "da6a8926fefdb7e6a817d9edec4e29acc46ac84af6f205d4c8508d8260acf1e0",
+      "locator_sha256": "cabdbbacf8aa60b71a2890d2c6e2cc7ff14b87b0e8cd96d0ba68ba8d1a8e2657",
+      "official_source_count": 5,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "otsu",
+      "sha256": "7dc3dfdd16278ba4b0029d8ae8843e15e5f26f02c8bf6200f74180e304aac9cc",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "79b07c33ecaa65e3f394d632b49fd82e8e2397eef84bf8a18129aa5332d176f6",
+      "corrections_sha256": "3a5da11b557212162ed2c22ffdd98b77151b468aa598e7036be3203f447f7408",
+      "locator_sha256": "47cea5ffcda47109177982dd90d7cc2a43c079212c20ead02a75e51df0e92d76",
+      "official_source_count": 4,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "wakayama",
+      "sha256": "221976492cbbb54345176325f2ffb4e18fab651a681b99e2d7126e2b9ca18178",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "0c755055e79543b3d7d017ea4a82fd48efe99e52e202d95f5d6149e06104a5bb",
+      "corrections_sha256": "12605ab17781b80953c77b4ac8652773da57d010281b8a86547945523012a271",
+      "locator_sha256": "b3883b5ff39a09c2636c6b35c0e72a3d6c7c2095bc89ec38f18cb88c97595cb4",
+      "official_source_count": 5,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "tottori",
+      "sha256": "3db6140b669ecb70ae799a276d675ce995424f97f5a1bdd6b93c5dc342953df8",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "0067c4b4393f2fc8080bd0ccaa38d75ac3fa61dd751bbfea3552df48c4496ee9",
+      "corrections_sha256": "460c10eb7b7293043d253a540b8eb255cbaef59ced41457078be86c1b0b3a16a",
+      "locator_sha256": "9cc3cfb1ae1e72fbfae50ac2b15e333fc4223636b38f12599a0d570c65fcc655",
+      "official_source_count": 3,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "matsue",
+      "sha256": "29fd13304c63e71e6ec350f7d6daa8c24ffb9d38b21367db408c1838ba73833d",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "38066e46542ac489f6ecac52e8e5e5897e3d99161b506a978f97920b5eb1d4fc",
+      "corrections_sha256": "c0f00613430352651f3551807a1744b0a844645c6481a39cb943396062b57d65",
+      "locator_sha256": "f0749d721a52024fa390d331c35195e6315c4cd5a1778402ea3aa16c9cc42b07",
+      "official_source_count": 4,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "yamaguchi",
+      "sha256": "22131fcef21173e27f22e578a14dadcae98f7d65bd27284a10c816393439dd79",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "tokushima",
+      "sha256": "61ebdd77f1038349d12b63d0212800b425b9f1528f1cfef8e6b482825763cb6e",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "takamatsu",
+      "sha256": "aa47f44f209f2d0016da014f945e4ebe271435501193757672c84ecb9fa748c7",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "matsuyama",
+      "sha256": "d7b5badd084319c7e02298a83bfe3e9211a7ae733611262e3e838d40fb428f90",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "kochi",
+      "sha256": "7f4480ee6c14f26d01e11cf21e2bb2f0ae5e03dc0bdd2fb3fad82e3a712cff99",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "nagasaki",
+      "sha256": "b75dd9180796ac9b1bbabd939a2bafffde81d98aa972d752902b6373c84ee375",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "kumamoto",
+      "sha256": "7deff13d28a5d3ca067082f08ad1b75787036dbdc931a22ad44af71d9ac50a5d",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "oita",
+      "sha256": "e0226040447474412a11de68003e100480b7a0939ea3fcd9c6b241665747a887",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "kagoshima",
+      "sha256": "40e3f4466e00e6f27bc04e450788706f02bd6a356815044a524d8231e9ab2fab",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    }
+  ],
+  "published_count": 36
+}

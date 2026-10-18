@@ -1,0 +1,24 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "4eef8c142886b99e5d1004d19f93893ff1f8fa5b99fad90d7f1376dc789e83b3",
+  "changes": [
+    {
+      "service_id": "gifu-daily",
+      "field": "contact",
+      "before": {
+        "value": "岐阜市の担当窓口：058-243-0530。",
+        "state": "explicit",
+        "source_ids": [
+          "gifu-faq"
+        ]
+      },
+      "after": {
+        "value": "日常ごみ出し支援の担当窓口は取得原典から特定できない。",
+        "state": "not_found",
+        "source_ids": [
+          "gifu-faq"
+        ]
+      }
+    }
+  ]
+}

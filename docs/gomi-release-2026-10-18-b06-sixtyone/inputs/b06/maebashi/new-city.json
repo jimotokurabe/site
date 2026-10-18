@@ -1,0 +1,413 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "gunma:maebashi",
+      "name": "前橋市",
+      "kana": "まえばしし",
+      "pref_name": "群馬県",
+      "selection_reason": "前橋市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "maebashi-daily",
+          "kind": "daily_support",
+          "name": "こんにちは収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃・不燃・プラ容器・資源・危険・有害ごみ・紙類・古着。集積所に出せない粗大ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "分別して玄関先等へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "市内在住で、介護保険要支援・要介護または総合事業対象、肢体不自由/視覚障害の身体手帳1級、療育A、精神手帳1級のいずれかAND排出困難・親族近隣の協力なしAND原則単身。同居者がいる場合は全員が列挙要件のいずれか。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣の協力を得られないこと。同居者全員の資格も必要。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "fees": {
+              "value": "公式案内にはfeesの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "limits": {
+              "value": "週1回、地域で決められた月～木曜。粗大ごみ対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "application": {
+              "value": "申請書に介護保険証または手帳写しを添付して指定窓口へ提出、郵送も可。本人が申請できない場合は他の人の代行申請可。手続きの目安は2か月～2か月半。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            },
+            "contact": {
+              "value": "前橋市ごみ収集課 027-253-1009。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "同居者がいるこんにちは収集申請で、同居者全員の障害・介護等要件をどの資料で確認するか。",
+            "粗大ごみ戸別収集の手数料有無と家から出せない人の相談先を確認。"
+          ]
+        },
+        {
+          "id": "maebashi-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "maebashi-daily",
+                "maebashi-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "同居者がいるこんにちは収集申請で、同居者全員の障害・介護等要件をどの資料で確認するか。",
+            "粗大ごみ戸別収集の手数料有無と家から出せない人の相談先を確認。",
+            "前橋市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "maebashi-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "指定45L袋に入らない家庭で使用した家具等。家電4品目ほか対象外品あり。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "建物外の駐車場等へ申込者が搬出。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "建物内からの搬出は行わない。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "前橋市内の家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "fees": {
+              "value": "市の戸別収集料金は公式案内に記載なし。窓口確認が必要。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回最大3点。収集完了前は次回予約不可。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "application": {
+              "value": "ごみ収集課へ電話またはインターネット予約、指定内容を書いた紙を品目ごとに貼付。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            },
+            "contact": {
+              "value": "前橋市ごみ収集課 027-253-1009。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "同居者がいるこんにちは収集申請で、同居者全員の障害・介護等要件をどの資料で確認するか。",
+            "粗大ごみ戸別収集の手数料有無と家から出せない人の相談先を確認。"
+          ]
+        },
+        {
+          "id": "maebashi-self",
+          "kind": "self_dropoff",
+          "name": "家庭ごみの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃は六供清掃工場、不燃・粗大は荻窪清掃工場または富士見クリーンステーション。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "collection_location": {
+              "value": "品目に応じた各施設へ持込み。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "eligibility": {
+              "value": "前橋市の家庭から出たごみ。代理搬入の要件は記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "fees": {
+              "value": "1日の合計200kgまで無料、超過量10kgごと180円。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "limits": {
+              "value": "不燃・粗大は荻窪と富士見で受入品目に差がある。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "application": {
+              "value": "事前に搬入先へ電話連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            },
+            "contact": {
+              "value": "六供 027-224-0130、荻窪 027-269-0621、富士見 027-230-5300。",
+              "state": "explicit",
+              "source_ids": [
+                "maebashi-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "同居者がいるこんにちは収集申請で、同居者全員の障害・介護等要件をどの資料で確認するか。",
+            "粗大ごみ戸別収集の手数料有無と家から出せない人の相談先を確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "同居者がいるこんにちは収集申請で、同居者全員の障害・介護等要件をどの資料で確認するか。",
+        "粗大ごみ戸別収集の手数料有無と家から出せない人の相談先を確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "maebashi-bulky",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/42979.html",
+      "title": "粗大ごみ戸別収集について／前橋市",
+      "source_updated": "2025-01-06",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "maebashi-daily",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/shinseisho/7142.html",
+      "title": "こんにちは収集の登録申請のご案内／前橋市",
+      "source_updated": "2019-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "maebashi-self",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/seisoshisetsu/gyomu/1/2/1/2642.html",
+      "title": "家庭ごみの自己搬入方法についてお知らせします／前橋市",
+      "source_updated": "2023-11-11",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "前橋市の保存済み公式ページ3件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

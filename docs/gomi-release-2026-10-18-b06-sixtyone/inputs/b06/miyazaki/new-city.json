@@ -1,0 +1,433 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "miyazaki:miyazaki",
+      "name": "宮崎市",
+      "kana": "みやざきし",
+      "pref_name": "宮崎県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "miyazaki-daily-support",
+          "kind": "daily_support",
+          "name": "特別な事情がある世帯の戸別収集相談",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "一般の新規戸別収集は原則認めていない。特別な事情があれば個別相談。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "集積所に出せない特別な事情がある場合。正式な制度利用条件は確認資料に記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "application": {
+              "value": "まず自治会に相談し、その上で宮崎市環境業務課へ連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "足が悪い場合などの戸別相談が実際に可能か、決定基準・頻度・費用を確認してください。",
+            "自治会相談後の個別戸別収集が可能となる特別事情と判断者を環境業務課に確認してください。"
+          ]
+        },
+        {
+          "id": "miyazaki-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-daily",
+                "miyazaki-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "宮崎市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "通常の粗大ごみを屋内から搬出できないときの市相談先を確認してください。"
+          ]
+        },
+        {
+          "id": "miyazaki-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ申込収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "宮崎市の収集対象となる粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日8時30分までに指定場所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目別手数料を粗大ごみシール（1枚500円）で納付。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "limits": {
+              "value": "1回3点まで。収集は受付後通常7～14日。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "application": {
+              "value": "宮崎市コールセンターへ電話、またはオンライン受付後に市からの電話確認で申込完了。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "オンライン受付は後日の電話確認まで完了しないため、連絡時期と3点上限を確認してください。"
+          ]
+        },
+        {
+          "id": "miyazaki-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "エコクリーンプラザみやざきへの家庭ごみ搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "宮崎市・国富町・綾町の家庭から出た受入対象ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "排出者本人または同居親族、もしくは許可業者。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "同居親族の搬入可。別居親族の扱いは要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "2025年4月から家庭ごみ100kgごとに660円（100kg未満も660円）。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "application": {
+              "value": "搬入者の氏名・住所・電話番号を確認。状況により身分証確認。",
+              "state": "explicit",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "miyazaki-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "別居家族の代理搬入は受入対象か確認してください。",
+            "別居家族の代理搬入可否と本人が亡くなった場合の事前連絡手順を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "宮崎市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "miyazaki-daily",
+      "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/collection_point/39752.html",
+      "title": "家庭ごみ集積所の設置等に関する届出について -  宮崎市 [Miyazaki City]",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.miyazaki.miyazaki.jp/life/trash/collection_point/39752.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html; charset=UTF-8",
+      "raw_file": "miyazaki/official/daily.html.source",
+      "text_file": "miyazaki/official/daily.txt",
+      "raw_sha256": "7fd87330a617989f7002ca7ddfd016671487bad101dca97faa834f45c5fc29ab",
+      "text_sha256": "328e85af794c86657e897808a6428c75224d6024f6b461a42babcd5a66a05c2c",
+      "last_modified_header": "Sun, 18 Oct 2026 07:27:24 GMT"
+    },
+    {
+      "id": "miyazaki-dropoff",
+      "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/bring/405845.html",
+      "title": "生活系廃棄物（家庭ごみ）の持ち込みについて -  宮崎市 [Miyazaki City]",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.miyazaki.miyazaki.jp/life/trash/bring/405845.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html; charset=UTF-8",
+      "raw_file": "miyazaki/official/dropoff.html.source",
+      "text_file": "miyazaki/official/dropoff.txt",
+      "raw_sha256": "5d1887f1edcfb34de13750f0fdbc5b5aada6bb20c49378a09c38652d7160a248",
+      "text_sha256": "d3a741e61a41ce10dbc2feb9a2fdf8abd3cc0e621c9617a134c6c2a7cb7608ca",
+      "last_modified_header": "Sun, 18 Oct 2026 07:28:14 GMT"
+    },
+    {
+      "id": "miyazaki-regular",
+      "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/fractionation/34204.html",
+      "title": "粗大ごみの出し方 -  宮崎市 [Miyazaki City]",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.miyazaki.miyazaki.jp/life/trash/fractionation/34204.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html; charset=UTF-8",
+      "raw_file": "miyazaki/official/regular.html.source",
+      "text_file": "miyazaki/official/regular.txt",
+      "raw_sha256": "07534dc23f2928f6c20ce6b3a6a7da542a821c577f705d6ff79d4c6fc704315e",
+      "text_sha256": "b65d1dd113bc95057abb8e70eb75bf8e07a852c7d8c54a991590e57611875906",
+      "last_modified_header": "Sun, 18 Oct 2026 07:28:39 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

@@ -1,0 +1,57 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "abcc12784121913741235edfbbeb46983fda0f0fc70c0fea5814030bc5930104",
+  "corrections": [
+    {
+      "service_id": "fukui-self",
+      "field": "fees",
+      "old": "品目・施設・寸法で異なる。市の2026年4月料金表を参照し、持込前に施設へ金額確認。",
+      "new": "施設・品目・寸法で異なる。福井市クリーンセンターの家庭系燃やせるごみは50kgまで無料、超過分は10kgごと22円（端数の扱いは料金表参照）。粗大ごみ等は別料金。持込前に施設別料金を確認。",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ]
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "collection_location",
+      "old": {
+        "value": "自宅内からのごみ搬出。集積所まで運ぶ範囲は要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fukui-daily",
+          "fukui-egao-rules"
+        ]
+      },
+      "new": {
+        "value": "実施要綱に「ごみの搬出」とあるが、家の中から集積所までの具体的な支援範囲は未記載。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fukui-daily",
+          "fukui-egao-rules"
+        ]
+      }
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "family_help",
+      "old": {
+        "value": "親族の支援可否は要綱の明示要件ではない。",
+        "state": "explicit",
+        "source_ids": [
+          "fukui-daily",
+          "fukui-egao-rules"
+        ]
+      },
+      "new": {
+        "value": "親族の支援可否を利用要件とする記載は今回の公式案内・要綱に見当たらず、窓口確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "fukui-daily",
+          "fukui-egao-rules"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "schema_version": "b06-independent-ai-review-v1",
+  "reviewer": "independent_west_review",
+  "review_date": "2026-10-18",
+  "scope": "西側12市。9市は日常・屋内搬出・通常粗大・持込の4経路各10項目（計360項目）と市共通・制度別質問を保存済み公式原典へ双方向照合。事前保留4市も不足点を確認し、高松は対象29地区と2026年12月31日予定の期限を明記した限定制度として採用。佐賀・宮崎・那覇は保留。",
+  "method": "各市new-city.jsonの値・state・source_ids・質問を公式原典の本文に照合。料金と無料範囲、家族搬入、世帯AND/OR、対象地区、回数、搬出、窓口を優先。高松は市ページ・別紙地区一覧・FAQで地区名、町名確認導線、申請先、実証期限、自己搬入料金を再確認。原典にない断定を消し、必要な公式原典5件を追加保存。初稿を別名保全、修正はcorrections.jsonに累積、最終候補・原典・位置ハッシュとスキーマを再検査。",
+  "reviewed_fields": 360,
+  "reviewed_services": 36,
+  "held_issue_checks": 4,
+  "official_sources_total": 41,
+  "official_original_bytes_total": 9505578,
+  "new_external_retrieval_count": 5,
+  "findings": [
+    {
+      "slug": "yamaguchi",
+      "service": "yamaguchi-daily-support",
+      "field": "indoor_carry",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "tokushima",
+      "service": "tokushima-regular-bulky",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "tokushima",
+      "service": "tokushima-regular-bulky",
+      "field": "waste_scope",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "tokushima",
+      "service": "tokushima-self-dropoff",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "tokushima",
+      "service": "tokushima-self-dropoff",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": null,
+      "field": "sources",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": null,
+      "field": "sources",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-daily-support",
+      "field": "eligibility",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-daily-support",
+      "field": "limits",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-daily-support",
+      "field": "application",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-daily-support",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-daily-support",
+      "field": "questions_for_office",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-regular-bulky",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-self-dropoff",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-self-dropoff",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-self-dropoff",
+      "field": "eligibility",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-self-dropoff",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": "takamatsu-self-dropoff",
+      "field": "questions_for_office",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": null,
+      "field": "cities[0].priority_notes",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "takamatsu",
+      "service": null,
+      "field": "research_note",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": "matsuyama-regular-bulky",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": "matsuyama-self-dropoff",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": "matsuyama-self-dropoff",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": "matsuyama-regular-bulky",
+      "field": "questions_for_office",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": "matsuyama-self-dropoff",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": null,
+      "field": "sources",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "matsuyama",
+      "service": null,
+      "field": "sources",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kochi",
+      "service": "kochi-regular-bulky",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kochi",
+      "service": "kochi-regular-bulky",
+      "field": "limits",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kochi",
+      "service": "kochi-self-dropoff",
+      "field": "family_help",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kochi",
+      "service": "kochi-self-dropoff",
+      "field": "eligibility",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kochi",
+      "service": null,
+      "field": "sources",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "nagasaki",
+      "service": "nagasaki-regular-bulky",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "nagasaki",
+      "service": "nagasaki-regular-bulky",
+      "field": "indoor_carry",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "nagasaki",
+      "service": "nagasaki-regular-bulky",
+      "field": "attendance",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kumamoto",
+      "service": "kumamoto-regular-bulky",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kumamoto",
+      "service": "kumamoto-regular-bulky",
+      "field": "indoor_carry",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kumamoto",
+      "service": "kumamoto-regular-bulky",
+      "field": "attendance",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-daily-support",
+      "field": "family_help",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-daily-support",
+      "field": "eligibility",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-regular-bulky",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-self-dropoff",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-self-dropoff",
+      "field": "collection_location",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-daily-support",
+      "field": "indoor_carry",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "oita",
+      "service": "oita-self-dropoff",
+      "field": "waste_scope",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kagoshima",
+      "service": "kagoshima-daily-support",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kagoshima",
+      "service": "kagoshima-bulky-carry-support",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kagoshima",
+      "service": "kagoshima-bulky-carry-support",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kagoshima",
+      "service": "kagoshima-regular-bulky",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kagoshima",
+      "service": "kagoshima-regular-bulky",
+      "field": "contact",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    },
+    {
+      "slug": "kagoshima",
+      "service": "kagoshima-self-dropoff",
+      "field": "fees",
+      "resolution": "レビュー者が原典に合わせて修正・原典追加。before/afterは当該市corrections.json参照",
+      "status": "corrected_and_rechecked"
+    }
+  ],
+  "questions_reviewed": {
+    "city_common": 9,
+    "service_questions": 36,
+    "resolution": "各経路の未確定事項と相談先を保持。高松は29対象地区と町名別紙、2026年12月31日予定後の問合せを明記。松山の「年6回利用上限」を地区別収集機会の表現へ修正。"
+  },
+  "accepted": [
+    {
+      "slug": "yamaguchi",
+      "sha256": "22131fcef21173e27f22e578a14dadcae98f7d65bd27284a10c816393439dd79",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "tokushima",
+      "sha256": "61ebdd77f1038349d12b63d0212800b425b9f1528f1cfef8e6b482825763cb6e",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "takamatsu",
+      "sha256": "aa47f44f209f2d0016da014f945e4ebe271435501193757672c84ecb9fa748c7",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "matsuyama",
+      "sha256": "d7b5badd084319c7e02298a83bfe3e9211a7ae733611262e3e838d40fb428f90",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "kochi",
+      "sha256": "7f4480ee6c14f26d01e11cf21e2bb2f0ae5e03dc0bdd2fb3fad82e3a712cff99",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "nagasaki",
+      "sha256": "b75dd9180796ac9b1bbabd939a2bafffde81d98aa972d752902b6373c84ee375",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "kumamoto",
+      "sha256": "7deff13d28a5d3ca067082f08ad1b75787036dbdc931a22ad44af71d9ac50a5d",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "oita",
+      "sha256": "e0226040447474412a11de68003e100480b7a0939ea3fcd9c6b241665747a887",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    },
+    {
+      "slug": "kagoshima",
+      "sha256": "40e3f4466e00e6f27bc04e450788706f02bd6a356815044a524d8231e9ab2fab",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-west/review.json"
+    }
+  ],
+  "held": [
+    {
+      "slug": "saga",
+      "reason": "保存済み3原典は粗大ごみ定期・臨時収集と持込み。市営の日常ごみ戸別支援について資格・申請の現行一次案内を確認できない。存在しないとは断定しない。"
+    },
+    {
+      "slug": "miyazaki",
+      "reason": "公式ページは新規戸別収集を原則認めず特別事情は自治会・環境業務課への相談とする。相談後の実施可否、対象資格、申請手順が未確定。"
+    },
+    {
+      "slug": "naha",
+      "reason": "計画資料はアシスト収集継続・利用世帯を示すが、現行の利用資格、申請手順、料金、収集範囲を示す住民向け一次案内が未保存。"
+    }
+  ],
+  "remaining_required_findings": [
+    {
+      "slug": "saga",
+      "issue": "保存済み3原典は粗大ごみ定期・臨時収集と持込み。市営の日常ごみ戸別支援について資格・申請の現行一次案内を確認できない。存在しないとは断定しない。"
+    },
+    {
+      "slug": "miyazaki",
+      "issue": "公式ページは新規戸別収集を原則認めず特別事情は自治会・環境業務課への相談とする。相談後の実施可否、対象資格、申請手順が未確定。"
+    },
+    {
+      "slug": "naha",
+      "issue": "計画資料はアシスト収集継続・利用世帯を示すが、現行の利用資格、申請手順、料金、収集範囲を示す住民向け一次案内が未保存。"
+    }
+  ],
+  "checks": [
+    {
+      "slug": "yamaguchi",
+      "status": "accepted",
+      "new_city_sha256": "22131fcef21173e27f22e578a14dadcae98f7d65bd27284a10c816393439dd79",
+      "original_draft_sha256": "35cdb892353851b3a590a5285ec3919bc142b952a9fd548463060ee42019f29a",
+      "corrections_count": 1,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "tokushima",
+      "status": "accepted",
+      "new_city_sha256": "61ebdd77f1038349d12b63d0212800b425b9f1528f1cfef8e6b482825763cb6e",
+      "original_draft_sha256": "d50a1cd451c79599b1ae8b8b87241357bd82da7db9a1915a5e175518a4f52deb",
+      "corrections_count": 4,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "takamatsu",
+      "status": "accepted",
+      "new_city_sha256": "aa47f44f209f2d0016da014f945e4ebe271435501193757672c84ecb9fa748c7",
+      "original_draft_sha256": "4e9fd060f14a0e3564cf9b61ec942adb84b44e9137aa26024bdbd009309f92b0",
+      "corrections_count": 15,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "matsuyama",
+      "status": "accepted",
+      "new_city_sha256": "d7b5badd084319c7e02298a83bfe3e9211a7ae733611262e3e838d40fb428f90",
+      "original_draft_sha256": "f1483fd518242dd368fb1784c54a19531049189f15cae3e6128e9184a9b0e0f7",
+      "corrections_count": 7,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "kochi",
+      "status": "accepted",
+      "new_city_sha256": "7f4480ee6c14f26d01e11cf21e2bb2f0ae5e03dc0bdd2fb3fad82e3a712cff99",
+      "original_draft_sha256": "cca8ed231a742439d942c09340a2965f8f320c45a8121dcff1c0351db65cbe56",
+      "corrections_count": 5,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 5,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "nagasaki",
+      "status": "accepted",
+      "new_city_sha256": "b75dd9180796ac9b1bbabd939a2bafffde81d98aa972d752902b6373c84ee375",
+      "original_draft_sha256": "6e65499296cfad8c999d86c409575ef8530d488f555f449cd9364e735d29a704",
+      "corrections_count": 3,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "kumamoto",
+      "status": "accepted",
+      "new_city_sha256": "7deff13d28a5d3ca067082f08ad1b75787036dbdc931a22ad44af71d9ac50a5d",
+      "original_draft_sha256": "897b49fb320885aad61832a7b9d84c12ee7c251ded33f30b11661f3baed963a6",
+      "corrections_count": 3,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "oita",
+      "status": "accepted",
+      "new_city_sha256": "e0226040447474412a11de68003e100480b7a0939ea3fcd9c6b241665747a887",
+      "original_draft_sha256": "988cf190159c5c9ad955d7e5d2967680713f679e532a0374885742e6046decd0",
+      "corrections_count": 7,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "kagoshima",
+      "status": "accepted",
+      "new_city_sha256": "40e3f4466e00e6f27bc04e450788706f02bd6a356815044a524d8231e9ab2fab",
+      "original_draft_sha256": "4f17decf76f517b2d0e20776deda348b045c29b79e8d9a184565fac645fc9fb5",
+      "corrections_count": 6,
+      "fields_reviewed": 40,
+      "service_count": 4,
+      "official_source_count": 2,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "saga",
+      "status": "held",
+      "new_city_sha256": "5e64b695878f92e731814233eae8ae3c0c15eaaf06dd3bcd32346f3c3ad208e6",
+      "original_draft_sha256": null,
+      "corrections_count": 0,
+      "fields_reviewed": "不足点のみ",
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "miyazaki",
+      "status": "held",
+      "new_city_sha256": "d066059218fa27e8bbba1d0056c505c36c01bc284943d99349d6f074393609d1",
+      "original_draft_sha256": null,
+      "corrections_count": 0,
+      "fields_reviewed": "不足点のみ",
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    },
+    {
+      "slug": "naha",
+      "status": "held",
+      "new_city_sha256": "8d5722154b60b9870ba826ebfa751f89a8d056d023c489de8baaf8ea97671984",
+      "original_draft_sha256": null,
+      "corrections_count": 0,
+      "fields_reviewed": "不足点のみ",
+      "service_count": 4,
+      "official_source_count": 3,
+      "source_hash_verification": "passed",
+      "locator_hash_verification": "passed",
+      "questions_reviewed": "市共通3問・制度別4経路",
+      "research_only": true,
+      "human_reviewed": false
+    }
+  ],
+  "official_source_hashes": [
+    {
+      "id": "yamaguchi-daily",
+      "url": "https://www.city.yamaguchi.lg.jp/soshiki/52/108820.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2023-05-10",
+      "raw_sha256": "9f87a0ad5e516c1ca51ae0a81f269d745476650f7683833df14936186a235670",
+      "text_sha256": "93ed66e063205f5ef838ccf050a8f56c7d10ff71f1650b79cfda7dad22819cff",
+      "slug": "yamaguchi"
+    },
+    {
+      "id": "yamaguchi-dropoff",
+      "url": "https://www.city.yamaguchi.lg.jp/site/gomisigen/161801.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2026-07-16",
+      "raw_sha256": "f8896f18b99875263d8c9ea922705f570f89884767fc7225b9c9e695b56038f0",
+      "text_sha256": "002d4e70c86c32affd4662e23a13b00d00b02e0327935e971d47f80585d17bdf",
+      "slug": "yamaguchi"
+    },
+    {
+      "id": "yamaguchi-regular",
+      "url": "https://www.city.yamaguchi.lg.jp/soshiki/52/60387.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2025-01-31",
+      "raw_sha256": "10a2753227b1afb7cd4621735a16f9c972e36754fd62c0a5bec335d5b875017f",
+      "text_sha256": "65b8431fc87197361039de5d060b54d46ba05e95e18d7d16f37ad7ef4b080729",
+      "slug": "yamaguchi"
+    },
+    {
+      "id": "tokushima-daily",
+      "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/hureai.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2026-09-24",
+      "raw_sha256": "d176b22d315366759e0a7f080c4d7641393f0d91635779ecae7582c0c2db2be4",
+      "text_sha256": "1280fcdd870aabeba192cc19dd7eedddf2a9505786764a8aa1d8e18cfc2d250c",
+      "slug": "tokushima"
+    },
+    {
+      "id": "tokushima-dropoff",
+      "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/jigyou/hannyuu.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2023-05-15",
+      "raw_sha256": "4e9e7f4015c93bc2bb0b95b7b3da8a42646b7b8935b6aab2506791fc63401e58",
+      "text_sha256": "0f63f119fba214a72ff8fcb30fec02f2ddbd37266846819de8de53ddaf8bb025",
+      "slug": "tokushima"
+    },
+    {
+      "id": "tokushima-regular",
+      "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2023-06-05",
+      "raw_sha256": "925204ed1ca06b6f7106727d136e00a717fb4fee324de14a994aa853b592e41e",
+      "text_sha256": "194484a304b644e4034c17983dba66d1c261222bed8eed1760bda32c4a89cd73",
+      "slug": "tokushima"
+    },
+    {
+      "id": "kagawa-daily",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/oshirase/recycl_up20240409.html",
+      "retrieved_at": "2026-10-18T19:18:48+09:00",
+      "source_updated": "2025-09-08",
+      "raw_sha256": "bc6f4687acf1c1106ef47b07270a48de35d94027ba65c61b43bc2004fc19cfc7",
+      "text_sha256": "e20bf1bc9cc891787f2b885997d17181a814a4befca38bc35844e6ad4a46d56e",
+      "slug": "takamatsu"
+    },
+    {
+      "id": "kagawa-dropoff",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/mochikomi/moushikomi.html",
+      "retrieved_at": "2026-10-18T19:18:48+09:00",
+      "source_updated": "2018-12-11",
+      "raw_sha256": "5604c87101b2a5d294d40728fc0ba849e1a2c23cf723f7d3731c1f475f713983",
+      "text_sha256": "0f796197185a95a389ef825a111fd2388391fae4def0c51c51934a4fc8d24473",
+      "slug": "takamatsu"
+    },
+    {
+      "id": "kagawa-regular",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/rinjisodai/dashikata.html",
+      "retrieved_at": "2026-10-18T19:18:49+09:00",
+      "source_updated": "2026-04-22",
+      "raw_sha256": "13f1ae6ee74f54a91f3f652ba97e11883f76ff05969087ec74238d44f4f036fe",
+      "text_sha256": "147febeb631919c9e4128e778ef893641827506c83328144667ebd453e3b3cfc",
+      "slug": "takamatsu"
+    },
+    {
+      "id": "kagawa-flyer",
+      "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/gomi/oshirase/recycl_up20240409.files/R7tirasi.pdf",
+      "retrieved_at": "2026-10-18T19:30:34+09:00",
+      "source_updated": null,
+      "raw_sha256": "e241e92e6d68316c08f3eadbaea2d8dddf53bccdb948d63f804e60873cd51d48",
+      "text_sha256": "3817739f4a60172d3fd684d2c859905100a84daf4f6f61ab23f8e85aca8f417c",
+      "slug": "takamatsu"
+    },
+    {
+      "id": "kagawa-faq",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/gomidashiqa.html",
+      "retrieved_at": "2026-10-18T19:31:02+09:00",
+      "source_updated": "2026-02-13",
+      "raw_sha256": "c773f404faba2844485e6281e0b8e08523a197a2540fad840adca71c0237ca31",
+      "text_sha256": "a36c45bdc42d9cd2b05091c6ce35b3064e3148e151ca3c4285820e425f3b1474",
+      "slug": "takamatsu"
+    },
+    {
+      "id": "ehime-daily",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/seisou.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2023-06-06",
+      "raw_sha256": "3a1d0c693832aa5a8105938a3f53ede778bfdf5ce6605353c058cc449bef20f7",
+      "text_sha256": "3ec09cf322ac2a2763630ce32d4c2dbba0669980d0f5025d454573ba69ccbe6d",
+      "slug": "matsuyama"
+    },
+    {
+      "id": "ehime-dropoff",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/kateigomi.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2026-09-28",
+      "raw_sha256": "c07f32da6d6742484461f96af55dc7ae08b781e4f505bcb92268012df18c7d9f",
+      "text_sha256": "520c193ddc877f4add0e3ae34220e2ce1c20c755be0570104de4aa9826c98b1b",
+      "slug": "matsuyama"
+    },
+    {
+      "id": "ehime-regular",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi_dashikata.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2025-11-28",
+      "raw_sha256": "361dcb74bf1cf27617683bbb75ad443eb5b605a344fd2a7a8049e2460f4e076c",
+      "text_sha256": "2ec9f1b75e51bb6878abc8e3662f581106807a8ff980d52c178b54b681dda4a3",
+      "slug": "matsuyama"
+    },
+    {
+      "id": "matsuyama-fees",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/gomishori_tesuuryou.html",
+      "retrieved_at": "2026-10-18T19:26:07+09:00",
+      "source_updated": "2026-04-13",
+      "raw_sha256": "e036a3031d68496a65e1e177f9d2d543fbc0940814e4dc69db7d769df67deec2",
+      "text_sha256": "468b632062ad152d5c069a13bab04fe2f5804d3cc0f3e292ad139acff4d2d9c2",
+      "slug": "matsuyama"
+    },
+    {
+      "id": "matsuyama-bulky-application",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:26:19+09:00",
+      "source_updated": "2026-09-28",
+      "raw_sha256": "dfc4c91dbbe40bd982518b79ca02d20477b7aee68e95a0e075f8532283edef51",
+      "text_sha256": "7114b705e6f1e363ad5568f9277a820772bb0165e98729d1b5cc022224d7f83d",
+      "slug": "matsuyama"
+    },
+    {
+      "id": "kochi-daily",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/64/fureaishuushuu.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2024-03-01",
+      "raw_sha256": "876ba6f115abe7789d51b52896f494275315226bb57133b91f65e5bfd25e3f8a",
+      "text_sha256": "9761e59be4ea364c67caecb4e586be3f2f1f485d0f29c641e89baf2fbd27fb03",
+      "slug": "kochi"
+    },
+    {
+      "id": "kochi-dropoff",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/66/motikomi-02.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2026-04-01",
+      "raw_sha256": "afc13475f5ffb826c43261cdf727160d36fd31edf8884e377d685e25790d45a9",
+      "text_sha256": "f796f8402d6b1f4993edb0dfc608bc13a558f43cad2a0c2361f131d4dba7b309",
+      "slug": "kochi"
+    },
+    {
+      "id": "kochi-family-dropoff",
+      "url": "https://faq.city.kochi.kochi.jp/faq/detail.aspx?id=1422",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-03-31",
+      "raw_sha256": "b8c251688e394603e1142bf848c7bc8fa57ff82b79f87efda3690c980435172f",
+      "text_sha256": "3ad7bc0f118778f6e7b0ed87c7f7433c2e793d221a431849d1afd2abcbd359a5",
+      "slug": "kochi"
+    },
+    {
+      "id": "kochi-regular",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/64/gomi1-kanenfunen01.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "source_updated": "2025-10-23",
+      "raw_sha256": "a910ab5c4f85cee9e844a674e78977f3e5c02707589674f43254cced7a68e07e",
+      "text_sha256": "9c2338f3f6aaae030ac974ff5239e85cf8c9e668d4371b53982f8902c3849b24",
+      "slug": "kochi"
+    },
+    {
+      "id": "kochi-regular-faq",
+      "url": "https://faq.city.kochi.kochi.jp/faq/detail.aspx?id=1115",
+      "retrieved_at": "2026-10-18T19:26:07+09:00",
+      "source_updated": "2026-03-31",
+      "raw_sha256": "7d2dbe50eb42dd0d37d171a0ef3a420accf77f92e26fdfac4b1189b2d1ee2571",
+      "text_sha256": "efe889494b2794a651e719bb17b037621ce9a4ef8248a6a571e133c86c5c44f1",
+      "slug": "kochi"
+    },
+    {
+      "id": "nagasaki-daily",
+      "url": "https://www.city.nagasaki.lg.jp/page/2575.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-02-26",
+      "raw_sha256": "98fbe5714e0644977c0d3e8200807057e6a66fd58249aa238491106589eda19e",
+      "text_sha256": "f697e397214885ca01b6189a27477efa86c744c76d14ba473e07410c45eb3ba1",
+      "slug": "nagasaki"
+    },
+    {
+      "id": "nagasaki-dropoff",
+      "url": "https://www.city.nagasaki.lg.jp/page/4091.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-08-27",
+      "raw_sha256": "9183ed637457767886fbd4b75e58486a81dfb53fe635bcbaa8da45665c9f3cba",
+      "text_sha256": "1c294dba627fbde00e64d277b1baeff46d1ea04d919182a7aad0f4647b14f369",
+      "slug": "nagasaki"
+    },
+    {
+      "id": "nagasaki-regular",
+      "url": "https://www.city.nagasaki.lg.jp/page/3031.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-03-23",
+      "raw_sha256": "183fe5f69e9388c60b4881868b83df5f4404cd33e2747f8bf119203e42c201f8",
+      "text_sha256": "238ef4f66cd9a89d9ff1540f4a0818474912ee9689eaa193b9481f253fc5fc3d",
+      "slug": "nagasaki"
+    },
+    {
+      "id": "kumamoto-daily",
+      "url": "https://www.city.kumamoto.jp/kankyo/kiji0031428/index.html",
+      "retrieved_at": "2026-10-18T19:19:23+09:00",
+      "source_updated": "2024-01-11",
+      "raw_sha256": "1829b7b77a9a8787d8368f43e4cbdabf37926d41cc02efb3730eb918fb680b8a",
+      "text_sha256": "6bf347b0cb727c6eca920087da8d041fea97fe6fbf7e29aed3a0a981a844dfdb",
+      "slug": "kumamoto"
+    },
+    {
+      "id": "kumamoto-dropoff",
+      "url": "https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2025-09-08",
+      "raw_sha256": "75328e19679e50fa1f0c7678f04a0234dbac4675d64abf2854d88b4a70fe142c",
+      "text_sha256": "521e081d3368b0120bee60ebe0b6bacbc147fd3e6cc070cb120c050fe25fc803",
+      "slug": "kumamoto"
+    },
+    {
+      "id": "kumamoto-regular",
+      "url": "https://www.city.kumamoto.jp/kiji003552/index.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2023-10-16",
+      "raw_sha256": "61b562b33038832674c2b69e84921b8ee6d29dc1c63e37a1196ffe7df73d9279",
+      "text_sha256": "35d8900363d906d492ebe3324c77eb557633f495760395475d4e8541a8b594c4",
+      "slug": "kumamoto"
+    },
+    {
+      "id": "oita-daily",
+      "url": "https://www.city.oita.oita.jp/o150/gomidashishien2021.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-07-02",
+      "raw_sha256": "98cd110658e33cd42f97a85ac35656c5066880e220a7a3c72cb54e3e2b507845",
+      "text_sha256": "9c92938f0d30a9230970e5eefbf0dc0250b793ca54730e92cc5ba09546f1eaa2",
+      "slug": "oita"
+    },
+    {
+      "id": "oita-dropoff",
+      "url": "https://www.city.oita.oita.jp/o017/homepage/bulkygarbage.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-04-02",
+      "raw_sha256": "393a40f4f0a9000a2648d05bcf94f0b98bd05115e1e90fa347b22efa0219b84e",
+      "text_sha256": "e5f90c32de297f035fa4ee683c0803a69d8bba1fe60459ab07c37a1b5f5e8dfe",
+      "slug": "oita"
+    },
+    {
+      "id": "oita-regular",
+      "url": "https://www.city.oita.oita.jp/o150/kurashi/gomi/1263438599187.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-09-25",
+      "raw_sha256": "2f65a91fbad34db3456ada75be7bdf88e609baad081c8a0adc8494f1aec7f976",
+      "text_sha256": "7769eace0b13d578bbed326925f6f7b012380917b902a961314bcfbf7132fa94",
+      "slug": "oita"
+    },
+    {
+      "id": "kagoshima-daily",
+      "url": "https://www.city.kagoshima.lg.jp/seisojimusyo/magokorosyusyu.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": null,
+      "raw_sha256": "aa4d0274e8e5153cb64f6e7f11d7124be9a1ca0b72c819bb0dd030818458764d",
+      "text_sha256": "6e0027465724f7426e88c39ac0a5c5d7146df079b8a3bfcbb780a3195dc276ab",
+      "slug": "kagoshima"
+    },
+    {
+      "id": "kagoshima-regular",
+      "url": "https://www.city.kagoshima.lg.jp/shigenseisaku/gomi/kate/dashikata/wakekata/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": "2026-10-01",
+      "raw_sha256": "1ce02d1df83b6df09e4b3e9339c0e9dc6494b03629764cae320df1ad63d38b84",
+      "text_sha256": "770fae96e4bf5e735ea97ae8aae05421e60c6296ad956c16a35f2de516d1aa14",
+      "slug": "kagoshima"
+    },
+    {
+      "id": "saga-carry",
+      "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3841.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-06-01",
+      "raw_sha256": "7acd9da3ae7e0dd672f2242a16c9d1e518f1f33761008fe5520897812a0c06b5",
+      "text_sha256": "b74aa8055f284f28ab7011430733aafd5c57a9abb49a814936dd7f41c60708a9",
+      "slug": "saga"
+    },
+    {
+      "id": "saga-dropoff",
+      "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/3/1667.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-06-01",
+      "raw_sha256": "410f38efe66338193734d7e43ec0d9d4762367ae16043cbce68171c3eb51cbb6",
+      "text_sha256": "851fca0d377aa24a9329fc2e4de856770bcdbb851caaf58a0f889a6a136b7e92",
+      "slug": "saga"
+    },
+    {
+      "id": "saga-regular",
+      "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "source_updated": "2026-07-13",
+      "raw_sha256": "b0b7c3270a4f92adefdbf90e0748a76d7b0d52f603ab54c5a3ff533aee9b009f",
+      "text_sha256": "2639b42bdff4b6fd3f1107288460938dd7f0c57773528fa1c1450cd533757dc0",
+      "slug": "saga"
+    },
+    {
+      "id": "miyazaki-daily",
+      "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/collection_point/39752.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": null,
+      "raw_sha256": "7fd87330a617989f7002ca7ddfd016671487bad101dca97faa834f45c5fc29ab",
+      "text_sha256": "328e85af794c86657e897808a6428c75224d6024f6b461a42babcd5a66a05c2c",
+      "slug": "miyazaki"
+    },
+    {
+      "id": "miyazaki-dropoff",
+      "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/bring/405845.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": null,
+      "raw_sha256": "5d1887f1edcfb34de13750f0fdbc5b5aada6bb20c49378a09c38652d7160a248",
+      "text_sha256": "d3a741e61a41ce10dbc2feb9a2fdf8abd3cc0e621c9617a134c6c2a7cb7608ca",
+      "slug": "miyazaki"
+    },
+    {
+      "id": "miyazaki-regular",
+      "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/fractionation/34204.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": null,
+      "raw_sha256": "07534dc23f2928f6c20ce6b3a6a7da542a821c577f705d6ff79d4c6fc704315e",
+      "text_sha256": "b65d1dd113bc95057abb8e70eb75bf8e07a852c7d8c54a991590e57611875906",
+      "slug": "miyazaki"
+    },
+    {
+      "id": "okinawa-daily",
+      "url": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/003/020/5torikumi.pdf",
+      "retrieved_at": "2026-10-18T19:18:49+09:00",
+      "source_updated": null,
+      "raw_sha256": "19fb5581f2ac86417222e7c80f6110e8b6807f8318cfb56d5412b76855366d12",
+      "text_sha256": "f81593f2b2ad21ffbdac99f6469fb07f9e1411388d029bd521bb23378c3225d8",
+      "slug": "naha"
+    },
+    {
+      "id": "okinawa-dropoff",
+      "url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007547/1001949.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": "2025-12-24",
+      "raw_sha256": "5867edfcd4bdfe8180ba5f9c2ce76952fe430b43428fc7b8336ee12f3d6828cb",
+      "text_sha256": "b2790b33abdcf7e6e8472a679a92877479f321207ba7872c7047900fb22990bf",
+      "slug": "naha"
+    },
+    {
+      "id": "okinawa-regular",
+      "url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007525/1001941.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "source_updated": "2026-05-19",
+      "raw_sha256": "b633adc64b13b0077e95435eab7f9c70a4cc7961deaa5162d669e24f689e4b19",
+      "text_sha256": "96a70bd43f3b0797645190202430bb5683c06b33f743d3f6e857e38f7ea0a318",
+      "slug": "naha"
+    }
+  ],
+  "consumption": {
+    "reviewed_city_packets": 12,
+    "full_field_city_packets": 9,
+    "official_sources_reviewed": 41,
+    "official_original_bytes_total": 9505578,
+    "additional_http_requests": 5,
+    "additional_http_200": 5,
+    "search_api_tokens": null,
+    "model_tokens": null,
+    "credits": null,
+    "currency_cost": null,
+    "cost_note": "検索・取得・モデルの個別課金は計測できないため推測値を記載しない。",
+    "preview_created": false,
+    "human_reviewed": false
+  },
+  "limits": [
+    "独立AI原典レビューであり人手確認・窓口照会・公開承認ではない。",
+    "保留4市の制度不存在を断定しない。",
+    "申請・利用に必要な個別の住所や資格は相談質問として残す。"
+  ]
+}

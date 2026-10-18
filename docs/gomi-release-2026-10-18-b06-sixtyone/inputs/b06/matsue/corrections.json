@@ -1,0 +1,155 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "38066e46542ac489f6ecac52e8e5e5897e3d99161b506a978f97920b5eb1d4fc",
+  "changes": [
+    {
+      "service_id": "matsue-daily",
+      "field": "waste_scope",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "matsue-daily"
+        ]
+      },
+      "after": {
+        "value": "市長への手紙への回答で、集積所まで出せない場合に戸別収集へ変更するなど個別対応すると説明。対象品目は明記なし。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "matsue-daily"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-daily",
+      "field": "limits",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "matsue-daily"
+        ]
+      },
+      "after": {
+        "value": "個別対応であり、収集頻度・回数の一律条件は公式回答に記載なし。",
+        "state": "not_stated",
+        "source_ids": [
+          "matsue-daily"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-self",
+      "field": "waste_scope",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "matsue-self"
+        ]
+      },
+      "after": {
+        "value": "宍道・美保関の施設は指定袋に入らない家庭の粗大ごみ。エコクリーン松江は集積所収集対象の家庭ごみと粗大ごみ。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self",
+          "matsue-self-burn"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-self",
+      "field": "collection_location",
+      "before": {
+        "value": "宍道リサイクルセンター、美保関不燃物処理場へ自己搬入。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self"
+        ]
+      },
+      "after": {
+        "value": "粗大ごみは宍道リサイクルセンター・美保関不燃物処理場、可燃ごみ等はエコクリーン松江へ自己搬入。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self",
+          "matsue-self-burn"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-self",
+      "field": "fees",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "matsue-self"
+        ]
+      },
+      "after": {
+        "value": "家庭ごみ・粗大ごみの自己搬入は50kg以下500円、50kgを超える分は10kgごと80円加算。水害等の特別事情では事前手続きにより減免される場合がある。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self",
+          "matsue-self-burn"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-self",
+      "field": "limits",
+      "before": {
+        "value": "施設ごとの受入基準外のものは持ち帰り。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self"
+        ]
+      },
+      "after": {
+        "value": "宍道・美保関の粗大ごみは寸法250×100×80cm以内、重さおおむね50kgまで。エコクリーン松江は250×100×100cm以内で、複数回搬入は2週間前までに相談。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self",
+          "matsue-self-burn"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-self",
+      "field": "application",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "matsue-self"
+        ]
+      },
+      "after": {
+        "value": "エコクリーン松江への家庭ごみ搬入は2026年5月1日搬入分から予約必須。宍道・美保関の粗大ごみ搬入は掲載の受付曜日・時間を確認。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self",
+          "matsue-self-burn"
+        ]
+      }
+    },
+    {
+      "service_id": "matsue-self",
+      "field": "contact",
+      "before": {
+        "value": "搬入施設・受付先は公式資料で確認。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self"
+        ]
+      },
+      "after": {
+        "value": "宍道リサイクルセンター 0852-66-1220、美保関不燃物処理場 0852-75-0361。減免相談は松江市環境施設課 0852-55-5272。",
+        "state": "explicit",
+        "source_ids": [
+          "matsue-self"
+        ]
+      }
+    }
+  ]
+}

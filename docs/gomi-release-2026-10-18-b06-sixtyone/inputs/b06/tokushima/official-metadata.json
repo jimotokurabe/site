@@ -1,0 +1,53 @@
+[
+  {
+    "id": "tokushima-daily",
+    "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/hureai.html",
+    "title": "ふれあい収集（ごみ出し支援）利用者受付中です：徳島市公式ウェブサイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-09-24",
+    "http_status": 200,
+    "final_url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/hureai.html",
+    "retrieved_at": "2026-10-18T19:18:45+09:00",
+    "content_type": "text/html",
+    "raw_file": "tokushima/official/daily.html.source",
+    "text_file": "tokushima/official/daily.txt",
+    "raw_sha256": "d176b22d315366759e0a7f080c4d7641393f0d91635779ecae7582c0c2db2be4",
+    "text_sha256": "1280fcdd870aabeba192cc19dd7eedddf2a9505786764a8aa1d8e18cfc2d250c",
+    "last_modified_header": "Thu, 15 Oct 2026 15:01:57 GMT"
+  },
+  {
+    "id": "tokushima-dropoff",
+    "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/jigyou/hannyuu.html",
+    "title": "ごみ処理施設への搬入について：徳島市公式ウェブサイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2023-05-15",
+    "http_status": 200,
+    "final_url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/jigyou/hannyuu.html",
+    "retrieved_at": "2026-10-18T19:18:45+09:00",
+    "content_type": "text/html",
+    "raw_file": "tokushima/official/dropoff.html.source",
+    "text_file": "tokushima/official/dropoff.txt",
+    "raw_sha256": "4e9e7f4015c93bc2bb0b95b7b3da8a42646b7b8935b6aab2506791fc63401e58",
+    "text_sha256": "0f63f119fba214a72ff8fcb30fec02f2ddbd37266846819de8de53ddaf8bb025",
+    "last_modified_header": "Thu, 15 Oct 2026 15:01:58 GMT"
+  },
+  {
+    "id": "tokushima-regular",
+    "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/sodaigomi.html",
+    "title": "粗大ごみ：徳島市公式ウェブサイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2023-06-05",
+    "http_status": 200,
+    "final_url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/sodaigomi.html",
+    "retrieved_at": "2026-10-18T19:18:45+09:00",
+    "content_type": "text/html",
+    "raw_file": "tokushima/official/regular.html.source",
+    "text_file": "tokushima/official/regular.txt",
+    "raw_sha256": "925204ed1ca06b6f7106727d136e00a717fb4fee324de14a994aa853b592e41e",
+    "text_sha256": "194484a304b644e4034c17983dba66d1c261222bed8eed1760bda32c4a89cd73",
+    "last_modified_header": "Sat, 17 Oct 2026 15:01:52 GMT"
+  }
+]

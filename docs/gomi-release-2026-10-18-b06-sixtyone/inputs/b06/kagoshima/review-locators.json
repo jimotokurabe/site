@@ -1,0 +1,130 @@
+[
+  {
+    "city": "kagoshima:kagoshima",
+    "service": "kagoshima-daily-support",
+    "service_sha256": "8af6c02950fd5dbcc237a6867636c65f684664049f5ddfeb00c288d9c8930e77",
+    "sources": [
+      {
+        "id": "kagoshima-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kagoshima/official/daily.txt",
+        "lines": [
+          [
+            1,
+            95
+          ]
+        ],
+        "raw_path": "kagoshima/official/daily.html.source",
+        "raw_sha256": "aa4d0274e8e5153cb64f6e7f11d7124be9a1ca0b72c819bb0dd030818458764d",
+        "text_sha256": "6e0027465724f7426e88c39ac0a5c5d7146df079b8a3bfcbb780a3195dc276ab",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kagoshima:kagoshima",
+    "service": "kagoshima-bulky-carry-support",
+    "service_sha256": "46066ffeaca2f5ed8aaffaea0cee0b07c1626b7c6578bd1646272777ccb4d2ab",
+    "sources": [
+      {
+        "id": "kagoshima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kagoshima/official/regular.txt",
+        "lines": [
+          [
+            1,
+            207
+          ]
+        ],
+        "raw_path": "kagoshima/official/regular.html.source",
+        "raw_sha256": "1ce02d1df83b6df09e4b3e9339c0e9dc6494b03629764cae320df1ad63d38b84",
+        "text_sha256": "770fae96e4bf5e735ea97ae8aae05421e60c6296ad956c16a35f2de516d1aa14",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kagoshima:kagoshima",
+    "service": "kagoshima-regular-bulky",
+    "service_sha256": "dda17bf40697b946dd3c00201a14b7456beb267643fda432a532d5438c6af26d",
+    "sources": [
+      {
+        "id": "kagoshima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kagoshima/official/regular.txt",
+        "lines": [
+          [
+            1,
+            207
+          ]
+        ],
+        "raw_path": "kagoshima/official/regular.html.source",
+        "raw_sha256": "1ce02d1df83b6df09e4b3e9339c0e9dc6494b03629764cae320df1ad63d38b84",
+        "text_sha256": "770fae96e4bf5e735ea97ae8aae05421e60c6296ad956c16a35f2de516d1aa14",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kagoshima:kagoshima",
+    "service": "kagoshima-self-dropoff",
+    "service_sha256": "2d2c6e3aadb35ba9a8dbf8e2b43b83feac30282cef4ce383d2b47d14be9adb14",
+    "sources": [
+      {
+        "id": "kagoshima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kagoshima/official/regular.txt",
+        "lines": [
+          [
+            1,
+            207
+          ]
+        ],
+        "raw_path": "kagoshima/official/regular.html.source",
+        "raw_sha256": "1ce02d1df83b6df09e4b3e9339c0e9dc6494b03629764cae320df1ad63d38b84",
+        "text_sha256": "770fae96e4bf5e735ea97ae8aae05421e60c6296ad956c16a35f2de516d1aa14",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

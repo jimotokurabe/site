@@ -1,0 +1,432 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "fukushima:fukushima",
+      "name": "福島市",
+      "kana": "ふくしまし",
+      "pref_name": "福島県",
+      "selection_reason": "福島市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "fukushima-daily",
+          "kind": "daily_support",
+          "name": "ふれあい訪問収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみを戸別収集し、安否確認も行う。粗大ごみの取扱いは案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "面談で決定した場所に排出。収集時に声掛け。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "集積所に出せない高齢者・障がい者の単身世帯、高齢者・障がい者だけの世帯、それらの世帯に虚弱者や年少者がいる世帯、その他市長が特に必要と認めた世帯。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・介護関係者・民生委員も申請書を提出可能。同居者構成を面談で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "fees": {
+              "value": "公式案内には利用料の記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "limits": {
+              "value": "申請後に訪問面談・可否決定があり、すぐの開始ではない。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "application": {
+              "value": "申請書を市ごみ政策課または各支所に提出、訪問面談後に決定。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "attendance": {
+              "value": "収集時は対象者へ声を掛け安否確認。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            },
+            "contact": {
+              "value": "ごみ政策課ふれあい訪問収集係 024-544-0910。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい訪問収集に粗大ごみが含まれるか、面談時の搬出場所を確認。",
+            "親族が福島市外在住で代理搬入する場合の関係性証明と運転者条件を確認。"
+          ]
+        },
+        {
+          "id": "fukushima-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukushima-daily",
+                "fukushima-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい訪問収集に粗大ごみが含まれるか、面談時の搬出場所を確認。",
+            "親族が福島市外在住で代理搬入する場合の関係性証明と運転者条件を確認。",
+            "福島市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "fukushima-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみ。品目・点数を申込時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "collection_location": {
+              "value": "道路沿いの申込時指定場所に収集日朝8時30分までに出す。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "eligibility": {
+              "value": "公式案内にはeligibilityの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "family_help": {
+              "value": "引越し粗大ごみは本人申込が原則、管理人等第三者の代理申込不可。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみ戸別収集は無料（粗大ごみ詳細案内）。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "limits": {
+              "value": "1回5点以内。引越しに伴う粗大ごみは収集日に申込者が居住していること。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "application": {
+              "value": "専用ダイヤルへの電話、またはオンラインで仮申込。オンラインは後日担当者からの電話確認後に正式受付。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ専用ダイヤル 024-539-9653（申込案内の番号を再確認）。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-bulky",
+                "fukushima-bulky-details"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい訪問収集に粗大ごみが含まれるか、面談時の搬出場所を確認。",
+            "親族が福島市外在住で代理搬入する場合の関係性証明と運転者条件を確認。"
+          ]
+        },
+        {
+          "id": "fukushima-self",
+          "kind": "self_dropoff",
+          "name": "クリーンセンターへの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "分別した家庭の可燃・不燃・資源・粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "collection_location": {
+              "value": "住所地区であぶくま・あらかわ両センターを振り分け。荷下ろしは搬入者。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "搬入制度であり自宅内からの搬出は行わない。荷下ろしは搬入した人が行う。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "eligibility": {
+              "value": "福島市内発生の家庭ごみ。本人または親族が来場し、身分・発生地・関係性を証明。親族以外の代理搬入不可。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "family_help": {
+              "value": "親族代理搬入は可。本人同乗・本人運転の必要は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "fees": {
+              "value": "公式案内にはfeesの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "limits": {
+              "value": "住所による施設指定、品目別受入、受付書・計量手続きあり。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "application": {
+              "value": "本人確認書類と市内発生を示す資料、代理なら親族関係資料を準備。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "attendance": {
+              "value": "本人または親族の来場が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            },
+            "contact": {
+              "value": "あぶくまクリーンセンター 024-531-6662／あらかわクリーンセンター 024-545-4363。",
+              "state": "explicit",
+              "source_ids": [
+                "fukushima-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい訪問収集に粗大ごみが含まれるか、面談時の搬出場所を確認。",
+            "親族が福島市外在住で代理搬入する場合の関係性証明と運転者条件を確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "ふれあい訪問収集に粗大ごみが含まれるか、面談時の搬出場所を確認。",
+        "親族が福島市外在住で代理搬入する場合の関係性証明と運転者条件を確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fukushima-bulky",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1039/2/14101.html",
+      "title": "粗大ごみの申し込み／福島市公式ホームページ",
+      "source_updated": "2025-07-03",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukushima-bulky-details",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1036/1/1/1/676.html",
+      "title": "粗大ごみ／福島市公式ホームページ",
+      "source_updated": "2026-10-13",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukushima-daily",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1036/1/3020.html",
+      "title": "ふれあい訪問収集の申込～高齢者・障がい者世帯の戸別収集～／福島市公式ホームページ",
+      "source_updated": "2025-07-04",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukushima-self",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1036/1/1/682.html",
+      "title": "クリーンセンターへの自己搬入について／福島市公式ホームページ",
+      "source_updated": "2026-08-21",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "福島市の保存済み公式ページ4件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

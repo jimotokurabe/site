@@ -1,0 +1,432 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "niigata:nagaoka",
+      "name": "長岡市",
+      "kana": "ながおかし",
+      "pref_name": "新潟県",
+      "selection_reason": "長岡市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "nagaoka-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集制度",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ごみ・資源物を通常と同じ分別で戸別収集。指定ごみ袋が必要な品目あり。粗大ごみの扱いは要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "collection_location": {
+              "value": "要綱では世帯玄関先の市が定める場所。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "eligibility": {
+              "value": "市内在住で世帯員が集積所へ出せない高齢者・障がい者の単身世帯等。要綱はおおむね65歳以上で介助・介護が必要な人、聴覚障害のみを除く介助・介護が必要な障がい者を定義。世帯全員の状態または介護者不在等の例外を個別審査。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "family_help": {
+              "value": "ホームヘルパー・ケアマネ等を通じて申請。介護できる同居者の有無を審査。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "fees": {
+              "value": "利用料無料。指定ごみ袋の費用は別。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "limits": {
+              "value": "不在・再開・終了時は環境事業課または支所に連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "application": {
+              "value": "担当ヘルパー・ケアマネを通じて環境事業課または各支所へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            },
+            "contact": {
+              "value": "長岡市環境事業課 0258-24-2837。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-daily-rules"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要綱の高齢者・障がい者世帯の組合せと介護者不在例外を審査する際の必要資料を確認。",
+            "粗大ごみの自己搬入に処理券を貼る額と、予約収集との額の違いを確認。"
+          ]
+        },
+        {
+          "id": "nagaoka-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagaoka-daily",
+                "nagaoka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要綱の高齢者・障がい者世帯の組合せと介護者不在例外を審査する際の必要資料を確認。",
+            "粗大ごみの自己搬入に処理券を貼る額と、予約収集との額の違いを確認。",
+            "長岡市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "nagaoka-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみの予約収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市の粗大ごみ品目。2人で持てない物は収集不可。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "一戸建ては玄関先の道路から見える場所、高床式は階段下。集合住宅は1階入口付近。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市は家に入って収集しない。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "長岡市の家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目別の粗大ごみ処理券シール。額は受付時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回5点まで。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "application": {
+              "value": "インターネット、FAX 0258-25-0064、電話0258-25-0053で事前申込。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "処理券を貼り指定場所に出せば留守でも収集。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ申込専用 0258-25-0053。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要綱の高齢者・障がい者世帯の組合せと介護者不在例外を審査する際の必要資料を確認。",
+            "粗大ごみの自己搬入に処理券を貼る額と、予約収集との額の違いを確認。"
+          ]
+        },
+        {
+          "id": "nagaoka-self",
+          "kind": "self_dropoff",
+          "name": "クリーンセンターへの直接持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やす・燃やさないごみと粗大ごみ。粗大ごみは処理券シールが必要。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "collection_location": {
+              "value": "燃やすごみは寿または中之島信条、燃やさない・粗大は中之島信条クリーンセンター。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "eligibility": {
+              "value": "長岡市内から出た家庭ごみ。搬入者の資格は案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "fees": {
+              "value": "燃やす・燃やさないごみは100kgまで300円、以後10kgごと30円加算。指定袋入りは無料。粗大ごみは別途処理券。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "limits": {
+              "value": "月～土曜8:30～16:30、祝日・年末年始除く。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "application": {
+              "value": "前日までに各センターへ電話。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            },
+            "contact": {
+              "value": "寿 0258-24-2856、中之島信条 0256-97-7260。",
+              "state": "explicit",
+              "source_ids": [
+                "nagaoka-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要綱の高齢者・障がい者世帯の組合せと介護者不在例外を審査する際の必要資料を確認。",
+            "粗大ごみの自己搬入に処理券を貼る額と、予約収集との額の違いを確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "要綱の高齢者・障がい者世帯の組合せと介護者不在例外を審査する際の必要資料を確認。",
+        "粗大ごみの自己搬入に処理券を貼る額と、予約収集との額の違いを確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nagaoka-bulky",
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html",
+      "title": "粗大ごみ",
+      "source_updated": "2026-03-31",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nagaoka-daily",
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/josei2.html",
+      "title": "ふれあい収集制度",
+      "source_updated": "2025-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nagaoka-daily-rules",
+      "url": "https://www.city.nagaoka.niigata.jp/shisei/cate03/jyourei/reiki/reiki_honbun/e403RG00000851.html",
+      "title": "長岡市ふれあい収集事業実施要綱",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nagaoka-self",
+      "url": "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24&site_domain=default",
+      "title": "ごみの出し方（持ち込み） | 長岡市よくある質問（Ｑ＆Ａ）",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "長岡市の保存済み公式ページ4件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

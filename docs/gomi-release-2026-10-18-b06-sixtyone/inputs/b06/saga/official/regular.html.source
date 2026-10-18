@@ -1,0 +1,1663 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+                                                                                              
+
+        <meta name="keywords" content="">
+<meta name="description" content="">    <meta property="og:title" content="粗大ごみ定期収集（ステッカー方式）の利用方法|佐賀市公式ホームページ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html">
+  <meta property="og:image" content="http://www.city.saga.lg.jp/material/images/group/37/p1ihmbp6dt3uv1rb91hb31noi1pru4.png" />
+  <meta property="og:description" content="              月に1回の市が指定する日に、粗大ごみをご自宅まで収集に伺う方法です。処理手数料や対象品目はこのページの一番下にある『処理手数料』の項目をご覧ください。市で処理ができないものは、『ごみカレンダー（佐賀市ホームページ）』でご確認ください。（注意）令和6年6月から申込方法や処理料金が変わりました。            " />  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">      <meta name="nsls:timestamp" content="Mon, 13 Jul 2026 00:26:39 GMT">            <title>粗大ごみ定期収集（ステッカー方式）の利用方法／佐賀市公式ホームページ</title>    <link rel="canonical" href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html">        
+                            <link rel="icon" href="//www.city.saga.lg.jp/favicon.ico">
+        <link rel="apple-touch-icon" href="//www.city.saga.lg.jp/theme/base/img_common/smartphone.png">
+                                                  <link href="//www.city.saga.lg.jp/theme/base/css/sub.css" rel="stylesheet" type="text/css" class="sp-style">              
+
+                      
+            
+                                                        <script src="//www.city.saga.lg.jp/theme/base/js/jquery.js"></script>
+                              <script src="//www.city.saga.lg.jp/theme/base/js/jquery_cookie.js"></script>
+                              <script src="//www.city.saga.lg.jp/theme/base/js/jquery-ui.min.js"></script>
+                              <script src="//www.city.saga.lg.jp/theme/base/js/common_lib.js"></script>
+                              <script src="//www.city.saga.lg.jp/theme/base/js/jquery.easing.1.3.js"></script>
+                              <script src="//www.city.saga.lg.jp/theme/base/js/jquery.bxslider.js"></script>
+                              <script src="//www.city.saga.lg.jp/theme/base/js/jquery_dropmenu.js"></script>
+                                                          
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KRJ8C3G');</script>
+
+<link href="//www.city.saga.lg.jp/theme/base/css/splide.css" rel="stylesheet">
+<script src="//www.city.saga.lg.jp/theme/base/js/splide_function.js"></script>
+<script src="//www.city.saga.lg.jp/theme/base/js/splide.js"></script>
+<script src="//www.city.saga.lg.jp/theme/base/js/common.js"></script>
+<script src="//www.city.saga.lg.jp/theme/base/js/scroll-hint.min.js"></script>
+<link rel="stylesheet" href="//www.city.saga.lg.jp/theme/base/css/scroll-hint.css">
+<script src="//www.city.saga.lg.jp/theme/base/js/mutual_switching/mutual_switching.js"></script>
+
+      <script src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru.js?api_key=4218bc63-5841-435b-badd-ca2263dd0a7c"></script>
+    <script src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru_mo.js"></script>
+ 
+    <script> 
+      __tsutaeruMO.init({
+        access_token: '7d0c632a-c81f-4dbf-8310-0c658a65f600'
+      });
+    </script>
+
+  
+  
+
+<script>
+  /*
+  このスクリプトは、スーパーアプリの広報ミニアプリとアンケートを連携させるためのものです。
+  担当部署:DX推進課
+  */
+  // 現在のページのURLからクエリ文字列を取得
+  const params = new URLSearchParams(window.location.search);
+  // id パラメータが存在するかチェック
+  const idParam = params.get('id');
+  // id パラメータが存在する場合にのみ処理を実行
+  if (idParam) {
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+      try {
+        const url = new URL(link.href);
+        // questant.jpドメインかどうか確認
+        if (url.hostname.endsWith('questant.jp')) {
+          // リンクがクリックされたときの処理を設定
+          link.addEventListener('click', function (event) {
+            // デフォルトのページ遷移を一時的にキャンセル
+            event.preventDefault();
+            // リンクのオリジナルのhrefを取得
+            const originalHref = link.href;
+            // 確認アラートを表示
+            const userConfirmed = confirm("アンケート分析にアプリ市民証情報を利用することに同意しますか ? (同意された場合、回答していただいた方の中から抽選でステキな商品をプレゼントします。)");
+            if (userConfirmed) {
+              // 「はい」の場合:idを付与したままページ遷移
+              // 既存のクエリと統合してidパラメータを追加
+              url.searchParams.set('id', idParam);
+              window.location.href = url.toString();
+            } else {
+              // 「いいえ」の場合:idを削除(もとに戻す)してページ遷移
+              // idパラメータを削除
+              url.searchParams.delete('id');
+              window.location.href = url.toString();
+            }
+          });
+        }
+      } catch (e) {
+        // 無効なURLはスキップ
+      }
+    });
+  }
+</script>
+                                              <script src='//www.google.com/jsapi'></script>
+                                          <script src="//www.city.saga.lg.jp/theme/base/js/sub.js"></script>
+                          
+
+              
+                  
+  <!--[if lt IE 9]>
+  <script src="//www.city.saga.lg.jp/theme/base/js/html5shiv-printshiv.min.js"></script>
+  <script src="//www.city.saga.lg.jp/theme/base/js/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+  <script>
+    var cms_api_token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcl9jb2RlIjoiMjUxNDIzIiwic2VydmljZV9uYW1lIjoiU01BUlQgQ01TIn0.3L-uPNvgWgrf_aawHGrLnI_AobjIfHKDfJ4JNHVY4JY";
+    var cms_api_domain="lg-api4th.smart-lgov.jp";
+    var cms_api_site="";
+    var cms_app_version="1.0.0";
+    var cms_app_id="jp.ad.smartvalue.sagajoho";
+    var site_domain = "https://www.city.saga.lg.jp";
+    var theme_name = "base";
+    var cms_recruit_no = "0";
+    var cms_recruit_history_no = "0";
+    var cms_recruit_search_item = '[]';
+    var is_smartphone = false;  </script>
+
+  
+  
+    <script src="//www.city.saga.lg.jp/resource/js/add_tel_link.js"></script>
+  
+
+</head>
+<body class="tpl-leaf m-0005">
+            
+              
+                
+  
+  
+  <p id="smartphone" class="jqs-go-to-sp" style="display: none;">
+  <a href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" class="jqs-go-to-sp">
+    <span class="wrap">
+      <span class="txt">スマートフォン版を表示</span>
+      <span class="ico"></span>
+    </span>
+  </a>
+</p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="wrapper" data-ver="1">
+    <div id="wrapper-in">
+      <div id="wrapper-in2">
+
+        <div id="header-print">
+          <header id="header" class="view-pc">
+                          
+<p class="to-container"><a href="#container">本文へ</a></p>
+
+<div class="header-subnav-area">
+  <div class="header-subnav-area-inner">
+          <p id="header-logo">
+        <a href="https://www.city.saga.lg.jp/index.html">
+                <img src="//www.city.saga.lg.jp/theme/base/img_common/header_logo.png" alt="佐賀市 SAGA City">
+              </a>
+      </p>
+    
+    <div class="box">
+
+      <nav id="pc-header-nav">
+        <div class="menu-btn-area">
+                        <div class="pc-kinkyu-info" style="display: none;">
+          <div class="pc-kinkyu-info-btn">
+            <a href="#">
+              <div class="kinkyu-info-btn">
+                <strong>緊急情報があります。</strong>
+                <span class="btn">確認する</span>
+              </div>
+            </a>
+          </div>
+                      <div class="pc-modal-kinkyu-bg"></div>
+<div id="kinkyu">
+  <section id="emergency" class="kinkyu-sec pc-modal-kinkyu" style="display: none;">
+    <div class="in">
+      <div class="contents">
+                          <div class="pageListDynBlock" data-url="//www.city.saga.lg.jp/kinkyu/index.tree.json" data-limit="10" data-date-format="%Y年%m月%d日%H時%M分">
+                    <div class="pageListExists" style="display: none;">
+            <ul class="list pageListBlock">
+              <li class="pageEntity" style="display:none;">
+                <div class="date pageDate"></div>
+                <div class="text"><a class="pageLink"></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+                <p class="pc-modal-kinkyu-close">
+          <a href="#"><span>緊急情報を閉じる</span></a>
+        </p>
+      </div>
+    </div>
+  </section><!-- /.kinkyu-sec -->
+</div><!-- /#kinkyu -->                  </div>
+                <div class="pc-menu-btn-menu"><a href="#"><div class="img"></div><span>メニュー</span></a></div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+  <div class="pc-modal-menu-bg"></div>
+<div class="pc-modal-menu">
+
+  <div class="pc-menu-btn-close"><a href="#">
+      <div class="close"></div><span>閉じる</span>
+    </a></div>
+
+  <div class="in">
+
+    <div class="in2">
+
+      <div class="support-block">
+
+        <div class="top-utilities">
+          <div class="keyword-search-box">
+            <div class="title"><label for="pc-custom-search-input">キーワードで検索をする</label></div>
+                          <form class="custom-search-form" action="//www.city.saga.lg.jp/result.html" method="get" role="search">
+  <div class="input-wrap">
+    <input type="text" class="search-input" id="pc-custom-search-input" name="q" required>
+    <button type="submit" class="search-button" id="pc-custom-search-submit"><span class="visually-hidden">検索</span></button>
+  </div>
+</form>
+                      </div>
+
+
+          <div class="page-id-search-box">
+            <div class="title"><label for="number-search-input">ページIDで検索をする</label></div>
+                                      <div id="number-search-container">
+  <div class="input-wrap">
+    <input type="number" id="number-search-input" name="number-search-input">
+    <button type="submit" id="number-search-submit"><span class="visually-hidden">検索</span></button>
+  </div>
+</div>
+                      </div>
+
+        </div>
+
+        <div class="bottom-utilities">
+          <div class="lang-box">
+            <div class="title">言語選択</div>
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-lang-wrapper">
+  <div class="header-lang">
+    <select class="lang-select js-lang-select" name="translate" title="Select Language">
+      <option value="#" lang="en">Select Language</option>
+              <option value="https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="en">
+          English
+        </option>
+              <option value="https://translate.google.com/translate?hl=zh-TW&sl=auto&tl=zh-TW&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="zh-TW">
+          中文（繁体）
+        </option>
+              <option value="https://translate.google.com/translate?hl=zh-CN&sl=auto&tl=zh-CN&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="zh-CN">
+          中文（簡体）
+        </option>
+              <option value="https://translate.google.com/translate?hl=ko&sl=auto&tl=ko&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="ko">
+          &#54620;&#44397;&#50612;
+        </option>
+              <option value="https://translate.google.com/translate?hl=vi&sl=auto&tl=vi&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="vi">
+          Ti&#7871;ng Vi&#7879;t
+        </option>
+              <option value="https://translate.google.com/translate?hl=id&sl=auto&tl=id&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="id">
+          bahasa Indonesia
+        </option>
+          </select>
+    <button class="btn-lang-select js-btn-lang-select" type="button" lang="en">GO</button>
+  </div>
+  <div class="lang-error" lang="en" style="display: none;">
+    <p>Select your language</p>
+  </div>
+</div>                      </div>
+          <div class="browsing-support-box-wrapper">
+            <div class="title"></div>
+            <div class="browsing-support-box">
+              <p class="btn-area">
+                <button class="browsing-support-button plus" type="button" aria-expanded="false" aria-controls="browsing-support-accordion">
+                  <span id="browsing-support-btn">閲覧支援</span>
+                  <span class="browsing-support-btn-status">を開く</span>
+                </button>
+              </p>
+              <div class="block" id="browsing-support-accordion" role="region" aria-hidden="true"
+                aria-labelledby="browsing-support-btn">
+                                  
+<div class="in">
+
+  <div class="header-color-wrap">
+    <div class="title"><span>背景色変更</span></div>
+    <div class="header-color">
+      <div class="item"><a href="#" class="sccolor" data-bgcolor="color_black"><span>黒</span><span
+            class="visually-hidden">背景色を黒色にする</span></a></div>
+      <div class="item2"><a href="#" class="sccolor" data-bgcolor="color_blue"><span>青</span><span
+            class="visually-hidden">背景色を青色にする</span></a></div>
+      <div class="item3"><a href="#" class="sccolor" data-bgcolor="color_normal"><span>標準</span><span
+            class="visually-hidden">背景色を元に戻す</span></a></div>
+    </div>
+  </div>
+
+  <div class="header-size-wrap">
+    <div class="title"><span>文字サイズ</span></div>
+    <div class="header-size">
+      <div class="item">
+        <button type="button" class="scsize normal">
+          <span class="normal-on"><span>標準</span><span class="visually-hidden">（初期状態）</span></span>
+          <span class="normal-off hide"><span>標準</span><span class="visually-hidden">に戻す</span></span>
+        </button>
+      </div>
+      <div class="item2">
+        <button type="button" class="scsize up">
+          <span class="big-off"><span>拡大</span><span class="visually-hidden">（初期状態）</span></span>
+          <span class="big-on hide"><span>拡大</span><span class="visually-hidden">拡大（最大状態）</span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-third-party-browsing-support-wrap">
+    <div class="title"><span>閲覧支援</span></div>
+    <div class="header-third-party-browsing-support">
+      <div class="ruby third-party js-ruby-add"><a href="#"><span>ルビふり</span></a></div>
+      <div class="ruby third-party js-ruby-remove is-hide"><a href="#"><span>ルビをけす</span></a></div>
+      <div class="yasashii third-party js-easy-add"><a href="#"><span>やさしい日本語</span></a></div>
+      <div class="yasashii third-party js-easy-remove is-hide"><a href="#"><span>やさしい日本語をけす</span></a></div>
+      <div class="yomiage third-party"><button class="js-speach-toggle"><span>音声読み上げ</span></button></div>
+    </div>
+    <div id="pc-speach-area">
+      <div class="speach-area-in">
+        <button class="speach-area-close"><span class="visually-hidden">読み上げ画面を閉じる</span></button>
+        <script>_tsutaeru.speech.button()</script>
+      </div>
+    </div>
+  </div>
+
+</div>                              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-box">
+          <div class="btn-area">
+            <button id="openChatBot"><span>チャットで調べる</span>
+              <span class="arrow"></span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <nav class="pc-nav" aria-label="メニュー">
+                          <ul class="nav-list">
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kurashi/index.html"><span>くらし</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kosodate-kyoiku/index.html"><span>子育て・教育</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kenko-fukushi/index.html"><span>健康・福祉</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/bosai-anzen/index.html"><span>防災・安全</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kanko/index.html"><span>観光</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/bunka-sports/index.html"><span>文化・スポーツ</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/city-promotion/index.html"><span>シティプロモーション</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/sangyo-machizukuri/index.html"><span>産業・街づくり</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/shisei/index.html"><span>市政</span></a></p>
+          </li>
+        </ul>              </nav>
+
+      <p class="pc-modal-menu-close">
+        <a href="#"><span>メニューを閉じる</span></a>
+      </p>
+
+    </div>
+  </div>
+</div>                      </header>
+
+          <header id="sp-header" class="view-sp">
+                          
+  <div class="box">
+    <p id="sp-header-logo">
+              <a href="https://www.city.saga.lg.jp/index.html">
+                <img src="//www.city.saga.lg.jp/theme/base/img_common/sp_header_logo.png" alt="佐賀市 SAGA City">
+              </a>
+          </p>
+
+    <nav id="sp-header-nav">
+      <div class="menu-btn-area">
+
+                        <div class="sp-kinkyu-info" style="display: none;">
+          <div class="sp-kinkyu-info-btn">
+            <a href="#">
+              <div class="kinkyu-info-btn">
+                <strong>緊急情報が<br>あります</strong>
+              </div>
+            </a>
+          </div>
+                      <div class="sp-modal-kinkyu-bg"></div>
+<div id="sp-kinkyu">
+  <section id="sp-emergency" class="sp-kinkyu-sec sp-modal-kinkyu" style="display: none;">
+    <div class="in">
+      <div class="contents">
+                          <div class="pageListDynBlock" data-url="//www.city.saga.lg.jp/kinkyu/index.tree.json" data-limit="10" data-date-format="%Y年%m月%d日%H時%M分">
+                    <div class="pageListExists" style="display: none;">
+            <ul class="list pageListBlock">
+              <li class="pageEntity" style="display:none;">
+                <div class="date pageDate"></div>
+                <div class="text"><a class="pageLink"></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+                <p class="sp-modal-kinkyu-close">
+          <a href="#"><span>緊急情報を閉じる</span></a>
+        </p>
+      </div>
+    </div>
+  </section><!-- /.kinkyu-sec -->
+</div><!-- /#kinkyu -->                  </div>
+        
+        <div class="menu-btn-menu"><a href="#"><div class="img"></div><span>メニュー</span></a></div>
+      </div>
+    </nav>
+  </div>
+
+        <div class="modal-menu-bg"></div>
+<div class="modal-menu">
+
+  <div class="in">
+
+    <div class="menu-btn-close"><a href="#">
+        <div class="close"></div><span>閉じる</span>
+      </a></div>
+
+    <div class="in2">
+
+      <div class="support-block">
+
+        <div class="top-utilities">
+          <div class="keyword-search-box">
+            <div class="title"><label for="sp-custom-search-input">キーワードで検索をする</label></div>
+                          <form class="custom-search-form" action="//www.city.saga.lg.jp/result.html" method="get" role="search">
+  <div class="input-wrap">
+    <input type="text" class="search-input" id="sp-custom-search-input" name="q" required>
+    <button type="submit" class="search-button" id="sp-custom-search-submit"><span class="visually-hidden">検索</span></button>
+  </div>
+</form>
+                      </div>
+
+          <div class="page-id-search-box">
+            <div class="title"><label for="sp-number-search-input"></label>ページIDで検索をする</div>
+                                      <div id="sp-number-search-container">
+  <div class="input-wrap">
+    <input type="number" id="sp-number-search-input" name="number-search-input">
+    <button type="submit" id="sp-number-search-submit"><span class="visually-hidden">検索</span></button>
+  </div>
+</div>
+                      </div>
+
+          <div class="lang-box">
+            <div class="title">言語選択</div>
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-lang-wrapper">
+  <div class="header-lang">
+    <select class="lang-select js-lang-select" name="translate" title="Select Language">
+      <option value="#" lang="en">Select Language</option>
+              <option value="https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="en">
+          English
+        </option>
+              <option value="https://translate.google.com/translate?hl=zh-TW&sl=auto&tl=zh-TW&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="zh-TW">
+          中文（繁体）
+        </option>
+              <option value="https://translate.google.com/translate?hl=zh-CN&sl=auto&tl=zh-CN&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="zh-CN">
+          中文（簡体）
+        </option>
+              <option value="https://translate.google.com/translate?hl=ko&sl=auto&tl=ko&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="ko">
+          &#54620;&#44397;&#50612;
+        </option>
+              <option value="https://translate.google.com/translate?hl=vi&sl=auto&tl=vi&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="vi">
+          Ti&#7871;ng Vi&#7879;t
+        </option>
+              <option value="https://translate.google.com/translate?hl=id&sl=auto&tl=id&u=https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" lang="id">
+          bahasa Indonesia
+        </option>
+          </select>
+    <button class="btn-lang-select js-btn-lang-select" type="button" lang="en">GO</button>
+  </div>
+  <div class="lang-error" lang="en" style="display: none;">
+    <p>Select your language</p>
+  </div>
+</div>                      </div>
+        </div>
+
+        <div class="bottom-utilities">
+          <div class="chat-box">
+            <div class="btn-area">
+              <button id="spOpenChatBot"><span>チャットで調べる</span>
+                <span class="arrow"></span>
+              </button>
+            </div>
+          </div>
+          <div class="browsing-support-box">
+            <p class="title">
+              <button class="browsing-support-button plus" type="button" aria-expanded="false"
+                aria-controls="browsing-support-accordion">
+                <span id="sp-browsing-support-btn">閲覧支援</span>
+                <span class="browsing-support-btn-status">を開く</span>
+              </button>
+            </p>
+            <div class="block" id="sp-browsing-support-accordion" role="region" aria-hidden="true"
+              aria-labelledby="browsing-support-btn">
+                              
+<div class="in">
+
+  <div class="header-color-wrap">
+    <div class="title"><span>背景色変更</span></div>
+    <div class="header-color">
+      <div class="item"><a href="#" class="sccolor" data-bgcolor="color_black"><span>黒</span><span
+            class="visually-hidden">背景色を黒色にする</span></a></div>
+      <div class="item2"><a href="#" class="sccolor" data-bgcolor="color_blue"><span>青</span><span
+            class="visually-hidden">背景色を青色にする</span></a></div>
+      <div class="item3"><a href="#" class="sccolor" data-bgcolor="color_normal"><span>標準</span><span
+            class="visually-hidden">背景色を元に戻す</span></a></div>
+    </div>
+  </div>
+
+  <div class="header-size-wrap">
+    <div class="title"><span>文字サイズ</span></div>
+    <div class="header-size">
+      <div class="item">
+        <button type="button" class="scsize normal">
+          <span class="normal-on"><span>標準</span><span class="visually-hidden">（初期状態）</span></span>
+          <span class="normal-off hide"><span>標準</span><span class="visually-hidden">に戻す</span></span>
+        </button>
+      </div>
+      <div class="item2">
+        <button type="button" class="scsize up">
+          <span class="big-off"><span>拡大</span><span class="visually-hidden">（初期状態）</span></span>
+          <span class="big-on hide"><span>拡大</span><span class="visually-hidden">拡大（最大状態）</span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-third-party-browsing-support-wrap">
+    <div class="title"><span>閲覧支援</span></div>
+    <div class="header-third-party-browsing-support">
+      <div class="ruby third-party js-ruby-add"><a href="#"><span>ルビふり</span></a></div>
+      <div class="ruby third-party js-ruby-remove is-hide"><a href="#"><span>ルビをけす</span></a></div>
+      <div class="yasashii third-party js-easy-add"><a href="#"><span>やさしい日本語</span></a></div>
+      <div class="yasashii third-party js-easy-remove is-hide"><a href="#"><span>やさしい日本語をけす</span></a></div>
+      <div class="yomiage third-party"><button class="js-speach-toggle"><span>音声読み上げ</span></button></div>
+    </div>
+    <div id="sp-speach-area">
+      <div class="speach-area-in">
+        <button class="speach-area-close"><span class="visually-hidden">読み上げ画面を閉じる</span></button>
+        <script>_tsutaeru.speech.button()</script>
+      </div>
+    </div>
+  </div>
+
+</div>                          </div>
+          </div>
+        </div>
+
+      </div>
+
+      <nav class="sp-nav" aria-label="メニュー">
+                          <ul class="nav-list">
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kurashi/index.html"><span>くらし</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kosodate-kyoiku/index.html"><span>子育て・教育</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kenko-fukushi/index.html"><span>健康・福祉</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/bosai-anzen/index.html"><span>防災・安全</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/kanko/index.html"><span>観光</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/bunka-sports/index.html"><span>文化・スポーツ</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/city-promotion/index.html"><span>シティプロモーション</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/sangyo-machizukuri/index.html"><span>産業・街づくり</span></a></p>
+          </li>
+          <li class="box">
+            <p class="title"><a href="https://www.city.saga.lg.jp/shisei/index.html"><span>市政</span></a></p>
+          </li>
+        </ul>              </nav>
+
+      <div class="sp-pc-view-link">
+        <a href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html" class="jqs-go-to-pc"><span>PC版で表示する</span></a>
+      </div>
+
+      <p class="modal-menu-close">
+        <a href="#"><span>メニューを閉じる</span></a>
+      </p>
+
+    </div>
+  </div>
+</div>                        </header>
+        </div>
+        
+        <div id="pankuzu-ashiato">
+          <dl id="pankuzu" class="clearfix">
+            <dt class="title">現在のページ</dt>
+            <dd class="in">
+              
+
+<ul class="list">
+              <li><a href="https://www.city.saga.lg.jp/index.html">ホーム</a></li>
+                  <li class="icon"><a href="https://www.city.saga.lg.jp/kurashi/index.html">くらし</a></li>
+                  <li class="icon"><a href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/index.html">生活環境</a></li>
+                  <li class="icon"><a href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/index.html">ごみ・リサイクル</a></li>
+                  <li class="icon"><a href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/index.html">家庭ごみ</a></li>
+                  <li class="icon"><a href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/index.html">粗大ごみ</a></li>
+            <li class="icon"><span>粗大ごみ定期収集（ステッカー方式）の利用方法</span></li>
+  </ul>
+            </dd>
+          </dl>
+                                                  </div>
+
+        <section id="container" class="a11y-check-target">
+          <div id="container-in" class="clearfix">
+
+                            
+      <h1 class="title"><span class="bg"><span class="bg2">粗大ごみ定期収集（ステッカー方式）の利用方法</span></span></h1>
+    
+  
+              
+            <div id="update-id-area">
+                                                            
+
+  
+                
+            
+            
+                     
+        <p class="update">更新日：2026年07月13日</p>
+
+  
+                                
+                                                                                                            
+                          
+                    
+                  
+    <div class="page-number-display">
+      <span class="number-display-label">ページID : </span>      <span class="number-display">3840</span>
+    </div>
+  
+                
+            </div>
+            <article id="contents" role="main">
+              <div id="contents-in">      
+        
+        
+                <div class="free-layout-area">
+          <div>
+            <h2><span class="bg"><span class="bg2"><span class="bg3">粗大ごみ定期収集とは</span></span></span></h2>
+          
+
+            <div class="wysiwyg">
+              <p>月に1回の市が指定する日に、粗大ごみをご自宅まで収集に伺う方法です。</p>
+
+<p>処理手数料や対象品目はこのページの一番下にある『<a href="#処理手数料" class="icon2">処理手数料</a>』の項目をご覧ください。</p>
+
+<p>市で処理ができないものは、『ごみカレンダー（佐賀市ホームページ）』でご確認ください。</p>
+
+<p><em>（注意）令和6年6月から申込方法や処理料金が変わりました。</em></p>
+            </div>
+          
+<p class="link-item"><a class="icon" href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/1/index.html">ごみカレンダー</a></p>
+
+            <h2><span class="bg"><span class="bg2"><span class="bg3">申込手続きの流れ</span></span></span></h2>
+          
+
+            <div class="wysiwyg">
+              <ol>
+	<li><a href="#申し込み" class="icon2">インターネットまたは電話で、佐賀市ごみ予約センターにお申込みください</a></li>
+	<li><a href="#処理手数料のお支払い" class="icon2">処理手数料をお支払いください</a></li>
+	<li><a href="#粗大ごみの出し方" class="icon2">収集日の午前8時30分までに、ステッカー等を貼った粗大ごみを指定の場所に出してください</a></li>
+</ol>
+            </div>
+          
+
+            <figure class="img-item"><img alt="申込手続きの流れ1、2、3にイメージイラストをつけて手続きの流れを示した画像" src="//www.city.saga.lg.jp/material/images/group/37/p1ihmbp6dt3uv1rb91hb31noi1pru4.png"></figure>
+          
+
+            <div class="wysiwyg">
+              <p><span aria-hidden="true" id="申し込み">​</span></p>
+            </div>
+          
+
+            <h3><span class="bg"><span class="bg2"><span class="bg3">1.申し込む</span></span></span></h3>
+          
+
+            <h4><span class="bg"><span class="bg2"><span class="bg3">インターネットで申込む</span></span></span></h4>
+          
+
+            <div class="wysiwyg">
+              <ol>
+	<li>申し込み専用サイト（外部サイト）にアクセスし、注意事項をご確認の上、「注意事項を読んだので申し込みに進む」をクリック</li>
+	<li>「収集の新規申込み」をクリック</li>
+	<li>メールアドレスを入力し、「ごみの収集を申し込む」をクリック</li>
+	<li>上記アドレス宛に届いたメールに記載のURLにアクセスし、必要事項を入力する</li>
+	<li>支払方法を選択し、支払手続きをする</li>
+</ol>
+            </div>
+          
+<p class="link-item"><a class="icon2" href="https://www.gomiyoyaku.city.saga.lg.jp/eco/view/saga/top.html?__CAMCID=fpVWQiXYNI-479&amp;__CAMI=3.4.1.1.dEqghHGHfGCh.Mag8IbbgmWyUw9aa-33&amp;__CAMSID=Mag8IbbgmWyUw9aa-33&amp;__CAMVID=dEqghHGHfGCh&amp;_c_d=1&amp;_ct=1737360002270" target="_blank">佐賀市ごみ予約インターネット受付</a></p>
+
+            <div class="wysiwyg">
+              <p>次の場合はインターネットでお申込みができません。お手数ですが、電話でお申込みください。</p>
+
+<ul>
+	<li>処分したい品目が見つからないとき</li>
+	<li>家電リサイクル法対象品（テレビ、洗濯機、冷蔵庫、エアコン等）を処分するとき</li>
+	<li>以前購入したステッカーを使って粗大ごみを処分したいとき（有効期限あり）</li>
+	<li>既に申し込んでいるが、その収集前に次回の申し込みをしたいとき</li>
+</ul>
+            </div>
+          
+
+            <h4><span class="bg"><span class="bg2"><span class="bg3">電話で申し込む</span></span></span></h4>
+          
+
+            <div class="wysiwyg">
+              <ol>
+	<li>佐賀市ごみ予約センターに電話をし、「粗大ごみ定期収集の申込み」とお伝えください</li>
+	<li>必要事項を確認後、受付番号や収集日等をお伝えします（メモのご準備をお願いします）</li>
+	<li>金融機関でお支払いをする</li>
+</ol>
+            </div>
+          
+
+            <h5><span class="bg"><span class="bg2"><span class="bg3">佐賀市ごみ予約センター</span></span></span></h5>
+          
+
+            <div class="wysiwyg">
+              <p>電話：0952-20-0609</p>
+
+<p>受付時間：月曜日から金曜日（祝日、年末年始を除く）午前9時から午後4時</p>
+            </div>
+          
+
+            <div class="wysiwyg">
+              <p><span aria-hidden="true" id="処理手数料のお支払い">​</span></p>
+            </div>
+          
+
+            <h3><span class="bg"><span class="bg2"><span class="bg3">2．処理手数料のお支払い</span></span></span></h3>
+          
+
+            <h4><span class="bg"><span class="bg2"><span class="bg3">インターネットで申込んだ場合</span></span></span></h4>
+          
+
+            <div class="wysiwyg">
+              <p>オンライン決済（クレジットカード、PayPay）または金融機関窓口のいずれかでお支払いください。</p>
+
+<p>領収書は発行できません。</p>
+
+<p>金融機関窓口を選択した場合は、「電話で申し込んだ場合」をご覧ください。</p>
+            </div>
+          
+
+            <h4><span class="bg"><span class="bg2"><span class="bg3">電話で申し込んだ場合</span></span></span></h4>
+          
+
+            <div class="wysiwyg">
+              <p>金融機関窓口で粗大ごみ処理手数料納付書に必要事項を記入し、処理手数料をお支払いください。</p>
+
+<p>このとき、受付番号が必要です。</p>
+
+<p>処分する粗大ごみの個数分、納付書のご記入が必要です。</p>
+
+<p><em>粗大ごみステッカーは購入の翌日から5年間有効です。期限を過ぎたものは再利用や還付はできません。</em></p>
+            </div>
+          
+<p class="file-link-item"><a class="pdf" href="//www.city.saga.lg.jp/material/files/group/37/sodai_gomi_sticker_kinyu_R080713.pdf">粗大ごみステッカー取扱金融機関 (PDFファイル: 81.0KB)</a></p>
+
+            <figure class="img-item"><img alt="粗大ごみ処理手数料納付書の記載例と、注意事項として名前・住所・電話番号について申込時の内容を記載することと、受付番号について電話予約では6桁、インターネット予約では8桁の数字を記載することを説明した画像。" src="//www.city.saga.lg.jp/material/images/group/37/p1ihjtg7m61hg61b1oq7nkon102j4.png"></figure>
+          
+
+            <div class="wysiwyg">
+              <p><span aria-hidden="true" id="粗大ごみの出し方">​</span></p>
+            </div>
+          
+
+            <h3><span class="bg"><span class="bg2"><span class="bg3">3．粗大ごみを出す</span></span></span></h3>
+          
+
+            <div class="wysiwyg">
+              <ul>
+	<li><em>収集日の午前8時30分までに</em>、申込み時に指定した場所（2トントラックが横付けでき、道路から確認できる場所）に<em>粗大ごみを出してください。</em></li>
+	<li>収集日の午前8時30分から午後5時頃にかけて収集します。収集時間の指定はできません。</li>
+	<li>収集業者は、<em>家の中から粗大ごみを運び出すことができません</em>。</li>
+	<li>収集時の立会いは必要ありません。</li>
+	<li><em>収集後に市で処理ができないと判明した場合は、返却する場合があります</em>。</li>
+</ul>
+
+<ul>
+	<li><em>（注意）家電リサイクル法対象品（テレビ、洗濯機、冷蔵庫、エアコン等）を処分する場合のみ、立合いが必要です。収集日までに、収集業者から時間の確認の連絡をします。</em></li>
+	<li><em>（注意）梱包などせずに収集します。市で処理ができずに返却する場合、汚損・破損している場合がありますが、原状回復等は致しかねます。予めご了承ください。</em></li>
+</ul>
+            </div>
+          
+
+            <figure class="img-item"><img alt="粗大ごみ1点ごとに1枚のステッカー貼付が必要であることを説明するため、500円券3枚を貼った3つの棚には丸印を、1500円券1枚のみを貼った棚にはバツ印を添えて正しい例と誤った例を対比させたイラスト" src="//www.city.saga.lg.jp/material/images/group/37/p1ihmagfsoac3isdqvkk4ojak4.png"></figure>
+          
+
+            <h4><span class="bg"><span class="bg2"><span class="bg3">オンライン決済を選択した場合</span></span></span></h4>
+          
+
+            <div class="wysiwyg">
+              <p>A5からA4程度の大きさの紙（チラシの裏などでも可）に、受付番号を油性ペンで大きく記入してください。</p>
+
+<p>その紙の四辺をガムテープなどで、<em>すべての粗大ごみに貼り付けてください。</em></p>
+
+<p><em>受付番号を記入した紙が貼られていないものは収集ができません。</em></p>
+            </div>
+          
+
+            <div class="wysiwyg">
+              <p><img alt="タンスの正面に、受付番号 12345678 と記載された紙が粘着テープで四方を囲うようにしっかりと貼り付けられている様子を描いた、粗大ごみの出し方を示すイラスト" width="500" src="//www.city.saga.lg.jp/material/images/group/37/p1ihm7mh2j2va1v3tolc1o81aee4.png"></p>
+            </div>
+          
+
+            <h4><span class="bg"><span class="bg2"><span class="bg3">金融機関窓口を選択した場合</span></span></span></h4>
+          
+
+            <div class="wysiwyg">
+              <p><em>粗大ごみごとに、処理手数料分の粗大ごみステッカー</em>（金融機関窓口での手続き時に発行）<em>を貼り付けてください。</em></p>
+
+<p>次の場合は収集できません。</p>
+
+<ul>
+	<li>粗大ごみステッカーを貼っていない</li>
+	<li>処理料金が不足している</li>
+	<li>金融機関の領収日付印がない</li>
+	<li>受付番号やごみを出す場所が申込情報と一致していない</li>
+</ul>
+            </div>
+          
+
+            <h2><span class="bg"><span class="bg2"><span class="bg3">申込み・支払期限、収集日</span></span></span></h2>
+          
+
+            <div class="wysiwyg">
+              <p><em>収集日の前月末 午後4時（土曜日・日曜日、年末年始を除く）までに、申込み及び支払い手続きを完了してください。</em></p>
+
+<p><strong class="text_">締切り日以降</strong><em>の</em><strong class="text_">申込み内容の変更</strong><em>や、</em><strong class="text_">品目の一部キャンセル</strong><em>は</em><strong class="text_">受付けができません。</strong></p>
+
+<p>申込みの取消し（全品目のキャンセル）は収集日の前日（土曜日・日曜日、祝日を除く）午後4時までです。</p>
+            </div>
+          
+<p class="file-link-item"><a class="pdf" href="//www.city.saga.lg.jp/material/files/group/37/p1hh3fp8qe19pgckipln1rvg5i64.pdf">住所別収集地区・収集日 (PDFファイル: 55.9KB)</a></p>
+
+            <div class="wysiwyg">
+              <table border="1" cellpadding="0" cellspacing="0" width="667">
+	<caption>令和8年度 申込・支払締切日ごとの地区別収集日</caption>
+	<tbody>
+		<tr bgcolor="#FFD599" height="25">
+			<td height="205" rowspan="2" style="vertical-align: middle; text-align: center;" width="151">申込・支払<br />
+			締切日</td>
+			<td colspan="4" style="vertical-align: middle; text-align: center;" width="516">収集日</td>
+		</tr>
+		<tr bgcolor="#FFD599" height="180">
+			<td height="180" style="vertical-align: middle; text-align: center;" width="129">循誘・神野<br />
+			新栄・金立<br />
+			勧興・久保泉</td>
+			<td style="vertical-align: middle; text-align: center;" width="129">鍋島・開成<br />
+			本庄・川副<br />
+			東与賀</td>
+			<td style="vertical-align: middle; text-align: center;" width="129">赤松・兵庫<br />
+			日新・高木瀬</td>
+			<td style="vertical-align: middle; text-align: center;" width="129">西与賀・嘉瀬・巨勢<br />
+			蓮池・北川副・若楠<br />
+			久保田・諸富<br />
+			大和・富士・三瀬</td>
+		</tr>
+		<tr height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;">令和8年3月31日</td>
+			<td style="vertical-align: middle; text-align: right;">4月13日</td>
+			<td style="vertical-align: middle; text-align: right;">4月14日</td>
+			<td style="vertical-align: middle; text-align: right;">4月8日</td>
+			<td style="vertical-align: middle; text-align: right;">4月9日</td>
+		</tr>
+		<tr bgcolor="#CCFFFF" height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">4月30日</td>
+			<td style="vertical-align: middle; text-align: right;">5月11日</td>
+			<td style="vertical-align: middle; text-align: right;">5月12日</td>
+			<td style="vertical-align: middle; text-align: right;">5月13日</td>
+			<td style="vertical-align: middle; text-align: right;">5月14日</td>
+		</tr>
+		<tr height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">5月29日</td>
+			<td style="vertical-align: middle; text-align: right;">6月8日</td>
+			<td style="vertical-align: middle; text-align: right;">6月9日</td>
+			<td style="vertical-align: middle; text-align: right;">6月10日</td>
+			<td style="vertical-align: middle; text-align: right;">6月11日</td>
+		</tr>
+		<tr bgcolor="#CCFFFF" height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">6月30日</td>
+			<td style="vertical-align: middle; text-align: right;">7月13日</td>
+			<td style="vertical-align: middle; text-align: right;">7月14日</td>
+			<td style="vertical-align: middle; text-align: right;">7月8日</td>
+			<td style="vertical-align: middle; text-align: right;">7月9日</td>
+		</tr>
+		<tr height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">7月31日</td>
+			<td style="vertical-align: middle; text-align: right;">8月10日</td>
+			<td style="vertical-align: middle; text-align: right;">8月11日</td>
+			<td style="vertical-align: middle; text-align: right;">8月12日</td>
+			<td style="vertical-align: middle; text-align: right;">8月13日</td>
+		</tr>
+		<tr bgcolor="#CCFFFF" height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">8月31日</td>
+			<td style="vertical-align: middle; text-align: right;">9月14日</td>
+			<td style="vertical-align: middle; text-align: right;">9月8日</td>
+			<td style="vertical-align: middle; text-align: right;">9月9日</td>
+			<td style="vertical-align: middle; text-align: right;">9月10日</td>
+		</tr>
+		<tr height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">9月30日</td>
+			<td style="vertical-align: middle; text-align: right;">10月12日</td>
+			<td style="vertical-align: middle; text-align: right;">10月13日</td>
+			<td style="vertical-align: middle; text-align: right;">10月14日</td>
+			<td style="vertical-align: middle; text-align: right;">10月8日</td>
+		</tr>
+		<tr bgcolor="#CCFFFF" height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">10月30日</td>
+			<td style="vertical-align: middle; text-align: right;">11月9日</td>
+			<td style="vertical-align: middle; text-align: right;">11月10日</td>
+			<td style="vertical-align: middle; text-align: right;">11月11日</td>
+			<td style="vertical-align: middle; text-align: right;">11月12日</td>
+		</tr>
+		<tr height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">11月30日</td>
+			<td style="vertical-align: middle; text-align: right;">12月14日</td>
+			<td style="vertical-align: middle; text-align: right;">12月8日</td>
+			<td style="vertical-align: middle; text-align: right;">12月9日</td>
+			<td style="vertical-align: middle; text-align: right;">12月10日</td>
+		</tr>
+		<tr bgcolor="#CCFFFF" height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">12月28日</td>
+			<td style="vertical-align: middle; text-align: right;">1月11日</td>
+			<td style="vertical-align: middle; text-align: right;">1月12日</td>
+			<td style="vertical-align: middle; text-align: right;">1月13日</td>
+			<td style="vertical-align: middle; text-align: right;">1月14日</td>
+		</tr>
+		<tr height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;">令和9年1月29日</td>
+			<td style="vertical-align: middle; text-align: right;">2月8日</td>
+			<td style="vertical-align: middle; text-align: right;">2月9日</td>
+			<td style="vertical-align: middle; text-align: right;">2月10日</td>
+			<td style="vertical-align: middle; text-align: right;">2月11日</td>
+		</tr>
+		<tr bgcolor="#CCFFFF" height="25">
+			<td height="25" style="vertical-align: middle; text-align: right;" width="151">2月26日</td>
+			<td style="vertical-align: middle; text-align: right;">3月8日</td>
+			<td style="vertical-align: middle; text-align: right;">3月9日</td>
+			<td style="vertical-align: middle; text-align: right;">3月10日</td>
+			<td style="vertical-align: middle; text-align: right;">3月11日</td>
+		</tr>
+	</tbody>
+</table>
+            </div>
+          
+
+            <div class="wysiwyg">
+              <p><span aria-hidden="true" id="処理手数料">​</span></p>
+            </div>
+          
+
+            <h2><span class="bg"><span class="bg2"><span class="bg3">処理手数料</span></span></span></h2>
+          
+
+            <div class="wysiwyg">
+              <ul>
+	<li>粗大ごみ1個あたり500円、1,000円、1,500円の3区分に分かれます。</li>
+	<li>品目ごとの処理手数料は処理料金をご覧ください。</li>
+	<li>家電リサイクル法対象品は通常の粗大ごみとしては処分できません。詳細は『テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機の処分方法（佐賀市ホームページ）』をご覧ください。</li>
+</ul>
+            </div>
+          
+<p class="file-link-item"><a class="pdf" href="//www.city.saga.lg.jp/material/files/group/37/p1j0o8pqql1vcj1ppu1bbvmigtk64.pdf">処理料金 (PDFファイル: 288.9KB)</a></p>
+<p class="link-item"><a class="icon" href="https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/601.html">家電リサイクル法対象品(テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機)の出し方</a></p>
+</div>
+        </div>
+        
+        
+
+
+            
+              
+                                                                  <!-- 「お問い合わせ先」 -->
+                                                        
+      <div class="toiawase">
+      <div class="toiawase-in">
+        <h2 class="title"><span class="bg"><span class="bg2">この記事に関するお問い合わせ先</span></span></h2>
+        <div class="in">
+                              <div class="name wysiwyg">環境部 循環型社会推進課 廃棄物対策係<br />〒〒849-0917 佐賀市高木瀬町大字長瀬2369番地 佐賀市清掃工場<br />電話：0952-30-2430 <br />ファックス：0952-30-2494<br /><a href="https://www.city.saga.lg.jp/cgi-bin/recruit.php/37">専用フォームで担当課にメールを送る</a></div>
+        </div>
+      </div>
+    </div>
+                    
+                     <!-- pdfダウンロード -->
+
+          <aside id="pdf-download">
+    <a href="http://get.adobe.com/jp/reader/">
+    <img src="//www.city.saga.lg.jp/resource/img/get_adobe_reader.png" alt="「Adobe Reader（Acrobat Reader）」ダウンロード"></a>
+    PDFファイルを閲覧するには「Adobe Reader（Acrobat Reader）」が必要です。お持ちでない方は、左記の「Adobe Reader（Acrobat Reader）」ダウンロードボタンをクリックして、ソフトウェアをダウンロードし、インストールしてください。
+  </aside>
+
+                                                        
+                  
+  
+
+
+                  
+                            
+                                                                                        
+              <!-- //#contents-in  -->
+              </div>
+            <!-- //#contents  -->
+            </article>
+
+                                                                                                        
+              
+                <nav id="side-nav">
+        <section class="side-nav-list">
+                    
+    <script>
+  function cmsDynDateFormat(date, format) {
+    var jpWeek = ['日', '月', '火', '水', '木', '金', '土'];
+    return format.replace('%Y', date.getFullYear()).replace('%m', ('0' + (date.getMonth() + 1)).slice(-2)).replace('%d', ('0' + date.getDate()).slice(-2)).replace('%a', jpWeek[date.getDay()])
+        .replace('%H', ('0' + date.getHours()).slice(-2)).replace('%M', ('0' + date.getMinutes()).slice(-2)).replace('%S', ('0' + date.getSeconds()).slice(-2));
+  }
+  function cmsDynExecuteGetPageList() {
+    var outerBlocks = $('.pageListDynBlock');
+    outerBlocks.each(function() {
+      var block = $(this);
+      block.find('.pageListExists').css('display', 'none');
+      block.find('.pageListNotExists').css('display', 'none');
+
+      var url = block.attr('data-url');
+
+      var cond = {};
+
+      cond.limit = parseInt(block.attr('data-limit'));
+      cond.showIndex = parseInt(block.attr('data-show-index'));
+      cond.showMobile = parseInt(block.attr('data-show-mobile'));
+      dateBegin = block.attr('data-date-begin');
+      dateSpan = block.attr('data-date-span');
+
+      cond.curPageNo = block.attr('data-current-page-no');
+      cond.dirClass = block.attr('data-dir-class');
+      cond.pageClass = block.attr('data-page-class');
+
+      cond.timeBegin = 0;
+      if (dateBegin) {
+        cond.timeBegin = new Date(dateBegin);
+      } else if (dateSpan) {
+        cond.timeBegin = Date.now() - dateSpan * 86400000;
+      }
+      var recentSpan = block.attr('data-recent-span');
+      cond.recentBegin = 0;
+      if (recentSpan) {
+        cond.recentBegin = Date.now() - recentSpan * 86400000;
+      }
+      cond.dateFormat = block.attr('data-date-format');
+      if (!cond.dateFormat) {
+        cond.dateFormat = '%Y/%m/%d %H:%M:%S';
+      }
+      cond.joinGrue = block.attr('data-join-grue');
+      if (!cond.joinGrue) {
+        cond.joinGrue = ' , ';
+      }
+      cond.eventDateFormat = block.attr('data-event-date-format');
+      if (!cond.eventDateFormat) {
+        cond.eventDateFormat = cond.dateFormat;
+      }
+      cond.eventType = block.attr('data-event-type');
+      cond.eventField = block.attr('data-event-field');
+      cond.eventArea = block.attr('data-event-area');
+      eventDateSpan = block.attr('data-event-date-span');
+      cond.eventTimeEnd = 0;
+      if (eventDateSpan) {
+        cond.eventTimeEnd = Date.now() + eventDateSpan * 86400000;
+      }
+
+      // タグ
+      cond.tagDisplay = block.attr('data-show-tags');
+      cond.tagPosition = block.attr('data-tags-position');
+      cond.tagFilterTargets = block.attr('data-tag-filter-targets');
+
+      $.getJSON(url, function(json) {
+        cmsDynApplyPageListJson(block, json, cond);
+      }).fail(function(jqxhr, textStatus, error) {
+        block.css('display', 'none');
+      });
+    });
+  }
+  function cmsDynApplyPageListJson(block, json, cond) {
+    var now = Date.now();
+    var list = block.find('.pageListBlock');
+    var template = list.find('.pageEntity:first').clone();
+    list.find('.pageEntity').remove();
+
+    var count = 0;
+
+    for (var i = 0; i < json.length; i++) {
+      var item = json[i];
+      var itemDate = new Date(item.publish_datetime);
+
+      if (!cond.showIndex && item.is_category_index) {
+        continue;
+      }
+      if (!cond.showMobile && item.is_keitai_page) {
+        continue;
+      }
+      if (cond.timeBegin && itemDate.getTime() < cond.timeBegin) {
+        continue;
+      }
+
+      // タグによる絞込み
+      if ('tag' in item && item.tag && cond.tagFilterTargets != null) {
+        var filteringNos = (!isNaN(cond.tagFilterTargets)) ? [cond.tagFilterTargets] : cond.tagFilterTargets.split(/,|\s/);
+        var isTarget = false;
+        item.tag.forEach(function(tagItem, idx) {
+          if (filteringNos.indexOf(tagItem.tag_no + "") >= 0) {
+            isTarget = true;
+          }
+        });
+        if (!isTarget) {
+          continue;
+        }
+      }
+
+      var entity = template.clone();
+      if ('event' in item && item['event']) {
+        var pageEvent = item['event'];
+        if (cond.eventType && cond.eventType != pageEvent.event_type_name) {
+          continue;
+        }
+        if (cond.eventField && $.inArray(cond.eventField, pageEvent.event_fields) < 0) {
+          continue;
+        }
+        if (cond.eventArea && $.inArray(cond.eventArea, pageEvent.event_area) < 0) {
+          continue;
+        }
+
+        var eventDateString = '';
+        if (cond.eventTimeEnd) {
+          if (pageEvent.event_date_type_id == 0) {
+            var startDatetime = pageEvent.event_start_datetime ? new Date(pageEvent.event_start_datetime) : false;
+            var endDatetime = pageEvent.event_end_datetime ? new Date(pageEvent.event_end_datetime) : false;
+            if (startDatetime && endDatetime) {
+              if (startDatetime.getTime() > cond.eventTimeEnd || endDatetime.getTime() <= now) {
+                continue;
+              }
+              eventDateString = cmsDynDateFormat(startDatetime, cond.eventDateFormat) + '～' + cmsDynDateFormat(endDatetime, cond.eventDateFormat);
+            } else if (startDatetime) {
+              if (startDatetime.getTime() > cond.eventTimeEnd) {
+                continue;
+              }
+            } else {
+              if (endDatetime.getTime() <= now) {
+                continue;
+              }
+              eventDateString = '～' + cmsDynDateFormat(endDatetime, cond.eventDateFormat);
+            }
+          } else if (pageEvent.event_date_type_id == 1) {
+            var filteredDates = $.grep(pageEvent.event_dates, function(value, index) {
+              var eventTime1 = new Date(value[0]+'T00:00:00+09:00').getTime();
+              var eventTime2 = new Date(value[1]+'T23:59:59+09:00').getTime();
+              return (eventTime1 <= cond.eventTimeEnd && eventTime2 >= now);
+            });
+            if (filteredDates.length == 0) {
+              continue;
+            }
+          }
+        }
+        if (pageEvent.event_place) {
+          entity.find('.pageEventPlaceExists').css('display', '');
+          entity.find('.pageEventPlace').text(pageEvent.event_place);
+        } else {
+          entity.find('.pageEventPlaceExists').css('display', 'none');
+          entity.find('.pageEventPlace').text('');
+        }
+        if (pageEvent.event_date_supplement) {
+          entity.find('.pageEventDateExists').css('display', '');
+          entity.find('.pageEventDate').text(pageEvent.event_date_supplement);
+        } else if (eventDateString.length > 0) {
+          entity.find('.pageEventDateExists').css('display', '');
+          entity.find('.pageEventDate').text(eventDateString);
+        } else {
+          entity.find('.pageEventDateExists').css('display', 'none');
+          entity.find('.pageEventDate').text('');
+        }
+
+        if (pageEvent.event_type_name) {
+          entity.find('.pageEventTypeExists').css('display', '');
+          entity.find('.pageEventType').text(pageEvent.event_type_name);
+        } else {
+          entity.find('.pageEventTypeExists').css('display', 'none');
+          entity.find('.pageEventType').text('');
+        }
+        if (pageEvent.event_fields && pageEvent.event_fields.length > 0) {
+          entity.find('.pageEventFieldsExists').css('display', '');
+          entity.find('.pageEventFields').text(pageEvent.event_fields.join(cond.joinGrue));
+        } else {
+          entity.find('.pageEventFieldsExists').css('display', 'none');
+          entity.find('.pageEventFields').text('');
+        }
+        if (pageEvent.event_area && pageEvent.event_area.length > 0) {
+          entity.find('.pageEventAreaExists').css('display', '');
+          entity.find('.pageEventArea').text(pageEvent.event_area.join(cond.joinGrue));
+        } else {
+          entity.find('.pageEventAreaExists').css('display', 'none');
+          entity.find('.pageEventArea').text('');
+        }
+        entity.find('.pageEventExists').css('display', '');
+      } else {
+        entity.find('.pageEventExists').css('display', 'none');
+      }
+
+      entity.find('.pageDate').each(function() {
+        var dateString = cmsDynDateFormat(itemDate, cond.dateFormat);
+        $(this).text(dateString);
+      });
+      var pageLink = entity.find('a.pageLink');
+      if (cond.curPageNo == item.page_no) {
+        pageLink.removeAttr('href').removeAttr('page_no').css('display', 'none');
+        pageLink.parent().append('<span class="pageNoLink">' + item.page_name + '</span>');
+      } else {
+        pageLink.attr('href', item.url).prepend('<span class="title-text">' + item.page_name + '</span>');
+        pageLink.find('.pageNoLink').remove();
+      }
+
+      entity.find('.pageDescription').text(item.description);
+
+      if ('thumbnail_image' in item && item.thumbnail_image) {
+        entity.find('.pageThumbnail').append($('<img>', {src: item.thumbnail_image, alt: ""}));
+      } else {
+        entity.find('.pageThumbnail').remove();
+      }
+
+      if (cond.recentBegin && itemDate.getTime() >= cond.recentBegin) {
+        entity.find('.pageRecent').css('display', '');
+      } else {
+        entity.find('.pageRecent').css('display', 'none');
+      }
+
+      // タグ付与
+      if ('tag' in item && item.tag) {
+        if (item.tag.length > 0) {
+          var DEFINE_CLASS_NAME_WHEN_TAG_TYPE_IMAGE = 'tag-type-image';
+          var DEFINE_CLASS_NAME_WHEN_TAG_TYPE_TEXT = 'tag-type-text';
+          var DEFINE_CLASS_NAME_WHEN_TAG_POSITION_BEFORE = 'tag-pos-before';
+          var DEFINE_CLASS_NAME_WHEN_TAG_POSITION_AFTER = 'tag-pos-after';
+          var DEFINE_CLASS_NAME_TAG_BLOCK = 'tags';
+          var DEFINE_CLASS_NAME_TAG = 'tag';
+          var DEFINE_CLASS_NAME_TAG_INNER = 'tag-bg';
+
+          // タグの表示位置を判定
+          var tagPositionClassName = (cond.tagPosition == 1) ? DEFINE_CLASS_NAME_WHEN_TAG_POSITION_BEFORE : DEFINE_CLASS_NAME_WHEN_TAG_POSITION_AFTER;
+
+          // タグ出力の外枠を生成
+          var tagListWrapperHtml = $('<span>', {
+            class: [DEFINE_CLASS_NAME_TAG_BLOCK, tagPositionClassName].join(' ')
+          });
+
+          item.tag.forEach(function(tagItem, idx) {
+            // タグの中身を設定
+            var tagBody;
+            if (tagItem.image_file_name != null && tagItem.image_file_name != "") {
+              // 画像
+              tagBody = $('<span>', {
+                class: DEFINE_CLASS_NAME_TAG + tagItem.tag_no,
+              }).append($('<img>', {
+                class: [DEFINE_CLASS_NAME_TAG_INNER, DEFINE_CLASS_NAME_WHEN_TAG_TYPE_IMAGE].join(' '),
+                src: tagItem.image_url,
+                alt: tagItem.tag_name
+              }));
+            } else {
+              // テキスト
+              tagBody = $('<span>', {
+                class: DEFINE_CLASS_NAME_TAG + tagItem.tag_no,
+              }).append($('<span>', {
+                class: [DEFINE_CLASS_NAME_TAG_INNER, DEFINE_CLASS_NAME_WHEN_TAG_TYPE_TEXT].join(' '),
+                text: tagItem.tag_name
+              }));
+            }
+            tagListWrapperHtml.append(tagBody);
+          });
+
+          // 出力
+          if (cond.tagDisplay == 1) {
+            if (tagPositionClassName === DEFINE_CLASS_NAME_WHEN_TAG_POSITION_BEFORE) {
+              entity.find('a.pageLink').before(tagListWrapperHtml);
+            } else {
+              entity.find('a.pageLink').after(tagListWrapperHtml);
+            }
+          }
+        }
+      }
+
+      var removeClasses = [];
+      var appendClasses = [];
+      if (item.is_category_index) {
+        appendClasses = cond.dirClass ? cond.dirClass.split(' ') : [];
+        removeClasses = cond.pageClass ? cond.pageClass.split(' ') : [];
+      } else {
+        removeClasses = cond.dirClass ? cond.dirClass.split(' ') : [];
+        appendClasses = cond.pageClass ? cond.pageClass.split(' ') : [];
+      }
+      $.each(removeClasses, function(idx, val){
+        entity.removeClass(val);
+      });
+      $.each(appendClasses, function(idx, val){
+        entity.addClass(val);
+      });
+
+      entity.css('display', '');
+      list.append(entity);
+      count++;
+      if (cond.limit && count >= cond.limit) {
+        break;
+      }
+    }
+    if (count) {
+      block.css('display', '');
+      block.find('.pageListExists').css('display', '');
+      block.find('.pageListNotExists').css('display', 'none');
+    } else {
+      block.css('display', '');
+      block.find('.pageListExists').css('display', 'none');
+      block.find('.pageListNotExists').css('display', '');
+    }
+    block.trigger('pageListComplete', [count]);
+  };
+</script>
+
+<script>
+$(function() {
+  cmsDynExecuteGetPageList();
+});
+</script>
+
+
+    
+  <div class="pageListDynBlock" data-url="//www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/index.tree.json"
+   data-show-shortcut="1" data-show-index="1"
+   data-current-page-no="3840">
+    <dl class="pageListExists">
+      <dt class="title">
+        <span class="bg"><span class="bg2"><a href="//www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/index.html">粗大ごみ</a></span></span>
+      </dt>
+      <dd class="in">
+        <ul class="list clearfix pageListBlock">
+          <li class="pageEntity" style="display:none;">
+            <a class="pageLink"></a>
+          </li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+          </section>
+    
+       
+  </nav>                  
+          <!-- //#container-in  -->
+          </div>
+        <!-- //#container  -->
+        </section>
+
+                        
+        <div id="footer-print">
+          
+                      <!-- チャットボット表示エリア -->
+<div id="chatModalOverlay"
+  style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 10000; justify-content: center; align-items: center;">
+  <div id="chatModalContent"
+    style="position: relative; width: 90%; max-width: 500px; height: 80vh; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); overflow: hidden;">
+    <div id="closeChatModal"
+      style="position: absolute; top: 10px; right: 15px; font-size: 28px; cursor: pointer; color: #fff; z-index: 10001; font-weight: bold;">
+      &times;</div>
+    <iframe id="chatBotIframe" src="" style="width: 100%; height: 100%; border: none;" title="佐賀市チャット（チャットでのお問い合わせ）
+"></iframe>
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="in">
+
+    <p id="pagetop">
+      <a href="#wrapper" class="scroll">
+        <img src="//www.city.saga.lg.jp/theme/base/img_common/footer_pagetop.png" lang="en" alt="PAGE TOP">
+      </a>
+    </p>
+
+    <div class="box">
+
+      <div class="footer-info">
+
+        <div id="footer-logo">
+          <img src="//www.city.saga.lg.jp/theme/base/img_common/footer_logo.png" alt="佐賀市 SAGA City">
+        </div>
+
+        <address class="footer-address">
+          〒840-8501<br>
+          佐賀市栄町1番1号<br>
+        </address>
+        <div class="footer-tel">
+          電話番号：0952-24-3151（代表）
+        </div>
+      </div>
+
+      <div class="footer-buttons">
+        <ul class="list">
+          <li class="mail"><a href="https://www.city.saga.lg.jp/shisei/sagashioshiru/8/380.html"><span class="btn-text">各課へのお問い合わせ</span><span class="arrow"></span></a></li>
+          <li class="sine-langage"><a href="https://denwa-relay-service.jp/web_inquiry/important.php" target="_blank" rel="noopener"><span class="btn-text">手話でのお問い合わせ</span><span class="arrow"></span></a></li>
+          <li class="access"><a href="https://www.city.saga.lg.jp/shisei/sagashioshiru/9/index.html"><span class="btn-text">アクセス</span><span class="arrow"></span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <ul class="list">
+          <li><a href="https://www.city.saga.lg.jp/shisei/koho-kocho/1/2/2721.html">ホームページの考え方</a></li>
+          <li><a href="https://www.city.saga.lg.jp/shisei/koho-kocho/1/2/7053.html">アクセシビリティについて</a></li>
+          <li><a href="https://www.city.saga.lg.jp/sitemap.html">サイトマップ</a></li>
+          <li><a href="https://www.city.saga.lg.jp/shisei/koho-kocho/2/2/1452.html">ご意見・お問い合わせ</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+  <p class="copyright" lang="en">Copyright (c) Saga city. All Rights Reserved.</p>
+</footer>                    
+        </div>
+
+      <!-- //#wrapper-in2  -->
+      </div>
+    <!-- //#wrapper-in  -->
+    </div>
+  <!-- //#wrapper  -->
+  </div>
+
+                <script src="//www.city.saga.lg.jp/theme/base/js/external.js"></script>
+
+  
+
+                        
+
+<script>
+$(window).load(function() {
+  $('#number-search-submit').click(function() {
+    getPageURL();
+  });
+  $('#number-search-input').keypress(function(ev) {
+    if ((ev.which && ev.which === 13) || (ev.keyCode && ev.keyCode === 13)) {//Enterキー無効
+      getPageURL();
+    } else {
+      return true;
+    }
+  });
+});
+
+
+function getPageURL() {
+  var errorFlag = false;
+  var inputText = $('#number-search-input').val(); // 検索するID取得
+  var errorMessage = '';
+  //エラーチェック
+  //数値チェック
+  if(inputText.match(/[^0-9]+/)) {
+    errorFlag = true;
+    errorMessage = 'ID番号は半角数字で入力してください。';
+  } else if(inputText == '') {
+    errorFlag = true;
+    errorMessage = 'ID番号を入力してください。';
+  }
+
+  if(errorFlag) {
+    //エラーメッセージ表示
+    $('.error-message').remove();
+    $('#number-search-container').append('<p class="error-message">' + errorMessage + '</p>');
+  } else {
+    /*検索ID取得*/
+    $.ajax({
+      type: 'get',
+      url: '//' + cms_api_domain + '/v1/page/get_page_contents.json',
+      data: {
+        app_version: cms_app_version,
+        app_id: cms_app_id,
+        token: cms_api_token,
+        page_no: inputText
+      },
+      dataType : 'json',
+      success: function(data) {
+        if(data.success && data.data)
+          location.href = data.data.page_path;//画面遷移
+        else {
+          //エラーメッセージ表示
+          $('.error-message').remove();
+          $('#number-search-container').append('<p class="error-message">該当のページはございません</p>');
+        }
+      },
+      error: function(data) {
+        //エラーメッセージ表示
+        $('.error-message').remove();
+        $('#number-search-container').append('<p class="error-message">ページを取得できませんでした。</p>');
+      }
+    });
+  }
+}
+</script>
+
+  
+
+                        
+
+<script>
+$(window).load(function() {
+  $('#sp-number-search-submit').click(function() {
+    spGetPageURL();
+  });
+  $('#sp-number-search-input').keypress(function(ev) {
+    if ((ev.which && ev.which === 13) || (ev.keyCode && ev.keyCode === 13)) {//Enterキー無効
+      spGetPageURL();
+    } else {
+      return true;
+    }
+  });
+});
+
+
+function spGetPageURL() {
+  var errorFlag = false;
+  var inputText = $('#sp-number-search-input').val(); // 検索するID取得
+  var errorMessage = '';
+  var API_PATH_TYPE = resolveApiPathType(cms_api_domain);
+
+  //エラーチェック
+  //数値チェック
+  if(inputText.match(/[^0-9]+/)) {
+    errorFlag = true;
+    errorMessage = 'ID番号は半角数字で入力してください。';
+  } else if(inputText == '') {
+    errorFlag = true;
+    errorMessage = 'ID番号を入力してください。';
+  }
+
+  if(errorFlag) {
+    //エラーメッセージ表示
+    $('.error-message').remove();
+    $('#sp-number-search-container').append('<p class="error-message">' + errorMessage + '</p>');
+  } else {
+    /*検索ID取得*/
+    $.ajax({
+      type: 'get',
+      url: '//' + cms_api_domain + '/' + API_PATH_TYPE + '/page/get_page_contents.json',
+      data: {
+        app_version: cms_app_version,
+        app_id: cms_app_id,
+        token: cms_api_token,
+        page_no: inputText
+      },
+      dataType : 'json',
+      success: function(data) {
+        if(data.success && data.data)
+          location.href = data.data.page_path;//画面遷移
+        else {
+          //エラーメッセージ表示
+          $('.error-message').remove();
+          $('#sp-number-search-container').append('<p class="error-message">該当のページはございません</p>');
+        }
+      },
+      error: function(data) {
+        //エラーメッセージ表示
+        $('.error-message').remove();
+        $('#sp-number-search-container').append('<p class="error-message">ページを取得できませんでした。</p>');
+      }
+    });
+  }
+}
+</script>
+    
+              
+
+  <script src="//www.city.saga.lg.jp/theme/base/js/external_prod.js"></script>
+            </body>
+</html>

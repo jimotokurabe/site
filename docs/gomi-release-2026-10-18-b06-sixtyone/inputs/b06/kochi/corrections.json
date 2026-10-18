@@ -1,0 +1,104 @@
+[
+  {
+    "service": "kochi-regular-bulky",
+    "field": "collection_location",
+    "before": {
+      "value": "市の分別案内に従い所定の場所へ出す。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-regular"
+      ]
+    },
+    "after": {
+      "value": "月1回の資源物・不燃ごみステーションへ排出。住所ごとの場所・収集日を確認。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-regular-faq"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kochi-regular-bulky",
+    "field": "limits",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kochi-regular"
+      ]
+    },
+    "after": {
+      "value": "可燃粗大ごみの収集は月1回。45L袋に入るものは通常の可燃ごみへ。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-regular",
+        "kochi-regular-faq"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kochi-self-dropoff",
+    "field": "family_help",
+    "before": {
+      "value": "家族による代理搬入を公式FAQで明示。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-dropoff"
+      ]
+    },
+    "after": {
+      "value": "家族による代理搬入を公式FAQで明示。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-dropoff",
+        "kochi-family-dropoff"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kochi-self-dropoff",
+    "field": "eligibility",
+    "before": {
+      "value": "原則、排出者本人または家族が搬入。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-dropoff"
+      ]
+    },
+    "after": {
+      "value": "原則、排出者本人または家族が搬入。",
+      "state": "explicit",
+      "source_ids": [
+        "kochi-dropoff",
+        "kochi-family-dropoff"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": null,
+    "field": "sources",
+    "before": null,
+    "after": {
+      "id": "kochi-regular-faq",
+      "url": "https://faq.city.kochi.kochi.jp/faq/detail.aspx?id=1115",
+      "title": "布団・マットレス等を出したいのですが？（FAQ）｜高知市コールセンター",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-03-31",
+      "http_status": 200,
+      "final_url": "https://faq.city.kochi.kochi.jp/faq/detail.aspx?id=1115",
+      "retrieved_at": "2026-10-18T19:26:07+09:00",
+      "content_type": "text/html; charset=utf-8",
+      "raw_file": "kochi/official/regular-faq.html.source",
+      "text_file": "kochi/official/regular-faq.txt",
+      "raw_sha256": "7d2dbe50eb42dd0d37d171a0ef3a420accf77f92e26fdfac4b1189b2d1ee2571",
+      "text_sha256": "efe889494b2794a651e719bb17b037621ce9a4ef8248a6a571e133c86c5c44f1",
+      "last_modified_header": null
+    },
+    "reviewer": "independent_west_review"
+  }
+]

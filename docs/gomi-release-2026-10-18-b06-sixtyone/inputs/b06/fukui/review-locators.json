@@ -1,0 +1,69 @@
+[
+  {
+    "service_id": "fukui-daily",
+    "field": "application",
+    "source_id": "fukui-daily",
+    "matches": [
+      {
+        "line": 30,
+        "excerpt": "各地域のほやねっと(地域包括支援センター)まで"
+      }
+    ]
+  },
+  {
+    "service_id": "fukui-daily",
+    "field": "contact",
+    "source_id": "fukui-daily",
+    "matches": [
+      {
+        "line": 37,
+        "excerpt": "0776-20-5400"
+      }
+    ]
+  },
+  {
+    "service_id": "fukui-regular",
+    "field": "contact",
+    "source_id": "fukui-bulky",
+    "matches": [
+      {
+        "line": 15,
+        "excerpt": "収集資源センターへ電話等でご予約ください。（電話番号：0776-35-0052）"
+      },
+      {
+        "line": 76,
+        "excerpt": "0776-35-0052"
+      }
+    ]
+  },
+  {
+    "service_id": "fukui-self",
+    "field": "contact",
+    "source_id": "fukui-self-details",
+    "matches": [
+      {
+        "line": 16,
+        "excerpt": "各施設にご自身で持ち込みいただくか、収集資源センターに電話番号（0776-35-0052）で"
+      },
+      {
+        "line": 32,
+        "excerpt": "0776-35-0052"
+      }
+    ]
+  },
+  {
+    "service_id": "fukui-self",
+    "field": "contact",
+    "source_id": "fukui-self-fee",
+    "matches": [
+      {
+        "line": 29,
+        "excerpt": "(電話番号:0776-35-0052)"
+      },
+      {
+        "line": 36,
+        "excerpt": "(電話番号:0776-35-0052)"
+      }
+    ]
+  }
+]

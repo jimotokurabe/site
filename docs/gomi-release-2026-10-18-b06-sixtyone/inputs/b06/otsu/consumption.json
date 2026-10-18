@@ -1,0 +1,31 @@
+{
+  "city": "shiga:otsu",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "大津市 ごみ出し支援 対象 申込",
+    "大津市 粗大ごみ 収集 搬出",
+    "大津市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 4,
+  "http_200_count": 4,
+  "http_non_200_count": 0,
+  "original_bytes_total": 281917,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "otsu-daily",
+    "otsu-regular",
+    "otsu-regular-note",
+    "otsu-self"
+  ],
+  "new_city_sha256": "79b07c33ecaa65e3f394d632b49fd82e8e2397eef84bf8a18129aa5332d176f6",
+  "source_hash_verification": "passed"
+}

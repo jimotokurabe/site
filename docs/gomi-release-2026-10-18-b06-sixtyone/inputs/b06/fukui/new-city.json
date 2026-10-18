@@ -1,0 +1,489 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "fukui:fukui",
+      "name": "福井市",
+      "kana": "ふくいし",
+      "pref_name": "福井県",
+      "selection_reason": "福井市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "fukui-daily",
+          "kind": "daily_support",
+          "name": "えがおでサポート事業（ごみの搬出）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "日常生活上の軽作業として、ごみの搬出を支援。粗大ごみの室内搬出まで含むかは要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "collection_location": {
+              "value": "実施要綱に「ごみの搬出」とあるが、家の中から集積所までの具体的な支援範囲は未記載。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "indoor_carry": {
+              "value": "実施要綱に「ごみの搬出」が明記。重量物や粗大ごみの室内搬出可否は記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "eligibility": {
+              "value": "福井市内の65歳以上のひとり暮らし等高齢者登録者または市長が準ずると認めた者AND日常生活の軽作業援助が必要AND市民税非課税または均等割のみ課税の世帯。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "family_help": {
+              "value": "親族の支援可否を利用要件とする記載は今回の公式案内・要綱に見当たらず、窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "fees": {
+              "value": "1時間250円＋材料・交通費等の実費。提供者の自動車使用時は1回100円を追加徴収できる。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "limits": {
+              "value": "事業対象者・介護認定者は月4時間以内、それ以外は週2時間以内。サービス種類ごとに別上限あり。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "application": {
+              "value": "各地域のほやねっと（地域包括支援センター）へ申請・相談。市長決定後に委託事業者へ依頼。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            },
+            "contact": {
+              "value": "福井市地域包括ケア推進課 0776-20-5400。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-egao-rules"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "えがおでサポート事業の「ごみの搬出」に粗大ごみの室内搬出が含まれるか、重量上限と集積所までの範囲を確認。",
+            "福井・美山/越廼・清水の施設別受入と持込者本人・家族条件を確認。"
+          ]
+        },
+        {
+          "id": "fukui-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "fukui-daily",
+                "fukui-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "えがおでサポート事業の「ごみの搬出」に粗大ごみの室内搬出が含まれるか、重量上限と集積所までの範囲を確認。",
+            "福井・美山/越廼・清水の施設別受入と持込者本人・家族条件を確認。",
+            "福井市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "fukui-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみの戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出た粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先、集合住宅は1階入口付近。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "indoor_carry": {
+              "value": "室内からの持出しは対象外、申込者が玄関先へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "福井市在住者の家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "fees": {
+              "value": "処分手数料に別途収集運搬手数料を加算。大きさ・品目で額が異なり、収集時支払。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "limits": {
+              "value": "1回5点まで。回収は平日、時間指定不可、午前/午後の区分。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "application": {
+              "value": "収集資源センターへ電話またはオンライン申込。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の支払が必要。本人立会いの要否は記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            },
+            "contact": {
+              "value": "福井市収集資源センター 0776-35-0052。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-bulky",
+                "fukui-guide"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "えがおでサポート事業の「ごみの搬出」に粗大ごみの室内搬出が含まれるか、重量上限と集積所までの範囲を確認。",
+            "福井・美山/越廼・清水の施設別受入と持込者本人・家族条件を確認。"
+          ]
+        },
+        {
+          "id": "fukui-self",
+          "kind": "self_dropoff",
+          "name": "家庭系ごみの施設持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみ・粗大ごみ。品目と区域で施設が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "collection_location": {
+              "value": "品目・居住区域ごとの処理施設。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "福井市内の家庭から出たごみ。搬入者条件は今回の市案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "fees": {
+              "value": "施設・品目・寸法で異なる。福井市クリーンセンターの家庭系燃やせるごみは50kgまで無料、超過分は10kgごと22円（端数の扱いは料金表参照）。粗大ごみ等は別料金。持込前に施設別料金を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "limits": {
+              "value": "施設別の受入日時・条件に従う。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "application": {
+              "value": "事前に各施設へ搬入条件を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            },
+            "contact": {
+              "value": "福井市収集資源センター 0776-35-0052。",
+              "state": "explicit",
+              "source_ids": [
+                "fukui-self-details",
+                "fukui-self-fee",
+                "fukui-guide"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "えがおでサポート事業の「ごみの搬出」に粗大ごみの室内搬出が含まれるか、重量上限と集積所までの範囲を確認。",
+            "福井・美山/越廼・清水の施設別受入と持込者本人・家族条件を確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "えがおでサポート事業の「ごみの搬出」に粗大ごみの室内搬出が含まれるか、重量上限と集積所までの範囲を確認。",
+        "福井・美山/越廼・清水の施設別受入と持込者本人・家族条件を確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fukui-bulky",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/sodai_kobetu.html",
+      "title": "粗大ごみの戸別収集",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukui-daily",
+      "url": "https://www.city.fukui.lg.jp/fukusi/kfukusi/ssien/egao.html",
+      "title": "えがおでサポート事業",
+      "source_updated": "2009-01-30",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukui-egao-rules",
+      "url": "https://www.city.fukui.lg.jp/fukusi/kfukusi/ssien/egao_d/fil/egao.pdf",
+      "title": "福井市えがおでサポート事業実施要綱",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukui-guide",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/p073206.html",
+      "title": "遺品整理・生前整理・引っ越し時などにおける不用品の処理について",
+      "source_updated": "2026-09-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukui-self",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/gomimochikomi/index.html",
+      "title": "ごみ・資源物の持込先 | 福井市ホームページ",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukui-self-details",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/gomimochikomi/sodai-koshino_shimizu.html",
+      "title": "家庭ごみの持ち込み",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "fukui-self-fee",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/syoriryou.html",
+      "title": "ごみの処理手数料",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "福井市の保存済み公式ページ7件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

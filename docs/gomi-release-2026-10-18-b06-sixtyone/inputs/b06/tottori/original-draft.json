@@ -1,0 +1,415 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "tottori:tottori",
+      "name": "鳥取市",
+      "kana": "とっとりし",
+      "pref_name": "鳥取県",
+      "selection_reason": "日常ふれあいはホームヘルプ利用原則と冬季の車いす例外を区別。通常大型は1回5点。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "tottori-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ごみステーションで収集する家庭ごみ。通常の大型ごみとは別。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "市貸与の専用容器を玄関先など道路に近い所へ設置。集合住宅は1階共用地等。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "any": [
+                  {
+                    "all": [
+                      "ホームヘルプサービス利用",
+                      "排出困難",
+                      "要介護1以上・視覚障害・肢体不自由2級以上・療育A・精神1級の単身または該当者のみの世帯"
+                    ]
+                  },
+                  {
+                    "all": [
+                      "冬季12月～2月末",
+                      "肢体不自由3級以上",
+                      "車いす生活",
+                      "積雪時等に排出困難な単身世帯（ホームヘルプ利用不要）"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣・ホームヘルパー・ボランティア等の協力で出せる人、施設入居者は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "fees": {
+              "value": "利用料の明記なし。可燃ごみ・プラスチックごみは市の有料指定袋を使う。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "limits": {
+              "value": "冬季例外は毎年度申請が必要。地域・品目で収集曜日が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "application": {
+              "value": "通常はケアマネジャー等に相談し所定申請書を提出。冬季例外は希望年度11月1日～1月31日に申請。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            },
+            "contact": {
+              "value": "鳥取市の担当窓口：0857-30-8084。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "tottori-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "tottori-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "50cm以上の大型製品等。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "申込時に指定した玄関前など1階屋外へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目別の処理手数料。納付券またはオンライン決済。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "limits": {
+              "value": "1世帯1回の申込みにつき5点まで。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            },
+            "contact": {
+              "value": "鳥取市の粗大ごみ担当窓口：0857-30-8084。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "tottori-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "collection_location": {
+              "value": "可燃性・不燃性で処理施設が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "fees": {
+              "value": "取得した冊子の施設別手数料を確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tottori-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "tottori-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "鳥取市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tottori-daily",
+      "url": "https://www.city.tottori.lg.jp/page/4130.html",
+      "title": "ふれあい収集について - 鳥取市公式ウェブサイト（生活環境課）",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-08-04",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "tottori-regular",
+      "url": "https://www.city.tottori.lg.jp/page/4042.html",
+      "title": "大型ごみの出し方について - 鳥取市公式ウェブサイト（生活環境課）",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-10-20",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "tottori-self",
+      "url": "https://www.city.tottori.lg.jp/uploaded/attachment/46220.pdf",
+      "title": "tottori-self",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "鳥取市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

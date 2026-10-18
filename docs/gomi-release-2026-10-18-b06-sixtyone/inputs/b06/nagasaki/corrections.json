@@ -1,0 +1,59 @@
+[
+  {
+    "service": "nagasaki-regular-bulky",
+    "field": "collection_location",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "nagasaki-regular"
+      ]
+    },
+    "after": {
+      "value": "申込時に指定した場所（玄関先等）へ排出。",
+      "state": "explicit",
+      "source_ids": [
+        "nagasaki-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "nagasaki-regular-bulky",
+    "field": "indoor_carry",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "nagasaki-regular"
+      ]
+    },
+    "after": {
+      "value": "原則、家屋内に入っての収集はしない。必要な場合は一般廃棄物収集運搬許可業者に相談。",
+      "state": "explicit",
+      "source_ids": [
+        "nagasaki-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "nagasaki-regular-bulky",
+    "field": "attendance",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "nagasaki-regular"
+      ]
+    },
+    "after": {
+      "value": "原則、収集日の立会い不要。",
+      "state": "explicit",
+      "source_ids": [
+        "nagasaki-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  }
+]

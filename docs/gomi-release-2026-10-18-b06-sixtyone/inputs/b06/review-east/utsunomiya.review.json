@@ -1,0 +1,443 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "tochigi:utsunomiya",
+  "slug": "utsunomiya",
+  "first_input_sha256": "189112f0a0a3f4503ed40064c64880d48925f50edf3a0a7893abb88fe8652f43",
+  "accepted_input_sha256": "189112f0a0a3f4503ed40064c64880d48925f50edf3a0a7893abb88fe8652f43",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 3,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "ふれあい収集は親族等の支援を受けられない世帯が対象、本人同意で代理申請可。粗大ごみと通常家庭ごみの料金・施設別量を分離。",
+  "corrections_file": null,
+  "correction_count": 0,
+  "field_inventory": [
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "0d63ac7bcac0341bdcd56fc37dff37e881ef0745240613669902dc0e84f55fae"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "c199125844d754133d2c150f3a13aa64e0f6cf53efe5edbbb47f1e963c95bc55"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "86563286c02512662c1fa4a64e726d3e100487c24f722c759352d4674b95aaf6"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "268d5dcf462b3b09a09bafc2f67db1960d5327c510ed9078c1511801736bf5cb"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "fees",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "02524e3cd88d9df254040cf4f9db2e17b48fee95332233d0e0490db9cdef345d"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "ae04ff525f980b785ffd89b404915b443ca82fe172de3ed2aae65797645af3f2"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "9fddb6605f23a05b7a049bf2aa96182e44c6bd7ba80de86cef1b09a636125655"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "utsunomiya-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-daily"
+      ],
+      "value_sha256": "2ead1d3d97ea105d79804b173de9d02f8ea8ba84e020ea694dc5c9a0613d5f6f"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "utsunomiya-daily",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "09466bd3a7773ebde4a635f8dad6bf6555355c42393a1412bf30700c33c5bf5e"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "d89b2282aa4dda3bc0c6abc3597aa796cab77a14a009540bce80bdfc5a6e3cb1"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "0c8a8c165dea02a6f3a71a1c405441802e2a87518d469a3f892f4ba779b889e0"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "cdeb575774e680329d5772aae4de599db4a2023dc9bfe8d1d84904492b8ade00"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "a087d525e54a49d08bf1f2e1a360f65d30cec84c5d1d056df4a1bdf3ec92a565"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "110cf0b9c28aa413a101de930160b20766b27f84c3915405250ba7cc649cbe8b"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "69abeaa09073bf7c2ed384a9f49b8df0957616924a63b1e5da14c15c4cdb6cce"
+    },
+    {
+      "service_id": "utsunomiya-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "a658612fc40b588b818a7f093ae9d59b5aa456ae9b8ef90623ba2b9916b5d526"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "2429856fdb403d7e0bb098e843faaa73f7601af3bcd63bad128dbf3c0bcf5007"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "d8053c29ce084c08a6f65b57dbb7759b1bbe47a33e4aac79925c1fb8647fff72"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "82e7616d0dff1973a5addd83cf98ad3b51d00f3c07b0062d1c45cb1107d692ba"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "56f858b3117a6146c615a34fc8c7fdf3f6174b92f1168a459ec2b3e98e2f06c1"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "e47bf50e12fdafeba1ce2d3b9dc3fc583dc7bda1fe8e811d1a9bb7b22ed22949"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "9a852f274e447b551eb78e760d8c609d1e3d8bb0f52b35f187ea398af38714a1"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "d6db2a3ef680f7be7cb59c1cfc36bd24e6b199da42b8facf95be4d4b4578d3ae"
+    },
+    {
+      "service_id": "utsunomiya-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "utsunomiya-self",
+        "utsunomiya-bulky"
+      ],
+      "value_sha256": "2ead1d3d97ea105d79804b173de9d02f8ea8ba84e020ea694dc5c9a0613d5f6f"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "utsunomiya-bulky",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/dashikata/1017157/1004977.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-09-28",
+      "raw_file": "utsunomiya/official/utsunomiya-bulky.html.source",
+      "raw_sha256": "91806cbb24062da45031f0ea7ce9ee7480255b5f2b2fe4a3f528f65ff2737340",
+      "text_file": "utsunomiya/official/utsunomiya-bulky.txt",
+      "text_sha256": "d6009b86c358a3b9088d6254903611ca20d6e1a124034e25d0420d9a794bcc02"
+    },
+    {
+      "id": "utsunomiya-daily",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/1004994.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-05-26",
+      "raw_file": "utsunomiya/official/utsunomiya-daily.html.source",
+      "raw_sha256": "8296139f5b17882cbad7f0e80f413d47f5c959d99de1ca9e60b3385f6460d288",
+      "text_file": "utsunomiya/official/utsunomiya-daily.txt",
+      "text_sha256": "63a9ef50c15fa669ebada6f93fd30451343bc9fc308db4ff28bbfbecb7f9dd72"
+    },
+    {
+      "id": "utsunomiya-self",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/mochikomi/1004998.html",
+      "retrieved_at": "2026-10-18T19:23:25+09:00",
+      "source_updated": "2024-03-08",
+      "raw_file": "utsunomiya/official/utsunomiya-self.html.source",
+      "raw_sha256": "fc8e8ad8de17fbbbf3918972f550d0dab26d0ab3926c2e8b2ca6447046a08794",
+      "text_file": "utsunomiya/official/utsunomiya-self.txt",
+      "text_sha256": "e9dbb2b762006bca4b78de26a8d55718f947a76d3a49a12576154c1c04efbca5"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "ふれあい収集料金と収集時立会い、家族代理持込み条件は未記載。"
+  ]
+}

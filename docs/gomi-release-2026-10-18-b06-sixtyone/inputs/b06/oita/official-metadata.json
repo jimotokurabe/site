@@ -1,0 +1,53 @@
+[
+  {
+    "id": "oita-daily",
+    "url": "https://www.city.oita.oita.jp/o150/gomidashishien2021.html",
+    "title": "大分市／「高齢者等世帯に対するごみ出し支援事業」Q＆A",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-07-02",
+    "http_status": 200,
+    "final_url": "https://www.city.oita.oita.jp/o150/gomidashishien2021.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "oita/official/daily.html.source",
+    "text_file": "oita/official/daily.txt",
+    "raw_sha256": "98cd110658e33cd42f97a85ac35656c5066880e220a7a3c72cb54e3e2b507845",
+    "text_sha256": "9c92938f0d30a9230970e5eefbf0dc0250b793ca54730e92cc5ba09546f1eaa2",
+    "last_modified_header": "Tue, 07 Jul 2026 04:15:05 GMT"
+  },
+  {
+    "id": "oita-dropoff",
+    "url": "https://www.city.oita.oita.jp/o017/homepage/bulkygarbage.html",
+    "title": "大分市／粗大(そだい)ごみ・一時的多量(いちじてきたりょう)ごみ（やさしいにほんご）",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-04-02",
+    "http_status": 200,
+    "final_url": "https://www.city.oita.oita.jp/o017/homepage/bulkygarbage.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "oita/official/dropoff.html.source",
+    "text_file": "oita/official/dropoff.txt",
+    "raw_sha256": "393a40f4f0a9000a2648d05bcf94f0b98bd05115e1e90fa347b22efa0219b84e",
+    "text_sha256": "e5f90c32de297f035fa4ee683c0803a69d8bba1fe60459ab07c37a1b5f5e8dfe",
+    "last_modified_header": "Fri, 03 Apr 2026 00:33:25 GMT"
+  },
+  {
+    "id": "oita-regular",
+    "url": "https://www.city.oita.oita.jp/o150/kurashi/gomi/1263438599187.html",
+    "title": "大分市／引っ越し等のごみの出し方をお知らせします",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-09-25",
+    "http_status": 200,
+    "final_url": "https://www.city.oita.oita.jp/o150/kurashi/gomi/1263438599187.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "oita/official/regular.html.source",
+    "text_file": "oita/official/regular.txt",
+    "raw_sha256": "2f65a91fbad34db3456ada75be7bdf88e609baad081c8a0adc8494f1aec7f976",
+    "text_sha256": "7769eace0b13d578bbed326925f6f7b012380917b902a961314bcfbf7132fa94",
+    "last_modified_header": "Fri, 25 Sep 2026 00:45:06 GMT"
+  }
+]

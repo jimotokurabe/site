@@ -1,0 +1,147 @@
+[
+  {
+    "service": "oita-daily-support",
+    "field": "family_help",
+    "before": {
+      "value": "親族・近隣等の協力が困難なこと。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-daily"
+      ]
+    },
+    "after": {
+      "value": "確認した公式原典には親族・近隣の協力を利用条件として明記していない。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "oita-daily"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "oita-daily-support",
+    "field": "eligibility",
+    "before": {
+      "value": {
+        "all": [
+          "世帯全員が自力でステーションに運べない",
+          "親族・近隣等の協力が困難",
+          "世帯全員が次のいずれか：65歳以上かつ要介護1以上で訪問介護の生活援助利用、障害福祉サービス受給者で居宅介護または重度訪問介護利用、市長の特認"
+        ]
+      },
+      "state": "explicit",
+      "source_ids": [
+        "oita-daily"
+      ]
+    },
+    "after": {
+      "value": {
+        "all": [
+          "世帯全員が自力でステーションに運べない",
+          "世帯全員が次のいずれか：65歳以上かつ要介護1以上で訪問介護の生活援助利用、障害福祉サービス受給者で居宅介護または重度訪問介護利用、前二者に準じ市長が特に必要と認めた方"
+        ]
+      },
+      "state": "explicit",
+      "source_ids": [
+        "oita-daily"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "oita-regular-bulky",
+    "field": "fees",
+    "before": {
+      "value": "量に応じ有料。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "after": {
+      "value": "量に応じ有料。最低料金1,890円から。収集終了後に現金払い。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "oita-self-dropoff",
+    "field": "fees",
+    "before": {
+      "value": "量により料金が決まる。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "after": {
+      "value": "350kgまでは10kgごとに40円。350kg超は全量に対して10kgごとに105円。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "oita-self-dropoff",
+    "field": "collection_location",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "after": {
+      "value": "佐野清掃センター・福宗環境センター・鬼崎埋立場など、品目に応じた施設へ。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "oita-daily-support",
+    "field": "indoor_carry",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "oita-daily"
+      ]
+    },
+    "after": {
+      "value": "収集員は玄関先まで。家の中からの収集はしない。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-daily"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "oita-self-dropoff",
+    "field": "waste_scope",
+    "before": {
+      "value": "市の施設で受け入れる家庭ごみ。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular"
+      ]
+    },
+    "after": {
+      "value": "市の施設で受け入れる家庭ごみ。",
+      "state": "explicit",
+      "source_ids": [
+        "oita-regular",
+        "oita-dropoff"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  }
+]

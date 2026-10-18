@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "d6f30af64290be77ccbe045afc24d49fae9aec801f2a5b1afe5b8a09b21c2c45",
+  "corrections": [
+    {
+      "service_id": "yamagata-regular",
+      "field": "application",
+      "old": "オンラインまたは粗大ごみ収集受付センター023-686-5565へ電話。申込完了メール必須。",
+      "new": "オンラインまたは粗大ごみ収集受付センター023-686-5565へ電話。オンライン申込は完了メールが届いて初めて手続き完了。",
+      "source_ids": [
+        "yamagata-bulky"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "service": "kagoshima-daily-support",
+    "field": "contact",
+    "before": {
+      "value": "鹿児島市清掃事務所 099-238-0201。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-daily"
+      ]
+    },
+    "after": {
+      "value": "谷山・喜入地区は南部清掃工場099-261-5588、その他の地区は清掃事務所099-238-0201。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-daily"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kagoshima-bulky-carry-support",
+    "field": "fees",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "after": {
+      "value": "通常の粗大ごみ処理手数料は品目により350円または700円。生活保護世帯と天災・火災のり災世帯は申請で免除。屋内搬出の追加料金は原典に記載なし。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kagoshima-bulky-carry-support",
+    "field": "contact",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "after": {
+      "value": "粗大ごみ受付099-806-8141。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kagoshima-regular-bulky",
+    "field": "fees",
+    "before": {
+      "value": "品目別の処理手数料券またはWeb申込時のキャッシュレス決済。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "after": {
+      "value": "品目により350円または700円。生活保護世帯と天災・火災のり災世帯は資源政策課への申請で免除。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kagoshima-regular-bulky",
+    "field": "contact",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "after": {
+      "value": "粗大ごみ受付099-806-8141。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kagoshima-self-dropoff",
+    "field": "fees",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "after": {
+      "value": "自己搬入は100kg以下無料。100kg超過分は10kgにつき70円。",
+      "state": "explicit",
+      "source_ids": [
+        "kagoshima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  }
+]

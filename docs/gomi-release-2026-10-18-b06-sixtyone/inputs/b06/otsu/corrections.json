@@ -1,0 +1,60 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "79b07c33ecaa65e3f394d632b49fd82e8e2397eef84bf8a18129aa5332d176f6",
+  "changes": [
+    {
+      "service_id": "otsu-daily",
+      "field": "contact",
+      "before": {
+        "value": "大津市の担当窓口：077-528-2761。",
+        "state": "explicit",
+        "source_ids": [
+          "otsu-daily"
+        ]
+      },
+      "after": {
+        "value": "ごみ出し支援戸別収集サービスの問い合わせ先：廃棄物減量推進課 077-528-2802。",
+        "state": "explicit",
+        "source_ids": [
+          "otsu-daily"
+        ]
+      }
+    },
+    {
+      "service_id": "otsu-self",
+      "field": "application",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "otsu-self"
+        ]
+      },
+      "after": {
+        "value": "事前申込必須。電話は搬入前日の17時25分まで（月曜搬入は前週開庁日）、インターネットは3営業日前まで。インターネットでは袋ごみを受付しない。",
+        "state": "explicit",
+        "source_ids": [
+          "otsu-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "otsu-self",
+      "field": "contact",
+      "before": {
+        "value": "搬入施設・受付先は公式資料で確認。",
+        "state": "explicit",
+        "source_ids": [
+          "otsu-self"
+        ]
+      },
+      "after": {
+        "value": "搬入予約はごみコールセンター 077-528-2761。後見人等の事前相談は廃棄物減量推進課 077-528-2802。",
+        "state": "explicit",
+        "source_ids": [
+          "otsu-regular"
+        ]
+      }
+    }
+  ]
+}

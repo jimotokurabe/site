@@ -1,0 +1,187 @@
+[
+  {
+    "city": "ehime:matsuyama",
+    "service": "matsuyama-daily-support",
+    "service_sha256": "1ff2c7589fc469d77dc16df6da21f7eed8d6a33bd195b71badfa03b9a2b7fed5",
+    "sources": [
+      {
+        "id": "ehime-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/daily.txt",
+        "lines": [
+          [
+            1,
+            125
+          ]
+        ],
+        "raw_path": "matsuyama/official/daily.html.source",
+        "raw_sha256": "3a1d0c693832aa5a8105938a3f53ede778bfdf5ce6605353c058cc449bef20f7",
+        "text_sha256": "3ec09cf322ac2a2763630ce32d4c2dbba0669980d0f5025d454573ba69ccbe6d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "ehime:matsuyama",
+    "service": "matsuyama-bulky-carry-support",
+    "service_sha256": "87b14e82886ad1ec8da63b5693c75c4e0a6f78f0bd04a934ed38fd949dbedacc",
+    "sources": [
+      {
+        "id": "ehime-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/daily.txt",
+        "lines": [
+          [
+            1,
+            125
+          ]
+        ],
+        "raw_path": "matsuyama/official/daily.html.source",
+        "raw_sha256": "3a1d0c693832aa5a8105938a3f53ede778bfdf5ce6605353c058cc449bef20f7",
+        "text_sha256": "3ec09cf322ac2a2763630ce32d4c2dbba0669980d0f5025d454573ba69ccbe6d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "ehime-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/regular.txt",
+        "lines": [
+          [
+            1,
+            154
+          ]
+        ],
+        "raw_path": "matsuyama/official/regular.html.source",
+        "raw_sha256": "361dcb74bf1cf27617683bbb75ad443eb5b605a344fd2a7a8049e2460f4e076c",
+        "text_sha256": "2ec9f1b75e51bb6878abc8e3662f581106807a8ff980d52c178b54b681dda4a3",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "ehime:matsuyama",
+    "service": "matsuyama-regular-bulky",
+    "service_sha256": "b4dae88162af0e871fecaa8ca82082fd5b53c12ff24669e7df60d1c38fac5891",
+    "sources": [
+      {
+        "id": "ehime-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/regular.txt",
+        "lines": [
+          [
+            1,
+            154
+          ]
+        ],
+        "raw_path": "matsuyama/official/regular.html.source",
+        "raw_sha256": "361dcb74bf1cf27617683bbb75ad443eb5b605a344fd2a7a8049e2460f4e076c",
+        "text_sha256": "2ec9f1b75e51bb6878abc8e3662f581106807a8ff980d52c178b54b681dda4a3",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "matsuyama-bulky-application",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/bulky-application.txt",
+        "lines": [
+          [
+            1,
+            166
+          ]
+        ],
+        "raw_path": "matsuyama/official/bulky-application.html.source",
+        "raw_sha256": "dfc4c91dbbe40bd982518b79ca02d20477b7aee68e95a0e075f8532283edef51",
+        "text_sha256": "7114b705e6f1e363ad5568f9277a820772bb0165e98729d1b5cc022224d7f83d",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "ehime:matsuyama",
+    "service": "matsuyama-self-dropoff",
+    "service_sha256": "5dbb533fb4cbc93280c2d3a0236dde62046c1ab96a5e46f96023546395e1e09c",
+    "sources": [
+      {
+        "id": "ehime-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            160
+          ]
+        ],
+        "raw_path": "matsuyama/official/dropoff.html.source",
+        "raw_sha256": "c07f32da6d6742484461f96af55dc7ae08b781e4f505bcb92268012df18c7d9f",
+        "text_sha256": "520c193ddc877f4add0e3ae34220e2ce1c20c755be0570104de4aa9826c98b1b",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "matsuyama-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/matsuyama/official/fees.txt",
+        "lines": [
+          [
+            1,
+            159
+          ]
+        ],
+        "raw_path": "matsuyama/official/fees.html.source",
+        "raw_sha256": "e036a3031d68496a65e1e177f9d2d543fbc0940814e4dc69db7d769df67deec2",
+        "text_sha256": "468b632062ad152d5c069a13bab04fe2f5804d3cc0f3e292ad139acff4d2d9c2",
+        "field_names": [
+          "fees",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

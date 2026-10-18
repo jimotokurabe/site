@@ -1,0 +1,50 @@
+[
+  {
+    "id": "gifu-regular",
+    "url": "https://www.city.gifu.lg.jp/kurashi/gomi/1012143/1038453/1038458/index.html",
+    "title": "岐阜市ごみ出しのルール（粗大ごみ）｜岐阜市公式ホームページ-Gifu city",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.gifu.lg.jp/kurashi/gomi/1012143/1038453/1038458/index.html",
+    "retrieved_at": "2026-10-18T19:21:41+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "gifu-regular.html.source",
+    "text_file": "gifu-regular.txt",
+    "raw_sha256": "37d07771d329feea17abc438fdfab7631ca8ff6b7663522a04fbce3e1d7c0996",
+    "text_sha256": "0d33039a3472ca5b47def85e77b6906ea2460ed71e848f2a0a8930100b32d1a9",
+    "bytes": 70335
+  },
+  {
+    "id": "gifu-faq",
+    "url": "https://www.city.gifu.lg.jp/shitsumon/kurashi/1009914/1009915/1009918.html",
+    "title": "引っ越しや大掃除で大量にごみが出ます。どうしたら良いですか。｜岐阜市公式ホームページ-Gifu city",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.gifu.lg.jp/shitsumon/kurashi/1009914/1009915/1009918.html",
+    "retrieved_at": "2026-10-18T19:21:42+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "gifu-faq.html.source",
+    "text_file": "gifu-faq.txt",
+    "raw_sha256": "929e3e10480342d0b15a622af9c2a50fa9c0e1b7a50879d04906cc168c5045c6",
+    "text_sha256": "1bbc4e21f2f8da40affd4581e7bd560ebe044434c1114884851131995e8b21c6",
+    "bytes": 63688
+  },
+  {
+    "id": "gifu-guide",
+    "url": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/038/192/gomidasi.pdf",
+    "title": "gifu-guide",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/038/192/gomidasi.pdf",
+    "retrieved_at": "2026-10-18T19:21:44+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "application/pdf",
+    "raw_file": "gifu-guide.pdf.source",
+    "text_file": "gifu-guide.txt",
+    "raw_sha256": "4d499c7c2a793a8b5c88c4917e6e417681ff1bf01f4153237fc38f79d85c404e",
+    "text_sha256": "e2e96783e03b466e2403f9a1c5c19a8fa012825a33cb26f6375df9644e2fa275",
+    "bytes": 22116187
+  }
+]

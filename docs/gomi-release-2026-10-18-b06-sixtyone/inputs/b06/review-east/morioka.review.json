@@ -1,0 +1,443 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "iwate:morioka",
+  "slug": "morioka",
+  "first_input_sha256": "d0430319f6d4a1c69a76fb94e2979017167ae2cd82e874baf86dda11943d43bf",
+  "accepted_input_sha256": "d0430319f6d4a1c69a76fb94e2979017167ae2cd82e874baf86dda11943d43bf",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 3,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "日常支援は盛岡地域のみで都南・玉山は除外。自己搬入料金の2026年4月・10月改定を旧料金から区別。",
+  "corrections_file": null,
+  "correction_count": 0,
+  "field_inventory": [
+    {
+      "service_id": "morioka-daily",
+      "field": "waste_scope",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "29c60ad3626e80ecc49d5ccd7ef4f374ad1a60c22ff273c18bf8f55ac4ffe8d9"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "1bc02487ff0f739238d04c6619c7f8dc7c5b77201763819cd9ee9a470e3161c9"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "4d429b45e181960c065a3525477f556bab03313fe137b1d14a8e41287f216a1b"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "6b8e158452818bdea5b53ade893b259dc0e1e4e46e3a404b4445201a57d2b421"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "56f858b3117a6146c615a34fc8c7fdf3f6174b92f1168a459ec2b3e98e2f06c1"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "1015346b97dc92c7d8ef065d4d356af7bcab9a0eac57077113f079fd762a3873"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "64973de314d6acaf5a4df133ef0c259699b5d4f317db783478bfbbc1df927628"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "94657bbbd558a040f858fa3e038c52e0029099617faf09e3e2c1310c8320644f"
+    },
+    {
+      "service_id": "morioka-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-daily"
+      ],
+      "value_sha256": "1bcbd1e80746dff234cd82781768ac6aaa75b1693c609ba6c396b4ae0a8fc123"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "morioka-daily",
+        "morioka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "fc7a434917daf36bf6ca05b80b1a8e98313e90218b97f0c4439d01d36378fe39"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "f7eb2098c0429a43f03d560b0f85f304a2809e5e9dba30604201cc4d7e7cb8a8"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "0171dc81c4849887f1269c25535198f16270a7d1f80b27f828ee2f27598ffe32"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "7a353f12942588ce95098e2204d60abd2c75a21a41f2367b9f2204f37db7cf83"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "4ca373d37b69bc9d7ae46b1a8338609892a922f76361cdb039d3bf2661f5cb62"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "2bb24c9277384c7d20c4b3a4471047895ad014b8bdb02832f698d323a9e09c9e"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "morioka-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-bulky"
+      ],
+      "value_sha256": "1bcbd1e80746dff234cd82781768ac6aaa75b1693c609ba6c396b4ae0a8fc123"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "96ed19fd07ab2bb326c7d3bba2150072b464221fbf5f991a398e9bdb741959b2"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "517cf3f2a322c9ae7a5608f2170d27789714893024974e16ca412e9e2b88acd1"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "fd8c35d5e4812d73fe23d1822f2544498884ec4ffa3ac63a1fb11ecf4154920a"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "ec1de0386da9d6c8340f85c0df0c4949e2078572a2cb1164fa486f36c9103277"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "4e0b2d0701cc0027e225989a306b441a314787b82b44f43efd28e6cf8ff24196"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "application",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "bcc86778233fee8f03a31b4f19d62047ba9d28c8c4625e4dd7f33f81c1538126"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "morioka-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "morioka-self",
+        "morioka-bulky"
+      ],
+      "value_sha256": "b73c5276bac6419e12416a9005e6cc4739ea35710714b37e5aca49d1bb8ba634"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "morioka-bulky",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001153.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-09-25",
+      "raw_file": "morioka/official/morioka-bulky.html.source",
+      "raw_sha256": "3c1582f1203ae48255b94148e848a633f87e3d42768ed4274578e862d713f3c4",
+      "text_file": "morioka/official/morioka-bulky.txt",
+      "text_sha256": "3880c41ad645fdfc5d3308567023eb4640a991dcd16a02ebf5ef793c764ec8f7"
+    },
+    {
+      "id": "morioka-daily",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001141.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2020-12-25",
+      "raw_file": "morioka/official/morioka-daily.html.source",
+      "raw_sha256": "739654032e7c0a08e8f927af044c7878b76f3cc9a840ee40f6b79a0a4e9d804b",
+      "text_file": "morioka/official/morioka-daily.txt",
+      "text_sha256": "0d8d3eeaadd3eaf66672f011a29caeb98d552ae85dfab6764c6a57a9bc7d1189"
+    },
+    {
+      "id": "morioka-self",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1022139.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-01-23",
+      "raw_file": "morioka/official/morioka-self.html.source",
+      "raw_sha256": "b6f7c5e05831d912b5d13ad0d3261dd7301ea6e5ca49a8bb9ce59fb61dc66a14",
+      "text_file": "morioka/official/morioka-self.txt",
+      "text_sha256": "cb65a270796a484f5b9b675cc4abc16e3166174d7f898145c5361bd2aaa6a905"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "都南・玉山の別体系と、屋内搬出制度の有無は窓口未確認。"
+  ]
+}

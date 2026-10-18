@@ -1,0 +1,404 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "shizuoka:shizuoka",
+      "name": "静岡市",
+      "kana": "しずおかし",
+      "pref_name": "静岡県",
+      "selection_reason": "ふれあい収集は不燃・粗大のみ、7点、対象区域と第三者立会いに注意。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "shizuoka-daily",
+          "kind": "daily_support",
+          "name": "日常ごみの戸別支援（未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ふれあい収集は不燃・粗大ごみのみ。可燃ごみ・資源物は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "family_help": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "limits": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "application": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "attendance": {
+              "value": "市のふれあい収集は不燃・粗大ごみのみ。可燃・資源の日常ごみの専用支援は取得原典で未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "contact": {
+              "value": "静岡市の担当窓口：0120-532-471。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "可燃ごみ・資源物を集積所へ出せない場合の支援制度があるか、収集業務課へ確認してください。ふれあい収集は不燃・粗大ごみ専用です。"
+          ]
+        },
+        {
+          "id": "shizuoka-carry",
+          "kind": "bulky_carry_support",
+          "name": "ふれあい収集（不燃・粗大ごみ屋内搬出）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ふれあい収集は不燃・粗大ごみのみ。可燃ごみ・資源物は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "不燃・粗大ごみを屋内から運び出して収集。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "屋内へ立ち入る。本人と家族以外の第三者の立会い、承諾書への記名が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "葵区（安倍6地区を除く）・駿河区・清水区",
+                  "不燃・粗大ごみを屋外に運び出せない",
+                  "家族・知人の協力が得られない",
+                  "65歳以上のみの世帯、または障がいのある人のみの世帯"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "family_help": {
+              "value": "家族や知人の協力を得られないことが条件。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "limits": {
+              "value": "1回7点まで。葵区の安倍6地区は対象区域外。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "application": {
+              "value": "不燃・粗大ごみ受付センターに電話し「ふれあい収集」と伝える。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "attendance": {
+              "value": "申込者本人と、家族以外の第三者が収集時に立ち会い、承諾書に記名する。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            },
+            "contact": {
+              "value": "静岡市の担当窓口：0120-532-471。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "shizuoka-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "不燃・粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "葵区（安倍6地区を除く）・駿河区・清水区は敷地までの戸別収集。安倍6地区は集積所収集。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "limits": {
+              "value": "地区ごとに月1回、1回7点まで。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "application": {
+              "value": "初回は電話。2回目以降は品目によってインターネット受付も可能。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            },
+            "contact": {
+              "value": "静岡市の粗大ごみ担当窓口：0120-532-471。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "shizuoka-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃ごみは一度に11袋以上、不燃・粗大ごみは収集可能サイズ超過や一度に8点以上など、通常収集に出せない場合の持ち込み。資源物の受け入れは施設で異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "collection_location": {
+              "value": "品目に応じて清掃工場等へ持込み。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "搬入時の荷下ろしは本人が行う。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "eligibility": {
+              "value": "静岡市内で発生したごみ。原則、排出者本人が持ち込む。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "family_help": {
+              "value": "排出者本人による搬入を案内。本人が運転する必要があるかは明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "limits": {
+              "value": "少量のごみは原則通常収集を利用。施設によって受入品目が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "shizuoka-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "静岡市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "shizuoka-daily",
+      "url": "https://www.city.shizuoka.lg.jp/gomi/s000684.html",
+      "title": "不燃・粗大ごみの排出が困難な方へ（ふれあい収集のご案内）／静岡市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "shizuoka-regular",
+      "url": "https://www.city.shizuoka.lg.jp/gomi/s000679.html",
+      "title": "不燃・粗大ごみの出し方／静岡市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "shizuoka-self",
+      "url": "https://www.city.shizuoka.lg.jp/gomi/s000671.html",
+      "title": "清掃工場等への家庭ごみの持ち込み／静岡市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "静岡市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

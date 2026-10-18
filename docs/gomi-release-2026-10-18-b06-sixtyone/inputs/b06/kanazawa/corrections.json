@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "abc0553ee3016583196759e41b61d23bded67047eed72a1500cbff79a442d7cf",
+  "corrections": [
+    {
+      "service_id": "kanazawa-self",
+      "field": "eligibility",
+      "old": "金沢市内から出た家庭ごみ。搬入者本人・家族の資格は記載なし。",
+      "new": "金沢市内で発生した家庭ごみ。持込みは本人または同居家族に限る。",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ]
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "family_help",
+      "old": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+      "new": "同居家族の代理持込み可。同居していない親族の持込みは対象に含まれない。",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ]
+    }
+  ]
+}

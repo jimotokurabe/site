@@ -1,0 +1,53 @@
+[
+  {
+    "id": "yamaguchi-daily",
+    "url": "https://www.city.yamaguchi.lg.jp/soshiki/52/108820.html",
+    "title": "ごみ出し支援事業（実証中）について - 山口市ウェブサイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2023-05-10",
+    "http_status": 200,
+    "final_url": "https://www.city.yamaguchi.lg.jp/soshiki/52/108820.html",
+    "retrieved_at": "2026-10-18T19:18:45+09:00",
+    "content_type": "text/html",
+    "raw_file": "yamaguchi/official/daily.html.source",
+    "text_file": "yamaguchi/official/daily.txt",
+    "raw_sha256": "9f87a0ad5e516c1ca51ae0a81f269d745476650f7683833df14936186a235670",
+    "text_sha256": "93ed66e063205f5ef838ccf050a8f56c7d10ff71f1650b79cfda7dad22819cff",
+    "last_modified_header": "Sun, 18 Oct 2026 10:04:13 GMT"
+  },
+  {
+    "id": "yamaguchi-dropoff",
+    "url": "https://www.city.yamaguchi.lg.jp/site/gomisigen/161801.html",
+    "title": "家庭ごみの出し方ルール - 山口市ウェブサイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-07-16",
+    "http_status": 200,
+    "final_url": "https://www.city.yamaguchi.lg.jp/site/gomisigen/161801.html",
+    "retrieved_at": "2026-10-18T19:18:45+09:00",
+    "content_type": "text/html",
+    "raw_file": "yamaguchi/official/dropoff.html.source",
+    "text_file": "yamaguchi/official/dropoff.txt",
+    "raw_sha256": "f8896f18b99875263d8c9ea922705f570f89884767fc7225b9c9e695b56038f0",
+    "text_sha256": "002d4e70c86c32affd4662e23a13b00d00b02e0327935e971d47f80585d17bdf",
+    "last_modified_header": "Sun, 18 Oct 2026 10:05:54 GMT"
+  },
+  {
+    "id": "yamaguchi-regular",
+    "url": "https://www.city.yamaguchi.lg.jp/soshiki/52/60387.html",
+    "title": "粗大ごみ戸別収集の申し込み - 山口市ウェブサイト",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2025-01-31",
+    "http_status": 200,
+    "final_url": "https://www.city.yamaguchi.lg.jp/soshiki/52/60387.html",
+    "retrieved_at": "2026-10-18T19:18:45+09:00",
+    "content_type": "text/html",
+    "raw_file": "yamaguchi/official/regular.html.source",
+    "text_file": "yamaguchi/official/regular.txt",
+    "raw_sha256": "10a2753227b1afb7cd4621735a16f9c972e36754fd62c0a5bec335d5b875017f",
+    "text_sha256": "65b8431fc87197361039de5d060b54d46ba05e95e18d7d16f37ad7ef4b080729",
+    "last_modified_header": "Sun, 18 Oct 2026 10:04:59 GMT"
+  }
+]

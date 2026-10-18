@@ -1,0 +1,1305 @@
+﻿
+<!DOCTYPE html>
+<html lang="ja">
+<head id="ctl00_Head1"><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="format-detection" content="telephone=no" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>
+	「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】 / 熊本市公式サイト
+</title><script type='text/javascript'>var glapiky='AIzaSyCzbixjF3aE4bDsibJvJesSFTnUaHc0w8Q';</script>
+<script type="text/javascript" language="JavaScript">
+<!--
+    function enterCancel(event)
+    {
+        if (event.keyCode == 13)
+        {
+            var elem;
+            if(event.srcElement)
+            {
+                elem = event.srcElement;
+            }
+            else
+            {
+                elem = event.target;
+            }
+            if(elem.type!='submit' && elem.type!='textarea' && elem.tagName!='A' && elem.tagName!='a' && elem.tagName!='area' && elem.tagName!='AREA') /* 2011/04/04 a tag OK */
+            {
+                var useMapFlg = false;
+                if (elem.tagName == "img" || elem.tagName == "IMG") {
+                    if (elem.useMap) {
+                        useMapFlg = true;
+                    }
+                }
+                if (!useMapFlg) {
+                    if (event.preventDefault) 
+                    {
+                        event.preventDefault();
+                    } 
+                    else 
+                    {
+                        event.returnValue = false;
+                    }
+                }
+            }
+        }
+    }
+    
+    /* Same Func is available in AjaxCalForIE6*/
+    function ajaxCalOnClientShown(){
+        /*IE6 does not have "maxHeight"*/
+        if (typeof document.documentElement.style.maxHeight == "undefined") {
+            try{
+                $$("select").each(function(_itm){
+                    _itm.style.visibility="hidden";
+                });
+            }catch(err){
+            }
+        }
+    }    
+    /* Same Func is available in AjaxCalForIE6*/
+    function ajaxCalOnClientHidden(){
+        /*IE6 does not have "maxHeight"*/
+        if (typeof document.documentElement.style.maxHeight == "undefined") {
+            try{
+                $$("select").each(function(_itm){
+                    _itm.style.visibility="visible";
+                });
+            }catch(err){
+            }
+        }
+    }
+    
+    function clickButton(id, event) {
+        if (event.keyCode == 13)
+        {
+            document.getElementById(id).click();
+
+            if (event.preventDefault) 
+            {
+                event.preventDefault();
+            } 
+            else 
+            {
+                event.returnValue = false;
+            }
+        }
+    }
+    
+    function checkValue(obj) {
+        var keyword = document.getElementById(obj).value;
+
+        keyword = keyword.replace(/^[\s　]+|[\s　]$/g, "");
+        if (keyword.length == 0) {
+            alert('検索キーワードを入力してください。');
+            return false;
+        }
+
+        searchResult(keyword);
+        return false;
+    }
+
+    document.addEventListener("focusin", e => {
+        console.log("Focus:", e.target);
+    });
+//-->
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&family=Noto+Sans&family=Noto+Sans+JP:wght@100;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+<!-- cloudDeliverdFont start -->
+<!-- cloudDeliverdFont end -->
+<link href="//www.city.kumamoto.jp/dynamic/common/css/default.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/stylesheet.css" id="css_stylesheet" rel="stylesheet" type="text/css" media="print, screen and (min-width: 481px)" /><link href="//www.city.kumamoto.jp/dynamic/common/css/stylesheetforsp.css" id="css_stylesheet_sp" rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" /><link href="//www.city.kumamoto.jp/dynamic/common/css/migration.css" id="css_Migration" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/hpkiji/designcss/design01.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/fontsizen.css" id="css_fontsize" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/uiw.css" id="css_color" rel="stylesheet" type="text/css" /><link id="ctl00_minicalendar_css" href="//www.city.kumamoto.jp/dynamic/common/css/minicalendar.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" /><link href="//www.city.kumamoto.jp/dynamic/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /><script id="ctl00_jquery_min_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/jquery-3.6.0.min.js"></script><script id="ctl00_js_cookie_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/js.cookie.js"></script><script id="ctl00_setCookie_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/setcookie.js"></script><script id="ctl00_pubfunc_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/pubfunc.js"></script><script type="text/javascript">window.setTableScrollDefault = 0;</script><script id="ctl00_pubfunc_settablescroll_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/pubfunc_settablescroll.js"></script><script id="ctl00_jquery_rwdImageMaps_min_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/jquery.rwdimagemaps.min.js"></script><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/jquery-ui-1.13.2.min.js"></script><script id="ctl00_jquery_easing_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/jquery.easing.1.4.1.js"></script><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/jquery.scrollfollow.js"></script><script id="ctl00_floatHeader_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/floatheader.js"></script><link id="ctl00_floatHeader_css" href="//www.city.kumamoto.jp/dynamic/common/css/floatheader.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/default_body.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/keepsavepage.js"></script><link href="//www.city.kumamoto.jp/dynamic/common/css/keepsavepage.css" id="css_keepSavePage" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<link href="//www.city.kumamoto.jp/dynamic/common/css/stylesheet.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/fontsizen.css" id="css_fontsize_ie8" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/uiw.css" id="css_color_ie8" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/common/css/html5_block.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/html5shiv-printshiv.js"></script>
+<![endif]-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2ZW8KZM');</script>
+<!-- End Google Tag Manager -->
+<!-- google analytics start --><!-- google analytics end --><script id="ctl00_header__commHeader_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/header/commheader.js"></script><link id="ctl00_header__commHeader_css" href="//www.city.kumamoto.jp/dynamic/common/css/header/commheader.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="//www.city.kumamoto.jp/dynamic/common/css/linkto/linktoopening.css?20250530" /><script id="ctl00_linkToOpening_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/linkto/linktoopening.js?20250530"></script><link rel="stylesheet" type="text/css" href="//www.city.kumamoto.jp/dynamic/common/css/kinkyupanel.css?20250530" /><script id="ctl00_kinkyuPanel_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/kinkyupanel.js?20250530"></script><link rel="stylesheet" type="text/css" href="//www.city.kumamoto.jp/dynamic/common/css/selectlanguagemenu_opened.css?20250530" /><script>const easyJapaneseSecretKey = '802097d5-6b9c-4cfb-8255-956757c88590';</script><script id="ctl00_tsutaeru_mo_js" src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru_mo.js"></script><script id="ctl00_tsutaeru_js" src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru.js?"></script><script id="ctl00_easyJapanese_js" src="https://www.city.kumamoto.jp/dynamic/common/js/easyjapanese.js"></script><link id="ctl00_easyJapanese_css" href="//www.city.kumamoto.jp/dynamic/common/css/easyjapanese.css" rel="stylesheet" type="text/css" /><link id="ctl00_siteSearchArea_css" href="//www.city.kumamoto.jp/dynamic/common/css/area/sitesearcharea.css" rel="stylesheet" type="text/css" /><script id="ctl00_siteSearchVer2_js" type="text/javascript" src="https://www.city.kumamoto.jp/dynamic/common/js/sitesearchver2.js"></script><script id="ctl00_footer__commFooter_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/footer/commfooter.js"></script><link id="ctl00_footer__commFooter_css" href="//www.city.kumamoto.jp/dynamic/common/css/footer/commfooter.css" rel="stylesheet" type="text/css" /><meta property="og:type" content="article" /><meta id="ctl00_MetaOGPTitle" property="og:title" content="「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】" /><meta property="og:image" content="https://www.city.kumamoto.jp/dynamic/common/images/ogp/og_image.png" /><meta property="og:url" content="https://www.city.kumamoto.jp/kiji003552/index.html" /><meta property="og:description" content="「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】 / 熊本市公式サイト" /><meta property="og:site_name" content="熊本市公式サイト" /><meta property="og:locality" content="Kumamoto-Shi" /><meta property="og:region" content="Kumamoto" /><meta property="og:country-name" content="Japan" /><script id="ctl00_CityBousai_js" type="text/javascript" src="https://www.city.kumamoto.jp/dynamic/common/js/citybousai.js"></script><link id="ctl00_CityBousai_css" href="https://www.city.kumamoto.jp/dynamic/common/css/citybousai.css" rel="stylesheet" type="text/css" /><script type='text/javascript'>window.rsDocReaderConf = {lang: 'ja_jp'};</script><script id="ctl00_setDocReader_js" type="text/javascript" src="https://www.city.kumamoto.jp/dynamic/common/js/setdocreader.js?cid=6163"></script><script id="ctl00_ReadSpeaker_js" type="text/javascript" src="https://cdn-eas.readspeaker.com/script/6163/webReader/webReader.js?pids=wr&amp;dload=DocReader.AutoAdd&amp;forceAdapter=ioshtml5&amp;disable=translation,lookup"></script><link id="ctl00_ReadSpeakerButton_css" href="//www.city.kumamoto.jp/dynamic/common/css/readspeakerbutton.css" rel="stylesheet" type="text/css" /><link id="ctl00_ReadSpeakerArea_css" href="//www.city.kumamoto.jp/dynamic/common/css/readspeakerarea.css" rel="stylesheet" type="text/css" /><meta name="keywords" content="「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】" /></head>
+<body class="haikei">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-K2ZW8KZM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<form name="aspnetForm" method="post" action="./detail.aspx?c_id=3&amp;id=552" id="aspnetForm" enctype="multipart/form-data" tabindex="1" onkeydown="enterCancel(event||window.event);">
+<div>
+
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DD3FBEE9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALBAgmgZcRzqcMV7xKTF7M6l5q5z1NZrWlztBb1A68IF8YyWvZO5tFHRIBm1pIjyEtVdNaxpRYyRJHDvkNE4IcF" />
+</div>
+
+
+
+<!-- allheader start  -->
+
+<!--[if lt IE 9]>
+<link href="//www.city.kumamoto.jp/dynamic/common/css/header/top1.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<span id="top"></span>
+<link href="//www.city.kumamoto.jp/dynamic/common/css/header/top1.css" rel="stylesheet" type="text/css" /><div id="headerArea">
+	
+<link href="//www.city.kumamoto.jp/dynamic/common/web-fonts-with-css/css/all.min.css" rel="stylesheet">
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/web-fonts-with-css/js/all.min.js"></script>
+<script>
+    jQuery.noConflict();
+
+    // ランダム画像表示
+    jQuery(function () {
+        var prevWidth = jQuery(window).width(); // 初期のウィンドウ幅を記憶
+        const diffCheck = 100; // サイズ変更のしきい値
+        const flagList = jQuery('#randomImageDispHeader li');
+        if (jQuery(flagList)) {
+
+            // 初期表示用にランダムなインデックスを取得
+            const firstIndex = Math.floor(Math.random() * flagList.length);
+            // 初期表示用にランダムなインデックスの画像を表示
+            flagList.eq(firstIndex).addClass('disp');
+
+            jQuery(window).on('resize', function () {
+                const currentWidth = jQuery(window).width();
+                const diff = Math.abs(currentWidth - prevWidth);
+                //console.log('first_flg=' + first_flg + ', diff=' + diff);
+                if (diff >= diffCheck) {
+                    // しきい値を超える変化があった場合、処理する
+                    prevWidth = jQuery(window).width(); // ウィンドウ幅の記憶を更新
+
+                    // いったん、全部非表示
+                    flagList.removeClass();
+                    // ランダムなインデックスを取得
+                    const randomIndex = Math.floor(Math.random() * flagList.length);
+                    //console.log('randomIndex=' + randomIndex);
+
+                    // ランダムなインデックスの画像を表示
+                    flagList.eq(randomIndex).addClass('disp');
+                }
+            });
+        }
+    });
+</script>
+<input type="submit" name="ctl00$ctl32$Dmy" value="" onclick="return false;" id="ctl00_ctl32_Dmy" tabindex="-1" style="height:0px;width:0px;position: absolute; top: -100px;" />
+
+<div class="Navigation">
+    <div><a href="#maincontent" tabindex="1">ヘッダーをスキップ</a></div>
+</div>
+<div class="clear"></div>
+<input type="submit" name="headerAreaDefInput" value="" onclick="return false;" id="headerAreaDefInput" style="height:0px;width:0px;position: absolute; top: 0px;" tabindex="-1"/>
+<div id="headerAreaDef">
+    <!-- rect start -->
+    <map id="header_img" name="header_img">
+        <area shape="rect" alt="熊本市公式サイトトップへ" coords="1,3,509,105" href="https://www.city.kumamoto.jp/default.html" tabindex="1" />
+    </map>
+    <!-- rect end -->
+
+    
+    <div id="header">
+        <!-- header start -->
+        <h1 id="hd_header">
+            <img id="imgHeader" usemap="#header_img" alt="" src="//www.city.kumamoto.jp/common/upload/common/0_1_header_7yumrdpq.png" alt="熊本市" style="border-width:0px;" />
+            
+        </h1>
+        <div id="hd_header_SP">
+            <h1><a href="https://www.city.kumamoto.jp/default.html" tabindex="0">
+                <img src="https://www.city.kumamoto.jp/dynamic/common/images/top1/head_sp.png" alt="熊本市"></a></h1>
+        </div>
+        <!-- header end -->
+
+        
+        <!-- randomImageDispHeader start  -->
+        <div id="randomImageDispHeader" class="randomImageDisp">
+            <ul>
+                <li>
+                    <img src="//www.city.kumamoto.jp/dynamic/common/images/randomimagedisp/image1.png" alt=""></li>
+                <li>
+                    <img src="//www.city.kumamoto.jp/dynamic/common/images/randomimagedisp/image2.png" alt=""></li>
+                <li>
+                    <img src="//www.city.kumamoto.jp/dynamic/common/images/randomimagedisp/image3.png" alt=""></li>
+            </ul>
+        </div>
+        <!-- randomImageDispHeader end  -->
+        <!-- LinkToOpening start  -->
+
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(function () {
+            var linkToOpening = new LinkToOpening(false, 'ctl00_ctl32_LinkToOpening_LinkToOpening', 1, false, '', 0);
+        });
+    </script>
+    <div id="ctl00_ctl32_LinkToOpening_LinkToOpening" class="linkToOpeningWrap " tabindex="-1">
+        <div class="linklabel opening"><a href="https://www.city.kumamoto.jp/index.html"><i class="fas fa-reply fa-lg my-red fa-lg"></i> オープニングへ</a></div>
+    </div>
+
+<!-- LinkToOpening end  -->
+        <div class="headerMenu">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="comm_toggle-button" data-panel="accessibility" data-close="close_accessibility" tabindex="1" id="acc" aria-label="閲覧支援" data-openfocus="#mainFontSizeSel a">
+                        <figure>
+                            <div class="btn_accessibility">
+                                <div class="hb_icon">
+                                    <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/hb_icon04.png" alt="" title="" /></div>
+                                <h2>閲覧支援</h2>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="comm_toggle-button" data-panel="area_languages" data-close="close_languages" tabindex="1" aria-label="Language" data-openfocus="#area_languages a.topsub">
+                        <figure>
+                            <div class="btn_Languages">
+                                <div class="hb_icon">
+                                    <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/hb_icon03.png" alt="" title="" /></div>
+                                <h2><span lang="en">Language</span></h2>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="comm_toggle-button" data-panel="area_sagasu" data-close="close_sagasu" tabindex="1" aria-label="さがす" data-openfocus="#area_sagasu .searchver2-input .input .IZ-select .IZ-select__input input">
+                        <figure>
+                            <div class="btn_sagasu">
+                                <div class="hb_icon">
+                                    <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/hb_icon02.png" alt="" title="" /></div>
+                                <h2>さがす</h2>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.city.kumamoto.jp/bousai/default.html" tabindex="1" aria-label="防災トップへ移動">
+                        <figure>
+                            <div class="btn_kinkyu">
+                                <div class="hb_icon"><img id="button_kinkyu" src="//www.city.kumamoto.jp/dynamic/common/images/top1/hb_icon01.png" alt="" title="" /></div>
+                                <h2>緊急情報</h2>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+    <!-- 緊急情報パネル -->
+    <div id="area_kinkyu">
+        <div id="close_btn_wrap">
+            <div class="close_btn_Area">
+                <div class="check_wrap"><input type="checkbox" id="kinkyu_flag_cb" tabindex="1"><label for="kinkyu_flag_cb" class="kinkyu_flag">自動で開かない</label></div>
+                <a href="javascript:void(0)" id="close_kinkyu" tabindex="1" aria-label="閉じる"><span><i class="far fa-window-close fa-2x my-red"></i></span></a>
+            </div>
+        </div>
+        <div class="kinkyu_menu">
+
+            <div class="kinkyuTtl">
+                <h1><i class="fa-solid fa-triangle-exclamation h-my-red"></i>緊急情報</h1>
+            </div>
+            <div class="kinkyu_item"><a href="//www.city.kumamoto.jp/kinkyu.html" tabindex="1"><i class="fas fa-caret-right fa-fw"></i>一覧へ</a></div>
+            <div class="kinkyu_item_line">｜</div>
+            <div class="kinkyu_item kinkyu_ichiran"><a href="//www.city.kumamoto.jp/bousai/default.html" target="_blank" tabindex="1"><i class="fa-solid fa-angles-right h-my-red"></i>防災サイト <img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="別ウインドウで開きます" title=""></a></div>
+            <div class="kinkyu_item"><a href="https://www.city.kumamoto.jp/bousai/list00909.html" target="_blank" tabindex="1"><i class="fas fa-caret-right fa-fw"></i>ハザードマップ <img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="別ウインドウで開きます" title=""></a></div>
+            <div class="kinkyu_item"><a href="//www.city.kumamoto.jp/dynamic/info/pub/default.aspx?c_id=60" tabindex="1"><i class="fas fa-caret-right fa-fw"></i>避難場所 <img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="別ウインドウで開きます" title=""></a></div>
+            <div class="kinkyu_item">
+                <!-- cityBousai start  -->
+
+<script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(function () {
+        var run_flg = true;
+        if (run_flg == false) {
+            return;
+        }
+        var rootUrl = "https://www.city.kumamoto.jp/dynamic/";
+        var prm;
+
+        // 避難情報
+        prm = { "bousaiType": "1", "c_id": "52" };
+        setCityBousaiDsp("#ctl00_ctl32_CityBousaiPanel_PhContainer__cityBousai_area .box1 a", prm, rootUrl);
+        // 避難所情報
+        prm = { "bousaiType": "2", "c_id": "52" };
+        setCityBousaiDsp("#ctl00_ctl32_CityBousaiPanel_PhContainer__cityBousai_area .box2 a", prm, rootUrl);
+        // 配備体制状況
+        prm = { "bousaiType": "3", "c_id": "52" };
+        setCityBousaiDsp("#ctl00_ctl32_CityBousaiPanel_PhContainer__cityBousai_area .box3 a", prm, rootUrl);
+    });
+</script>
+<div class="cityBousai">
+    <div id="ctl00_ctl32_CityBousaiPanel_PhContainer__cityBousai_area" class="cityBousaiStatus ">
+        <ul>
+            <li class="box1"><a href="https://city-kumamoto.my.salesforce-sites.com/" target="_blank" aria-label="避難情報　熊本市防災情報ポータルを別ウィンドウで開きます" tabindex="1"><div><span><i class="fa-solid fa-angle-right fa-fw"></i>避難情報</span></div><span class="initInfo"></span></a></li>
+            <li class="box2"><a href="https://city-kumamoto.my.salesforce-sites.com/" target="_blank" aria-label="避難所情報　熊本市防災情報ポータルを別ウィンドウで開きます" tabindex="1"><div><span><i class="fa-solid fa-angle-right fa-fw"></i>避難所情報</span></div><span class="initInfo"></span></a></li>
+            <li class="box3"><a href="https://city-kumamoto.my.salesforce-sites.com/" target="_blank" aria-label="配備体制状況　熊本市防災情報ポータルを別ウィンドウで開きます" tabindex="1"><div><span><i class="fa-solid fa-angle-right fa-fw"></i>配備体制状況</span></div><span class="initInfo"></span></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- cityBousai end  -->
+            </div>
+
+        </div>
+
+        
+    <!-- 緊急情報パネル start -->
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(function () {
+            var kinkyuPanel = new KinkyuPanel(5, false, 'ctl00_ctl32_KinkyuPanel_kinkyuPanel', 0, 1, false, 'initKinkyuPanelForHeader("area_kinkyu", true, "button_kinkyu", "blinking");', 0, false);
+        });
+    </script>
+    <div id="ctl00_ctl32_KinkyuPanel_kinkyuPanel" class="kinkyuPanelWrap bousaiKinkyuHeader" tabindex="-1"></div>
+    <!-- 緊急情報パネル end -->
+
+        <div class="clear"></div>
+    </div>
+
+    <!-- 翻訳メニューパネル -->
+    <div id="area_languages">
+        <div class="language_wrap">
+            <div class="languages_close">
+                <a href="javascript:void(0)" id="close_languages" tabindex="1" aria-label="閉じる"><span><i class="fa-regular fa-rectangle-xmark fa-2x my-blue"></i></span></a>
+            </div>
+
+            <div class="lang_title"><span lang="en">Language</span></div>
+            
+    <!-- 外国語翻訳メニュー start -->
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(function () {
+            var wrapid = 'ctl00_ctl32_SelectLanguageMenu_menu';
+            // メニュー用
+            jQuery('#' + wrapid + '.selectLanguageMenu .dropmenu a').focus(function () {
+                jQuery(this).siblings('.sub-menu').addClass('focused');
+            }).blur(function () {
+                jQuery(this).siblings('.sub-menu').removeClass('focused');
+            });
+            // サブメニュー用
+            jQuery('#' + wrapid + '.selectLanguageMenu a').focus(function () {
+                jQuery(this).parents('.sub-menu').addClass('focused');
+            }).blur(function () {
+                jQuery(this).parents('.sub-menu').removeClass('focused');
+            });
+        }); 
+    </script>
+    <div id="ctl00_ctl32_SelectLanguageMenu_menu" class="selectLanguageMenu opened" tabindex="-1">
+        <ul class="dropmenu" tabindex="-1">
+            <li><a lang="en" href="javascript:void(0);" class="topmenu" tabindex="1"><i class="fas fa-globe"></i> <span lang="en">Language</span></a>
+                <ul class="sub-menu">
+                    <li><a translate="no" lang="en" href="https://www.city.kumamoto.jp.e.fm.hp.transer.com/kiji003552/index.html" target="_blank" class="topsub" tabindex="1"><span lang="en">English</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="Open in a new window" title=""></a></li>
+                    <li><a translate="no" lang="zh-cmn-Hans" href="https://www.city.kumamoto.jp.c.fm.hp.transer.com/kiji003552/index.html" target="_blank" tabindex="1"><span lang="zh-cmn-Hans">中文(简体字)</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="在新视窗中开启" title=""></a></li>
+                    <li><a translate="no" lang="zh-cmn-Hant" href="https://www.city.kumamoto.jp.t.fm.hp.transer.com/kiji003552/index.html" target="_blank" tabindex="1"><span lang="zh-cmn-Hant">中文(繁體字)</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="在新視窗中開啟" title=""></a></li>
+                    <li><a translate="no" lang="ko" href="https://www.city.kumamoto.jp.k.fm.hp.transer.com/kiji003552/index.html" target="_blank" tabindex="1"><span lang="ko">한국어</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="다른 창으로 엽니 다" title=""></a></li>
+                    <li><a translate="no" lang="ja" href="https://www.city.kumamoto.jp/kiji003552/index.html" class="cl-norewrite" tabindex="1">日本語</a></li>
+                        <li>
+                            <div class="easyJapaneseInLangDispArea">
+                                
+                                <div class="easyJapaneseInLangButtonArea">
+                                    <a href="javascript:void(0);" class="easyJapaneseInLangButton easyJapaneseButton_visible easyJapaneseActionButton" onclick="startEasyJapanese();" tabindex="1">
+                                        やさしい日本語
+                                    </a>
+                                    <a href="javascript:void(0);" class="easyJapaneseInLangResetButton easyJapaneseButton_hidden easyJapaneseActionButton" onclick="resetEasyJapanese();" tabindex="1">
+                                        元に戻す
+                                    </a>
+                                </div>
+
+                                
+                                
+                            </div>
+                        </li>
+                                       
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 外国語翻訳メニュー end -->
+
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- 閲覧補助パネル -->
+    <div id="accessibility">
+        <div class="acce_head_wp">
+            <div class="overlay_acc" id="overlay_acc">
+                <div class="acc_wp">
+                    <div id="accmenu_close">
+                        <div><a href="javascript:void(0)" id="close_accessibility" tabindex="1" aria-label="閉じる"><span><i class="fa-regular fa-rectangle-xmark fa-2x my-blue"></i></span></a></div>
+                    </div>
+
+                    <div id="acc_title">閲覧支援</div>
+                    <div class="acc_wrap">
+                        <div class="font-size_wrap">
+                            <div id="mainFontSizeSel">
+                                <div class="change_title"><span><h3>文字サイズを変更する</h3> </span></div>
+                                <a href="#top" data-select="拡大" onclick="change_size('fontSizeB')" tabindex="1">
+                                    <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/white-mozi-l.gif" alt="拡大" title="" /></a><a href="#top" data-select="標準" onclick="change_size('fontSizeN')" tabindex="1"><img src="//www.city.kumamoto.jp/dynamic/common/images/top1/white-mozi-m.gif" alt="標準" title="" /></a>
+                            </div>
+                        </div>
+                        <div class="haikei_wrap">
+                            <div id="changeHaikei">
+                                <div class="change_title"><span><h3>背景色を変更する</h3> </span></div>
+                                <a href="#top" data-select="B" onclick="changeSiteIro('B')" tabindex="1">
+                                    <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/udbtn_blue.gif" alt="青" title="背景色を青色にする" /></a><a href="#top" data-select="K" onclick="changeSiteIro('K')" tabindex="1"><img src="//www.city.kumamoto.jp/dynamic/common/images/top1/udbtn_black.gif" alt="黒" title="背景色を黒色にする" /></a><a href="#top" data-select="W" onclick="changeSiteIro('W')" tabindex="1"><img src="//www.city.kumamoto.jp/dynamic/common/images/top1/udbtn_white.gif" alt="白" title="背景色を白色にする" /></a>
+                            </div>
+                        </div>
+                        <div class="yomiage_wrap">
+                            <div class="yomiage">
+                                <div class="onsei_title"><span>音声読み上げ</span></div>
+                                
+<!-- crosslanguage:delete -->
+<!-- リードスピーカー 音声読み上げボタン -->
+<div class="readspeakerBtn">
+    <a rel="nofollow" accesskey="L" href="//app-as.readspeaker.com/cgi-bin/rsent?customerid=6163&amp;lang=ja_jp&amp;readid=container&amp;url=" target="_blank" onclick="jQuery('#close_accessibility').click();readpage(this.href, 'container_speaker');return false;" tabindex="1" ><i class="fa-solid fa-volume-high my-blue"></i> 読み上げる</a>
+</div>
+<!-- /crosslanguage:delete -->
+
+                            </div>
+                        </div>
+                        
+                        <div class="easyJapanese_wrap">
+                            <div class="change_title"><span>やさしい日本語</span></div>
+                            
+    <div class="easyJapaneseDispArea">
+        <div class="easyJapaneseButtonArea">
+            <a href="javascript:void(0);" class="easyJapaneseButton easyJapaneseButton_visible easyJapaneseActionButton" onclick="startEasyJapanese();" tabindex="1">
+                適用する
+            </a>
+            <a href="javascript:void(0);" class="easyJapaneseResetButton easyJapaneseButton_hidden easyJapaneseActionButton" onclick="resetEasyJapanese();" tabindex="1">
+                元に戻す
+            </a>
+        </div>
+        
+    </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- global navigation start -->
+    <!-- global navigation end -->
+
+    <!-- さがす -->
+    <div id="area_sagasu">
+        <div class="sagasu_head_wp">
+            <div class="overlay_sagasu" id="overlay_sagasu">
+                <div class="sagasu_wp">
+                    <div id="sagasumenu_close">
+                        <div><a href="javascript:void(0)" id="close_sagasu" tabindex="1" aria-label="閉じる"><span><i class="far fa-window-close fa-2x my-blue"></i></span></a></div>
+                    </div>
+
+                    <div id="sagasu_title" class="sagasu_title">
+                        <h2><i class="fa-solid fa-flag"></i>&nbsp;&nbsp;MENU</h2>
+                    </div>
+                    <div class="back_btn"><a href="//www.city.kumamoto.jp/default.html" tabindex="1"><i class="fa-solid fa-right-long"></i>TOP</a></div>
+
+                    <div class="sagasumenu">
+                          
+<script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(function () {
+    });
+</script>
+
+
+<div class="sagasulist">
+   
+            <div class="search_item">
+<div class="siteSearchArea">
+    
+            
+            
+<div name="searchver2-input" class="searchver2-input" data-api_url="https://kumamoto.sitesearch2.kumamoto-net.ne.jp/public_api/"><!--フォームの表示箇所--></div>
+                                                                                           
+</div>
+<a href="https://higomaru-call.jp/faq/CCFaqIndex.asp" tabindex="1"><div class="search_btn"><i class="fa-solid fa-circle-arrow-right"></i> よくある質問</div></a><a href="https://www.city.kumamoto.jp/list04035.html" tabindex="1"><div class="search_btn"><i class="fa-solid fa-circle-arrow-right"></i> 電子申請・施設予約</div></a></div>
+    
+</div>
+    
+                <ul class="sagasulist">
+            
+                <li class="sagasu_li_4001">
+                    <a href="//www.city.kumamoto.jp/list04001.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4001_class_globalnavi_2ki6syik.png" alt="" title="" />戸籍・住民票</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4002">
+                    <a href="//www.city.kumamoto.jp/list04002.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4002_class_globalnavi_7pnzcwng.png" alt="" title="" />税金・年金・保険</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4003">
+                    <a href="//www.city.kumamoto.jp/list04003.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4003_class_globalnavi_ou1ylg7u.png" alt="" title="" />ごみ・環境</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4004">
+                    <a href="//www.city.kumamoto.jp/list04004.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4004_class_globalnavi_2e61dosv.png" alt="" title="" />住宅・くらし</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4005">
+                    <a href="//www.city.kumamoto.jp/list04005.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4005_class_globalnavi_726dc4ep.png" alt="" title="" />子育て・教育</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4006">
+                    <a href="//www.city.kumamoto.jp/list04006.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4006_class_globalnavi_cn2d1wpe.png" alt="" title="" />健康・医療・福祉</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4007">
+                    <a href="//www.city.kumamoto.jp/list04007.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4007_class_globalnavi_baquwbdh.png" alt="" title="" />観光・イベント</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4008">
+                    <a href="//www.city.kumamoto.jp/list04008.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4008_class_globalnavi_zy80dk1r.png" alt="" title="" />芸術・文化</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4009">
+                    <a href="//www.city.kumamoto.jp/list04009.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4009_class_globalnavi_28dgo7zk.png" alt="" title="" />スポーツ</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4010">
+                    <a href="//www.city.kumamoto.jp/list04010.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4010_class_globalnavi_rsywjyq1.png" alt="" title="" />ビジネス</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4011">
+                    <a href="//www.city.kumamoto.jp/list04011.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4011_class_globalnavi_jqh2gh61.png" alt="" title="" />防災・救急</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_4012">
+                    <a href="//www.city.kumamoto.jp/list04012.html" tabindex="1"><div class="bunrui_btn"><img class="sagasu_bullet_pic" src="//www.city.kumamoto.jp/common/upload/hpkiji/4012_class_globalnavi_j4rze2d1.png" alt="" title="" />市政情報</div></a>
+                    
+                </li>
+            
+                </ul>
+            
+                    </div>
+                    <div class="clear"></div>
+                    <div class="riyou_wrap">
+                        <ul class="riyou_item_wrap">
+                            <li><a href="//www.city.kumamoto.jp/kiji003102/index.html" tabindex="1"><i class="fa-solid fa-caret-right my-pink"></i>休日当番医</a></li>
+                            <li><a href="//www.city.kumamoto.jp/list01102.html" tabindex="1"><i class="fa-solid fa-caret-right my-pink"></i>補助金</a></li>
+                            <li><a href="//www.city.kumamoto.jp/kiji0033879/index.html" tabindex="1"><i class="fa-solid fa-caret-right my-pink"></i>例規・要綱</a></li>
+                            <li><a href="//www.city.kumamoto.jp/list04195.html" tabindex="1"><i class="fa-solid fa-caret-right my-pink"></i>入札</a></li>
+                            <li><a href="//www.city.kumamoto.jp/dynamic/statistics/pub/default.aspx?c_id=26" tabindex="1"><i class="fa-solid fa-caret-right my-pink"></i>人口推移</a></li>
+                            <li><a href="https://www.city.kumamoto.jp/saiyou/default.html" tabindex="1"><i class="fa-solid fa-caret-right my-pink"></i>職員採用</a></li>
+                        </ul>
+                    </div>
+                    <div class="mokuteki_btn_wrap">
+                        <a href="//www.city.kumamoto.jp/classset002.html" tabindex="1">
+                            <div class="mokuteki_btn_item"><i class="fa-solid fa-users"></i>組織から探す</div>
+                        </a>
+                        <a href="//www.city.kumamoto.jp/dynamic/info/pub/default.aspx?c_id=59" tabindex="1">
+                            <div class="mokuteki_btn_item"><i class="fa-solid fa-tree-city"></i>施設を探す</div>
+                        </a>
+                        <a href="https://www.city.kumamoto.jp/dynamic/ranking/pub/default.aspx?c_id=36" tabindex="1">
+                            <div class="mokuteki_btn_item"><i class="fa-solid fa-ranking-star"></i>アクセスランキングから探す</div>
+                        </a>
+                    </div>
+                    <div class="kuArea_wrap">
+                        <div class="ku_area">
+                            <ul>
+                                <li><span class="ku_title">区役所</span></li>
+                                <li><a href="//www.city.kumamoto.jp/chuo/default.html" tabindex="1"><i class="fa-solid fa-circle-chevron-right"></i>中央区</a></li>
+                                <li><a href="//www.city.kumamoto.jp/higashi/default.html" tabindex="1"><i class="fa-solid fa-circle-chevron-right"></i>東区</a></li>
+                                <li><a href="//www.city.kumamoto.jp/nishi/default.html" tabindex="1"><i class="fa-solid fa-circle-chevron-right"></i>西区</a></li>
+                                <li><a href="//www.city.kumamoto.jp/minami/default.html" tabindex="1"><i class="fa-solid fa-circle-chevron-right"></i>南区</a></li>
+                                <li><a href="//www.city.kumamoto.jp/kita/default.html" tabindex="1"><i class="fa-solid fa-circle-chevron-right"></i>北区</a></li>
+                            </ul>
+                        </div>
+                        <a href="//www.city.kumamoto.jp/list04036.html" tabindex="1">
+                            <div class="Foreigners_btn">外国から来た人へ<br />
+                                <span lang="en">Foreigners</span></div>
+                        </a>
+
+                    </div>
+                    <div class="bottom_closebtn_wrap"><a href="javascript:void(0)" onclick="jQuery('#close_sagasu').click();return false;" tabindex="1" aria-label="閉じる"><span><i class="fa-solid fa-xmark my-blue"></i>閉じる</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- リードスピーカー -->
+    
+<!-- crosslanguage:delete -->
+<!-- リードスピーカー 表示域 -->
+<div id="readspeakerWaku"><div id="container_speaker" class="rs_preserve rs_skip rs_splitbutton rs_addtools rs_exp"></div><div class="clear"></div></div><div class="clear"></div>
+<!-- /crosslanguage:delete -->
+
+
+    
+    <div id="maincontent" tabindex="-1" aria-label="ヘッダーをスキップした後の内容"></div>
+</div>
+<div id="headerAreaDef_margin"></div>
+<div class="clear"></div>
+
+</div><!-- allheader end  -->
+<div class="Navigation"><div><a href="#mainBlock">本文へジャンプ</a></div></div>
+
+
+<div id="pankuzuBlock">
+    <div id="pankuzu"><div id="pankuzuArea" data-categoryid="3" data-kijiid="552" data-subid="1" data-topid="0" data-preview="OFF"></div></div>
+</div>
+
+
+<div id="container">
+
+
+
+
+
+<!-- sideArea start -->
+
+<!-- sideArea end -->
+
+
+<div id="mainBlock">
+    <span id="maincont"></span>
+    <div id="cont_body">
+
+        <div class="preview_label"></div>
+        
+<script type="text/javascript" language="javascript">
+<!--
+const pageAnchorButtonElementName = "page_anchor_list_button";
+const pageAnchorListElementName = "page_anchor_link_list";
+const pageAnchorButtonImageElementName = "toggle_icon";
+
+const pageAnchorListClassName = "page_anchor_link_list_hidden";
+const pageAnchorListButtonHiddenClassName = "page_anchor_list_button_hidden";
+const pageAnchorButtonImagePlusClassName = "toggle_icon_plus";
+const pageAnchorButtonImageMinusClassName = "toggle_icon_minus";
+
+document.addEventListener("DOMContentLoaded", function () {
+    // 画面サイズに応じて基にするサイト情報の値を決める
+    var screenWidth = window.innerWidth;
+    var pageAnchorButtonStatus = 0;
+
+    if (screenWidth > 768) {
+        pageAnchorButtonStatus = parseInt("2", 10);
+    }
+    else {
+        pageAnchorButtonStatus = parseInt("1", 10);
+    }
+
+    if (isNaN(pageAnchorButtonStatus)) {
+        pageAnchorButtonStatus = 0;
+    }
+    else if (pageAnchorButtonStatus > 2) {
+        pageAnchorButtonStatus = 0;
+    }
+
+    // ページ内目次の要素を取得する
+    var pageAnchorButtonElement = document.getElementById(pageAnchorButtonElementName);
+    var pageAnchorListElement = document.getElementById(pageAnchorListElementName);
+    var pageAnchorButtonImageElement = document.getElementById(pageAnchorButtonImageElementName);
+
+    // 要素が取得できた場合のみ処理を行う
+    if (pageAnchorButtonElement && pageAnchorListElement && pageAnchorButtonImageElement) {
+        if (pageAnchorButtonStatus == 0) {
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImagePlusClassName);
+        }
+        else if (pageAnchorButtonStatus == 1) {
+            if (pageAnchorListElement.classList.contains(pageAnchorListClassName)) {
+                pageAnchorListElement.classList.remove(pageAnchorListClassName);
+            }
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImageMinusClassName);
+        }
+        else if (pageAnchorButtonStatus == 2) {
+            if (pageAnchorListElement.classList.contains(pageAnchorListClassName)) {
+                pageAnchorListElement.classList.remove(pageAnchorListClassName);
+            }
+            page_anchor_list_button.classList.add(pageAnchorListButtonHiddenClassName);
+        }
+    }
+
+    
+    
+    
+});
+
+
+function toggleUlDisplay() {
+    // ページ内目次の要素を取得する
+    var pageAnchorListElement = document.getElementById(pageAnchorListElementName);
+    var pageAnchorButtonImageElement = document.getElementById(pageAnchorButtonImageElementName);
+
+    // 要素が取得できた場合のみ処理を行う
+    if (pageAnchorListElement && pageAnchorButtonImageElement) {
+
+        // ページ内目次の表示・非表示
+        if (pageAnchorListElement.classList.contains(pageAnchorListClassName)) {
+            pageAnchorListElement.classList.remove(pageAnchorListClassName);
+            pageAnchorButtonImageElement.classList.remove(pageAnchorButtonImagePlusClassName);
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImageMinusClassName);
+        }
+        else {
+            pageAnchorListElement.classList.add(pageAnchorListClassName);
+            pageAnchorButtonImageElement.classList.remove(pageAnchorButtonImageMinusClassName);
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImagePlusClassName);
+        }
+    }
+}
+
+function DanrakuKirikae(dspNo, allCnt){
+    if(allCnt>0)
+    {
+        for(var i=1; i <= allCnt; ++i)
+        {
+            if(dspNo == i)
+            {
+                 document.getElementById("danraku" + i).style.display = "block";
+                 document.getElementById("dMenu" + i).className = "selected";
+            }
+            else
+            {
+                 document.getElementById("danraku" + i).style.display = "none";
+                 document.getElementById("dMenu" + i).className = "";
+            }
+       
+        }
+    }
+}
+//-->
+</script>
+
+<div style="margin:0px auto;"></div>
+
+
+
+<article>
+    <div id="mainShosai">
+        
+        
+        
+
+        
+        <div class="BottomArea">
+
+            <div class="containerWidth">
+		        <h1 class="title">「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】</h1>
+                
+                <div id="snsButtonArea"></div>
+                <div class="kijiSubInfo">
+                    <div class="updDate">最終更新日：<time datetime="2023-10-16T16:32:37+09:00">2023年10月16日</time></div>
+                    <span class="hpkijiid_shosai">（ID:552）</span>
+                    <div class="printbtn"><a href="javascript:void(0)" onclick="window.print();return false;"><i class="fas fa-print fa-lg"></i><span> 印刷</span></a></div>
+                    
+                    <div id="kijiKengenArea"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+		        		            
+		        
+    		        
+                
+                
+
+		        <div class="danraku" id="danraku1" style="display:block;"><div><div style="clear: both;">
+<h3 class="title">「大型ごみ」を出すときには「ごみゼロコール」での事前申込みが必要です</h3>
+<p class="body" style=" clear: both;">　熊本市の大型ごみの収集は、事前申込制（戸別収集、有料）となっています。<br>　大型ごみを出そうとするときは、事前に『ごみゼロコール』までお電話でお申し込みください。</p><p class="body" style=" clear: both;">&nbsp;</p><div style=" clear: both;"></div><div style=" clear: both;"><table class="__wys_table"><tbody><tr><td><p><br>　【ごみゼロコール】<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　　　&nbsp;<br>　　<strong>電話番号　0570-00-5374</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ※令和2年（2020年）4月より番号が変更となっております。<br>　　受付時間　月曜日～土曜日（年末年始を除く）<br>　　　　　　　　　午前8時30分から午後5時まで</strong></p><p><strong>　</strong></p><p>　　※ごみ全般のご相談も受け付けております。お気軽にご相談ください。</p><p>　　　・大型ごみの出し方、申し込みについて</p><p>　　　・ごみの出し方、分別について</p><p>　　　・道路上の動物の死がいの回収について</p><p>　　　・その他ごみに関する相談等　　　</p><p>&nbsp;</p><p>　　※ごみゼロコールへお電話をいただくと自動音声ガイダンスが流れます。</p><p>　　　お問い合わせの内容に応じた番号「1」（大型ごみの受付）または「2」（その他ごみに関すること）を選んでください。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;また、ダイヤル回線をご利用の方は、電話がつながった後にプッシュトーン信号へ切り替えてご利用いただきますよう</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; お願いいたします。　　　　　　</p><p>　　　電話機の「*」「#」「トーン」「PB」などのボタンを押して「1」または「2」を押してください。</p><p>　　　詳しくは、電話機の説明書をご覧ください。　</p><p>　　</p><p>　　※ごみゼロコールにつきましては、ナビダイヤルを導入しておりますが、通話料金に関しましては入力指示ルーティングでのガイダンス</p><p>　　　及び呼び出し待機中には通話料は発生せず、オペレーターに繋がって通話が開始された時点からの料金発生となります。　　　　　　　　　　　　　　　&nbsp;</p><p>&nbsp;</p></td><td></td></tr><tr></tr></tbody></table></div><div style=" clear: both;">&nbsp;</div><div style=" clear: both;">&nbsp;</div><div style=" clear: both;"><ul type="circle"><li>　英語によるお申込みにも対応しています。</li>　　　　<li>　ごみゼロコール業務の正確を期すため、通話を録音しています。</li>　　　　<li>　電話による内容確認が困難な方専用のファックスによる申込みを希望される場合には、申込み用紙をお送りしますのでファックスでご連絡ください（電話での内容確認が可能な方はご遠慮ください）。</li><li><br>　　　　ごみゼロコール　ファックス番号　096-353-7070</li></ul></div></div><div style="clear: both;"><p class="body"><br></p></div>
+<div style="clear: both;"></div>
+<div style="clear: both;"></div><h3 class="title">「大型ごみ」とは？</h3><div style="clear: both;"></div><p class="body" style="clear: both;">　熊本市（植木地区を除く）では、ご家庭から排出されるごみのうち、市の指定袋（大袋）に入れて口を結べない大きさのものを「大型ごみ」としています（ただし、表1の「物品」の欄に掲げるものを除きます）。</p><div style=" clear: both;"><p class="body"><br></p><ul type="square"><li><a href="https://www.city.kumamoto.jp/kiji003552/5_552_267145_up_1HW3WO2Y.pdf" target="_blank"><img title="" alt="PDF" src="https://www.city.kumamoto.jp/dynamic/common/images/icon/pdf.gif">&nbsp;表1　大型ごみに該当しないもの&nbsp;（PDF：132.7キロバイト）<img title="" alt="新しいウィンドウで" src="https://www.city.kumamoto.jp/dynamic/common/images/newwin.gif"></a></li></ul><p class="body"></div><div style=" clear: both;"><p class="body"><br>【大型ごみの例】<br>　○タンスや机、ベッドなどの家具類<br>　○布団や毛布<br>　○電子レンジやファンヒータなどの家電製品類（大型のもの）<br>　　※<a href="https://www.city.kumamoto.jp/kiji003553/index.html" target="_blank">家電4品目（テレビ、冷蔵庫・冷凍庫、エアコン、洗濯機・衣類乾燥機）<img title="新しいウインドウで" alt="新しいウインドウで" src="https://www.city.kumamoto.jp/dynamic/common/images/newwin.gif"></a>は除きます（市では収集できません）。</p></div>
+<p>
+<div style="clear: both;"></div>
+<div style="clear: both;">
+<h3 class="title">申込みの手続きと収集までの流れについて</h3>
+<p class="body">　大型ごみの申込み手続きの際には、以下の手順で必要事項等を確認させていただきます。<br>　収集日や大型ごみを出す場所、大型ごみ処理シールの料金、受付番号などを控えていただきますので、<strong>筆記用具</strong>をご用意のうえ、お電話ください。<br><br><strong>【電話での申込み手順】</strong><br><strong>(1)ごみをお出しになる方の住所と氏名を確認します。</strong><br><br><strong>(2)お出しになるごみが、大型ごみに該当するかお尋ねします。</strong><br>　大型ごみでない場合には、適切な出し方をお知らせします。<br>【注】<br>　1回の収集日に申し込める大型ごみは、原則として5個までです。<br>　処分する大型ごみが多い場合には、計画的にお申し込みください。<br><br><strong>(3)大型ごみの収集日を打ち合わせていただきます。</strong><br>【注】<br>　大型ごみのお申込みから収集日までは、通常1週間程度ですが、転居等される方の収集依頼が多い時期には、<strong>収集日までに3週間程度お時間をいただく場合があります</strong>。収集希望時期があらかじめお決まりの場合には、お早めにお申し込みいただく等、ご協力よろしくお願いいたします。<br><br><strong>(4)大型ごみの排出場所を打ち合わせていただきます。</strong><br>　戸建住宅の場合、原則として公道に面した敷地内とさせていただきます。<br>　集合住宅の場合、集合住宅専用のごみステーションとさせていただきます。専用のごみステーションがない場合には集合住宅の敷地内で邪魔にならない場所とさせていただきます。<br>　収集車が接近困難な場合など、やむを得ない場合に限って地域のごみステーションを使わせていただくことがあります。</p><p class="body">　※ごみステーションをご利用になる場合は、他の利用者の方の迷惑にならないよう、必ず収集日当日（8：30まで）にお出しください。</p><p class="body">　　（転居等で収集日当日に出すことができない場合には、受付できません）<br><br><strong>(5)ごみ処理手数料の金額をお知らせします。</strong><br>　大型ごみ処理シール取扱店において、お支払いいただく金額をお知らせします。<br>　金額は、品目ごとに500円又は900円です。<br>　　<br><strong>(6)申込み内容を確認し、受付番号をお知らせして、受付けを終了します。</strong><br><br><strong>【申込み終了後】</strong><br><strong>(7)収集日までに大型ごみ処理シールを入手してください。</strong><br>　大型ごみ処理シールは、市内のコンビニエンスストアなどで取り扱われています。<br><br><strong>(8)入手した大型ごみ処理シールに受付番号を記入して、大型ごみに貼ってください。</strong><br><br><strong>【収集日当日朝】</strong><br><strong>(9)打ち合わせした収集日の当日の朝8時30分までに、打ち合わせた場所へ大型ごみを出してください。収集時の立会いは不要です。</strong><br>　（収集は、8時30分から16時頃までに伺います。）</p><p class="body">※置き場所にごみステーションをご利用になる場合は、他の利用者の方の迷惑にならないよう、必ず収集日当日にお出しください。</p><p class="body">　（収集日当日に出すことが困難な場合には、受付できません）<br></p></div>
+<div style="clear: both;">
+<h3 class="title">大型ごみを出すときの注意事項</h3>
+<p class="body"><strong>(1)　申し込まれずに出された大型ごみは、ルール違反です。</strong><br>　事前に申込みされた大型ごみだけを収集します。<br>　したがって、大型ごみ処理シールが貼られていても、事前申込みがされていない大型ごみは、ルール違反になります。特に、大型ごみがごみステーションに放置されると、ごみステーション利用者に大変迷惑をかけることになります。必ず、<strong>事前申込みを行ったうえで、打ち合わせた場所に、打ち合わせた日の当日（朝8時30分まで）に出してください。</strong><br>　また、以前にお申込みをされたことがある場合でも、大型ごみを出す際には、必ず毎回事前申込みを行なってください。<br><br><strong>(2)大型ごみ処理手数料は返金できません。</strong><br>　大型ごみの処理手数料の金額は、500円又は900円です。<br>　品目によって、料金が異なりますので、必ず事前申込み時に金額を確かめてからご購入ください。<br>　なお、間違ってご購入された場合でも返金はできませんので、ご注意ください。大型ごみを次に出す機会にお使いください。</p><p class="body">&nbsp;</p><p class="body"><strong>(3)家の中に入っての収集はできません。<br></strong>　たんす等の大型ごみを家の中に入って収集することはできません。必要に応じて民間業者等をご利用いただき、屋外の収集場所までの運び出しをお願いします。&nbsp;</p><p class="body">&nbsp;</p><table class="__wys_table"><tbody><tr><td><p>&nbsp;<br>　【ごみゼロコール】<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>　　<strong>電話番号　0570-00-5374</strong><br>　　受付時間　月曜日～土曜日（年末年始を除く）<br>　　　　　　　　　午前8時30分から午後5時まで<br></p><p>　　</p><p>　　※ごみ全般のご相談も受け付けております。お気軽にご相談ください。</p><p>　　　・大型ごみの出し方、申し込みについて</p><p>　　　・ごみの出し方、分別について</p><p>　　　・道路上の動物の死がいの回収について</p><p>　　　・その他ごみに関する相談等　　　　　　　　　　　　　　　　　　　　　&nbsp;</p><p>&nbsp;</p></td><td></td></tr><tr></tr></tbody></table><p class="body"><br>&nbsp;</p></div></div><div class="clear"></div></div>
+            </div>      
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+</article>
+
+
+<div id="calendarLink">
+    
+</div>
+
+
+<div id="weblioLinkJsArea"></div>
+
+
+<div id="archiveTransitionArea">
+    <div class="archiveTransitionPrev"><a href="">前の記事へ</a></div>
+    <div class="archiveTransitionNext"><a href="">次の記事へ</a></div>
+</div>
+
+
+<div id="classTagsArea"></div>
+
+
+<div id="toiawaseInfo">
+
+    <div class="toiText"><h2 class="toiText_text">このページに関する<br />お問い合わせは</h2></div>
+    <div class="toiKugiri"></div>
+    <div class="toiData"></div>
+</div>
+
+<div id="hpkijiid_shosai">（ID:552）</div>
+
+
+<div id="footerSoegakiArea"></div>
+
+
+<div id="shosaiBanArea" data-topid="0" data-dspshosai="0" data-preview="OFF"></div>
+
+
+<div id="recommendArea"></div>
+
+
+<div id="browsingHistoryArea"></div>
+
+<div id="accessCountHpKiji"
+    data-categoryid="3"
+    data-kijiid="552"
+    data-subid="1"
+    data-topid="0"
+    data-preview="OFF"></div>
+
+<script type="text/javascript" language="javascript">
+    jQuery(function () {
+        jQuery.ajax({
+            type: 'POST',
+            cache: false,
+            url: '//www.city.kumamoto.jp/dynamic/hpkiji/saverecommend.ashx',
+            data: {
+                "id": 552,
+                "preview": "OFF"
+            }
+        }).done(function (response) {
+        }).fail(function (response) {
+        });
+    });
+</script>
+
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/browsinghistory.js"></script>
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/setcontents.js"></script>
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/layoutadjustment.js"></script>
+<script type="text/javascript" language="javascript">
+    jQuery.noConflict();
+    jQuery(function () {
+        var set = new setContents();
+        set.rootUrl = "https://www.city.kumamoto.jp/dynamic/";
+
+        
+        var bannerPrm = {
+            "top_id": jQuery("#shosaiBanArea").attr("data-topid"),
+            "dspShosaiFlg": jQuery("#shosaiBanArea").attr("data-dspshosai"),
+            "preview": jQuery("#shosaiBanArea").attr("data-preview")
+        }
+        set.banner("#shosaiBanArea", bannerPrm);
+
+        
+        var footerSoegakiPrm = {
+            "newWinOpnFlg": "False",
+            "pdfSetsumeiFlg": "ON",
+            "pdfDownloadFlg": "ON"
+        }
+        set.footerSoegaki("#footerSoegakiArea", footerSoegakiPrm);
+
+        
+        jQuery(".toiData").each(function () {
+
+            var toiawasePrm = {
+                "mdl": "85",
+                "c_id": "3",
+                "id": "552",
+                "sub_id": "1",
+                "top_id": "0",
+                "preview": "OFF"
+            }
+
+            set.toiawase(this, toiawasePrm);
+        });
+
+        
+        var kijiKengenPrm = {
+            "mdl": "85",
+            "grp_id": "1074",
+            "ka_no_disp": "0",
+            "top_id": "0",
+            "preview": "OFF"
+        }
+        set.kijiKengen("#kijiKengenArea", kijiKengenPrm);
+
+        
+        var snsButtonPrm = {
+            "c_id": "3",
+            "id": "552",
+            "sub_id": "1",
+            "ttl": "",
+            "top_id": "0",
+            "preview": "OFF"
+        }
+        set.snsButton("#snsButtonArea", snsButtonPrm);
+
+        
+        var weblioLinkJsPrm = {
+            "c_id": "3"
+        }
+        set.weblioLinkJs("#weblioLinkJsArea", weblioLinkJsPrm);
+
+        
+        var recommendPrm = {
+            "c_id": "3",
+            "id": "552",
+            "top_id": "0",
+            "preview": "OFF"
+        }
+        set.recommend("#recommendArea", recommendPrm);
+
+        
+        var pankuzuParam = {
+            "c_id": jQuery("#pankuzuArea").attr("data-categoryid"),
+            "class_id": "",
+            "id": jQuery("#pankuzuArea").attr("data-kijiid"),
+            "sub_id": jQuery("#pankuzuArea").attr("data-subid"),
+            "top_id": jQuery("#pankuzuArea").attr("data-topid"),
+            "preview": jQuery("#pankuzuArea").attr("data-preview")
+        }
+        set.pankuzu("#pankuzuArea", "#footerPankuzuArea", pankuzuParam);
+
+        
+        var archiveTransitionParam = {
+            "c_id": "3",
+            "class_id": "",
+            "id": "552",
+            "wd": "",
+            "sely": "",
+            "selm": "",
+            "top_id": "0",
+            "preview": "OFF"
+        }
+        set.archiveTransition("#archiveTransitionArea", archiveTransitionParam);
+
+        
+        var classTagsParam = {
+            "rootURL":"//www.city.kumamoto.jp/dynamic/",
+            "c_id": "3",
+            "class_id": "",
+            "id": "552",
+            "sub_id": jQuery("#pankuzuArea").attr("data-subid"),
+            "top_id": "0",
+            "preview": "OFF"
+        }
+        set.classTags("#classTagsArea", classTagsParam);
+
+        var accessCountPrm = {
+            "c_id": jQuery("#accessCountHpKiji").attr("data-categoryid"),
+            "id": jQuery("#accessCountHpKiji").attr("data-kijiid"),
+            "sub_id": jQuery("#accessCountHpKiji").attr("data-subid"),
+            "top_id": jQuery("#accessCountHpKiji").attr("data-topid"),
+            "preview": jQuery("#accessCountHpKiji").attr("data-preview")
+        }
+        set.accessCountHpKiji(accessCountPrm);
+    });
+
+    
+    jQuery(function(){
+        var fn_bh = new setBrowsingHistory();
+        fn_bh.rootUrl = "https://www.city.kumamoto.jp/dynamic/";
+        fn_bh.page_type = "detail";
+        fn_bh.top_id = "0";
+        fn_bh.kiji_id = "552";
+        fn_bh.preview_type = "OFF";
+        fn_bh.loadBrowsingHistory();
+    });
+</script>
+
+        
+
+     </div> <!-- cont_body end -->
+</div> <!-- mainBlock end -->
+
+
+<div class="clear"></div>
+</div>
+
+
+<!-- allfooter start  -->
+<iframe src="//www.city.kumamoto.jp/dynamic/common/kijienqiframe.aspx?c_id=3&amp;id=552" id="kijiEnqArea" style="border:0px none;" title="kijienq"></iframe>
+
+
+
+
+
+
+<div class="indent"></div>
+<div id="pagetop">
+    <a href="#top">ページの先頭へ</a></div>
+
+<div id="footerbtn" style="display:none;">
+    
+    
+</div>
+
+<div id="footerPankuzu">
+    <div id="footerPankuzuArea"></div>
+</div>
+
+
+<span id="ctl00_LblCopyrights"></span>
+
+
+<!--[if lt IE 9]>
+<link href="//www.city.kumamoto.jp/dynamic/common/css/footer/top1.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="//www.city.kumamoto.jp/dynamic/common/css/footer/top1.css" rel="stylesheet" type="text/css" /><div id="footerArea">
+	<!-- footer menu start -->
+
+
+
+<!-- footer menu end -->
+<!-- site info start -->
+
+
+
+<script type="text/javascript">
+    function scrollToTop() {
+        document.getElementById("headerAreaDefInput").focus();       
+    }
+</script>
+<div id="topbtn">
+    <a href="javascript:void(0);" onclick="scrollToTop()">
+        <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/top.png" alt="このページの先頭へ" title="">
+    </a>
+</div>
+
+<div class="parent">
+    <div class="footer_left">
+        <div class="footer_item_wrap">
+            <div class="footer_title"><span class="f_title"><h2>市の手続きやイベントなどのお問い合せ</h2></span></div>
+            <div class="f_list"><i class="fas fa-caret-right my-blue"></i><a href="http://higomaru-call.jp/index.htm" target="_blank">熊本市コールセンター（ひごまるコール）<img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="別ウインドウで開きます" title=""></a></div>
+            <div class="higomaru_call">
+                <div class="f_list"><i class="fas fa-phone my-blue"></i> 096-334-1500<br />
+                    年中無休（8時から20時）</div>
+                <div class="f_list">
+                    <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/icon_higomaru.png" alt="ひごまるコール" title=""></div>
+            </div>
+            <div class="f_btn"><a href="https://higomaru-call.jp/faq/CCFaqIndex.asp" aria-label="別ウィンドウで開きます" target="_blank"><i class="fa-solid fa-angles-right fa-fw"></i>AIチャットボットで質問 <img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="別ウインドウで開きます" title=""></a></div>
+            <div class="footer_title"><span class="f_title"><h2>みなさんの声をお寄せください</h2></span><span class="ichiran"><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/list04253.html">一覧へ</a></span></div>
+            <div class="f_list">
+                <ul>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/list04456.html">市政へのご意見・ご提案（市民の声）</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/list04460.html">道路の損壊・資源物の持ち去りなどの通報</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/list04457.html">パブリックコメント</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/dynamic/entry/pub/default.aspx?c_id=37">市民向けアンケート</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="footer_center">
+        <div class="footer_item_wrap">
+            <div class="footer_title"><span class="f_title"><h2>このホームページについて</h2></span></div>
+            <div class="f_list">
+                <ul>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/kiji0033642/index.html">ホームページについて</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/kiji0033644/index.html">プライバシーポリシー</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/kiji0033645/index.html">著作権・リンク・免責事項</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/kiji00361118/index.html">過去のサイト</a></li>
+                    <li><i class="fas fa-caret-right my-blue"></i> <a href="//www.city.kumamoto.jp/sitemap.html">サイトマップ</a></li>
+                </ul>
+            </div>
+            <div class="footer_title"><span class="f_title">市政だより</span><span class="ichiran"><i class="fas fa-caret-right my-blue"></i>  <a href="//www.city.kumamoto.jp//list04484.html">一覧へ</a></span></div>
+            <div class="footer_title"><span class="f_title">リンク集</span><span class="ichiran"><i class="fas fa-caret-right my-blue"></i>  <a href="//www.city.kumamoto.jp/dynamic/link_m/pub/default.aspx?c_id=76">一覧へ</a></span></div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer_right">
+        <div class="add_wrap">
+            <div class="site_title">
+                <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/site_title01.png" alt="熊本市" title=""></div>
+            <div class="add_title"><h3>所在地</h3></div>
+            <div class="add_item">〒860-8601熊本市中央区手取本町1番1号</div>
+            <div class="btn_access"><a href="//www.city.kumamoto.jp/kiji0033984/index.html"><i class="fa-solid fa-angles-right fa-fw"></i>市役所へのアクセス</a></div>
+            <div class="btn_access"><a href="https://www.city.kumamoto.jp/kiji0032280/index.html"><i class="fa-solid fa-angles-right fa-fw"></i>庁舎フロア案内図</a></div>
+            <div class="add_title"><h3>電話</h3></div>
+            <div class="add_item">096-328-2111（代表）</div>
+            <div class="add_title"><h3>主な窓口の受付時間</h3></div>
+            <div class="add_item">
+                    月曜から金曜日の午前9時～午後4時30分</br>
+                    （ただし、祝・休日、12月29日～翌年1月3日を除く）</br>
+                        ※受付時間は窓口によって異なります。
+            　                    <div class="add_item_sub"><i class="fas fa-caret-right my-blue"></i><a href="https://www.city.kumamoto.jp/kiji00366571/index.html" target="_blank" class="kochira"> 窓口の受付時間変更について <img src="//www.city.kumamoto.jp/dynamic/common/images/newwin.gif" alt="別ウインドウで開きます" title=""></a></div>
+                    </div>
+            <div class="btn_soshiki"><a href="//www.city.kumamoto.jp/kiji0032009/index.html"><i class="fa-solid fa-angles-right fa-fw"></i>組織一覧・各課お問い合わせ先</a></div>
+            <div class="add_title"><h3>法人番号</h3></div>
+            <div class="add_item">9000020431001</div>
+        </div>
+        <div class="footer_illust">
+            <img src="//www.city.kumamoto.jp/dynamic/common/images/top1/illust.png" alt="" title=""></div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- copyright -->
+<div id="cp" lang="en">
+    © 2025 Kumamoto City.
+</div>
+
+<!-- site info end -->
+
+</div>
+<!-- allfooter end  -->
+
+<input type="hidden" name="fontResize" id="fontResize" value="" />
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var sitesearch_config = {
+SEARCH_ROOT: 'https://www.city.kumamoto.jp/dynamic/search/pub/Default.aspx?c_id=2',
+API_ROOT: 'https://kumamoto.sitesearch2.kumamoto-net.ne.jp/public_api/',
+};
+var sitesearch_ssurl = 'https://kumamoto.sitesearch2.kumamoto-net.ne.jp/site_search_input_only/';
+var sitesearch_jsurl = sitesearch_ssurl + 'index-input.0c27b256.js';
+var sitesearch_cssurl = sitesearch_ssurl + 'index-input.dbd7ad3a.css';
+sitesearch_req.open('GET', sitesearch_ssurl, true);
+sitesearch_req.send(null);
+//]]>
+</script>
+</form>
+<noscript>本サイトは一部のページ・機能にJavascriptを使用しております。</noscript>
+
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/common/js/ajaxcalforie6.js"></script>
+
+
+
+    <script type="text/javascript" language="javascript">
+        jQuery.noConflict();
+
+        // 画面リサイズ時telto変更
+        var styleSheetSpWidth = 480;
+        var timer = false;
+        jQuery(window).resize(function () {
+            if (timer !== false) {
+                clearTimeout(timer);
+            }
+            timer = setTimeout(function () {
+                //画面サイズ切り分け
+                if(styleSheetSpWidth > window.innerWidth){
+                    //SP teltoあり
+                    jQuery('.teltoon').css('display', 'inline-block');
+                    jQuery('.teltooff').css('display', 'none');
+                }else{
+                    //PC teltoなし
+                    jQuery('.teltoon').css('display', 'none');
+                    jQuery('.teltooff').css('display', 'inline-block');
+                }
+            }, 200);
+        });
+
+        function searchResult(keyword) {
+            jQuery.ajax({
+                type: 'POST',
+                cache: false,
+                url: '//www.city.kumamoto.jp/dynamic/common/handler/registersearchkeyword.ashx',
+                data: {
+                    "c_id": "2",
+                    "q": keyword,
+                    "nowurl": location.href
+                }
+            }).done(function (response) {
+                eval(response);
+            });
+        }
+
+        var pankuzu_flg = false;
+        function pankuzu_openclose(kbn) {
+            if (!pankuzu_flg) {
+                jQuery("#pankuzu-more, #footerPankuzu-more").hide();
+                jQuery("#pankuzu-close, #footerPankuzu-close").show();
+                jQuery(".pankuzu-toggle").show();
+                pankuzu_flg = true;
+            }
+            else {
+                jQuery("#pankuzu-more, #footerPankuzu-more").show();
+                jQuery("#pankuzu-close, #footerPankuzu-close").hide();
+                jQuery(".pankuzu-toggle").hide();
+                pankuzu_flg = false;
+            }
+        }
+
+        jQuery(function () {
+            jQuery('img[usemap]').rwdImageMaps();
+        });
+    </script>
+    
+    <script type="text/javascript" language="javascript">
+        jQuery(function () {
+            var fn = new setCookie();
+            fn.rootUrl = "https://www.city.kumamoto.jp/dynamic/";
+            fn.topFlg = "False";
+            fn.topCategoryRootFolder = "";
+            fn.fontSizeCookieName = "FONT_SIZE";
+            fn.colorCookieName = "COLOR";
+
+            fn.fontSizeIconArr = setFontSizeIconArr();
+            fn.loadFontSize();
+            fn.loadColor();
+
+            
+            var prm = {
+                "top_id": "",
+                "dspTopFlg": "OFF"
+            }
+            setFloatHeader(prm, "//www.city.kumamoto.jp/dynamic/");
+            
+        });
+
+        function setFontSizeIconArr() {
+            var fontSizeIconArr = {
+                "標準": { size: "fontSizeN", on: "https://www.city.kumamoto.jp/dynamic/common/images/top1/black-mozi-m.gif", off: "https://www.city.kumamoto.jp/dynamic/common/images/top1/white-mozi-m.gif" },
+                "拡大": { size: "fontSizeB", on: "https://www.city.kumamoto.jp/dynamic/common/images/top1/black-mozi-l.gif", off: "https://www.city.kumamoto.jp/dynamic/common/images/top1/white-mozi-l.gif" },
+            };
+
+            return fontSizeIconArr;
+        }
+    </script>
+    
+</body>
+</html>

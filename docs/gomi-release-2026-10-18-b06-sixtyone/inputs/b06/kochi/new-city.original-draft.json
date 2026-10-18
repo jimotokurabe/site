@@ -1,0 +1,463 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kochi:kochi",
+      "name": "高知市",
+      "kana": "こうちし",
+      "pref_name": "高知県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kochi-daily-support",
+          "kind": "daily_support",
+          "name": "高知市ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃ごみ・プラスチック製容器包装。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "訪問による玄関先からの収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "市内の居宅で生活",
+                  "自力で持ち出せず親族・近隣の協力を得られない"
+                ],
+                "any": [
+                  "70歳以上で要介護1以上の単身世帯",
+                  "身体障害者手帳を持つ単身世帯",
+                  "精神障害者保健福祉手帳を持つ単身世帯",
+                  "療育手帳を持つ単身世帯",
+                  "その他、市が困難と認める世帯"
+                ],
+                "exception": "同居者がいても、対象条件に該当する世帯員のみで構成される場合は対象"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣の協力を得られないこと。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "application": {
+              "value": "申請書で環境業務課へ申請。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            },
+            "contact": {
+              "value": "高知市環境業務課 088-856-5374。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "単身条件の例外と、同居者がいる場合の全員資格を環境業務課へ確認してください。"
+          ]
+        },
+        {
+          "id": "kochi-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-daily",
+                "kochi-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高知市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "可燃粗大ごみを運び出せない世帯への搬出支援の有無を確認してください。"
+          ]
+        },
+        {
+          "id": "kochi-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "可燃粗大ごみの通常排出",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃える素材で45L袋に入らない可燃粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "市の分別案内に従い所定の場所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "可燃粗大と不燃・資源の大型品の排出方法を確認してください。",
+            "可燃粗大と不燃性大型品で通常の出す場所・収集日がどう異なるか確認してください。"
+          ]
+        },
+        {
+          "id": "kochi-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "清掃工場への可燃ごみ持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "高知市内発生の可燃ごみ・可燃粗大ごみのみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "高知市清掃工場。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "原則、排出者本人または家族が搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "家族による代理搬入を公式FAQで明示。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "2026年4月1日から10kgまでごとに130円。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "application": {
+              "value": "受付日・時間を確認して搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kochi-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "本人と家族が同乗する際の荷下ろし補助・本人確認を確認してください。",
+            "別居家族が本人のごみを搬入するときの必要書類を清掃工場へ確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "高知市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kochi-daily",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/64/fureaishuushuu.html",
+      "title": "高知市ふれあい収集について - 高知市ホームページ（環境業務課）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2024-03-01",
+      "http_status": 200,
+      "final_url": "https://www.city.kochi.kochi.jp/soshiki/64/fureaishuushuu.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "kochi/official/daily.html.source",
+      "text_file": "kochi/official/daily.txt",
+      "raw_sha256": "876ba6f115abe7789d51b52896f494275315226bb57133b91f65e5bfd25e3f8a",
+      "text_sha256": "9761e59be4ea364c67caecb4e586be3f2f1f485d0f29c641e89baf2fbd27fb03",
+      "last_modified_header": "Sat, 17 Oct 2026 17:01:52 GMT"
+    },
+    {
+      "id": "kochi-dropoff",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/66/motikomi-02.html",
+      "title": "清掃工場への持ち込みごみの受付時間、料金、持ち込めるもの - 高知市ホームページ（清掃工場）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-04-01",
+      "http_status": 200,
+      "final_url": "https://www.city.kochi.kochi.jp/soshiki/66/motikomi-02.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "kochi/official/dropoff.html.source",
+      "text_file": "kochi/official/dropoff.txt",
+      "raw_sha256": "afc13475f5ffb826c43261cdf727160d36fd31edf8884e377d685e25790d45a9",
+      "text_sha256": "f796f8402d6b1f4993edb0dfc608bc13a558f43cad2a0c2361f131d4dba7b309",
+      "last_modified_header": "Sat, 17 Oct 2026 17:03:29 GMT"
+    },
+    {
+      "id": "kochi-family-dropoff",
+      "url": "https://faq.city.kochi.kochi.jp/faq/detail.aspx?id=1422",
+      "title": "排出者が高齢（もしくは亡くなった）で清掃工場までごみを持ち込みできません。代理で親族が持ち込んでもいいでしょうか？（FAQ）｜高知市コールセンター",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-03-31",
+      "http_status": 200,
+      "final_url": "https://faq.city.kochi.kochi.jp/faq/detail.aspx?id=1422",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "content_type": "text/html; charset=utf-8",
+      "raw_file": "kochi/official/family-dropoff.html.source",
+      "text_file": "kochi/official/family-dropoff.txt",
+      "raw_sha256": "b8c251688e394603e1142bf848c7bc8fa57ff82b79f87efda3690c980435172f",
+      "text_sha256": "3ad7bc0f118778f6e7b0ed87c7f7433c2e793d221a431849d1afd2abcbd359a5",
+      "last_modified_header": null
+    },
+    {
+      "id": "kochi-regular",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/64/gomi1-kanenfunen01.html",
+      "title": "可燃粗大ごみ - 高知市ホームページ（環境業務課）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-10-23",
+      "http_status": 200,
+      "final_url": "https://www.city.kochi.kochi.jp/soshiki/64/gomi1-kanenfunen01.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "kochi/official/regular.html.source",
+      "text_file": "kochi/official/regular.txt",
+      "raw_sha256": "a910ab5c4f85cee9e844a674e78977f3e5c02707589674f43254cced7a68e07e",
+      "text_sha256": "9c2338f3f6aaae030ac974ff5239e85cf8c9e668d4371b53982f8902c3849b24",
+      "last_modified_header": "Sat, 17 Oct 2026 17:02:21 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

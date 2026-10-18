@@ -1,0 +1,433 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "okinawa:naha",
+      "name": "那覇市",
+      "kana": "なはし",
+      "pref_name": "沖縄県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "naha-daily-support",
+          "kind": "daily_support",
+          "name": "アシスト収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "高齢者等のごみ出し困難世帯への戸別訪問収集。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "計画には玄関等での収集と記載。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "高齢者で日常のごみ出しができない世帯を対象とする計画記載。具体的な申請条件は確認原典に記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "application": {
+              "value": "現行の募集・申請案内を未取得。クリーン推進課へ確認が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "アシスト収集の現行申請ページ・対象条件・対象品目・費用・頻度を確認してください。",
+            "計画資料の記述を現行制度の全条件として扱わないでください。",
+            "アシスト収集の現行申請窓口と資格は計画資料だけでは足りないため確認してください。"
+          ]
+        },
+        {
+          "id": "naha-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-daily",
+                "okinawa-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "那覇市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "アシスト収集の粗大・多量ごみへの対応は計画上の検討であり、現在の制度を確認してください。"
+          ]
+        },
+        {
+          "id": "naha-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "そ大ごみ・スプリング入り製品収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市の分類によるそ大ごみとスプリング入り製品。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "fees": {
+              "value": "そ大ごみ処理券。スプリング入り製品は別の適正処理困難物処理券。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "application": {
+              "value": "ネットまたはクリーン推進課へ電話で申込。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            },
+            "contact": {
+              "value": "那覇市クリーン推進課 098-889-3567。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "スプリング入り製品の別券と通常そ大ごみの収集位置を確認してください。"
+          ]
+        },
+        {
+          "id": "naha-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "ごみの処理施設への持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみと資源化物は品目別の施設へ搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "家庭ごみは10kgまでごとに60円。資源化物は無料。スプリング入り製品は別料金。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "application": {
+              "value": "品目別の持込先と事前受付の要否を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "okinawa-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "那覇・南風原クリーンセンターの事前受付とエコマール那覇の品目を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "那覇市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "okinawa-daily",
+      "url": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/003/020/5torikumi.pdf",
+      "title": "daily",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/003/020/5torikumi.pdf",
+      "retrieved_at": "2026-10-18T19:18:49+09:00",
+      "content_type": "application/pdf",
+      "raw_file": "naha/official/daily.pdf",
+      "text_file": "naha/official/daily.txt",
+      "raw_sha256": "19fb5581f2ac86417222e7c80f6110e8b6807f8318cfb56d5412b76855366d12",
+      "text_sha256": "f81593f2b2ad21ffbdac99f6469fb07f9e1411388d029bd521bb23378c3225d8",
+      "last_modified_header": "Mon, 07 Jul 2025 08:34:56 GMT"
+    },
+    {
+      "id": "okinawa-dropoff",
+      "url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007547/1001949.html",
+      "title": "ごみの持ち込みと受け入れ施設一覧｜那覇市公式ホームページ",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-12-24",
+      "http_status": 200,
+      "final_url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007547/1001949.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html",
+      "raw_file": "naha/official/dropoff.html.source",
+      "text_file": "naha/official/dropoff.txt",
+      "raw_sha256": "5867edfcd4bdfe8180ba5f9c2ce76952fe430b43428fc7b8336ee12f3d6828cb",
+      "text_sha256": "b2790b33abdcf7e6e8472a679a92877479f321207ba7872c7047900fb22990bf",
+      "last_modified_header": "Sun, 18 Oct 2026 10:00:37 GMT"
+    },
+    {
+      "id": "okinawa-regular",
+      "url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007525/1001941.html",
+      "title": "そ大ごみ・スプリング入り製品｜那覇市公式ホームページ",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-05-19",
+      "http_status": 200,
+      "final_url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007525/1001941.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html",
+      "raw_file": "naha/official/regular.html.source",
+      "text_file": "naha/official/regular.txt",
+      "raw_sha256": "b633adc64b13b0077e95435eab7f9c70a4cc7961deaa5162d669e24f689e4b19",
+      "text_sha256": "96a70bd43f3b0797645190202430bb5683c06b33f743d3f6e857e38f7ea0a318",
+      "last_modified_header": "Sun, 18 Oct 2026 10:00:37 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

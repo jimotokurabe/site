@@ -1,0 +1,514 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "fukui:fukui",
+  "slug": "fukui",
+  "first_input_sha256": "abcc12784121913741235edfbbeb46983fda0f0fc70c0fea5814030bc5930104",
+  "accepted_input_sha256": "c0636379323d2363fa94b62e2b193d0c1dc097051f8e581d464e1f7a3e3fed71",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 7,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "えがおでサポートの要綱にごみ搬出が明記。ただし屋内からの具体経路は未記載とし、親族支援可否を明示条件扱いしない。燃やせる家庭ごみ50kgまで無料を補正。",
+  "corrections_file": "fukui/corrections.json",
+  "correction_count": 3,
+  "field_inventory": [
+    {
+      "service_id": "fukui-daily",
+      "field": "waste_scope",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "ca8d3226ead94d4a052c9a5c2267723482f26e31e5c7f7b89cdf66220180b565"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "collection_location",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "9026e961584640d5d2f197ddffe246d383a23e558ae004c9d54614cd4ce06d01"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "indoor_carry",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "496067ccd0df8f7d82ee474e46e87d189136bdb7958eac36bb56c54cda6115c4"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "c35b8542d143d08c4bcbf2484f68e378d4f6f17ec0a17cd069f185da45019b00"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "551cbdabb00119876723e8dd27df5d41e55295827d272e589cf4d98e081a36d0"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "9670e259d1c9f18bc27474d3703103ecf1ba7bf3b95a78aa1b79d221b3d9e5c4"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "7e4ecaf5189afb55b33f2400b906476a813fc34d6816facc271b257d2a4f1854"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "ba88eadf4b5433c34d9af8c34f90b8d99aeda90e18c03c4b0638262589b39e72"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "fukui-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-egao-rules"
+      ],
+      "value_sha256": "c3df1993fc2d076a362732f4ad205ddb7ae780eba3639957055c5f8419725dcb"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "fukui-daily",
+        "fukui-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "2a037e8070e8740bc3e496fe0eb54524af8b868a8f4779a901f3bcc508d84067"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "297bd91ef6743bf8901bfa129e4ac21109bc9fa24cf3328159cd40492126d4b5"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "0f0bae90da1d8324d140528784cac8f8cabbf4cdf4b9c846a2b805973523062a"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "bf65fbf7ced76a67d6c6682e1496b38c4e1a0279e5934629ee00377ba2290399"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "df5162e08f2b2e8472f26f9e530721df59f510db0acf0c7c97e8d83b5157d1a1"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "68acd085e64469af617bc3904cef566c695aa2bdfdc2322759861555f64e284d"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "39b970b95fbe7ecb5f26df794c880828a3bd4c0ee1be509e5be251f42c312561"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "attendance",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "09a53890bbc6af5c70654b0c9712179f428472c3de4fdac23a91689739b054ed"
+    },
+    {
+      "service_id": "fukui-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-bulky",
+        "fukui-guide"
+      ],
+      "value_sha256": "ff13a6ccdc547f04f651a4442d9b976693eb61c75515769b43298e21d84768c1"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "d79bd5d84d59f93ecd032eede57a75a8897ce287a3a2a05035cd1ee23685dbc7"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "ad5d6a0f9fe6d2d184574e5989264121a2d2614cdbd33c5fa8676d69ea887511"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "eligibility",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "b525f1390fabdf57a40bb16aba475f8ae91b95e777bd244f0d8166a237183aa3"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "e7368a3256de162f9d65ff4c327aa626285d140aab767c4cb8920dc569eeaa22"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "7c2859133ceb9798b857117210824eae70f782b47438abdacc95ec26a74ef1c4"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "f3c8131649ad85b2658cf4b5baff76e2ca986f5b903e146fc5cfda353d671db6"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "fukui-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "fukui-self-details",
+        "fukui-self-fee",
+        "fukui-guide"
+      ],
+      "value_sha256": "ff13a6ccdc547f04f651a4442d9b976693eb61c75515769b43298e21d84768c1"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "fukui-bulky",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/sodai_kobetu.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-04-01",
+      "raw_file": "fukui/official/fukui-bulky.html.source",
+      "raw_sha256": "790339577e1f2ff010920017b11843d85d850bcf1f1083f07159236c15ff8e08",
+      "text_file": "fukui/official/fukui-bulky.txt",
+      "text_sha256": "1e54acad9aeceb0b2b5b4f2caeaad9a35331527d3b2883708224b5a6d86b132d"
+    },
+    {
+      "id": "fukui-daily",
+      "url": "https://www.city.fukui.lg.jp/fukusi/kfukusi/ssien/egao.html",
+      "retrieved_at": "2026-10-18T19:24:08+09:00",
+      "source_updated": "2009-01-30",
+      "raw_file": "fukui/official/fukui-daily.html.source",
+      "raw_sha256": "82c18bb38af91dbbdf3d8ac1263bfb0016c1ad2be2ba1cadc66c13a6a973c024",
+      "text_file": "fukui/official/fukui-daily.txt",
+      "text_sha256": "eca8515294a946aaccd4ede39bfd715e60898468818fabd11ddf8aeac3c1675d"
+    },
+    {
+      "id": "fukui-egao-rules",
+      "url": "https://www.city.fukui.lg.jp/fukusi/kfukusi/ssien/egao_d/fil/egao.pdf",
+      "retrieved_at": "2026-10-18T19:24:03+09:00",
+      "source_updated": null,
+      "raw_file": "fukui/official/fukui-egao-rules.pdf.source",
+      "raw_sha256": "8d17d718b71ccda55f4250b66027ca1a7212eaa1d5fe1ae5bde7d9209470b81e",
+      "text_file": "fukui/official/fukui-egao-rules.txt",
+      "text_sha256": "b3be416c5f349d1a18b11b9108d27d35bb685f7e61cc32aecfdc248433771d93"
+    },
+    {
+      "id": "fukui-guide",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/p073206.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-09-01",
+      "raw_file": "fukui/official/fukui-guide.html.source",
+      "raw_sha256": "a6c1fab3c2cf1a09906f93bbfdf9df74e45bcc891c78a576bfd78a3ef246ea7e",
+      "text_file": "fukui/official/fukui-guide.txt",
+      "text_sha256": "87f3761da113d0ff41ab8d510bc5bcfe5a866b52b6b7ebbdab134e1ba0ba04d4"
+    },
+    {
+      "id": "fukui-self",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/gomimochikomi/index.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": null,
+      "raw_file": "fukui/official/fukui-self.html.source",
+      "raw_sha256": "f417c5a5412e6a103e9eefaa861dfd3a783d90e908e954bb51519b1ccba6692c",
+      "text_file": "fukui/official/fukui-self.txt",
+      "text_sha256": "0c3a76963b99fa65c22ed75df2999588b0b8d730e1881fb2579ef4f78b79aa73"
+    },
+    {
+      "id": "fukui-self-details",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/gomimochikomi/sodai-koshino_shimizu.html",
+      "retrieved_at": "2026-10-18T19:24:08+09:00",
+      "source_updated": "2026-04-01",
+      "raw_file": "fukui/official/fukui-self-details.html.source",
+      "raw_sha256": "7bf46a16d9c4201d20e0edf6f7bbe3e6fd57fe71449b20bbbc52ad6bad8391e2",
+      "text_file": "fukui/official/fukui-self-details.txt",
+      "text_sha256": "d0113e05f2a20ecb2bdbb9bf2f9a9962eed20e39e63e5d3aa9b6b43a1083846a"
+    },
+    {
+      "id": "fukui-self-fee",
+      "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/syoriryou.html",
+      "retrieved_at": "2026-10-18T19:24:08+09:00",
+      "source_updated": "2026-04-01",
+      "raw_file": "fukui/official/fukui-self-fee.html.source",
+      "raw_sha256": "b70b1f744c9e8336b34386646f33615f702760fb72d3a8decdc86872a9ab6fca",
+      "text_file": "fukui/official/fukui-self-fee.txt",
+      "text_sha256": "f729b40824b8c778d5947f210aba02d43913caf00dfe1cd11e9b830a5c8d5f0f"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "2009年表示ページと改正履歴のある要綱は2026年取得時も公開中だが、窓口で現行運用を確認。粗大屋内搬出の可否、家族自己搬入条件も未確認。",
+    "2009年更新表示のページと改正履歴のある要綱は2026年10月18日時点で市サイトから取得できた。えがおでサポートの実際の提供範囲・現行運用は掲載前の窓口質問として保持。今回の未解決事項を確定資格・料金として掲載しない。"
+  ]
+}

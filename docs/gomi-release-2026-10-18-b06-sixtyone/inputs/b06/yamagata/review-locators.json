@@ -1,0 +1,91 @@
+[
+  {
+    "service_id": "yamagata-daily",
+    "field": "contact",
+    "source_id": "yamagata-daily",
+    "matches": [
+      {
+        "line": 86,
+        "excerpt": "023-641-1212（代表）"
+      }
+    ]
+  },
+  {
+    "service_id": "yamagata-regular",
+    "field": "waste_scope",
+    "source_id": "yamagata-bulky",
+    "matches": [
+      {
+        "line": 1,
+        "excerpt": "粗大ごみ収集オンライン受付"
+      },
+      {
+        "line": 6,
+        "excerpt": "令和8年3月より粗大ごみ収集のオンライン受付がはじまりました"
+      }
+    ]
+  },
+  {
+    "service_id": "yamagata-regular",
+    "field": "collection_location",
+    "source_id": "yamagata-bulky",
+    "matches": [
+      {
+        "line": 56,
+        "excerpt": "粗大ごみは、ご自宅敷地内道路際より収集します。集積所からは収集しませんのでご注意ください。"
+      },
+      {
+        "line": 57,
+        "excerpt": "指定された収集日の朝8時までに、自宅敷地内道路際に出してください。集合（共同）住宅の場合は、道路に面した1階の分かりやすい場所に出してください。"
+      }
+    ]
+  },
+  {
+    "service_id": "yamagata-regular",
+    "field": "limits",
+    "source_id": "yamagata-bulky",
+    "matches": [
+      {
+        "line": 24,
+        "excerpt": "収集日は地域ごと指定されます。"
+      }
+    ]
+  },
+  {
+    "service_id": "yamagata-regular",
+    "field": "contact",
+    "source_id": "yamagata-bulky",
+    "matches": [
+      {
+        "line": 22,
+        "excerpt": "※申込画面の品目欄に未掲載の品目については、粗大ごみ収集受付センター（023-686-5565）へ電話でお申込みください。"
+      },
+      {
+        "line": 28,
+        "excerpt": "受付内容に確認が必要な場合は、粗大ごみ収集受付センターより電話で確認させていただく場合があります。"
+      }
+    ]
+  },
+  {
+    "service_id": "yamagata-self",
+    "field": "fees",
+    "source_id": "yamagata-self",
+    "matches": [
+      {
+        "line": 30,
+        "excerpt": "（古紙類は無料）"
+      }
+    ]
+  },
+  {
+    "service_id": "yamagata-self",
+    "field": "contact",
+    "source_id": "yamagata-self",
+    "matches": [
+      {
+        "line": 64,
+        "excerpt": "023-641-1212（代表）"
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "group": "central",
+  "checked": "2026-10-18",
+  "publication_status": "research_only",
+  "human_reviewed": false,
+  "independent_source_reviewed": false,
+  "not_for_publication": true,
+  "prepared": [
+    {
+      "slug": "nagano",
+      "sha256": "8e77467f49f66bfebb77d67e3b567e8dcbf6a214765ea8973ecac4110ffee368"
+    },
+    {
+      "slug": "gifu",
+      "sha256": "4eef8c142886b99e5d1004d19f93893ff1f8fa5b99fad90d7f1376dc789e83b3"
+    },
+    {
+      "slug": "shizuoka",
+      "sha256": "3233de63d7c5944599a8cae41d895d57a4d9d96fbec716cf27aa757c1c015494"
+    },
+    {
+      "slug": "tsu",
+      "sha256": "4b5258f99bb8831de7c2048df94bc5595677c7c1ab8c6b7be0fa2b4f76614707"
+    },
+    {
+      "slug": "otsu",
+      "sha256": "79b07c33ecaa65e3f394d632b49fd82e8e2397eef84bf8a18129aa5332d176f6"
+    },
+    {
+      "slug": "wakayama",
+      "sha256": "0c755055e79543b3d7d017ea4a82fd48efe99e52e202d95f5d6149e06104a5bb"
+    },
+    {
+      "slug": "tottori",
+      "sha256": "0067c4b4393f2fc8080bd0ccaa38d75ac3fa61dd751bbfea3552df48c4496ee9"
+    },
+    {
+      "slug": "matsue",
+      "sha256": "38066e46542ac489f6ecac52e8e5e5897e3d99161b506a978f97920b5eb1d4fc"
+    }
+  ],
+  "held": [
+    {
+      "slug": "kofu",
+      "sha256": "5336b8a64e61b60d02047244a6fe0560a2631e8ca1832fd7dca070f2bbbab512",
+      "reason": "ふれあい収集の現行資格を示す公式原典が取得できない。検索掲載の旧PDFはHTTP 404。"
+    },
+    {
+      "slug": "nara",
+      "sha256": "e7406b67f4a497e17145499e7b9a127fbaa3525eaf7da6483cebfb54ced7cbd7",
+      "reason": "大型ごみ屋内搬出支援の言及が旧広報にあるが、現行の公式申込条件が未確認。"
+    }
+  ],
+  "consumption": {
+    "city_count": 10,
+    "official_sources_retrieved": 38,
+    "http_200_count": 38,
+    "original_bytes_total": 36362531,
+    "search_api_tokens": null,
+    "model_tokens": null,
+    "credits": null,
+    "currency_cost": null,
+    "cost_note": "課金量・モデル別使用量は計測できず推測しない。"
+  }
+}

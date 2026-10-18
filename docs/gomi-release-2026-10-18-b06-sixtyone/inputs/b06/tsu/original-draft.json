@@ -1,0 +1,424 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "mie:tsu",
+      "name": "津市",
+      "kana": "つし",
+      "pref_name": "三重県",
+      "selection_reason": "日常戸別と大型家具等支援の対象要件が異なり、通常の粗大ごみ区分はない。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "tsu-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "定期収集の燃やせるごみ、燃やせるごみ以外。専用ふた付き容器に入れる。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅敷地内の専用容器から戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "敷地内に置いた容器から収集。室内からの搬出は掲載ページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "津市内居住",
+                  "ホームヘルパー利用または市職員が認めるごみ出し困難な状況",
+                  "要介護2～5、肢体不自由2級以上、視覚障害2級以上のいずれか",
+                  "単身または該当者だけの世帯（19歳未満・高校卒業までの子どもは除外扱い）"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族等の支援の扱いは取得ページでは明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "limits": {
+              "value": "燃やせるごみは週1回、それ以外は月1回。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "application": {
+              "value": "申請書、承諾書、介護・障害認定資料、ホームヘルパー利用資料等を提出。代理申請は委任状。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            },
+            "contact": {
+              "value": "津市の担当窓口：059-229-3258。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "tsu-carry",
+          "kind": "bulky_carry_support",
+          "name": "大型家具などのごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "タンス・棚・ベッド等、1辺または直径が1m以上2m以下で安全に収集・運搬できる大型家具。津市には粗大ごみの分別区分がない。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry-guide",
+                "tsu-furniture"
+              ]
+            },
+            "collection_location": {
+              "value": "市職員が自宅まで来て大型家具等を収集。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "要支援・要介護認定者、障がい者、75歳以上の人のみで構成され、大型家具を一時集積所へ出せない世帯。対象者以外の同居者がいる世帯、施設入所者、空き家は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry",
+                "tsu-carry-guide"
+              ]
+            },
+            "family_help": {
+              "value": "身近な親族・同居人・近隣から支援が得られる場合はその支援を優先。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry-guide"
+              ]
+            },
+            "fees": {
+              "value": "支援収集は無料と案内。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry"
+              ]
+            },
+            "limits": {
+              "value": "1世帯1回3個まで、同一年度内2回まで。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry-guide"
+              ]
+            },
+            "application": {
+              "value": "電話または窓口で申し込み、対象者・家具を確認後に収集日時を調整。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-carry-guide"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-carry"
+              ]
+            },
+            "contact": {
+              "value": "担当窓口は出典に記載。連絡前に公式ページを確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "tsu-carry"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "tsu-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "津市には粗大ごみの分別区分がない。大型家具は解体して材質別の区分で排出。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "collection_location": {
+              "value": "解体後、該当区分の収集日に一時集積所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            },
+            "contact": {
+              "value": "津市の粗大ごみ担当窓口：059-229-3258。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-furniture"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "tsu-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "collection_location": {
+              "value": "津市の品目別ごみ処理施設へ直接搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "eligibility": {
+              "value": "津市内の本人の家庭ごみ。原則、排出者本人の搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "family_help": {
+              "value": "本人以外の搬入は原則不可。許可業者への依頼は別。本人運転の要否は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "fees": {
+              "value": "直接搬入は有料・現金のみ。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tsu-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "tsu-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "津市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tsu-daily",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1012635/1001600.html",
+      "title": "戸別収集でごみ出し困難者を支援します｜津市公式ウェブサイト－Official Website of Tsu City",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "tsu-furniture",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1001597/1013452.html",
+      "title": "大型家具｜津市公式ウェブサイト－Official Website of Tsu City",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "tsu-self",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1001670/1001674.html",
+      "title": "ごみ処理施設への持ち込み｜津市公式ウェブサイト－Official Website of Tsu City",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "tsu-carry",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1012635/1001603.html",
+      "title": "大型家具などのごみ出し支援｜津市公式ウェブサイト－Official Website of Tsu City",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-05-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "tsu-carry-guide",
+      "url": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/001/603/oogatakagu.pdf",
+      "title": "大型家具等のごみ出し支援",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "津市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "b06-independent-review-summary-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "ai_reviewed_set_by_parent_only": true,
+  "status": "accepted_for_preview_with_questions",
+  "scope": {
+    "prepared_cities": 12,
+    "accepted_cities": 12,
+    "held_cities": 0,
+    "service_routes": 48,
+    "field_records": 480,
+    "saved_official_documents": 47,
+    "directions": [
+      "候補の480フィールド・質問→保存原典",
+      "保存原典→候補のAND/OR資格・世帯条件・例外・地区除外・料金・予約・窓口・搬出/搬入の区別"
+    ],
+    "source_retrieval": "2026-10-18 saved official snapshots; limited current official-domain searches for Akita/Toyama and Fukui age caveat",
+    "existing_36_published_regions_reread": false,
+    "external_publication": false
+  },
+  "source_group_file": "group-east.json",
+  "source_group_sha256": "2fd258aa14144e1d64c1a50064da22d4100c2cb72959997b231466e812339940",
+  "accepted": [
+    {
+      "slug": "aomori",
+      "sha256": "21f6169ded1388db85428e9650478e914fc891beccd5ec23fd6df62d0873c7bd",
+      "review_file": "review-east/aomori.review.json",
+      "review_sha256": "f4470e297c066bd40e095fe99e51dec8521cbe571185738bcf864d773ee46324"
+    },
+    {
+      "slug": "morioka",
+      "sha256": "d0430319f6d4a1c69a76fb94e2979017167ae2cd82e874baf86dda11943d43bf",
+      "review_file": "review-east/morioka.review.json",
+      "review_sha256": "6d2c5cce4cf27929aab3a8ea341aa91766820216e5c0a883ea646e82fadb8b9f"
+    },
+    {
+      "slug": "akita",
+      "sha256": "92646d01b7c1c7365e62370c3998abbbe28cbd80c7188513afd7205f9fa0fa76",
+      "review_file": "review-east/akita.review.json",
+      "review_sha256": "18c661e56ca617dcc2642a1acbff87c1202408c27b4fa69b319a98724fe2f9cb"
+    },
+    {
+      "slug": "yamagata",
+      "sha256": "fadd34067b9d158fe47120d1fb634f02e0e9605b918ef8437865d9e2ce28c7ba",
+      "review_file": "review-east/yamagata.review.json",
+      "review_sha256": "c45fdc5f77614546af260e18758a1b9172288f55830635e4f7445c48b81f1825"
+    },
+    {
+      "slug": "fukushima",
+      "sha256": "9c78f56cc59c3a988df02f9095b98f0cc836cd8bc08849e54f50cb63d3bead33",
+      "review_file": "review-east/fukushima.review.json",
+      "review_sha256": "6fd415746ec2bc3b734bd518753dc8bf021859a66daab82e98b84de74d3b95b6"
+    },
+    {
+      "slug": "mito",
+      "sha256": "466e71514e11c3c7470772f642fcabb0b349acd9cb8ded01ee5f98ac7aae57f1",
+      "review_file": "review-east/mito.review.json",
+      "review_sha256": "fd95d3b915a878440876d20f9900c6686514abd2cf458fe5e2a4b741232ffc0a"
+    },
+    {
+      "slug": "utsunomiya",
+      "sha256": "189112f0a0a3f4503ed40064c64880d48925f50edf3a0a7893abb88fe8652f43",
+      "review_file": "review-east/utsunomiya.review.json",
+      "review_sha256": "90e70f0528fb67385cdd3bba0e8425c9ff8024ba468b12c9b14774343b5a8680"
+    },
+    {
+      "slug": "maebashi",
+      "sha256": "4359621bedde230ebf5c29f1b571e722323b098d563087e29e61b6f808a88a05",
+      "review_file": "review-east/maebashi.review.json",
+      "review_sha256": "d452334003797ff82d2d94f95640eb5b012e575a57c928fcafb7b0774430c7eb"
+    },
+    {
+      "slug": "nagaoka",
+      "sha256": "4558416b1f2364a8094f7f6d5454eb93ebceffd42de543084d522daaa8d1d4b1",
+      "review_file": "review-east/nagaoka.review.json",
+      "review_sha256": "188d1a84b72f134460adec2b2b682a1b2410130aefd5b384509a94bc09d8c339"
+    },
+    {
+      "slug": "toyama",
+      "sha256": "dbc2d6429bd8ac584b00908c23e89e757bc9b557f77856896437067b05a40ee7",
+      "review_file": "review-east/toyama.review.json",
+      "review_sha256": "be4386650c4e418ef0453bab45dcfdd20585014d8a7141a9b64aebdca8aa5c93"
+    },
+    {
+      "slug": "kanazawa",
+      "sha256": "768c72a65a416f69e07fa9886a14a3504d968f6f6bff9e47eb09e5f94e192733",
+      "review_file": "review-east/kanazawa.review.json",
+      "review_sha256": "99e764a422eb489bcf1f2700fb08b1f8c09b5671c17f0b22cf2a57ab0ff309f9"
+    },
+    {
+      "slug": "fukui",
+      "sha256": "c0636379323d2363fa94b62e2b193d0c1dc097051f8e581d464e1f7a3e3fed71",
+      "review_file": "review-east/fukui.review.json",
+      "review_sha256": "d80c8a3bdd28c0b5e99480cb9198ccfa2a5482dc8be4e2e157ad0f53e1ec645b"
+    }
+  ],
+  "held": [],
+  "remaining_required_findings": [
+    "全市の窓口照会および人手確認は未実施。原典にない条件を推定せず、未記載・未発見を保持。",
+    "秋田・富山の日常支援は今回の範囲では未発見であり、制度不存在を断定しない。富山の2023年市回答の現行適用は窓口確認。",
+    "福井の2009年表示ページと改正履歴のある要綱は2026年取得時に公開中だが、具体運用の現行性を窓口確認。"
+  ],
+  "consumption": {
+    "saved_official_documents_verified": 47,
+    "candidate_fields_reviewed": 480,
+    "corrected_cities": 7,
+    "token_usage": "not_available",
+    "web_search_queries": "limited; Akita/Toyama/Fukui current-status checks; not a nationwide sweep"
+  }
+}

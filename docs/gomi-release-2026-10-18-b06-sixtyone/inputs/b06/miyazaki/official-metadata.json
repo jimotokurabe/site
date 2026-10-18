@@ -1,0 +1,53 @@
+[
+  {
+    "id": "miyazaki-daily",
+    "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/collection_point/39752.html",
+    "title": "家庭ごみ集積所の設置等に関する届出について -  宮崎市 [Miyazaki City]",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.miyazaki.miyazaki.jp/life/trash/collection_point/39752.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html; charset=UTF-8",
+    "raw_file": "miyazaki/official/daily.html.source",
+    "text_file": "miyazaki/official/daily.txt",
+    "raw_sha256": "7fd87330a617989f7002ca7ddfd016671487bad101dca97faa834f45c5fc29ab",
+    "text_sha256": "328e85af794c86657e897808a6428c75224d6024f6b461a42babcd5a66a05c2c",
+    "last_modified_header": "Sun, 18 Oct 2026 07:27:24 GMT"
+  },
+  {
+    "id": "miyazaki-dropoff",
+    "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/bring/405845.html",
+    "title": "生活系廃棄物（家庭ごみ）の持ち込みについて -  宮崎市 [Miyazaki City]",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.miyazaki.miyazaki.jp/life/trash/bring/405845.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html; charset=UTF-8",
+    "raw_file": "miyazaki/official/dropoff.html.source",
+    "text_file": "miyazaki/official/dropoff.txt",
+    "raw_sha256": "5d1887f1edcfb34de13750f0fdbc5b5aada6bb20c49378a09c38652d7160a248",
+    "text_sha256": "d3a741e61a41ce10dbc2feb9a2fdf8abd3cc0e621c9617a134c6c2a7cb7608ca",
+    "last_modified_header": "Sun, 18 Oct 2026 07:28:14 GMT"
+  },
+  {
+    "id": "miyazaki-regular",
+    "url": "https://www.city.miyazaki.miyazaki.jp/life/trash/fractionation/34204.html",
+    "title": "粗大ごみの出し方 -  宮崎市 [Miyazaki City]",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.miyazaki.miyazaki.jp/life/trash/fractionation/34204.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html; charset=UTF-8",
+    "raw_file": "miyazaki/official/regular.html.source",
+    "text_file": "miyazaki/official/regular.txt",
+    "raw_sha256": "07534dc23f2928f6c20ce6b3a6a7da542a821c577f705d6ff79d4c6fc704315e",
+    "text_sha256": "b65d1dd113bc95057abb8e70eb75bf8e07a852c7d8c54a991590e57611875906",
+    "last_modified_header": "Sun, 18 Oct 2026 07:28:39 GMT"
+  }
+]

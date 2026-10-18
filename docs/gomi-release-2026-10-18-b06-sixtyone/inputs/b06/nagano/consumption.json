@@ -1,0 +1,31 @@
+{
+  "city": "nagano:nagano",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "長野市 ごみ出し支援 対象 申込",
+    "長野市 粗大ごみ 収集 搬出",
+    "長野市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 4,
+  "http_200_count": 4,
+  "http_non_200_count": 0,
+  "original_bytes_total": 89160,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "nagano-regular",
+    "nagano-pickup",
+    "nagano-self",
+    "nagano-size"
+  ],
+  "new_city_sha256": "8e77467f49f66bfebb77d67e3b567e8dcbf6a214765ea8973ecac4110ffee368",
+  "source_hash_verification": "passed"
+}

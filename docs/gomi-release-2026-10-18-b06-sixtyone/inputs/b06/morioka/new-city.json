@@ -1,0 +1,423 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "iwate:morioka",
+      "name": "盛岡市",
+      "kana": "もりおかし",
+      "pref_name": "岩手県",
+      "selection_reason": "盛岡市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "morioka-daily",
+          "kind": "daily_support",
+          "name": "ごみ出しサポート事業",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "分別した可燃・不燃・資源等を週1回収集。粗大ごみを含むかは記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先の利用者が用意するふた付きバケツ。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "盛岡地域（都南・玉山除く）で集積所への搬出が困難な、65歳以上単身、身体障がいのある単身、またはこれらに準ずる世帯。家族・近隣がごみ出しを手伝っている世帯は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "family_help": {
+              "value": "家族や近所がごみ出しを手伝う世帯は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "fees": {
+              "value": "無料。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "limits": {
+              "value": "週1回。都南・玉山地域は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "application": {
+              "value": "収集センターへ電話等で相談。訪問等で状況を確認し、決定後に開始日を文書通知。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "attendance": {
+              "value": "ごみが出ていない場合は呼び鈴を鳴らすことがある。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            },
+            "contact": {
+              "value": "盛岡市収集センター 019-603-8030。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "都南・玉山在住のごみ出し困難者には同様の訪問収集があるか。",
+            "2026年10月の粗大ごみ改定後、対象品目別の処理券額と搬入料金を確認。"
+          ]
+        },
+        {
+          "id": "morioka-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "morioka-daily",
+                "morioka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "都南・玉山在住のごみ出し困難者には同様の訪問収集があるか。",
+            "2026年10月の粗大ごみ改定後、対象品目別の処理券額と搬入料金を確認。",
+            "盛岡市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "morioka-regular",
+          "kind": "regular_bulky",
+          "name": "盛岡地域の粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "盛岡地域の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "指定場所へ出す。具体位置は予約時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "盛岡地域の家庭。都南・玉山は別の収集体系。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目・寸法による有料処理券。2026年10月1日に一部品目の料金変更。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "電話予約1回3点まで。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "application": {
+              "value": "収集センター 019-603-8030へ電話予約。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "盛岡市収集センター 019-603-8030。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "都南・玉山在住のごみ出し困難者には同様の訪問収集があるか。",
+            "2026年10月の粗大ごみ改定後、対象品目別の処理券額と搬入料金を確認。"
+          ]
+        },
+        {
+          "id": "morioka-self",
+          "kind": "self_dropoff",
+          "name": "多量ごみ・粗大ごみの直接搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "盛岡地域は可燃をクリーンセンター、不燃・粗大・一部資源をリサイクルセンターへ。都南・玉山は別施設。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "居住地域と品目に応じた指定処理施設。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "盛岡地域住民は盛岡地域の施設。都南・玉山住民は各地域指定施設へ。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "盛岡地域は2026年4月から10kgごと50円。2026年10月から特定品目は別料金。都南・玉山は施設別料金。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "都南地域の組合清掃センターは予約制。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "application": {
+              "value": "都南地域は組合サイトまたは019-613-3501で予約。盛岡地域の各施設への事前連絡条件は要確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "盛岡地域:クリーンセンター019-663-7153、リサイクルセンター019-685-2151。都南:組合019-697-3835。",
+              "state": "explicit",
+              "source_ids": [
+                "morioka-self",
+                "morioka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "都南・玉山在住のごみ出し困難者には同様の訪問収集があるか。",
+            "2026年10月の粗大ごみ改定後、対象品目別の処理券額と搬入料金を確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "都南・玉山在住のごみ出し困難者には同様の訪問収集があるか。",
+        "2026年10月の粗大ごみ改定後、対象品目別の処理券額と搬入料金を確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "morioka-bulky",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001153.html",
+      "title": "ごみの分け方・出し方(盛岡地域)｜盛岡市公式ホームページ",
+      "source_updated": "2026-09-25",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "morioka-daily",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001141.html",
+      "title": "ごみ出しサポート事業｜盛岡市公式ホームページ",
+      "source_updated": "2020-12-25",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "morioka-self",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1022139.html",
+      "title": "引っ越しなどで出る多量のごみの出し方｜盛岡市公式ホームページ",
+      "source_updated": "2026-01-23",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "盛岡市の保存済み公式ページ3件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

@@ -1,0 +1,406 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "shimane:matsue",
+      "name": "松江市",
+      "kana": "まつえし",
+      "pref_name": "島根県",
+      "selection_reason": "日常は個別事情と道路条件を考慮する戸別変更。通常粗大は年4回・1回2個の上限。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "matsue-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "親族・支援者・自治会の協力が得られない場合、状況と道路環境を考慮して戸別収集への変更等を個別検討。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "高齢・障害等で集積所への排出が困難で、親族・支援者・自治会の協力を得られない場合に個別検討。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・支援者・自治会から支援を得られないことを確認。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "application": {
+              "value": "リサイクル都市推進課0852-55-5281に事情と道路状況を相談。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            },
+            "contact": {
+              "value": "松江市の担当窓口：0852-55-5281。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "matsue-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "matsue-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市が回収対象とする粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約時に案内される場所へ収集日8時30分までに出す。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常収集では宅内作業は手伝わない。収集日までに玄関外へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "fees": {
+              "value": "1個763円の粗大ごみ処理手数料券。予約後に購入。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "limits": {
+              "value": "年度内4回・1回2個まで。最大辺200cm超、三辺計380cm超、おおむね50kg超などは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターに申し込み、品目・日・場所を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 0852-27-1570。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "matsue-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "collection_location": {
+              "value": "宍道リサイクルセンター、美保関不燃物処理場へ自己搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "場内の荷下ろしは搬入者自身が行う。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "limits": {
+              "value": "施設ごとの受入基準外のものは持ち帰り。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "matsue-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "matsue-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "松江市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "matsue-daily",
+      "url": "https://www.city.matsue.lg.jp/gyoseijoho/koho_kocho/kouchou/6/1/R6mayor/22925.html",
+      "title": "ごみの回収について（受付日：2025年2月25日）／松江市ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-05-08",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "matsue-regular",
+      "url": "https://www.city.matsue.lg.jp/soshikikarasagasu/kankyoenergybu_recycletoshisuishinka/5/5-2/244.html",
+      "title": "粗大ごみの回収申し込み／松江市ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-07-01",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "matsue-self",
+      "url": "https://www.city.matsue.lg.jp/kurashi_tetsuzuki/gomi_kankyo_pet/6/22147.html",
+      "title": "宍道リサイクルセンター、美保関不燃物処理場への粗大ごみの自己搬入について／松江市ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-05-20",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "matsue-self-burn",
+      "url": "https://ecoclean.city.matsue.lg.jp/disposal/",
+      "title": "家庭ごみの自己搬入について | エコクリーン松江",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "松江市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

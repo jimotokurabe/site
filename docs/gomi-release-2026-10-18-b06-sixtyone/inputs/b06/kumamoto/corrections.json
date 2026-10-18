@@ -1,0 +1,59 @@
+[
+  {
+    "service": "kumamoto-regular-bulky",
+    "field": "collection_location",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kumamoto-regular"
+      ]
+    },
+    "after": {
+      "value": "予約時に決めた屋外の場所へ収集日朝8時30分までに排出。収集車が近づけない場合のみ集積所を使うことがある。",
+      "state": "explicit",
+      "source_ids": [
+        "kumamoto-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kumamoto-regular-bulky",
+    "field": "indoor_carry",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kumamoto-regular"
+      ]
+    },
+    "after": {
+      "value": "市は家屋内に入って収集しない。屋外の収集場所まで運び出す必要がある。",
+      "state": "explicit",
+      "source_ids": [
+        "kumamoto-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "kumamoto-regular-bulky",
+    "field": "attendance",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "kumamoto-regular"
+      ]
+    },
+    "after": {
+      "value": "収集時の立会い不要。",
+      "state": "explicit",
+      "source_ids": [
+        "kumamoto-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  }
+]

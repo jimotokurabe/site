@@ -1,0 +1,155 @@
+[
+  {
+    "city": "nagasaki:nagasaki",
+    "service": "nagasaki-daily-support",
+    "service_sha256": "6f5ca6c4fdf557b767113ced7aacad33440a5788e87e93c6a3a3f7dd664ee019",
+    "sources": [
+      {
+        "id": "nagasaki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/nagasaki/official/daily.txt",
+        "lines": [
+          [
+            1,
+            280
+          ]
+        ],
+        "raw_path": "nagasaki/official/daily.html.source",
+        "raw_sha256": "98fbe5714e0644977c0d3e8200807057e6a66fd58249aa238491106589eda19e",
+        "text_sha256": "f697e397214885ca01b6189a27477efa86c744c76d14ba473e07410c45eb3ba1",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "nagasaki:nagasaki",
+    "service": "nagasaki-bulky-carry-support",
+    "service_sha256": "b1dae81c7f0629dea9d4c8f5bb51104aaa5998ba0c8353bc03966559ce7659a0",
+    "sources": [
+      {
+        "id": "nagasaki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/nagasaki/official/daily.txt",
+        "lines": [
+          [
+            1,
+            280
+          ]
+        ],
+        "raw_path": "nagasaki/official/daily.html.source",
+        "raw_sha256": "98fbe5714e0644977c0d3e8200807057e6a66fd58249aa238491106589eda19e",
+        "text_sha256": "f697e397214885ca01b6189a27477efa86c744c76d14ba473e07410c45eb3ba1",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "nagasaki-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/nagasaki/official/regular.txt",
+        "lines": [
+          [
+            1,
+            350
+          ]
+        ],
+        "raw_path": "nagasaki/official/regular.html.source",
+        "raw_sha256": "183fe5f69e9388c60b4881868b83df5f4404cd33e2747f8bf119203e42c201f8",
+        "text_sha256": "238ef4f66cd9a89d9ff1540f4a0818474912ee9689eaa193b9481f253fc5fc3d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "nagasaki:nagasaki",
+    "service": "nagasaki-regular-bulky",
+    "service_sha256": "b295301d240a9529a0eb26657e931d6b52abecc6219614b42bffb216a2dc130b",
+    "sources": [
+      {
+        "id": "nagasaki-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/nagasaki/official/regular.txt",
+        "lines": [
+          [
+            1,
+            350
+          ]
+        ],
+        "raw_path": "nagasaki/official/regular.html.source",
+        "raw_sha256": "183fe5f69e9388c60b4881868b83df5f4404cd33e2747f8bf119203e42c201f8",
+        "text_sha256": "238ef4f66cd9a89d9ff1540f4a0818474912ee9689eaa193b9481f253fc5fc3d",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "nagasaki:nagasaki",
+    "service": "nagasaki-self-dropoff",
+    "service_sha256": "d554678fb9b91754cb2d34e0483e5d518acc1cc27a6a9ffc9745220f8b913cc4",
+    "sources": [
+      {
+        "id": "nagasaki-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/nagasaki/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            362
+          ]
+        ],
+        "raw_path": "nagasaki/official/dropoff.html.source",
+        "raw_sha256": "9183ed637457767886fbd4b75e58486a81dfb53fe635bcbaa8da45665c9f3cba",
+        "text_sha256": "1c294dba627fbde00e64d277b1baeff46d1ea04d919182a7aad0f4647b14f369",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

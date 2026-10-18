@@ -1,0 +1,21 @@
+[
+  {
+    "service": "yamaguchi-daily-support",
+    "field": "indoor_carry",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "yamaguchi-daily"
+      ]
+    },
+    "after": {
+      "value": "玄関先等の屋外に出したごみを収集。屋内からの搬出は案内されていない。",
+      "state": "explicit",
+      "source_ids": [
+        "yamaguchi-daily"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  }
+]

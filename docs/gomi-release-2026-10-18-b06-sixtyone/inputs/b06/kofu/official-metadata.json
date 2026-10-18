@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kofu-guide",
+    "url": "https://www.city.kofu.yamanashi.jp/genryo/documents/2025wakekatadashikata_japanese_1_14.pdf",
+    "title": "kofu-guide",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.kofu.yamanashi.jp/genryo/documents/2025wakekatadashikata_japanese_1_14.pdf",
+    "retrieved_at": "2026-10-18T19:22:17+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "application/pdf",
+    "raw_file": "kofu-guide.pdf.source",
+    "text_file": "kofu-guide.txt",
+    "raw_sha256": "9a08ac479b0f3dce4d5709e1f02cfa6cbf0a5e376084a0b35ab2b37b9937e835",
+    "text_sha256": "3dc22eab33611349572e49ec4002c721d68579f5b3987c979031ae803bf0e285",
+    "bytes": 4232556
+  },
+  {
+    "id": "kofu-self",
+    "url": "https://www.kofu-kyotojimukumiai.jp/citizen/12",
+    "title": "ごみの持ち込みについて | 甲府・峡東地域ごみ処理施設事務組合",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.kofu-kyotojimukumiai.jp/citizen/12",
+    "retrieved_at": "2026-10-18T19:22:17+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html; charset=UTF-8",
+    "raw_file": "kofu-self.html.source",
+    "text_file": "kofu-self.txt",
+    "raw_sha256": "92406d28990e13daefe2c17bbf4799bc826ba3b07934ac16770e0f0f9baa6ac9",
+    "text_sha256": "525519b8a989353835120aa51d84d30593fac422c7cb64b618c78ec42364b1a2",
+    "bytes": 55495
+  },
+  {
+    "id": "kofu-collection-time",
+    "url": "https://www.city.kofu.yamanashi.jp/shushu/faq/kurashi/gomi/shushu/00337.html",
+    "title": "甲府市／収集時間が早かったり遅かったりするのですが、いつ出せばいいですか？",
+    "source_updated": "2025年3月27日",
+    "http_status": 200,
+    "final_url": "https://www.city.kofu.yamanashi.jp/shushu/faq/kurashi/gomi/shushu/00337.html",
+    "retrieved_at": "2026-10-18T19:22:17+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "kofu-collection-time.html.source",
+    "text_file": "kofu-collection-time.txt",
+    "raw_sha256": "d54557e8f8e56e13cd236fda20bf3b230d544cfde02648c717f2ecd7c35a6c5c",
+    "text_sha256": "6ada500efe385e497b867412ca2dd2aca9df1b5f9ac892e4f6dc64fffcc22f18",
+    "bytes": 22303
+  }
+]

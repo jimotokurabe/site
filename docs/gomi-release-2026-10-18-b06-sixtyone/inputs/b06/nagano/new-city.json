@@ -1,0 +1,408 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "nagano:nagano",
+      "name": "長野市",
+      "kana": "ながのし",
+      "pref_name": "長野県",
+      "selection_reason": "通常粗大は集積所排出と一時多量ごみの有償収集を区別。日常支援の専用制度は取得原典で確認できず保留。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "nagano-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "contact": {
+              "value": "日常ごみ出し支援の担当窓口は取得原典から特定できない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "nagano-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "一時的に多量に出る家庭ごみの有償収集はあるが、通常の屋内搬出支援としては未確認。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "collection_location": {
+              "value": "一時多量ごみ収集では玄関先、集合住宅は1階建物出入口の外へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "indoor_carry": {
+              "value": "一時多量ごみ収集は屋内からの運び出しを案内していない。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "fees": {
+              "value": "一時多量ごみ収集は2t車1/4相当12,300円、1/2相当17,700円、1台相当28,100円。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "attendance": {
+              "value": "一時多量ごみ収集は当日立会いが必要。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nagano-pickup"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "nagano-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "指定袋に入らない不燃ごみなどは、粗大ごみシールを貼って集積所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "地区の集積所。品目別の大きさ制限あり。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "fees": {
+              "value": "指定袋・粗大ごみシール購入時にごみ処理手数料を負担。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-regular",
+                "nagano-size"
+              ]
+            },
+            "limits": {
+              "value": "集積所に出せる不燃ごみの大きさは、おおむね1m×50cm×50cm以内。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            },
+            "contact": {
+              "value": "不燃ごみの問い合わせ先：長野市生活環境課 026-224-7635。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "nagano-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "collection_location": {
+              "value": "資源再生センター等、品目別の受入施設へ直接持ち込み。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "搬入施設では原則、搬入者自身で荷下ろしする。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "fees": {
+              "value": "可燃ごみ10kgごと190円、不燃ごみ10kgごと200円、資源物10kgごと30円、剪定枝葉等は無料。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "limits": {
+              "value": "集積所と施設では受け入れる大きさが異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-self",
+                "nagano-size"
+              ]
+            },
+            "application": {
+              "value": "可燃・不燃・資源物の持ち込みでは、受付で搬入申込書に記入する。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagano-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "nagano-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "長野市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nagano-regular",
+      "url": "https://www.city.nagano.nagano.jp/n121500/contents/p006213.html",
+      "title": "不燃ごみ - 長野市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-08-24",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nagano-pickup",
+      "url": "https://www.city.nagano.nagano.jp/n121515/contents/p000533.html",
+      "title": "ごみを取りに来て欲しい - 長野市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-04-01",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nagano-self",
+      "url": "https://www.city.nagano.nagano.jp/n121515/contents/p000605.html",
+      "title": "資源再生センターへのごみの搬入方法及び処理手数料 - 長野市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-05-06",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nagano-size",
+      "url": "https://www.city.nagano.nagano.jp/n121515/contents/p000536.html",
+      "title": "持ち込みごみの大きさ・数量 - 長野市公式ホームページ",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-05-21",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "長野市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

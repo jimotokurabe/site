@@ -1,0 +1,188 @@
+[
+  {
+    "city": "kochi:kochi",
+    "service": "kochi-daily-support",
+    "service_sha256": "1c6b1b5b695cf966f947dde85a5c6f5291ccfd06403a207603f88d5bd80178a1",
+    "sources": [
+      {
+        "id": "kochi-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/daily.txt",
+        "lines": [
+          [
+            1,
+            111
+          ]
+        ],
+        "raw_path": "kochi/official/daily.html.source",
+        "raw_sha256": "876ba6f115abe7789d51b52896f494275315226bb57133b91f65e5bfd25e3f8a",
+        "text_sha256": "9761e59be4ea364c67caecb4e586be3f2f1f485d0f29c641e89baf2fbd27fb03",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kochi:kochi",
+    "service": "kochi-bulky-carry-support",
+    "service_sha256": "9aedddd4cc9d60332e871a82dc75dc39aa172b4d94a8332d62a70e54a135533f",
+    "sources": [
+      {
+        "id": "kochi-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/daily.txt",
+        "lines": [
+          [
+            1,
+            111
+          ]
+        ],
+        "raw_path": "kochi/official/daily.html.source",
+        "raw_sha256": "876ba6f115abe7789d51b52896f494275315226bb57133b91f65e5bfd25e3f8a",
+        "text_sha256": "9761e59be4ea364c67caecb4e586be3f2f1f485d0f29c641e89baf2fbd27fb03",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kochi-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/regular.txt",
+        "lines": [
+          [
+            1,
+            96
+          ]
+        ],
+        "raw_path": "kochi/official/regular.html.source",
+        "raw_sha256": "a910ab5c4f85cee9e844a674e78977f3e5c02707589674f43254cced7a68e07e",
+        "text_sha256": "9c2338f3f6aaae030ac974ff5239e85cf8c9e668d4371b53982f8902c3849b24",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kochi:kochi",
+    "service": "kochi-regular-bulky",
+    "service_sha256": "4e8ca98c536c4826f819afda6c9e358ea5af74864c726faa76a37edceec711e9",
+    "sources": [
+      {
+        "id": "kochi-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/regular.txt",
+        "lines": [
+          [
+            1,
+            96
+          ]
+        ],
+        "raw_path": "kochi/official/regular.html.source",
+        "raw_sha256": "a910ab5c4f85cee9e844a674e78977f3e5c02707589674f43254cced7a68e07e",
+        "text_sha256": "9c2338f3f6aaae030ac974ff5239e85cf8c9e668d4371b53982f8902c3849b24",
+        "field_names": [
+          "waste_scope",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kochi-regular-faq",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/regular-faq.txt",
+        "lines": [
+          [
+            1,
+            413
+          ]
+        ],
+        "raw_path": "kochi/official/regular-faq.html.source",
+        "raw_sha256": "7d2dbe50eb42dd0d37d171a0ef3a420accf77f92e26fdfac4b1189b2d1ee2571",
+        "text_sha256": "efe889494b2794a651e719bb17b037621ce9a4ef8248a6a571e133c86c5c44f1",
+        "field_names": [
+          "collection_location",
+          "limits"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kochi:kochi",
+    "service": "kochi-self-dropoff",
+    "service_sha256": "087e18945ec88735381119e0926ff75a8b88b9dcd21c4add0720da20c1ff2bdc",
+    "sources": [
+      {
+        "id": "kochi-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            231
+          ]
+        ],
+        "raw_path": "kochi/official/dropoff.html.source",
+        "raw_sha256": "afc13475f5ffb826c43261cdf727160d36fd31edf8884e377d685e25790d45a9",
+        "text_sha256": "f796f8402d6b1f4993edb0dfc608bc13a558f43cad2a0c2361f131d4dba7b309",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kochi-family-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kochi/official/family-dropoff.txt",
+        "lines": [
+          [
+            1,
+            416
+          ]
+        ],
+        "raw_path": "kochi/official/family-dropoff.html.source",
+        "raw_sha256": "b8c251688e394603e1142bf848c7bc8fa57ff82b79f87efda3690c980435172f",
+        "text_sha256": "3ad7bc0f118778f6e7b0ed87c7f7433c2e793d221a431849d1afd2abcbd359a5",
+        "field_names": [
+          "family_help",
+          "eligibility"
+        ]
+      }
+    ]
+  }
+]

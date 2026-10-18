@@ -1,0 +1,413 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "yamagata:yamagata",
+      "name": "山形市",
+      "kana": "やまがたし",
+      "pref_name": "山形県",
+      "selection_reason": "山形市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "yamagata-daily",
+          "kind": "daily_support",
+          "name": "ごみ出し支援事業（戸別収集・地域協力者）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "戸別収集は集積所に出せる全種類を週1回。粗大ごみは別途受付センターへの予約が必要。協力者方式は地区の収集曜日に合わせる。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "戸別収集は自宅玄関先の指定場所。集合住宅は所有者・管理者が許可した場所。協力者方式は利用者宅から集積所へ。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "集積所まで出せず親族等の協力がないこと、原則世帯全員が高齢者または障がい者の要件を満たすこと。高齢者は要介護・要支援・総合事業対象者のいずれかAND指定訪問サービスのいずれかを利用。障がい者は指定手帳のいずれかAND居宅介護・重度訪問介護の支給決定。特別事情は相談可能。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族等の協力が得られないことが条件。地域協力者は親族・営利目的の人は登録不可。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "fees": {
+              "value": "支援の利用者負担は当該ページに記載なし。地域協力者へ市が月1000円の協力金。指定袋・粗大ごみ料金は別。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "limits": {
+              "value": "戸別収集と地域協力者方式は併用不可。戸別は週1回。協力者方式の回数は当事者間で相談。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "application": {
+              "value": "申請書を循環型社会推進課へ提出、審査後に決定通知。状況確認欄はケアマネジャー記入が必要。代理提出可。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            },
+            "contact": {
+              "value": "山形市循環型社会推進課 023-641-1212 内線694・695。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の認定はあるが指定訪問サービスを未利用の場合、特別事情で対象になる余地を確認。",
+            "粗大ごみを戸別支援に含める場合も023-686-5565への別予約が必要か、搬出位置と合わせて確認。"
+          ]
+        },
+        {
+          "id": "yamagata-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamagata-daily",
+                "yamagata-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の認定はあるが指定訪問サービスを未利用の場合、特別事情で対象になる余地を確認。",
+            "粗大ごみを戸別支援に含める場合も023-686-5565への別予約が必要か、搬出位置と合わせて確認。",
+            "山形市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "yamagata-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみ。オンライン受付に表示されない品目は電話で申込み。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅敷地内道路際。集合住宅は道路に面した1階の分かりやすい場所。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "屋内搬出はしない案内。道路際まで排出者側で運ぶ。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "山形市内の家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目別の料金を申込時に確認し、証紙またはオンライン決済。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回3点まで。4点以上は次の収集日に再申込。収集日は地域ごと指定。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "application": {
+              "value": "オンラインまたは粗大ごみ収集受付センター023-686-5565へ電話。オンライン申込は完了メールが届いて初めて手続き完了。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "立会い不要、時間指定不可。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ収集受付センター 023-686-5565。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の認定はあるが指定訪問サービスを未利用の場合、特別事情で対象になる余地を確認。",
+            "粗大ごみを戸別支援に含める場合も023-686-5565への別予約が必要か、搬出位置と合わせて確認。"
+          ]
+        },
+        {
+          "id": "yamagata-self",
+          "kind": "self_dropoff",
+          "name": "家庭ごみ・粗大ごみの施設搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃性粗大ごみはエネルギー回収施設等、品目別に受入施設が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "collection_location": {
+              "value": "品目に合う市指定処理施設へ持込み。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "eligibility": {
+              "value": "山形市で発生した家庭ごみ。搬入者資格はこの案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "fees": {
+              "value": "立谷川の可燃性粗大ごみは10kgまでごと140円。古紙類は無料。他施設・品目は別額。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "limits": {
+              "value": "受入施設と時間は品目により異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "application": {
+              "value": "品目ごとの施設と受入日時を事前に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            },
+            "contact": {
+              "value": "山形市循環型社会推進課 023-641-1212。",
+              "state": "explicit",
+              "source_ids": [
+                "yamagata-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の認定はあるが指定訪問サービスを未利用の場合、特別事情で対象になる余地を確認。",
+            "粗大ごみを戸別支援に含める場合も023-686-5565への別予約が必要か、搬出位置と合わせて確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "高齢者の認定はあるが指定訪問サービスを未利用の場合、特別事情で対象になる余地を確認。",
+        "粗大ごみを戸別支援に含める場合も023-686-5565への別予約が必要か、搬出位置と合わせて確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "yamagata-bulky",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006508/1017713.html",
+      "title": "粗大ごみ収集オンライン受付｜山形市公式ホームページ",
+      "source_updated": "2026-07-22",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "yamagata-daily",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006511/1006513/1001858.html",
+      "title": "ごみ出し支援事業｜山形市公式ホームページ",
+      "source_updated": "2025-05-07",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "yamagata-self",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006507/1017679.html",
+      "title": "引っ越しに伴うごみは適正に処分しましょう｜山形市公式ホームページ",
+      "source_updated": "2026-04-08",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "山形市の保存済み公式ページ3件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

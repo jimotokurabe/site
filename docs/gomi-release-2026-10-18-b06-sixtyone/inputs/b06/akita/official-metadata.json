@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "akita-bulky",
+      "url": "https://www.city.akita.lg.jp/kurashi/recycle/1006080/1006201.html",
+      "title": "粗大ごみの申し込み方法｜秋田市公式サイト",
+      "source_updated": "2025-04-24",
+      "http_status": 200,
+      "final_url": "https://www.city.akita.lg.jp/kurashi/recycle/1006080/1006201.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html; charset=utf-8",
+      "raw_file": "akita-bulky.html.source",
+      "text_file": "akita-bulky.txt",
+      "raw_sha256": "ee7bc8b97a07a16b2cb5733805e94cc10bfa1991f8972662dfbd1b7df8586294",
+      "text_sha256": "496aaa97a79849f4e8c46f0e5dcb8d5b0f6efb8af4eababf30089b4c898fd849",
+      "bytes": 27550,
+      "etag": "\"6b9e-65e18d7876019\"",
+      "last_modified_header": "Sun, 18 Oct 2026 08:04:08 GMT",
+      "source_updated_raw": "7年4月24日"
+    },
+    {
+      "id": "akita-daily-policy",
+      "url": "https://www.city.akita.lg.jp/kurashi/koreishafukushi/1006009/1039112.html",
+      "title": "秋田市高齢者生活支援体制整備事業｜秋田市公式サイト",
+      "source_updated": "2026-03-31",
+      "http_status": 200,
+      "final_url": "https://www.city.akita.lg.jp/kurashi/koreishafukushi/1006009/1039112.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html; charset=utf-8",
+      "raw_file": "akita-daily-policy.html.source",
+      "text_file": "akita-daily-policy.txt",
+      "raw_sha256": "ae4027086b77eb7442f63fd5eba2ca9ca8f905cb7cf817760629f5ac0032802b",
+      "text_sha256": "7c9f4af396270ffdc562dd21f21730e35ec6e60c66683a0380dfbcf5ad8a041f",
+      "bytes": 36365,
+      "etag": "\"8e0d-65e18d13f7566\"",
+      "last_modified_header": "Sun, 18 Oct 2026 08:02:23 GMT",
+      "source_updated_raw": "8年3月31日"
+    },
+    {
+      "id": "akita-self",
+      "url": "https://www.city.akita.lg.jp/kurashi/recycle/1006078/1034538/1034539.html",
+      "title": "自己搬入のルール｜秋田市公式サイト",
+      "source_updated": "2026-08-05",
+      "http_status": 200,
+      "final_url": "https://www.city.akita.lg.jp/kurashi/recycle/1006078/1034538/1034539.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html; charset=utf-8",
+      "raw_file": "akita-self.html.source",
+      "text_file": "akita-self.txt",
+      "raw_sha256": "d4bf8349abbff38807f3159e0999a648116201a32760d11ac42d34ef7435ed09",
+      "text_sha256": "4baf771372ea1f19cec1ab6fb65e68b834fca89ec32e09da6f336d813a800472",
+      "bytes": 28809,
+      "etag": "\"7089-65e18d7d549ae\"",
+      "last_modified_header": "Sun, 18 Oct 2026 08:04:13 GMT",
+      "source_updated_raw": "8年8月5日"
+    }
+  ],
+  "failures": []
+}

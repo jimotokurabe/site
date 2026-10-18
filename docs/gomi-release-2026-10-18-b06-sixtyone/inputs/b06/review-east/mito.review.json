@@ -1,0 +1,453 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "ibaraki:mito",
+  "slug": "mito",
+  "first_input_sha256": "8d3fc8c2ed85acd629fd34dbd44fa147dcd092bda3d3f82294086947928cdf9e",
+  "accepted_input_sha256": "466e71514e11c3c7470772f642fcabb0b349acd9cb8ded01ee5f98ac7aae57f1",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 4,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "訪問型Bの日常ごみ支援と市の定期戸別収集を区別。粗大ごみ収集の500円券必要枚数を寸法別に補正。",
+  "corrections_file": "mito/corrections.json",
+  "correction_count": 1,
+  "field_inventory": [
+    {
+      "service_id": "mito-daily",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "f058d79397dae155d129f10c92e6243c03fad0c2776502427f02d44aef666c44"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "968502cdc11239808ffb6a7f340b7b154de076a0166abf127aa996f64bac69f9"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "600c9e6b72d480308160a67a8834ba5c8054ea76b3e0c87190a88769c35685ea"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "family_help",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "11cdee4edf6c5d3e17328b60ebea27f4f3d8dfc33bf56fe6e20172e60266fbe7"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "fees",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "dc2e440a669acad2a8f9142b30b74ec205c0a001b14e200d4a7ffdd7b18cf681"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "cb955591a767d88451cb039c7535e26a551ed21166350cf13e0b93ee6c324a02"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "b26afb55be100a03ba3df5591239dbd7e446990b70701ab3ac7139b5a557cfed"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "mito-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "mito-daily"
+      ],
+      "value_sha256": "1e90898007fee3589d526b86f7940d9bd545746c05313c34437257ca2b21d8f4"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "mito-daily",
+        "mito-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "ac09c710e839586ef08ae7b3a82c9783dc7fa24662856b538d502ed4d4915b0f"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "24689253db6635d52730fe563af83a53264e96529afaa7ca32d15c69ac05efd1"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "34048945d252b7103d9f2311a2e9450236e3b46b01d22ea8c5e0688f28fe70bb"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "999948966dfb9ab5f33f105afa8f987dd54132733f0ce997e31c3e135e1fa5b5"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "ec3536ffbd84c1bc06cd739dde42595a3bbb7ce28e94692d9816c92825787b3e"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "efae432ef5283fb8d6b5d5614851f27b7bd78bbce6a05b5aa9a1810c6f7789fb"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "f6092a1b8a4eb04988d0a509b2b4e33b32b5d9032948b3624d561881cd27b2ee"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "c6e62e33fc4877cd00a5543a6847fe1f4fc49d7d9691104bc539bcb414dc9146"
+    },
+    {
+      "service_id": "mito-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "mito-bulky"
+      ],
+      "value_sha256": "5431d2a7f29f6bdc9e788c0628414c2a96cd03227f10d5fb0eb618393a46922c"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "3f26081a90b7ab921a8d5e27925e00f1bc0bec0b3803d9b80fe631c6b11aadf6"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "6056b01644982d5f10fa4083bb30194143fe2572994a9a164f19619ffcbbf674"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "aaf675876c4611e5a7cd75cd38d95dddbde8bbb0a1d2f9567dc6fd257f5d9749"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "family_help",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "0fdfe8a1c75d2e76f27eff31fc19101528dcf80d11a44aa421a35196c1fe679c"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "9a3c1f77df1a696686c69e65bd1ecf0937579bf8791206fccd2451e8a7067ce1"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "4b075583f32b9afd6d061f11f6bb5f7c1ac2197ee45a2ba330662f26d5da4638"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "7d6c9d057521cb6c3e65cf854479e9202a3b9e08e1bfd8c7e64d5f4460df4ff2"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "e863ef0a3abe4e45e179677da1ab998c3976f1da886c4efa8d3ad26aa4cceb5f"
+    },
+    {
+      "service_id": "mito-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "mito-self",
+        "mito-fee"
+      ],
+      "value_sha256": "8fbb013fab31f075332022347c88c6d30337bb04036802c9832952c4f63c36d9"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "mito-bulky",
+      "url": "https://www.city.mito.lg.jp/site/gomi/4737.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-06-04",
+      "raw_file": "mito/official/mito-bulky.html.source",
+      "raw_sha256": "f35bdd40310a9ea8bda15f8f350958d50552011e619a84b3efbd646543b9df0d",
+      "text_file": "mito/official/mito-bulky.txt",
+      "text_sha256": "957b6ecd2792729a6af603dc1a2d9fff6b4dbe339d8970cfda60881de6f99b18"
+    },
+    {
+      "id": "mito-daily",
+      "url": "https://www.city.mito.lg.jp/page/1384.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "source_updated": "2026-09-04",
+      "raw_file": "mito/official/mito-daily.html.source",
+      "raw_sha256": "dff1efbe2ee34b000e0f065b84537828d2aeb47b88de9b5334c03a02acea7329",
+      "text_file": "mito/official/mito-daily.txt",
+      "text_sha256": "aba271ab21e4a72ea7507607b095413af21edea9a2f59ce7095d5a06ae0a84aa"
+    },
+    {
+      "id": "mito-fee",
+      "url": "https://www.city.mito.lg.jp/site/gomi/96500.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-04-04",
+      "raw_file": "mito/official/mito-fee.html.source",
+      "raw_sha256": "00112fc059d44191cc73fcb25f12a5b0ed313356c3cbe45a4b7cf53f65bcc0eb",
+      "text_file": "mito/official/mito-fee.txt",
+      "text_sha256": "f63ebf92e27c97ccabbb290c7887b2d300a1f9d6e2c8d03674710647032dbb2a"
+    },
+    {
+      "id": "mito-self",
+      "url": "https://www.city.mito.lg.jp/site/gomi/1777.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-05-15",
+      "raw_file": "mito/official/mito-self.html.source",
+      "raw_sha256": "40c4efb8aed6df5977de00932df70fc1f85ff30523548a17e0ee376b78c42cce",
+      "text_file": "mito/official/mito-self.txt",
+      "text_sha256": "1ebf19bd008667fb5ff00d4a6fd443056e0b5fd095b5b7521e9b2f5bc63e785c"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "訪問型Bの団体別料金・実施地域、家族の自己搬入条件、屋内搬出業者料金は未確認。"
+  ]
+}

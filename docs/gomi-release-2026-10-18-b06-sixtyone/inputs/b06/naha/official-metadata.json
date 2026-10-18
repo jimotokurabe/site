@@ -1,0 +1,53 @@
+[
+  {
+    "id": "okinawa-daily",
+    "url": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/003/020/5torikumi.pdf",
+    "title": "daily",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/003/020/5torikumi.pdf",
+    "retrieved_at": "2026-10-18T19:18:49+09:00",
+    "content_type": "application/pdf",
+    "raw_file": "naha/official/daily.pdf",
+    "text_file": "naha/official/daily.txt",
+    "raw_sha256": "19fb5581f2ac86417222e7c80f6110e8b6807f8318cfb56d5412b76855366d12",
+    "text_sha256": "f81593f2b2ad21ffbdac99f6469fb07f9e1411388d029bd521bb23378c3225d8",
+    "last_modified_header": "Mon, 07 Jul 2025 08:34:56 GMT"
+  },
+  {
+    "id": "okinawa-dropoff",
+    "url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007547/1001949.html",
+    "title": "ごみの持ち込みと受け入れ施設一覧｜那覇市公式ホームページ",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2025-12-24",
+    "http_status": 200,
+    "final_url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007547/1001949.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html",
+    "raw_file": "naha/official/dropoff.html.source",
+    "text_file": "naha/official/dropoff.txt",
+    "raw_sha256": "5867edfcd4bdfe8180ba5f9c2ce76952fe430b43428fc7b8336ee12f3d6828cb",
+    "text_sha256": "b2790b33abdcf7e6e8472a679a92877479f321207ba7872c7047900fb22990bf",
+    "last_modified_header": "Sun, 18 Oct 2026 10:00:37 GMT"
+  },
+  {
+    "id": "okinawa-regular",
+    "url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007525/1001941.html",
+    "title": "そ大ごみ・スプリング入り製品｜那覇市公式ホームページ",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-05-19",
+    "http_status": 200,
+    "final_url": "https://www.city.naha.okinawa.jp/kurasitetuduki/gomi-recycling/1001934/1007525/1001941.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html",
+    "raw_file": "naha/official/regular.html.source",
+    "text_file": "naha/official/regular.txt",
+    "raw_sha256": "b633adc64b13b0077e95435eab7f9c70a4cc7961deaa5162d669e24f689e4b19",
+    "text_sha256": "96a70bd43f3b0797645190202430bb5683c06b33f743d3f6e857e38f7ea0a318",
+    "last_modified_header": "Sun, 18 Oct 2026 10:00:37 GMT"
+  }
+]

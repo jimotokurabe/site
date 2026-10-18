@@ -1,0 +1,30 @@
+{
+  "city": "shizuoka:shizuoka",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "静岡市 ごみ出し支援 対象 申込",
+    "静岡市 粗大ごみ 収集 搬出",
+    "静岡市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 3,
+  "http_200_count": 3,
+  "http_non_200_count": 0,
+  "original_bytes_total": 67217,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "shizuoka-daily",
+    "shizuoka-regular",
+    "shizuoka-self"
+  ],
+  "new_city_sha256": "3233de63d7c5944599a8cae41d895d57a4d9d96fbec716cf27aa757c1c015494",
+  "source_hash_verification": "passed"
+}

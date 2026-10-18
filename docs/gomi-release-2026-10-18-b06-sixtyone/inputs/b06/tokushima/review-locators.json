@@ -1,0 +1,155 @@
+[
+  {
+    "city": "tokushima:tokushima",
+    "service": "tokushima-daily-support",
+    "service_sha256": "83f7c0fcb326f08a4667f51b2c5719e660e1907785dfb39f16021ccdb513f15e",
+    "sources": [
+      {
+        "id": "tokushima-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/tokushima/official/daily.txt",
+        "lines": [
+          [
+            1,
+            96
+          ]
+        ],
+        "raw_path": "tokushima/official/daily.html.source",
+        "raw_sha256": "d176b22d315366759e0a7f080c4d7641393f0d91635779ecae7582c0c2db2be4",
+        "text_sha256": "1280fcdd870aabeba192cc19dd7eedddf2a9505786764a8aa1d8e18cfc2d250c",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokushima:tokushima",
+    "service": "tokushima-bulky-carry-support",
+    "service_sha256": "f269603530c297e31cf3de625030145f054ab893fff893a498734840f59206f7",
+    "sources": [
+      {
+        "id": "tokushima-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/tokushima/official/daily.txt",
+        "lines": [
+          [
+            1,
+            96
+          ]
+        ],
+        "raw_path": "tokushima/official/daily.html.source",
+        "raw_sha256": "d176b22d315366759e0a7f080c4d7641393f0d91635779ecae7582c0c2db2be4",
+        "text_sha256": "1280fcdd870aabeba192cc19dd7eedddf2a9505786764a8aa1d8e18cfc2d250c",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "tokushima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/tokushima/official/regular.txt",
+        "lines": [
+          [
+            1,
+            254
+          ]
+        ],
+        "raw_path": "tokushima/official/regular.html.source",
+        "raw_sha256": "925204ed1ca06b6f7106727d136e00a717fb4fee324de14a994aa853b592e41e",
+        "text_sha256": "194484a304b644e4034c17983dba66d1c261222bed8eed1760bda32c4a89cd73",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokushima:tokushima",
+    "service": "tokushima-regular-bulky",
+    "service_sha256": "230d7557334cf0cccf003c1b362b76662bcc8e536f7089cd79279b92fbaef6d1",
+    "sources": [
+      {
+        "id": "tokushima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/tokushima/official/regular.txt",
+        "lines": [
+          [
+            1,
+            254
+          ]
+        ],
+        "raw_path": "tokushima/official/regular.html.source",
+        "raw_sha256": "925204ed1ca06b6f7106727d136e00a717fb4fee324de14a994aa853b592e41e",
+        "text_sha256": "194484a304b644e4034c17983dba66d1c261222bed8eed1760bda32c4a89cd73",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "tokushima:tokushima",
+    "service": "tokushima-self-dropoff",
+    "service_sha256": "9c65cadfec68fb5d46f1096e684f087bc0d661ca437787617b75ff4c9c6223ad",
+    "sources": [
+      {
+        "id": "tokushima-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/tokushima/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            163
+          ]
+        ],
+        "raw_path": "tokushima/official/dropoff.html.source",
+        "raw_sha256": "4e9e7f4015c93bc2bb0b95b7b3da8a42646b7b8935b6aab2506791fc63401e58",
+        "text_sha256": "0f63f119fba214a72ff8fcb30fec02f2ddbd37266846819de8de53ddaf8bb025",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

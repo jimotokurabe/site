@@ -1,0 +1,423 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "akita:akita",
+      "name": "秋田市",
+      "kana": "あきたし",
+      "pref_name": "秋田県",
+      "selection_reason": "秋田市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "akita-daily",
+          "kind": "daily_support",
+          "name": "日常ごみの搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で日常ごみの搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の定期ごみ出し支援の公式制度を今回の検索で確認できなかった。対象者の相談窓口を環境都市推進課に確認。",
+            "家族が運転して本人を同乗させず搬入する場合の本人確認を総合環境センターに確認。"
+          ]
+        },
+        {
+          "id": "akita-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "akita-bulky",
+                "akita-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の定期ごみ出し支援の公式制度を今回の検索で確認できなかった。対象者の相談窓口を環境都市推進課に確認。",
+            "家族が運転して本人を同乗させず搬入する場合の本人確認を総合環境センターに確認。",
+            "秋田市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "akita-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "寸法や重さを申告する家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日の午前9時までに玄関前または集合住宅等の指定場所。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "秋田市の家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目の大きさ・重さに応じて受付時に確定、証紙またはオンライン決済。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "limits": {
+              "value": "電話申込は原則5個まで。収集曜日は地区ごとに異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "application": {
+              "value": "018-839-2002またはインターネットで予約後、案内額の証紙購入またはオンライン決済。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ専用受付 018-839-2002。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の定期ごみ出し支援の公式制度を今回の検索で確認できなかった。対象者の相談窓口を環境都市推進課に確認。",
+            "家族が運転して本人を同乗させず搬入する場合の本人確認を総合環境センターに確認。"
+          ]
+        },
+        {
+          "id": "akita-self",
+          "kind": "self_dropoff",
+          "name": "総合環境センターへの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "秋田市内の家庭ごみ・粗大ごみ等。品目や寸法の制限あり。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "collection_location": {
+              "value": "総合環境センターへ車で搬入し、自分で荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "施設は自宅からの搬出を行わない。重量物は荷下ろしに必要な人数を同行。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "eligibility": {
+              "value": "ごみの持ち主、その家族、または市の許可業者。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "family_help": {
+              "value": "家族は自己搬入可能。本人が運転する必要は記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "fees": {
+              "value": "10kgごと117円。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "limits": {
+              "value": "自動車で来場必須。日曜・祝日は受入なし。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "application": {
+              "value": "受入品目・時間と車両を公式案内で確認して来場。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "attendance": {
+              "value": "運転者は計量所の搬入経路・停止指示に従う。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            },
+            "contact": {
+              "value": "総合環境センター 018-839-4816。",
+              "state": "explicit",
+              "source_ids": [
+                "akita-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高齢者の定期ごみ出し支援の公式制度を今回の検索で確認できなかった。対象者の相談窓口を環境都市推進課に確認。",
+            "家族が運転して本人を同乗させず搬入する場合の本人確認を総合環境センターに確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "高齢者の定期ごみ出し支援の公式制度を今回の検索で確認できなかった。対象者の相談窓口を環境都市推進課に確認。",
+        "家族が運転して本人を同乗させず搬入する場合の本人確認を総合環境センターに確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "akita-bulky",
+      "url": "https://www.city.akita.lg.jp/kurashi/recycle/1006080/1006201.html",
+      "title": "粗大ごみの申し込み方法｜秋田市公式サイト",
+      "source_updated": "2025-04-24",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "akita-daily-policy",
+      "url": "https://www.city.akita.lg.jp/kurashi/koreishafukushi/1006009/1039112.html",
+      "title": "秋田市高齢者生活支援体制整備事業｜秋田市公式サイト",
+      "source_updated": "2026-03-31",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "akita-self",
+      "url": "https://www.city.akita.lg.jp/kurashi/recycle/1006078/1034538/1034539.html",
+      "title": "自己搬入のルール｜秋田市公式サイト",
+      "source_updated": "2026-08-05",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "秋田市の保存済み公式ページ3件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

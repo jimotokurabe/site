@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "morioka-bulky",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001153.html",
+      "title": "ごみの分け方・出し方(盛岡地域)｜盛岡市公式ホームページ",
+      "source_updated": "2026-09-25",
+      "http_status": 200,
+      "final_url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001153.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "morioka-bulky.html.source",
+      "text_file": "morioka-bulky.txt",
+      "raw_sha256": "3c1582f1203ae48255b94148e848a633f87e3d42768ed4274578e862d713f3c4",
+      "text_sha256": "3880c41ad645fdfc5d3308567023eb4640a991dcd16a02ebf5ef793c764ec8f7",
+      "bytes": 74563,
+      "etag": "\"12343-65e19b7cf3655\"",
+      "last_modified_header": "Sun, 18 Oct 2026 09:06:51 GMT",
+      "source_updated_raw": "8年9月25日"
+    },
+    {
+      "id": "morioka-daily",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001141.html",
+      "title": "ごみ出しサポート事業｜盛岡市公式ホームページ",
+      "source_updated": "2020-12-25",
+      "http_status": 200,
+      "final_url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1001141.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "morioka-daily.html.source",
+      "text_file": "morioka-daily.txt",
+      "raw_sha256": "739654032e7c0a08e8f927af044c7878b76f3cc9a840ee40f6b79a0a4e9d804b",
+      "text_sha256": "0d8d3eeaadd3eaf66672f011a29caeb98d552ae85dfab6764c6a57a9bc7d1189",
+      "bytes": 42359,
+      "etag": "\"a577-65e19b7ce01bb\"",
+      "last_modified_header": "Sun, 18 Oct 2026 09:06:51 GMT",
+      "source_updated_raw": "2年12月25日"
+    },
+    {
+      "id": "morioka-self",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1022139.html",
+      "title": "引っ越しなどで出る多量のごみの出し方｜盛岡市公式ホームページ",
+      "source_updated": "2026-01-23",
+      "http_status": 200,
+      "final_url": "https://www.city.morioka.iwate.jp/kurashi/gomi_recycle/gomidashikata/1022139.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "morioka-self.html.source",
+      "text_file": "morioka-self.txt",
+      "raw_sha256": "b6f7c5e05831d912b5d13ad0d3261dd7301ea6e5ca49a8bb9ce59fb61dc66a14",
+      "text_sha256": "cb65a270796a484f5b9b675cc4abc16e3166174d7f898145c5361bd2aaa6a905",
+      "bytes": 44035,
+      "etag": "\"ac03-65e19b7cdb782\"",
+      "last_modified_header": "Sun, 18 Oct 2026 09:06:51 GMT",
+      "source_updated_raw": "8年1月23日"
+    }
+  ],
+  "failures": []
+}

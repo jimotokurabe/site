@@ -1,0 +1,407 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "nara:nara",
+      "name": "奈良市",
+      "kana": "ならし",
+      "pref_name": "奈良県",
+      "selection_reason": "通常大型は2026年6月から1回4点。大型ごみの屋内搬出支援は古い言及のみで現行性保留。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "nara-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-daily"
+              ]
+            },
+            "contact": {
+              "value": "奈良市の担当窓口：0742-71-9011。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "nara-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "nara-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "古い市の広報には大型ごみの屋内搬出支援があるが、現行の市ページで対象・申込・立会いを確認できない。まち美化推進課に現行制度の有無を確認してください。"
+          ]
+        },
+        {
+          "id": "nara-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の大型ごみ。引越し等の一時多量ごみは通常収集対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約時に指定された排出場所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "limits": {
+              "value": "2026年6月以降は2か月に1回4点まで、2026年度は年間2回。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-regular",
+                "nara-calendar"
+              ]
+            },
+            "application": {
+              "value": "大型ごみ専用電話0742-71-9011等またはインターネットで申込み。収集区域で窓口が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-regular"
+              ]
+            },
+            "contact": {
+              "value": "奈良市の粗大ごみ担当窓口：0742-71-9011。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "nara-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "collection_location": {
+              "value": "環境清美センターへ品目別の受入場所に持ち込み。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "eligibility": {
+              "value": "原則として、ごみの出た住居に住む人が搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "application": {
+              "value": "持込ごみは事前予約が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nara-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "nara-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "奈良市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nara-daily",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/6254.html",
+      "title": "ごみの分け方と出し方 - ごみ収集 - 奈良市ホームページ（廃棄物対策課）",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-07-03",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nara-regular",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/4464.html",
+      "title": "大型ごみ - ごみ収集 - 奈良市ホームページ（まち美化推進課）",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-05-14",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nara-calendar",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/214555.html",
+      "title": "令和8年10月からのごみ収集日カレンダー - ごみ収集 - 奈良市ホームページ（廃棄物対策課）",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-08-24",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "nara-self",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/89928.html",
+      "title": "環境清美センターへの持ち込み方法（令和8年6月1日より） - ごみ収集 - 奈良市ホームページ（環境清美工場）",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-06-02",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "奈良市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

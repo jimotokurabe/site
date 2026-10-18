@@ -1,0 +1,417 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kagoshima:kagoshima",
+      "name": "鹿児島市",
+      "kana": "かごしまし",
+      "pref_name": "鹿児島県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kagoshima-daily-support",
+          "kind": "daily_support",
+          "name": "まごころ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみ・資源物の戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "本人が自力でごみを排出できず他の協力も得られない",
+                  "介護保険法または障害者総合支援法の居宅サービス利用",
+                  "単身者は市の介護・障害条件のいずれか、または対象者のみで構成する世帯"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "family_help": {
+              "value": "他にごみ出し協力を得られないこと。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "application": {
+              "value": "まず清掃事務所へ電話相談後、申請書と手帳・介護保険証等の写しを提出。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            },
+            "contact": {
+              "value": "谷山・喜入地区は南部清掃工場099-261-5588、その他の地区は清掃事務所099-238-0201。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "同居者全員の対象区分と居宅サービス利用条件を確認してください。",
+            "収集頻度・費用・屋外排出位置を確認してください。",
+            "谷山・喜入地区は南部清掃工場、それ以外は清掃事務所へ、同居者条件を確認してください。"
+          ]
+        },
+        {
+          "id": "kagoshima-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみ家屋内収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "屋外に運び出せない粗大ごみを家屋内から収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "家屋内からの搬出。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "対象世帯は市の作業員が家屋内へ入って収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "自ら屋外に運び出すことが困難",
+                  "世帯員全員が65歳以上、指定の障害者、要介護3～5のいずれかに該当"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "fees": {
+              "value": "通常の粗大ごみ処理手数料は品目により350円または700円。生活保護世帯と天災・火災のり災世帯は申請で免除。屋内搬出の追加料金は原典に記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "limits": {
+              "value": "申込から収集まで約2か月。1世帯1回5点までの通常粗大ごみ申込上限に注意。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付へ申込、事前に要件確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "attendance": {
+              "value": "家屋内収集は立会い必要。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付099-806-8141。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目別の屋内搬出可否、家屋の作業条件、手数料を確認してください。",
+            "家屋内収集の障害等級と要介護3～5、搬出経路・立会いを確認してください。"
+          ]
+        },
+        {
+          "id": "kagoshima-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ通常収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "通常は家の前など指定場所へ運び出す。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目により350円または700円。生活保護世帯と天災・火災のり災世帯は資源政策課への申請で免除。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "limits": {
+              "value": "1世帯1回5点まで。申込から約2週間。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "application": {
+              "value": "Webまたは電話申込。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "attendance": {
+              "value": "通常の屋外収集は立会い不要。家屋内収集は必要。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付099-806-8141。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常収集の5点上限と約2週間、家屋内収集の約2か月を区別して予約してください。"
+          ]
+        },
+        {
+          "id": "kagoshima-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "北部清掃工場への粗大ごみ持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "北部清掃工場の粗大ごみ処理棟への持込。南部は粗大ごみ不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "鹿児島市犬迫町11900番地の北部清掃工場。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "fees": {
+              "value": "自己搬入は100kg以下無料。100kg超過分は10kgにつき70円。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "application": {
+              "value": "搬入者と排出場所の確認書類を提示。品目によっては事前連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            },
+            "contact": {
+              "value": "北部清掃工場 099-238-0211。",
+              "state": "explicit",
+              "source_ids": [
+                "kagoshima-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "北部清掃工場の持込書類と、建材等の事前連絡対象を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "鹿児島市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kagoshima-daily",
+      "url": "https://www.city.kagoshima.lg.jp/seisojimusyo/magokorosyusyu.html",
+      "title": "まごころ収集（高齢者等戸別収集サービス）｜鹿児島市",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.kagoshima.lg.jp/seisojimusyo/magokorosyusyu.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html",
+      "raw_file": "kagoshima/official/daily.html.source",
+      "text_file": "kagoshima/official/daily.txt",
+      "raw_sha256": "aa4d0274e8e5153cb64f6e7f11d7124be9a1ca0b72c819bb0dd030818458764d",
+      "text_sha256": "6e0027465724f7426e88c39ac0a5c5d7146df079b8a3bfcbb780a3195dc276ab",
+      "last_modified_header": "Thu, 01 Oct 2026 07:00:15 GMT"
+    },
+    {
+      "id": "kagoshima-regular",
+      "url": "https://www.city.kagoshima.lg.jp/shigenseisaku/gomi/kate/dashikata/wakekata/sodaigomi.html",
+      "title": "粗大ごみ｜鹿児島市",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-10-01",
+      "http_status": 200,
+      "final_url": "https://www.city.kagoshima.lg.jp/shigenseisaku/gomi/kate/dashikata/wakekata/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:18:47+09:00",
+      "content_type": "text/html",
+      "raw_file": "kagoshima/official/regular.html.source",
+      "text_file": "kagoshima/official/regular.txt",
+      "raw_sha256": "1ce02d1df83b6df09e4b3e9339c0e9dc6494b03629764cae320df1ad63d38b84",
+      "text_sha256": "770fae96e4bf5e735ea97ae8aae05421e60c6296ad956c16a35f2de516d1aa14",
+      "last_modified_header": "Mon, 05 Oct 2026 11:00:03 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}
