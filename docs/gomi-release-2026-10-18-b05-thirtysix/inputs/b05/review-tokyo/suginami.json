@@ -1,0 +1,75 @@
+{
+  "slug": "suginami",
+  "reviewed_at": "2026-10-18",
+  "decision": "accepted_as_AI_reviewed_research_draft",
+  "reviewer_edited": true,
+  "initial_sha256": "4429a1edb6fc04e7873113d37df372fcd39e5440626405ef6644828caff70a9b",
+  "corrected_sha256": "f736593b8f403ab67bc2cac73c80b3f0d3b74f18b0fabd1aa97882fc34150215",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "questions_for_office": 7,
+    "direction": "各field→保存公式原典、保存公式原典の重要条件→対応field・相談質問を双方向照合。料金・減免、AND/OR、世帯全員、援助、屋内、持込本人/運転者、予約・上限、日付・出典を重点確認。",
+    "source_ids": [
+      "suginami-daily",
+      "suginami-bulky",
+      "suginami-calendar",
+      "suginami-fureai-overview"
+    ]
+  },
+  "findings": [
+    {
+      "severity": "critical",
+      "source": "suginami-daily.txt:67-70",
+      "finding": "対象の「1に準ずる世帯で必要と認められる方」を初稿が除外し、所定依頼書による本人・代理人の申込を省略。",
+      "resolution": "OR例外と申請手続を追加。"
+    },
+    {
+      "severity": "major",
+      "source": "suginami-daily.txt:65-72; suginami-fureai-overview.txt:61",
+      "finding": "ふれあい収集が無料、訪問調査・可否決定、門前回収とする根拠を保存原典で確認できない。",
+      "resolution": "未記載項目をnot_statedへ変更し、玄関先の確認範囲に限定。"
+    },
+    {
+      "severity": "major",
+      "source": "suginami-bulky.txt:180-195; suginami-calendar.txt:720-723",
+      "finding": "粗大搬出支援の作業料、訪問調査、大量・急な申出の除外、自己搬入の申込者本人限定を断定する根拠がない。",
+      "resolution": "未記載・確認質問へ変更し、通常収集と自己搬入の条件混在を解消。"
+    },
+    {
+      "severity": "major",
+      "source": "suginami-bulky.txt:220-246",
+      "finding": "減免の主な対象、割合と電話申込が利用者の費用判断に重要。",
+      "resolution": "通常収集の料金欄へ生活保護等免除と火災等9割減免を明記。"
+    }
+  ],
+  "remaining_required_findings": [],
+  "limits": [
+    "AI独立レビュー。人手の原典全件照合と窓口確認、公開承認は未実施。",
+    "料金・収集頻度・立会い等で原典に未記載の事項は断定せず相談質問へ残した。"
+  ],
+  "official_source_sha256": [
+    {
+      "id": "suginami-bulky",
+      "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+      "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b"
+    },
+    {
+      "id": "suginami-calendar",
+      "raw_sha256": "ea5b6a8a4478f35f46130abb1863c260071fc0fbfb9e52d269e6dc62453cc821",
+      "text_sha256": "4c3c788095bf999b09b673644fcaa078ded2d16819a4cfc6f1a4ba26ec01e76e"
+    },
+    {
+      "id": "suginami-daily",
+      "raw_sha256": "4a5876e8be3ecacaae78b067e79453962e53ae3ad0d21491676d25d20ba7f9ee",
+      "text_sha256": "a031201d351966eb375f7d26d220592df539948d1efd893b5caf0900e87a7155"
+    },
+    {
+      "id": "suginami-fureai-overview",
+      "raw_sha256": "746bc6350ffe5a702d9c294944fdb1d8c93befd5b7e53aabac4272a6472b372e",
+      "text_sha256": "9adb0276ab930889a4707931d9555ecaf72c312ffa4a709417f24ef14ebfc56f"
+    }
+  ],
+  "corrected_locator_sha256": "2217e60080d7b486297a34e20273bf821a193baf47a814840b2d617f109961f7",
+  "corrections_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/suginami/corrections.json"
+}

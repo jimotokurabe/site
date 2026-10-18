@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2026-10-18",
+    "editor": "independent AI reviewer",
+    "original_draft_sha256": "8c7ef7e8efa941f0458319005c31ff274a632cd866525b2ee0abc13aac9d6141",
+    "reason": "保存原典との双方向照合で誤記・未確認の断定を修正。練馬・板橋は公式専用ページを追加取得して日常戸別収集の未発見判定を是正。",
+    "changes": [
+      {
+        "service": "ota-regular-bulky",
+        "changed": [
+          "fees",
+          "application",
+          "attendance"
+        ]
+      },
+      {
+        "service": "ota-self-dropoff",
+        "changed": [
+          "indoor_carry",
+          "family_help",
+          "fees",
+          "limits"
+        ]
+      }
+    ],
+    "source_updated_changes": [
+      {
+        "source": "ota-bulky",
+        "from": null,
+        "to": "2026-10-15"
+      }
+    ],
+    "new_official_sources": []
+  }
+]

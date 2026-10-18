@@ -1,0 +1,456 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "osaka:sakai",
+      "name": "堺市",
+      "kana": "さかいし",
+      "pref_name": "大阪府",
+      "selection_reason": "堺市では、生活ごみ・資源の定期支援と、屋内から運び出す粗大ごみ支援を分けて実施。家庭ごみの通常収集と自己搬入にも別の手順・費用がある。支援には身近な人の協力が得られない等の条件があり、世帯状況・住居・品目ごとの確認が必要。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "sakai-daily",
+          "kind": "daily_support",
+          "name": "ふれあいサポート収集（生活ごみ・資源等）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "生活ごみ・資源等（缶・びん・ペットボトル、容器包装プラスチック、小型金属等）を週1回。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "専用ごみ箱を玄関先または門扉先に設置。家の前まで週1回収集。曜日は相談決定、時間指定不可で午後になる場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関先・門扉先で回収。室内に入って日常ごみを回収する記載はない。",
+              "state": "not_stated",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "市内在住",
+                  "本人が自力でごみを出すことが難しい",
+                  "集積所への排出が困難",
+                  "家族・近隣世帯の協力を得られない",
+                  "同居人に排出可能者がいない",
+                  "次のいずれか: 65歳以上でホームヘルパー介護を受ける／身体・精神・療育手帳交付／70歳以上で要介護または要支援認定"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "family_help": {
+              "value": "家族や近隣の協力を得られる場合、またはごみを出せる同居人がいる場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "fees": {
+              "value": "この制度の利用料は掲載ページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "limits": {
+              "value": "家の前に排出できる人、エレベーターのある集合住宅は対象外。専用ごみ箱が必要。資源は分別。収集時間帯指定不可。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "application": {
+              "value": "申込後に現地調査・面談・審査。申込書をFAX等で提出。電子申請も可能。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "attendance": {
+              "value": "現地調査時はホームヘルパー等の立会いが必要。ただし70歳以上でヘルパー未利用の方は除く。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            },
+            "contact": {
+              "value": "環境事業所 072-273-2672、ふれあいサポート収集専用ダイヤル 072-273-2682、FAX 072-273-2674。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "堺市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "堺市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "sakai-carry",
+          "kind": "bulky_carry_support",
+          "name": "ふれあいサポート収集（粗大ごみ屋内搬出）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "自ら所定の場所へ出せない粗大ごみ。市が家の中から運び出し収集。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "collection_location": {
+              "value": "家の中から運び出し、所定の排出場所へ搬出して収集。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家の中から運び出す。廊下や玄関等を通らない物・重量物は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "自力で粗大ごみ排出が困難",
+                  "家族・近隣の協力が得られない",
+                  "ごみを排出できる同居人がいない",
+                  "次のいずれか: 65歳以上でホームヘルパー介護を受ける／身体・精神・療育手帳交付／70歳以上のみの世帯"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "family_help": {
+              "value": "家族・近隣世帯の協力を得られる場合や排出可能な同居人がいる場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみ処理券の購入が必要。品目ごとの券額を確認。手数料減免の説明は支援ページにない。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "limits": {
+              "value": "年度内2回まで、1回6個まで。転居に伴う粗大ごみ・遺品整理等は対象外。間口を通らない物・重量物は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "application": {
+              "value": "申込書を環境事業所へFAX (072-273-2674) または電子申請。FAX等困難な場合は相談。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "attendance": {
+              "value": "収集日はホームヘルパー等の立会いが必要。ただし70歳以上でホームヘルパー未利用の方は除く。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            },
+            "contact": {
+              "value": "ふれあいサポート収集専用ダイヤル 072-273-2682。環境事業所 072-273-2672。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-daily",
+                "sakai-support-rule"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "堺市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "堺市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "sakai-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ（通常収集）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "最大辺または径がおおむね30cmを超える耐久消費財等。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "collection_location": {
+              "value": "申込後に案内される収集日に指定場所へ排出。収集曜日は申込後に案内。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市が戸別収集。申込者が所定の排出場所まで出す。屋内搬出の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "eligibility": {
+              "value": "堺市の家庭から出る対象粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "family_help": {
+              "value": "家族等による代理申込・排出の条件は掲載ページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみは有料で、品目ごとの処理手数料。金額は品目例一覧または受付で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "limits": {
+              "value": "テレビ等の特定家庭用機器、バイク等は市収集対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "application": {
+              "value": "インターネットは24時間申込可能。電話申込も受付センターで受付。インターネットに品目がない場合等は電話。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "attendance": {
+              "value": "通常収集時の立会い要否は掲載ページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            },
+            "contact": {
+              "value": "堺市家庭ごみ受付センター 固定電話0120-00-8400、携帯/IP電話06-6485-5048。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-regular",
+                "sakai-fees"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "堺市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "堺市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "sakai-self",
+          "kind": "self_dropoff",
+          "name": "クリーンセンター清掃工場への持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "堺市内の家庭から発生し、本人または親族が排出・搬入する臨時ごみ。市で収集・処理できない品目等を除く。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "collection_location": {
+              "value": "本人または親族が清掃工場へ車で搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "利用者自身で車両に積み込み、工場で荷下ろしする。施設内の屋内搬出支援なし。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "eligibility": {
+              "value": "堺市内で発生した家庭ごみ。本人または親族が排出し、本人または親族が搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "family_help": {
+              "value": "親族による搬入可。本人・親族以外の代理搬入可否は掲載ページで確認できず。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "fees": {
+              "value": "有料。破砕施設対象物は100kgまで1,700円、超過は10kgごと170円。その他は100kgまで1,100円、超過は10kgごと110円。計量端数は単位量扱い。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "limits": {
+              "value": "家庭ごみは事前予約が必要。市内発生物に限る。処理不可品・混載等の受入制限あり。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "application": {
+              "value": "家庭ごみ持込みは事前予約。公式ページの予約フォームから申し込み。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "attendance": {
+              "value": "排出者本人または親族が持ち込む条件。本人が運転する必要があるかは記載なし。荷下ろし時は車両同乗者のみ施設内へ。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            },
+            "contact": {
+              "value": "持込み予約・清掃工場の受付窓口は公式ページ内の施設別案内を確認。家庭ごみ受付センター 0120-00-8400 / 06-6485-5048は家庭ごみ相談窓口。",
+              "state": "explicit",
+              "source_ids": [
+                "sakai-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "堺市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "堺市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "調査時点の公式ページ記載を保存。ページ更新日を確認できない場合は推測していない。",
+        "制度の現行運用と資格判定は未照会。独立した人手確認が必要。"
+      ],
+      "common_questions_for_office": [
+        "世帯全員が資格条件を満たすか、親族・同居者の援助が対象判定にどう影響するかを窓口へ確認してください。",
+        "室内の搬出範囲、玄関・門扉や集合住宅の条件、費用・減免、予約回数、立会い、本人搬入と運転者の条件を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sakai-daily",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sodaigomi/sodaifureai.html",
+      "title": "ふれあいサポート収集 堺市",
+      "source_updated": "2024-11-11",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "sakai-regular",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sodaigomi/index.html",
+      "title": "粗大ごみ（有料）・不燃小物類（無料）【申込制】 堺市",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "sakai-fees",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sodaigomi/tesuryorei.html",
+      "title": "主な粗大ごみ処理手数料品目例 堺市",
+      "source_updated": "2026-07-14",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "sakai-self",
+      "url": "https://www.city.sakai.lg.jp/kurashi/gomi/gomi_recy/bunbetsu/shigen/sonotagomi/mochikomi.html",
+      "title": "クリーンセンター清掃工場への持込み（有料） 堺市",
+      "source_updated": "2026-06-24",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "sakai-support-rule",
+      "url": "https://www.city.sakai.lg.jp/shisei/sonota/jyorei/youkou/kankyou/youryou.html",
+      "title": "堺市ふれあいサポート収集実施要領 堺市",
+      "source_updated": "2026-04-01",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "堺市のみ調査。市公式サイト内を中心に各サービスの対象・通常収集・自己搬入を検索し、公式ページ5件を保存。原文HTML/PDFまたは抽出テキスト、URL、実取得日時、HTTP状態、原本・テキストSHA-256はofficial-metadata.json。更新表示は原典の明記がある場合のみ転記。市窓口照会、全項目の人手確認、独立レビューは未実施。AI下書き・公開不可。"
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "nerima",
+  "reviewed_at": "2026-10-18",
+  "decision": "accepted_as_AI_reviewed_research_draft",
+  "reviewer_edited": true,
+  "initial_sha256": "79bdc91830623110fcb72ea3da8a277c0902fa5c2ea7b9ab09429fb1ff1a3b02",
+  "corrected_sha256": "45e49d6110cb9c38cb6f825fe829ba95896d5d54bc97c135b5c7b7fb1fd522d3",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "questions_for_office": 6,
+    "direction": "各field→保存公式原典、保存公式原典の重要条件→対応field・相談質問を双方向照合。料金・減免、AND/OR、世帯全員、援助、屋内、持込本人/運転者、予約・上限、日付・出典を重点確認。",
+    "source_ids": [
+      "nerima-bulky",
+      "nerima-fee-relief",
+      "nerima-daily"
+    ]
+  },
+  "findings": [
+    {
+      "severity": "critical",
+      "source": "nerima-daily.txt:16-53",
+      "finding": "日常ごみ戸別訪問収集の現行専用ページがあり、初稿の未発見は誤り。",
+      "resolution": "保存原典を追加し、40項目中日常経路の全10項目と相談質問を全面更新。"
+    },
+    {
+      "severity": "major",
+      "source": "nerima-daily.txt:35-42",
+      "finding": "訪問調査には家族・介護担当者立会い、共同住宅では事前承諾、任意見守りには別条件がある。",
+      "resolution": "立会い・場所・相談質問へ反映。"
+    },
+    {
+      "severity": "minor",
+      "source": "nerima-bulky.txt:113; nerima-fee-relief.txt:29-43",
+      "finding": "通常収集は在宅不要。老齢福祉年金の減免窓口は他事由と異なる。",
+      "resolution": "立会いと減免窓口を修正。"
+    }
+  ],
+  "remaining_required_findings": [],
+  "limits": [
+    "AI独立レビュー。人手の原典全件照合と窓口確認、公開承認は未実施。",
+    "料金・収集頻度・立会い等で原典に未記載の事項は断定せず相談質問へ残した。"
+  ],
+  "official_source_sha256": [
+    {
+      "id": "nerima-bulky",
+      "raw_sha256": "449c0b298458a1257b8a86b9a641c3d86c395f174be4bc53b4fe804cae2241ca",
+      "text_sha256": "04fdeff2c2b95174abec412a0f9a2d10fb1b7aa06fde88ca4f9568426742d20f"
+    },
+    {
+      "id": "nerima-fee-relief",
+      "raw_sha256": "91cc79da98b58d46d87b1c4e0a3da4131f88d4e0958c54d93093917e3f5e2f37",
+      "text_sha256": "cd307ceacbb877830b030f727c306a96dd0a7074ae005eeaf212f0310798a2c2"
+    },
+    {
+      "id": "nerima-separation-current",
+      "raw_sha256": "08241f734970522638bfde13b5eff161c098f2c2b2491b0325d0db2a7da4015e",
+      "text_sha256": "0248022297cd7cc165d5f7b9bd129709c95617e912f54656aa912a482c1b6f22"
+    },
+    {
+      "id": "nerima-waste",
+      "raw_sha256": "bb892068636a7fd71519cc4022ff0fe8230fb22849a3a7ad52b2d1690240de8a",
+      "text_sha256": "1d2d66c4799e2c6f3d49af15b8bedab0e0d9666bc261d906dc0dceee6e76066f"
+    },
+    {
+      "id": "nerima-daily",
+      "raw_sha256": "6c792e18ddc3977e32d0690024faac848b3b09aa4ddc0fb6446ba53bede20672",
+      "text_sha256": "ea32853511f2aca708aef325c4ef5d13e6f2d5d1b2f7033d6ac7af22f546fc38"
+    }
+  ],
+  "corrected_locator_sha256": "8da8831fff992fa8529876ab7614fcd153720445405f15b883f7b3de5e7e374d",
+  "corrections_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/nerima/corrections.json",
+  "source_retained_as_research_only": [
+    "nerima-waste",
+    "nerima-separation-current"
+  ]
+}

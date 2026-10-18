@@ -1,0 +1,78 @@
+[
+  {
+    "date": "2026-10-18",
+    "editor": "independent AI reviewer",
+    "original_draft_sha256": "4429a1edb6fc04e7873113d37df372fcd39e5440626405ef6644828caff70a9b",
+    "reason": "保存原典との双方向照合で誤記・未確認の断定を修正。練馬・板橋は公式専用ページを追加取得して日常戸別収集の未発見判定を是正。",
+    "changes": [
+      {
+        "service": "suginami-daily-support",
+        "changed": [
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "fees",
+          "limits",
+          "application",
+          "contact",
+          "questions_for_office"
+        ]
+      },
+      {
+        "service": "suginami-bulky-carry",
+        "changed": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "fees",
+          "limits",
+          "application",
+          "contact",
+          "questions_for_office"
+        ]
+      },
+      {
+        "service": "suginami-regular-bulky",
+        "changed": [
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "service": "suginami-self-dropoff",
+        "changed": [
+          "family_help",
+          "eligibility",
+          "fees",
+          "application",
+          "attendance",
+          "contact",
+          "collection_location",
+          "questions_for_office"
+        ]
+      }
+    ],
+    "source_updated_changes": [
+      {
+        "source": "suginami-daily",
+        "from": null,
+        "to": "2023-03-13"
+      },
+      {
+        "source": "suginami-bulky",
+        "from": null,
+        "to": "2026-03-31"
+      },
+      {
+        "source": "suginami-fureai-overview",
+        "from": null,
+        "to": "2022-03-17"
+      }
+    ],
+    "new_official_sources": []
+  }
+]

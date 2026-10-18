@@ -1,0 +1,115 @@
+[
+  {
+    "service": "takatsuki-daily",
+    "field": "limits",
+    "before": "本人・同居家族等がごみ出し可能、施設入所、収集車が進入できない家屋は対象外。大型可燃・大きな不燃は別途相談。",
+    "after": "本人・同居家族等がごみ出し可能、施設入所、収集車が進入できない家屋は対象外。大型可燃・大きな不燃は別途相談。重度傷病により一時的に歩行やごみ出しが困難な場合も相談できる。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": null,
+    "field": "common_questions_for_office",
+    "before": [
+      "世帯全員が資格条件を満たすか、親族・同居者の援助が対象判定にどう影響するかを窓口へ確認してください。",
+      "室内の搬出範囲、玄関・門扉や集合住宅の条件、費用・減免、予約回数、立会い、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "高齢者等ごみ出し支援、臨時ごみ収集、自己搬入は対象・料金・申込方法が異なるため、目的を伝えて確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "市ごとの制度差を明示し不要な共通質問を削除"
+  },
+  {
+    "service": "takatsuki-daily",
+    "field": "questions_for_office",
+    "before": [
+      "高槻市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "高槻市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "世帯全員の対象条件と、重度の傷病で一時的にごみ出しが困難な場合の相談手順を担当課に確認してください。",
+      "玄関先・門扉先の排出場所、収集車の進入条件、現地訪問への立会いを確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "takatsuki-carry",
+    "field": "questions_for_office",
+    "before": [
+      "高槻市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "高槻市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "粗大ごみを室内から運び出す市の独立支援や例外があるか、清掃業務課へ確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "takatsuki-regular",
+    "field": "questions_for_office",
+    "before": [
+      "高槻市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "高槻市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "大量の片付けごみが臨時収集の対象になるか、量と収集車の進入場所を清掃業務課に伝えて確認してください。",
+      "立会いと現場での手数料支払、予約可能日を確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "takatsuki-self",
+    "field": "questions_for_office",
+    "before": [
+      "高槻市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "高槻市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "家族が代わりに搬入する場合に第三者搬入の届出・廃棄物処理依頼書が必要かを確認してください。",
+      "排出者本人が同乗し別の人が運転できるか、許可番号と必要書類、荷下ろしを確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "takatsuki-self",
+    "field": "family_help",
+    "before_source_ids": [
+      "takatsuki-self",
+      "takatsuki-self-apply"
+    ],
+    "after_source_ids": [
+      "takatsuki-self",
+      "takatsuki-self-apply",
+      "takatsuki-self-form"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "第三者搬入の廃棄物処理依頼書と届出方法を明記（takatsuki-self-form.txt 184–220行）"
+  },
+  {
+    "service": "takatsuki-self",
+    "field": "application",
+    "before_source_ids": [
+      "takatsuki-self",
+      "takatsuki-self-apply"
+    ],
+    "after_source_ids": [
+      "takatsuki-self",
+      "takatsuki-self-apply",
+      "takatsuki-self-form"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "第三者搬入の廃棄物処理依頼書と届出方法を明記（takatsuki-self-form.txt 184–220行）"
+  }
+]

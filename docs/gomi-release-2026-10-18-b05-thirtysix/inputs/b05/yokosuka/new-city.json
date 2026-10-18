@@ -1,0 +1,430 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kanagawa:yokosuka",
+      "name": "横須賀市",
+      "kana": "よこすかし",
+      "pref_name": "神奈川県",
+      "selection_reason": "日常支援の要件と通常粗大ごみ収集・自己搬入条件を公式情報で比較できるため。屋内搬出支援は検索範囲で確認できず、保留情報として区別。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "yokosuka-daily",
+          "kind": "daily_support",
+          "name": "高齢者等ごみ出し支援収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃せるごみ、缶・びん・ペットボトル、容器包装プラスチック、不燃ごみ。週1回戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "ご本人が用意するポリバケツ等のごみ容器を使用し、戸別収集。排出位置の詳細は要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "戸別収集。屋内に入って搬出する記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "any": [
+                  {
+                    "all": [
+                      "原則として65歳以上かつ要介護2以上",
+                      "自ら集積所へ出すことが困難で、親族・近隣・地域ボランティア・ホームヘルパーによる支援が困難",
+                      "住民税非課税世帯"
+                    ]
+                  },
+                  "市長が特に必要と認める世帯"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣住民・地域ボランティア・ホームヘルパーのごみ出し支援が困難であること。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "fees": {
+              "value": "市の支援収集手数料の記載なし。先に検討する許可業者利用の目安は1回500～1,000円程度。",
+              "state": "not_stated",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "limits": {
+              "value": "週1回。対象4分別。毎年6月末までに翌年度更新申請（利用期間8/1～翌7/31）。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "application": {
+              "value": "市の利用申請フォーム。廃棄物対策課と協議後に現地確認。翌年度更新申請が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "attendance": {
+              "value": "現地確認は申請者・本人の立会いが必要。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            },
+            "contact": {
+              "value": "民生局福祉こども部地域福祉課046-822-9613。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要介護度、住民税非課税世帯の判定、支援者がいる場合の可否を市に確認してください。",
+            "収集開始時期、容器の要件、サービス利用料を確認してください。"
+          ]
+        },
+        {
+          "id": "yokosuka-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援（公式情報で確認できず）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "collection_location": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "eligibility": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "family_help": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "fees": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "limits": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "application": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "attendance": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            },
+            "contact": {
+              "value": "市公式サイトのごみ出し支援・粗大ごみ案内を確認した範囲では、屋内からの粗大ごみ搬出を行う市の制度を確認できない。通常収集は家の外まで申込者側で搬出する案内。利用可能な民間支援は未調査。",
+              "state": "not_found",
+              "source_ids": [
+                "yokosuka-regular",
+                "yokosuka-bulky_faq"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "屋内からの運び出しを市が支援する制度の有無と、例外対応を地域福祉課または廃棄物対策課へ確認してください。"
+          ]
+        },
+        {
+          "id": "yokosuka-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ・破砕できないごみの戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ（概ね50cm以上2m以下等）・破砕できないごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "各家庭の道路側など申込時に指定した場所へ出し、戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "職員は家の中に入らない。敷地の道路側へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "横須賀市内の家庭から出る対象ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "family_help": {
+              "value": "原則、本人または家族が申込。屋外への排出は申込者側で行う。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみは一般品1個・1組800円（2026年10月1日以降申込）。スプリングマットレスは7,000円。生活保護受給者は申込前に担当ケースワーカーへ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "limits": {
+              "value": "事前申込制。朝8時までに指定場所へ。収集時間指定不可。収集日は日～金（祝日含む）、土・12/31～1/3休み。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "application": {
+              "value": "市公式LINE、インターネット、電話046-823-0868（8:30～16:00、月～金・祝日受付）。LINE・インターネットは申込時に電子決済、電話は2026年10月1日以降の申込で申込券を購入。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "attendance": {
+              "value": "立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付046-823-0868。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "申込時に品目区分・現行手数料・収集日・指定場所を確認してください。"
+          ]
+        },
+        {
+          "id": "yokosuka-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "エコミルへの自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "横須賀市内で発生した家庭ごみ。燃せる・不燃・粗大・破砕困難ごみ等。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "横須賀ごみ処理施設「エコミル」へ直接搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自分で施設へ搬入し、原則自分で荷下ろし。自宅内の搬出支援なし。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "ごみを発生させた本人または同居家族。市外発生ごみ不可。同居していない家族・市外在住者は事前照会。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "本人または同居家族が搬入可。同居していない家族は事前問い合わせ。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "10kgまでごとに200円。スプリングマットレス1個につき3,000円加算。現金のみ。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "予約不要。月～金8:30～16:00、土日・12/29～1/3休業。祝日（月～金）は受付。最大積載量2トンまで。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "application": {
+              "value": "予約不要。受付時間内に来所。本人確認書類（運転免許証等）提示。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者1名でよいが、原則本人が荷下ろし。運転者とごみ発生者の一致条件は明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "エコミル046-854-4153。",
+              "state": "explicit",
+              "source_ids": [
+                "yokosuka-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ごみ発生者本人が運転者である必要があるか、本人確認書類、荷下ろし補助の可否を施設へ確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式案内の更新日と取得日を分けて記録。窓口問い合わせ、人手確認は未実施。"
+      ],
+      "common_questions_for_office": [
+        "本人・同居者・世帯全員の要件とAND/OR条件を確認してください。",
+        "親族・近隣住民・支援者の援助可能性が資格にどう影響するか確認してください。",
+        "屋内搬出範囲、本人の立会い、本人が運転する必要があるかを確認してください。",
+        "利用料・処理手数料・減免、予約方法、個数・1日あたりの回数上限、地区差を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "yokosuka-daily",
+      "url": "https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html",
+      "title": "高齢者等ごみ出し支援収集",
+      "source_updated": "2025-04-10",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokosuka-regular",
+      "url": "https://www.city.yokosuka.kanagawa.jp/4150/g_info/l100000701.html",
+      "title": "粗大ごみ（有料）",
+      "source_updated": "2026-08-25",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokosuka-dropoff",
+      "url": "https://www.city.yokosuka.kanagawa.jp/4170/s-syori/03.html",
+      "title": "持ち込みごみ",
+      "source_updated": "2026-09-30",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "yokosuka-bulky_faq",
+      "url": "https://www.city.yokosuka.kanagawa.jp/faq/kurashi/gomi/katei/0426.html",
+      "title": "収集を依頼した粗大ごみを家の外まで運べません",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "神奈川県公式サイト内の市別検索を用いて4市のごみ出し支援・粗大ごみ・自己搬入の公式ページ/資料を確認し、公式原典の取得HTML/PDF、抽出テキスト、取得日時、HTTP状態、SHA-256を各市official-metadata.jsonへ保存（2026-10-18）。更新日は公式原典に明記されたもののみ転記し、推測していない。相模原・横須賀・藤沢は各市公式ページを取得。茅ヶ崎の安心まごころ支援・大型ごみは公式PDF資料に年度差があり、予約手段・料金・持込条件は最新窓口確認を要する。制度窓口への問い合わせ、人手による全項目照合、独立レビュー未実施。プレビュー専用の未公開下書き。"
+}

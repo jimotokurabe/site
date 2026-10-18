@@ -1,0 +1,197 @@
+[
+  {
+    "city": "osaka:takatsuki",
+    "service": "takatsuki-daily",
+    "service_sha256": "a44322dcdd7d3cd2431b00d8050661879cf4a6b183a07c845ec19774ef6b7188",
+    "sources": [
+      {
+        "id": "takatsuki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-daily.txt",
+        "lines": [
+          [
+            100,
+            176
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-daily.html.source",
+        "raw_sha256": "6e1a9ae9df5f57789a4e5f1fc531c204130f8c51a1fa9addd52b7cb62eab2b21",
+        "text_sha256": "968657c14f2e54c33ef5d7ee29d210a2b8ed2ccec5de6cf51beea8d5b0d71694",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:takatsuki",
+    "service": "takatsuki-carry",
+    "service_sha256": "b154682fb4b24d363369a6ee1cbef22736671ce58134cd0f6a164dab7cd617c1",
+    "sources": [
+      {
+        "id": "takatsuki-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-daily.txt",
+        "lines": [
+          [
+            112,
+            125
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-daily.html.source",
+        "raw_sha256": "6e1a9ae9df5f57789a4e5f1fc531c204130f8c51a1fa9addd52b7cb62eab2b21",
+        "text_sha256": "968657c14f2e54c33ef5d7ee29d210a2b8ed2ccec5de6cf51beea8d5b0d71694",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "takatsuki-temp",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-temp.txt",
+        "lines": [
+          [
+            180,
+            208
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-temp.html.source",
+        "raw_sha256": "3e2ba222aaacbb5a8b0dc06f9a0d6cde9574e20b32b9c8a833ee659a3869aea1",
+        "text_sha256": "fd62c0c5a7c7b04556fa239e0fa3e9a21b189a43d3347be37ba86fe111b312fc",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:takatsuki",
+    "service": "takatsuki-regular",
+    "service_sha256": "2ee56e833fdcbc669889d10c0831c2fdc48974b8a30e8e0a7669bff03df24533",
+    "sources": [
+      {
+        "id": "takatsuki-temp",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-temp.txt",
+        "lines": [
+          [
+            180,
+            220
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-temp.html.source",
+        "raw_sha256": "3e2ba222aaacbb5a8b0dc06f9a0d6cde9574e20b32b9c8a833ee659a3869aea1",
+        "text_sha256": "fd62c0c5a7c7b04556fa239e0fa3e9a21b189a43d3347be37ba86fe111b312fc",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "osaka:takatsuki",
+    "service": "takatsuki-self",
+    "service_sha256": "6eec2d0e1c02059e16da95eac9be03883ab4c242223f05d746253351ea8982ed",
+    "sources": [
+      {
+        "id": "takatsuki-self",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-self.txt",
+        "lines": [
+          [
+            185,
+            222
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-self.html.source",
+        "raw_sha256": "0b16af874a2210aa1e5f03a2368625a5539879bde3f642e1609fbad2f5e6aabd",
+        "text_sha256": "4737db99adcd8349028b2a04340e876a4958c1b0c550d6c6882ee7f169e41309",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "takatsuki-self-apply",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-self-apply.txt",
+        "lines": [
+          [
+            185,
+            234
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-self-apply.html.source",
+        "raw_sha256": "68bf2603b6868bf75c69ee6556daf705988a0f1ec6810234aa585093136f5633",
+        "text_sha256": "306e5be6828a00587c4c9c94f8458187239b3dd399dfa34dbe41de3cd825a097",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "takatsuki-self-form",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-self-form.txt",
+        "lines": [
+          [
+            184,
+            220
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/takatsuki/official/takatsuki-self-form.html.source",
+        "raw_sha256": "334ce6d73992a9f6e4ec6548a67401d00fb4e1d6cb312ed7e0d47dd6fe30c85f",
+        "text_sha256": "abf0441d1387ce20b6770504613d8445b351e92f0e16ae5ccd19b00825a60a2a",
+        "field_names": [
+          "family_help",
+          "application"
+        ]
+      }
+    ]
+  }
+]

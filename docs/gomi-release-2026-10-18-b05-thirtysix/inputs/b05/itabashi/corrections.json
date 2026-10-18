@@ -1,0 +1,59 @@
+[
+  {
+    "date": "2026-10-18",
+    "editor": "independent AI reviewer",
+    "original_draft_sha256": "7df3e286dac9bd9841c0b11e2fe3bec2d8265b7ae57dc160dc44a6e88f0566c7",
+    "reason": "保存原典との双方向照合で誤記・未確認の断定を修正。練馬・板橋は公式専用ページを追加取得して日常戸別収集の未発見判定を是正。",
+    "changes": [
+      {
+        "service": "itabashi-daily-support",
+        "changed": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact",
+          "evidence_status",
+          "questions_for_office"
+        ]
+      },
+      {
+        "service": "itabashi-bulky-carry",
+        "changed": [
+          "eligibility",
+          "attendance",
+          "questions_for_office"
+        ]
+      },
+      {
+        "service": "itabashi-self-dropoff",
+        "changed": [
+          "fees"
+        ]
+      }
+    ],
+    "source_updated_changes": [
+      {
+        "source": "itabashi-daily",
+        "from": null,
+        "to": "2023-12-07"
+      }
+    ],
+    "new_official_sources": [
+      "itabashi-daily"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "editor": "independent AI reviewer",
+    "reason": "参照されていない調査補助資料を制度JSONのsources配列から除外。原典本体とofficial-metadataは保全。",
+    "removed_unreferenced_source_ids": [
+      "itabashi-waste"
+    ]
+  }
+]

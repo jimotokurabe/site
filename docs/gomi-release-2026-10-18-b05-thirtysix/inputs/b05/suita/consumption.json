@@ -1,0 +1,33 @@
+{
+  "city": "osaka:suita",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "site:city.suita.osaka.jp 安心サポート収集 対象 申込み",
+    "site:city.suita.osaka.jp 粗大ごみ 大型複雑ごみ 収集 出し方",
+    "site:city.suita.osaka.jp 破砕選別工場 持込み 予約 手数料",
+    "site:city.suita.osaka.jp ごみ収集日 大型複雑ごみ 地区"
+  ],
+  "official_sources_retrieved": 5,
+  "http_200_count": 5,
+  "http_non_200_count": 0,
+  "original_bytes_total": 620742,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "検索・取得ツールの課金量やモデルトークン数は個別計測できないため未取得。推測値は記載しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "suita-daily",
+    "suita-bulky",
+    "suita-carry-pdf",
+    "suita-self",
+    "suita-collection-days"
+  ],
+  "new_city_sha256": "6c8e2f0f2dbb0fbcb589e3a158db46c6537125e36a80b3658cc2c441d85f43b4",
+  "source_hash_verification": "passed"
+}

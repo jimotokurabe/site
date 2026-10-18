@@ -12,6 +12,19 @@ DATA = json.loads((ROOT / "data/gomi-support.json").read_text(encoding="utf-8"))
 
 
 class GomiValidationTests(unittest.TestCase):
+    def test_b05_municipal_hosts_restrict_source_ownership(self):
+        hosts = {'www.city.itabashi.tokyo.jp': 'tokyo:itabashi', 'www.city.suginami.tokyo.jp': 'tokyo:suginami', 'www.city.suita.osaka.jp': 'osaka:suita', 'www.city.nerima.tokyo.jp': 'tokyo:nerima', 'www.city.takatsuki.osaka.jp': 'osaka:takatsuki', 'www.city.toyonaka.osaka.jp': 'osaka:toyonaka', 'www.city.ota.tokyo.jp': 'tokyo:ota', 'www.city.sagamihara.kanagawa.jp': 'kanagawa:sagamihara', 'www.city.yokosuka.kanagawa.jp': 'kanagawa:yokosuka', 'www.city.fujisawa.kanagawa.jp': 'kanagawa:fujisawa', 'www.city.chigasaki.kanagawa.jp': 'kanagawa:chigasaki'}
+        for host, city_id in hosts.items():
+            with self.subTest(host=host):
+                data = copy.deepcopy(DATA)
+                source = data['sources'][0]
+                source['url'] = 'https://' + host + '/test.html'
+                self.assertTrue(any('expected an official municipal' in e for e in validate(data, root=ROOT)))
+                owners = [c for c in data['cities'] if any(source['id'] in f['source_ids'] for svc in c['services'] for f in svc['fields'].values())]
+                self.assertEqual(len(owners), 1)
+                owners[0]['id'] = city_id
+                self.assertFalse(any('expected an official municipal' in e for e in validate(data, root=ROOT)))
+
     def test_current_research_schema_passes(self):
         self.assertEqual(validate(DATA, root=ROOT), [])
 

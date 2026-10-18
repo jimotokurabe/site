@@ -1,0 +1,130 @@
+[
+  {
+    "city": "kanagawa:sagamihara",
+    "service": "sagamihara-daily",
+    "service_sha256": "2cb5be2875e9a6a5112ca225eac3cd29b55acb14124f576bc14376f75e7c7a0b",
+    "sources": [
+      {
+        "id": "sagamihara-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/daily.txt",
+        "lines": [
+          [
+            166,
+            250
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/daily.html.source",
+        "raw_sha256": "05107c770d3fbc6db2b61e96ac84d569efd624c5dd3a9c000087991f4c518c05",
+        "text_sha256": "95bb7cd0dd287fdec1f7c651ef7ac860d8a72c4c34130545e8a7d428d5020140",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:sagamihara",
+    "service": "sagamihara-bulky-carry",
+    "service_sha256": "c0c8049b14daf31c054cf3c272457ba4a126d4d1151f399a37a9665b645ac335",
+    "sources": [
+      {
+        "id": "sagamihara-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/regular.txt",
+        "lines": [
+          [
+            164,
+            276
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/regular.html.source",
+        "raw_sha256": "d1b69c17fb99dd8cdc886c94911ad7c9630abbd9f67c908d993c1c3c0b5c11b5",
+        "text_sha256": "0396271b286dd458520206d6085c01a37b92ac777e26d69d74aabfe7a18aa98e",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:sagamihara",
+    "service": "sagamihara-regular-bulky",
+    "service_sha256": "91f3ee87545f279e8ce94a80ea46efe2a87dc9b0b25d6d9bcbdd8e28cac61d93",
+    "sources": [
+      {
+        "id": "sagamihara-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/regular.txt",
+        "lines": [
+          [
+            164,
+            276
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/regular.html.source",
+        "raw_sha256": "d1b69c17fb99dd8cdc886c94911ad7c9630abbd9f67c908d993c1c3c0b5c11b5",
+        "text_sha256": "0396271b286dd458520206d6085c01a37b92ac777e26d69d74aabfe7a18aa98e",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kanagawa:sagamihara",
+    "service": "sagamihara-self-dropoff",
+    "service_sha256": "fe8a3d067675299e34c1424789d660913f198a4f8ab5e89efaf3b7aea2f5aa3d",
+    "sources": [
+      {
+        "id": "sagamihara-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/dropoff.txt",
+        "lines": [
+          [
+            164,
+            227
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B05/sagamihara/official/dropoff.html.source",
+        "raw_sha256": "72509d28cb641eccfc02ae5b5795707536ca3509e00e82b26bd9cf9d59d084f9",
+        "text_sha256": "c52ed0013dba00c00a3a1565e2b9a563a14cbd54f54f47d16120f4dfb427a457",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

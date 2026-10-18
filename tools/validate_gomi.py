@@ -146,6 +146,17 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
         # These municipal sites use .jp rather than the common .lg.jp domain.
         # Accept them only when the source is referenced exclusively by that city.
         municipal_hosts = {
+            'www.city.chigasaki.kanagawa.jp': 'kanagawa:chigasaki',
+            'www.city.fujisawa.kanagawa.jp': 'kanagawa:fujisawa',
+            'www.city.sagamihara.kanagawa.jp': 'kanagawa:sagamihara',
+            'www.city.yokosuka.kanagawa.jp': 'kanagawa:yokosuka',
+            'www.city.itabashi.tokyo.jp': 'tokyo:itabashi',
+            'www.city.nerima.tokyo.jp': 'tokyo:nerima',
+            'www.city.ota.tokyo.jp': 'tokyo:ota',
+            'www.city.suginami.tokyo.jp': 'tokyo:suginami',
+            'www.city.suita.osaka.jp': 'osaka:suita',
+            'www.city.takatsuki.osaka.jp': 'osaka:takatsuki',
+            'www.city.toyonaka.osaka.jp': 'osaka:toyonaka',
             'www.city.sapporo.jp': 'hokkaido:sapporo',
             'www.city.chiba.jp': 'chiba:chiba',
             'www.city.okayama.jp': 'okayama:okayama',
@@ -164,7 +175,7 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
                       for fact in service.get('fields', {}).values()
                       if sid in fact.get('source_ids', [])}
             official_host = owners == {'hyogo:itami'}
-        if hostname in municipal_hosts:
+        if hostname in municipal_hosts and not official_host:
             owners = {c.get('id') for c in cities if isinstance(c, dict)
                       for service in c.get('services', [])
                       for fact in service.get('fields', {}).values()

@@ -1,0 +1,71 @@
+[
+  {
+    "date": "2026-10-18",
+    "editor": "independent AI reviewer",
+    "original_draft_sha256": "79bdc91830623110fcb72ea3da8a277c0902fa5c2ea7b9ab09429fb1ff1a3b02",
+    "reason": "保存原典との双方向照合で誤記・未確認の断定を修正。練馬・板橋は公式専用ページを追加取得して日常戸別収集の未発見判定を是正。",
+    "changes": [
+      {
+        "service": "nerima-daily-support",
+        "changed": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact",
+          "evidence_status",
+          "questions_for_office"
+        ]
+      },
+      {
+        "service": "nerima-regular-bulky",
+        "changed": [
+          "fees",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "service": "nerima-self-dropoff",
+        "changed": [
+          "family_help",
+          "fees"
+        ]
+      }
+    ],
+    "source_updated_changes": [
+      {
+        "source": "nerima-bulky",
+        "from": "2026-06-03",
+        "to": "2026-09-14"
+      },
+      {
+        "source": "nerima-separation-current",
+        "from": null,
+        "to": "2026-10-01"
+      },
+      {
+        "source": "nerima-daily",
+        "from": null,
+        "to": "2024-07-16"
+      }
+    ],
+    "new_official_sources": [
+      "nerima-daily"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "editor": "independent AI reviewer",
+    "reason": "参照されていない調査補助資料を制度JSONのsources配列から除外。原典本体とofficial-metadataは保全。",
+    "removed_unreferenced_source_ids": [
+      "nerima-waste",
+      "nerima-separation-current"
+    ]
+  }
+]

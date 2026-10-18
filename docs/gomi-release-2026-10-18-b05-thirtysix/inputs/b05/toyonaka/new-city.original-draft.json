@@ -1,0 +1,447 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "osaka:toyonaka",
+      "name": "豊中市",
+      "kana": "とよなかし",
+      "pref_name": "大阪府",
+      "selection_reason": "ふれあい収集は本人・世帯員が排出困難な世帯に、全ごみ種を決まった曜日に収集する。粗大ごみ通常収集とクリーンランドへの臨時持込みは別手続き。ふれあい収集ページには室内からの大型ごみ搬出の記載を確認できず、独立した搬出支援制度は今回の公式検索範囲で未発見。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "toyonaka-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集（高齢者・障害者支援）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭系ごみのすべてのごみ種。粗大ごみは別途申込みと処理券購入が必要との関連案内を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "週1回、指定曜日に指定した場所へ、専用ステッカーを貼り正午までに排出。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "指定排出場所へ出されたごみを収集。室内へ入って搬出する範囲の説明はない。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "市内に住民票があり市内居住",
+                  "世帯員が家庭系ごみを集積所へ出すことが困難",
+                  "次のいずれかに該当する世帯: 65歳以上で要介護2以上／身体障害者手帳1級または2級／療育手帳A／精神障害者保健福祉手帳1級",
+                  "ごみ排出場所を確保できる"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "family_help": {
+              "value": "世帯構成員自身が排出困難であることが条件。家族・親族が援助可能な場合の除外条件は掲載ページに明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "fees": {
+              "value": "収集サービス自体の利用料の記載なし。粗大ごみ処理券は有料と案内。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "limits": {
+              "value": "排出場所の確保ができない場合は利用不可。2023年10月から制度変更。すべてのごみ種を週1回収集。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "application": {
+              "value": "申込書を家庭ごみ事業課へ提出。オンライン手続きの申込書案内あり。申込後の調査・決定手順の詳細は掲載箇所に記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            },
+            "contact": {
+              "value": "環境部 家庭ごみ事業課 06-6843-3512、FAX 06-6857-2767。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "豊中市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "豊中市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "toyonaka-carry",
+          "kind": "bulky_carry_support",
+          "name": "独立した屋内搬出支援（公式検索範囲で未発見）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回確認した市公式のふれあい収集・粗大ごみ案内では、屋内から粗大ごみを搬出する独立支援制度を確認できなかった。未発見であり、制度が存在しないとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "屋内から粗大ごみを搬出する専用経路は今回の確認資料で見つからなかった。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "ふれあい収集案内に室内搬出の記載なし。独立制度の有無と搬出範囲は担当窓口へ確認。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "独立した屋内搬出支援の対象条件は今回の公式検索では見つからなかった。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "family_help": {
+              "value": "独立した屋内搬出支援における親族援助の扱いは今回の公式検索では見つからなかった。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "fees": {
+              "value": "独立した屋内搬出支援の利用料・減免は今回の公式検索では見つからなかった。通常の粗大ごみ処理券は別制度。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "limits": {
+              "value": "屋内搬出支援の回数・品目・住居条件は今回の公式検索では見つからなかった。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "application": {
+              "value": "独立した屋内搬出支援の申込手順は今回の公式検索では見つからなかった。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "attendance": {
+              "value": "独立した屋内搬出支援の訪問・立会い要件は今回の公式検索では見つからなかった。",
+              "state": "not_found",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            },
+            "contact": {
+              "value": "家庭ごみ事業課 06-6843-3512へ屋内搬出支援の有無を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-daily",
+                "toyonaka-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "豊中市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "豊中市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "toyonaka-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ・リユース（戸別収集）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市の粗大ごみとして受け付ける品目。品目別手数料一覧で対象・金額を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約した収集日に指定場所へ排出する戸別収集。具体的な場所の要件は申込時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "申込者が排出場所まで出す。市の室内搬出は案内ページで明記されていない。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "豊中市内の家庭から出る市の粗大ごみ対象品。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "family_help": {
+              "value": "家族等の代理申込・代理排出の条件は粗大ごみページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "fees": {
+              "value": "有料。品目ごとの処理手数料に応じ、400円券・900円券を購入。掲載手数料表で品目を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "limits": {
+              "value": "ネット申込みはサイズ確認ができる品目に制限。対象外品目・予約上限は受付センター確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "application": {
+              "value": "インターネット24時間365日、LINEまたは受付センター。ネットは初回等、受付センターの確認が必要となる場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集当日の立会い要否はページ掲載内容で明記を確認できず。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            },
+            "contact": {
+              "value": "豊中市粗大ごみ受付センター。具体的な電話番号・受付時間は市公式粗大ごみ案内で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "豊中市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "豊中市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "toyonaka-self",
+          "kind": "self_dropoff",
+          "name": "臨時家庭ごみのクリーンランド持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "豊中市または伊丹市で発生した家庭の臨時ごみ。日常的なごみは定日収集、粗大ごみ戸別収集は市の受付を利用。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "collection_location": {
+              "value": "豊中市伊丹市クリーンランドへ本人または家族が持込み。荷降ろしは搬入者自身。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "indoor_carry": {
+              "value": "利用者が車両に積み、施設で自身で荷下ろし。施設による屋内搬出・荷降ろし支援の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "eligibility": {
+              "value": "ごみの発生元は豊中市・伊丹市内の家庭。本人または家族が持込み可能。第三者持込みは原則不可。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "family_help": {
+              "value": "電話予約方式は排出者本人または家族が搬入可。ネット予約方式は排出者本人に限るため、予約方法による違いに注意。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "fees": {
+              "value": "施設使用料はごみ重量10kgまでごとに105円。可燃・不燃を分けて精算。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "limits": {
+              "value": "完全予約制。予約回数・日時・車両数に上限。市外発生ごみ、家電4品目、PC、危険物、強靭物、産廃等は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "application": {
+              "value": "電話またはネットで事前予約。ネットは持込希望日の7日前から2日前まで。電話で予約時に品目・個数・車両・日時等を申告。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "attendance": {
+              "value": "排出者本人または家族が搬入。ネット予約は予約者本人。本人確認書類を提示。本人が運転する必要は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            },
+            "contact": {
+              "value": "豊中市伊丹市クリーンランド 再資源・搬入課 06-6841-5394（問合せ専用。予約は別番号）。",
+              "state": "explicit",
+              "source_ids": [
+                "toyonaka-dropoff",
+                "toyonaka-dropoff-net"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "豊中市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "豊中市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "調査時点の公式ページ記載を保存。ページ更新日を確認できない場合は推測していない。",
+        "制度の現行運用と資格判定は未照会。独立した人手確認が必要。"
+      ],
+      "common_questions_for_office": [
+        "世帯全員が資格条件を満たすか、親族・同居者の援助が対象判定にどう影響するかを窓口へ確認してください。",
+        "室内の搬出範囲、玄関・門扉や集合住宅の条件、費用・減免、予約回数、立会い、本人搬入と運転者の条件を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "toyonaka-daily",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/bunbetsu_dashikata/shiservice/fureai.html",
+      "title": "ふれあい収集（高齢者・障害者支援） 豊中市",
+      "source_updated": "2024-09-16",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyonaka-regular",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/bunbetsu_dashikata/sodaigomi_dashikata.html",
+      "title": "粗大ごみ・リユース 豊中市",
+      "source_updated": "2026-08-05",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyonaka-dropoff",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/tel/mochikomi.html",
+      "title": "臨時家庭ごみの持ち込み 豊中市",
+      "source_updated": "2026-05-13",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyonaka-dropoff-net",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/net/rinnjigomi.html",
+      "title": "臨時家庭ごみの持ち込みについて 豊中市",
+      "source_updated": "2026-10-08",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyonaka-support-index",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/gomi_recycl_bika_to/tesuryoukaitei.html",
+      "title": "粗大ごみ、臨時ごみ処理手数料の改定について 豊中市",
+      "source_updated": "2024-10-14",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "豊中市のみ調査。市公式サイト内を中心に各サービスの対象・通常収集・自己搬入を検索し、公式ページ5件を保存。原文HTML/PDFまたは抽出テキスト、URL、実取得日時、HTTP状態、原本・テキストSHA-256はofficial-metadata.json。更新表示は原典の明記がある場合のみ転記。市窓口照会、全項目の人手確認、独立レビューは未実施。AI下書き・公開不可。"
+}

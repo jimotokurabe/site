@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<title>高齢者等ごみ出し支援収集｜横須賀市</title>
+
+<meta name="author" content="横須賀市" />
+<meta name="viewport" content="width=device-width, maximum-scale=3.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="datetime" content="2025-04-10 00:00:00" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="高齢者等ごみ出し支援収集" />
+<meta property="og:url" content="https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html" />
+<meta property="og:description" content="&nbsp;" />
+<meta property="og:image" content="https://www.city.yokosuka.kanagawa.jp/shared/images/sns/logo.jpg" />
+<meta property="og:site_name" content="横須賀市" />
+<meta property="og:locale" content="ja_jp" />
+<link href="/shared/site_rn2022/style/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/site_rn2022/style/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/templates/free_rn2022/style/edit.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/site_rn2022/style/smartphone.css" rel="stylesheet" type="text/css" class="mc_css" />
+<link href="/shared/templates/free_rn2022/style/edit_sp.css" rel="stylesheet" type="text/css" class="mc_css" />
+<link href="/shared/images/favicon/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="/shared/images/favicon/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
+<script type="text/javascript" src="/shared/site_rn2022/js/jquery.js"></script>
+<script type="text/javascript" src="/shared/site_rn2022/js/setting.js"></script>
+<script type="text/javascript" src="/shared/js/readspeaker.js"></script>
+<script type="text/javascript" src="/shared/js/ga.js"></script>
+
+
+
+
+
+</head>
+<body class="format_free no_javascript">
+<script type="text/javascript" src="/shared/site_rn2022/js/init.js"></script>
+<div id="tmp_wrapper">
+<noscript>
+<p>このサイトではJavaScriptを使用したコンテンツ・機能を提供しています。JavaScriptを有効にするとご利用いただけます。</p>
+</noscript>
+<p><a href="#tmp_honbun" class="skip">本文へスキップします。</a></p>
+
+<div id="tmp_header">
+<div class="container">
+<div id="tmp_hlogo">
+<p><a href="/top.html"><span>横須賀市</span></a></p>
+</div>
+<div class="head_social">
+<ul>
+	<li><a href="https://twitter.com/yokosuka_city" target="_blank"><img alt="X" height="32" src="/shared/site_rn2022/images/icon/sns_x_wh.png" width="32" /></a></li>
+	<li><a href="https://www.facebook.com/cocoyoko.net" target="_blank"><img alt="Facebook" height="32" src="/shared/site_rn2022/images/icon/sns_fb.png" width="32" /></a></li>
+	<li><a href="https://line.me/R/ti/p/&#64;196hbuhz" target="_blank"><img alt="LINE" height="32" src="/shared/site_rn2022/images/icon/sns_line.png" width="32" /></a></li>
+	<li><a href="https://www.youtube.com/channel/UCQDVaWThh91v2lgtCCqio5w" target="_blank"><img alt="YouTube" height="32" src="/shared/site_rn2022/images/icon/sns_yt.png" width="32" /></a></li>
+	<li><a href="https://www.instagram.com/yokosuka.gurashi/" target="_blank"><img alt="Instagram" height="32" src="/shared/site_rn2022/images/icon/sns_ins.png" width="32" /></a></li>
+</ul>
+</div>
+<div id="tmp_hnavi_s">
+<ul>
+	<li id="tmp_hnavi_top_menu"><a href="/top.html">総合<span class="sp_br">トップ</span></a></li>
+	<li id="tmp_hnavi_lmenu"><a href="javascript:void(0)"><span>検索</span></a></li>
+	<li id="tmp_hnavi_mmenu"><a href="javascript:void(0)"><span>メニュー</span></a></li>
+	<li id="tmp_hnavi_rmenu"><a href="javascript:void(0)"><span>緊急情報</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tmp_sma_menu">
+<div id="tmp_sma_lmenu" class="wrap_sma_sch">
+<div class="container">
+<div id="tmp_sma_search">
+<fieldset><legend>検索条件を選択</legend>
+<ul class="search_change">
+	<li class="search_keyword"><input checked="checked" id="search_keyword" name="search_change" type="radio" value="0" /><label for="search_keyword">キーワードで検索</label></li>
+	<li class="search_id"><input id="search_id" name="search_change" type="radio" value="1" /><label for="search_id">ページIDで検索</label></li>
+</ul>
+</fieldset>
+<div id="tmp_sma_search_input">
+<div class="wrap_search_input">
+<div class="search_input search_input_keyword">
+<form action="/search/result.html" id="tmp_sma_gsearch" name="tmp_sma_gsearch">
+<div class="wrap_sch_row">
+<div class="wrap_sch_box">
+<p class="sch_box"><label for="tmp_sma_query">絞り込みメニュー</label><input id="tmp_sma_query" name="q" size="31" type="text" /></p>
+</div>
+<div class="wrap_sch_box"><select id="tmp_select_city" name="cx" title="検索範囲選択" class="select"><option selected="selected" value="002730863616812439332:yygixzw-tzi">横須賀市サイト全体検索</option><option value="002730863616812439332:4nvhst2k3p8">施設情報内検索</option><option value="002730863616812439332:tc-ekgwl7fc">イベント情報内検索</option><option value="002730863616812439332:t_fuujf2fn0">報道発表内検索</option><option value="002730863616812439332:dqctjamgufi">FAQ内検索</option></select></div>
+<div class="wrap_sch_box">
+<p class="sch_btn"><input id="tmp_sma_func_sch_btn" name="sa" type="submit" value="検索" /></p>
+<p id="tmp_sma_search_hidden"><input id="cx" name="cx" type="hidden" value="002730863616812439332:yygixzw-tzi" /> <input name="ie" type="hidden" value="UTF-8" /> <input name="cof" type="hidden" value="FORID:9" /></p>
+</div>
+</div>
+</form>
+</div>
+<div class="search_input search_input_pageid">
+<div id="tmp_wrap_query_pageid">
+<p class="input_query_pageid"><label for="id_search_txt">ページID検索</label><input id="id_search_txt" name="q" placeholder="ページID" size="31" title="ページID検索" type="text" value="" /></p>
+<p class="submit_search_pageid"><input id="id_search_btn" type="submit" value="検索" class="id_search_btn" /></p>
+</div>
+</div>
+</div>
+<div class="how_to_use">
+<p><a href="/about_site/kensaku.html">検索の使い方</a></p>
+</div>
+</div>
+</div>
+</div>
+<p class="close_btn"><a href="javascript:void(0);"><span>閉じる</span></a></p>
+</div>
+<div id="tmp_sma_mmenu" class="wrap_sma_sch">
+<div class="container">
+<div id="tmp_sma_cnavi">
+<div id="tmp_mnavi">
+<ul>
+	<li class="mlist1"><a href="/index.html"><span>総合案内</span></a></li>
+	<li class="mlist2"><a href="/fukushi-kosodate/index.html"><span>福祉・子育て</span></a></li>
+	<li class="mlist3"><a href="/kanko-event/index.html"><span>観光・イベント</span></a></li>
+	<li class="mlist4"><a href="/business/index.html"><span>ビジネス</span></a></li>
+	<li class="mlist8"><a href="/yokosuka_plus/index.html"><span>YOKOSUKA PLUS</span></a></li>
+	<li class="mlist9"><a href="/yokosuka_kokokara/index.html"><span>ヨコスカココカラ</span></a></li>
+	<li class="mlist10"><a href="/0535/foreign_languages/index.html"><span>Living in Yokosuka</span></a></li>
+</ul>
+</div>
+<!-- <div id="tmp_gnavi">
+<div class="gnavi">
+<ul>
+	<li class="glist1"><a href="/kurashi/index.html">くらし・手続き</a></li>
+	<li class="glist2"><a href="/kenkou/index.html">健康福祉・子育て教育</a></li>
+	<li class="glist3"><a href="/kankou/index.html">観光・文化・スポーツ</a></li>
+	<li class="glist4"><a href="/sangyou/index.html">産業・まちづくり</a></li>
+	<li class="glist5"><a href="/shisei/index.html">市政情報</a></li>
+</ul>
+</div>
+</div> -->
+<div id="tmp_mean">
+<div class="mean_row">
+<div class="mean_col">
+<div id="tmp_fsize" class="font_size_change changestyle_area">
+<ul class="change_list">
+	<li class="change_ttl">
+	<p>文字サイズ</p>
+	</li>
+	<li><a href="javascript:void(0);" name="small" class="changestyle">縮小</a></li>
+	<li><a href="javascript:void(0);" name="default" class="changestyle">標準</a></li>
+	<li><a href="javascript:void(0);" name="big2" class="changestyle">拡大</a></li>
+</ul>
+</div>
+<div id="tmp_color" class="tint_change changestyle_area">
+<ul class="change_list">
+	<li class="change_ttl">
+	<p>色合い変更</p>
+	</li>
+	<li><a href="javascript:void(0);" name="default" title="default" class="changestyle">標準</a></li>
+	<li><a href="javascript:void(0);" name="blue" title="blue" class="changestyle link_blue">青</a></li>
+	<li><a href="javascript:void(0);" name="yellow" title="yellow" class="changestyle link_yellow">黄</a></li>
+	<li><a href="javascript:void(0);" name="black" title="black" class="changestyle link_black">黒</a></li>
+</ul>
+</div>
+<div class="setting_wrap">
+<ul class="setting_list">
+	<li id="tmp_setting_read" class="setting_read">
+	<div id="readspeaker_button1" class="rs_skip"><a accesskey="L" href="https://app-eas.readspeaker.com/cgi-bin/rsent?customerid=13606&amp;lang=ja_jp&amp;readid=tmp_update,tmp_cate_ttl,tmp_read_contents&amp;url=" onclick="readpage(this.href, 'tmp_readspeaker'); return false;" rel="nofollow" class="rs_href">音声読み上げ</a></div>
+	</li>
+	<li class="setting_language"><a href="https://www-city-yokosuka-kanagawa-jp.translate.goog/?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp" lang="en" xml:lang="en">Machine Translation</a></li>
+</ul>
+</div>
+</div>
+<div class="mean_col">
+<div class="panel_info">
+<div class="nav_internal">
+<ul>
+	<li><a href="/shisei/koho/goiken/feedback.html">お問い合わせ・ご意見</a></li>
+	<li><a href="/shisei/gaiyo/soshiki/index.html">組織案内</a></li>
+</ul>
+</div>
+<div class="social_cate">
+<ul>
+	<li><a href="https://twitter.com/yokosuka_city" target="_blank"><img alt="X" height="40" src="/shared/site_rn2022/images/icon/sns_x_black.png" width="40" /></a></li>
+	<li><a href="https://www.facebook.com/cocoyoko.net" target="_blank"><img alt="Facebook" height="40" src="/shared/site_rn2022/images/icon/sns_fb.png" width="40" /></a></li>
+	<li><a href="https://line.me/R/ti/p/&#64;196hbuhz" target="_blank"><img alt="LINE" height="40" src="/shared/site_rn2022/images/icon/sns_line.png" width="40" /></a></li>
+	<li><a href="https://www.youtube.com/channel/UCQDVaWThh91v2lgtCCqio5w" target="_blank"><img alt="YouTube" height="40" src="/shared/site_rn2022/images/icon/sns_yt.png" width="40" /></a></li>
+	<li><a href="https://www.instagram.com/yokosuka.gurashi/" target="_blank"><img alt="Instagram" height="40" src="/shared/site_rn2022/images/icon/sns_ins.png" width="40" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="close_btn"><a href="javascript:void(0);"><span>閉じる</span></a></p>
+</div>
+<div id="tmp_sma_rmenu" class="wrap_sma_sch">
+<div class="container">
+<div class="wrap_box_emergency">
+<div class="box_emergency">
+<div class="box_emergency_ttl">
+<p>緊急情報</p>
+</div>
+<div class="box_emergency_cnt"></div>
+</div>
+<div class="emergency_read_all">
+<ul>
+	<li><a href="/kurashi/bosai/saigai/index.html">災害・防災情報</a></li>
+	<li><a href="/camera/index.html">災害監視カメラ</a></li>
+	<li><a href="http://yokosuka-city.site.ktaiwork.jp/" target="_blank">過去の一覧（外部サイト）</a></li>
+	<li><a href="/kinkyu/mail/emergency_information.html" lang="en" xml:lang="en">English</a></li>
+</ul>
+</div>
+</div>
+<p style="display: none;" class="close_btn"><a href="javascript:void(0);"><span>閉じる</span></a></p>
+</div>
+</div>
+</div>
+
+<div id="tmp_wrap_main" class="column_rnavi">
+<div class="container">
+<div id="tmp_pankuzu">
+<p><a href="/index.html">総合案内</a> &gt; <a href="/kenko/index.html">健康福祉・子育て教育</a> &gt; <a href="/kenko/fukushi/index.html">福祉</a> &gt; <a href="/kenko/fukushi/kaigo/index.html">介護・高齢者福祉</a> &gt; 高齢者等ごみ出し支援収集</p>
+</div>
+<div id="tmp_wrap_custom_update">
+<div id="tmp_custom_update">
+
+<div id="tmp_social_plugins"><div class="social_media_btn line_btn">
+<div data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;" class="line-it-button"></div>
+<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+</div><div class="social_media_btn facebook_btn">
+<div data-href="https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html" data-layout="button" data-size="small" class="fb-share-button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェアする</a></div>
+</div><div class="social_media_btn twitter_btn">
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false" data-url="https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html" data-text="高齢者等ごみ出し支援収集" data-lang="ja" class="twitter-share-button">ツイート</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></div>
+<p id="tmp_update">更新日：2025年4月10日</p>
+<p id="tmp_pageid">ページID：81551</p>
+
+</div>
+</div>
+
+<div id="tmp_main">
+<div class="wrap_col_main">
+<div class="col_main">
+<p id="tmp_honbun" class="skip">ここから本文です。</p>
+<div id="tmp_read_contents">
+<div id="tmp_readspeaker" class="rs_preserve rs_skip rs_splitbutton rs_addtools rs_exp"></div>
+<!--index_start-->
+<div id="tmp_contents">
+
+<h1>高齢者等ごみ出し支援収集</h1>
+<p>自らごみ集積所にごみ出しをすることが困難な高齢者等が、介護保険サービスや住民主体の支え合い活動のご利用でごみ出し支援を受けることが困難な場合に、ごみ出しの支援をしている人（申請者）の負担を軽減するために、市がごみの戸別収集を実施しています。まずは以下をご検討ください。</p>
+<p><br />
+・<a href="/2640/g_info/l100050587.html">介護保険サービス</a><br />
+・<a href="/2605/sasaeai.html">住民主体の支え合い活動</a><br />
+・<a href="https://kana.rakuraku.or.jp/yokosuka/lifesupport/lifesupport/garbage" target="_blank">一般廃棄物収集運搬業許可業者の利用（外部サイト）</a>&hellip;1回あたり500円～1,000円程度です。</p>
+<h2>対象となる世帯について</h2>
+<p>高齢者等ごみ出し支援収集を利用できるのは、原則として、下記1～3のすべての条件を満たす世帯及びその他、市長が特に必要と認める世帯となります。</p>
+<ul>
+	<li>65歳以上、要介護2以上</li>
+	<li>自らごみ集積所にごみを出すことが困難で、親族・近隣住民・地域ボランティア等、ホームヘルパーによるごみ出し支援が困難な世帯</li>
+	<li>住民税非課税世帯</li>
+</ul>
+<p><a href="https://dshinsei.e-kanagawa.lg.jp/142018-u/offer/offerList_detail?tempSeq=86812" target="_blank">高齢者等支援収集利用申請はこちらから（外部サイト）</a></p>
+<h2>現地確認と収集開始</h2>
+<ul>
+	<li>廃棄物対策課と協議の上、現地確認の日程を連絡させていただきます。現地確認は、申請者・ご本人の立ち会いをお願いします。</li>
+	<li>ご本人にポリバケツ等のごみ容器を用意してもらいます。</li>
+	<li>久里浜収集事務所職員が、週1回、「燃せるごみ」「缶・びん・ペットボトル」「容器包装プラスチック」「不燃ごみ」を戸別収集しますので、分別して決められた袋でお出しください。</li>
+</ul>
+<h2>留意事項</h2>
+<p>毎年6月初旬に翌年度の更新にかかる申請書を送付します。6月30日までに、ご提出ください。（利用期間は8月1日～7月31日までです。）</p>
+
+
+
+
+
+
+</div>
+<!--index_end-->
+</div>
+
+<div id="tmp_inquiry">
+<div id="tmp_inquiry_ttl">
+<p>お問い合わせ</p>
+</div>
+<div id="tmp_inquiry_cnt">
+<form method="post" action="https://www.city.yokosuka.kanagawa.jp/cgi-bin/simple_faq/form.cgi">
+<div class="inquiry_parts">
+<p>
+<a href="/2610/index.html">民生局福祉こども部地域福祉課</a></p>
+<p>横須賀市小川町11番地　消防局庁舎1階＜郵便物：「〒238-8550　地域福祉課」で届きます＞</p>
+<p>電話番号：046-822-9613</p>
+<p>ファクス：046-827-8158</p>
+<p class="inquiry_btn"><input type="submit" value="お問い合わせフォーム" /></p>
+</div>
+<p>
+<input type="hidden" name="code" value="001024002" />
+<input type="hidden" name="dept" value="8176:8093:9836:3694:8591:9836:5271:8176:8674:9587:10002:3777:10002:9172:8840:9172:9504:9670:8840:8010:3777:8840:8010:9089:8010:8508:8010:9836:8010:3777:8757:9255" />
+<input type="hidden" name="page" value="/2610/koureisyatousiennsyuusyuu.html" />
+<input type="hidden" name="ENQ_RETURN_MAIL_SEND_FLG" value="1" />
+<input type="hidden" name="publish_ssl_flg" value="1" />
+</p>
+</form>
+</div>
+</div>
+
+<div id="tmp_feedback">
+<div id="tmp_feedback_ttl">
+<p>より良いウェブサイトにするためにみなさまのご意見をお聞かせください</p>
+</div>
+<div id="tmp_feedback_cnt">
+<form action="/cgi-bin/feedback/feedback.cgi" id="feedback" method="post">
+<p><input name="page_id" type="hidden" value="81551" /><input name="page_title" type="hidden" value="高齢者等ごみ出し支援収集" /><input name="page_url" type="hidden" value="https://www.city.yokosuka.kanagawa.jp/2610/koureisyatousiennsyuusyuu.html" /><input name="item_cnt" type="hidden" value="3" /></p>
+<fieldset><legend>このページは見つけやすかったですか？ </legend>
+<p><input id="que1_1" name="item_1" type="radio" value="見つけやすかった" /><label for="que1_1">1：見つけやすかった</label></p>
+<p><input id="que1_2" name="item_1" type="radio" value="ふつう" /><label for="que1_2">2：ふつう</label></p>
+<p><input id="que1_3" name="item_1" type="radio" value="見つけにくかった" /><label for="que1_3">3：見つけにくかった</label></p>
+<p><input name="label_1" type="hidden" value="質問：このページは見つけやすかったですか？" /><input name="nes_1" type="hidden" value="1" /><input name="img_1" type="hidden" /><input name="img_alt_1" type="hidden" /><input name="mail_1" type="hidden" value="0" /></p>
+</fieldset>
+<fieldset><legend>このページは分かりやすかったですか？ </legend>
+<p><input id="que2_1" name="item_2" type="radio" value="分かりやすかった" /><label for="que2_1">1：分かりやすかった</label></p>
+<p><input id="que2_2" name="item_2" type="radio" value="ふつう" /><label for="que2_2">2：ふつう</label></p>
+<p><input id="que2_3" name="item_2" type="radio" value="分かりにくかった" /><label for="que2_3">3：分かりにくかった</label></p>
+<p><input name="label_2" type="hidden" value="質問：このページは分かりやすかったですか？" /><input name="nes_2" type="hidden" value="1" /><input name="img_2" type="hidden" /><input name="img_alt_2" type="hidden" /><input name="mail_2" type="hidden" value="0" /></p>
+</fieldset>
+<fieldset><legend>このページは役に立ちましたか？ </legend>
+<p><input id="que3_1" name="item_3" type="radio" value="役に立った" /><label for="que3_1">1：役に立った</label></p>
+<p><input id="que3_2" name="item_3" type="radio" value="ふつう" /><label for="que3_2">2：ふつう</label></p>
+<p><input id="que3_3" name="item_3" type="radio" value="役に立たなかった" /><label for="que3_3">3：役に立たなかった</label></p>
+<p><input name="label_3" type="hidden" value="質問：このページは役に立ちましたか？" /><input name="nes_3" type="hidden" value="1" /><input name="img_3" type="hidden" /><input name="img_alt_3" type="hidden" /><input name="mail_3" type="hidden" value="0" /></p>
+</fieldset>
+<p class="submit_btn"><input type="submit" value="送信" /></p>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+<div class="wrap_col_rgt_navi">
+<div class="col_rgt_navi">
+
+<div id="tmp_lnavi">
+<div id="tmp_lnavi_ttl">
+<p><a href="/kenko/fukushi/kaigo/index.html">介護・高齢者福祉</a></p>
+</div>
+<div id="tmp_lnavi_cnt">
+<ul>
+<li><a href="/2605/kenkou/fukushi/koureisha/service.html">団体活動への支援</a></li>
+<li><a href="/2640/kenkou/fukushi/koureisha/hitori.html">ひとり暮らし等の高齢者の方へのサービス</a></li>
+<li><a href="/2640/kenkou/fukushi/koureisha/service_02.html">寝たきり等高齢者の方へのサービス</a></li>
+<li><a href="/2605/kenkou/fukushi/koureisha/ninchishou.html">認知症について</a></li>
+<li><a href="/2640/koureisya/index.html">その他の高齢者の方へのサービス</a></li>
+<li><a href="/2610/g_info/l100050588.html">地域包括支援センター</a></li>
+<li><a href="/2640/g_info/l100051051.html">介護保険の事業所一覧</a></li>
+<li><a href="/2640/g_info/l100050586.html">介護保険の保険料</a></li>
+<li><a href="/2640/g_info/l100000800.html">介護保険のしくみ</a></li>
+<li><a href="/3130/g_info/l100050606.html">介護予防について（一般介護予防事業）</a></li>
+<li><a href="/2640/g_info/l100050587.html">要介護認定をうけるには</a></li>
+<li><a href="/2615/kaigo/kaigo-jigyosya-top.html">介護保険サービス事業者</a></li>
+<li><a href="/2640/keikaku/index.html">横須賀市高齢者保健福祉計画・介護保険事業計画</a></li>
+<li><a href="/2640/hukushisenmonbunkakai/hukushisenmonbunkakai.html">社会福祉審議会高齢福祉専門分科会</a></li>
+<li><a href="/3130/kyousitu/sukatto.html">認知症予防について</a></li>
+<li><a href="/3130/kyousitu/happi.html">うつ予防について</a></li>
+<li><a href="/2640/sougoujigyou.html">介護予防・日常生活支援総合事業（総合事業）</a></li>
+<li><a href="/2605/seikatusientaiseiseibijigyou.html">生活支援体制整備事業</a></li>
+<li><a href="/2640/g_info/kaigokyuuhutekiseika.html">介護給付適正化の推進</a></li>
+<li><a href="/2640/g_info/sisetunyuusyo.html">介護保険の施設に入所する</a></li>
+<li><a href="/2640/soumu/panhuretto.html">介護保険のパンフレット「あんしん介護保険」</a></li>
+<li><a href="/2640/yuuryouroujinnho-mu.html">住み替える（有料老人ホーム等）</a></li>
+<li><a href="/2640/sisetuseibi.html">施設整備</a></li>
+<li><a href="/2640/ikigaigaisyutukatudou.html">生きがい・外出活動支援</a></li>
+<li><a href="/2640/sisetu/demaekouza.html">介護職員出前講座</a></li>
+<li><a href="/2615/roujinnfukusihou/roujinnfukusihoukannkei.html">老人福祉法関係（各種届出等）</a></li>
+<li><a href="/2615/yuuryou-settisha/top.html">有料老人ホーム設置者</a></li>
+<li><a href="/2615/shakaifukushihou/index.html">社会福祉法関係（軽費老人ホーム・各種届出等）</a></li>
+<li><a href="/2640/tokubetsukyufu.html">特別給付</a></li>
+<li><a href="/3130/g_info/20200305.html">WEB介護予防教室</a></li>
+<li><a href="/2640/soumu/jinzaikensyu.html">市内介護施設・事業所を対象とした研修</a></li>
+<li><a href="/2640/kyufu/caremanagement.html">横須賀市ケアマネジメントに関する基本方針について</a></li>
+<li><a href="/2610/koureisyatousiennsyuusyuu.html">高齢者等ごみ出し支援収集</a></li>
+<li><a href="/4821/sumai/koureisya_reform.html">高齢者住宅リフォーム補助金について</a></li>
+<li><a href="/2605/yokosuka-silver.html">シルバー人材センター</a></li>
+<li><a href="/2640/kyufu/documents/harassment.html">カスタマーハラスメントの防止について</a></li>
+<li><a href="/2640/g_info/nyuumonntekikennsyuu.html">介護に関する入門的研修</a></li>
+<li><a href="/2640/g_info/nyuumonnmouza.html">介護に関する入門的研修（入門講座）</a></li>
+<li><a href="/2640/soumu/survey.html">令和7年度横須賀市介護事業所アンケート調査について</a></li>
+<li><a href="/2640/soumu/syuusyokumennsetukai.html">福祉就職相談会・面接会</a></li>
+<li><a href="/2640/koureisya/shittete-anshin.html">パンフレット「知ってて安心、高齢者福祉制度」</a></li>
+<li><a href="/2640/g_info/1100051186.html">サービスの利用者負担</a></li>
+<li><a href="/2640/g_info/l100050614.html">在宅でサービスを利用するには</a></li>
+<li><a href="/2640/g_info/l100050600.html">福祉用具を購入したいとき</a></li>
+<li><a href="/2640/g_info/l100050601.html">住宅を改修したいとき</a></li>
+<li><a href="/2640/kyufu/tokubetukyufu.html">特別給付サービス（横須賀市独自のサービス）</a></li>
+<li><a href="/2640/g_info/l100050611.html">介護保険施設等の食費・居住費の負担軽減制度（負担限度額認定申請）</a></li>
+<li><a href="/2640/g_info/l100050610.html">高額介護（介護予防）サービス費</a></li>
+<li><a href="/2640/syafukukeigenn.html">社会福祉法人等による利用者負担の軽減制度</a></li>
+<li><a href="/2640/g_info/kougakugassann.html">高額介護・高額医療合算制度</a></li>
+<li><a href="/2640/kyufu/hisaisha.html">被災者等に対するサービス利用料軽減制度</a></li>
+<li><a href="/2640/kyufu/keapurande-tarenkei.html">ケアプランデータ連携システムライセンス料のフリーパスキャンペーン開始のご案内</a></li>
+<li><a href="/2640/kyufuhoumonkaigo.html">横須賀市訪問介護等サービス提供体制確保支援事業について</a></li>
+<li><a href="/2640/soumu/survey_citizen.html">令和7年度横須賀市高齢者に対するアンケート調査について</a></li>
+<li><a href="/2640/soumu/care_smile.html">福祉・介護の魅力発信</a></li>
+<li><a href="/2640/saigaibousai.html">災害・防災関連(介護事業所・施設等)</a></li>
+<li><a href="/2640/g_info/ikensyo.html">【新規医療機関向け】意見書記載方法</a></li>
+<li><a href="/2610/g_info/gyakutaibousi.html">高齢者虐待防止センター（YEAP）</a></li>
+<li><a href="/2640/g_info/sketter.html">有償ボランティア「スケッター」について</a></li>
+<li><a href="/2640/g_info/hokenryo.html">令和８年度介護保険料の特例措置について</a></li>
+</ul>
+</div>
+</div>
+<div id="tmp_idx_navi">
+<div id="tmp_idx_navi_ttl">
+<p>目的・テーマから探す</p>
+</div>
+<div id="tmp_idx_navi_cnt">
+<ul>
+	<li><a href="/kurashi/index.html">くらし・手続き</a></li>
+	<li><a href="/kenko/index.html">健康福祉・子育て教育</a></li>
+	<li><a href="/kanko/index.html">観光</a></li>
+	<li><a href="/sports/index.html">スポーツ</a></li>
+	<li><a href="/sangyo/index.html">産業・まちづくり</a></li>
+	<li><a href="/shisei/index.html">市政情報</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div id="tmp_footer">
+<div class="footer_front">
+<div class="container">
+<div class="pnavi">
+<p class="ptop used_bg_img"><a href="#tmp_header"><span>ページの先頭へ戻る</span></a></p>
+</div>
+<div class="footer_main">
+<div class="footer_info">
+<div class="footer_logo">
+<p><span>横須賀市</span></p>
+</div>
+<div class="footer_cnt">
+<address class="footer_address">
+<p><span>法人番号：3000020142018</span></p>
+<p><span>〒238-8550 神奈川県横須賀市小川町11</span></p>
+<p><span>電話番号：046-822-4000　</span><span>ファクス番号：046-822-2539</span></p>
+<p><span>開庁時間：</span> <span>月曜日から金曜日の午前8時30分から午後5時まで</span> <span class="address_sub">（土曜日・日曜日、祝日・休日、年末年始を除く）</span></p>
+</address>
+</div>
+<div class="footer_government rn2026">
+<div class="government_box footer_link_item_1">
+<p class="government_link"><a href="/shisei/gaiyo/access/index.html">庁舎案内</a></p>
+</div>
+<div class="government_box footer_link_item_2">
+<p class="government_link"><a href="/2625/syuwarinku.html">手話で電話</a></p>
+</div>
+</div>
+</div>
+<div class="footer_nav">
+<ul class="fnavi">
+	<li><a href="/about_site/menseki.html">横須賀市ホームページについて</a></li>
+	<li><a href="/sitemap.html">サイトマップ</a></li>
+</ul>
+<div class="footer_social">
+<ul>
+	<li><a href="https://twitter.com/yokosuka_city" target="_blank"><img alt="X" height="40" src="/shared/site_rn2022/images/icon/sns_x_black.png" width="40" /></a></li>
+	<li><a href="https://www.facebook.com/cocoyoko.net" target="_blank"><img alt="Facebook" height="40" src="/shared/site_rn2022/images/icon/sns_fb.png" width="40" /></a></li>
+	<li><a href="https://line.me/R/ti/p/&#64;196hbuhz" target="_blank"><img alt="LINE" height="40" src="/shared/site_rn2022/images/icon/sns_line.png" width="40" /></a></li>
+	<li><a href="https://www.youtube.com/channel/UCQDVaWThh91v2lgtCCqio5w" target="_blank"><img alt="YouTube" height="40" src="/shared/site_rn2022/images/icon/sns_yt.png" width="40" /></a></li>
+	<li><a href="https://www.instagram.com/yokosuka.gurashi/" target="_blank"><img alt="Instagram" height="40" src="/shared/site_rn2022/images/icon/sns_ins.png" width="40" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bellow">
+<div class="container">
+<p lang="en" xml:lang="en" class="copyright">Copyright &copy; Yokosuka city. All rights reserved.</p>
+</div>
+</div>
+</div>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v16.0"></script>
+</div>
+<script type="text/javascript" src="/shared/site_rn2022/js/function.js"></script>
+<script type="text/javascript" src="/shared/site_rn2022/js/main.js"></script>
+<script type="text/javascript" src="/shared/system/js/path_info/path_info.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kanagawa:sagamihara",
+      "name": "相模原市",
+      "kana": "さがみはらし",
+      "pref_name": "神奈川県",
+      "selection_reason": "相模原市のモデル事業対象6地区に限られる日常支援と、粗大ごみ福祉ふれあい収集、通常の戸別収集、直接搬入を分けて確認できるため。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "sagamihara-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集（6地区モデル事業）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やすしかないごみ、資源、プラスチック、ペットボトル、有害ごみ、使用済小型家電。粗大ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "職員と事前確認した自宅の置き場所から週1回収集。指定日の午前8時30分までに出す。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家庭ごみを集積所に出せない世帯向けの戸別収集。屋内へ入る記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "一人暮らし、または世帯全員が集積所へ自らごみを出せない",
+                  "親族・近隣住民の協力が困難",
+                  "対象地区に居住",
+                  "次のいずれか：要介護2以上かつ居宅サービス利用／身体障害者手帳1・2級／療育手帳A1・A2／精神障害者保健福祉手帳1級"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "family_help": {
+              "value": "一人暮らしまたは同居家族全員が自ら出せず、親族・近隣住民の協力を得ることが困難なこと。親族等が申請を代理できる。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "fees": {
+              "value": "利用料・減免の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "limits": {
+              "value": "モデル事業の対象は城山・津久井・中央・大野北・相模台・東林の6地区。粗大ごみは対象外。利用開始まで約1か月の場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "application": {
+              "value": "利用申請書を所管の高齢・障害者相談課または福祉相談センターへ提出（郵送可）。対象確認・自宅訪問の後、利用決定通知。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "attendance": {
+              "value": "申請代理は親族等も可能（本人同意が必要）。自宅訪問で置き場所を確認。収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            },
+            "contact": {
+              "value": "地区の収集担当：津久井クリーンセンター042-784-2711、橋本台環境事業所042-772-0218、麻溝台環境事業所042-747-1241。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "居住地区と世帯員全員の状況が対象要件に該当するか相談課へ確認してください。",
+            "収集場所、容器・ネットの要否、立会い要否、利用料の有無を確認してください。"
+          ]
+        },
+        {
+          "id": "sagamihara-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみ福祉ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "市が家屋内から粗大ごみを建物外へ搬出し、戸別収集する。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "粗大ごみを家屋外へ搬出する支援あり。細かな搬出経路・作業範囲は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "一人暮らし、または世帯全員が次のいずれか：65歳以上／要介護・要支援認定／身体障害者手帳／療育手帳／精神障害者保健福祉手帳"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "family_help": {
+              "value": "世帯全員が対象事由に該当する必要がある。親族等の援助可能性に関する要件は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "fees": {
+              "value": "搬出は無料。収集運搬等に係る処理手数料は本人負担。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "limits": {
+              "value": "通常の粗大ごみ収集より回数が少なく、申込みから収集まで日数がかかる場合あり。2か月前から受付。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ戸別収集を申し込む際に電話で相談。電話受付のみ。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "attendance": {
+              "value": "申込み・作業時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付事務所042-774-9933。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "同居世帯員全員の対象要件、対象外品目、収集可能日、個数制限を申込時に確認してください。",
+            "搬出経路や立会い要否、個別の処理手数料を確認してください。"
+          ]
+        },
+        {
+          "id": "sagamihara-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市内の家庭から出る粗大ごみ。集積所での定期収集はしない。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "申込者が自宅敷地内の建物外・道路際など指定場所へ出し、戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "建物内からの収集はしない（福祉ふれあい収集を除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "相模原市内の家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "family_help": {
+              "value": "申込者や家族が屋外の指定場所まで出す。市職員による屋内搬出は福祉ふれあい収集に限る。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "fees": {
+              "value": "有料。申込時に案内される手数料分の粗大ごみ収集シールを購入。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "limits": {
+              "value": "事前予約制。受付順で最短日案内、混雑時は1か月以上先の場合あり。2か月先まで指定可。収集日の午前8時30分までに排出。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "application": {
+              "value": "電話・インターネット・はがき。電話042-774-9933、平日8時～18時（祝日・12/29～1/3除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付事務所042-774-9933。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目ごとの収集手数料、収集日、排出場所、申込個数上限を申込時に確認してください。"
+          ]
+        },
+        {
+          "id": "sagamihara-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみの直接搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "相模原市内の家庭から出た粗大ごみ。市外ごみ、集積所で出せるごみ・資源は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "北部・南部粗大ごみ受入施設または津久井クリーンセンターへ車で直接持込。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自分で施設へ持ち込む方式。自宅内からの搬出支援の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出た粗大ごみに限る。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "自ら持ち込む方式。本人以外（家族等）が持ち込めるかは記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "10kgごと240円（10kg未満端数も10kg扱い）。スプリングマットレスは1個2,900円加算。窓口支払。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "予約不要。月～土曜9時～16時、12/31～1/3除く。市内家庭ごみ限定。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "application": {
+              "value": "予約不要。各受入施設へ直接搬入。受付窓口で搬入申請。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "車で搬入し、施設で手続き。運転者本人でなければならないとの記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "南部粗大ごみ受入施設042-767-5305、北部042-775-5333、津久井クリーンセンター042-784-2711。",
+              "state": "explicit",
+              "source_ids": [
+                "sagamihara-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "受入施設、対象品目、運転者本人の要否、荷下ろし支援の有無を施設へ確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "日常ふれあい収集はモデル実施の6地区限定。申請日時点の要件と、世帯員全員・親族近隣援助の例外を確認する。",
+        "日常支援の制度ページは2026-10-09更新。粗大ごみ福祉支援と混同しない。"
+      ],
+      "common_questions_for_office": [
+        "本人・同居者・世帯全員の要件とAND/OR条件を確認してください。",
+        "親族・近隣住民・支援者の援助可能性が資格にどう影響するか確認してください。",
+        "屋内搬出範囲、本人の立会い、本人が運転する必要があるかを確認してください。",
+        "利用料・処理手数料・減免、予約方法、個数・1日あたりの回数上限、地区差を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sagamihara-daily",
+      "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/recycle/1026492/1033706.html",
+      "title": "「ふれあい収集」モデル事業",
+      "source_updated": "2026-10-09",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "sagamihara-regular",
+      "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/recycle/1026493/katei/1008323.html",
+      "title": "粗大ごみ戸別収集の申込方法",
+      "source_updated": "2026-10-05",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "sagamihara-dropoff",
+      "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/recycle/1026493/katei/1008325.html",
+      "title": "粗大ごみの直接搬入",
+      "source_updated": "2026-01-09",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "神奈川県公式サイト内の市別検索を用いて4市のごみ出し支援・粗大ごみ・自己搬入の公式ページ/資料を確認し、公式原典の取得HTML/PDF、抽出テキスト、取得日時、HTTP状態、SHA-256を各市official-metadata.jsonへ保存（2026-10-18）。更新日は公式原典に明記されたもののみ転記し、推測していない。相模原・横須賀・藤沢は各市公式ページを取得。茅ヶ崎の安心まごころ支援・大型ごみは公式PDF資料に年度差があり、予約手段・料金・持込条件は最新窓口確認を要する。制度窓口への問い合わせ、人手による全項目照合、独立レビュー未実施。プレビュー専用の未公開下書き。"
+}

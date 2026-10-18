@@ -1,0 +1,446 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "osaka:suita",
+      "name": "吹田市",
+      "kana": "すいたし",
+      "pref_name": "大阪府",
+      "selection_reason": "安心サポート収集は要介護・障がい等の本人と同居者が排出困難で、親族や近隣の援助がない場合に利用できる。大型複雑ごみは安全に玄関口から運べるものに限る個別協議。通常収集日は地区ごとに異なり、臨時持込みも前日予約・本人搬入・有料の条件がある。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "suita-daily",
+          "kind": "daily_support",
+          "name": "吹田市安心サポート収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃焼ごみ、資源ごみ、小型複雑ごみ、有害危険ごみ。大型複雑ごみは安全に玄関口から運び出せるものに限り別途申込み・協議。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "市職員が週1回戸別訪問し玄関先から収集。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常の分別済みごみは玄関先で収集。室内からの持出しは大型複雑ごみの例外のみ、作業員2名で安全に取り出せる場合等の条件がある。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "市内在住",
+                  "本人および同居者が所定の排出場所までごみを持ち出すことが困難",
+                  "次のいずれか: 65歳以上かつ要介護2以上／身体障がい1級または2級／知的障がいA／精神障がい1級／出産や傷病による一時的困難／市長が特に必要と認める"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "family_help": {
+              "value": "近隣または親族の協力を受けられる場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "fees": {
+              "value": "支援サービス利用料の記載はページに見当たらない。通常収集日以外の直接持込みは有料。",
+              "state": "not_stated",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "limits": {
+              "value": "施設入所者は対象外。大型複雑ごみは分解せず安全に玄関口から搬出可能な物のみで、別申込み・協議が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "application": {
+              "value": "申込書と認定書類の写しを郵送、または電子申込システムで提出。メール申込は不可。申込後に自宅訪問調査・審査。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "attendance": {
+              "value": "訪問調査あり。屋内から大型ごみを運び出す場合は立会いと利用者本人の同意書が必要（公式パンフレット）。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            },
+            "contact": {
+              "value": "環境部 事業課 06-6832-0026、FAX 06-6832-0092。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "suita-carry",
+          "kind": "bulky_carry_support",
+          "name": "安心サポート収集（大型複雑ごみの個別搬出）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "大型複雑ごみのうち、分解せず作業員2名で安全に玄関口から運び出せるもの。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関口から排出場所へ搬出。大型複雑ごみは別途申込みと協議が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "indoor_carry": {
+              "value": "パンフレットに、条件により収集作業員が屋内から搬出すると記載。立会い・利用者本人の同意が必要。安全に玄関口から搬出できるものに限る。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "eligibility": {
+              "value": "安心サポート収集の対象者世帯であること。大型複雑ごみの搬出可能性は個別協議。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "family_help": {
+              "value": "日常支援の対象要件では親族・近隣の協力がある場合は対象外。大型ごみの搬出支援個別判定の扱いは要確認。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "fees": {
+              "value": "大型複雑ごみの個別搬出に関する追加手数料・免除の記載なし。通常の大型ごみは収集日へ指定場所排出とされる。",
+              "state": "not_stated",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "limits": {
+              "value": "作業員2名が分解せず安全に玄関口から運べる物。引越し・片付け等で出る臨時ごみは対象外。事前に品目連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "application": {
+              "value": "安心サポート収集の申込に加え、大型複雑ごみは別途申込みと事業課との協議が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "attendance": {
+              "value": "屋内搬出時は立会いと本人同意書が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            },
+            "contact": {
+              "value": "環境部 事業課 06-6832-0026。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-daily",
+                "suita-carry-pdf"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "suita-regular",
+          "kind": "regular_bulky",
+          "name": "大型複雑ごみ（定期収集）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市が収集できるもので一辺が60cm以上の品目。たんす・ふとん等。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "collection_location": {
+              "value": "大型複雑ごみ収集日の午前8時までに決められた場所へ「不用品」と貼紙して排出。収集日は町名・地区ごとに異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "indoor_carry": {
+              "value": "所定の排出場所へ出す。市の通常収集は屋内からの持出しを行わない。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "eligibility": {
+              "value": "吹田市内で発生し、市の収集対象となる家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "family_help": {
+              "value": "家族による代理排出の条件は案内ページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "fees": {
+              "value": "大型複雑ごみの定期収集日は無料と案内。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "limits": {
+              "value": "市で収集できる品目に限る。家電リサイクル法対象品等は別処分。収集日・排出場所は町名・地区ごとに異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "application": {
+              "value": "通常の市収集日は品目に「不用品」と貼紙をして指定日・場所へ出す。申込予約の記載はなく、品目による例外は市へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は案内ページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            },
+            "contact": {
+              "value": "環境部 事業課 06-6832-0026。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-bulky",
+                "suita-collection-days"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        },
+        {
+          "id": "suita-self",
+          "kind": "self_dropoff",
+          "name": "破砕選別工場へのごみ持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市内発生の家庭ごみのうち、市が収集する燃焼ごみ以外の大型・小型複雑ごみ、資源ごみ、有害危険ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "collection_location": {
+              "value": "本人が破砕選別工場へ持込み。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "搬入者が自ら車両で搬入。施設での荷下ろし補助の記載は見当たらない。",
+              "state": "not_stated",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "eligibility": {
+              "value": "吹田市に住民票がある本人が来場。ごみは吹田市内発生で事業活動を伴わないもの。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "family_help": {
+              "value": "本人が来場する必要がある。家族による代理搬入は不可。本人が運転する必要の有無は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "fees": {
+              "value": "通常の収集日は無料。やむを得ない理由で直接持ち込む場合は有料。具体的な金額はこのページに記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "limits": {
+              "value": "前日までの電話予約制。燃焼ごみ、事業系ごみ、市外発生物、家電4品目、PC・小型二次電池、処理困難物などは不可。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "application": {
+              "value": "破砕選別工場へ前日までに電話予約。やむを得ず定曜日収集に出せない場合に限る。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "attendance": {
+              "value": "吹田市に住民票のある本人が来場し、運転免許証等で本人確認。本人運転の要否は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            },
+            "contact": {
+              "value": "破砕選別工場 06-6877-3038。引越しごみの収集は事業課 06-6832-0026へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "suita-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+            "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "調査時点の公式ページ記載を保存。ページ更新日を確認できない場合は推測していない。",
+        "制度の現行運用と資格判定は未照会。独立した人手確認が必要。"
+      ],
+      "common_questions_for_office": [
+        "世帯全員が資格条件を満たすか、親族・同居者の援助が対象判定にどう影響するかを窓口へ確認してください。",
+        "室内の搬出範囲、玄関・門扉や集合住宅の条件、費用・減免、予約回数、立会い、本人搬入と運転者の条件を確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "suita-daily",
+      "url": "https://www.city.suita.osaka.jp/kurashi/1018418/1018419/1015157.html",
+      "title": "吹田市安心サポート収集｜吹田市公式ウェブサイト",
+      "source_updated": "2024-06-06",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "suita-bulky",
+      "url": "https://www.city.suita.osaka.jp/1000123/1017235/1017255/1017256/1015164.html",
+      "title": "よくある質問 粗大ごみの廃棄方法について教えてください。｜吹田市公式ウェブサイト",
+      "source_updated": "2025-09-09",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "suita-carry-pdf",
+      "url": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/015/157/annsinnsupport.pdf",
+      "title": "suita-carry-pdf",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "suita-self",
+      "url": "https://www.city.suita.osaka.jp/kurashi/1018418/1018421/1018430/1015127.html",
+      "title": "破砕選別工場へのごみの持込み｜吹田市公式ウェブサイト",
+      "source_updated": "2026-08-24",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "suita-collection-days",
+      "url": "https://www.city.suita.osaka.jp/kurashi/1018418/1020112/1015233.html",
+      "title": "ごみ収集日（町名順）｜吹田市公式ウェブサイト",
+      "source_updated": "2025-11-21",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "吹田市のみ調査。市公式サイト内を中心に各サービスの対象・通常収集・自己搬入を検索し、公式ページ5件を保存。原文HTML/PDFまたは抽出テキスト、URL、実取得日時、HTTP状態、原本・テキストSHA-256はofficial-metadata.json。更新表示は原典の明記がある場合のみ転記。市窓口照会、全項目の人手確認、独立レビューは未実施。AI下書き・公開不可。"
+}

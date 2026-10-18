@@ -1,0 +1,468 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "tokyo:itabashi",
+      "name": "板橋区",
+      "kana": "いたばしく",
+      "pref_name": "東京都",
+      "selection_reason": "区公式資料に日常ごみの戸別収集と粗大ごみ運び出し、通常収集、自己搬入を確認。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "itabashi-daily-support",
+          "kind": "daily_support",
+          "name": "高齢者・障がい者世帯のごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "日常のごみを集積所に出せない高齢者・障がい者世帯向けに戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先から収集。具体的な置き場所や頻度は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関先からの収集。室内からの搬出は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "集積所へごみを出すことが困難",
+                  "身近な方の協力を得られない",
+                  {
+                    "any": [
+                      "65歳以上だけの世帯で全員が要介護または要支援認定",
+                      "障がい者だけの世帯で全員が障害者手帳で状況を確認できる",
+                      "上記二つの世帯構成の混合",
+                      "介護保険・障害者手帳の申請中または難病で、対象となると区が判断した場合"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "family_help": {
+              "value": "身近な方の協力を得られないことが要件。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "fees": {
+              "value": "戸別収集サービスの利用料金は確認したページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "limits": {
+              "value": "収集頻度、開始までの日数、利用回数は確認したページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "application": {
+              "value": "所定の申請書に記入し、管轄の清掃事務所へ郵送で申し込む。申込条件は清掃事務所へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は確認したページに記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            },
+            "contact": {
+              "value": "板橋東清掃事務所 03-3969-3721（西の管轄地域以外）。板橋西清掃事務所 03-3936-7441（赤塚、赤塚新町、新河岸、大門、高島平、徳丸、中台、成増、西台、三園、四葉、若木）。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯全員の要介護・要支援認定または障害者手帳の条件、混合世帯や申請中・難病の場合の扱いを管轄清掃事務所へ確認してください。",
+            "申請書の入手・郵送先、玄関先の置き場所、収集頻度、費用、立会い、安否確認の有無を確認してください。"
+          ]
+        },
+        {
+          "id": "itabashi-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "高齢者世帯等に対する粗大ごみの運び出し収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の粗大ごみ。実施要綱に屋内からの運び出し収集と記載。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "collection_location": {
+              "value": "屋内から屋外の指定場所まで運び出し、粗大ごみとして収集。申込後に区が可否決定。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule",
+                "itabashi-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": "屋内から運び出し。解体作業・取り外し作業、長尺物・重量物などは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule",
+                "itabashi-carry"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "身近な人等の協力が困難",
+                  "自ら屋内から粗大ごみを運び出せない",
+                  {
+                    "any": [
+                      "65歳以上の高齢者のみで構成する世帯",
+                      "障がい者のみで構成する世帯",
+                      "その他区長が必要と認めた者で構成する世帯"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "family_help": {
+              "value": "身近な人等の協力が困難であることが要件。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "fees": {
+              "value": "運び出し作業料は無料。粗大ごみの廃棄物処理手数料は必要。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "limits": {
+              "value": "出入口から搬出できない長尺物・重量物、取り外し工事や解体作業が必要な物、区長が著しく困難と認める物は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "application": {
+              "value": "事前連絡後に説明を受け、申請書を提出。区長が可否決定し口頭通知。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "attendance": {
+              "value": "実施要綱は対象者の立会いを規定。申請書には本人または代理人の立会いとあり、代理人の扱いは窓口へ確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "itabashi-carry-rule"
+              ]
+            },
+            "contact": {
+              "value": "板橋東清掃事務所 03-3969-3721（下記以外の地域）、板橋西清掃事務所 03-3936-7441（赤塚等の記載地域）。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-carry"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯構成、身近な人の援助、区長認定の例外、所定申請書の提出と可否決定を管轄清掃事務所へ確認してください。",
+            "搬出品・通路、本人または代理人の立会い（要綱本文と申請書の差）、処理手数料の減免条件を確認してください。"
+          ]
+        },
+        {
+          "id": "itabashi-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の家具・寝具・電化製品など最大辺おおむね30cm以上。対象外品あり。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "収集予約日の朝8時までに指定した玄関先・敷地入口・集合住宅の共同玄関前または専用置場へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常収集は屋外指定場所で回収。屋内からの搬出は清掃事務所の運び出し制度へ相談。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "itabashi-bulky",
+                "itabashi-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "板橋区民向け。収集は事前申込制。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "通常収集で家族援助の要件は記載なし。搬出困難の場合は別の運び出し制度を相談。",
+              "state": "not_stated",
+              "source_ids": [
+                "itabashi-bulky",
+                "itabashi-carry"
+              ]
+            },
+            "fees": {
+              "value": "有料。処理手数料の減額・免除制度あり。減免希望は電話申込時に申し出る（ネット申込では減免不可）。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "事前申込制。収集日予約が混雑することがある。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話・ネット等で事前申込。電話03-6747-9353（8〜19時、月〜土、祝含む、年末年始除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "通常収集時の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "contact": {
+              "value": "板橋区粗大ごみ受付センター 03-6747-9353。搬出困難時は管轄清掃事務所。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目別料金と減免条件・必要書類、指定排出場所を申込時に確認してください。"
+          ]
+        },
+        {
+          "id": "itabashi-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみ自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "西台粗大ごみセンター（板橋区西台2-39-11）へ予約した受付時間内に持ち込む。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "持込場所での荷下ろしは本人が行う。係員の案内はあるが荷下ろし補助の記載なし。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "板橋区民。区内居住の申込者本人または同一住所の世帯員が搬入可。本人確認あり。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "同一住所の世帯員による搬入可。別住所の親族等は記載上対象とされていない。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "fees": {
+              "value": "通常収集の処理手数料の半額。減免希望は電話申込。費用が必要な品は処理券を事前購入し、品物に貼らず持込場所に持参。現地購入・現金払い不可。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回10個まで。平日13〜16時、土日祝9〜16時。2t車まで。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "application": {
+              "value": "電話またはネットで事前予約。処理券を事前購入。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "申込者本人または同一世帯の人が本人確認書類を持って搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            },
+            "contact": {
+              "value": "板橋区粗大ごみ受付センター 03-6747-9353。",
+              "state": "explicit",
+              "source_ids": [
+                "itabashi-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "本人以外の運転・搬入、減免申請を伴う持込み、品目料金を申込時に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "屋内搬出の世帯要件・援助困難・立会い・免除対象外品を要綱で保持。",
+      "common_questions_for_office": [
+        "日常ごみの戸別支援の有無",
+        "粗大ごみ運び出しで世帯全員要件・家族等援助の審査",
+        "手数料減免の対象・書類と本人以外の申込可否"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "itabashi-bulky",
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+      "title": "粗大ごみ（申込制／有料）・料金検索",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-07-01",
+      "http_status": 200,
+      "final_url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "itabashi/official/itabashi-bulky.html.source",
+      "text_file": "itabashi/official/itabashi-bulky.txt",
+      "raw_sha256": "333275770bf942f747cdaf3b1ee7b10ab47b5b673c62e6ed7c6844e4de9ff1c3",
+      "text_sha256": "c06f0c2faed62a08bfa7c895421a6458cbef68e3907b91ef0b513da41fd3b828",
+      "last_modified_header": "Sun, 18 Oct 2026 03:01:09 GMT"
+    },
+    {
+      "id": "itabashi-carry",
+      "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/1044480.html",
+      "title": "高齢で排出場所まで出せないのですが",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-03-03",
+      "http_status": 200,
+      "final_url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/1044480.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "itabashi/official/itabashi-carry.html.source",
+      "text_file": "itabashi/official/itabashi-carry.txt",
+      "raw_sha256": "5e22a6b7b6ca94b06f245eea68ef579ca9e40996c29a836abdd45760e93de84e",
+      "text_sha256": "c9190cb61aceced0a06bb0e0e16ffcb487af9e6a855ac0014b7b22a3d660fb98",
+      "last_modified_header": "Sun, 18 Oct 2026 03:00:44 GMT"
+    },
+    {
+      "id": "itabashi-carry-rule",
+      "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/015/702/koureisya-sodaigomihakobidasi.pdf",
+      "title": "板橋区高齢者世帯等に対する粗大ごみの運び出し収集実施要綱",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/015/702/koureisya-sodaigomihakobidasi.pdf",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "application/pdf",
+      "raw_file": "itabashi/official/itabashi-carry-rule.pdf",
+      "text_file": "itabashi/official/itabashi-carry-rule.txt",
+      "raw_sha256": "e74232760166fc42d7d861539f5fe856b22aa318ce5389c5a600d47a87182132",
+      "text_sha256": "54bce851e5055db303aac8d74442c9d15ccc3551562c217c82f0dde18aca1033",
+      "last_modified_header": "Fri, 07 Feb 2020 07:29:34 GMT"
+    },
+    {
+      "id": "itabashi-daily",
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/seiso/1001905.html",
+      "title": "高齢者・障がい者世帯のごみ戸別収集",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2023-12-07",
+      "http_status": 200,
+      "final_url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/seiso/1001905.html",
+      "retrieved_at": "2026-10-18T16:49:58+09:00",
+      "content_type": "text/html",
+      "raw_file": "itabashi/official/itabashi-daily.html.source",
+      "text_file": "itabashi/official/itabashi-daily.txt",
+      "raw_sha256": "a641f8c87d48992a18824bc903191776b34d9c467ead3fed254d1779bfabc253",
+      "text_sha256": "c9c85694bf26eaa17913548d2300469216b04986fedfa32f9940233bfe394da7",
+      "last_modified_header": "Sun, 18 Oct 2026 03:01:10 GMT"
+    }
+  ],
+  "research_note": "自治体別調査用AI下書き。2026-10-18の保存公式原典と追加公式原典に基づき独立AIレビュアーが限定修正。原文、URL、取得時刻とSHA-256は各区のofficial-metadataとreview-locatorsを参照。利用料金等の未記載は無料と断定しない。窓口確認・人手全件照合・公開承認は未実施。"
+}

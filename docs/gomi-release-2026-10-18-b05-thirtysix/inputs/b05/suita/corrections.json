@@ -1,0 +1,147 @@
+[
+  {
+    "service": "suita-daily",
+    "field": "attendance",
+    "before": "訪問調査あり。屋内から大型ごみを運び出す場合は立会いと利用者本人の同意書が必要（公式パンフレット）。",
+    "after": "訪問調査では親族・福祉担当職員・ケアマネジャー・民生委員等に立会いを求める。大型複雑ごみの屋内搬出は第三者の立会いと利用者本人の同意書が必要。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-carry",
+    "field": "indoor_carry",
+    "before": "パンフレットに、条件により収集作業員が屋内から搬出すると記載。立会い・利用者本人の同意が必要。安全に玄関口から搬出できるものに限る。",
+    "after": "利用世帯が大型複雑ごみを玄関先まで出すことが困難な場合に限り、第三者の立会いと利用者本人の同意書を条件に収集作業員が屋内から搬出。作業員2人で分解せず安全に玄関口から運べる物のみ。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-carry",
+    "field": "attendance",
+    "before": "屋内搬出時は立会いと本人同意書が必要。",
+    "after": "屋内搬出時は第三者の立会いと利用者本人の同意書が必要。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-regular",
+    "field": "indoor_carry",
+    "before": "所定の排出場所へ出す。市の通常収集は屋内からの持出しを行わない。",
+    "after": "指定場所への排出を案内。通常収集での市による屋内搬出は掲載ページに記載がない。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-self",
+    "field": "indoor_carry",
+    "before": "搬入者が自ら車両で搬入。施設での荷下ろし補助の記載は見当たらない。",
+    "after": "荷下ろしは持ち込んだ本人が行う。施設による屋内搬出や荷下ろし補助は掲載ページに記載がない。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-self",
+    "field": "fees",
+    "before": "通常の収集日は無料。やむを得ない理由で直接持ち込む場合は有料。具体的な金額はこのページに記載なし。",
+    "after": "やむを得ない理由で定曜日収集に出せず直接持ち込む場合、10キログラムまでごとに70円。通常の定曜日収集は無料。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-self",
+    "field": "contact",
+    "before": "破砕選別工場 06-6877-3038。引越しごみの収集は事業課 06-6832-0026へ相談。",
+    "after": "破砕選別工場の持込み予約 06-6877-7515（平日9:00〜17:00、電話のみ）。燃焼ごみの問合せ先である資源循環エネルギーセンター 06-6877-3038 とは別。",
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18"
+  },
+  {
+    "service": "suita-regular",
+    "field": "fees",
+    "before_source_ids": [
+      "suita-bulky",
+      "suita-collection-days"
+    ],
+    "after_source_ids": [
+      "suita-bulky",
+      "suita-collection-days",
+      "suita-self"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "定曜日収集無料の根拠はsuita-self.txt 202行"
+  },
+  {
+    "service": null,
+    "field": "common_questions_for_office",
+    "before": [
+      "世帯全員が資格条件を満たすか、親族・同居者の援助が対象判定にどう影響するかを窓口へ確認してください。",
+      "室内の搬出範囲、玄関・門扉や集合住宅の条件、費用・減免、予約回数、立会い、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "安心サポート収集の日常ごみと大型複雑ごみの屋内搬出は手続きが異なるため、それぞれの対象と申込方法を確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "市ごとの制度差を明示し不要な共通質問を削除"
+  },
+  {
+    "service": "suita-daily",
+    "field": "questions_for_office",
+    "before": [
+      "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "本人と同居者の排出困難、親族・近隣の協力を受けられない状況を伝え、対象になるか事業課に確認してください。",
+      "一時的な傷病・出産で申し込む場合の期間、訪問調査への立会いと玄関先の排出場所を確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "suita-carry",
+    "field": "questions_for_office",
+    "before": [
+      "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "大型複雑ごみを玄関先まで出せない場合、2人の作業員が分解せず運べるかを品目と住居の経路を伝えて確認してください。",
+      "第三者の立会い、本人同意書、別申込、追加料金の有無を確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "suita-regular",
+    "field": "questions_for_office",
+    "before": [
+      "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "町名別の大型複雑ごみ収集日と出す場所、通常収集で室内搬出が必要な場合の相談先を事業課に確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  },
+  {
+    "service": "suita-self",
+    "field": "questions_for_office",
+    "before": [
+      "吹田市の利用条件、世帯員全員の資格要件、親族・同居家族の援助の扱い、住居条件、訪問範囲を窓口に確認してください。",
+      "吹田市の費用・減免、申込方法、立会い要否、回数・品目制限、本人搬入と運転者の条件を確認してください。"
+    ],
+    "after": [
+      "本人来場が必要な条件と、本人以外の運転が可能かを破砕選別工場に確認してください。",
+      "予約日時、持込品目、10kgごと70円の支払方法と荷下ろしを確認してください。"
+    ],
+    "reviewer": "independent_osaka_review",
+    "date": "2026-10-18",
+    "reason": "相談先と未確定事項を制度別に整理"
+  }
+]

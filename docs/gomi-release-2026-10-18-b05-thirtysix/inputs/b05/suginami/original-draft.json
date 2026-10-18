@@ -1,0 +1,457 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "tokyo:suginami",
+      "name": "杉並区",
+      "kana": "すぎなみく",
+      "pref_name": "東京都",
+      "selection_reason": "公式資料に日常のふれあい収集と粗大ごみ運び出し収集が別制度として掲載され、通常収集と自己搬入の条件も区別できる。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "suginami-daily-support",
+          "kind": "daily_support",
+          "name": "ふれあい収集（ごみ・資源の戸別収集）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃ごみ・不燃ごみ・資源物を戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "家の玄関（ドア）前または門の前から収集。収集開始前の訪問調査後に場所と開始時期を調整。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily",
+                "suginami-fureai-overview"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関前・門前での収集。室内に入って集積所まで運ぶかは記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suginami-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "高齢者（65歳以上）または障害のある方のみの世帯",
+                  "本人がごみ・資源を集積所まで持ち出すことが困難",
+                  "身近な人などの協力を得られない"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily"
+              ]
+            },
+            "family_help": {
+              "value": "身近な人などの協力が得られないことが対象条件。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily",
+                "suginami-fureai-overview"
+              ]
+            },
+            "fees": {
+              "value": "無料。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily"
+              ]
+            },
+            "limits": {
+              "value": "現在のごみ排出状況等を確認して区が可否を判断。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily",
+                "suginami-calendar"
+              ]
+            },
+            "application": {
+              "value": "管轄の清掃事務所へ相談。職員が訪問調査し、可否決定後に収集開始時期・場所を調整。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suginami-daily"
+              ]
+            },
+            "contact": {
+              "value": "杉並清掃事務所 03-3392-7281。方南支所 03-3323-4571。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-daily",
+                "suginami-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯全員の状況、集積所までの排出困難と身近な人の援助の有無を管轄清掃事務所に確認してください。",
+            "戸別収集の頻度、安否確認、立会い要否を確認してください。"
+          ]
+        },
+        {
+          "id": "suginami-bulky-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの運び出し収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭の粗大ごみ。清掃職員が家屋から運び出して収集。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "職員が家屋内から運び出して収集。事前訪問で現場を確認して実施可否を判断。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家屋内からの運び出し収集を案内。具体的な居室・階段・解体等の範囲は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "高齢者（65歳以上）または障害のある方のみの世帯",
+                  "粗大ごみの運び出しが困難",
+                  "身近な人などの協力を得られない"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "身近な人などの協力を得られないことが対象条件。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみの処理手数料のみ。運び出し作業料の記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "limits": {
+              "value": "職員の訪問確認で可否を判断。引越し等で一度に大量の場合や急な申出は断る場合あり。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky",
+                "suginami-calendar"
+              ]
+            },
+            "application": {
+              "value": "申し込み前に杉並清掃事務所へ相談。訪問確認後、料金と収集日を案内。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "下見・搬出時の本人または代理人の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "contact": {
+              "value": "杉並清掃事務所 03-3392-7281。方南支所 03-3323-4571。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯全員の対象要件、身近な人の援助、搬出対象品と現場条件を清掃事務所に確認してください。",
+            "運び出し可能な品数、立会い、手数料・減免書類を確認してください。"
+          ]
+        },
+        {
+          "id": "suginami-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ（区が収集できない品目を除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "通常収集では家族・近隣援助条件の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "粗大ごみの収集は区民向け。事前申込制。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "fees": {
+              "value": "有料。自己搬入は1点400円。収集手数料は品目ごとに異なる。減免制度あり（電話申込）。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "limits": {
+              "value": "自己搬入は1回5点まで、日曜日のみ。申込から収集・持込みまで2〜3週間程度が目安で変動。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ事前申込。持込みは電話またはFAXで申込み。減免申請も電話申込。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "通常収集時の立会い要否は記載なし。持込みは本人確認書類持参。",
+              "state": "not_stated",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター（電話・FAX。番号詳細は公式ページ参照）、杉並清掃事務所 03-3392-7281。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "収集日の朝8時までに玄関・敷地入口など道路に面した場所、集合住宅は専用置場または1階の共有玄関前等へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常の戸別収集は指定場所に屋外排出する方式。室内からの搬出は別途運び出し収集へ相談。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目別料金、収集可能日、排出場所を申込時に確認してください。",
+            "減免を希望する場合は対象事由と必要書類を電話で確認してください。"
+          ]
+        },
+        {
+          "id": "suginami-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみ自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る粗大ごみ（区が収集できない品目を除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "通常収集では家族・近隣援助条件の記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "杉並区民。区内住所・氏名を確認できる本人確認書類が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "fees": {
+              "value": "有料。自己搬入は1点400円。収集手数料は品目ごとに異なる。減免制度あり（電話申込）。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "limits": {
+              "value": "日曜日のみ、1回5点まで、1点400円。指定日の9時〜16時。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "application": {
+              "value": "事前に電話またはFAX申込。処理券を購入して各品に貼付。現金払い不可。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "本人が搬入し、区内住所・氏名を確認できる書類を持参。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター（電話・FAX。番号詳細は公式ページ参照）、杉並清掃事務所 03-3392-7281。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "指定持込場所へ本人が搬入。場所は申込時に案内される。",
+              "state": "explicit",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自分で指定場所へ持ち込む方式。現地での荷下ろし・運搬補助の記載なし。",
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "suginami-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "自家用車等の搬入条件、当日の受付場所、減免対象の搬入手順を申込時に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "ごみ出し支援4経路を区別。原典日付の表示と最終更新時刻ヘッダーは分けて保存。",
+      "common_questions_for_office": [
+        "支援対象の世帯条件・親族や近隣の援助の扱い",
+        "屋内搬出範囲、立会い、品数、予約待ち日数",
+        "粗大ごみ減免条件と必要書類"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "suginami-daily",
+      "url": "https://www.city.suginami.tokyo.jp/s105/8098.html",
+      "title": "ふれあい収集（ごみ・資源の戸別収集）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.suginami.tokyo.jp/s105/8098.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "suginami/official/suginami-daily.html.source",
+      "text_file": "suginami/official/suginami-daily.txt",
+      "raw_sha256": "4a5876e8be3ecacaae78b067e79453962e53ae3ad0d21491676d25d20ba7f9ee",
+      "text_sha256": "a031201d351966eb375f7d26d220592df539948d1efd893b5caf0900e87a7155",
+      "last_modified_header": "Tue, 04 Aug 2026 09:27:08 GMT"
+    },
+    {
+      "id": "suginami-bulky",
+      "url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "title": "粗大ごみの出し方・申し込み方法",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "suginami/official/suginami-bulky.html.source",
+      "text_file": "suginami/official/suginami-bulky.txt",
+      "raw_sha256": "9609e2d10e45c07f6a70fe7d781d2dcad059b6da008dba973a0ee763677b919f",
+      "text_sha256": "389abb0420a27b73a906589e15048df03f42edb36e7325c24ee566e9c6bc246b",
+      "last_modified_header": "Tue, 04 Aug 2026 09:31:15 GMT"
+    },
+    {
+      "id": "suginami-calendar",
+      "url": "https://www.city.suginami.tokyo.jp/documents/715/t2026zentiiki.pdf",
+      "title": "令和8年度 資源とごみの分け方・出し方（全地域用）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.suginami.tokyo.jp/documents/715/t2026zentiiki.pdf",
+      "retrieved_at": "2026-10-18T16:44:22+09:00",
+      "content_type": "application/pdf",
+      "raw_file": "suginami/official/suginami-calendar.pdf",
+      "text_file": "suginami/official/suginami-calendar.txt",
+      "raw_sha256": "ea5b6a8a4478f35f46130abb1863c260071fc0fbfb9e52d269e6dc62453cc821",
+      "text_sha256": "4c3c788095bf999b09b673644fcaa078ded2d16819a4cfc6f1a4ba26ec01e76e",
+      "last_modified_header": "Tue, 31 Mar 2026 15:08:11 GMT"
+    },
+    {
+      "id": "suginami-fureai-overview",
+      "url": "https://www.city.suginami.tokyo.jp/s105/724.html",
+      "title": "ごみ出しが困難な高齢者・障害者の方に「ふれあい収集」",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": null,
+      "http_status": 200,
+      "final_url": "https://www.city.suginami.tokyo.jp/s105/724.html",
+      "retrieved_at": "2026-10-18T16:46:22+09:00",
+      "content_type": "text/html",
+      "raw_file": "suginami/official/suginami-fureai-overview.html.source",
+      "text_file": "suginami/official/suginami-fureai-overview.txt",
+      "raw_sha256": "746bc6350ffe5a702d9c294944fdb1d8c93befd5b7e53aabac4272a6472b372e",
+      "text_sha256": "9adb0276ab930889a4707931d9555ecaf72c312ffa4a709417f24ef14ebfc56f",
+      "last_modified_header": "Tue, 04 Aug 2026 09:27:58 GMT"
+    }
+  ],
+  "research_note": "自治体別調査用AI下書き。各区の公式ページを2026-10-18に取得して原典・抽出テキスト・HTTP/時刻/hashを保存。source_updatedは公式ページ本文に明示された更新日を確認できる場合のみ設定し、Last-Modified応答ヘッダーとは別に記録。未発見は制度不存在を意味しない。人手全件原文照合・独立レビュー・窓口確認・公開承認なし。"
+}
