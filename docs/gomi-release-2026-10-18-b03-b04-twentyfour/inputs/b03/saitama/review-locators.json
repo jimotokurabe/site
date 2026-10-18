@@ -1,0 +1,582 @@
+{
+  "locator_basis": "1-based line numbers in saved extracted .txt; raw HTTP response is preserved separately as .html.source/.pdf.source and SHA-256 is in each metadata JSON.",
+  "locators": [
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "waste_scope",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        124,
+        130
+      ],
+      "text_excerpt": "ふれあい収集で収集するごみは、通常収集所から収集している下記のごみです。\n（注意）家電リサイクル法指定品目（冷蔵庫・冷凍庫・洗濯機・衣類乾燥機・ブラウン管式・液晶式・プラズマ式テレビ・エアコン）、パソコン、粗大ごみは収集できません。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "collection_location",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        131,
+        132
+      ],
+      "text_excerpt": "収集方法\n収集は原則として週1回、玄関先からの収集とさせていただきます。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "indoor_carry",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        132
+      ],
+      "text_excerpt": "収集は原則として週1回、玄関先からの収集とさせていただきます。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "eligibility",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        108,
+        114
+      ],
+      "text_excerpt": "対象者\n障害者に同居する家族がいる場合についても、同居者が高齢者や障害者等で、収集所までごみを持ち出すことができない場合"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "family_help",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        111,
+        114
+      ],
+      "text_excerpt": "寝たきりや認知症などにより介護を必要とする要介護者や日常生活を送る上で支援が必要であり、65歳以上の高齢者で同居する家族がいる場合についても、同居者が高齢者や障害者等で、収集所までごみを持ち出すことができない場合\n障害者に同居する家族がいる場合についても、同居者が高齢者や障害者等で、収集所までごみを持ち出すことができない場合"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "fees",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        106,
+        132
+      ],
+      "text_excerpt": "ふれあい収集\n収集は原則として週1回、玄関先からの収集とさせていただきます。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "limits",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        123,
+        132
+      ],
+      "text_excerpt": "収集するごみ\n収集は原則として週1回、玄関先からの収集とさせていただきます。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "application",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        115,
+        122
+      ],
+      "text_excerpt": "申込方法\n（新しいウィンドウで開きます）から「ふれあい収集」と検索して、担当の清掃事務所へ申請してください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "attendance",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        117
+      ],
+      "text_excerpt": "収集担当の職員がご自宅に伺い、ごみ出しが困難な状況について調査の上、収集方法など調整いたします。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-daily",
+      "field": "contact",
+      "source_id": "saitama-fureai",
+      "source_file": "sources/saitama-fureai.txt",
+      "raw_source_file": "sources/saitama-fureai.html.source",
+      "source_sha256": "b444e20f3f712e23ce17340c8716b10f0020c96d461977b1d05f972ae9e548e1",
+      "text_line_numbers": [
+        133,
+        164
+      ],
+      "text_excerpt": "担当清掃事務所一覧\n048-878-0960"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "waste_scope",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        108,
+        122
+      ],
+      "text_excerpt": "家庭から出るごみのうち、自転車やタンスなどの、\n戸別収集またはごみ処理施設に直接搬入して処分してください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "collection_location",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        276,
+        281
+      ],
+      "text_excerpt": "4．ごみを出す（納付券を貼って指定日に出す）\n・自宅以外（会社、店舗、レンタルボックス等）からの収集はいたしません。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "indoor_carry",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        276,
+        281
+      ],
+      "text_excerpt": "4．ごみを出す（納付券を貼って指定日に出す）\n・自宅以外（会社、店舗、レンタルボックス等）からの収集はいたしません。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "eligibility",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        108,
+        122
+      ],
+      "text_excerpt": "家庭から出るごみのうち、自転車やタンスなどの、\n戸別収集またはごみ処理施設に直接搬入して処分してください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "family_help",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        276,
+        281
+      ],
+      "text_excerpt": "4．ごみを出す（納付券を貼って指定日に出す）\n・自宅以外（会社、店舗、レンタルボックス等）からの収集はいたしません。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "fees",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        247,
+        272
+      ],
+      "text_excerpt": "手数料について\n1,100円"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "limits",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        224,
+        238
+      ],
+      "text_excerpt": "・品目（1回に4個まで）\n一度購入した納付券の払い戻し・再発行はできません"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "application",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        192,
+        199
+      ],
+      "text_excerpt": "申し込みの際は、電話番号をお確かめの上、おかけ間違いのないようお願いします。\n申込時にお伝えいただきたいこと"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "attendance",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        279,
+        283
+      ],
+      "text_excerpt": "注意点\n・収集時における品目の追加・変更はできません。変更がある場合は、収集日の3営業日前までにご連絡ください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-carry",
+      "field": "contact",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        215,
+        229
+      ],
+      "text_excerpt": "。（必ず収集日の3営業日前までに粗大ごみ受付センター (TEL\n3．「さいたま市粗大ごみ等処理手数料納付券」（シール）を購入する"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "waste_scope",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        108,
+        122
+      ],
+      "text_excerpt": "家庭から出るごみのうち、自転車やタンスなどの、\n戸別収集またはごみ処理施設に直接搬入して処分してください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "collection_location",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        276,
+        283
+      ],
+      "text_excerpt": "4．ごみを出す（納付券を貼って指定日に出す）\n・収集時における品目の追加・変更はできません。変更がある場合は、収集日の3営業日前までにご連絡ください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "indoor_carry",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        279,
+        281
+      ],
+      "text_excerpt": "注意点\n・自宅以外（会社、店舗、レンタルボックス等）からの収集はいたしません。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "eligibility",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        108,
+        122
+      ],
+      "text_excerpt": "家庭から出るごみのうち、自転車やタンスなどの、\n戸別収集またはごみ処理施設に直接搬入して処分してください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "family_help",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        276,
+        281
+      ],
+      "text_excerpt": "4．ごみを出す（納付券を貼って指定日に出す）\n・自宅以外（会社、店舗、レンタルボックス等）からの収集はいたしません。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "fees",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        247,
+        275
+      ],
+      "text_excerpt": "手数料について\n表の「特定適正処理困難物」内の「スプリング入りマットレス」、「スプリング入りソファー」につきましては、解体してスプリングのみの状態でも1品扱いとなります。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "limits",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        220,
+        238
+      ],
+      "text_excerpt": "申込時の記載事項\n一度購入した納付券の払い戻し・再発行はできません"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "application",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        192,
+        199
+      ],
+      "text_excerpt": "申し込みの際は、電話番号をお確かめの上、おかけ間違いのないようお願いします。\n申込時にお伝えいただきたいこと"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "attendance",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        279,
+        283
+      ],
+      "text_excerpt": "注意点\n・収集時における品目の追加・変更はできません。変更がある場合は、収集日の3営業日前までにご連絡ください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-regular-bulky",
+      "field": "contact",
+      "source_id": "saitama-bulky",
+      "source_file": "sources/saitama-bulky.txt",
+      "raw_source_file": "sources/saitama-bulky.html.source",
+      "source_sha256": "0cea1be8c6836da3c2cb5a01eb7dc25f1a0bf6110e021d0f7bd5cd19996b91b1",
+      "text_line_numbers": [
+        215,
+        229
+      ],
+      "text_excerpt": "。（必ず収集日の3営業日前までに粗大ごみ受付センター (TEL\n3．「さいたま市粗大ごみ等処理手数料納付券」（シール）を購入する"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "waste_scope",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        183,
+        200
+      ],
+      "text_excerpt": "持込みできないもの一覧\n・市外のごみ"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "collection_location",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        174,
+        182
+      ],
+      "text_excerpt": "持込みをする方へ\n・持込みをする方の安全確保のため、自動車によりお持込みください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "indoor_carry",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        174,
+        182
+      ],
+      "text_excerpt": "持込みをする方へ\n・持込みをする方の安全確保のため、自動車によりお持込みください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "eligibility",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        174,
+        182
+      ],
+      "text_excerpt": "持込みをする方へ\n・持込みをする方の安全確保のため、自動車によりお持込みください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "family_help",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        174,
+        182
+      ],
+      "text_excerpt": "持込みをする方へ\n・持込みをする方の安全確保のため、自動車によりお持込みください。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "fees",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        201,
+        260,
+        134
+      ],
+      "text_excerpt": "ごみ処理にかかる料金\n1,620円\n概要"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "limits",
+      "source_id": "saitama-dropoff-reservation",
+      "source_file": "sources/saitama-dropoff-reservation.txt",
+      "raw_source_file": "sources/saitama-dropoff-reservation.html.source",
+      "source_sha256": "68b34089a9c0d859b1d114ffc0962bb28c1774b64605e4b58376b2a06ce294e4",
+      "text_line_numbers": [
+        111,
+        129,
+        125
+      ],
+      "text_excerpt": "2.予約対象日及び予約時間枠\n・1回の予約につき車1台までとなります。\n※聴覚・言語に障害がある方につきましては、ごみの持込みの際に、受付において証明書等を提示していただければ、予約がなくても搬入可能です。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "application",
+      "source_id": "saitama-dropoff-reservation",
+      "source_file": "sources/saitama-dropoff-reservation.txt",
+      "raw_source_file": "sources/saitama-dropoff-reservation.html.source",
+      "source_sha256": "68b34089a9c0d859b1d114ffc0962bb28c1774b64605e4b58376b2a06ce294e4",
+      "text_line_numbers": [
+        115,
+        125
+      ],
+      "text_excerpt": "3.予約方法\n※聴覚・言語に障害がある方につきましては、ごみの持込みの際に、受付において証明書等を提示していただければ、予約がなくても搬入可能です。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "attendance",
+      "source_id": "saitama-self-dropoff",
+      "source_file": "sources/saitama-self-dropoff.txt",
+      "raw_source_file": "sources/saitama-self-dropoff.html.source",
+      "source_sha256": "5ff3e6fb61b995d408347f01cf5fbbe266aecec4446723a9c2ce63249de9ccf0",
+      "text_line_numbers": [
+        174,
+        184
+      ],
+      "text_excerpt": "持込みをする方へ\n（注意）施設にお持ち込みの際、計量棟及びプラットホームにてごみの確認をさせていただきます。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "contact",
+      "source_id": "saitama-dropoff-reservation",
+      "source_file": "sources/saitama-dropoff-reservation.txt",
+      "raw_source_file": "sources/saitama-dropoff-reservation.html.source",
+      "source_sha256": "68b34089a9c0d859b1d114ffc0962bb28c1774b64605e4b58376b2a06ce294e4",
+      "text_line_numbers": [
+        122,
+        125
+      ],
+      "text_excerpt": "(2)電話で予約する場合\n※聴覚・言語に障害がある方につきましては、ごみの持込みの際に、受付において証明書等を提示していただければ、予約がなくても搬入可能です。"
+    },
+    {
+      "city_id": "saitama:saitama",
+      "service_id": "saitama-self-dropoff",
+      "field": "fees",
+      "source_id": "saitama-fee-policy",
+      "source_file": "sources/saitama-fee-policy.txt",
+      "raw_source_file": "sources/saitama-fee-policy.html.source",
+      "source_sha256": "f31822797a07bf9ae4a2e397b59b1299e670dadd7913327571ee78f1f078ca1f",
+      "text_line_numbers": [
+        127,
+        128,
+        129,
+        133,
+        134
+      ],
+      "text_excerpt": "令和8年1月から\n180円/10キログラム\n10kg以下無料\n※徴収金額は上表に応じ算定した額に100分の110を乗じて得た額になります。\n※無料範囲を超えた場合は、最初の10キログラムから手数料がかかります。"
+    }
+  ]
+}

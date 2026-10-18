@@ -1,0 +1,682 @@
+{
+  "review_id": "b04-independent-2026-10-18",
+  "reviewer": "independent AI reviewer",
+  "review_date": "2026-10-18",
+  "scope": "岡山初稿4経路40項目の保存公式原典との双方向照合。新潟は採否不足点確認のみで保留、40項目全件照合なし。",
+  "basis": [
+    {
+      "city": "okayama",
+      "file": "okayama/original-draft.json",
+      "sha256": "9c8cb6fbb591696362508b5aaa149c8470d5be2d7530174fc4a0cfda48da842a"
+    }
+  ],
+  "field_count": 40,
+  "service_count": 4,
+  "required_findings": [
+    {
+      "id": "OK-01",
+      "kind": "required_data_fix",
+      "severity": "high",
+      "service": "okayama-self-dropoff",
+      "fields": [
+        "family_help"
+      ],
+      "problem": "予約者本人が施設へ持ち込む条件を「家族等による代理搬入の条件は記載なし」として欠落させた。",
+      "correct_value": "予約した本人が持ち込む。代理搬入例外は確認質問に残す。",
+      "evidence": [
+        {
+          "source": "okayama-self-dropoff",
+          "lines": [
+            115,
+            120
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "OK-02",
+      "kind": "required_data_fix",
+      "severity": "high",
+      "service": "okayama-self-dropoff",
+      "fields": [
+        "attendance"
+      ],
+      "problem": "本人が来場する条件を「本人立会い記載なし」と誤記。",
+      "correct_value": "予約本人が来場。本人運転義務は原典にないため断定しない。",
+      "evidence": [
+        {
+          "source": "okayama-self-dropoff",
+          "lines": [
+            115,
+            120
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "OK-03",
+      "kind": "required_data_fix",
+      "severity": "high",
+      "service": "okayama-self-dropoff",
+      "fields": [
+        "limits"
+      ],
+      "problem": "1日1車のみ、複数回・2台以上不可の制限を欠落。",
+      "correct_value": "1日1車制限を明記する。",
+      "evidence": [
+        {
+          "source": "okayama-self-dropoff",
+          "lines": [
+            115,
+            120
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    },
+    {
+      "id": "OK-04",
+      "kind": "required_schema_fix",
+      "severity": "high",
+      "service": "all-new-sources",
+      "fields": [
+        "sources.checked",
+        "sources.source_kind"
+      ],
+      "problem": "初稿の岡山6出典にvalidator必須のchecked/source_kindが欠け、統合検証を通過しない。",
+      "correct_value": "6出典すべてに2026-10-18の確認日とofficialを明記。",
+      "evidence": [
+        {
+          "source": "gomi-expansion-b03/tools/validate_gomi.py",
+          "lines": [
+            160,
+            170
+          ]
+        }
+      ],
+      "recheck": "resolved_in_current_candidate"
+    }
+  ],
+  "field_reviews": [
+    {
+      "service": "okayama-daily",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "family_help",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "fees",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-daily",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-daily"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-daily.txt:73-96,120-125"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "family_help",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-bulky-carry",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-carry"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-carry.txt:75-92,108-113"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular",
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular.txt:101-146",
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-regular",
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular.txt:101-146",
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular",
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular.txt:101-146",
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "family_help",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular",
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular.txt:101-146",
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular",
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular.txt:101-146",
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "attendance",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-regular-bulky",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-regular-procedure"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-regular-procedure.txt:77-109"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "waste_scope",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "collection_location",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "indoor_carry",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "eligibility",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "family_help",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-self-dropoff"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "OK-01"
+      ],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "fees",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "limits",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "OK-03"
+      ],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "application",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "attendance",
+      "initial_state": "not_stated",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "correction_required",
+      "finding_ids": [
+        "OK-02"
+      ],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    },
+    {
+      "service": "okayama-self-dropoff",
+      "field": "contact",
+      "initial_state": "explicit",
+      "source_ids": [
+        "okayama-self-dropoff",
+        "okayama-self-dropoff-east"
+      ],
+      "review_result": "consistent_with_saved_sources",
+      "finding_ids": [],
+      "reviewed_evidence_ranges": [
+        "okayama-self-dropoff.txt:94-136",
+        "okayama-self-dropoff-east.txt:77-98,125-134"
+      ]
+    }
+  ],
+  "source_integrity": {
+    "okayama": "保存公式6資料のraw/text各SHA-256がメタデータと一致。",
+    "checked_source_count": 6,
+    "hash_mismatches": []
+  },
+  "deferred_city": {
+    "city": "niigata:niigata",
+    "initial_packet_sha256": "0e880ed7c7f886f9cc37cda9c398bd6c8d6031fb097d97bb28016d45328b15d9",
+    "reason": "日常支援の具体的な利用者資格・家族援助・本人負担と屋内搬出別制度の根拠が不足。制度不存在の断定ではない。",
+    "full_field_reviewed": false
+  },
+  "recheck": {
+    "scope": "岡山持込みのfamily_help、attendance、limits、質問変更と岡山6出典の必須schema追記を差分検査。初稿40項目の再全件検査ではない。",
+    "current_candidates": [
+      {
+        "city": "okayama",
+        "sha256": "2384ef97f24229847a9879ff23dab9126e060307b18c9a86ee25d9eca673a952"
+      }
+    ],
+    "result": "持込み3指摘を保存原典okayama-self-dropoff.txt:115-120と照合して解消。6出典の必須schemaを確認。予約本人の搬入と1日1車を明記し、運転者・代理例外は断定せず質問に残した。",
+    "remaining_required_findings": [],
+    "source_integrity_check_passed": true
+  },
+  "review_limitations": [
+    "AI原典照合であり人手・窓口確認ではない。",
+    "新潟40項目は独立全件照合せず、保留の採否確認に限定。",
+    "公開適格性や公開承認を付与しない。"
+  ]
+}

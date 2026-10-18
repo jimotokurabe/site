@@ -1,0 +1,12 @@
+{
+  "validator": "gomi-expansion-b03/tools/validate_gomi.py",
+  "validation_mode": "review schema, root explicitly set to read-only gomi-expansion-b03 checkout",
+  "result": "VALID",
+  "publication_gate_run": false,
+  "preview_generated_pages": 3,
+  "preview_errors": [],
+  "transport_pages_regenerated": 0,
+  "publication": false,
+  "validated_data_sha256": "121624595883899185fd9bad5d8a709673ca85510c26f5946be1e036f1c61f6d",
+  "validated_after_fee_clarification": true
+}

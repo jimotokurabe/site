@@ -1,0 +1,172 @@
+[
+  {
+    "city": "okayama:okayama",
+    "service": "okayama-daily",
+    "service_sha256": "0834ea392e508f9ff16e5c0dcf6011d62baa612697504827aed0b0e80211bd91",
+    "sources": [
+      {
+        "id": "okayama-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-daily.txt",
+        "lines": [
+          [
+            73,
+            96
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-daily.html.source",
+        "raw_sha256": "243ce0ea4e979a5c65fe1f663e029854be6175ff8647f94a536d2c4a4b77a08e",
+        "text_sha256": "bb8f8fd2e0a3fc3bd6e28c606dec4b747830f556c5307f02ee35c8eb1ef5aaee",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "okayama:okayama",
+    "service": "okayama-bulky-carry",
+    "service_sha256": "0f365b20fc4396c5cb14b30ee7c529f79b2f6a661bf5cd9fe66241a898d70d90",
+    "sources": [
+      {
+        "id": "okayama-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-carry.txt",
+        "lines": [
+          [
+            76,
+            99
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-carry.html.source",
+        "raw_sha256": "8943f7e2495800cdef4a989146b874205b50a355e7c325dae33a79e639057832",
+        "text_sha256": "e8b503e33a9e9050b4d5adef7a943a250ba4b1d0f8d022ec104f766aa4112f78",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "okayama:okayama",
+    "service": "okayama-regular-bulky",
+    "service_sha256": "1f7c769281beea2b4d95b557da52897e25aa18ee7d82d073e63b0ec571d92c82",
+    "sources": [
+      {
+        "id": "okayama-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-regular.txt",
+        "lines": [
+          [
+            118,
+            146
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-regular.html.source",
+        "raw_sha256": "8bcfe874f1486e51c5734ef6d8e3d6a1bafe4ef4b660e43b9938403cf56682e5",
+        "text_sha256": "155396e4600bf9aa01d0596efc38537ec3c649443194dfd51f6be13c2e6d651b",
+        "field_names": [
+          "waste_scope",
+          "indoor_carry",
+          "eligibility",
+          "fees",
+          "limits"
+        ]
+      },
+      {
+        "id": "okayama-regular-procedure",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-regular-procedure.txt",
+        "lines": [
+          [
+            77,
+            112
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-regular-procedure.html.source",
+        "raw_sha256": "d1d7772e885624f814c6322ae669eaf6d08f5c12282d44c2a3a1f65e490a4aec",
+        "text_sha256": "9677e98f677e0d01381bfe0e68722c3f9e2535d04c2cfb6aec8478f0eda55f54",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "okayama:okayama",
+    "service": "okayama-self-dropoff",
+    "service_sha256": "57282662943dc75b88f911c5f3cacb70c80d83ca87c88d952354cf34b6cb6af8",
+    "sources": [
+      {
+        "id": "okayama-self-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-self-dropoff.txt",
+        "lines": [
+          [
+            95,
+            120
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-self-dropoff.html.source",
+        "raw_sha256": "7fa110ebc08560c9191e11cc73d61dd24dd485d8fc5eee8d579f9b361408695b",
+        "text_sha256": "4aaaff03d9b1b49be988ab55b45a89526f9a832aeb25085491a19a2d605ea355",
+        "field_names": [
+          "application",
+          "attendance",
+          "collection_location",
+          "contact",
+          "eligibility",
+          "family_help",
+          "fees",
+          "indoor_carry",
+          "limits",
+          "waste_scope"
+        ]
+      },
+      {
+        "id": "okayama-self-dropoff-east",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-self-dropoff-east.txt",
+        "lines": [
+          [
+            77,
+            131
+          ]
+        ],
+        "raw_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-self-dropoff-east.html.source",
+        "raw_sha256": "30d3c011455be3ad54636002d4f3ec8f3e63033bc6ee9f88c95619e11f655329",
+        "text_sha256": "32dc8583e947d1c9fde812039644e697a5f2a7faabb164f3a4c1e4339f7b66c7",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "limits",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

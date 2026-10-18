@@ -1,0 +1,55 @@
+{
+  "city": "okayama:okayama",
+  "corrections": [
+    {
+      "correction_id": "okayama-self-dropoff-review-001",
+      "source": "okayama-self-dropoff",
+      "source_path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B04/okayama/official/okayama-self-dropoff.txt",
+      "source_lines": [
+        115,
+        120
+      ],
+      "reason": "独立原典照合で、予約本人が持込むことと1日1車の上限の記載を確認。本人搬入は本人運転義務を意味しない。",
+      "changes": [
+        {
+          "field": "family_help",
+          "before": "家族等による代理申込み・代理搬入の条件は記載なし。",
+          "after": "受付予約をした本人が持ち込む必要がある。家族等が本人に代わって持ち込める例外の記載はない。"
+        },
+        {
+          "field": "attendance",
+          "before": "搬入時の本人立会い・運転者要件の記載なし。",
+          "after": "受付予約をした本人が施設へ持ち込む必要がある。本人が運転する必要があるかは記載なし。"
+        },
+        {
+          "field": "limits",
+          "before": "1日1車の制限なし。",
+          "after": "1日1車のみで、複数回または2台以上での持込みは不可。"
+        }
+      ],
+      "questions_updated": [
+        "本人が運転する必要があるか",
+        "家族等が本人に代わって搬入できる例外があるか"
+      ],
+      "review_status": "ai_reviewed",
+      "human_reviewed": false
+    },
+    {
+      "correction_id": "okayama-source-schema-002",
+      "reason": "統合validatorがsourcesのcheckedとsource_kindを必須としていることを独立検査で確認。",
+      "changes": [
+        {
+          "scope": "all 6 sources",
+          "fields": {
+            "checked": "2026-10-18",
+            "source_kind": "official"
+          },
+          "source": "official-metadata.json"
+        }
+      ],
+      "original_draft_unchanged": true,
+      "review_status": "ai_reviewed",
+      "human_reviewed": false
+    }
+  ]
+}
