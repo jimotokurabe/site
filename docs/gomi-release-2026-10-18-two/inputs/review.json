@@ -1,0 +1,134 @@
+{
+  "review_scope": {
+    "file": "new-cities.json",
+    "cities": [
+      "宝塚市",
+      "伊丹市"
+    ],
+    "routes": 8,
+    "fields_per_route": 10,
+    "method": "同一folderのofficial/*.txt及び対応htmlだけを使った双方向照合。新規Web調査なし。",
+    "reviewed_at": "2026-10-16",
+    "human_reviewed": false,
+    "accuracy_claim": false,
+    "source_hash_reference": "official-metadata.json の取得HTML SHA-256を参照。本文位置はtxt行番号。"
+  },
+  "overall": "重大な利用判断上の誤りは確認できず。全8経路の記載は、確認範囲の原典と整合。未記載を無料・不可と断定したり、相談案内を屋内搬出可能と表現したりする問題は見当たらない。",
+  "routes": [
+    {
+      "id": "takarazuka-kizuna",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/takarazuka-kizuna.txt:7-20",
+        "official/takarazuka-kizuna.txt:21-32",
+        "official/takarazuka-kizuna.txt:36-43"
+      ],
+      "notes": "日常収集と粗大対象外、屋内に入らない、資格枝の全条件AND/高齢・障碍者OR、地域/身近な人の協力除外、週1、申込・訪問調査を反映。要件外相談を利用確定とせず、料金・立会いは未記載としている。"
+    },
+    {
+      "id": "takarazuka-regular",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/takarazuka-index.txt:22-26",
+        "official/takarazuka-bulky.txt:15-18",
+        "official/takarazuka-bulky.txt:27-45",
+        "official/takarazuka-bulky.txt:49-58"
+      ],
+      "notes": "粗大定義、戸別収集と持込区別、前日正午締切（月曜は前週金曜正午）、ネット初回等の電話登録、朝8時までの搬出、立会不要、料金を反映。室内搬出は通常収集と別制度と区別。"
+    },
+    {
+      "id": "takarazuka-carry",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/takarazuka-carry.txt:7-19",
+        "official/takarazuka-carry.txt:21-30"
+      ],
+      "notes": "生活に支障がある粗大ごみ限定、資格枝OR、各枝の条件AND、親族同居/近居・地域協力による除外、現利用きずな利用者枝を反映。下見・収集時とも親族以外の立会い、立会人範囲の制限を記載。"
+    },
+    {
+      "id": "takarazuka-dropoff",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/takarazuka-bulky.txt:31-38",
+        "official/takarazuka-bulky.txt:59-78"
+      ],
+      "notes": "本人又は家族の持込、現金10kg90円、前日17時締切、時間帯、積み下ろし本人、除外品等を反映。自宅搬出サービスではないと明記。"
+    },
+    {
+      "id": "itami-daily",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/itami-model.txt:62-74",
+        "official/itami-model.txt:77-104"
+      ],
+      "notes": "2026年度全小学校区、世帯条件、資格枝OR、各枝AND、対象外条件、日常ごみ種類、専用ふた付き容器、週1、月額料金、訪問調整を反映。室内搬出・通常日の在宅/立会いを断定せず未記載。"
+    },
+    {
+      "id": "itami-regular",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/itami-bulky.txt:82-98",
+        "official/itami-bulky.txt:99-127",
+        "official/itami-bulky.txt:131-151"
+      ],
+      "notes": "1世帯1日1回・5点、屋外横付け場所、ネットの事前決済/朝8時まで/立会不要と電話・FAXの現金/立会必要の差を反映。相談案内を別の確定支援にしていない。"
+    },
+    {
+      "id": "itami-carry-consult",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/itami-bulky.txt:92-94"
+      ],
+      "notes": "一時多量・運び出し困難時の受付相談を記載。屋内搬出の可否、料金、対象資格等は原典にないとして未確定のまま。"
+    },
+    {
+      "id": "itami-dropoff",
+      "directional_check": "原典→経路・経路→原典",
+      "result": "整合",
+      "evidence": [
+        "official/itami-cleanland.txt:32-60",
+        "official/itami-cleanland.txt:69-80",
+        "official/itami-cleanland.txt:101-150",
+        "official/itami-cleanland-net.txt:47-79",
+        "official/itami-dropoff-index.txt:60-61"
+      ],
+      "notes": "電話予約は原則本人申込・本人又は家族搬入、7日前から当日午前（当日午前の定義は未指定）・期間内2予約。ネットは本人申込/搬入限定、7日前0時から2日前0時、期間内1回。車種、料金、荷下ろし等も整合。伊丹市入口の前日まで案内と施設電話予約の当日午前までの差を保持し、要確認としている。"
+    }
+  ],
+  "omissions_or_caveats": [
+    {
+      "severity": "low",
+      "route_id": "itami-daily",
+      "detail": "「次の条件に該当する方のみで構成された世帯」という原典表現はデータに反映されている。世帯内に要件に該当しない人がいる場合の適用可否は、原典記載だけでは確定できないため、実利用時の個別確認事項。"
+    },
+    {
+      "severity": "low",
+      "route_id": "itami-dropoff",
+      "detail": "電話予約の「当日午前中まで」は締切時刻が記載されていない。候補も時刻を補っておらず、市入口との前日表示差を明示して確認を促している。"
+    }
+  ],
+  "limitations": "照合は指定された8経路と同folderの保存済み公式テキスト/HTMLおよびofficial-metadataに限定。人手確認や正解率を示すものではなく、他の市・他資料・現地運用を評価しない。",
+  "reviewed_input_sha256": "4e6235625b541f296ebb320c7e73e06c46b2d7c91a008eda15241259b8741551",
+  "parent_focus": {
+    "date": "2026-10-16",
+    "scope": [
+      "宝塚室内対象ORと親族以外立会い",
+      "伊丹日常ALL/OR・3料金・除外",
+      "伊丹電話/ネットの持込者・期限・回数"
+    ],
+    "findings": []
+  },
+  "final_new_cities_sha256": "68fecead65f07f3ac853333252a8e9ee77de3816a32cdb5806b4121b6121374b",
+  "post_review_changes": [
+    "review_statusとai_reviewed_atを独立確認済みの状態へ",
+    "保存本文の明記日から宝塚一覧2026-03-23、施設ネット2026-10-08を補完（fields/質問不変）"
+  ],
+  "invalidation_scope": "将来fields編集時は該当経路と関連原典だけ差分確認。今回の旧15市は再読対象外。"
+}

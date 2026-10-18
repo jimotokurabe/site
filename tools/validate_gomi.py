@@ -149,7 +149,18 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
             'www.city.sapporo.jp': 'hokkaido:sapporo',
             'www.city.nagoya.jp': 'aichi:nagoya',
             'www.city.sendai.jp': 'miyagi:sendai',
+            'www.city.takarazuka.hyogo.jp': 'hyogo:takarazuka',
         }
+        # Itami links its joint municipal facility hosted by Toyonaka.
+        if sid in {'itami-cleanland', 'itami-cleanland-net'} and url in {
+            'https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/tel/mochikomi.html',
+            'https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/net/rinnjigomi.html',
+        }:
+            owners = {c.get('id') for c in cities if isinstance(c, dict)
+                      for service in c.get('services', [])
+                      for fact in service.get('fields', {}).values()
+                      if sid in fact.get('source_ids', [])}
+            official_host = owners == {'hyogo:itami'}
         if hostname in municipal_hosts:
             owners = {c.get('id') for c in cities if isinstance(c, dict)
                       for service in c.get('services', [])

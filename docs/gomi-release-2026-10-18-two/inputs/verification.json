@@ -1,0 +1,28 @@
+{
+  "schema_errors": [],
+  "publication_gate_rejected": true,
+  "baseline_cities_preserved": 15,
+  "baseline_sources_preserved": 95,
+  "fields_preserved": 680,
+  "service_sources_dates_preserved": 141,
+  "questions_preserved": 115,
+  "reviewed_v1_facts_unchanged": true,
+  "restricted_hostname_tests": 2,
+  "transport_pages_regenerated": 0,
+  "shared_code_changed": [
+    "tools/validate_gomi.py"
+  ],
+  "candidate_sha256": "276262c0fda573c870c474c4564d4e62310a1bb8a2a03aef5dc991ab333518f9",
+  "new_sha256": "68fecead65f07f3ac853333252a8e9ee77de3816a32cdb5806b4121b6121374b",
+  "production_data_sha256": "682f0c06bcfd36e38c4f172387c8e61fe29b99ac4e4170e194a18e21fbe82bcc",
+  "measured_work": {
+    "http_fetches": 12,
+    "saved_official_documents": 11,
+    "web_tool_calls": 5,
+    "limited_search_queries": 14,
+    "independent_review_agents": 1,
+    "independent_full_passes": 1,
+    "independent_fix_passes": 0,
+    "gomi_unit_tests": 28
+  }
+}

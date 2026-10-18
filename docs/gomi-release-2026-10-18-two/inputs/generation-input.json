@@ -1,0 +1,19 @@
+{
+  "base": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/gomi-release-preview/data/gomi-support.json",
+  "base_sha256": "682f0c06bcfd36e38c4f172387c8e61fe29b99ac4e4170e194a18e21fbe82bcc",
+  "fixed_exploration": [
+    "宝塚",
+    "伊丹",
+    "川西",
+    "姫路"
+  ],
+  "selected": [
+    "宝塚",
+    "伊丹"
+  ],
+  "deferred": {
+    "川西": "戸別収集資格は明確だが搬出範囲・費用等の補完負担を考慮し今回は保留",
+    "姫路": "日常支援は明確だが地区別の粗大/持込分岐の補完負担を考慮し今回は保留"
+  },
+  "new_fields": 80
+}
