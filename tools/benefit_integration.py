@@ -103,8 +103,11 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None):
     family = soup.select_one('#family')
     if family:
         saved = fragment('<div class="family-saved" id="selected-benefits"><h3>選んだ支援を家族用メモに</h3>'
-            '<p id="selected-status" role="status">気になる支援の「家族用メモに追加」から選べます。</p>'
+            '<p id="selected-status" role="status">各支援の「家族用メモに追加」を選ぶと、対象条件と出典をまとめてコピーできます。</p>'
             '<div id="selected-list"></div></div>')
+        lead = family.select_one('.lead')
+        if lead:
+            lead.string = '対象条件・費用・申請先・必要書類を本人や家族と確認し、公式窓口に相談するときに活用できます。'
         heading = family.find('h2')
         if heading:
             heading.insert_after(saved)
@@ -113,7 +116,7 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None):
     soup.body.append(fragment('<dialog id="selection-dialog" aria-labelledby="selection-title">'
         '<form method="dialog"><button aria-label="閉じる">閉じる</button></form>'
         '<h2 id="selection-title">選んだ支援を家族に共有</h2>'
-        '<p>掲載記録の条件と出典を含むメモです。利用前に公式案内・窓口で確認してください。</p>'
+        '<p>選んだ支援の条件と出典を含むメモです。申請・利用前に公式案内や窓口で最新の内容をご確認ください。</p>'
         '<textarea id="selection-text" rows="13" readonly aria-label="選んだ支援のメモ"></textarea>'
         '<button type="button" id="selection-copy">メモをコピー</button>'
         '<p id="selection-copy-status" role="status"></p></dialog>'
