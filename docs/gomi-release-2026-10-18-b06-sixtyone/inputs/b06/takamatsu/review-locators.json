@@ -1,0 +1,205 @@
+[
+  {
+    "city": "kagawa:takamatsu",
+    "service": "takamatsu-daily-support",
+    "service_sha256": "ed92f031ecba1e60059b2c7fdff0c11922553b4794649b53795743967fa88db4",
+    "sources": [
+      {
+        "id": "kagawa-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/daily.txt",
+        "lines": [
+          [
+            1,
+            73
+          ]
+        ],
+        "raw_path": "takamatsu/official/daily.html.source",
+        "raw_sha256": "bc6f4687acf1c1106ef47b07270a48de35d94027ba65c61b43bc2004fc19cfc7",
+        "text_sha256": "e20bf1bc9cc891787f2b885997d17181a814a4befca38bc35844e6ad4a46d56e",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance"
+        ]
+      },
+      {
+        "id": "kagawa-flyer",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/flyer.txt",
+        "lines": [
+          [
+            1,
+            181
+          ]
+        ],
+        "raw_path": "takamatsu/official/flyer.pdf",
+        "raw_sha256": "e241e92e6d68316c08f3eadbaea2d8dddf53bccdb948d63f804e60873cd51d48",
+        "text_sha256": "3817739f4a60172d3fd684d2c859905100a84daf4f6f61ab23f8e85aca8f417c",
+        "field_names": [
+          "eligibility",
+          "limits",
+          "application",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kagawa:takamatsu",
+    "service": "takamatsu-bulky-carry-support",
+    "service_sha256": "9107d9645bb95c893edb891d2b320ed69c4ab0e99f6b57cdaa135ca3f9d387bd",
+    "sources": [
+      {
+        "id": "kagawa-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/daily.txt",
+        "lines": [
+          [
+            1,
+            73
+          ]
+        ],
+        "raw_path": "takamatsu/official/daily.html.source",
+        "raw_sha256": "bc6f4687acf1c1106ef47b07270a48de35d94027ba65c61b43bc2004fc19cfc7",
+        "text_sha256": "e20bf1bc9cc891787f2b885997d17181a814a4befca38bc35844e6ad4a46d56e",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kagawa-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/regular.txt",
+        "lines": [
+          [
+            1,
+            537
+          ]
+        ],
+        "raw_path": "takamatsu/official/regular.html.source",
+        "raw_sha256": "13f1ae6ee74f54a91f3f652ba97e11883f76ff05969087ec74238d44f4f036fe",
+        "text_sha256": "147febeb631919c9e4128e778ef893641827506c83328144667ebd453e3b3cfc",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kagawa:takamatsu",
+    "service": "takamatsu-regular-bulky",
+    "service_sha256": "2585d6465fe06be742d57c6118447bf93cfe3fdac43b2a42162791341802738d",
+    "sources": [
+      {
+        "id": "kagawa-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/regular.txt",
+        "lines": [
+          [
+            1,
+            537
+          ]
+        ],
+        "raw_path": "takamatsu/official/regular.html.source",
+        "raw_sha256": "13f1ae6ee74f54a91f3f652ba97e11883f76ff05969087ec74238d44f4f036fe",
+        "text_sha256": "147febeb631919c9e4128e778ef893641827506c83328144667ebd453e3b3cfc",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kagawa:takamatsu",
+    "service": "takamatsu-self-dropoff",
+    "service_sha256": "0ba5c6ad496cdadb4945086e92f2c6fade315d0ea8d233e6422e5d8ff6f3c7f3",
+    "sources": [
+      {
+        "id": "kagawa-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            62
+          ]
+        ],
+        "raw_path": "takamatsu/official/dropoff.html.source",
+        "raw_sha256": "5604c87101b2a5d294d40728fc0ba849e1a2c23cf723f7d3731c1f475f713983",
+        "text_sha256": "0f796197185a95a389ef825a111fd2388391fae4def0c51c51934a4fc8d24473",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "family_help",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kagawa-faq",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/faq.txt",
+        "lines": [
+          [
+            1,
+            239
+          ]
+        ],
+        "raw_path": "takamatsu/official/faq.html.source",
+        "raw_sha256": "c773f404faba2844485e6281e0b8e08523a197a2540fad840adca71c0237ca31",
+        "text_sha256": "a36c45bdc42d9cd2b05091c6ce35b3064e3148e151ca3c4285820e425f3b1474",
+        "field_names": [
+          "eligibility",
+          "fees",
+          "contact"
+        ]
+      },
+      {
+        "id": "kagawa-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/takamatsu/official/regular.txt",
+        "lines": [
+          [
+            1,
+            537
+          ]
+        ],
+        "raw_path": "takamatsu/official/regular.html.source",
+        "raw_sha256": "13f1ae6ee74f54a91f3f652ba97e11883f76ff05969087ec74238d44f4f036fe",
+        "text_sha256": "147febeb631919c9e4128e778ef893641827506c83328144667ebd453e3b3cfc",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  }
+]

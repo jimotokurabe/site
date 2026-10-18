@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "7b89836923fd2b61ce5b8f72c3f94af054e269b4e347a0891a8a41af32cc69ae",
+  "corrections": [
+    {
+      "service_id": "aomori-self",
+      "field": "application",
+      "old": "品目・搬入先を清掃工場に事前確認。",
+      "new": "青森市清掃工場への家庭ごみ自己搬入は「家庭ごみ搬入調書」を提出（現地記入可）。自分で運搬できない場合は市の許可業者に依頼し、排出者が「家庭ごみ搬入依頼調書（委任状）」を搬入日の2日前まで（土日祝除く）に提出する。家族による搬入条件は要確認。",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ]
+    }
+  ]
+}

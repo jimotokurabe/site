@@ -1,0 +1,171 @@
+[
+  {
+    "city": "oita:oita",
+    "service": "oita-daily-support",
+    "service_sha256": "617f548d5afcd0e65cd34299c8e3bb816818aa3f5819a61be23da69d25f016a8",
+    "sources": [
+      {
+        "id": "oita-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/oita/official/daily.txt",
+        "lines": [
+          [
+            1,
+            168
+          ]
+        ],
+        "raw_path": "oita/official/daily.html.source",
+        "raw_sha256": "98cd110658e33cd42f97a85ac35656c5066880e220a7a3c72cb54e3e2b507845",
+        "text_sha256": "9c92938f0d30a9230970e5eefbf0dc0250b793ca54730e92cc5ba09546f1eaa2",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "oita:oita",
+    "service": "oita-bulky-carry-support",
+    "service_sha256": "c17c3cf5177198403380916ac92a6d08233a52a13f454745ed0f194c99d12a29",
+    "sources": [
+      {
+        "id": "oita-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/oita/official/daily.txt",
+        "lines": [
+          [
+            1,
+            168
+          ]
+        ],
+        "raw_path": "oita/official/daily.html.source",
+        "raw_sha256": "98cd110658e33cd42f97a85ac35656c5066880e220a7a3c72cb54e3e2b507845",
+        "text_sha256": "9c92938f0d30a9230970e5eefbf0dc0250b793ca54730e92cc5ba09546f1eaa2",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "oita-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/oita/official/regular.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "oita/official/regular.html.source",
+        "raw_sha256": "2f65a91fbad34db3456ada75be7bdf88e609baad081c8a0adc8494f1aec7f976",
+        "text_sha256": "7769eace0b13d578bbed326925f6f7b012380917b902a961314bcfbf7132fa94",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "oita:oita",
+    "service": "oita-regular-bulky",
+    "service_sha256": "9947668ae6fbe10ef64fc94fff389d3c840b62d09d0a5f7a7b56db4c7c97ca4b",
+    "sources": [
+      {
+        "id": "oita-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/oita/official/regular.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "oita/official/regular.html.source",
+        "raw_sha256": "2f65a91fbad34db3456ada75be7bdf88e609baad081c8a0adc8494f1aec7f976",
+        "text_sha256": "7769eace0b13d578bbed326925f6f7b012380917b902a961314bcfbf7132fa94",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "oita:oita",
+    "service": "oita-self-dropoff",
+    "service_sha256": "35bb4e47e686a8765ab287a802ebb886c7ccd5f4a539163e31d9b1f6cbc6b515",
+    "sources": [
+      {
+        "id": "oita-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/oita/official/regular.txt",
+        "lines": [
+          [
+            1,
+            226
+          ]
+        ],
+        "raw_path": "oita/official/regular.html.source",
+        "raw_sha256": "2f65a91fbad34db3456ada75be7bdf88e609baad081c8a0adc8494f1aec7f976",
+        "text_sha256": "7769eace0b13d578bbed326925f6f7b012380917b902a961314bcfbf7132fa94",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "oita-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/oita/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            107
+          ]
+        ],
+        "raw_path": "oita/official/dropoff.html.source",
+        "raw_sha256": "393a40f4f0a9000a2648d05bcf94f0b98bd05115e1e90fa347b22efa0219b84e",
+        "text_sha256": "e5f90c32de297f035fa4ee683c0803a69d8bba1fe60459ab07c37a1b5f5e8dfe",
+        "field_names": [
+          "waste_scope"
+        ]
+      }
+    ]
+  }
+]

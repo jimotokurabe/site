@@ -1,0 +1,442 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "tokushima:tokushima",
+      "name": "徳島市",
+      "kana": "とくしまし",
+      "pref_name": "徳島県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "tokushima-daily-support",
+          "kind": "daily_support",
+          "name": "ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃・不燃・プラマーク・缶びん・ペットボトル・古紙を収集。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "原則、玄関先または門扉先。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "親族・近隣のごみ出し協力を得られない"
+                ],
+                "any": [
+                  "65歳以上で要支援2以上",
+                  "身体障害者手帳1級または2級",
+                  "療育手帳A1またはA2"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣の協力が得られないこと。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "application": {
+              "value": "環境政策課窓口へ申請。代理申請可。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            },
+            "contact": {
+              "value": "徳島市環境政策課 088-621-5202・5206・5217。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "世帯内に対象外の同居者がいる場合の扱いを確認してください。",
+            "収集頻度・費用・立会いを確認してください。",
+            "ふれあい収集の世帯員全員の条件、対象外同居者がいる場合、声かけの選択を確認してください。"
+          ]
+        },
+        {
+          "id": "tokushima-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-daily",
+                "tokushima-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "徳島市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "玄関先まで運べない粗大ごみに室内搬出の市制度があるか確認してください。"
+          ]
+        },
+        {
+          "id": "tokushima-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ申込収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "収集通知書に記載された場所へ当日8時30分までに排出。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "fees": {
+              "value": "市から届く粗大ごみ収集シールを貼る方式。別途手数料の記載は確認原典にない。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "limits": {
+              "value": "年6回の地区別申込月。1世帯各申込月1回・大小計5個まで。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "application": {
+              "value": "専用はがきまたはインターネットで申込。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "お住まいの地区の偶数・奇数申込月と、5点超の次回申込を確認してください。"
+          ]
+        },
+        {
+          "id": "tokushima-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "ごみ処理施設への持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "種類別に分別して各施設へ持込。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "重量に応じた処理手数料。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "application": {
+              "value": "持込前に各施設へ問い合わせる。",
+              "state": "explicit",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "tokushima-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの材質ごとの搬入先と計量料金を各施設に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "徳島市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tokushima-daily",
+      "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/hureai.html",
+      "title": "ふれあい収集（ごみ出し支援）利用者受付中です：徳島市公式ウェブサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-09-24",
+      "http_status": 200,
+      "final_url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/hureai.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "tokushima/official/daily.html.source",
+      "text_file": "tokushima/official/daily.txt",
+      "raw_sha256": "d176b22d315366759e0a7f080c4d7641393f0d91635779ecae7582c0c2db2be4",
+      "text_sha256": "1280fcdd870aabeba192cc19dd7eedddf2a9505786764a8aa1d8e18cfc2d250c",
+      "last_modified_header": "Thu, 15 Oct 2026 15:01:57 GMT"
+    },
+    {
+      "id": "tokushima-dropoff",
+      "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/jigyou/hannyuu.html",
+      "title": "ごみ処理施設への搬入について：徳島市公式ウェブサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2023-05-15",
+      "http_status": 200,
+      "final_url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/jigyou/hannyuu.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "tokushima/official/dropoff.html.source",
+      "text_file": "tokushima/official/dropoff.txt",
+      "raw_sha256": "4e9e7f4015c93bc2bb0b95b7b3da8a42646b7b8935b6aab2506791fc63401e58",
+      "text_sha256": "0f63f119fba214a72ff8fcb30fec02f2ddbd37266846819de8de53ddaf8bb025",
+      "last_modified_header": "Thu, 15 Oct 2026 15:01:58 GMT"
+    },
+    {
+      "id": "tokushima-regular",
+      "url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/sodaigomi.html",
+      "title": "粗大ごみ：徳島市公式ウェブサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2023-06-05",
+      "http_status": 200,
+      "final_url": "https://www.city.tokushima.tokushima.jp/kurashi/recycle/gomi/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "tokushima/official/regular.html.source",
+      "text_file": "tokushima/official/regular.txt",
+      "raw_sha256": "925204ed1ca06b6f7106727d136e00a717fb4fee324de14a994aa853b592e41e",
+      "text_sha256": "194484a304b644e4034c17983dba66d1c261222bed8eed1760bda32c4a89cd73",
+      "last_modified_header": "Sat, 17 Oct 2026 15:01:52 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

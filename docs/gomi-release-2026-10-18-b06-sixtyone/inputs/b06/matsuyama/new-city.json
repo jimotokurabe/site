@@ -1,0 +1,474 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "ehime:matsuyama",
+      "name": "松山市",
+      "kana": "まつやまし",
+      "pref_name": "愛媛県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "matsuyama-daily-support",
+          "kind": "daily_support",
+          "name": "ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃、ペットボトル、プラ容器、紙類、金物・ガラス、埋立、水銀ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先等に置く貸与のふた付きごみ箱から週1回収集。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "世帯全員がごみ出し困難",
+                  "世帯全員が次のいずれか：65歳以上かつ要介護1以上、または65歳以上かつ身体障害者手帳1・2級"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "application": {
+              "value": "本人か代理人が清掃課へ連絡し、市職員が訪問調査。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            },
+            "contact": {
+              "value": "松山市清掃課 089-921-5516。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要綱の親族・近隣協力要件と例外を窓口確認してください。",
+            "集合住宅の設置場所・立会い・費用を確認してください。",
+            "中島地域のふれあい収集に同じ資格・品目が適用されるか確認してください。"
+          ]
+        },
+        {
+          "id": "matsuyama-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-daily",
+                "ehime-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "松山市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "ふれあい収集利用者が粗大ごみを室内から出せない場合の支援先を確認してください。"
+          ]
+        },
+        {
+          "id": "matsuyama-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "松山・北条地域の粗大ごみ。中島地域は出し方が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "通知された場所へ収集日朝までに排出。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "fees": {
+              "value": "松山・北条地域の粗大ごみ戸別収集は無料。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-regular",
+                "matsuyama-bulky-application"
+              ]
+            },
+            "limits": {
+              "value": "松山・北条地域は地区別の申込期間に従う。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "application": {
+              "value": "松山・北条地域はハガキまたはネット申込。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "松山・北条地域の住所ごとの申込期間・年6回の収集日を確認してください。"
+          ]
+        },
+        {
+          "id": "matsuyama-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "粗大ごみ等の直接搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "品目・地域で施設を分ける。南クリーンセンターは可燃ごみと粗大ごみ、西は可燃性粗大のみ。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "ごみを出す人が自ら運搬する場合、30kg以下無料、30kg超40kg以下760円、以後10kgまでごとに190円加算。許可業者搬入は別料金。",
+              "state": "explicit",
+              "source_ids": [
+                "matsuyama-fees"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "application": {
+              "value": "品目と搬入先を市の案内で確認する。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "ehime-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "南クリーンセンター089-971-8862、西クリーンセンター089-953-1153。料金の相談は清掃施設課089-948-6532。",
+              "state": "explicit",
+              "source_ids": [
+                "ehime-dropoff",
+                "matsuyama-fees"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "不燃性粗大ごみは西クリーンセンターで受け入れないため、品目別施設を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "松山市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ehime-daily",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/seisou.html",
+      "title": "ふれあい収集を行っています　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2023-06-06",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/seisou.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/daily.html.source",
+      "text_file": "matsuyama/official/daily.txt",
+      "raw_sha256": "3a1d0c693832aa5a8105938a3f53ede778bfdf5ce6605353c058cc449bef20f7",
+      "text_sha256": "3ec09cf322ac2a2763630ce32d4c2dbba0669980d0f5025d454573ba69ccbe6d",
+      "last_modified_header": "Thu, 15 Oct 2026 03:01:45 GMT"
+    },
+    {
+      "id": "ehime-dropoff",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/kateigomi.html",
+      "title": "家庭から出るごみの処理方法　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-09-28",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/kateigomi.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/dropoff.html.source",
+      "text_file": "matsuyama/official/dropoff.txt",
+      "raw_sha256": "c07f32da6d6742484461f96af55dc7ae08b781e4f505bcb92268012df18c7d9f",
+      "text_sha256": "520c193ddc877f4add0e3ae34220e2ce1c20c755be0570104de4aa9826c98b1b",
+      "last_modified_header": "Sun, 18 Oct 2026 03:01:38 GMT"
+    },
+    {
+      "id": "ehime-regular",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi_dashikata.html",
+      "title": "粗大ごみの出し方　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-11-28",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi_dashikata.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/regular.html.source",
+      "text_file": "matsuyama/official/regular.txt",
+      "raw_sha256": "361dcb74bf1cf27617683bbb75ad443eb5b605a344fd2a7a8049e2460f4e076c",
+      "text_sha256": "2ec9f1b75e51bb6878abc8e3662f581106807a8ff980d52c178b54b681dda4a3",
+      "last_modified_header": "Sun, 18 Oct 2026 03:01:38 GMT"
+    },
+    {
+      "id": "matsuyama-fees",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/gomishori_tesuuryou.html",
+      "title": "ごみ処理手数料　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-04-13",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/gomishori_tesuuryou.html",
+      "retrieved_at": "2026-10-18T19:26:07+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/fees.html.source",
+      "text_file": "matsuyama/official/fees.txt",
+      "raw_sha256": "e036a3031d68496a65e1e177f9d2d543fbc0940814e4dc69db7d769df67deec2",
+      "text_sha256": "468b632062ad152d5c069a13bab04fe2f5804d3cc0f3e292ad139acff4d2d9c2",
+      "last_modified_header": "Thu, 15 Oct 2026 03:01:45 GMT"
+    },
+    {
+      "id": "matsuyama-bulky-application",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi.html",
+      "title": "粗大ごみの収集申込み方法　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-09-28",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:26:19+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/bulky-application.html.source",
+      "text_file": "matsuyama/official/bulky-application.txt",
+      "raw_sha256": "dfc4c91dbbe40bd982518b79ca02d20477b7aee68e95a0e075f8532283edef51",
+      "text_sha256": "7114b705e6f1e363ad5568f9277a820772bb0165e98729d1b5cc022224d7f83d",
+      "last_modified_header": "Fri, 16 Oct 2026 03:01:47 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

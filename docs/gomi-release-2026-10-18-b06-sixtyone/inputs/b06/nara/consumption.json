@@ -1,0 +1,31 @@
+{
+  "city": "nara:nara",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "奈良市 ごみ出し支援 対象 申込",
+    "奈良市 粗大ごみ 収集 搬出",
+    "奈良市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 4,
+  "http_200_count": 4,
+  "http_non_200_count": 0,
+  "original_bytes_total": 160572,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "nara-daily",
+    "nara-regular",
+    "nara-calendar",
+    "nara-self"
+  ],
+  "new_city_sha256": "e7406b67f4a497e17145499e7b9a127fbaa3525eaf7da6483cebfb54ced7cbd7",
+  "source_hash_verification": "passed"
+}

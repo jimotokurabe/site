@@ -146,6 +146,22 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
         # These municipal sites use .jp rather than the common .lg.jp domain.
         # Accept them only when the source is referenced exclusively by that city.
         municipal_hosts = {
+            'www.city.takamatsu.kagawa.jp': 'kagawa:takamatsu',
+            'www.city.nagano.nagano.jp': 'nagano:nagano',
+            'www.city.wakayama.wakayama.jp': 'wakayama:wakayama',
+            'www.info.city.tsu.mie.jp': 'mie:tsu',
+            'faq.city.kochi.kochi.jp': 'kochi:kochi',
+            'qa.city.nagaoka.niigata.jp': 'niigata:nagaoka',
+            'www.city.aomori.aomori.jp': 'aomori:aomori',
+            'www.city.fukushima.fukushima.jp': 'fukushima:fukushima',
+            'www.city.kochi.kochi.jp': 'kochi:kochi',
+            'www.city.kumamoto.jp': 'kumamoto:kumamoto',
+            'www.city.maebashi.gunma.jp': 'gunma:maebashi',
+            'www.city.matsuyama.ehime.jp': 'ehime:matsuyama',
+            'www.city.morioka.iwate.jp': 'iwate:morioka',
+            'www.city.nagaoka.niigata.jp': 'niigata:nagaoka',
+            'www.city.oita.oita.jp': 'oita:oita',
+            'www.city.tokushima.tokushima.jp': 'tokushima:tokushima',
             'www.city.chigasaki.kanagawa.jp': 'kanagawa:chigasaki',
             'www.city.fujisawa.kanagawa.jp': 'kanagawa:fujisawa',
             'www.city.sagamihara.kanagawa.jp': 'kanagawa:sagamihara',

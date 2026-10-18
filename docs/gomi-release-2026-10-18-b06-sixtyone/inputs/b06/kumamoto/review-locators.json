@@ -1,0 +1,155 @@
+[
+  {
+    "city": "kumamoto:kumamoto",
+    "service": "kumamoto-daily-support",
+    "service_sha256": "1f5a7fdf104f7ad65898e1eef58688f68821fe9153b11016e56ae0e3c10ceb48",
+    "sources": [
+      {
+        "id": "kumamoto-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kumamoto/official/daily.txt",
+        "lines": [
+          [
+            1,
+            117
+          ]
+        ],
+        "raw_path": "kumamoto/official/daily.html.source",
+        "raw_sha256": "1829b7b77a9a8787d8368f43e4cbdabf37926d41cc02efb3730eb918fb680b8a",
+        "text_sha256": "6bf347b0cb727c6eca920087da8d041fea97fe6fbf7e29aed3a0a981a844dfdb",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kumamoto:kumamoto",
+    "service": "kumamoto-bulky-carry-support",
+    "service_sha256": "b98d43786f02de01c977de05bf6e79662468805d858314b22caf066aba405941",
+    "sources": [
+      {
+        "id": "kumamoto-daily",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kumamoto/official/daily.txt",
+        "lines": [
+          [
+            1,
+            117
+          ]
+        ],
+        "raw_path": "kumamoto/official/daily.html.source",
+        "raw_sha256": "1829b7b77a9a8787d8368f43e4cbdabf37926d41cc02efb3730eb918fb680b8a",
+        "text_sha256": "6bf347b0cb727c6eca920087da8d041fea97fe6fbf7e29aed3a0a981a844dfdb",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kumamoto-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kumamoto/official/regular.txt",
+        "lines": [
+          [
+            1,
+            209
+          ]
+        ],
+        "raw_path": "kumamoto/official/regular.html.source",
+        "raw_sha256": "61b562b33038832674c2b69e84921b8ee6d29dc1c63e37a1196ffe7df73d9279",
+        "text_sha256": "35d8900363d906d492ebe3324c77eb557633f495760395475d4e8541a8b594c4",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kumamoto:kumamoto",
+    "service": "kumamoto-regular-bulky",
+    "service_sha256": "4759699ebb85315a5554382bfdcadc4ab8952355a6962f53e00ab1a21daf1a34",
+    "sources": [
+      {
+        "id": "kumamoto-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kumamoto/official/regular.txt",
+        "lines": [
+          [
+            1,
+            209
+          ]
+        ],
+        "raw_path": "kumamoto/official/regular.html.source",
+        "raw_sha256": "61b562b33038832674c2b69e84921b8ee6d29dc1c63e37a1196ffe7df73d9279",
+        "text_sha256": "35d8900363d906d492ebe3324c77eb557633f495760395475d4e8541a8b594c4",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "kumamoto:kumamoto",
+    "service": "kumamoto-self-dropoff",
+    "service_sha256": "122006a13ba6f2fa2889115262a324b62f634c16ee4f2acd8e4626e626a002bc",
+    "sources": [
+      {
+        "id": "kumamoto-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/kumamoto/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            163
+          ]
+        ],
+        "raw_path": "kumamoto/official/dropoff.html.source",
+        "raw_sha256": "75328e19679e50fa1f0c7678f04a0234dbac4675d64abf2854d88b4a70fe142c",
+        "text_sha256": "521e081d3368b0120bee60ebe0b6bacbc147fd3e6cc070cb120c050fe25fc803",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

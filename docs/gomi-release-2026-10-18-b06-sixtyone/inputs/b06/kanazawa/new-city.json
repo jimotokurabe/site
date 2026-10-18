@@ -1,0 +1,470 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "ishikawa:kanazawa",
+      "name": "金沢市",
+      "kana": "かなざわし",
+      "pref_name": "石川県",
+      "selection_reason": "金沢市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kanazawa-daily",
+          "kind": "daily_support",
+          "name": "要援護者ごみ出しサポート事業",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみを玄関先などで収集。粗大ごみの扱いは記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅玄関先など。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "要介護1以上、視覚・肢体の身体手帳4級以上、精神手帳2級以上、療育B1以上のいずれか。同居者がいる場合は全員がいずれかに該当。親族・近隣・ヘルパー等の協力が得られない世帯。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣・ヘルパー等の支援が得られる場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "fees": {
+              "value": "公式案内にはfeesの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "limits": {
+              "value": "公式案内にはlimitsの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "application": {
+              "value": "ごみ減量推進課に相談。詳細申請手順は案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            },
+            "contact": {
+              "value": "金沢市ごみ減量推進課 076-220-2302。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要援護者サポートに粗大ごみが含まれるかと収集頻度・費用・申請手順を確認。",
+            "東部への可燃ごみ予約と戸室への有料粗大持込みで、搬入者・車両・手数料をそれぞれ確認。"
+          ]
+        },
+        {
+          "id": "kanazawa-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kanazawa-daily",
+                "kanazawa-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要援護者サポートに粗大ごみが含まれるかと収集頻度・費用・申請手順を確認。",
+            "東部への可燃ごみ予約と戸室への有料粗大持込みで、搬入者・車両・手数料をそれぞれ確認。",
+            "金沢市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "kanazawa-regular",
+          "kind": "regular_bulky",
+          "name": "有料戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "有料粗大ごみ・多量ごみ等。品目一覧で対象確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "collection_location": {
+              "value": "原則玄関前など申込時指定の場所。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家の中からの持出しは行わない。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "eligibility": {
+              "value": "金沢市の家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "fees": {
+              "value": "品目別のごみ処理券またはLINE申込時のオンライン決済。収集時の現金支払不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "limits": {
+              "value": "収集希望は月～金曜。変更は前日まで。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "application": {
+              "value": "戸別収集受付センター 076-220-7153へ電話、または市LINE。聴覚障害者はFAX申込可。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "attendance": {
+              "value": "処理券等を付けておけば立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            },
+            "contact": {
+              "value": "戸別収集受付センター 076-220-7153。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-bulky",
+                "kanazawa-bulky-faq"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要援護者サポートに粗大ごみが含まれるかと収集頻度・費用・申請手順を確認。",
+            "東部への可燃ごみ予約と戸室への有料粗大持込みで、搬入者・車両・手数料をそれぞれ確認。"
+          ]
+        },
+        {
+          "id": "kanazawa-self",
+          "kind": "self_dropoff",
+          "name": "家庭ごみの直接搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やすごみ（最長辺70cm以下）は東部環境エネルギーセンター。埋立ごみ・有料粗大ごみは戸室新保埋立場。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "collection_location": {
+              "value": "可燃は東部環境エネルギーセンター、埋立・有料粗大は戸室新保埋立場。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "eligibility": {
+              "value": "金沢市内で発生した家庭ごみ。持込みは本人または同居家族に限る。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "family_help": {
+              "value": "同居家族の代理持込み可。同居していない親族の持込みは対象に含まれない。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "fees": {
+              "value": "東部の燃やすごみは20kgまで220円、超過10kgごと110円。戸室の埋立・有料粗大は500kg以下1台1,500円、500kg超は段階別の重量料金。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "limits": {
+              "value": "東部は平日9～15時・前日までの電話またはLINE予約。戸室は平日8:30～16:30・予約不要（祝日可、悪天候中止あり）。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "application": {
+              "value": "可燃は東部へ前日までに予約。埋立・有料粗大は戸室の受入品目確認後に持込み。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            },
+            "contact": {
+              "value": "東部環境エネルギーセンター 076-252-6049／戸室新保埋立場 076-236-1521。",
+              "state": "explicit",
+              "source_ids": [
+                "kanazawa-self-burn",
+                "kanazawa-self-bulky",
+                "kanazawa-self-fee"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "要援護者サポートに粗大ごみが含まれるかと収集頻度・費用・申請手順を確認。",
+            "東部への可燃ごみ予約と戸室への有料粗大持込みで、搬入者・車両・手数料をそれぞれ確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "要援護者サポートに粗大ごみが含まれるかと収集頻度・費用・申請手順を確認。",
+        "東部への可燃ごみ予約と戸室への有料粗大持込みで、搬入者・車両・手数料をそれぞれ確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kanazawa-bulky",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7598.html",
+      "title": "有料戸別収集／金沢市公式ホームページ いいね金沢",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kanazawa-bulky-faq",
+      "url": "https://www4.city.kanazawa.lg.jp/yokuarugoshitsumon/kurashi_tetsuzukinikansuruyokuarugoshitsumon/gomi_recycle/15937.html",
+      "title": "ごみの分け方・出し方【粗大ごみ有料戸別収集】に関する質問／金沢市公式ホームページ いいね金沢",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kanazawa-daily",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/7601.html",
+      "title": "要援護者ごみ出しサポート事業について／金沢市公式ホームページ いいね金沢",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kanazawa-self-bulky",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kankyoseisakuka/gyomuannai/1/7544.html",
+      "title": "戸室新保埋立場／金沢市公式ホームページ いいね金沢",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kanazawa-self-burn",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shisetsukanrika/gyomuannai/moyasugominosyori/3745.html",
+      "title": "自己搬入（燃やすごみ）／金沢市公式ホームページ いいね金沢",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kanazawa-self-fee",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/1/3669.html",
+      "title": "持ち込み場所／金沢市公式ホームページ いいね金沢",
+      "source_updated": null,
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "金沢市の保存済み公式ページ6件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

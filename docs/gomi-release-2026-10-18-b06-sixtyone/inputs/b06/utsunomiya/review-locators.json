@@ -1,0 +1,91 @@
+[
+  {
+    "service_id": "utsunomiya-daily",
+    "field": "contact",
+    "source_id": "utsunomiya-daily",
+    "matches": [
+      {
+        "line": 31,
+        "excerpt": "電話番号：028-632-2423 ファクス：028-632-3316"
+      }
+    ]
+  },
+  {
+    "service_id": "utsunomiya-regular",
+    "field": "attendance",
+    "source_id": "utsunomiya-bulky",
+    "matches": [
+      {
+        "line": 23,
+        "excerpt": "収集の依頼は、粗大ごみ受付センター（電話番号 028-643-5371）にお電話してください。また、ご予約後に納付券を取扱店でご購入ください。納付券を粗大ごみに貼り、予約された日の午前8時30分までに、自宅の前に交通の妨げにならないようにお出しください。お留守でも収集いたします。"
+      }
+    ]
+  },
+  {
+    "service_id": "utsunomiya-regular",
+    "field": "contact",
+    "source_id": "utsunomiya-bulky",
+    "matches": [
+      {
+        "line": 23,
+        "excerpt": "収集の依頼は、粗大ごみ受付センター（電話番号 028-643-5371）にお電話してください。また、ご予約後に納付券を取扱店でご購入ください。納付券を粗大ごみに貼り、予約された日の午前8時30分までに、自宅の前に交通の妨げにならないようにお出しください。お留守でも収集いたします。"
+      },
+      {
+        "line": 24,
+        "excerpt": "粗大ごみ受付センターに申し込む場合"
+      }
+    ]
+  },
+  {
+    "service_id": "utsunomiya-self",
+    "field": "waste_scope",
+    "source_id": "utsunomiya-self",
+    "matches": [
+      {
+        "line": 33,
+        "excerpt": "可燃性粗大ごみ"
+      },
+      {
+        "line": 36,
+        "excerpt": "不燃性粗大ごみ"
+      }
+    ]
+  },
+  {
+    "service_id": "utsunomiya-self",
+    "field": "waste_scope",
+    "source_id": "utsunomiya-bulky",
+    "matches": [
+      {
+        "line": 1,
+        "excerpt": "粗大ごみ"
+      },
+      {
+        "line": 6,
+        "excerpt": "粗大ごみの分け方"
+      }
+    ]
+  },
+  {
+    "service_id": "utsunomiya-self",
+    "field": "contact",
+    "source_id": "utsunomiya-self",
+    "matches": [
+      {
+        "line": 63,
+        "excerpt": "資源とごみの分け方・出し方をさらに詳しく知りたい方は、ごみ減量課（電話番号 028-632-2423）まで、お問い合わせください。"
+      }
+    ]
+  },
+  {
+    "service_id": "utsunomiya-self",
+    "field": "contact",
+    "source_id": "utsunomiya-bulky",
+    "matches": [
+      {
+        "line": 30,
+        "excerpt": "電話番号：028-632-2423 ファクス：028-632-3316"
+      }
+    ]
+  }
+]

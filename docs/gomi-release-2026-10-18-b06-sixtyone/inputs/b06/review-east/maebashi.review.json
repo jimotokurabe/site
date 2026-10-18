@@ -1,0 +1,433 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "gunma:maebashi",
+  "slug": "maebashi",
+  "first_input_sha256": "a5ec4e0ceb764e89e09427c64f4df89257bb040315b0fb235534bdf8d52b8358",
+  "accepted_input_sha256": "4359621bedde230ebf5c29f1b571e722323b098d563087e29e61b6f808a88a05",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 3,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "こんにちは収集は複数資格ORの後に排出困難・親族支援なし・原則単身がAND。代理申請可能と申請所要2～2.5か月を補正。",
+  "corrections_file": "maebashi/corrections.json",
+  "correction_count": 1,
+  "field_inventory": [
+    {
+      "service_id": "maebashi-daily",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "3f3c56d6ab057659f0bc19e8d86e4cd22c6ecc67e781dbe71a69c326159460f8"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "8f8300242f068f496255a6d8b278d061b972c2be454acd2fb8b5ea99d5d06dda"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "03ceb57b613f35cf49f82f45b322f56a0ac0a503e1962acbc9fa862e6c446e02"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "5e510bbe5f40bf6944fb9e8e4b76e73efec1f71389dfe79889b868088068c419"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "fees",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "02524e3cd88d9df254040cf4f9db2e17b48fee95332233d0e0490db9cdef345d"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "977823e491adcccfa58d39080557dcb39349df7cf537bc9d1697ea78cd69b0cb"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "fc7a202c893efb41906795dcc80d428f887356382e1e1c61de09f63e92661098"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "maebashi-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-daily"
+      ],
+      "value_sha256": "cafa8a68890a478284285f91caf7c09c15787363c49edd01bdbe64f3d0249121"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "maebashi-daily",
+        "maebashi-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "b14dc3048b274a710f3f5dc1f2b743c62283cca4e16c1bcb2871ffed11653207"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "5ddf0139ad0a24d6997d7970fac8b7f970aed6089e60aebcda04681f12e31f9f"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "63925f300aa73fd253a84256c11605336ae8b4399ca326ca920080d7928498c2"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "b1077d84aa736f065b43c5623a198a92f84678367f03441f517944a462162ccc"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "fees",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "e75171e432094bcd192793f8592552f7ed9da58c5e1051710207e5ce7b33e5de"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "68444048b286b15e9ac5826e36a42fcd38878081c5c4d2488134afdc5125aeef"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "5fd7d5ceb63ccd399e13d116b2cdd9abc2634c40747bcbb3c3fa0651a3b4c10a"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "maebashi-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-bulky"
+      ],
+      "value_sha256": "cafa8a68890a478284285f91caf7c09c15787363c49edd01bdbe64f3d0249121"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "6494b0321c81aececdaf313104f8d067aaaab3187063858fc4af8f810cf01e21"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "d84605c9cf8398c4added0304577d41474345dec3a866b73826240b264c348ed"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "eligibility",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "0301157c6961d495721c1a1ec9412aa224846beba112ab34d49d09b25981a602"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "d923ef855dc19ca035910b7c245734a52f82eab62fb2c7d177bc51044937da6c"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "48c10b797b21d7dda4f95220214debbb7bf343f29af4ce9e6993c863bfbe596a"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "a1bd8efd2a3656a47e82ad35fc48a09b7bde83afd72fe2f66a6b876e547d153a"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "maebashi-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "maebashi-self"
+      ],
+      "value_sha256": "409b86515d03569cec2e0806f8d74384dc5de215bca3929f0500c6435669d3f5"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "maebashi-bulky",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/42979.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-01-06",
+      "raw_file": "maebashi/official/maebashi-bulky.html.source",
+      "raw_sha256": "a013530762cbeccfd95e1baab66cbd535f6744f6a89063033c64d6ada36e2089",
+      "text_file": "maebashi/official/maebashi-bulky.txt",
+      "text_sha256": "1deaf2d23b94a416c5cc6041c1fc2df42d571a1241a67c2d2c1a366dd2cbf414"
+    },
+    {
+      "id": "maebashi-daily",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/shinseisho/7142.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2019-04-01",
+      "raw_file": "maebashi/official/maebashi-daily.html.source",
+      "raw_sha256": "04d62912f250338477508880df2918fc07e933fcd73f7c71ef6a793a2a56b4cd",
+      "text_file": "maebashi/official/maebashi-daily.txt",
+      "text_sha256": "821be7631a434446bb54302c2d0fb3ea6e2b389fca7e4bf848e12e6581835d5c"
+    },
+    {
+      "id": "maebashi-self",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/seisoshisetsu/gyomu/1/2/1/2642.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2023-11-11",
+      "raw_file": "maebashi/official/maebashi-self.html.source",
+      "raw_sha256": "be102cc6d5bc0c2eb0c03350554f2fa38e317e903de4fdf593abf605712d4338",
+      "text_file": "maebashi/official/maebashi-self.txt",
+      "text_sha256": "5942ac386c4d936e31e9258bb39fe11bdcdae548b519a06b12fe2eb04ba4cd62"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "通常粗大収集料金、自己搬入の代理条件、屋内搬出制度は未記載/未発見。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "aomori-bulky",
+      "url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001953.html",
+      "title": "粗大ごみ │ 青森市",
+      "source_updated": "2026-04-01",
+      "http_status": 200,
+      "final_url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001953.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "aomori-bulky.html.source",
+      "text_file": "aomori-bulky.txt",
+      "raw_sha256": "0017f3863a41fe3af5af92228ce0d01bef54cadd9c4e2ee6f5a4b39df6f8a80d",
+      "text_sha256": "45a4a1ca7026b3f31df6b739e32ca501ef0e0831debf8a9f4e7f5569e8a2d161",
+      "bytes": 43689,
+      "etag": "\"aaa9-65e1a8b15d65b\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:05:55 GMT",
+      "source_updated_raw": "2026年4月1日"
+    },
+    {
+      "id": "aomori-daily",
+      "url": "https://www.city.aomori.aomori.jp/hukushi_kenkou/hukushi/1002786/1002811/1009166.html",
+      "title": "あすかプラン（高齢者の見守りを兼ねたごみ出し支援活動） │ 青森市",
+      "source_updated": "2025-05-26",
+      "http_status": 200,
+      "final_url": "https://www.city.aomori.aomori.jp/hukushi_kenkou/hukushi/1002786/1002811/1009166.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "aomori-daily.html.source",
+      "text_file": "aomori-daily.txt",
+      "raw_sha256": "39c1ff6cca8aa328148fb3a66d6b381e452eee668066894e9709a736b03bfa4b",
+      "text_sha256": "291c021c24a3d6481d54fe1a29e4325edbeb4150b3d4ac47228b3f264c7f43be",
+      "bytes": 39877,
+      "etag": "\"9bc5-65e1a8cac5e75\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:06:22 GMT",
+      "source_updated_raw": "2025年5月26日"
+    },
+    {
+      "id": "aomori-self",
+      "url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001950.html",
+      "title": "引越し等により一時的に大量に出るごみの処理（自己搬入） │ 青森市",
+      "source_updated": "2026-04-01",
+      "http_status": 200,
+      "final_url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001950.html",
+      "retrieved_at": "2026-10-18T19:23:24+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "aomori-self.html.source",
+      "text_file": "aomori-self.txt",
+      "raw_sha256": "7dba8bfe6ff23e23032ba81e325ab4b4d088d4d788d83192b9f283f316135ea8",
+      "text_sha256": "e12d62ce6c5c3eb2a8c582ded5569f8e802c73e7aa86f5b1c461dd3fb857ec8f",
+      "bytes": 44758,
+      "etag": "\"aed6-65e1a8b14b162\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:05:55 GMT",
+      "source_updated_raw": "2026年4月1日"
+    }
+  ],
+  "failures": []
+}

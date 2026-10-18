@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "8d3fc8c2ed85acd629fd34dbd44fa147dcd092bda3d3f82294086947928cdf9e",
+  "corrections": [
+    {
+      "service_id": "mito-regular",
+      "field": "fees",
+      "old": "品目・寸法で処理券額が決まる。申込時に確認。",
+      "new": "粗大ごみ処理券は500円券。3辺の合計が3m未満は1,000円（2枚）、3m以上5m以内は2,000円（4枚）。申込時に寸法・料金を確認。",
+      "source_ids": [
+        "mito-bulky"
+      ]
+    }
+  ]
+}

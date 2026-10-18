@@ -1,0 +1,432 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "toyama:toyama",
+      "name": "富山市",
+      "kana": "とやまし",
+      "pref_name": "富山県",
+      "selection_reason": "富山市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "toyama-daily",
+          "kind": "daily_support",
+          "name": "日常ごみの定期戸別支援は要確認",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市は原則ステーション方式と案内。高齢者向けの定期戸別支援制度は今回の公式案内で確認できない。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "collection_location": {
+              "value": "通常ごみは地域の集積所。個別事情は町内会との相談を案内。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内から高齢者向け定期戸別支援の資格要件は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "fees": {
+              "value": "公式案内にはfeesの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "limits": {
+              "value": "2023年の市回答で、原則特定家庭からの定期収集はできない旨を案内。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "application": {
+              "value": "公式案内にはapplicationの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            },
+            "contact": {
+              "value": "富山市環境センター管理課 076-429-5017。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-daily-policy"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2023年の市回答後に、高齢者等の定期戸別ごみ出し支援が設けられたか最新制度を確認。",
+            "戸別有料収集で家族が代理予約・立会いをする条件、持込施設の粗大ごみ料金を確認。"
+          ]
+        },
+        {
+          "id": "toyama-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "toyama-bulky",
+                "toyama-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2023年の市回答後に、高齢者等の定期戸別ごみ出し支援が設けられたか最新制度を確認。",
+            "戸別有料収集で家族が代理予約・立会いをする条件、持込施設の粗大ごみ料金を確認。",
+            "富山市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "toyama-regular",
+          "kind": "regular_bulky",
+          "name": "家庭ごみの戸別有料収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "引越し等で出る多量の燃やせる・燃やせない家庭ごみ。少量も利用可能。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "屋外の収集しやすい場所。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "原則、家の中に入っての持出し不可。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "富山市の家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "fees": {
+              "value": "30kgまで2,090円、30kg超は10kg単位319円加算。家電5品目の運搬は別料金。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "limits": {
+              "value": "平日のみ。事前電話予約が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "application": {
+              "value": "環境センター業務課 076-428-4040へ電話予約。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "収集時に立会い・精算が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            },
+            "contact": {
+              "value": "富山市環境センター業務課 076-428-4040。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2023年の市回答後に、高齢者等の定期戸別ごみ出し支援が設けられたか最新制度を確認。",
+            "戸別有料収集で家族が代理予約・立会いをする条件、持込施設の粗大ごみ料金を確認。"
+          ]
+        },
+        {
+          "id": "toyama-self",
+          "kind": "self_dropoff",
+          "name": "家庭ごみの処理施設持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃は富山地区広域圏クリーンセンター、不燃はリサイクルセンター。粗大の受入と料金は施設へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "collection_location": {
+              "value": "品目別の広域圏処理施設。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "eligibility": {
+              "value": "富山市の家庭ごみ。代理者の条件は案内に記載なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "fees": {
+              "value": "燃やせるごみ・燃やせないごみの施設持込はいずれも有料。具体額は広域圏の施設へ確認が必要。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "limits": {
+              "value": "施設ごとに受入日時・品目が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "application": {
+              "value": "施設に事前問合せ。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            },
+            "contact": {
+              "value": "富山地区広域圏事務組合 076-443-2281。",
+              "state": "explicit",
+              "source_ids": [
+                "toyama-self-details",
+                "toyama-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2023年の市回答後に、高齢者等の定期戸別ごみ出し支援が設けられたか最新制度を確認。",
+            "戸別有料収集で家族が代理予約・立会いをする条件、持込施設の粗大ごみ料金を確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "2023年の市回答後に、高齢者等の定期戸別ごみ出し支援が設けられたか最新制度を確認。",
+        "戸別有料収集で家族が代理予約・立会いをする条件、持込施設の粗大ごみ料金を確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "toyama-bulky",
+      "url": "https://www.city.toyama.lg.jp/kurashi/gomi/1010228/1005357.html",
+      "title": "家庭ごみの戸別有料収集｜富山市公式ウェブサイト",
+      "source_updated": "2023-12-05",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyama-daily-policy",
+      "url": "https://www.city.toyama.lg.jp/shisei/koho/1010862/1012156/1010863/1013569/1013641.html",
+      "title": "ゴミの収集について(令和5年6月16日)｜富山市公式ウェブサイト",
+      "source_updated": "2023-09-14",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyama-self",
+      "url": "https://www.city.toyama.lg.jp/faq/1008441/1009895/1008850.html",
+      "title": "よくある質問　引っ越しなどに伴って出る多量の家庭ごみはどのように処分すると良いですか。｜富山市公式ウェブサイト",
+      "source_updated": "2025-09-19",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "toyama-self-details",
+      "url": "https://www.city.toyama.lg.jp/kurashi/gomi/1010228/1005384.html",
+      "title": "ごみを処理施設へ直接持ち込む場合｜富山市公式ウェブサイト",
+      "source_updated": "2026-03-23",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "富山市の保存済み公式ページ4件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

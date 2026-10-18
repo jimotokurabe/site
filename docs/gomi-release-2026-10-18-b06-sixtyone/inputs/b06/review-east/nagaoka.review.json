@@ -1,0 +1,453 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "niigata:nagaoka",
+  "slug": "nagaoka",
+  "first_input_sha256": "4558416b1f2364a8094f7f6d5454eb93ebceffd42de543084d522daaa8d1d4b1",
+  "accepted_input_sha256": "4558416b1f2364a8094f7f6d5454eb93ebceffd42de543084d522daaa8d1d4b1",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 4,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "ふれあい収集の世帯資格と介護者不在等の例外を2025年改正履歴のある要綱と照合。指定袋は無料利用料とは別。",
+  "corrections_file": null,
+  "correction_count": 0,
+  "field_inventory": [
+    {
+      "service_id": "nagaoka-daily",
+      "field": "waste_scope",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "817681525eb1e05beb40e65a7f1e779d2fcd2e9271ff89cd4b49abe870e3ab4b"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "2004cfa9cb541023d6fe9764ac29388403d9c92d64ffad257a48ca3f4ab2e9f6"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "41eebb9b776a5bd4606b6c8c902a31c5ddb1b54c43a5ff0ca71d12e4987f5283"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "3a36148711823b485ee72de8994dc1e9e41d4fca025ef110dda1c8a15a979e64"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "b75a6daa5d0fd3fe9f83d904121763f057915981b5fb8c9481a33c29aad5f4de"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "fb21efc6049d9c89af4b13ad17fa90a4b72fa1fd55ee60627426cf3788642ef0"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "79a758e91e0a343075ae0ff7eb843755f0a31609dd50e636bc2fce131cdd29cf"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "nagaoka-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-daily-rules"
+      ],
+      "value_sha256": "d5021bff00ad3330d60ad62decc0aa66ae050a556073bd540f1e127100e6dbd3"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "nagaoka-daily",
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "61872ec2491fd5c2fc699467905da79c8ba8b10697bdb28a8a3be7cd517640f2"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "6657cbe523fd322930507ee54dd78339a3fa474270c9d63284f0c4584dd4d1ad"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "af8c9a3787cd3c477e01cad7e1fc8965c1c7c839627790506a7f94935a4b8f1b"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "b3b2b41356ba3871125b2595cdf65d0b18c90a6f7dccd6f3d49fd3f3b847dff4"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "c2d119f67b4057e43a7b37748139e1b30e9bcf09e2b90510ccf720d3c42fa2c3"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "81e96c46606771021626e523d344f0dadd4de1fc63e308f38c0958daf5398146"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "2c36ba4ac926ce7edc6e23e45145e48337f408781146f396bc16aa7490d15780"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "a2a2b1e91b37f2f87cca5f1e8cb32ea745e8cb9ad919e4ba149252166748782f"
+    },
+    {
+      "service_id": "nagaoka-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-bulky"
+      ],
+      "value_sha256": "99026f6e9cda2600c3d292078ef02459a0139b562cd588d46431554dff8a7c39"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "9ca6d69ae370624935c5710cf0f896b2a9b4d40c5d18804f78c2deecf9e24020"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "c3c1598502de641475990b928e6509327d77648193e55469e9a144f40f6a52d8"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "eligibility",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "f617fee81a44676bfcc7b8ee8183696ffd55f25777cbed219adb6fd81b5daba8"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "8e1f4662512ea5a1a42cffa62dbe86e3f8348ceeeffa11f2fe8eab4f74e2efde"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "d9ea0b81fe523bf1757180c1653d56b78e8ab9093a5a5c31dd9dcc1068d2e12c"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "80680008a36e9997bbb9af75cb96875f3cb62707f6172e78c24b4ca5ddf4254c"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "nagaoka-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "nagaoka-self"
+      ],
+      "value_sha256": "0773cb83993e23b9e1e856c63bcf2f13ef3d712789e27a0ef2b0b5646b789784"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "nagaoka-bulky",
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-03-31",
+      "raw_file": "nagaoka/official/nagaoka-bulky.html.source",
+      "raw_sha256": "3d52fdaf9de29d82e762cc916d2dbfba17a24c4c3270abc655295a6cbe8709a1",
+      "text_file": "nagaoka/official/nagaoka-bulky.txt",
+      "text_sha256": "a598a9d5f814f1d8ef27f5cf44cd3f2661f79040cb9fb2c390d34272d9896074"
+    },
+    {
+      "id": "nagaoka-daily",
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/josei2.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-04-01",
+      "raw_file": "nagaoka/official/nagaoka-daily.html.source",
+      "raw_sha256": "a74bf864f822b3187f7b0f07e363b2db3f137170ecf3168dbe119ec3dd9a54d9",
+      "text_file": "nagaoka/official/nagaoka-daily.txt",
+      "text_sha256": "2e4f0d2cf2318660cb875f97fd544230993a29ec83c35c6e51f3941efde30312"
+    },
+    {
+      "id": "nagaoka-daily-rules",
+      "url": "https://www.city.nagaoka.niigata.jp/shisei/cate03/jyourei/reiki/reiki_honbun/e403RG00000851.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": null,
+      "raw_file": "nagaoka/official/nagaoka-daily-rules.html.source",
+      "raw_sha256": "cbf7346b26d695aef65995d155445acf2f23255061bba84d4db79b63b2768eee",
+      "text_file": "nagaoka/official/nagaoka-daily-rules.txt",
+      "text_sha256": "a72716d512f7fb59a2e7adccdfb4339ca6997a2ef2c87d41914f93c1862b2e1d"
+    },
+    {
+      "id": "nagaoka-self",
+      "url": "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24&site_domain=default",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": null,
+      "raw_file": "nagaoka/official/nagaoka-self.html.source",
+      "raw_sha256": "72edf18a0f059f4f4081b5d08ad558e73381a0927cdc3358aa5caf23ae773cdf",
+      "text_file": "nagaoka/official/nagaoka-self.txt",
+      "text_sha256": "a2003c4e2475b101c0fe5777943dc8e222cf553741b30a763dd10d68f62c53f4"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "粗大以外の品目別受入、代理搬入資格、屋内搬出制度は窓口未確認。"
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "nagasaki-daily",
+    "url": "https://www.city.nagasaki.lg.jp/page/2575.html",
+    "title": "その他のサービス - 長崎市ウェブサイト（障害福祉課）",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-02-26",
+    "http_status": 200,
+    "final_url": "https://www.city.nagasaki.lg.jp/page/2575.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "nagasaki/official/daily.html.source",
+    "text_file": "nagasaki/official/daily.txt",
+    "raw_sha256": "98fbe5714e0644977c0d3e8200807057e6a66fd58249aa238491106589eda19e",
+    "text_sha256": "f697e397214885ca01b6189a27477efa86c744c76d14ba473e07410c45eb3ba1",
+    "last_modified_header": "Sat, 17 Oct 2026 16:04:08 GMT"
+  },
+  {
+    "id": "nagasaki-dropoff",
+    "url": "https://www.city.nagasaki.lg.jp/page/4091.html",
+    "title": "廃棄物の自己搬入 - 長崎市ウェブサイト（資源循環課）",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-08-27",
+    "http_status": 200,
+    "final_url": "https://www.city.nagasaki.lg.jp/page/4091.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "nagasaki/official/dropoff.html.source",
+    "text_file": "nagasaki/official/dropoff.txt",
+    "raw_sha256": "9183ed637457767886fbd4b75e58486a81dfb53fe635bcbaa8da45665c9f3cba",
+    "text_sha256": "1c294dba627fbde00e64d277b1baeff46d1ea04d919182a7aad0f4647b14f369",
+    "last_modified_header": "Sat, 17 Oct 2026 16:04:52 GMT"
+  },
+  {
+    "id": "nagasaki-regular",
+    "url": "https://www.city.nagasaki.lg.jp/page/3031.html",
+    "title": "粗大ごみの出し方 - 長崎市ウェブサイト（資源循環課）",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-03-23",
+    "http_status": 200,
+    "final_url": "https://www.city.nagasaki.lg.jp/page/3031.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "nagasaki/official/regular.html.source",
+    "text_file": "nagasaki/official/regular.txt",
+    "raw_sha256": "183fe5f69e9388c60b4881868b83df5f4404cd33e2747f8bf119203e42c201f8",
+    "text_sha256": "238ef4f66cd9a89d9ff1540f4a0818474912ee9689eaa193b9481f253fc5fc3d",
+    "last_modified_header": "Sat, 17 Oct 2026 16:04:16 GMT"
+  }
+]

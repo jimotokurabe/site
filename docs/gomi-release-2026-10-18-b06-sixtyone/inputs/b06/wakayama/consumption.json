@@ -1,0 +1,32 @@
+{
+  "city": "wakayama:wakayama",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "和歌山市 ごみ出し支援 対象 申込",
+    "和歌山市 粗大ごみ 収集 搬出",
+    "和歌山市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 5,
+  "http_200_count": 5,
+  "http_non_200_count": 0,
+  "original_bytes_total": 426567,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "wakayama-daily",
+    "wakayama-overview",
+    "wakayama-regular",
+    "wakayama-self",
+    "wakayama-daily-brief"
+  ],
+  "new_city_sha256": "0c755055e79543b3d7d017ea4a82fd48efe99e52e202d95f5d6149e06104a5bb",
+  "source_hash_verification": "passed"
+}

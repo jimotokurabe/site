@@ -1,0 +1,440 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kagawa:takamatsu",
+      "name": "高松市",
+      "kana": "たかまつし",
+      "pref_name": "香川県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "takamatsu-daily-support",
+          "kind": "daily_support",
+          "name": "たかまつごみ出しサポート事業（第2期実証）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ステーションに出せる家庭ごみ全種。粗大ごみを除く。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "市職員が玄関先へ収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "対象地区に居住",
+                  "自力でステーションに出せず家族・地域の支援がない",
+                  "世帯員が全員65歳以上で要介護1以上",
+                  "居宅サービス利用"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "family_help": {
+              "value": "家族・地域によるごみ出し支援が受けられないこと。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "fees": {
+              "value": "1回510円。臨時・粗大ごみ処理シール1枚。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "limits": {
+              "value": "令和7年9月1日から令和8年12月31日予定。対象地区限定。1回3袋・各袋10kg以内。収集希望日の2営業日前までに電話依頼。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "application": {
+              "value": "利用申請後、市職員が自宅を訪問し可否決定。代理申請可。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "住所が第2期実証の対象地区か、令和8年末以降の継続方針を確認してください。",
+            "訪問型サービスBと居宅サービスの扱いを確認してください。",
+            "居住地が第2期対象地区か、年末予定後も支援を継続するか確認してください。"
+          ]
+        },
+        {
+          "id": "takamatsu-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-daily",
+                "kagawa-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "高松市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "要介護世帯が粗大ごみを収集車の入る場所まで出せない場合の相談先を確認してください。"
+          ]
+        },
+        {
+          "id": "takamatsu-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "臨時・粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ステーションに出せない臨時・粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "収集車が入れる所まで搬出。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市の通常収集では収集車が入れる所への搬出が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "fees": {
+              "value": "有料。受付で品目別金額を確認し510円単位の処理シールを購入。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "limits": {
+              "value": "予約から収集まで通常7～10日程度。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センターへ電話またはネット申込。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "attendance": {
+              "value": "通常は立会い不要。家電リサイクル対象品は立会い必要。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "510円券が複数枚必要な品目の見積りと家電4品目の立会いを確認してください。"
+          ]
+        },
+        {
+          "id": "takamatsu-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "臨時・粗大ごみ自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "臨時・粗大ごみを分別し処理施設へ自己搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "施設での処理手数料は収集シールとは別。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "application": {
+              "value": "ごみの種類に応じ搬入先・時間を確認する。",
+              "state": "explicit",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kagawa-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "自己搬入は収集シールを使用できないため、施設別料金と受入品目を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "高松市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kagawa-daily",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/oshirase/recycl_up20240409.html",
+      "title": "『たかまつごみ出しサポート事業（ごみサポ）』実証実験（第2期）について｜高松市",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-09-08",
+      "http_status": 200,
+      "final_url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/oshirase/recycl_up20240409.html",
+      "retrieved_at": "2026-10-18T19:18:48+09:00",
+      "content_type": "text/html",
+      "raw_file": "takamatsu/official/daily.html.source",
+      "text_file": "takamatsu/official/daily.txt",
+      "raw_sha256": "bc6f4687acf1c1106ef47b07270a48de35d94027ba65c61b43bc2004fc19cfc7",
+      "text_sha256": "e20bf1bc9cc891787f2b885997d17181a814a4befca38bc35844e6ad4a46d56e",
+      "last_modified_header": "Sat, 17 Oct 2026 15:01:46 GMT"
+    },
+    {
+      "id": "kagawa-dropoff",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/mochikomi/moushikomi.html",
+      "title": "臨時・粗大ごみの自己搬入・収集申込｜高松市",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2018-12-11",
+      "http_status": 200,
+      "final_url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/mochikomi/moushikomi.html",
+      "retrieved_at": "2026-10-18T19:18:48+09:00",
+      "content_type": "text/html",
+      "raw_file": "takamatsu/official/dropoff.html.source",
+      "text_file": "takamatsu/official/dropoff.txt",
+      "raw_sha256": "5604c87101b2a5d294d40728fc0ba849e1a2c23cf723f7d3731c1f475f713983",
+      "text_sha256": "0f796197185a95a389ef825a111fd2388391fae4def0c51c51934a4fc8d24473",
+      "last_modified_header": "Sat, 17 Oct 2026 15:01:46 GMT"
+    },
+    {
+      "id": "kagawa-regular",
+      "url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/rinjisodai/dashikata.html",
+      "title": "臨時・粗大ごみの出し方｜高松市",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-04-22",
+      "http_status": 200,
+      "final_url": "https://www.city.takamatsu.kagawa.jp/smph/kurashi/kurashi/gomi/rinjisodai/dashikata.html",
+      "retrieved_at": "2026-10-18T19:18:49+09:00",
+      "content_type": "text/html",
+      "raw_file": "takamatsu/official/regular.html.source",
+      "text_file": "takamatsu/official/regular.txt",
+      "raw_sha256": "13f1ae6ee74f54a91f3f652ba97e11883f76ff05969087ec74238d44f4f036fe",
+      "text_sha256": "147febeb631919c9e4128e778ef893641827506c83328144667ebd453e3b3cfc",
+      "last_modified_header": "Sat, 17 Oct 2026 15:01:47 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

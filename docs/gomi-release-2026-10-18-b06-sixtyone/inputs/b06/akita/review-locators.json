@@ -1,0 +1,43 @@
+[
+  {
+    "service_id": "akita-regular",
+    "field": "contact",
+    "source_id": "akita-bulky",
+    "matches": [
+      {
+        "line": 10,
+        "excerpt": "電話「018-839-2002」での申し込み方法"
+      },
+      {
+        "line": 13,
+        "excerpt": "専用受付番号：018-839-2002"
+      }
+    ]
+  },
+  {
+    "service_id": "akita-self",
+    "field": "eligibility",
+    "source_id": "akita-self",
+    "matches": [
+      {
+        "line": 11,
+        "excerpt": "自己搬入できる方は、ごみの持ち主とそのご家族および秋田市の許可する業者（一般廃棄物収集運搬許可業者）のみです。"
+      }
+    ]
+  },
+  {
+    "service_id": "akita-self",
+    "field": "contact",
+    "source_id": "akita-self",
+    "matches": [
+      {
+        "line": 47,
+        "excerpt": "総合環境センターの所在地"
+      },
+      {
+        "line": 60,
+        "excerpt": "秋田市環境部 総合環境センター"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1728 @@
+﻿
+<!DOCTYPE html>
+<html lang="ja">
+<head id="ctl00_Head1"><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="format-detection" content="telephone=no" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>
+	熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター） / 熊本市の環境TOP / 熊本市公式サイト
+</title><script type='text/javascript'>var glapiky='AIzaSyCzbixjF3aE4bDsibJvJesSFTnUaHc0w8Q';</script>
+<script type="text/javascript" language="JavaScript">
+<!--
+    function enterCancel(event)
+    {
+        if (event.keyCode == 13)
+        {
+            var elem;
+            if(event.srcElement)
+            {
+                elem = event.srcElement;
+            }
+            else
+            {
+                elem = event.target;
+            }
+            if(elem.type!='submit' && elem.type!='textarea' && elem.tagName!='A' && elem.tagName!='a' && elem.tagName!='area' && elem.tagName!='AREA') /* 2011/04/04 a tag OK */
+            {
+                var useMapFlg = false;
+                if (elem.tagName == "img" || elem.tagName == "IMG") {
+                    if (elem.useMap) {
+                        useMapFlg = true;
+                    }
+                }
+                if (!useMapFlg) {
+                    if (event.preventDefault) 
+                    {
+                        event.preventDefault();
+                    } 
+                    else 
+                    {
+                        event.returnValue = false;
+                    }
+                }
+            }
+        }
+    }
+    
+    /* Same Func is available in AjaxCalForIE6*/
+    function ajaxCalOnClientShown(){
+        /*IE6 does not have "maxHeight"*/
+        if (typeof document.documentElement.style.maxHeight == "undefined") {
+            try{
+                $$("select").each(function(_itm){
+                    _itm.style.visibility="hidden";
+                });
+            }catch(err){
+            }
+        }
+    }    
+    /* Same Func is available in AjaxCalForIE6*/
+    function ajaxCalOnClientHidden(){
+        /*IE6 does not have "maxHeight"*/
+        if (typeof document.documentElement.style.maxHeight == "undefined") {
+            try{
+                $$("select").each(function(_itm){
+                    _itm.style.visibility="visible";
+                });
+            }catch(err){
+            }
+        }
+    }
+    
+    function clickButton(id, event) {
+        if (event.keyCode == 13)
+        {
+            document.getElementById(id).click();
+
+            if (event.preventDefault) 
+            {
+                event.preventDefault();
+            } 
+            else 
+            {
+                event.returnValue = false;
+            }
+        }
+    }
+    
+    function checkValue(obj) {
+        var keyword = document.getElementById(obj).value;
+
+        keyword = keyword.replace(/^[\s　]+|[\s　]$/g, "");
+        if (keyword.length == 0) {
+            alert('検索キーワードを入力してください。');
+            return false;
+        }
+
+        searchResult(keyword);
+        return false;
+    }
+
+    document.addEventListener("focusin", e => {
+        console.log("Focus:", e.target);
+    });
+//-->
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&family=Noto+Sans&family=Noto+Sans+JP:wght@100;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+<!-- cloudDeliverdFont start -->
+<!-- cloudDeliverdFont end -->
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/default.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/stylesheet.css" id="css_stylesheet" rel="stylesheet" type="text/css" media="print, screen and (min-width: 481px)" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/stylesheetforsp.css" id="css_stylesheet_sp" rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/migration.css" id="css_Migration" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/hpkiji/designcss/design01.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/fontsizen.css" id="css_fontsize" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/uiw_kankyo.css" id="css_color" rel="stylesheet" type="text/css" /><link id="ctl00_minicalendar_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/minicalendar.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /><script id="ctl00_jquery_min_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/jquery-3.6.0.min.js"></script><script id="ctl00_js_cookie_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/js.cookie.js"></script><script id="ctl00_setCookie_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/setcookie.js"></script><script id="ctl00_pubfunc_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/pubfunc.js"></script><script type="text/javascript">window.setTableScrollDefault = 0;</script><script id="ctl00_pubfunc_settablescroll_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/pubfunc_settablescroll.js"></script><script id="ctl00_jquery_rwdImageMaps_min_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/jquery.rwdimagemaps.min.js"></script><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/jquery-ui-1.13.2.min.js"></script><script id="ctl00_jquery_easing_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/jquery.easing.1.4.1.js"></script><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/jquery.scrollfollow.js"></script><script id="ctl00_floatHeader_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/floatheader.js"></script><link id="ctl00_floatHeader_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/floatheader.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/kankyo_body.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/keepsavepage.js"></script><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/keepsavepage.css" id="css_keepSavePage" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/stylesheet.css" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/fontsizen.css" id="css_fontsize_ie8" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/uiw_kankyo.css" id="css_color_ie8" rel="stylesheet" type="text/css" /><link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/html5_block.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/html5shiv-printshiv.js"></script>
+<![endif]-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2ZW8KZM');</script>
+<!-- End Google Tag Manager -->
+<!-- google analytics start --><!-- google analytics end --><script id="ctl00_header__commHeader_js" type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/header/commheader.js"></script><link id="ctl00_header__commHeader_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/header/commheader.css" rel="stylesheet" type="text/css" /><link id="ctl00_siteSearchArea_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/area/sitesearcharea.css" rel="stylesheet" type="text/css" /><script id="ctl00_siteSearchVer2_js" type="text/javascript" src="https://www.city.kumamoto.jp/dynamic/common/js/sitesearchver2.js"></script><link rel="stylesheet" type="text/css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/selectlanguagemenu_opened.css?20250530" /><script>const easyJapaneseSecretKey = '802097d5-6b9c-4cfb-8255-956757c88590';</script><script id="ctl00_tsutaeru_mo_js" src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru_mo.js"></script><script id="ctl00_tsutaeru_js" src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru.js?"></script><script id="ctl00_easyJapanese_js" src="https://www.city.kumamoto.jp/dynamic/common/js/easyjapanese.js"></script><link id="ctl00_easyJapanese_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/easyjapanese.css" rel="stylesheet" type="text/css" /><meta property="og:type" content="article" /><meta id="ctl00_MetaOGPTitle" property="og:title" content="熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター）" /><meta property="og:image" content="https://www.city.kumamoto.jp/dynamic/kankyo/common/images/ogp/og_image.png" /><meta property="og:url" content="https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html" /><meta property="og:description" content="熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター） / 熊本市の環境TOP / 熊本市公式サイト" /><meta property="og:site_name" content="熊本市公式サイト" /><meta property="og:locality" content="Kumamoto-Shi" /><meta property="og:region" content="Kumamoto" /><meta property="og:country-name" content="Japan" /><script type='text/javascript'>window.rsDocReaderConf = {lang: 'ja_jp'};</script><script id="ctl00_setDocReader_js" type="text/javascript" src="https://www.city.kumamoto.jp/dynamic/common/js/setdocreader.js?cid=6163"></script><script id="ctl00_ReadSpeaker_js" type="text/javascript" src="https://cdn-eas.readspeaker.com/script/6163/webReader/webReader.js?pids=wr&amp;dload=DocReader.AutoAdd&amp;forceAdapter=ioshtml5&amp;disable=translation,lookup"></script><link id="ctl00_ReadSpeakerButton_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/readspeakerbutton.css" rel="stylesheet" type="text/css" /><link id="ctl00_ReadSpeakerArea_css" href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/readspeakerarea.css" rel="stylesheet" type="text/css" /><meta name="keywords" content="熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター）" /></head>
+<body class="haikei_43">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-K2ZW8KZM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<form name="aspnetForm" method="post" action="./detail.aspx?c_id=3&amp;id=22037" id="aspnetForm" enctype="multipart/form-data" tabindex="1" onkeydown="enterCancel(event||window.event);">
+<div>
+
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DD3FBEE9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAI/8YI5h26CQAUNH/khM9HKMo3sS2QCiT4b17IfhlT4ThH+2e2zVnV8FqgpQdidRvtYBHxfn9CdpxHnnLMW0AS+" />
+</div>
+
+
+
+<!-- kankyo allheader start  -->
+
+<!--[if lt IE 9]>
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/header/kankyo.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<span id="top"></span>
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/header/kankyo.css" rel="stylesheet" type="text/css" /><div id="headerArea">
+	
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/web-fonts-with-css/css/all.min.css" rel="stylesheet">
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/web-fonts-with-css/js/all.min.js"></script>
+<script type="text/javascript">
+    jQuery.noConflict();
+</script>
+
+<input type="submit" name="Dmy" value="" onclick="return false;" id="Dmy" style="height:0px;width:0px;position: absolute; top: -100px;" tabindex="-1"/>
+
+
+<div class="Navigation"><div><a href="#maincontent" tabindex="1">ヘッダーをスキップ</a></div></div>
+<div class="clear"></div>
+
+<input type="submit" name="headerAreaDefInput" value="" onclick="return false;" id="headerAreaDefInput" style="height:0px;width:0px;position: absolute; top: 0px;" tabindex="-1"/>
+
+<div id="floatmenu">
+    <div class="headerTopArea"></div>
+    <div class="menuarea">
+        
+        <div class="headerimgarea">
+            <!-- kankyo rect start -->
+            <map id="header_img" name="header_img">
+                <area shape="rect" alt="熊本市公式サイト熊本市の環境サイトトップへ" coords="1,0,560,72" href="https://www.city.kumamoto.jp/kankyo/default.html" tabindex="1" />
+            </map>
+            <!-- kankyo rect end -->
+            
+            <div id="header">
+                <!-- kankyo header start -->
+                <h1 id="hd_header">
+                    <img id="imgHeader" usemap="#header_img" src="//www.city.kumamoto.jp/kankyo/common/upload/common/43_6_header_8xyb14ua.png" alt="熊本市公式サイト　熊本市の環境" style="border-width:0px;" />
+                </h1>
+                <div id="hd_header_SP"><h1><a href="https://www.city.kumamoto.jp/kankyo/default.html" tabindex="0"><img src="https://www.city.kumamoto.jp/dynamic/common/images/kankyo/head.png" alt="熊本市の環境サイト"></a></h1></div>
+                <!-- kankyo header end -->
+            </div>
+        </div>
+        <div class="menuinner">
+            <div id="headerMenu" class="headerMenu">
+
+                
+                    <!-- メインサイトへボタン -->
+                    <div id="mainTop" class="hover-link sink-simple">
+                        <a href="https://www.city.kumamoto.jp/default.html" tabindex="1">熊本市トップへ</a>
+                    </div>
+                
+
+                <a href="javascript:void(0)" aria-expanded="false" aria-controls="accessibility" class="comm_toggle-button" data-panel="accessibility" data-close="close_accessibility" tabindex="1" id="acc" aria-label="閲覧支援" data-openfocus="#mainFontSizeSel a">
+
+                    <figure>
+                        <div class="accessibility_btn">
+                            <div class="hb_icon">
+                                <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/kankyo/icon material-accessibility.png" alt="" title="" />
+                            </div>
+                            <div><h2>閲覧支援</h2></div>
+                        </div>
+                    </figure>
+                </a>
+
+                    <a href="javascript:void(0)" aria-expanded="false" aria-controls="area_languages" class="comm_toggle-button" data-panel="area_languages" data-close="close_languages" tabindex="1" aria-label="Language" data-openfocus="#area_languages a.topsub">
+
+                    <figure>
+                        <div class="Languages_btn">
+                            <div class="hb_icon">
+                                <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/kankyo/icon material-language.png" alt="" title="" />
+                            </div>
+                            <div><h2><span lang="en">Language</span></h2></div>
+                        </div>
+                    </figure>
+                </a>
+                
+                <!-- mainSearch start -->
+                <div id="mainSearch">
+                    
+<div class="siteSearchArea">
+    
+            
+            
+<div name="searchver2-input" class="searchver2-input" data-api_url="https://kumamoto.sitesearch2.kumamoto-net.ne.jp/public_api/"><!--フォームの表示箇所--></div>
+                                                                                           
+</div>
+
+                </div>
+                <!-- mainSearch end -->
+
+                <a href="javascript:void(0)" class="comm_toggle-button" data-panel="area_sagasu" data-close="close_sagasu" tabindex="1" aria-label="さがす" data-openfocus="#area_sagasu .searchver2-input .input .IZ-select .IZ-select__input input">
+                    <figure>
+                        <div class="sagasu_btn">
+                            <div class="hb_icon">
+                                <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/kankyo/icon awesome-search.svg" alt="" title="" />
+                            </div>
+                            <div><h2>さがす</h2></div>
+                        </div>
+                    </figure>
+                </a>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="headerAreaDef">
+        <!-- グローバルナビゲーション -->
+        <nav>
+            <div id="GlobalNavigationBlock">
+                <!-- kankyo global navigation start -->
+                
+
+<script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(function () {
+
+        var setPopNaviArea,setHideNaviArea;
+
+        // 2016/09/15 アクセシビリティ対応 <div>→<ul>
+        jQuery("li.navi_tab,ul.g_navi").on({
+            'mouseenter': function () {
+
+                var id = jQuery(this).attr("id");
+
+                if (jQuery(this).hasClass("navi_tab")) {
+                    id = id.replace("navi_tab_", "");
+                } else if (jQuery(this).hasClass("g_navi")) {
+                    id = id.replace("g_navi_", "");
+                }
+
+                clearTimeout(setHideNaviArea);
+
+                setPopNaviArea = setTimeout(function () {
+                    jQuery("li.navi_tab").each(function () {
+                        if (jQuery(this).attr("id") == "navi_tab_" + id) {
+                            jQuery(this).addClass("selected");
+                            jQuery(this).attr("aria-selected", "true");
+                        } else {
+                            jQuery(this).removeClass("selected");
+                            jQuery(this).attr("aria-selected", "false");
+                        }
+                    });
+
+                    jQuery("ul.g_navi").each(function () {
+                        if (jQuery(this).attr("id") == "g_navi_" + id) {
+                            const isOpen = jQuery(this).attr('aria-expanded') === 'true';
+                            jQuery(this).attr('aria-expanded', !isOpen);
+                            jQuery('#g_navi_' + id).addClass('is-open');
+                            jQuery('#g_navi_' + id).prop('hidden', false);
+                        } else {
+                            jQuery(this).attr('aria-expanded', false);
+                            jQuery(this).removeClass('is-open');
+                            jQuery(this).prop('hidden', true);
+                        }
+                        //(jQuery(this).attr("id") == "g_navi_" + id) ? jQuery(this).show() : jQuery(this).hide();
+                    });
+                }, 400);
+            },
+            'mouseleave': function () {
+
+                clearTimeout(setPopNaviArea);
+
+                setHideNaviArea = setTimeout(function () {
+                    jQuery("li.navi_tab").removeClass("selected");
+                    jQuery("li.navi_tab").attr("aria-selected", "false");
+                    jQuery('ul.g_navi').attr('aria-expanded', false);
+                    jQuery('ul.g_navi').removeClass('is-open');
+                    jQuery('ul.g_navi').prop('hidden', true);
+                }, 50);
+            },
+
+            'focusin': function () {
+
+                var id = jQuery(this).attr("id");
+
+                if (jQuery(this).hasClass("navi_tab")) {
+                    id = id.replace("navi_tab_", "");
+                } else if (jQuery(this).hasClass("g_navi")) {
+                    id = id.replace("g_navi_", "");
+                }
+
+                clearTimeout(setHideNaviArea);
+
+                setPopNaviArea = setTimeout(function () {
+                    jQuery("li.navi_tab").each(function () {
+                        if (jQuery(this).attr("id") == "navi_tab_" + id) {
+                            jQuery(this).addClass("selected");
+                            jQuery(this).attr("aria-selected", "true");
+                        } else {
+                            jQuery(this).removeClass("selected");
+                            jQuery(this).attr("aria-selected", "false");
+                        }
+                    });
+
+                    jQuery("ul.g_navi").each(function () {
+                        if (jQuery(this).attr("id") == "g_navi_" + id) {
+                            const isOpen = jQuery(this).attr('aria-expanded') === 'true';
+                            jQuery(this).attr('aria-expanded', !isOpen);
+                            jQuery('#g_navi_' + id).addClass('is-open');
+                            jQuery('#g_navi_' + id).prop('hidden', false);
+                        } else {
+                            jQuery(this).attr('aria-expanded', false);
+                            jQuery(this).removeClass('is-open');
+                            jQuery(this).prop('hidden', true);
+                        }
+                    });
+                }, 1);
+            },
+            'focusout': function () {
+
+                clearTimeout(setPopNaviArea);
+
+                setHideNaviArea = setTimeout(function () {
+                    jQuery("li.navi_tab").removeClass("selected");
+                    jQuery("li.navi_tab").attr("aria-selected", "false");
+                    jQuery('ul.g_navi').attr('aria-expanded', false);
+                    jQuery('ul.g_navi').removeClass('is-open');
+                    jQuery('ul.g_navi').prop('hidden', true);
+                }, 1);
+            }
+        });
+
+        if (jQuery("#globalNavigationData").length) {
+            var classid = jQuery("#globalNavigationData").attr("data-classid");
+            var topid = jQuery("#globalNavigationData").attr("data-topid");
+
+            jQuery('[data-global="' + classid + '"]').addClass("now");
+            if (topid > 0) {
+                jQuery('[data-global="' + topid + '"]').addClass("now");
+            }
+        }
+    });
+</script>
+<style>
+.g_navi {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.g_navi.is-open {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+</style>
+
+
+    <div id="naviContainer" role="navigation" aria-label="グローバルナビゲーション">
+        <div id="naviArea" role="tablist">
+    <ul id="navi_list">
+            <li role="tab" aria-selected="false" aria-controls='g_navi_1001' 
+                class="navi_tab  " id="navi_tab_1001"
+                data-global="1001">
+                <div>
+                    <a href="//www.city.kumamoto.jp/kankyo/list01001.html" tabindex="10" >
+                        <p id="navi_tab_text_1001">ごみ・リサイクル</p>
+                    </a>
+                </div>
+             </li>
+            <li role="tab" aria-selected="false" aria-controls='g_navi_1002' 
+                class="navi_tab  " id="navi_tab_1002"
+                data-global="1002">
+                <div>
+                    <a href="//www.city.kumamoto.jp/kankyo/list01002.html" tabindex="32" >
+                        <p id="navi_tab_text_1002">地球温暖化対策</p>
+                    </a>
+                </div>
+             </li>
+            <li role="tab" aria-selected="false" aria-controls='g_navi_1003' 
+                class="navi_tab  " id="navi_tab_1003"
+                data-global="1003">
+                <div>
+                    <a href="//www.city.kumamoto.jp/kankyo/list01003.html" tabindex="47" >
+                        <p id="navi_tab_text_1003">環境保全</p>
+                    </a>
+                </div>
+             </li>
+            <li role="tab" aria-selected="false" aria-controls='g_navi_1004' 
+                class="navi_tab  " id="navi_tab_1004"
+                data-global="1004">
+                <div>
+                    <a href="//www.city.kumamoto.jp/kankyo/list01004.html" tabindex="56" >
+                        <p id="navi_tab_text_1004">生物多様性</p>
+                    </a>
+                </div>
+             </li>
+            <li role="tab" aria-selected="false" aria-controls='g_navi_1005' 
+                class="navi_tab  navi_tab_last" id="navi_tab_1005"
+                data-global="1005">
+                <div>
+                    <a href="//www.city.kumamoto.jp/kankyo/list01005.html" tabindex="59" >
+                        <p id="navi_tab_text_1005">くまもとウォーターライフ</p>
+                    </a>
+                </div>
+             </li></ul>
+        </div>
+    
+        <div id="popNaviArea">
+        
+            <ul class='g_navi ' id='g_navi_1001' role='tabpanel' aria-labelledby='navi_tab_1001' hidden>
+            
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1006">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01006.html" tabindex="11" >ごみ分別・ごみの出し方</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1024">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01024.html" tabindex="12" >ごみ出し・分別の基本・概要</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1025">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01025.html" tabindex="13" >ごみ出し支援（ふれあい収集）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1026">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01026.html" tabindex="14" >ごみステーションに関すること</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1007">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01007.html" tabindex="15" >ごみカレンダー・アプリ</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1008">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01008.html" tabindex="16" >事業所ごみ</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1027">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01027.html" tabindex="17" >産業廃棄物</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1028">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01028.html" tabindex="18" >各種名簿</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1029">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01029.html" tabindex="19" >多量排出事業者関係</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1030">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01030.html" tabindex="20" >事業所ごみについてのお知らせ</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1009">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01009.html" tabindex="21" >ごみ処理施設・余熱利用施設</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1031">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01031.html" tabindex="22" >東部環境工場（焼却施設）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1032">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01032.html" tabindex="23" >西部環境工場（焼却施設）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1033">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01033.html" tabindex="24" >扇田環境センター（埋立場）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1034">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01034.html" tabindex="25" >東部交流センター・三山荘</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1035">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01035.html" tabindex="26" >西部交流センター</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1036">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01036.html" tabindex="27" >変更・申請関係</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1010">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01010.html" tabindex="28" >ごみの減量に関すること</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1037">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01037.html" tabindex="29" >ごみ減量施策</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1038">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01038.html" tabindex="30" >市民リサイクル活動助成金</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1039">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01039.html" tabindex="31" >食品ロスに関すること</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+            </ul>
+        
+            <ul class='g_navi ' id='g_navi_1002' role='tabpanel' aria-labelledby='navi_tab_1002' hidden>
+            
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1011">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01011.html" tabindex="33" >脱炭素につながる活動「デコ活」の推進</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1041">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01041.html" tabindex="34" >熊本市地球温暖化防止活動推進センター</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1043">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01043.html" tabindex="35" >イベント・講座</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1012">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01012.html" tabindex="36" >補助金</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1013">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01013.html" tabindex="37" >市役所の取組</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1044">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01044.html" tabindex="38" >地域エネルギー事業</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1045">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01045.html" tabindex="39" >市有施設の照明のLED化</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1046">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01046.html" tabindex="40" >EVの普及促進</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1047">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01047.html" tabindex="41" >災害時の電力の供給</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1048">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01048.html" tabindex="42" >グリーン購入の推進</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1014">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01014.html" tabindex="43" >計画・資料</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1049">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01049.html" tabindex="44" >地球温暖化対策実行計画（区域施策編）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1050">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01050.html" tabindex="45" >地球温暖化対策実行計画（事務事業編）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1051">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01051.html" tabindex="46" >温室効果ガス排出量</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+            </ul>
+        
+            <ul class='g_navi ' id='g_navi_1003' role='tabpanel' aria-labelledby='navi_tab_1003' hidden>
+            
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1015">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01015.html" tabindex="48" >大気汚染</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1052">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01052.html" tabindex="49" >ＰＭ2.5（微小粒子状物質）</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1016">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01016.html" tabindex="50" >アスベスト</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1017">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01017.html" tabindex="51" >騒音・振動・悪臭</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1018">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01018.html" tabindex="52" >化学物質対策</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1019">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01019.html" tabindex="53" >調査・研究・検査等</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1020">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01020.html" tabindex="54" >環境教育・その他</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="4762">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list04762.html" tabindex="55" >環境影響評価（環境アセスメント）</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+            </ul>
+        
+            <ul class='g_navi ' id='g_navi_1004' role='tabpanel' aria-labelledby='navi_tab_1004' hidden>
+            
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="4716">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list04716.html" tabindex="57" >生物多様性に関する取組</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="4717">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list04717.html" tabindex="58" >生きもの自然観察会・啓発イベント</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+            </ul>
+        
+            <ul class='g_navi ' id='g_navi_1005' role='tabpanel' aria-labelledby='navi_tab_1005' hidden>
+            
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1021">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01021.html" tabindex="60" >地下水保全</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1054">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01054.html" tabindex="61" >水環境の現状</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1055">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01055.html" tabindex="62" >水質・土壌の保全</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1056">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01056.html" tabindex="63" >硝酸性窒素対策</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1057">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01057.html" tabindex="64" >水量の保全</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1058">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01058.html" tabindex="65" >節水・雨水活用</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1059">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01059.html" tabindex="66" >調査・研究・その他</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1022">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01022.html" tabindex="67" >水ブランド</a>
+                        </h3>
+                        <ul>
+                        
+                                <li
+                                    data-global="1060">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01060.html" tabindex="68" >世界に誇る地下水都市熊本</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1061">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01061.html" tabindex="69" >くまもと「水」検定</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1062">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01062.html" tabindex="70" >くまもと水守（みずもり）</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1063">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01063.html" tabindex="71" >名水百選と熊本水遺産</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1064">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01064.html" tabindex="72" >くまもとウォーターライフとは</a>
+                                </li>
+                            
+                                <li
+                                    data-global="1065">
+                                    
+                                    <a href="//www.city.kumamoto.jp/kankyo/list01065.html" tabindex="73" >第4回アジア・太平洋水サミット</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="navi_child ">
+                        <h3 class="navi_child_name " data-global="1023">
+                            
+                            <a href="//www.city.kumamoto.jp/kankyo/list01023.html" tabindex="74" >くまもと地下水保全ポータル</a>
+                        </h3>
+                        
+                        
+                        
+                    </li>
+            </ul>
+        
+        </div>
+        
+    </div>
+
+<input type="hidden" name="ctl00$ctl32$GlobalNavigation$HidErrMsg" id="ctl00_ctl32_GlobalNavigation_HidErrMsg" />
+
+                <div id="globalNavigationData" data-classid="" data-parentid="" data-topid=""></div>
+                <div id="ctl00_ctl32_globalNavigationData"></div>
+                <!-- kankyo global navigation end -->
+            </div>
+        </nav>
+        <!-- 翻訳メニューパネル -->
+        <div id="area_languages">
+            <div class="language_wrap">
+                <div class="languages_close">
+                    <a href="javascript:void(0)" id="close_languages" tabindex="1" aria-label="閉じる">
+                        <span><i class="fa-regular fa-rectangle-xmark fa-2x my-blue"></i></span>
+                    </a>
+                </div>
+                <div class="lang_title"><span lang="en">Language</span></div>
+                
+    <!-- 外国語翻訳メニュー start -->
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(function () {
+            var wrapid = 'ctl00_ctl32_SelectLanguageMenu_menu';
+            // メニュー用
+            jQuery('#' + wrapid + '.selectLanguageMenu .dropmenu a').focus(function () {
+                jQuery(this).siblings('.sub-menu').addClass('focused');
+            }).blur(function () {
+                jQuery(this).siblings('.sub-menu').removeClass('focused');
+            });
+            // サブメニュー用
+            jQuery('#' + wrapid + '.selectLanguageMenu a').focus(function () {
+                jQuery(this).parents('.sub-menu').addClass('focused');
+            }).blur(function () {
+                jQuery(this).parents('.sub-menu').removeClass('focused');
+            });
+        }); 
+    </script>
+    <div id="ctl00_ctl32_SelectLanguageMenu_menu" class="selectLanguageMenu opened" tabindex="-1">
+        <ul class="dropmenu" tabindex="-1">
+            <li><a lang="en" href="javascript:void(0);" class="topmenu" tabindex="1"><i class="fas fa-globe"></i> <span lang="en">Language</span></a>
+                <ul class="sub-menu">
+                    <li><a translate="no" lang="en" href="https://www.city.kumamoto.jp.e.fm.hp.transer.com/kankyo/kiji00322037/index.html" target="_blank" class="topsub" tabindex="1"><span lang="en">English</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif" alt="Open in a new window" title=""></a></li>
+                    <li><a translate="no" lang="zh-cmn-Hans" href="https://www.city.kumamoto.jp.c.fm.hp.transer.com/kankyo/kiji00322037/index.html" target="_blank" tabindex="1"><span lang="zh-cmn-Hans">中文(简体字)</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif" alt="在新视窗中开启" title=""></a></li>
+                    <li><a translate="no" lang="zh-cmn-Hant" href="https://www.city.kumamoto.jp.t.fm.hp.transer.com/kankyo/kiji00322037/index.html" target="_blank" tabindex="1"><span lang="zh-cmn-Hant">中文(繁體字)</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif" alt="在新視窗中開啟" title=""></a></li>
+                    <li><a translate="no" lang="ko" href="https://www.city.kumamoto.jp.k.fm.hp.transer.com/kankyo/kiji00322037/index.html" target="_blank" tabindex="1"><span lang="ko">한국어</span>&nbsp;<img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif" alt="다른 창으로 엽니 다" title=""></a></li>
+                    <li><a translate="no" lang="ja" href="https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html" class="cl-norewrite" tabindex="1">日本語</a></li>
+                        <li>
+                            <div class="easyJapaneseInLangDispArea">
+                                
+                                <div class="easyJapaneseInLangButtonArea">
+                                    <a href="javascript:void(0);" class="easyJapaneseInLangButton easyJapaneseButton_visible easyJapaneseActionButton" onclick="startEasyJapanese();" tabindex="1">
+                                        やさしい日本語
+                                    </a>
+                                    <a href="javascript:void(0);" class="easyJapaneseInLangResetButton easyJapaneseButton_hidden easyJapaneseActionButton" onclick="resetEasyJapanese();" tabindex="1">
+                                        元に戻す
+                                    </a>
+                                </div>
+
+                                
+                                
+                            </div>
+                        </li>
+                                       
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 外国語翻訳メニュー end -->
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 閲覧補助パネル -->
+        <div id="accessibility">
+            <div class="acce_head_wp">
+                <div class="overlay_acc" id="overlay_acc">
+                    <div class="acc_wp">
+                        <div id="accmenu_close">
+                            <div><a href="javascript:void(0)" id="close_accessibility" tabindex="1" aria-label="閉じる"><span><i class="fa-regular fa-rectangle-xmark fa-2x my-blue"></i></span></a></div>
+                        </div>
+
+                        <div id="acc_title"><h2>閲覧支援</h2></div>
+                            <div class="acc_wrap">
+                                <div class="font-size_wrap">
+                                    <div id="mainFontSizeSel">
+                                        <div class="change_title"><h3><span> 文字サイズを変更する </span></h3></div>
+                                            <ul>
+                                                <li>
+                                                    <a href="#top" data-select="拡大" onclick="change_size('fontSizeB')" tabindex="1">
+                                                        <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/white-mozi-l.gif" alt="拡大" title="文字サイズを拡大する" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#top" data-select="標準" onclick="change_size('fontSizeN')" tabindex="1">
+                                                        <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/white-mozi-m.gif" alt="標準" title="文字サイズを標準にする" /></a>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                </div>
+                                <div class="haikei_wrap">
+                                    <div id="changeHaikei">
+                                        <div class="change_title"><h3><span> 背景色を変更する </span></h3></div>
+                                        <ul>
+                                            <li>
+                                                <a href="#top" data-select="B" onclick="changeSiteIro('B')" tabindex="1">
+                                                    <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/udbtn_blue.gif" alt="青" title="背景色を青色にする" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#top" data-select="K" onclick="changeSiteIro('K')" tabindex="1">
+                                                    <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/udbtn_black.gif" alt="黒" title="背景色を黒色にする" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#top" data-select="W" onclick="changeSiteIro('W')" tabindex="1">
+                                                    <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/udbtn_white.gif" alt="白" title="背景色を白色にする" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="yomiage_wrap">
+                                    <div class="yomiage">
+                                        <div class="onsei_title"><h3><span>音声読み上げ</span></h3></div>
+                                        
+<!-- crosslanguage:delete -->
+<!-- リードスピーカー 音声読み上げボタン -->
+<div class="readspeakerBtn">
+    <a rel="nofollow" accesskey="L" href="//app-as.readspeaker.com/cgi-bin/rsent?customerid=6163&amp;lang=ja_jp&amp;readid=container_43&amp;url=" target="_blank" onclick="jQuery('#close_accessibility').click();readpage(this.href, 'container_speaker');return false;" tabindex="1" ><i class="fa-solid fa-volume-high my-blue"></i> 読み上げる</a>
+</div>
+<!-- /crosslanguage:delete -->
+
+                                    </div>
+                                </div>
+
+                                <div class="easyJapanese_wrap">
+                                    <div class="change_title"><h3><span>やさしい日本語</span></h3></div>
+                                    
+    <div class="easyJapaneseDispArea">
+        <div class="easyJapaneseButtonArea">
+            <a href="javascript:void(0);" class="easyJapaneseButton easyJapaneseButton_visible easyJapaneseActionButton" onclick="startEasyJapanese();" tabindex="1">
+                適用する
+            </a>
+            <a href="javascript:void(0);" class="easyJapaneseResetButton easyJapaneseButton_hidden easyJapaneseActionButton" onclick="resetEasyJapanese();" tabindex="1">
+                元に戻す
+            </a>
+        </div>
+        
+    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!-- さがす -->
+        <div id="area_sagasu">
+            <div class="sagasu_head_wp">
+                <div class="overlay_sagasu" id="overlay_sagasu">
+                    <div class="sagasu_wp">
+                        <div id="sagasumenu_close">
+                            <div><a href="javascript:void(0)" id="close_sagasu" tabindex="1" aria-label="閉じる"><span><i class="far fa-window-close fa-2x my-blue"></i></span></a></div>
+                        </div>
+
+                        <div id="sagasu_title" class="sagasu_title">
+                            <h2><i class="fa-solid fa-flag"></i>&nbsp;&nbsp;MENU</h2>
+                        </div>
+
+                        <div class="sagasumenu">
+                            <div class="back_btn"><a href="https://www.city.kumamoto.jp/default.html"><i class="fa-solid fa-right-long"></i> TOP</a></div>
+                              
+<script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(function () {
+    });
+</script>
+
+
+<div class="sagasulist">
+   
+            <div class="search_item">
+<div class="siteSearchArea">
+    
+            
+            
+<div name="searchver2-input" class="searchver2-input" data-api_url="https://kumamoto.sitesearch2.kumamoto-net.ne.jp/public_api/"><!--フォームの表示箇所--></div>
+                                                                                           
+</div>
+<a href="https://higomaru-call.jp/faq/CCFaqIndex.asp" tabindex="1"><div class="search_btn"><i class="fa-solid fa-circle-arrow-right"></i> よくある質問</div></a><a href="https://www.city.kumamoto.jp/kankyo/list04035.html" tabindex="1"><div class="search_btn"><i class="fa-solid fa-circle-arrow-right"></i> 電子申請・施設予約</div></a></div>
+    
+</div>
+    
+                <ul class="sagasulist">
+            
+                <li class="sagasu_li_1001">
+                    <a href="//www.city.kumamoto.jp/kankyo/list01001.html" tabindex="1"><div class="bunrui_btn">ごみ・リサイクル</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_1002">
+                    <a href="//www.city.kumamoto.jp/kankyo/list01002.html" tabindex="1"><div class="bunrui_btn">地球温暖化対策</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_1003">
+                    <a href="//www.city.kumamoto.jp/kankyo/list01003.html" tabindex="1"><div class="bunrui_btn">環境保全</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_1004">
+                    <a href="//www.city.kumamoto.jp/kankyo/list01004.html" tabindex="1"><div class="bunrui_btn">生物多様性</div></a>
+                    
+                </li>
+            
+                <li class="sagasu_li_1005">
+                    <a href="//www.city.kumamoto.jp/kankyo/list01005.html" tabindex="1"><div class="bunrui_btn">くまもとウォーターライフ</div></a>
+                    
+                </li>
+            
+                </ul>
+            
+                        </div>
+                        <div class="clear"></div>
+                        <div class="bottom_closebtn_wrap"><a href="javascript:void(0)" onclick="jQuery('#close_sagasu').click();return false;" tabindex="1" aria-label="閉じる"><span><i class="fa-solid fa-xmark my-blue"></i> 閉じる</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- リードスピーカー -->
+        <div class="clear"></div>
+        
+<!-- crosslanguage:delete -->
+<!-- リードスピーカー 表示域 -->
+<div id="readspeakerWaku"><div id="container_speaker" class="rs_preserve rs_skip rs_splitbutton rs_addtools rs_exp"></div><div class="clear"></div></div><div class="clear"></div>
+<!-- /crosslanguage:delete -->
+
+
+        
+        <div id="maincontent" tabindex="-1" aria-label="ヘッダーをスキップした後の内容"></div>
+    </div>
+</div>
+<div id="headerAreaDef_margin"></div>
+<div class="clear"></div>
+
+
+</div><!-- kankyo allheader end  -->
+<div class="Navigation"><div><a href="#mainBlock">本文へジャンプ</a></div></div>
+
+
+<div id="pankuzuBlock">
+    <div id="pankuzu_43"><div id="pankuzuArea" data-categoryid="3" data-kijiid="22037" data-subid="5" data-topid="43" data-preview="OFF"></div></div>
+</div>
+
+
+<div id="container_43">
+
+
+
+
+
+<!-- sideArea start -->
+
+<!-- sideArea end -->
+
+
+<div id="mainBlock">
+    <span id="maincont"></span>
+    <div id="cont_body">
+
+        <div class="preview_label"></div>
+        
+<script type="text/javascript" language="javascript">
+<!--
+const pageAnchorButtonElementName = "page_anchor_list_button";
+const pageAnchorListElementName = "page_anchor_link_list";
+const pageAnchorButtonImageElementName = "toggle_icon";
+
+const pageAnchorListClassName = "page_anchor_link_list_hidden";
+const pageAnchorListButtonHiddenClassName = "page_anchor_list_button_hidden";
+const pageAnchorButtonImagePlusClassName = "toggle_icon_plus";
+const pageAnchorButtonImageMinusClassName = "toggle_icon_minus";
+
+document.addEventListener("DOMContentLoaded", function () {
+    // 画面サイズに応じて基にするサイト情報の値を決める
+    var screenWidth = window.innerWidth;
+    var pageAnchorButtonStatus = 0;
+
+    if (screenWidth > 768) {
+        pageAnchorButtonStatus = parseInt("2", 10);
+    }
+    else {
+        pageAnchorButtonStatus = parseInt("1", 10);
+    }
+
+    if (isNaN(pageAnchorButtonStatus)) {
+        pageAnchorButtonStatus = 0;
+    }
+    else if (pageAnchorButtonStatus > 2) {
+        pageAnchorButtonStatus = 0;
+    }
+
+    // ページ内目次の要素を取得する
+    var pageAnchorButtonElement = document.getElementById(pageAnchorButtonElementName);
+    var pageAnchorListElement = document.getElementById(pageAnchorListElementName);
+    var pageAnchorButtonImageElement = document.getElementById(pageAnchorButtonImageElementName);
+
+    // 要素が取得できた場合のみ処理を行う
+    if (pageAnchorButtonElement && pageAnchorListElement && pageAnchorButtonImageElement) {
+        if (pageAnchorButtonStatus == 0) {
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImagePlusClassName);
+        }
+        else if (pageAnchorButtonStatus == 1) {
+            if (pageAnchorListElement.classList.contains(pageAnchorListClassName)) {
+                pageAnchorListElement.classList.remove(pageAnchorListClassName);
+            }
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImageMinusClassName);
+        }
+        else if (pageAnchorButtonStatus == 2) {
+            if (pageAnchorListElement.classList.contains(pageAnchorListClassName)) {
+                pageAnchorListElement.classList.remove(pageAnchorListClassName);
+            }
+            page_anchor_list_button.classList.add(pageAnchorListButtonHiddenClassName);
+        }
+    }
+
+    
+    
+    
+});
+
+
+function toggleUlDisplay() {
+    // ページ内目次の要素を取得する
+    var pageAnchorListElement = document.getElementById(pageAnchorListElementName);
+    var pageAnchorButtonImageElement = document.getElementById(pageAnchorButtonImageElementName);
+
+    // 要素が取得できた場合のみ処理を行う
+    if (pageAnchorListElement && pageAnchorButtonImageElement) {
+
+        // ページ内目次の表示・非表示
+        if (pageAnchorListElement.classList.contains(pageAnchorListClassName)) {
+            pageAnchorListElement.classList.remove(pageAnchorListClassName);
+            pageAnchorButtonImageElement.classList.remove(pageAnchorButtonImagePlusClassName);
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImageMinusClassName);
+        }
+        else {
+            pageAnchorListElement.classList.add(pageAnchorListClassName);
+            pageAnchorButtonImageElement.classList.remove(pageAnchorButtonImageMinusClassName);
+            pageAnchorButtonImageElement.classList.add(pageAnchorButtonImagePlusClassName);
+        }
+    }
+}
+
+function DanrakuKirikae(dspNo, allCnt){
+    if(allCnt>0)
+    {
+        for(var i=1; i <= allCnt; ++i)
+        {
+            if(dspNo == i)
+            {
+                 document.getElementById("danraku" + i).style.display = "block";
+                 document.getElementById("dMenu" + i).className = "selected";
+            }
+            else
+            {
+                 document.getElementById("danraku" + i).style.display = "none";
+                 document.getElementById("dMenu" + i).className = "";
+            }
+       
+        }
+    }
+}
+//-->
+</script>
+
+<div style="margin:0px auto;"></div>
+
+
+
+<article>
+    <div id="mainShosai">
+        
+        
+        
+
+        
+        <div class="BottomArea">
+
+            <div class="containerWidth">
+		        <h1 class="title">熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター）</h1>
+                
+                <div id="snsButtonArea"></div>
+                <div class="kijiSubInfo">
+                    <div class="updDate">最終更新日：<time datetime="2025-09-08T11:52:51+09:00">2025年9月8日</time></div>
+                    <span class="hpkijiid_shosai">（ID:22037）</span>
+                    <div class="printbtn"><a href="javascript:void(0)" onclick="window.print();return false;"><i class="fas fa-print fa-lg"></i><span> 印刷</span></a></div>
+                    
+                    <div id="kijiKengenArea"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+		        		            
+		        
+    		        
+                
+                
+
+		        <div class="danraku" id="danraku1" style="display:block;"><h2 class="title">熊本市のごみ処理施設について</h2><p>熊本市内で発生した一般廃棄物は、下記施設へご自分で持込むことができます。&nbsp;</p><div><table class="__wys_table" style="width: 64%; border-collapse: collapse;"><tbody><tr><td style="width: 18%;"><p style="text-align: center;"><strong>ごみの種類</strong></p></td><td style="width: 22%;"><p style="text-align: center;"><strong>施設名</strong></p></td><td style="width: 20%;"><p style="text-align: center;"><strong>電話番号</strong></p></td><td style="width: 41%;"><p style="text-align: center;"><strong>住所</strong></p></td></tr><tr><td rowspan="2"><p>可燃性ごみ</p><p>（燃やすごみ）</p></td><td><a href="https://www.city.kumamoto.jp/kiji003730/index.html" target="_blank">東部環境工場</a></td><td>096-380-8211</td><td>熊本市東区戸島町2570番地</td></tr><tr><td><a href="https://www.city.kumamoto.jp/kankyo/kiji003731/index.html" target="_self">西部環境工場</a></td><td>096-329-0900</td><td>熊本市西区城山薬師2丁目12-1</td></tr><tr><td><p>不燃性ごみ</p><p>（埋立ごみ）</p><p>※</p></td><td><a href="https://www.city.kumamoto.jp/kiji003732/index.html" target="_blank">扇田環境センター<img title="新しいウインドウで" alt="新しいウインドウで" src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif"></a></td><td>096-245-2696</td><td><p>熊本市北区貢町1567番地</p></td></tr></tbody></table></div><p>※不燃性ごみについて、旧植木町地区にお住まいの方は山鹿植木広域行政事務組合最終処分場（TEL:096-272-6339)へお持ち込み下さい。&nbsp;</p><p><br></p><p><strong>■リサイクルできる物は持込めません。</strong></p><p>リサイクルできるものは持込まず、民間のリサイクル業者に処理をお願いしてください。</p><p><a href="https://www.city.kumamoto.jp/kankyo/kiji0031282/index.html" target="_self">民間のリサイクル業者（一般廃棄物処分業者）はこちらのページ</a><a href="https://www.city.kumamoto.jp/dynamic/kankyo/kiji0031282/3_1282_212909_up_v51221t8.pdf" target="_self"><img title="新しいウインドウで" alt="新しいウインドウで" src="https://www.city.kumamoto.jp/dynamic/common/images/newwin.gif"></a>をご覧ください。</p><p>　＜リサイクルできる物の例＞</p><p>　　・紙類（新聞紙、チラシ、段ボール、紙パック）</p><p>　　・ペットボトル</p><p>　　・衣類</p><p>　　・びん、缶</p><p>　　☆リサイクルできるものの判断が難しい場合は廃棄物計画課（096-328-2359）までお問い合わせ下さい。&nbsp;</p><p>&nbsp;</p><p><strong>■持込めるごみは一般廃棄物に限ります。</strong>&nbsp;</p><p><a href="https://www.jwnet.or.jp/waste/knowledge/bunrui/index.html" target="_blank">産業廃棄物と一般廃棄物について<img title="新しいウインドウで" alt="新しいウインドウで" src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif">（外部リンク）</a></p><div style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;">※一部の産業廃棄物については、事前手続き等を行ったうえで品目と数量を制限して受入れを行います。<br>　産業廃棄物の持込みを希望する方は、廃棄物計画課計画班（電話096-328-2359）までお問い合わせください。</div><h2 class="title">ごみの搬入に当たっての注意事項</h2><br style="text-align: left; text-indent: 0px;"><br style="text-align: left; text-indent: 0px;"><br style="text-align: left; text-indent: 0px;"><div><br></div><div><a href="https://www.city.kumamoto.jp/kankyo/kiji00347113/index.html" target="_blank"><strong>【注意喚起！】ごみ収集車やごみ処理施設で火災が多発しています<img title="新しいウインドウで" alt="新しいウインドウで" src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/newwin.gif">（廃棄物計画課）</strong></a></div><strong><div><strong><br></strong></div>ご注意！</strong><br><strong>　施設内は危険を伴いますので、必ず係員の指示に従ってください。</strong><h2 class="title">ごみの受入日、処理手数料</h2><p>【受入れ日】<br style="text-align: left; text-indent: 0px;">　1月4日から12月28日まで（ただし、日曜日を除く。）</p><p>　☆日曜日以外の祝日は開いています。<br style="text-align: left; text-indent: 0px;">　（年末には特別受入れがあります。受入日は年末に広報します。）<br style="text-align: left; text-indent: 0px;"><br style="text-align: left; text-indent: 0px;">【受入れ時間】<br style="text-align: left; text-indent: 0px;">　午前8時30分から午後4時30分まで<br style="text-align: left; text-indent: 0px;"><br style="text-align: left; text-indent: 0px;">【処理手数料】<br style="text-align: left; text-indent: 0px;">　10キログラムまでごとに150円（一般廃棄物の場合）<br style="text-align: left; text-indent: 0px;">　&nbsp; ○ ごみ受入れの前後に車ごと重さをはかり、その重量差により料金をいただきます。</p><p>　&nbsp; ○ <strong>熊本市指定収集袋（燃やすごみ袋・埋立ごみ袋）に入れられたごみを持ち込まれる場合も、既定の処理手数料をいただきます。</strong></p><p>&nbsp;</p><h2 class="title">燃やすごみの受入条件について（環境工場）</h2><p><strong>【受入条件】</strong></p><p>取り外すことができる金属やガラス・陶磁器などの不燃物が外されていること。</p><p>&nbsp;&nbsp;</p><div style="clear: both;"><table class="__wys_table" style="width: 100%; border-collapse: collapse;"><caption class="border0">【具体的な品目ごとの追加受入条件】</caption><tbody><tr><th scope="col" style="padding: 3px; width: 25%; vertical-align: middle;">&nbsp;品目名</th><th scope="col" style="padding: 3px; width: 50%; vertical-align: middle;">&nbsp;受入条件</th><th scope="col" style="padding: 3px; vertical-align: middle;">&nbsp;その他</th></tr><tr><td style="padding: 3px; vertical-align: middle;"><p>&nbsp;マットレス（スプリング無し）</p></td><td style="padding: 3px; vertical-align: middle;">金属を外したもの。 </td><td style="padding: 3px; vertical-align: middle;">&nbsp;スプリング入りマットレスは、民間施設へ。家庭ごみは大型ごみとして申込みも可。</td></tr><tr><td style="padding: 3px; vertical-align: middle;">&nbsp;ソファー（スプリング無し）</td><td style="padding: 3px; vertical-align: middle;">&nbsp;金属を外したもの。</td><td style="padding: 3px; vertical-align: middle;">&nbsp;金属フレームやバネが付いているものは扇田環境センターへ</td></tr><tr><td style="padding: 3px; vertical-align: middle;">じゅうたん・カーペット</td><td style="padding: 3px; vertical-align: middle;">&nbsp;軽く縛った状態でかつ長さ4m以下のもの。</td><td style="padding: 3px; vertical-align: middle;">&nbsp;電気カーペット等のコード類は外して埋立てごみへ</td></tr><tr><td style="padding: 3px; vertical-align: middle;">壁紙・ビニールクロス</td><td style="padding: 3px; vertical-align: middle;">&nbsp;軽く縛った状態でかつ長さ4m以下のもの。</td><td style="padding: 3px; vertical-align: middle;">&nbsp;</td></tr><tr><td style="padding: 3px; vertical-align: middle;">&nbsp;丸太・木くず</td><td style="padding: 3px; vertical-align: middle;">&nbsp;断面の直径又は長辺が20cm以下かつ長さ4m以下のもの。</td><td style="padding: 3px; vertical-align: middle;">&nbsp;産業廃棄物は受入れ不可。</td></tr><tr><td style="padding: 3px; vertical-align: middle;">&nbsp;剪定枝・竹</td><td style="padding: 3px; vertical-align: middle;">&nbsp;直径20cm以下かつ長さ4m以下のもの。枝が付いているものも可。 </td><td style="padding: 3px; vertical-align: middle;">&nbsp;産業廃棄物は受入れ不可。</td></tr><tr><td style="padding: 3px; vertical-align: middle;">&nbsp;木の根</td><td style="padding: 3px; vertical-align: middle;">&nbsp;直径20cm以下のもの。泥を落としてあるもの。 </td><td style="padding: 3px; vertical-align: middle;">&nbsp;産業廃棄物は受入れ不可。</td></tr><tr><td style="padding: 3px; vertical-align: middle;">&nbsp;仏壇・仏像・神棚</td><td style="padding: 3px; vertical-align: middle;">&nbsp;解体されているもの。（形が壊されているもの）</td><td style="padding: 3px; vertical-align: middle;">&nbsp;産業廃棄物は受入れ不可。</td></tr></tbody></table></div><p>☆その他持込めるか判断が難しい場合は各環境工場までお問い合わせ下さい。&nbsp;</p><p>&nbsp;</p><p style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;"><strong>ご注意！</strong></p><p style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;"><strong>大きな金具やガラスは焼却炉の故障の原因となります。</strong></p><p style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;"><strong>取り除いて、金具は民間リサイクル業者へ、ガラスは扇田環境センターへ持ち込んでください。</strong></p><p style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;">焼却不適物、リサイクルできるものはお受けいたしませんので、あらかじめ分別して持ち込んでください。</p><p style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;">搬入された場合にはお持ち帰りいただくことになります。&nbsp;</p><p style="margin: 0px; padding: 0px; text-align: left; text-indent: 0px;">&nbsp;</p><h2 class="title">埋立ごみの持込について（扇田環境センター）</h2><p><strong>【受入条件】</strong></p><p>金属やガラス・陶磁器などの不燃物が含まれているために、環境工場で焼却できないもの。</p><p>取り外すことができる可燃物が外されていること。</p><p>可燃物や金属をほとんど含まないもの及び自然物（ご家庭の自然石など）。</p><p>&nbsp;</p><div style="clear: both;"><table class="__wys_table" style="width: 70%; border-collapse: collapse;"><caption class="border0">&nbsp;【受け入れない品目の具体例】以下のものは、金属を多く含むなど、民間施設でリサイクルできるため、扇田環境センターでは受け入れません。</caption><tbody><tr><th scope="col" style="padding: 3px; width: 60%; vertical-align: middle;"><p>・家電4品目（テレビ、冷蔵庫及び冷凍庫、洗濯機、エアコン）、パソコン</p><p>・スプリング入りマットレス</p><p>・金属製の机、テーブル、棚、本棚、ロッカー、</p><p>・湯沸かし器、ガスコンロ、給湯用ボイラー、太陽熱温水器、</p><p>・ブラウン管式モニター、塗料缶等の缶、トタン板、耐火金庫、消火器</p><p>・電子ピアノ、エレクトーン、オルガン（事業ごみに限る。）など</p></th></tr></tbody></table></div><p>&nbsp;</p><p><strong>ご注意！</strong></p><p>埋立不適物、リサイクルできるものはお受けいたしませんので、あらかじめ分別して持ち込んでください。</p><p>搬入された場合にはお持ち帰りいただくことになります。</p><p><br></p><h2 class="title">ごみの出し方に関するご相談について</h2><strong>ごみゼロコール</strong><div style="clear:both;"><table class="__wys_table" style="width: 50%;"><tbody><tr><td style="vertical-align: middle;">　　・電話番号：<strong>0570-00-5374</strong><div>　　・受付時間：月曜日～土曜日（年末年始を除く）</div><div>　　　　　　　　午前8時30分～午後5時</div></td></tr></tbody></table></div><p>&nbsp;</p><div><br></div><div><br></div><div><br></div><div class="clear"></div></div>
+            </div>      
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+</article>
+
+
+<div id="calendarLink">
+    
+</div>
+
+
+<div id="weblioLinkJsArea"></div>
+
+
+<div id="archiveTransitionArea">
+    <div class="archiveTransitionPrev"><a href="">前の記事へ</a></div>
+    <div class="archiveTransitionNext"><a href="">次の記事へ</a></div>
+</div>
+
+
+<div id="classTagsArea"></div>
+
+
+<div id="toiawaseInfo">
+
+    <div class="toiText"><h2 class="toiText_text">このページに関する<br />お問い合わせは</h2></div>
+    <div class="toiKugiri"></div>
+    <div class="toiData"></div>
+</div>
+
+<div id="hpkijiid_shosai">（ID:22037）</div>
+
+
+<div id="footerSoegakiArea"></div>
+
+
+<div id="shosaiBanArea" data-topid="43" data-dspshosai="0" data-preview="OFF"></div>
+
+
+<div id="recommendArea"></div>
+
+
+<div id="browsingHistoryArea"></div>
+
+<div id="accessCountHpKiji"
+    data-categoryid="3"
+    data-kijiid="22037"
+    data-subid="5"
+    data-topid="43"
+    data-preview="OFF"></div>
+
+<script type="text/javascript" language="javascript">
+    jQuery(function () {
+        jQuery.ajax({
+            type: 'POST',
+            cache: false,
+            url: '//www.city.kumamoto.jp/dynamic/kankyo/hpkiji/saverecommend.ashx',
+            data: {
+                "id": 22037,
+                "preview": "OFF"
+            }
+        }).done(function (response) {
+        }).fail(function (response) {
+        });
+    });
+</script>
+
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/browsinghistory.js"></script>
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/setcontents.js"></script>
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/layoutadjustment.js"></script>
+<script type="text/javascript" language="javascript">
+    jQuery.noConflict();
+    jQuery(function () {
+        var set = new setContents();
+        set.rootUrl = "https://www.city.kumamoto.jp/dynamic/kankyo/";
+
+        
+        var bannerPrm = {
+            "top_id": jQuery("#shosaiBanArea").attr("data-topid"),
+            "dspShosaiFlg": jQuery("#shosaiBanArea").attr("data-dspshosai"),
+            "preview": jQuery("#shosaiBanArea").attr("data-preview")
+        }
+        set.banner("#shosaiBanArea", bannerPrm);
+
+        
+        var footerSoegakiPrm = {
+            "newWinOpnFlg": "False",
+            "pdfSetsumeiFlg": "ON",
+            "pdfDownloadFlg": "ON"
+        }
+        set.footerSoegaki("#footerSoegakiArea", footerSoegakiPrm);
+
+        
+        jQuery(".toiData").each(function () {
+
+            var toiawasePrm = {
+                "mdl": "85",
+                "c_id": "3",
+                "id": "22037",
+                "sub_id": "5",
+                "top_id": "43",
+                "preview": "OFF"
+            }
+
+            set.toiawase(this, toiawasePrm);
+        });
+
+        
+        var kijiKengenPrm = {
+            "mdl": "85",
+            "grp_id": "1078",
+            "ka_no_disp": "1",
+            "top_id": "43",
+            "preview": "OFF"
+        }
+        set.kijiKengen("#kijiKengenArea", kijiKengenPrm);
+
+        
+        var snsButtonPrm = {
+            "c_id": "3",
+            "id": "22037",
+            "sub_id": "5",
+            "ttl": "",
+            "top_id": "43",
+            "preview": "OFF"
+        }
+        set.snsButton("#snsButtonArea", snsButtonPrm);
+
+        
+        var weblioLinkJsPrm = {
+            "c_id": "3"
+        }
+        set.weblioLinkJs("#weblioLinkJsArea", weblioLinkJsPrm);
+
+        
+        var recommendPrm = {
+            "c_id": "3",
+            "id": "22037",
+            "top_id": "43",
+            "preview": "OFF"
+        }
+        set.recommend("#recommendArea", recommendPrm);
+
+        
+        var pankuzuParam = {
+            "c_id": jQuery("#pankuzuArea").attr("data-categoryid"),
+            "class_id": "",
+            "id": jQuery("#pankuzuArea").attr("data-kijiid"),
+            "sub_id": jQuery("#pankuzuArea").attr("data-subid"),
+            "top_id": jQuery("#pankuzuArea").attr("data-topid"),
+            "preview": jQuery("#pankuzuArea").attr("data-preview")
+        }
+        set.pankuzu("#pankuzuArea", "#footerPankuzuArea", pankuzuParam);
+
+        
+        var archiveTransitionParam = {
+            "c_id": "3",
+            "class_id": "",
+            "id": "22037",
+            "wd": "",
+            "sely": "",
+            "selm": "",
+            "top_id": "43",
+            "preview": "OFF"
+        }
+        set.archiveTransition("#archiveTransitionArea", archiveTransitionParam);
+
+        
+        var classTagsParam = {
+            "rootURL":"//www.city.kumamoto.jp/dynamic/kankyo/",
+            "c_id": "3",
+            "class_id": "",
+            "id": "22037",
+            "sub_id": jQuery("#pankuzuArea").attr("data-subid"),
+            "top_id": "43",
+            "preview": "OFF"
+        }
+        set.classTags("#classTagsArea", classTagsParam);
+
+        var accessCountPrm = {
+            "c_id": jQuery("#accessCountHpKiji").attr("data-categoryid"),
+            "id": jQuery("#accessCountHpKiji").attr("data-kijiid"),
+            "sub_id": jQuery("#accessCountHpKiji").attr("data-subid"),
+            "top_id": jQuery("#accessCountHpKiji").attr("data-topid"),
+            "preview": jQuery("#accessCountHpKiji").attr("data-preview")
+        }
+        set.accessCountHpKiji(accessCountPrm);
+    });
+
+    
+    jQuery(function(){
+        var fn_bh = new setBrowsingHistory();
+        fn_bh.rootUrl = "https://www.city.kumamoto.jp/dynamic/kankyo/";
+        fn_bh.page_type = "detail";
+        fn_bh.top_id = "43";
+        fn_bh.kiji_id = "22037";
+        fn_bh.preview_type = "OFF";
+        fn_bh.loadBrowsingHistory();
+    });
+</script>
+
+        
+
+     </div> <!-- cont_body end -->
+</div> <!-- mainBlock end -->
+
+
+<div class="clear"></div>
+</div>
+
+
+<!-- kankyo allfooter start  -->
+<iframe src="//www.city.kumamoto.jp/dynamic/kankyo/common/kijienqiframe.aspx?c_id=3&amp;id=22037" id="kijiEnqArea" style="border:0px none;" title="kijienq"></iframe>
+
+
+
+
+
+
+<div class="indent"></div>
+<div id="pagetop">
+    <a href="#top">ページの先頭へ</a></div>
+
+<div id="footerbtn" style="display:none;">
+    
+    
+</div>
+
+<div id="footerPankuzu_43">
+    <div id="footerPankuzuArea"></div>
+</div>
+
+
+<span id="ctl00_LblCopyrights"></span>
+
+
+<!--[if lt IE 9]>
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/footer/kankyo.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="//www.city.kumamoto.jp/dynamic/kankyo/common/css/footer/kankyo.css" rel="stylesheet" type="text/css" /><div id="footerArea">
+	<!-- kankyo footer menu start -->
+
+
+<!-- kankyo footer menu end -->
+
+<!-- kankyo site info start -->
+
+<!-- 問合せ先 -->
+<div id="siteinfo">
+    <div id="footerWaku">
+        <div id="logo">
+            <span>熊本市役所 環境局</span><br />
+                    〒860-8601
+                    熊本市中央区手取本町1番1号<br />
+                    代表電話：096-328-2111（代表）
+                
+        </div>
+        <div id="toiawase">
+            <ul id="footerBtn">
+                <li id="call"><a href="http://higomaru-call.jp/index.htm" target="_blank" rel="nofollow">ひごまるコール（質問・お問合せ）<img title="" alt="別ウィンドウで開きます" src="https://www.city.kumamoto.jp/dynamic/common/images/newwin.gif" /></a></li>
+                <li id="sitemap"><a href="https://www.city.kumamoto.jp/kankyo/classset020.html">サイトマップ</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- copyright -->
+    <div id="cp" lang="en">
+        <p>© 2025 Kumamoto City.</p>
+    </div>
+</div>
+<div class="area_pagetop">
+
+<script type="text/javascript">
+    function scrollToTop() {
+        document.getElementById("headerAreaDefInput").focus();       
+    }
+</script>
+<div id="topbtn">
+    <a href="javascript:void(0);" onclick="scrollToTop()">
+        <img src="//www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/top.png" alt="このページの先頭へ" title="">
+    </a>
+</div>
+
+</div>
+
+<!-- kankyo site info end -->
+</div>
+<!-- kankyo allfooter end  -->
+
+<input type="hidden" name="fontResize" id="fontResize" value="" />
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var sitesearch_config = {
+SEARCH_ROOT: 'https://www.city.kumamoto.jp/dynamic/search/pub/Default.aspx?c_id=2',
+API_ROOT: 'https://kumamoto.sitesearch2.kumamoto-net.ne.jp/public_api/',
+};
+var sitesearch_ssurl = 'https://kumamoto.sitesearch2.kumamoto-net.ne.jp/site_search_input_only/';
+var sitesearch_jsurl = sitesearch_ssurl + 'index-input.0c27b256.js';
+var sitesearch_cssurl = sitesearch_ssurl + 'index-input.dbd7ad3a.css';
+sitesearch_req.open('GET', sitesearch_ssurl, true);
+sitesearch_req.send(null);
+//]]>
+</script>
+</form>
+<noscript>本サイトは一部のページ・機能にJavascriptを使用しております。</noscript>
+
+<script type="text/javascript" src="//www.city.kumamoto.jp/dynamic/kankyo/common/js/ajaxcalforie6.js"></script>
+
+
+
+    <script type="text/javascript" language="javascript">
+        jQuery.noConflict();
+
+        // 画面リサイズ時telto変更
+        var styleSheetSpWidth = 480;
+        var timer = false;
+        jQuery(window).resize(function () {
+            if (timer !== false) {
+                clearTimeout(timer);
+            }
+            timer = setTimeout(function () {
+                //画面サイズ切り分け
+                if(styleSheetSpWidth > window.innerWidth){
+                    //SP teltoあり
+                    jQuery('.teltoon').css('display', 'inline-block');
+                    jQuery('.teltooff').css('display', 'none');
+                }else{
+                    //PC teltoなし
+                    jQuery('.teltoon').css('display', 'none');
+                    jQuery('.teltooff').css('display', 'inline-block');
+                }
+            }, 200);
+        });
+
+        function searchResult(keyword) {
+            jQuery.ajax({
+                type: 'POST',
+                cache: false,
+                url: '//www.city.kumamoto.jp/dynamic/kankyo/common/handler/registersearchkeyword.ashx',
+                data: {
+                    "c_id": "2",
+                    "q": keyword,
+                    "nowurl": location.href
+                }
+            }).done(function (response) {
+                eval(response);
+            });
+        }
+
+        var pankuzu_flg = false;
+        function pankuzu_openclose(kbn) {
+            if (!pankuzu_flg) {
+                jQuery("#pankuzu-more, #footerPankuzu-more").hide();
+                jQuery("#pankuzu-close, #footerPankuzu-close").show();
+                jQuery(".pankuzu-toggle").show();
+                pankuzu_flg = true;
+            }
+            else {
+                jQuery("#pankuzu-more, #footerPankuzu-more").show();
+                jQuery("#pankuzu-close, #footerPankuzu-close").hide();
+                jQuery(".pankuzu-toggle").hide();
+                pankuzu_flg = false;
+            }
+        }
+
+        jQuery(function () {
+            jQuery('img[usemap]').rwdImageMaps();
+        });
+    </script>
+    
+    <script type="text/javascript" language="javascript">
+        jQuery(function () {
+            var fn = new setCookie();
+            fn.rootUrl = "https://www.city.kumamoto.jp/dynamic/kankyo/";
+            fn.topFlg = "True";
+            fn.topCategoryRootFolder = "kankyo";
+            fn.fontSizeCookieName = "FONT_SIZE";
+            fn.colorCookieName = "COLOR";
+
+            fn.fontSizeIconArr = setFontSizeIconArr();
+            fn.loadFontSize();
+            fn.loadColor();
+
+            
+            var prm = {
+                "top_id": "43",
+                "dspTopFlg": "OFF"
+            }
+            setFloatHeader(prm, "//www.city.kumamoto.jp/dynamic/kankyo/");
+            
+        });
+
+        function setFontSizeIconArr() {
+            var fontSizeIconArr = {
+                "標準": { size: "fontSizeN", on: "https://www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/black-mozi-m.gif", off: "https://www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/white-mozi-m.gif" },
+                "拡大": { size: "fontSizeB", on: "https://www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/black-mozi-l.gif", off: "https://www.city.kumamoto.jp/dynamic/kankyo/common/images/top1/white-mozi-l.gif" },
+            };
+
+            return fontSizeIconArr;
+        }
+    </script>
+    
+</body>
+</html>

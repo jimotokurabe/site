@@ -1,0 +1,423 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "tochigi:utsunomiya",
+      "name": "宇都宮市",
+      "kana": "うつのみやし",
+      "pref_name": "栃木県",
+      "selection_reason": "宇都宮市の公式案内から日常ごみ支援、粗大ごみ、持込みの経路を区別して調査。未記載事項と地区差は窓口確認事項として残す。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "utsunomiya-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "週1回、分別した資源物・焼却ごみ・不燃ごみ・危険ごみ。粗大ごみ・家電4品目・パソコン等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅へ直接訪問収集。細かな排出場所は決定時に確認。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "eligibility": {
+              "value": "親族・近所の支援を受けられず自力排出が困難な、介護認定を受けた65歳以上単身、身体障がい者手帳所持の単身、または同程度の高齢者・障がい者。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族等の支援を受けられないことが条件。本人同意があれば親族・ケアマネ等の代理申請可。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "fees": {
+              "value": "公式案内にはfeesの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "limits": {
+              "value": "週1回、粗大ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "application": {
+              "value": "ごみ減量課に事前電話相談後、窓口・郵送・FAXで申請。調査後に対象決定。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "attendance": {
+              "value": "公式案内にはattendanceの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            },
+            "contact": {
+              "value": "宇都宮市ごみ減量課 028-632-2423。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい収集利用者が粗大ごみを玄関先まで運べない場合、別支援の有無を確認。",
+            "下田原の不燃粗大1日2点制限と茂原の車両量制限が品目でどう適用されるか確認。"
+          ]
+        },
+        {
+          "id": "utsunomiya-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "fees": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "limits": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "application": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            },
+            "contact": {
+              "value": "今回保存した公式案内で粗大ごみの屋内搬出支援の独立した制度は確認できない。制度不存在の断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "utsunomiya-daily",
+                "utsunomiya-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい収集利用者が粗大ごみを玄関先まで運べない場合、別支援の有無を確認。",
+            "下田原の不燃粗大1日2点制限と茂原の車両量制限が品目でどう適用されるか確認。",
+            "宇都宮市の粗大ごみ通常収集では室内から運び出せない場合、利用できる公的な搬出支援があるか。"
+          ]
+        },
+        {
+          "id": "utsunomiya-regular",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "一辺50cm以上の粗大ごみ。家電4品目は別処理。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "予約日の午前8時30分までに自宅前の交通を妨げない場所。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "宇都宮市の家庭から出る粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "fees": {
+              "value": "1点840円、納付券を購入・貼付。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1収集日5点まで。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センター028-643-5371に電話予約。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "留守でも収集。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター 028-643-5371。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい収集利用者が粗大ごみを玄関先まで運べない場合、別支援の有無を確認。",
+            "下田原の不燃粗大1日2点制限と茂原の車両量制限が品目でどう適用されるか確認。"
+          ]
+        },
+        {
+          "id": "utsunomiya-self",
+          "kind": "self_dropoff",
+          "name": "粗大ごみの清掃センター持込み",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみ。家電4品目は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "クリーンパーク茂原またはクリーンセンター下田原。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "公式案内にはindoor_carryの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "市内家庭の粗大ごみ。住所の分かる身分証を提示。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "公式案内にはfamily_helpの詳細記載がない。窓口確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "fees": {
+              "value": "無料。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "limits": {
+              "value": "引越し等の多量可燃粗大は軽トラック1日1台まで。不燃粗大は茂原が軽トラック1日1台、下田原は1日2点まで。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "application": {
+              "value": "搬入前に施設別の受入条件を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "搬入時に住所確認。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            },
+            "contact": {
+              "value": "宇都宮市ごみ減量課 028-632-2423。",
+              "state": "explicit",
+              "source_ids": [
+                "utsunomiya-self",
+                "utsunomiya-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "ふれあい収集利用者が粗大ごみを玄関先まで運べない場合、別支援の有無を確認。",
+            "下田原の不燃粗大1日2点制限と茂原の車両量制限が品目でどう適用されるか確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典に記載のない条件は推測していない。",
+        "独立の原典照合・人手検品・自治体照会は未実施。"
+      ],
+      "common_questions_for_office": [
+        "ふれあい収集利用者が粗大ごみを玄関先まで運べない場合、別支援の有無を確認。",
+        "下田原の不燃粗大1日2点制限と茂原の車両量制限が品目でどう適用されるか確認。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "utsunomiya-bulky",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/dashikata/1017157/1004977.html",
+      "title": "粗大ごみ｜宇都宮市公式Webサイト",
+      "source_updated": "2026-09-28",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "utsunomiya-daily",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/1004994.html",
+      "title": "ふれあい収集事業｜宇都宮市公式Webサイト",
+      "source_updated": "2026-05-26",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "utsunomiya-self",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/mochikomi/1004998.html",
+      "title": "清掃センターなどへの持ち込み｜宇都宮市公式Webサイト",
+      "source_updated": "2024-03-08",
+      "retrieved_date": "2026-10-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "宇都宮市の保存済み公式ページ3件を基に作成。original/text・取得時刻・SHA-256はofficial-metadata.json。AI下書き、公開不可。"
+}

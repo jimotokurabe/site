@@ -1,0 +1,443 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "aomori:aomori",
+  "slug": "aomori",
+  "first_input_sha256": "7b89836923fd2b61ce5b8f72c3f94af054e269b4e347a0891a8a41af32cc69ae",
+  "accepted_input_sha256": "21f6169ded1388db85428e9650478e914fc891beccd5ec23fd6df62d0873c7bd",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 3,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "あすかプランは浪岡地区が原則対象外。自己搬入に必要な搬入調書と、運搬不能時の許可業者・委任状・2営業日前提出を補正。",
+  "corrections_file": "aomori/corrections.json",
+  "correction_count": 1,
+  "field_inventory": [
+    {
+      "service_id": "aomori-daily",
+      "field": "waste_scope",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "eb73dea6e47323cdaa02c1341e5ff774ebb895276e67717b77aacde6b4b2a388"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "collection_location",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "cdf83b5b073c6f0836892e0380987bd24f485187d748886a4757728c01b383fb"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "26ce1b9cd72955eb8d2b0cd5d24a6806b60d76edefa85665fc5f23780585677e"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "341e27b88efaa745626c595541acb10237b21b5481d4cf9585aa4fd1f8cff017"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "db2db6d81b827ad39edac67633c0ff0633d46629b98f6accad2b5641e05fa153"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "4e70d673cfc3e07b67ac1e561ed10e1145b877a2883efea2207f8c201bc49ec0"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "aomori-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-daily"
+      ],
+      "value_sha256": "15f7d0931312f5614387e12eceac156e1c8e2c3cda72986aae95259865ec77d8"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "aomori-daily",
+        "aomori-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "a40ca3143953b4b875d019c20643a74ffb197dd55581ab9382a745b80df65060"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "6b4632459c4dd434600da6db7ab3186e3cde8fb43a21e44e393e92e23d09aa15"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "061dbf48eeda35329eb967692218ab3ca6cec16af1b410d35a09355631bafd78"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "4cc02ff21f45f1c24ac567deaf64265a07e7e8135807d7d8d7f4e3b94d6be0d6"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "930fc7e051cf0a84b3936a446e62c1d820c0c6054eabb15db230cbf842d6f016"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "deb5003917bb1a5304f23e768f41a1742aff5eec61645cdc7b41ba0917474cdd"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "88298e66fd209a1adc63885d85f15c4ddb13f13ac7ec7a2e79711abd82ee8acb"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "7ca722b2cfee3ca7ad10cad9e40e1e5881a16c05a7dd94ef6ccc699e7fd26d2b"
+    },
+    {
+      "service_id": "aomori-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-bulky"
+      ],
+      "value_sha256": "12421a39b6d07d3abb7bcecf2d9af76a473adb27565f78f4fbcf82e442f11c87"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "8d8ed52439a32dfdec48e85f9a6379cb6dba28ef63fa5d4e85621447a5e5340b"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "1ba493dbcde8d6f00f8fbe93eb7783ffe44acbf1e648ed6d5b32ca7cad11b2f7"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "eligibility",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "b68f988db7096f108c1b73306340b670ba41d2a1a541b9d40a52d3946a3286d3"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "118657b65cf4625e9d8e8d9490dfb256cbfb349b014e4a4f99af1a2c6a18cb3e"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "3b2f7b469839d431d67fff12d5613aba68015b1d1b3170437c9271615565c2eb"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "7e388489f6765cbb6c90849520f74d9ae1370702f5ae12a210e5ca371a1a87f5"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "aomori-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "aomori-self",
+        "aomori-bulky"
+      ],
+      "value_sha256": "b2b42b9a67570d5f417c01bcf9487eb9fb1a26d1ea94ffc306d74b1375520b65"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "aomori-bulky",
+      "url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001953.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-04-01",
+      "raw_file": "aomori/official/aomori-bulky.html.source",
+      "raw_sha256": "0017f3863a41fe3af5af92228ce0d01bef54cadd9c4e2ee6f5a4b39df6f8a80d",
+      "text_file": "aomori/official/aomori-bulky.txt",
+      "text_sha256": "45a4a1ca7026b3f31df6b739e32ca501ef0e0831debf8a9f4e7f5569e8a2d161"
+    },
+    {
+      "id": "aomori-daily",
+      "url": "https://www.city.aomori.aomori.jp/hukushi_kenkou/hukushi/1002786/1002811/1009166.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-05-26",
+      "raw_file": "aomori/official/aomori-daily.html.source",
+      "raw_sha256": "39c1ff6cca8aa328148fb3a66d6b381e452eee668066894e9709a736b03bfa4b",
+      "text_file": "aomori/official/aomori-daily.txt",
+      "text_sha256": "291c021c24a3d6481d54fe1a29e4325edbeb4150b3d4ac47228b3f264c7f43be"
+    },
+    {
+      "id": "aomori-self",
+      "url": "https://www.city.aomori.aomori.jp/kurashi_kankyo/gomi/1001942/1001944/1001950.html",
+      "retrieved_at": "2026-10-18T19:23:24+09:00",
+      "source_updated": "2026-04-01",
+      "raw_file": "aomori/official/aomori-self.html.source",
+      "raw_sha256": "7dba8bfe6ff23e23032ba81e325ab4b4d088d4d788d83192b9f283f316135ea8",
+      "text_file": "aomori/official/aomori-self.txt",
+      "text_sha256": "e12d62ce6c5c3eb2a8c582ded5569f8e802c73e7aa86f5b1c461dd3fb857ec8f"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "浪岡地区の代替相談先、家族による持込みの条件、独立した粗大搬出制度は窓口未確認。"
+  ]
+}

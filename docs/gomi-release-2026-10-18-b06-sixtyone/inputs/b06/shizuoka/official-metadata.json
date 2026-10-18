@@ -1,0 +1,50 @@
+[
+  {
+    "id": "shizuoka-daily",
+    "url": "https://www.city.shizuoka.lg.jp/gomi/s000684.html",
+    "title": "不燃・粗大ごみの排出が困難な方へ（ふれあい収集のご案内）／静岡市公式ホームページ",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.shizuoka.lg.jp/gomi/s000684.html",
+    "retrieved_at": "2026-10-18T19:21:45+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "shizuoka-daily.html.source",
+    "text_file": "shizuoka-daily.txt",
+    "raw_sha256": "b8cb0d3c6b0ba464775ccdd3a2ce60c2dc2f8f13859d8c5b9b1527bc6d798b7c",
+    "text_sha256": "cd4813b9d0b4f685fc0b663c108b6f798bea0f27aa73499a482a522fb5f676ab",
+    "bytes": 20318
+  },
+  {
+    "id": "shizuoka-regular",
+    "url": "https://www.city.shizuoka.lg.jp/gomi/s000679.html",
+    "title": "不燃・粗大ごみの出し方／静岡市公式ホームページ",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.shizuoka.lg.jp/gomi/s000679.html",
+    "retrieved_at": "2026-10-18T19:21:45+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "shizuoka-regular.html.source",
+    "text_file": "shizuoka-regular.txt",
+    "raw_sha256": "880ba831314a63a3ffe4108278a55c44f6fdb4776516e4f1b275201ccb32ad27",
+    "text_sha256": "81786df896d5f69f13d706055745611711a9cc6c38cb129757b9de0fe714faed",
+    "bytes": 24580
+  },
+  {
+    "id": "shizuoka-self",
+    "url": "https://www.city.shizuoka.lg.jp/gomi/s000671.html",
+    "title": "清掃工場等への家庭ごみの持ち込み／静岡市公式ホームページ",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.shizuoka.lg.jp/gomi/s000671.html",
+    "retrieved_at": "2026-10-18T19:21:45+09:00",
+    "retrieved_date": "2026-10-18",
+    "content_type": "text/html",
+    "raw_file": "shizuoka-self.html.source",
+    "text_file": "shizuoka-self.txt",
+    "raw_sha256": "176ab365c8c52fe44a54a2923880b3a12fa045786a6513f032e9ed6e87ca2640",
+    "text_sha256": "871ddd9534b6b89efd98dda4690eeb79de0f6053de351a443cc1924a73caa849",
+    "bytes": 22319
+  }
+]

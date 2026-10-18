@@ -1,0 +1,130 @@
+[
+  {
+    "city": "saga:saga",
+    "service": "saga-daily-support",
+    "service_sha256": "30c4e59a46dd14bd40ba1cc8dfbafc8f9dd9d97a188885916f63c6340fc05c05",
+    "sources": [
+      {
+        "id": "saga-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/saga/official/regular.txt",
+        "lines": [
+          [
+            1,
+            189
+          ]
+        ],
+        "raw_path": "saga/official/regular.html.source",
+        "raw_sha256": "b0b7c3270a4f92adefdbf90e0748a76d7b0d52f603ab54c5a3ff533aee9b009f",
+        "text_sha256": "2639b42bdff4b6fd3f1107288460938dd7f0c57773528fa1c1450cd533757dc0",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "saga:saga",
+    "service": "saga-bulky-carry-support",
+    "service_sha256": "0616a6d722b2e339217ddce7802987804e8c36dfbec69b6b0cece873da8d6740",
+    "sources": [
+      {
+        "id": "saga-carry",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/saga/official/carry.txt",
+        "lines": [
+          [
+            1,
+            55
+          ]
+        ],
+        "raw_path": "saga/official/carry.html.source",
+        "raw_sha256": "7acd9da3ae7e0dd672f2242a16c9d1e518f1f33761008fe5520897812a0c06b5",
+        "text_sha256": "b74aa8055f284f28ab7011430733aafd5c57a9abb49a814936dd7f41c60708a9",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "saga:saga",
+    "service": "saga-regular-bulky",
+    "service_sha256": "571eb1d49a2c5b346f827de57c8c15608b74e0616cdc1aa948d56255cb6641df",
+    "sources": [
+      {
+        "id": "saga-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/saga/official/regular.txt",
+        "lines": [
+          [
+            1,
+            189
+          ]
+        ],
+        "raw_path": "saga/official/regular.html.source",
+        "raw_sha256": "b0b7c3270a4f92adefdbf90e0748a76d7b0d52f603ab54c5a3ff533aee9b009f",
+        "text_sha256": "2639b42bdff4b6fd3f1107288460938dd7f0c57773528fa1c1450cd533757dc0",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "saga:saga",
+    "service": "saga-self-dropoff",
+    "service_sha256": "b09752baec4e7014d344944b86f3634f420811fc0c066a1c196e5145ba08280b",
+    "sources": [
+      {
+        "id": "saga-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/saga/official/dropoff.txt",
+        "lines": [
+          [
+            1,
+            128
+          ]
+        ],
+        "raw_path": "saga/official/dropoff.html.source",
+        "raw_sha256": "410f38efe66338193734d7e43ec0d9d4762367ae16043cbce68171c3eb51cbb6",
+        "text_sha256": "851fca0d377aa24a9329fc2e4de856770bcdbb851caaf58a0f889a6a136b7e92",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

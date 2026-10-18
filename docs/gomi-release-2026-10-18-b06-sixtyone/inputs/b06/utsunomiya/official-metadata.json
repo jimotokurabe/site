@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "utsunomiya-bulky",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/dashikata/1017157/1004977.html",
+      "title": "粗大ごみ｜宇都宮市公式Webサイト",
+      "source_updated": "2026-09-28",
+      "http_status": 200,
+      "final_url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/dashikata/1017157/1004977.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "utsunomiya-bulky.html.source",
+      "text_file": "utsunomiya-bulky.txt",
+      "raw_sha256": "91806cbb24062da45031f0ea7ce9ee7480255b5f2b2fe4a3f528f65ff2737340",
+      "text_sha256": "d6009b86c358a3b9088d6254903611ca20d6e1a124034e25d0420d9a794bcc02",
+      "bytes": 32391,
+      "etag": "\"7e87-65e1a9165cb5c\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:07:41 GMT",
+      "source_updated_raw": "8年9月28日"
+    },
+    {
+      "id": "utsunomiya-daily",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/1004994.html",
+      "title": "ふれあい収集事業｜宇都宮市公式Webサイト",
+      "source_updated": "2026-05-26",
+      "http_status": 200,
+      "final_url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/kateigomi/1004994.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "utsunomiya-daily.html.source",
+      "text_file": "utsunomiya-daily.txt",
+      "raw_sha256": "8296139f5b17882cbad7f0e80f413d47f5c959d99de1ca9e60b3385f6460d288",
+      "text_sha256": "63a9ef50c15fa669ebada6f93fd30451343bc9fc308db4ff28bbfbecb7f9dd72",
+      "bytes": 33909,
+      "etag": "\"8475-65e1a916c3bd2\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:07:42 GMT",
+      "source_updated_raw": "8年5月26日"
+    },
+    {
+      "id": "utsunomiya-self",
+      "url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/mochikomi/1004998.html",
+      "title": "清掃センターなどへの持ち込み｜宇都宮市公式Webサイト",
+      "source_updated": "2024-03-08",
+      "http_status": 200,
+      "final_url": "https://www.city.utsunomiya.lg.jp/kurashi/gomi/mochikomi/1004998.html",
+      "retrieved_at": "2026-10-18T19:23:25+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "utsunomiya-self.html.source",
+      "text_file": "utsunomiya-self.txt",
+      "raw_sha256": "fc8e8ad8de17fbbbf3918972f550d0dab26d0ab3926c2e8b2ca6447046a08794",
+      "text_sha256": "e9dbb2b762006bca4b78de26a8d55718f947a76d3a49a12576154c1c04efbca5",
+      "bytes": 35240,
+      "etag": "\"89a8-65e1a916d4d43\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:07:42 GMT",
+      "source_updated_raw": "6年3月8日"
+    }
+  ],
+  "failures": []
+}

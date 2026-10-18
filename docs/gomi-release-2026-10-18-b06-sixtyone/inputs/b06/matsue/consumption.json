@@ -1,0 +1,31 @@
+{
+  "city": "shimane:matsue",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "松江市 ごみ出し支援 対象 申込",
+    "松江市 粗大ごみ 収集 搬出",
+    "松江市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 4,
+  "http_200_count": 4,
+  "http_non_200_count": 0,
+  "original_bytes_total": 167346,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "matsue-daily",
+    "matsue-regular",
+    "matsue-self",
+    "matsue-self-burn"
+  ],
+  "new_city_sha256": "38066e46542ac489f6ecac52e8e5e5897e3d99161b506a978f97920b5eb1d4fc",
+  "source_hash_verification": "passed"
+}

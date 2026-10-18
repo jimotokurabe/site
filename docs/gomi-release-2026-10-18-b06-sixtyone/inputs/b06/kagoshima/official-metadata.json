@@ -1,0 +1,36 @@
+[
+  {
+    "id": "kagoshima-daily",
+    "url": "https://www.city.kagoshima.lg.jp/seisojimusyo/magokorosyusyu.html",
+    "title": "まごころ収集（高齢者等戸別収集サービス）｜鹿児島市",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": null,
+    "http_status": 200,
+    "final_url": "https://www.city.kagoshima.lg.jp/seisojimusyo/magokorosyusyu.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html",
+    "raw_file": "kagoshima/official/daily.html.source",
+    "text_file": "kagoshima/official/daily.txt",
+    "raw_sha256": "aa4d0274e8e5153cb64f6e7f11d7124be9a1ca0b72c819bb0dd030818458764d",
+    "text_sha256": "6e0027465724f7426e88c39ac0a5c5d7146df079b8a3bfcbb780a3195dc276ab",
+    "last_modified_header": "Thu, 01 Oct 2026 07:00:15 GMT"
+  },
+  {
+    "id": "kagoshima-regular",
+    "url": "https://www.city.kagoshima.lg.jp/shigenseisaku/gomi/kate/dashikata/wakekata/sodaigomi.html",
+    "title": "粗大ごみ｜鹿児島市",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-10-01",
+    "http_status": 200,
+    "final_url": "https://www.city.kagoshima.lg.jp/shigenseisaku/gomi/kate/dashikata/wakekata/sodaigomi.html",
+    "retrieved_at": "2026-10-18T19:18:47+09:00",
+    "content_type": "text/html",
+    "raw_file": "kagoshima/official/regular.html.source",
+    "text_file": "kagoshima/official/regular.txt",
+    "raw_sha256": "1ce02d1df83b6df09e4b3e9339c0e9dc6494b03629764cae320df1ad63d38b84",
+    "text_sha256": "770fae96e4bf5e735ea97ae8aae05421e60c6296ad956c16a35f2de516d1aa14",
+    "last_modified_header": "Mon, 05 Oct 2026 11:00:03 GMT"
+  }
+]

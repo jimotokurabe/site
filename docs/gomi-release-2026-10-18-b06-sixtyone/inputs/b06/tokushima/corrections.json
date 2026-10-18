@@ -1,0 +1,78 @@
+[
+  {
+    "service": "tokushima-regular-bulky",
+    "field": "collection_location",
+    "before": {
+      "value": "収集通知書に記載された場所へ当日8時30分までに排出。",
+      "state": "explicit",
+      "source_ids": [
+        "tokushima-regular"
+      ]
+    },
+    "after": {
+      "value": "原則、戸建ては家の前、集合住宅は1階入口付近。2t車が通れない場合は指定場所へ出す。",
+      "state": "explicit",
+      "source_ids": [
+        "tokushima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "tokushima-regular-bulky",
+    "field": "waste_scope",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "tokushima-regular"
+      ]
+    },
+    "after": {
+      "value": "30cm角程度より大きい家庭の粗大ごみ。家電4品目・パソコン等は申込対象外。",
+      "state": "explicit",
+      "source_ids": [
+        "tokushima-regular"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "tokushima-self-dropoff",
+    "field": "collection_location",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "tokushima-dropoff"
+      ]
+    },
+    "after": {
+      "value": "可燃ごみは東部・西部環境事業所、不燃ごみ・粗大ごみ等は市の案内にある中間処理場へ。",
+      "state": "explicit",
+      "source_ids": [
+        "tokushima-dropoff"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "tokushima-self-dropoff",
+    "field": "fees",
+    "before": {
+      "value": "重量に応じた処理手数料。",
+      "state": "explicit",
+      "source_ids": [
+        "tokushima-dropoff"
+      ]
+    },
+    "after": {
+      "value": "100kgまで1,220円。100kg超は超過分10kgまでごとに122円を加算。",
+      "state": "explicit",
+      "source_ids": [
+        "tokushima-dropoff"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  }
+]

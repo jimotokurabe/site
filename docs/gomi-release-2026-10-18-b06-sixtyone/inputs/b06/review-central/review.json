@@ -1,0 +1,717 @@
+{
+  "schema_version": "b06-independent-ai-review-v1",
+  "reviewer": "independent_central_review",
+  "review_date": "2026-10-18",
+  "scope": "中部10市。初稿prepared8市は日常・屋内搬出・通常粗大・持込の各10項目（計320項目）と相談質問を、保存した公式原典に双方向照合。事前保留2市は不足点のみ採否点検。",
+  "method": "値、state、source_ids、質問と公式原典の本文・文脈を照合。世帯条件のAND/OR、親族例外、料金・減免、地区、予約、回数、本人搬入と運転の区別、窓口、現行性を優先。初稿保存の後、指摘箇所を修正し原典を再照合。未発見は制度不存在を意味しない。",
+  "reviewed_fields": 320,
+  "reviewed_services": 32,
+  "held_issue_checks": 2,
+  "official_sources_total": 38,
+  "official_original_bytes_total": 36362531,
+  "new_external_retrieval_count": 0,
+  "accepted": [
+    {
+      "slug": "shizuoka",
+      "sha256": "aa0825f04e25c296866ac7cf83079da2c0f016e26c23bdad408d6acfe340886f",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "3233de63d7c5944599a8cae41d895d57a4d9d96fbec716cf27aa757c1c015494",
+      "corrections_sha256": "f50dd99c3937e8663afee130febdb72126cfcf40f9b04962723ffc4328775941",
+      "locator_sha256": "5851b577f057d7b79055d7d5f51d59593b2ddb6519176abe63c718352b312195",
+      "official_source_count": 3,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "tsu",
+      "sha256": "35cd19982e23b3138181e01f95c07855f136c6b2fe33b0a9ddbb8a0eec64cbf5",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "4b5258f99bb8831de7c2048df94bc5595677c7c1ab8c6b7be0fa2b4f76614707",
+      "corrections_sha256": "da6a8926fefdb7e6a817d9edec4e29acc46ac84af6f205d4c8508d8260acf1e0",
+      "locator_sha256": "cabdbbacf8aa60b71a2890d2c6e2cc7ff14b87b0e8cd96d0ba68ba8d1a8e2657",
+      "official_source_count": 5,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "otsu",
+      "sha256": "7dc3dfdd16278ba4b0029d8ae8843e15e5f26f02c8bf6200f74180e304aac9cc",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "79b07c33ecaa65e3f394d632b49fd82e8e2397eef84bf8a18129aa5332d176f6",
+      "corrections_sha256": "3a5da11b557212162ed2c22ffdd98b77151b468aa598e7036be3203f447f7408",
+      "locator_sha256": "47cea5ffcda47109177982dd90d7cc2a43c079212c20ead02a75e51df0e92d76",
+      "official_source_count": 4,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "wakayama",
+      "sha256": "221976492cbbb54345176325f2ffb4e18fab651a681b99e2d7126e2b9ca18178",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "0c755055e79543b3d7d017ea4a82fd48efe99e52e202d95f5d6149e06104a5bb",
+      "corrections_sha256": "12605ab17781b80953c77b4ac8652773da57d010281b8a86547945523012a271",
+      "locator_sha256": "b3883b5ff39a09c2636c6b35c0e72a3d6c7c2095bc89ec38f18cb88c97595cb4",
+      "official_source_count": 5,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "tottori",
+      "sha256": "3db6140b669ecb70ae799a276d675ce995424f97f5a1bdd6b93c5dc342953df8",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "0067c4b4393f2fc8080bd0ccaa38d75ac3fa61dd751bbfea3552df48c4496ee9",
+      "corrections_sha256": "460c10eb7b7293043d253a540b8eb255cbaef59ced41457078be86c1b0b3a16a",
+      "locator_sha256": "9cc3cfb1ae1e72fbfae50ac2b15e333fc4223636b38f12599a0d570c65fcc655",
+      "official_source_count": 3,
+      "reviewed_fields": 40
+    },
+    {
+      "slug": "matsue",
+      "sha256": "29fd13304c63e71e6ec350f7d6daa8c24ffb9d38b21367db408c1838ba73833d",
+      "review_file": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B06/review-central/review.json",
+      "original_draft_sha256": "38066e46542ac489f6ecac52e8e5e5897e3d99161b506a978f97920b5eb1d4fc",
+      "corrections_sha256": "c0f00613430352651f3551807a1744b0a844645c6481a39cb943396062b57d65",
+      "locator_sha256": "f0749d721a52024fa390d331c35195e6315c4cd5a1778402ea3aa16c9cc42b07",
+      "official_source_count": 4,
+      "reviewed_fields": 40
+    }
+  ],
+  "held": [
+    {
+      "slug": "nagano",
+      "sha256": "f4e4a3dfb9e9eb01a0b793cea4a3cc66540e81347842bf7076a69dd0c656d140",
+      "reason": "通常の集積所排出・一時多量ごみの有償収集は確認できるが、日常のごみ出し支援と高齢者等の屋内搬出支援は取得した公式原典で現行制度・資格を確認できない。",
+      "remaining_required_findings": [
+        "現行の住民向け公式支援案内",
+        "対象世帯・家族協力条件",
+        "申請先と提供範囲"
+      ],
+      "official_source_count": 4
+    },
+    {
+      "slug": "gifu",
+      "sha256": "b6c70cc45e7994b5c4e03970507858ab200cc22e881880677617150782a4622e",
+      "reason": "通常の粗大ごみ収集・自己搬入は確認できるが、日常のごみ出し支援と屋内搬出支援の現行制度・資格を確認できない。通常収集は屋内搬出不可と明示。",
+      "remaining_required_findings": [
+        "現行の住民向け公式支援案内",
+        "対象世帯・家族協力条件",
+        "申請先と提供範囲"
+      ],
+      "official_source_count": 3
+    },
+    {
+      "slug": "kofu",
+      "sha256": "5336b8a64e61b60d02047244a6fe0560a2631e8ca1832fd7dca070f2bbbab512",
+      "reason": "ふれあい収集の現行資格を示す公式原典が取得できない。検索に出た旧PDFはHTTP 404。",
+      "remaining_required_findings": [
+        "現行の住民向け公式支援案内",
+        "対象世帯・家族協力条件",
+        "申請先と提供範囲"
+      ],
+      "official_source_count": 3
+    },
+    {
+      "slug": "nara",
+      "sha256": "e7406b67f4a497e17145499e7b9a127fbaa3525eaf7da6483cebfb54ced7cbd7",
+      "reason": "大型ごみ屋内搬出支援は旧広報に言及があるが、現行の公式申込条件・資格が確認できない。",
+      "remaining_required_findings": [
+        "現行の住民向け公式支援案内",
+        "対象世帯・家族協力条件",
+        "申請先と提供範囲"
+      ],
+      "official_source_count": 4
+    }
+  ],
+  "findings": [
+    {
+      "slug": "shizuoka",
+      "service": "shizuoka-carry",
+      "field": "attendance",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "shizuoka/corrections.json"
+    },
+    {
+      "slug": "shizuoka",
+      "service": "shizuoka-self",
+      "field": "waste_scope",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "shizuoka/corrections.json"
+    },
+    {
+      "slug": "tsu",
+      "service": "tsu-carry",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tsu/corrections.json"
+    },
+    {
+      "slug": "tsu",
+      "service": "tsu-self",
+      "field": "indoor_carry",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tsu/corrections.json"
+    },
+    {
+      "slug": "tsu",
+      "service": "tsu-self",
+      "field": "family_help",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tsu/corrections.json"
+    },
+    {
+      "slug": "tsu",
+      "service": "tsu-self",
+      "field": "fees",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tsu/corrections.json"
+    },
+    {
+      "slug": "otsu",
+      "service": "otsu-daily",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "otsu/corrections.json"
+    },
+    {
+      "slug": "otsu",
+      "service": "otsu-self",
+      "field": "application",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "otsu/corrections.json"
+    },
+    {
+      "slug": "otsu",
+      "service": "otsu-self",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "otsu/corrections.json"
+    },
+    {
+      "slug": "wakayama",
+      "service": "wakayama-regular",
+      "field": "limits",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "wakayama/corrections.json"
+    },
+    {
+      "slug": "wakayama",
+      "service": "wakayama-regular",
+      "field": "application",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "wakayama/corrections.json"
+    },
+    {
+      "slug": "wakayama",
+      "service": "wakayama-regular",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "wakayama/corrections.json"
+    },
+    {
+      "slug": "wakayama",
+      "service": "wakayama-self",
+      "field": "family_help",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "wakayama/corrections.json"
+    },
+    {
+      "slug": "wakayama",
+      "service": "wakayama-self",
+      "field": "application",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "wakayama/corrections.json"
+    },
+    {
+      "slug": "tottori",
+      "service": "tottori-regular",
+      "field": "indoor_carry",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tottori/corrections.json"
+    },
+    {
+      "slug": "tottori",
+      "service": "tottori-regular",
+      "field": "application",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tottori/corrections.json"
+    },
+    {
+      "slug": "tottori",
+      "service": "tottori-regular",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tottori/corrections.json"
+    },
+    {
+      "slug": "tottori",
+      "service": "tottori-self",
+      "field": "fees",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tottori/corrections.json"
+    },
+    {
+      "slug": "tottori",
+      "service": "tottori-self",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "tottori/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-daily",
+      "field": "waste_scope",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-daily",
+      "field": "limits",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-self",
+      "field": "waste_scope",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-self",
+      "field": "collection_location",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-self",
+      "field": "fees",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-self",
+      "field": "limits",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-self",
+      "field": "application",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    },
+    {
+      "slug": "matsue",
+      "service": "matsue-self",
+      "field": "contact",
+      "status": "corrected_and_rechecked",
+      "corrections_file": "matsue/corrections.json"
+    }
+  ],
+  "source_manifest": [
+    {
+      "slug": "nagano",
+      "source_id": "nagano-regular",
+      "url": "https://www.city.nagano.nagano.jp/n121500/contents/p006213.html",
+      "retrieved_at": "2026-10-18T19:21:41+09:00",
+      "source_updated": "2026年8月24日",
+      "http_status": 200,
+      "raw_sha256": "7a8a308d94456d842b66ae57a30134cefdc466fd1c345286e31933bf5bf0840a",
+      "text_sha256": "b399326540e18dd7e76a05e59cdddeb509d79a3cc8dc1cabb479768dbe060044"
+    },
+    {
+      "slug": "nagano",
+      "source_id": "nagano-pickup",
+      "url": "https://www.city.nagano.nagano.jp/n121515/contents/p000533.html",
+      "retrieved_at": "2026-10-18T19:21:41+09:00",
+      "source_updated": "2026年4月1日",
+      "http_status": 200,
+      "raw_sha256": "2fcfa98840644639c1899cbf5fb8e278994824ab5c034d58454c5f8a0b2db418",
+      "text_sha256": "1a2ed3e959cb2a6539445ba1bf852240bb9fed68d8bdeec954c5495ea45a3301"
+    },
+    {
+      "slug": "nagano",
+      "source_id": "nagano-self",
+      "url": "https://www.city.nagano.nagano.jp/n121515/contents/p000605.html",
+      "retrieved_at": "2026-10-18T19:21:41+09:00",
+      "source_updated": "2026年5月6日",
+      "http_status": 200,
+      "raw_sha256": "2ca66c6f6fe9c4e678dfcba10909195c395cc2deb6dc898230b45819e444b6cf",
+      "text_sha256": "dbceea32d8e5e45cbf5268e4a991e66837e7eb6b8835180b4127b5127ae0bf82"
+    },
+    {
+      "slug": "nagano",
+      "source_id": "nagano-size",
+      "url": "https://www.city.nagano.nagano.jp/n121515/contents/p000536.html",
+      "retrieved_at": "2026-10-18T19:21:41+09:00",
+      "source_updated": "2026年5月21日",
+      "http_status": 200,
+      "raw_sha256": "8982c84ca7b5b6db3e3e9602b573bc1b64d662e8b81a00f19b0a206fc3de1bbf",
+      "text_sha256": "1c49ecfc4f03a93d1dd9d266b44b2adeaa69ac266344b061f17fc63590d5f9ab"
+    },
+    {
+      "slug": "gifu",
+      "source_id": "gifu-regular",
+      "url": "https://www.city.gifu.lg.jp/kurashi/gomi/1012143/1038453/1038458/index.html",
+      "retrieved_at": "2026-10-18T19:21:41+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "37d07771d329feea17abc438fdfab7631ca8ff6b7663522a04fbce3e1d7c0996",
+      "text_sha256": "0d33039a3472ca5b47def85e77b6906ea2460ed71e848f2a0a8930100b32d1a9"
+    },
+    {
+      "slug": "gifu",
+      "source_id": "gifu-faq",
+      "url": "https://www.city.gifu.lg.jp/shitsumon/kurashi/1009914/1009915/1009918.html",
+      "retrieved_at": "2026-10-18T19:21:42+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "929e3e10480342d0b15a622af9c2a50fa9c0e1b7a50879d04906cc168c5045c6",
+      "text_sha256": "1bbc4e21f2f8da40affd4581e7bd560ebe044434c1114884851131995e8b21c6"
+    },
+    {
+      "slug": "gifu",
+      "source_id": "gifu-guide",
+      "url": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/038/192/gomidasi.pdf",
+      "retrieved_at": "2026-10-18T19:21:44+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "4d499c7c2a793a8b5c88c4917e6e417681ff1bf01f4153237fc38f79d85c404e",
+      "text_sha256": "e2e96783e03b466e2403f9a1c5c19a8fa012825a33cb26f6375df9644e2fa275"
+    },
+    {
+      "slug": "shizuoka",
+      "source_id": "shizuoka-daily",
+      "url": "https://www.city.shizuoka.lg.jp/gomi/s000684.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "b8cb0d3c6b0ba464775ccdd3a2ce60c2dc2f8f13859d8c5b9b1527bc6d798b7c",
+      "text_sha256": "cd4813b9d0b4f685fc0b663c108b6f798bea0f27aa73499a482a522fb5f676ab"
+    },
+    {
+      "slug": "shizuoka",
+      "source_id": "shizuoka-regular",
+      "url": "https://www.city.shizuoka.lg.jp/gomi/s000679.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "880ba831314a63a3ffe4108278a55c44f6fdb4776516e4f1b275201ccb32ad27",
+      "text_sha256": "81786df896d5f69f13d706055745611711a9cc6c38cb129757b9de0fe714faed"
+    },
+    {
+      "slug": "shizuoka",
+      "source_id": "shizuoka-self",
+      "url": "https://www.city.shizuoka.lg.jp/gomi/s000671.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "176ab365c8c52fe44a54a2923880b3a12fa045786a6513f032e9ed6e87ca2640",
+      "text_sha256": "871ddd9534b6b89efd98dda4690eeb79de0f6053de351a443cc1924a73caa849"
+    },
+    {
+      "slug": "tsu",
+      "source_id": "tsu-daily",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1012635/1001600.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "df84406d0da3b50982bdbfa087d4cde39be8ea090c5bedbfaa95ed1a4188b1e4",
+      "text_sha256": "7eece26f0b2c17db49157ed3f12e3ca46fc73bce84dc989f8f4a4a8bf576a61e"
+    },
+    {
+      "slug": "tsu",
+      "source_id": "tsu-furniture",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1001597/1013452.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "1554c6eb1d5d926c7f9676d4a873221f2bc9069342ca4b8c8d86971650030bac",
+      "text_sha256": "55f18f68ff8ff93fb31a4be751b533f90d419769503922401a89fbaf48028c79"
+    },
+    {
+      "slug": "tsu",
+      "source_id": "tsu-self",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1001670/1001674.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "75acda658346ee59f7895dd3a5f689e287299b223ed4fa1aa5cfe5aeebfa4988",
+      "text_sha256": "7547b48f6a8587576a66b4f4b31e0cb1211d32087626dbe90017451bd083e587"
+    },
+    {
+      "slug": "tsu",
+      "source_id": "tsu-carry",
+      "url": "https://www.info.city.tsu.mie.jp/kurashi/gomi_kankyo/1001596/1012635/1001603.html",
+      "retrieved_at": "2026-10-18T19:25:08+09:00",
+      "source_updated": "2026年5月27日",
+      "http_status": 200,
+      "raw_sha256": "265c001d89587c3ed3cc3f7d33c7823b4a88ad65ca339e9aaf11a252c6d1e793",
+      "text_sha256": "8897fba2c59b53135d2fefad9e46f72fa015841fbda1bf57a50eac1bddaab4fb"
+    },
+    {
+      "slug": "tsu",
+      "source_id": "tsu-carry-guide",
+      "url": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/001/603/oogatakagu.pdf",
+      "retrieved_at": "2026-10-18T19:25:34+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "a996ad53af8dae2fd4a508dc2a2d4a451efd1f726d890cc699f1fe91701531d3",
+      "text_sha256": "c7af32661323651de5bb2f12c3c8a0ee9209405ff6ba79630fad75e0f2d5db29"
+    },
+    {
+      "slug": "otsu",
+      "source_id": "otsu-daily",
+      "url": "https://www.city.otsu.lg.jp/kurashi/g/b/shuseki/66715.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": "2025年12月26日",
+      "http_status": 200,
+      "raw_sha256": "60305110a3b005caafedc4df6ff4655974a6206b733bb45dfc253895b83098eb",
+      "text_sha256": "acc25f517c8cd4806e3dfdeb2536b2a21fa03896dc65770ddb7bdec34ddf8ae7"
+    },
+    {
+      "slug": "otsu",
+      "source_id": "otsu-regular",
+      "url": "https://www.city.otsu.lg.jp/kurashi/g/b/s/ks/45936.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": "2026年04月14日",
+      "http_status": 200,
+      "raw_sha256": "1457464d800f9a0ab53ba134e72a166a33de4844552c2a73c78c3a098aa2b7d8",
+      "text_sha256": "4a63bd39fa35117ca3f50a20d496b0634799a87d10041497eddad1d9c6b35f5c"
+    },
+    {
+      "slug": "otsu",
+      "source_id": "otsu-regular-note",
+      "url": "https://www.city.otsu.lg.jp/kurashi/g/b/s/ks/64968.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": "2025年08月12日",
+      "http_status": 200,
+      "raw_sha256": "03d47f362aab83999842d945300fb99e5a912dd60c1af711e92816e0176ac2bc",
+      "text_sha256": "87e7363841c2bcd7480f0f5baeb8a88dbca48bf28e720cbfd3846e9f378d2581"
+    },
+    {
+      "slug": "otsu",
+      "source_id": "otsu-self",
+      "url": "https://www.city.otsu.lg.jp/soshiki/030/1702/o/1398046872042.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": "2025年11月27日",
+      "http_status": 200,
+      "raw_sha256": "bda979b4c2c856a4fbfae17ae32b9c617bd2fe291410851c34092f0e769598a5",
+      "text_sha256": "b592783bb83701d2a58de5063e4b2ca1fc06589362805fdf8c603b4fb4751ba3"
+    },
+    {
+      "slug": "wakayama",
+      "source_id": "wakayama-daily",
+      "url": "https://www.city.wakayama.wakayama.jp/shisei/hasshin/1001156/1056607/1058078/1061690.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "51d5a155db3a4928fcaae7cd0258e44ee1f7ef1125e0274ccce4f3a68d7d4d2d",
+      "text_sha256": "1bdda3c4ebaf35a4797fe8fa28c78dde5aa1f645caf1c33f92b32dd4c74a4fb8"
+    },
+    {
+      "slug": "wakayama",
+      "source_id": "wakayama-overview",
+      "url": "https://www.city.wakayama.wakayama.jp/kurashi/gomi_kankyo/1001113/1001251/1018293/index.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "487466eae2ca1c2baececb1653f83d54005cb218ffdcfd49fc50a4e7a62293eb",
+      "text_sha256": "8efa8cfdc980160f76ce1eb007b11fd1449790515d7191f2aaaef35b9d36da5a"
+    },
+    {
+      "slug": "wakayama",
+      "source_id": "wakayama-regular",
+      "url": "https://www.city.wakayama.wakayama.jp/faq/gomikankyou/1007991/1007994.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "9143f777fa9ed300b35e6e90bc83cae29ab12ece138dc885342096399badbd56",
+      "text_sha256": "d451a767fbe5c9a24417be605aa87448d434f0427adc1208e637cad8284753a7"
+    },
+    {
+      "slug": "wakayama",
+      "source_id": "wakayama-self",
+      "url": "https://www.city.wakayama.wakayama.jp/kurashi/gomi_kankyo/1001113/1005184/1005228.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "b6af74c18378f6e7a7498971b2f7de9da2d22d720dadca8dec98ca9354500312",
+      "text_sha256": "198a92762610501a5821ea132326dd935b94a4118813a15721e4a0d2a8565600"
+    },
+    {
+      "slug": "wakayama",
+      "source_id": "wakayama-daily-brief",
+      "url": "https://www.city.wakayama.wakayama.jp/_res/projects/default_project/_page_/001/061/690/20250327-1.pdf",
+      "retrieved_at": "2026-10-18T19:27:01+09:00",
+      "source_updated": "2025-03-27",
+      "http_status": 200,
+      "raw_sha256": "a8b9ed4dcd6cbe463df874f48e02f16a4dda35720a39b3a9541a6b0bf123fad1",
+      "text_sha256": "6392f2433a44a7c29a00a0e8275b57c71817c2020dd1add33bedf97219588825"
+    },
+    {
+      "slug": "tottori",
+      "source_id": "tottori-daily",
+      "url": "https://www.city.tottori.lg.jp/page/4130.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": "2026年8月4日",
+      "http_status": 200,
+      "raw_sha256": "b625d69730f5bfa682573c3c5a895c98033cf9dc3ab566a82c694cfdff59a910",
+      "text_sha256": "66aedf29f9341d4efa9586e9fcb518b76fce007464f14c744da3121c63308036"
+    },
+    {
+      "slug": "tottori",
+      "source_id": "tottori-regular",
+      "url": "https://www.city.tottori.lg.jp/page/4042.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": "2025年10月20日",
+      "http_status": 200,
+      "raw_sha256": "2425ec927d8b66bf2d8eb51ee3a08504f7f6156bfbf7fb63ba9bd489f714015f",
+      "text_sha256": "a4605368dcd27f71155883bc3143a09473eeda1f46add2fc419f0f29b099ae45"
+    },
+    {
+      "slug": "tottori",
+      "source_id": "tottori-self",
+      "url": "https://www.city.tottori.lg.jp/uploaded/attachment/46220.pdf",
+      "retrieved_at": "2026-10-18T19:21:49+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "8d2399f2b8f0a08634e4989980efcde6cb1143ea29bc0350e4c54daefd9626e5",
+      "text_sha256": "25f5195d112a75c8675cde0f4efb9a93ab5beeead1ffbb5b448898cf89a64c20"
+    },
+    {
+      "slug": "matsue",
+      "source_id": "matsue-daily",
+      "url": "https://www.city.matsue.lg.jp/gyoseijoho/koho_kocho/kouchou/6/1/R6mayor/22925.html",
+      "retrieved_at": "2026-10-18T19:21:49+09:00",
+      "source_updated": "2025年05月08日",
+      "http_status": 200,
+      "raw_sha256": "7297551c328066fba3b55138dc48e6a1da33d5e47896f2413de07ee13d855da3",
+      "text_sha256": "2502155d043783911069c232dac02ffae803aa2ab28395bb92726a177cc8b30f"
+    },
+    {
+      "slug": "matsue",
+      "source_id": "matsue-regular",
+      "url": "https://www.city.matsue.lg.jp/soshikikarasagasu/kankyoenergybu_recycletoshisuishinka/5/5-2/244.html",
+      "retrieved_at": "2026-10-18T19:21:49+09:00",
+      "source_updated": "2026年07月01日",
+      "http_status": 200,
+      "raw_sha256": "5a7da65a92b359fec275f7fc31d1acd016f362a6da3427ce1e64d58bc8eb7bb1",
+      "text_sha256": "1824d6a6386d3a799a8252d462cf9ab6202d60649ab5d3a72b8d4bce7626f2ab"
+    },
+    {
+      "slug": "matsue",
+      "source_id": "matsue-self",
+      "url": "https://www.city.matsue.lg.jp/kurashi_tetsuzuki/gomi_kankyo_pet/6/22147.html",
+      "retrieved_at": "2026-10-18T19:21:49+09:00",
+      "source_updated": "2025年05月20日",
+      "http_status": 200,
+      "raw_sha256": "6db3144439deb8fcb19fe4b83a63f2553210b79a3527eb98b7f82f0d8b73f749",
+      "text_sha256": "45cd7b8404ad6f06b1dd61f154ab6368c0a338412853f5180620c34375d60b9b"
+    },
+    {
+      "slug": "matsue",
+      "source_id": "matsue-self-burn",
+      "url": "https://ecoclean.city.matsue.lg.jp/disposal/",
+      "retrieved_at": "2026-10-18T19:21:49+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "3e89bde67acf2b5fb5c9ddc6be82ddf8c4f3a4534dc192e179b2004b1d06f0ef",
+      "text_sha256": "b9002a8b6a3bd3d5a73b835b13bb8fe97c4346684772b96b8bfc97cdd9d09673"
+    },
+    {
+      "slug": "kofu",
+      "source_id": "kofu-guide",
+      "url": "https://www.city.kofu.yamanashi.jp/genryo/documents/2025wakekatadashikata_japanese_1_14.pdf",
+      "retrieved_at": "2026-10-18T19:22:17+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "9a08ac479b0f3dce4d5709e1f02cfa6cbf0a5e376084a0b35ab2b37b9937e835",
+      "text_sha256": "3dc22eab33611349572e49ec4002c721d68579f5b3987c979031ae803bf0e285"
+    },
+    {
+      "slug": "kofu",
+      "source_id": "kofu-self",
+      "url": "https://www.kofu-kyotojimukumiai.jp/citizen/12",
+      "retrieved_at": "2026-10-18T19:22:17+09:00",
+      "source_updated": null,
+      "http_status": 200,
+      "raw_sha256": "92406d28990e13daefe2c17bbf4799bc826ba3b07934ac16770e0f0f9baa6ac9",
+      "text_sha256": "525519b8a989353835120aa51d84d30593fac422c7cb64b618c78ec42364b1a2"
+    },
+    {
+      "slug": "kofu",
+      "source_id": "kofu-collection-time",
+      "url": "https://www.city.kofu.yamanashi.jp/shushu/faq/kurashi/gomi/shushu/00337.html",
+      "retrieved_at": "2026-10-18T19:22:17+09:00",
+      "source_updated": "2025年3月27日",
+      "http_status": 200,
+      "raw_sha256": "d54557e8f8e56e13cd236fda20bf3b230d544cfde02648c717f2ecd7c35a6c5c",
+      "text_sha256": "6ada500efe385e497b867412ca2dd2aca9df1b5f9ac892e4f6dc64fffcc22f18"
+    },
+    {
+      "slug": "nara",
+      "source_id": "nara-daily",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/6254.html",
+      "retrieved_at": "2026-10-18T19:21:45+09:00",
+      "source_updated": "2026年7月3日",
+      "http_status": 200,
+      "raw_sha256": "68a231e17cd95002add2db9607bf9924551b4c33d6bf022c96f3d12a71192fbd",
+      "text_sha256": "897bae30eaf0d9839b2213b9b86832b3a52e05a606dec39dd50dd0b0809b6b84"
+    },
+    {
+      "slug": "nara",
+      "source_id": "nara-regular",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/4464.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": "2026年5月14日",
+      "http_status": 200,
+      "raw_sha256": "11da6a1829f605635ba053a7cc56f10d67484b6a9fcafdefb21bce749c134f12",
+      "text_sha256": "174deb3916baeb4770ee795576435627007b7e045be7e4eaa32b7643346d33db"
+    },
+    {
+      "slug": "nara",
+      "source_id": "nara-calendar",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/214555.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": "2026年8月24日",
+      "http_status": 200,
+      "raw_sha256": "bc924a42b2decfff998ef3e7eaa9c9a9e1ae4e0e86101d34048135973aa3b234",
+      "text_sha256": "829389c8f4c39b113297b40b106a4b7699133041acc7d4994f9097fad335cee6"
+    },
+    {
+      "slug": "nara",
+      "source_id": "nara-self",
+      "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/89928.html",
+      "retrieved_at": "2026-10-18T19:21:46+09:00",
+      "source_updated": "2026年6月2日",
+      "http_status": 200,
+      "raw_sha256": "6ba1996c9c0e473b9a31bd89ba64c77a1daf833c96583276d3834f74059bda6d",
+      "text_sha256": "51287201e9093ff5058c69f7b94e2e0e8284e2cd5ecb4d9ac557fd936fe99e1a"
+    }
+  ],
+  "source_hash_verification": "passed: raw and extracted text digests for all 38 saved sources",
+  "data_schema_validation": "passed: all 8 full-field city packets have zero validate_gomi.py errors",
+  "consumption": {
+    "reviewed_city_packets": 10,
+    "full_field_city_packets": 8,
+    "accepted_city_packets": 6,
+    "official_sources_reviewed": 38,
+    "official_original_bytes_total": 36362531,
+    "additional_http_requests": 0,
+    "additional_http_200": 0,
+    "search_api_tokens": null,
+    "model_tokens": null,
+    "credits": null,
+    "currency_cost": null,
+    "cost_note": "検索・取得・モデルの個別課金は計測できないため推測値を記載しない。",
+    "preview_created": false,
+    "human_reviewed": false
+  },
+  "limits": [
+    "独立AI原典レビューであり、人手確認・自治体窓口照会・公開承認ではない。",
+    "保留4市の制度不存在を断定しない。",
+    "松江市の日常支援は2025年の市長への手紙への個別回答が根拠であり、統一的な申請制度や確約を示すものではない。"
+  ]
+}

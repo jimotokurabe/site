@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+  <head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="description" content="引越し等で多量に出たごみを持ち込まれる場合は、正しく分別して中身が見えるようにして持ち込んでください。ダンボール等の箱に入れての持ち込みはお断りしています。
+持ち込み料金は燃やすごみ・燃やさないごみが" />
+    <meta name="keywords" content="環境事業課,環境部,担当課から探す" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="N5u30PovQfk1JO-Hl7ayJpegNE9W0ITRSUDSzGcDxM6evHcwIzR8ikV_N3rc3K9vxqlO1Gv1nNrj0hlRdoZdlQ" />
+    <script src="/assets/application_front_pc-89d7b9bee437b42293e4e7446c9fc7ad93a44848ab08f4562e496f17f971748b.js"></script>
+<script src="/assets/calendar/calendar-ja-da58e63df1424289368016b5077d61a523d45dd27a7d717739d0dbc63fa6a683.js"></script>
+<script>jQuery.migrateMute = true;</script>
+<script src="/assets/jquery-migrate-3.3.2.min-dbdd70f5d90839a3040d1cbe135a53ce8f7088aa7543656e7adf9591fa3782aa.js"></script>
+<link rel="stylesheet" href="/assets/application_front_pc-b8ee8440942ee51b073b0a58e23f84f088101516e28b7bf8a6f0485a03d689d7.css" media="all" />
+<link href="/stylesheets/style.css?-vT0n7r-1rZiSNICoQ5WFbx2zP96sPHDlZA4lp0qP1VT0zR_Y-XrxRITCv_qZEtc7X-2ZEeV6cg_AvMLjK-mDg" media="all" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://qa.city.nagaoka.niigata.jp/css/style.css?site_id=-1" media="all" />
+<link rel="stylesheet" href="https://qa.city.nagaoka.niigata.jp/css/style.css?site_id=1" media="all" />
+
+    
+    <title>ごみの出し方（持ち込み） | 長岡市よくある質問（Ｑ＆Ａ）</title>
+    
+
+      <script type="text/javascript">
+(function() {
+  function resetFaqCountFlag() {
+    window.__faq_countup_sent__ = false;
+  }
+
+  function countUpOnce() {
+    // すでに送信済みならスキップ
+    if (window.__faq_countup_sent__) return;
+    window.__faq_countup_sent__ = true;
+
+    fetch("/faq/countup?site_domain=default", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content'),
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      body: JSON.stringify({
+        faq_id: "1171",
+        category_id: "24"
+      })
+    });
+  }
+
+  countUpOnce();
+
+  $(function() {
+    // PC タグ検索 個別のモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_return_button").on("click", function() {
+      resetFaqCountFlag();
+    });
+    // PC タグ検索 全てのモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_close_button").on("click", function() {
+      resetFaqCountFlag();
+    });
+
+    // スマホ タグ検索
+    $('.faq_tag_modal_close_btn').on("click", function() {
+      resetFaqCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを閉じる場合
+    $(document).on("cbox_closed", function() {
+      resetFaqCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ詳細から戻る場合
+    $("#toggle_preview_faq").on("click", function() {
+      resetFaqCountFlag();
+    });
+  });
+})();
+</script>
+
+  <script type="text/javascript">
+(function() {
+  function resetCountFlag() {
+    window.__access_countup_sent__ = false;
+  }
+
+  function isBackForwardNavigation() {
+    if (performance.getEntriesByType) {
+      var entries = performance.getEntriesByType('navigation');
+      if (entries.length > 0) return entries[0].type === 'back_forward';
+    }
+    if (performance.navigation) {
+      return performance.navigation.type === 2;
+    }
+    return false;
+  }
+
+  function accessCountUpOnce() {
+    // ブラウザバックの場合はスキップ
+    if (isBackForwardNavigation()) return;
+    // すでに送信済みならスキップ
+    if (window.__access_countup_sent__) return;
+    window.__access_countup_sent__ = true;
+
+    fetch("/category/access_countup?site_domain=default", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content'),
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      body: JSON.stringify({
+        url: "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24\u0026site_domain=default",
+        base_method: "GET",
+        base_controller: "front/faq",
+        base_action: "show",
+        base_id: "1171",
+        base_category_id: "24",
+        base_faq_id: null,
+        base_keyword: null
+      })
+    });
+  }
+
+  accessCountUpOnce();
+
+  $(function() {
+    // PC タグ検索 個別のモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_return_button").on("click", function() {
+      resetCountFlag();
+    });
+    // PC タグ検索 全てのモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_close_button").on("click", function() {
+      resetCountFlag();
+    });
+
+    // スマホ タグ検索
+    $('.faq_tag_modal_close_btn').on("click", function() {
+      resetCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを開く場合
+    $(document).on("cbox_open", function() {
+      resetCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを閉じる場合
+    $(document).on("cbox_closed", function() {
+      resetCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ参照開始時
+    $(document).on("ajax:beforeSend", "a.preview_faq_show", function() {
+      resetCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ詳細から戻る場合
+    $("#toggle_preview_faq").on("click", function() {
+      resetCountFlag();
+    });
+  });
+})();
+</script>
+
+
+    <script type="text/javascript">
+(function() {
+  function resetCountFlag() {
+    window.__access_countup_sent__ = false;
+  }
+
+  function isBackForwardNavigation() {
+    if (performance.getEntriesByType) {
+      var entries = performance.getEntriesByType('navigation');
+      if (entries.length > 0) return entries[0].type === 'back_forward';
+    }
+    if (performance.navigation) {
+      return performance.navigation.type === 2;
+    }
+    return false;
+  }
+
+  function accessCountUpOnce() {
+    // ブラウザバックの場合はスキップ
+    if (isBackForwardNavigation()) return;
+    // すでに送信済みならスキップ
+    if (window.__access_countup_sent__) return;
+    window.__access_countup_sent__ = true;
+
+    fetch("/category/access_countup?site_domain=default", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content'),
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      body: JSON.stringify({
+        url: "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24\u0026site_domain=default",
+        base_method: "GET",
+        base_controller: "front/faq",
+        base_action: "show",
+        base_id: "1171",
+        base_category_id: "24",
+        base_faq_id: null,
+        base_keyword: null
+      })
+    });
+  }
+
+  accessCountUpOnce();
+
+  $(function() {
+    // PC タグ検索 個別のモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_return_button").on("click", function() {
+      resetCountFlag();
+    });
+    // PC タグ検索 全てのモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_close_button").on("click", function() {
+      resetCountFlag();
+    });
+
+    // スマホ タグ検索
+    $('.faq_tag_modal_close_btn').on("click", function() {
+      resetCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを開く場合
+    $(document).on("cbox_open", function() {
+      resetCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを閉じる場合
+    $(document).on("cbox_closed", function() {
+      resetCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ参照開始時
+    $(document).on("ajax:beforeSend", "a.preview_faq_show", function() {
+      resetCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ詳細から戻る場合
+    $("#toggle_preview_faq").on("click", function() {
+      resetCountFlag();
+    });
+  });
+})();
+</script>
+
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24&site_domain=default",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ごみの出し方（持ち込み）",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<div>引越し等で多量に出たごみを持ち込まれる場合は、正しく分別して中身が見えるようにして持ち込んでください。ダンボール等の箱に入れての持ち込みはお断りしています。<br>\n持ち込み料金は燃やすごみ・燃やさないごみが100kgまで300円、それ以上は10kg当たり30円の加算となります。指定袋に入っていれば無料です。<br>\n粗大ごみは粗大ごみ処理券シールを貼付してください。<br>\n持ち込みの時間、場所、ごみの種類は次のとおりです。<br>\n<br>\n＜時間＞<br>\n　月曜日～土曜日(祝日・振替休日及び年末年始を除く)　<br>\n　午前8：30～午後4：30<br>\n<br>\n＜場所＞<br>\n・寿クリーンセンター　<br>\n　〒940-0015長岡市寿3-6-1　電話0258-24-2856<br>\n　(燃やすごみ)　<br>\n　<br>\n・中之島信条クリーンセンター<br>\n　〒954-0214長岡市中条新田1080-2　電話0256-97-7260<br>\n　(燃やすごみ・燃やさないごみ・粗大ごみ)　　<br>\n<br>\n※持ち込まれる場合は前日までに各クリーンセンターへ電話をお願いします。<br>\n※栃尾クリーンセンターは平成26年3月31日をもって受付終了しました。</div>\n<div>※鳥越クリーンセンターは令和6年3月31日をもって受付終了しました。</div>\n<div> </div>\n<div>参考ページ<br>\n<a>処理施設への持ち込みについて</a></div>"
+      },
+      "datePublished": "2024-04-01 00:00:00 +0900"
+    }
+  ],
+  "breadcrumb": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "目的から探す",
+        "item": "https://qa.city.nagaoka.niigata.jp/category/show/2?site_domain=default"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "担当課から探す",
+        "item": "https://qa.city.nagaoka.niigata.jp/category/show/9?site_domain=default"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "環境部",
+        "item": "https://qa.city.nagaoka.niigata.jp/category/show/23?site_domain=default"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "環境事業課",
+        "item": "https://qa.city.nagaoka.niigata.jp/category/show/24?site_domain=default"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "ごみの出し方（持ち込み）",
+        "item": "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24&site_domain=default"
+      }
+    ]
+  }
+}</script>
+  </head>
+  <body class="lang_size_medium" id="faq_show">
+    
+    <a name="top"></a>
+    <div id="okw_wrapper">
+<header>
+	<div class="header_contents">
+		<h1>
+			<a href="http://qa.city.nagaoka.niigata.jp/">
+				<img src="/usr/file/attachment/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%AE%E3%83%90%E3%83%8A%E3%83%BC.jpg
+" width="auto" height="auto" alt="よくある質問（Q&A）トップ">
+				<div class="header_contents_text">
+					
+				</div>
+			</a>
+		</h1>
+	</div>
+</header>
+      <div id="okw_contents">
+        <div id="okw_contents_base">
+          <div id="okw_contents_inner" class="clearfix">
+            <div id="okw_sub_header" class="clearfix">
+              <div id="login_user_name"></div>
+              <ul id="fontCol" class="flo_r">
+                  <li class="okw_txt">文字サイズ変更</li>
+  <li class="fntSml fntSml_ja">
+    <a update_flash_color="#d4e0e8" data-remote="true" href="/front/font_size?font_type=small&amp;site_domain=default">S</a>
+  </li>
+  <li class="fntMidOn fntMidOn_ja">
+    <a update_flash_color="#d4e0e8" data-remote="true" href="/front/font_size?font_type=middle&amp;site_domain=default">M</a>
+  </li>
+  <li class="fntBig fntBig_ja">
+    <a update_flash_color="#d4e0e8" data-remote="true" href="/front/font_size?font_type=large&amp;site_domain=default">L</a>
+  </li>
+
+              </ul>
+              <ul class="okw_bread">
+  <li class="okw_bread_list"><a href="/category/show/2?site_domain=default">目的から探す</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/9?site_domain=default">担当課から探す</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/23?site_domain=default">環境部</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/24?site_domain=default">環境事業課</a><span>&nbsp;&gt;&nbsp;</span><span>ごみの出し方（持ち込み）</span></li>
+</ul>
+            
+            </div>
+            
+<div id="okw_side" class="flo_l"><div class="colArea clearfix"><div class="oneCol okw_parts_category_tree"><div id="category_tree" class="category_tree">
+  <div class="ttl_col"><h2 class="ttl_bg"><span class="icocate_tree">目的から探す</span></h2></div>
+  
+  
+  
+  <ul id="tree_2" class="category_level_0">
+    
+  
+  <li id="tree_icon_3" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/3?node=1&amp;site_domain=default&amp;tag_id=tree_icon_3" js_effect_time="500" self_tag_id="tree_icon_3" tree_open="true" href="/category/show/3?site_domain=default">/category/show/3?site_domain=default</a><a href="/category/show/3?site_domain=default">行政カテゴリー</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_12" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/12?node=1&amp;site_domain=default&amp;tag_id=tree_icon_12" js_effect_time="500" self_tag_id="tree_icon_12" tree_open="true" href="/category/show/12?site_domain=default">/category/show/12?site_domain=default</a><a href="/category/show/12?site_domain=default">くらし・人生</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_18" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/18?node=1&amp;site_domain=default&amp;tag_id=tree_icon_18" js_effect_time="500" self_tag_id="tree_icon_18" tree_open="true" href="/category/show/18?site_domain=default">/category/show/18?site_domain=default</a><a href="/category/show/18?site_domain=default">観光・イベント</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_9" class="category_open">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="#" js_effect_time="500" self_tag_id="tree_icon_9" tree_open="true" href="/category/show/9?site_domain=default">/category/show/9?site_domain=default</a><a href="/category/show/9?site_domain=default">担当課から探す</a>
+    </div>
+    
+  <ul id="tree_9" class="category_level_1">
+    
+  
+  <li id="tree_icon_100" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/100?node=2&amp;site_domain=default&amp;tag_id=tree_icon_100" js_effect_time="500" self_tag_id="tree_icon_100" tree_open="true" href="/category/show/100?site_domain=default">/category/show/100?site_domain=default</a><a href="/category/show/100?site_domain=default">地方創生推進部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_541" >
+    <div class="category_none cate_pull_inert_bg">
+      <a href="/category/show/541?site_domain=default">DX推進部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_10" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/10?node=2&amp;site_domain=default&amp;tag_id=tree_icon_10" js_effect_time="500" self_tag_id="tree_icon_10" tree_open="true" href="/category/show/10?site_domain=default">/category/show/10?site_domain=default</a><a href="/category/show/10?site_domain=default">総務部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_72" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/72?node=2&amp;site_domain=default&amp;tag_id=tree_icon_72" js_effect_time="500" self_tag_id="tree_icon_72" tree_open="true" href="/category/show/72?site_domain=default">/category/show/72?site_domain=default</a><a href="/category/show/72?site_domain=default">財務部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_553" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/553?node=2&amp;site_domain=default&amp;tag_id=tree_icon_553" js_effect_time="500" self_tag_id="tree_icon_553" tree_open="true" href="/category/show/553?site_domain=default">/category/show/553?site_domain=default</a><a href="/category/show/553?site_domain=default">財産管理部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_149" >
+    <div class="category_none cate_pull_inert_bg">
+      <a href="/category/show/149?site_domain=default">危機管理防災本部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_96" >
+    <div class="category_none cate_pull_inert_bg">
+      <a href="/category/show/96?site_domain=default">原子力安全対策室</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_104" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/104?node=2&amp;site_domain=default&amp;tag_id=tree_icon_104" js_effect_time="500" self_tag_id="tree_icon_104" tree_open="true" href="/category/show/104?site_domain=default">/category/show/104?site_domain=default</a><a href="/category/show/104?site_domain=default">地域政策部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_26" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/26?node=2&amp;site_domain=default&amp;tag_id=tree_icon_26" js_effect_time="500" self_tag_id="tree_icon_26" tree_open="true" href="/category/show/26?site_domain=default">/category/show/26?site_domain=default</a><a href="/category/show/26?site_domain=default">市民協働推進部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_14" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/14?node=2&amp;site_domain=default&amp;tag_id=tree_icon_14" js_effect_time="500" self_tag_id="tree_icon_14" tree_open="true" href="/category/show/14?site_domain=default">/category/show/14?site_domain=default</a><a href="/category/show/14?site_domain=default">福祉保健部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_23" class="category_open">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="#" js_effect_time="500" self_tag_id="tree_icon_23" tree_open="true" href="/category/show/23?site_domain=default">/category/show/23?site_domain=default</a><a href="/category/show/23?site_domain=default">環境部</a>
+    </div>
+    
+  <ul id="tree_23" class="category_level_2">
+    
+  
+  <li id="tree_icon_178" >
+    <div class="category_none cate_pull_inert_bg">
+      <a href="/category/show/178?site_domain=default">環境政策課</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_24" >
+    <div class="category_none category_select cate_pull_inert_bg">
+      <a href="/category/show/24?site_domain=default">環境事業課</a>
+    </div>
+    
+  </li>
+
+  </ul>
+
+
+
+
+  </li>
+
+  
+  <li id="tree_icon_36" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/36?node=2&amp;site_domain=default&amp;tag_id=tree_icon_36" js_effect_time="500" self_tag_id="tree_icon_36" tree_open="true" href="/category/show/36?site_domain=default">/category/show/36?site_domain=default</a><a href="/category/show/36?site_domain=default">商工部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_20" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/20?node=2&amp;site_domain=default&amp;tag_id=tree_icon_20" js_effect_time="500" self_tag_id="tree_icon_20" tree_open="true" href="/category/show/20?site_domain=default">/category/show/20?site_domain=default</a><a href="/category/show/20?site_domain=default">観光・交流部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_76" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/76?node=2&amp;site_domain=default&amp;tag_id=tree_icon_76" js_effect_time="500" self_tag_id="tree_icon_76" tree_open="true" href="/category/show/76?site_domain=default">/category/show/76?site_domain=default</a><a href="/category/show/76?site_domain=default">農林水産部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_182" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/182?node=2&amp;site_domain=default&amp;tag_id=tree_icon_182" js_effect_time="500" self_tag_id="tree_icon_182" tree_open="true" href="/category/show/182?site_domain=default">/category/show/182?site_domain=default</a><a href="/category/show/182?site_domain=default">都市整備部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_184" >
+    <div class="category_none cate_pull_inert_bg">
+      <a href="/category/show/184?site_domain=default">中心市街地整備室</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_28" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/28?node=2&amp;site_domain=default&amp;tag_id=tree_icon_28" js_effect_time="500" self_tag_id="tree_icon_28" tree_open="true" href="/category/show/28?site_domain=default">/category/show/28?site_domain=default</a><a href="/category/show/28?site_domain=default">土木部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_107" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/107?node=2&amp;site_domain=default&amp;tag_id=tree_icon_107" js_effect_time="500" self_tag_id="tree_icon_107" tree_open="true" href="/category/show/107?site_domain=default">/category/show/107?site_domain=default</a><a href="/category/show/107?site_domain=default">中之島支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_142" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/142?node=2&amp;site_domain=default&amp;tag_id=tree_icon_142" js_effect_time="500" self_tag_id="tree_icon_142" tree_open="true" href="/category/show/142?site_domain=default">/category/show/142?site_domain=default</a><a href="/category/show/142?site_domain=default">越路支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_53" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/53?node=2&amp;site_domain=default&amp;tag_id=tree_icon_53" js_effect_time="500" self_tag_id="tree_icon_53" tree_open="true" href="/category/show/53?site_domain=default">/category/show/53?site_domain=default</a><a href="/category/show/53?site_domain=default">三島支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_98" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/98?node=2&amp;site_domain=default&amp;tag_id=tree_icon_98" js_effect_time="500" self_tag_id="tree_icon_98" tree_open="true" href="/category/show/98?site_domain=default">/category/show/98?site_domain=default</a><a href="/category/show/98?site_domain=default">山古志支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_74" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/74?node=2&amp;site_domain=default&amp;tag_id=tree_icon_74" js_effect_time="500" self_tag_id="tree_icon_74" tree_open="true" href="/category/show/74?site_domain=default">/category/show/74?site_domain=default</a><a href="/category/show/74?site_domain=default">小国支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_139" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/139?node=2&amp;site_domain=default&amp;tag_id=tree_icon_139" js_effect_time="500" self_tag_id="tree_icon_139" tree_open="true" href="/category/show/139?site_domain=default">/category/show/139?site_domain=default</a><a href="/category/show/139?site_domain=default">和島支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_63" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/63?node=2&amp;site_domain=default&amp;tag_id=tree_icon_63" js_effect_time="500" self_tag_id="tree_icon_63" tree_open="true" href="/category/show/63?site_domain=default">/category/show/63?site_domain=default</a><a href="/category/show/63?site_domain=default">寺泊支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_80" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/80?node=2&amp;site_domain=default&amp;tag_id=tree_icon_80" js_effect_time="500" self_tag_id="tree_icon_80" tree_open="true" href="/category/show/80?site_domain=default">/category/show/80?site_domain=default</a><a href="/category/show/80?site_domain=default">栃尾支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_136" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/136?node=2&amp;site_domain=default&amp;tag_id=tree_icon_136" js_effect_time="500" self_tag_id="tree_icon_136" tree_open="true" href="/category/show/136?site_domain=default">/category/show/136?site_domain=default</a><a href="/category/show/136?site_domain=default">与板支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_133" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/133?node=2&amp;site_domain=default&amp;tag_id=tree_icon_133" js_effect_time="500" self_tag_id="tree_icon_133" tree_open="true" href="/category/show/133?site_domain=default">/category/show/133?site_domain=default</a><a href="/category/show/133?site_domain=default">川口支所</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_210" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/210?node=2&amp;site_domain=default&amp;tag_id=tree_icon_210" js_effect_time="500" self_tag_id="tree_icon_210" tree_open="true" href="/category/show/210?site_domain=default">/category/show/210?site_domain=default</a><a href="/category/show/210?site_domain=default">会計課</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_147" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/147?node=2&amp;site_domain=default&amp;tag_id=tree_icon_147" js_effect_time="500" self_tag_id="tree_icon_147" tree_open="true" href="/category/show/147?site_domain=default">/category/show/147?site_domain=default</a><a href="/category/show/147?site_domain=default">水道局</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_85" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/85?node=2&amp;site_domain=default&amp;tag_id=tree_icon_85" js_effect_time="500" self_tag_id="tree_icon_85" tree_open="true" href="/category/show/85?site_domain=default">/category/show/85?site_domain=default</a><a href="/category/show/85?site_domain=default">消防本部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_39" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/39?node=2&amp;site_domain=default&amp;tag_id=tree_icon_39" js_effect_time="500" self_tag_id="tree_icon_39" tree_open="true" href="/category/show/39?site_domain=default">/category/show/39?site_domain=default</a><a href="/category/show/39?site_domain=default">教育委員会 教育部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_51" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/51?node=2&amp;site_domain=default&amp;tag_id=tree_icon_51" js_effect_time="500" self_tag_id="tree_icon_51" tree_open="true" href="/category/show/51?site_domain=default">/category/show/51?site_domain=default</a><a href="/category/show/51?site_domain=default">教育委員会 子ども未来部</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_111" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/111?node=2&amp;site_domain=default&amp;tag_id=tree_icon_111" js_effect_time="500" self_tag_id="tree_icon_111" tree_open="true" href="/category/show/111?site_domain=default">/category/show/111?site_domain=default</a><a href="/category/show/111?site_domain=default">選挙管理委員会</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_220" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/220?node=2&amp;site_domain=default&amp;tag_id=tree_icon_220" js_effect_time="500" self_tag_id="tree_icon_220" tree_open="true" href="/category/show/220?site_domain=default">/category/show/220?site_domain=default</a><a href="/category/show/220?site_domain=default">監査委員</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_222" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/222?node=2&amp;site_domain=default&amp;tag_id=tree_icon_222" js_effect_time="500" self_tag_id="tree_icon_222" tree_open="true" href="/category/show/222?site_domain=default">/category/show/222?site_domain=default</a><a href="/category/show/222?site_domain=default">農業委員会</a>
+    </div>
+    
+  </li>
+
+  
+  <li id="tree_icon_157" class="category_close">
+    <div class="category_on cate_pull_inert_bg">
+      <a class="pm_icon flo_l" child_url="/category/tree_open/157?node=2&amp;site_domain=default&amp;tag_id=tree_icon_157" js_effect_time="500" self_tag_id="tree_icon_157" tree_open="true" href="/category/show/157?site_domain=default">/category/show/157?site_domain=default</a><a href="/category/show/157?site_domain=default">議会事務局</a>
+    </div>
+    
+  </li>
+
+  </ul>
+
+
+
+
+  </li>
+
+  </ul>
+
+
+
+
+
+
+
+
+
+</div>
+</div><div class="oneCol okw_parts_usr_5"><br>
+<a href="https://www.city.nagaoka.niigata.jp/"><img src="https://qa.city.nagaoka.niigata.jp/usr/file/attachment/%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%8B%E3%82%89%E2%91%A3.gif?t=raw" alt="長岡市ホームページ"></a><br>
+<br>
+<b>長岡市役所総合窓口<br>
+（アオーレ長岡東棟１階）</b><br>
+平日：午前８時30分～午後５時15分<br>
+土曜日・祝日：午前９時～午後５時<br>
+休業日：日曜日・年末年始<br>
+<font color="#DD0000">※土曜日・祝日は一部窓口業務のみ</font><br>
+<font color="#DD0000">※日曜日と祝日が重なる場合は</font><br>
+<font color="#DD0000">　お休みとなります。</font><br>
+<br>
+<div style="border:4px double #DD0000; background-color:#FFF0F0; padding:8px; display:inline-block;">
+<font color="#DD0000">令和８年12月１日（火）から</font><br>
+<font color="#DD0000">開庁時間及び開庁日が変更と</font><br>
+<font color="#DD0000">なります。</font><br>
+<br>
+<font color="#DD0000">平日・土曜日：</font><br>
+<font color="#DD0000"><b><u>午前９時～午後４時30分</u></b></font><br>
+<font color="#DD0000">休業日：</font><br>
+<font color="#DD0000"><b><u>日曜日・祝日・年末年始</u></b></font><br>
+</div>
+<br>
+<br>
+<b>上記以外の担当部署</b><br>
+平日：午前８時30分～午後５時15分<br>
+※部署や施設によっては、開庁日時<br>
+　等が異なる場合があります。<br>
+<br>
+電話：0258-35-1122（代表）<br>
+FAX：0258-39-2275（代表）<br></div></div></div><div id="okw_center" class="okw_side flo_r"><div class="colArea clearfix"><div class="oneCol okw_main_faq">    <!-- FAQ_CONTENTS_AREA -->
+    <div class="faq_qstInf_col clearfix">
+    <ul class="siteLink">
+        <li class="preLink">
+            <a title="戻る" href="/category/show/24?site_domain=default">戻る</a>
+        </li>
+    </ul>
+  <ul class="faq_dateNo flo_r">
+    <li class="faq_no">No&nbsp;:&nbsp;1171</li>
+      <li class="faq_date">公開日時&nbsp;:&nbsp;2024/04/01 00:00</li>
+        <li class="faq_print">
+          <span class="icoPrint">
+              <a target="_blank" href="/print/faq/1171?category_id=24&amp;site_domain=default">印刷</a>
+          </span>
+        </li>
+  </ul>
+</div>
+<span class="mark_area"></span>
+
+
+<h2 class="faq_qstCont_ttl"><span class="icoQ">ごみの出し方（持ち込み）</span></h2>
+<div class="faq_qstCont_col">
+    <div id="faq_question_contents" class="faq_qstCont_txt clearfix">
+      <div>引越し等で多量に出た家庭ごみを直接クリーンセンターに持ち込みたいのですが、どうしたらよいですか。</div>
+    </div>
+  <dl class="faq_cate_col clearfix">
+    <dt>カテゴリー&nbsp;:&nbsp;</dt>
+    <dd>
+      <ul>
+          <li class="clearfix">
+            <a href="/category/show/2?site_domain=default">目的から探す</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/9?site_domain=default">担当課から探す</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/23?site_domain=default">環境部</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/24?site_domain=default">環境事業課</a>
+          </li>
+          <li class="clearfix">
+            <a href="/category/show/2?site_domain=default">目的から探す</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/3?site_domain=default">行政カテゴリー</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/22?site_domain=default">ごみ・環境・犬・猫</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/484?site_domain=default">ごみ</a>
+          </li>
+          <li class="clearfix">
+            <a href="/category/show/2?site_domain=default">目的から探す</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/3?site_domain=default">行政カテゴリー</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/22?site_domain=default">ごみ・環境・犬・猫</a><span>&nbsp;&gt;&nbsp;</span><a href="/category/show/485?site_domain=default">環境</a>
+          </li>
+      </ul>
+    </dd>
+  </dl>
+</div>
+<h2 class="faq_ans_bor faq_ans_ttl">
+    <span class="icoA">回答</span>
+</h2>
+<div class="faq_ans_col">
+  <div id="faq_answer_contents" class="faq_ansCont_txt clearfix">
+    <div>引越し等で多量に出たごみを持ち込まれる場合は、正しく分別して中身が見えるようにして持ち込んでください。ダンボール等の箱に入れての持ち込みはお断りしています。<br/>
+持ち込み料金は燃やすごみ・燃やさないごみが100kgまで300円、それ以上は10kg当たり30円の加算となります。指定袋に入っていれば無料です。<br/>
+粗大ごみは粗大ごみ処理券シールを貼付してください。<br/>
+持ち込みの時間、場所、ごみの種類は次のとおりです。<br/>
+<br/>
+＜時間＞<br/>
+　月曜日～土曜日(祝日・振替休日及び年末年始を除く)　<br/>
+　午前8：30～午後4：30<br/>
+<br/>
+＜場所＞<br/>
+・寿クリーンセンター　<br/>
+　〒940-0015長岡市寿3-6-1　電話0258-24-2856<br/>
+　(燃やすごみ)　<br/>
+　<br/>
+・中之島信条クリーンセンター<br/>
+　〒954-0214長岡市中条新田1080-2　電話0256-97-7260<br/>
+　(燃やすごみ・燃やさないごみ・粗大ごみ)　　<br/>
+<br/>
+※持ち込まれる場合は前日までに各クリーンセンターへ電話をお願いします。<br/>
+※栃尾クリーンセンターは平成26年3月31日をもって受付終了しました。</div>
+<div>※鳥越クリーンセンターは令和6年3月31日をもって受付終了しました。</div>
+<div>&nbsp;</div>
+<div class="sankou">参考ページ<br/>
+<a href="https://www.city.nagaoka.niigata.jp/kurashi/cate08/h2504hozon.html">処理施設への持ち込みについて</a></div>
+  </div>
+    <div class="faq_addition_col">
+      <dl class="faq_addition_list faq_attribute6 clearfix not_html">
+        <dt>このページの作成・発信部署</dt>
+          <dd>環境事業課</dd>
+      </dl>
+      <dl class="faq_addition_list faq_attribute7 clearfix not_html">
+        <dt>電話番号</dt>
+          <dd>0258-24-2837</dd>
+      </dl>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+(function() {
+  function resetFaqCountFlag() {
+    window.__faq_countup_sent__ = false;
+  }
+
+  function countUpOnce() {
+    // すでに送信済みならスキップ
+    if (window.__faq_countup_sent__) return;
+    window.__faq_countup_sent__ = true;
+
+    fetch("/faq/countup?site_domain=default", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content'),
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      body: JSON.stringify({
+        faq_id: "1171",
+        category_id: "24"
+      })
+    });
+  }
+
+  countUpOnce();
+
+  $(function() {
+    // PC タグ検索 個別のモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_return_button").on("click", function() {
+      resetFaqCountFlag();
+    });
+    // PC タグ検索 全てのモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_close_button").on("click", function() {
+      resetFaqCountFlag();
+    });
+
+    // スマホ タグ検索
+    $('.faq_tag_modal_close_btn').on("click", function() {
+      resetFaqCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを閉じる場合
+    $(document).on("cbox_closed", function() {
+      resetFaqCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ詳細から戻る場合
+    $("#toggle_preview_faq").on("click", function() {
+      resetFaqCountFlag();
+    });
+  });
+})();
+</script>
+
+<script type="text/javascript">
+(function() {
+  function resetCountFlag() {
+    window.__access_countup_sent__ = false;
+  }
+
+  function isBackForwardNavigation() {
+    if (performance.getEntriesByType) {
+      var entries = performance.getEntriesByType('navigation');
+      if (entries.length > 0) return entries[0].type === 'back_forward';
+    }
+    if (performance.navigation) {
+      return performance.navigation.type === 2;
+    }
+    return false;
+  }
+
+  function accessCountUpOnce() {
+    // ブラウザバックの場合はスキップ
+    if (isBackForwardNavigation()) return;
+    // すでに送信済みならスキップ
+    if (window.__access_countup_sent__) return;
+    window.__access_countup_sent__ = true;
+
+    fetch("/category/access_countup?site_domain=default", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content'),
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      body: JSON.stringify({
+        url: "https://qa.city.nagaoka.niigata.jp/faq/show/1171?category_id=24\u0026site_domain=default",
+        base_method: "GET",
+        base_controller: "front/faq",
+        base_action: "show",
+        base_id: "1171",
+        base_category_id: "24",
+        base_faq_id: null,
+        base_keyword: null
+      })
+    });
+  }
+
+  accessCountUpOnce();
+
+  $(function() {
+    // PC タグ検索 個別のモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_return_button").on("click", function() {
+      resetCountFlag();
+    });
+    // PC タグ検索 全てのモーダルを閉じる場合
+    $("#faq_show .faq_tag_search_close_button").on("click", function() {
+      resetCountFlag();
+    });
+
+    // スマホ タグ検索
+    $('.faq_tag_modal_close_btn').on("click", function() {
+      resetCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを開く場合
+    $(document).on("cbox_open", function() {
+      resetCountFlag();
+    });
+
+    // PC スーパーアシスタント Colorboxモーダルを閉じる場合
+    $(document).on("cbox_closed", function() {
+      resetCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ参照開始時
+    $(document).on("ajax:beforeSend", "a.preview_faq_show", function() {
+      resetCountFlag();
+    });
+
+    // スマホ スーパーアシスタント FAQ詳細から戻る場合
+    $("#toggle_preview_faq").on("click", function() {
+      resetCountFlag();
+    });
+  });
+})();
+</script>
+
+
+    <!-- /FAQ_CONTENTS_AREA -->
+
+
+</div></div><div class="colArea clearfix"><div class="oneCol okw_parts_faq_relations">  <span class="spinner"></span>
+
+  <script type="text/javascript">
+      $.ajax({
+          type: 'GET',
+          url: '/custom_part/faq_relations?category_id=24&id=1171&site_domain=default&split=false',
+          dataType: 'html',
+          success: function(data) {
+              $('.okw_parts_faq_relations').html(data)
+          }
+      });
+  </script>
+</div></div><p class="topLink"><a href="#top">TOPへ</a></p></div>
+
+          </div>
+        </div>
+      </div>
+<div class="footer">
+
+    <div class="copyright">&copy; 長岡市</div>
+</div>      <div id="okw_footer_default" class="clearfix">
+        <p id="okw_logo_footer" class="flo_r logo_footer">
+          <a href="https://aisaas.pkshatech.com/faq/" target="_blank">PKSHA FAQ logo</a>
+        </p>
+      </div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">  
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4XM7F42');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-63FJSV0R49"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63FJSV0R49');
+</script>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+<meta name="description" content="長岡市ウェブサイト" />
+<meta name="keywords" content="新潟県,新潟,長岡市,長岡,Nagaoka,長岡市役所" />
+<meta name="ROBOTS" content="index,follow">
+<meta property="og:image" content="../../images/og_img.jpg" />
+<title>ふれあい収集制度</title>
+<link rel="shortcut icon" href="../../images/favicon.ico" />
+<link rel="stylesheet" href="../../css/style.css?ver=2.7" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="../../css/smart.css?ver=5.17" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="../../css/asbg.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="../../_top/_nachan/nachan.css" type="text/css" />
+
+<script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../../js/common-j.js"></script>
+<script type="text/javascript" src="../../js/fontsize.js?ver=11.27"></script>
+<script type="text/javascript" src="../../js/accordion.js?ver=11.27"></script>
+<script type="text/javascript" src="../../js/jquery-ui-1.11.4.min.js"></script>
+
+<script src="https://cdn-eas.readspeaker.com/script/13410/webReader/webReader.js?pids=wr&amp;forceAdapter=ioshtml5&amp;disable=translation,lookup" type="text/javascript" id="rs_req_Init"></script>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4XM7F42" 
+height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- WCVINDEX!../../index_menu.html#new1 -->
+<!-- WCVINDEX!../../other/news.html#new2 -->
+<!-- WCVINDEX!../index.html#new3 -->
+<!-- WCVINDEX!../../rss/feed.rss#rss1 -->
+<!-- WCVINDEX!../../rss/feed.rss#rss2 -->
+
+<div id="wrapper">
+
+
+<!-- PCヘッダーエリア -->
+<div id="headerbox" class="hidden_sp">
+<!-- WCVPASTE!html!../../_parts/parts-header1.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+<div id="header">
+	<h1 class="logo"><!-- WCVIMAGE --><a href="../../index.html"><img src="../../images/nagaoka_city2.gif" width="200" height="52" alt="長岡市公式サイト" /></a></h1>
+	<div id="head_r">
+		<div class="subnavi2"><!--
+--><a href="../../other/use.html" class="opticon opticon001 mobtn"><img src="../../images/optimization/pc_1000.png" alt="このサイトの使い方" /></a><!--
+--><a href="../../other/rss.html" class="opticon opticon002 mobtn"><img src="../../images/optimization/pc_1000.png" alt="RSSについて" /></a><!--
+--><a href="../../other/sitemap.html" class="opticon opticon003 mobtn"><img src="../../images/optimization/pc_1000.png" alt="サイトマップ" /></a><!--
+--><label for="langdisplay" class="opticon opticon014"><img src="../../images/optimization/pc_1000.png" alt="Foreign language" /></label><!--
+--><label for="asalldisplay" class="opticon opticon013"><img src="../../images/optimization/pc_1000.png?ver=11.27" alt="音声・閲覧補助" /></label></div>
+		<div class="clear"></div>
+
+		<div class="itembox">
+			<div class="qabox">
+				<a href="http://qa.city.nagaoka.niigata.jp/" target="_blank" class="opticon opticon005 mobtn"><img src="../../images/optimization/pc_1000.png" alt="よくある質問Ｑ＆Ａ" /></a>
+			</div>
+			<div class="searchbox3">
+				<a href="../../other/search.html" class="opticon opticon006 mobtn"><img src="../../images/optimization/pc_1000.png" alt="検索のヒント" /></a>
+			</div>
+			<div class="searchbox4">
+				<div class="l-search">
+				<form id="cse-search-box" action="https://www.city.nagaoka.niigata.jp/other/result.html">
+					<input type="text" name="q" class="l-search__text" placeholder="キーワードを入力して探す" value="" />
+					<button class="l-search__btn"><img src="../../images/btn-gsearch.png" alt="検索"></button>
+				</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<div id="langcontainer">
+	<input type="checkbox" id="langdisplay">
+	<div id="langbox">
+		<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jaen">English</a>
+		<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jazhb">繁体中文</a>
+		<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jazh">簡体中文</a>
+		<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jako">Korean</a>
+		<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/japt">Portugues</a>
+		<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/javi">Tiếng Việt</a>
+		<a href="https://translate.google.com/translate?sl=ja&tl=fr&u=https://www.city.nagaoka.niigata.jp/">Français</a>
+	</div>
+</div>
+
+<div id="ascontainer">
+	<input type="checkbox" id="asalldisplay" name="asalldisplay" value="1">
+	<div id="asallbox">
+		<div class="asbgbtn">
+			<span>背景色</span>
+			<input type="button" name="asbgbtnstandard" data-bgcolor="standard" value="標準">
+			<input type="button" name="asbgbtnblack" data-bgcolor="black" value="黒">
+			<input type="button" name="asbgbtnblue" data-bgcolor="blue" value="青">
+			<input type="button" name="asbgbtnyellow" data-bgcolor="yellow" value="黄">
+		</div>
+		<div class="asfsbtn">
+			<span>文字サイズ</span>
+			<input type="button" name="asfsbtnplus" value="拡大">
+			<input type="button" name="asfsbtnzero" value="標準">
+		</div>
+		<div class="asrsbtn">
+			<span>音声読み上げ</span>
+			<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve rswrapped">
+			<a href="https://app-eas.readspeaker.com/cgi-bin/rsent?customerid=13410&amp;lang=ja_jp&amp;readid=contentstop,contents,onecontents&amp;url=" title="音声で読み上げる" rel="nofollow" class="rsbtn_play" accesskey="L">
+				<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>読み上げる</span></span></span>
+				<span class="rsbtn_right rsimg rsplay rspart"></span>
+			</a>
+			</div>
+		</div>
+		<div class="asclosebtn"><label for="asalldisplay">閉じる</label></div>
+	</div>
+</div>
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+
+
+<!-- グローバルナビゲーション -->
+<div id="gnavi">
+<!-- WCVPASTE!html!../../_parts/parts-menu3.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+	<ul id="0"><!--
+		--><li kbn="menu"><!-- WCVIMAGE --><a href="../../index_menu.html"><img src="../../images/menu/menu001.jpg" width="152" height="55" alt="総合メニュー" class="btn" /></a></li><!--
+		--><li kbn="kurashi"><!-- WCVIMAGE --><a href="../index.html"><img src="../../images/menu/menu002_on.jpg" width="156" height="55" alt="くらし・手続き" /></a></li><!--
+		--><li kbn="fukushi"><!-- WCVIMAGE --><a href="../../fukushi/index.html"><img src="../../images/menu/menu003.jpg" width="152" height="55" alt="健康・福祉" class="btn" /></a></li><!--
+		--><li kbn="kosodate"><!-- WCVIMAGE --><a href="../../kosodate/index.html"><img src="../../images/menu/menu004.jpg" width="152" height="55" alt="子育て・教育" class="btn" /></a></li><!--
+		--><li kbn="sangyou"><!-- WCVIMAGE --><a href="../../sangyou/index.html"><img src="../../images/menu/menu005.jpg" width="152" height="55" alt="産業・ビジネス" class="btn" /></a></li><!--
+		--><li kbn="shisei"><!-- WCVIMAGE --><a href="../../shisei/index.html"><img src="../../images/menu/menu006.jpg" width="156" height="55" alt="市政" class="btn" /></a></li><!--
+	--></ul>
+	<ol id="gnavien" style="display:none;"><!--
+		--><li><a href="../../index_menu.html"><img src="../../images/menu/menu001en.jpg" alt="総合メニュー" /></a></li><!--
+		--><li><a href="../index.html"><img src="../../images/menu/menu002en.jpg" alt="くらし・手続き" /></a></li><!--
+		--><li><a href="../../fukushi/index.html"><img src="../../images/menu/menu003en.jpg" alt="健康・福祉" /></a></li><!--
+		--><li><a href="../../kosodate/index.html"><img src="../../images/menu/menu004en.jpg" alt="子育て・教育" /></a></li><!--
+		--><li><a href="../../sangyou/index.html"><img src="../../images/menu/menu005en.jpg" alt="産業・ビジネス" /></a></li><!--
+		--><li><a href="../../shisei/index.html"><img src="../../images/menu/menu006en.jpg" alt="市政" /></a></li><!--
+	--></ol>
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+</div>
+<!-- //グローバルナビゲーション -->
+</div>
+<!-- //PCヘッダーエリア -->
+
+
+<!-- SPヘッダーエリア -->
+<div id="spheaderbox" class="hidden_pc">
+<!-- WCVPASTE!html!../../_parts/parts-header2.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+<div id="spheader">
+
+	<div>
+		<h1 class="logo"><!-- WCVIMAGE --><a href="../../index.html"><img src="../../images/sp/sp_nagaokacity2.png" alt="長岡市公式サイト" /></a></h1>
+		<div id="menu_btn">
+			<!-- WCVIMAGE --><img src="../../images/sp/sp_supportbtn.png" alt="音声・閲覧補助" id="sp_menu_support" />
+			<!-- WCVIMAGE --><img src="../../images/sp/sp_menubtn.png?ver=11.27" alt="menu" id="sp_menu" />
+		</div>
+		<br class="clear" />
+	</div>
+
+	<div id="spmenu_support">
+		<div id="spgnavi_support">
+			<div class="asbgbtn">
+				<span>背景色</span>
+				<input type="button" name="asbgbtnstandard" data-bgcolor="standard" value="標準">
+				<input type="button" name="asbgbtnblack" data-bgcolor="black" value="黒">
+				<input type="button" name="asbgbtnblue" data-bgcolor="blue" value="青">
+				<input type="button" name="asbgbtnyellow" data-bgcolor="yellow" value="黄">
+			</div>
+			<div class="asfsbtn">
+				<span>文字サイズ</span>
+				<input type="button" name="asfsbtnplus" value="拡大">
+				<input type="button" name="asfsbtnzero" value="標準">
+			</div>
+			<div class="asrsbtn">
+				<span>音声読み上げ</span>
+				<div id="readspeaker_button2" class="rs_skip rsbtn rs_preserve rswrapped">
+				<a href="https://app-eas.readspeaker.com/cgi-bin/rsent?customerid=13410&amp;lang=ja_jp&amp;readid=contentstop,contents,onecontents&amp;url=" title="音声で読み上げる" rel="nofollow" class="rsbtn_play" accesskey="L2">
+					<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>読み上げる</span></span></span>
+					<span class="rsbtn_right rsimg rsplay rspart"></span>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="spmenu">
+		<div id="spgnavi">
+			<ul>
+				<li class="left"><p><a href="../../index_menu.html"><span class="opticon menu1 opticonmenu"></span>総合メニュー</a></p></li>
+				<li class="right"><p><a href="../index.html"><span class="opticon menu2 opticonmenu"></span>くらし・手続き</a></p></li>
+				<li class="left"><p><a href="../../fukushi/index.html"><span class="opticon menu3 opticonmenu"></span>健康・福祉</a></p></li>
+				<li class="right"><p><a href="../../kosodate/index.html"><span class="opticon menu4 opticonmenu"></span>子育て・教育</a></p></li>
+				<li class="left"><p><a href="../../sangyou/index.html"><span class="opticon menu6 opticonmenu"></span>産業・ビジネス</a></p></li>
+				<li class="right"><p><a href="../../shisei/index.html"><span class="opticon menu7 opticonmenu"></span>市政</a></p></li>
+			</ul>
+			<br class="clear" />
+		</div>
+
+		<div id="spgnaviqa">
+			<div class="qaleft">
+				<a href="../../event/index.html" class="opticon opticonsp404"><img src="../../images/optimization/sp_1000.png" alt="イベントカレンダー"></a>
+			</div>
+			<div class="qaright">
+				<a href="../../fukushi/cate01/isya.html" class="opticon opticonsp405"><img src="../../images/optimization/sp_1000.png" alt="急患診療"></a>
+			</div>
+			<div class="clear"></div>
+			<div class="qaleft">
+				<a href="http://qa.city.nagaoka.niigata.jp/" target="_blank" class="opticon opticonsp402"><img src="../../images/optimization/sp_1000.png" alt="よくある質問Q&A"></a>
+			</div>
+			<div class="qaright">
+				<label for="langdisplaysp" class="opticon opticonsp406"><img src="../../images/optimization/sp_1000.png" alt="Foreign language"></label>
+			</div>
+			<div class="clear"></div>
+			<div id="langcontainersp">
+				<input type="checkbox" id="langdisplaysp">
+				<div id="langboxsp">
+					<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jaen">English</a>
+					<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jazhb">繁体中文</a>
+					<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jazh">簡体中文</a>
+					<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/jako">Korean</a>
+					<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/japt">Portugues</a>
+					<a href="https://honyaku.j-server.com/LUCNAGAOKA/ns/w4/javi">Tiếng Việt</a>
+					<a href="https://translate.google.com/translate?sl=ja&tl=fr&u=https://www.city.nagaoka.niigata.jp/">Français</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="itembox">
+		<div class="searchbox4">
+				<div class="l-search">
+				<form id="cse-search-box-sp" action="https://www.city.nagaoka.niigata.jp/other/result.html">
+					<input type="text" name="q" class="l-search__text" placeholder="キーワードを入力して探す" value="" />
+					<button class="l-search__btn opticon opticonsp1000"><img src="../../images/optimization/sp_1000.png" alt="検索"></button>
+				</form>
+				</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="snsareasp">
+<ul><li class="sns_fb"><div>シェア</div></li><li class="sns_tw"><div>ポスト</div></li><li class="sns_ln"><div>送る</div></li></ul>
+<div class="clear"></div>
+</div>
+
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+</div>
+<!-- //SPヘッダーエリア -->
+
+
+
+
+
+
+
+
+
+<!-- メインエリア -->
+<div id="contwrap">
+
+<!-- WCVPASTE!html!../../parts-slidemenu_sub.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+
+
+	<div id="container2">
+		<div class="pankuzubox hidden_sp"><p><img src="../../images/pankuzu.gif" alt="" /><!-- WCVCRUMBS!&gt;!nagaoka --><a href="../../index.html">トップ</a> &gt; <a href="../">くらし・手続き</a> &gt; <a href="./">ごみ・リサイクル</a> &gt; ふれあい収集制度<!-- /WCVCRUMBS --></p></div>
+		<div class="pankuzubox hidden_pc"><p><img src="../../images/sp/pankuzu.png" alt="" /><!-- WCVCRUMBS!&gt;!nagaoka --><a href="../../index.html">トップ</a> &gt; <a href="../">くらし・手続き</a> &gt; <a href="./">ごみ・リサイクル</a> &gt; ふれあい収集制度<!-- /WCVCRUMBS --></p></div>
+
+<!--===== 2カラム：コンテンツエリア start ===============-->
+		<div id="contentsarea2cal">
+
+		<!-- メインコンテンツ -->
+		<div id="contents">
+
+		<div class="titlebox">
+			<h2><!-- WCVTITLE -->ふれあい収集制度<!-- /WCVTITLE --></h2>
+			<p><!-- WCVTEXT -->最終更新日　2025年4月1日<!-- /WCVTEXT --></p>
+		</div>
+
+		<div class="layout1">
+<!-- WCVTABLE!../../_rows/template.rows -->
+<!-- WCVROW!title2!14243944560 -->
+<div class="ttl1"><p><!-- WCVTEXT -->ふれあい収集制度とは<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!17092678710 -->
+<div class="txt1"><p><!-- WCVTEXT -->申請により、ごみと資源物を戸別収集します。<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!17092678711 -->
+<div class="txt1"><p><!-- WCVTEXT --><strong>（1）対象</strong><br />
+ごみステーションまでごみを持っていくことが困難な高齢者または障害者世帯<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!17092678712 -->
+<div class="txt1"><p><!-- WCVTEXT --><strong>（2）利用料</strong><br />
+無料<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!17092678713 -->
+<div class="txt1"><p><!-- WCVTEXT --><strong>（3）申請方法・申請先</strong><br />
+各世帯担当のホームヘルパー、ケアマネージャーなどを通じて、環境事業課または各支所地域振興・市民生活課にご連絡ください。<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!17092678714 -->
+<div class="txt1"><p><!-- WCVTEXT --><strong>（4）分別方法</strong><br />
+通常のごみステーションに出すときと同様に分別していただきます。<br />
+（燃やすごみ、燃やさないごみ、生ごみは指定ごみ袋が必要です）<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!17092678715 -->
+<div class="txt1"><p><!-- WCVTEXT --><strong>（5）その他</strong><br />
+ふれあい収集開始後、一時的に不在となる場合、利用の再開を希望される場合やふれあい収集が不要となった場合は、環境事業課または各支所地域振興・市民生活課にご連絡ください。<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- WCVROW!text1!14243944561 -->
+<div class="txt1"><p><!-- WCVTEXT -->申請書類は、「<a href="../../download/cate03/index.html#6">申請書様式のダウンロード</a>」のページからダウンロードできます。<!-- /WCVTEXT --></p></div>
+<!-- /WCVROW -->
+<!-- /WCVTABLE --></div>
+
+
+		<div class="tantouwaku">
+			<div class="tantoubox">
+				<div class="tantouttl"><p>このページの担当</p></div>
+				<div class="tantoulist">
+				<dl>
+<!-- WCVTABLE!../../_rows/toiawase.rows -->
+<!-- WCVROW!contactC3073!99001 -->
+<dt class="C3073"><!-- WCVTEXT -->環境事業課<!-- /WCVTEXT --></dt>
+<dd><!-- WCVTEXT -->〒940-0015　新潟県長岡市寿3-6-1（環境衛生センター）<br />
+TEL：0258-24-2837　　FAX：0258-24-6553<!-- /WCVTEXT -->
+<button class="contact_btn" data-cid="C3073">このページの作成担当にメールを送る</button></dd>
+<!-- /WCVROW -->
+<!-- /WCVTABLE -->
+				</dl>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<!-- //メインコンテンツ -->
+
+
+	<!-- 右メニュー -->
+	<div id="contentsright">
+<!-- WCVPASTE!html!../../_parts/parts-rightmenu2.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="snsareasp hidden_pc">
+<ul><li class="sns_fb"><div>シェア</div></li><li class="sns_tw"><div>ポスト</div></li><li class="sns_ln"><div>送る</div></li></ul>
+<div class="clear"></div>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+
+<!-- WCVPASTE!html!../../_parts/parts-rightmenu1.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+	<div class="subinfobox">
+		<div class="subinfohead"><p>総合案内</p></div>
+		<div class="subinfolist">
+		<ul>
+			<li><!-- WCVTEXT --><a href="http://qa.city.nagaoka.niigata.jp/" target="_blank" class="newwin">よくある質問(Q&amp;A)</a><!-- /WCVTEXT --></li>
+			<li><!-- WCVTEXT --><a href="../../event/index.html">イベント</a><!-- /WCVTEXT --></li>
+			<li><!-- WCVTEXT --><a href="../../shisetsu/index.html">公共施設ガイド</a><!-- /WCVTEXT --></li>
+			<li><!-- WCVTEXT --><a href="../../shisei/cate05/annai.html">庁舎案内</a><!-- /WCVTEXT --></li>
+			<li><!-- WCVTEXT --><a href="../../shisei/cate05/itiran.html">担当部署一覧</a><!-- /WCVTEXT --></li>
+			<li><!-- WCVTEXT --><a href="../../download/index.html">申請・届出書式</a><!-- /WCVTEXT --></li>
+			<div class="clear"></div>
+		</ul>
+		</div>
+
+	</div>
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+	</div>
+	<!-- //右メニュー -->
+
+	<div class="clear"></div>
+	</div>
+<!--===== 2カラム：コンテンツエリア end ===============-->
+
+</div><!--===== //container2 end ===============-->
+
+<div id="enquetearea">
+<!-- WCVPASTE!html!../../_parts/parts-enquet.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+<div id="enquetebox">
+<div id="enquetettl"><h4><strong>このページに関するアンケート</strong></h4></div>
+<div class="qa_area">
+<form action="/cgi-bin/enquete/enq.cgi" method="post" name="commonform" id="commonform" onsubmit="return enq_submit()">
+<dl>
+<dt>質問：このページの情報は役に立ちましたか。</dt>
+<dd><fieldset><legend>情報の内容</legend>
+<input type="radio" name="enq1" value="役に立った" id="enq1_1" /><label for="enq1_1">役に立った</label>　<input type="radio" name="enq1" value="役に立たなかった" id="enq1_2" /><label for="enq1_2">役に立たなかった</label>　<input type="radio" name="enq1" value="どちらともいえない" id="enq1_3" /><label for="enq1_3">どちらともいえない</label>
+</fieldset></dd>
+<dt>質問：このページは見つけやすかったですか。</dt>
+<dd><fieldset><legend>見つけやすさ</legend>
+<input type="radio" name="enq2" value="見つけやすかった" id="enq2_1" /><label for="enq2_1">見つけやすかった</label>　<input type="radio" name="enq2" value="見つけにくかった" id="enq2_2" /><label for="enq2_2">見つけにくかった</label>　<input type="radio" name="enq2" value="どちらともいえない" id="enq2_3" /><label for="enq2_3">どちらともいえない</label>
+</fieldset></dd>
+<dt>質問：このページはどのようにしてたどり着きましたか。</dt>
+<dd><fieldset><legend>たどり着き</legend>
+<input type="radio" name="enq3" value="トップページから順に" id="enq3_1" /><label for="enq3_1">トップページから順に</label>　<input type="radio" name="enq3" value="サイト内検索" id="enq3_2" /><label for="enq3_2">サイト内検索</label>　<input type="radio" name="enq3" value="検索エンジン" id="enq3_3" /><label for="enq3_3">検索エンジン</label>　<input type="radio" name="enq3" value="その他" id="enq3_4" /><label for="enq3_4">その他</label>
+</fieldset></dd>
+<dt>質問：長岡市ホームページはどれくらいの頻度でご覧になりますか。</dt>
+<dd><fieldset><legend>頻度</legend>
+<input type="radio" name="enq4" value="はじめて" id="enq4_1" /><label for="enq4_1">はじめて</label>　<input type="radio" name="enq4" value="ときどき" id="enq4_2" /><label for="enq4_2">ときどき</label>　<input type="radio" name="enq4" value="いつも" id="enq4_3" /><label for="enq4_3">いつも</label>
+</fieldset></dd>
+</dl>
+<input type="hidden" id="enq_info1" name="info1" value="" />
+<input type="hidden" id="enq_info2" name="info2" value="" />
+<input type="hidden" id="enq_info3" name="info3" value="" />
+<input type="hidden" id="enq_info4" name="info4" value="" />
+<input type="hidden" name="iken" value="">
+<div class="submitbox"><input type="image" src="../../images/btn_submit.jpg" name="submit" alt="送信" value="" /></div>
+</form>
+</div>
+</div>
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+</div>
+
+<div id="bannerarea">
+<!-- WCVPASTE!html!../../_parts/parts-banner3.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+</div>
+
+<div id="footitem">
+<!-- WCVPASTE!html!../../_parts/parts-footer1.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+	<div id="toTop" class="backtop"><p><a href="#wrapper">ページトップに戻る</a></p></div>
+	<div class="footindex"><p><!-- WCVTEXT --><a href="../../other/accessibility.html">アクセシビリティ</a>&nbsp;｜&nbsp;<a href="../../other/privacy.html">個人情報の取り扱い</a>&nbsp;｜&nbsp;<a href="../../other/menseki.html">免責事項</a>&nbsp;｜&nbsp;<a href="../../other/toiawase.html">お問い合わせ</a><!-- /WCVTEXT --></p></div>
+
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+</div>
+
+</div><!--===== //メインエリア contwrap end ===============-->
+
+
+
+
+
+
+
+
+<!-- フッターエリア -->
+<div id="footerarea">
+<!-- WCVPASTE!html!../../_parts/parts-footer2.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- EXCLUDE_MKNMZ_INDEXING_START -->
+<div id="footer">
+	<div class="footerinforight">
+<!-- WCVTEXT --><span>長岡市役所総合窓口（アオーレ長岡東棟1階）</span><br />
+平日：午前8時30分～午後5時15分／土・祝：午前9時～午後5時<br />
+休業日：日曜日・年末年始<br />
+※日曜日と祝日が重なる場合は、お休みとなります。<!-- /WCVTEXT -->
+<p style="border:1px solid #ff0000; color: #ff0000;">令和8年12月1日（火）から開庁時間及び開庁日が変更となります。<br>
+　平日・土曜日：<b style="text-decoration:underline;">午前9時～午後4時30分</b><br>
+　休業日：<b style="text-decoration:underline;">日曜日・祝日・年末年始</b></p>
+<!-- WCVTEXT -->※<a href="../../shisei/cate05/ao-re/reception-status.html">総合窓口の待ち人数はこちらから確認できます。</a><br />
+<span>上記以外の担当部署</span><br />
+平日　　午前8時30分～午後5時15分<br />
+※部署、施設によっては、開庁・開館の日・時間が異なるところがあります。<!-- /WCVTEXT -->
+	</div>
+	<div class="footerinfoleft">
+	<img src="../../images/img_footid.gif" width="180" height="45" alt="長岡市役所" /><br />
+	<address>〒940-8501　新潟県長岡市大手通1丁目4番地10　<a href="../../shisei/cate05/ao-re/access.html" class="opticon opticoncm000"><img src="../../images/optimization/pc_1000.png" alt="アクセス" /></a><br />
+	電話：0258-35-1122（代表）　FAX：0258-39-2275（代表）<br />
+	法人番号：7000020152021（<a href="../../shisei/cate01/my-number.html#10">法人番号について</a>）<br />
+	［<a href="../cate02/invoice-number.html">適格請求書発行事業者登録番号はこちら</a>］</address>
+	<p class="copyright">Copyright &copy; 2006 Nagaoka City. All Rights Reserved.</p>
+	</div>
+	<br class="clear" />
+	</div>
+</div>
+<!-- EXCLUDE_MKNMZ_INDEXING_END -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+</div><!-- //フッターエリア footerarea end ===============-->
+
+
+</div><!--===== //全体 wrapper end ===============-->
+
+<!-- WCVPASTE!html!../../_parts/parts-slashbody.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="snsarea" class="hidden_sp">
+<ul><li class="sns_fb">Facebook</li><li class="sns_tw">X</li><li class="sns_ln">LINE</li></ul>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+
+<!-- WCVPASTE!html!../../_parts/parts-nachan.html --><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="nachanClick">
+<div id="nachanOpenWrap">
+<img src="../../_top/_nachan/image/close.png" class="nachanClose" alt="「閉じる」の画像">
+<button type="button" class="nachanLink">開く</button>
+</div>
+<div id="nachanCloseWrap">
+<img src="../../_top/_nachan/image/open.png" class="nachanOpen" alt="「開く」の画像">
+</div>
+</div>
+<script type="text/javascript" src="../../_top/_nachan/nachan.js"></script>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ --><!-- /WCVPASTE -->
+
+</body>
+
+</html>

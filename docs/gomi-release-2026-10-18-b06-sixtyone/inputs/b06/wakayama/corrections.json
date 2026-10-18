@@ -1,0 +1,96 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "0c755055e79543b3d7d017ea4a82fd48efe99e52e202d95f5d6149e06104a5bb",
+  "changes": [
+    {
+      "service_id": "wakayama-regular",
+      "field": "limits",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "wakayama-regular"
+        ]
+      },
+      "after": {
+        "value": "家庭の粗大ごみは1回の申込につき2個以上15個以下。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "wakayama-regular",
+      "field": "application",
+      "before": {
+        "value": "粗大ごみ受付センター0570-666-202へ申込み。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-regular"
+        ]
+      },
+      "after": {
+        "value": "初回、または市内転居後は粗大ごみ受付センター 0570-666-202へ電話。令和3年4月1日以降の電話申込履歴がある場合は、対象品目ならインターネット申込も可能。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "wakayama-regular",
+      "field": "contact",
+      "before": {
+        "value": "和歌山市の粗大ごみ担当窓口：073-471-1503。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-regular"
+        ]
+      },
+      "after": {
+        "value": "粗大ごみ受付センター 0570-666-202。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "wakayama-self",
+      "field": "family_help",
+      "before": {
+        "value": "他人のごみの持込みはできない。本人運転の要否は明記なし。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-self"
+        ]
+      },
+      "after": {
+        "value": "原則は排出者本人による持ち込み。親族のごみは続柄と両者の住所を確認できる資料があれば搬入可能。特別事情は青岸ストックヤードに相談。本人が運転する必要があるかは未記載。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-self"
+        ]
+      }
+    },
+    {
+      "service_id": "wakayama-self",
+      "field": "application",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "wakayama-self"
+        ]
+      },
+      "after": {
+        "value": "顔写真付き本人確認書類を持参。親族による搬入は続柄と住所の確認資料が必要。",
+        "state": "explicit",
+        "source_ids": [
+          "wakayama-self"
+        ]
+      }
+    }
+  ]
+}

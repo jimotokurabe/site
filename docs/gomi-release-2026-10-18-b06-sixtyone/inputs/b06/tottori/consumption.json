@@ -1,0 +1,30 @@
+{
+  "city": "tottori:tottori",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "鳥取市 ごみ出し支援 対象 申込",
+    "鳥取市 粗大ごみ 収集 搬出",
+    "鳥取市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 3,
+  "http_200_count": 3,
+  "http_non_200_count": 0,
+  "original_bytes_total": 8284522,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "tottori-daily",
+    "tottori-regular",
+    "tottori-self"
+  ],
+  "new_city_sha256": "0067c4b4393f2fc8080bd0ccaa38d75ac3fa61dd751bbfea3552df48c4496ee9",
+  "source_hash_verification": "passed"
+}

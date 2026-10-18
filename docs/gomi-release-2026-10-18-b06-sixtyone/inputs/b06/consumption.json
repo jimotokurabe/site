@@ -1,0 +1,92 @@
+{
+  "checked": "2026-10-18",
+  "scope": "未掲載34県から各1市の公式原典調査・独立AI照合・プレビュー作成",
+  "research_city_packets": 34,
+  "accepted_city_packets": 25,
+  "held_city_packets": 9,
+  "research_groups": [
+    {
+      "name": "east",
+      "cities": 12,
+      "saved_official_sources": 47,
+      "measurement_source": "group-east.json"
+    },
+    {
+      "name": "central",
+      "cities": 10,
+      "saved_official_sources": 38,
+      "measurement_source": "group-central.json"
+    },
+    {
+      "name": "west",
+      "cities": 12,
+      "saved_official_sources": 41,
+      "initial_official_sources": 36,
+      "review_added_sources": 5,
+      "initial_source_requests": 37,
+      "review_added_http_200": 5,
+      "measurement_sources": [
+        "group-west.json",
+        "review-west/review.json"
+      ]
+    }
+  ],
+  "saved_official_source_records_total": 126,
+  "reviewed_fields_recorded": {
+    "east": 480,
+    "central": 320,
+    "west": 360,
+    "total": 1160,
+    "note": "東12市・中部8市・西9市の全項目照合数。残る保留候補は不足点を重点確認。"
+  },
+  "workflow": {
+    "research_agents": 3,
+    "first_independent_review_agents": 3,
+    "model": "Sol",
+    "reasoning_effort": "medium",
+    "correction_note": "指摘後の限定修正はレビュー担当者自身が初稿と原典を再確認。追加の独立全件レビューや人手確認ではない。"
+  },
+  "candidate": {
+    "total_cities": 61,
+    "total_prefectures": 38,
+    "baseline_published_cities": 36,
+    "baseline_published_prefectures": 13,
+    "candidate_sources": 302,
+    "baseline_sources_preserved": 206,
+    "new_accepted_sources": 96,
+    "sha256": "735a70a234a087c466189a4bd0effb7031a4017948a54c87c384475ee6e1266a",
+    "published": false
+  },
+  "validation": {
+    "automated_tests_passed": 43,
+    "main_preview_pages": 100,
+    "schema_errors": 0,
+    "publication_gate_rejected": true,
+    "verification_file": "verification.json",
+    "browser_qa_file": "browser-qa.json",
+    "browser_qa_status": "completed",
+    "gomi_tests_passed": 41,
+    "analytics_tests_passed": 2,
+    "candidate_fields_preserved": 2450,
+    "candidate_service_source_dates_preserved": 434,
+    "candidate_questions_preserved": 414,
+    "browser_display_conditions_without_horizontal_overflow": 225,
+    "browser_memo_routes_print_dom_matched": 100,
+    "browser_memo_copies_initially_matched": 99,
+    "browser_memo_copy_retry_matched": 1,
+    "browser_navigation_checked": "全国→香川県→高松市",
+    "actual_paper_print_checked": false,
+    "parent_spotcheck_file": "parent-spotcheck.json",
+    "takamatsu_mobile_preview_file": "preview-takamatsu-mobile.png"
+  },
+  "usage": {
+    "model_tokens": null,
+    "search_api_tokens": null,
+    "credits": null,
+    "currency_cost": null,
+    "cost_savings_measured": false,
+    "note": "公式原典の保存件数等、記録から確かめられる数値のみ集計。モデル投入量・検索課金・費用・節約効果は計測できないため推測しない。"
+  },
+  "human_reviewed": false,
+  "publication_approved": false
+}

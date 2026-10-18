@@ -1,0 +1,397 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "yamanashi:kofu",
+      "name": "甲府市",
+      "kana": "こうふし",
+      "pref_name": "山梨県",
+      "selection_reason": "現行の分別冊子と施設案内は取得。ふれあい収集の現行要件を示す原典は取得できず保留。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kofu-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "contact": {
+              "value": "甲府市の担当窓口：055-241-4313。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "甲府市ふれあい収集の現行の対象要件・申請書・費用・玄関先の場所を、ごみ収集課に確認してください。取得できた旧規定PDFは404のため現行根拠に使っていません。"
+          ]
+        },
+        {
+          "id": "kofu-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "kofu-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市の分別冊子に記載された袋に入らない粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "collection_location": {
+              "value": "地区ごとに決まった集積所へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "limits": {
+              "value": "地区別収集日と粗大ごみの分類を市の現行冊子で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            },
+            "contact": {
+              "value": "甲府市の粗大ごみ担当窓口：055-241-4313。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-guide"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "kofu-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "collection_location": {
+              "value": "甲府・峡東クリーンセンターへ直接持ち込み。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "eligibility": {
+              "value": "甲府市など構成市の家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "fees": {
+              "value": "行政回収に出せなかったごみは所定の手数料を支払って持込み。額は品目・重量で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "application": {
+              "value": "搬入容器と受入日時を事務組合の案内で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kofu-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kofu-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "甲府市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kofu-guide",
+      "url": "https://www.city.kofu.yamanashi.jp/genryo/documents/2025wakekatadashikata_japanese_1_14.pdf",
+      "title": "kofu-guide",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kofu-self",
+      "url": "https://www.kofu-kyotojimukumiai.jp/citizen/12",
+      "title": "ごみの持ち込みについて | 甲府・峡東地域ごみ処理施設事務組合",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kofu-collection-time",
+      "url": "https://www.city.kofu.yamanashi.jp/shushu/faq/kurashi/gomi/shushu/00337.html",
+      "title": "甲府市／収集時間が早かったり遅かったりするのですが、いつ出せばいいですか？",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-03-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "甲府市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

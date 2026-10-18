@@ -1,0 +1,114 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "8e77467f49f66bfebb77d67e3b567e8dcbf6a214765ea8973ecac4110ffee368",
+  "changes": [
+    {
+      "service_id": "nagano-daily",
+      "field": "contact",
+      "before": {
+        "value": "長野市の担当窓口：026-221-5316。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-pickup"
+        ]
+      },
+      "after": {
+        "value": "日常ごみ出し支援の担当窓口は取得原典から特定できない。",
+        "state": "not_found",
+        "source_ids": [
+          "nagano-pickup"
+        ]
+      }
+    },
+    {
+      "service_id": "nagano-regular",
+      "field": "limits",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "nagano-regular"
+        ]
+      },
+      "after": {
+        "value": "集積所に出せる不燃ごみの大きさは、おおむね1m×50cm×50cm以内。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "nagano-regular",
+      "field": "contact",
+      "before": {
+        "value": "長野市の粗大ごみ担当窓口：026-221-5316。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-regular"
+        ]
+      },
+      "after": {
+        "value": "不燃ごみの問い合わせ先：長野市生活環境課 026-224-7635。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "nagano-self",
+      "field": "indoor_carry",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "nagano-self"
+        ]
+      },
+      "after": {
+        "value": "搬入施設では原則、搬入者自身で荷下ろしする。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-self"
+        ]
+      }
+    },
+    {
+      "service_id": "nagano-self",
+      "field": "fees",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "nagano-self"
+        ]
+      },
+      "after": {
+        "value": "可燃ごみ10kgごと190円、不燃ごみ10kgごと200円、資源物10kgごと30円、剪定枝葉等は無料。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-self"
+        ]
+      }
+    },
+    {
+      "service_id": "nagano-self",
+      "field": "application",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "nagano-self"
+        ]
+      },
+      "after": {
+        "value": "可燃・不燃・資源物の持ち込みでは、受付で搬入申込書に記入する。",
+        "state": "explicit",
+        "source_ids": [
+          "nagano-self"
+        ]
+      }
+    }
+  ]
+}

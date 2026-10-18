@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "maebashi-bulky",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/42979.html",
+      "title": "粗大ごみ戸別収集について／前橋市",
+      "source_updated": "2025-01-06",
+      "http_status": 200,
+      "final_url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/42979.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "maebashi-bulky.html.source",
+      "text_file": "maebashi-bulky.txt",
+      "raw_sha256": "a013530762cbeccfd95e1baab66cbd535f6744f6a89063033c64d6ada36e2089",
+      "text_sha256": "1deaf2d23b94a416c5cc6041c1fc2df42d571a1241a67c2d2c1a366dd2cbf414",
+      "bytes": 50051,
+      "etag": "\"6aac0f55-c383\"",
+      "last_modified_header": "Thu, 17 Sep 2026 16:03:33 GMT",
+      "source_updated_raw": "2025年01月06日"
+    },
+    {
+      "id": "maebashi-daily",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/shinseisho/7142.html",
+      "title": "こんにちは収集の登録申請のご案内／前橋市",
+      "source_updated": "2019-04-01",
+      "http_status": 200,
+      "final_url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomishushu/shinseisho/7142.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "maebashi-daily.html.source",
+      "text_file": "maebashi-daily.txt",
+      "raw_sha256": "04d62912f250338477508880df2918fc07e933fcd73f7c71ef6a793a2a56b4cd",
+      "text_sha256": "821be7631a434446bb54302c2d0fb3ea6e2b389fca7e4bf848e12e6581835d5c",
+      "bytes": 55330,
+      "etag": "\"6aac11df-d822\"",
+      "last_modified_header": "Thu, 17 Sep 2026 16:14:23 GMT",
+      "source_updated_raw": "2019年04月01日"
+    },
+    {
+      "id": "maebashi-self",
+      "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/seisoshisetsu/gyomu/1/2/1/2642.html",
+      "title": "家庭ごみの自己搬入方法についてお知らせします／前橋市",
+      "source_updated": "2023-11-11",
+      "http_status": 200,
+      "final_url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/seisoshisetsu/gyomu/1/2/1/2642.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "maebashi-self.html.source",
+      "text_file": "maebashi-self.txt",
+      "raw_sha256": "be102cc6d5bc0c2eb0c03350554f2fa38e317e903de4fdf593abf605712d4338",
+      "text_sha256": "5942ac386c4d936e31e9258bb39fe11bdcdae548b519a06b12fe2eb04ba4cd62",
+      "bytes": 56397,
+      "etag": "\"6aac2ed1-dc4d\"",
+      "last_modified_header": "Thu, 17 Sep 2026 18:17:53 GMT",
+      "source_updated_raw": "2023年11月11日"
+    }
+  ],
+  "failures": []
+}

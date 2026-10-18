@@ -25,6 +25,19 @@ class GomiValidationTests(unittest.TestCase):
                 owners[0]['id'] = city_id
                 self.assertFalse(any('expected an official municipal' in e for e in validate(data, root=ROOT)))
 
+    def test_b06_municipal_sources_are_restricted_to_their_city(self):
+        hosts = {'www.city.tokushima.tokushima.jp': 'tokushima:tokushima', 'www.city.matsuyama.ehime.jp': 'ehime:matsuyama', 'www.city.kochi.kochi.jp': 'kochi:kochi', 'faq.city.kochi.kochi.jp': 'kochi:kochi', 'www.city.kumamoto.jp': 'kumamoto:kumamoto', 'www.city.oita.oita.jp': 'oita:oita', 'www.city.aomori.aomori.jp': 'aomori:aomori', 'www.city.morioka.iwate.jp': 'iwate:morioka', 'www.city.fukushima.fukushima.jp': 'fukushima:fukushima', 'www.city.maebashi.gunma.jp': 'gunma:maebashi', 'www.city.nagaoka.niigata.jp': 'niigata:nagaoka', 'qa.city.nagaoka.niigata.jp': 'niigata:nagaoka', 'www.city.nagano.nagano.jp': 'nagano:nagano', 'www.info.city.tsu.mie.jp': 'mie:tsu', 'www.city.wakayama.wakayama.jp': 'wakayama:wakayama', 'www.city.takamatsu.kagawa.jp': 'kagawa:takamatsu'}
+        for host, city_id in hosts.items():
+            with self.subTest(host=host):
+                data = copy.deepcopy(DATA)
+                source = data['sources'][0]
+                source['url'] = 'https://' + host + '/test.html'
+                self.assertTrue(any('expected an official municipal' in e for e in validate(data, root=ROOT)))
+                owners = [c for c in data['cities'] if any(source['id'] in f['source_ids'] for svc in c['services'] for f in svc['fields'].values())]
+                self.assertEqual(len(owners), 1)
+                owners[0]['id'] = city_id
+                self.assertFalse(any('expected an official municipal' in e for e in validate(data, root=ROOT)))
+
     def test_current_research_schema_passes(self):
         self.assertEqual(validate(DATA, root=ROOT), [])
 

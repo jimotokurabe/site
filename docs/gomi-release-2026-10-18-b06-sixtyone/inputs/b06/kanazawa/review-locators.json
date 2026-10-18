@@ -1,0 +1,151 @@
+[
+  {
+    "service_id": "kanazawa-daily",
+    "field": "eligibility",
+    "source_id": "kanazawa-daily",
+    "matches": [
+      {
+        "line": 14,
+        "excerpt": "要介護1以上に該当する方"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-daily",
+    "field": "contact",
+    "source_id": "kanazawa-daily",
+    "matches": [
+      {
+        "line": 25,
+        "excerpt": "電話番号：076-220-2302"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-regular",
+    "field": "application",
+    "source_id": "kanazawa-bulky",
+    "matches": [
+      {
+        "line": 102,
+        "excerpt": "1．戸別収集受付センターへ電話"
+      },
+      {
+        "line": 105,
+        "excerpt": "【戸別収集受付センター】"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-regular",
+    "field": "contact",
+    "source_id": "kanazawa-bulky",
+    "matches": [
+      {
+        "line": 102,
+        "excerpt": "1．戸別収集受付センターへ電話"
+      },
+      {
+        "line": 105,
+        "excerpt": "【戸別収集受付センター】"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-regular",
+    "field": "contact",
+    "source_id": "kanazawa-bulky-faq",
+    "matches": [
+      {
+        "line": 13,
+        "excerpt": "受付センター（076-220-7153）までお電話ください。"
+      },
+      {
+        "line": 35,
+        "excerpt": "有料戸別収集の対象となります。受付センターまで（076-220-7153）まで、お電話ください。"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-self",
+    "field": "waste_scope",
+    "source_id": "kanazawa-self-burn",
+    "matches": [
+      {
+        "line": 7,
+        "excerpt": "燃やすごみの処理"
+      },
+      {
+        "line": 8,
+        "excerpt": "自己搬入（燃やすごみ）"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-self",
+    "field": "waste_scope",
+    "source_id": "kanazawa-self-bulky",
+    "matches": [
+      {
+        "line": 13,
+        "excerpt": "第4期埋立場では市内から発生する埋立ごみや有料粗大ごみ、燃やすごみを東⻄エネルギーセンターで焼却した後の燃え殻（焼却残渣）などを受け入れます。"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-self",
+    "field": "waste_scope",
+    "source_id": "kanazawa-self-fee",
+    "matches": [
+      {
+        "line": 17,
+        "excerpt": "燃やすごみの持ち込み場所"
+      },
+      {
+        "line": 22,
+        "excerpt": "燃やすごみの持ち込み場所（有料/前日までに要予約）"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-self",
+    "field": "contact",
+    "source_id": "kanazawa-self-burn",
+    "matches": [
+      {
+        "line": 15,
+        "excerpt": "東部環境エネルギーセンター（金沢市鳴和台357）"
+      },
+      {
+        "line": 26,
+        "excerpt": "【電話】076-252-6049( 東部環境エネルギーセンター）"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-self",
+    "field": "contact",
+    "source_id": "kanazawa-self-bulky",
+    "matches": [
+      {
+        "line": 27,
+        "excerpt": "076-236-1521"
+      }
+    ]
+  },
+  {
+    "service_id": "kanazawa-self",
+    "field": "contact",
+    "source_id": "kanazawa-self-fee",
+    "matches": [
+      {
+        "line": 23,
+        "excerpt": "東部環境エネルギーセンター"
+      },
+      {
+        "line": 25,
+        "excerpt": "東部環境エネルギーセンター持ち込み可能日時・手数料の詳細"
+      }
+    ]
+  }
+]

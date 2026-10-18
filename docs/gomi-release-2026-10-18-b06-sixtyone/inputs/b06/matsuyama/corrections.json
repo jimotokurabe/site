@@ -1,0 +1,137 @@
+[
+  {
+    "service": "matsuyama-regular-bulky",
+    "field": "fees",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "ehime-regular"
+      ]
+    },
+    "after": {
+      "value": "松山・北条地域の粗大ごみ戸別収集は無料。",
+      "state": "explicit",
+      "source_ids": [
+        "ehime-regular",
+        "matsuyama-bulky-application"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "matsuyama-self-dropoff",
+    "field": "fees",
+    "before": {
+      "value": "重量により手数料がかかる。",
+      "state": "explicit",
+      "source_ids": [
+        "ehime-dropoff"
+      ]
+    },
+    "after": {
+      "value": "排出者本人等による直接搬入は30kg以下無料、30kg超40kg以下760円、以後10kgまでごとに190円加算。許可業者搬入は別料金。",
+      "state": "explicit",
+      "source_ids": [
+        "matsuyama-fees"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "matsuyama-self-dropoff",
+    "field": "contact",
+    "before": {
+      "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+      "state": "not_stated",
+      "source_ids": [
+        "ehime-dropoff"
+      ]
+    },
+    "after": {
+      "value": "南クリーンセンター089-971-8862、西クリーンセンター089-953-1153。料金の相談は清掃施設課089-948-6532。",
+      "state": "explicit",
+      "source_ids": [
+        "ehime-dropoff",
+        "matsuyama-fees"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "matsuyama-regular-bulky",
+    "field": "questions_for_office",
+    "before": [
+      "松山・北条地域の住所ごとのハガキ申込期間と年6回の利用上限を確認してください。"
+    ],
+    "after": [
+      "松山・北条地域の住所ごとの申込期間・年6回の収集日を確認してください。"
+    ],
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": "matsuyama-self-dropoff",
+    "field": "fees",
+    "before": {
+      "value": "排出者本人等による直接搬入は30kg以下無料、30kg超40kg以下760円、以後10kgまでごとに190円加算。許可業者搬入は別料金。",
+      "state": "explicit",
+      "source_ids": [
+        "matsuyama-fees"
+      ]
+    },
+    "after": {
+      "value": "ごみを出す人が自ら運搬する場合、30kg以下無料、30kg超40kg以下760円、以後10kgまでごとに190円加算。許可業者搬入は別料金。",
+      "state": "explicit",
+      "source_ids": [
+        "matsuyama-fees"
+      ]
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": null,
+    "field": "sources",
+    "before": null,
+    "after": {
+      "id": "matsuyama-fees",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/gomishori_tesuuryou.html",
+      "title": "ごみ処理手数料　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-04-13",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/gomishori_tesuuryou.html",
+      "retrieved_at": "2026-10-18T19:26:07+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/fees.html.source",
+      "text_file": "matsuyama/official/fees.txt",
+      "raw_sha256": "e036a3031d68496a65e1e177f9d2d543fbc0940814e4dc69db7d769df67deec2",
+      "text_sha256": "468b632062ad152d5c069a13bab04fe2f5804d3cc0f3e292ad139acff4d2d9c2",
+      "last_modified_header": "Thu, 15 Oct 2026 03:01:45 GMT"
+    },
+    "reviewer": "independent_west_review"
+  },
+  {
+    "service": null,
+    "field": "sources",
+    "before": null,
+    "after": {
+      "id": "matsuyama-bulky-application",
+      "url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi.html",
+      "title": "粗大ごみの収集申込み方法　松山市公式ホームページ PCサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-09-28",
+      "http_status": 200,
+      "final_url": "https://www.city.matsuyama.ehime.jp/kurashi/gomi/dashikata/sodaigomi.html",
+      "retrieved_at": "2026-10-18T19:26:19+09:00",
+      "content_type": "text/html",
+      "raw_file": "matsuyama/official/bulky-application.html.source",
+      "text_file": "matsuyama/official/bulky-application.txt",
+      "raw_sha256": "dfc4c91dbbe40bd982518b79ca02d20477b7aee68e95a0e075f8532283edef51",
+      "text_sha256": "7114b705e6f1e363ad5568f9277a820772bb0165e98729d1b5cc022224d7f83d",
+      "last_modified_header": "Fri, 16 Oct 2026 03:01:47 GMT"
+    },
+    "reviewer": "independent_west_review"
+  }
+]

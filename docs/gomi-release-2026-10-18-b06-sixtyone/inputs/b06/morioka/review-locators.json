@@ -1,0 +1,54 @@
+[
+  {
+    "service_id": "morioka-daily",
+    "field": "eligibility",
+    "source_id": "morioka-daily",
+    "matches": [
+      {
+        "line": 6,
+        "excerpt": "高齢や体が不自由なことにより、自らごみを集積場所まで持っていくことが困難な世帯を対象に、玄関先までごみを収集にうかがう事業を盛岡地域で実施します。"
+      },
+      {
+        "line": 8,
+        "excerpt": "この事業は、盛岡地域（都南地域及び玉山地域を除く）にお住まいの世帯で、次のいずれかに該当し、自分でごみ集積場所までごみ出しができない世帯が対象となります。（ごみ出しについて、ご家族やご近所の人が手伝っている世帯は対象になりません。）"
+      }
+    ]
+  },
+  {
+    "service_id": "morioka-daily",
+    "field": "contact",
+    "source_id": "morioka-daily",
+    "matches": [
+      {
+        "line": 41,
+        "excerpt": "電話番号：019-603-8030 ファクス番号：019-622-3360"
+      }
+    ]
+  },
+  {
+    "service_id": "morioka-regular",
+    "field": "application",
+    "source_id": "morioka-bulky",
+    "matches": [
+      {
+        "line": 188,
+        "excerpt": "2 収集センターへ収集を依頼する方法（手順は次のとおり。）"
+      },
+      {
+        "line": 189,
+        "excerpt": "収集センターに電話で収集の予約を行う。（1回につき申し込めるのは3点までです。）"
+      }
+    ]
+  },
+  {
+    "service_id": "morioka-regular",
+    "field": "contact",
+    "source_id": "morioka-bulky",
+    "matches": [
+      {
+        "line": 207,
+        "excerpt": "電話：019-603-8030"
+      }
+    ]
+  }
+]

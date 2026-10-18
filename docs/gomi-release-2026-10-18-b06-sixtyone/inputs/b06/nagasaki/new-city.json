@@ -1,0 +1,440 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "nagasaki:nagasaki",
+      "name": "長崎市",
+      "kana": "ながさきし",
+      "pref_name": "長崎県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "nagasaki-daily-support",
+          "kind": "daily_support",
+          "name": "ふれあい訪問収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ごみステーションへの排出が常時困難な方の家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅へ訪問して戸別収集。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "any": [
+                  "65歳未満で身体障害者手帳を持つ単身者",
+                  "65歳未満で特定疾患医療受給者証を持つ単身者",
+                  "前2者とおおむね65歳以上の高齢者だけの世帯"
+                ],
+                "note": "65歳以上の方の条件は各総合事務所の案内を別途確認"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "application": {
+              "value": "65歳以上は各総合事務所へ、65歳未満の該当者は障害福祉課へ申請。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "65歳以上の対象資格と世帯条件を所管窓口で確認してください。",
+            "日常収集の品目・頻度・費用を確認してください。",
+            "65歳以上の方は総合事務所で資格・同居条件・申請書類を確認してください。"
+          ]
+        },
+        {
+          "id": "nagasaki-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-daily",
+                "nagasaki-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "長崎市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "斜面地の住まいで屋外へ粗大ごみを出せない場合の搬出方法を確認してください。"
+          ]
+        },
+        {
+          "id": "nagasaki-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "長さ2m未満・重さ60kg未満等の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "申込時に指定した場所（玄関先等）へ排出。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "原則、家屋内に入っての収集はしない。必要な場合は一般廃棄物収集運搬許可業者に相談。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "fees": {
+              "value": "2026年4月改定の品目別ステッカー購入。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "limits": {
+              "value": "1回2個まで。収集まで通常1～2週間。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "application": {
+              "value": "電話095-801-2200。対象13品目はネット申込も可（対象拡大中）。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "attendance": {
+              "value": "原則、収集日の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            },
+            "contact": {
+              "value": "長崎市粗大ごみ収集受付センター 095-801-2200。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2個上限と2026年4月改定ステッカー料金、ネット対象品目を受付センターへ確認してください。"
+          ]
+        },
+        {
+          "id": "nagasaki-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "廃棄物の自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "長崎市内の家庭系一般廃棄物等。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "原則、排出者本人または親族が搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "親族による搬入は可。搬入券の他人への譲渡不可。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "10kgまでごとに80円。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "application": {
+              "value": "搬入券の交付を受け、1か月以内に施設へ搬入。",
+              "state": "explicit",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "nagasaki-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "搬入券の1か月期限、親族による搬入、持込先の材質別受入を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "長崎市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nagasaki-daily",
+      "url": "https://www.city.nagasaki.lg.jp/page/2575.html",
+      "title": "その他のサービス - 長崎市ウェブサイト（障害福祉課）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-02-26",
+      "http_status": 200,
+      "final_url": "https://www.city.nagasaki.lg.jp/page/2575.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "content_type": "text/html",
+      "raw_file": "nagasaki/official/daily.html.source",
+      "text_file": "nagasaki/official/daily.txt",
+      "raw_sha256": "98fbe5714e0644977c0d3e8200807057e6a66fd58249aa238491106589eda19e",
+      "text_sha256": "f697e397214885ca01b6189a27477efa86c744c76d14ba473e07410c45eb3ba1",
+      "last_modified_header": "Sat, 17 Oct 2026 16:04:08 GMT"
+    },
+    {
+      "id": "nagasaki-dropoff",
+      "url": "https://www.city.nagasaki.lg.jp/page/4091.html",
+      "title": "廃棄物の自己搬入 - 長崎市ウェブサイト（資源循環課）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-08-27",
+      "http_status": 200,
+      "final_url": "https://www.city.nagasaki.lg.jp/page/4091.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "content_type": "text/html",
+      "raw_file": "nagasaki/official/dropoff.html.source",
+      "text_file": "nagasaki/official/dropoff.txt",
+      "raw_sha256": "9183ed637457767886fbd4b75e58486a81dfb53fe635bcbaa8da45665c9f3cba",
+      "text_sha256": "1c294dba627fbde00e64d277b1baeff46d1ea04d919182a7aad0f4647b14f369",
+      "last_modified_header": "Sat, 17 Oct 2026 16:04:52 GMT"
+    },
+    {
+      "id": "nagasaki-regular",
+      "url": "https://www.city.nagasaki.lg.jp/page/3031.html",
+      "title": "粗大ごみの出し方 - 長崎市ウェブサイト（資源循環課）",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-03-23",
+      "http_status": 200,
+      "final_url": "https://www.city.nagasaki.lg.jp/page/3031.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "content_type": "text/html",
+      "raw_file": "nagasaki/official/regular.html.source",
+      "text_file": "nagasaki/official/regular.txt",
+      "raw_sha256": "183fe5f69e9388c60b4881868b83df5f4404cd33e2747f8bf119203e42c201f8",
+      "text_sha256": "238ef4f66cd9a89d9ff1540f4a0818474912ee9689eaa193b9481f253fc5fc3d",
+      "last_modified_header": "Sat, 17 Oct 2026 16:04:16 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

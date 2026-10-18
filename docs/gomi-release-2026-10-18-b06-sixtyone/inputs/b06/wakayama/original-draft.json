@@ -1,0 +1,424 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "wakayama:wakayama",
+      "name": "和歌山市",
+      "kana": "わかやまし",
+      "pref_name": "和歌山県",
+      "selection_reason": "ふれあい収集は2025年4月に高齢者要件を拡大。現行の細部は窓口確認。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "wakayama-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ふれあい収集は一般ごみ・資源などの日常ごみ。粗大ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-overview"
+              ]
+            },
+            "collection_location": {
+              "value": "住宅出入口前等からの収集。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-overview"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "所定の収集場所までごみを持ち出すことが困難",
+                  "ひとり暮らしか、同居者が全員次の高齢者・障害者条件のいずれかに該当"
+                ],
+                "any": [
+                  "65歳以上かつ要介護2以上",
+                  "視覚障害1・2級または肢体不自由1・2級の身体障害者手帳所持"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-daily-brief"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-daily"
+              ]
+            },
+            "limits": {
+              "value": "粗大ごみ・小型家電等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-daily-brief"
+              ]
+            },
+            "application": {
+              "value": "利用希望者は事前に収集センター北事務所へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-daily-brief"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-daily"
+              ]
+            },
+            "contact": {
+              "value": "収集センター北事務所 073-471-1503。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-overview"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "wakayama-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "wakayama-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "電話予約時に案内される所定の場所へ、収集日8時までに出す。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センター0570-666-202へ申込み。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            },
+            "contact": {
+              "value": "和歌山市の粗大ごみ担当窓口：073-471-1503。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "wakayama-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "eligibility": {
+              "value": "一般廃棄物は原則として排出者本人が持ち込む。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "family_help": {
+              "value": "他人のごみの持込みはできない。本人運転の要否は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "application": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "wakayama-self"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "和歌山市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wakayama-daily",
+      "url": "https://www.city.wakayama.wakayama.jp/shisei/hasshin/1001156/1056607/1058078/1061690.html",
+      "title": "令和7年4月1日からふれあい収集の高齢者世帯の対象を拡大します！｜和歌山市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "wakayama-overview",
+      "url": "https://www.city.wakayama.wakayama.jp/kurashi/gomi_kankyo/1001113/1001251/1018293/index.html",
+      "title": "家庭から排出されるごみについて｜和歌山市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "wakayama-regular",
+      "url": "https://www.city.wakayama.wakayama.jp/faq/gomikankyou/1007991/1007994.html",
+      "title": "よくある質問　粗大ごみの収集依頼をしたいのですが、どちらに申し込みをすればよいでしょうか？｜和歌山市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "wakayama-self",
+      "url": "https://www.city.wakayama.wakayama.jp/kurashi/gomi_kankyo/1001113/1005184/1005228.html",
+      "title": "和歌山市青岸清掃センターの受入基準について｜和歌山市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "wakayama-daily-brief",
+      "url": "https://www.city.wakayama.wakayama.jp/_res/projects/default_project/_page_/001/061/690/20250327-1.pdf",
+      "title": "ふれあい収集の高齢者世帯の対象拡大 報道資料",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-03-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "和歌山市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

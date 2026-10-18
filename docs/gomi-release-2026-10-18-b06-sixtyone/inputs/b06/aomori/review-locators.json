@@ -1,0 +1,133 @@
+[
+  {
+    "service_id": "aomori-daily",
+    "field": "contact",
+    "source_id": "aomori-daily",
+    "matches": [
+      {
+        "line": 8,
+        "excerpt": "青森市老人クラブ連合会では、「ともに生きる豊かな地域社会の実現」をめざし、公益社団法人全国老人クラブ連合会が定める「友愛活動」のうち「多様な生活支援」に位置づけられる「あすかプラン」という取組を行っています。"
+      },
+      {
+        "line": 11,
+        "excerpt": "であり、青森市老人クラブ連合会に所属する単位老人クラブの会員である活動者が、日常生活でごみ出しが困難な高齢者のご自宅を訪問し、ごみ出しをお手伝いするとともに、安否確認などの見守りも行う活動です"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-regular",
+    "field": "waste_scope",
+    "source_id": "aomori-bulky",
+    "matches": [
+      {
+        "line": 10,
+        "excerpt": "最大辺が概ね60センチメートル以上のものが粗大ごみとなります。（一部例外あり）"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-regular",
+    "field": "contact",
+    "source_id": "aomori-bulky",
+    "matches": [
+      {
+        "line": 14,
+        "excerpt": "粗大ごみの出す品目を決めて、粗大ごみ受付センター（017-718-1184）に電話して申込みをする。"
+      },
+      {
+        "line": 18,
+        "excerpt": "粗大ごみに該当するかどうかは、「家庭ごみの出し方分別事典（五十音順）」を参照するか、粗大ごみ受付センター（017-718-1184）にお問合せください。"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-self",
+    "field": "waste_scope",
+    "source_id": "aomori-self",
+    "matches": [
+      {
+        "line": 18,
+        "excerpt": "家庭ごみの燃えるごみ、燃えないごみ、粗大ごみの青森市清掃工場への自己搬入は基本的に無料"
+      },
+      {
+        "line": 24,
+        "excerpt": "自己搬入の燃えるごみ、燃えないごみ、粗大ごみは、まずは青森市清掃工場に搬入してください。"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-self",
+    "field": "waste_scope",
+    "source_id": "aomori-bulky",
+    "matches": [
+      {
+        "line": 1,
+        "excerpt": "粗大ごみ"
+      },
+      {
+        "line": 10,
+        "excerpt": "最大辺が概ね60センチメートル以上のものが粗大ごみとなります。（一部例外あり）"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-self",
+    "field": "collection_location",
+    "source_id": "aomori-self",
+    "matches": [
+      {
+        "line": 14,
+        "excerpt": "青森市清掃工場等の処理施設に自己搬入する。"
+      },
+      {
+        "line": 17,
+        "excerpt": "青森市清掃工場への家庭ごみの自己搬入"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-self",
+    "field": "collection_location",
+    "source_id": "aomori-bulky",
+    "matches": [
+      {
+        "line": 11,
+        "excerpt": "粗大ごみは、事前申込みによる1個820円の有料の戸別収集（月2回）と、青森市清掃工場及び一般廃棄物最終処分場への自己搬入によって処分できます。"
+      },
+      {
+        "line": 153,
+        "excerpt": "青森市清掃工場"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-self",
+    "field": "contact",
+    "source_id": "aomori-self",
+    "matches": [
+      {
+        "line": 14,
+        "excerpt": "青森市清掃工場等の処理施設に自己搬入する。"
+      },
+      {
+        "line": 17,
+        "excerpt": "青森市清掃工場への家庭ごみの自己搬入"
+      }
+    ]
+  },
+  {
+    "service_id": "aomori-self",
+    "field": "contact",
+    "source_id": "aomori-bulky",
+    "matches": [
+      {
+        "line": 11,
+        "excerpt": "粗大ごみは、事前申込みによる1個820円の有料の戸別収集（月2回）と、青森市清掃工場及び一般廃棄物最終処分場への自己搬入によって処分できます。"
+      },
+      {
+        "line": 153,
+        "excerpt": "青森市清掃工場"
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "schema_version": "b06-group-0.1",
+  "checked": "2026-10-18",
+  "group": "east",
+  "prepared": [
+    {
+      "slug": "aomori",
+      "sha256": "7b89836923fd2b61ce5b8f72c3f94af054e269b4e347a0891a8a41af32cc69ae"
+    },
+    {
+      "slug": "morioka",
+      "sha256": "d0430319f6d4a1c69a76fb94e2979017167ae2cd82e874baf86dda11943d43bf"
+    },
+    {
+      "slug": "akita",
+      "sha256": "92646d01b7c1c7365e62370c3998abbbe28cbd80c7188513afd7205f9fa0fa76"
+    },
+    {
+      "slug": "yamagata",
+      "sha256": "d6f30af64290be77ccbe045afc24d49fae9aec801f2a5b1afe5b8a09b21c2c45"
+    },
+    {
+      "slug": "fukushima",
+      "sha256": "e1c276ad12a783d62b54076c84da914976fd199aa3047882c0941e8135dac731"
+    },
+    {
+      "slug": "mito",
+      "sha256": "8d3fc8c2ed85acd629fd34dbd44fa147dcd092bda3d3f82294086947928cdf9e"
+    },
+    {
+      "slug": "utsunomiya",
+      "sha256": "189112f0a0a3f4503ed40064c64880d48925f50edf3a0a7893abb88fe8652f43"
+    },
+    {
+      "slug": "maebashi",
+      "sha256": "a5ec4e0ceb764e89e09427c64f4df89257bb040315b0fb235534bdf8d52b8358"
+    },
+    {
+      "slug": "nagaoka",
+      "sha256": "4558416b1f2364a8094f7f6d5454eb93ebceffd42de543084d522daaa8d1d4b1"
+    },
+    {
+      "slug": "toyama",
+      "sha256": "dbc2d6429bd8ac584b00908c23e89e757bc9b557f77856896437067b05a40ee7"
+    },
+    {
+      "slug": "kanazawa",
+      "sha256": "abc0553ee3016583196759e41b61d23bded67047eed72a1500cbff79a442d7cf"
+    },
+    {
+      "slug": "fukui",
+      "sha256": "abcc12784121913741235edfbbeb46983fda0f0fc70c0fea5814030bc5930104"
+    }
+  ],
+  "held": [],
+  "human_reviewed": false,
+  "ai_draft": true,
+  "not_for_publication": true,
+  "consumption": {
+    "official_sources_saved": 47,
+    "cities": 12,
+    "service_routes": 48,
+    "field_records": 480,
+    "token_usage": "not_available",
+    "note": "HTTP成功原典件数のみ実測。web検索回数、推論tokenや費用は計測していない。"
+  },
+  "validation": {
+    "b05_schema_errors_excluding_official_host_allowlist": 0,
+    "official_host_allowlist_pending": [
+      "aomori",
+      "fukushima",
+      "maebashi",
+      "morioka",
+      "nagaoka"
+    ],
+    "raw_text_hash_mismatches": 0
+  },
+  "caveats": [
+    "秋田市と富山市は高齢者向け定期戸別収集を今回の公式案内から確認できず、制度不存在は断定していない。",
+    "富山市の定期個別収集方針の根拠は2023年の市回答。現行性は独立レビューで再確認。",
+    "AI下書きであり独立原典レビュー・人手確認・プレビュー実装は未実施。"
+  ]
+}

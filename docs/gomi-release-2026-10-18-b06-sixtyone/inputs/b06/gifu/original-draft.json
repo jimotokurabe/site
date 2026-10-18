@@ -1,0 +1,397 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "gifu:gifu",
+      "name": "岐阜市",
+      "kana": "ぎふし",
+      "pref_name": "岐阜県",
+      "selection_reason": "通常粗大は1回20点まで、屋内搬出不可。専用の日常支援は確認できず保留。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "gifu-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "contact": {
+              "value": "岐阜市の担当窓口：058-243-0530。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "gifu-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "gifu-faq"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "gifu-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市が処理する家庭の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約した収集日の8時30分までに屋外の収集しやすい場所へ出す。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常の戸別収集では屋内収集・屋外への搬出作業はできない。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目に応じた粗大ごみ処理券または処理袋が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "limits": {
+              "value": "1回20点まで。平日収集。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センター058-243-0530へ予約。処理券か処理袋を購入。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会いは不要。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "contact": {
+              "value": "岐阜市の粗大ごみ担当窓口：058-243-0530。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "gifu-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約後に東部・北西部・南部の自己搬入施設へ持ち込む。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目に応じた粗大ごみ処理券・処理袋が必要。自己搬入施設では販売していない。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "limits": {
+              "value": "通常は平日。第4土曜日と翌日曜日は平日までの予約で一般家庭の搬入可。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "application": {
+              "value": "オンラインまたは粗大ごみ受付センターへ事前予約。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            },
+            "contact": {
+              "value": "搬入施設・受付先は公式資料で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "gifu-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "岐阜市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "gifu-regular",
+      "url": "https://www.city.gifu.lg.jp/kurashi/gomi/1012143/1038453/1038458/index.html",
+      "title": "岐阜市ごみ出しのルール（粗大ごみ）｜岐阜市公式ホームページ-Gifu city",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "gifu-faq",
+      "url": "https://www.city.gifu.lg.jp/shitsumon/kurashi/1009914/1009915/1009918.html",
+      "title": "引っ越しや大掃除で大量にごみが出ます。どうしたら良いですか。｜岐阜市公式ホームページ-Gifu city",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "gifu-guide",
+      "url": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/038/192/gomidasi.pdf",
+      "title": "gifu-guide",
+      "retrieved_date": "2026-10-18",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "岐阜市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

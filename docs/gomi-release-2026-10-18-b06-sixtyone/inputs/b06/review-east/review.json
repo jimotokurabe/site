@@ -1,0 +1,130 @@
+{
+  "schema_version": "b06-independent-review-summary-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "ai_reviewed_set_by_parent_only": true,
+  "status": "accepted_10_held_2_for_preview",
+  "scope": {
+    "prepared_cities": 12,
+    "accepted_cities": 10,
+    "held_cities": 2,
+    "service_routes": 48,
+    "field_records": 480,
+    "saved_official_documents": 47,
+    "directions": [
+      "候補の480フィールド・質問→保存原典",
+      "保存原典→候補のAND/OR資格・世帯条件・例外・地区除外・料金・予約・窓口・搬出/搬入の区別"
+    ],
+    "source_retrieval": "2026-10-18 saved official snapshots; limited current official-domain searches for Akita/Toyama and Fukui age caveat",
+    "existing_36_published_regions_reread": false,
+    "external_publication": false,
+    "accepted_service_routes": 40,
+    "accepted_field_records": 400
+  },
+  "source_group_file": "group-east.json",
+  "source_group_sha256": "2fd258aa14144e1d64c1a50064da22d4100c2cb72959997b231466e812339940",
+  "accepted": [
+    {
+      "slug": "aomori",
+      "sha256": "21f6169ded1388db85428e9650478e914fc891beccd5ec23fd6df62d0873c7bd",
+      "review_file": "review-east/aomori.review.json",
+      "review_sha256": "bcbdcc06cbbde351bdacb3f9ecf90a87fbc78438b5161a0b528b765d47fd8991"
+    },
+    {
+      "slug": "morioka",
+      "sha256": "d0430319f6d4a1c69a76fb94e2979017167ae2cd82e874baf86dda11943d43bf",
+      "review_file": "review-east/morioka.review.json",
+      "review_sha256": "b4beb4f154d86aa0804f5a9162bd34811bf905b254fbb5157bc672fe11efe886"
+    },
+    {
+      "slug": "yamagata",
+      "sha256": "fadd34067b9d158fe47120d1fb634f02e0e9605b918ef8437865d9e2ce28c7ba",
+      "review_file": "review-east/yamagata.review.json",
+      "review_sha256": "81dccddb80f12b8cf676fed5e320458613ae7d2ed398ecd3d2767e4e58f094ee"
+    },
+    {
+      "slug": "fukushima",
+      "sha256": "9c78f56cc59c3a988df02f9095b98f0cc836cd8bc08849e54f50cb63d3bead33",
+      "review_file": "review-east/fukushima.review.json",
+      "review_sha256": "c325e3549573402320c1a5a21390209a6ba469a7d0f7140dbf7e7a9dda116ebc"
+    },
+    {
+      "slug": "mito",
+      "sha256": "466e71514e11c3c7470772f642fcabb0b349acd9cb8ded01ee5f98ac7aae57f1",
+      "review_file": "review-east/mito.review.json",
+      "review_sha256": "cc77a8780364353b6e361f3891bac6936a64e4006438b3336444bf79e142e2ab"
+    },
+    {
+      "slug": "utsunomiya",
+      "sha256": "189112f0a0a3f4503ed40064c64880d48925f50edf3a0a7893abb88fe8652f43",
+      "review_file": "review-east/utsunomiya.review.json",
+      "review_sha256": "8f8903ed409c48b024fb644cff1cc0321a9df9d4a9e36fbefb0c0431c891bc71"
+    },
+    {
+      "slug": "maebashi",
+      "sha256": "4359621bedde230ebf5c29f1b571e722323b098d563087e29e61b6f808a88a05",
+      "review_file": "review-east/maebashi.review.json",
+      "review_sha256": "a554067be7e03176e7f88098b30e5070e085132dc3132588603e12c94e3ecfc8"
+    },
+    {
+      "slug": "nagaoka",
+      "sha256": "4558416b1f2364a8094f7f6d5454eb93ebceffd42de543084d522daaa8d1d4b1",
+      "review_file": "review-east/nagaoka.review.json",
+      "review_sha256": "e0042fddaf6bb296be4d1553e35cce41f7e35399e5c8606e302b1ed645c68529"
+    },
+    {
+      "slug": "kanazawa",
+      "sha256": "768c72a65a416f69e07fa9886a14a3504d968f6f6bff9e47eb09e5f94e192733",
+      "review_file": "review-east/kanazawa.review.json",
+      "review_sha256": "89885837bffc2fe4ef647fa6891655d1bf888c2d19088be44f9c2d1386c5d6de"
+    },
+    {
+      "slug": "fukui",
+      "sha256": "c0636379323d2363fa94b62e2b193d0c1dc097051f8e581d464e1f7a3e3fed71",
+      "review_file": "review-east/fukui.review.json",
+      "review_sha256": "49a53ecda8767ba2c837bbe3ed6fb935924a2f69f81da7978bea6c3f4b027010"
+    }
+  ],
+  "held": [
+    {
+      "slug": "akita",
+      "draft_sha256": "92646d01b7c1c7365e62370c3998abbbe28cbd80c7188513afd7205f9fa0fa76",
+      "review_file": "review-east/akita.review.json",
+      "review_sha256": "3a2d9a9f432a0d87f937697920c834b8cafa0a0c0d363767502d2b95481f6257",
+      "reason": "高齢者の日常ごみ搬出支援と粗大ごみ屋内搬出支援の各10フィールドがすべてnot_found。保存資料は生活支援体制整備の課題協議であり、利用できる具体制度・資格・申請・費用を提示できない。通常粗大収集と自己搬入だけでは今回の支援ページとしての実用性が不足。",
+      "remaining_required_findings": [
+        "高齢者向け日常搬出支援の現行制度があるか、市の環境・福祉窓口または現行公式案内で確認。",
+        "制度があれば対象資格、世帯・家族条件、収集場所、費用、回数、申請窓口を原典で取得。",
+        "屋内搬出の公的制度有無と、ない場合の利用可能な許可業者への案内・料金条件を確認。"
+      ]
+    },
+    {
+      "slug": "toyama",
+      "draft_sha256": "0ce5c02985046f1d7fb0ea5474dfc8f059c9e4628e98a494eff8028126713895",
+      "review_file": "review-east/toyama.review.json",
+      "review_sha256": "d7f2e1d1f63d18a042738680370bd42e9a3be92c81dbeeba117ebf8c78ddb49f",
+      "reason": "高齢者向け定期戸別支援は2023年の市回答しか保存されておらず現行性未確認。日常資格は未発見で屋内搬出経路10フィールドもnot_found。自己搬入の代理資格・粗大受入・料金も要確認。通常有料戸別収集だけでは今回の支援ページとしての実用性が不足。",
+      "remaining_required_findings": [
+        "2023年の市回答後に高齢者等の定期ごみ出し支援が開始・変更されたか、現行公式案内と市窓口で確認。",
+        "日常支援があれば資格、世帯・家族条件、収集場所、費用、頻度、申請先を原典で取得。",
+        "屋内搬出の可否・代替経路と、粗大ごみ自己搬入の施設別受入、料金、家族代理条件を公式原典または窓口で確認。"
+      ]
+    }
+  ],
+  "consumption": {
+    "saved_official_documents_verified": 47,
+    "candidate_fields_reviewed": 480,
+    "corrected_cities": 8,
+    "token_usage": "not_available",
+    "web_search_queries": "limited; Akita/Toyama/Fukui current-status checks; not a nationwide sweep"
+  },
+  "parent_decision": "ユーザーの「未確認が大部分のページ量産を避ける」基準および西側佐賀保留と整合して、秋田・富山を保留へ再分類。",
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "秋田・富山は主要な支援経路と利用資格が未確認で、今回のプレビュー統合から除外。各heldの再開条件を満たす新しい公式根拠が必要。",
+    "その他10市も窓口照会・人手確認・公開承認は未実施。原典にない条件を推定せず未記載・未発見を保持。",
+    "福井の2009年表示ページと改正履歴のある要綱は2026年取得時に公開中だが、具体運用の現行性を窓口確認。"
+  ]
+}

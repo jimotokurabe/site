@@ -1,0 +1,96 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "0067c4b4393f2fc8080bd0ccaa38d75ac3fa61dd751bbfea3552df48c4496ee9",
+  "changes": [
+    {
+      "service_id": "tottori-regular",
+      "field": "indoor_carry",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      },
+      "after": {
+        "value": "玄関内を含む屋内からの搬出は行わない。1階屋外へ出す。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "tottori-regular",
+      "field": "application",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      },
+      "after": {
+        "value": "インターネットまたは大型ごみ受付センター 0857-22-0353へ電話で申し込む。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "tottori-regular",
+      "field": "contact",
+      "before": {
+        "value": "鳥取市の粗大ごみ担当窓口：0857-30-8084。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      },
+      "after": {
+        "value": "大型ごみ受付センター 0857-22-0353。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "tottori-self",
+      "field": "fees",
+      "before": {
+        "value": "取得した冊子の施設別手数料を確認。",
+        "state": "not_stated",
+        "source_ids": [
+          "tottori-self"
+        ]
+      },
+      "after": {
+        "value": "可燃ごみは10kgごと120円、不燃ごみは10kgごと390円。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      }
+    },
+    {
+      "service_id": "tottori-self",
+      "field": "contact",
+      "before": {
+        "value": "搬入施設・受付先は公式資料で確認。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-self"
+        ]
+      },
+      "after": {
+        "value": "可燃ごみはリンピアいなば 0857-26-0596（平日）・0858-85-3010（土曜・祝日）、不燃ごみは鳥取県東部環境クリーンセンター 0857-59-1802。",
+        "state": "explicit",
+        "source_ids": [
+          "tottori-regular"
+        ]
+      }
+    }
+  ]
+}

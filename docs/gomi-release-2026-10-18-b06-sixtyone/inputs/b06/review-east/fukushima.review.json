@@ -1,0 +1,453 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "fukushima:fukushima",
+  "slug": "fukushima",
+  "first_input_sha256": "e1c276ad12a783d62b54076c84da914976fd199aa3047882c0941e8135dac731",
+  "accepted_input_sha256": "9c78f56cc59c3a988df02f9095b98f0cc836cd8bc08849e54f50cb63d3bead33",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 4,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "日常支援の世帯例外と面談、粗大5点・3週間目安を照合。粗大自己搬入が無料であることを原典から補正。本人または親族の搬入と本人運転・同乗を区別。",
+  "corrections_file": "fukushima/corrections.json",
+  "correction_count": 3,
+  "field_inventory": [
+    {
+      "service_id": "fukushima-daily",
+      "field": "waste_scope",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "51e41ac3df0bd5d17b36dff8aab4c75f80b8886ef8859ce336e1a724eedcffcb"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "a48768b2dcad55f755caa10a26b4427b41573e107dfb369d2037af7b05ba714c"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "177766c8c8a8808027b208254aa74934b1f9fe63e5b17aa43334a5a6ec70eb48"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "68f57f7097824c669cfe281f716fb13137e1a5d32f09e1a6539e3f44b9a37144"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "fees",
+      "state": "not_stated",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "e9235141d96991392474b88e56ab15652b9c9236fc1899abaef5dbe46afd5d80"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "bf5089c1c149df7fa3457ca279980c452ff3f721bd38167aacd95079a1934b5a"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "640f65b9fb3901a4518e1c758cb552255a8b5dfc5473114211f2a3cbb9b68215"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "c447baf22aff0f93633eb97d5e10ce3a79c1d0e7e0fa739f0db14c1f97bc9fb1"
+    },
+    {
+      "service_id": "fukushima-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-daily"
+      ],
+      "value_sha256": "b871d5423bf7eaf077de06348faa56b5929bd074d0fe8327cd9c1614bf88122d"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "fukushima-daily",
+        "fukushima-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "32695305c54182dafb309c08049383404854d8d2ef9fd4dd483a0ccf5a19db88"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "548f8ac55ebbe6e6d029324d348875f571695e8edc6e9284e4a1b54f2a568cbc"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "eligibility",
+      "state": "not_stated",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "2620e618de2a3cfa4b7b453da9bbb178a4c108753f832aed5f6485833826d521"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "6e9594034e777deee26c7353586621628106815288ef71221b18fe9407dd07de"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "48c2d0fa521e8eaa81ec5a9e09f80bd1f9125bef805969ec68a41537f51caa8c"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "5c086236be323458b2283e90c2c83c25bdb665edbfe15c9ac9f09c86b0e96592"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "61561e9dcea2f67a5622634c0b1d178f2155805e1559910bed657b30f20d1751"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-bulky",
+        "fukushima-bulky-details"
+      ],
+      "value_sha256": "de4e7670e730bc1146007cc977957e5a3624b29f686cc6180736996ea2935451"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "5d6b3d4818bebbc158e947ff2e8f6cf688518b3605da71f0a109b24a1dedba8d"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "9fc2e014abbf9fbb10d1f0b930a1346a6b4a33fc5679f401c152a67f7473064d"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "b07970bfb609d4e157b72c1726bdc66c0724f377534f6b3467a494de7c4affae"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "0b0f729dd3a1d9545d777657d25b7f9996b4d5124ec93711620efec3455316fa"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "089b870f9c571a5c5ad964dab79a6c9b512e42b53dc0d6f7df04aeee2c6314a1"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "fees",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "fukushima-bulky-details",
+        "fukushima-self"
+      ],
+      "value_sha256": "b2c018bb05d323c28275d2416a1fcad06e40a1b6e47a8e1bf95b92a1a5fc2342"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "7462113f01519c01f5cf13b84ef82c1929b2772134786889a18ccd2dd43354b9"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "c2b343b14fdf1530c2679428f9cf0ece17fd014da9d397a4e86d780423692f9d"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "9d7b3abaee403d8eb0255ee69e6a9cb991320feaa12679d2c70756f901a850aa"
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "fukushima-self"
+      ],
+      "value_sha256": "5459d67b31d60e4ef09dc6bd75a384cb68f4388cdc21e3aa7b07f5761b4ec271"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "fukushima-bulky",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1039/2/14101.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-07-03",
+      "raw_file": "fukushima/official/fukushima-bulky.html.source",
+      "raw_sha256": "090bf04e99ea09ba8668c4ff4d203abe27502ef0252864c40b6fee64fc960d11",
+      "text_file": "fukushima/official/fukushima-bulky.txt",
+      "text_sha256": "d4bf2a1c926dfc281c5841cbbd0ff7c03cf6b378f0649af6c5879108a1c91bc1"
+    },
+    {
+      "id": "fukushima-bulky-details",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1036/1/1/1/676.html",
+      "retrieved_at": "2026-10-18T19:23:25+09:00",
+      "source_updated": "2026-10-13",
+      "raw_file": "fukushima/official/fukushima-bulky-details.html.source",
+      "raw_sha256": "7db7becdcaef1afabb2c1e33e4b67224ec66961057fb39c40fe210bc620a29da",
+      "text_file": "fukushima/official/fukushima-bulky-details.txt",
+      "text_sha256": "b0804250cb24bd237ad86c93d97ca72422e203d4aab70dd683ea91579c2e6916"
+    },
+    {
+      "id": "fukushima-daily",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1036/1/3020.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2025-07-04",
+      "raw_file": "fukushima/official/fukushima-daily.html.source",
+      "raw_sha256": "992862236baf09b6f12f43f7c6c2104146939c7d0d76a39a9c968e2f81064386",
+      "text_file": "fukushima/official/fukushima-daily.txt",
+      "text_sha256": "ef298a62e1859e86f59aa1ea41dcc06fe4b6c6a20958b32b16bf5d729778156c"
+    },
+    {
+      "id": "fukushima-self",
+      "url": "https://www.city.fukushima.fukushima.jp/soshiki/8/1036/1/1/682.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": "2026-08-21",
+      "raw_file": "fukushima/official/fukushima-self.html.source",
+      "raw_sha256": "3d43012c35fed2b613c83dbae7bd46088fbb7b1bb3c71be3f86543f9d3ce022a",
+      "text_file": "fukushima/official/fukushima-self.txt",
+      "text_sha256": "f6b1d2746f6c0c45f6206ec683e4f98b9a3ba97e12f9bbd83c348c559d10b690"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "粗大以外の自己搬入料金、家族同乗・運転の要否、屋内搬出制度は未確認。"
+  ]
+}

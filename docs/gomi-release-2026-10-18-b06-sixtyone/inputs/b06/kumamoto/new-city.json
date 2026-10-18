@@ -1,0 +1,446 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kumamoto:kumamoto",
+      "name": "熊本市",
+      "kana": "くまもとし",
+      "pref_name": "熊本県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kumamoto-daily-support",
+          "kind": "daily_support",
+          "name": "ふれあい収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "定期収集対象の家庭ごみ。大型ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関前。オートロック住宅は利用者が開錠し、在宅時に収集。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家の中には入れず、取り決めた屋外の場所まで排出が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "本人と同居者全員が次のいずれかに該当",
+                  "ステーション排出が難しい",
+                  "他の協力を得られない"
+                ],
+                "any": [
+                  "要介護1～5",
+                  "身体障害者手帳1・2級の肢体不自由または視覚障害",
+                  "精神障害者保健福祉手帳1級",
+                  "療育手帳A",
+                  "加齢や傷病等で排出困難と市が認める"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "family_help": {
+              "value": "他の協力を得られないこと。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "limits": {
+              "value": "原則1人につき45L袋2袋相当まで。3人以上の世帯は5袋相当まで。大型ごみ不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "application": {
+              "value": "各区総務企画課へ申請書と区分別の証明書を提出し、市の調査・審査後に決定。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            },
+            "contact": {
+              "value": "熊本市廃棄物計画課 096-328-2359。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "植木地区の出し方、オートロックの在宅要件を確認してください。",
+            "市長が認める例外の証明書と、同居者全員の条件を確認してください。",
+            "同居者全員の資格と、加齢・傷病の特認に必要な意見書を確認してください。"
+          ]
+        },
+        {
+          "id": "kumamoto-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-daily",
+                "kumamoto-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "熊本市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "大型ごみはふれあい収集対象外のため、室内から出せない場合の相談先を確認してください。"
+          ]
+        },
+        {
+          "id": "kumamoto-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "大型ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "植木地区を除き、指定大袋に入れて口を結べない家庭ごみ等。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "予約時に決めた屋外の場所へ収集日朝8時30分までに排出。収集車が近づけない場合のみ集積所を使うことがある。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市は家屋内に入って収集しない。屋外の収集場所まで運び出す必要がある。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目ごと500円または900円の処理シール。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "limits": {
+              "value": "原則1回5個まで。予約から通常1週間、繁忙期は3週間程度。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "application": {
+              "value": "ごみゼロコールへ電話予約。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            },
+            "contact": {
+              "value": "ごみゼロコール 0570-00-5374。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "植木地区の大型ごみの別ルール、5個上限、繁忙期の予約日を確認してください。"
+          ]
+        },
+        {
+          "id": "kumamoto-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "熊本市処理施設への持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "品目に応じ東部・西部環境工場、扇田環境センターへ持込。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "一般廃棄物10kgまでごとに150円。指定袋入りも手数料対象。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "application": {
+              "value": "品目に応じた施設の受入条件を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "kumamoto-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "東部・西部・扇田の品目別施設と、指定袋入りも計量料金対象になる点を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "熊本市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kumamoto-daily",
+      "url": "https://www.city.kumamoto.jp/kankyo/kiji0031428/index.html",
+      "title": "ごみ出しが困難な方に対して「ふれあい収集」を実施しています / 熊本市の環境TOP / 熊本市公式サイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2024-01-11",
+      "http_status": 200,
+      "final_url": "https://www.city.kumamoto.jp/kankyo/kiji0031428/index.html",
+      "retrieved_at": "2026-10-18T19:19:23+09:00",
+      "content_type": "text/html",
+      "raw_file": "kumamoto/official/daily.html.source",
+      "text_file": "kumamoto/official/daily.txt",
+      "raw_sha256": "1829b7b77a9a8787d8368f43e4cbdabf37926d41cc02efb3730eb918fb680b8a",
+      "text_sha256": "6bf347b0cb727c6eca920087da8d041fea97fe6fbf7e29aed3a0a981a844dfdb",
+      "last_modified_header": "Mon, 24 Aug 2026 10:53:30 GMT"
+    },
+    {
+      "id": "kumamoto-dropoff",
+      "url": "https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html",
+      "title": "熊本市のごみ処理施設への持込について（東部環境工場・西部環境工場・扇田環境センター） / 熊本市の環境TOP / 熊本市公式サイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-09-08",
+      "http_status": 200,
+      "final_url": "https://www.city.kumamoto.jp/kankyo/kiji00322037/index.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "content_type": "text/html",
+      "raw_file": "kumamoto/official/dropoff.html.source",
+      "text_file": "kumamoto/official/dropoff.txt",
+      "raw_sha256": "75328e19679e50fa1f0c7678f04a0234dbac4675d64abf2854d88b4a70fe142c",
+      "text_sha256": "521e081d3368b0120bee60ebe0b6bacbc147fd3e6cc070cb120c050fe25fc803",
+      "last_modified_header": "Mon, 24 Aug 2026 11:48:46 GMT"
+    },
+    {
+      "id": "kumamoto-regular",
+      "url": "https://www.city.kumamoto.jp/kiji003552/index.html",
+      "title": "「大型ごみ」の出し方【ごみゼロコール（0570-00-5374）】 / 熊本市公式サイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2023-10-16",
+      "http_status": 200,
+      "final_url": "https://www.city.kumamoto.jp/kiji003552/index.html",
+      "retrieved_at": "2026-10-18T19:18:46+09:00",
+      "content_type": "text/html",
+      "raw_file": "kumamoto/official/regular.html.source",
+      "text_file": "kumamoto/official/regular.txt",
+      "raw_sha256": "61b562b33038832674c2b69e84921b8ee6d29dc1c63e37a1196ffe7df73d9279",
+      "text_sha256": "35d8900363d906d492ebe3324c77eb557633f495760395475d4e8541a8b594c4",
+      "last_modified_header": "Wed, 14 Oct 2026 15:17:06 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

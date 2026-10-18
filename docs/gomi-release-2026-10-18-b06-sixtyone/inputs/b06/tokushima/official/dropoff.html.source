@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-language" content="ja" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="Tokushima city" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+
+<title>ごみ処理施設への搬入について：徳島市公式ウェブサイト</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/lightbox.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.wysiwyg.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.tableconverter.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/webalert_embed.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/webalert_telop.css" />
+
+
+<link rel="stylesheet" type="text/css" media="all" href="/css/style_base.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style_main.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/css/style_print.css" />
+
+
+
+
+
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js" charset="Shift_JIS"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(init_cms_smartphone_dispatch);
+function init_cms_smartphone_dispatch() {
+  cms.smartphone.dispatch('/smph/kurashi/recycle/gomi/jigyou/hannyuu.html', 'ja');
+}
+// ]]>
+</script>
+
+
+<script type="text/javascript" src="/js/jquery.webalert-embed.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/js/jquery.webalert-telop.js" charset="UTF-8"></script>
+
+<script type="text/javascript" src="/js/gnavi.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/jquery.hoverIntent.minified.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/jquery.dropshadow.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/search.js" charset="Shift_JIS"></script>
+
+<script type="text/javascript" src="/js/mymenu/jquery.json-2.2.min.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/mymenu/jquery.cookies.2.1.0.min.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/mymenu/jquery.browser.min.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/mymenu/jquery.ba-urlinternal.min.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/mymenu/jquery.tempest-0.2.min.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/mymenu/jquery-impromptu.custom.min.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/js/mymenu/jquery.mymenu.core-1.0.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/js/mymenu/myMenu.js" charset="UTF-8"></script>
+
+<script src="/js/jquery.lightbox-0.5.min.js" type="text/javascript"></script>
+<script src="/js/imglinkSUB.js" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(function() {
+  $('a.openimg').lightBox();
+});
+// ]]>
+</script>
+<script type="text/javascript" charset="utf-8" src="/js/cms.smartphone.js"></script>
+<script type="text/javascript" src="/js/analyticscode.js"></script>
+
+
+</head>
+<body id="base">
+
+
+<!-- scs_jyogai_start -->
+<noscript>
+<p class="jsmessage">徳島市ホームページではJavaScriptを使用しています。JavaScriptの使用を有効にしていない場合は、一部の機能が正確に動作しない恐れがあります。<br />お手数ですがJavaScriptの使用を有効にしてください。</p>
+</noscript>
+<div class="blockjump"><a id="PTOP" name="PTOP"><img alt="このページの先頭です" height="1" src="/images/spacer.gif" width="1" /></a></div>
+<div id="blockskip">
+<script type="text/javascript">
+// <![CDATA[
+$(function(){
+	// 災害情報の埋め込み
+	$('#webalert_info').webalertEmbedPc({
+		maxCount: 3
+	});
+
+	// テロップの埋め込み（上部表示）
+	$.webalertTelopPcTop({
+		maxCount: 3
+	});
+});
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+$(function(){
+	$("#blockskip a").focus(function(){
+		$(this).parent()
+			.animate(
+				{
+					height: '1.5em'
+				},{
+					duration: 'fast'
+				}
+			)
+			.addClass("show");
+	});
+	$("#blockskip a")
+		.blur(function(){
+		$(this).parent()
+			.animate(
+				{
+					height: '1px'
+				},{
+					duration: 'fast',
+					complete: function(){
+						$(this).removeClass("show");
+					}
+				}
+			)
+	});
+});
+// ]]>
+</script>
+<a href="#CONT">このページの本文へ移動</a>
+</div>
+<!-- ▼ヘッダーここから▼ -->
+<div id="baseall">
+<div id="headbgall">
+<div id="headbg" class="clearfix">
+<div class="inner">
+<div id="head1bg">
+<div id="h0title"><a href="/index.html"><img src="/images/c_title.gif" alt="徳島市" width="275" height="100" /></a></div>
+</div><!-- /div head1bg -->
+<div class="head3bg clearfix">
+<ul class="headlist clearfix">
+<li><a href="https://www.zoomsight-sv.jp/TKS/controller/index.html#https://www.city.tokushima.tokushima.jp/">音声読み上げ・文字拡大</a></li>
+<li><a href="http://www.city.tokushima.tokushima.jp/multilingual/index.html">Multilingual</a></li>
+<li><a href="/mobile/index.html">携帯サイト</a></li>
+<li><a href="/sitemap.html">サイトマップ</a></li>
+</ul>
+</div>
+<!--▽グローバルナビ▽-->
+<script type="text/javascript" src="/js/selectheader.js" charset="Shift_JIS"></script>
+<div id="gnb">
+<ul class="gnavi clearfix">
+<li class="parent"><a href="/kurashi/index.html"><img src="/images/t_gnb01_off.gif" alt="くらし・手続き" width="162" height="70" /></a>
+<div class="sub" id="gnavi01"><img src="/images/spacer.gif" alt="" width="1" height="1" /></div>
+</li>
+<li class="parent"><a href="/kosodate/index.html"><img src="/images/t_gnb02_off.gif" alt="子育て･教育" width="160" height="70" /></a>
+<div class="sub" id="gnavi02"><img src="/images/spacer.gif" alt="" width="1" height="1" /></div>
+</li>
+<li class="parent"><a href="/kenko_fukushi/index.html"><img src="/images/t_gnb03_off.gif" alt="健康・福祉" width="141" height="70" /></a>
+<div class="sub" id="gnavi03"><img src="/images/spacer.gif" alt="" width="1" height="1" /></div>
+</li>
+<li class="parent"><a href="/shisei/index.html"><img src="/images/t_gnb04_off.gif" alt="市政情報" width="130" height="70" /></a>
+<div class="sub" id="gnavi04"><img src="/images/spacer.gif" alt="" width="1" height="1" /></div>
+</li>
+<li class="parent"><a href="/kankou/index.html"><img src="/images/t_gnb05_off.gif" alt="観光・文化" width="142" height="70" /></a>
+<div class="sub" id="gnavi05"><img src="/images/spacer.gif" alt="" width="1" height="1" /></div>
+</li>
+</ul>
+</div><!-- /div gnb -->
+<!--△グローバルナビ△-->
+</div>
+</div><!-- /div headbg -->
+<div class="head2bg clearfix">
+<div class="search clearfix">
+<!-- ▽サイト内検索▽ -->
+<div class="search-txt">
+<label for="query" class="smsg"><img src="/images/c_icon_search.gif" alt="サイト内検索" width="144" height="30" /><img src="/images/spacer.gif" alt="キーワードを入力してください。" width="1" height="1" /></label>
+</div>
+<div class="h0search"></div>
+<!-- △サイト内検索△ -->
+</div>
+</div>
+<div class="guidance"><img src="/images/spacer.gif" alt="サイトメニューここまで" width="1" height="1" /></div>
+</div><!-- /div headbgall -->
+<hr />
+<div id="basebgwrap">
+<!--▽パンくずナビ▽-->
+<div class="pankuzu">
+<ul class="clearfix">
+<li class="pk-img"><img src="/images/c_icon_pankuzu.gif" width="105" height="23" alt="現在のページ" /></li>
+<li><a href="/index.html">トップページ</a></li>
+<li><a href="../../../index.html">くらし・手続き</a></li>
+<li><a href="../../index.html">ごみ・リサイクル</a></li>
+<li><a href="../index.html">ごみ</a></li>
+<li><a href="./index.html">事業系ごみについて</a></li>
+<li class="pk-thispage">ごみ処理施設への搬入について</li>
+
+</ul>
+</div>
+<!--△パンくずナビ△-->
+<hr />
+<div id="basewrap">
+<div class="wrap clearfix">
+<div id="main">
+<div class="guidance"><a name="CONT" id="CONT"><img src="/images/spacer.gif" alt="本文ここから" width="1" height="1" /></a></div>
+<!-- scs_jyogai_end -->
+
+
+
+
+<div class="h1bg"><div class="h1wp"><h1>ごみ処理施設への搬入について</h1></div>
+<div class="update clearfix"><p>最終更新日：2023年5月15日</p></div>
+
+</div>
+<div class="main_inner">
+
+
+
+<div class="h2bg"><div><h2>粗大ごみを持ち込む前にリユース（再利用）してみませんか！</h2></div></div>
+<div class="wysiwyg_wp"><p>本市では持続可能な循環型社会への転換を図るため、リユースによるごみ減量化を進める啓発活動を行っています。</p></div>
+<div class="h3bg"><div><h3>「おいくら」で不要品を売却したい方</h3></div></div>
+<div class="wysiwyg_wp"><p>一度に複数のリユースショップの買取価格を比較し売却ができるサービスです。<br />大型の家電や家具でも自宅まで買取にきてくれる事業者もあります。</p></div>
+<p class="externalLink"><img src="/images/spacer.gif" alt="新規ウィンドウで開きます。" width="1" height="1" class="img-guidance" /><a class="externalLink" href="https://oikura.jp/lg/tokushima/tokushima/?utm_source=lg_hp&amp;utm_medium=referral&amp;utm" target="_blank"  rel="noopener noreferrer">「おいくら」をご利用される方はこちら（外部サイト）</a></p>
+
+<div class="h3bg"><div><h3>「ジモティー」で不要品を地元で譲りたい方</h3></div></div>
+<div class="wysiwyg_wp"><p>ちいきの掲示板を通じて不用品を譲ったり譲り受けたりできるサービスです。<br />手数料をかけずに不要なものを有料または無料で譲ることができ、直接やり取りができます。</p></div>
+<p class="externalLink"><img src="/images/spacer.gif" alt="新規ウィンドウで開きます。" width="1" height="1" class="img-guidance" /><a class="externalLink" href="https://jmty.jp/about/what_is_jmty?jtm_source=tokushima&amp;jtm_campaign=top&amp;jtm_screen=sodai1" target="_blank"  rel="noopener noreferrer">「ジモティー」をご利用される方はこちら（外部サイト）</a></p>
+
+<div class="h3bg"><div><h3>「メルカリ」で不要品を個人間で売りたい方</h3></div></div>
+<div class="wysiwyg_wp"><p>全国のユーザーと売買ができるフリマアプリで、スマホから簡単に出品できます。<br />自分で価格を設定し、写真を撮って出品するだけで取引を始められます。</p></div>
+<p class="externalLink"><img src="/images/spacer.gif" alt="新規ウィンドウで開きます。" width="1" height="1" class="img-guidance" /><a class="externalLink" href="https://jp-news.mercari.com/" target="_blank"  rel="noopener noreferrer">「メルカリ」をご利用される方はこちら（外部サイト）</a></p>
+
+<div class="h2bg"><div><h2>ごみ処理施設への持ち込み</h2></div></div>
+<div class="h3bg"><div><h3>分別頑張ったんやけど、燃やすしかないごみ・燃やせないごみ等の持ち込み</h3></div></div>
+<div class="wysiwyg_wp"><p>　ご自分でごみを処理施設に持ち込むときは、ごみを種類別（分別頑張ったんやけど、燃やすしかないごみ、燃やせないごみ、粗大ごみ、缶・びん、ペットボトル、プラマーク）に分けて、各施設に問い合わせてから持ち込んでください。<br />　なお、古紙類（雑誌、雑紙、ダンボール、紙パック、新聞紙等）につきましては「<a href="/kurashi/recycle/gomi/jigyou/recycle_paper.html" class="innerLink">紙ごみの処理方法</a>」に書いてある方法で処理してください。</p></div>
+<div class="t-box2">
+<table summary="" width="95%" class="table01">
+  <caption>分別頑張ったんやけど、燃やすしかないごみ・燃やせないごみ等の持ち込み先</caption>
+  <tr>
+    <th class="center" rowspan="1" style="width: 20%" scope="row"><p>持込可能な<br />ごみの種類</p></th>
+    <td class="center"><strong>処理施設名</strong></td>
+    <td class="center"><strong>住所・電話番号</strong></td>
+    <td class="center"><strong>持込時間</strong></td>
+  </tr>
+  <tr>
+    <th class="center" rowspan="2" style="width: 20%" scope="row"><p>分別頑張ったんやけど、燃やすしかないごみ<br />（古紙類を除く）</p></th>
+    <td class="left">東部環境事業所</td>
+    <td class="left">徳島市論田町元開43-1<br />電話：088-662-0941</td>
+    <td class="left" colspan="1" rowspan="1"><p>月曜から金曜　午前8時30分から午後4時<br />（祝日及び年末年始を除く)</p></td>
+  </tr>
+  <tr>
+    <td class="left">西部環境事業所</td>
+    <td class="left"><p>徳島市国府町北岩延字桑添18-1<br />電話：088-642-8402</p></td>
+    <td class="left" colspan="1" rowspan="1"><p>月曜から金曜　午前8時30分から午後4時<br />（祝日及び年末年始を除く)</p></td>
+  </tr>
+  <tr>
+    <th class="center" rowspan="2" scope="row"><p>燃やせないごみ<br />粗大ごみ<br />缶・びん<br />ペットボトル<br />プラマーク<br />（燃やせないごみ等）</p></th>
+    <td class="left"><p>株式会社三紅<br />（中間処理場）</p></td>
+    <td class="left"><p>徳島市飯谷町高良26-20<br />電話：088-645-2198</p></td>
+    <td class="left" colspan="1" rowspan="1"><p>月曜から金曜　午前8時30分から午後3時<br />（祝日及び年末年始を除く）</p></td>
+  </tr>
+  <tr>
+    <td class="left"><p>株式会社三幸クリーンサービスセンター<br />（中間処理場）</p></td>
+    <td class="left"><p>徳島市丈六町山根30<br />電話：088-645-1966</p></td>
+    <td class="left" colspan="1" rowspan="1"><p>月曜から金曜　午前8時30分から午後3時<br />（祝日及び年末年始を除く）</p></td>
+  </tr>
+</table>
+
+</div>
+<div class="t-box2">
+<table summary="" width="95%" class="table01">
+  <caption>処理手数料（共通）</caption>
+  <tr>
+    <th class="center" scope="col">単位</th>
+    <th class="center" scope="col">処理手数料の額</th>
+  </tr>
+  <tr>
+    <td class="left">100kgまで</td>
+    <td class="left">1,220円</td>
+  </tr>
+  <tr>
+    <td class="left">100kgを超える場合</td>
+    <td class="left">1,220円に100kgを超える部分につき<br />10kgまでを増すごとに122円を加算して得た額</td>
+  </tr>
+</table>
+
+</div>
+<div class="wysiwyg_wp"><p>上記処理手数料は令和元年10月1日より改定。<br /><strong class="text-color-red"><span class="text-color-red">注意：中間処理場での一般廃棄物処理手数料徴収事務は、株式会社三紅及び株式会社三幸クリーンサービスセンターに委託しています。</span></strong></p></div>
+<div class="h3bg"><div><h3>犬・猫等の死体の持ち込み</h3></div></div>
+<div class="wysiwyg_wp"><p>　犬・猫等の死体については、東部環境事業所業務課で引取りを実施していますので、施設へ問い合わせてから持ち込んでください。</p></div>
+<div class="t-box2">
+<table summary="" width="95%" class="table01">
+  <caption>犬、猫等の死体</caption>
+  <tr>
+    <th class="center" scope="row">持込先</th>
+    <td class="left">東部環境事業所　業務課</td>
+    <td class="left"><p>徳島市論田町元開43-1<br />電話：088-662-0139</p></td>
+  </tr>
+  <tr>
+    <th class="center" scope="row">持込時間</th>
+    <td class="left">犬、猫等の死体</td>
+    <td class="left">月曜から金曜　午前8時30分から午後5時<br />（祝日及び年末年始を除く）</td>
+  </tr>
+  <tr>
+    <th class="center" scope="row">処理手数料</th>
+    <td class="left">1体につき</td>
+    <td class="left">510円</td>
+  </tr>
+</table>
+
+</div>
+<div class="wysiwyg_wp"><p>上記処理手数料は平成26年4月1日より改定。</p></div>
+<div class="h2bg"><div><h2>ごみ処理施設地図</h2></div></div>
+<div class="wysiwyg_wp"><div class="h3bg"><div><h3>東部環境事業所</h3></div></div><p>［論田町元開43-1　電話：088-662-0941］</p></div>
+<div class="img-area">
+<p class="img-left"><a class="externalLink" href="https://www.google.co.jp/maps/place/%E3%80%92770-8011+%E5%BE%B3%E5%B3%B6%E7%9C%8C%E5%BE%B3%E5%B3%B6%E5%B8%82%E8%AB%96%E7%94%B0%E7%94%BA%E5%85%83%E9%96%8B+%E5%BE%B3%E5%B3%B6%E5%B8%82%E8%AB%96%E7%94%B0%E6%B8%85%E6%8E%83%E5%B7%A5%E5%A0%B4/@34.0384002,134.5720008,19z/data=%214m2%213m1%211s0x355312c96a7a024b:0x5134d1ce60483f7d?hl=ja" target="_blank"  rel="noopener noreferrer"><img src="hannyuu.images/siminkankyo_seisaku35.jpg" width="350" height="265" alt="東部環境事業所の地図画像（外部サイト）" /></a><br /><span>Googleマップへリンク</span></p>
+</div>
+<div class="wysiwyg_wp"><div class="h3bg"><div><h3>西部環境事業所</h3></div></div><p>［国府町北岩延字桑添18-1　電話：088-642-8402］</p></div>
+<div class="img-area">
+<p class="img-left"><a class="externalLink" href="https://www.google.co.jp/maps/place/%E3%80%92779-3119+%E5%BE%B3%E5%B3%B6%E7%9C%8C%E5%BE%B3%E5%B3%B6%E5%B8%82%E5%9B%BD%E5%BA%9C%E7%94%BA%E5%8C%97%E5%B2%A9%E5%BB%B6%E6%A1%91%E6%B7%BB%EF%BC%91%EF%BC%98%E2%88%92%EF%BC%91/@34.087168,134.4945185,18z/data=%214m2%213m1%211s0x35537337db7ed9e7:0xd0a8ae88dfb5b43c?hl=ja" target="_blank"  rel="noopener noreferrer"><img src="hannyuu.images/siminkankyo_seisaku37.jpg" width="350" height="241" alt="西部環境事業所の地図画像（外部サイト）" /></a><br /><span>Googleマップへリンク</span></p>
+</div>
+<div class="wysiwyg_wp"><div class="h3bg"><div><h3>株式会社三紅</h3></div></div><p>［飯谷町高良26-20　電話：088-645-2198］</p></div>
+<div class="img-area">
+<p class="img-left"><a class="externalLink" href="https://www.google.co.jp/maps/place/%E3%80%92771-4265+%E5%BE%B3%E5%B3%B6%E7%9C%8C%E5%BE%B3%E5%B3%B6%E5%B8%82%E9%A3%AF%E8%B0%B7%E7%94%BA%E9%AB%98%E8%89%AF%EF%BC%92%EF%BC%96%E2%88%92%EF%BC%92%EF%BC%90/@33.9871046,134.5478758,17z/data=%213m1%214b1%214m2%213m1%211s0x35530dff20a32b6b:0x613db875a9c0aff8?hl=ja" target="_blank"  rel="noopener noreferrer"><img src="hannyuu.images/siminkankyo_seisaku49.jpg" width="312" height="277" alt="株式会社三紅の地図画像（外部サイト）" /></a><br /><span>Googleマップへリンク</span></p>
+</div>
+<div class="wysiwyg_wp"><div class="h3bg"><div><h3>株式会社三幸クリーンサービスセンター</h3></div></div><p>［丈六町山根30　電話：088-645-1966］</p></div>
+<div class="img-area">
+<p class="img-left"><a class="externalLink" href="https://www.google.co.jp/maps/place/%E3%80%92771-4261+%E5%BE%B3%E5%B3%B6%E7%9C%8C%E5%BE%B3%E5%B3%B6%E5%B8%82%E4%B8%88%E5%85%AD%E7%94%BA%E5%B1%B1%E6%A0%B9%EF%BC%93%EF%BC%90/@34.0100492,134.5434009,17z/data=%213m1%214b1%214m2%213m1%211s0x35530d8efe7d8c2d:0xc7e0f57fb6c03be1?hl=ja" target="_blank"  rel="noopener noreferrer"><img src="hannyuu.images/siminkankyo_seisaku50.jpg" width="312" height="277" alt="株式会社三紅クリーンサービスセンターの地図画像（外部サイト）" /></a><br /><span>Googleマップへリンク</span></p>
+</div>
+<div class="h2bg"><div><h2>この内容に対する連絡先</h2></div></div>
+<div class="wysiwyg_wp"><p>環境部環境政策課企画担当<br />　電話：088-621-5217<br />　FAX：088-621-5210</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="socialmedia clearfix">
+<script type="text/javascript" src="/js/jquery.socialbutton-1.8.0.js"></script>
+<script src="/js/socialbutton_set.js" type="text/javascript"></script>
+<div class="sp_box clearfix"><div id="twitter"></div></div>
+</div>
+
+<div class="contact">
+<h2>お問い合わせ</h2>
+<p class="title"><strong>環境政策課</strong></p>
+<p class="title">〒770-8571　徳島県徳島市幸町2丁目5番地（本館9階）</p>
+<p class="title">電話番号：088-621-5202・5206・5217</p>
+<p class="title">ファクス：088-621-5210</p>
+<p class="contact-email"><a class="innerLink" href="https://www.city.tokushima.tokushima.jp/cgi-bin/formmail/formmail.cgi?d=180200">担当課にメールを送る</a></p>
+</div>
+
+
+
+<script type="text/javascript" src="/js/feedback.js"></script>
+<!-- scs_jyogai_start -->
+<div class="feedback-wp">
+<h2>この情報はお役に立ちましたか？</h2>
+<p>お寄せいただいた評価はサイト運営の参考といたします。</p>
+<form action="/cgi-bin/vote/vote.cgi" method="post" id="formmail" name="formmail" class="feedback">
+<div class="formtxt">
+<fieldset>
+<legend class="form-h3">質問：このページの情報は役に立ちましたか？</legend>
+<div class="fedd">評価：
+<input type="radio" name="question1" value="役に立った" id="q1-point3" checked="checked" /><label for="q1-point3">役に立った</label>
+<input type="radio" name="question1" value="どちらともいえない" id="q1-point2" /><label for="q1-point2">どちらともいえない</label>
+<input type="radio" name="question1" value="役に立たない" id="q1-point1" /><label for="q1-point1">役に立たない</label>
+</div>
+</fieldset>
+<fieldset>
+<legend class="form-h3">質問：このページの情報は見つけやすかったですか？</legend>
+<div class="fedd">評価：
+<input type="radio" name="question2" value="見つけやすかった" id="q2-point3" checked="checked" /><label for="q2-point3">見つけやすかった</label>
+<input type="radio" name="question2" value="どちらともいえない" id="q2-point2" /><label for="q2-point2">どちらともいえない</label>
+<input type="radio" name="question2" value="見つけにくかった" id="q2-point1" /><label for="q2-point1">見つけにくかった</label>
+</div>
+</fieldset>
+<div>
+<input type="hidden" name="url" value="/kurashi/recycle/gomi/jigyou/hannyuu.html" />
+<input type="hidden" name="title" value="ごみ処理施設への搬入について" />
+<input type="hidden" name="tanto" value="環境政策課" />
+<input type="hidden" name="tantocode" value="180200" />
+<input type="hidden" name="hyoukatime" value="" />
+</div>
+<div class="submitbox"><input type="submit" name="submit" class="fedbt" value="送信" /></div>
+</div>
+</form>
+</div><!--/feedback-wp-->
+<!-- scs_jyogai_end -->
+
+
+
+
+
+
+
+<!-- scs_jyogai_start -->
+<div class="guidance"><img alt="本文ここまで" height="1" src="/images/spacer.gif" width="1" /></div>
+</div><!-- /div main_inner -->
+</div><!-- /div main -->
+<hr />
+<div id="localnavi">
+<div class="guidance"><img alt="サブナビゲーションここから" height="1" src="/images/spacer.gif" width="1" /></div>
+<!-- ▽注目情報▽ -->
+<div class="chumoku lobgbox">
+<h2><span class="lobox_img">注目情報</span></h2>
+
+<ul><li class="pagelinkin"><a href="/kurashi/todokede/mynumber/maina_densyo.html">電子証明書更新専用窓口（マイナンバーカード更新コーナー）開設</a></li>
+<li class="pagelinkin"><a href="/shisei/shiyakusho/202609madoguchihenko.html">市役所のフロア配置の変更について</a></li>
+<li class="pagelinkin"><a href="/shisei/machi_keikaku/sdgs/kikakuunkou.html">電動船HARMO艇を活用したクルーズ商品を企画してみませんか</a></li>
+</ul>
+
+</div>
+<!-- △注目情報△ -->
+<!-- ▽サブナビゲーション▽ -->
+
+<div id="losubnavi">
+<div class="lobgbox">
+<h2><span class="lobox_img">事業系ごみについて</span></h2>
+<ul>
+<li><a href="/kurashi/recycle/gomi/jigyou/jigyoushori.html">事業系ごみの処理方法</a></li>
+
+<li><a href="/kurashi/recycle/gomi/jigyou/pamphlet.html">事業系ごみパンフレット</a></li>
+
+<li><span class="now">ごみ処理施設への搬入について</span></li>
+
+<li><a href="/kurashi/recycle/gomi/jigyou/recycle_paper.html">事業所から出る紙ごみのリサイクルにご協力をお願いします</a></li>
+</ul>
+</div></div>
+
+<!-- △サブナビゲーション△ -->
+<!-- ▽レコメンド▽ -->
+
+<div class="lorecommend lobgbox">
+<h2><span class="lobox_img">このページを見ている人はこんなページも見ています</span></h2>
+<ul>
+<li class="pagelinkin"><a href="/kankou/pororo_biyori/topics20150630_01.html"> 「破壊工作」（2015年6月30日）</a></li>
+<li class="pagelinkin"><a href="/kosodate/ikuji/soudan/hamigaki_soudan.html"> 歯みがき相談</a></li>
+</ul>
+</div>
+
+<!-- △レコメンド△ -->
+<!-- ▽サイドボタン▽ -->
+<div class="kanren lobgbox">
+<h2><span class="lobox_img">もしものとき</span></h2>
+<ul>
+<li class="pagelinkin"><a href="/anzen/kyukyu/index.html">救急診療</a></li>
+<li class="pagelinkin"><a href="/anzen/shoubo_bousai/index.html">消防・防災</a></li>
+<li class="pagelinkin"><a href="/anzen/anzen_bouhan/index.html">交通安全・防犯</a></li>
+</ul>
+</div>
+<p class="lojoho"><a href="/shisetsu/index.html"><img alt="施設情報" width="242" height="59" src="/images/c_side_btn01.png" /></a></p>
+<p class="lojoho"><a href="/faq/index.html"><img alt="よくあるご質問" width="242" height="59" src="/images/c_side_btn02.png" /></a></p>
+<p class="lojoho"><a href="/about/infoloss.html"><img alt="情報がみつからないときは" width="242" height="59" src="/images/c_side_btn03.png" /></a></p>
+<!-- △サイドボタン△ -->
+<!-- ▽お気に入り▽ -->
+<div class="mymenu_box lobgbox">
+<div class="bookmark-title clearfix">
+<h2><span class="lobox_img">お気に入り</span></h2>
+<p><a href="/about/mymenu.html">編集</a></p>
+</div>
+<div id="myMenu_mainList">
+<noscript>Javascriptが無効になっているため、本機能はご利用になれません。</noscript>
+</div>
+<div class="center">
+<button id="myMenuAdd" type="button"><span>このページを登録する</span></button>
+</div>
+</div>
+<!-- △お気に入り△ -->
+<div class="guidance"><img alt="サブナビゲーションここまで" height="1" src="/images/spacer.gif" width="1" /></div>
+</div><!-- /div localnavi -->
+</div><!-- /div wrap -->
+<hr />
+<div class="tothispage clearfix"><div><a href="#PTOP"><img src="/images/c_tothispage_img.gif" alt="ページの先頭へ" width="102" height="56" /></a></div></div>
+</div><!-- /div basewrap -->
+</div><!-- /div basebgwrap -->
+<!-- ▼フッターここから▼ -->
+<div class="footbgall">
+<div class="footwp">
+<div class="newpara guidance"><img src="/images/spacer.gif" alt="以下フッターです。" width="1" height="1" /></div>
+<h2 class="f_btn_letf"><img src="/images/c_foot_logo.png" alt="徳島市役所" width="175" height="90" /></h2>
+<div class="foot1bg clearfix">
+<div class="clearfix">
+<address class="f_btn_letf">〒770-8571　徳島県徳島市幸町2丁目5番地</address>
+</div>
+<p>電話：088-621-5111（代表）　ファクス：088-654-2116</p>
+<p>開庁時間：午前8時30分から午後5時まで（土曜・日曜・祝日・12月29日から翌年の1月3日までを除く）</p>
+<p>注記：施設・部署によっては異なる場合があります。</p>
+<p class="innerLink"><a class="innerLink" href="/shisei/shiyakusho/shiyakusho_about.html">庁舎案内</a></p>
+<p class="innerLink"><a class="innerLink" href="/shisei/shiyakusho/shiyakusho_map.html">周辺地図</a></p>
+<ul class="footlist clearfix">
+<li><a href="/about/privacy_policy.html">プライバシー・ポリシー（個人情報の取り扱い）</a></li>
+<li><a href="/shisei/shiyakusho/ka_ichiran/otoiawase.html">お問い合わせ</a></li>
+<li><a href="/about/use.html">サイトの使い方</a></li>
+<li><a href="/about/webaccessibility.html">アクセシビリティ</a></li>
+</ul>
+</div><!-- /div foot1bg -->
+</div><!-- /div footwp -->
+<div class="f0copy">Copyright &copy; Tokushima City All Rights Reserved.<div class="guidance"><img src="/images/spacer.gif" alt="フッターここまで" width="1" height="1" /><a href="#PTOP"><img src="/images/spacer.gif" alt="このページのトップに戻る" width="1" height="1" /></a></div></div>
+<!-- ▲フッターここまで▲ -->
+</div><!-- /div footbgall -->
+</div><!-- /div baseall -->
+<!-- scs_jyogai_end -->
+
+</body>
+</html>

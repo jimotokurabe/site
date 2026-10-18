@@ -1,0 +1,42 @@
+{
+  "reviewed": "2026-10-18",
+  "base_sha256": "3233de63d7c5944599a8cae41d895d57a4d9d96fbec716cf27aa757c1c015494",
+  "changes": [
+    {
+      "service_id": "shizuoka-carry",
+      "field": "attendance",
+      "before": {
+        "value": "申込者本人と家族以外の第三者が収集時に立会い、承諾書に記名。",
+        "state": "explicit",
+        "source_ids": [
+          "shizuoka-daily"
+        ]
+      },
+      "after": {
+        "value": "申込者本人と、家族以外の第三者が収集時に立ち会い、承諾書に記名する。",
+        "state": "explicit",
+        "source_ids": [
+          "shizuoka-daily"
+        ]
+      }
+    },
+    {
+      "service_id": "shizuoka-self",
+      "field": "waste_scope",
+      "before": {
+        "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "shizuoka-self"
+        ]
+      },
+      "after": {
+        "value": "可燃ごみは一度に11袋以上、不燃・粗大ごみは収集可能サイズ超過や一度に8点以上など、通常収集に出せない場合の持ち込み。資源物の受け入れは施設で異なる。",
+        "state": "explicit",
+        "source_ids": [
+          "shizuoka-self"
+        ]
+      }
+    }
+  ]
+}

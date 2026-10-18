@@ -1,0 +1,439 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "yamaguchi:yamaguchi",
+      "name": "山口市",
+      "kana": "やまぐちし",
+      "pref_name": "山口県",
+      "selection_reason": "全国47都道府県のごみ支援入口として、未掲載県から県庁所在市を1市選定。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "yamaguchi-daily-support",
+          "kind": "daily_support",
+          "name": "ごみ出し支援事業（実証中）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やせるごみを週1回収集。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先等の屋外に出されたごみを収集。屋内からの運び出しではない。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "世帯員全員が山口市に住所を有し居住",
+                  "世帯員全員が要介護1以上の認定者または身体・療育・精神のいずれかの障害者手帳所持者",
+                  "世帯員自身も別居親族・介護関係者等の支援でもステーションへの排出が困難と認められる"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "family_help": {
+              "value": "別居親族や介護関係者等による排出も困難なこと。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "fees": {
+              "value": "利用料金は無料。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "limits": {
+              "value": "実証中。燃やせるごみのみ週1回。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "application": {
+              "value": "ケアマネジャー等から事前相談後、申請・訪問調査・決定通知。代理申請可。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            },
+            "contact": {
+              "value": "山口市清掃事務所 083-927-1770。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "実証中の募集・対象区域と終了予定を確認してください。",
+            "親族・介護サービスの支援がどこまであれば対象外になるか確認してください。",
+            "実証中のごみ出し支援が阿東・徳地などを含む住所でも利用できるか確認してください。"
+          ]
+        },
+        {
+          "id": "yamaguchi-bulky-carry-support",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの室内搬出支援（制度案内未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式案内から市の室内搬出支援制度は特定できない。制度なしとの断定ではない。",
+              "state": "not_found",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "application": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-daily",
+                "yamaguchi-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "山口市にこの経路の現行制度があるか、担当窓口へ確認してください。",
+            "粗大ごみを屋内から出せない場合、市の支援または適法な許可業者の相談先を確認してください。"
+          ]
+        },
+        {
+          "id": "yamaguchi-regular-bulky",
+          "kind": "regular_bulky",
+          "name": "粗大ごみ戸別収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "指定袋に入らない燃やせるごみ、一辺1m以上の燃やせないごみ・金属・小型家電。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "2t収集車が進入・転回でき、作業に支障のない屋外。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市の収集作業員は屋内搬出を行わない。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "fees": {
+              "value": "有料。品目別処理手数料を事前決済または市窓口で支払う。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "limits": {
+              "value": "一辺2m超または50kg超は収集不可。1回おおむね10個以内。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "application": {
+              "value": "ネットはオンライン決済、電話は083-941-0053へ予約し市窓口で支払う。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集日の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            },
+            "contact": {
+              "value": "山口市清掃事務所 083-941-0053。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "収集車が自宅前で転回できないときの排出場所と、10個程度を超える場合の扱いを確認してください。"
+          ]
+        },
+        {
+          "id": "yamaguchi-self-dropoff",
+          "kind": "self_dropoff",
+          "name": "家庭ごみの処理施設への持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみは種類に応じ市の持込施設へ搬入できる。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "ごみの種類で持込施設が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "application": {
+              "value": "各持込施設の受入条件を事前に確認する。",
+              "state": "explicit",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "確認した公式原典に記載なし。窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "yamaguchi-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "大型品を持ち込む車両・家族同伴の条件と、品目別持込先を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": "4経路は別制度。資格のAND/OR、親族条件、地域差、室内搬出の有無を混同しない。未記載は窓口確認。",
+      "common_questions_for_office": [
+        "山口市の住居地区で各経路を利用できるか",
+        "申込者・同居者・別居家族の資格と代理搬入・代理申請の可否",
+        "費用・減免・品目・点数・収集日・立会い・搬出位置"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "yamaguchi-daily",
+      "url": "https://www.city.yamaguchi.lg.jp/soshiki/52/108820.html",
+      "title": "ごみ出し支援事業（実証中）について - 山口市ウェブサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2023-05-10",
+      "http_status": 200,
+      "final_url": "https://www.city.yamaguchi.lg.jp/soshiki/52/108820.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "yamaguchi/official/daily.html.source",
+      "text_file": "yamaguchi/official/daily.txt",
+      "raw_sha256": "9f87a0ad5e516c1ca51ae0a81f269d745476650f7683833df14936186a235670",
+      "text_sha256": "93ed66e063205f5ef838ccf050a8f56c7d10ff71f1650b79cfda7dad22819cff",
+      "last_modified_header": "Sun, 18 Oct 2026 10:04:13 GMT"
+    },
+    {
+      "id": "yamaguchi-dropoff",
+      "url": "https://www.city.yamaguchi.lg.jp/site/gomisigen/161801.html",
+      "title": "家庭ごみの出し方ルール - 山口市ウェブサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2026-07-16",
+      "http_status": 200,
+      "final_url": "https://www.city.yamaguchi.lg.jp/site/gomisigen/161801.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "yamaguchi/official/dropoff.html.source",
+      "text_file": "yamaguchi/official/dropoff.txt",
+      "raw_sha256": "f8896f18b99875263d8c9ea922705f570f89884767fc7225b9c9e695b56038f0",
+      "text_sha256": "002d4e70c86c32affd4662e23a13b00d00b02e0327935e971d47f80585d17bdf",
+      "last_modified_header": "Sun, 18 Oct 2026 10:05:54 GMT"
+    },
+    {
+      "id": "yamaguchi-regular",
+      "url": "https://www.city.yamaguchi.lg.jp/soshiki/52/60387.html",
+      "title": "粗大ごみ戸別収集の申し込み - 山口市ウェブサイト",
+      "source_kind": "official",
+      "checked": "2026-10-18",
+      "source_updated": "2025-01-31",
+      "http_status": 200,
+      "final_url": "https://www.city.yamaguchi.lg.jp/soshiki/52/60387.html",
+      "retrieved_at": "2026-10-18T19:18:45+09:00",
+      "content_type": "text/html",
+      "raw_file": "yamaguchi/official/regular.html.source",
+      "text_file": "yamaguchi/official/regular.txt",
+      "raw_sha256": "10a2753227b1afb7cd4621735a16f9c972e36754fd62c0a5bec335d5b875017f",
+      "text_sha256": "65b8431fc87197361039de5d060b54d46ba05e95e18d7d16f37ad7ef4b080729",
+      "last_modified_header": "Sun, 18 Oct 2026 10:04:59 GMT"
+    }
+  ],
+  "research_note": "2026-10-18取得の自治体公式原典に基づくAI調査草稿。各原典のraw/text/SHA-256はofficial-metadata.jsonを参照。記載なし・検索未発見は制度不存在や無料を意味しない。独立レビュー、人手原文確認、窓口確認、公開承認は未実施。"
+}

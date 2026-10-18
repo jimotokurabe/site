@@ -1,0 +1,95 @@
+[
+  {
+    "service_id": "fukushima-daily",
+    "field": "contact",
+    "source_id": "fukushima-daily",
+    "matches": [
+      {
+        "line": 24,
+        "excerpt": "お申し込み先は、ごみ政策課または各支所です。訪問収集にかかわるご相談はごみ政策課ふれあい訪問収集係（電話：024-544-0910）までお問い合わせください。"
+      }
+    ]
+  },
+  {
+    "service_id": "fukushima-regular",
+    "field": "waste_scope",
+    "source_id": "fukushima-bulky",
+    "matches": [
+      {
+        "line": 8,
+        "excerpt": "粗大ごみの申し込み"
+      },
+      {
+        "line": 9,
+        "excerpt": "粗大ごみの申し込み"
+      }
+    ]
+  },
+  {
+    "service_id": "fukushima-regular",
+    "field": "waste_scope",
+    "source_id": "fukushima-bulky-details",
+    "matches": [
+      {
+        "line": 10,
+        "excerpt": "粗大ごみ"
+      },
+      {
+        "line": 11,
+        "excerpt": "粗大ごみ"
+      }
+    ]
+  },
+  {
+    "service_id": "fukushima-regular",
+    "field": "contact",
+    "source_id": "fukushima-bulky",
+    "matches": [
+      {
+        "line": 18,
+        "excerpt": "024-539-9653"
+      }
+    ]
+  },
+  {
+    "service_id": "fukushima-regular",
+    "field": "contact",
+    "source_id": "fukushima-bulky-details",
+    "matches": [
+      {
+        "line": 78,
+        "excerpt": "粗大ごみ専用ダイヤル（024-539-9653）に電話で収集を依頼してください。"
+      },
+      {
+        "line": 85,
+        "excerpt": "粗大ごみ専用ダイヤル"
+      }
+    ]
+  },
+  {
+    "service_id": "fukushima-self",
+    "field": "eligibility",
+    "source_id": "fukushima-self",
+    "matches": [
+      {
+        "line": 40,
+        "excerpt": "不正搬入防止のため、必ず本人または親族が来場してください。"
+      }
+    ]
+  },
+  {
+    "service_id": "fukushima-self",
+    "field": "contact",
+    "source_id": "fukushima-self",
+    "matches": [
+      {
+        "line": 77,
+        "excerpt": "搬入場所(クリーンセンター)：あぶくまクリーンセンター"
+      },
+      {
+        "line": 78,
+        "excerpt": "あぶくまクリーンセンター"
+      }
+    ]
+  }
+]

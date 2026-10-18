@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "yamagata-bulky",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006508/1017713.html",
+      "title": "粗大ごみ収集オンライン受付｜山形市公式ホームページ",
+      "source_updated": "2026-07-22",
+      "http_status": 200,
+      "final_url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006508/1017713.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "yamagata-bulky.html.source",
+      "text_file": "yamagata-bulky.txt",
+      "raw_sha256": "33a31d4ba7c2376ea2fe25d49ea973b6d907304a71490194ac58239af961a362",
+      "text_sha256": "19c490aeaa76fb6b69ae9a4cb763a4bfaef10157cd49fd00d1a64d7a4fdb9a95",
+      "bytes": 37782,
+      "etag": "\"9396-65e1a7997216d\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:01:02 GMT",
+      "source_updated_raw": "8年7月22日"
+    },
+    {
+      "id": "yamagata-daily",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006511/1006513/1001858.html",
+      "title": "ごみ出し支援事業｜山形市公式ホームページ",
+      "source_updated": "2025-05-07",
+      "http_status": 200,
+      "final_url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006511/1006513/1001858.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "yamagata-daily.html.source",
+      "text_file": "yamagata-daily.txt",
+      "raw_sha256": "b45f1cd019d00cc2432cfcf99ec5abca02bce28ac09d8f669ce61f3e9eb3d1df",
+      "text_sha256": "3a8b39b9f87050502a005c55e0ff6e212e99b6d29c2d7d8c341ca1afc6235d8b",
+      "bytes": 37747,
+      "etag": "\"9373-65e1a7978a492\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:01:00 GMT",
+      "source_updated_raw": "7年5月7日"
+    },
+    {
+      "id": "yamagata-self",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006507/1017679.html",
+      "title": "引っ越しに伴うごみは適正に処分しましょう｜山形市公式ホームページ",
+      "source_updated": "2026-04-08",
+      "http_status": 200,
+      "final_url": "https://www.city.yamagata-yamagata.lg.jp/kurashi/gomi/1006506/1006507/1017679.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "retrieved_date": "2026-10-18",
+      "content_type": "text/html",
+      "raw_file": "yamagata-self.html.source",
+      "text_file": "yamagata-self.txt",
+      "raw_sha256": "c6c90bb53277fcbaaf903e4180b768e7f37e4c7e056a84b8d7e2450ded8c5d82",
+      "text_sha256": "66d7949aad4c5e5eb23f42de7daa2b1610f19baf84658f0abbd97061bbc1ec04",
+      "bytes": 31888,
+      "etag": "\"7c90-65e1a799208b6\"",
+      "last_modified_header": "Sun, 18 Oct 2026 10:01:02 GMT",
+      "source_updated_raw": "8年4月8日"
+    }
+  ],
+  "failures": []
+}

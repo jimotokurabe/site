@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-7RRJWPLRG1"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RRJWPLRG1');
+  gtag('config', 'UA-88085566-1');
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>家庭ごみの出し方ルール - 山口市ウェブサイト</title>
+<style type="text/css" media="all">
+@import url("/ssi/css/site.css");
+@import url("/ssi/css/sp-site.css") screen and (max-width: 670px);
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="/ssi/css/print.css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" href="/img//apple-touch-icon.png" />
+<script type="text/javascript" src="/ssi/js/escapeurl.js"></script>
+<script src="//f1-as.readspeaker.com/script/9016/ReadSpeaker.js?pids=embhl" type="text/javascript"></script>
+<script type="text/javascript" src="/ssi/js/jquery.js"></script>
+<script type="text/javascript" src="/ssi/js/jquery-migrate.js"></script>
+<script type="text/javascript" src="/ssi/js/common.js"></script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88085566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- レコメンドここから -->
+<script type="text/javascript" src="/ssi/js/recommend.js"></script>
+<iframe style="display:none;" id="oProxy" src="https://www.netcrew-analysis.jp/recommend/proxy.html" title="レコメンド情報" sandbox="allow-scripts"></iframe>
+<!-- レコメンドここまで -->
+<div class="site site_4 site_detail side1">
+	<!-- コンテナここから -->
+	<div id="container">
+
+		<span class="hide"><a name="pagetop" id="pagetop">ページの先頭です。</a></span>
+		<span class="hide"><a href="#skip">メニューを飛ばして本文へ</a></span>
+
+		<!-- ヘッダー全体ここから -->
+		<div id="header">
+			<!-- header1ここから -->
+			<div id="spm_wrap">
+	<button type="button" id="spm_setting"><span class="hide">操作補助</span></button>
+	<button type="button" id="spm_menu"><span class="hide">メニュー</span></button>
+	<button type="button" id="spm_search"><span class="hide">検索</span></button>
+</div>
+<div id="header2">
+	<!-- ヘッダーここから -->
+	<div id="he_left">
+		<div id="logo"><a href="/"><img src="/img/common/header_logo.png" alt="山口市ウェブサイト" /></a></div>
+	</div>
+	<div id="he_right">
+		<div id="he_right_a">
+			<div id="header_func">
+				<noscript><p>JavaScriptが無効のため、文字の大きさ・背景色を変更する機能を使用できません。</p></noscript>
+				<ul>
+					<li class="h_main"><a href="#main">本文へ</a></li>
+					<li id="moji_size">
+						<!-- 文字の大きさ変更ここから -->
+						<dl>
+							<dt>文字サイズ</dt><!-- 
+							--><dd><a id="moji_default" href="javascript:fsc('default');" title="文字サイズを標準にする">標準</a></dd><!-- 
+							--><dd><a id="moji_large" href="javascript:fsc('larger');" title="文字サイズを拡大する">拡大</a></dd>
+						</dl>
+						<!-- 文字の大きさ変更ここまで -->
+					</li><li id="haikei_color">
+						<!-- 背景の変更ここから -->
+						<dl>
+							<dt>背景色変更</dt><!-- 
+							--><dd><a id="haikei_white" href="javascript:SetCss(1);" title="背景色を白色に変更する">白</a></dd><!-- 
+							--><dd><a id="haikei_black" href="javascript:SetCss(2);" title="背景色を黒色に変更する">黒</a></dd><!-- 
+							--><dd><a id="haikei_blue"  href="javascript:SetCss(3);" title="背景色を青色に変更する">青</a></dd>
+						</dl>
+						<!-- 背景の変更ここまで -->
+					</li><li>
+						<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+							<a rel="nofollow" class="rsbtn_play" accesskey="L" title="音声で読み上げる" href="//app-as.readspeaker.com/cgi-bin/rsent?customerid=9016&amp;lang=ja_jp&amp;readid=main&amp;url=">
+							<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>読み上げる</span></span></span>
+							<span class="rsbtn_right rsimg rsplay rspart"></span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="header_link">
+				<ul>
+					<li><a href="/site/userguide/">はじめての方へ</a></li>
+					<li><a href="/sitemap.html">サイトマップ</a></li>
+					<li><a href="/site/userguide/11129.html">Foreign Language</a></li>
+				</ul>
+			</div>
+			<div id="header_link_box">
+				<ul>
+					<li class="link_box1">
+						<a href="javascript:void(0)" onclick="javascript:return false;" onkeypress="javascript:return false;" id="acc_search_menu">検索する</a>
+					</li>
+					<li class="link_box2"><a href="/soshiki/4/2833.html">山口市防災<br/>メール</a></li>
+					<li class="link_box3"><a href="https://city-yamaguchi-bousai.my.site.com/">防災情報</a><span class="external_link_text">＜外部リンク＞</span></li>
+					<li class="link_box4"><a href="/soshiki/60/3080.html">休日当番医<br/>情報</a></li>
+				</ul>
+				<div class="header_search_box">
+							<div class="search_title">
+								<h2>何をお探しですか？</h2>
+							</div>
+							<div class="search_box">
+								<div id="search_keyword">
+									<!-- 検索ここから -->
+									<form action="/search.html" id="cse-search-box" name="cse-search-box">
+										<input type="hidden" name="cx" value="003830361502282425548:-ejxkgbig0w" /><!--
+										 --><input type="hidden" name="cof" value="FORID:11" /><!--
+										 --><input type="hidden" name="ie" value="UTF-8" /><!--
+										 --><label for="tmp_query"><span class="hide">Googleカスタム検索</span></label><!--
+										 --><input type="text" name="q" value="" id="tmp_query" /><!--
+										 --><input type="submit" value="検索" id="submit" name="sa" />
+									</form>
+									<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box"></script>
+									<!-- 検索ここまで -->
+									<div id="cse_filetype">
+										<fieldset>
+											<legend><span class="hide">検索対象</span></legend>
+											<span class="cse_filetypeselect"><input type="radio" name="google_filetype" id="filetype_all" checked="checked" /><label for="filetype_all">すべて</label></span>
+											<span class="cse_filetypeselect"><input type="radio" name="google_filetype" id="filetype_html" /><label for="filetype_html">ページ</label></span>
+											<span class="cse_filetypeselect"><input type="radio" name="google_filetype" id="filetype_pdf" /><label for="filetype_pdf">PDF</label></span>
+										</fieldset>
+									</div>
+								</div>
+								<!-- 検索ここまで -->
+								<div id="search_trend_word">
+									<h2><span>注目ワード</span></h2>
+									<p><a href="/life/sub/4/">申請・届出・証明書一覧</a>
+<a href="/soshiki/29/4885.html">戸籍証明書等の請求(個人による請求)</a>
+<a href="/life/1/2/">戸籍・住民登録・パスポート・マイナンバーカード</a>
+<a href="/soshiki/8/99417.html">電子申請手続一覧</a>
+<a href="/site/gomisigen/">ごみの分別</a>
+<a href="/soshiki/73/2006.html">山口市コミュニティバスの路線図と時刻表について</a>
+<a href="/soshiki/73/2016.html">列車・バス等の時刻や運賃</a></p>
+								</div>
+								<!-- ライフインデックスここから -->
+								<div class="search_qa">
+									<a href="/life/sub/2/">よくある質問でさがす</a>
+								</div>
+							</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+			<!-- header1ここまで -->
+			<!-- header2ここから -->
+			<div id="top_search">
+	<!-- グローバルタブここから -->
+	<div id="top_search_a">
+		<ul>
+			<li id="gnav_0"><a href="/life/1/">くらしの情報</a></li>
+			<li id="gnav_1"><a href="/life/2/">しごとの情報</a></li>
+			<li id="gnav_2"><a href="https://yamaguchi-city.jp/" target="_blank">観光情報</a><span class="external_link_text">＜外部リンク＞</span></li>
+			<li id="gnav_3"><a href="/life/4/">市政情報</a></li>
+		</ul>
+	</div>
+	<!-- グローバルタブここまで -->
+</div>
+			<!-- header3 -->
+			<!-- header2ここまで -->
+		</div>
+		<!-- ヘッダー全体ここまで -->
+
+		<!-- ぱんくずナビここから -->
+		<div id="pankuzu_wrap">
+			<!-- [[pankuzu_start]] -->
+			<div class="pankuzu">
+				<span class="icon_current">現在地</span>
+				<span class="pankuzu_class pankuzu_class_top"><a href="/">トップページ</a></span>
+				<span class="pankuzu_mark"> &gt; </span>
+				<span class="pankuzu_class"><a href="/site/gomisigen/">家庭ごみの分け方・出し方情報サイト</a></span>
+				<span class="pankuzu_mark"> &gt; </span>
+				<span class="pankuzu_class pankuzu_class_current">家庭ごみの出し方ルール</span>
+			</div>
+			<!-- [[pankuzu_end]] -->
+
+			<!-- [[pankuzu_life_start]] --><!-- [[pankuzu_life_end]] -->
+		</div>
+		<!-- ぱんくずナビここまで -->
+
+		<!-- サイト専用ヘッダーここから -->
+		<div id="mainimg">
+	<div id="mainimg_box">
+		
+		
+		<a href="/site/gomisigen/">
+			<span class="site_name noimage">家庭ごみの分け方・出し方情報サイト</span>
+		</a>
+		
+	</div>
+</div>
+		<!-- サイト専用ヘッダーここまで -->
+
+		<div id="mymainback">
+
+			<!-- メインここから -->
+			<div id="main">
+				<div id="main_a">
+					<hr class="hide" />
+					<p class="hide"><a id="skip" name="skip">本文</a></p>
+
+					<!-- main_bodyここから -->
+					<div id="main_body">
+						
+						<div id="main_header"><h1>家庭ごみの出し方ルール</h1></div>
+						<div id="content_header" class="text_r"><span><a id="print_mode_link" href="javascript:print_mode();">印刷ページ表示</a></span><span>更新日：2026年7月16日更新</span><span id="common_button_sns">
+	<span id="sns_button_twitter"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><span class="external_link_text">＜外部リンク＞</span> <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span>
+	<span id="sns_button_facebook"><fb:share-button layout="button_count"></fb:share-button></span>
+</span></div>
+						<div class="detail_free" ><h2 class="green mB10 bold">ごみは決められた場所に出しましょう</h2>
+
+<ul>
+<li>山口市では「集積所収集方式」でごみを収集しており、「戸別収集」は行っていません。</li>
+<li>ごみ集積所（ごみステーション）は自治会（アパートは管理会社等）で設置・管理されていますので、集積所の管理者の承諾を得た上でごみを排出してください。</li>
+<li>ごみの種類によって集積所が異なる場合があります。</li>
+<li>他の自治会等の集積所にごみを出してはいけません。</li>
+<li><strong>事業活動に伴うごみは集積所に出してはいけません。</strong><br />
+<a href="/soshiki/50/1321.html">事業系ごみの分け方・出し方</a></li>
+</ul>
+
+<h3>ごみは市の施設に持ち込むこともできます</h3>
+
+<p><a href="/site/gomisigen/130905.html">家庭ごみの持込施設</a></p>
+
+<h2>ごみは決められた日時に出しましょう</h2>
+
+<ul>
+<li><a href="/site/gomisigen/list184.html">ごみ収集カレンダー</a>で決められた収集日の朝8時30分までに出してください。（徳地・阿東地域は朝8時まで。）</li>
+<li>何時からごみを出せるかは集積所によって異なりますので、集積所の管理者にお尋ねください。</li>
+<li>収集時間は、ごみ量、交通状況、天候等により一定とはなりません。</li>
+</ul>
+
+<p>※一部のアパート等では民間の収集運搬業者と直接契約されており、その場合は収集日やごみの出し方が市のルールと異なることがあります。アパート等の管理者に確認してください。</p>
+
+<h2>分別して正しい方法で出しましょう</h2>
+
+<ul>
+<li>分別ルールや排出方法に違反しているごみは収集しないことがあります。</li>
+<li>集積所に残された違反ごみは出された方が回収し、正しい方法で処分してください。</li>
+</ul>
+
+<p>【排出方法】<br />
+燃やせるごみ&hellip;&hellip;<a href="/site/gomisigen/1315.html">山口市指定のごみ袋</a>に入れて<br />
+燃やせないごみ&hellip;大きいものはそのままで、小さいものは透明または半透明の袋に入れて<br />
+金属・小型家電&hellip;大きいものはそのままで、小さいものは透明または半透明の袋に入れて<br />
+古紙&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;紙ひもで十字に束ねて指定のコンテナへ（一部地域はコンテナなし）<br />
+ペットボトル&hellip;&hellip;つぶして指定のコンテナへ（一部地域は指定の容器）<br />
+プラ製容器包装&hellip;透明または半透明の袋に入れて<br />
+びん&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;びんの色ごとに指定のコンテナへ<br />
+缶&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;つぶさずに指定のコンテナへ</p>
+
+<h3 class="green mB10 bold">集積所に出せるごみ</h3>
+
+<ul>
+<li><a href="/site/gomisigen/69641.html">古紙（新聞、ダンボール、雑がみ、紙製容器包装、紙パック）</a></li>
+<li><a href="/site/gomisigen/69635.html">ペットボトル</a></li>
+<li><a href="/site/gomisigen/69643.html">プラスチック製容器包装</a></li>
+<li><a href="/site/gomisigen/69629.html">びん</a></li>
+<li><a href="/site/gomisigen/69640.html">缶</a></li>
+<li><a href="/site/gomisigen/69645.html">金属・小型家電製品</a></li>
+<li><a href="/site/gomisigen/69460.html">燃やせるごみ（生ごみ、紙くず、木くず、軟らかいプラスチック、布、革、ゴム等）</a></li>
+<li><a href="/site/gomisigen/69628.html">燃やせないごみ（ガラス、陶磁器、硬いプラスチック、複合素材製品等）</a></li>
+</ul>
+
+<h3 class="green mB10 bold">集積所に出せないごみ</h3>
+
+<ul>
+<li><a href="/site/gomisigen/79604.html">粗大ごみ</a></li>
+<li><a href="/site/gomisigen/128473.html">建築廃材</a></li>
+<li><a href="/site/gomisigen/84421.html">家電リサイクル対象品（エアコン、テレビ、冷蔵庫、洗濯機）</a></li>
+<li><a href="/site/gomisigen/79600.html">フロンガス使用製品（除湿器、冷風機など）</a></li>
+<li><a href="/site/gomisigen/84432.html">パソコン・ディスプレイ</a></li>
+<li><a href="/site/gomisigen/79591.html">有害ごみ(1)（スプレー缶、カセットボンベ、蛍光管、乾電池、水銀体温計）</a></li>
+<li><a href="/site/gomisigen/92657.html">有害ごみ(2)（小型充電式電池、モバイルバッテリー、ボタン・コイン電池、電子・加熱式たばこ）</a></li>
+</ul>
+
+<h3>その他のリサイクル</h3>
+
+<ul>
+<li><a href="/site/gomisigen/86192.html">小型家電回収ボックス</a></li>
+<li><a href="/site/gomisigen/158022.html">古着</a></li>
+<li><a href="/site/gomisigen/84024.html">羽毛リサイクル</a></li>
+<li><a href="/site/gomisigen/189681.html">廃食用油</a></li>
+<li><a href="/site/gomisigen/79599.html">インクカートリッジ</a></li>
+</ul>
+
+<h2>市で処理できないごみ</h2>
+
+<ul>
+<li><a href="/site/gomisigen/79596.html">市で処理できないごみ</a></li>
+<li><a href="/site/gomisigen/84507.html">消火器リサイクル</a></li>
+<li><a href="/site/gomisigen/79598.html">二輪車リサイクル</a></li>
+</ul>
+</div>
+
+<div id="hyouka_area_box">
+<div class="system_box">
+<div class="system_box_waku">
+
+<form name="hyouka" method="post" action="https://www.city.yamaguchi.lg.jp/ques/confirm_quest.php">
+
+<input type="hidden" name="quest_id" value="1" />
+<input type="hidden" name="nOpenDoor" value="1" />
+<input type="hidden" name="nInputTimes" value="0" />
+<input type="hidden" name="vEndMsg" value="ありがとうございました。" />
+<input type="hidden" name="dBgnDate" value="" />
+<input type="hidden" name="dEndDate" value="" />
+<input type="hidden" name="vLinkHref" value="" />
+<input type="hidden" name="vLinkTitle" value="皆さんのご意見をお聞かせください。" />
+<input type="hidden" name="nDesignPattern" value="405" />
+
+<input type="hidden" name="ans_10" value="197226" />
+<input type="hidden" name="ans_18" value="家庭ごみの出し方ルール" />
+<input type="hidden" name="ans_19" value="" />
+<input type="hidden" name="ans_20" value="50" />
+<input type="hidden" name="ans_21" value="資源循環推進課" />
+
+<div class="hyouka_box">
+	<h2 class="h2_hyouka">このページは分かりやすかったですか？</h2>
+
+		<p>
+		　市ウェブサイトをより使いやすくわかりやすいものにするために、皆さんのご意見をお聞かせください。<br />
+		　なお、このページの記載内容に関するお問い合わせは、メール、電話等にて下記の問い合わせ先にお願いします。
+		</p>
+
+	<fieldset>
+		<legend>お求めの情報が十分掲載されていましたか？</legend>
+		<div class="hyouka_area_ans">
+		<span><input name="ans_1" id="ans_1a" type="radio" value="0" /><label for="ans_1a">十分だった</label></span>
+		<span><input name="ans_1" id="ans_1b" type="radio" value="1" checked="checked" /><label for="ans_1b">普通</label></span>
+		<span><input name="ans_1" id="ans_1c" type="radio" value="2" /><label for="ans_1c">情報が足りない</label></span>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>ページの構成や内容、表現は分かりやすいものでしたか？</legend>
+		<div class="hyouka_area_ans">
+		<span><input name="ans_8" id="ans_8a" type="radio" value="0" /><label for="ans_8a">分かりやすい</label></span>
+		<span><input name="ans_8" id="ans_8b" type="radio" value="1" checked="checked" /><label for="ans_8b">普通</label></span>
+		<span><input name="ans_8" id="ans_8c" type="radio" value="2" /><label for="ans_8c">分かりにくい</label></span>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>この情報をすぐに見つけることができましたか？</legend>
+		<div class="hyouka_area_ans">
+			<span><input name="ans_9" id="ans_9a" type="radio" value="0" /><label for="ans_9a">すぐに見つけた</label></span>
+			<span><input name="ans_9" id="ans_9b" type="radio" value="1" checked="checked" /><label for="ans_9b">普通</label></span>
+			<span><input name="ans_9" id="ans_9c" type="radio" value="2" /><label for="ans_9c">時間がかかった</label></span>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>良かった点や悪かった点を具体的にお聞かせください。</legend>
+		<p>
+		本フォームからのご意見・お問い合わせには返信できませんのでご了承ください。
+		</p>
+
+		<textarea name="ans_43" id="ans_text" title="みなさんの声を聞かせてください" cols="30" rows="10"></textarea>
+	</fieldset>
+	<div id="hyouka_text">
+		<p>
+		※1ブラウザでCookie（クッキー）が使用できる設定になっていない、または、ブラウザがCookie（クッキー）に対応していない場合はご利用頂けません。
+		</p>
+	</div>
+	<div id="hyouka_area_submit"><input name="確認" type="submit" value="確認" /></div>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+						
+						
+
+						<!-- section_footerここから --><div id="section_footer"></div><!-- section_footerここまで -->
+
+						<!-- [[add-template-pdf]] -->
+						<!-- [[add-template-windowsmediaplayer]] -->
+
+					</div>
+					<!-- main_bodyここまで -->
+				</div>
+			</div>
+			<!-- メインここまで -->
+			<hr class="hide" />
+
+			<!-- サイドバー1ここから -->
+			<div id="sidebar1" class="cf">
+				<!-- 左メニューここから -->
+
+				<!-- サブサイト共通自由記入エリア ここから -->
+				<!-- [[item_free_area_3000_head]] --><!-- [[item_free_area_3000_tail]] -->
+				<!-- サブサイト共通自由記入エリア ここまで -->
+
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">ごみカレンダー（分別の手引き）</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/site/gomisigen/188479.html">令和8年度版ごみ収集カレンダー（ごみ分別の手引き）</a></span></li><li><span class="line_a"><a href="/site/gomisigen/130542.html">外国人向け分別ポスター（英語・中国語・韓国語・ベトナム語）</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">家庭ごみの出し方ルール</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/site/gomisigen/161801.html">家庭ごみの出し方ルール</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">ごみ分別検索</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/soshiki/16/200144.html">ごみの分別方法はＬＩＮＥで簡単検索！</a></span></li><li><span class="line_a"><a href="/site/gomisigen/84218.html">ごみの出し忘れを防ぐなら、分別アプリ「さんあ～る」！</a></span></li><li><span class="line_a"><a href="/soshiki/50/159263.html">ごみ分別早見表（PDFファイル）</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">Q&Aコーナー</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/site/gomisigen/162707.html">Q&Aコーナー</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">家庭ごみの持込施設</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/site/gomisigen/130905.html">家庭ごみの持込施設</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">粗大ごみ戸別収集</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/soshiki/52/60387.html">粗大ごみ戸別収集の申し込み</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">許可業者</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/soshiki/50/119098.html">一般廃棄物処理業及び浄化槽清掃業の許可業者一覧</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="subsite_menu">
+					<div class="sidebar1_b acc_title">ごみ情報ダイヤル</div>
+					<div class="sidebar_border">
+						<div class="menu_list_cb">
+							
+							<ul><li><span class="line_a"><a href="/site/gomisigen/1310.html">ごみ情報ダイヤル</a></span></li></ul>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+
+				<!-- サブサイト共通自由記入エリア ここから -->
+				<!-- [[item_free_area_3001_head]] --><!-- [[item_free_area_3001_tail]] -->
+				<!-- サブサイト共通自由記入エリア ここまで -->
+				<!-- 左メニューここまで -->
+				
+				<!-- レコメンドここから -->
+				<div id="recommend_tag" style="display: none;">
+					<div id="sidebar_recommend">
+						<div id="recommend_title"><h2><span>このページを見ている人は</span><span>こんなページも見ています</span></h2></div>
+						<!-- [[recommend_tag]] -->
+					</div>
+				</div>
+				<!-- レコメンドここまで -->
+
+				<!-- AIレコメンドここから -->
+				<div id="ai_recommend_tag" style="display: none;">
+					<div id="sidebar_ai_recommend">
+						<div id="ai_recommend_title"><h2><span>AI（人工知能）は</span><span>こんなページをおすすめします</span></h2></div>
+						<!-- [[ai_recommend_tag]] -->
+					</div>
+				</div>
+				<!-- AIレコメンドここまで -->
+
+				<div id="common_banner_link">
+<ul>
+<li><a href="/site/userguide/"><span>見つからないときは</span></a></li> 
+<li><a href="/life/sub/2/"><span>よくある質問と回答</span></a></li> 
+<li><a href="/ques/"><span>アンケート実施中</span></a></li>
+</ul>
+</div>
+			</div>
+			<!-- サイドバー1ここまで -->
+
+			<!-- サイドバー2ここから -->
+			<!-- サイドバー2ここまで -->
+
+		</div><!-- 3カラム終わり -->
+
+		<!-- site専用フッターここから -->
+		
+		<!-- site専用フッターここまで -->
+
+		<!-- フッターここから -->
+		<div id="footer">
+		<!-- footer0ここから -->
+		<!-- footer0 -->
+		<!-- footer0ここまで -->
+		<!-- footer1ここから -->
+		<!-- footer1 -->
+		<!-- footer1ここまで -->
+		<!-- author_infoここから -->
+		<div id="footer_link_pagetop">
+	<a href="#pagetop"><img src="/img/common/btn_pagetop.png" alt="このページのトップへ" /></a>
+</div>
+<!-- おすすめ情報ここから -->
+<!-- おすすめ情報ここから -->
+<div id="osusume_banner">
+	<div id="osusume_banner_box">
+		<div id="osusume_banner_ttl">
+			<a href="javascript:void(0)" onclick="javascript:return false;" onkeypress="javascript:return false;" id="osusume_banner_open"><img src="/img/common/osusume_img.png" alt="pickup_open" /></a>
+			<a href="javascript:void(0)" onclick="javascript:return false;" onkeypress="javascript:return false;" id="osusume_banner_sp"><img src="/img/common/osusume_img3.png" alt="pickup" /></a>
+		</div>
+		<div id="osusume_banner_list">
+			<div id="osusume_banner_list_box">
+				<ul class="banner_list">
+					<li><a href="/site/movie/"><img src="/img/common/osusume_banner.png" alt="やまぐちやんねる" /></a></li>
+				</ul>
+			</div>
+			<div class="osusume_banner_list_detail">
+				<a href="javascript:void(0)" onclick="javascript:return false;" onkeypress="javascript:return false;" class="osusume_banner_close"><img src="/img/common/osusume_img2.png" alt="pickup_close" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- おすすめ情報ここまで -->
+<!-- おすすめ情報ここまで -->
+<!-- author_infoここから -->
+<div id="author_info">
+	<div id="author_box">
+		<div id="footer_author_logo">
+			<span class="f_author">山口市役所</span><br/><span class="f_number">法人番号2000020352039</span>
+		</div>
+		<span id="footer_author_detail_text">住所：〒753-8650　山口市亀山町2番1号<br />電話：083-922-4111（代表） <br />開庁時間：月曜～金曜日の8時30分から17時15分まで<br />（土曜・日曜日、祝日、年末年始は閉庁）</span>
+		<div class="footer_link_box">
+			<span class="footer_link_ichiran"><a href="/soshiki">組織別電話番号一覧</a></span>
+			<span class="footer_link_access"><a href="/soshiki/16/2094.html">山口市へのアクセス</a></span>
+		</div>
+		<span class="footer_content"><a href="javascript:void(0)" onclick="javascript:return false;" onkeypress="javascript:return false;">各総合支所<br/>の連絡先</a></span>
+		<div id ="footer_content_detail">
+			<button type="button" id="footer_detail_close">とじる</button>
+			<h2>各総合支所 の連絡先</h2>
+			<ul>
+				<li>
+					<span>山口市役所本庁舎（山口総合支所）</span>
+					<span>〒753-8650　山口市亀山町2番1号</span>
+					<span>Tel：083-922-4111</span><span>Fax：083-934-2944</span>
+				</li>
+				<li>
+					<span>小郡総合支所</span>
+					<span>〒754-8511　山口市小郡下郷609番地1</span>
+					<span>Tel：083-973-2411</span><span>Fax：083-973-4892</span>
+				</li>
+				<li>
+					<span>秋穂総合支所</span>
+					<span>〒754-1192　山口市秋穂東6570番地</span>
+					<span>Tel：083-984-2121</span><span>Fax：083-984-5299</span>
+				</li>
+				<li>
+					<span>阿知須総合支所</span>
+					<span>〒754-1292　山口市阿知須2743番地</span>
+					<span>Tel：0836-65-4111</span><span>Fax：0836-65-4116</span>
+				</li>
+				<li>
+					<span>徳地総合支所</span>
+					<span>〒747-0292　山口市徳地堀1561番地1</span>
+					<span>Tel：0835-52-1111</span><span>Fax：0835-52-1782</span>
+				</li>
+				<li>
+					<span>阿東総合支所</span>
+					<span>〒759-1512　山口市阿東徳佐中3417番地2</span>
+					<span>Tel：083-956-0111</span><span>Fax：083-956-0126</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- author_infoここまで -->
+<div id="footer_navi">
+	<ul>
+		<li><a href="/site/userguide/11120.html">リンク・著作権・免責事項</a></li>
+		<li><a href="/site/userguide/11123.html">個人情報保護</a></li>
+		<li><a href="/site/userguide/11128.html">アクセシビリティ</a></li>
+		<li><a href="/site/userguide/11137.html">RSSについて</a></li>
+		<li><a href="/ques/questionnaire.php?openid=3">お問い合わせ</a></li>
+		<li><a href="/soshiki/16/97197.html">バナー広告の掲載</a></li>
+	</ul>
+</div>
+<p id="copyright"><span lang="en">Copyright &#169; Yamaguchi City. All Rights Reserved.</span></p>
+		<!-- author_infoここまで -->
+		</div><!-- フッターここまで -->
+	</div><!-- コンテナここまで -->
+</div>
+<link rel="stylesheet" href="/ssi/css/ai-chatbot.css">
+<script type="text/javascript" src="/ssi/js/ai-chatbot.js"></script>
+<div id="btn_ai_chatbot">
+<a href="https://p5.govtech-express.com/webui/1654577608?survey=a0ORB000014TK3l2AG"><img src="/img/btn-ai-chatbot.png" alt="AI問い合わせチャット" width="90" height="85"></a><span class="external_link_text">＜外部リンク＞</span>
+<button type="button" id="btn_ai_chatbot_close">閉じる</button>
+</div>
+</body>
+</html>

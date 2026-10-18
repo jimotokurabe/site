@@ -1,0 +1,58 @@
+[
+  {
+    "service_id": "nagaoka-daily",
+    "field": "contact",
+    "source_id": "nagaoka-daily",
+    "matches": [
+      {
+        "line": 66,
+        "excerpt": "TEL：0258-24-2837 FAX：0258-24-6553"
+      }
+    ]
+  },
+  {
+    "service_id": "nagaoka-regular",
+    "field": "application",
+    "source_id": "nagaoka-bulky",
+    "matches": [
+      {
+        "line": 62,
+        "excerpt": "1. 粗大ごみ申込専用インターネット、FAXまたは電話で申し込んでください。"
+      },
+      {
+        "line": 67,
+        "excerpt": "粗大ごみインターネット申込"
+      }
+    ]
+  },
+  {
+    "service_id": "nagaoka-regular",
+    "field": "contact",
+    "source_id": "nagaoka-bulky",
+    "matches": [
+      {
+        "line": 62,
+        "excerpt": "1. 粗大ごみ申込専用インターネット、FAXまたは電話で申し込んでください。"
+      },
+      {
+        "line": 69,
+        "excerpt": "○申込専用電話：0258-25-0053"
+      }
+    ]
+  },
+  {
+    "service_id": "nagaoka-self",
+    "field": "contact",
+    "source_id": "nagaoka-self",
+    "matches": [
+      {
+        "line": 152,
+        "excerpt": "〒940-0015長岡市寿3-6-1 電話0258-24-2856"
+      },
+      {
+        "line": 154,
+        "excerpt": "・中之島信条クリーンセンター"
+      }
+    ]
+  }
+]

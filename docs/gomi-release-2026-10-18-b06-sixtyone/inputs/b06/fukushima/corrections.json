@@ -1,0 +1,62 @@
+{
+  "reviewed_at": "2026-10-18",
+  "original_sha256": "e1c276ad12a783d62b54076c84da914976fd199aa3047882c0941e8135dac731",
+  "corrections": [
+    {
+      "service_id": "fukushima-self",
+      "field": "fees",
+      "old": {
+        "value": "公式案内にはfeesの詳細記載がない。窓口確認が必要。",
+        "state": "not_stated",
+        "source_ids": [
+          "fukushima-self"
+        ]
+      },
+      "new": {
+        "value": "粗大ごみの自己搬入は無料。その他の家庭ごみの処理手数料は今回の公式案内で確認できず、要確認。",
+        "state": "needs_confirmation",
+        "source_ids": [
+          "fukushima-bulky-details",
+          "fukushima-self"
+        ]
+      }
+    },
+    {
+      "service_id": "fukushima-regular",
+      "field": "limits",
+      "old": {
+        "value": "1回5点以内。引越しに伴う粗大ごみは収集日に申込者が居住していること。",
+        "state": "explicit",
+        "source_ids": [
+          "fukushima-bulky",
+          "fukushima-bulky-details"
+        ]
+      },
+      "new": {
+        "value": "1回5点以内。回収まで3週間程度。引越しに伴う粗大ごみは収集日に申込者が居住していること。",
+        "state": "explicit",
+        "source_ids": [
+          "fukushima-bulky-details"
+        ]
+      }
+    },
+    {
+      "service_id": "fukushima-self",
+      "field": "indoor_carry",
+      "old": {
+        "value": "搬入制度であり自宅内からの搬出は行わない。荷下ろしは搬入した人が行う。",
+        "state": "explicit",
+        "source_ids": [
+          "fukushima-self"
+        ]
+      },
+      "new": {
+        "value": "自己搬入時の荷下ろしは搬入者が行う。自宅室内からの搬出支援はこの案内に記載なし。",
+        "state": "not_stated",
+        "source_ids": [
+          "fukushima-self"
+        ]
+      }
+    }
+  ]
+}

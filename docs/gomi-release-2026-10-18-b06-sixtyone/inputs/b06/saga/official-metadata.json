@@ -1,0 +1,53 @@
+[
+  {
+    "id": "saga-carry",
+    "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3841.html",
+    "title": "粗大ごみ臨時収集の利用方法／佐賀市公式ホームページ",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-06-01",
+    "http_status": 200,
+    "final_url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3841.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "saga/official/carry.html.source",
+    "text_file": "saga/official/carry.txt",
+    "raw_sha256": "7acd9da3ae7e0dd672f2242a16c9d1e518f1f33761008fe5520897812a0c06b5",
+    "text_sha256": "b74aa8055f284f28ab7011430733aafd5c57a9abb49a814936dd7f41c60708a9",
+    "last_modified_header": "Fri, 02 Oct 2026 06:48:34 GMT"
+  },
+  {
+    "id": "saga-dropoff",
+    "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/3/1667.html",
+    "title": "佐賀市清掃工場／佐賀市公式ホームページ",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-06-01",
+    "http_status": 200,
+    "final_url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/3/1667.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "saga/official/dropoff.html.source",
+    "text_file": "saga/official/dropoff.txt",
+    "raw_sha256": "410f38efe66338193734d7e43ec0d9d4762367ae16043cbce68171c3eb51cbb6",
+    "text_sha256": "851fca0d377aa24a9329fc2e4de856770bcdbb851caaf58a0f889a6a136b7e92",
+    "last_modified_header": "Fri, 02 Oct 2026 06:34:23 GMT"
+  },
+  {
+    "id": "saga-regular",
+    "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html",
+    "title": "粗大ごみ定期収集（ステッカー方式）の利用方法／佐賀市公式ホームページ",
+    "source_kind": "official",
+    "checked": "2026-10-18",
+    "source_updated": "2026-07-13",
+    "http_status": 200,
+    "final_url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/1/5/3840.html",
+    "retrieved_at": "2026-10-18T19:18:46+09:00",
+    "content_type": "text/html",
+    "raw_file": "saga/official/regular.html.source",
+    "text_file": "saga/official/regular.txt",
+    "raw_sha256": "b0b7c3270a4f92adefdbf90e0748a76d7b0d52f603ab54c5a3ff533aee9b009f",
+    "text_sha256": "2639b42bdff4b6fd3f1107288460938dd7f0c57773528fa1c1450cd533757dc0",
+    "last_modified_header": "Fri, 02 Oct 2026 06:48:34 GMT"
+  }
+]

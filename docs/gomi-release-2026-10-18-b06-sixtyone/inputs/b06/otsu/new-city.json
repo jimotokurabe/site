@@ -1,0 +1,413 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "shiga:otsu",
+      "name": "大津市",
+      "kana": "おおつし",
+      "pref_name": "滋賀県",
+      "selection_reason": "日常支援は世帯構成・家事援助・周囲の協力の3条件。通常大型は学区別日程、5点と立会い条件に注意。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "otsu-daily",
+          "kind": "daily_support",
+          "name": "日常のごみ出し支援",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市が定期収集する家庭ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅玄関先等のペール容器から直接収集。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "65歳以上で要介護1以上の高齢者、または障害者手帳等所持者のみで構成する世帯",
+                  "世帯員のいずれかが介護保険・障害福祉サービスを利用し家事援助を受ける",
+                  "親族・近隣在住者等の排出協力を得られない"
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "family_help": {
+              "value": "親族・近隣在住者等の協力が得られない世帯が対象。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "limits": {
+              "value": "道路幅、容器設置場所、共同住宅管理者の承諾、オートロック等で利用不可の場合がある。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "application": {
+              "value": "所定申請書に居宅介護支援事業所・訪問介護事業所管理者等の署名を受け提出。月末締切、現地確認後、開始目安3～4週間。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            },
+            "contact": {
+              "value": "ごみ出し支援戸別収集サービスの問い合わせ先：廃棄物減量推進課 077-528-2802。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-daily"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "日常のごみ出し支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "otsu-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの屋内・玄関先搬出支援",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "fees": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "limits": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "application": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "contact": {
+              "value": "取得した公式資料ではこの経路の条件を確認できない。窓口への確認が必要。",
+              "state": "not_found",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみの屋内・玄関先搬出支援について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "otsu-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る大型ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "collection_location": {
+              "value": "学区ごとの戸別収集日、指定排出場所へ8時30分までに出す。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular",
+                "otsu-regular-note"
+              ]
+            },
+            "indoor_carry": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "family_help": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目別の処理手数料券を予約後に購入。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "limits": {
+              "value": "1日合計5点まで。5点超の収集は立会いが必要と掲載。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "application": {
+              "value": "収集希望日の1週間前までに電話またはインターネットで事前予約。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "contact": {
+              "value": "大津市の粗大ごみ担当窓口：077-528-2761。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常の粗大ごみ収集について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        },
+        {
+          "id": "otsu-self",
+          "kind": "self_dropoff",
+          "name": "処理施設への自己搬入",
+          "evidence_status": "official_listing",
+          "review_status": "ai_draft",
+          "ai_reviewed_at": null,
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "collection_location": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "indoor_carry": {
+              "value": "施設での荷下ろしは基本的に搬入者自身が行う。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "eligibility": {
+              "value": "市内の家庭から出るごみ。品目・住所による条件を確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "family_help": {
+              "value": "本人、同居家族、3親等以内の別居家族、財産管理代理権のある後見人等、死後事務委任受任者が搬入できる。後2者は事前相談と書面確認が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "fees": {
+              "value": "家庭ごみは10kgまでごとに110円（税込）。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "limits": {
+              "value": "1日1回、300kgまで。琵琶湖疏水を目安に北部・南部で施設が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "application": {
+              "value": "事前申込必須。電話は搬入前日の17時25分まで（月曜搬入は前週開庁日）、インターネットは3営業日前まで。インターネットでは袋ごみを受付しない。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            },
+            "attendance": {
+              "value": "取得した公式ページには明記がなく、窓口で確認が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "otsu-self"
+              ]
+            },
+            "contact": {
+              "value": "搬入予約はごみコールセンター 077-528-2761。後見人等の事前相談は廃棄物減量推進課 077-528-2802。",
+              "state": "explicit",
+              "source_ids": [
+                "otsu-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "処理施設への自己搬入について、対象品目・排出場所・申込期限・費用・立会いを担当窓口に確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "公式原典の保存時点に限る。運用・本人資格の判定は未照会。",
+        "AI下書き。独立原典レビューと人手確認前に公開しない。"
+      ],
+      "common_questions_for_office": [
+        "大津市で日常ごみと粗大ごみの支援、通常収集、自己搬入の条件が異なるため、品目と家族の支援可否を伝えて確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "otsu-daily",
+      "url": "https://www.city.otsu.lg.jp/kurashi/g/b/shuseki/66715.html",
+      "title": "【家庭ごみ】ごみ出し支援戸別収集サービスについて／大津市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-12-26",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "otsu-regular",
+      "url": "https://www.city.otsu.lg.jp/kurashi/g/b/s/ks/45936.html",
+      "title": "【家庭ごみ】大型ごみの出し方について／大津市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2026-04-14",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "otsu-regular-note",
+      "url": "https://www.city.otsu.lg.jp/kurashi/g/b/s/ks/64968.html",
+      "title": "大型ごみ（戸別有料収集）申込後の注意事項について／大津市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-08-12",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "otsu-self",
+      "url": "https://www.city.otsu.lg.jp/soshiki/030/1702/o/1398046872042.html",
+      "title": "環境美化センター　施設へのごみの搬入（持込み）について／大津市",
+      "retrieved_date": "2026-10-18",
+      "source_updated": "2025-11-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "大津市のみのAI下書き。公式原典の実取得日時・原本/抽出文SHA-256はofficial-metadata.json。現行制度の窓口照会・人手確認・独立原典レビューは未実施。"
+}

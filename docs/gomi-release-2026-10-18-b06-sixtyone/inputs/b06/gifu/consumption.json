@@ -1,0 +1,30 @@
+{
+  "city": "gifu:gifu",
+  "checked": "2026-10-18",
+  "research_only": true,
+  "official_search_terms": [
+    "岐阜市 ごみ出し支援 対象 申込",
+    "岐阜市 粗大ごみ 収集 搬出",
+    "岐阜市 ごみ 持ち込み 手数料"
+  ],
+  "official_sources_retrieved": 3,
+  "http_200_count": 3,
+  "http_non_200_count": 0,
+  "original_bytes_total": 22250210,
+  "raw_sha256_recorded": true,
+  "text_sha256_recorded": true,
+  "search_api_tokens": null,
+  "model_tokens": null,
+  "credits": null,
+  "currency_cost": null,
+  "cost_note": "ツール別課金量は取得できず、推測しない。",
+  "preview_created": false,
+  "human_reviewed": false,
+  "source_ids": [
+    "gifu-regular",
+    "gifu-faq",
+    "gifu-guide"
+  ],
+  "new_city_sha256": "4eef8c142886b99e5d1004d19f93893ff1f8fa5b99fad90d7f1376dc789e83b3",
+  "source_hash_verification": "passed"
+}

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ja" style="-webkit-text-size-adjust: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>粗大ごみの戸別収集</title>
+    <meta name="description" content="description">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="article"> <!-- トップページならwebsite、下層ページならarticle -->
+    <meta property="og:title" content="粗大ごみの戸別収集">
+    <meta property="og:description" content="収集資源センターによる粗大ごみの戸別収集について">
+    <meta property="og:site_name" content="福井市役所">
+    <meta property="og:image" content="/kurasi/kankyo/kgomi/sodai_kobetu_d/img/001.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-2.png" sizes="180x180">
+    <link rel="stylesheet" href="https://use.typekit.net/fsk6yqc.css">
+<link href="/share/css/splide.min.css" rel="stylesheet">
+<link href="/share/css/style.css?260408" rel="stylesheet">
+<link href="/share/css/style_white.css" rel="stylesheet" id="style_white" disabled>
+<link href="/share/css/style_yellow.css" rel="stylesheet" id="style_yellow" disabled>
+    <script src="/share/scripts/jquery.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXHX8FH87W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KXHX8FH87W');
+</script>
+<script>
+  (function(w,d,j){var t='microAdUniverseTracker';w[t]=w[t]||{};w[t].track=w[t].track||function(){
+  (w[t].queue=w[t].queue||[]).push(arguments)};var s=d.createElement('script');s.async=true;s.src=j;
+  var fs=d.getElementsByTagName('script')[0];fs.parentNode.insertBefore(s,fs)})
+  (window,document,'https://cdn.microad.jp/js/track.js');
+  microAdUniverseTracker.track({
+    "service_id": 7281
+  });
+</script>
+
+
+  </head>
+
+<body>
+<style>
+h2 {
+  position: relative;
+  /* display: inline-flex; */
+  align-items: center;
+}
+
+/* 見出し2の前に挿入されるアイコンのスタイル */
+h2::before {
+  content: '■';
+  color: #D1D1D4;
+  font-size: 0.6em;
+  margin-right: 0.3em;
+  vertical-align: top;
+}
+h2.title::before {
+  display: none;
+}
+iframe{
+  width: 40em
+}
+.youtubearea iframe{
+  width: 40em;
+}
+@media (max-width: 680px) {
+    .youtubearea iframe {
+        width: 100%;
+    }
+    iframe{
+    width: 100%;
+}
+}
+</style><span class="contents_flg" style="display:none">0</span>
+<style>
+  .div_a {
+   position :relative;
+   top:-85px;
+   visibility:hidden;
+ }
+  .mokuji {
+   margin-bottom:35px;
+   border: solid 1px #D1D1D4;
+   padding-left: 3rem;
+   padding-right: 3rem; 
+
+ }
+  .toggle-btn {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none; /* テキスト選択を防ぐ */
+  }
+
+  #myList {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 1000px; /* 初期最大高さを十分に大きく設定 */
+    list-style: disc !important;
+  }
+  .toggle-btn {
+    width:1.5rem;
+  }
+</style>
+<script>
+window.onload = () => {
+    var isListOpen = true; // 初期状態を開いている（true）に設定
+
+    let contents_flg = document.querySelector(".contents_flg");
+    if (contents_flg.textContent === "1") {
+        show_contents();
+    }
+    document.querySelector(".toggle-btn").addEventListener("click",toggleList)
+  function toggleList() {
+    var list = document.getElementById("myList");
+    var btn = document.querySelector(".toggle-btn");
+    if (isListOpen) {
+      // リストを閉じる
+      list.style.maxHeight = "0";
+      btn.textContent = "表示";
+    } else {
+      // リストを開く
+      list.style.maxHeight = list.scrollHeight + "px";
+      btn.textContent = "非表示";
+    }
+    isListOpen = !isListOpen;
+  }
+
+}
+function show_contents() {
+    //各h2タグを取得
+    const h2_group = document.querySelectorAll("h2");
+    //目次要素
+    let domFlg = document.createDocumentFragment();
+    let i = 1;
+    const reg = new RegExp("title");
+
+    h2_group.forEach((h2) => {
+        if (reg.test(h2.className) === false) {
+            //内部リンクの設置
+            let div_a = document.createElement("div");
+            div_a.classList.add("div_a");
+            div_a.setAttribute('id', "a" + i);
+            h2.before(div_a);
+            let li = document.createElement("li");
+            li.innerHTML = `<a href='#a${i}'>${h2.textContent}</a>`;
+            domFlg.appendChild(li);
+            i++;
+        }
+    })
+
+    let hr = document.querySelector(".hr_title");
+    let div = document.createElement("div");
+    div.classList.add("mokuji");
+    div.innerHTML = "<h3 style='text-align:center;border:none;margin:0;margin-top:1rem;'><span>目次</span><span style='font-size:1rem;margin-left:0.5rem;font-size:1rem'><a>[<span class='toggle-btn' style='font-size:1rem;'>非表示</span>]</a></span></h3>";
+    let ul = document.createElement("ul");
+    ul.setAttribute('id', "myList");
+    ul.appendChild(domFlg);
+    div.appendChild(ul);
+
+    hr.after(div);
+}
+</script>
+<header id="masthead" class="site-header">
+	<div class="container">
+        <p class="site-title">
+    <a href="/index.html">
+        <img src="/share/imgs/logo.png?20240201" alt="福井市" width="180" class="color-basic">
+        <img src="/share/imgs/logo-w.png?20240201" alt="福井市" width="180" class="color-white">
+        <img src="/share/imgs/logo-y.png?20240201" alt="福井市" width="180" class="color-yellow">
+    </a>
+</p>
+
+		<div id="accessibility_menu">
+			<div class="acc_menu_inner">
+
+                <button id="acc_menu_close">
+    <!-- <img src="img/icon/close-icon.svg" alt="閉じる" class="close"> -->
+    <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"y="0px" viewBox="0 0 34.6 33.5" style="enable-background:new 0 0 34.6 33.5;" xml:space="preserve" fill="#040000">
+        <polygon class="st0" points="31.1,4.4 30.1,3.3 17.4,16 4.8,3.3 3.7,4.4 16.3,17 3.7,29.7 4.8,30.7 17.4,18.1 30.1,30.7 31.1,29.7 18.5,17 "/>
+    </svg>
+</button>
+                <div class="acc_item acc_item_sound" style="transform: translate(8px, -1px);">
+    <div id="acc_sound" class="acc_clickable">
+
+    <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        y="0px" viewBox="0 0 19.61 15.87" style="enable-background:new 0 0 19.61 15.87;" xml:space="preserve" fill="#040000">
+    <polygon class="st0" points="0,5.02 0,10.85 3.63,10.85 8.76,15.5 8.76,0.36 3.63,5.02 "/>
+    <path class="st0" d="M15.03,7.93c0-1.85-1.5-3.35-3.35-3.35v6.7C13.53,11.29,15.03,9.78,15.03,7.93"/>
+    <path class="st0" d="M11.68,0v1.81c3.38,0,6.13,2.75,6.13,6.13c0,3.38-2.75,6.13-6.13,6.13v1.81c4.38,0,7.93-3.56,7.93-7.94
+        S16.05,0,11.68,0"/>
+    </svg>
+        <a href="https://speechpanel.readspeaker.com/cgi-bin/rssp?customerid=7188&lang=jp&url=https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/sodai_kobetu.html">音声読み上げ</a>
+    </div>
+</div>
+                <div class="acc_item acc_item_size">
+    <div id="acc_size">
+        <!-- <img src="img/icon/ac-size.svg" alt="文字サイズ"> -->
+        <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+y="0px" viewBox="0 0 20.96 15.63" style="enable-background:new 0 0 20.96 15.63;" xml:space="preserve" fill="#040000">
+<path class="st0" d="M17.24,3.97h-2.89L12.74,9l1.24,3.87h3.72l0.79,2.75h2.47L17.24,3.97z M14.45,10.85c0,0,1.1-3.97,1.34-4.93
+c0.24,0.96,1.34,4.93,1.34,4.93H14.45z"/>
+<path class="st0" d="M8.86,0H4.99L0,15.63h3.32l1.05-3.69h5.11l1.05,3.69h3.32L8.86,0z M5.13,9.22c0,0,1.48-5.32,1.8-6.61
+c0.32,1.29,1.8,6.61,1.8,6.61H5.13z"/>
+</svg>
+
+        文字サイズ
+        <span class="acc_clickable active" id="acc_size_middle">標準</span>
+        <span class="acc_clickable" id="acc_size_large">拡大</span>
+    </div>
+</div>
+                <div class="acc_item acc_item_color">
+    <div id="acc_color">
+        <!-- <img src="img/icon/ac-color.svg" alt="文字色・背景色"> -->
+        <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+y="0px" viewBox="0 0 17.39 16.58" style="enable-background:new 0 0 17.39 16.58;" xml:space="preserve" fill="#040000">
+<path class="st0" d="M14.39,5.9l0-0.03l-0.02-0.01c0-0.06,0.01-0.12,0.01-0.17C14.38,2.55,11.84,0,8.69,0
+C5.55,0,3.01,2.55,3.01,5.69c0,0.06,0.01,0.11,0.01,0.17L3,5.87L3,5.9c-1.78,0.96-3,2.83-3,5c0,3.14,2.55,5.69,5.69,5.69
+c1.1,0,2.11-0.33,2.98-0.86l0.02,0.02l0.02-0.02c0.87,0.54,1.89,0.86,2.98,0.86c3.14,0,5.69-2.55,5.69-5.69
+C17.39,8.73,16.17,6.86,14.39,5.9 M12.02,2.36c0.8,0.8,1.3,1.89,1.36,3.1c-0.19-0.06-0.39-0.11-0.59-0.15l-2.27-3.97
+C11.08,1.59,11.59,1.93,12.02,2.36 M13.32,6.48c-0.23,1.33-1,2.46-2.09,3.16c-0.26-1.15-0.86-2.16-1.69-2.93
+c0.65-0.34,1.38-0.53,2.16-0.53C12.27,6.19,12.82,6.3,13.32,6.48 M8.69,0.98c0.36,0,0.7,0.04,1.03,0.11l2.36,4.12
+c-0.13-0.01-0.26-0.01-0.39-0.01c-0.26,0-0.51,0.02-0.75,0.05L8.5,0.99C8.56,0.99,8.63,0.98,8.69,0.98 M7.89,1.05l2.47,4.32
+c-0.3,0.08-0.6,0.18-0.88,0.3L6.99,1.3C7.28,1.19,7.58,1.11,7.89,1.05 M6.48,1.54l2.51,4.38C8.9,5.97,8.8,6.02,8.72,6.07L8.69,6.05
+L8.67,6.07c-0.33-0.2-0.68-0.38-1.05-0.51L5.65,2.11C5.9,1.89,6.18,1.7,6.48,1.54 M5.23,2.51l1.62,2.83
+C6.48,5.25,6.09,5.21,5.7,5.21L4.62,3.34C4.8,3.04,5,2.76,5.23,2.51 M4.33,3.95l0.74,1.29C4.71,5.28,4.35,5.36,4.01,5.46
+C4.04,4.93,4.15,4.42,4.33,3.95 M4.07,6.48c0.5-0.19,1.05-0.29,1.62-0.29c0.78,0,1.51,0.19,2.16,0.53C7.02,7.49,6.41,8.5,6.15,9.65
+C5.06,8.95,4.29,7.81,4.07,6.48 M8.69,14.51c-0.98-0.82-1.62-2.03-1.69-3.39c0.53,0.17,1.1,0.26,1.69,0.26
+c0.59,0,1.15-0.1,1.69-0.26C10.32,12.48,9.68,13.69,8.69,14.51 M15.03,14.22C14.18,15.08,13,15.6,11.7,15.6
+c-0.78,0-1.51-0.19-2.16-0.53c1.13-1.04,1.83-2.53,1.83-4.18c0-0.06-0.01-0.12-0.01-0.18l0.02-0.01l0-0.02
+c1.43-0.77,2.49-2.12,2.86-3.75c1.3,0.84,2.16,2.3,2.16,3.96C16.41,12.2,15.88,13.37,15.03,14.22"/>
+</svg>
+
+        文字色・背景色
+        <span class="acc_clickable black" id="acc_color_basic">黒</span>
+        <span class="acc_clickable white" id="acc_color_white">白</span>
+        <span class="acc_clickable yellow" id="acc_color_yellow">黄</span>
+    </div>
+</div>
+                <div class="acc_item acc_item_lang">
+    <div id="acc_lang">
+        <!-- <img src="img/icon/ac-lang.svg" alt="文字色・背景色"> -->
+        <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+y="0px" viewBox="0 0 17.39 16.58" style="enable-background:new 0 0 17.39 16.58;" xml:space="preserve" fill="#040000">
+<path class="st0" d="M15.39,3.74c-0.15-0.21-0.3-0.41-0.46-0.61C13.44,1.34,11.2,0.2,8.7,0.2c-2.51,0-4.75,1.14-6.23,2.93
+C2.3,3.32,2.15,3.52,2.01,3.74C1.12,5.03,0.6,6.6,0.6,8.29c0,1.69,0.52,3.26,1.4,4.56c0.14,0.21,0.3,0.41,0.46,0.61
+c1.48,1.79,3.72,2.93,6.23,2.93s4.75-1.14,6.23-2.93c0.16-0.19,0.31-0.4,0.46-0.61c0.88-1.3,1.4-2.87,1.4-4.56
+C16.79,6.6,16.27,5.03,15.39,3.74 M15.26,7.91H12.8c-0.03-0.93-0.15-1.81-0.36-2.61c0.61-0.19,1.18-0.42,1.69-0.7
+C14.78,5.55,15.19,6.69,15.26,7.91 M9.07,1.8c0.68,0.16,1.33,0.75,1.86,1.7c0.22,0.38,0.4,0.81,0.55,1.26
+c-0.75,0.18-1.57,0.28-2.41,0.31V1.8z M8.32,1.8v3.27C7.47,5.05,6.65,4.95,5.9,4.77c0.16-0.45,0.34-0.88,0.55-1.26
+C6.99,2.55,7.64,1.97,8.32,1.8 M8.32,5.84v2.08H5.36C5.38,7.07,5.49,6.25,5.68,5.5C6.5,5.7,7.39,5.81,8.32,5.84 M8.32,8.67v2.08
+c-0.93,0.03-1.81,0.14-2.63,0.34c-0.19-0.75-0.3-1.57-0.33-2.41H8.32z M8.32,11.51v3.27c-0.68-0.16-1.33-0.75-1.86-1.7
+c-0.21-0.38-0.4-0.81-0.55-1.26C6.66,11.64,7.47,11.53,8.32,11.51 M9.07,14.78v-3.27c0.85,0.03,1.66,0.13,2.41,0.31
+c-0.16,0.45-0.34,0.88-0.55,1.26C10.4,14.03,9.75,14.62,9.07,14.78 M9.07,10.75V8.67h2.96c-0.02,0.85-0.14,1.66-0.33,2.41
+C10.89,10.89,10,10.77,9.07,10.75 M9.07,7.91V5.84C10,5.81,10.89,5.7,11.71,5.5c0.19,0.75,0.3,1.56,0.32,2.41H9.07z M13.66,3.99
+c-0.43,0.22-0.92,0.42-1.43,0.58c-0.34-1.01-0.81-1.87-1.38-2.48C11.94,2.46,12.91,3.12,13.66,3.99 M6.54,2.08
+C5.98,2.7,5.51,3.55,5.17,4.56c-0.52-0.16-1-0.35-1.44-0.58C4.48,3.12,5.45,2.46,6.54,2.08 M4.95,5.3C4.75,6.1,4.62,6.98,4.59,7.91
+H2.13C2.2,6.69,2.61,5.55,3.26,4.59C3.77,4.87,4.34,5.1,4.95,5.3 M2.13,8.67h2.46c0.03,0.93,0.15,1.81,0.36,2.62
+c-0.61,0.19-1.18,0.43-1.69,0.7C2.61,11.03,2.2,9.9,2.13,8.67 M3.73,12.6c0.43-0.22,0.92-0.42,1.43-0.58
+c0.34,1.01,0.82,1.87,1.38,2.49C5.45,14.13,4.48,13.46,3.73,12.6 M10.84,14.51c0.57-0.62,1.04-1.47,1.38-2.49
+c0.52,0.16,1,0.35,1.43,0.58C12.91,13.46,11.94,14.13,10.84,14.51 M12.44,11.29c0.2-0.8,0.33-1.69,0.36-2.62h2.46
+c-0.07,1.22-0.47,2.36-1.13,3.32C13.62,11.71,13.05,11.48,12.44,11.29"/>
+</svg>
+
+        <select name="Language" id="acc_lang_select" onChange="location.href=value" title="言語選択">
+            <option disabled selected>Language</option>
+            <option value="/index.html">日本語</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja">English</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=zh-CN&_x_tr_hl=ja">中国语 （中国語簡体）</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=zh-TW&_x_tr_hl=ja">中國語 （中国語繁体）</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=ko&_x_tr_hl=ja">한국어</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=pt&_x_tr_hl=ja">Português</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=tl&_x_tr_hl=ja">Tagalog</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=vi&_x_tr_hl=ja">Tiếng Việt</option>
+            <option value="https://www-city-fukui-lg-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=id&_x_tr_hl=ja">bahasa Indonesia</option>
+        </select>
+    </div>
+</div>
+
+			</div>
+
+		</div>
+
+		<button id="open_accessibility_menu">
+			<img src="/share/imgs/icon/accessibility.png" alt="アクセシビリティ・言語" class="color-basic">
+<img src="/share/imgs/icon/accessibility-w.png" alt="アクセシビリティ・言語" class="color-white">
+<img src="/share/imgs/icon/accessibility-y.png" alt="アクセシビリティ・言語" class="color-yellow">
+		</button>
+
+		<button id="open_mobile_menu">
+			<!-- <img src="img/icon/menu-icon.svg" alt="メニュー" class="open"> -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+y="0px" viewBox="0 0 50.6 37.2" style="enable-background:new 0 0 50.6 37.2;" xml:space="preserve" fill="#040000" class="open">
+<g>
+<text x="5" y="10">MENU</text>
+<polyline class="st0" points="4.5,19.4 44.8,19.4 44.8,17.9 4.5,17.9 	"/></polyline>
+<polyline class="st0" points="4.5,27 44.8,27 44.8,25.5 4.5,25.5 	"/></polyline>
+<polyline class="st0" points="4.5,35 44.8,35 44.8,33.5 4.5,33.5 	"/></polyline>
+</g>
+</svg>
+
+
+<!-- <img src="img/icon/close-icon.svg" alt="閉じる" class="close"> -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" viewBox="0 0 34.6 33.5" style="enable-background:new 0 0 34.6 33.5;" xml:space="preserve"  fill="#040000" class="close">
+<polygon class="st0" points="31.1,4.4 30.1,3.3 17.4,16 4.8,3.3 3.7,4.4 16.3,17 3.7,29.7 4.8,30.7 17.4,18.1 30.1,30.7 31.1,29.7 
+    18.5,17 "/>
+</svg>
+		</button>
+
+		
+		<div id="mobile_menu">
+			<nav id="site-navigation" class="main-navigation">
+				
+				<form action="/search.html" class="searchbox">
+					<input type="text" name="q" class="text inactive" id="text-search" placeholder="サイト内検索" title="サイト内検索">
+<input type="hidden" name="cx" value="001558840758742824418:au3kaugg0ka" />
+<input type="hidden" name="cof" value="FORID:9" />
+<input type="hidden" name="ie" value="UTF-8" />
+<button>
+	<img src="/share/imgs/icon/search.svg" alt="検索">
+</button>
+				</form>
+
+				<ul>
+					<li><a href="/kurasi/index.html">くらし</a></li>
+<li><a href="/fukusi/index.html">健康・福祉・保険</a></li>
+<li><a href="/kyoiku/index.html">教育・スポーツ・学習</a></li>
+<li><a href="/sigoto/index.html">仕事・産業</a></li>
+<li><a href="/kankou/index.html">観光・文化・イベント</a></li>
+<li><a href="/sisei/index.html">市政情報</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	
+	</div>
+  
+</header><!-- #masthead -->
+<!--共通ヘッダ-->
+
+<div class="container header_search">
+	<form action="/search.html" class="searchbox">
+        <input type="text" name="q" class="text inactive" id="text-search" placeholder="サイト内検索" title="サイト内検索">
+<input type="hidden" name="cx" value="001558840758742824418:au3kaugg0ka" />
+<input type="hidden" name="cof" value="FORID:9" />
+<input type="hidden" name="ie" value="UTF-8" />
+<button>
+	<img src="/share/imgs/icon/search.svg" alt="検索">
+</button>
+	</form>
+</div>
+
+<!-- <div id="flow"> -->
+	<script>
+(function (c, n, s) {
+    if (c[n] === void 0) {c['ULObject'] = n;
+    c[n] = c[n] || function () {(c[n].q = c[n].q || []).push(arguments)};
+    c[n].l = 1 * new Date();var e = document.createElement('script');
+    e.async = 1;e.src = s + "/chatbot.js";
+    var t = document.getElementsByTagName('script')[0];t.parentNode.insertBefore(e, t);}
+})(window, 'ul_widget', 'https://support-widget.userlocal.jp');
+ul_widget('init', { 'id': 'fbaa33bf0e74e730de99', 'lg_id': '', 'target_id': 'ulAiWidget2' });
+</script>
+<!-- </div> -->
+<main>
+  <section id="information">
+    <div class="container detail">
+        <div class="inner"><p><span><a href="/index.html">ホーム</a> ＞ </span>
+<span><a href="https://www.city.fukui.lg.jp/kurasi/index.html">くらし</a> ＞ </span><span><a href="https://www.city.fukui.lg.jp/kurasi/kankyo/index.html">ごみ・環境</a> ＞ </span><span><a href="https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/index.html">ごみの分別・出し方</a> ＞ </span><span>粗大ごみの戸別収集</span></p>
+</div>
+        <p style="margin-bottom:-30px;font-size:0.9em;text-align:right;">最終更新日：2026年4月1日</p>
+        <div id="rssp">
+          <h2 style="font-size:175%;margin-bottom:35px;" class="title">粗大ごみの戸別収集</h2>
+          <hr class="hr_title" style="height:5px;margin-top:-25px;">
+          <p>粗大ごみをご自身で運搬することができない場合、収集資源センターからご自宅まで回収に伺うことができます。</p>
+
+<p>（粗大ごみの処分手数料に加え、別途収集運搬手数料がかかります）</p>
+
+<h2>申し込み方法</h2>
+
+<p><strong>収集資源センターへ電話等でご予約ください。（電話番号：0776-35-0052）</strong></p>
+
+<ul>
+  <li>1回の収集につき、5点まで収集できます。</li>
+  <li>家庭からでた粗大ごみのみが対象となります。</li>
+  <li>回収日は平日のみです。時間の指定はできません。午前か午後の予約となります。</li>
+  <li>年末年始など、混雑が予想される時期は、早め（1箇月前）にご予約をお願いします。</li>
+</ul>
+
+<div>&nbsp;</div>
+
+<div>戸別収集の申し込みはオンラインでも可能です。</div>
+
+<div>&nbsp;</div>
+
+<div><img alt="kobetu" height="171" src="./sodai_kobetu_d/img/002.jpg" width="168" /></div>
+
+<div>申請フォームは<a href="https://shinsei.e-fukui.lg.jp/SksJuminWeb/EntryForm?id=b9Lkahm3" target="_blank">こちら</a>（新しいウインドウが開きます）です。</div>
+
+<h3>回収時の注意事項</h3>
+
+<ul>
+  <li>収集運搬・処分手数料は、粗大ごみ回収時にお支払いいただきます。</li>
+  <li>手数料は予約時に金額を確認し、お釣りがないようにご用意ください。</li>
+  <li>回収の際は、粗大ごみを玄関先（マンション、アパート等の場合は1階の入口付近）まで出してください。</li>
+  <li>福井市在住の方のみご利用できます。</li>
+</ul>
+
+<p><strong>収集運搬・処理手数料一覧表（1点当たり）</strong>　（税込）</p>
+
+
+
+<table style="border-width: 1px; border-color: #000000;" x:str="">
+  <colgroup>
+    <col />
+    <col />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="text-align: center;border-width: 1px; border-color: #000000;">区分</td>
+      <td colspan="2" style="text-align: center;border-width: 1px; border-color: #000000;">品目</td>
+      <td style="text-align: center;border-width: 1px; border-color: #000000;">収集運搬<br />
+        処分手数料</td>
+    </tr>
+    <tr>
+      <td rowspan="6" style="border-width: 1px; border-color: #000000;">特殊</td>
+      <td rowspan="2" style="vertical-align: middle;border-width: 1px; border-color: #000000;">
+        <p>タイヤ<br />
+        （普通自動車、<br />
+        軽自動車用のみ）</p>
+      </td>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">タイヤのみ</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>550円</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">ホイル付き</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>660円</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: middle;border-width: 1px; border-color: #000000;">ベッドマットレスのみ<br />
+        （スプリング入り）</td>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">セミダブル以上</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>1,980円</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">シングル</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>1,430円</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: middle;border-width: 1px; border-color: #000000;">ベッド枠及び<br />
+        ベッドマットレス<br />
+        （スプリング入）<br />
+        のセット</td>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">セミダブル以上</td>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">
+        <p style="text-align: center">2,255円</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;border-width: 1px; border-color: #000000;">シングル</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>1,650円</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border-width: 1px; border-color: #000000;">大</td>
+      <td colspan="2" style="border-width: 1px; border-color: #000000;">
+        <p>おおむね縦、横及び高さの合計が<br />
+        300センチメートル以上のもの</p>
+      </td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>935円</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border-width: 1px; border-color: #000000;">中</td>
+      <td colspan="2" style="border-width: 1px; border-color: #000000;">おおむね縦、横及び高さの合計が<br />
+        150センチメート以上<br />
+        300センチメートル未満のもの</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>770円</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border-width: 1px; border-color: #000000;">小</td>
+      <td colspan="2" style="border-width: 1px; border-color: #000000;">おおむね縦、横及び高さの合計が<br />
+        150センチメートル未満のもの</td>
+      <td style="vertical-align: middle;  text-align: center;border-width: 1px; border-color: #000000;">
+        <p>605円</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div><strong>この表以外の粗大ごみの手数料は、この表に準じた金額となります。</strong></div>
+
+<div><strong>同じ品目でも、大きさにより手数料が異なる場合があります。</strong></div>
+
+
+        </div>
+
+        
+
+        
+
+        <h3 class="h3-a">
+    お問い合わせ先
+    </h3>
+
+    <p>
+    市民生活部 <a href="/dept/d210/shigen/index.html">収集資源センター</a><br>
+    <span class="tel"><span class="label">電話番号&nbsp;</span>0776-35-0052</span><span class="separate"> ｜ </span><span class="fax"><span class="label">ファクス番号&nbsp;</span>0776-35-0813</span><br>
+    〒918-8032　福井市南江守町2-1  <a href="http://maps.google.co.jp/maps?f=q&hl=ja&geocode=&q=%e3%80%92918-8032%e3%80%80%e7%a6%8f%e4%ba%95%e5%b8%82%e5%8d%97%e6%b1%9f%e5%ae%88%e7%94%ba2-1" target="_blank">【GoogleMap】</a>  <br>
+    業務時間 平日持込受付　8：30～12：00、13：00～17：00
+毎月第2日曜日　8：30～12：00、13：00～17：00
+〔休日〕土曜日、日曜日、祝日、年末年始
+    </p>
+
+   <a href="/inquiry/mailform1012054.html?PAGE_NO=11667" class="linkbtn small">メールでのお問い合わせはこちら</a>
+
+        <p style="margin-bottom:-30px;font-size:0.9em;text-align:right;">ページ番号：011667</p>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer">
+    <section>
+        <div class="container">
+            <div class="ad_wrap">
+                <div class="left">
+
+  <h3 class="h3-b">
+    有料広告欄
+    <a href="/sisei/kohou/hp/p006702.html" class="ad_link">バナー広告掲載のご案内</a>
+  </h3>
+</div>
+<div class="right">
+  <div class="btns_wrap">
+<script type="text/javascript">
+banner = [["http://www.masudaki.co.jp/", "_blank", "/share/bnr/19.gif", "広告：株式会社増田喜", "19"],["http://www.kurinmastar.com/index.html", "_blank", "/share/bnr/56.gif", "広告：株式会社クリンマスター", "56"],["https://www.eco-kankyou.co.jp/", "_blank", "/share/bnr/78.gif", "広告：株式会社エコ環境プロジェクト", "78"],["https://webc.sjc.ne.jp/genkikun/index", "_blank", "/share/bnr/119.gif", "広告：シルバー人材センター", "119"],["https://izutsu-law.jp/", "_blank", "/share/bnr/144.gif", "弁護士法人　井筒ともこ法律事務所", "144"],["https://www.s-shinku.co.jp/", "_blank", "/share/bnr/157.gif", "広告：日本真空化学株式会社", "157"],["http://www.daiki-fd.co.jp/", "_blank", "/share/bnr/158.gif", "広告：ダイキ", "158"],["https://fukui.ryugudo.net/", "_blank", "/share/bnr/159.gif", "広告：浦嶋", "159"],["https://busad.jp/", "_blank", "/share/bnr/163.jpg", "キョウエイアド", "163"],["https://www.fkjc.co.jp/", "", "/share/bnr/166.gif", "福井環境事業株式会社", "166"],   []
+];
+
+
+var list = new Array(banner.length-1);
+for(i=0;i<list.length;i++) {
+	list[i] = i;
+}
+
+    var i = list.length;
+    while(i){
+        var j = Math.floor(Math.random()*i);
+        var wk = list[--i];
+        list[i] = list[j];
+        list[j] = wk;
+    }
+
+for(i in list) {
+	row = list[i];
+    document.write("<div class='btns_item bnr_item_col-3'><a href='" + banner[row][0] + "'class='linkbtn_g banner_link' target='" + banner[row][1] + "'onclick=\"gtag('event','banner_click',{'event_category':'sidebar','event_label':'banner','value':1});\"><img src='" + banner[row][2] + "' class='bn' alt='" + banner[row][3] + "' onclick='getElementById(\"dmimg\").src = \"/cgi-bin/cms/view/pageview.cgi?PAGE_KIND_CD=15&PAGE_NO=" + banner[row][4] + "&OUTPUT_FG=1\"' /></a></div>");
+    
+}
+</script>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+  
+      <div class="footer_btn_wrap" id="page-top">
+          <a href="/index.html" class="home">
+  <img src="/share/imgs/icon/home.svg" alt="home"><br>
+  ホーム
+</a>
+<a href="/support/index.html" class="nav">
+  <img src="/share/imgs/icon/staff.svg" alt="navi"><br>
+  手続きナビ
+</a>
+<a href="https://supportbot-admin.userlocal.jp/pages/fbaa33bf0e74e730de99" class="ai">
+  <img src="/share/imgs/icon/chat.svg" alt="chat"><br>
+  AIチャット
+</a>
+  
+<a href="https://www.city.fukui.lg.jp/portalsite/" id="totop">
+  <img src="/share/imgs/icon/mtop.svg" alt="top"><br>
+  オンライン申請
+</a>
+      </div>
+  
+      <div class="flex">
+        <div class="col-lg5">
+          <a href="/index.html" class="site_logo">
+    <img src="/share/imgs/logo.png" alt="福井市" width="180" class="color-basic">
+    <img src="/share/imgs/logo-w.png" alt="福井市" width="180" class="color-white">
+    <img src="/share/imgs/logo-y.png" alt="福井市" width="180" class="color-yellow">
+</a>
+          <p class="title">
+  福井市役所
+</p>
+<p class="address">
+〒910-8511 福井県福井市大手3丁目10番1号<br>
+<a href="https://www.google.com/maps/place/〒910-8511+福井県福井市大手%EF%BC%93丁目%EF%BC%91%EF%BC%90−%EF%BC%91+福井市役所/@36.064063,136.219537,16z/data=!4m6!3m5!1s0x5ff8beedc54968c1:0xafb059ae3e6236eb!8m2!3d36.0640627!4d136.219537!16s%2Fg%2F1233rfbt?hl=ja&gl=JP" target="_blank">
+GoogleMap</a> / <a href="/sisei/sosiki/tyousya/floormap.html">フロアマップ</a><br>
+電話番号　0776-20-5111（代表）<br>
+業務時間　平日8時30分から17時15分
+</p>
+  
+          <div id="breadcrumb" class="breadcrumb_pc">
+              <ul>
+   <li><a href="/sitemap.html">サイトマップ</a></li>
+   <li><a href="/sisei/kohou/hp/site-p.html">サイトポリシー</a></li>
+   <!-- <li>アクセシビリティ方針</li> -->
+</ul>
+          </div>
+        </div>
+        <div class="col-lg7">
+    <div id="googlemap_wrap">
+       <p class="title"><a href="/fukuisi/prezen/youkoso/p004980.html" class="linkbtn"
+          style="padding-top: 10px;padding-bottom: 10px;line-height: 1em;margin-top: 10px;margin-bottom: 10px;text-decoration: none;">福井市の紹介</a>
+       </p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.2314445482866!2d136.21691435878685!3d36.063962642341046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8beedc54968c1%3A0xafb059ae3e6236eb!2z56aP5LqV5biC5b255omA!5e0!3m2!1sja!2sjp!4v1697004167213!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
+    </div>
+    <p class="title"><a href="/sisei/tokei/jinko/jinkoutoukei.html" class="linkbtn"
+       style="padding-top: 10px;padding-bottom: 10px;line-height: 1em;margin-top: 85px;margin-bottom: -65px;text-decoration: none;">市の人口</a>
+    </p>
+    <div class="footer_counter_wrap">
+      <div class="counter">
+        <div class="counter_1">
+          人口
+        </div>
+        <div class="counter_2">
+        250,745 
+        </div>
+        <div class="counter_3">
+          人
+        </div>
+      </div>
+      <div class="counter">
+        <div class="counter_1">
+        世帯数
+        </div>
+        <div class="counter_2">
+        110,131
+        </div>
+        <div class="counter_3">
+          世帯
+        </div>
+      </div>
+    </div>
+    <!-- end of .footer_counter_wrap -->
+    <p class="date">2026年9月1日現在</p>
+</div>
+        <div id="breadcrumb" class="breadcrumb_sp">
+          <ul>
+   <li><a href="/sitemap.html">サイトマップ</a></li>
+   <li><a href="/sisei/kohou/hp/site-p.html">サイトポリシー</a></li>
+   <!-- <li>アクセシビリティ方針</li> -->
+</ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p>COPYRIGHT © FUKUI CITY</p>
+      </div>
+    </div>
+<img src="/cgi-bin/cms/view/pageview.cgi?PAGE_KIND_CD=3&amp;PAGE_NO=11667&amp;OUTPUT_FG=1" style="display:none;" alt="" width="1" height="1" />
+</footer>
+  
+  <!-- <a href="#" id="totop"></a> -->
+<script src="/share/scripts/common.js?231108"></script>
+</body>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetName = this.getAttribute('href').substring(1);
+        const targetElements = document.getElementsByName(targetName);
+
+        if (targetElements.length > 0) {
+            const targetElement = Array.from(targetElements).find(element => element.closest('td'));
+            const targetElement2 = Array.from(targetElements).find(element => element.closest('h2'));
+            const targetElement3 = Array.from(targetElements).find(element => element.closest('h3'));
+            const targetElement4 = Array.from(targetElements).find(element => element.closest('h4'));
+            if (targetElement) {
+                const rect = targetElement.getBoundingClientRect();
+                const offsetTop = rect.top + window.scrollY || 0;
+
+                window.scrollTo({
+                    top: offsetTop - 120, // ヘッダーの高さをオフセットに追加
+                    behavior: 'smooth'
+                });
+            }else if(targetElement2){
+                const rect = targetElement2.getBoundingClientRect();
+                const offsetTop = rect.top + window.scrollY || 0;
+
+                window.scrollTo({
+                    top: offsetTop - 180, // ヘッダーの高さをオフセットに追加
+                    behavior: 'smooth'
+                });
+            }else if(targetElement3){
+                const rect = targetElement3.getBoundingClientRect();
+                const offsetTop = rect.top + window.scrollY || 0;
+
+                window.scrollTo({
+                    top: offsetTop - 180, // ヘッダーの高さをオフセットに追加
+                    behavior: 'smooth'
+                });
+            }else if(targetElement4){
+                const rect = targetElement4.getBoundingClientRect();
+                const offsetTop = rect.top + window.scrollY || 0;
+
+                window.scrollTo({
+                    top: offsetTop - 180, // ヘッダーの高さをオフセットに追加
+                    behavior: 'smooth'
+                });
+            }else{
+	            window.scrollTo({
+	                top: targetElements[0].offsetTop - 80, // ヘッダーの高さをオフセットに追加
+	                behavior: 'smooth'
+	            });
+	    }
+        } else if (targetName === '') {
+            // ページのトップにスクロールする場合
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+</html>

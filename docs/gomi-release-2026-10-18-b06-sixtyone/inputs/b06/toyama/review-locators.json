@@ -1,0 +1,88 @@
+[
+  {
+    "service_id": "toyama-daily",
+    "field": "contact",
+    "source_id": "toyama-daily-policy",
+    "matches": [
+      {
+        "line": 27,
+        "excerpt": "電話番号：076-429-5017"
+      }
+    ]
+  },
+  {
+    "service_id": "toyama-regular",
+    "field": "collection_location",
+    "source_id": "toyama-bulky",
+    "matches": [
+      {
+        "line": 8,
+        "excerpt": "燃やせるごみ・燃やせないごみに分別して屋外の収集しやすい場所に出して下さい。なお、収集当日は立ち会いをお願いします。"
+      },
+      {
+        "line": 15,
+        "excerpt": "収集時には、燃やせるごみ・燃やせないごみに分別して屋外の収集しやすい場所に出してください。"
+      }
+    ]
+  },
+  {
+    "service_id": "toyama-regular",
+    "field": "application",
+    "source_id": "toyama-bulky",
+    "matches": [
+      {
+        "line": 11,
+        "excerpt": "連絡先 富山市環境センター業務課（予約専用）076-428-4040"
+      },
+      {
+        "line": 30,
+        "excerpt": "詳しくは環境センター業務課へお問い合わせください。"
+      }
+    ]
+  },
+  {
+    "service_id": "toyama-regular",
+    "field": "contact",
+    "source_id": "toyama-bulky",
+    "matches": [
+      {
+        "line": 11,
+        "excerpt": "連絡先 富山市環境センター業務課（予約専用）076-428-4040"
+      },
+      {
+        "line": 31,
+        "excerpt": "連絡先（戸別有料収集専用） 076-428-4040"
+      }
+    ]
+  },
+  {
+    "service_id": "toyama-self",
+    "field": "contact",
+    "source_id": "toyama-self-details",
+    "matches": [
+      {
+        "line": 11,
+        "excerpt": "富山地区広域圏事務組合クリーンセンター"
+      },
+      {
+        "line": 14,
+        "excerpt": "燃やせるごみ（クリーンセンター）富山地区広域圏事務組合"
+      }
+    ]
+  },
+  {
+    "service_id": "toyama-self",
+    "field": "contact",
+    "source_id": "toyama-self",
+    "matches": [
+      {
+        "line": 37,
+        "excerpt": "富山地区広域圏事務組合：燃やせるごみ（クリーンセンター）"
+      },
+      {
+        "line": 43,
+        "excerpt": "富山地区広域圏事務組合：燃やせないごみ（リサイクルセンター）"
+      }
+    ]
+  }
+]

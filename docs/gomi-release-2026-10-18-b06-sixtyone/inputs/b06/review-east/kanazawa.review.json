@@ -1,0 +1,493 @@
+{
+  "schema_version": "b06-independent-review-0.1",
+  "reviewed_on": "2026-10-18",
+  "reviewer": "independent Codex AI reviewer east",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "accepted_for_preview_with_questions",
+  "city_id": "ishikawa:kanazawa",
+  "slug": "kanazawa",
+  "first_input_sha256": "abc0553ee3016583196759e41b61d23bded67047eed72a1500cbff79a442d7cf",
+  "accepted_input_sha256": "768c72a65a416f69e07fa9886a14a3504d968f6f6bff9e47eb09e5f94e192733",
+  "scope": {
+    "services": 4,
+    "fields": 40,
+    "saved_official_documents": 6,
+    "directions": [
+      "candidate fields and questions to saved official text",
+      "saved official text to candidate conditions, exclusions, fees, windows, and routes"
+    ],
+    "official_refetch": false
+  },
+  "review_finding": "自己搬入を本人または同居家族に限定する公式記載を補正。別居親族の代理持込みと同居家族を混同しない。",
+  "corrections_file": "kanazawa/corrections.json",
+  "correction_count": 2,
+  "field_inventory": [
+    {
+      "service_id": "kanazawa-daily",
+      "field": "waste_scope",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "53c86f0cffacf655153006bb940c6d6082e1b57a27cf580312008689cbbbf075"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "1bd75871f1ca804392493348e9d68cf9db18020a6430f4f111cdb46cacb792f2"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "83e204d403614bbcb303fcfe96d01ce74510d37bc28eb966da4b834c77bcd7f1"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "dfb662d8ce5ec07dc639c9b20786cb015a183b1822c69edfbe51354c088ab100"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "fees",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "02524e3cd88d9df254040cf4f9db2e17b48fee95332233d0e0490db9cdef345d"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "limits",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "d70786a87d5578d27d1fadf0011b8d67479a05c4130848fbda06ecc393c8927e"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "application",
+      "state": "needs_confirmation",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "25f1e88ae60b0df65c78b4145f73980899351daf55be46566187d1f1552c7ffe"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "kanazawa-daily",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-daily"
+      ],
+      "value_sha256": "7a9ea54789ad2634547b9df8e8cc5d940ef2c9086827b39e1bca07306218aa2d"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "waste_scope",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "collection_location",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "indoor_carry",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "eligibility",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "family_help",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "fees",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "limits",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "application",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "attendance",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-carry",
+      "field": "contact",
+      "state": "not_found",
+      "source_ids": [
+        "kanazawa-daily",
+        "kanazawa-bulky"
+      ],
+      "value_sha256": "6d3239cbd16f080205b7981776e248f3c40646fae914751a104e862d4b61f12a"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "a5cf5b8e7096178d1c1c59b1e41e28ad77952c56f953bc17241bb73b49e631e5"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "f21b7ac0aa173054c74067ce89e08c5a6d0f5d81f6c3a4f39759483fd0f425f7"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "indoor_carry",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "4daa345c231cf2a8763119729d4fe7740effc06bd5790976085a8f4a3ac6097f"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "6c4e68ce8e221a38e99fe70529d02e59d0426c4c59a5996a6043170cdd5107c1"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "family_help",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "56f2b25a8fbd313a61ba25e4391fc969b0c6a41f4abc11664f3b374a54ffec3b"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "47650df71d4eb47cf579fc5e9b49a1f64eb189929930d948ca34b555eb26ed81"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "f809dcd7d421a7824d157e84831a9e0cc0ada783b83b39e6c1b63fbbf898db4b"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "2901a3ca9278fd42ffa00b94a038275e0e747ec8c70df35b0288c30417e784a7"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "attendance",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "dc1d82a4b502469f5b7b2f670481d73aee33ab6892b6cbac655c25d9e4cf2eb6"
+    },
+    {
+      "service_id": "kanazawa-regular",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-bulky",
+        "kanazawa-bulky-faq"
+      ],
+      "value_sha256": "ab8b86efe52e8a2e717eb5d0b7822420004800175d851de1f130e243ca894b40"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "waste_scope",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "a5add3923cfc652edbe85e113d0b292f86773ae2789ed3ffec7dd02c7657d473"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "collection_location",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "685281f1a7842d4004294c2cb105f45c8ea4d7d037e4782bfbbab2e1e62b973b"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "indoor_carry",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "ff512031480f3881fcaf345e3409fcbebfac4d3c7f0378f27f1b2a521181f5df"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "eligibility",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "672c6b55a98795965c0a480ab37b90bee28c8227d05dcb7d9fcaf09dc140bcac"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "family_help",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "5fdcd8a06337a802d00affd2cb3cc20ae38d8ccd8838b35601a193b5c1fca105"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "fees",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "00604a2bc97a45a849226ed3f9298f1b87272768042a1d9f330631a3e11e3287"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "limits",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "8272c3902978d70c2e10157f021f05fe939f85de79c88da66e89b58ed266ae70"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "application",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "046e2bcc76d53c725aa74d6bd107178227be89af1deb0e2b4e8fec0d4fb45aee"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "attendance",
+      "state": "not_stated",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "362d85e1feb483f2cc1e493ee7a26169cb966fd0b56fac134e2c9f21c106f9d8"
+    },
+    {
+      "service_id": "kanazawa-self",
+      "field": "contact",
+      "state": "explicit",
+      "source_ids": [
+        "kanazawa-self-burn",
+        "kanazawa-self-bulky",
+        "kanazawa-self-fee"
+      ],
+      "value_sha256": "95e7a25dd1bd8b9a0e9d2f318e6657c96fd9fca9c92d88ce2b0b1040230bdd4b"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "id": "kanazawa-bulky",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7598.html",
+      "retrieved_at": "2026-10-18T19:22:30+09:00",
+      "source_updated": null,
+      "raw_file": "kanazawa/official/kanazawa-bulky.html.source",
+      "raw_sha256": "5b85678672555603ff153f6aee7961b93f6c83a6151673894bdd10c03802a64e",
+      "text_file": "kanazawa/official/kanazawa-bulky.txt",
+      "text_sha256": "7b7e09d5340cee128eac1ac50b897d198a6bd482a97d70a19476587c22e0ee83"
+    },
+    {
+      "id": "kanazawa-bulky-faq",
+      "url": "https://www4.city.kanazawa.lg.jp/yokuarugoshitsumon/kurashi_tetsuzukinikansuruyokuarugoshitsumon/gomi_recycle/15937.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "source_updated": null,
+      "raw_file": "kanazawa/official/kanazawa-bulky-faq.html.source",
+      "raw_sha256": "47ac2eb7ded64015b109d5eb742bd9900e2c24b9efabf0ac6dd2682c5e57f7c0",
+      "text_file": "kanazawa/official/kanazawa-bulky-faq.txt",
+      "text_sha256": "0738eddc4d78eab4ec4077972b958e2dd0758f98b203524b8c1edbc29699f5cb"
+    },
+    {
+      "id": "kanazawa-daily",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/7601.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "source_updated": null,
+      "raw_file": "kanazawa/official/kanazawa-daily.html.source",
+      "raw_sha256": "31bf81f222e9d9cbf585b365d53ea8b99c56c838ff36b4019c27aa10639a6597",
+      "text_file": "kanazawa/official/kanazawa-daily.txt",
+      "text_sha256": "059aa366222487560c84adef3082490cd52ac2d4309e2848283f8aaac30d60f8"
+    },
+    {
+      "id": "kanazawa-self-bulky",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kankyoseisakuka/gyomuannai/1/7544.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "source_updated": null,
+      "raw_file": "kanazawa/official/kanazawa-self-bulky.html.source",
+      "raw_sha256": "a966225f45586d148c84a89a2ae68b6939c03022a1f2c7012dc7a9159e9bd86a",
+      "text_file": "kanazawa/official/kanazawa-self-bulky.txt",
+      "text_sha256": "5db3d09dd2bed6f345b7208a042e441f30efa5905895ff66aeb0371883b2a761"
+    },
+    {
+      "id": "kanazawa-self-burn",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shisetsukanrika/gyomuannai/moyasugominosyori/3745.html",
+      "retrieved_at": "2026-10-18T19:22:31+09:00",
+      "source_updated": null,
+      "raw_file": "kanazawa/official/kanazawa-self-burn.html.source",
+      "raw_sha256": "3244856b65227657ac50e8e518fce3939cfc2326a23246e2cb2984aacb6ef750",
+      "text_file": "kanazawa/official/kanazawa-self-burn.txt",
+      "text_sha256": "73cf0dd97e48bcd1992af9e491925526573b82ef38f335dae75878e894c6fd6a"
+    },
+    {
+      "id": "kanazawa-self-fee",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/1/3669.html",
+      "retrieved_at": "2026-10-18T19:24:09+09:00",
+      "source_updated": null,
+      "raw_file": "kanazawa/official/kanazawa-self-fee.html.source",
+      "raw_sha256": "53ab7fead5c76d7d1dd8bab8ce08ab2bb84bd45ba5c3a8fbaf2d74148811e30f",
+      "text_file": "kanazawa/official/kanazawa-self-fee.txt",
+      "text_sha256": "44284db6d57421cda0e138b39fc3a38cb6ab777e47354090c3cdc12eec9b2236"
+    }
+  ],
+  "remaining_required_findings": [],
+  "review_limitations": [
+    "日常支援の利用料・回数・申請方法、独立した粗大搬出制度は未記載/未発見。"
+  ]
+}
