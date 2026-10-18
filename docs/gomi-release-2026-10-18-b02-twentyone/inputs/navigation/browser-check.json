@@ -1,0 +1,57 @@
+{
+  "layouts": [
+    {
+      "font": "18px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/index.html#gomi-support-entry",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/gomi-support.html",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/hyogo-gomi-support/index.html",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/hyogo-gomi-support/inagawa.html",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/qa-large/index.html#gomi-support-entry",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/qa-large/gomi-support.html",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/qa-large/hyogo-gomi-support/index.html",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8850/qa-large/hyogo-gomi-support/inagawa.html",
+      "width": 320
+    }
+  ],
+  "hierarchy": "全国→兵庫県→猪名川町→兵庫県→全国",
+  "kanaSearch": "いながわ→1地域",
+  "noMatchMessage": true,
+  "unlistedMessage": true,
+  "limitations": "制度内容は不変のため既存メモ原典検証を継承。実紙印刷未実施。"
+}

@@ -1,0 +1,603 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "kyoto:kyoto",
+      "name": "京都市",
+      "kana": "きょうとし",
+      "pref_name": "京都府",
+      "selection_reason": "京都府の初候補。日常ごみの福祉収集、14学区限定の拡充実験、大型ごみの有料戸別収集、許可業者利用、自己搬入を公式根拠で区別できる。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kyoto-daily",
+          "kind": "daily_support",
+          "name": "ごみ収集福祉サービス（まごころ収集）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やすごみ、缶・びん・ペットボトル、プラスチック類、小型金属類・スプレー缶、雑がみの5種類を原則週1回収集。大型ごみ・死獣は対象外。14学区限定の追加品目は別の「拡充社会実験」経路を参照。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq",
+                "kyoto-pilot"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先まで収集。屋内には立ち入らない。集合住宅も利用可能。市内全域の通常サービス。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-daily-criteria"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "京都市内に居住する世帯",
+                  "定期的に収集するごみを所定の時間及び排出場所へ出すことが困難",
+                  "本人・親族・近隣者がごみを持ち出すことができない",
+                  {
+                    "label": "利用サービス",
+                    "any": [
+                      "介護保険（介護予防・生活支援サービスを含む）を利用",
+                      "障害福祉サービスを利用"
+                    ]
+                  },
+                  "ホームヘルプサービスを利用",
+                  {
+                    "label": "本人・同居者の属性",
+                    "any": [
+                      "65歳以上",
+                      "障害がある",
+                      "同様の方のみで同居する世帯"
+                    ]
+                  }
+                ],
+                "exception": "詳細は市の現行ページに添付された2023-04-01付PDF/FAQに記載。2026年の社会実験ページはその他の要件は現行から変更なしと説明。通常制度でこの添付資格条件が現在も適用されるか窓口へ確認。"
+              },
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq",
+                "kyoto-pilot"
+              ]
+            },
+            "family_help": {
+              "value": "本人・親族・近隣者などによるごみ出しができないことが条件。家族等による代行が可能な場合は原則条件を満たさない。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "fees": {
+              "value": "サービス自体の利用料は資料に明記なし。有料指定ごみ袋を使用する品目については通常の指定袋が必要。無料とは断定できない。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "limits": {
+              "value": "原則週1回（月～金のいずれか）。5種類を同日に収集。希望者へ玄関ベル/インターホンで声掛け、一定期間ごみがない場合は登録連絡先へ安否確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "application": {
+              "value": "申請書は担当ケアマネジャー/ホームヘルパー等へ相談・提出。ホームヘルパー所属事業所を通じ、担当エコまちステーション又はまち美化事務所へ提出し、現地訪問調査後に利用可否を通知。現行申請は窓口持参を推奨、郵送可、FAX不可。期間限定の拡充社会実験の専用申請・期限は別経路を参照。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq",
+                "kyoto-daily",
+                "kyoto-pilot"
+              ]
+            },
+            "attendance": {
+              "value": "訪問調査あり。通常収集時の本人立会い要否は記載なし。希望時は収集時に声掛け。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "contact": {
+              "value": "まち美化推進課 075-222-3952。申請・収集は住所を所管するまち美化事務所またはエコまちステーション。社会実験の窓口も同様。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-daily",
+                "kyoto-pilot"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "2023-04-01付の添付PDF/FAQにある通常サービスの資格条件（ホームヘルプ要件等）は現行も有効ですか。",
+            "通常サービスの利用料、収集日の立会い要否、対象ごみの屋内から玄関先までの支援はありますか。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。",
+          "variant": "standard",
+          "ai_reviewed_at": "2026-10-18"
+        },
+        {
+          "id": "kyoto-daily-pilot",
+          "kind": "daily_support",
+          "name": "まごころ収集の拡充社会実験（14学区限定）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "通常の定期収集5種に加え、小型家電・古着・電池類（リチウムイオン電池を含む）。追加3品目は社会実験の新規利用者のみ、事前申込が必要。既存利用者は追加3品目を出せない。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-pilot"
+              ]
+            },
+            "collection_location": {
+              "value": "玄関先まで収集。屋内には立ち入らない（通常サービスと同じ）。社会実験として申請できる地域は京都市が指定する14学区のみ。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-pilot",
+                "kyoto-daily-criteria"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kyoto-pilot",
+                "kyoto-daily-criteria"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "京都市が指定する社会実験の14学区に居住する世帯",
+                  "定期的に収集するごみを所定の時間及び排出場所へ出すことが困難",
+                  "本人・親族・近隣者がごみを持ち出すことができない",
+                  {
+                    "label": "利用サービス（ホームヘルプ利用は不要）",
+                    "any": [
+                      "介護保険サービスを利用",
+                      "障害福祉サービスを利用"
+                    ]
+                  },
+                  {
+                    "label": "本人・同居者の属性",
+                    "any": [
+                      "65歳以上",
+                      "障害がある",
+                      "同様の方のみで同居する世帯"
+                    ]
+                  }
+                ],
+                "exception": "現行要件のサービス利用条件を拡張し、ホームヘルプ利用は要件としない。その他の要件は現行から変更なし（ただし通常資格の基礎資料は2023-04-01付のため現行適用を窓口確認）。既にまごころ収集を利用中の方は申請不可。現行制度の要件に該当する方は実験でなく通常サービスへ申請。対象14学区外は申請不可。"
+              },
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-pilot",
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "family_help": {
+              "value": "本人・親族・近隣者などによるごみ出しができないことが条件。家族等による代行が可能な場合は原則条件を満たさない。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-pilot",
+                "kyoto-daily-faq"
+              ]
+            },
+            "fees": {
+              "value": "サービス自体の利用料は資料に明記なし。有料指定ごみ袋を使用する品目については通常の指定袋が必要。無料とは断定できない。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "limits": {
+              "value": "原則週1回（月～金のいずれか）に、通常の5種類（燃やすごみ、缶・びん・ペットボトル、プラスチック類、小型金属類・スプレー缶、雑がみ）を同時に収集。ごみの排出が一定期間ない場合は登録連絡先等へ安否確認し、希望者には玄関ベル/インターホンで声かけ。社会実験で排出する全てのごみは品目ごとに片手で持てる重さで2袋（束）まで。追加対象の小型家電・古着・電池類だけは、収集日の2営業日前までに担当ケアマネジャー等を通じた事前届出が必要。透明袋に入れ、品目名を記載又は表示する。申請時の住所から転居すると、その時点で社会実験サービスは終了。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-pilot",
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "application": {
+              "value": "担当ケアマネジャー等を通じて専用申請書を所管窓口へ提出。窓口・郵送・オンライン（FAX不可）。申請期限2026-12-28。社会実験の実施期間は2026-10-01～2027-03-31。詳細案内の収集サービス提供期間は2026年10月～2027年9月末予定。背景案内は実験期間後も全市展開まで継続提供予定とするが、実際の終了日・継続条件を窓口で確認。申請時の住所から転居した場合は終了。追加3品目は収集日の2営業日前までに別途届出。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-pilot",
+                "kyoto-daily",
+                "kyoto-pilot-background"
+              ]
+            },
+            "attendance": {
+              "value": "訪問調査あり。通常収集時の本人立会い要否は記載なし。希望時は収集時に声掛け。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-daily-criteria",
+                "kyoto-daily-faq"
+              ]
+            },
+            "contact": {
+              "value": "まち美化推進課 075-222-3952。申請・収集は住所を所管するまち美化事務所またはエコまちステーション。社会実験の窓口も同様。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-daily",
+                "kyoto-pilot"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "社会実験の実施期間は2027-03-31まで、詳細案内の収集サービス提供は2027年9月末までの予定、背景案内は全市展開まで継続予定とされています。実際の終了日、実験終了後の継続条件、2027年9月末以後の取扱いを確認してください。",
+            "住所が対象学区に含まれるか、申請が現在受付中か、ホームヘルプ利用なしで申請できるか、本人・同居者の属性などその他の要件を確認してください。",
+            "転居でサービス終了となる場合の手続、既存利用者との併願不可、追加品目の事前届出期限・出し方を確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。",
+          "variant": "pilot",
+          "ai_reviewed_at": "2026-10-18"
+        },
+        {
+          "id": "kyoto-regular",
+          "kind": "regular_bulky",
+          "name": "大型ごみの有料収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出る家具等の大型ごみ。受付品目はインターネット品目一覧、一覧にない物は電話で確認。家電リサイクル対象品、危険物、事業活動ごみ、処理困難物などは受付不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "申込み時、収集車の進入可能性を地図で確認して排出場所を指定。収集日当日朝8時までに指定場所へ出す。敷地内に置かれた場合は収集できないことがある。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "屋内からの搬出可否は記載なし。敷地内に置かれた物は収集できない場合があるため、指定場所まで自力で出せるか要確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "京都市の家庭から出た大型ごみ。事業活動ごみに伴うものは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目・大きさ等により400～2,400円。申込時に額を案内。400円券を必要枚数購入。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "limits": {
+              "value": "品目ごとに数量・サイズ・重さを申告。品目一覧にない物は電話申込。申告外品・券不足・敷地内排出・他のごみ混在時は収集できない場合あり。予約枠/点数上限はページに明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "application": {
+              "value": "大型ごみ受付センターへ電話（毎日8:30～16:30、祝日含む、年末年始休み）又はインターネット（24時間）。初回等はネット仮申込後に排出場所を電話確認。収集日は電話だと申込後およそ1週間、ネットは申込日の翌月末までに表示される地域別候補から選択。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            },
+            "contact": {
+              "value": "申込：0120-100-530、075-330-6100（通話割引利用時）、0570-000-247（その他携帯）。制度問合せ：まち美化推進課075-222-3952。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "自宅前の指定場所までご自身や家族で運び出せない場合、屋内搬出が可能か・別の選択肢があるかを確認してください。",
+            "予約できる収集日、点数上限、集合住宅の排出場所、代理申込の扱いを確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。",
+          "ai_reviewed_at": "2026-10-18"
+        },
+        {
+          "id": "kyoto-carry",
+          "kind": "bulky_carry_support",
+          "name": "屋内搬出支援（市制度は未確認）",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "市公式ページは大型ごみ等を一般廃棄物収集運搬許可業者へ依頼する代替方法を案内。専用の福祉的な屋内搬出支援制度は今回の公式調査範囲で未確認。業者が屋内作業を行うか要問合せ。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "collection_location": {
+              "value": "市は許可業者へ収集運搬を依頼する方法を案内。自宅内のどこまで来るかは業者ごとに確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "indoor_carry": {
+              "value": "市公式案内では屋内からの運び出し可否に触れていない。許可業者ごとに要確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "eligibility": {
+              "value": "年齢・介護度等の特定要件は市ページに記載なし。家庭の大型ごみ等の収集運搬を許可業者へ依頼する案内。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "family_help": {
+              "value": "家族の同席・代理申込条件は市ページに記載なし。業者へ要確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "fees": {
+              "value": "料金は記載なし。業者に見積り確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "limits": {
+              "value": "屋内搬出範囲、階段、解体、重量・品目条件、立会いは記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "application": {
+              "value": "京都環境事業協同組合へ問合せ、または市掲載の家庭大型ごみ等の許可業者一覧から選び直接依頼。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "attendance": {
+              "value": "記載なし。依頼先へ確認。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            },
+            "contact": {
+              "value": "京都環境事業協同組合 075-691-5516。市の許可業者一覧も参照。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-many-waste"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "市の福祉的な屋内搬出支援制度、対象条件のある紹介制度はありますか。",
+            "紹介される許可業者が家屋内からの搬出に対応するか、見積りに含まれる収集・処分費、階段・解体・重量制限、立会い、家族代理の扱いを確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。",
+          "ai_reviewed_at": "2026-10-18"
+        },
+        {
+          "id": "kyoto-dropoff",
+          "kind": "self_dropoff",
+          "name": "クリーンセンターへの持込ごみ",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "京都市内の家庭から出たごみをクリーンセンターへ自己搬入。処理施設で受け入れできない品目あり（リチウムイオン電池等、家電リサイクル対象、危険物、産業廃棄物等）。他人のごみ・市域外ごみは不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "南部・東北部クリーンセンター。市のページには南部の家庭持込みが2026-02-02から再開との記載と「当面停止」とする古い注意文が併存。最新の受入状態・破砕対象可否を予約窓口に確認してから施設を選ぶ。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "持込者が車両から自分で荷下ろし。自宅からの搬出支援は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "京都市内の家庭ごみ。本人のごみのみ（他人のごみは不可）。搬入時に身分証提示。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "他人のごみは許可なく持込み不可。申請・運転の家族代理条件は明記なし。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "100kg以下1,500円。100kg超は1,500円＋超過分10kgまでごとに200円加算。現金・主要クレジットカード・電子マネー・コード決済可。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "前日までに事前予約（インターネット24時間365日、電話8:30～16:30土日祝可）。当日予約は空きがある場合、8:30～正午の電話で午後枠のみ。車両限定で自動車のみ。受付は月～金・第2/第4土曜（祝日含む）9～12時、13～16:30。本人が荷下ろしし、身分証を提示。大量搬入、受入制限は事前に施設へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "application": {
+              "value": "大型ごみ・持込ごみ受付サイト又は電話予約。固定0120-100-959、割引サービス利用時075-330-6081、その他携帯0570-000-604。搬入者氏名・住所・連絡先、ごみ種別・発生場所、車両情報を準備。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "搬入者が本人確認書類を提示し、指定場所で自分で荷下ろし。必要に応じ複数人で来場するよう案内。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "予約センター：0120-100-959／075-330-6081／0570-000-604。各施設：南部075-611-5362、東北部075-741-1003。制度問合せ：施設管理課075-222-3964。",
+              "state": "explicit",
+              "source_ids": [
+                "kyoto-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "南部クリーンセンターの現在の家庭ごみ受入状況と、今回の品目が東北部/南部のどちらで受け入れ可能か確認してください。",
+            "本人以外の家族が車両を運転・同行する場合の本人確認書類と、荷下ろしを手伝える人数を確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。",
+          "ai_reviewed_at": "2026-10-18"
+        }
+      ],
+      "priority_notes": [
+        "14学区の社会実験を市内全域の一般条件と誤読させない。申請期限・追加品目・対象条件は2026-10-18の公式現行ページに合わせた。",
+        "まごころ収集は通常大型ごみを対象にせず、屋内へ立ち入らない。",
+        "屋内搬出のみの市制度は今回確認できず。市は一般廃棄物収集運搬許可業者を案内しているが屋内対応・料金は未記載で、制度なしとは断定しない。",
+        "持込ページは南部クリーンセンターの受入状況に古い停止文と再開案内が混在。予約前の確認が必要。"
+      ],
+      "common_questions_for_office": [
+        "自宅住所、世帯の介護・障害福祉サービス利用状況とホームヘルプの有無、家族・近隣によるごみ出し可否を説明したうえで、該当する支援と申請先を案内してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kyoto-daily",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/page/0000027850.html",
+      "title": "京都市ごみ収集福祉サービス（まごころ収集）について",
+      "source_updated": "2026-08-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-pilot",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/page/0000354680.html",
+      "title": "ごみ出しが困難な高齢者等への支援の拡充に向けた社会実験について",
+      "source_updated": "2026-08-27",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-pilot-background",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/page/0000355952.html",
+      "title": "ごみ出しが困難な高齢者等への支援の拡充に向けた社会実験の実施",
+      "source_updated": "2026-07-08",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-daily-criteria",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/cmsfiles/contents/0000027/27850/1_0401osirase.pdf",
+      "title": "ごみ収集福祉サービスについて（PDF）",
+      "source_updated": "2023-04-01",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-daily-faq",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/cmsfiles/contents/0000027/27850/QA.pdf",
+      "title": "ごみ収集福祉サービスQ＆A（PDF）",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-bulky",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/page/0000001317.html",
+      "title": "大型ごみ",
+      "source_updated": "2026-09-25",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-dropoff",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/page/0000253022.html",
+      "title": "持込ごみの受入れについて",
+      "source_updated": "2026-01-21",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kyoto-many-waste",
+      "url": "https://www.city.kyoto.lg.jp/kankyo/page/0000264686.html",
+      "title": "引越しの時など多量のごみが発生する場合の処理方法について",
+      "source_updated": "2025-03-18",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "review_note": "AI抽出草稿。別担当の独立レビュー未実施。人手原文全件確認、窓口確認、正確性実証ではない。公式資料8件を2026-10-18に取得（正確な取得時刻は未記録）。検索は公式限定、3検索語（web検索1回）、トークン/creditsは未計測。屋内搬出支援は市制度未確認として区別。"
+}

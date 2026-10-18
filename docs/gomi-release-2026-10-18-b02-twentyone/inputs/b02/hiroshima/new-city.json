@@ -1,0 +1,456 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "ai_draft": true,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "hiroshima:hiroshima",
+      "name": "広島市",
+      "kana": "ひろしまし",
+      "pref_name": "広島県",
+      "selection_reason": "中国地方の初候補として、日常ごみの訪問収集、近隣支援モデル、粗大ごみの室内搬出、通常収集、持込みの4経路を公式資料で照合できる。世帯全員のAND条件と複数の資格OR条件を公式に確認できる。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "hiroshima-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集（家庭ごみ）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "大型ごみを除く家庭ごみ。週1回、分別したごみを収集。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "collection_location": {
+              "value": "自宅の玄関前など、環境事業所と事前に打ち合わせた場所。通常は玄関先に出しておく方式。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "indoor_carry": {
+              "value": "家の中からごみを運び出す案内は見当たらず。ごみは事前に打ち合わせた場所（自宅玄関前など）へ出す。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "広島市内在住",
+                  "ごみ出しについて他から協力を得られない",
+                  {
+                    "label": "世帯の全員が次のいずれかに該当",
+                    "any": [
+                      "要介護1～5",
+                      "身体障害者手帳1～3級",
+                      "精神障害者保健福祉手帳1級または2級",
+                      "療育手帳Ⓐ・A・Ⓑ"
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "family_help": {
+              "value": "世帯の全員が上記の要介護・障害要件を満たす必要があり、かつごみ出しについて他から協力を得られないこと。親族・介護関係者等は代理申込可。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "limits": {
+              "value": "週1回。大型ごみは対象外。収集時に不在または不要の場合は事前連絡。希望者にはごみが出ていない場合に必要に応じて声かけ、届出済み緊急連絡先への電話連絡あり。共同住宅・戸建てとも所定の関係者への事前共有を案内。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "application": {
+              "value": "利用申込書と該当する介護保険証または手帳の写しを、お住まいの地区の環境事業所へ持参または郵送。親族・介護関係者・民生委員等の代理申込可。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "attendance": {
+              "value": "収集員が自宅を週1回訪問。通常回の立会い要否は明記なし。オートロック付き集合住宅は収集時に解錠が必要。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            },
+            "contact": {
+              "value": "各区の環境事業所へ申込・問合せ（中・東241-0779、南286-9790、西277-6404、安佐南848-3320、安佐北814-7884、安芸884-0322、佐伯922-9211）。制度問合せは環境局業務第一課082-504-2219。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-fureai"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "申込前に相談し、世帯全員の資格区分と他者協力の扱い、費用の有無、玄関前まで本人が出せない場合の対応を確認してください。",
+            "別制度の「ごみ出しサポーター」は2025年度審議会記録でモデル事業として説明されています。現在の実施地域・申込方法・対象条件は環境局業務第一課へ確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。"
+        },
+        {
+          "id": "hiroshima-carry",
+          "kind": "bulky_carry_support",
+          "name": "大型ごみ排出支援（あんしんサポート）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "広島市の大型ごみ収集対象品。収集員2人で容易に運び出せる大きさ・重さに限る。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "collection_location": {
+              "value": "住宅内から搬出して、収集員と申し合わせた場所へ排出。玄関から容易に運び出せないものは不可。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "大型ごみを自分で所定の場所まで持ち出せない",
+                  {
+                    "any": [
+                      "ひとり暮らし",
+                      {
+                        "all": [
+                          "本人及び同居人のうち、下記の区分に該当しない人は1人以下"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "family_help": {
+              "value": "同居人がいる場合、本人及び同居人のうち次のいずれかに該当しない方が1人以下なら対象となる場合がある：要支援・要介護認定、身体障害者手帳・療育手帳・精神障害者保健福祉手帳、母子健康手帳交付の出産前または産後1年以内、65歳以上、義務教育終了まで。単身は持出困難が条件であり、これらの資格区分は同居条件の人数判定に記載されている。このほかにも対象となる場合があり、受付センターへ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "fees": {
+              "value": "住宅内からの持ち出し支援は無料。大型ごみの通常の収集運搬手数料は別途必要。通常の手数料は生活保護世帯、中国残留邦人等で支援給付を受けている世帯について免除制度あり。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support",
+                "hiroshima-fees",
+                "hiroshima-regular"
+              ]
+            },
+            "limits": {
+              "value": "収集員は解体・取り外しをしない。2人で容易に運び出せる大きさ・重さに限り、玄関から容易に運べないものは収集不可。収集日の2週間前までに申込。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "application": {
+              "value": "地区の大型ごみ収集日の2週間前までに大型ごみ受付センターへ電話またはインターネットで申し込み。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "attendance": {
+              "value": "特別な立会い条件の記載なし。玄関から運び出せない場合は不可。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            },
+            "contact": {
+              "value": "大型ごみ受付センター0570-082530、または082-544-5300（通話定額対象番号）。制度問合せ：環境局業務第一課指導係082-504-2220。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-bulky-support"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "対象に当てはまるか、玄関・廊下・階段の搬出経路、収集員2人で運べる重さ、解体・取り外しの必要性を受付センターへ相談してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。"
+        },
+        {
+          "id": "hiroshima-regular",
+          "kind": "regular_bulky",
+          "name": "通常の大型ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "最長辺または最大径30cm以上の家庭ごみなど。棒状・容易に折り曲げられる板状は最長辺1m以上おおむね2m以下。家電リサイクル対象品は別料金・券が必要。パソコン、資源・不燃ごみ等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular",
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "予約時に受付センターと申し合わせた場所へ、収集日の朝8時30分までに排出。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常収集の排出場所案内はあるが、収集員による住宅内からの搬出可否の記載は確認できず。別制度「あんしんサポート」は条件付きで室内搬出を支援。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-regular",
+                "hiroshima-bulky-support"
+              ]
+            },
+            "eligibility": {
+              "value": "広島市内の家庭から出る大型ごみ。事業系ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular",
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "代理申込や、家族が代わりに屋外の排出場所へ出す場合の条件は明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-regular"
+              ]
+            },
+            "fees": {
+              "value": "品目・大きさで手数料が異なり、予約時に受付センターが金額を案内。納付券は250円・1,000円の組合せ、またはネット・ウェブチャット予約時のキャッシュレス決済。生活保護世帯、中国残留邦人等で支援給付を受けている世帯は手数料免除制度あり（個別要件・手続きは要確認）。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular",
+                "hiroshima-fees"
+              ]
+            },
+            "limits": {
+              "value": "予約制。電話は収集日の3営業日前まで、ネット・ウェブチャット・FAXは5営業日前まで。1回10点以内、同じ品目は5点以内、合計手数料3,000円以内（家電リサイクル法対象機器は1点あたり1,000円として数量算定）。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular"
+              ]
+            },
+            "application": {
+              "value": "大型ごみ受付センターへ電話、インターネット、ウェブチャットで予約。電話0570-082530または082-544-5300。地区の収集日に合わせ、品目・寸法・数量を申告。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い要否は記載なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-regular"
+              ]
+            },
+            "contact": {
+              "value": "大型ごみ受付センター0570-082530または082-544-5300。受付は月～金9時～18時、祝日等・年末年始・8月6日休み。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-regular"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目の区分・手数料・収集日・指定排出場所を予約時に確認してください。室内からの搬出が必要なら、あんしんサポートの世帯条件と搬出制限を確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。"
+        },
+        {
+          "id": "hiroshima-dropoff",
+          "kind": "self_dropoff",
+          "name": "大型ごみの自己搬入（安佐南工場）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "広島市域内の家庭から出る大型ごみ。30cm以上等の大型ごみ寸法基準に合うもの。資源・不燃ごみ、家電リサイクル対象品、パソコン、事業ごみ、産廃・処理困難物等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "広島市域内の家庭から出る大型ごみを、安佐南工場大型ごみ破砕処理施設（安佐南区伴北四丁目3990番地）へ持込。平日9時～16時。本人が搬入する案内で、本人が運転する要件は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自宅からの搬出支援は案内に記載なし。施設では原則として本人が車両から荷下ろし。必要時は係員へ声をかけるが、車両傷等の責任は負わない旨の注意あり。",
+              "state": "not_stated",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "広島市域内の家庭から出た大型ごみで、本人による搬入。他人が排出したごみは不可（特別な事情は事前相談）。事業ごみ・市域外ごみ不可。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "他人が排出したごみは搬入不可（特別事情は事前相談）。申請者本人による搬入や排出区域を確認するため運転免許証提示を求められる場合がある。家族等が運転・搬入できるか、必要書類は事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "処分手数料不要。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "平日9時～16時、土日祝・年末年始・8月6日休み。平日は事前予約不要。休日開場は予約者限定。事前に大型ごみだけに分別。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "application": {
+              "value": "平日は予約不要。休日開場の搬入は予約者限定。固形状一般廃棄物破砕処分申請書を提出。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": "申請者本人による搬入であることや排出区域を確認するため、運転免許証の提示を求められる場合がある。荷下ろしは原則本人が行い、必要なら係員へ声をかける。本人自身が車両を運転する要件は記載なし。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "安佐南工場大型ごみ破砕処理施設082-848-1114。",
+              "state": "explicit",
+              "source_ids": [
+                "hiroshima-self-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "品目と数量が受入対象か、特別事情で家族等が搬入する場合に必要な書類・本人確認を施設へ事前相談してください。運転者の要件と荷下ろし補助も確認してください。"
+          ],
+          "review_scope_note": "新規2市9制度90項目の独立AI原典照合と修正差分検査を累積して受入れ。review/review.json参照。最終版全項目の一括再読・人手原文確認・窓口確認ではない。"
+        }
+      ],
+      "priority_notes": [
+        "ふれあい収集は2026年4月に要件拡大。2026年10月1日更新の現行ページを採用し、旧2024～2025年度説明の65歳限定要件を使わない。",
+        "ふれあい収集は大型ごみを除く週1回収集。世帯全員が資格のいずれかに該当し、他者協力が得られない条件。",
+        "ごみ出しサポーターは市の審議会記録でモデル事業を確認。2026年10月時点の実施地区・対象・申込詳細は未確認。公開制度扱いにする前に問合せが必要。",
+        "あんしんサポートは室内搬出支援が無料だが、大型ごみ収集運搬手数料は通常通り。単身または同居条件の可能性、搬出物サイズ・経路制限あり。",
+        "通常大型の屋内搬出はnot_stated。室内搬出可を通常収集一般へ広げない。",
+        "自己搬入は処分手数料不要。本人搬入と原則自己荷下ろしの案内がある。本人の運転義務は記載されていない。家族等が運転・搬入する場合の扱いは事前確認。"
+      ],
+      "common_questions_for_office": [
+        "ふれあい収集の費用、本人が玄関先までごみを出せない場合の対応、審査内容は。",
+        "ごみ出しサポーターの現在の実施地区、対象者、申込先、活動内容は。",
+        "あんしんサポートの同居世帯条件、搬出経路・重量制限、立会いと収集運搬手数料は。",
+        "大型ごみ持込みで家族等が代理搬入する特別事情の認定や必要書類、荷下ろし補助の範囲は。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hiroshima-bulky-support",
+      "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1003072/1026095/1026097/1003177.html",
+      "title": "大型ごみ排出支援（あんしんサポート）事業",
+      "source_updated": "2025-02-19",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "hiroshima-fees",
+      "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/008/434/202601.pdf",
+      "title": "令和8（2026）ごみ出しハンドブック ひろしまエイト",
+      "source_updated": null,
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "hiroshima-fureai",
+      "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1003072/1036381/1031711.html",
+      "title": "広島市では、家庭ごみの「ふれあい収集」を実施しています。令和8年4月から対象世帯を拡大しました。",
+      "source_updated": "2026-10-01",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "hiroshima-regular",
+      "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1003072/1026095/1026097/1003173.html",
+      "title": "大型ごみ収集の予約・排出方法",
+      "source_updated": "2025-02-19",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "hiroshima-self-dropoff",
+      "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1021279/1003526.html",
+      "title": "大型ごみの自己搬入",
+      "source_updated": "2026-08-20",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    }
+  ],
+  "research_note": "公式資料限定。最大6クエリを実施し、6資料をHTTP 200で保存。現行公式更新日を取得できたものは記録、未確認はnull。確認日時・原典HTML/PDFと抽出テキスト・SHA256はofficial-metadata.json参照。制度窓口への問合せ、人手による全件照合、独立レビューは未実施。利用・公開不可の候補下書き。"
+}

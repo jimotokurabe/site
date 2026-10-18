@@ -1,0 +1,19 @@
+{
+  "base": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/gomi-expansion-b02/data/gomi-support.json",
+  "base_sha256": "4ffb84a0e0a61aec2a0d3f3632d3d25306cc6a18b4d47899813c1e2719de9eb2",
+  "inputs": [
+    {
+      "path": "kyoto/new-city.json",
+      "sha256": "d0f2df2cb01f2080feafd3837a7fa0d56eda23a3ae2ba03b5e0f56eca8c05d7a"
+    },
+    {
+      "path": "hiroshima/new-city.json",
+      "sha256": "e4e609b4fbf101765f27052c368117d22209e30b366b25eff2a0783f991c897f"
+    }
+  ],
+  "new_city_ids": [
+    "kyoto:kyoto",
+    "hiroshima:hiroshima"
+  ],
+  "published_count": 19
+}

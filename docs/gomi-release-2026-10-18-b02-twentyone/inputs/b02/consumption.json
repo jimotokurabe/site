@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "new_cities": 2,
+  "new_services": 9,
+  "new_fields": 90,
+  "official_fetches": 14,
+  "saved_documents": 14,
+  "search_queries": 9,
+  "collection_agents": 2,
+  "collection_model": "gpt-6-luna",
+  "collection_effort": "medium",
+  "review_agents": 1,
+  "review_model": "gpt-6.1-sol",
+  "review_effort": "medium",
+  "initial_city_reviews": 2,
+  "city_correction_batches": 2,
+  "followup_repairs": [
+    "京都:制限追記時の頻度情報脱落を復旧、期限説明の根拠ID補完",
+    "広島:搬出経路の免除説明に通常収集原典ID追加"
+  ],
+  "review_method": "初回各市全範囲＋修正差分の累積。追補を含む、単一候補全件再読ではない。",
+  "transport_pages_regenerated": 0,
+  "credits": null,
+  "tokens": null,
+  "cost": null,
+  "parent_model": "unchanged",
+  "conclusion": "Luna草稿で複数の対象条件・例外誤りを検出。並列化は速度向け。修正込み節約率は未測定。次回も条件木はSol独立照合を維持。"
+}

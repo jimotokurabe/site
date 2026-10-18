@@ -1,0 +1,185 @@
+[
+  {
+    "city": "hiroshima:hiroshima",
+    "service": "hiroshima-daily",
+    "service_sha256": "43cab290b898837a8ef68fb6c015b4dd0e4e132d31cf4e171837d1fce55e2517",
+    "sources": [
+      {
+        "id": "hiroshima-fureai",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-fureai.txt",
+        "lines": [
+          286,
+          313
+        ],
+        "html_sha256": "5fed20cc1abc6a5336da6091e62459ea1ae3f3b9512ab800eebd067e1d1b3111",
+        "text_sha256": "baad3fbbbc64ce4c7609dfae291cb4f5ee9c93e4f00fd58c41d9c24995556111",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "hiroshima-supporter-record",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-supporter-record.txt",
+        "lines": [
+          1,
+          195
+        ],
+        "html_sha256": "5c2d75519e20c181fa12b092919d36bccf3bc2fd523f61160397838386c64549",
+        "text_sha256": "4562b24e72df6aa390e53842ce1ab5b6787c4b566911625f8911006becd7bd01",
+        "field_names": [
+          "eligibility",
+          "application"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hiroshima:hiroshima",
+    "service": "hiroshima-carry",
+    "service_sha256": "e36a59c98c42881d59a3cb1aba430dd93edf09d2ecea0b5d2a924e6ad172f86c",
+    "sources": [
+      {
+        "id": "hiroshima-bulky-support",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-bulky-support.txt",
+        "lines": [
+          283,
+          306
+        ],
+        "html_sha256": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+        "text_sha256": "8435186d29cb917949b82e076ea14967a36839c967b2be1d911c16c496ca076a",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "hiroshima-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-fees.txt",
+        "lines": [
+          1,
+          1179
+        ],
+        "html_sha256": "addb1639218298ca020112dfbfce30f0f50ba570a03cdbaae8990b2667f4af9b",
+        "text_sha256": "46daffec59deae1928cbeec60383d6c1e92074566eefad91fe6314a63450662f",
+        "field_names": [
+          "fees"
+        ]
+      },
+      {
+        "id": "hiroshima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-regular.txt",
+        "lines": [
+          321,
+          321
+        ],
+        "html_sha256": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+        "text_sha256": "1b81ecc9cd69a9c6e8bf8b4f9df64e69da0ec90f3e92954cbb19fe7fd60bfcc2",
+        "field_names": [
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hiroshima:hiroshima",
+    "service": "hiroshima-regular",
+    "service_sha256": "1be6dea93f999f84e203d1331e2b4e96ed3cbb2cb5fc14ff8fcbf2e8729a6c10",
+    "sources": [
+      {
+        "id": "hiroshima-regular",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-regular.txt",
+        "lines": [
+          306,
+          322
+        ],
+        "html_sha256": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+        "text_sha256": "1b81ecc9cd69a9c6e8bf8b4f9df64e69da0ec90f3e92954cbb19fe7fd60bfcc2",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "hiroshima-bulky-support",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-bulky-support.txt",
+        "lines": [
+          1,
+          385
+        ],
+        "html_sha256": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+        "text_sha256": "8435186d29cb917949b82e076ea14967a36839c967b2be1d911c16c496ca076a",
+        "field_names": [
+          "indoor_carry"
+        ]
+      },
+      {
+        "id": "hiroshima-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-fees.txt",
+        "lines": [
+          839,
+          856
+        ],
+        "html_sha256": "addb1639218298ca020112dfbfce30f0f50ba570a03cdbaae8990b2667f4af9b",
+        "text_sha256": "46daffec59deae1928cbeec60383d6c1e92074566eefad91fe6314a63450662f",
+        "field_names": [
+          "waste_scope",
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hiroshima:hiroshima",
+    "service": "hiroshima-dropoff",
+    "service_sha256": "3b8905d746127a3d2e82c70449d3b86672c5986b86fd83be913dfd2043f2ccba",
+    "sources": [
+      {
+        "id": "hiroshima-self-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-self-dropoff.txt",
+        "lines": [
+          285,
+          343
+        ],
+        "html_sha256": "76a474115f90d64f8c7abdc0ba12a1ed453f799c328605734d8df09dfa364879",
+        "text_sha256": "c6254bd87c555314129d4bd6e44726bec57256bafb60180b8cdab1f034f6ee5f",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

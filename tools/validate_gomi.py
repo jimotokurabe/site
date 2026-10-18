@@ -211,7 +211,7 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
         if not isinstance(services, list) or not services:
             errors.append(f"{cp}.services: expected a non-empty list")
             continue
-        seen_kinds: set[str] = set()
+        seen_kinds: dict[str, list[str | None]] = {}
         for si, service in enumerate(services):
             sp = f"{cp}.services[{si}]"
             if not isinstance(service, dict):
@@ -227,10 +227,16 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
             kind = service.get("kind")
             if not isinstance(kind, str) or kind not in KINDS:
                 errors.append(f"{sp}.kind: expected one of {', '.join(sorted(KINDS))}")
-            elif kind in seen_kinds:
-                errors.append(f"{sp}.kind: duplicate {kind} in city")
+            variant = service.get("variant")
+            if variant is not None and variant not in ("standard", "pilot"):
+                errors.append(f"{sp}.variant: expected standard or pilot")
             if isinstance(kind, str) and kind in KINDS:
-                seen_kinds.add(kind)
+                prior = seen_kinds.setdefault(kind, [])
+                # A regular programme and a time-limited pilot need separate cards.
+                # Unlabelled duplicates and multiple copies of either remain errors.
+                if prior and (variant not in ("standard", "pilot") or None in prior or variant in prior):
+                    errors.append(f"{sp}.kind: duplicate {kind} in city without distinct standard/pilot variants")
+                prior.append(variant)
             if not _nonempty(service.get("name")):
                 errors.append(f"{sp}.name: required")
             evidence_status = service.get("evidence_status")

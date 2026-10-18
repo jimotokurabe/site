@@ -48,8 +48,8 @@ class GomiIntegrationTests(unittest.TestCase):
         self.assertEqual(original_scripts, [s.get_text() for s in soup.find_all('script') if 'const cities=' in s.get_text()])
         self.assertIn('免許返納・移動', soup.select_one('#prefectures h2').get_text())
         hrefs = {a['href'] for a in soup.select('#gomi-support-entry a')}
-        self.assertEqual(hrefs, {'gomi-support.html', *(city_path(c) for c in DATA['cities'])})
-        self.assertIn('掲載地域', soup.select_one('#gomi-support-entry').get_text())
+        self.assertEqual(hrefs, {'gomi-support.html'})
+        self.assertIn('都道府県から探す', soup.select_one('#gomi-support-entry').get_text())
         self.assertEqual(len(soup.select('h1')), 1)
 
 

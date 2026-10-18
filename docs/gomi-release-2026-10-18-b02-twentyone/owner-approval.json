@@ -1,0 +1,19 @@
+{
+  "status": "approved",
+  "by": "site_owner",
+  "approved_at": "2026-10-18",
+  "reviewed_candidate_sha256": "c20d73181d6779d5c6d875f109724ecf45d62edfecda82fdced17235ec01e96a",
+  "city_ids": [
+    "kyoto:kyoto",
+    "hiroshima:hiroshima"
+  ],
+  "accepts_ai_reviewed_pilot": true,
+  "basis": "運営者は京都・広島追加の21地域、全国47都道府県→掲載県10頁→市町村の入口、トップのごみ欄、独立AI照合と未確認事項の説明後「公開して」と明示承認。制度追加2市と階層UIの限定範囲。人手原文全件確認を意味しない。",
+  "ui_scope": [
+    "全国47都道府県入口",
+    "掲載10都道府県の一覧",
+    "21市町村の階層リンク",
+    "トップごみ欄",
+    "ごみCSS・生成処理"
+  ]
+}
