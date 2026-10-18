@@ -123,12 +123,12 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
         hostname = (urlsplit(url).hostname or "").lower().rstrip(".") if isinstance(url, str) else ""
         official_host = hostname.endswith((".lg.jp", ".go.jp")) or hostname in {"lg.jp", "go.jp", "www.nishi.or.jp", "nishi.or.jp"}
         # Municipal joint waste facility linked from Inagawa's official guidance.
-        if sid == 'kunisaki-handcarried' and url == 'https://www.kunisakicc.jp/association/kcc/hand-carried/':
+        if sid in {'kunisaki-handcarried', 'kawanishi-kunisaki'} and url == 'https://www.kunisakicc.jp/association/kcc/hand-carried/':
             owners = {c.get('id') for c in cities if isinstance(c, dict)
                       for service in c.get('services', [])
                       for fact in service.get('fields', {}).values()
                       if sid in fact.get('source_ids', [])}
-            official_host = owners == {'hyogo:inagawa'}
+            official_host = owners == ({'hyogo:inagawa'} if sid == 'kunisaki-handcarried' else {'hyogo:kawanishi'})
         if hostname == 'www.city.amagasaki.hyogo.jp' or (sid == 'amagasaki-faq287' and url == 'https://faq.city.amagasaki.hyogo.jp/faq/detail.aspx?id=287'):
             owners = {c.get('id') for c in cities if isinstance(c, dict)
                       for service in c.get('services', [])
@@ -150,6 +150,7 @@ def validate(data: dict[str, Any], root: str | Path | None = None, publication: 
             'www.city.nagoya.jp': 'aichi:nagoya',
             'www.city.sendai.jp': 'miyagi:sendai',
             'www.city.takarazuka.hyogo.jp': 'hyogo:takarazuka',
+            'www.city.kawanishi.hyogo.jp': 'hyogo:kawanishi',
         }
         # Itami links its joint municipal facility hosted by Toyonaka.
         if sid in {'itami-cleanland', 'itami-cleanland-net'} and url in {

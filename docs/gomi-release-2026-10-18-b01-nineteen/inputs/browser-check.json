@@ -1,0 +1,227 @@
+{
+  "routes": [
+    {
+      "city": "kawanishi",
+      "route": "daily_support",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "daily_support"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 1027
+    },
+    {
+      "city": "kawanishi",
+      "route": "bulky_carry_support",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "bulky_carry_support"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 939
+    },
+    {
+      "city": "kawanishi",
+      "route": "regular_bulky",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "regular_bulky"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 1456
+    },
+    {
+      "city": "kawanishi",
+      "route": "self_dropoff",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "self_dropoff"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 1522
+    },
+    {
+      "city": "himeji",
+      "route": "daily_support",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "daily_support"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 1355
+    },
+    {
+      "city": "himeji",
+      "route": "bulky_carry_support",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "bulky_carry_support"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 1687
+    },
+    {
+      "city": "himeji",
+      "route": "regular_bulky",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "regular_bulky"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 2856
+    },
+    {
+      "city": "himeji",
+      "route": "self_dropoff",
+      "width": 390,
+      "scroll": 390,
+      "visible": [
+        "self_dropoff"
+      ],
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "memoLength": 1341
+    }
+  ],
+  "layouts": [
+    {
+      "font": "18px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/kawanishi.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/kawanishi.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/kawanishi.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/kawanishi.html#self_dropoff",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/kawanishi.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/kawanishi.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/kawanishi.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/kawanishi.html#self_dropoff",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/himeji.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/himeji.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/himeji.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/hyogo-gomi-support/himeji.html#self_dropoff",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/himeji.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/himeji.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/himeji.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8848/qa/himeji.html#self_dropoff",
+      "width": 320
+    }
+  ],
+  "copyInitialRetry": "川西daily初回の非同期コピー読取は不一致、完了表示後の再確認で一致",
+  "limitations": [
+    "実紙印刷・ネイティブ印刷ダイアログは未検証",
+    "OS全体クリップボードは未検証"
+  ]
+}

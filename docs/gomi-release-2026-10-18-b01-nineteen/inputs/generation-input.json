@@ -1,0 +1,19 @@
+{
+  "base": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/gomi-expansion-b01/data/gomi-support.json",
+  "base_sha256": "ac640d6cfdd4616200409d7490a7b905455b62ef93da71bf7086a3f0ac951713",
+  "fixed_exploration": [
+    "川西",
+    "姫路"
+  ],
+  "selected": [
+    "川西",
+    "姫路"
+  ],
+  "deferred": {
+    "松本": "既存資料の利用入口・搬出範囲不足を保持、今回再探索せず"
+  },
+  "new_fields": 80,
+  "official_fetches": 14,
+  "reused_documents": 3,
+  "saved_documents": 17
+}

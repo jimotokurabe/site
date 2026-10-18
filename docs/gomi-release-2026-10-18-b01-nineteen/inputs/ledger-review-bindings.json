@@ -1,0 +1,86 @@
+{
+  "review_file": "../2026-10-18_ごみ支援拡大B01/review.json",
+  "review_file_sha256": "fc4f902fe53b35026e991e72229c648ee0af19084b00b048206787ef33636fc5",
+  "services": {
+    "kawanishi-daily": {
+      "scope_sha256": "6211edb8c69f314bee29acb1af418ffea48c4bf19f06c45b71f6198ac1118860",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "kawanishi-regular": {
+      "scope_sha256": "061bcd81d33288448ecc1fb5d481007c7033807c4eb3448427dc2acfcdfad158",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "kawanishi-carry": {
+      "scope_sha256": "e9849a0114d8a544b8b182c2bb44b0f3724d524c00a59e8acd823c102ae9439c",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "kawanishi-dropoff": {
+      "scope_sha256": "1ec85cafe5beda1010de92d215e5294c17be8d43d368e8161f388584f22631e2",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "himeji-daily": {
+      "scope_sha256": "8f575b71cc13a02688e40b7c9598b7c95e112b34430744157116a00a00170105",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "himeji-regular": {
+      "scope_sha256": "7ecee109eb5508102a6a06cd88b726f319ec25e49ed9b40224f57d0a66a773d6",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "himeji-carry-unconfirmed": {
+      "scope_sha256": "badd96f8254c728ba4b63b656c4eea6d4aff143ca16b4f1f026709ee67e06e00",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    },
+    "himeji-dropoff": {
+      "scope_sha256": "4c2bf47522d221866e273205c0b5d4d1a4407f78018874ed0c9e864c74cf3fef",
+      "type": "AI independent original-source review",
+      "review_date": "2026-10-18",
+      "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+      "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+      "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+      "post_review_metadata_only": true,
+      "human_reviewed": false
+    }
+  }
+}

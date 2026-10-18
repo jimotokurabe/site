@@ -1,0 +1,3321 @@
+{
+  "ledger_date": "2026-10-18",
+  "base_commit": "7a7e776c11f367b93a33e7b826474857ed01e0d4",
+  "base_data_sha256": "ac640d6cfdd4616200409d7490a7b905455b62ef93da71bf7086a3f0ac951713",
+  "candidate_data_sha256": "ab49658f07b7f6259bfc0f307b09d04d7daacb5ec0025b00e691a316afc11ec4",
+  "published_confirmation": "2026-10-18 本番data/gomi-support.jsonとbaseのSHA一致。新候補の公開承認なし。",
+  "review_policy": "既存累積レビューは履歴として保持。新レビューはサービスと参照出典のhash一致範囲だけ有効。不一致なら失効。AI確認と人手確認を別記。",
+  "municipalities": [
+    {
+      "id": "hyogo:kobe",
+      "name": "神戸市",
+      "status": "published",
+      "city_sha256": "7ff03f9068a58a01adcfbdc5a96b7772e0debfd8e2a5d1c719ac9da8e87cc320",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "既存地域。日常支援と有料室内搬出の資格・申込経路の相違。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "kobe-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "7add4d5a2507ecf306b7364321462eb4c6d966e22512edef788baa745f46580f",
+          "source_ids": [
+            "kobe-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/dashikata/bunbetsukubun/hinmokugoto/ogatagomi/index.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kobe-bulky",
+              "checked": "2026-10-11",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help"
+          ],
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "kobe-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6517d9489cfeabad50fbf67cf78e6af18be446ce8f8166b1562008a9132076db",
+          "source_ids": [
+            "kobe-drop-detail"
+          ],
+          "source_urls": [
+            "https://www.city.kobe.lg.jp/a70503/shise/about/construction/soshiki/1900/1900/1907jigyoukanri_fusehata.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kobe-drop-detail",
+              "checked": "2026-10-11",
+              "updated": "2026-08-27"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "eligibility",
+            "family_help"
+          ],
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "kobe-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "9d978e07cd1ef8d2e2adb0f81badd3d60d9b2f4d31b3d52d65587c0f6c615bfd",
+          "source_ids": [
+            "kobe-daily",
+            "kobe-daily-manual",
+            "kobe-disability-manual"
+          ],
+          "source_urls": [
+            "https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/shisetsu/cleanstation/himawarishushu.html",
+            "https://www.city.kobe.lg.jp/documents/30259/20220401_koureisya.pdf",
+            "https://www.city.kobe.lg.jp/documents/30259/20220401_syougaisya.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "kobe-daily",
+              "checked": "2026-10-11",
+              "updated": "2025-11-05"
+            },
+            {
+              "id": "kobe-daily-manual",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kobe-disability-manual",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "日常ごみの利用料金、通常収集当日の立会い要否は。",
+            "ひまわりの大型ごみ屋内排出支援と有料持ち出しモデルの適用関係、手数料、支援範囲は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "kobe-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "361701785698b00b5c8639b51991d82b570680fa99a616cf6676c30c2ce9dfc0",
+          "source_ids": [
+            "kobe-carry"
+          ],
+          "source_urls": [
+            "https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/dashikata/bunbetsukubun/hinmokugoto/ogatagomi/mochidashi.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kobe-carry",
+              "checked": "2026-10-11",
+              "updated": "2023-11-14"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "モデル実施の受付継続・終了予定",
+            "宅内支援での別居家族の協力条件",
+            "ひまわり収集マニュアルにある大型ごみ屋内排出支援との適用関係・手数料の違いは。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:nishinomiya",
+      "name": "西宮市",
+      "status": "published",
+      "city_sha256": "77c93626c0d84a597f54498143f564d5785a240be8be4da4fa18d220ee35402c",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "既存地域。日常支援で粗大ごみ除外、集合住宅制限、施設料金変更。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "nishi-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "5e1f5656e4c6032482aaed90b9defc142c711bf3696502af120bd74b4094a168",
+          "source_ids": [
+            "nishi-bulky",
+            "nishi-drop"
+          ],
+          "source_urls": [
+            "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/seikatsugomi/moshikomi.html",
+            "https://www.nishi.or.jp/kurashi/gomi/shisetsu/nishi-shori.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nishi-bulky",
+              "checked": "2026-10-11",
+              "updated": "2026-07-24"
+            },
+            {
+              "id": "nishi-drop",
+              "checked": "2026-10-11",
+              "updated": "2026-10-09"
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "粗大ごみの収集と持込の大きさ基準の適用範囲"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "nishi-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6f264d47bfc4fd65a80dd1c30d7723a95801fb5025071ff1037e1358684f4741",
+          "source_ids": [
+            "nishi-drop",
+            "nishi-drop-limits"
+          ],
+          "source_urls": [
+            "https://www.nishi.or.jp/kurashi/gomi/shisetsu/nishi-shori.html",
+            "https://www.nishi.or.jp/kurashi/gomi/shisetsu/nishi-shori.files/genchikakunin.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "nishi-drop",
+              "checked": "2026-10-11",
+              "updated": "2026-10-09"
+            },
+            {
+              "id": "nishi-drop-limits",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "eligibility",
+            "family_help"
+          ],
+          "questions_for_office": [
+            "粗大ごみの収集と持込の大きさ基準の適用範囲"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "nishi-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "3976a4008dc15a1ca6e11aea665113da44fde5938e2de73515bd6b2f7f5f76b1",
+          "source_ids": [
+            "nishi-daily",
+            "nishi-daily-rules",
+            "nishi-welfare"
+          ],
+          "source_urls": [
+            "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/tetsuzuki/nikoyaka.html",
+            "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/tetsuzuki/nikoyaka.files/nikoyakazissiyoukou0721.pdf",
+            "https://www.nishi.or.jp/kenko/fukushi/nichijoseikatsu/shogaijujitsu.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nishi-daily",
+              "checked": "2026-10-11",
+              "updated": "2026-07-21"
+            },
+            {
+              "id": "nishi-daily-rules",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "nishi-welfare",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "日常支援の料金・収集当日の立会い要否は。",
+            "主担当ページ・2026年4月施行要綱と福祉総合案内の対象・申請条件の相違、住戸内不立入の現在の取扱いは。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "nishi-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "a0c7b50ed1acda9eb717167578fdd3e2f21be79cae6dafcb3519935a898d2395",
+          "source_ids": [
+            "nishi-bulky",
+            "nishi-daily"
+          ],
+          "source_urls": [
+            "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/seikatsugomi/moshikomi.html",
+            "https://www.nishi.or.jp/kurashi/gomi/gominoshushu/tetsuzuki/nikoyaka.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nishi-bulky",
+              "checked": "2026-10-11",
+              "updated": "2026-07-24"
+            },
+            {
+              "id": "nishi-daily",
+              "checked": "2026-10-11",
+              "updated": "2026-07-21"
+            }
+          ],
+          "unresolved_fields": [
+            "waste_scope",
+            "collection_location",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "室内搬出ができない場合の公式案内先",
+            "粗大ごみを室内から運び出す支援の有無、対象条件・費用・申込方法"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:akashi",
+      "name": "明石市",
+      "status": "published",
+      "city_sha256": "6751dd1b363b8b4430ecaee992fe9fa422e54fba6d87eed09b27e9077f21d77e",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "既存地域。要介護とサービス利用のAND条件、画像PDF、不明事項。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "akashi-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "a4ac61ba6d28249a72043ff929ca96fd6bc2104d5bd69ecec29964f0b6ec9cbd",
+          "source_ids": [
+            "akashi-bulky",
+            "akashi-phone"
+          ],
+          "source_urls": [
+            "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/sodai.html",
+            "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/sodai-dennwademousikomu.html"
+          ],
+          "source_dates": [
+            {
+              "id": "akashi-bulky",
+              "checked": "2026-10-11",
+              "updated": "2026-08-07"
+            },
+            {
+              "id": "akashi-phone",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help"
+          ],
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "akashi-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "e2a34f01065b42ee3f2226302283ba8924b0323f401d75d605fa5f59c80a38e4",
+          "source_ids": [
+            "akashi-drop",
+            "akashi-drop-faq"
+          ],
+          "source_urls": [
+            "https://www.city.akashi.lg.jp/kankyou/clean_cen/kurashi/gomi/dashikata/acc_mochikomi.html",
+            "https://www.city.akashi.lg.jp/documents/39581/yokuarusitumonn2.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "akashi-drop",
+              "checked": "2026-10-11",
+              "updated": "2026-08-07"
+            },
+            {
+              "id": "akashi-drop-faq",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "親族以外の搬入や住所・発生場所が異なるなど特殊な事情がある場合の予約手続きは。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "akashi-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "3146cbed96b40247dcee110d065d0ed9c2785645c613d822c18988fe9b936f0e",
+          "source_ids": [
+            "akashi-daily",
+            "akashi-leaflet"
+          ],
+          "source_urls": [
+            "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/fureai.html",
+            "https://www.city.akashi.lg.jp/documents/12680/hureaipannhu.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "akashi-daily",
+              "checked": "2026-10-11",
+              "updated": "2024-03-21"
+            },
+            {
+              "id": "akashi-leaflet",
+              "checked": "2026-10-11",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "collection_location",
+            "indoor_carry",
+            "fees",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "ふれあい収集の粗大ごみ可否・具体的な回収位置",
+            "画像パンフレットの現行性・頻度",
+            "料金・立会い"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "akashi-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "12ad35cf17d6e2046b350fe23732a2dd8aea272375fab9a62b2f1b6dc64d1ba8",
+          "source_ids": [
+            "akashi-bulky",
+            "akashi-daily",
+            "akashi-leaflet"
+          ],
+          "source_urls": [
+            "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/sodai.html",
+            "https://www.city.akashi.lg.jp/kankyou/shuushuu_jigyou_ka/kurashi/gomi/fureai.html",
+            "https://www.city.akashi.lg.jp/documents/12680/hureaipannhu.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "akashi-bulky",
+              "checked": "2026-10-11",
+              "updated": "2026-08-07"
+            },
+            {
+              "id": "akashi-daily",
+              "checked": "2026-10-11",
+              "updated": "2024-03-21"
+            },
+            {
+              "id": "akashi-leaflet",
+              "checked": "2026-10-11",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "waste_scope",
+            "collection_location",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "粗大ごみを室内から運び出す支援の有無、対象条件・費用・申込方法",
+            "ふれあい収集で粗大ごみの室内搬出に対応するか、別の相談先があるか"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "kanagawa:yokohama",
+      "name": "横浜市",
+      "status": "published",
+      "city_sha256": "166b4d38b365d0df14871a00524b1958268d32400ce22de327c8eb5fe1776114",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "県外対照。室内支援が明記され、日常と粗大で条件差・区別窓口。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "yokohama-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "b9c6a1a6e7c19882fcdb3056a35c6008bd9cbbec946f14bc1227509bbf472e6f",
+          "source_ids": [
+            "yokohama-bulky",
+            "yokohama-collection",
+            "yokohama-faq69",
+            "yokohama-faq99"
+          ],
+          "source_urls": [
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/sodaigomi.html",
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/shuushuu.html",
+            "https://www.sodai-faq.city.yokohama.lg.jp/faq/show/69?category_id=14&site_domain=default",
+            "https://www.sodai-faq.city.yokohama.lg.jp/faq/show/99?category_id=13&site_domain=default"
+          ],
+          "source_dates": [
+            {
+              "id": "yokohama-bulky",
+              "checked": "2026-10-11",
+              "updated": "2026-10-02"
+            },
+            {
+              "id": "yokohama-collection",
+              "checked": "2026-10-11",
+              "updated": "2026-08-21"
+            },
+            {
+              "id": "yokohama-faq69",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "yokohama-faq99",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help"
+          ],
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "yokohama-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "408957b1f2f926ac21c783a7cba0d8d7febc4a43a3fa27d4f7813db207f988f4",
+          "source_ids": [
+            "yokohama-drop"
+          ],
+          "source_urls": [
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/shushu/sodaigomi/dashikata/mochikomi.html"
+          ],
+          "source_dates": [
+            {
+              "id": "yokohama-drop",
+              "checked": "2026-10-11",
+              "updated": "2026-08-21"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "eligibility",
+            "family_help"
+          ],
+          "questions_for_office": [],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "yokohama-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "4410c822d4e9def341f948c4cb38f232ddcca35c87c05083ae2ddb783189c3c0",
+          "source_ids": [
+            "yokohama-daily",
+            "yokohama-daily-rule",
+            "yokohama-offices"
+          ],
+          "source_urls": [
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/hureai.html",
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/hureai.files/0014_20250328.pdf",
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shokai/jimusho/jimusho.html"
+          ],
+          "source_dates": [
+            {
+              "id": "yokohama-daily",
+              "checked": "2026-10-11",
+              "updated": "2025-08-19"
+            },
+            {
+              "id": "yokohama-daily-rule",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "yokohama-offices",
+              "checked": "2026-10-12",
+              "updated": "2025-08-29"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "日常支援の料金・収集当日の立会い要否は（本人以外の申込者は事前調査への立会いが必要）。",
+            "条例による排出支援終了者の対象区分に該当する場合、適用条件・手順は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "yokohama-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-11",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6b2db393d1a4a02ea6e6524732db8e0c2ad06432030f0668119c649950597304",
+          "source_ids": [
+            "yokohama-carry",
+            "yokohama-offices"
+          ],
+          "source_urls": [
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shien/motidasi.html",
+            "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/shokai/jimusho/jimusho.html"
+          ],
+          "source_dates": [
+            {
+              "id": "yokohama-carry",
+              "checked": "2026-10-11",
+              "updated": "2025-08-19"
+            },
+            {
+              "id": "yokohama-offices",
+              "checked": "2026-10-12",
+              "updated": "2025-08-29"
+            }
+          ],
+          "unresolved_fields": [],
+          "questions_for_office": [
+            "室内支援の点数・重量制限と階段条件",
+            "希望日と事前調査の要否"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:amagasaki",
+      "name": "尼崎市",
+      "status": "published",
+      "city_sha256": "00d1b39f7ba9c05a3a6fd5652b41d941ea2ad239cfbe5f0078992dca81c0ce13",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "阪神間の近隣都市で、家庭ごみの各戸収集、支援制度、大型ごみの収集・持込み条件の違いを比較できるため。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "amagasaki-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "37dfb59e2a8cb877aee16ab3a6cac87104f2f2c82e6fbf68e808d57f7fc1cb04",
+          "source_ids": [
+            "amagasaki-dashikata",
+            "amagasaki-large",
+            "amagasaki-large-fees"
+          ],
+          "source_urls": [
+            "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/003/616/benricho_dashikata.pdf",
+            "https://www.city.amagasaki.hyogo.jp/kurashi/gomi/manner/bunbetu/036_oogata.html",
+            "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/003/616/ogata_ryoukinhyouR712.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "amagasaki-dashikata",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "amagasaki-large",
+              "checked": "2026-10-12",
+              "updated": "2025-12-09"
+            },
+            {
+              "id": "amagasaki-large-fees",
+              "checked": "2026-10-12",
+              "updated": "2025-12-09"
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "料金表対象外の品、個別品目の処理券枚数、1回の数量上限、収集時の立会い要否は。",
+            "予約時に指定された排出場所へ運べない場合、どこへ相談できますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "amagasaki-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "39fbdd0767728f70a11c490ddfec71acb943893a7e3226d8654713233abcb85d",
+          "source_ids": [
+            "amagasaki-dropoff",
+            "amagasaki-faq287"
+          ],
+          "source_urls": [
+            "https://www.city.amagasaki.hyogo.jp/kurashi/gomi/seido/1040112/index.html",
+            "https://faq.city.amagasaki.hyogo.jp/faq/detail.aspx?id=287"
+          ],
+          "source_dates": [
+            {
+              "id": "amagasaki-dropoff",
+              "checked": "2026-10-12",
+              "updated": "2026-10-08"
+            },
+            {
+              "id": "amagasaki-faq287",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "waste_scope",
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "家庭系10kg103円の端数扱い、個別大型品の受入可否・処理券の扱い、分別や予約条件の詳細は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "amagasaki-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "ed473eb820bed78428544ad355eccbfccd19402f60ae820a7cd3afda7a119993",
+          "source_ids": [
+            "amagasaki-mutual",
+            "amagasaki-mutual-groups"
+          ],
+          "source_urls": [
+            "https://www.city.amagasaki.hyogo.jp/kurashi/koreisya/sumai/1004062.html",
+            "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/004/062/houmonn0903.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "amagasaki-mutual",
+              "checked": "2026-10-12",
+              "updated": "2026-09-03"
+            },
+            {
+              "id": "amagasaki-mutual-groups",
+              "checked": "2026-10-12",
+              "updated": "2026-09-03"
+            }
+          ],
+          "unresolved_fields": [
+            "collection_location",
+            "indoor_carry",
+            "family_help",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "支援団体ごとの最新の受入れ状況、利用料と会費、対象地区・対象者、日常ごみの集積場所までの搬出範囲、家族同席の要否。",
+            "地域の訪問型支え合い活動のごみ捨ては、利用対象となる具体条件、家族からの申込可否、通常ごみの種類、玄関内/玄関先/集積所のどこから運ぶか、収集頻度、立会い条件を教えてください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "amagasaki-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "5cc681f0be8a5ad4891c66b57d23b444e69b0916e3963d40581f8bbc4e7fce40",
+          "source_ids": [
+            "amagasaki-mutual",
+            "amagasaki-mutual-groups"
+          ],
+          "source_urls": [
+            "https://www.city.amagasaki.hyogo.jp/kurashi/koreisya/sumai/1004062.html",
+            "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/004/062/houmonn0903.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "amagasaki-mutual",
+              "checked": "2026-10-12",
+              "updated": "2026-09-03"
+            },
+            {
+              "id": "amagasaki-mutual-groups",
+              "checked": "2026-10-12",
+              "updated": "2026-09-03"
+            }
+          ],
+          "unresolved_fields": [
+            "collection_location",
+            "indoor_carry",
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "ごみ捨て支援として粗大ごみの運搬や屋内搬出まで対応する団体、料金・階段条件・家族立会い、活動地区ごとの受付状況。",
+            "訪問型支え合い活動の参加団体は、粗大ごみと家具を室内から屋外へ搬出・運搬できますか。地区、重さ・寸法・階段の上限、料金、立会いを教えてください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:ashiya",
+      "name": "芦屋市",
+      "status": "published",
+      "city_sha256": "07290e35028aa981b6234c765d3d54730061de7ed479f06e443e47959a12daff",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "近隣都市の制度差を比較する候補。高齢者向けの簡単なごみ出し支援と粗大ごみ収集・持込み経路を公式情報から対照できる。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "ashiya-daily-support",
+          "kind": "daily_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "1cd838c2ae370782f63edfdfef58d20a28d2401ccf72d236ff1ba01d36c6c57c",
+          "source_ids": [
+            "ashiya-sawayaka"
+          ],
+          "source_urls": [
+            "https://www.city.ashiya.lg.jp/kankyoushori/syuusyuu/sawayaka.html"
+          ],
+          "source_dates": [
+            {
+              "id": "ashiya-sawayaka",
+              "checked": "2026-10-12",
+              "updated": "2021-11-11"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees"
+          ],
+          "questions_for_office": [
+            "利用者負担の有無、1回あたりのごみ量・袋数の上限を確認してください。",
+            "利用曜日と安否確認の方法・希望の伝え方を確認してください。",
+            "申請時の面談とは別に、収集日に本人や家族の立会いが必要ですか。",
+            "さわやか収集の利用者負担と家庭ごみの袋数・重量上限は。",
+            "別制度のひとり一役活動の利用可否・費用・調整方法は、芦屋市社会福祉協議会（0797-32-7525）へ確認してください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "ashiya-regular-bulky",
+          "kind": "regular_bulky",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "93ba5817a98b81fcf027bd59bc89006051d703f7f2ee93c18e7093442710b9e2",
+          "source_ids": [
+            "ashiya-bulky-fees",
+            "ashiya-bulky-flow",
+            "ashiya-reception-notes"
+          ],
+          "source_urls": [
+            "https://www.city.ashiya.lg.jp/kankyoushori/sodai_tesuuryou.html",
+            "https://www.city.ashiya.lg.jp/kankyoushori/sodai.html",
+            "https://www.city.ashiya.lg.jp/kankyoushori/oshirase/uketukejyouhou.html"
+          ],
+          "source_dates": [
+            {
+              "id": "ashiya-bulky-fees",
+              "checked": "2026-10-12",
+              "updated": null
+            },
+            {
+              "id": "ashiya-bulky-flow",
+              "checked": "2026-10-12",
+              "updated": null
+            },
+            {
+              "id": "ashiya-reception-notes",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "敷地外の予約時指定場所へ準備できない場合、さわやか収集等のどの窓口へ相談できますか。",
+            "家族による代理申込みと収集時の立会い要否、1回の点数・重量制限は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "ashiya-self-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "1c15558d4eb1799a5b19985440414edf55c1f071bf49e350c8a0332787d0652d",
+          "source_ids": [
+            "ashiya-dropoff"
+          ],
+          "source_urls": [
+            "https://www.city.ashiya.lg.jp/kankyoushori/mochikomi/index.html"
+          ],
+          "source_dates": [
+            {
+              "id": "ashiya-dropoff",
+              "checked": "2026-10-12",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [],
+          "questions_for_office": [
+            "予約時に品目ごとの数量規制と受入可否を確認してください。",
+            "車両の大きさ・利用可能な車種、本人以外が持ち込む場合の委任状書式を確認してください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "ashiya-bulky-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6224ad695001082c441bb64aea27edbe85500649983964f3492483bc15116884",
+          "source_ids": [
+            "ashiya-bulky-fees",
+            "ashiya-bulky-flow",
+            "ashiya-sawayaka"
+          ],
+          "source_urls": [
+            "https://www.city.ashiya.lg.jp/kankyoushori/sodai_tesuuryou.html",
+            "https://www.city.ashiya.lg.jp/kankyoushori/sodai.html",
+            "https://www.city.ashiya.lg.jp/kankyoushori/syuusyuu/sawayaka.html"
+          ],
+          "source_dates": [
+            {
+              "id": "ashiya-bulky-fees",
+              "checked": "2026-10-12",
+              "updated": null
+            },
+            {
+              "id": "ashiya-bulky-flow",
+              "checked": "2026-10-12",
+              "updated": null
+            },
+            {
+              "id": "ashiya-sawayaka",
+              "checked": "2026-10-12",
+              "updated": "2021-11-11"
+            }
+          ],
+          "unresolved_fields": [
+            "fees"
+          ],
+          "questions_for_office": [
+            "対象物の寸法・重量を伝え、担当者が無理なく運べるか予約時に確認してください。",
+            "粗大ごみ処理券の金額と在宅確認の電話方法を確認してください。",
+            "粗大ごみ処理券の料金とは別に、屋内持出しの追加料金がかかりますか。",
+            "粗大ごみの品目別券料金、寸法・重量目安、予約時の在宅確認手順は。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "osaka:osaka",
+      "name": "大阪市",
+      "status": "published",
+      "city_sha256": "0e8067e0fbf4c2c7298c6e066c1b81ed7fdd77abb4efb2775d79c093626437b9",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "新規自治体運用試験。行政区別の収集担当区分・処理施設割当と福祉的搬出支援の案内を調査。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "osaka-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "8ee6d707f0ad7260fd472ad3eee1c682710b74540813ec2a0330125a324c1131",
+          "source_ids": [
+            "osaka-centers",
+            "osaka-daily",
+            "osaka-fureai-guideline"
+          ],
+          "source_urls": [
+            "https://www.city.osaka.lg.jp/kankyo/page/0000454118.html",
+            "https://www.city.osaka.lg.jp/kankyo/page/0000370525.html",
+            "https://www.city.osaka.lg.jp/kankyo/cmsfiles/contents/0000669/669800/1_02.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "osaka-centers",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-daily",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-fureai-guideline",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees"
+          ],
+          "questions_for_office": [
+            "日常ごみのふれあい収集に料金はかかりますか。収集時の立会いは必要ですか。",
+            "日常ごみを通常の回収場所まで出せません。室内からの搬出や回収場所の調整を相談できますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "osaka-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "60aea473ed2ed095af25c046d9fb898f14cca2684dc67997897b4296155abd29",
+          "source_ids": [
+            "osaka-bulky-apply",
+            "osaka-fees",
+            "osaka-normal-rules",
+            "osaka-regular"
+          ],
+          "source_urls": [
+            "https://www.city.osaka.lg.jp/kankyo/page/0000515879.html",
+            "https://www.city.osaka.lg.jp/kankyo/page/0000384507.html",
+            "https://www.city.osaka.lg.jp/kankyo/page/0000009337.html",
+            "https://www.city.osaka.lg.jp/kankyo/page/0000369355.html"
+          ],
+          "source_dates": [
+            {
+              "id": "osaka-bulky-apply",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-fees",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-normal-rules",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-regular",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "家族が代理で申し込む場合、必要な手続きはありますか。",
+            "1回に申し込める点数と、収集時の立会いの要否を教えてください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "osaka-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6a6507276a95f353f64edad53826ecbb2970570885714c3380aa5518e5521b4e",
+          "source_ids": [
+            "osaka-centers",
+            "osaka-daily",
+            "osaka-fureai-bulky",
+            "osaka-fureai-guideline"
+          ],
+          "source_urls": [
+            "https://www.city.osaka.lg.jp/kankyo/page/0000454118.html",
+            "https://www.city.osaka.lg.jp/kankyo/page/0000370525.html",
+            "https://www.city.osaka.lg.jp/kankyo/page/0000595748.html",
+            "https://www.city.osaka.lg.jp/kankyo/cmsfiles/contents/0000669/669800/1_02.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "osaka-centers",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-daily",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-fureai-bulky",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "osaka-fureai-guideline",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "fees"
+          ],
+          "questions_for_office": [
+            "ふれあい収集で粗大ごみを室内から搬出する場合、処理手数料・搬出料金はかかりますか。処理券は必要ですか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "osaka-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "bc3a72107782b4b4f33281b9726d946e543093c0d2160d403898477bff49771c",
+          "source_ids": [
+            "osaka-self-drop"
+          ],
+          "source_urls": [
+            "https://www.city.osaka.lg.jp/kankyo/page/0000007810.html"
+          ],
+          "source_dates": [
+            {
+              "id": "osaka-self-drop",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "本人が搬入できない場合、家族の代理搬入は認められますか。事前に何を確認すればよいですか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "kanagawa:kawasaki",
+      "name": "川崎市",
+      "status": "published",
+      "city_sha256": "5411d0ab1688ba38e4a24c2fa12f1f9c4bbd865f7ea6ad3f5f8a47307eb9a311",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "新規自治体運用試験。7区を4生活環境事業所が担当する収集・ふれあい支援・自己搬入例外を調査。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "kawasaki-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "7810fc085e1575d592b4000ef23632ecf0bc98a599e19d8a681df77af8c32dad",
+          "source_ids": [
+            "kawasaki-contacts",
+            "kawasaki-daily-bulky",
+            "kawasaki-faq-fureai",
+            "kawasaki-guideline"
+          ],
+          "source_urls": [
+            "https://www.city.kawasaki.jp/300/page/0000005226.html",
+            "https://www.city.kawasaki.jp/kurashi/category/261-1-2-0-0-0-0-0-0-0.html",
+            "https://www.city.kawasaki.jp/templates/faq/300/0000149262.html",
+            "https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000002/2746/fureai.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "kawasaki-contacts",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-daily-bulky",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-faq-fureai",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-guideline",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees"
+          ],
+          "questions_for_office": [
+            "日常ごみを通常の回収場所まで出せません。室内からの搬出や回収場所の調整を相談できますか。",
+            "日常ごみのふれあい収集に料金はかかりますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "kawasaki-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "2fe39f028e2e5a34dfa55072b3d49106ad3b04ed33441e144268bb6c8c1c552d",
+          "source_ids": [
+            "kawasaki-contacts",
+            "kawasaki-daily-bulky",
+            "kawasaki-dropoff-faq",
+            "kawasaki-fees",
+            "kawasaki-online-payment",
+            "kawasaki-regular-faq"
+          ],
+          "source_urls": [
+            "https://www.city.kawasaki.jp/300/page/0000005226.html",
+            "https://www.city.kawasaki.jp/kurashi/category/261-1-2-0-0-0-0-0-0-0.html",
+            "https://www.sodai.city.kawasaki.jp/eco/view/kawasaki/faq.html",
+            "https://www.city.kawasaki.jp/templates/faq/300/0000013379.html",
+            "https://www.city.kawasaki.jp/300/page/0000154967.html",
+            "https://www.city.kawasaki.jp/templates/faq/300/0000013341.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kawasaki-contacts",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-daily-bulky",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-dropoff-faq",
+              "checked": "2026-10-16",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-fees",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-online-payment",
+              "checked": "2026-10-16",
+              "updated": "2026-05-01"
+            },
+            {
+              "id": "kawasaki-regular-faq",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "家族が代理で申し込む場合、必要な手続きはありますか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "kawasaki-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "b8d7882f44e1cb2c6048bab247003f2a72a7b77bc040b701d21f3fba59f6ade6",
+          "source_ids": [
+            "kawasaki-contacts",
+            "kawasaki-daily-bulky",
+            "kawasaki-faq-fureai",
+            "kawasaki-guideline"
+          ],
+          "source_urls": [
+            "https://www.city.kawasaki.jp/300/page/0000005226.html",
+            "https://www.city.kawasaki.jp/kurashi/category/261-1-2-0-0-0-0-0-0-0.html",
+            "https://www.city.kawasaki.jp/templates/faq/300/0000149262.html",
+            "https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000002/2746/fureai.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "kawasaki-contacts",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-daily-bulky",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-faq-fureai",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-guideline",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "fees"
+          ],
+          "questions_for_office": [
+            "ふれあい収集で粗大ごみを室内から搬出する場合、通常の粗大ごみ手数料はかかりますか。処理券は必要ですか。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        },
+        {
+          "id": "kawasaki-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "178008675eb1523c3a4b213aa81fc3d7c40abd631cb8eb99ed07e70acd4517f2",
+          "source_ids": [
+            "kawasaki-contacts",
+            "kawasaki-dropoff-faq",
+            "kawasaki-general-faq"
+          ],
+          "source_urls": [
+            "https://www.city.kawasaki.jp/300/page/0000005226.html",
+            "https://www.sodai.city.kawasaki.jp/eco/view/kawasaki/faq.html",
+            "https://www.city.kawasaki.jp/300/page/0000005235.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kawasaki-contacts",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-dropoff-faq",
+              "checked": "2026-10-16",
+              "updated": null
+            },
+            {
+              "id": "kawasaki-general-faq",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "family_help",
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "この事情で粗大ごみの特例持込みを相談できますか。",
+            "認められる場合、料金・減免、搬入先、家族の代理運搬、車両、当日の手続きを教えてください。"
+          ],
+          "review_scope_note": "既存の原典照合・限定再確認・変更箇所の差分検査を組み合わせた受入れ。全項目を最終版で再読した意味ではない。docs/gomi-release-2026-10-16.md参照。",
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "tokyo:setagaya",
+      "name": "世田谷区",
+      "status": "published",
+      "city_sha256": "b4670128da9af1407a98138d75a2e226dc0e76cd23b23ba37ba640547eea0a72",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "特別区の日常訪問収集・粗大ごみ・室内搬出支援・船橋持込を既存公式資料で分けて案内できる。訪問収集ページは2026-04更新だが手順の詳細がなく、搬出支援の根拠PDFは2024年版のため、確認事項を残して提供価値を検証する。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "setagaya-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "97c44ad9152a49effad76ce619edf71acf4c122af50effc8c37ca6591efabe78",
+          "source_ids": [
+            "set-daily",
+            "set-daily-help",
+            "set-support-doc"
+          ],
+          "source_urls": [
+            "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11683.html",
+            "https://www.city.setagaya.lg.jp/02241/467.html",
+            "https://www.city.setagaya.lg.jp/documents/18082/web_silver47-61.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "set-daily",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "set-daily-help",
+              "checked": "2026-10-16",
+              "updated": "2026-04-01"
+            },
+            {
+              "id": "set-support-doc",
+              "checked": "2026-10-16",
+              "updated": "2024-04-01"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees",
+            "limits",
+            "application",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "2026年4月更新の区ページと、掲載内容が令和6年4月現在の公式冊子で対象条件に差があります。現在の要件、申請・面談の手順、利用料、収集頻度、立会い要否を住所地の清掃事務所へ確認。",
+            "日常ごみを玄関先まで出せず室内からの搬出も必要な場合、支援の範囲に含まれるか確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "setagaya-bulky-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "a8bb5c7a49a4917220618c3a45af811374ebe97765eee3bbee520b85c960dda1",
+          "source_ids": [
+            "set-bulky",
+            "set-support-doc"
+          ],
+          "source_urls": [
+            "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+            "https://www.city.setagaya.lg.jp/documents/18082/web_silver47-61.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "set-bulky",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "set-support-doc",
+              "checked": "2026-10-16",
+              "updated": "2024-04-01"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "屋外の指定場所まで自分で運べない場合、運び出し収集を利用できるか確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "setagaya-bulky-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "3d35265007464ee81234ad166d1b9f6acea465c6dfe4a9cced77e487807f57ef",
+          "source_ids": [
+            "set-bulky",
+            "set-carry-support-doc",
+            "set-support-doc"
+          ],
+          "source_urls": [
+            "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+            "https://www.city.setagaya.lg.jp/documents/25776/3.pdf",
+            "https://www.city.setagaya.lg.jp/documents/18082/web_silver47-61.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "set-bulky",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "set-carry-support-doc",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "set-support-doc",
+              "checked": "2026-10-16",
+              "updated": "2024-04-01"
+            }
+          ],
+          "unresolved_fields": [
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "公式冊子の掲載内容は令和6年4月現在です。現在の申込手順、事前下見、当日立会い、点数上限、搬出支援の利用料を粗大ごみ受付センターへ確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "setagaya-self",
+          "kind": "self_dropoff",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "3513225c6628d08ca59f5dcaf483f89288fcfec108d6c2577c59fed81dddec49",
+          "source_ids": [
+            "set-carry"
+          ],
+          "source_urls": [
+            "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html"
+          ],
+          "source_dates": [
+            {
+              "id": "set-carry",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "別世帯の家族による代理搬入や、荷下ろしに補助が必要な場合の対応を確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hokkaido:sapporo",
+      "name": "札幌市",
+      "status": "published",
+      "city_sha256": "0909de05330b838b0be243b3de6427b2b0318ca8b8b049464cfd90c0f5f94555",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "政令市の行政区別収集日・受付期限と、生活ごみ・通常大型ごみ・屋内搬出支援・施設別持込を既存公式資料で経路別に説明できる。2026年9月更新ページと2026年3月チラシを確認し、施設・地区差に伴う更新負担も記録して利用価値を検証する。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "sapporo-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "59cb7c64f4b16d21458eeab3e4e9ab70c466877b8b1e1a2abf4ee9cf9e25e48a",
+          "source_ids": [
+            "sap-support"
+          ],
+          "source_urls": [
+            "https://www.city.sapporo.jp/seiso/gomi/sawayaka/"
+          ],
+          "source_dates": [
+            {
+              "id": "sap-support",
+              "checked": "2026-10-16",
+              "updated": "2026-09-03"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "玄関先まで本人がごみを出せない場合、室内からの搬出も支援対象か確認。",
+            "指定ごみ袋の費用以外に、さわやか収集の利用料があるか確認。",
+            "通常の収集日の在宅・立会い要否と、希望時の安否確認方法を確認。",
+            "週1回の収集で一度に出せる袋数・重量などの上限と、地域ごとの収集曜日を確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "sapporo-bulky-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "b98d801e654b7662a9a19b5d2cb57a3ddb6ff878c25b234dd591ba57bd6392dd",
+          "source_ids": [
+            "sap-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.sapporo.jp/seiso/gomi/oogatagomi.html"
+          ],
+          "source_dates": [
+            {
+              "id": "sap-bulky",
+              "checked": "2026-10-16",
+              "updated": "2026-09-25"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "自分で指定場所まで運べない場合、さわやか収集などの搬出支援を利用できるか確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "sapporo-bulky-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "c34a64e88f2cdbf2792dae03e04b2e0a6e64461072cf1202312a3b2813cbb37b",
+          "source_ids": [
+            "sap-bulky",
+            "sap-support",
+            "sap-support-leaflet"
+          ],
+          "source_urls": [
+            "https://www.city.sapporo.jp/seiso/gomi/oogatagomi.html",
+            "https://www.city.sapporo.jp/seiso/gomi/sawayaka/",
+            "https://www.city.sapporo.jp/seiso/gomi/sawayaka/documents/sawayakachirashi_202603.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "sap-bulky",
+              "checked": "2026-10-16",
+              "updated": "2026-09-25"
+            },
+            {
+              "id": "sap-support",
+              "checked": "2026-10-16",
+              "updated": "2026-09-03"
+            },
+            {
+              "id": "sap-support-leaflet",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [],
+          "questions_for_office": [
+            "大型ごみ処理手数料以外に、搬出支援作業自体の料金があるか確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "sapporo-self",
+          "kind": "self_dropoff",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "31cd5a4f0aba807f5f1522447e46dac2180589d4c02fbd83df707b7028cee913",
+          "source_ids": [
+            "sap-self"
+          ],
+          "source_urls": [
+            "https://www.city.sapporo.jp/seiso/topics/info_etc/jikohannyu.html"
+          ],
+          "source_dates": [
+            {
+              "id": "sap-self",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "家族による代理搬入や荷下ろしの補助が必要な場合、利用できるか確認。",
+            "持ち込む品目・寸法に合う施設と、必要な分別・前処理を確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "aichi:nagoya",
+      "name": "名古屋市",
+      "status": "published",
+      "city_sha256": "bc976082d59fa73b4a2a87fe3bd094c2b68afdf6a91ec3d3513671c572822c46",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "なごやか収集の日常支援と粗大ごみ屋内搬出、通常収集、自己搬入を既存レビュー資料と現行公式ページで分けられる。自己搬入の受付方式が2027年1月頃に変わる告知があり、期限を定めた更新負担を記録できる。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "nagoya-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "91ef0a59ced2cb6778aeea9dc63a0b91f43cf5601fba8803c91451e8b1c8bc60",
+          "source_ids": [
+            "nagoya-bulky",
+            "nagoya-phone-application",
+            "nagoya-web-application"
+          ],
+          "source_urls": [
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1033988.html",
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046635.html",
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046469.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nagoya-bulky",
+              "checked": "2026-10-13",
+              "updated": "2026-10-01"
+            },
+            {
+              "id": "nagoya-phone-application",
+              "checked": "2026-10-13",
+              "updated": "2026-07-06"
+            },
+            {
+              "id": "nagoya-web-application",
+              "checked": "2026-10-13",
+              "updated": "2026-07-06"
+            }
+          ],
+          "unresolved_fields": [
+            "attendance",
+            "eligibility",
+            "family_help",
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "指定場所まで自分で運べない場合、なごやか収集の屋内搬出を利用できるか確認。",
+            "収集日に在宅・立会いが必要か確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "nagoya-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "cb5632d50787825f5295d414d1b7491d0a3e9c17688834e866535408decb3ef0",
+          "source_ids": [
+            "nagoya-reservation-change",
+            "nagoya-self-dropoff"
+          ],
+          "source_urls": [
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1048812.html",
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1033991.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nagoya-reservation-change",
+              "checked": "2026-10-16",
+              "updated": "2026-04-27"
+            },
+            {
+              "id": "nagoya-self-dropoff",
+              "checked": "2026-10-16",
+              "updated": "2026-10-01"
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help",
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "受付方式の切替日・予約サイト・持込手順の最新案内を、2027年1月頃の変更前に再確認。",
+            "家族による代理搬入、荷下ろしの補助が必要な場合の対応を確認。",
+            "品目・大きさ・数量に合う搬入先と、結束などの前処理を確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "nagoya-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "09e0c1154071c1f1a70c5aed26f9d39d19baacd9aac27782e80ef3c36321fc53",
+          "source_ids": [
+            "nagoya-nagoyaka"
+          ],
+          "source_urls": [
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1012252.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nagoya-nagoyaka",
+              "checked": "2026-10-16",
+              "updated": "2025-10-17"
+            }
+          ],
+          "unresolved_fields": [
+            "attendance",
+            "fees",
+            "indoor_carry",
+            "limits"
+          ],
+          "questions_for_office": [
+            "なごやか収集の利用料、通常の指定袋等の扱いを確認。",
+            "日常ごみを玄関先まで出せない場合に室内から搬出するか、収集頻度・曜日・当日の立会い要否を確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "nagoya-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "3a7776479c5d2f19e3d2287c23ca81c0fba4a9d820632711b99f31b5e4953a77",
+          "source_ids": [
+            "nagoya-nagoyaka"
+          ],
+          "source_urls": [
+            "https://www.city.nagoya.jp/kurashi/gomi/1012183/1012252.html"
+          ],
+          "source_dates": [
+            {
+              "id": "nagoya-nagoyaka",
+              "checked": "2026-10-16",
+              "updated": "2025-10-17"
+            }
+          ],
+          "unresolved_fields": [
+            "fees"
+          ],
+          "questions_for_office": [
+            "屋内搬出の対象要件・対象品・搬出困難時の条件、利用料を環境事業所へ確認。",
+            "既存利用世帯でない場合の対象者区分（65歳以上のみの世帯を含む）と年少者同居の例外を確認。",
+            "本人以外の立会い者の条件と、収集日の時間・追加作業料金を確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:kakogawa",
+      "name": "加古川市",
+      "status": "published",
+      "city_sha256": "d5344c81bba6652132383e54814a2aa1a6cc2c5107d98af583e466a933e7e42b",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "B01の条件差が大きい候補として、日常のさわやか収集、通常粗大、許可業者の有償訪問、2市2町共同施設への持込を区別できるか検証する。公式案内とライブ再取得で主要条件を確認したが、要綱との差・家族代理・荷下ろし等の未確定事項を保持する。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "kakogawa-sawayaka",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "617f856a21f853ef9bf5bf603f045a9742bae42a2af47df360be59800d8f36f4",
+          "source_ids": [
+            "kg-sawayaka",
+            "kg-sawayaka-rule"
+          ],
+          "source_urls": [
+            "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kankyobu/kankyodaiichika/1413375426029.html",
+            "https://www.city.kakogawa.lg.jp/material/files/group/146/SAWAYAKA_VerR03.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "kg-sawayaka",
+              "checked": "2026-10-16",
+              "updated": "2025-07-25"
+            },
+            {
+              "id": "kg-sawayaka-rule",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "排出時刻は市指定収集曜日の午前8時までです。収集曜日・頻度、対象区分・分別・袋・容器、量上限は。",
+            "収集当日の立会い要否・利用料金は。",
+            "ウェブの要介護認定2〜5と要綱の身体状況が概ね要介護2〜5の差、市長裁量対象の現在の運用は。",
+            "同居者全員が要件該当する場合の認定と、訪問時に介護者同席が難しい場合の扱いは。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "kakogawa-bulky-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "15db7274b60c9ac83ca5f5499f2c75b9d7715881a29ebcd24f796b1521b84608",
+          "source_ids": [
+            "kg-permit-carriers"
+          ],
+          "source_urls": [
+            "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kankyobu/kankyodaiichika/1413373836389.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kg-permit-carriers",
+              "checked": "2026-10-12",
+              "updated": "2026-02-20"
+            }
+          ],
+          "unresolved_fields": [
+            "collection_location",
+            "indoor_carry",
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "許可業者ごとに、室内からの搬出（階段・解体含む）・対応品目・訪問範囲を確認してください。",
+            "見積・料金単位・追加料金・支払方法・予約待ち日数・立会い・家族代理依頼の可否を各社に確認してください。",
+            "許可業者に室内搬出作業の範囲・階段等の加算費用・品目制限を個別確認する。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "kakogawa-regular-bulky",
+          "kind": "regular_bulky",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "89d9bfe2253f8cfc63c03ec40d7c718481252de56ed5e13ae2b79c3fd8c0db8a",
+          "source_ids": [
+            "kg-bulky",
+            "kg-waste-guide"
+          ],
+          "source_urls": [
+            "https://www.city.kakogawa.lg.jp/kurashi/kankyo_eisei/gomi/gominodashikata_shushu/1539300136803.html",
+            "https://www.city.kakogawa.lg.jp/kurashi/kankyo_eisei/gomi/gominodashikata_shushu/1413371685595.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kg-bulky",
+              "checked": "2026-10-16",
+              "updated": "2026-06-12"
+            },
+            {
+              "id": "kg-waste-guide",
+              "checked": "2026-10-12",
+              "updated": "2024-06-25"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "家電4品目・PC・70kg超や長辺制限等の対象外品、申込ごとの必要券枚数を確認してください。",
+            "集合住宅の排出場所・収集可能日および家族代理での申込可否を確認してください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "kakogawa-self-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "70726c26b853d7f80cf32e105118b03c976196a5a63e95b1775567350f5a93ec",
+          "source_ids": [
+            "kg-dropoff",
+            "takasago-dropoff"
+          ],
+          "source_urls": [
+            "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kankyobu/kan_shisetsu/risaikurusenta/44337.html",
+            "https://www.city.takasago.lg.jp/soshikikarasagasu/ecocleanpia/eco/eco2/6757.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kg-dropoff",
+              "checked": "2026-10-12",
+              "updated": "2025-08-01"
+            },
+            {
+              "id": "takasago-dropoff",
+              "checked": "2026-10-16",
+              "updated": "2026-05-26"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "family_help",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "加古川市で発生した家庭系一般廃棄物の品目別分別・搬入可否、施設内の荷下ろし方法を確認してください。",
+            "同一世帯家族による代理搬入の条件、事前予約要否、混雑・休業日の最新案内を確認してください。",
+            "共同施設搬入における世帯代理人、荷下ろし、当日受付状況を確認する。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "fukuoka:fukuoka",
+      "name": "福岡市",
+      "status": "published",
+      "city_sha256": "bd578857592d74f1103d08d423ac53551af073f55467f8bd46db21bc9e2f20e0",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "既存B03資料の修正を継承し、日常支援・屋内搬出・通常粗大・持込の違いを小規模に再確認。未確認事項は窓口相談を残し、制度利用可否は確定しない。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "fukuoka-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "754b8709a76fa606cda5e9e24eff9733642a0b8921bb20337fd829eb03a3a00e",
+          "source_ids": [
+            "fukuoka-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.fukuoka.lg.jp/kankyo/kateigomi/life/katei-bunbetsu/sodaigomi.html"
+          ],
+          "source_dates": [
+            {
+              "id": "fukuoka-bulky",
+              "checked": "2026-10-13",
+              "updated": "2025-05-14"
+            }
+          ],
+          "unresolved_fields": [
+            "eligibility",
+            "family_help",
+            "indoor_carry",
+            "limits"
+          ],
+          "questions_for_office": [
+            "家族の代理申込・排出はできますか。指定場所まで出せない場合は、どの搬出支援へ申し込めますか。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "fukuoka-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "b9b09aa93715d29f20b50e1d1d09a0609005078ee05fad4d8cedc96a6f78aac2",
+          "source_ids": [
+            "fukuoka-self-dropoff"
+          ],
+          "source_urls": [
+            "https://www.city.fukuoka.lg.jp/kankyo/kanri/hp/jikohannyuu.html"
+          ],
+          "source_dates": [
+            {
+              "id": "fukuoka-self-dropoff",
+              "checked": "2026-10-13",
+              "updated": "2026-10-05"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "本人・家族が運ぶ際の本人確認、車両、荷下ろし、持込品目の条件を教えてください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "fukuoka-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "770f5d41b7766710640cb75a17a21ce7c9174dcb3c599fc2457b029e76fa4dfa",
+          "source_ids": [
+            "fukuoka-daily-support-council-record",
+            "fukuoka-silver-contact"
+          ],
+          "source_urls": [
+            "https://gikai.city.fukuoka.lg.jp/wp-content/uploads/2024/01/R05.12.13.htm",
+            "https://www.city.fukuoka.lg.jp/fukushi/oldage-welfare/health/00/01/1-010401.html"
+          ],
+          "source_dates": [
+            {
+              "id": "fukuoka-daily-support-council-record",
+              "checked": "2026-10-13",
+              "updated": null
+            },
+            {
+              "id": "fukuoka-silver-contact",
+              "checked": "2026-10-13",
+              "updated": "2026-05-26"
+            }
+          ],
+          "unresolved_fields": [
+            "application",
+            "attendance",
+            "collection_location",
+            "contact",
+            "eligibility",
+            "family_help",
+            "fees",
+            "indoor_carry",
+            "limits",
+            "waste_scope"
+          ],
+          "questions_for_office": [
+            "現在利用できる地域・対象世帯・申込先・回収頻度・屋内からの搬出・利用者の費用・立会いを教えてください。",
+            "シルバー人材センター以外に、私の地域の社会福祉協議会・ボランティア団体や訪問介護で利用できるごみ出し援助はありますか。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "fukuoka-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "cb0e0dc27b0a5fa6063d40a132bddb60d0ec3b6ee7bb04274a0254daa2104911",
+          "source_ids": [
+            "fukuoka-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.fukuoka.lg.jp/kankyo/kateigomi/life/katei-bunbetsu/sodaigomi.html"
+          ],
+          "source_dates": [
+            {
+              "id": "fukuoka-bulky",
+              "checked": "2026-10-13",
+              "updated": "2025-05-14"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "私の世帯で利用できる搬出経路、室内・階段の作業範囲、点数・重量、処理費と支援費、申込・立会い条件を教えてください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "miyagi:sendai",
+      "name": "仙台市",
+      "status": "published",
+      "city_sha256": "422ba2ffcfd19024d2819a00ad1db70507d6aad0ba5a1211691a6211b0f8918c",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "既存B03資料の修正を継承し、日常支援・屋内搬出・通常粗大・持込の違いを小規模に再確認。未確認事項は窓口相談を残し、制度利用可否は確定しない。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "sendai-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "9ae047a69387122b6c4137bff04b8f8352f91c9064441033fabd46b319706414",
+          "source_ids": [
+            "sendai-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.sendai.jp/haiki-kanri/kurashi/machi/genryo/gomi/wakekata/sodaigomi.html"
+          ],
+          "source_dates": [
+            {
+              "id": "sendai-bulky",
+              "checked": "2026-10-13",
+              "updated": "2026-10-01"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "家族の代理申込・排出はできますか。指定場所まで出せない場合は、どの搬出支援へ申し込めますか。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "sendai-drop",
+          "kind": "self_dropoff",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "c306eb018e29a493160e5037d1c945eb8db21a03339ac1ab22337090d90f13fd",
+          "source_ids": [
+            "sendai-drop"
+          ],
+          "source_urls": [
+            "https://www.city.sendai.jp/shisetsu-kanri/kurashi/machi/genryo/gomi/wakekata/shorishisetsu2.html"
+          ],
+          "source_dates": [
+            {
+              "id": "sendai-drop",
+              "checked": "2026-10-13",
+              "updated": "2026-09-28"
+            }
+          ],
+          "unresolved_fields": [],
+          "questions_for_office": [
+            "本人・家族が運ぶ際の本人確認、車両、荷下ろし、持込品目の条件を教えてください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "sendai-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "fbbd287f65a42781f92e076e19a37a3f55e11f65dfcd23baa0b3be8251cf0974",
+          "source_ids": [
+            "sendai-daily"
+          ],
+          "source_urls": [
+            "https://www.city.sendai.jp/haiki-kanri/kurashi/gomidashi/gomidashisiensyoreikin.html"
+          ],
+          "source_dates": [
+            {
+              "id": "sendai-daily",
+              "checked": "2026-10-13",
+              "updated": "2026-07-08"
+            }
+          ],
+          "unresolved_fields": [
+            "attendance",
+            "family_help",
+            "fees",
+            "indoor_carry",
+            "limits"
+          ],
+          "questions_for_office": [
+            "現在利用できる地域・対象世帯・申込先・回収頻度・屋内からの搬出・利用者の費用・立会いを教えてください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "sendai-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-13",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "930591c57c9dd2cdfad20fb210aeb22f372323f63ef8d34db2b9232157b5e61b",
+          "source_ids": [
+            "sendai-bulky",
+            "sendai-daily"
+          ],
+          "source_urls": [
+            "https://www.city.sendai.jp/haiki-kanri/kurashi/machi/genryo/gomi/wakekata/sodaigomi.html",
+            "https://www.city.sendai.jp/haiki-kanri/kurashi/gomidashi/gomidashisiensyoreikin.html"
+          ],
+          "source_dates": [
+            {
+              "id": "sendai-bulky",
+              "checked": "2026-10-13",
+              "updated": "2026-10-01"
+            },
+            {
+              "id": "sendai-daily",
+              "checked": "2026-10-13",
+              "updated": "2026-07-08"
+            }
+          ],
+          "unresolved_fields": [
+            "attendance",
+            "family_help",
+            "fees",
+            "indoor_carry",
+            "limits"
+          ],
+          "questions_for_office": [
+            "私の世帯で利用できる搬出経路、室内・階段の作業範囲、点数・重量、処理費と支援費、申込・立会い条件を教えてください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:inagawa",
+      "name": "猪名川町",
+      "status": "published",
+      "city_sha256": "5d8ea23e52866e2023632441724fe29d12e89164f5e6621f4ffc58647f97cda8",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "現行の戸別収集・大型ごみ・家族搬入経路を比較できる。2027年1月は持込料金改定であり、制度開始まで待つ必要はない。未確認条件を相談事項として残す。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "inagawa-fureai",
+          "kind": "daily_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "e5c052080c0ef7b898bafb626346bef3cbbbc6164974c7a94db3a6c01125d6a5",
+          "source_ids": [
+            "inagawa-fureai",
+            "inagawa-fureai-leaflet"
+          ],
+          "source_urls": [
+            "https://www.town.inagawa.lg.jp/soshiki/1011/gyomu/1/2/1/1136.html",
+            "https://www.town.inagawa.lg.jp/material/files/group/12/fureaisyuusyuupanfureltuto.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "inagawa-fureai",
+              "checked": "2026-10-12",
+              "updated": "2024-10-01"
+            },
+            {
+              "id": "inagawa-fureai-leaflet",
+              "checked": "2026-10-12",
+              "updated": "2020-08-20"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "現行ページと旧パンフで町長裁量世帯の記載差があり、現在の適用は。",
+            "利用者負担、1回の袋数・重量上限、屋内から玄関等への搬出補助の可否は。",
+            "申請時面談とは別に、通常収集当日の在宅・立会いが必要ですか。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "inagawa-regular-bulky",
+          "kind": "regular_bulky",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6b517e9259299a1a62921e1a66404f595c4822b50762193043f02731345d4cc5",
+          "source_ids": [
+            "inagawa-electronic",
+            "inagawa-large",
+            "inagawa-large-fees"
+          ],
+          "source_urls": [
+            "https://www.town.inagawa.lg.jp/soshiki/1011/gyomu/1/2/2/ogatagomijikken.html",
+            "https://www.town.inagawa.lg.jp/soshiki/1011/gyomu/1/2/2/974.html",
+            "https://www.town.inagawa.lg.jp/material/files/group/12/gomiichiran.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "inagawa-electronic",
+              "checked": "2026-10-13",
+              "updated": "2026-10-19"
+            },
+            {
+              "id": "inagawa-large",
+              "checked": "2026-10-12",
+              "updated": null
+            },
+            {
+              "id": "inagawa-large-fees",
+              "checked": "2026-10-12",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "family_help",
+            "application"
+          ],
+          "questions_for_office": [
+            "戸建・集合住宅別の現行収集方法と料金について、具体的な住所・品目で確認してください。",
+            "対象集合住宅外の集合住宅における収集場所と代理申込方法を確認してください。",
+            "ネット申込は10月19日改訂表示のため、利用日の対象品目・締切・実施期間を確認してください。電話申込も利用できます。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "inagawa-bulky-assist",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "0772707aefd312d83fe1b74849225e14b1adceb4a03634416c1a8dec4afda57f",
+          "source_ids": [
+            "inagawa-fureai",
+            "inagawa-large",
+            "inagawa-large-fees"
+          ],
+          "source_urls": [
+            "https://www.town.inagawa.lg.jp/soshiki/1011/gyomu/1/2/1/1136.html",
+            "https://www.town.inagawa.lg.jp/soshiki/1011/gyomu/1/2/2/974.html",
+            "https://www.town.inagawa.lg.jp/material/files/group/12/gomiichiran.pdf"
+          ],
+          "source_dates": [
+            {
+              "id": "inagawa-fureai",
+              "checked": "2026-10-12",
+              "updated": "2024-10-01"
+            },
+            {
+              "id": "inagawa-large",
+              "checked": "2026-10-12",
+              "updated": null
+            },
+            {
+              "id": "inagawa-large-fees",
+              "checked": "2026-10-12",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "family_help",
+            "fees",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "事前連絡後の手続き、屋内搬出支援の有無・対象追加条件、専用料金、立会い方法は。",
+            "専用の寸法・重量・数量上限、通常大型ごみ料金表の適用は。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "inagawa-self-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-12",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "fa76f47cc08ddc32c8e3201ef4ebf40348df3a2aa16f7c09b23be9b7237ddd6c",
+          "source_ids": [
+            "inagawa-dropoff",
+            "kunisaki-handcarried"
+          ],
+          "source_urls": [
+            "https://www.town.inagawa.lg.jp/kurashi_tetsuzuki/recycle/gomi_shori_shisetsu/4339.html",
+            "https://www.kunisakicc.jp/association/kcc/hand-carried/"
+          ],
+          "source_dates": [
+            {
+              "id": "inagawa-dropoff",
+              "checked": "2026-10-12",
+              "updated": "2025-07-24"
+            },
+            {
+              "id": "kunisaki-handcarried",
+              "checked": "2026-10-13",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "具体的な品目・数量の受入可否、原則の自己荷下ろしが難しい場合の対応は。",
+            "古紙類・剪定枝を町クリーンセンターへ持ち込む場合の条件は（国崎とは別）。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:takarazuka",
+      "name": "宝塚市",
+      "status": "published",
+      "city_sha256": "a9abfe7180fdb50321e23ee97441d12bd74d3c405c46478c3a856723b66fb481",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "日常の戸別収集と生活に支障がある粗大ごみの室内搬出を区別でき、家族の立会い条件も具体的。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "takarazuka-kizuna",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "f9f1255e8c0177125dcc55ad75aadd66660655c41588cb81eabd3f836e919208",
+          "source_ids": [
+            "takarazuka-kizuna"
+          ],
+          "source_urls": [
+            "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1000651.html"
+          ],
+          "source_dates": [
+            {
+              "id": "takarazuka-kizuna",
+              "checked": "2026-10-16",
+              "updated": "2025-11-28"
+            }
+          ],
+          "unresolved_fields": [
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "利用料と1回の袋数・重量上限は。通常収集日に在宅・立会いが必要ですか。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "takarazuka-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "5e012ba507f106d44b6c6a3a79c2836897953e401ffc039a1680506b39ad4a24",
+          "source_ids": [
+            "takarazuka-bulky",
+            "takarazuka-carry",
+            "takarazuka-index"
+          ],
+          "source_urls": [
+            "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1002040.html",
+            "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1015366.html",
+            "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/index.html"
+          ],
+          "source_dates": [
+            {
+              "id": "takarazuka-bulky",
+              "checked": "2026-10-16",
+              "updated": "2026-05-07"
+            },
+            {
+              "id": "takarazuka-carry",
+              "checked": "2026-10-16",
+              "updated": "2025-09-11"
+            },
+            {
+              "id": "takarazuka-index",
+              "checked": "2026-10-16",
+              "updated": "2026-03-23"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "family_help"
+          ],
+          "questions_for_office": [
+            "家族代理申込や1回の点数・重量の上限は。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "takarazuka-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "0011f907a6ca644f32101e73b99d727e01faababb0e9b4085b91dc8774901ce2",
+          "source_ids": [
+            "takarazuka-carry"
+          ],
+          "source_urls": [
+            "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1015366.html"
+          ],
+          "source_dates": [
+            {
+              "id": "takarazuka-carry",
+              "checked": "2026-10-16",
+              "updated": "2025-09-11"
+            }
+          ],
+          "unresolved_fields": [],
+          "questions_for_office": [
+            "親族以外の立会人として誰が認められますか。搬出作業の追加料、点数、階段や解体の制限は。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "takarazuka-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "1bb22834faebedf0ffc197e41cc27cdeff279df573159efd32d23653c3382852",
+          "source_ids": [
+            "takarazuka-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1002040.html"
+          ],
+          "source_dates": [
+            {
+              "id": "takarazuka-bulky",
+              "checked": "2026-10-16",
+              "updated": "2026-05-07"
+            }
+          ],
+          "unresolved_fields": [],
+          "questions_for_office": [
+            "搬入時の本人・家族確認書類と重量端数の扱いを確認してください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:itami",
+      "name": "伊丹市",
+      "status": "published",
+      "city_sha256": "6976fbb3a5544744d7639f3d2088accaf24a626b7d59c686989d70516fcb71c5",
+      "existing_public_city_unchanged": true,
+      "selection_reason": "2026年度に全小学校区へ拡大した有料日常支援と通常粗大・家族持込の選択を比較できる。",
+      "next_action": "制度改定・公式情報差分が生じた経路を再確認",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "itami-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "b441a4b9fe57ecb9d56fc1df2af6b394886d81720f87b5aa1e1adce27404b029",
+          "source_ids": [
+            "itami-model"
+          ],
+          "source_urls": [
+            "https://www.city.itami.lg.jp/SOSIKI/KENKOFUKUSHI/TIKI_KONEN/KOUREISYA/KORESYA_SIEN/45243.html"
+          ],
+          "source_dates": [
+            {
+              "id": "itami-model",
+              "checked": "2026-10-16",
+              "updated": "2026-07-31"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "通常日の在宅要否、1回の袋数・重量、月途中の料金扱い、モデル事業の継続予定は。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "itami-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "000aeb1c2810b40e1243a2261be026e52d4eced11aa2d05ae14b8377fa27bac0",
+          "source_ids": [
+            "itami-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.itami.lg.jp/SOSIKI/SHIMIN/KANKYOC/GOMI_BUNBETU_DASIKATA/1470619330123.html"
+          ],
+          "source_dates": [
+            {
+              "id": "itami-bulky",
+              "checked": "2026-10-16",
+              "updated": "2025-10-01"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "希望日の予約期限、家族代理申込と立会い条件を確認してください。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "itami-carry-consult",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "40e6c005591aebf8aeb6c932d2509167b607cfe076145905e8d6c8646392ebb3",
+          "source_ids": [
+            "itami-bulky"
+          ],
+          "source_urls": [
+            "https://www.city.itami.lg.jp/SOSIKI/SHIMIN/KANKYOC/GOMI_BUNBETU_DASIKATA/1470619330123.html"
+          ],
+          "source_dates": [
+            {
+              "id": "itami-bulky",
+              "checked": "2026-10-16",
+              "updated": "2025-10-01"
+            }
+          ],
+          "unresolved_fields": [
+            "collection_location",
+            "indoor_carry",
+            "family_help",
+            "fees",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "室内から運べる対応や紹介先はありますか。対象条件、料金、立会人、階段・解体条件は。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        },
+        {
+          "id": "itami-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "f43a6e64cd43975ddd8c39c4964e9a1c5e3a690836a086a6bed3fa669e890902",
+          "source_ids": [
+            "itami-cleanland",
+            "itami-cleanland-net",
+            "itami-dropoff-index"
+          ],
+          "source_urls": [
+            "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/tel/mochikomi.html",
+            "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/net/rinnjigomi.html",
+            "https://www.city.itami.lg.jp/SOSIKI/SHIMIN/KANKYOC/GOMI_BUNBETU_DASIKATA/mochikomi/index.html"
+          ],
+          "source_dates": [
+            {
+              "id": "itami-cleanland",
+              "checked": "2026-10-16",
+              "updated": "2026-05-13"
+            },
+            {
+              "id": "itami-cleanland-net",
+              "checked": "2026-10-16",
+              "updated": "2026-10-08"
+            },
+            {
+              "id": "itami-dropoff-index",
+              "checked": "2026-10-16",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "application"
+          ],
+          "questions_for_office": [
+            "家族が搬入する場合は電話予約の条件を確認してください。市入口と施設の締切表示差があるため利用日現在の締切も確認。"
+          ],
+          "review_scope_note": null,
+          "new_review": null
+        }
+      ]
+    },
+    {
+      "id": "hyogo:kawanishi",
+      "name": "川西市",
+      "status": "preview_ready",
+      "city_sha256": "08f56ea5f4e8400544d27e364df097bb8193048c36387d15f79a809e4f4b3182",
+      "existing_public_city_unchanged": null,
+      "selection_reason": "既存の日常戸別支援原典を再利用。前回保留した搬出範囲・費用を限定補完し、日常支援と通常粗大・持込を分ける利用価値がある。",
+      "next_action": "プレビューを運営者が確認後、明示承認を得て公開準備。未確認条件は各経路の相談質問に保持。",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "kawanishi-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "6211edb8c69f314bee29acb1af418ffea48c4bf19f06c45b71f6198ac1118860",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "source_urls": [
+            "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1009310.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kawanishi-support",
+              "checked": "2026-10-16",
+              "updated": "2022-09-14"
+            }
+          ],
+          "unresolved_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "fees",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "対象ごみ、収集する場所・曜日・袋数、利用料、屋内搬出の可否、通常日の立会い要否は。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "6211edb8c69f314bee29acb1af418ffea48c4bf19f06c45b71f6198ac1118860",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        },
+        {
+          "id": "kawanishi-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-18",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "061bcd81d33288448ecc1fb5d481007c7033807c4eb3448427dc2acfcdfad158",
+          "source_ids": [
+            "kawanishi-bulky",
+            "kawanishi-fees"
+          ],
+          "source_urls": [
+            "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001350.html",
+            "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001349.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kawanishi-bulky",
+              "checked": "2026-10-18",
+              "updated": "2026-10-05"
+            },
+            {
+              "id": "kawanishi-fees",
+              "checked": "2026-10-18",
+              "updated": "2020-09-29"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help"
+          ],
+          "questions_for_office": [
+            "予約の最終期限と、家族による代理申込の扱いを確認してください。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "061bcd81d33288448ecc1fb5d481007c7033807c4eb3448427dc2acfcdfad158",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        },
+        {
+          "id": "kawanishi-carry",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-18",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "e9849a0114d8a544b8b182c2bb44b0f3724d524c00a59e8acd823c102ae9439c",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "source_urls": [
+            "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001351.html"
+          ],
+          "source_dates": [
+            {
+              "id": "kawanishi-other",
+              "checked": "2026-10-18",
+              "updated": "2020-09-29"
+            }
+          ],
+          "unresolved_fields": [
+            "family_help",
+            "limits",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "現在の受付状況、対象品、料金見積りと処分手数料、搬出先、階段・解体・重量の制限、家族の協力条件と立会いは。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "e9849a0114d8a544b8b182c2bb44b0f3724d524c00a59e8acd823c102ae9439c",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        },
+        {
+          "id": "kawanishi-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-18",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "1ec85cafe5beda1010de92d215e5294c17be8d43d368e8161f388584f22631e2",
+          "source_ids": [
+            "kawanishi-dropoff",
+            "kawanishi-kunisaki"
+          ],
+          "source_urls": [
+            "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1008367.html",
+            "https://www.kunisakicc.jp/association/kcc/hand-carried/"
+          ],
+          "source_dates": [
+            {
+              "id": "kawanishi-dropoff",
+              "checked": "2026-10-18",
+              "updated": "2024-09-24"
+            },
+            {
+              "id": "kawanishi-kunisaki",
+              "checked": "2026-10-16",
+              "updated": null
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry"
+          ],
+          "questions_for_office": [
+            "具体的な品目・数量の受入可否、原則の自己荷下ろしが難しい場合の対応と予約期限は。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "1ec85cafe5beda1010de92d215e5294c17be8d43d368e8161f388584f22631e2",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "hyogo:himeji",
+      "name": "姫路市",
+      "status": "preview_ready",
+      "city_sha256": "170e6192458e853ab31874a8bf78ce43e89ca9c8c21a6f65009a2d456fef2474",
+      "existing_public_city_unchanged": null,
+      "selection_reason": "既存ふれあい収集の原典を再利用。地区別粗大・持込の分岐を明示できる範囲で候補化。",
+      "next_action": "プレビューを運営者が確認後、明示承認を得て公開準備。未確認条件は各経路の相談質問に保持。",
+      "reopen_trigger": null,
+      "services": [
+        {
+          "id": "himeji-daily",
+          "kind": "daily_support",
+          "checked": "2026-10-16",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "8f575b71cc13a02688e40b7c9598b7c95e112b34430744157116a00a00170105",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "source_urls": [
+            "https://www.city.himeji.lg.jp/kurashi/0000014055.html"
+          ],
+          "source_dates": [
+            {
+              "id": "himeji-fureai",
+              "checked": "2026-10-16",
+              "updated": "2026-06-11"
+            }
+          ],
+          "unresolved_fields": [
+            "fees"
+          ],
+          "questions_for_office": [
+            "利用料金、1回の袋数・重量上限、通常収集日の在宅・立会い要否は。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "8f575b71cc13a02688e40b7c9598b7c95e112b34430744157116a00a00170105",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        },
+        {
+          "id": "himeji-regular",
+          "kind": "regular_bulky",
+          "checked": "2026-10-18",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "7ecee109eb5508102a6a06cd88b726f319ec25e49ed9b40224f57d0a66a773d6",
+          "source_ids": [
+            "himeji-calendar",
+            "himeji-ieshima",
+            "himeji-large",
+            "himeji-metal",
+            "himeji-separation",
+            "himeji-wood"
+          ],
+          "source_urls": [
+            "https://www.city.himeji.lg.jp/kurashi/0000033506.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000085.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000080.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000048.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000097.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000047.html"
+          ],
+          "source_dates": [
+            {
+              "id": "himeji-calendar",
+              "checked": "2026-10-18",
+              "updated": "2026-08-06"
+            },
+            {
+              "id": "himeji-ieshima",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            },
+            {
+              "id": "himeji-large",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            },
+            {
+              "id": "himeji-metal",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            },
+            {
+              "id": "himeji-separation",
+              "checked": "2026-10-18",
+              "updated": "2024-08-19"
+            },
+            {
+              "id": "himeji-wood",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "family_help",
+            "fees",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "自宅の区域・品目ごとの収集場所と時刻、予約・処理料金・立会い、家族が代わりに出す方法は。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "7ecee109eb5508102a6a06cd88b726f319ec25e49ed9b40224f57d0a66a773d6",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        },
+        {
+          "id": "himeji-carry-unconfirmed",
+          "kind": "bulky_carry_support",
+          "checked": "2026-10-18",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "badd96f8254c728ba4b63b656c4eea6d4aff143ca16b4f1f026709ee67e06e00",
+          "source_ids": [
+            "himeji-calendar",
+            "himeji-dropoff",
+            "himeji-fureai",
+            "himeji-ieshima",
+            "himeji-large",
+            "himeji-metal",
+            "himeji-wood"
+          ],
+          "source_urls": [
+            "https://www.city.himeji.lg.jp/kurashi/0000033506.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000155.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000014055.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000085.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000080.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000048.html",
+            "https://www.city.himeji.lg.jp/kurashi/0000000047.html"
+          ],
+          "source_dates": [
+            {
+              "id": "himeji-calendar",
+              "checked": "2026-10-18",
+              "updated": "2026-08-06"
+            },
+            {
+              "id": "himeji-dropoff",
+              "checked": "2026-10-18",
+              "updated": "2025-10-28"
+            },
+            {
+              "id": "himeji-fureai",
+              "checked": "2026-10-16",
+              "updated": "2026-06-11"
+            },
+            {
+              "id": "himeji-ieshima",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            },
+            {
+              "id": "himeji-large",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            },
+            {
+              "id": "himeji-metal",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            },
+            {
+              "id": "himeji-wood",
+              "checked": "2026-10-18",
+              "updated": "2025-05-12"
+            }
+          ],
+          "unresolved_fields": [
+            "waste_scope",
+            "collection_location",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "粗大ごみを室内から運べない場合、対象条件のある搬出支援や相談先・紹介先はありますか。料金、立会い、階段・解体の制限は。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "badd96f8254c728ba4b63b656c4eea6d4aff143ca16b4f1f026709ee67e06e00",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        },
+        {
+          "id": "himeji-dropoff",
+          "kind": "self_dropoff",
+          "checked": "2026-10-18",
+          "review_status_in_data": "ai_reviewed",
+          "human_reviewed_at": null,
+          "scope_sha256": "4c2bf47522d221866e273205c0b5d4d1a4407f78018874ed0c9e864c74cf3fef",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "source_urls": [
+            "https://www.city.himeji.lg.jp/kurashi/0000000155.html"
+          ],
+          "source_dates": [
+            {
+              "id": "himeji-dropoff",
+              "checked": "2026-10-18",
+              "updated": "2025-10-28"
+            }
+          ],
+          "unresolved_fields": [
+            "indoor_carry",
+            "attendance"
+          ],
+          "questions_for_office": [
+            "予約要否、搬入書類、施設ごとの家族代理・荷下ろし、重量端数と最低料金、品目・車両制限を確認してください。"
+          ],
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "new_review": {
+            "binding": {
+              "scope_sha256": "4c2bf47522d221866e273205c0b5d4d1a4407f78018874ed0c9e864c74cf3fef",
+              "type": "AI independent original-source review",
+              "review_date": "2026-10-18",
+              "review_input_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+              "scope": "当該経路10項目と質問・参照原典。最終版はAI検査状態のみ変更、制度値/質問/出典同一の検証に基づく継承。",
+              "evidence": "../2026-10-18_ごみ支援拡大B01/review.json",
+              "post_review_metadata_only": true,
+              "human_reviewed": false
+            },
+            "matches_current_scope": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nagano:matsumoto",
+      "name": "松本市",
+      "status": "held",
+      "reason": "既存の寿地区募集紹介・軽度生活援助から利用者向け支援入口と搬出範囲を補えない。制度不存在の判断ではない。",
+      "next_action": "同じ資料の再検索を繰り返さず保留。",
+      "reopen_trigger": "利用者向けの新たな公式案内、関係資料の改定、具体的な窓口回答を入手したとき。",
+      "services": []
+    }
+  ]
+}

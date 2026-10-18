@@ -1,0 +1,1422 @@
+{
+  "schema_version": "independent-review-1",
+  "reviewed_on": "2026-10-18",
+  "review_scope": "新規2市、8経路、各10項目（計80項目）。保存済み公式テキスト/metadata/locatorを使った独立デスクレビュー。既存17市、オンライン再取得、実装・公開作業は対象外。",
+  "candidate": {
+    "file": "new-cities.json",
+    "sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+    "expected_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+    "matches_expected": true
+  },
+  "input_integrity": {
+    "review_input_equals_candidate": true,
+    "candidate_draft": true,
+    "not_for_publication": true,
+    "human_reviewed_input": false,
+    "service_count": 8,
+    "field_count": 80,
+    "official_text_files": 17,
+    "source_metadata_records": 17,
+    "locator_records": 8
+  },
+  "method": "各経路の10項目を入力値から独立に読み、locatorが指す保存原典の該当行に照合。さらに公式索引・分別一覧を確認し、制度/地域経路の収録漏れと、not_stated/not_foundの過剰な否定化を逆方向にも点検。自己評価や人手確認とは扱わない。",
+  "summary": {
+    "routes_reviewed": 8,
+    "fields_reviewed": 80,
+    "field_mismatches": 0,
+    "corrections_required": 0,
+    "unresolved_fields": 27,
+    "open_questions": 8,
+    "concerns": 0,
+    "interpretation": "懸念0は保存資料内で訂正を要する不一致を発見しなかった意味に限る。正確性を実証するものではなく、窓口確認事項は各経路の質問に残す。"
+  },
+  "routes": [
+    {
+      "city_id": "hyogo:kawanishi",
+      "city_name": "川西市",
+      "service_id": "kawanishi-daily",
+      "service_name": "サポート収集（高齢者・障がい者）",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "collection_location",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "limits",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-support"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 1,
+      "evidence": [
+        {
+          "source_id": "kawanishi-support",
+          "file": "official/kawanishi-support.txt",
+          "locator_lines": [
+            1,
+            39
+          ],
+          "reviewed_lines": [
+            8,
+            17
+          ],
+          "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1009310.html",
+          "retrieved_at": "2026-10-16T13:17:36.459953+00:00",
+          "text_sha256": "dad24517de1a426340a737e19cf5614a440e98c734300f43adae3ae146f3aaa7",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        }
+      ],
+      "unresolved_field_count": 6,
+      "unresolved_fields": [
+        {
+          "field": "waste_scope",
+          "state": "not_stated"
+        },
+        {
+          "field": "collection_location",
+          "state": "not_stated"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_stated"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated"
+        },
+        {
+          "field": "limits",
+          "state": "not_stated"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "対象ごみ、収集する場所・曜日・袋数、利用料、屋内搬出の可否、通常日の立会い要否は。"
+      ],
+      "corrections": [],
+      "assessment": "適合。全要件は「持出困難」「近隣・親族の協力なし」と資格枝（65歳以上かつ要介護2以上／手帳1・2級）のAND/OR構造で記載。該当資格者のみの世帯も対象という例外と、面談決定を保持。対象ごみ・場所・料金・屋内搬出等の未記載は空欄のまま質問へ。"
+    },
+    {
+      "city_id": "hyogo:kawanishi",
+      "city_name": "川西市",
+      "service_id": "kawanishi-regular",
+      "service_name": "通常の大型ごみ収集",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-fees"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "collection_location",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "explicit_exclusion",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-fees"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "fees",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-fees",
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "limits",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-bulky"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 2,
+      "evidence": [
+        {
+          "source_id": "kawanishi-bulky",
+          "file": "official/kawanishi-bulky.txt",
+          "locator_lines": [
+            1,
+            112
+          ],
+          "reviewed_lines": [
+            13,
+            63
+          ],
+          "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001350.html",
+          "retrieved_at": "2026-10-18T03:42:36.156432+00:00",
+          "text_sha256": "d09ef3550b59408bf20ac7a6b76669aa47fcb1dcf47f8bfd3979772c715c8bad",
+          "locator_fields": [
+            "collection_location",
+            "indoor_carry",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        },
+        {
+          "source_id": "kawanishi-fees",
+          "file": "official/kawanishi-fees.txt",
+          "locator_lines": [
+            1,
+            59
+          ],
+          "reviewed_lines": [
+            6,
+            30
+          ],
+          "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001349.html",
+          "retrieved_at": "2026-10-18T03:42:36.219955+00:00",
+          "text_sha256": "06c5bf541cd6b74a090e56755a9a7062fe92abe1770d788b9d2e45d08e4cb6ef",
+          "locator_fields": [
+            "waste_scope",
+            "eligibility",
+            "fees"
+          ]
+        }
+      ],
+      "unresolved_field_count": 1,
+      "unresolved_fields": [
+        {
+          "field": "family_help",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "予約の最終期限と、家族による代理申込の扱いを確認してください。"
+      ],
+      "corrections": [],
+      "assessment": "適合。40cm以上の大型ごみ、料金区分、敷地内に入らない・指定場所へ朝8:30まで、予約・10点上限を原典に照合。家族代理条件は原典にないため質問として維持。"
+    },
+    {
+      "city_id": "hyogo:kawanishi",
+      "city_name": "川西市",
+      "service_id": "kawanishi-carry",
+      "service_name": "シルバー人材センターの有料ごみ出し紹介",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "collection_location",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "fees",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "limits",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-other"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 1,
+      "evidence": [
+        {
+          "source_id": "kawanishi-other",
+          "file": "official/kawanishi-other.txt",
+          "locator_lines": [
+            1,
+            27
+          ],
+          "reviewed_lines": [
+            6,
+            8
+          ],
+          "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001351.html",
+          "retrieved_at": "2026-10-18T03:42:36.288509+00:00",
+          "text_sha256": "e347dee1bf71d723c0efd23f50b21c28add992df598178ef0ef518593ec55702",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        }
+      ],
+      "unresolved_field_count": 3,
+      "unresolved_fields": [
+        {
+          "field": "family_help",
+          "state": "not_stated"
+        },
+        {
+          "field": "limits",
+          "state": "not_stated"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "現在の受付状況、対象品、料金見積りと処分手数料、搬出先、階段・解体・重量の制限、家族の協力条件と立会いは。"
+      ],
+      "corrections": [],
+      "assessment": "適合。市ページはシルバー人材センターを有料サービスとして紹介するのみ。支援内容を市収集制度として膨らませず、金額や具体資格等を未記載として扱う。"
+    },
+    {
+      "city_id": "hyogo:kawanishi",
+      "city_name": "川西市",
+      "service_id": "kawanishi-dropoff",
+      "service_name": "国崎クリーンセンターへ直接持込",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "collection_location",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_stated",
+          "source_ids": [
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "fees",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-dropoff",
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "limits",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-dropoff",
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-kunisaki"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "kawanishi-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 2,
+      "evidence": [
+        {
+          "source_id": "kawanishi-dropoff",
+          "file": "official/kawanishi-dropoff.txt",
+          "locator_lines": [
+            1,
+            39
+          ],
+          "reviewed_lines": [
+            6,
+            18
+          ],
+          "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1008367.html",
+          "retrieved_at": "2026-10-18T03:42:20.569883+00:00",
+          "text_sha256": "986fecda8ce506b1c48ce82a4f169f1124b74d073cc727ca6e6d5ac7295c7715",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "fees",
+            "application",
+            "contact"
+          ]
+        },
+        {
+          "source_id": "kawanishi-kunisaki",
+          "file": "official/kawanishi-kunisaki.txt",
+          "locator_lines": [
+            1,
+            31
+          ],
+          "reviewed_lines": [
+            46,
+            121
+          ],
+          "url": "https://www.kunisakicc.jp/association/kcc/hand-carried/",
+          "retrieved_at": "2026-10-16T11:52:04.974909+00:00",
+          "text_sha256": "4a2d778fb8dcc766eabfc1bc7143e7687b49dd22f144be3e01970b437105294d",
+          "locator_fields": [
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance"
+          ]
+        }
+      ],
+      "unresolved_field_count": 1,
+      "unresolved_fields": [
+        {
+          "field": "indoor_carry",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "具体的な品目・数量の受入可否、原則の自己荷下ろしが難しい場合の対応と予約期限は。"
+      ],
+      "corrections": [],
+      "assessment": "適合。1市3町の区域・自動車のみ・予約要件・本人家族/別居家族の証明・自己荷下ろしを組合原典で照合。現行600円/50kg以下と10kgごと120円、2027年1月予定750円/150円の双方を日付付きで保持。"
+    },
+    {
+      "city_id": "hyogo:himeji",
+      "city_name": "姫路市",
+      "service_id": "himeji-daily",
+      "service_name": "ふれあい収集（可燃ごみ）",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "collection_location",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "explicit_exclusion",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "limits",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 1,
+      "evidence": [
+        {
+          "source_id": "himeji-fureai",
+          "file": "official/himeji-fureai.txt",
+          "locator_lines": [
+            339,
+            410
+          ],
+          "reviewed_lines": [
+            340,
+            417
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000014055.html",
+          "retrieved_at": "2026-10-16T13:17:36.604096+00:00",
+          "text_sha256": "d672aacda0bbbaf56fe4fd82dfbbb694e6832548e629cbfa1f9b1d7ed0378418",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        }
+      ],
+      "unresolved_field_count": 1,
+      "unresolved_fields": [
+        {
+          "field": "fees",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "利用料金、1回の袋数・重量上限、通常収集日の在宅・立会い要否は。"
+      ],
+      "corrections": [],
+      "assessment": "適合。可燃ごみのみ、週1・玄関先・屋内不可を照合。高齢者・障害・妊産婦の各資格枝、家族支援が「ない」または「過度な負担」の共通条件を保持。料金・袋数等は未記載のまま。"
+    },
+    {
+      "city_id": "hyogo:himeji",
+      "city_name": "姫路市",
+      "service_id": "himeji-regular",
+      "service_name": "地域別の粗大・大型ごみ収集",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-separation",
+            "himeji-wood",
+            "himeji-metal",
+            "himeji-large",
+            "himeji-ieshima"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "collection_location",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-calendar",
+            "himeji-ieshima"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-calendar",
+            "himeji-wood",
+            "himeji-metal",
+            "himeji-large",
+            "himeji-ieshima"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-calendar"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-calendar"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-calendar"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "limits",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-wood",
+            "himeji-metal",
+            "himeji-ieshima",
+            "himeji-large"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-calendar"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-calendar"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-calendar"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 6,
+      "evidence": [
+        {
+          "source_id": "himeji-calendar",
+          "file": "official/himeji-calendar.txt",
+          "locator_lines": [
+            339,
+            384
+          ],
+          "reviewed_lines": [
+            340,
+            363
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000033506.html",
+          "retrieved_at": "2026-10-18T03:42:51.786687+00:00",
+          "text_sha256": "6dd2681c9c956a2dc8cc8db26b9154ed84b0ad3c26f2281c5f76ea60c264c7f5",
+          "locator_fields": [
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        },
+        {
+          "source_id": "himeji-ieshima",
+          "file": "official/himeji-ieshima.txt",
+          "locator_lines": [
+            340,
+            360
+          ],
+          "reviewed_lines": [
+            350,
+            365
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000085.html",
+          "retrieved_at": "2026-10-18T03:42:36.495258+00:00",
+          "text_sha256": "153d56fc6859f2ca22f089660400e75ae357cf1d18022d22d37798036427b1e0",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "limits"
+          ]
+        },
+        {
+          "source_id": "himeji-large",
+          "file": "official/himeji-large.txt",
+          "locator_lines": [
+            340,
+            354
+          ],
+          "reviewed_lines": [
+            342,
+            361
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000080.html",
+          "retrieved_at": "2026-10-18T03:42:36.387329+00:00",
+          "text_sha256": "c36eb802086a557ef36db9277174014f2f99c8590bc20ed5eef4e31fbddea4c0",
+          "locator_fields": [
+            "waste_scope",
+            "indoor_carry",
+            "limits"
+          ]
+        },
+        {
+          "source_id": "himeji-metal",
+          "file": "official/himeji-metal.txt",
+          "locator_lines": [
+            340,
+            352
+          ],
+          "reviewed_lines": [
+            342,
+            359
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000048.html",
+          "retrieved_at": "2026-10-18T03:42:47.985481+00:00",
+          "text_sha256": "7f53b9454cfd1aa5341c68ac6e592bcc90ff5a7494926d8fc9dcf3a39d38168c",
+          "locator_fields": [
+            "waste_scope",
+            "indoor_carry",
+            "limits"
+          ]
+        },
+        {
+          "source_id": "himeji-separation",
+          "file": "official/himeji-separation.txt",
+          "locator_lines": [
+            340,
+            2649
+          ],
+          "reviewed_lines": [
+            343,
+            415
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000097.html",
+          "retrieved_at": "2026-10-18T03:42:24.865042+00:00",
+          "text_sha256": "169354ef56e1230dd76bc4d66c384d2200d448c21b9346e0f9afd3ad077270f1",
+          "locator_fields": [
+            "waste_scope"
+          ]
+        },
+        {
+          "source_id": "himeji-wood",
+          "file": "official/himeji-wood.txt",
+          "locator_lines": [
+            340,
+            351
+          ],
+          "reviewed_lines": [
+            342,
+            358
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000047.html",
+          "retrieved_at": "2026-10-18T03:42:47.867511+00:00",
+          "text_sha256": "be1e885b1378bfc3bed242b6c410abacec3a4cfaf5cad09039e42bbc56bf2a11",
+          "locator_fields": [
+            "waste_scope",
+            "indoor_carry",
+            "limits"
+          ]
+        }
+      ],
+      "unresolved_field_count": 4,
+      "unresolved_fields": [
+        {
+          "field": "indoor_carry",
+          "state": "not_stated"
+        },
+        {
+          "field": "family_help",
+          "state": "not_stated"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "自宅の区域・品目ごとの収集場所と時刻、予約・処理料金・立会い、家族が代わりに出す方法は。"
+      ],
+      "corrections": [],
+      "assessment": "概ね適合。地区・品目別の分別、家島の指定ステーション、旧姫路/家島の50kg以上の搬入等を照合。明確な一律収集料金の原典提示がないため料金not_statedは妥当。"
+    },
+    {
+      "city_id": "hyogo:himeji",
+      "city_name": "姫路市",
+      "service_id": "himeji-carry-unconfirmed",
+      "service_name": "室内から運べない場合の確認",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "collection_location",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_found",
+          "source_ids": [
+            "himeji-fureai",
+            "himeji-calendar",
+            "himeji-dropoff",
+            "himeji-wood",
+            "himeji-metal",
+            "himeji-large",
+            "himeji-ieshima"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "eligibility",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "family_help",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "limits",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "application",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-fureai"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 7,
+      "evidence": [
+        {
+          "source_id": "himeji-calendar",
+          "file": "official/himeji-calendar.txt",
+          "locator_lines": [
+            339,
+            384
+          ],
+          "reviewed_lines": [
+            339,
+            384
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000033506.html",
+          "retrieved_at": "2026-10-18T03:42:51.786687+00:00",
+          "text_sha256": "6dd2681c9c956a2dc8cc8db26b9154ed84b0ad3c26f2281c5f76ea60c264c7f5",
+          "locator_fields": [
+            "indoor_carry"
+          ]
+        },
+        {
+          "source_id": "himeji-dropoff",
+          "file": "official/himeji-dropoff.txt",
+          "locator_lines": [
+            339,
+            454
+          ],
+          "reviewed_lines": [
+            345,
+            420
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000155.html",
+          "retrieved_at": "2026-10-18T03:42:20.705075+00:00",
+          "text_sha256": "4be48b1c4ac445b35a4b24cfe2e666be775deadf25313e44a1fd2aa671ce784f",
+          "locator_fields": [
+            "indoor_carry"
+          ]
+        },
+        {
+          "source_id": "himeji-fureai",
+          "file": "official/himeji-fureai.txt",
+          "locator_lines": [
+            339,
+            410
+          ],
+          "reviewed_lines": [
+            342,
+            373
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000014055.html",
+          "retrieved_at": "2026-10-16T13:17:36.604096+00:00",
+          "text_sha256": "d672aacda0bbbaf56fe4fd82dfbbb694e6832548e629cbfa1f9b1d7ed0378418",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        },
+        {
+          "source_id": "himeji-ieshima",
+          "file": "official/himeji-ieshima.txt",
+          "locator_lines": [
+            340,
+            360
+          ],
+          "reviewed_lines": [
+            350,
+            359
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000085.html",
+          "retrieved_at": "2026-10-18T03:42:36.495258+00:00",
+          "text_sha256": "153d56fc6859f2ca22f089660400e75ae357cf1d18022d22d37798036427b1e0",
+          "locator_fields": [
+            "indoor_carry"
+          ]
+        },
+        {
+          "source_id": "himeji-large",
+          "file": "official/himeji-large.txt",
+          "locator_lines": [
+            340,
+            354
+          ],
+          "reviewed_lines": [
+            342,
+            354
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000080.html",
+          "retrieved_at": "2026-10-18T03:42:36.387329+00:00",
+          "text_sha256": "c36eb802086a557ef36db9277174014f2f99c8590bc20ed5eef4e31fbddea4c0",
+          "locator_fields": [
+            "indoor_carry"
+          ]
+        },
+        {
+          "source_id": "himeji-metal",
+          "file": "official/himeji-metal.txt",
+          "locator_lines": [
+            340,
+            352
+          ],
+          "reviewed_lines": [
+            342,
+            352
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000048.html",
+          "retrieved_at": "2026-10-18T03:42:47.985481+00:00",
+          "text_sha256": "7f53b9454cfd1aa5341c68ac6e592bcc90ff5a7494926d8fc9dcf3a39d38168c",
+          "locator_fields": [
+            "indoor_carry"
+          ]
+        },
+        {
+          "source_id": "himeji-wood",
+          "file": "official/himeji-wood.txt",
+          "locator_lines": [
+            340,
+            351
+          ],
+          "reviewed_lines": [
+            342,
+            351
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000047.html",
+          "retrieved_at": "2026-10-18T03:42:47.867511+00:00",
+          "text_sha256": "be1e885b1378bfc3bed242b6c410abacec3a4cfaf5cad09039e42bbc56bf2a11",
+          "locator_fields": [
+            "indoor_carry"
+          ]
+        }
+      ],
+      "unresolved_field_count": 9,
+      "unresolved_fields": [
+        {
+          "field": "waste_scope",
+          "state": "not_stated"
+        },
+        {
+          "field": "collection_location",
+          "state": "not_stated"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_found"
+        },
+        {
+          "field": "eligibility",
+          "state": "not_stated"
+        },
+        {
+          "field": "family_help",
+          "state": "not_stated"
+        },
+        {
+          "field": "fees",
+          "state": "not_stated"
+        },
+        {
+          "field": "limits",
+          "state": "not_stated"
+        },
+        {
+          "field": "application",
+          "state": "not_stated"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "粗大ごみを室内から運べない場合、対象条件のある搬出支援や相談先・紹介先はありますか。料金、立会い、階段・解体の制限は。"
+      ],
+      "corrections": [],
+      "assessment": "適合。市の家庭ごみ資料で粗大ごみ室内搬出支援を確認できないという調査範囲の結論で、「制度なし」「不可」と断定しない。ふれあい収集の屋内不可は可燃ごみ制度だけの条件として区別。"
+    },
+    {
+      "city_id": "hyogo:himeji",
+      "city_name": "姫路市",
+      "service_id": "himeji-dropoff",
+      "service_name": "地域・品目別の有料持込",
+      "field_count": 10,
+      "fields_reviewed": [
+        {
+          "field": "waste_scope",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "collection_location",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "indoor_carry",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "eligibility",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "family_help",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "fees",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "limits",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "application",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "照合済み。not_stated/not_foundは制度なし・不可を意味しない。"
+        },
+        {
+          "field": "contact",
+          "state": "explicit",
+          "source_ids": [
+            "himeji-dropoff"
+          ],
+          "assessment": "保存原典と整合。"
+        }
+      ],
+      "source_count": 1,
+      "evidence": [
+        {
+          "source_id": "himeji-dropoff",
+          "file": "official/himeji-dropoff.txt",
+          "locator_lines": [
+            339,
+            454
+          ],
+          "reviewed_lines": [
+            345,
+            460
+          ],
+          "url": "https://www.city.himeji.lg.jp/kurashi/0000000155.html",
+          "retrieved_at": "2026-10-18T03:42:20.705075+00:00",
+          "text_sha256": "4be48b1c4ac445b35a4b24cfe2e666be775deadf25313e44a1fd2aa671ce784f",
+          "locator_fields": [
+            "waste_scope",
+            "collection_location",
+            "indoor_carry",
+            "eligibility",
+            "family_help",
+            "fees",
+            "limits",
+            "application",
+            "attendance",
+            "contact"
+          ]
+        }
+      ],
+      "unresolved_field_count": 2,
+      "unresolved_fields": [
+        {
+          "field": "indoor_carry",
+          "state": "not_stated"
+        },
+        {
+          "field": "attendance",
+          "state": "not_stated"
+        }
+      ],
+      "open_questions": [
+        "予約要否、搬入書類、施設ごとの家族代理・荷下ろし、重量端数と最低料金、品目・車両制限を確認してください。"
+      ],
+      "corrections": [],
+      "assessment": "適合。旧姫路、夢前/香寺/安富、家島の施設・受入品目/時間・料金を照合。市川美化センターは袋ごみ等のみで粗大持込不可、エコパークあぼしを含む他施設との差を保持。家島の2025年10月改定後料金と差額、くれさかの家族運転条件を正確に記載し、ほか施設の代理条件は未記載扱い。"
+    }
+  ]
+}

@@ -1,0 +1,918 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-18",
+  "human_reviewed": false,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "hyogo:kawanishi",
+      "name": "川西市",
+      "kana": "かわにしし",
+      "pref_name": "兵庫県",
+      "selection_reason": "戸別収集の世帯要件、有料の室内搬出紹介、通常大型と国崎持込の料金を分けて比較できる。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "kawanishi-daily",
+          "kind": "daily_support",
+          "name": "サポート収集（高齢者・障がい者）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "indoor_carry": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "ごみステーションまで自分でごみを持ち出せない",
+                  "近隣や親族の協力を得られない"
+                ],
+                "any": [
+                  {
+                    "all": [
+                      "65歳以上",
+                      "要介護2以上"
+                    ]
+                  },
+                  "身体障害者手帳1級又は2級"
+                ],
+                "note": "原則一人暮らし。ただし上記の年齢・要介護又は身体障害の要件に該当する人のみで構成する世帯も対象。面談後に決定。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "family_help": {
+              "value": "近隣や親族の協力を得られる場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "application": {
+              "value": "美化推進課へ申請書と介護保険又は身体障害者手帳のコピーを提出。申請書の同意欄は対象者本人が自署し、書類提出後の面談で決定。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            },
+            "contact": {
+              "value": "美化推進課072-744-1124、FAX072-744-1221。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-support"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "対象ごみ、収集する場所・曜日・袋数、利用料、屋内搬出の可否、通常日の立会い要否は。"
+          ]
+        },
+        {
+          "id": "kawanishi-regular",
+          "kind": "regular_bulky",
+          "name": "通常の大型ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "一辺40cm以上の家具・自転車・家電等。家電リサイクル対象品、パソコン、事業系等は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-fees"
+              ]
+            },
+            "collection_location": {
+              "value": "2トンダンプ車が横付けできる道路に面した予約場所へ当日8時30分まで。収集員は敷地内へ入らない。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "市の家庭向け大型ごみ収集。事業系は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-fees"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            },
+            "fees": {
+              "value": "長辺40cm以上1m未満300円、1m以上2m未満600円、2m以上900円。処理券又は電子決済。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-fees",
+                "kawanishi-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1回10点まで。収集は月～金（祝日含む）。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            },
+            "application": {
+              "value": "収集希望日の1カ月前からネット・電話・FAXで予約。FAX・ネットは確認連絡まで予約未完了。処理券又は電子決済後の表示紙を全品へ貼付。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            },
+            "contact": {
+              "value": "予約072-764-5379（月～金・祝日含む8時30分～16時）、FAX072-744-1221。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "予約の最終期限と、家族による代理申込の扱いを確認してください。"
+          ]
+        },
+        {
+          "id": "kawanishi-carry",
+          "kind": "bulky_carry_support",
+          "name": "シルバー人材センターの有料ごみ出し紹介",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "ごみを家の中から運び出すことが困難な場合のごみ出し。市公式が川西市シルバー人材センターを紹介。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "collection_location": {
+              "value": "家の中からの運び出しについて相談。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "eligibility": {
+              "value": "家の中からごみの運び出しが困難な場合。年齢・介護度等の具体的資格は紹介ページに明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "fees": {
+              "value": "有料。金額・処分手数料との関係は未記載。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "application": {
+              "value": "川西市シルバー人材センターへ直接問い合わせ。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            },
+            "contact": {
+              "value": "川西市シルバー人材センター072-758-6234。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-other"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "現在の受付状況、対象品、料金見積りと処分手数料、搬出先、階段・解体・重量の制限、家族の協力条件と立会いは。"
+          ]
+        },
+        {
+          "id": "kawanishi-dropoff",
+          "kind": "self_dropoff",
+          "name": "国崎クリーンセンターへ直接持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "国崎クリーンセンターへ一般廃棄物を直接持込。受入品目は事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "月～金（祝日・休日含む）13時30分～16時、国崎クリーンセンター。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自宅からの搬出支援は明記なし。ごみは原則自分で車から降ろす。",
+              "state": "not_stated",
+              "source_ids": [
+                "kawanishi-kunisaki"
+              ]
+            },
+            "eligibility": {
+              "value": "川西市・猪名川町・豊能町・能勢町から出る各市町の一般廃棄物。区域外ごみ・産廃・建築廃材・処理困難物等は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-kunisaki"
+              ]
+            },
+            "family_help": {
+              "value": "家庭系は本人・家族が搬入可。別居家族は排出元の住所氏名が分かる書類の原本が必要。持込者と排出者の本人確認書類を提示。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-kunisaki"
+              ]
+            },
+            "fees": {
+              "value": "2026年10月現在、車ごとに50kg以下600円。超過分は10kgまでごと120円加算、現金のみ。2027年1月から50kg750円、超過10kgまでごと150円に改定予定。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-dropoff",
+                "kawanishi-kunisaki"
+              ]
+            },
+            "limits": {
+              "value": "事前予約必須、当日受付不可。自動車のみで自動二輪・自転車不可。30分刻みの予約枠、年末年始は別設定。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-kunisaki"
+              ]
+            },
+            "application": {
+              "value": "072-744-7280へ電話（月～金9～16時、祝日・年末年始除く）又は家庭系は24時間ネット予約。住所氏名・種類・利用車両等を伝える。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-dropoff",
+                "kawanishi-kunisaki"
+              ]
+            },
+            "attendance": {
+              "value": "持込者と排出者の本人確認書類を提示。係員の指示に従い、原則自分で荷下ろし。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-kunisaki"
+              ]
+            },
+            "contact": {
+              "value": "持込予約072-744-7280。料金改定の問合せ072-739-7201。",
+              "state": "explicit",
+              "source_ids": [
+                "kawanishi-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "具体的な品目・数量の受入可否、原則の自己荷下ろしが難しい場合の対応と予約期限は。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "サポート収集の対象ごみ・屋内搬出・利用料は今回の保存原典では未記載。無料や室内対応可とはしていません。",
+        "室内搬出は市収集とは別の有料紹介。利用条件や料金はセンターへ確認。"
+      ],
+      "common_questions_for_office": [
+        "掲載条件に合うか、申込時に公式窓口で確認してください。"
+      ]
+    },
+    {
+      "id": "hyogo:himeji",
+      "name": "姫路市",
+      "kana": "ひめじし",
+      "pref_name": "兵庫県",
+      "selection_reason": "ふれあい収集の3資格枝と、旧市町域別の粗大・持込を区別し、可燃ごみのみの支援と家財処分を混同しない。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "himeji-daily",
+          "kind": "daily_support",
+          "name": "ふれあい収集（可燃ごみ）",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "可燃ごみ。指定袋に入れて出す。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "collection_location": {
+              "value": "週1回決まった曜日、8時までに玄関先へ。ふた付き容器を準備。曜日は審査結果通知書で案内。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "自らごみを排出することが困難",
+                  "家族・地域のごみ出し支援を受けられない、又はその支援が過度な負担"
+                ],
+                "any": [
+                  {
+                    "label": "高齢者等",
+                    "all": [
+                      {
+                        "any": [
+                          "65歳以上",
+                          "特定疾病のある40～64歳"
+                        ]
+                      },
+                      "要介護1～5",
+                      "介護保険の訪問介護を利用",
+                      "既存の福祉サービスによるごみ出し支援を受けられない"
+                    ]
+                  },
+                  {
+                    "label": "障害のある方",
+                    "all": [
+                      "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付",
+                      "障害福祉サービスの居宅介護（家事援助中心）を利用"
+                    ]
+                  },
+                  {
+                    "label": "妊産婦",
+                    "all": [
+                      "母子手帳交付から産後1年以内",
+                      "同居する配偶者・親族等がいない"
+                    ]
+                  }
+                ],
+                "note": "該当判断に迷う場合は相談。現地調査後に審査。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "family_help": {
+              "value": "家族や地域の支援が受けられない場合だけでなく、その支援が過度な負担の場合も共通要件に含む。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "limits": {
+              "value": "週1回。希望に応じ安否確認。ごみがない時のみの声かけ、希望すれば毎回の声かけ。反応がなければ登録先へ緊急連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "application": {
+              "value": "リサイクル課へメールで受付フォームを送信。第三者立会いの現地調査→審査・通知→開始。連絡先変更・休止時は市へ連絡。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "attendance": {
+              "value": "現地調査は親族・近隣住民・ケアマネジャーなど第三者の立会い。通常収集日の立会い要否は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "contact": {
+              "value": "リサイクル課079-221-2404、FAX079-221-2408、recycle@city.himeji.lg.jp。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "利用料金、1回の袋数・重量上限、通常収集日の在宅・立会い要否は。"
+          ]
+        },
+        {
+          "id": "himeji-regular",
+          "kind": "regular_bulky",
+          "name": "地域別の粗大・大型ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "旧姫路市域は木製品類・金属複合製品類など品目別。夢前・香寺・安富町域は大型ごみ、家島町域は大型ごみ等。地域別分別一覧で確認。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-separation",
+                "himeji-wood",
+                "himeji-metal",
+                "himeji-large",
+                "himeji-ieshima"
+              ]
+            },
+            "collection_location": {
+              "value": "収集地区をクリーンカレンダーで確認。家島町域は当日8時までに町内の指定粗大ごみステーションへ。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-calendar",
+                "himeji-ieshima"
+              ]
+            },
+            "indoor_carry": {
+              "value": "地域別の分別・排出案内。室内からの搬出対応は今回の資料で確認できず。",
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-calendar",
+                "himeji-wood",
+                "himeji-metal",
+                "himeji-large",
+                "himeji-ieshima"
+              ]
+            },
+            "eligibility": {
+              "value": "地区（小学校区）別の家庭ごみ収集。マンション等は行政回収を行わない場合があり管理会社へ確認。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-calendar"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-calendar"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-calendar"
+              ]
+            },
+            "limits": {
+              "value": "旧姫路の木製品・金属複合品及び家島の50kg以上の重量物は持込又は許可業者へ。夢前・香寺・安富は可燃性140×90×200cm以下、不燃性90×90×180cm以下、廃木材は太さ10cm・長さ200cm以下。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-wood",
+                "himeji-metal",
+                "himeji-ieshima",
+                "himeji-large"
+              ]
+            },
+            "application": {
+              "value": "町名で公式クリーンカレンダーを検索。同じ町名で複数候補の場合はリサイクル課へ確認。城南・曽左・安室地区は2026年10月の粗大収集日が当初から一部変更。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-calendar"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-calendar"
+              ]
+            },
+            "contact": {
+              "value": "リサイクル課079-221-2404、FAX079-221-2408。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-calendar"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "自宅の区域・品目ごとの収集場所と時刻、予約・処理料金・立会い、家族が代わりに出す方法は。"
+          ]
+        },
+        {
+          "id": "himeji-carry-unconfirmed",
+          "kind": "bulky_carry_support",
+          "name": "室内から運べない場合の確認",
+          "evidence_status": "searched_not_found",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "indoor_carry": {
+              "value": "ふれあい収集は屋内不可・可燃ごみのみ。今回確認した市の家庭ごみ資料では粗大ごみの室内搬出支援は確認できず。制度がないとは断定していません。",
+              "state": "not_found",
+              "source_ids": [
+                "himeji-fureai",
+                "himeji-calendar",
+                "himeji-dropoff",
+                "himeji-wood",
+                "himeji-metal",
+                "himeji-large",
+                "himeji-ieshima"
+              ]
+            },
+            "eligibility": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "application": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            },
+            "contact": {
+              "value": "家庭ごみの窓口：リサイクル課079-221-2404、FAX079-221-2408。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-fureai"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "粗大ごみを室内から運べない場合、対象条件のある搬出支援や相談先・紹介先はありますか。料金、立会い、階段・解体の制限は。"
+          ]
+        },
+        {
+          "id": "himeji-dropoff",
+          "kind": "self_dropoff",
+          "name": "地域・品目別の有料持込",
+          "evidence_status": "official_listing",
+          "review_status": "ai_reviewed",
+          "ai_reviewed_at": "2026-10-18",
+          "review_scope_note": "新規2市8経路80項目を保存原典から独立AI照合。必要訂正0。review.json/md参照。窓口確認・人手原文確認・正確性実証ではない。",
+          "human_reviewed_at": null,
+          "checked": "2026-10-18",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭ごみを可燃・不燃に分別して搬入。指定袋不要。家電リサイクル対象品・パソコンは不可。施設・地域によって受入品目が異なる。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "collection_location": {
+              "value": "旧姫路市域：粗大・不燃等はエコパークあぼし（月～土8～17時、12/31・1/1～3除く）。市川美化センター（月～土8～15時30分、1/1～3除く）は袋ごみ等で粗大不可。夢前・香寺・安富：くれさか（月～金8時30分～12時・13～16時30分、年末年始・GWは要問合せ）。家島：家島美化センター（月～金8～16時、祝日・12/31・1/1～3・5/3～5除く）。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "indoor_carry": {
+              "value": "自分で各処理施設へ持ち込む案内。自宅からの搬出支援は明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "eligibility": {
+              "value": "家庭から出るごみ。旧姫路・夢前/香寺/安富・家島の地域ごとの搬入先・条件を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "family_help": {
+              "value": "くれさかの搬入車両は搬入者本人又は家族が運転。ほかの施設の家族代理条件は未記載。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "fees": {
+              "value": "旧姫路市域・くれさかは車両1台ごとの積載量10kgあたり130円。家島は処分券：軽四輪1台2,050円、2t車6,830円、2t超13,650円（2025年10月1日改定）。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "limits": {
+              "value": "くれさかは3t車以下。埋立ごみ・自己解体ごみは事前に地域事務所（夢前・香寺）で一般廃棄物処理申出書の手続き。市川へ粗大は不可。家島の旧処分券は差額支払が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "application": {
+              "value": "地域・品目に応じ施設を選ぶ。家島は家島事務所又は坊勢サービスセンターで処分券を購入。予約要否は掲載本文に明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            },
+            "contact": {
+              "value": "エコパークあぼし079-272-5540、市川079-282-5389、くれさか079-335-3670、家島079-325-2133。",
+              "state": "explicit",
+              "source_ids": [
+                "himeji-dropoff"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "予約要否、搬入書類、施設ごとの家族代理・荷下ろし、重量端数と最低料金、品目・車両制限を確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "日常のふれあい収集は可燃ごみのみ・屋内不可。粗大の室内搬出制度は今回未確認。",
+        "旧市町域で分別、施設、料金が異なります。市川美化センターには粗大ごみを持ち込めません。"
+      ],
+      "common_questions_for_office": [
+        "掲載条件に合うか、申込時に公式窓口で確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "himeji-calendar",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000033506.html",
+      "title": "一般家庭用クリーンカレンダー",
+      "source_updated": "2026-08-06",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-dropoff",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000000155.html",
+      "title": "自分で持ち込む場合（有料）",
+      "source_updated": "2025-10-28",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-fureai",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000014055.html",
+      "title": "高齢者等世帯に対するごみ出し支援事業",
+      "source_updated": "2026-06-11",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-ieshima",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000000085.html",
+      "title": "大型ごみ等（家島町域）",
+      "source_updated": "2025-05-12",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-large",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000000080.html",
+      "title": "大型ごみ（夢前町域、香寺町域および安富町域）",
+      "source_updated": "2025-05-12",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-metal",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000000048.html",
+      "title": "金属複合製品類（旧姫路市域）",
+      "source_updated": "2025-05-12",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-separation",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000000097.html",
+      "title": "ごみ分別一覧表",
+      "source_updated": "2024-08-19",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "himeji-wood",
+      "url": "https://www.city.himeji.lg.jp/kurashi/0000000047.html",
+      "title": "木製品類（旧姫路市域）",
+      "source_updated": "2025-05-12",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kawanishi-bulky",
+      "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001350.html",
+      "title": "大型ごみの予約から収集までの流れ（ネット予約はこちらから）",
+      "source_updated": "2026-10-05",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kawanishi-dropoff",
+      "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1008367.html",
+      "title": "国崎クリーンセンターへの直接持ち込みごみの受入れについて",
+      "source_updated": "2024-09-24",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kawanishi-fees",
+      "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001349.html",
+      "title": "対象となる大型ごみと処理手数料",
+      "source_updated": "2020-09-29",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kawanishi-kunisaki",
+      "url": "https://www.kunisakicc.jp/association/kcc/hand-carried/",
+      "title": "持ち込みごみ",
+      "source_updated": null,
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "kawanishi-other",
+      "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1001346/1001351.html",
+      "title": "大型ごみのその他の排出方法について",
+      "source_updated": "2020-09-29",
+      "checked": "2026-10-18",
+      "source_kind": "official"
+    },
+    {
+      "id": "kawanishi-support",
+      "url": "https://www.city.kawanishi.hyogo.jp/kurashi/gomi_kankyo/gomi/1009310.html",
+      "title": "サポート収集（高齢者・障がい者）の戸別収集について",
+      "source_updated": "2022-09-14",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    }
+  ],
+  "review_note": "独立Luna mediumが新規8経路80項目を保存原典から照合、必要訂正0。review.json/md参照。人手原文全件確認・窓口確認ではない。既存2日常支援原典は2026-10-16保存分を再利用し、新規補完だけ2026-10-18確認。公開承認なし。"
+}
