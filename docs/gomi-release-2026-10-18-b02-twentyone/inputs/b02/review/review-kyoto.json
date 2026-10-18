@@ -1,0 +1,643 @@
+{
+  "schema_version": "limited-ai-review-0.1",
+  "city_id": "kyoto:kyoto",
+  "reviewed_at": "2026-10-18T06:19:18.064899+00:00",
+  "reviewer": "independent Codex AI agent b02_review",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "passed_after_correction",
+  "input_sha256": "f79e9bd13ec7478b978dc99e8ab76cfaa1da979655224536b436694686d5077e",
+  "review_locators_sha256": "ab2efcaa6a26a8c77b3f8350f6d103e614de263b0f7cc72f500018aae159047a",
+  "metadata_sha256": "22bd4cf06f53d4675afd2191e6fdcb1a83f7030d4b4dae5c39c110ace1d36c94",
+  "source_snapshots": [
+    {
+      "id": "kyoto-daily",
+      "binary_file": "official/kyoto-daily.html.source",
+      "binary_sha256": "e54e0db3f74d7a89e90ea206580b2dcd2fe9c5040dea43b3da62661aec21c294",
+      "text_file": "official/kyoto-daily.txt",
+      "text_sha256": "a8ecc36f60d4d00a1724372f20e3bd5196f5da6bb802025b80889f8591a98411"
+    },
+    {
+      "id": "kyoto-pilot",
+      "binary_file": "official/kyoto-pilot.html.source",
+      "binary_sha256": "e77f3a5b502c5c2bddc3a0a5c0d2c6afa8229b752096d7946c8ce2d0aab7f3fd",
+      "text_file": "official/kyoto-pilot.txt",
+      "text_sha256": "4400b8790cfc64a3e9b0018a73300c12222e8e600958e21d994d11f44d9a798c"
+    },
+    {
+      "id": "kyoto-pilot-background",
+      "binary_file": "official/kyoto-pilot-background.html.source",
+      "binary_sha256": "bafbef95cee6bbf87c35b8ebb76390d88b5fbefe0773ffc7d8b0028bbc7d06c7",
+      "text_file": "official/kyoto-pilot-background.txt",
+      "text_sha256": "2e0f41eb1f3f207d62e7c100bfe0b70d8f6090513838d2f0dac4b760b91de707"
+    },
+    {
+      "id": "kyoto-daily-criteria",
+      "binary_file": "official/kyoto-daily-criteria.pdf",
+      "binary_sha256": "bdd38e5f779873439ba80ef448d74463d4e15259eb8f080c48730d6563af05de",
+      "text_file": "official/kyoto-daily-criteria.txt",
+      "text_sha256": "fb4565d9b6c2e3078828bafa2eb8d67c1c24c3ac31455fe629ab195cf25c837f"
+    },
+    {
+      "id": "kyoto-daily-faq",
+      "binary_file": "official/kyoto-daily-faq.pdf",
+      "binary_sha256": "41c2300013a5617d5f1a34c05da41c469a66fb9794e92aa89b4dbb5340211d15",
+      "text_file": "official/kyoto-daily-faq.txt",
+      "text_sha256": "d1c422cb3a6db9de54f4bc29972ab0dac6d1f96fb4154cfbb089bbf4eae3066c"
+    },
+    {
+      "id": "kyoto-bulky",
+      "binary_file": "official/kyoto-bulky.html.source",
+      "binary_sha256": "f255b34124c5896665f3be0d749eb08565b4e5eb12ca796e13316f017a6d23ed",
+      "text_file": "official/kyoto-bulky.txt",
+      "text_sha256": "d63ebf6303034a40e841c3ad69a2b1c05490574f56a44dafb9748322d9ae374a"
+    },
+    {
+      "id": "kyoto-dropoff",
+      "binary_file": "official/kyoto-dropoff.html.source",
+      "binary_sha256": "819708145c0fdd79aeca5b30c78f91ce7ad254464f8d3aedf094d140d3be186a",
+      "text_file": "official/kyoto-dropoff.txt",
+      "text_sha256": "61ec73a21e0c69454c6f6581ca2ab3778bb353ec09a31a59e53f8abcea7759ac"
+    },
+    {
+      "id": "kyoto-many-waste",
+      "binary_file": "official/kyoto-many-waste.html.source",
+      "binary_sha256": "683b8b120f0a7fb26903c885febfd237401848629985c1ac31eda6c773c20d07",
+      "text_file": "official/kyoto-many-waste.txt",
+      "text_sha256": "3e3b2dd4d7b72ebd865f6d5f35f9e498feb46bb46655703fe56359b59320df3b"
+    }
+  ],
+  "scope": {
+    "services": 5,
+    "fields": 50,
+    "directions": [
+      "制度値→保存原典本文",
+      "保存原典本文→対象制度の重要条件・例外・支援漏れ"
+    ],
+    "source_ranges": {
+      "kyoto-daily.txt": [
+        48,
+        95
+      ],
+      "kyoto-pilot.txt": [
+        48,
+        197
+      ],
+      "kyoto-pilot-background.txt": [
+        48,
+        172
+      ],
+      "kyoto-daily-criteria.txt": [
+        1,
+        69
+      ],
+      "kyoto-daily-faq.txt": [
+        1,
+        79
+      ],
+      "kyoto-bulky.txt": [
+        48,
+        154
+      ],
+      "kyoto-dropoff.txt": [
+        48,
+        175
+      ],
+      "kyoto-many-waste.txt": [
+        47,
+        72
+      ]
+    },
+    "method": "locatorだけに頼らず、HTML本文の全関連章・PDF資格案内とFAQ全文を読み、対象/搬出/費用/窓口/質問を双方向照合。再取得なし。"
+  },
+  "findings": [
+    {
+      "id": "K01",
+      "severity": "required",
+      "fields": [
+        "kyoto-daily.eligibility"
+      ],
+      "source": "kyoto-daily-criteria.txt",
+      "lines": [
+        15,
+        20
+      ],
+      "finding": "サービス利用/ホームヘルプ条件と65歳以上等の属性がトップレベルanyで並ぶため、属性だけで対象に見える。原典はすべてAND。",
+      "proposal": "市内居住AND排出困難AND本人親族近隣協力不可AND[(介護保険OR障害福祉)サービス利用ANDホームヘルプ利用]AND[65歳以上OR障害OR同様者のみ同居]。添付資料日付と現行適用の確認質問は維持。"
+    },
+    {
+      "id": "K02",
+      "severity": "required",
+      "fields": [
+        "kyoto-daily-pilot.eligibility"
+      ],
+      "source": "kyoto-pilot.txt",
+      "lines": [
+        64,
+        83
+      ],
+      "finding": "通常資格構造が複製されホームヘルプ条件緩和が反映されていない。学区/既存利用不可もexceptionだけに依存。",
+      "proposal": "その他の共通条件をAND維持しサービス条件を介護保険サービス利用OR障害福祉サービス利用に緩和。対象14学区の居住、既存利用者申請不可、現行条件該当者は通常へを表示・メモに残す。"
+    },
+    {
+      "id": "K03",
+      "severity": "required",
+      "fields": [
+        "kyoto-daily-pilot.collection_location"
+      ],
+      "source": "kyoto-pilot.txt",
+      "lines": [
+        58,
+        63
+      ],
+      "finding": "実験経路の場所欄に「市内全域の通常サービス」が混入している。",
+      "proposal": "玄関先・屋内立入なしは維持し、実験は14学区限定と明示。全市通常は通常経路へ。"
+    },
+    {
+      "id": "K04",
+      "severity": "required",
+      "fields": [
+        "kyoto-daily-pilot.limits"
+      ],
+      "source": "kyoto-pilot.txt",
+      "lines": [
+        123,
+        131
+      ],
+      "finding": "片手で持てる重さ・品目ごと2袋(束)の制限を追加3品目にのみ限定しているが、原典128は排出できるごみ全体の規則。転居で実験サービス終了条件も未掲載。",
+      "proposal": "各品目2袋(束)・片手で持てる重さは実験の全品目。追加3品目のみ2営業日前届出（透明袋・品目表示）と区別。転居で終了(pilot109)も明記。"
+    },
+    {
+      "id": "K05",
+      "severity": "required",
+      "fields": [
+        "kyoto-daily-pilot.application",
+        "kyoto-daily-pilot.questions_for_office"
+      ],
+      "source": "kyoto-pilot.txt / kyoto-daily.txt / kyoto-pilot-background.txt",
+      "lines": [
+        95,
+        96,
+        54,
+        59,
+        60
+      ],
+      "finding": "詳細ページは提供期間2027年9月末、通常案内は実験期間2027年3月末、背景ページは実験終了後も全市展開まで継続予定。単に提供期間9月予定だけでは実験期間との区別が伝わらない。",
+      "proposal": "社会実験は2026-10-01～2027-03-31、詳細案内のサービス提供期間2027-09末予定を区別し、実際の終了日・継続条件は窓口確認とする。12/28申請期限は維持。"
+    },
+    {
+      "id": "K06",
+      "severity": "recommended",
+      "fields": [
+        "kyoto-daily.waste_scope",
+        "kyoto-daily.collection_location",
+        "kyoto-daily.application"
+      ],
+      "source": "kyoto-pilot.txt",
+      "lines": [
+        81,
+        96
+      ],
+      "finding": "通常経路にも実験の追加品目・申請期限・届出等が混在。別実験経路を設けた意義が薄まり通常利用者が実験期限を自分の期限と誤認する恐れ。",
+      "proposal": "通常経路を通常5種・通常申請中心にし、実験の詳細は実験経路を参照と短く誘導。"
+    }
+  ],
+  "field_checks": [
+    {
+      "service_id": "kyoto-daily",
+      "fields": [
+        {
+          "field": "waste_scope",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq",
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "collection_location",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq",
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "indoor_carry",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "eligibility",
+          "result": "changes_required",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq",
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "family_help",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "fees",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "limits",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "application",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq",
+            "kyoto-daily",
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "attendance",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "contact",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily",
+            "kyoto-pilot"
+          ]
+        }
+      ]
+    },
+    {
+      "service_id": "kyoto-daily-pilot",
+      "fields": [
+        {
+          "field": "waste_scope",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "collection_location",
+          "result": "changes_required",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq",
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "indoor_carry",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-pilot",
+            "kyoto-daily-criteria"
+          ]
+        },
+        {
+          "field": "eligibility",
+          "result": "changes_required",
+          "source_ids": [
+            "kyoto-pilot",
+            "kyoto-daily-criteria"
+          ]
+        },
+        {
+          "field": "family_help",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-pilot",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "fees",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "limits",
+          "result": "changes_required",
+          "source_ids": [
+            "kyoto-pilot"
+          ]
+        },
+        {
+          "field": "application",
+          "result": "changes_required",
+          "source_ids": [
+            "kyoto-pilot",
+            "kyoto-daily"
+          ]
+        },
+        {
+          "field": "attendance",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily-criteria",
+            "kyoto-daily-faq"
+          ]
+        },
+        {
+          "field": "contact",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-daily",
+            "kyoto-pilot"
+          ]
+        }
+      ]
+    },
+    {
+      "service_id": "kyoto-regular",
+      "fields": [
+        {
+          "field": "waste_scope",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "collection_location",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "indoor_carry",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "eligibility",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "family_help",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "fees",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "limits",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "application",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "attendance",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        },
+        {
+          "field": "contact",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-bulky"
+          ]
+        }
+      ]
+    },
+    {
+      "service_id": "kyoto-carry",
+      "fields": [
+        {
+          "field": "waste_scope",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "collection_location",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "indoor_carry",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "eligibility",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "family_help",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "fees",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "limits",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "application",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "attendance",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        },
+        {
+          "field": "contact",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-many-waste"
+          ]
+        }
+      ]
+    },
+    {
+      "service_id": "kyoto-dropoff",
+      "fields": [
+        {
+          "field": "waste_scope",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "collection_location",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "indoor_carry",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "eligibility",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "family_help",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "fees",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "limits",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "application",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "attendance",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        },
+        {
+          "field": "contact",
+          "result": "reviewed",
+          "source_ids": [
+            "kyoto-dropoff"
+          ]
+        }
+      ]
+    }
+  ],
+  "confirmed_focus": [
+    "通常まごころは市内全域・5種・玄関先収集。屋内不可は公式明示。",
+    "現行添付PDFが2023年付であることと現在ページのリンクを維持。not_statedをなし/不可にしない。",
+    "通常大型400～2400円、400円券・指定場所当日8時まで・ネット初回電話確認を原文照合。",
+    "許可業者は市公式の収集運搬依頼案内で、福祉室内搬出支援と断定しない。",
+    "持込は南部の2/2市民再開と当面停止の古い文が併存。現況と品目確認の保留は妥当。",
+    "持込料金100kg以下1500円・超過10kgごと200円、本人搬入/荷下ろし/身分証・複数名来場可を確認。"
+  ],
+  "unresolved": [
+    "通常制度の2023年添付資格資料の現行適用は窓口未確認",
+    "実験期間とサービス提供終了予定の表記差・実際の終了日/転居後扱いは窓口未確認",
+    "南部現行の品目受入制限・家庭搬入の実状は予約窓口未確認",
+    "市の専用屋内搬出支援は今回未発見。許可業者の屋内対応/料金・代理条件も未記載",
+    "サービス費用・通常収集時立会い・家族等の代理搬入は未記載/要確認を保持"
+  ],
+  "limitations": [
+    "AI限定レビュー。人手原文全件確認・正解率実証・公開承認ではない",
+    "保存8原典の今回京都5経路50項目のみ。既存19地域・全国制度の再調査なし",
+    "取得時刻不明はnullのまま。日付だけを確定し、時刻を補造していない"
+  ],
+  "recheck": {
+    "input_sha256": "d7f4213fff39966ea9f06528bd782ff703483c21be5f630efd18b4c386f38e73",
+    "review_locators_sha256": "447e40bce7b73fd5abf48ca4d5f535b30e4f6e3a4e7afbad2143c9bd02879924",
+    "metadata_sha256": "22bd4cf06f53d4675afd2191e6fdcb1a83f7030d4b4dae5c39c110ace1d36c94",
+    "method": "一括修正したfields/質問/notesとsource_idsを既読原典の該当段落へ1回差分再照合。途中の頻度脱落/出典不足は最終固定前に親へ通知、最終版で保持を確認。",
+    "resolved_finding_ids": [
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "K06"
+    ],
+    "additional_required_findings": [],
+    "source_snapshots_unchanged": true,
+    "note": "通常はサービス利用OR＋ホームヘルプAND＋属性ORの共通AND、実験は14学区・サービス利用緩和、転居終了、実験/提供期間の区別と質問を保持。通常原典の適用・南部現況・終了日等は要確認のまま。eligibility.exception全文を含む表示/相談メモの検証は親の実装検証範囲。"
+  }
+}

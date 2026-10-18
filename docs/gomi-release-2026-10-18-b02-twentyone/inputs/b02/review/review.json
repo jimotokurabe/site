@@ -1,0 +1,180 @@
+{
+  "schema_version": "limited-ai-review-summary-0.1",
+  "reviewed_at": "2026-10-18T06:22:45.478039+00:00",
+  "reviewer": "independent Codex AI agent b02_review",
+  "human_reviewed": false,
+  "publication_approval": false,
+  "status": "passed_with_unresolved_questions",
+  "scope": {
+    "new_cities": 2,
+    "services": 9,
+    "fields": 90,
+    "saved_official_documents": 14,
+    "directions": [
+      "候補値→保存原典",
+      "保存原典→候補の条件・例外・重要支援漏れ"
+    ],
+    "existing_19_cities_reread": false,
+    "nationwide_search": false,
+    "official_refetch": false
+  },
+  "cities": [
+    {
+      "id": "hiroshima:hiroshima",
+      "status": "passed_after_correction",
+      "first_input_sha256": "a3cd29b55b95868d061aa43a90b431f245c6b34c8ee9abb59fb55f78dc9567c5",
+      "accepted_input_sha256": "cd4c9a26912434eb2cf75166b5dd234dff3c1b266bf4c7441a5860960d60f877",
+      "review_file": "review-hiroshima.json",
+      "review_file_sha256": "b39d0547c56f9e822b2fcf5e738f278eeaf65320a2fe01785249114ff5ca0774",
+      "resolved_finding_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "unresolved": [
+        "制度窓口への問合せ未実施",
+        "日常収集費用、立会い、通常収集室内搬出の未記載事項は未解消",
+        "家族代理搬入と本人搬入時の家族運転の可否は未確認",
+        "あんしんサポートその他対象例外の具体条件は未確認"
+      ],
+      "source_snapshots": [
+        {
+          "id": "hiroshima-fureai",
+          "binary_file": "official/hiroshima-fureai.html",
+          "binary_sha256": "5fed20cc1abc6a5336da6091e62459ea1ae3f3b9512ab800eebd067e1d1b3111",
+          "text_file": "official/hiroshima-fureai.txt",
+          "text_sha256": "baad3fbbbc64ce4c7609dfae291cb4f5ee9c93e4f00fd58c41d9c24995556111"
+        },
+        {
+          "id": "hiroshima-bulky-support",
+          "binary_file": "official/hiroshima-bulky-support.html",
+          "binary_sha256": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+          "text_file": "official/hiroshima-bulky-support.txt",
+          "text_sha256": "8435186d29cb917949b82e076ea14967a36839c967b2be1d911c16c496ca076a"
+        },
+        {
+          "id": "hiroshima-regular",
+          "binary_file": "official/hiroshima-regular.html",
+          "binary_sha256": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+          "text_file": "official/hiroshima-regular.txt",
+          "text_sha256": "1b81ecc9cd69a9c6e8bf8b4f9df64e69da0ec90f3e92954cbb19fe7fd60bfcc2"
+        },
+        {
+          "id": "hiroshima-self-dropoff",
+          "binary_file": "official/hiroshima-self-dropoff.html",
+          "binary_sha256": "76a474115f90d64f8c7abdc0ba12a1ed453f799c328605734d8df09dfa364879",
+          "text_file": "official/hiroshima-self-dropoff.txt",
+          "text_sha256": "c6254bd87c555314129d4bd6e44726bec57256bafb60180b8cdab1f034f6ee5f"
+        },
+        {
+          "id": "hiroshima-fees",
+          "binary_file": "official/hiroshima-fees.pdf",
+          "binary_sha256": "addb1639218298ca020112dfbfce30f0f50ba570a03cdbaae8990b2667f4af9b",
+          "text_file": "official/hiroshima-fees.txt",
+          "text_sha256": "46daffec59deae1928cbeec60383d6c1e92074566eefad91fe6314a63450662f"
+        },
+        {
+          "id": "hiroshima-supporter-record",
+          "binary_file": "official/hiroshima-supporter-record.pdf",
+          "binary_sha256": "5c2d75519e20c181fa12b092919d36bccf3bc2fd523f61160397838386c64549",
+          "text_file": "official/hiroshima-supporter-record.txt",
+          "text_sha256": "4562b24e72df6aa390e53842ce1ab5b6787c4b566911625f8911006becd7bd01"
+        }
+      ]
+    },
+    {
+      "id": "kyoto:kyoto",
+      "status": "passed_after_correction",
+      "first_input_sha256": "f79e9bd13ec7478b978dc99e8ab76cfaa1da979655224536b436694686d5077e",
+      "accepted_input_sha256": "d7f4213fff39966ea9f06528bd782ff703483c21be5f630efd18b4c386f38e73",
+      "review_file": "review-kyoto.json",
+      "review_file_sha256": "a62b4658c503e28c1c08e1be93cb0a147476fc122138407c386ad662e859becd",
+      "resolved_finding_ids": [
+        "K01",
+        "K02",
+        "K03",
+        "K04",
+        "K05",
+        "K06"
+      ],
+      "unresolved": [
+        "通常制度の2023年添付資格資料の現行適用は窓口未確認",
+        "実験期間とサービス提供終了予定の表記差・実際の終了日/転居後扱いは窓口未確認",
+        "南部現行の品目受入制限・家庭搬入の実状は予約窓口未確認",
+        "市の専用屋内搬出支援は今回未発見。許可業者の屋内対応/料金・代理条件も未記載",
+        "サービス費用・通常収集時立会い・家族等の代理搬入は未記載/要確認を保持"
+      ],
+      "source_snapshots": [
+        {
+          "id": "kyoto-daily",
+          "binary_file": "official/kyoto-daily.html.source",
+          "binary_sha256": "e54e0db3f74d7a89e90ea206580b2dcd2fe9c5040dea43b3da62661aec21c294",
+          "text_file": "official/kyoto-daily.txt",
+          "text_sha256": "a8ecc36f60d4d00a1724372f20e3bd5196f5da6bb802025b80889f8591a98411"
+        },
+        {
+          "id": "kyoto-pilot",
+          "binary_file": "official/kyoto-pilot.html.source",
+          "binary_sha256": "e77f3a5b502c5c2bddc3a0a5c0d2c6afa8229b752096d7946c8ce2d0aab7f3fd",
+          "text_file": "official/kyoto-pilot.txt",
+          "text_sha256": "4400b8790cfc64a3e9b0018a73300c12222e8e600958e21d994d11f44d9a798c"
+        },
+        {
+          "id": "kyoto-pilot-background",
+          "binary_file": "official/kyoto-pilot-background.html.source",
+          "binary_sha256": "bafbef95cee6bbf87c35b8ebb76390d88b5fbefe0773ffc7d8b0028bbc7d06c7",
+          "text_file": "official/kyoto-pilot-background.txt",
+          "text_sha256": "2e0f41eb1f3f207d62e7c100bfe0b70d8f6090513838d2f0dac4b760b91de707"
+        },
+        {
+          "id": "kyoto-daily-criteria",
+          "binary_file": "official/kyoto-daily-criteria.pdf",
+          "binary_sha256": "bdd38e5f779873439ba80ef448d74463d4e15259eb8f080c48730d6563af05de",
+          "text_file": "official/kyoto-daily-criteria.txt",
+          "text_sha256": "fb4565d9b6c2e3078828bafa2eb8d67c1c24c3ac31455fe629ab195cf25c837f"
+        },
+        {
+          "id": "kyoto-daily-faq",
+          "binary_file": "official/kyoto-daily-faq.pdf",
+          "binary_sha256": "41c2300013a5617d5f1a34c05da41c469a66fb9794e92aa89b4dbb5340211d15",
+          "text_file": "official/kyoto-daily-faq.txt",
+          "text_sha256": "d1c422cb3a6db9de54f4bc29972ab0dac6d1f96fb4154cfbb089bbf4eae3066c"
+        },
+        {
+          "id": "kyoto-bulky",
+          "binary_file": "official/kyoto-bulky.html.source",
+          "binary_sha256": "f255b34124c5896665f3be0d749eb08565b4e5eb12ca796e13316f017a6d23ed",
+          "text_file": "official/kyoto-bulky.txt",
+          "text_sha256": "d63ebf6303034a40e841c3ad69a2b1c05490574f56a44dafb9748322d9ae374a"
+        },
+        {
+          "id": "kyoto-dropoff",
+          "binary_file": "official/kyoto-dropoff.html.source",
+          "binary_sha256": "819708145c0fdd79aeca5b30c78f91ce7ad254464f8d3aedf094d140d3be186a",
+          "text_file": "official/kyoto-dropoff.txt",
+          "text_sha256": "61ec73a21e0c69454c6f6581ca2ab3778bb353ec09a31a59e53f8abcea7759ac"
+        },
+        {
+          "id": "kyoto-many-waste",
+          "binary_file": "official/kyoto-many-waste.html.source",
+          "binary_sha256": "683b8b120f0a7fb26903c885febfd237401848629985c1ac31eda6c773c20d07",
+          "text_file": "official/kyoto-many-waste.txt",
+          "text_sha256": "3e3b2dd4d7b72ebd865f6d5f35f9e498feb46bb46655703fe56359b59320df3b"
+        }
+      ]
+    }
+  ],
+  "review_passes": {
+    "initial": 1,
+    "bounded_difference_recheck": 1,
+    "note": "新しい全国調査/原典再取得/既存19地域の再読なし。固定前の修正漏れと出典IDの最小補修は親へ明示して最終版で確認。"
+  },
+  "limitations": [
+    "AI確認であり人手原文全件確認ではない",
+    "保存原典の限定範囲の整合検査で、制度の正確性や全国網羅性の実証ではない",
+    "不明点は質問として維持。not_statedは制度なし/不可ではない",
+    "表示/相談メモへの条件・例外・出典・日付保持は親の実装検証範囲",
+    "公開・commit・push・外部書込みを承認していない"
+  ]
+}

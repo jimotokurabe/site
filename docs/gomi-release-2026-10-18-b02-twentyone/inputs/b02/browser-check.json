@@ -1,0 +1,217 @@
+{
+  "services": [
+    {
+      "city": "hiroshima",
+      "route": "daily_support",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "familyCondition": true
+    },
+    {
+      "city": "hiroshima",
+      "route": "bulky_carry_support",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "familyCondition": true
+    },
+    {
+      "city": "hiroshima",
+      "route": "regular_bulky",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "familyCondition": true
+    },
+    {
+      "city": "hiroshima",
+      "route": "self_dropoff",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "familyCondition": true
+    },
+    {
+      "city": "kyoto",
+      "service": "route-kyoto-daily",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "pilotExpiry": true,
+      "pilotRelaxed": true
+    },
+    {
+      "city": "kyoto",
+      "service": "route-kyoto-daily-pilot",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "pilotExpiry": true,
+      "pilotRelaxed": true
+    },
+    {
+      "city": "kyoto",
+      "service": "route-kyoto-regular",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "pilotExpiry": true,
+      "pilotRelaxed": true
+    },
+    {
+      "city": "kyoto",
+      "service": "route-kyoto-carry",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "pilotExpiry": true,
+      "pilotRelaxed": true
+    },
+    {
+      "city": "kyoto",
+      "service": "route-kyoto-dropoff",
+      "copy": true,
+      "print": true,
+      "width": 390,
+      "scroll": 390,
+      "sourceDate": true,
+      "pilotExpiry": true,
+      "pilotRelaxed": true
+    }
+  ],
+  "layouts": [
+    {
+      "font": "18px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/kyoto-gomi-support/kyoto.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/kyoto-gomi-support/kyoto.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/kyoto-gomi-support/kyoto.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/kyoto-gomi-support/kyoto.html#self_dropoff",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/kyoto.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/kyoto.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/kyoto.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/kyoto.html#self_dropoff",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/hiroshima-gomi-support/hiroshima.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/hiroshima-gomi-support/hiroshima.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/hiroshima-gomi-support/hiroshima.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "18px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/hiroshima-gomi-support/hiroshima.html#self_dropoff",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "daily_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/hiroshima.html#daily_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "bulky_carry_support",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/hiroshima.html#bulky_carry_support",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "regular_bulky",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/hiroshima.html#regular_bulky",
+      "width": 320
+    },
+    {
+      "font": "22px",
+      "route": "self_dropoff",
+      "scroll": 320,
+      "url": "http://127.0.0.1:8849/qa/hiroshima.html#self_dropoff",
+      "width": 320
+    }
+  ],
+  "kyotoPilotExceptionPreserved": true,
+  "nativePrint": false,
+  "physicalPrint": false,
+  "scope": "4分類の切替、9制度別メモコピーと印刷DOM、320/390px、22px検査用fixture。OS全体clipboard未検証。"
+}

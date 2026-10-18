@@ -1,0 +1,75 @@
+[
+  {
+    "id": "hiroshima-fureai",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1003072/1036381/1031711.html",
+    "retrieved_at": "2026-10-18T06:14:44+00:00",
+    "sha256": "5fed20cc1abc6a5336da6091e62459ea1ae3f3b9512ab800eebd067e1d1b3111",
+    "status": 200,
+    "content_type": "text/html",
+    "title": "広島市では、家庭ごみの「ふれあい収集」を実施しています。令和8年4月から対象世帯を拡大しました。｜広島市公式ウェブサイト",
+    "source_updated": "2026-10-01",
+    "html_file": "official/hiroshima-fureai.html",
+    "text_file": "official/hiroshima-fureai.txt"
+  },
+  {
+    "id": "hiroshima-bulky-support",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1003072/1026095/1026097/1003177.html",
+    "retrieved_at": "2026-10-18T06:14:44+00:00",
+    "sha256": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+    "status": 200,
+    "content_type": "text/html",
+    "title": "大型ごみ排出支援（あんしんサポート）事業｜広島市公式ウェブサイト",
+    "source_updated": "2025-02-19",
+    "html_file": "official/hiroshima-bulky-support.html",
+    "text_file": "official/hiroshima-bulky-support.txt"
+  },
+  {
+    "id": "hiroshima-regular",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1003072/1026095/1026097/1003173.html",
+    "retrieved_at": "2026-10-18T06:14:44+00:00",
+    "sha256": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+    "status": 200,
+    "content_type": "text/html",
+    "title": "大型ごみ収集の予約・排出方法｜広島市公式ウェブサイト",
+    "source_updated": "2025-02-19",
+    "html_file": "official/hiroshima-regular.html",
+    "text_file": "official/hiroshima-regular.txt"
+  },
+  {
+    "id": "hiroshima-self-dropoff",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1021279/1003526.html",
+    "retrieved_at": "2026-10-18T06:14:44+00:00",
+    "sha256": "76a474115f90d64f8c7abdc0ba12a1ed453f799c328605734d8df09dfa364879",
+    "status": 200,
+    "content_type": "text/html",
+    "title": "大型ごみの自己搬入｜広島市公式ウェブサイト",
+    "source_updated": "2026-08-20",
+    "html_file": "official/hiroshima-self-dropoff.html",
+    "text_file": "official/hiroshima-self-dropoff.txt"
+  },
+  {
+    "id": "hiroshima-fees",
+    "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/008/434/202601.pdf",
+    "retrieved_at": "2026-10-18T06:14:44+00:00",
+    "sha256": "addb1639218298ca020112dfbfce30f0f50ba570a03cdbaae8990b2667f4af9b",
+    "status": 200,
+    "content_type": "application/pdf",
+    "title": "令和8（2026）ごみ出しハンドブック ひろしまエイト",
+    "source_updated": null,
+    "html_file": "official/hiroshima-fees.pdf",
+    "text_file": "official/hiroshima-fees.txt",
+    "publication_note": "令和8年3月 第20版と表紙に記載。日単位の更新日は記載なし。"
+  },
+  {
+    "id": "hiroshima-supporter-record",
+    "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/043/752/06.pdf",
+    "retrieved_at": "2026-10-18T06:14:44+00:00",
+    "sha256": "5c2d75519e20c181fa12b092919d36bccf3bc2fd523f61160397838386c64549",
+    "status": 200,
+    "content_type": "application/pdf",
+    "title": "令和7年度第1回広島市廃棄物減量化・資源化等推進審議会 議事要旨",
+    "source_updated": null,
+    "html_file": "official/hiroshima-supporter-record.pdf",
+    "text_file": "official/hiroshima-supporter-record.txt"
+  }
+]

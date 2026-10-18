@@ -5,6 +5,7 @@ from html import escape
 import json
 import hashlib
 import re
+from functools import lru_cache
 
 from bs4 import BeautifulSoup
 
@@ -230,8 +231,8 @@ def _city_main(city, sources, hub_rel, checked, human_reviewed):
 <pre class="gomi-print-memo" data-gomi-print-memo></pre>
 <p class="gomi-note">このメモは利用決定・予約ではありません。対象条件や受付状況は自治体の窓口へ確認してください。健康・介護・住所など、本人を特定できる情報は入力しないでください。</p></section>'''
     return f'''<div class="gomi-page gomi-city" data-city="{_e(city['id'])}" data-human-reviewed="{str(bool(human_reviewed)).lower()}">
-<div class="gomi-city-switch"><a href="{_e(hub_rel)}">ごみ出し支援の地域一覧へ</a></div>
-<nav class="gomi-breadcrumb" aria-label="現在のページ"><a href="../index.html">トップ</a><span aria-hidden="true">›</span><a href="{_e(hub_rel)}">ごみ出し支援</a><span aria-hidden="true">›</span><span aria-current="page">{_e(city['name'])}</span></nav>
+<a class="gomi-pref-back" href="index.html">← {_e(_pref_name(city["id"].split(":",1)[0]))}の市町村を選び直す</a>
+<nav class="gomi-breadcrumb" aria-label="現在のページ"><a href="../index.html">トップ</a><span aria-hidden="true">›</span><a href="{_e(hub_rel)}">ごみ出し支援</a><span aria-hidden="true">›</span><a href="index.html">{_e(_pref_name(city["id"].split(":",1)[0]))}</a><span aria-hidden="true">›</span><span aria-current="page">{_e(city['name'])}</span></nav>
 <p class="gomi-kicker">{_e(city['kana'])} ／ ごみ出しの相談先</p>
 <h1>{_e(city['name'])}で、ごみを運び出せないとき</h1>
 <p class="gomi-lead">ごみの種類と、運べる場所から選べます。</p>
@@ -249,25 +250,67 @@ def _city_main(city, sources, hub_rel, checked, human_reviewed):
 </div>'''
 
 
-def _index_main(data):
+@lru_cache(maxsize=1)
+def _prefecture_catalog():
+    # Use the same regional master and ordering as the transport entrance.
+    import build as b
+    names = {}
+    for path in (b.ROOT / 'data').glob('*-menkyo-henno.json'):
+        pref = json.loads(path.read_text())['pref']
+        names[pref['id']] = pref['name']
+    return [(region, [(pid, names[pid]) for pid in ids]) for region, ids in b.REGIONS]
+
+
+def _pref_name(pid):
+    return next(name for _, prefs in _prefecture_catalog() for key, name in prefs if key == pid)
+
+
+def _city_cards(cities, *, local=False):
     cards = []
-    for city in data.get('cities', []):
-        path = _slug(city)
-        kinds = {s.get('kind') for s in city.get('services', [])}
-        chip_labels = {'daily_support':'日常ごみを確認','bulky_carry_support':'室内搬出を確認','regular_bulky':'通常の粗大収集','self_dropoff':'自己搬入'}
-        chips = ''.join(f'<span>{_e(chip_labels.get(k,KIND_LABELS[k]))}</span>' for k in KIND_ORDER if k in kinds)
-        pref_name = city.get('pref_name') or city['id'].split(':',1)[0]
-        search_value = f'{pref_name} {city["name"]} {city["kana"]}'
-        cards.append(f'<li data-city-search="{_e(search_value)}"><a class="gomi-city-card" href="{_e(path)}"><strong>{_e(city["name"])}</strong><span>{_e(city["kana"])}</span><small class="gomi-pref-name">{_e(pref_name)}</small><div>{chips}</div><b>地域の案内を見る →</b></a></li>')
-    reviewed = bool(data.get('human_reviewed'))
-    checked = data.get('checked') or '確認日未記載'
-    return f'''<div class="gomi-page gomi-index" id="prefectures" data-gomi-hub>
-<p class="gomi-kicker">ごみを出す人にも、支える家族にも</p><h1>ごみを運び出せないときの地域の相談先</h1>
-<div class="gomi-research-note"><strong>{'調査用プレビュー' if data.get('not_for_publication', True) else '掲載情報'}</strong><span>{'内容は' + _e(checked) + '時点の調査データです。' if data.get('not_for_publication', True) else ''}{'人手確認前です。' if not reviewed else '人手確認済みです。'}利用条件・受付状況は公式窓口にお確かめください。</span></div>
-<section class="gomi-cities"><h2>掲載地域を選ぶ</h2><label class="gomi-hub-search">市町村名・かな・都道府県で探す<input type="search" data-gomi-city-search placeholder="例：神戸市、こうべ、兵庫県" autocomplete="off"></label><p data-gomi-city-count role="status">{len(cards)}地域を掲載しています。</p><ul data-gomi-city-list>{''.join(cards)}</ul><p class="gomi-no-results" data-gomi-no-results hidden>一致する地域がありません。自治体名や都道府県名を変えてください。</p></section>
-<p class="gomi-lead">袋ごみの日常支援と、家具などの粗大ごみの搬出支援を地域ごとに確認できます。地域を選ぶと、対象条件と相談先を見られます。</p>
-<section class="gomi-first"><h2>「日常ごみ」と「家具」は別に確認</h2><div class="gomi-split"><div><h3>日常の袋ごみ</h3><p>玄関先や敷地内で回収する支援があります。対象世帯や家族の協力条件を確認します。</p></div><div><h3>家具などの粗大ごみ</h3><p>通常収集は指定場所まで自分で運ぶ場合があります。室内搬出支援や自己搬入とは別の方法です。</p></div></div></section>
-<p class="gomi-note">この一覧にない地域も、支援制度がないとは限りません。自治体のごみ担当窓口へご相談ください。</p></div>'''
+    chip_labels = {'daily_support':'日常ごみ', 'bulky_carry_support':'室内搬出', 'regular_bulky':'粗大ごみ', 'self_dropoff':'持込'}
+    for city in cities:
+        pref = city['id'].split(':', 1)[0]
+        name = _pref_name(pref)
+        path = city['id'].split(':', 1)[1] + '.html' if local else _slug(city)
+        kinds = {service.get('kind') for service in city.get('services', [])}
+        chips = ''.join(f'<span>{_e(chip_labels[k])}</span>' for k in KIND_ORDER if k in kinds)
+        search = f'{name} {city["name"]} {city["kana"]}'
+        cards.append(f'<li data-city-search="{_e(search)}"><a class="gomi-city-card" href="{_e(path)}"><strong>{_e(city["name"])}</strong><span>{_e(city["kana"])}</span><small class="gomi-pref-name">{_e(name)}</small><div>{chips}</div><b>ごみの出し方を見る →</b></a></li>')
+    return ''.join(cards)
+
+
+def _search(cities):
+    return f'''<div class="gomi-city-finder" data-gomi-hub><label class="gomi-hub-search">市町村名・かなで探す<input type="search" data-gomi-city-search placeholder="例：神戸市、こうべ" autocomplete="off"></label><p data-gomi-city-count role="status">{len(cities)}地域を掲載しています。</p><ul data-gomi-city-list>{_city_cards(cities)}</ul><p class="gomi-no-results" data-gomi-no-results hidden>一致する掲載地域がありません。下の未掲載地域の案内もご確認ください。</p></div>'''
+
+
+def _index_main(data):
+    cities = data.get('cities', [])
+    counts = {}
+    for city in cities:
+        pid = city['id'].split(':', 1)[0]
+        counts[pid] = counts.get(pid, 0) + 1
+    blocks = []
+    groups = _prefecture_catalog()
+    for index, (region, prefs) in enumerate(groups):
+        tiles = []
+        for pid, name in prefs:
+            count = counts.get(pid, 0)
+            target = f'{pid}-gomi-support/index.html' if count else '#gomi-unlisted'
+            status = f'{count}地域を掲載' if count else '未掲載'
+            tiles.append(f'<li><a class="gomi-pref-tile{" is-unlisted" if not count else ""}" data-gomi-pref="{_e(pid)}" href="{target}"><strong>{_e(name)}</strong><span>{status}</span><b aria-hidden="true">›</b></a></li>')
+        blocks.append(f'<section class="gomi-region" id="gomi-region-{index}"><h3>{_e(region)}</h3><ul class="gomi-pref-grid">{"".join(tiles)}</ul></section>')
+    jumps = ''.join(f'<a href="#gomi-region-{i}">{_e(region)} ↓</a>' for i,(region,_) in enumerate(groups))
+    return f'''<div class="gomi-page gomi-index">
+<p class="gomi-kicker">ごみを出す人にも、支える家族にも</p><h1>ごみ出しの支援を<br>お住まいの地域から。</h1>
+<p class="gomi-lead">日常の袋ごみ、粗大ごみ、室内からの搬出。地域を選んで相談先を確認できます。</p>
+<section class="gomi-pref-picker" id="prefectures"><h2>都道府県から探す</h2><p class="gomi-note">都道府県 → 市町村の順に選べます。</p><nav class="gomi-region-jump" aria-label="地方へ移動">{jumps}</nav>{''.join(blocks)}</section>
+<details class="gomi-cities gomi-search-details"><summary>市町村名で探す</summary>{_search(cities)}</details>
+<aside class="gomi-unlisted" id="gomi-unlisted" tabindex="-1"><h2>お住まいの地域が未掲載のとき</h2><p>未掲載でも、支援制度がないという意味ではありません。</p><p>自治体のごみ担当窓口へ「ごみをどこまで運べるか」を伝えてご相談ください。</p><a href="#prefectures">都道府県の一覧へ戻る ↑</a></aside></div>'''
+
+
+def _prefecture_main(pid, cities):
+    name = _pref_name(pid)
+    return f'''<div class="gomi-page gomi-prefecture" id="prefectures" data-pref="{_e(pid)}"><nav class="gomi-breadcrumb" aria-label="現在のページ"><a href="../index.html">トップ</a><span aria-hidden="true">›</span><a href="../gomi-support.html">ごみ出し支援</a><span aria-hidden="true">›</span><span aria-current="page">{_e(name)}</span></nav><p class="gomi-kicker">ごみ出しの相談先</p><h1>{_e(name)}の市町村を選ぶ</h1><p class="gomi-lead">対象条件・費用・相談先を、地域ごとに確認できます。</p><section class="gomi-cities"><h2>掲載している市町村</h2><ul>{_city_cards(cities,local=True)}</ul></section><p class="gomi-note">一覧にない市町村も、支援制度がないとは限りません。自治体のごみ担当窓口へご相談ください。</p><a class="gomi-pref-back" href="../gomi-support.html#prefectures">← 都道府県を選び直す</a></div>'''
 
 
 def _finish(html, relative, title, description, draft, is_index=False, draft_note=''):
@@ -340,8 +383,8 @@ def _finish(html, relative, title, description, draft, is_index=False, draft_not
                 button['data-size'] = button.get('data-size-btn', 'normal')
         if not is_index:
             switch = soup.new_tag('div', attrs={'class':'city-switch'})
-            link = soup.new_tag('a', href=f'{base}gomi-support.html')
-            link.string = 'ごみ出し支援の地域一覧'
+            link = soup.new_tag('a', href='index.html')
+            link.string = '市町村を選び直す'
             switch.append(link)
             soup.main.insert(0, switch)
     # Share the national pages' same-tab font setting, not legacy localStorage.
@@ -370,7 +413,7 @@ def _finish(html, relative, title, description, draft, is_index=False, draft_not
 
 
 def generate_pages(data, draft=True):
-    """Return the five (hub + four city) HTML documents as relative-path keys."""
+    """Generate the national hub, covered prefectures and municipality details."""
     if not draft:
         import build as b
         from validate_gomi import validate
@@ -385,6 +428,13 @@ def generate_pages(data, draft=True):
                                 '日常のごみ出し支援と粗大ごみの搬出方法を自治体ごとに確認できます。',
                                 draft=draft, is_index=True,
                                 draft_note=f'ごみ出し支援の調査用プレビューです。調査基準日：{data.get("checked") or "未記載"}。')
+    for pid in dict.fromkeys(c['id'].split(':',1)[0] for c in data.get('cities', [])):
+        cities = [c for c in data['cities'] if c['id'].split(':',1)[0] == pid]
+        relative = f'{pid}-gomi-support/index.html'
+        name = _pref_name(pid)
+        pages[relative] = _finish(_prefecture_main(pid,cities), relative,
+            f'{name}のごみ出し支援を市町村から探す｜じもとくらべ',
+            f'{name}の掲載市町村から、日常ごみ・粗大ごみの支援と相談先を確認できます。',draft=draft,is_index=True)
     for city in data.get('cities', []):
         relative = _slug(city)
         pages[relative] = _finish(_city_main(city, sources, '../gomi-support.html', data.get('checked'), bool(data.get('human_reviewed'))), relative,

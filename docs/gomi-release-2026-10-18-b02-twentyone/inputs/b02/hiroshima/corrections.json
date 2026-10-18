@@ -1,0 +1,439 @@
+{
+  "recorded_on": "2026-10-18",
+  "reviewer": "independent Sol",
+  "base_file": "review-input-v1.json",
+  "base_sha256": "a3cd29b55b95868d061aa43a90b431f245c6b34c8ee9abb59fb55f78dc9567c5",
+  "updated_file": "new-city.json",
+  "updated_sha256": "cd4c9a26912434eb2cf75166b5dd234dff3c1b266bf4c7441a5860960d60f877",
+  "changes": [
+    {
+      "field": "hiroshima-carry.fields.eligibility",
+      "before": {
+        "value": {
+          "all": [
+            "大型ごみを自分で所定の場所まで持ち出せない",
+            {
+              "any": [
+                "ひとり暮らし",
+                {
+                  "all": [
+                    "同居人がいる場合、本人と同居人のうち下記1～5に該当しない人は1人以下"
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "本人・同居人の該当区分（いずれか）",
+              "any": [
+                "要支援または要介護認定",
+                "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれか",
+                "母子健康手帳交付の出産前または産後1年以内",
+                "65歳以上",
+                "義務教育終了まで"
+              ]
+            }
+          ]
+        },
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-bulky-support"
+        ]
+      },
+      "after": {
+        "value": {
+          "all": [
+            "大型ごみを自分で所定の場所まで持ち出せない",
+            {
+              "any": [
+                "ひとり暮らし",
+                {
+                  "all": [
+                    "本人及び同居人のうち、下記の区分に該当しない人は1人以下"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-bulky-support"
+        ]
+      },
+      "sources": [
+        "hiroshima-bulky-support"
+      ],
+      "original_text_lines": [
+        [
+          284,
+          303
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-carry.fields.family_help",
+      "before": {
+        "value": "単身者が対象。本人・同居人のうち対象区分に該当しない人が1人以下の世帯も対象となる場合がある。その他にも対象となる場合があるため受付センターへ相談。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-bulky-support"
+        ]
+      },
+      "after": {
+        "value": "同居人がいる場合、本人及び同居人のうち次のいずれかに該当しない方が1人以下なら対象となる場合がある：要支援・要介護認定、身体障害者手帳・療育手帳・精神障害者保健福祉手帳、母子健康手帳交付の出産前または産後1年以内、65歳以上、義務教育終了まで。単身は持出困難が条件であり、これらの資格区分は同居条件の人数判定に記載されている。このほかにも対象となる場合があり、受付センターへ相談。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-bulky-support"
+        ]
+      },
+      "sources": [
+        "hiroshima-bulky-support"
+      ],
+      "original_text_lines": [
+        [
+          284,
+          303
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-carry.fields.fees",
+      "before": {
+        "value": "住宅内からの持ち出し支援は無料。大型ごみの通常の収集運搬手数料は別途必要。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-bulky-support",
+          "hiroshima-fees"
+        ]
+      },
+      "after": {
+        "value": "住宅内からの持ち出し支援は無料。大型ごみの通常の収集運搬手数料は別途必要。通常の手数料は生活保護世帯、中国残留邦人等で支援給付を受けている世帯について免除制度あり。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-bulky-support",
+          "hiroshima-fees",
+          "hiroshima-regular"
+        ]
+      },
+      "sources": [
+        "hiroshima-bulky-support",
+        "hiroshima-fees",
+        "hiroshima-regular"
+      ],
+      "original_text_lines": [
+        [
+          285,
+          286
+        ],
+        [
+          321,
+          321
+        ]
+      ],
+      "source_mapping_note": "免除制度はhiroshima-regularの保存済み原文321行。料金ハンドブックはこの免除根拠ではない。"
+    },
+    {
+      "field": "hiroshima-regular.fields.limits",
+      "before": {
+        "value": "予約制。電話は収集日の3営業日前まで、ネット・ウェブチャット・FAXは5営業日前まで。1回10点以内、同じ品目は5点以内、合計手数料3,000円以内。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-regular"
+        ]
+      },
+      "after": {
+        "value": "予約制。電話は収集日の3営業日前まで、ネット・ウェブチャット・FAXは5営業日前まで。1回10点以内、同じ品目は5点以内、合計手数料3,000円以内（家電リサイクル法対象機器は1点あたり1,000円として数量算定）。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-regular"
+        ]
+      },
+      "sources": [
+        "hiroshima-regular"
+      ],
+      "original_text_lines": [
+        [
+          307,
+          309
+        ],
+        [
+          311,
+          317
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-regular.fields.fees",
+      "before": {
+        "value": "品目・大きさで手数料が異なり、予約時に受付センターが金額を案内。納付券は250円・1,000円の組合せ、またはネット・ウェブチャット予約時のキャッシュレス決済。1回10点以内（同一品目5点以内）、合計3,000円以内。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-regular",
+          "hiroshima-fees"
+        ]
+      },
+      "after": {
+        "value": "品目・大きさで手数料が異なり、予約時に受付センターが金額を案内。納付券は250円・1,000円の組合せ、またはネット・ウェブチャット予約時のキャッシュレス決済。生活保護世帯、中国残留邦人等で支援給付を受けている世帯は手数料免除制度あり（個別要件・手続きは要確認）。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-regular",
+          "hiroshima-fees"
+        ]
+      },
+      "sources": [
+        "hiroshima-regular",
+        "hiroshima-fees"
+      ],
+      "original_text_lines": [
+        [
+          307,
+          309
+        ],
+        [
+          321,
+          322
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-daily.fields.limits",
+      "before": {
+        "value": "週1回。大型ごみは対象外。収集時に不在または不要の場合は事前連絡。共同住宅・戸建てとも所定の関係者への事前共有を案内。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-fureai"
+        ]
+      },
+      "after": {
+        "value": "週1回。大型ごみは対象外。収集時に不在または不要の場合は事前連絡。希望者にはごみが出ていない場合に必要に応じて声かけ、届出済み緊急連絡先への電話連絡あり。共同住宅・戸建てとも所定の関係者への事前共有を案内。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-fureai"
+        ]
+      },
+      "sources": [
+        "hiroshima-fureai"
+      ],
+      "original_text_lines": [
+        [
+          293,
+          299
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-dropoff.fields.attendance",
+      "before": {
+        "value": "車両の運転者・申請者本人が持込。大型ごみは原則自分で荷下ろしし、必要なら係員へ申し出る。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-self-dropoff"
+        ]
+      },
+      "after": {
+        "value": "申請者本人による搬入であることや排出区域を確認するため、運転免許証の提示を求められる場合がある。荷下ろしは原則本人が行い、必要なら係員へ声をかける。本人自身が車両を運転する要件は記載なし。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-self-dropoff"
+        ]
+      },
+      "sources": [
+        "hiroshima-self-dropoff"
+      ],
+      "original_text_lines": [
+        [
+          335,
+          343
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-dropoff.fields.collection_location",
+      "before": {
+        "value": "本人が安佐南工場大型ごみ破砕処理施設へ車両で搬入。住所：安佐南区伴北四丁目3990番地。平日9時～16時。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-self-dropoff"
+        ]
+      },
+      "after": {
+        "value": "広島市域内の家庭から出る大型ごみを、安佐南工場大型ごみ破砕処理施設（安佐南区伴北四丁目3990番地）へ持込。平日9時～16時。本人が搬入する案内で、本人が運転する要件は記載なし。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-self-dropoff"
+        ]
+      },
+      "sources": [
+        "hiroshima-self-dropoff"
+      ],
+      "original_text_lines": [
+        [
+          285,
+          286
+        ],
+        [
+          337,
+          338
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-dropoff.fields.family_help",
+      "before": {
+        "value": "他人が排出したごみは搬入不可。本人が搬入申請者であることや市域内排出を確認するため、運転免許証提示を求められる場合がある。家族代理の扱いは特別事情として事前相談。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-self-dropoff"
+        ]
+      },
+      "after": {
+        "value": "他人が排出したごみは搬入不可（特別事情は事前相談）。申請者本人による搬入や排出区域を確認するため運転免許証提示を求められる場合がある。家族等が運転・搬入できるか、必要書類は事前確認。",
+        "state": "explicit",
+        "source_ids": [
+          "hiroshima-self-dropoff"
+        ]
+      },
+      "sources": [
+        "hiroshima-self-dropoff"
+      ],
+      "original_text_lines": [
+        [
+          285,
+          286
+        ],
+        [
+          337,
+          338
+        ]
+      ]
+    },
+    {
+      "field": "hiroshima-dropoff.questions_for_office",
+      "before": [
+        "品目と数量が受入対象か、特別事情で家族が搬入する場合に必要な書類・本人確認を施設へ事前相談してください。車両の種類・積載方法・荷下ろし補助も確認してください。"
+      ],
+      "after": [
+        "品目と数量が受入対象か、特別事情で家族等が搬入する場合に必要な書類・本人確認を施設へ事前相談してください。運転者の要件と荷下ろし補助も確認してください。"
+      ],
+      "sources": [
+        "hiroshima-self-dropoff"
+      ],
+      "original_text_lines": [
+        [
+          285,
+          286
+        ],
+        [
+          337,
+          343
+        ]
+      ]
+    },
+    {
+      "field": "cities[0].priority_notes[-1]",
+      "before": "自己搬入は無料だが原則本人が運転・搬入し荷下ろし。",
+      "after": "自己搬入は処分手数料不要。本人搬入と原則自己荷下ろしの案内がある。本人の運転義務は記載されていない。家族等が運転・搬入する場合の扱いは事前確認。",
+      "sources": [
+        "hiroshima-self-dropoff"
+      ],
+      "original_text_lines": [
+        [
+          285,
+          286
+        ],
+        [
+          337,
+          343
+        ]
+      ]
+    }
+  ],
+  "review_note": "原典は再取得せず保存済みの公式HTML/PDFと抽出テキストを参照。独立検査は別担当継続中のためai_draftを維持。",
+  "source_sha256": {
+    "hiroshima-fureai": "5fed20cc1abc6a5336da6091e62459ea1ae3f3b9512ab800eebd067e1d1b3111",
+    "hiroshima-bulky-support": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+    "hiroshima-regular": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+    "hiroshima-self-dropoff": "76a474115f90d64f8c7abdc0ba12a1ed453f799c328605734d8df09dfa364879",
+    "hiroshima-fees": "addb1639218298ca020112dfbfce30f0f50ba570a03cdbaae8990b2667f4af9b",
+    "hiroshima-supporter-record": "5c2d75519e20c181fa12b092919d36bccf3bc2fd523f61160397838386c64549"
+  },
+  "evidence": [
+    {
+      "source_id": "hiroshima-bulky-support",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-bulky-support.txt",
+      "lines": [
+        284,
+        303
+      ],
+      "text_sha256": "8435186d29cb917949b82e076ea14967a36839c967b2be1d911c16c496ca076a",
+      "original_sha256": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+      "excerpt": "284: ひとり暮らしの方\n285: が、大型ごみを自分で所定の場所まで持ち出せない場合、住宅内からの持ち出しを無料で支援します。\n286: ただし、大型ごみの収集運搬手数料は、通常どおり必要となります。\n287: 同居人がいる場合であっても、本人及び同居人のうち次の1～5に該当しない方が1人以下の場合は、対象になる場合があります。\n288: このほかにも、対象となる場合がありますので、詳しくは、大型ごみ受付センターへお問い合わせください。\n289: 介護保険の要支援・要介護認定\n290: を受けている方。\n291: 身体障害者手帳、療育手帳\n292: または\n293: 精神障害者保健福祉手帳\n294: の交付を受けている方。\n295: 母子健康手帳の交付を受けている\n296: 出産前\n297: の方及び\n298: 出産後1年以内\n299: の方。\n300: 65歳以上\n301: の方。\n302: 義務教育終了まで\n303: の方。"
+    },
+    {
+      "source_id": "hiroshima-bulky-support",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-bulky-support.txt",
+      "lines": [
+        285,
+        288
+      ],
+      "text_sha256": "8435186d29cb917949b82e076ea14967a36839c967b2be1d911c16c496ca076a",
+      "original_sha256": "e80a8f7fb12559a29046a1b5c31af5f387ea583d613990bef588a2a55f3c65ea",
+      "excerpt": "285: が、大型ごみを自分で所定の場所まで持ち出せない場合、住宅内からの持ち出しを無料で支援します。\n286: ただし、大型ごみの収集運搬手数料は、通常どおり必要となります。\n287: 同居人がいる場合であっても、本人及び同居人のうち次の1～5に該当しない方が1人以下の場合は、対象になる場合があります。\n288: このほかにも、対象となる場合がありますので、詳しくは、大型ごみ受付センターへお問い合わせください。"
+    },
+    {
+      "source_id": "hiroshima-regular",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-regular.txt",
+      "lines": [
+        307,
+        309
+      ],
+      "text_sha256": "1b81ecc9cd69a9c6e8bf8b4f9df64e69da0ec90f3e92954cbb19fe7fd60bfcc2",
+      "original_sha256": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+      "excerpt": "307: 一度に予約できる数量は、10点以内（同一品目については5点以内）です。\n308: また、10点以内の場合でも、大型ごみ収集運搬手数料の金額が合計3,000円以内となる数量しか予約できません（ただし、家電リサイクル法対象機器については、1点あたり1,000円として取り扱います。）。\n309: インターネット受付またはウェブチャット受付を利用する場合、入力中に戻るボタン等を押すと、今まで入力した内容が消えてしまうため、戻るボタン等は使用しないでください。"
+    },
+    {
+      "source_id": "hiroshima-regular",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-regular.txt",
+      "lines": [
+        321,
+        322
+      ],
+      "text_sha256": "1b81ecc9cd69a9c6e8bf8b4f9df64e69da0ec90f3e92954cbb19fe7fd60bfcc2",
+      "original_sha256": "b0da31b4a7093e160b930e2499dba4d779e535cde1a6fb08d626e410d6c3d32b",
+      "excerpt": "321: (注)生活保護や中国残留邦人等で支援給付を受けている世帯については大型ごみ収集運搬手数料の免除制度があります。詳しくは「大型ごみ収集運搬手数料の免除について」をご覧ください。\n322: 大型ごみ収集運搬手数料の免除"
+    },
+    {
+      "source_id": "hiroshima-fureai",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-fureai.txt",
+      "lines": [
+        293,
+        299
+      ],
+      "text_sha256": "baad3fbbbc64ce4c7609dfae291cb4f5ee9c93e4f00fd58c41d9c24995556111",
+      "original_sha256": "5fed20cc1abc6a5336da6091e62459ea1ae3f3b9512ab800eebd067e1d1b3111",
+      "excerpt": "293: 2　サービスの内容\n294: 対象となる方（世帯）のご自宅を、収集員が週1回、定期的に訪問し、大型ごみを除く家庭ごみの収集を行います。\n295: また、希望される方に対しては、ごみが出されていない場合に、必要に応じて声かけを行ったり、あらかじめ届出いただいた緊急連絡先への電話連絡を行ったりします。\n296: 3　申し込みの方法\n297: 「ふれあい収集利用申込書」に必要事項を記入いただき、お住まいの地区の環境事業所に持参または郵送により、提出してください。なお、\n298: ご親族や介護関係者、民生委員・児童委員などからの代理申し込みも可能\n299: です。"
+    },
+    {
+      "source_id": "hiroshima-self-dropoff",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-self-dropoff.txt",
+      "lines": [
+        285,
+        286
+      ],
+      "text_sha256": "c6254bd87c555314129d4bd6e44726bec57256bafb60180b8cdab1f034f6ee5f",
+      "original_sha256": "76a474115f90d64f8c7abdc0ba12a1ed453f799c328605734d8df09dfa364879",
+      "excerpt": "285: 1　広島市域内の家庭から出る大型ごみは、ご自分で安佐南工場大型ごみ破砕処理施設に搬入することができます。\n286: ※他人が排出したごみは搬入できません（特別な事情がある場合は、事前にご相談ください。）。"
+    },
+    {
+      "source_id": "hiroshima-self-dropoff",
+      "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B02/hiroshima/official/hiroshima-self-dropoff.txt",
+      "lines": [
+        337,
+        343
+      ],
+      "text_sha256": "c6254bd87c555314129d4bd6e44726bec57256bafb60180b8cdab1f034f6ee5f",
+      "original_sha256": "76a474115f90d64f8c7abdc0ba12a1ed453f799c328605734d8df09dfa364879",
+      "excerpt": "337: 申請者ご本人による搬入であることや、ごみが広島市域内で排出されたものであることを確認するため、\n338: 運転免許証の提示をお願いする場合があります。\n339: 工場内では、他の車両や落下物等に十分注意してください。\n340: 工場内での不注意による事故等につきましては、一切責任を負いません。\n341: 大型ごみの荷降ろしは、車両の傷付き等のトラブル防止のため、原則、ご自身で行っていただいています。手伝いが必要な場合には、近くの係員にお声がけください。\n342: （ただし、その際に発生した車両の傷付き等のトラブルにつきましては、一切の責任を負いません。）\n343: 荷降ろし中の怪我の防止のため、手袋や靴の着用をお願いいたします。"
+    }
+  ]
+}

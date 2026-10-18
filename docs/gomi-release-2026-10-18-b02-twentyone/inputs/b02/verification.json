@@ -1,0 +1,21 @@
+{
+  "schema_errors": [],
+  "publication_gate_rejected": true,
+  "baseline_cities_preserved": 19,
+  "baseline_sources_preserved": 118,
+  "fields_preserved": 850,
+  "service_sources_dates_preserved": 183,
+  "questions_preserved": 139,
+  "accepted_content_facts_unchanged": true,
+  "accepted_content_sources_unchanged": true,
+  "accepted_content_questions_unchanged": true,
+  "transport_pages_regenerated": 0,
+  "candidate_sha256": "c20d73181d6779d5c6d875f109724ecf45d62edfecda82fdced17235ec01e96a",
+  "new_sha256": "e748c1873a445c824346f5ed543b0ce2b21c7f6ca938cd9a76952f9619ae33f9",
+  "gomi_tests": 29,
+  "source_snapshots_verified": 14,
+  "browser_services": 9,
+  "browser_layout_checks": 16,
+  "browser_overflows": 0,
+  "production_unchanged": true
+}

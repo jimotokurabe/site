@@ -52,6 +52,16 @@ def build(data_path, out, base=ROOT):
     for relative, html in pages.items():
         target=out/relative;safe_write_target(out,target);target.parent.mkdir(parents=True,exist_ok=True)
         target.write_text(html)
+    # Replace the read-only base home link with a local copy before updating the
+    # waste entrance. Preserve every byte outside that one existing block.
+    from gomi_integration import home_entry
+    home=out/'index.html'
+    if home.is_symlink(): home.unlink()
+    safe_write_target(out,home)
+    raw=(base/'index.html').read_text()
+    old=str(BeautifulSoup(raw,'html.parser').select_one('#gomi-support-entry'))
+    if raw.count(old)!=1: raise ValueError('Home waste entry must occur exactly once')
+    home.write_text(raw.replace(old,home_entry(data)))
     errors=[]
     for relative,html in pages.items():
         soup=BeautifulSoup(html,'html.parser')
@@ -65,7 +75,7 @@ def build(data_path, out, base=ROOT):
             if not target.exists():errors.append(relative+': missing '+str(u.path))
             elif u.fragment and target.suffix=='.html' and not BeautifulSoup(target.read_text(),'html.parser').find(id=unquote(u.fragment)):
                 errors.append(relative+': missing fragment '+u.fragment)
-    manifest={'data':str(data_path),'data_sha256':hashlib.sha256(data_path.read_bytes()).hexdigest(),'generated_pages':len(pages),'transport_pages_regenerated':0,'existing_links_base':str(base),'draft':True,'errors':errors,'outputs':{p:hashlib.sha256((out/p).read_bytes()).hexdigest() for p in pages}}
+    manifest={'data':str(data_path),'data_sha256':hashlib.sha256(data_path.read_bytes()).hexdigest(),'generated_pages':len(pages),'transport_pages_regenerated':0,'existing_links_base':str(base),'draft':True,'errors':errors,'home_waste_entry_updated':True,'home_preview_sha256':hashlib.sha256(home.read_bytes()).hexdigest(),'outputs':{p:hashlib.sha256((out/p).read_bytes()).hexdigest() for p in pages}}
     safe_write_target(out,out/'generation-manifest.json')
     (out/'generation-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     if errors:raise ValueError(str(errors))

@@ -38,6 +38,18 @@ def city_path(city):
     return f'{pref}-gomi-support/{slug}.html'
 
 
+def home_entry(data):
+    """The waste entrance can be refreshed without rewriting other home content."""
+    return '''<section class="home-gomi-entry" id="gomi-support-entry" aria-labelledby="home-gomi-title">
+      <div><p class="eyebrow">日常の袋ごみも、家具などの粗大ごみも</p><h2 id="home-gomi-title">ごみを運び出せないとき</h2>
+      <p>都道府県 → 市町村の順に選び、回収場所・対象条件・相談先を確認できます。</p>
+      <p class="home-gomi-coverage">未掲載の地域も、支援がないとは限りません。</p>
+      <a class="home-gomi-main" href="gomi-support.html">都道府県から探す <span aria-hidden="true">→</span></a>
+</div>
+      <div class="home-gomi-distinction" aria-label="回収場所を分けて確認"><p>日常のごみ出し</p><strong>玄関先？ 集積所？</strong><hr><p>粗大ごみの搬出</p><strong>室内から頼める？</strong><span>支援ごとに条件が異なります</span></div>
+    </section>'''
+
+
 def update_home(soup, data):
     """Run after the existing colorful-home pass; leave regional search intact."""
     for old in soup.select('.home-topic-jump, #gomi-support-entry'):
@@ -73,16 +85,7 @@ def update_home(soup, data):
     support = soup.select_one('.home-support')
     support.h2.string = '移動のページで確認できること'
     support.select_one('p.muted').string = '返納後に使える割引と、返納を条件としない支援を分けて案内します。確認できた制度は、対象条件・費用・申請先に加えて、公式出典と確認日も示します。'
-    names = '・'.join(escape(c['name']) for c in data['cities'])
-    links = ''.join(f'<a href="{city_path(c)}">{escape(c["name"])}</a>' for c in data['cities'])
-    directory.insert_after(BeautifulSoup(f'''<section class="home-gomi-entry" id="gomi-support-entry" aria-labelledby="home-gomi-title">
-      <div><p class="eyebrow">日常の袋ごみも、家具などの粗大ごみも</p><h2 id="home-gomi-title">ごみを運び出せないとき</h2>
-      <p>玄関まで出せるか、室内から難しいか。回収場所と対象条件を分けて、相談先を確認できます。</p>
-      <p class="home-gomi-coverage">掲載地域：{names}。未掲載の地域は、支援がないという意味ではありません。</p>
-      <a class="home-gomi-main" href="gomi-support.html">ごみ出し支援を探す <span aria-hidden="true">→</span></a>
-      <nav class="home-gomi-cities" aria-label="ごみ出し支援の掲載地域">{links}</nav></div>
-      <div class="home-gomi-distinction" aria-label="回収場所を分けて確認"><p>日常のごみ出し</p><strong>玄関先？ 集積所？</strong><hr><p>粗大ごみの搬出</p><strong>室内から頼める？</strong><span>支援ごとに条件が異なります</span></div>
-    </section>''', 'html.parser'))
+    directory.insert_after(BeautifulSoup(home_entry(data), 'html.parser'))
     # Keep the home WebSite description aligned if this later becomes publishable.
     for script in soup.select('script[data-seo-markup]'):
         graph = json.loads(script.string)

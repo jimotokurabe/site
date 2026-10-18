@@ -15,6 +15,25 @@ class GomiValidationTests(unittest.TestCase):
     def test_current_research_schema_passes(self):
         self.assertEqual(validate(DATA, root=ROOT), [])
 
+    def test_standard_and_pilot_keep_separate_cards(self):
+        data = copy.deepcopy(DATA)
+        services = data["cities"][0]["services"]
+        original = services[0]
+        pilot = copy.deepcopy(original)
+        pilot["id"] += "-pilot"
+        pilot["name"] += "（期間限定）"
+        services.append(pilot)
+        self.assertTrue(any("duplicate" in e for e in validate(data, root=ROOT)))
+        original["variant"] = "standard"
+        pilot["variant"] = "pilot"
+        self.assertEqual(validate(data, root=ROOT), [])
+        from gomi_pages import generate_pages
+        html = generate_pages(data, draft=True)["hyogo-gomi-support/kobe.html"]
+        self.assertIn('id="route-' + original["id"] + '"', html)
+        self.assertIn('id="route-' + pilot["id"] + '"', html)
+        pilot["variant"] = "standard"
+        self.assertTrue(any("duplicate" in e for e in validate(data, root=ROOT)))
+
     def test_explicit_false_exclusion_is_valid(self):
         data = copy.deepcopy(DATA)
         field = data["cities"][0]["services"][0]["fields"]["indoor_carry"]
