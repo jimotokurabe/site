@@ -1,0 +1,411 @@
+[
+  {
+    "city": "hyogo:kawanishi",
+    "service": "kawanishi-daily",
+    "service_sha256": "669dead98392ed3e22dad4a252dc79a83cb419868fe66ecf1321323e47e1871e",
+    "sources": [
+      {
+        "id": "kawanishi-support",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/kawanishi-support.txt",
+        "lines": [
+          1,
+          39
+        ],
+        "html_sha256": "f3063afcdcf13df5516f4a0effeb3c66cbc6acb9b2b45e5daa8f59b6a35bf653",
+        "text_sha256": "dad24517de1a426340a737e19cf5614a440e98c734300f43adae3ae146f3aaa7",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:kawanishi",
+    "service": "kawanishi-regular",
+    "service_sha256": "facf14eccb1572af929cd1bc6fb640ccab2e40d7a331dff6c13295059dae2693",
+    "sources": [
+      {
+        "id": "kawanishi-bulky",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/kawanishi-bulky.txt",
+        "lines": [
+          1,
+          112
+        ],
+        "html_sha256": "e9b068326c74aebc1fe6de3a1bd156b6e5fb48bb95f4b0106277e618a16dd451",
+        "text_sha256": "d09ef3550b59408bf20ac7a6b76669aa47fcb1dcf47f8bfd3979772c715c8bad",
+        "field_names": [
+          "collection_location",
+          "indoor_carry",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "kawanishi-fees",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/kawanishi-fees.txt",
+        "lines": [
+          1,
+          59
+        ],
+        "html_sha256": "4804b37e92c266799c51ad499cd527f9863cc8c083b3104f66cde4a383b719f3",
+        "text_sha256": "06c5bf541cd6b74a090e56755a9a7062fe92abe1770d788b9d2e45d08e4cb6ef",
+        "field_names": [
+          "waste_scope",
+          "eligibility",
+          "fees"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:kawanishi",
+    "service": "kawanishi-carry",
+    "service_sha256": "bc68af3808654c46cff0b1eab507673e322a4d62cb8d9b8d5d2ade5d9c80b617",
+    "sources": [
+      {
+        "id": "kawanishi-other",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/kawanishi-other.txt",
+        "lines": [
+          1,
+          27
+        ],
+        "html_sha256": "8ee5d056edf0831ec47e44f00d573f5a2081fd689efb8f3c06e74f063c09322b",
+        "text_sha256": "e347dee1bf71d723c0efd23f50b21c28add992df598178ef0ef518593ec55702",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:kawanishi",
+    "service": "kawanishi-dropoff",
+    "service_sha256": "f70d735819ed5c6f1f977a5636ac0b37532669403b4b89b74cb6c5c8ddde6c24",
+    "sources": [
+      {
+        "id": "kawanishi-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/kawanishi-dropoff.txt",
+        "lines": [
+          1,
+          39
+        ],
+        "html_sha256": "fb792fe823dcb2751760bb795f09a1e45729b85870ea617d9c40e93874da0ec7",
+        "text_sha256": "986fecda8ce506b1c48ce82a4f169f1124b74d073cc727ca6e6d5ac7295c7715",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "fees",
+          "application",
+          "contact"
+        ]
+      },
+      {
+        "id": "kawanishi-kunisaki",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/kawanishi-kunisaki.txt",
+        "lines": [
+          1,
+          31
+        ],
+        "html_sha256": "d6e495cfd64a5e0f386cef7c2f8c2b22bf14ce3bf7679dd410c15225ce821f37",
+        "text_sha256": "4a2d778fb8dcc766eabfc1bc7143e7687b49dd22f144be3e01970b437105294d",
+        "field_names": [
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:himeji",
+    "service": "himeji-daily",
+    "service_sha256": "34ed5afe1b4bf8c0e6c51c6e95d9b1c923c77109d839abd21814c81c2acfcdc3",
+    "sources": [
+      {
+        "id": "himeji-fureai",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-fureai.txt",
+        "lines": [
+          339,
+          410
+        ],
+        "html_sha256": "731864297ed1f29d18c634c30c60a8811d081cb7e3c4bc85ee6d34e8d41d4748",
+        "text_sha256": "d672aacda0bbbaf56fe4fd82dfbbb694e6832548e629cbfa1f9b1d7ed0378418",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:himeji",
+    "service": "himeji-regular",
+    "service_sha256": "d6fa482617551e04515a3a841160c84ec22dc29c64b8f763c63cbbbdba74d056",
+    "sources": [
+      {
+        "id": "himeji-calendar",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-calendar.txt",
+        "lines": [
+          339,
+          384
+        ],
+        "html_sha256": "978d18acb5bc5f3467586b74b580effa2ba5d7f25216d009fe40608bd8bfe435",
+        "text_sha256": "6dd2681c9c956a2dc8cc8db26b9154ed84b0ad3c26f2281c5f76ea60c264c7f5",
+        "field_names": [
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "himeji-ieshima",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-ieshima.txt",
+        "lines": [
+          340,
+          360
+        ],
+        "html_sha256": "e0fe0a06f4bb157defc6e0f1d4580ce1fca502d1e9fd9984680c20a212bf09b9",
+        "text_sha256": "153d56fc6859f2ca22f089660400e75ae357cf1d18022d22d37798036427b1e0",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "limits"
+        ]
+      },
+      {
+        "id": "himeji-large",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-large.txt",
+        "lines": [
+          340,
+          354
+        ],
+        "html_sha256": "5c2b08ac65b3ab5289bc9329da911534a391826c7362d6ca525d54148d28a7be",
+        "text_sha256": "c36eb802086a557ef36db9277174014f2f99c8590bc20ed5eef4e31fbddea4c0",
+        "field_names": [
+          "waste_scope",
+          "indoor_carry",
+          "limits"
+        ]
+      },
+      {
+        "id": "himeji-metal",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-metal.txt",
+        "lines": [
+          340,
+          352
+        ],
+        "html_sha256": "3087fff0d7eed4905e31fc55c4d36bfd7266380d7b28ae4e343aa315676f8aca",
+        "text_sha256": "7f53b9454cfd1aa5341c68ac6e592bcc90ff5a7494926d8fc9dcf3a39d38168c",
+        "field_names": [
+          "waste_scope",
+          "indoor_carry",
+          "limits"
+        ]
+      },
+      {
+        "id": "himeji-separation",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-separation.txt",
+        "lines": [
+          340,
+          2649
+        ],
+        "html_sha256": "3c99bc39e3b8676effca70e7bac66789b334b0393473e4ddf21fe0e2dac38bf5",
+        "text_sha256": "169354ef56e1230dd76bc4d66c384d2200d448c21b9346e0f9afd3ad077270f1",
+        "field_names": [
+          "waste_scope"
+        ]
+      },
+      {
+        "id": "himeji-wood",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-wood.txt",
+        "lines": [
+          340,
+          351
+        ],
+        "html_sha256": "b4fcf2e58618c3abd17355e0f2d5a0f7462de91ad1cae3d292638f6fe56679b6",
+        "text_sha256": "be1e885b1378bfc3bed242b6c410abacec3a4cfaf5cad09039e42bbc56bf2a11",
+        "field_names": [
+          "waste_scope",
+          "indoor_carry",
+          "limits"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:himeji",
+    "service": "himeji-carry-unconfirmed",
+    "service_sha256": "2527589de90b812bfc64e07aebf92045a5fb23ddd0f2f201a06ba25df3fa3ecc",
+    "sources": [
+      {
+        "id": "himeji-calendar",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-calendar.txt",
+        "lines": [
+          339,
+          384
+        ],
+        "html_sha256": "978d18acb5bc5f3467586b74b580effa2ba5d7f25216d009fe40608bd8bfe435",
+        "text_sha256": "6dd2681c9c956a2dc8cc8db26b9154ed84b0ad3c26f2281c5f76ea60c264c7f5",
+        "field_names": [
+          "indoor_carry"
+        ]
+      },
+      {
+        "id": "himeji-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-dropoff.txt",
+        "lines": [
+          339,
+          454
+        ],
+        "html_sha256": "c143141f691a6d33ad4b1c706d59465b26b6f79b0d35b9633c72b2f09aa49cde",
+        "text_sha256": "4be48b1c4ac445b35a4b24cfe2e666be775deadf25313e44a1fd2aa671ce784f",
+        "field_names": [
+          "indoor_carry"
+        ]
+      },
+      {
+        "id": "himeji-fureai",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-fureai.txt",
+        "lines": [
+          339,
+          410
+        ],
+        "html_sha256": "731864297ed1f29d18c634c30c60a8811d081cb7e3c4bc85ee6d34e8d41d4748",
+        "text_sha256": "d672aacda0bbbaf56fe4fd82dfbbb694e6832548e629cbfa1f9b1d7ed0378418",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      },
+      {
+        "id": "himeji-ieshima",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-ieshima.txt",
+        "lines": [
+          340,
+          360
+        ],
+        "html_sha256": "e0fe0a06f4bb157defc6e0f1d4580ce1fca502d1e9fd9984680c20a212bf09b9",
+        "text_sha256": "153d56fc6859f2ca22f089660400e75ae357cf1d18022d22d37798036427b1e0",
+        "field_names": [
+          "indoor_carry"
+        ]
+      },
+      {
+        "id": "himeji-large",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-large.txt",
+        "lines": [
+          340,
+          354
+        ],
+        "html_sha256": "5c2b08ac65b3ab5289bc9329da911534a391826c7362d6ca525d54148d28a7be",
+        "text_sha256": "c36eb802086a557ef36db9277174014f2f99c8590bc20ed5eef4e31fbddea4c0",
+        "field_names": [
+          "indoor_carry"
+        ]
+      },
+      {
+        "id": "himeji-metal",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-metal.txt",
+        "lines": [
+          340,
+          352
+        ],
+        "html_sha256": "3087fff0d7eed4905e31fc55c4d36bfd7266380d7b28ae4e343aa315676f8aca",
+        "text_sha256": "7f53b9454cfd1aa5341c68ac6e592bcc90ff5a7494926d8fc9dcf3a39d38168c",
+        "field_names": [
+          "indoor_carry"
+        ]
+      },
+      {
+        "id": "himeji-wood",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-wood.txt",
+        "lines": [
+          340,
+          351
+        ],
+        "html_sha256": "b4fcf2e58618c3abd17355e0f2d5a0f7462de91ad1cae3d292638f6fe56679b6",
+        "text_sha256": "be1e885b1378bfc3bed242b6c410abacec3a4cfaf5cad09039e42bbc56bf2a11",
+        "field_names": [
+          "indoor_carry"
+        ]
+      }
+    ]
+  },
+  {
+    "city": "hyogo:himeji",
+    "service": "himeji-dropoff",
+    "service_sha256": "2b306a0b67ee6dad00b213f177c8ffa5143a75e4a2e8e79eee53717ea10224e0",
+    "sources": [
+      {
+        "id": "himeji-dropoff",
+        "path": "/Volumes/M2-WorkSpace/Projects/副業/じもとくらべ/調査/2026-10-18_ごみ支援拡大B01/official/himeji-dropoff.txt",
+        "lines": [
+          339,
+          454
+        ],
+        "html_sha256": "c143141f691a6d33ad4b1c706d59465b26b6f79b0d35b9633c72b2f09aa49cde",
+        "text_sha256": "4be48b1c4ac445b35a4b24cfe2e666be775deadf25313e44a1fd2aa671ce784f",
+        "field_names": [
+          "waste_scope",
+          "collection_location",
+          "indoor_carry",
+          "eligibility",
+          "family_help",
+          "fees",
+          "limits",
+          "application",
+          "attendance",
+          "contact"
+        ]
+      }
+    ]
+  }
+]

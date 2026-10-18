@@ -1,0 +1,1003 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="ごみ分別一覧表 | 姫路市"><meta property="og:type" content="website"><meta property="og:image" content="https://www.city.himeji.lg.jp/design_img/og_image.png"><meta property="og:url" content="https://www.city.himeji.lg.jp/kurashi/0000000097.html"><meta property="og:site_name" content="姫路市"><meta name="description" content="家庭ごみの分け方と出し方のページです。" ><title>ごみ分別一覧表 | 姫路市</title><script src="./js/jquery-3.6.0.min.js"></script><script src="./js/emergency_disp.js?20240613"></script> <script src="./js/onload_ud.js"></script><link rel="stylesheet" type="text/css" href="./css/common.css" media="screen,print"><link rel="stylesheet" type="text/css" href="./css/other.css" media="screen,print"><link rel="stylesheet" type="text/css" href="./css/molecule_view.css" media="screen,print"><link rel="stylesheet" type="text/css" href="./css/print.css" media="print"><link rel="icon" href="./design_img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="./css/img/apple-touch-icon.png"><script src="//typesquare.com/3/tsst/script/ja/typesquare.js?605d31d533504ec59b705699ac1e02d5"></script>
+
+<!-- KanaboWeb -->
+
+<script src="./js/kanaboweb_s.2.2.5.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/kanaboweb.css" media="screen,print">
+
+
+<script>
+  // かな棒くんWeb Sのホスト識別子を指定
+  KanaboWeb.host_id = "city.himeji";
+
+    
+    // ふりがな変換実行後のイベントをオーバーライド
+    KanaboWeb.onTranslated = function() {
+      try {
+        // javascriptをリロード	
+  
+        
+        
+		   // $(document).ready()のトリガー
+           jQuery(document).trigger('DOMContentLoaded');
+      } catch(e) {
+        alert("error2");
+	  }
+    }
+</script>
+<!-- KanaboWeb -->
+
+
+
+<script src="https://tsutaeru.cloud/assets/snippet/js/tsutaeru_mo.js"></script> 
+
+
+<script> 
+    __tsutaeruMO.init({
+    access_token: '86132302-e3f9-41dc-b05e-7c1cf6423aa4',   
+    toolbar: {
+      message: true,
+      fixed: false
+    }
+  });
+  
+  // 切り替えリンク初期化処理
+  function fncLoadTsutaeru() {
+    // やさしい日本語初期設定
+        cName = "__tsutaeruMO=";
+    tmpCookie = document.cookie + ";";
+    start = tmpCookie.indexOf(cName);
+    if (start != -1)
+    {
+        // もとにもどすリンクを表示する
+        $('.yas_on').hide();
+        $('.yas_off').show();
+    } else {
+        // やさしい日本語変換リンクを表示する
+        $('.yas_on').show();
+        $('.yas_off').hide();
+    }
+      }
+</script> 
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WK35WJQ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146254339-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146254339-1');
+</script>
+
+</head><body id="body" class="inbody inkiji"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK35WJQ"
+height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<img id="pagetop" class="anchor" tabindex="-1" src="./images/clearspacer.gif" alt="ページの先頭です" width="1" height="1"><div class="all"><div class="design"><!-- ▼▼▼▼▼ヘッダ▼▼▼▼▼ --><header class="main_header"><p class="skip"><a href="#HONBUN">共通メニューなどをスキップして本文へ</a></p><div class="head1"><div class="head_in"><p class="h1"><a href="/"><img class="h1_img_logo" src="/design_img/head_id.png" alt="姫路市役所"><span class="home">ホーム</span></a></p><div class="h_main"><div class="h_main_in"><div class="konzatu"><p><a href="/shisei/0000004426.html" class="h_main_button">スマート<span>窓口</span></a></p></div>           <div class="kin"><!-- ▼▼緊急情報ボタン▼▼ --><div class="ac_box_kin_wrap" id="kin_button"><p class="ac_box_kin"><button id="head_kin">緊急情報</button></p></div><!-- ▲▲緊急情報ボタン▲▲ --></div><!-- ▼▼緊急情報▼▼ --><div class="emergency ac_box_kin_wrap" id="kin_list_outer"><div class="emergency_lower ac_box_kin_in"><div class="emergency_lower_in" id="kin_list_inner"><!-- EMERGENCY-LIST --><ul class="kin_link"><li><a href="https://www.city.himeji.lg.jp/anzen/category/61-1-8-0-0-0-0-0-0-0.html">ハザードマップ</a></li><li><a href="https://www.city.himeji.lg.jp/anzen/0000008691.html">災害避難カード「命のパスポート」</a></li><li class="sp_none"><a href="https://www.city.himeji.lg.jp/anzen/0000004086.html">避難所</a></li><li class="sp_none"><a href="https://www.city.himeji.lg.jp/anzen/category/61-1-0-0-0-0-0-0-0-0.html">防災</a></li></ul><div class="close"><a href="#head_kin" class="ac_box_kin">閉じる</a></div></div></div></div><!-- ▲▲緊急情報▲▲ --><div class="language h_shien">
+  <div class="lang_btn"><a href="javascript:void(0);" lang="en" xml:lang="en" class="h_main_button" id="lang_btn01">Multilingual</a></div>
+  <div class="lang_detail">
+    <p class="close"><a href="#lang_btn01">閉じる</a></p>
+    <ul class="lang_list">
+      <!--IF_TRANS_HIDE:en--><li><a href="javascript:void(0)" onclick="execTrans('en');return false;" onkeypress="execTrans('en');return false;" lang="en" xml:lang="en">English</a></li><!--/IF_TRANS_HIDE:en-->
+      <!--IF_TRANS_HIDE:zh--><li><a href="javascript:void(0)" onclick="execTrans('zh');return false;" onkeypress="execTrans('zh');return false;" lang="zh" xml:lang="zh">简体中文</a></li><!--/IF_TRANS_HIDE:zh-->
+      <!--IF_TRANS_HIDE:zhb--><li><a href="javascript:void(0)" onclick="execTrans('zhb');return false;" onkeypress="execTrans('zhb');return false;" lang="zh-tw" xml:lang="zh-tw">繁體中文</a></li><!--/IF_TRANS_HIDE:zhb-->
+      <!--IF_TRANS_HIDE:ko--><li><a href="javascript:void(0)" onclick="execTrans('ko');return false;" onkeypress="execTrans('ko');return false;" lang="ko" xml:lang="ko">한국어</a></li><!--/IF_TRANS_HIDE:ko-->
+      <!--IF_TRANS_HIDE:fr--><li><a href="javascript:void(0)" onclick="execTrans('fr');return false;" onkeypress="execTrans('fr');return false;" lang="fr" xml:lang="fr">Français</a></li><!--/IF_TRANS_HIDE:fr-->
+      <!--IF_TRANS_HIDE:es--><li><a href="javascript:void(0)" onclick="execTrans('es');return false;" onkeypress="execTrans('es');return false;" lang="es" xml:lang="es">Español</a></li><!--/IF_TRANS_HIDE:es-->
+      <!--IF_TRANS_HIDE:pt--><li><a href="javascript:void(0)" onclick="execTrans('pt');return false;" onkeypress="execTrans('pt');return false;" lang="pt" xml:lang="pt">Português</a></li><!--/IF_TRANS_HIDE:pt-->
+      <!--IF_TRANS_HIDE:de--><li><a href="javascript:void(0)" onclick="execTrans('de');return false;" onkeypress="execTrans('de');return false;" lang="de" xml:lang="de">Deutsch</a></li><!--/IF_TRANS_HIDE:de-->
+      <!--IF_TRANS_HIDE:vi--><li><a href="javascript:void(0)" onclick="execTrans('vi');return false;" onkeypress="execTrans('vi');return false;" lang="vi" xml:lang="vi">Việt Nam</a></li><!--/IF_TRANS_HIDE:vi-->
+      <!--IF_TRANS_HIDE:uk--><li><a href="javascript:void(0)" onclick="execTrans('uk');return false;" onkeypress="execTrans('uk');return false;" lang="uk" xml:lang="uk">український</a></li><!--/IF_TRANS_HIDE:uk-->
+      <!--IF_TRANS_HIDE:ja<li><a href="javascript:void(0)" onclick="execTrans('ja');return false;" onkeypress="execTrans('ja');return false;" lang="ja" xml:lang="ja">日本語</a></li>/IF_TRANS_HIDE:ja-->
+    </ul>
+    <p class="close"><a href="#lang_btn01">閉じる</a></p>
+  </div>
+
+</div>
+
+  <div class="h_shien f_on_pc">
+    <p><a href="javascript:KanaboWeb.execCommand('on')" class="h_main_button">ふりがな</a></p>
+  </div>
+  <div class="h_shien f_off_pc">
+    <p><a href="javascript:KanaboWeb.execCommand('off')" class="h_main_button">はずす</a></p>
+  </div>
+
+
+  <div class="h_shien">
+    <p>
+      <a href="javascript:void(0);" class="h_main_button yas_on" onclick="$('.yas_on').hide();
+                                                                          $('.yas_off').show();
+                                                                          $('.tsutaeru-toolbar-message').show();
+                                                                          __tsutaeruMO.start();"
+                                                              onkeypress="$('.yas_on').hide();
+                                                                          $('.yas_off').show();
+                                                                          $('.tsutaeru-toolbar-message').show();
+                                                                          __tsutaeruMO.start();">やさしい日本語</a>
+      <a href="javascript:void(0);" class="h_main_button yas_off" onclick="$('.yas_on').show();
+                                                                           $('.yas_off').hide();
+                                                                           $('.tsutaeru-toolbar-message').hide();
+                                                                           __tsutaeruMO.reset();"
+                                                               onkeypress="$('.yas_on').show();
+                                                                           $('.yas_off').hide();
+                                                                           $('.tsutaeru-toolbar-message').hide();
+                                                                           __tsutaeruMO.reset();">もとにもどす</a>
+    </p>
+  </div>
+
+</div><p id="menu_button" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">メニュー</b></button></p><div id="drawer" class="drawer-nav" style="display: none;"><div class="drawer-menu"><div class="side_sitenavi"><p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p><div class="h_top"><ul><li><a href="/sitemap.html">サイトマップ</a></li><li><div class="language">
+  <div class="lang_btn"><a href="javascript:void(0);" lang="en" xml:lang="en" id="lang_btn02">Multilingual</a></div>
+  <div class="lang_detail">
+    <p class="close"><a href="#lang_btn02">閉じる</a></p>
+    <ul>
+      <!--IF_TRANS_HIDE:en--><li><a href="javascript:void(0)" onclick="execTrans('en');return false;" onkeypress="execTrans('en');return false;" lang="en" xml:lang="en">English</a></li><!--/IF_TRANS_HIDE:en-->
+      <!--IF_TRANS_HIDE:zh--><li><a href="javascript:void(0)" onclick="execTrans('zh');return false;" onkeypress="execTrans('zh');return false;" lang="zh" xml:lang="zh">简体中文</a></li><!--/IF_TRANS_HIDE:zh-->
+      <!--IF_TRANS_HIDE:zhb--><li><a href="javascript:void(0)" onclick="execTrans('zhb');return false;" onkeypress="execTrans('zhb');return false;" lang="zh-tw" xml:lang="zh-tw">繁體中文</a></li><!--/IF_TRANS_HIDE:zhb-->
+      <!--IF_TRANS_HIDE:ko--><li><a href="javascript:void(0)" onclick="execTrans('ko');return false;" onkeypress="execTrans('ko');return false;" lang="ko" xml:lang="ko">한국어</a></li><!--/IF_TRANS_HIDE:ko-->
+      <!--IF_TRANS_HIDE:fr--><li><a href="javascript:void(0)" onclick="execTrans('fr');return false;" onkeypress="execTrans('fr');return false;" lang="fr" xml:lang="fr">Français</a></li><!--/IF_TRANS_HIDE:fr-->
+      <!--IF_TRANS_HIDE:es--><li><a href="javascript:void(0)" onclick="execTrans('es');return false;" onkeypress="execTrans('es');return false;" lang="es" xml:lang="es">Español</a></li><!--/IF_TRANS_HIDE:es-->
+      <!--IF_TRANS_HIDE:pt--><li><a href="javascript:void(0)" onclick="execTrans('pt');return false;" onkeypress="execTrans('pt');return false;" lang="pt" xml:lang="pt">Português</a></li><!--/IF_TRANS_HIDE:pt-->
+      <!--IF_TRANS_HIDE:de--><li><a href="javascript:void(0)" onclick="execTrans('de');return false;" onkeypress="execTrans('de');return false;" lang="de" xml:lang="de">Deutsch</a></li><!--/IF_TRANS_HIDE:de-->
+      <!--IF_TRANS_HIDE:vi--><li><a href="javascript:void(0)" onclick="execTrans('vi');return false;" onkeypress="execTrans('vi');return false;" lang="vi" xml:lang="vi">Việt Nam</a></li><!--/IF_TRANS_HIDE:vi-->
+      <!--IF_TRANS_HIDE:uk--><li><a href="javascript:void(0)" onclick="execTrans('uk');return false;" onkeypress="execTrans('uk');return false;" lang="uk" xml:lang="uk">український</a></li><!--/IF_TRANS_HIDE:uk-->
+      <!--IF_TRANS_HIDE:ja<li><a href="javascript:void(0)" onclick="execTrans('ja');return false;" onkeypress="execTrans('ja');return false;" lang="ja" xml:lang="ja">日本語</a></li>/IF_TRANS_HIDE:ja-->
+    </ul>
+    <p class="close"><a href="#lang_btn02">閉じる</a></p>
+  </div>
+
+</div></li>
+
+  <li>
+    <a href="javascript:KanaboWeb.execCommand('on')" class="f_on">ふりがな</a>
+    <a href="javascript:KanaboWeb.execCommand('off')" class="f_off">はずす</a>
+  </li>
+
+
+  <li>
+    <a href="javascript:void(0);" class="yas_on" onclick="$('.yas_on').hide();
+                                                          $('.yas_off').show();
+                                                          $('.tsutaeru-toolbar-message').show();
+                                                          __tsutaeruMO.start();"
+                                              onkeypress="$('.yas_on').hide();
+                                                          $('.yas_off').show();
+                                                          $('.tsutaeru-toolbar-message').show();
+                                                          __tsutaeruMO.start();">やさしい日本語</a>
+    <a href="javascript:void(0);" class="yas_off" onclick="$('.yas_on').show();
+                                                           $('.yas_off').hide();
+                                                           $('.tsutaeru-toolbar-message').hide();
+                                                           __tsutaeruMO.reset();"
+                                               onkeypress="$('.yas_on').show();
+                                                           $('.yas_off').hide();
+                                                           $('.tsutaeru-toolbar-message').hide();
+                                                           __tsutaeruMO.reset();">もとにもどす</a>
+  </li>
+
+</ul><p><a href="https://webapp-jichitai-cdn.azureedge.net/himejicityfull/index.html">AIチャットボット</a></p></div><ul class="sidr_navi"><li class="d-close"><a href="/"><b>ホーム</b></a></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr01_navi_li01"><img src="/css/img/nav_img01.png" alt=""><b>くらし・手続き</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li01">閉じる</a></p><h2><a href="/kurashi/index.html">くらし・手続きトップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://lgpos.task-asp.net/cu/282014/ea/residents/portal/home" target="_blank" >オンライン申請<span class="window">別ウィンドウで開く</span></a>          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-9-0-0-0-0-0-0-0-0.html">マイナンバー</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-6-0-0-0-0-0-0-0-0.html">戸籍・住民票・証明</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-5-0-0-0-0-0-0-0-0.html">子育て・教育</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-10-0-0-0-0-0-0-0-0.html">ごみ・リサイクル・美化</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-7-0-0-0-0-0-0-0-0.html">健康・医療・福祉</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-1-0-0-0-0-0-0-0-0.html">健康保険・年金</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-13-0-0-0-0-0-0-0-0.html">税金</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-3-0-0-0-0-0-0-0-0.html">住まい・土地</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-2-0-0-0-0-0-0-0-0.html">水道・下水道</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-11-0-0-0-0-0-0-0-0.html">環境・自然・動物</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-8-0-0-0-0-0-0-0-0.html">各種相談・人権</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-4-0-0-0-0-0-0-0-0.html">市民活動・交流・男女共同参画</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li01">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr01_navi_li02"><img src="/css/img/nav_img02.png" alt=""><b>安全・安心</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li02">閉じる</a></p><h2><a href="/anzen/index.html">安全・安心トップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-5-0-0-0-0-0-0-0-0.html">いざというとき・緊急時</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-1-0-0-0-0-0-0-0-0.html">防災</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-2-0-0-0-0-0-0-0-0.html">消防・救急</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-3-0-0-0-0-0-0-0-0.html">防犯・交通安全</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-4-0-0-0-0-0-0-0-0.html">消費トラブル</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li02">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr01_navi_li03"><img src="/css/img/nav_img03.png" alt=""><b>観光・文化・スポーツ</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li03">閉じる</a></p><h2><a href="/kanko/index.html">観光・文化・スポーツトップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-7-0-0-0-0-0-0-0-0.html">姫路観光ガイド</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-5-0-0-0-0-0-0-0-0.html">姫路城・好古園</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-18-0-0-0-0-0-0-0-0.html">音楽のまち・ひめじ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-12-0-0-0-0-0-0-0-0.html">スポーツのまち・ひめじ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-3-0-0-0-0-0-0-0-0.html">文化・芸術</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-2-0-0-0-0-0-0-0-0.html">文化財・歴史</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-17-0-0-0-0-0-0-0-0.html">観光行政</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li03">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr01_navi_li04"><img src="/css/img/nav_img04.png" alt=""><b>産業・経済・ビジネス</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li04">閉じる</a></p><h2><a href="/sangyo/index.html">産業・経済・ビジネストップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-3-0-0-0-0-0-0-0-0.html">事業者のみなさんへ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-1-0-0-0-0-0-0-0-0.html">農林水産業</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-2-0-0-0-0-0-0-0-0.html">産業振興</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-4-0-0-0-0-0-0-0-0.html">雇用・勤労</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-16-0-0-0-0-0-0-0-0.html">開発・建築</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-12-0-0-0-0-0-0-0-0.html">都市計画・まちづくり</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-13-0-0-0-0-0-0-0-0.html">道路・河川・港湾・交通・公園</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li04">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr01_navi_li05"><img src="/css/img/nav_img05.png" alt=""><b>市政情報</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li05">閉じる</a></p><h2><a href="/shisei/index.html">市政情報トップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-7-0-0-0-0-0-0-0-0.html">市の概要・統計</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-6-0-0-0-0-0-0-0-0.html">市の組織</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-22-0-0-0-0-0-0-0-0.html">職員採用</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-8-0-0-0-0-0-0-0-0.html">主な公共施設</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-11-0-0-0-0-0-0-0-0.html">総合計画</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-2-0-0-0-0-0-0-0-0.html">地方創生</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-1-0-0-0-0-0-0-0-0.html">広報・広聴・情報公開</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-5-0-0-0-0-0-0-0-0.html">財政・行財政改革・政策</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-9-0-0-0-0-0-0-0-0.html">情報政策・IT</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-4-0-0-0-0-0-0-0-0.html">監査・検査</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-10-0-0-0-0-0-0-0-0.html">選挙</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-15-0-0-0-0-0-0-0-0.html">市議会</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr01_navi_li05">閉じる</a></p></div></li></ul><div class="sidr_sub"><ul><li><a href="https://www.city.himeji.lg.jp/castle/index.html"><img src="/cmsfiles/img_list/579.png" alt=""><span>姫路城</span></a></li><li><a href="https://www.city.himeji.lg.jp/himeji_brand/index.html"><img src="/cmsfiles/img_list/580.png" alt=""><span>移住・定住・ふるさと納税</span></a></li></ul></div><div class="ac_box02_wrap head_life"><div class="ac_box02"><a href="javascript:void(0);" id="head_life02">ライフシーンで探す<p class="close ac_display03">開く</p></a></div><div class="ac_box02_in"><ul><li><a href="https://www.city.himeji.lg.jp/life/category/3-1-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/549.png" alt=""><span>妊娠・出産</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-10-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/550.png" alt=""><span>子育て</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-2-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/551.png" alt=""><span>学校教育</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-4-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/552.png" alt=""><span>結婚・離婚</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-6-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/553.png" alt=""><span>引越し・住まい</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-3-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/554.png" alt=""><span>就職・退職</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-5-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/555.png" alt=""><span>高齢者・介護</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-8-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/556.png" alt=""><span>ご不幸</span></a></li></ul><p class="close"><a href="#head_life02" class="ac_box02"><span>閉じる</span></a></p></div></div><div class="sidr_sub"><ul><li><a href="https://www.city.himeji.lg.jp/soshiki_list.html">組織から探す</a></li><li><a href="https://www.city.himeji.lg.jp/event2/now.html">イベントから探す</a></li></ul></div><p class="d-close lastitem"><a href="javascript:void(0);" class="close"><span>閉じる</span></a></p></div> </div> </div><div class="head_search_box"><div class="src_box head_search"><form action="/search.html" id="cse-search-box" name="cse-search-box"><label for="search_input">情報を探す</label><input type="hidden" name="cx" value="a211aa56d88d24a58"><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" id="search_input"><button class="input_line" id="search_button" name="search_button" type="submit">検索</button>
+</form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div></div></div> </div> </div><div class="head2"><div class="head_in"><p class="h1"><a href="/"><img class="h1_img_logo" src="/design_img/head_id.png" alt="姫路市役所"><span class="home">ホーム</span></a></p><div class="h_main"><div class="h_main_in"><div class="konzatu"><p><a href="/shisei/0000004426.html" class="h_main_button">スマート<span>窓口</span></a></p></div><div class="kin"><!-- ▼▼緊急情報ボタン▼▼ --><div class="ac_box_kin_wrap"><p class="ac_box_kin"><a href="#head_kin">緊急情報</a></p></div><!-- ▲▲緊急情報ボタン▲▲ --></div><div class="language h_shien">
+  <div class="lang_btn"><a href="javascript:void(0);" lang="en" xml:lang="en" class="h_main_button" id="lang_btn03">Multilingual</a></div>
+  <div class="lang_detail">
+    <p class="close"><a href="#lang_btn03">閉じる</a></p>
+    <ul class="lang_list">
+      <!--IF_TRANS_HIDE:en--><li><a href="javascript:void(0)" onclick="execTrans('en');return false;" onkeypress="execTrans('en');return false;" lang="en" xml:lang="en">English</a></li><!--/IF_TRANS_HIDE:en-->
+      <!--IF_TRANS_HIDE:zh--><li><a href="javascript:void(0)" onclick="execTrans('zh');return false;" onkeypress="execTrans('zh');return false;" lang="zh" xml:lang="zh">简体中文</a></li><!--/IF_TRANS_HIDE:zh-->
+      <!--IF_TRANS_HIDE:zhb--><li><a href="javascript:void(0)" onclick="execTrans('zhb');return false;" onkeypress="execTrans('zhb');return false;" lang="zh-tw" xml:lang="zh-tw">繁體中文</a></li><!--/IF_TRANS_HIDE:zhb-->
+      <!--IF_TRANS_HIDE:ko--><li><a href="javascript:void(0)" onclick="execTrans('ko');return false;" onkeypress="execTrans('ko');return false;" lang="ko" xml:lang="ko">한국어</a></li><!--/IF_TRANS_HIDE:ko-->
+      <!--IF_TRANS_HIDE:fr--><li><a href="javascript:void(0)" onclick="execTrans('fr');return false;" onkeypress="execTrans('fr');return false;" lang="fr" xml:lang="fr">Français</a></li><!--/IF_TRANS_HIDE:fr-->
+      <!--IF_TRANS_HIDE:es--><li><a href="javascript:void(0)" onclick="execTrans('es');return false;" onkeypress="execTrans('es');return false;" lang="es" xml:lang="es">Español</a></li><!--/IF_TRANS_HIDE:es-->
+      <!--IF_TRANS_HIDE:pt--><li><a href="javascript:void(0)" onclick="execTrans('pt');return false;" onkeypress="execTrans('pt');return false;" lang="pt" xml:lang="pt">Português</a></li><!--/IF_TRANS_HIDE:pt-->
+      <!--IF_TRANS_HIDE:de--><li><a href="javascript:void(0)" onclick="execTrans('de');return false;" onkeypress="execTrans('de');return false;" lang="de" xml:lang="de">Deutsch</a></li><!--/IF_TRANS_HIDE:de-->
+      <!--IF_TRANS_HIDE:vi--><li><a href="javascript:void(0)" onclick="execTrans('vi');return false;" onkeypress="execTrans('vi');return false;" lang="vi" xml:lang="vi">Việt Nam</a></li><!--/IF_TRANS_HIDE:vi-->
+      <!--IF_TRANS_HIDE:uk--><li><a href="javascript:void(0)" onclick="execTrans('uk');return false;" onkeypress="execTrans('uk');return false;" lang="uk" xml:lang="uk">український</a></li><!--/IF_TRANS_HIDE:uk-->
+      <!--IF_TRANS_HIDE:ja<li><a href="javascript:void(0)" onclick="execTrans('ja');return false;" onkeypress="execTrans('ja');return false;" lang="ja" xml:lang="ja">日本語</a></li>/IF_TRANS_HIDE:ja-->
+    </ul>
+    <p class="close"><a href="#lang_btn03">閉じる</a></p>
+  </div>
+
+</div>
+
+  <div class="h_shien f_on_pc">
+    <p><a href="javascript:KanaboWeb.execCommand('on')" class="h_main_button">ふりがな</a></p>
+  </div>
+  <div class="h_shien f_off_pc">
+    <p><a href="javascript:KanaboWeb.execCommand('off')" class="h_main_button">はずす</a></p>
+  </div>
+
+
+  <div class="h_shien">
+    <p>
+      <a href="javascript:void(0);" class="h_main_button yas_on" onclick="$('.yas_on').hide();
+                                                                          $('.yas_off').show();
+                                                                          $('.tsutaeru-toolbar-message').show();
+                                                                          __tsutaeruMO.start();"
+                                                              onkeypress="$('.yas_on').hide();
+                                                                          $('.yas_off').show();
+                                                                          $('.tsutaeru-toolbar-message').show();
+                                                                          __tsutaeruMO.start();">やさしい日本語</a>
+      <a href="javascript:void(0);" class="h_main_button yas_off" onclick="$('.yas_on').show();
+                                                                           $('.yas_off').hide();
+                                                                           $('.tsutaeru-toolbar-message').hide();
+                                                                           __tsutaeruMO.reset();"
+                                                               onkeypress="$('.yas_on').show();
+                                                                           $('.yas_off').hide();
+                                                                           $('.tsutaeru-toolbar-message').hide();
+                                                                           __tsutaeruMO.reset();">もとにもどす</a>
+    </p>
+  </div>
+
+<div class="src_top_sp search_ac_button"><button><span class="search_text">検索</span></button></div></div><p id="menu_button02" class="d_btn"><a class="menu" href="#drawer_top"><span class="icon_ham"></span><b class="menu_text">メニュー</b></a></p><div id="drawer02" class="drawer-nav" style="display: none;"><a id="drawer_top" class="anchor" tabindex="-1"><img src="/images/clearspacer.gif" alt="" width="1" height="1"></a><div class="drawer-menu"><div class="side_sitenavi"><p id="menu_button02_2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p><div class="h_top"><ul><li><a href="/sitemap.html">サイトマップ</a></li><li><div class="language">
+  <div class="lang_btn"><a href="javascript:void(0);" lang="en" xml:lang="en" id="lang_btn04">Multilingual</a></div>
+  <div class="lang_detail">
+    <p class="close"><a href="#lang_btn04">閉じる</a></p>
+    <ul>
+      <!--IF_TRANS_HIDE:en--><li><a href="javascript:void(0)" onclick="execTrans('en');return false;" onkeypress="execTrans('en');return false;" lang="en" xml:lang="en">English</a></li><!--/IF_TRANS_HIDE:en-->
+      <!--IF_TRANS_HIDE:zh--><li><a href="javascript:void(0)" onclick="execTrans('zh');return false;" onkeypress="execTrans('zh');return false;" lang="zh" xml:lang="zh">简体中文</a></li><!--/IF_TRANS_HIDE:zh-->
+      <!--IF_TRANS_HIDE:zhb--><li><a href="javascript:void(0)" onclick="execTrans('zhb');return false;" onkeypress="execTrans('zhb');return false;" lang="zh-tw" xml:lang="zh-tw">繁體中文</a></li><!--/IF_TRANS_HIDE:zhb-->
+      <!--IF_TRANS_HIDE:ko--><li><a href="javascript:void(0)" onclick="execTrans('ko');return false;" onkeypress="execTrans('ko');return false;" lang="ko" xml:lang="ko">한국어</a></li><!--/IF_TRANS_HIDE:ko-->
+      <!--IF_TRANS_HIDE:fr--><li><a href="javascript:void(0)" onclick="execTrans('fr');return false;" onkeypress="execTrans('fr');return false;" lang="fr" xml:lang="fr">Français</a></li><!--/IF_TRANS_HIDE:fr-->
+      <!--IF_TRANS_HIDE:es--><li><a href="javascript:void(0)" onclick="execTrans('es');return false;" onkeypress="execTrans('es');return false;" lang="es" xml:lang="es">Español</a></li><!--/IF_TRANS_HIDE:es-->
+      <!--IF_TRANS_HIDE:pt--><li><a href="javascript:void(0)" onclick="execTrans('pt');return false;" onkeypress="execTrans('pt');return false;" lang="pt" xml:lang="pt">Português</a></li><!--/IF_TRANS_HIDE:pt-->
+      <!--IF_TRANS_HIDE:de--><li><a href="javascript:void(0)" onclick="execTrans('de');return false;" onkeypress="execTrans('de');return false;" lang="de" xml:lang="de">Deutsch</a></li><!--/IF_TRANS_HIDE:de-->
+      <!--IF_TRANS_HIDE:vi--><li><a href="javascript:void(0)" onclick="execTrans('vi');return false;" onkeypress="execTrans('vi');return false;" lang="vi" xml:lang="vi">Việt Nam</a></li><!--/IF_TRANS_HIDE:vi-->
+      <!--IF_TRANS_HIDE:uk--><li><a href="javascript:void(0)" onclick="execTrans('uk');return false;" onkeypress="execTrans('uk');return false;" lang="uk" xml:lang="uk">український</a></li><!--/IF_TRANS_HIDE:uk-->
+      <!--IF_TRANS_HIDE:ja<li><a href="javascript:void(0)" onclick="execTrans('ja');return false;" onkeypress="execTrans('ja');return false;" lang="ja" xml:lang="ja">日本語</a></li>/IF_TRANS_HIDE:ja-->
+    </ul>
+    <p class="close"><a href="#lang_btn04">閉じる</a></p>
+  </div>
+
+</div></li>
+
+  <li>
+    <a href="javascript:KanaboWeb.execCommand('on')" class="f_on">ふりがな</a>
+    <a href="javascript:KanaboWeb.execCommand('off')" class="f_off">はずす</a>
+  </li>
+
+
+  <li>
+    <a href="javascript:void(0);" class="yas_on" onclick="$('.yas_on').hide();
+                                                          $('.yas_off').show();
+                                                          $('.tsutaeru-toolbar-message').show();
+                                                          __tsutaeruMO.start();"
+                                              onkeypress="$('.yas_on').hide();
+                                                          $('.yas_off').show();
+                                                          $('.tsutaeru-toolbar-message').show();
+                                                          __tsutaeruMO.start();">やさしい日本語</a>
+    <a href="javascript:void(0);" class="yas_off" onclick="$('.yas_on').show();
+                                                           $('.yas_off').hide();
+                                                           $('.tsutaeru-toolbar-message').hide();
+                                                           __tsutaeruMO.reset();"
+                                               onkeypress="$('.yas_on').show();
+                                                           $('.yas_off').hide();
+                                                           $('.tsutaeru-toolbar-message').hide();
+                                                           __tsutaeruMO.reset();">もとにもどす</a>
+  </li>
+
+</ul><p><a href="https://webapp-jichitai-cdn.azureedge.net/himejicityfull/index.html">AIチャットボット</a></p></div><ul class="sidr_navi"><li class="d-close"><a href="/"><b>ホーム</b></a></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr02_navi_li01"><img src="/css/img/nav_img01.png" alt=""><b>くらし・手続き</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li01">閉じる</a></p><h2><a href="/kurashi/index.html">くらし・手続きトップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://lgpos.task-asp.net/cu/282014/ea/residents/portal/home" target="_blank" >オンライン申請<span class="window">別ウィンドウで開く</span></a>          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-9-0-0-0-0-0-0-0-0.html">マイナンバー</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-6-0-0-0-0-0-0-0-0.html">戸籍・住民票・証明</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-5-0-0-0-0-0-0-0-0.html">子育て・教育</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-10-0-0-0-0-0-0-0-0.html">ごみ・リサイクル・美化</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-7-0-0-0-0-0-0-0-0.html">健康・医療・福祉</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-1-0-0-0-0-0-0-0-0.html">健康保険・年金</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-13-0-0-0-0-0-0-0-0.html">税金</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-3-0-0-0-0-0-0-0-0.html">住まい・土地</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-2-0-0-0-0-0-0-0-0.html">水道・下水道</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-11-0-0-0-0-0-0-0-0.html">環境・自然・動物</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-8-0-0-0-0-0-0-0-0.html">各種相談・人権</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-4-0-0-0-0-0-0-0-0.html">市民活動・交流・男女共同参画</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li01">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr02_navi_li02"><img src="/css/img/nav_img02.png" alt=""><b>安全・安心</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li02">閉じる</a></p><h2><a href="/anzen/index.html">安全・安心トップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-5-0-0-0-0-0-0-0-0.html">いざというとき・緊急時</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-1-0-0-0-0-0-0-0-0.html">防災</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-2-0-0-0-0-0-0-0-0.html">消防・救急</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-3-0-0-0-0-0-0-0-0.html">防犯・交通安全</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-4-0-0-0-0-0-0-0-0.html">消費トラブル</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li02">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr02_navi_li03"><img src="/css/img/nav_img03.png" alt=""><b>観光・文化・スポーツ</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li03">閉じる</a></p><h2><a href="/kanko/index.html">観光・文化・スポーツトップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-7-0-0-0-0-0-0-0-0.html">姫路観光ガイド</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-5-0-0-0-0-0-0-0-0.html">姫路城・好古園</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-18-0-0-0-0-0-0-0-0.html">音楽のまち・ひめじ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-12-0-0-0-0-0-0-0-0.html">スポーツのまち・ひめじ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-3-0-0-0-0-0-0-0-0.html">文化・芸術</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-2-0-0-0-0-0-0-0-0.html">文化財・歴史</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-17-0-0-0-0-0-0-0-0.html">観光行政</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li03">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr02_navi_li04"><img src="/css/img/nav_img04.png" alt=""><b>産業・経済・ビジネス</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li04">閉じる</a></p><h2><a href="/sangyo/index.html">産業・経済・ビジネストップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-3-0-0-0-0-0-0-0-0.html">事業者のみなさんへ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-1-0-0-0-0-0-0-0-0.html">農林水産業</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-2-0-0-0-0-0-0-0-0.html">産業振興</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-4-0-0-0-0-0-0-0-0.html">雇用・勤労</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-16-0-0-0-0-0-0-0-0.html">開発・建築</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-12-0-0-0-0-0-0-0-0.html">都市計画・まちづくり</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-13-0-0-0-0-0-0-0-0.html">道路・河川・港湾・交通・公園</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li04">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="sidr02_navi_li05"><img src="/css/img/nav_img05.png" alt=""><b>市政情報</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li05">閉じる</a></p><h2><a href="/shisei/index.html">市政情報トップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-7-0-0-0-0-0-0-0-0.html">市の概要・統計</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-6-0-0-0-0-0-0-0-0.html">市の組織</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-22-0-0-0-0-0-0-0-0.html">職員採用</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-8-0-0-0-0-0-0-0-0.html">主な公共施設</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-11-0-0-0-0-0-0-0-0.html">総合計画</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-2-0-0-0-0-0-0-0-0.html">地方創生</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-1-0-0-0-0-0-0-0-0.html">広報・広聴・情報公開</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-5-0-0-0-0-0-0-0-0.html">財政・行財政改革・政策</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-9-0-0-0-0-0-0-0-0.html">情報政策・IT</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-4-0-0-0-0-0-0-0-0.html">監査・検査</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-10-0-0-0-0-0-0-0-0.html">選挙</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-15-0-0-0-0-0-0-0-0.html">市議会</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#sidr02_navi_li05">閉じる</a></p></div></li></ul><div class="sidr_sub"><ul><li><a href="https://www.city.himeji.lg.jp/castle/index.html"><img src="/cmsfiles/img_list/579.png" alt=""><span>姫路城</span></a></li><li><a href="https://www.city.himeji.lg.jp/himeji_brand/index.html"><img src="/cmsfiles/img_list/580.png" alt=""><span>移住・定住・ふるさと納税</span></a></li></ul></div><div class="ac_box02_wrap head_life"><div class="ac_box02"><a href="javascript:void(0);" id="head_life01">ライフシーンで探す<p class="close ac_display03">開く</p></a></div><div class="ac_box02_in"><ul><li><a href="https://www.city.himeji.lg.jp/life/category/3-1-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/549.png" alt=""><span>妊娠・出産</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-10-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/550.png" alt=""><span>子育て</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-2-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/551.png" alt=""><span>学校教育</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-4-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/552.png" alt=""><span>結婚・離婚</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-6-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/553.png" alt=""><span>引越し・住まい</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-3-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/554.png" alt=""><span>就職・退職</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-5-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/555.png" alt=""><span>高齢者・介護</span></a></li><li><a href="https://www.city.himeji.lg.jp/life/category/3-8-0-0-0-0-0-0-0-0.html"><img src="/cmsfiles/img_list/556.png" alt=""><span>ご不幸</span></a></li></ul><p class="close"><a href="#head_life01" class="ac_box02"><span>閉じる</span></a></p></div></div><div class="sidr_sub"><ul><li><a href="https://www.city.himeji.lg.jp/soshiki_list.html">組織から探す</a></li><li><a href="https://www.city.himeji.lg.jp/event2/now.html">イベントから探す</a></li></ul></div><p class="d-close lastitem"><a href="javascript:void(0);" class="close"><span>閉じる</span></a></p></div></div></div><!-- ▲格納メニュー▲ --><div class="head_search_box"><div class="src_box head_search"><form action="/search.html" id="cse-search-box02" name="cse-search-box02"><label for="search_input02">情報を探す</label><input type="hidden" name="cx" value="a211aa56d88d24a58"><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" id="search_input02"><button class="input_line" id="search_button02" name="search_button" type="submit">検索</button>
+</form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box02&amp;lang=ja"></script>
+</div></div></div> </div> </div><nav class="g_navi"><ul class="g_navi_in"><li class="ac_box_nav active"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="navi_li01"><img src="/css/img/nav_img01.png" alt=""><b>くらし・手続き</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#navi_li01">閉じる</a></p><h2><a href="/kurashi/index.html">くらし・手続きトップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://lgpos.task-asp.net/cu/282014/ea/residents/portal/home" target="_blank" >オンライン申請<span class="window">別ウィンドウで開く</span></a>          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-9-0-0-0-0-0-0-0-0.html">マイナンバー</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-6-0-0-0-0-0-0-0-0.html">戸籍・住民票・証明</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-5-0-0-0-0-0-0-0-0.html">子育て・教育</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-10-0-0-0-0-0-0-0-0.html">ごみ・リサイクル・美化</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-7-0-0-0-0-0-0-0-0.html">健康・医療・福祉</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-1-0-0-0-0-0-0-0-0.html">健康保険・年金</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-13-0-0-0-0-0-0-0-0.html">税金</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-3-0-0-0-0-0-0-0-0.html">住まい・土地</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-2-0-0-0-0-0-0-0-0.html">水道・下水道</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-11-0-0-0-0-0-0-0-0.html">環境・自然・動物</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-8-0-0-0-0-0-0-0-0.html">各種相談・人権</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kurashi/category/2-4-0-0-0-0-0-0-0-0.html">市民活動・交流・男女共同参画</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#navi_li01">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="navi_li02"><img src="/css/img/nav_img02.png" alt=""><b>安全・安心</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#navi_li02">閉じる</a></p><h2><a href="/anzen/index.html">安全・安心トップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-5-0-0-0-0-0-0-0-0.html">いざというとき・緊急時</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-1-0-0-0-0-0-0-0-0.html">防災</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-2-0-0-0-0-0-0-0-0.html">消防・救急</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-3-0-0-0-0-0-0-0-0.html">防犯・交通安全</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/anzen/category/61-4-0-0-0-0-0-0-0-0.html">消費トラブル</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#navi_li02">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="navi_li03"><img src="/css/img/nav_img03.png" alt=""><b>観光・文化<span>・スポーツ</span></b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#navi_li03">閉じる</a></p><h2><a href="/kanko/index.html">観光・文化・スポーツトップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-7-0-0-0-0-0-0-0-0.html">姫路観光ガイド</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-5-0-0-0-0-0-0-0-0.html">姫路城・好古園</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-18-0-0-0-0-0-0-0-0.html">音楽のまち・ひめじ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-12-0-0-0-0-0-0-0-0.html">スポーツのまち・ひめじ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-3-0-0-0-0-0-0-0-0.html">文化・芸術</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-2-0-0-0-0-0-0-0-0.html">文化財・歴史</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/kanko/category/1-17-0-0-0-0-0-0-0-0.html">観光行政</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#navi_li03">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="navi_li04"><img src="/css/img/nav_img04.png" alt=""><b>産業・経済<span>・ビジネス</span></b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#navi_li04">閉じる</a></p><h2><a href="/sangyo/index.html">産業・経済・ビジネストップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-3-0-0-0-0-0-0-0-0.html">事業者のみなさんへ</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-1-0-0-0-0-0-0-0-0.html">農林水産業</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-2-0-0-0-0-0-0-0-0.html">産業振興</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-4-0-0-0-0-0-0-0-0.html">雇用・勤労</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-16-0-0-0-0-0-0-0-0.html">開発・建築</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-12-0-0-0-0-0-0-0-0.html">都市計画・まちづくり</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/sangyo/category/4-13-0-0-0-0-0-0-0-0.html">道路・河川・港湾・交通・公園</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#navi_li04">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="javascript:void(0);" id="navi_li05"><img src="/css/img/nav_img05.png" alt=""><b>市政情報</b></a></div><div class="ac_box_nav_in"><p class="ac_box_nav_sub_close"><a href="#navi_li05">閉じる</a></p><h2><a href="/shisei/index.html">市政情報トップ</a></h2><ul class="sub_navi">        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-7-0-0-0-0-0-0-0-0.html">市の概要・統計</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-6-0-0-0-0-0-0-0-0.html">市の組織</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-22-0-0-0-0-0-0-0-0.html">職員採用</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-8-0-0-0-0-0-0-0-0.html">主な公共施設</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-11-0-0-0-0-0-0-0-0.html">総合計画</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-2-0-0-0-0-0-0-0-0.html">地方創生</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-1-0-0-0-0-0-0-0-0.html">広報・広聴・情報公開</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-5-0-0-0-0-0-0-0-0.html">財政・行財政改革・政策</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-9-0-0-0-0-0-0-0-0.html">情報政策・IT</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-4-0-0-0-0-0-0-0-0.html">監査・検査</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-10-0-0-0-0-0-0-0-0.html">選挙</a>
+          
+    </li>
+        <li>
+    
+                                <a href="https://www.city.himeji.lg.jp/shisei/category/5-15-0-0-0-0-0-0-0-0.html">市議会</a>
+          
+    </li>
+
+</ul><p class="ac_box_nav_sub_close"><a href="#navi_li05">閉じる</a></p></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="https://www.city.himeji.lg.jp/castle/index.html"><img src="/cmsfiles/img_list/579.png" alt=""><b>姫路城</b></a></div></li><li class="ac_box_nav"><div class="ac_box_nav_sub"><a href="https://www.city.himeji.lg.jp/himeji_brand/index.html"><img src="/cmsfiles/img_list/580.png" alt=""><b>移住・定住<span>ふるさと納税</span></b></a></div></li></ul></nav><!-- ▲▲グローバルメニュー▲▲ --></header><img id="HONBUN" class="anchor" tabindex="-1" src="/images/clearspacer.gif" alt="" width="1" height="1"><!-- ▲▲▲▲▲ヘッダ▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼メイン▼▼▼▼▼ --><div class="pankuzu"><div class="pankuzu_lower"><p class="pankuzu_tit">現在位置</p><ul><li><a href="https://www.city.himeji.lg.jp/">ホーム</a></li><li><a href="index.html" >くらし・手続き</a></li><li><a href="category/2-10-0-0-0-0-0-0-0-0.html" >ごみ・リサイクル・美化</a></li><li><a href="category/2-10-3-0-0-0-0-0-0-0.html" >家庭ごみ</a></li><li><a href="category/2-10-3-5-0-0-0-0-0-0.html" >家庭ごみの分け方と出し方</a></li></ul></div></div><div id="main_outline"><div class="main_naka_h1"><h1 >ごみ分別一覧表</h1></div><div class="main_naka"><div class="syosai"><ul class="syosai_hiduke" itemscope itemtype="http://schema.org/WebPage"><li><span>更新日：<time itemprop="datePublished" datetime="2024-08-19">2024年8月19日</time></span></li><li class="syosai_id"><span>ID:97</span></li></ul></div></div>
+                <div class="waku"><div class="waku_top"><div class="mol_page_contents"><div class="ac_box"><h2>ページ内目次</h2><p class="ac_display"><a href="javascript:void(0);">表示</a></p></div><div class="page_contents_lower"><ul><li><a href="#index-1-7">旧安富町域のごみ分別収集について</a><li><a href="#index-1-8">ごみ分別一覧表</a><ul><li><a href="#index-2-45">あ行</a><li><a href="#index-2-46">か行</a><li><a href="#index-2-54">さ行</a><li><a href="#index-2-53">た行</a><li><a href="#index-2-52">な行</a><li><a href="#index-2-51">は行</a><li><a href="#index-2-50">ま行</a><li><a href="#index-2-49">や行</a><li><a href="#index-2-48">ら行</a><li><a href="#index-2-47">わ行</a></ul></ul></div></div><div id="mol_contents" class="mol_contents">
+<div class="mol_textblock mol_textblock_alignleft block_index_1"><p>家庭ごみの分け方と出し方について、地域別に50音順に紹介しています。</p></div>
+<a id="index-1-7" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h2 class="block_index_7">旧安富町域のごみ分別収集について</h2>
+<div class="mol_textblock mol_textblock_alignleft block_index_2"><p>令和2年4月1日から、旧安富町域のごみ分別は、旧夢前町域・香寺町域と同じごみ分別区分となりました。<br ></p></div>
+<a id="index-1-8" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h2 class="block_index_8">ごみ分別一覧表</h2>
+<div class="mol_textblock mol_textblock_alignleft block_index_3"><p>ごみの出し方は地域や品目によって違います。<br >出し方を確認し、ルールを守って排出してください。</p></div>
+<a id="index-2-45" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_45">あ行</h3>
+<div class="mol_tableblock block_index_34"><table><caption>あ行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>あ</td><td>ICレコーダ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr>  <tr><td>あ</td><td>アイスピック</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>厚紙等で包み、危険のないように出してください</td> </tr> <tr><td>あ</td><td>アイロン</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>あ</td><td>アイロン台</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>あ</td><td>アイロン台</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>あ</td><td>アコーディオンカーテン</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >ひもでしばって束ねてください</td> </tr> <tr><td>あ</td><td>あぜシート</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ50センチメートル以下のものは「可燃ごみ」に出してください<br >営利目的で農業を営むために使用したものは収集できません</td> </tr> <tr><td>あ</td><td>厚紙（贈答箱、靴箱など）</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>汚れているとリサイクルできません<br >食品などが付着したものは「可燃ごみ」に出してください</td> </tr> <tr><td>あ</td><td>圧力鍋</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>あ</td><td>油（食用）</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>凝固剤で固めるか、布・紙等に染み込ませて「可燃ごみ」に出してください<br ></td> </tr> <tr><td>あ</td><td>油（機械・燃料系）</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>あ</td><td>油の容器</td><td>金属製</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、できるだけすすいでください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>あ</td><td>油の容器</td><td>ガラス製</td><td>陶磁器・ガラス製</td><td>不燃ごみ</td><td>大型ごみ等</td><td>中身を使い切ってください</td> </tr> <tr><td>あ</td><td>油の容器</td><td>プラスチック製</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>中身を使い切って、できるだけすすいでください</td> </tr> <tr><td>あ</td><td>雨どい</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>あ</td><td>アルバム</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>金具は取り除いてください</td> </tr> <tr><td>あ</td><td>アルミ缶</td><td><br ></td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td><p>中身を出してください</p><p>地元売却の場合は、地元の指示に従ってください<br ></p></td> </tr><tr><td>あ</td><td>アルミホイル（台所用）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>あ</td><td>アンテナ</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>あ</td><td>アンプ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>い</td><td>ETC車載ユニット</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>い</td><td>衣装ケース</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>い</td><td>衣装ケース</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>い</td><td>イス</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>い</td><td>イス</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>い</td><td>イス</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、袋に入る程度であれば、「可燃ごみ」に出してください</td> </tr> <tr><td>い</td><td>板ガラス</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>割れているものは、厚紙等に包み危険のないように出してください</td> </tr> <tr><td>い</td><td>一輪車（運搬用・遊具）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr>  <tr><td>い</td><td>一升瓶</td><td><br ></td><td>空ビン類</td><td>空ビン類</td><td>空ビン類</td><td>中身を使い切って、できるだけすすいでください<br >「無色」「茶色」「その他」に分けてください</td> </tr> <tr><td>い</td><td>一斗缶・ペール缶（20リットル以内）</td><td>金属製</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、できるだけすすいでください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>い</td><td>一斗缶・ペール缶（20リットル超）</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>中身を使い切ってください</td> </tr> <tr><td>い</td><td>衣類</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>中身の見える袋に入れてください<br >汚れのひどいもの等は「可燃ごみ」に出してください</td> </tr> <tr><td>い</td><td>イヤホン</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>い</td><td>衣類乾燥機</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>い</td><td>インクカートリッジ</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>なるべく販売店に引き渡してリサイクルしてください</td> </tr> <tr><td>い</td><td>インスリン（カートリッジ）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>針付きの場合は、医師または薬品販売店に相談してください</td> </tr> <tr><td>い</td><td>インスリン（注射針）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>医師または薬品販売店に相談してください</td> </tr> <tr><td>う</td><td>植木鉢</td><td>陶磁器製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>う</td><td>植木鉢</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください<br >土は取り除いてください</td> </tr> <tr><td>う</td><td>運動靴</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>え</td><td>エアコン</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>え</td><td>液晶テレビ</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>え</td><td>枝切りばさみ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>刃先を厚紙等で包み、危険のないようにして出してください</td> </tr> <tr><td>え</td><td>絵本</td><td><br ></td><td>雑誌類</td><td>雑誌類</td><td>雑誌類</td><td>十文字にひもで束ねてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>え</td><td>MD・MO（ケース含む）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>え</td><td>MDプレーヤー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>え</td><td>エレクトーン</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>え</td><td>エンジンオイル</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>え</td><td>延長コード</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>ひもでしばって束ねてください</td> </tr> <tr><td>お</td><td>オートバイ（原付から大型）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「二輪車リサイクル」として処理してください</td> </tr> <tr><td>お</td><td>オーブントースター</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>お</td><td>オーブンレンジ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>お</td><td>オイルヒーター</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>お</td><td>オムツ（布製・紙製）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>汚物は取り除いてください</td> </tr>  <tr><td>お</td><td>折込チラシ</td><td><br ></td><td>新聞紙</td><td>新聞紙</td><td>新聞紙</td><td>十文字にひもで束ねてください<br >地元売却の場合は地元の指示に従ってください<br >    </td> </tr> <tr><td>お</td><td>オルガン</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>お</td><td>温度計（水銀入り）</td><td><br ></td><td>乾電池等</td><td>乾電池等</td><td>乾電池等</td><td>割れないようケースに入れる、または新聞紙に包んで出してください</td> </tr> <tr><td>お</td><td>温度計（デジタル）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr></tbody></table></div>
+<a id="index-2-46" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_46">か行</h3>
+<div class="mol_tableblock block_index_35"><table><caption>か行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>か</td><td>カーステレオ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>か</td><td>カースピーカー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>か</td><td>カーナビ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>か</td><td>カーペット</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >ひもでしばって束ねてください</td> </tr> <tr><td>か</td><td>カーボン紙</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>貝殻（アサリ・カキなど）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>懐中電灯</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>か</td><td>懐中電灯</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>か</td><td>カイロ（使い捨て）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>鏡</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>か</td><td>傘</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>か</td><td>菓子の容器</td><td>紙製</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>容器が汚れているとリサイクルできません<br >食品など内容物が付着したものは「可燃ごみ」に出してください</td> </tr> <tr><td>か</td><td>菓子の容器</td><td>ガラス製</td><td>空ビン類</td><td>空ビン類</td><td>空ビン類</td><td>中身を使い切って、できるだけすすいでください<br >「無色」、「茶色」、「その他」に分けてください</td> </tr> <tr><td>か</td><td>菓子の容器</td><td>金属製</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、できるだけすすいでください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>か</td><td>菓子の容器</td><td>プラスチック製</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>容器が汚れているとリサイクルできません<br >食品など内容物が付着したものは「可燃ごみ」に出してください</td> </tr> <tr><td>か</td><td>加湿器</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>か</td><td>ガスコンロ</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>か</td><td>ガスボンベ</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>か</td><td>ガスライター</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>必ず、使い切ってから出してください</td> </tr> <tr><td>か</td><td>カセットコンロ用ガスボンベ</td><td><br ></td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、穴を開けてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>か</td><td>カセットテープ（ケース含む）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>ガソリン</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>か</td><td>カタログ</td><td>パンフレット状</td><td>雑誌類</td><td>雑誌類</td><td>雑誌類</td><td>十文字にひもで束ねてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>か</td><td>カタログ</td><td>リーフレット状</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td><br ></td> </tr> <tr><td>か</td><td>カッターナイフ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>刃先を厚紙等で包み、危険のないように出してください</td> </tr> <tr><td>か</td><td>かばん</td><td>革製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>かばん</td><td>ビニール製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>か</td><td>花瓶</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>か</td><td>カミソリ</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>刃先を厚紙等で包み、危険のないようにして出してください</td> </tr> <tr><td>か</td><td>カミソリ（安全カミソリ）</td><td>プラスチック製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>刃先を厚紙等で包み、危険のないようにして出してください</td> </tr> <tr><td>か</td><td>紙箱</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>容器が汚れているとリサイクルできません<br >食品など内容物が付着したものは「可燃ごみ」に出してください</td> </tr> <tr><td>か</td><td>紙袋</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>容器が汚れているとリサイクルできません<br >食品など内容物が付着したものは「可燃ごみ」に出してください</td> </tr> <tr><td>か</td><td>カメラ（フィルムカメラ）</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>か</td><td>カメラ（使い捨てカメラ）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td></td> </tr> <tr><td>か</td><td>カラーボックス</td><td><br ></td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>か</td><td>ガラスコップ</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>か</td><td>瓦</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>多量の場合は専門業者に相談してください</td> </tr> <tr><td>か</td><td>缶詰（ふた含む）</td><td><br ></td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、できるだけすすいでください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>か</td><td>乾燥剤</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>感熱紙</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>か</td><td>乾電池</td><td><br ></td><td>乾電池等</td><td>乾電池等</td><td>乾電池等</td><td>一次電池に限る<br >充電池は回収協力店に引き渡してリサイクルしてください</td> </tr> <tr><td>き</td><td>機械油</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>き</td><td>木切れ・木くず</td><td><br ></td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下、太さ20センチメートル以下とする<br >ひもでしばって束ねてください<br >長さ50センチメートル以下のものは「可燃ごみ」に出してください<br >ただし、多量の場合は、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>き</td><td>キャップ（ペットボトルのふた等）</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>金属製のものは「空カン類」に出してください</td> </tr> <tr><td>き</td><td>牛乳パック（500ミリリットル以上）</td><td><br ></td><td>紙パック</td><td>紙パック</td><td>紙パック</td><td>内側にアルミが貼ってあるものは「可燃ごみ」に出してください<br >500ミリリットル未満のものは「ミックスペーパー」に出してください</td> </tr> <tr><td>き</td><td>鏡台</td><td><br ></td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>なるべく鏡部分は取り外してください</td> </tr> <tr><td>き</td><td>金庫（耐火金庫）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>き</td><td>金庫（手提げ型のもの）</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>く</td><td>クーラー（エアコン）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>く</td><td>空気清浄機</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>フロン類を含まないもの</td> </tr> <tr><td>く</td><td>釘</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>厚紙等で包み、危険のないように出してください</td> </tr> <tr><td>く</td><td>草</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>長さ50センチメートル以下に切断してください<br >なるべく土は取り除いてください</td> </tr> <tr><td>く</td><td>草刈り機</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><p>燃料・オイルを抜いてください</p><p>営利目的で使用したものは収集できません<br ></p></td> </tr><tr><td>く</td><td>薬（錠剤・カプセルなど家庭用）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>く</td><td>靴</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>く</td><td>車椅子</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>く</td><td>車椅子（電動）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>バッテリーは販売店に引き渡してリサイクルしてください</td> </tr> <tr><td>け</td><td>ゲーム機</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>け<br ></td><td>蛍光灯・蛍光管（割れていないもの）</td><td><br ></td><td>蛍光管</td><td>蛍光管</td><td>蛍光管</td><td>割れないように出してください</td> </tr><tr><td>け<br ></td><td>蛍光灯・蛍光管（割れているもの）</td><td><br ></td><td>蛍光管</td><td>蛍光管</td><td>蛍光管</td><td>中身の見える袋に入れてください</td> </tr> <tr><td>け</td><td>携帯電話端末・PHS端末</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>なるべく「小型家電」としてリサイクルしてください<br >電池類は取り外してください<br >販売店に引き渡すこともできます</td> </tr> <tr><td>け</td><td>劇薬</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>け</td><td>化粧品</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>紙・布等に染み込ませて「可燃ごみ」に出してください</td> </tr> <tr><td>け</td><td>化粧品の容器</td><td>ガラス製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>中身を使い切ってください</td> </tr> <tr><td>け</td><td>化粧品の容器</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>中身を使い切ってください</td> </tr> <tr><td>け</td><td>化粧品の容器</td><td>プラスチック製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>中身を使い切ってください</td> </tr> <tr><td>け</td><td>下駄箱</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>け</td><td>血圧計（水銀入り）</td><td><br ></td><td>乾電池等</td><td>乾電池等</td><td>乾電池等</td><td>割れないようケースに入れる、または新聞紙に包んで出してください</td> </tr> <tr><td>こ</td><td>こたつ</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>こ</td><td>こたつ</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>こ</td><td>コピー用紙</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>シュレッダーしたものは「可燃ごみ」に出してください</td> </tr> <tr><td>こ</td><td>ゴムホース</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>こ</td><td>ゴルフクラブ</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>こ</td><td>ゴルフバッグ</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>こ</td><td>ゴルフボール</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr></tbody></table></div>
+<a id="index-2-54" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_54">さ行</h3>
+<div class="mol_tableblock block_index_36"><table><caption>さ行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>さ</td><td>座椅子</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>さ</td><td>座椅子</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>さ</td><td>在宅用医療器具</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>医師または薬品販売店に相談してください</td> </tr> <tr><td>さ</td><td>在宅用医療器具（容器）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>針付きの場合は、医師または薬品販売店に相談してください</td> </tr> <tr><td>さ</td><td>サイドボード</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>さ</td><td>雑誌</td><td><br ></td><td>雑誌類</td><td>雑誌類</td><td>雑誌類</td><td>十文字にひもで束ねてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>さ</td><td>殺虫剤</td><td>スプレー缶</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、穴を開けてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>さ</td><td>座布団</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>さ</td><td>酸素ボンベ</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>し</td><td>シーツ</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>し</td><td>CD（ケースも含む）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>し</td><td>CDプレーヤー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>し</td><td>敷物</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >ひもでしばって束ねてください</td> </tr> <tr><td>し</td><td>事業所ごみ（事業活動に伴うごみ）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください<br >ただし、産業廃棄物は持ち込めません</td> </tr> <tr><td>し</td><td>辞書</td><td><br ></td><td>雑誌類</td><td>雑誌類</td><td>雑誌類</td><td>十文字にひもで束ねてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>し</td><td>自転車</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>防犯登録は抹消しておいてください</td> </tr> <tr><td>し</td><td>自転車（電動）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>防犯登録は抹消しておいてください<br >バッテリーは販売店に引き渡してリサイクルしてください</td> </tr><tr><td>し</td><td>ジュータン</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >ひもでしばって束ねてください</td> </tr> <tr><td>し</td><td>充電池</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>回収協力店に引き渡してリサイクルしてください</td> </tr> <tr><td>し</td><td>重量物（50kg以上のもの）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>し</td><td>消火器</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「消火器リサイクル」として処理するか、販売店などに相談してください</td> </tr> <tr><td>し</td><td>焼却灰</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>少量であれば、湿らせてから「可燃ごみ」に出してください<br >野焼き行為は原則禁止です</td> </tr> <tr><td>し</td><td>照明器具</td><td><br ></td><td>プラスチック複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>蛍光灯・蛍光管・電球・グローランプ等を除く</td> </tr> <tr><td>し</td><td>除湿機</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>フロン類を含まないもの</td> </tr> <tr><td>し</td><td>食器洗い乾燥機</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>し</td><td>シリカゲル（乾燥剤）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>し</td><td>新聞紙</td><td><br ></td><td>新聞紙</td><td>新聞紙</td><td>新聞紙</td><td>十文字にひもで束ねてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>す</td><td>水槽</td><td>ガラス製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>す</td><td>水槽</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>す</td><td>炊飯器</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>す</td><td>スキー板</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下とする</td> </tr> <tr><td>す</td><td>スコップ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>す</td><td>スチール缶</td><td><br ></td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td><p>中身を出し、栓・フタを取ってください</p><p>地元売却の場合は、地元の指示に従ってください<br ></p></td> </tr><tr><td>す</td><td>スチールロッカー</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr><tr><td>す</td><td>ステレオ</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>す</td><td>ストーブ（石油式）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>必ず石油（灯油）を抜いてください<br >電池類は取り外してください</td> </tr> <tr><td>す</td><td>ストーブ（電気式）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>す</td><td>ストッキング</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>す</td><td>スプレー缶</td><td><br ></td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、穴を開けてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>す</td><td>スリッパ</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>せ</td><td>せともの</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>せ</td><td>洗剤の容器</td><td>紙製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>せ</td><td>洗剤の容器</td><td>プラスチック製</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>容器が汚れているとリサイクルできません<br >簡単に洗っていただくか、取れない場合は「可燃ごみ」に出してください</td> </tr> <tr><td>せ</td><td>洗濯機</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>せ</td><td>剪定枝</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>長さ50センチメートル以下、太さ20センチメートル以下とする<br >ただし、多量の場合は、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>せ</td><td>扇風機</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>せ</td><td>洗面器</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>せ</td><td>洗面台</td><td><br ></td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>なるべく鏡、陶器製のものは取り外してください</td> </tr> <tr><td>そ</td><td>掃除機</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>そ</td><td>ソファー</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下、重さ50キログラム以下とする</td> </tr> <tr><td>そ</td><td>ソファー</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下、重さ50キログラム以下とする</td> </tr></tbody></table></div>
+<a id="index-2-53" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_53">た行</h3>
+<div class="mol_tableblock block_index_37"><table><caption>た行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>た</td><td>体温計（水銀入り）</td><td><br ></td><td>乾電池等</td><td>乾電池等</td><td>乾電池等</td><td>割れないようケースに入れる</td> </tr> <tr><td>た</td><td>体温計（デジタル）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>電池類は取り外してください</td> </tr> <tr><td>た</td><td>体重計（ヘルスメーター）</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>た</td><td>耐熱ガラス</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>た</td><td>タイヤ（自動車）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに引き渡してリサイクルしてください</td> </tr> <tr><td>た</td><td>タイヤ（自転車）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>タイヤチューブのみの場合は「可燃ごみ」に出してください</td> </tr><tr><td>た</td><td>タイヤ（一輪車）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr><tr><td>た</td><td>竹</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>長さ50センチメートル以下、太さ20センチメートル以下とする<br >ただし、多量の場合は、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>た</td><td>卵のパック</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td><br ></td> </tr> <tr><td>た</td><td>タンス</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>た</td><td>ダンボール</td><td><br ></td><td>ダンボール</td><td>ダンボール</td><td>ダンボール</td><td>十文字にひもで束ねてください<br > 地元売却場合は、地元の指示に従ってください</td> </tr> <tr><td>ち</td><td>チェーンソー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>燃料・オイルを抜いてください</td> </tr> <tr><td>ち</td><td>チャイルドシート</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ち</td><td>茶碗</td><td>陶磁器製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ち</td><td>茶碗</td><td>プラスチック製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ち</td><td>茶碗</td><td>木製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ち</td><td>チューナー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>ち</td><td>注射器・注射針</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>医師または薬品販売店に相談してください</td> </tr> <tr><td>つ</td><td>使い捨てライター</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>必ず、使い切ってから出してください</td> </tr> <tr><td>つ</td><td>机・テーブル</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>つ</td><td>机・テーブル</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>つ</td><td>机・テーブル</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>つ</td><td>積み木</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>つ</td><td>詰め替え容器（シャンプーなど）</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>容器が汚れているとリサイクルできません<br >簡単に洗っていただくか、取れない場合は「可燃ごみ」に出してください</td> </tr> <tr><td>つ</td><td>爪切り</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>つ</td><td>釣竿</td><td><br ></td><td>木製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>て</td><td>テープレコーダー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>て</td><td>DVD（ケース含む）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>て</td><td>DVD-ビデオ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>て</td><td>デジタルカメラ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>て</td><td>テレビ（液晶式・プラズマ式を含む）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」としてリサイクルしてください</td> </tr> <tr><td>て</td><td>テレビ台</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr> <tr><td>て</td><td>電気カミソリ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>て</td><td>電気コード</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>ひもでしばって束ねてください</td> </tr> <tr><td>て</td><td>電気スタンド</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>て</td><td>電気ストーブ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>て</td><td>電球（割れていないもの）</td><td><br ></td><td>蛍光管</td><td>蛍光管</td><td>蛍光管</td><td>割れないように出してください</td> </tr><tr><td>て</td><td>電球（割れているもの）</td><td><br ></td><td>蛍光管</td><td>蛍光管</td><td>蛍光管</td><td>中身の見える袋に入れてください <br ></td> </tr> <tr><td>て</td><td>電子辞書</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>て</td><td>電子書籍端末</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類はり取り外してください</td> </tr> <tr><td>て</td><td>電子レンジ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>て</td><td>電卓</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>て</td><td>電話機</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>と</td><td>トースター</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>と</td><td>灯油</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>と</td><td>時計</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は外してください</td> </tr> <tr><td>と</td><td>土砂（家庭で使用されたものに限る）</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>破れにくい袋に入れて出してください<br >ただし、多量の場合は、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>と</td><td>土鍋</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>と</td><td>塗料</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>紙・布等に染み込ませて「可燃ごみ」に出してください</td> </tr> <tr><td>と<br ></td><td>
+塗料の缶</td><td><br ></td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切ってください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> </tbody></table></div>
+<a id="index-2-52" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_52">な行</h3>
+<div class="mol_tableblock block_index_38"><table class="per100"><caption>な行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>な</td><td>苗箱</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>営利目的（農業）で使用したものは収集できません</td> </tr> <tr><td>な</td><td>長靴</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>な</td><td>鍋</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>な</td><td>鍋焼きうどんの容器</td><td>アルミ製</td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr>   <tr><td>ぬ</td><td>ぬいぐるみ</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ね</td><td>猫砂</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>飛散しないように、うち袋などに入れて捨ててください</td> </tr><tr><td>ね</td><td>ネット類（みかんなど）</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td><br ></td> </tr><tr><td>ね</td><td>粘土</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ね</td><td>粘土（紙粘土）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>の</td><td>ノーカーボン紙</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>の</td><td>ノート</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td><br ></td> </tr> <tr><td>の</td><td>ノートパソコン</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「パソコンリサイクル」として処理してください<br >小型のものは「小型家電」としてリサイクルもできます<br >ただし、個人情報は消去し、バッテリーは取り外してください</td> </tr> <tr><td>の</td><td>農機具</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>の</td><td>農薬</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr></tbody></table></div>
+<a id="index-2-51" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_51">は行</h3>
+<div class="mol_tableblock block_index_39"><table><caption>は行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>は</td><td>ハードディスク</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>は</td><td>HDDレコーダー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>は</td><td>灰</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>少量であれば、湿らせてから「可燃ごみ」に出してください<br >なお野焼き行為は原則禁止です</td> </tr> <tr><td>は</td><td>バイク</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「二輪車リサイクル」として処理してください</td> </tr> <tr><td>は</td><td>パイプ椅子</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>は</td><td>はがき</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>シュレッダーしたものは「可燃ごみ」に出してください</td> </tr> <tr><td>は</td><td>バケツ</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>は</td><td>バケツ</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>は</td><td>はさみ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>刃先を厚紙等で包み、危険のないように出してください</td> </tr> <tr><td>は</td><td>パソコン</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「パソコンリサイクル」として処理してください<br >小型のものは「小型家電」としてリサイクルもできます<br >ただし、個人情報は消去し、バッテリーは取り外してください</td> </tr> <tr><td>は</td><td>バッテリー</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店に引き渡してリサイクルしてください</td> </tr> <tr><td>は</td><td>発泡スチロール（袋に入る大きさのもの）</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>容器が汚れているとリサイクルできません<br >簡単に洗っていただくか、取れない場合は「可燃ごみ」に出してください</td> </tr> <tr><td>は</td><td>発泡スチロール（袋に入らない大きさのもの）</td><td><br ></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>割って袋に入る場合は「プラスチック製容器包装」に出してください</td> </tr> <tr><td>は</td><td>花火</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>小分けして、湿らせてから出してください</td> </tr> <tr><td>は</td><td>刃物類</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>刃先を厚紙等で包み、危険のないように出してください</td> </tr> <tr><td>は</td><td>歯ブラシ</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>は</td><td>歯ブラシ（電動）</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>は</td><td>ハンガー</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>は</td><td>ハンガー</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>は</td><td>ハンガー</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>ひ</td><td>ビール瓶</td><td><br ></td><td>空ビン類</td><td>空ビン類</td><td>空ビン類</td><td>中身を使い切って、できるだけすすいでください<br >なるべく販売店に引き渡してリサイクルしてください</td> </tr> <tr><td>ひ</td><td>ピアノ</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>ひ</td><td>引越しごみ</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>ひ</td><td>ビデオカメラ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ひ</td><td>ビデオテープ（ケース含む）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ひ</td><td>ビデオテープレコーダー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ひ</td><td>瓶（飲料用）</td><td><br ></td><td>空ビン類</td><td>空ビン類</td><td>空ビン類</td><td>中身を使い切って、できるだけすすいでください<br > 「無色」、「茶色」、「その他」に分けてください</td> </tr> <tr><td>ひ</td><td>瓶のふた（王冠）</td><td>金属製</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>ひ</td><td>瓶のふた</td><td>プラスチック製</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>容器が汚れているとリサイクルできません<br >簡単に洗っていただくか、取れない場合は「可燃ごみ」に出してください</td> </tr> <tr><td>ふ</td><td>ファクシミリ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ふ</td><td>ファンヒーター（石油式）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>石油（灯油）を抜いてください<br >電池類は取り外してください</td> </tr> <tr><td>ふ</td><td>封筒</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>シュレッダーしたものは「可燃ごみ」に出してください</td> </tr> <tr><td>ふ</td><td>服類</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>中身の見える袋に入れてください</td> </tr> <tr><td>ふ</td><td>ふすま</td><td><br ></td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr>  <tr><td>ふ</td><td>ふとん</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>ひもでしばるか、中身の見える袋に入れてください</td> </tr> <tr><td>ふ</td><td>ふとんたたき</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>ふ</td><td>ふとんたたき</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください</td> </tr> <tr><td>ふ</td><td>フライパン</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ふ</td><td>プラモデル</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ふ</td><td>プランター</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>袋に入る小さなものは「可燃ごみ」に出してください<br >土は取り除いてください</td> </tr> <tr><td>ふ</td><td>プリンター</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>インクカートリッジは取り外してください</td> </tr> <tr><td>ふ</td><td>ブルーシート</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr><tr><td>ふ</td><td>ブルーレイレコーダー/プレーヤー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ふ</td><td>フロッピーディスク（ケース含む）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ふ</td><td>ブロック</td><td>コンクリート製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>家庭で使われた少量のものに限る<br >多量の場合は、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>ふ</td><td>風呂ふた</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ふ</td><td>プロパンガス（LPガス）</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>へ</td><td>ヘアーアイロン</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>へ</td><td>ヘアースプレー</td><td>スプレー缶</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、穴を開けてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>へ</td><td>ヘアードライヤー</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>へ</td><td>ベッド</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下、重さ50キログラム以下とする<br >できるだけばらして、小さく束ねてください</td> </tr> <tr><td>へ</td><td>ベッド</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下、重さ50キログラム以下とする<br >できるだけばらして、小さく束ねてください</td> </tr> <tr><td>へ</td><td>ペットボトルのふた（キャップ）</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td><br ></td> </tr> <tr><td>へ</td><td>ペットボトルのボトル</td><td><br ></td><td>ペットボトル</td><td>ペットボトル</td><td>ペットボトル</td><td>容器が汚れているとリサイクルできません<br >簡単に洗っていただくか、取れない場合は「可燃ごみ」に出してください</td> </tr> <tr><td>へ</td><td>ペットボトルのラベル</td><td><br ></td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td><br ></td> </tr> <tr><td>へ</td><td>ヘッドホン</td><td><br ></td><td>プラスチック複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td></td> </tr> <tr><td>へ</td><td>ベルト</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>へ</td><td>ヘルメット</td><td><br ></td><td>プラスチック複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>へ</td><td>弁当・惣菜の容器</td><td>プラスチック製</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>容器が汚れているとリサイクルできません<br >簡単に洗っていただくか、取れない場合は「可燃ごみ」に出してください</td> </tr> <tr><td>ほ</td><td>芳香剤</td><td>ガラス製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>中身を使い切ってください</td> </tr> <tr><td>ほ</td><td>芳香剤</td><td>スプレー缶</td><td>空カン類</td><td>空カン類</td><td>空カン類</td><td>中身を使い切って、穴を開けてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>ほ</td><td>芳香剤</td><td>陶磁器製</td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>中身を使い切ってください</td> </tr> <tr><td>ほ</td><td>芳香剤</td><td>プラスチック製</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>プラスチック製容器包装</td><td>中身を使い切って、できるだけすすいでください</td> </tr> <tr><td>ほ</td><td>包装紙</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td><br ></td> </tr> <tr><td>ほ</td><td>包丁</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ（危険物）</td><td>大型ごみ等</td><td>刃先を厚紙等で包み、危険のないように出してください</td> </tr> <tr><td>ほ</td><td>ポケットコンピューター</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ほ</td><td>ボタン電池</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>回収協力店へ持ち込んでください</td> </tr><tr><td>ほ</td><td>ホッチキス</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ほ</td><td>ポット</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr><tr><td>ほ</td><td>ホットカーペット</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >ひもでしばって束ねてください</td> </tr> <tr><td>ほ</td><td>ホットプレート</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ほ</td><td>保冷剤・保冷枕</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ほ</td><td>ホワイトボード</td><td></td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr><tr><td>ほ</td><td>本棚</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ほ</td><td>本棚</td><td>プラスチック製</td><td>プラスチック複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ほ</td><td>本棚</td><td>木製</td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください</td> </tr></tbody></table></div>
+<a id="index-2-50" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_50">ま行</h3>
+<div class="mol_tableblock block_index_40"><table><caption>ま行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>ま</td><td>まくら</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ま</td><td>マッサージ機</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>できるだけばらして、小さく束ねてください<br >50キログラム以上のものは、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>ま</td><td>マットレス</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>長さ2メートル以下とする</td> </tr> <tr><td>ま</td><td>マットレス（スプリング入り）</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >マットレスとスプリングは分けなくても、そのまま出せます</td> </tr> <tr><td>ま</td><td>魔法瓶</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>ま</td><td>漫画本（コミック）</td><td><br ></td><td>雑誌類</td><td>雑誌類</td><td>雑誌類</td><td>十文字にひもで束ねてください<br >地元売却の場合は、地元の指示に従ってください</td> </tr> <tr><td>み</td><td>ミシン</td><td><br ></td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td><br ></td> </tr><tr><td>め</td><td>名刺</td><td><br ></td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td><br ></td> </tr> <tr><td>め</td><td>眼鏡</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>め</td><td>メモリーカード</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td></td> </tr> <tr><td>も</td><td>毛布</td><td><br ></td><td>ふとん・ジュータン類</td><td>ふとん・ジュータン類</td><td>大型ごみ等</td><td>ひもでしばるか、中身の見える袋に入れてください</td> </tr> <tr><td>も</td><td>物干し竿</td><td>金属製</td><td>金属複合製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下とする</td> </tr> <tr><td>も</td><td>物干し台</td><td>コンクリート製</td><td>陶磁器・ガラス類</td><td>大型ごみ</td><td>大型ごみ等</td><td>金属部分とコンクリート部分はなるべく分けて出してください</td> </tr></tbody></table></div>
+<a id="index-2-49" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_49">や行</h3>
+<div class="mol_tableblock block_index_41"><table><caption>や行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>や</td><td>薬品</td><td>液体</td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>販売店などに相談してください</td> </tr> <tr><td>ゆ</td><td>USBメモリ</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td></td> </tr> <tr><td>よ</td><td>よしず</td><td><br ></td><td>木製品類</td><td>大型ごみ</td><td>大型ごみ等</td><td>長さ2メートル以下とする<br >旧姫路市域は80センチメートル以下とする <br ></td> </tr></tbody></table></div>
+<a id="index-2-48" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_48">ら行</h3>
+<div class="mol_tableblock block_index_42"><table><caption>ら行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>ら</td><td>ライター</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>必ず、使い切ってから出してください</td> </tr> <tr><td>ら</td><td>ライター（使い捨て）</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>必ず、使い切ってから出してください</td> </tr> <tr><td>ら</td><td>ラジオ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ら</td><td>ラジカセ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>電池類は取り外してください</td> </tr> <tr><td>ら</td><td>ランドセル</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>り</td><td>リチウムイオン電池等</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>回収協力店へ持ち込んでください</td> </tr><tr><td>り</td><td>リモコン</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td>電池類は取り外してください</td> </tr> <tr><td>れ</td><td>レーザーディスク</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>れ</td><td>冷蔵庫</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>れ</td><td>冷凍庫</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr> <tr><td>れ</td><td>レトルトパック</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>れ</td><td>レンガ</td><td><br ></td><td>陶磁器・ガラス類</td><td>不燃ごみ</td><td>大型ごみ等</td><td>家庭で使われた少量のものに限る<br >多量の場合は、許可のある収集運搬業者へ依頼、またはごみ処理施設へ直接持ち込んでください</td> </tr> <tr><td>ろ</td><td>ローソク</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>ろ</td><td>ロッカー</td><td>金属製</td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr></tbody></table></div>
+<a id="index-2-47" class="anchor" tabindex="-1"><img src="./images/clearspacer.gif" alt="" width="1" height="1" ></a><h3 class="block_index_47">わ行</h3>
+<div class="mol_tableblock block_index_43"><table><caption>わ行の一覧表</caption><colgroup><col class="per5" ><col class="per15" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per10" ><col class="per30" ></colgroup><tbody><tr><th class="t_center" scope="col">索引</th><th class="t_center" scope="col">品名</th><th class="t_center" scope="col">素材</th><th class="t_center" scope="col">旧姫路市域</th><th class="t_center" scope="col"><p>旧夢前町域</p><p>旧香寺町域</p><p>旧安富町域</p></th><th class="t_center" scope="col">旧家島町域</th><th class="t_center" scope="col">備考</th> </tr> <tr><td>わ</td><td>ワインセラー</td><td><br ></td><td>市では収集しません</td><td>市では収集しません</td><td>市では収集しません</td><td>「家電リサイクル」として処理してください</td> </tr><tr><td>わ</td><td>ワープロ</td><td><br ></td><td>金属複合製品類</td><td>不燃ごみ</td><td>大型ごみ等</td><td><br ></td> </tr> <tr><td>わ</td><td>割りばし</td><td><br ></td><td>可燃ごみ</td><td>可燃ごみ</td><td>可燃ごみ</td><td><br ></td> </tr> <tr><td>わ</td><td>割りばしなどの袋</td><td>紙製</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>ミックスペーパー</td><td>汚れているとリサイクルできません<br >食品などが付着したものは「可燃ごみ」に出してください</td> </tr></tbody></table></div>
+</div>              </div> </div><div class="design"><div class="main_naka"><section class="kiji_aside syosai_sonota"><h2>お問い合わせ</h2>    <div class="kiji_aside_lower"><p>姫路市　農林水産環境局　美化部　リサイクル課</p><p>住所: <a href="https://www.google.co.jp/maps/place/%E5%A7%AB%E8%B7%AF%E5%B8%82%E5%BD%B9%E6%89%80+%E6%9D%B1%E9%A4%A8/@34.8148708,134.6837485,17z/data=!3m2!4b1!5s0x3554e06152be3589:0xb1eebb1ac45f74da!4m6!3m5!1s0x3554e063fe0e4343:0xe01570cfbcac9766!8m2!3d34.8148708!4d134.6863234!16s%2Fg%2F12m96z87p?entry=ttu" target="_blank">〒670-8501	姫路市安田四丁目1番地	　東館3階<span class="window">別ウィンドウで開く</span></a></p><p>電話番号: <a href="tel:079-221-2404" tabindex="-1">079-221-2404</a></p><p>ファクス番号: 079-221-2408</p><p><a href="https://www.city.himeji.lg.jp/module/shareform.php?so_cd=5-1-4-0-0">お問い合わせフォーム</a></p>    </div></section><!-- ▼▼関連項目▼▼ -->
+<aside class="kiji_aside kanrencon folding_5">
+  <h2>同じ分類から探す</h2>
+
+
+  <div class="h3">
+    <h3><a href="./category/2-10-3-5-0-0-0-0-0-0.html"  >家庭ごみの分け方と出し方</a></h3>
+  </div>
+  <div class="kiji_aside_lower folding_5_lower">
+                    <ul class="folding_5_lower_ul"><li id="0000026269"><a href="https://www.city.himeji.lg.jp/kurashi/0000026269.html"  >よくあるごみの品目の問い合わせ（一覧）       </a></li><li id="0000000010"><a href="https://www.city.himeji.lg.jp/kurashi/0000000010.html"  >可燃ごみ       </a></li><li id="0000000012"><a href="https://www.city.himeji.lg.jp/kurashi/0000000012.html"  >プラスチック製容器包装       </a></li><li id="0000000021"><a href="https://www.city.himeji.lg.jp/kurashi/0000000021.html"  >ミックスペーパー       </a></li><li id="0000000023"><a href="https://www.city.himeji.lg.jp/kurashi/0000000023.html"  >空カン類       </a></li><li id="0000000027"><a href="https://www.city.himeji.lg.jp/kurashi/0000000027.html"  >空ビン類       </a></li><li id="0000000036"><a href="https://www.city.himeji.lg.jp/kurashi/0000000036.html"  >ペットボトル       </a></li><li id="0000000038"><a href="https://www.city.himeji.lg.jp/kurashi/0000000038.html"  >紙パック       </a></li><li id="0000000040"><a href="https://www.city.himeji.lg.jp/kurashi/0000000040.html"  >古紙類（新聞紙・ダンボール・雑誌類）       </a></li><li id="0000000042"><a href="https://www.city.himeji.lg.jp/kurashi/0000000042.html"  >乾電池等       </a></li><li id="0000000047"><a href="https://www.city.himeji.lg.jp/kurashi/0000000047.html"  >木製品類（旧姫路市域）       </a></li><li id="0000000048"><a href="https://www.city.himeji.lg.jp/kurashi/0000000048.html"  >金属複合製品類（旧姫路市域）       </a></li><li id="0000000061"><a href="https://www.city.himeji.lg.jp/kurashi/0000000061.html"  >使用済小型家電のリサイクル       </a></li><li id="0000000072"><a href="https://www.city.himeji.lg.jp/kurashi/0000000072.html"  >プラスチック複合製品類（旧姫路市域）       </a></li><li id="0000000075"><a href="https://www.city.himeji.lg.jp/kurashi/0000000075.html"  >ふとん・ジュータン類（旧姫路市域、夢前町域、香寺町域および安富町域）       </a></li><li id="0000000078"><a href="https://www.city.himeji.lg.jp/kurashi/0000000078.html"  >陶磁器類・飲料や食品が入っていた空ビン以外のガラス類（旧姫路市域）       </a></li><li id="0000000080"><a href="https://www.city.himeji.lg.jp/kurashi/0000000080.html"  >大型ごみ（夢前町域、香寺町域および安富町域）       </a></li><li id="0000000085"><a href="https://www.city.himeji.lg.jp/kurashi/0000000085.html"  >大型ごみ等（家島町域）       </a></li><li id="0000000090"><a href="https://www.city.himeji.lg.jp/kurashi/0000000090.html"  >不燃ごみ（夢前町域、香寺町域および安富町域）       </a></li><li id="0000000373"><a href="https://www.city.himeji.lg.jp/kurashi/0000000373.html"  >蛍光管       </a></li><li id="0000015233"><a href="https://www.city.himeji.lg.jp/kurashi/0000015233.html"  >珪藻土製品（アスベスト含有）       </a></li><li id="0000026694"><a href="https://www.city.himeji.lg.jp/kurashi/0000026694.html"  >プラスチック製容器包装に異物を混ぜないでください       </a></li><li id="0000026663"><a href="https://www.city.himeji.lg.jp/kurashi/0000026663.html"  >有害物質（鉛・水銀等）を含む製品の分別にご協力ください       </a></li></ul>
+  </div>
+</aside>
+<!-- ▲▲関連項目▲▲ -->
+               </div></div></div> <!-- ▲▲▲▲▲メイン▲▲▲▲▲ --><!-- ▼▼▼▼▼フッタ▼▼▼▼▼ --><footer class="main_footer"><!-- ▼▼マイページ機能▼▼ --><div class="foot_modori"><p class="modoriin"><a href="#pagetop">ページの<span>先頭へ戻る</span></a></p></div><div class="foot_wrap"><div class="foot"><ul class="foot_link"><li><a href="https://www.city.himeji.lg.jp/site_policy/0000000008.html">このサイトについて</a></li><li><a href="https://www.city.himeji.lg.jp/site_policy/0000000012.html">プライバシーポリシー</a></li><li><a href="https://www.city.himeji.lg.jp/site_policy/0000000010.html">ウェブアクセシビリティへの対応</a></li><li><a href="https://www.city.himeji.lg.jp/site_policy/0000000009.html">著作権・リンク・免責事項</a></li><li><a href="https://www.city.himeji.lg.jp/soshiki_list.html">お問い合わせ窓口一覧</a></li></ul><div class="foot_id"><p class="name"><b class="siyakusyo">姫路市役所</b><span class="small">（法人番号：<span class="tel_off_ios">1000020282014）</span></span></p><p class="address small">〒670-8501 兵庫県姫路市安田四丁目1番地</p><p class="address small">電話番号：<a href="tel:079-221-2111">079-221-2111</a>（庁内番号案内）</p><p class="address small">開庁時間：月曜日から金曜日の午前9時から午後5時まで（土曜日・日曜日、祝日、12月29日から翌年1月3日までは閉庁）</p></div><ul class="foot_link2"><li><a href="https://www.city.himeji.lg.jp/shisei/category/5-6-1-0-0-0-0-0-0-0.html">庁舎案内</a></li><li><a href="https://www.city.himeji.lg.jp/shisei/0000000268.html">市役所への交通案内</a></li><li><a href="https://www.city.himeji.lg.jp/faq/index.php">よくあるご質問（FAQ）</a></li><li><a href="https://www.city.himeji.lg.jp/kurashi/0000031505.html">手話で電話をする</a></li></ul></div> <div class="foot_copy"><p class="foot_copyin" lang="en" xml:lang="en">Copyright(C) Himeji City. All right Reserved.</p></div></div></footer><!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
+</div> </div> <script src="js/toolbox.js"></script><script src="js/common.js?20240613"></script><script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=744433269" async></script></body></html>

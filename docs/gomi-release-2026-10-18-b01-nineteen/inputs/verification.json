@@ -1,0 +1,39 @@
+{
+  "schema_errors": [],
+  "publication_gate_rejected": true,
+  "baseline_cities_preserved": 17,
+  "baseline_sources_preserved": 104,
+  "fields_preserved": 760,
+  "service_sources_dates_preserved": 162,
+  "questions_preserved": 123,
+  "reviewed_v1_facts_unchanged": true,
+  "reviewed_v1_sources_unchanged": true,
+  "reviewed_v1_questions_unchanged": true,
+  "review_input_v1_sha256": "35f23adc752de002eb1be7b6bee52221ae40a3638411eb6760a69d41bb05a806",
+  "independent_review": {
+    "routes": 8,
+    "fields": 80,
+    "corrections_required": 0,
+    "record": "review.json"
+  },
+  "restricted_hostname_tests": 2,
+  "transport_pages_regenerated": 0,
+  "shared_code_changed": [
+    "tools/validate_gomi.py"
+  ],
+  "candidate_sha256": "ab49658f07b7f6259bfc0f307b09d04d7daacb5ec0025b00e691a316afc11ec4",
+  "new_sha256": "8ce5737b3c7dd387bad55a135e1a62d855644d0032c2bcb703d2633aaa469e5f",
+  "production_data_sha256": "ac640d6cfdd4616200409d7490a7b905455b62ef93da71bf7086a3f0ac951713",
+  "gomi_unit_tests": {
+    "run": 28,
+    "result": "passed"
+  },
+  "measured_work": {
+    "http_fetches": 14,
+    "reused_documents": 3,
+    "saved_official_documents": 17,
+    "web_search_calls": 0,
+    "credits": null,
+    "tokens": null
+  }
+}
