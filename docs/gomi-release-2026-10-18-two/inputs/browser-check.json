@@ -1,0 +1,144 @@
+{
+  "routes": [
+    {
+      "city": "takarazuka",
+      "route": "route-takarazuka-kizuna",
+      "memoLength": 1203,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "daily_support"
+      ]
+    },
+    {
+      "city": "takarazuka",
+      "route": "route-takarazuka-regular",
+      "memoLength": 1534,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "regular_bulky"
+      ]
+    },
+    {
+      "city": "takarazuka",
+      "route": "route-takarazuka-carry",
+      "memoLength": 1265,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "bulky_carry_support"
+      ]
+    },
+    {
+      "city": "takarazuka",
+      "route": "route-takarazuka-dropoff",
+      "memoLength": 1045,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "self_dropoff"
+      ]
+    },
+    {
+      "city": "itami",
+      "route": "route-itami-daily",
+      "memoLength": 1347,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "daily_support"
+      ]
+    },
+    {
+      "city": "itami",
+      "route": "route-itami-regular",
+      "memoLength": 1079,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "regular_bulky"
+      ]
+    },
+    {
+      "city": "itami",
+      "route": "route-itami-carry-consult",
+      "memoLength": 939,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "bulky_carry_support"
+      ]
+    },
+    {
+      "city": "itami",
+      "route": "route-itami-dropoff",
+      "memoLength": 2105,
+      "copy": true,
+      "printDOM": true,
+      "sourceDate": true,
+      "visibleKind": [
+        "self_dropoff"
+      ]
+    }
+  ],
+  "responsive": [
+    {
+      "city": "takarazuka",
+      "w": 320,
+      "large": false,
+      "font": "18px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "city": "takarazuka",
+      "w": 390,
+      "large": false,
+      "font": "18px",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "city": "takarazuka",
+      "w": 320,
+      "large": true,
+      "font": "22px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "city": "itami",
+      "w": 320,
+      "large": false,
+      "font": "18px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "city": "itami",
+      "w": 390,
+      "large": false,
+      "font": "18px",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "city": "itami",
+      "w": 320,
+      "large": true,
+      "font": "22px",
+      "scrollWidth": 320,
+      "width": 320
+    }
+  ],
+  "clipboard_note": "初回は非同期完了前の比較で不一致、成功表示後の再確認で一致。OS全体のクリップボードではない。",
+  "native_print": false
+}

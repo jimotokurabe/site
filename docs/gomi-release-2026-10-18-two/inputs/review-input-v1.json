@@ -1,0 +1,879 @@
+{
+  "schema_version": "research-0.1",
+  "checked": "2026-10-16",
+  "human_reviewed": false,
+  "draft": true,
+  "not_for_publication": true,
+  "cities": [
+    {
+      "id": "hyogo:takarazuka",
+      "name": "宝塚市",
+      "kana": "たからづかし",
+      "pref_name": "兵庫県",
+      "selection_reason": "日常の戸別収集と生活に支障がある粗大ごみの室内搬出を区別でき、家族の立会い条件も具体的。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "takarazuka-kizuna",
+          "kind": "daily_support",
+          "name": "きずな収集（粗大ごみは対象外）",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やすごみ、プラスチック、紙・布、かん・びん、ペットボトル、小型不燃。分別が必要。粗大ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "collection_location": {
+              "value": "週1回、決めた曜日に玄関先。排出場所・収集日は事前調査で打合せ。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "自分でごみステーションまで持ち出せない",
+                  "地域や身近な人からごみ出し協力を得られない"
+                ],
+                "any": [
+                  {
+                    "label": "高齢者",
+                    "all": [
+                      "65歳以上のひとり暮らし",
+                      "ホームヘルプサービスを現在利用",
+                      "要介護2以上"
+                    ]
+                  },
+                  {
+                    "label": "障碍者",
+                    "all": [
+                      "ひとり暮らし",
+                      "ホームヘルプサービスを現在利用",
+                      {
+                        "any": [
+                          "身体障害者手帳1級/2級",
+                          "精神障害者保健福祉手帳1級",
+                          "療育手帳A（重度）"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "note": "要件外でも日常的にごみ出しが困難な人は相談。利用可否は訪問調査後に決定。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "family_help": {
+              "value": "親族・身近な人のごみ出し協力を得られる場合は対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "limits": {
+              "value": "週1回。希望者には安否確認も実施。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "application": {
+              "value": "担当ケアマネジャーから業務課へ申込。聞取り後、訪問・面談調査を経て決定。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            },
+            "contact": {
+              "value": "きずな収集担当 0797-87-3396、FAX 0797-81-1941。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-kizuna"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "利用料と1回の袋数・重量上限は。通常収集日に在宅・立会いが必要ですか。"
+          ]
+        },
+        {
+          "id": "takarazuka-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "一番長い部分が30cm超又は5kg以上の粗大ごみ。家電リサイクル対象品・危険物等は別経路。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-index",
+                "takarazuka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "予約した、収集車が横付けできる所へ朝8時までに搬出。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常収集は指定場所への事前搬出が必要。室内搬出は別の資格・下見のある支援経路。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "takarazuka-bulky",
+                "takarazuka-carry"
+              ]
+            },
+            "eligibility": {
+              "value": "市の粗大ごみ収集。事業系粗大ごみは持込のみ。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "1品目300～2,700円（300円単位）。予約時に金額確認、処理券購入・貼付。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "予約数に上限あり。家電リサイクル品や危険物等は収集・処理不可。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "application": {
+              "value": "ネット又は0797-87-3363へ前日正午まで。月曜収集は前週金曜正午まで。初回/2014年4月以降未利用、氏名住所変更は電話登録。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "収集時の立会い不要。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "予約受付 0797-87-3363（9～17時・年末年始除き年中無休）。収集の問合せ0797-87-7883。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "家族代理申込や1回の点数・重量の上限は。"
+          ]
+        },
+        {
+          "id": "takarazuka-carry",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみの運び出し収集",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "生活に支障が出る粗大ごみに限る。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "collection_location": {
+              "value": "下見で実際に室内から運び出せるか調査。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "indoor_carry": {
+              "value": true,
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "自分で家の外まで粗大ごみを持ち出せない",
+                  "生活に支障が出る粗大ごみ"
+                ],
+                "any": [
+                  {
+                    "label": "高齢者",
+                    "all": [
+                      "65歳以上のひとり暮らし",
+                      "ホームヘルプサービスを現に利用",
+                      "要介護2以上"
+                    ]
+                  },
+                  {
+                    "label": "障碍者",
+                    "all": [
+                      "ひとり暮らし",
+                      "ホームヘルプサービスを現に利用",
+                      {
+                        "any": [
+                          "身体障害者手帳1級/2級",
+                          "精神障害者保健福祉手帳1級",
+                          "療育手帳A（重度）"
+                        ]
+                      }
+                    ]
+                  },
+                  "きずな収集を現に利用している人"
+                ],
+                "exclusion": "親族と同居、近くに親族が住む、地域の協力が得られる等の場合は対象外。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "family_help": {
+              "value": "親族同居・近居や地域の協力が得られる等の場合は対象外。立会人は親族以外。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "fees": {
+              "value": "粗大ごみ処分手数料の処理券を事前購入。購入困難なら事前申込により当日現金と引換え可。運び出し自体の追加料は明記なし。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "limits": {
+              "value": "生活に支障が出る品物に限定。下見で搬出可能性を確認。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "application": {
+              "value": "担当ケアマネジャーから業務課0797-87-7883へ相談し下見を調整。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "attendance": {
+              "value": "下見・収集時とも親族以外の立会人が必要。立会人の範囲に制限があり事前確認。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            },
+            "contact": {
+              "value": "クリーンセンター業務課0797-87-7883、FAX0797-81-1941。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-carry"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "親族以外の立会人として誰が認められますか。搬出作業の追加料、点数、階段や解体の制限は。"
+          ]
+        },
+        {
+          "id": "takarazuka-dropoff",
+          "kind": "self_dropoff",
+          "name": "クリーンセンターへの粗大ごみ持込",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "家庭から出た粗大ごみ。日常ごみ、家電リサイクル対象品・危険物等は持込不可。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "クリーンセンター。月～金（祝日含む）と毎月第3土曜、8～11時・12～15時。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "施設への持込。積み下ろしは自分で行う。自宅からの搬出サービスではない。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "予約した本人又は家族が持ち込む家庭系粗大ごみ。事業系は別料金。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "family_help": {
+              "value": "予約者本人又は家族が搬入可。無許可の引越業者・便利屋等は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "fees": {
+              "value": "家庭系10kgあたり90円、現金のみ（事業系10kg220円とは別）。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "limits": {
+              "value": "梱包材等から出し、分別。混入・内容不明時は受入拒否の場合あり。予約枠に上限。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "application": {
+              "value": "ネット又は0797-87-3363、前日17時まで。品目・個数・車種・車番号等を伝える。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "本人又は家族が持込、積み下ろしは自身で行う。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            },
+            "contact": {
+              "value": "予約0797-87-3363。持込の問合せ管理課0797-87-4844。",
+              "state": "explicit",
+              "source_ids": [
+                "takarazuka-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "搬入時の本人・家族確認書類と重量端数の扱いを確認してください。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "日常のきずな収集は屋内不可。粗大室内搬出は別条件で、親族以外の立会いが必要。"
+      ],
+      "common_questions_for_office": [
+        "掲載条件に合うか、申込時に公式窓口で確認してください。"
+      ]
+    },
+    {
+      "id": "hyogo:itami",
+      "name": "伊丹市",
+      "kana": "いたみし",
+      "pref_name": "兵庫県",
+      "selection_reason": "2026年度に全小学校区へ拡大した有料日常支援と通常粗大・家族持込の選択を比較できる。",
+      "publication_status": "research_only",
+      "services": [
+        {
+          "id": "itami-daily",
+          "kind": "daily_support",
+          "name": "高齢者等ごみ出し支援モデル事業",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "燃やすごみ・燃やさないごみ・資源物。分別して別袋へ。粗大ごみ・引越等臨時ごみは対象外。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "collection_location": {
+              "value": "事前に決めた玄関前や敷地内の収集しやすい場所。ふた付き容器を利用者が準備。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "indoor_carry": {
+              "value": "玄関前等への戸別収集。室内から外への搬出作業は明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "eligibility": {
+              "value": {
+                "all": [
+                  "伊丹市内に住所がある",
+                  "ごみステーションまで持って行くことが困難",
+                  "ホームヘルプサービスを利用する世帯",
+                  "次の条件に当てはまる人のみで構成"
+                ],
+                "any": [
+                  {
+                    "all": [
+                      "65歳以上",
+                      "身体の状態が要介護2以上"
+                    ]
+                  },
+                  {
+                    "any": [
+                      "身体障害者手帳1級/2級",
+                      "精神障害者保健福祉手帳1級",
+                      "療育手帳A判定"
+                    ]
+                  }
+                ],
+                "exclusion": "身近な人の協力を得ている、家事支援/訪問介護等でごみ出しが可能、随時ごみ出しできるステーションの物件に住む場合は対象外。"
+              },
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "family_help": {
+              "value": "無理なく続く親族・地域支援を優先。継続不安は相談。親族や支援者からの問合せも可能。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "fees": {
+              "value": "月額：市民税課税世帯2,200円、非課税世帯1,100円、生活保護受給世帯は無料。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "limits": {
+              "value": "2026年度は全小学校区。週1回原則固定曜日（年末年始除く）。天候等で予定変更あり。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "application": {
+              "value": "まず地域・高年福祉課へ問合せ、要件聞取り→申請→自宅訪問で排出場所・近隣状況等を調整→決定後開始。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "attendance": {
+              "value": "ごみが出ていない場合は安否確認に努める。通常日の在宅・立会い要否は明記なし。",
+              "state": "not_stated",
+              "source_ids": [
+                "itami-model"
+              ]
+            },
+            "contact": {
+              "value": "地域・高年福祉課072-784-8099、FAX072-784-8006。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-model"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "通常日の在宅要否、1回の袋数・重量、月途中の料金扱い、モデル事業の継続予定は。"
+          ]
+        },
+        {
+          "id": "itami-regular",
+          "kind": "regular_bulky",
+          "name": "通常の粗大ごみ収集（ネット/電話）",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "粗大ごみ。品目と最大の辺・幅・高さを確認して予約。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": "建物の外で収集車が横付けできる場所。狭い/施錠されたステーション等は収集不可、初回や不安時は電話確認。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": false,
+              "state": "explicit_exclusion",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "事前申込制の粗大ごみ。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "fees": {
+              "value": "品目別処理料。ネット申込は事前キャッシュレス（カード/PayPay）。電話・FAXは収集時現金。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "limits": {
+              "value": "1世帯1日1回、1回5点まで。大量・運び出し困難時は受付へ相談。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "application": {
+              "value": "ネット24時間又は電話072-769-5380（月～金・祝日含む、年末年始除く8:30～17:30）。ネット/電話困難な聴覚・言語障がいの人はFAX072-764-5321。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "attendance": {
+              "value": "ネットは朝8時までに出し立会い不要（受付番号・収集日表示）。電話/FAXは指定時刻までに出し、現金支払のため立会い必要。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター072-769-5380、FAX072-764-5321。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "希望日の予約期限、家族代理申込と立会い条件を確認してください。"
+          ]
+        },
+        {
+          "id": "itami-carry-consult",
+          "kind": "bulky_carry_support",
+          "name": "粗大ごみを運び出せない場合の相談",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "一時に多量に出る粗大ごみや、運び出しが困難な粗大ごみについて受付センターへ相談する案内。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "collection_location": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "indoor_carry": {
+              "value": "通常収集員は建物内へ入らない。相談後に室内搬出できるかは明記されていない。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "eligibility": {
+              "value": "運び出し困難等の場合に相談可能。支援制度の利用資格・対応方法は未記載。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "family_help": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "fees": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "limits": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "application": {
+              "value": "粗大ごみ受付センター072-769-5380へ、屋内/階段/品目と家族の協力状況を伝え相談。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "attendance": {
+              "value": null,
+              "state": "not_stated",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            },
+            "contact": {
+              "value": "粗大ごみ受付センター072-769-5380。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-bulky"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "室内から運べる対応や紹介先はありますか。対象条件、料金、立会人、階段・解体条件は。"
+          ]
+        },
+        {
+          "id": "itami-dropoff",
+          "kind": "self_dropoff",
+          "name": "クリーンランドへの臨時家庭ごみ持込",
+          "evidence_status": "official_listing",
+          "review_status": "pending",
+          "human_reviewed_at": null,
+          "checked": "2026-10-16",
+          "fields": {
+            "waste_scope": {
+              "value": "伊丹市内から出る家庭の臨時ごみ。可燃/不燃（粗大含む）を分別。日常ごみは定日収集を利用。家電4品目・パソコン・危険物・基準不適合品等は不可。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland"
+              ]
+            },
+            "collection_location": {
+              "value": "豊中市伊丹市クリーンランドの予約時間へ。平日午後、土曜午前/午後、日曜不可（年末年始除く祝日可）。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland"
+              ]
+            },
+            "indoor_carry": {
+              "value": "荷下ろしは自分で行う。施設への持込で、自宅からの搬出サービスではない。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland"
+              ]
+            },
+            "eligibility": {
+              "value": "定日収集や粗大収集を利用できない場合が原則。住所/氏名確認書類を持参。市外発生ごみ不可。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland"
+              ]
+            },
+            "family_help": {
+              "value": "電話予約：予約は原則排出者本人、搬入は本人又は家族。ネット予約：予約・搬入とも排出者本人限定で、家族だけの搬入不可。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland",
+                "itami-cleanland-net"
+              ]
+            },
+            "fees": {
+              "value": "10kgまでごと105円。可燃/不燃別精算、現金又は対応キャッシュレス。領収書が必要なら現金。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland"
+              ]
+            },
+            "limits": {
+              "value": "電話：7日前～当日午前（土曜午前搬入は前日まで）、期間内2予約・1予約1台。ネット：7日前0時～2日前0時、期間内1回1台、乗用車/軽トラックのみ。荷下ろしは自身で。徒歩・二輪車不可。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland",
+                "itami-cleanland-net"
+              ]
+            },
+            "application": {
+              "value": "電話072-782-3641（月～土9～17時、年末年始除く）。市入口は前日までと案内する一方、施設は電話当日午前までと記載。ネットは別期限・本人限定、仮予約後の確定メール要確認。利用時は施設へ確認。",
+              "state": "needs_confirmation",
+              "source_ids": [
+                "itami-dropoff-index",
+                "itami-cleanland",
+                "itami-cleanland-net"
+              ]
+            },
+            "attendance": {
+              "value": "電話は本人又は家族、ネットは予約した排出者本人が来場。本人/住所確認書類・施設料が必要。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland",
+                "itami-cleanland-net"
+              ]
+            },
+            "contact": {
+              "value": "伊丹市民予約専用072-782-3641、FAX06-6845-6194。施設相談06-6841-5394（予約不可）。",
+              "state": "explicit",
+              "source_ids": [
+                "itami-cleanland"
+              ]
+            }
+          },
+          "questions_for_office": [
+            "家族が搬入する場合は電話予約の条件を確認してください。市入口と施設の締切表示差があるため利用日現在の締切も確認。"
+          ]
+        }
+      ],
+      "priority_notes": [
+        "日常支援は月額制。粗大の室内対応は相談案内にとどまり利用可能と確定しない。持込は電話とネットで家族可否が異なる。"
+      ],
+      "common_questions_for_office": [
+        "掲載条件に合うか、申込時に公式窓口で確認してください。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "itami-bulky",
+      "url": "https://www.city.itami.lg.jp/SOSIKI/SHIMIN/KANKYOC/GOMI_BUNBETU_DASIKATA/1470619330123.html",
+      "title": "粗大ごみの申込み方法について",
+      "source_updated": "2025-10-01",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "itami-cleanland",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/tel/mochikomi.html",
+      "title": "臨時家庭ごみの持ち込み　豊中市",
+      "source_updated": "2026-05-13",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "itami-cleanland-net",
+      "url": "https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/net/rinnjigomi.html",
+      "title": "臨時家庭ごみの持ち込みについて　豊中市",
+      "source_updated": null,
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "itami-dropoff-index",
+      "url": "https://www.city.itami.lg.jp/SOSIKI/SHIMIN/KANKYOC/GOMI_BUNBETU_DASIKATA/mochikomi/index.html",
+      "title": "豊中市伊丹市クリーンランド持ち込みについて",
+      "source_updated": null,
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "itami-model",
+      "url": "https://www.city.itami.lg.jp/SOSIKI/KENKOFUKUSHI/TIKI_KONEN/KOUREISYA/KORESYA_SIEN/45243.html",
+      "title": "伊丹市高齢者等ごみ出し支援モデル事業        対象校区を全小学校区に拡大！",
+      "source_updated": "2026-07-31",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "takarazuka-bulky",
+      "url": "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1002040.html",
+      "title": "粗大ごみの収集・持ち込み方法",
+      "source_updated": "2026-05-07",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "takarazuka-carry",
+      "url": "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1015366.html",
+      "title": "粗大ごみの運び出し収集",
+      "source_updated": "2025-09-11",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "takarazuka-index",
+      "url": "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/index.html",
+      "title": "ごみの分別・収集",
+      "source_updated": null,
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    },
+    {
+      "id": "takarazuka-kizuna",
+      "url": "https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1000651.html",
+      "title": "「きずな収集」利用申込みの受付を実施しています",
+      "source_updated": "2025-11-28",
+      "checked": "2026-10-16",
+      "source_kind": "official"
+    }
+  ],
+  "review_note": "今回2市のみの候補。独立確認前。公開承認なし。"
+}
