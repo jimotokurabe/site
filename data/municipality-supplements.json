@@ -22062,26 +22062,73 @@
     "fukushima:shirakawa": {
       "key": "fukushima:shirakawa",
       "status": "partial",
-      "checked": "2026-10-05",
+      "checked": "2026-11-01",
       "sources": [
         {
           "url": "https://www.city.shirakawa.fukushima.jp/page/page009781.html",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.city.shirakawa.fukushima.jp/shirakawa/contents/reiki/H417901010081/H417901010081_j.html",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.shirakawa.fukushima.jp/shirakawa/contents/reiki/H421902100014/H421902100014_j.html",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.shirakawa.fukushima.jp/data/doc/1774322630_doc_43_0.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.shirakawa.fukushima.jp/data/doc/1774322622_doc_43_0.doc",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.shirakawa.fukushima.jp/data/doc/1583996338_doc_23_0.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
         }
       ],
       "updates": [
         {
           "topic": "令和8年度バス・タクシー等運賃助成",
           "field": "eligibility",
-          "value": "2026年度は市内在住で免許を持たない人、2027年3月31日までに75歳以上となる人、または障害者手帳所持者等が対象です。助成券は年度内1回のみ交付します。",
+          "value": "令和8年度バス助成は市内住民登録があり、年度末75歳以上かつ免許非所持、障がい者手帳所持かつ免許非所持、又は所定期間内の妊産婦が対象。定率タクシーは年度末65歳以上等で免許の有無は不問。",
           "source": "https://www.city.shirakawa.fukushima.jp/page/page009781.html",
-          "evidence": "「令和8年4月1日から令和9年3月31日」「運転免許証を所持していない、令和9年3月31日までに75歳以上」「年度内1人1回限り」",
+          "evidence": "R8本文・チラシ・申請書で、バスの免許非所持要件が高齢者枠と障がい者枠に適用されることを照合。",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "市コミュニティバス",
+          "field": "eligibility",
+          "value": "65歳以上（現行条例では当該年度末に65歳以上になる方を含む）。免許返納は条件ではありません。市内居住に限定する規定は条例・規則・案内に記載なし。",
+          "source": "https://www.city.shirakawa.fukushima.jp/shirakawa/contents/reiki/H417901010081/H417901010081_j.html",
+          "evidence": "現行条例別表1(1)備考5は年度末65歳以上に達する方を含むと規定。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "バス・定率タクシー助成",
+          "field": "application",
+          "value": "市の申請書を本庁地域生活課又は表郷・大信・東の各庁舎地域振興課へ提出、オンライン申請も可。掲載申請書・記載例には申請と助成券／登録証受領の委任欄があり、代理人は対象者の氏名等と代理人氏名・続柄・電話番号を記入。妊産婦は母子健康手帳の表紙・出生届出済証明の写し（オンラインは画像）を添付。",
+          "source": "https://www.city.shirakawa.fukushima.jp/data/doc/1774322630_doc_43_0.pdf",
+          "evidence": "市掲載記載例の委任欄と注2・注5に対象者・代理人の必要記入を明記。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
         }
       ],
       "unresolved": [
-        "確認した公式ページに記載された制度条件を補完。交通網全体・未掲載の路線条件は未確認。"
+        "バス・タクシー助成申請の期限、代理人本人確認書類等の追加添付は本文・掲載申請書に明記なし。利用期間の2027年3月31日と申請期限は区別し、地域生活課0248-28-5511へ確認してください。",
+        "通常100円乗車時の年齢確認書類・方法は公式案内・現行規則に明記なし。"
       ]
     },
     "fukuoka:onga": {
@@ -42107,11 +42154,29 @@
     "aichi:aisai": {
       "key": "aichi:aisai",
       "status": "partial",
-      "checked": "2026-10-05",
+      "checked": "2026-11-01",
       "sources": [
         {
           "url": "https://www.city.aisai.lg.jp/0000001854.html",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.city.aisai.lg.jp/cmsfiles/contents/0000001/1854/riyouR804.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01",
+          "fetch_method": "browser_download"
+        },
+        {
+          "url": "https://www.city.aisai.lg.jp/cmsfiles/contents/0000001/1854/jikoseiyakusho.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01",
+          "fetch_method": "browser_download"
+        },
+        {
+          "url": "https://www.city.aisai.lg.jp/cmsfiles/contents/0000001/1854/itiranR808.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01",
+          "fetch_method": "browser_download"
         }
       ],
       "updates": [
@@ -42122,7 +42187,8 @@
           "source": "https://www.city.aisai.lg.jp/0000001854.html",
           "evidence": "「80歳以上」「65歳以上の要介護1～5」「65歳以上の運転ができない方」",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-11-01"
         },
         {
           "topic": "タクシー料金助成利用券",
@@ -42131,11 +42197,33 @@
           "source": "https://www.city.aisai.lg.jp/0000001854.html",
           "evidence": "「本人確認書類を持参」「代理の方でも可能」「代理の方の本人確認書類」",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "高齢者福祉タクシー券",
+          "field": "fare",
+          "value": "年度24枚、1乗車につき1枚を乗車時に本人確認書類とともに提示。初乗り運賃と迎車料金を助成し、初乗りは普通車の距離制運賃が上限。定額の金額は記載なし。福祉車両は乗車前に事業者へ補助額を確認。",
+          "source": "https://www.city.aisai.lg.jp/cmsfiles/contents/0000001/1854/riyouR804.pdf",
+          "evidence": "R8.4.1利用案内の1枚提示・初乗りは普通車距離制上限を照合。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "高齢者福祉タクシー券",
+          "field": "service_area",
+          "value": "利用範囲は愛西市・津島市・弥富市・あま市・海部郡・稲沢市内。現在掲載の令和8年8月1日現在の事業者一覧を確認して利用。券の再交付不可。死亡・市外転出・他人への使用・年度内未使用の残券は無効となり市へ返却。",
+          "source": "https://www.city.aisai.lg.jp/cmsfiles/contents/0000001/1854/riyouR804.pdf",
+          "evidence": "利用範囲・再交付不可・無効返却事由をR8案内で照合。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
         }
       ],
       "unresolved": [
-        "助成券の枚数・額・利用地域は本文の確認範囲で確定せず。"
+        "令和8年4月1日利用案内を確認。固定の円額ではなく普通車の距離制初乗りが上限のため、福祉車両の補助額は事業者へ事前確認が必要です。申請期限・年度途中申請時の交付枚数・代理の追加添付等は明記なし。高齢福祉課0567-55-7116へ確認してください。",
+        "「運転できない」区分の自己申告書提出要否等は高齢福祉課へ確認。"
       ]
     },
     "kanagawa:manazuru": {
@@ -49183,25 +49271,69 @@
     "hokkaido:nemuro": {
       "key": "hokkaido:nemuro",
       "status": "partial",
-      "checked": "2026-10-05",
+      "checked": "2026-11-01",
       "sources": [
         {
           "url": "https://www.city.nemuro.hokkaido.jp/lifeinfo/kurashi/rosenbus/6740.html",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.city.nemuro.hokkaido.jp/material/files/group/51/R70324after_senior_trafficsupport.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.nemuro.hokkaido.jp/material/files/group/10/R6_hire_shinsei.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.nemuro.hokkaido.jp/material/files/group/10/R6_keireki_shinsei.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.nemuro.hokkaido.jp/material/files/group/10/R6_hire_seido.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.nemuro.hokkaido.jp/lifeinfo/kakuka/shiminfukushibu/kaigofukusi/s/1371.html",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.nemurokotsu.com/topics/%e6%a0%b9%e5%ae%a4%e5%b8%82%e9%ab%98%e9%bd%a2%e8%80%85%e3%83%90%e3%82%b9%e7%ad%89%e5%84%aa%e5%be%85%e4%b9%97%e8%bb%8a%e5%88%b870%e6%ad%b3%e4%bb%a5%e4%b8%8a%e3%81%8a%e6%8c%81%e3%81%a1%e3%81%ae",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
         }
       ],
       "updates": [
         {
           "topic": "返納奨励事業",
           "field": "eligibility",
-          "value": "自主返納した75歳以上が対象。返納から6か月以内に申請。手数料助成とハイヤー券20枚を交付し、券は申請後連続3年度を上限。2024年4月以降は交通傷害共済加入不要。",
+          "value": "自主返納した満75歳以上の根室市民へ、証明書交付手数料の助成とハイヤー券20枚（申請から連続3ヶ年度限度）を交付。ハイヤー券は返納から6か月以内に申請し、各券は交付から1年間有効。手数料助成の期限起算は本文と概要PDFの差に注意。2024年4月以降は交通傷害共済加入不要。",
           "source": "https://www.city.nemuro.hokkaido.jp/lifeinfo/kurashi/rosenbus/6740.html",
-          "evidence": "「満75歳以上の方に、運転経歴証明書交付手数料の助成と、ハイヤー乗車券20枚（申請から連続した3ヶ年度を限度）」「申請期限は返納の日から6か月以内」「令和6年4月から…交通傷害共済への加入が不要」",
+          "evidence": "市本文・現在掲載の概要PDFと申請書を照合。期限は制度別に区別。",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "返納奨励事業",
+          "field": "application",
+          "value": "証明書の交付手数料助成は本人名義の通帳と、紙のみは運転経歴証明書、マイナのみは免許情報記録確認書・領収書、紙とマイナ両方は運転経歴証明書・領収書を持参と掲載PDFに記載。取得費用は後日振込。掲載申請書の添付欄は紙の証明書写しのみの記載で、マイナの添付は担当課へ確認。 返納時の取消通知書を持参し、その場で20枚交付。掲載申請書は取消通知書の写しを添付し、失効の場合は運転経歴証明書の写しと案内しています。2回目以降は翌年4月1日以降に窓口申請。市本文は申請から連続3ヶ年度が限度、各券は交付日から1年間有効です。",
+          "source": "https://www.city.nemuro.hokkaido.jp/material/files/group/51/R70324after_senior_trafficsupport.pdf",
+          "evidence": "現在掲載の制度概要に紙／マイナ／両方の添付、ハイヤー継続申請を記載。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
         }
       ],
-      "unresolved": []
+      "unresolved": [
+        "制度本文は2025年4月23日更新。現在掲載の概要・申請書を再照合しましたが、手数料助成の申請期限起算（本文と概要PDF）とマイナ添付欄（概要PDFと申請書）に記載差があります。失効者は対象となる場合があるとの案内で、失効理由・年齢判定・期限起算の詳細、代理申請、券1枚の助成範囲は未記載。生活環境課交通市民生活担当0153-23-6111へ確認してください。",
+        "高齢者バス・JR優待券の居住条件・地域別対象区間詳細は未確認。"
+      ]
     },
     "fukuoka:koga": {
       "key": "fukuoka:koga",
