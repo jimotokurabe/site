@@ -906,17 +906,18 @@
           "benefit": "モコバス・デマンド乗合交通共通券200円券と100円券を各35枚。本人1回限り。",
           "fare": "利用券で支払い",
           "routes": "モコバス（守谷市デマンド乗合交通と共通）",
-          "apply": "都市計画課窓口へ申請書と取消通知書・運転経歴証明書・運転免許経歴証明書のいずれか。",
+          "apply": "都市計画課窓口へ申請書と取消通知書・運転経歴証明書・運転免許経歴証明書のいずれか。代理申請時は署名押印済み委任状が必要。受付は2026年11月2日から9:00～16:00（それまでは8:30～17:15）。",
           "sources": [
             {
               "url": "https://www.city.moriya.ibaraki.jp/kurashi_tetsuzuki/koutsu/1002163/1002201.html",
               "label": "高齢者運転免許自主返納支援",
-              "updated": "2024-07-01",
-              "checked": "2026-10-07"
+              "updated": "2026-10-07",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "シルバーおでかけパス",
@@ -943,8 +944,8 @@
         {
           "url": "https://www.city.moriya.ibaraki.jp/kurashi_tetsuzuki/koutsu/1002163/1002201.html",
           "label": "高齢者運転免許自主返納支援",
-          "updated": "2024-07-01",
-          "checked": "2026-10-07"
+          "updated": "2026-10-07",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.moriya.ibaraki.jp/kurashi_tetsuzuki/koutsu/1002163/1002164/1002177/1002180.html",
@@ -953,7 +954,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "返納支援案内は2024年7月更新です。現在の交付条件を都市計画課（0297-45-1111）へ確認してください。"
+      "flag": ""
     },
     {
       "slug": "inashiki",

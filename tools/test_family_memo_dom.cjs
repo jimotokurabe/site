@@ -32,7 +32,10 @@ async function page(file, options={}) {
     expose:()=>observers.forEach(observer=>observer.callback(observer.targets.map(target=>({target,isIntersecting:true,intersectionRatio:.5}))))};
 }
 function assertRecordIncluded(h,id) {
-  const record=h.w.document.querySelector('#record-'+id), text=h.w.document.querySelector('#selection-text').value;
+  assertNodeIncluded(h,h.w.document.querySelector('#record-'+id));
+}
+function assertNodeIncluded(h,record) {
+  const text=h.w.document.querySelector('#selection-text').value;
   for(const link of record.querySelectorAll('a[href^="https:"]')) assert.ok(text.includes(link.href),'source retained: '+link.href);
   const dates=record.textContent.match(/20\d{2}(?:-\d{2}-\d{2}|年\d{1,2}月\d{1,2}日)/g)||[];
   for(const date of dates)assert.ok(text.includes(date),'date retained: '+date);
@@ -76,6 +79,25 @@ function assertRecordIncluded(h,id) {
     assert.ok(restored.w.document.querySelector('[data-selected-summary]').textContent.includes('2項目'));
     restored.dom.window.close();
   }
+  for(const [file,kind] of [['aichi-menkyo-henno/kitanagoya.html','support'],['kanagawa-menkyo-henno/kamakura.html','taxi']]) {
+    const h=await page(file),d=h.w.document;
+    assert.ok(d.querySelector('#'+kind+' .cross a[href="#return-record"]'));
+    await h.click('[data-share-benefit='+kind+']');
+    assertNodeIncluded(h,d.getElementById('return-record'));
+    assert.equal(d.querySelector('#selection-text').value.split('同じ支援の対象条件・申請先').length-1,1);
+    assert.equal(d.querySelector('[data-add-family='+kind+']').getAttribute('aria-pressed'),'false');
+    await h.click('#selection-close');
+    await h.click('[data-add-family=benefit]');await h.click('[data-add-family='+kind+']');
+    await h.click('[data-share-city]');assertRecordIncluded(h,'benefit');
+    assert.equal(d.querySelector('#selection-text').value.includes('同じ支援の対象条件・申請先'),false,'shared conditions are already included by the selected return panel');
+    h.dom.window.close();
+  }
+  const shared=await page('tokyo-menkyo-henno/chiyoda.html');
+  await shared.click('[data-add-family=support]');await shared.click('[data-add-family=taxi]');
+  await shared.click('[data-share-city]');
+  assertNodeIncluded(shared,shared.w.document.getElementById('return-record'));
+  assert.equal(shared.w.document.querySelector('#selection-text').value.split('同じ支援の対象条件・申請先').length-1,1,'bus and taxi sharing one return record include its conditions once');
+  shared.dom.window.close();
   const blocked=await page('hyogo-menkyo-henno/kobe.html',{blockStorage:true});
   await blocked.click('[data-add-family=benefit]');assert.ok(blocked.w.document.querySelector('#selected-status').textContent.includes('開いている間'));
   await blocked.click('[data-share-city]');assert.equal(blocked.w.document.querySelector('#selection-dialog').open,true);blocked.dom.window.close();

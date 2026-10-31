@@ -688,18 +688,54 @@
     {
       "slug": "sasaguri",
       "name": "篠栗町",
-      "status": "unknown",
-      "summary": "70歳以上の正式返納者へSUGOCA5,000円分の案内がありますが、今回確認した町の本文ではカードのバス用途を確認できません。",
-      "programs": [],
+      "status": "henno",
+      "summary": "70歳以上の町内在住自主返納者にSUGOCA5千円分を1回交付。発行者の案内で西鉄バス等への利用を確認できます。預り金の内訳は未確認です。",
+      "programs": [
+        {
+          "name": "自主返納者へのSUGOCA交付",
+          "kind": "henno",
+          "age_min": 70,
+          "eligibility": "町内在住の満70歳以上で、有効期限内の運転免許証を自主的に返納した人。",
+          "benefit": "ICカード乗車券SUGOCA5千円分を1人につき1回交付。預り金・運賃利用可能額の内訳は記載なし。",
+          "fare": "カード残高で対象交通の運賃を支払う。交付カードの利用可能額や不足時の精算方法は町案内に記載なし。",
+          "routes": "JR九州のSUGOCA利用案内は西鉄バス等への乗車を明記。個別の全対象路線は記載なし。",
+          "apply": "取消通知書と本人確認書類（マイナンバーカードや取り消された免許証等）を添えて、返納日から6か月以内に総務課で申請。",
+          "notes": [
+            "町の交付条件とSUGOCA発行者の利用案内を別々に照合。5千円全額が運賃に使えるとは断定していません。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.town.sasaguri.fukuoka.jp/soshiki/somu/3/5855.html",
+              "label": "高齢者運転免許証自主返納支援事業について／篠栗町",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.jrkyushu.co.jp/sugoca/use/index.html",
+              "label": "JR九州・SUGOCAの利用案内",
+              "updated": "",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
+        }
+      ],
       "sources": [
         {
           "url": "https://www.town.sasaguri.fukuoka.jp/soshiki/somu/3/5855.html",
           "label": "高齢者運転免許証自主返納支援事業について／篠栗町",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.jrkyushu.co.jp/sugoca/use/index.html",
+          "label": "JR九州・SUGOCAの利用案内",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "案内の更新日は記載なしです。SUGOCA支援の現在の条件と利用できるバスは総務課消防防災係（092-947-1113）へ確認してください。"
+      "flag": "町・JR九州の案内は更新日の表示がありません。SUGOCA5千円分の預り金と運賃利用可能額、現行受付は総務課消防防災係（092-947-1113）へ確認してください。"
     },
     {
       "slug": "shime",

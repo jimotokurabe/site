@@ -211,11 +211,12 @@
               "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
               "label": "赤磐市民バス運賃",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "65歳以上市民バス一日券割引",
@@ -231,11 +232,12 @@
               "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
               "label": "赤磐市民バス運賃",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "65歳以上市民バス定期券割引",
@@ -251,11 +253,12 @@
               "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
               "label": "赤磐市民バス運賃",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "愛カード所持者市民バス普通運賃割引",
@@ -271,11 +274,12 @@
               "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
               "label": "赤磐市民バス運賃",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "愛カード所持者市民バス一日券割引",
@@ -291,11 +295,12 @@
               "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
               "label": "赤磐市民バス運賃",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "愛カード所持者市民バス定期券割引",
@@ -311,15 +316,16 @@
               "url": "https://www.city.akaiwa.lg.jp/kurashi/kokyokotsu/bus/3132.html",
               "label": "赤磐市民バス運賃",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         }
       ],
       "sources": [],
-      "flag": "運賃本文は更新日なし。現行料金・年齢書類・対象路線は政策推進課086-955-2692へ確認。"
+      "flag": "2026年10月31日に市本文の運賃・年齢書類・愛カード提示・対象路線・定期手続きを再照合しました。市ページに更新日表示はなく、現行運用は政策推進課086-955-2692へ確認してください。65歳以上の居住要件は本文に記載なし。"
     },
     {
       "slug": "wake",
@@ -880,12 +886,13 @@
             {
               "url": "https://www.town.nagi.okayama.jp/gyousei/kurashi/sumai/seikatsukankyou/nagibus.html",
               "label": "町営なぎバス減免制度",
-              "updated": "2025-03-06",
-              "checked": "2026-10-06"
+              "updated": "2026-10-20",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "さと丸乗り合い交通70歳以上割引",
@@ -901,7 +908,7 @@
               "url": "https://www.town.nagi.okayama.jp/gyousei/kurashi/sumai/seikatsukankyou/satomarubus_unkouhyou.html",
               "label": "さと丸乗り合い交通の現行料金",
               "updated": "2026-01-09",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.okayama.jp/uploaded/attachment/413199.pdf",
@@ -911,7 +918,8 @@
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "さと丸乗り合い交通愛カード所持者割引",
@@ -927,7 +935,7 @@
               "url": "https://www.town.nagi.okayama.jp/gyousei/kurashi/sumai/seikatsukankyou/satomarubus_unkouhyou.html",
               "label": "さと丸乗り合い交通の現行料金",
               "updated": "2026-01-09",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.okayama.jp/uploaded/attachment/413199.pdf",
@@ -937,11 +945,12 @@
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         }
       ],
       "sources": [],
-      "flag": "なぎバスは2025年3月更新、さと丸は2026年1月案内だが県警PDFは日付なし。総務課0868-36-4111へ現行運賃・年齢やカード確認方法を確認。"
+      "flag": "2026年10月20日更新の町営なぎバス本文で愛カード半額と降車時提示を確認。さと丸は2026年1月9日本文で町民一律100円・その他70歳以上等150円を確認しましたが、年齢・カード確認方法は記載なし。県警PDF自体に更新日表示はありません。総務課0868-36-4111へ確認してください。"
     },
     {
       "slug": "nishiawakura",

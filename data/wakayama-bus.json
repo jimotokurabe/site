@@ -408,16 +408,17 @@
               "url": "https://www.city.arida.lg.jp/kurashi/chiikifukushi/1004920.html",
               "label": "デマンドバス無料チケットについて",
               "updated": "2024-08-19",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
               "label": "有田市デマンドバス（ありバス）",
-              "updated": "2026-07-03",
-              "checked": "2026-10-06"
+              "updated": "2026-10-21",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "ありバス免許返納者割引",
@@ -433,8 +434,8 @@
             {
               "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
               "label": "有田市デマンドバス（ありバス）",
-              "updated": "2026-07-03",
-              "checked": "2026-10-06"
+              "updated": "2026-10-21",
+              "checked": "2026-10-31"
             }
           ],
           "current": "document_checked"
@@ -453,8 +454,8 @@
             {
               "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
               "label": "有田市デマンドバス（ありバス）",
-              "updated": "2026-07-03",
-              "checked": "2026-10-06"
+              "updated": "2026-10-21",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
@@ -463,7 +464,8 @@
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -471,13 +473,13 @@
           "url": "https://www.city.arida.lg.jp/kurashi/chiikifukushi/1004920.html",
           "label": "デマンドバス無料チケットについて",
           "updated": "2024-08-19",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.arida.lg.jp/kurashi/kotsudoro/kotsu/1001014.html",
           "label": "有田市デマンドバス（ありバス）",
-          "updated": "2026-07-03",
-          "checked": "2026-10-06"
+          "updated": "2026-10-21",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.pref.wakayama.lg.jp/prefg/031300/d00210883_d/fil/jisyuhennou.pdf",
@@ -486,7 +488,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "無料チケットの数量・対象ページは1年以上前です。福祉課（0737-22-3541）で現行条件を確認してください。病院乗車券の具体条件は県一覧によるため市立病院へ確認してください。県一覧に更新日の記載なし。"
+      "flag": "2026年10月21日更新の市運行案内から無料チケットの交付継続と詳細ページへのリンクを確認。ただし75歳・33枚綴り・本人確認の詳細ページは2024年8月19日更新の古い資料です。最新の詳細は福祉課0737-22-3541へ確認してください。病院サービスは現行市案内でも確認しましたが、1枚配布・証明書提示の細部は日付表示のない県一覧によるため、市立病院0737-82-2151へ確認してください。"
     },
     {
       "slug": "yuasa",

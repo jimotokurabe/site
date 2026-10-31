@@ -135,4 +135,4 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None, *, estimate_av
         '<button type="button" id="selection-copy">メモをコピー</button>'
         '<p id="selection-copy-status" role="status"></p></dialog>'
         '<p class="integration-toast" role="status" hidden></p>'))
-    soup.body.append(soup.new_tag('script', src='../assets/benefit-integration.js?v=family-memo-20261031'))
+    soup.body.append(soup.new_tag('script', src='../assets/benefit-integration.js?v=shared-conditions-20261031'))

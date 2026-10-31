@@ -143,8 +143,8 @@
     <button type="button" data-f="yes" aria-pressed="false">助成あり<span class="n">7</span></button>
     <button type="button" data-f="care" aria-pressed="false">条件つき<span class="n">3</span></button>
     <button type="button" data-f="henno" aria-pressed="false">返納すると早く使える<span class="n">2</span></button>
-    <button type="button" data-f="notfound" aria-pressed="false">記載なし<span class="n">29</span></button>
-    <button type="button" data-f="endnone" aria-pressed="false">終了・返納者のみ<span class="n">1</span></button>
+    <button type="button" data-f="notfound" aria-pressed="false">記載なし<span class="n">28</span></button>
+    <button type="button" data-f="endnone" aria-pressed="false">終了・返納者のみ<span class="n">2</span></button>
   </div>
   <p class="count" id="count" aria-live="polite" data-unit="市町村">40市町村すべてを表示しています。</p>
 </section>
@@ -387,16 +387,24 @@
   </div>
   <p class="card-back"><a href="#pick">↑ ほかの市町村を選ぶ</a><a href="./">← トップ（地図）にもどる</a></p>
 </article>
-<article class="card is-notfound" id="gonohe" data-k="notfound" aria-labelledby="gonohe-h">
+<article class="card" id="gonohe" data-k="henno_only" aria-labelledby="gonohe-h">
   <div class="card-head">
     <h3 class="city" id="gonohe-h">五戸町<span class="yomi">ごのへまち</span></h3>
-    <span class="chip t-notfound">記載なし</span>
+    <span class="chip t-henno_only">返納者のみ</span>
   </div>
-  <p class="what">年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。町の「町タクおでかけタクシー」は75歳以上を含む2人以上の利用で運賃半額になる、令和8年3月末までの期間限定の制度でした。</p>
+  <p class="what">自主返納時65歳以上の町民に、指定バス・町内タクシー4社で使える回数乗車券を交付します。</p>
+  <p class="note">制度の名前：高齢者運転免許自主返納支援（交通機関専用回数乗車券）</p>
+  <dl class="facts">
+    <div><dt>対象</dt><dd>五戸町に居住し住民登録があり、免許自主返納時に満65歳以上で、取消通知書を持つ方。</dd></div>
+    <div><dt>助成の中身</dt><dd>新規申請は10,000円分、2回目以降は年1回5,000円分。バス・タクシー共通券で合算給付ではありません。</dd></div>
+    <div><dt>申し込み</dt><dd>本人が五戸町役場総務課へ本人確認書類を持参。新規は取消通知書も必要。</dd></div>
+    <div><dt>返納した人は</dt><dd>運転免許を自主返納した方を対象とする支援です。対象年齢・居住・期限等の条件は上記を確認してください。</dd></div>
+  </dl>
+  <p class="flag">確かめ方：県警の個別一覧に作成日の記載なし。現行の対象タクシー4社・券の有効期限と利用時の精算は町総務課へ確認してください。</p>
   <p class="note"><a href="aomori-menkyo-henno.html#gonohe">五戸町の免許返納の特典も見る</a></p>
   <div class="card-foot">
-    <a class="btn-src" href="https://www.town.gonohe.aomori.jp/kurashi/osiease/2022-1213-1226-95.html" target="_blank" rel="noopener">町のホームページ（町タクおでかけタクシーについて）を見る<span aria-hidden="true">↗</span></a>
-    <p class="dates">ページの日付：記載なし<br>確かめた日：2026年9月28日</p>
+    <a class="btn-src" href="https://www.police.pref.aomori.jp/koutubu/koutu_kikaku/pdf/一覧表2025/01自治体・バス.pdf" target="_blank" rel="noopener">青森県警察の支援協賛店一覧（自治体・バス、五戸町の記載）を見る<span aria-hidden="true">↗</span></a>
+    <p class="dates">ページの日付：記載なし（県警現行リンクの自治体・バス一覧）<br>確かめた日：2026年10月31日</p>
   </div>
   <p class="card-back"><a href="#pick">↑ ほかの市町村を選ぶ</a><a href="./">← トップ（地図）にもどる</a></p>
 </article>
@@ -797,7 +805,7 @@
     <li>2026年9月28日に、40市町村の公式ページを開いて、対象・金額・申し込み先を原文で確かめました。</li>
     <li>年齢や介護の認定などを条件にしたものを載せています。障害者手帳だけが条件の福祉タクシー券は含めていません。</li>
     <li>予約して乗る乗合タクシー（デマンド交通）の、高齢者向けの料金の助成も含めています。</li>
-    <li>市町村のページに書かれていないことは「記載なし」とし、推測で埋めていません。原文で確かめきれなかった点は、その市町村の欄に書いています（今別町・藤崎町・つがる市・六ヶ所村・おいらせ町・大間町）。</li>
+    <li>市町村のページに書かれていないことは「記載なし」とし、推測で埋めていません。原文で確かめきれなかった点は、その市町村の欄に書いています（今別町・藤崎町・五戸町・つがる市・六ヶ所村・おいらせ町・大間町）。</li>
     <li>運転免許を返納した人への特典は、<a href="aomori-menkyo-henno.html">免許返納の特典の一覧</a>にあります。</li>
     <li>制度は変わることがあります。申し込む前に、市町村の公式ページか窓口で確かめてください。</li>
     <li>間違いに気づいたら、<a href="https://docs.google.com/forms/d/e/1FAIpQLSeNJuZsE9F--Erk3ZQK5rMyP704VH8S4mW5BNll9z_t7BeREg/viewform" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</li>

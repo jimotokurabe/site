@@ -98,10 +98,23 @@
   function openMemo(ids, opener, entryPoint) {
     memoOpener = opener;
     let text = `${document.querySelector('h1').textContent.trim()}\n${canonical}\n\n家族と確認する掲載記録です。利用前に公式案内・窓口で現在の条件を確認してください。\n複数項目に同じ制度が含まれる場合があります。金額は合算しません。\n`;
+    const includedReferences = new Set();
     ids.forEach(id => {
       const record = document.querySelector('#' + id + ' .original-record');
       // Keep all conditions, dates, and source associations, including closed disclosures.
       const clone = record.cloneNode(true);
+      // A grouped bus/taxi panel points to the municipal return record. Include
+      // those conditions when sharing the panel alone, once per shared memo.
+      const shared = record.querySelector('.cross a[href="#return-record"]')
+        ? document.getElementById('return-record') : null;
+      const alreadyIncluded = shared && ids.some(other =>
+        document.querySelector('#' + other + ' .original-record')?.contains(shared));
+      if (shared && !record.contains(shared) && !alreadyIncluded && !includedReferences.has(shared.id)) {
+        const heading = document.createElement('h3');
+        heading.textContent = '同じ支援の対象条件・申請先';
+        clone.append(heading, shared.cloneNode(true));
+        includedReferences.add(shared.id);
+      }
       clone.querySelectorAll('svg,script,style').forEach(node => node.remove());
       clone.querySelectorAll('a[href]').forEach(link => {
         const url = new URL(link.getAttribute('href'), canonical);

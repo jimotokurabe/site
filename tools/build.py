@@ -218,14 +218,21 @@ def fact(label, value):
     return f'    <div><dt>{e(label)}</dt><dd{cls}>{e(shown)}</dd></div>\n'
 
 
+def taxi_subsidy_facts(t, amount_label='助成の中身'):
+    # Return-only records can leave the structured fields empty while the
+    # return-benefit record supplies the conditions. Do not call those fields
+    # absent from the official page merely because this duplicate is empty.
+    return ''.join(fact(label, t.get(key)) for label, key in
+                   [('対象', 'age'), (amount_label, 'amt'), ('申し込み', 'how')]
+                   if t['k'] != 'henno_only' or t.get(key) != '記載なし')
+
+
 def taxi_block(t, unit):
     """市町のカードの下に出す、高齢者のタクシー代の助成の欄。"""
     label = TAXI_KINDS[t["k"]][0]
     facts = ""
-    if t["k"] in ("yes", "care"):
-        facts += fact("対象", t.get("age"))
-        facts += fact("助成の中身", t.get("amt"))
-        facts += fact("申し込み", t.get("how"))
+    if t["k"] in ("yes", "care", "henno_only"):
+        facts += taxi_subsidy_facts(t)
     link_back = t.get("henno_link")
     if link_back and link_back != "記載なし":
         facts += fact("返納した人は", link_back)
@@ -672,10 +679,8 @@ def taxi_card(c, t, P):
     unit = city_unit(c["n"])
     label = TAXI_KINDS[t["k"]][0]
     facts = ""
-    if t["k"] in ("yes", "care"):
-        facts += fact("対象", t.get("age"))
-        facts += fact("助成の中身", t.get("amt"))
-        facts += fact("申し込み", t.get("how"))
+    if t["k"] in ("yes", "care", "henno_only"):
+        facts += taxi_subsidy_facts(t)
     h = t.get("henno_link")
     if h and h != "記載なし":
         facts += fact("返納した人は", h)
@@ -1015,9 +1020,8 @@ def guide_taxi_mobility(c, t, pref, base):
     <p>{relation}</p>{henno}
     <a href="#ans-h">対象と手順を見る →</a>
   </div>"""
-    elif t["k"] in ("yes", "care"):
-        facts = "".join((fact("対象", t.get("age")), fact("助成", t.get("amt")),
-                         fact("申し込み", t.get("how"))))
+    elif t["k"] in ("yes", "care", "henno_only"):
+        facts = taxi_subsidy_facts(t, '助成')
         if t.get("henno_link") and t["henno_link"] != "記載なし":
             facts += fact("返納した人は", t["henno_link"])
         relation = (f'    <p>{e(t["guide_relation_note"])}</p>\n'

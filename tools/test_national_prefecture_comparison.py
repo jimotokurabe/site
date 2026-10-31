@@ -4,6 +4,7 @@ from pathlib import Path
 import unittest
 from bs4 import BeautifulSoup
 from prefecture_comparison import comparison_rows, row_html
+from build import taxi_block, taxi_card, guide_taxi_mobility
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -71,6 +72,25 @@ class NationalComparisonTests(unittest.TestCase):
                        for _, bus, _, _ in self.datasets.values() for city in bus['cities'] for program in city['programs'])
         self.assertGreater(tested, 0)
         self.assertEqual(tested, expected)
+
+    def test_return_only_taxi_conditions_survive_all_legacy_renderers(self):
+        pref = self.datasets['aichi'][0]['pref']
+        city = {'slug': 'example', 'n': '確認市', 'y': 'かくにんし'}
+        record = {'k': 'henno_only', 'what': '返納者に交付する選択制のタクシー券。',
+                  'age': '市内在住65歳以上で全免許を自主返納した人。',
+                  'amt': '2,000円分、1人1回。バス券との選択。',
+                  'how': '返納から1年以内に取消通知書を持参。',
+                  'checked': '2026-10-31'}
+        for html in (taxi_block(record, '市'), taxi_card(city, record, pref),
+                     guide_taxi_mobility(city, record, pref, '../')):
+            text = BeautifulSoup(html, 'html.parser').get_text(' ', strip=True)
+            for field in ('age', 'amt', 'how'):
+                self.assertIn(record[field], text)
+            self.assertIn('返納者のみ', text)
+        duplicate = dict(record, age='記載なし', amt='記載なし', how='記載なし')
+        for html in (taxi_block(duplicate, '市'), taxi_card(city, duplicate, pref),
+                     guide_taxi_mobility(city, duplicate, pref, '../')):
+            self.assertNotIn('ページに記載なし', BeautifulSoup(html, 'html.parser').get_text())
 
 
 if __name__ == '__main__':
