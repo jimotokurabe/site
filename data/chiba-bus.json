@@ -2161,23 +2161,30 @@
       "slug": "sodegaura",
       "name": "袖ケ浦市",
       "status": "ended",
-      "summary": "高齢者支援協力バス事業は令和7年3月31日に終了しました。現行タクシー助成は別支援です。",
+      "summary": "高齢者支援協力バス事業は2025年3月31日に終了。これはガウランド送迎バス空席の平川・平岡方面ルートの試行事業で、民間バス事業者の返納者優待やタクシー券とは別です。",
       "programs": [],
       "sources": [
         {
           "url": "https://www.city.sodegaura.lg.jp/soshiki/koreisha/bus.html",
-          "label": "高齢者支援協力バス事業は終了しました。 - 袖ケ浦市公式ホームページ（高齢者支援課）",
+          "label": "市の高齢者支援協力バス事業終了案内",
           "updated": "2025-04-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-01"
         },
         {
           "url": "https://www.city.sodegaura.lg.jp/soshiki/koreisha/koureisyaidousien.html",
-          "label": "高齢者移動支援事業について - 袖ケ浦市公式ホームページ（高齢者支援課）",
+          "label": "市の高齢者タクシー料金助成（バスとは別）",
           "updated": "2026-07-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.sodegaura.lg.jp/soshiki/tokei/koureisyamenkyohenou.html",
+          "label": "市が紹介する民間事業者の返納者優待（市独自助成とは別）",
+          "updated": "2025-04-01",
+          "checked": "2026-11-01"
         }
       ],
-      "flag": "終了以外の市独自高齢者バス支援の有無は高齢者支援課地域包括支援班0438-62-3225へ確認してください。"
+      "flag": "2025年の終了案内を再確認。民間事業者の返納者優待の発行手数料・現行条件は各事業者へ確認してください。終了以外の市独自高齢者バス支援の有無は、高齢者支援課0438-62-3225又は都市計画課0438-38-6263へ確認。終了案内と事業者紹介は1年以上前の更新です。",
+      "checked": "2026-11-01"
     }
   ],
   "common": {

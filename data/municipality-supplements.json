@@ -17513,7 +17513,7 @@
     "chiba:sodegaura": {
       "key": "chiba:sodegaura",
       "status": "partial",
-      "checked": "2026-10-05",
+      "checked": "2026-11-01",
       "sources": [
         {
           "url": "https://www.city.sodegaura.lg.jp/soshiki/bousai/untennemenkyozisyuhennou.html",
@@ -17526,15 +17526,58 @@
         {
           "url": "https://www.city.sodegaura.lg.jp/soshiki/tokei/basurosenitiran.html",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.city.sodegaura.lg.jp/uploaded/attachment/45510.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.sodegaura.lg.jp/uploaded/attachment/45382.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.city.sodegaura.lg.jp/uploaded/attachment/44768.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "topic": "高齢者タクシー料金助成",
+          "field": "application",
+          "value": "高齢者支援課（北庁舎1階）へ申請、行政センターでは受付なし。問題がなければ原則即日交付。郵送も受付し、希望者は0438-62-3225へ事前問い合わせ。郵送先〒299-0292袖ケ浦市坂戸市場1-1 高齢者支援課地域包括支援班。 本人確認書類（マイナンバーカード等）を持参。申請年の1月2日以降の転入者は、申請年1月1日（1～6月申請は前年1月1日）の住所地市町村が発行する非課税証明書も必要。世帯主以外が申請する場合は代理申請欄の世帯主署名と代理人の本人確認書類も必要です。掲載申請書は世帯主の自署が難しい場合、記名・押印も可としています。",
+          "source": "https://www.city.sodegaura.lg.jp/uploaded/attachment/45382.pdf",
+          "evidence": "市本文・概要Q&A・申請書の代理欄を照合。世帯主の自署困難時は記名押印可。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "高齢者タクシー料金助成",
+          "field": "usage",
+          "value": "市指定タクシー事業者の運転者へ利用券を出し、助成を控除した残額を支払います。1乗車に使う枚数の上限なし。申請は年度内1回のみ、使い切っても追加交付なし。紛失時再交付なし、他人への譲渡不可。福祉タクシー利用券との併用不可。",
+          "source": "https://www.city.sodegaura.lg.jp/soshiki/koreisha/koureisyaidousien.html",
+          "evidence": "市本文に1乗車枚数上限なし・年度1回・追加交付及び紛失時再交付なしと記載。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "旧返納手数料助成",
+          "field": "deadline",
+          "value": "令和8年3月号は2026年3月31日までの返納、返納から6か月以内の申請を対象と案内。当時の助成であり、現在の後継制度の有無は未確認。",
+          "source": "https://www.city.sodegaura.lg.jp/uploaded/attachment/44768.pdf",
+          "evidence": "令和8年3月号8頁で対象日・6か月期限・手数料を照合。旧案内URLは404。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        }
+      ],
       "unresolved": [
-        "返納の詳細手順未作成（制度・終了等の状態に応じ要否を判断）",
-        "原文は到達したが、交通・支援制度の具体条件に結び付く根拠を確認できず補完保留",
-        "原文は到達したが、交通・支援制度の具体条件に結び付く根拠を確認できず補完保留",
-        "原文は到達したが、交通・支援制度の具体条件に結び付く根拠を確認できず補完保留",
-        "原文は到達したが、交通・支援制度の具体条件に結び付く根拠を確認できず補完保留"
+        "返納手数料助成の延長・後継制度、市独自の別の高齢者バス助成の有無は未確認。",
+        "利用券の有効期限・つり銭は掲載本文と概要に明記なし。概要末尾の受付時間8:30～17:15と、現在の市サイトの市役所開庁時間9:00～16:30には差があります。来庁時間も含め高齢者支援課地域包括支援班0438-62-3225へ確認してください。"
       ]
     },
     "kanagawa:aikawa": {
@@ -35662,7 +35705,7 @@
     "wakayama:nachikatsuura": {
       "key": "wakayama:nachikatsuura",
       "status": "partial",
-      "checked": "2026-10-05",
+      "checked": "2026-11-01",
       "sources": [
         {
           "url": "https://www.town.nachikatsuura.wakayama.jp/info/1558",
@@ -35675,6 +35718,11 @@
         {
           "url": "https://www.town.nachikatsuura.wakayama.jp/info/619",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.town.nachikatsuura.wakayama.jp/div/kikaku/pdf/kikaku/koho/2026/ko-ho202604.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
         }
       ],
       "updates": [
@@ -35685,21 +35733,34 @@
           "source": "https://www.town.nachikatsuura.wakayama.jp/info/619",
           "evidence": "町営・那智山線は町内在住75歳以上がカード提示で無料。運賃100～350円。新勝線は別扱い。",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-11-01"
         },
         {
           "topic": "高齢者バス無料カード",
           "field": "booking",
-          "value": "75歳の誕生日の1か月前から申請でき、オンライン申請の場合はカードが郵送されます。窓口申請もできます。",
+          "value": "オンライン申請は75歳の誕生日の1か月前から可能で後日郵送。本庁福祉課の申請は即日、各出張所及び町営バス車内申請は後日郵送。民間バス車内では申請できません。窓口の前倒し受付・代理可否は要確認。",
           "source": "https://www.town.nachikatsuura.wakayama.jp/info/1558",
-          "evidence": "75歳到達の1か月前から申請可能。オンライン申請はカード郵送。",
+          "evidence": "町のカード申請方法1～3を照合。1か月前の注記はオンライン申請の項目。",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "令和8年度福祉乗車券",
+          "field": "application",
+          "value": "2026年4月13日から、役場福祉課窓口又は各出張所へ、本人申請は印鑑又は本人確認書類（運転免許証等）のどちらか一方を持参。代理申請は対象者の印鑑（認印）と代理人の本人確認書類の両方が必要。福祉課高齢者支援係0735-29-7039。 令和8年度は1人3,000円分、バス・タクシーで利用でき、有効期限は2027年3月31日。",
+          "source": "https://www.town.nachikatsuura.wakayama.jp/div/kikaku/pdf/kikaku/koho/2026/ko-ho202604.pdf",
+          "evidence": "令和8年4月号5頁を目視：本人は印鑑か本人確認書類の一方、代理は対象者認印と代理人本人確認の両方。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
         }
       ],
       "unresolved": [
-        "返納の詳細手順未作成（制度・終了等の状態に応じ要否を判断）",
-        "返納情報は対象の公式案内から確認できず。制度がないとは断定しない。"
+        "返納者限定給付の有無は現年度資料でも未確認。",
+        "福祉乗車券の対象バス・タクシー事業者と路線、券を超える運賃の精算・つり銭、申請期限・紛失時再交付の可否は現年度広報に明記なし。券の有効期限と支援の申請期限は区別し、福祉課高齢者支援係0735-29-7039へ確認してください。",
+        "高齢者バスカードの窓口前倒し受付・代理申請の扱いは要確認。"
       ]
     },
     "hokkaido:horonobe": {
@@ -42398,7 +42459,7 @@
     "hokkaido:naganuma": {
       "key": "hokkaido:naganuma",
       "status": "partial",
-      "checked": "2026-10-05",
+      "checked": "2026-11-01",
       "sources": [
         {
           "url": "https://www.maoi-net.jp/calendar/8800.html",
@@ -42407,11 +42468,54 @@
         {
           "url": "https://www.maoi-net.jp/kurashi/kotsu_doro_kasen/kotsu/bus/about.html",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.maoi-net.jp/files/00005400/00005416/20261005194945.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.maoi-net.jp/kurashi/kotsu_doro_kasen/kotsu/bus/yoyaku.html",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.maoi-net.jp/calendar/9069.html",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.maoi-net.jp/files/00006700/00006740/20240529223507.pdf",
+          "fetch_status": 200,
+          "checked": "2026-11-01"
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "topic": "町営デマンドバス",
+          "field": "fare",
+          "value": "令和8年10月1日改正の町掲載チラシでも65歳以上は1乗車100円（大人200円）を確認。日曜・12月31日～1月3日は運休、注記のある便は祝日も運休です。",
+          "source": "https://www.maoi-net.jp/files/00005400/00005416/20261005194945.pdf",
+          "evidence": "令和8年10月1日改正チラシ2頁の運賃表：65歳以上100円、大人200円。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        },
+        {
+          "topic": "町営デマンドバス",
+          "field": "booking",
+          "value": "予約・取消は080-2879-7475へ電話。午前の便は利用前日17時まで、午後の便は利用当日9時まで。運休日は予約受付も休みのため早めに連絡してください。往復の予約も可能。予約状況・座席の空きにより断られる場合があります。",
+          "source": "https://www.maoi-net.jp/files/00005400/00005416/20261005194945.pdf",
+          "evidence": "同チラシの予約欄：午前便は前日午後5時、午後便は当日午前9時、運休日は受付休み。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-11-01"
+        }
+      ],
       "unresolved": [
-        "割当URL内では高齢者・返納者の具体助成や町営バス運賃額を確認できず。"
+        "65歳以上100円の現行掲載額と予約手順は2026年10月改正チラシで確認済みです。年齢確認書類・事前会員登録の要否は明記なし。都市整備課管理係0123-76-8021へ確認してください。",
+        "2026年3月5日の臨時窓口案内は終了した開催の情報です。同案内で65歳以上のハイヤーチケット同時申請を確認しましたが、通常申請の必要書類・申請期限・代理可否・券の有効期限は明記されていません。2024年交通計画の券額・3年間交付を現年度確定額に置き換えず、税務住民課町民生活係0123-76-8012へ確認してください。",
+        "令和6年交通計画のハイヤーチケット額・継続交付条件を令和8年度の確定値にはしない。"
       ]
     },
     "kanagawa:matsuda": {
