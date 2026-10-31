@@ -215,3 +215,7 @@
 #tc-app #tc-eligibilityFull{white-space:pre-line}
 #tc-app .comparison{background:transparent;border:0;padding:0;box-shadow:none;margin-bottom:0}#tc-app .actions{background:transparent}.transport-cost-page{--surface:#fffefb;--line:#d9e1d7}
 @media(max-width:700px){html.large #tc-app .choices button{flex:1 1 110px;min-width:110px;white-space:nowrap}html.large #tc-app #tc-modes button{white-space:normal}}
+
+#tc-app .planning-action{display:inline-flex;align-items:center;min-height:48px;margin-top:16px;padding:10px 16px;border-radius:8px;background:#285b48;color:#fffefb;font-size:1rem;font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+#tc-app .planning-action:hover{background:#1d4838}
+#tc-app .planning-action:focus-visible{outline:3px solid #285b48;outline-offset:3px}

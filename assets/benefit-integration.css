@@ -1,4 +1,5 @@
 /* Four choices, one intact record. The no-script and print views show all records. */
+.integrated-city .transport-cost-link .estimate-note{display:block;margin-top:6px;font-size:.85em;line-height:1.7;color:#526452}
 .integrated-city .wrap{max-width:1280px}
 .integrated-city .benefit-browser{display:grid;grid-template-columns:minmax(270px,.72fr) minmax(0,1.28fr);gap:28px;align-items:start;margin:24px 0}
 .integrated-city .benefit-list{min-width:0;margin:0;padding:0;background:none;border:0}

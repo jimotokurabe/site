@@ -16,7 +16,7 @@ def fragment(value):
     return BeautifulSoup(value, 'html.parser')
 
 
-def apply_benefit_integration(soup, pref_id=None, city_slug=None):
+def apply_benefit_integration(soup, pref_id=None, city_slug=None, *, estimate_available=False):
     """Enhance four existing entrances; without JS every record remains visible."""
     if soup.select_one('#benefit-browser'):
         return
@@ -50,11 +50,17 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None):
     intro['class'] = intro.get('class', []) + ['benefit-list']
     browser.append(intro)
     if pref_id is not None and city_slug is not None:
-        href = '../transport-cost.html?' + urlencode({'pref': pref_id, 'city': city_slug})
+        destination = 'transport-cost.html' if estimate_available else 'outing-plan.html'
+        href = '../' + destination + '?' + urlencode({'pref': pref_id, 'city': city_slug})
         estimate = soup.new_tag('p', attrs={'class': 'cross transport-cost-link'})
         link = soup.new_tag('a', href=href)
-        link.string = 'この地域の移動費の目安を見る →'
+        link.string = ('この地域の移動費の目安を見る →' if estimate_available
+                       else '行き先と往復の費用を整理する →')
         estimate.append(link)
+        if not estimate_available:
+            note = soup.new_tag('small', attrs={'class': 'estimate-note'})
+            note.string = 'この地域は自動試算に未対応です。調べた交通手段と費用を、お出かけ計画にまとめられます。'
+            estimate.append(note)
         browser.insert_before(estimate)
     panels = soup.new_tag('div', attrs={'class': 'benefit-panels'})
     browser.append(panels)

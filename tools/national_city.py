@@ -580,6 +580,7 @@ def build_all(root:Path,out:Path,draft:bool=False)->dict:
     from compact_city import apply_compact_city, add_prefecture_procedures
     from benefit_integration import apply_benefit_integration
     from outing_supports import write_catalog, city_links
+    from transport_cost import load_estimates
     import shutil
     root=Path(root);out=Path(out);out.mkdir(parents=True,exist_ok=True)
     reference=Path(__file__).resolve().parent/'templates'/'national'
@@ -602,6 +603,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
     add_prefecture_procedures(out, prefs)
     _, outing_catalog = write_catalog(root, out)
     outing_cities = {(pid, city["id"]): city for pid, pref in outing_catalog.items() for city in pref["cities"]}
+    estimate_cities = {rule['key'] for rule in load_estimates(root)}
     indexed={(pid,c['slug']):(c,d) for pid,d in prefs.items() for c in d['cities']}
     wanted=[tuple(row['key'].split(':')) for row in supp['municipalities']]
     assert len(wanted)==1741 and len(set(wanted))==1741
@@ -645,7 +647,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         apply_visual_city(soup, a)
         apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
-        apply_benefit_integration(soup, pid, slug)
+        apply_benefit_integration(soup, pid, slug, estimate_available=f'{pid}:{slug}' in estimate_cities)
         improve_shared_city_editorial_content(soup)
         if (pid, slug) == ('hyogo', 'kobe'):
             improve_kobe_editorial_content(soup)
