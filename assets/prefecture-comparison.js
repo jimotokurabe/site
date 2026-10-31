@@ -2,6 +2,7 @@
   'use strict';
   const comparison = document.querySelector('.pref-comparison');
   if (!comparison) return;
+  const unit = comparison.dataset.municipalUnit || '市区町村';
   const input = document.getElementById('city-query'), area = document.getElementById('area');
   const groups = [...comparison.querySelectorAll('[data-comparison-kind]')];
   const choices = [...document.querySelectorAll('[name="comparison-kind"]')];
@@ -22,7 +23,7 @@
         if (visible && !row.hidden) { count++; cities.add(row.dataset.city); }
       });
     });
-    document.getElementById('comparison-count').textContent = `${cities.size}市町・${count}件の掲載記録を表示しています。`;
+    document.getElementById('comparison-count').textContent = `${cities.size}${unit}・${count}件の掲載記録を表示しています。`;
     document.getElementById('comparison-empty').hidden = count !== 0;
     let total = 0;
     document.querySelectorAll('.city-group').forEach(group => {
@@ -33,7 +34,7 @@
       });
       group.hidden = !found; total += found;
     });
-    document.getElementById('count').textContent = `${total}市町を表示しています。`;
+    document.getElementById('count').textContent = `${total}${unit}を表示しています。`;
     document.getElementById('empty').hidden = total !== 0;
   }
   let composing = false;
