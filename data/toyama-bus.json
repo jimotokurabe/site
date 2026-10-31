@@ -738,18 +738,25 @@
           "eligibility": "65歳以上の町民。",
           "benefit": "月1,500円。最大12か月購入。",
           "fare": "定期券で乗車。払い戻し不可。",
-          "routes": "町営バス全路線。",
-          "apply": "役場1階住民課で購入。年齢・居住条件の確認書類は窓口へ確認。",
+          "routes": "町営バスの定時定路線のみ。ここノリには利用不可。町Q&Aでは伊勢屋線（白岩発）と北部循環線と記載。",
+          "apply": "役場1階住民課で購入。町営バス定期券の購入時の確認書類は本文に記載なし。お気軽パスの登録証の確認書類と混同しないでください。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/4818.html",
               "label": "立山町・高齢者定期とお気軽パス",
-              "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "updated": "2026-10-01",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/juminka/kankyo_anzenkakari/7/1/12258.html",
+              "label": "ここノリQ&A・定期券/交通ポイントの可否",
+              "updated": "2026-10-01",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         },
         {
           "name": "地鉄電車・バスの町民お気軽パス",
@@ -765,8 +772,8 @@
             {
               "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/4818.html",
               "label": "立山町・高齢者定期とお気軽パス",
-              "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "updated": "2026-10-01",
+              "checked": "2026-10-31"
             }
           ],
           "current": "document_checked"
@@ -778,7 +785,7 @@
           "eligibility": "町内在住で町に住民票があり、在宅生活中の75歳以上。免許を持たない又は返納した人。施設入所・入院中は退所・退院後に申請。",
           "benefit": "月2,000ポイント（1P=1円）。偶数月4,000P、奇数月申請時は当月2,000P。有効は付与日の翌月末。",
           "fare": "本人の運賃等をポイントで支払い。残高不足は現金。",
-          "routes": "立山町営バス路線、役場での地鉄電車・バスお気軽パス購入、町営バス回数券購入。",
+          "routes": "町営バスの運賃（ここノリを含む）、役場での地鉄電車・バスお気軽パス購入、町営バス回数券購入。",
           "apply": "町元気交流ステーション3階健康福祉課社会福祉係へ、たてポカード、経歴証明書（持つ人）等を持参。",
           "notes": [],
           "sources": [
@@ -786,24 +793,37 @@
               "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/8737.html",
               "label": "立山町・交通ポイント",
               "updated": "2025-08-26",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.town.tateyama.toyama.jp/material/files/group/6/2026hukusibennrityou.pdf",
+              "label": "令和8年度福祉便利帳・交通ポイント",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/juminka/kankyo_anzenkakari/7/1/12258.html",
+              "label": "ここノリQ&A・定期券/交通ポイントの可否",
+              "updated": "2026-10-01",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
         {
           "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/4818.html",
           "label": "立山町・高齢者定期とお気軽パス",
-          "updated": "2026-04-01",
-          "checked": "2026-10-07"
+          "updated": "2026-10-01",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.town.tateyama.toyama.jp/benrinaservice/kokyokotsu/8737.html",
           "label": "立山町・交通ポイント",
           "updated": "2025-08-26",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/juminka/kankyo_anzenkakari/4/1/794.html",
@@ -813,12 +833,18 @@
         },
         {
           "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
-          "label": "富山県警・令和8年8月返納支援一覧",
-          "updated": "2026-08-20",
-          "checked": "2026-10-07"
+          "label": "富山県警・返納支援一覧（2026年10月14日更新）",
+          "updated": "2026-10-14",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/juminka/kankyo_anzenkakari/7/1/12258.html",
+          "label": "ここノリQ&A・定期券/交通ポイントの可否",
+          "updated": "2026-10-01",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "町営定期の確認書類は住民課へ確認してください。交通ポイントの詳細は2025年更新のため現在の条件を健康福祉課へ確認してください。県警8月一覧の返納者向け3年無料パスは、町の10月1日返納案内には掲載されていません。現在の受付を住民課へ確認してください。"
+      "flag": "返納者向け旧3年無料定期券は2026年9月30日で新規申請受付終了（県警10月14日）。既発行券は定時定路線用で、ここノリには利用不可。65歳以上の有料定期券と75歳以上等の交通ポイントは別制度です。町営定期券の購入時の確認書類は本文に記載なし。交通ポイントの詳細本文は2025年8月更新、令和8年度福祉便利帳は発行・更新日記載なしですが、同年度の対象・月2,000Pを照合しました。"
     },
     {
       "slug": "takaoka",

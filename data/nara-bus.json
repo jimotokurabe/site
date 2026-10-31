@@ -409,23 +409,23 @@
           "kind": "henno",
           "age_min": 65,
           "eligibility": "平群町の住民基本台帳に記載された満65歳以上で、有効期限内の運転免許をすべて自主返納した人。",
-          "benefit": "コミュニティバス回数券11枚綴り5冊（5,000円分）又は奈良交通・エヌシーバスで使えるICカード5,000円分（預り金500円含む）の選択。本人1回限り。",
+          "benefit": "コミュニティバス回数券11枚綴り5冊（要綱では5,000円分と表記）、奈良交通・エヌシーバスICカード5,000円分（預り金500円含む）、町デマンド型乗合タクシー利用券17回分から1つ。本人1回限り。",
           "fare": "コミュニティバスは大人100円。ICカード利用の路線バスは各路線の運賃。",
           "routes": "平群町コミュニティバス、又は奈良交通・エヌシーバスのICカード対応路線。",
-          "apply": "町長へ支援申請書を提出。取消通知書又は運転経歴証明書の写しを添付。町の案内は印鑑も必要と記載。",
+          "apply": "町長へ支援申請書を提出。現行リンクの要綱第5条は取消通知書又は運転経歴証明書の写しを添付と規定。市町案内本文は「運転記録証明書・印鑑」と記載が異なるため、提出書類は総務防災課へ確認してください。",
           "notes": [],
           "sources": [
             {
-              "url": "https://www.town.heguri.nara.jp/uploaded/attachment/1881.pdf",
-              "label": "町の高齢者運転免許証自主返納者支援事業実施要綱（PDF）",
+              "url": "https://www.town.heguri.nara.jp/uploaded/attachment/13808.pdf",
+              "label": "現行案内に添付された自主返納者支援事業実施要綱",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.town.heguri.nara.jp/soshiki/6/1437.html",
               "label": "町の返納支援案内",
-              "updated": "2021-01-25",
-              "checked": "2026-10-06"
+              "updated": "2026-10-28",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.town.heguri.nara.jp/soshiki/6/1436.html",
@@ -434,21 +434,22 @@
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
         {
-          "url": "https://www.town.heguri.nara.jp/uploaded/attachment/1881.pdf",
-          "label": "町の高齢者運転免許証自主返納者支援事業実施要綱（PDF）",
+          "url": "https://www.town.heguri.nara.jp/uploaded/attachment/13808.pdf",
+          "label": "現行案内に添付された自主返納者支援事業実施要綱",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.town.heguri.nara.jp/soshiki/6/1437.html",
           "label": "町の返納支援案内",
-          "updated": "2021-01-25",
-          "checked": "2026-10-06"
+          "updated": "2026-10-28",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.town.heguri.nara.jp/soshiki/6/1436.html",
@@ -457,7 +458,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "返納案内は2021年更新、要綱PDFに更新日がないため、総務防災課（0745-45-1001）で現行条件を確認してください。"
+      "flag": "2026年10月28日更新の町本文から現行要綱PDFを取得。バス/ICカードに加え町デマンド型乗合タクシー17回分との選択が明記。PDFは更新日記載なし（最終施行2023年4月1日）。町本文の運転記録証明書と要綱の運転経歴証明書等で書類名が異なり、提出書類と券の精算は総務防災課（0745-45-1001）へ確認。"
     },
     {
       "slug": "sango",

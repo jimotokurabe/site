@@ -632,9 +632,58 @@
     {
       "slug": "nerima",
       "name": "練馬区",
-      "status": "notfound",
-      "summary": "高齢福祉・交通・返納案内で区市独自の高齢者バス助成を発見できていない。都共通シルバーパスは別案内。",
-      "programs": [],
+      "status": "active",
+      "summary": "65歳以上は、みどりバスで年齢が分かるものを乗車時に提示すると、1乗車が現金120円・ICカード115円です。関町・南大泉ルートは2026年4月更新の区公式案内で確認できます。",
+      "programs": [
+        {
+          "name": "みどりバス65歳以上割引",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の方。乗車時に年齢が分かるものを提示。区内居住の限定は区の運賃案内に記載なし。",
+          "benefit": "通常大人230円に対し、65歳以上は現金120円・ICカード115円で利用。",
+          "fare": "1乗車現金120円・ICカード115円。前乗り先払い。Suica・PASMO利用可。",
+          "routes": "みどりバスの関町・南大泉、氷川台、保谷、北町、大泉の5ルート。関町・南大泉は2026年4月、他4ルートは2025年6月の区案内で確認。",
+          "apply": "事前の交付申請の記載なし。乗車時に年齢が分かるもの（区は運転免許証、健康保険証、パスポート等を例示）を提示。現在有効な確認書類は区へ確認。",
+          "notes": [
+            "東京都共通シルバーパスとは別の、区みどりバスの65歳以上運賃割引。",
+            "4路線の案内は1年以上前のため現行運行・適用を運行者へ確認してください。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/seki_minami-route.html",
+              "label": "練馬区・みどりバス 関町・南大泉ルート",
+              "updated": "2026-04-01",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hikawadai-route.html",
+              "label": "練馬区・みどりバス 氷川台ルート",
+              "updated": "2025-06-04",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hoya-route.html",
+              "label": "練馬区・みどりバス 保谷ルート",
+              "updated": "2025-06-04",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/kitamachi-route.html",
+              "label": "練馬区・みどりバス 北町ルート",
+              "updated": "2025-06-06",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/oizumi-route.html",
+              "label": "練馬区・みどりバス 大泉ルート",
+              "updated": "2025-06-04",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
+        }
+      ],
       "sources": [
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/unchin_20250601.html",
@@ -647,9 +696,39 @@
           "label": "運転免許自主返納案内",
           "updated": "2023-02-22",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/seki_minami-route.html",
+          "label": "練馬区・みどりバス 関町・南大泉ルート",
+          "updated": "2026-04-01",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hikawadai-route.html",
+          "label": "練馬区・みどりバス 氷川台ルート",
+          "updated": "2025-06-04",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hoya-route.html",
+          "label": "練馬区・みどりバス 保谷ルート",
+          "updated": "2025-06-04",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/kitamachi-route.html",
+          "label": "練馬区・みどりバス 北町ルート",
+          "updated": "2025-06-06",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/oizumi-route.html",
+          "label": "練馬区・みどりバス 大泉ルート",
+          "updated": "2025-06-04",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "更新日なし又は1年以上前の資料があり現行性・独自制度の有無を確認。確認先：交通企画課03-5984-1274。"
+      "flag": "65歳以上割引を区公式の5ルート運賃本文で確認し、従来の未発見表示を改めました。関町・南大泉は2026年4月1日更新、他4路線は2025年6月更新で1年以上前です。居住要件・現在の年齢確認書類・各路線の適用は交通企画課03-5984-1274、又は西武バス03-3867-2525・国際興業03-3934-1123へ確認してください。"
     },
     {
       "slug": "adachi",
@@ -783,11 +862,18 @@
     {
       "slug": "higashimurayama",
       "name": "東村山市",
-      "status": "unknown",
-      "summary": "市公式の制度本文を確認できず、高齢者向けグリーンバス助成・返納支援の対象や条件は未確認です。",
+      "status": "notfound",
+      "summary": "グリーンバスの現行運賃案内では東京都シルバーパスは利用できず、定期券も販売していません。市独自の高齢者・返納者向けバス助成は、この運賃案内では確認できませんでした。",
       "programs": [],
-      "sources": [],
-      "flag": "現行本文・対象・運賃・申込を確認。確認先：東村山市役所042-393-5111（代表）。"
+      "sources": [
+        {
+          "url": "https://www.city.higashimurayama.tokyo.jp/kurashi/sumai/bus/bus_rosenzu/kotsu_untin.html",
+          "label": "東村山市・グリーンバス運賃",
+          "updated": "2026-04-27",
+          "checked": "2026-10-31"
+        }
+      ],
+      "flag": "グリーンバス運賃本文を2026年10月31日に照合しました。掲載の障害者割引を高齢者一般向けには扱っていません。他の市独自支援の有無はまちづくり部交通課（042-393-5111、内線3706～3708）へ確認してください。"
     },
     {
       "slug": "kiyose",
@@ -1213,24 +1299,61 @@
     {
       "slug": "komae",
       "name": "狛江市",
-      "status": "notfound",
-      "summary": "交通・高齢者・返納案内で、市独自の高齢者バス助成は今回未発見。都共通シルバーパスは別案内。",
-      "programs": [],
+      "status": "active",
+      "summary": "あいとぴあセンターの老人福祉センター浴室や高齢者プールの利用登録者は、施設利用後の帰路こまバス券を受け取れます。シルバーパス所持者は対象外です。",
+      "programs": [
+        {
+          "name": "老人福祉センター等利用後の帰路こまバス乗車証",
+          "kind": "voucher",
+          "age_min": null,
+          "eligibility": "あいとぴあセンターの老人福祉センター（浴室）又はプール（高齢者）の利用登録者。東京都シルバーパス所持者は除く。対象年齢・居住条件・施設登録の条件は当該案内に記載なし。",
+          "benefit": "施設利用後の帰路用こまバス乗車証を1枚交付。当日のみ有効。",
+          "fare": "乗車時に乗車証1枚を運転士へ渡す。通常大人200円のこまバス運賃を補助。現金による払戻しの記載なし。",
+          "routes": "こまバスのみ。他の一般路線バスには利用できません。",
+          "apply": "施設を利用した後、当該施設の窓口で乗車証1枚を受け取る。老人福祉センター浴室・高齢者プールの利用登録が必要。",
+          "notes": [
+            "障害者向け往復補助、乳幼児健診等参加者の補助とは別に、老人福祉センター浴室・高齢者プール利用登録者を帰路対象として記載。",
+            "市の現行バス案内とリンク先PDFには更新日・発行日の表示がありません。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.komae.tokyo.jp/index.cfm/41%2C23028%2C312%2Chtml",
+              "label": "交通・高齢者の現行案内",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.komae.tokyo.jp/index.cfm/41,23028,c,html/23028/20201119-113101.pdf",
+              "label": "こまバス・福祉施設利用者等運賃補助の対象者と利用方法",
+              "updated": "",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
+        }
+      ],
       "sources": [
         {
           "url": "https://www.city.komae.tokyo.jp/index.cfm/41%2C23028%2C312%2Chtml",
           "label": "交通・高齢者の現行案内",
-          "updated": "2026-08-24",
-          "checked": "2026-10-06"
+          "updated": "",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.komae.tokyo.jp/index.cfm/42,86636,328,2046,html",
           "label": "運転免許自主返納案内",
           "updated": "2026-07-10",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.komae.tokyo.jp/index.cfm/41,23028,c,html/23028/20201119-113101.pdf",
+          "label": "こまバス・福祉施設利用者等運賃補助の対象者と利用方法",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "市独自の高齢者バス助成は未発見のため確認。確認先：道路交通課交通対策係03-3430-1314。"
+      "flag": "福祉施設利用者等の帰路補助を市公式リンク先で確認しました。現行バス案内とPDFには更新日・発行日の表示がなく、対象年齢・居住条件・施設登録要件が記載されていません。現在の施設窓口での交付と併せ、道路交通課交通対策係03-3430-1314へ確認してください。"
     },
     {
       "slug": "hachioji",

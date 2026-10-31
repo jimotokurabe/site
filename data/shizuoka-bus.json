@@ -901,8 +901,8 @@
     {
       "slug": "nagaizumi",
       "name": "長泉町",
-      "status": "unknown",
-      "summary": "旧タクシー・バス利用券は2024年度に廃止予定との公式案内がありました。現在の高齢者向け案内はタクシー助成です。バス券の現状は町へ確認してください。",
+      "status": "ended",
+      "summary": "旧高齢者タクシー・バス利用助成事業と旧高齢者運転免許証自主返納等支援事業は、マイナンバーカード活用タクシー利用助成事業へ統合済みです。現行のタクシー支援はタクシー欄を確認してください。",
       "programs": [],
       "sources": [
         {
@@ -910,9 +910,22 @@
           "label": "令和5年度第1回地域公共交通協議会議事録",
           "updated": "",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.nagaizumi.lg.jp/material/files/group/24/koho20240401-4-5.pdf",
+          "label": "町広報2024年4月1日号・旧制度の統合注記",
+          "updated": "2024-04-01",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.town.nagaizumi.lg.jp/parenting_education/pregnancy_childbirth/10731.html",
+          "label": "町・マイナンバーカード活用タクシー利用助成事業",
+          "updated": "2026-04-01",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "旧バス券の廃止実施と、自主返納時のバス券の継続有無を長寿介護課（055-989-5537）へ確認してください。"
+      "flag": "統合の実施は2024年4月の町広報で確認。旧議事録は日付表示のない過去資料です。現在のタクシー助成をバス券と混同しないでください。別の新規バス助成制度の不存在を示すものではありません。",
+      "checked": "2026-10-31"
     },
     {
       "slug": "oyama",
@@ -1373,16 +1386,19 @@
           "fare": "コーちゃんバスは永年半額。",
           "routes": "コーちゃんバス。",
           "apply": "市役所2階都市計画課へ。経歴証明書。ない場合は取消通知書またはマイナ経歴証明書と本人顔写真。",
-          "notes": [],
+          "notes": [
+            "コーちゃんパスは再交付不可。コーちゃんタクシーの2年間半額・更新不可と、コーちゃんバス永年半額を区別してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/toshikeikakuka/gyomuannai/koutuu/kouchanbasuniknnsurukoo/2691.html",
               "label": "運転免許証自主返納等支援事業",
-              "updated": "2025-09-29",
-              "checked": "2026-10-06"
+              "updated": "2026-10-20",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         },
         {
           "name": "コーちゃんパス・病気による取消し",
@@ -1393,16 +1409,19 @@
           "fare": "コーちゃんバスは永年半額。",
           "routes": "コーちゃんバス。",
           "apply": "市役所2階都市計画課へ。免許取消処分書と本人顔写真。",
-          "notes": [],
+          "notes": [
+            "コーちゃんパスは再交付不可。コーちゃんタクシーの2年間半額・更新不可と、コーちゃんバス永年半額を区別してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/toshikeikakuka/gyomuannai/koutuu/kouchanbasuniknnsurukoo/2691.html",
               "label": "運転免許証自主返納等支援事業",
-              "updated": "2025-09-29",
-              "checked": "2026-10-06"
+              "updated": "2026-10-20",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -1415,11 +1434,11 @@
         {
           "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/toshikeikakuka/gyomuannai/koutuu/kouchanbasuniknnsurukoo/2691.html",
           "label": "運転免許証自主返納等支援事業",
-          "updated": "2025-09-29",
-          "checked": "2026-10-06"
+          "updated": "2026-10-20",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "パス案内更新は2025年9月29日で1年以上前のため、現年度の支援条件を都市計画課（053-576-4560）へ確認してください。"
+      "flag": ""
     },
     {
       "slug": "omaezaki",

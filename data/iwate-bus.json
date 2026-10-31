@@ -56,16 +56,25 @@
           "fare": "回数券で支払い。通常の運賃・超過分の扱いは記載なし。",
           "routes": "八幡平市民バス。",
           "apply": "申請書に取消通知書または運転経歴証明書の写しを添付し、本庁舎防災安全課、西根／安代総合支所、田山支所へ。利用券は後日郵送。防災安全課0195-74-2111。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
               "url": "https://www.city.hachimantai.lg.jp/soshiki/bouan/17879.html",
               "label": "八幡平市・自主返納者支援",
               "updated": "2024-04-02",
               "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -76,7 +85,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "更新から1年以上。現在の対象・利用可能路線・券の利用条件は防災安全課で確認。旧半額減免は廃止と本文明記。"
+      "flag": "更新から1年以上。現在の対象・利用可能路線・券の利用条件は防災安全課で確認。旧半額減免は廃止と本文明記。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "takizawa",
@@ -174,16 +183,25 @@
           "fare": "交付された券で支払い。対象外・超過分は記載なし。",
           "routes": "あいあいバス、岩手県北バス。",
           "apply": "役場2階総務課防災交通係（0195-62-2111内線203・208・222）に取消通知書、運転経歴証明書、印鑑。申請書は窓口。窓口または郵送で交付。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
               "url": "https://town.iwate.iwate.jp/town/bosai/return_lisence/",
               "label": "岩手町・自主返納支援",
               "updated": "2020-04-15",
               "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -194,7 +212,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "本文2020年で年齢注記と対象者欄が矛盾。2025年10月県警一覧は年齢条件なし。カード廃止・IC移行も含め現行支援方法を総務課で確認してください。"
+      "flag": "本文2020年で年齢注記と対象者欄が矛盾。2025年10月県警一覧は年齢条件なし。カード廃止・IC移行も含め現行支援方法を総務課で確認してください。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "shiwa",
@@ -227,27 +245,30 @@
           "fare": "通常500円を400円。",
           "routes": "矢巾町デマンド型乗合バス。",
           "apply": "乗車時に運転経歴証明書または取消通知書を提示。矢巾タクシー0120-566-788／019-697-2525へ予約。企画財政課019-611-2729。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
-              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_071001jichitai.pdf",
-              "label": "岩手県警・自治体返納支援一覧（令和7年10月1日）",
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
         {
-          "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_071001jichitai.pdf",
-          "label": "岩手県警・自治体返納支援一覧（令和7年10月1日）",
+          "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+          "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "町公共交通ページは車両をタクシーと説明する一方、県警一覧は町デマンド型乗合バスと明記。2025年10月一覧、年齢・居住条件と現在運賃を町企画財政課で確認。やはばす一般運賃150円は対象外。"
+      "flag": "町公共交通ページは車両をタクシーと説明する一方、県警一覧は町デマンド型乗合バスと明記。2025年10月一覧、年齢・居住条件と現在運賃を町企画財政課で確認。やはばす一般運賃150円は対象外。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "hanamaki",
@@ -287,19 +308,20 @@
           "age_min": 65,
           "eligibility": "平成29年4月1日以降に自主返納、返納時満65歳以上、返納時と助成申請時に市内住所あり。",
           "benefit": "バス・タクシー共通助成券10,000円。1人1回本人のみ、交付年度の翌年度末まで。",
-          "fare": "助成券で支払い。差額の詳細は記載なし。",
-          "routes": "市内発着路線バス（高速除外）、予約応答型乗合交通等。",
+          "fare": "助成券を利用して支払い。運賃が助成券額を上回る場合の精算・釣銭は市本文に記載なし。",
+          "routes": "市内に発着地のある路線バス（高速バスは除く）、予約応答型乗合交通、花巻地区タクシー業協同組合加盟又は市内に事業所があるタクシー。",
           "apply": "取消通知書写しを持参し本庁市民生活総合相談センター／総合支所市民サービス課へ。オンライン申込可。0198-41-3551。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/kotsuanzen/1000728.html",
               "label": "花巻市・高齢者自主返納促進事業",
-              "updated": "2026-03-06",
-              "checked": "2026-10-07"
+              "updated": "2026-10-22",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -312,8 +334,8 @@
         {
           "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/kotsuanzen/1000728.html",
           "label": "花巻市・高齢者自主返納促進事業",
-          "updated": "2026-03-06",
-          "checked": "2026-10-07"
+          "updated": "2026-10-22",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.hanamaki.iwate.jp/_res/projects/default_project/_page_/001/004/577/r7taxitirashi2.pdf",
@@ -322,7 +344,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "一般高齢者枠チラシ更新日なし（R7ファイル）。本文は車所有の制限、チラシは「運転免許もしくは車を所有していない方」で条件差あり。現行条件は長寿福祉課で確認してください。 返納枠の助成券差額支払詳細は市民生活総合相談センターで確認してください。"
+      "flag": "一般高齢者枠は本文とR7ファイルのチラシで車所有条件の表記差が残り、長寿福祉課へ確認が必要です。返納枠は2026年10月22日更新本文で対象・額・本人1回・券期限と窓口を確認。返納助成券の不足分・釣銭の扱いは本文に記載なし。"
     },
     {
       "slug": "kitakami",
@@ -438,16 +460,25 @@
           "fare": "乗車券で支払い。詳細運賃の記載なし。",
           "routes": "一関市のバス・タクシー。",
           "apply": "取消通知書を用意し本庁生活環境課／支所市民福祉課、電子申請または本庁へ郵送。0191-21-8344。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
               "url": "https://www.city.ichinoseki.iwate.jp/archive/contents-85397",
               "label": "一関市・自主返納サポート事業",
               "updated": "2024-02-15",
               "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -464,7 +495,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "両資料更新から1年以上。一般枠のシルバー乗車証除外は、別の行政改革報告ではH29に制度廃止済みとあり古い表記の可能性。現行対象条件と返納券1回・期限は担当窓口で確認。"
+      "flag": "両資料更新から1年以上。一般枠のシルバー乗車証除外は、別の行政改革報告ではH29に制度廃止済みとあり古い表記の可能性。現行対象条件と返納券1回・期限は担当窓口で確認。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "oshu",
@@ -481,7 +512,9 @@
           "fare": "通常運賃の半額。Zバス通常200～400円、胆沢水沢線170～500円、市営バス200～500円、衣川衣里線200～300円等。",
           "routes": "市コミュニティバスZバス、胆沢水沢線、奥州市営バス、衣川バス衣里線等。表にはタクシー名の地区交通も含まれるため路線区分を窓口確認。",
           "apply": "降車時運転経歴証明書を乗務員へ提示。証明は免許センター・警察署申請。公共交通対策室0197-34-2383。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
               "url": "https://www.city.oshu.iwate.jp/soshiki/2/1004/220.html",
@@ -490,13 +523,14 @@
               "checked": "2026-10-07"
             },
             {
-              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_071001jichitai.pdf",
-              "label": "岩手県警・自治体返納支援一覧（令和7年10月1日）",
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -507,13 +541,13 @@
           "checked": "2026-10-07"
         },
         {
-          "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_071001jichitai.pdf",
-          "label": "岩手県警・自治体返納支援一覧（令和7年10月1日）",
+          "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+          "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "年齢条件は記載なし。居住条件は県警一覧で補足。適用路線を公共交通対策室へ確認してください。 県警一覧は更新日なし・2025年10月時点。"
+      "flag": "年齢条件は記載なし。居住条件は県警一覧で補足。適用路線を公共交通対策室へ確認してください。 県警一覧は更新日なし・2025年10月時点。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "nishiwaga",
@@ -718,16 +752,25 @@
           "fare": "通常運賃の半額。",
           "routes": "釜石市コミュニティバス、にこにこバス。",
           "apply": "運転経歴証明書を提示。生活環境課0193-52-0081。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
               "url": "https://www.city.kamaishi.iwate.jp/docs/2020102600074/",
               "label": "釜石市・運転免許自主返納",
               "updated": "2023-02-17",
               "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -738,7 +781,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "本文更新から1年以上。現行対象条件・運賃は生活環境課で確認してください。"
+      "flag": "本文更新から1年以上。現行対象条件・運賃は生活環境課で確認してください。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "sumita",
@@ -1119,13 +1162,15 @@
           "fare": "交付カードで支払い。超過分自己負担等詳細記載なし。",
           "routes": "県警一覧では県北バス（八盛号、岩手きずな号、九戸村循環バス除外）。ICへの変更後の範囲は要確認。",
           "apply": "県警一覧では総務企画課窓口へ申請書と運転経歴証明書写し提出。0195-42-2111。",
-          "notes": [],
+          "notes": [
+            "2026-10-09の県・県警一覧の当該自治体欄で、支援内容・対象の基本条件を照合。市町の詳細本文・利用時の細則は今回未照合。"
+          ],
           "sources": [
             {
-              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_071001jichitai.pdf",
-              "label": "岩手県警・返納支援一覧（令和7年10月）",
+              "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+              "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.vill.kunohe.iwate.jp/fs/9/5/9/5/_/%E4%B9%9D%E6%88%B8%E6%9D%91%E5%9C%B0%E5%9F%9F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E8%A8%88%E7%94%BB.pdf",
@@ -1134,7 +1179,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -1145,10 +1191,10 @@
           "checked": "2026-10-07"
         },
         {
-          "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_071001jichitai.pdf",
-          "label": "岩手県警・返納支援一覧（令和7年10月）",
+          "url": "https://www.pref.iwate.jp/kenkei/_res/projects/project_kenkei/_page_/003/000/926/s_081009jichitai.pdf",
+          "label": "岩手県警・運転免許自主返納者への支援一覧・2026年10月9日現在",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.vill.kunohe.iwate.jp/fs/9/5/9/5/_/%E4%B9%9D%E6%88%B8%E6%9D%91%E5%9C%B0%E5%9F%9F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E8%A8%88%E7%94%BB.pdf",
@@ -1157,7 +1203,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "無料券本文更新日なし・保険証手続表記に留意。返納支援の県警一覧は旧バスカード、村計画はICカードで相違。現行媒体・対象路線・失効者受付を村づくり推進課／総務企画担当で確認してください。"
+      "flag": "無料券本文更新日なし・保険証手続表記に留意。返納支援の県警一覧は旧バスカード、村計画はICカードで相違。現行媒体・対象路線・失効者受付を村づくり推進課／総務企画担当で確認してください。 2026-10-09の県・県警公式一覧を再照合しました。PDFの発行・更新日は記載なし（資料の基準日は明記）。市町の詳細条件に関する既存の確認事項は残しています。"
     },
     {
       "slug": "ichinohe",

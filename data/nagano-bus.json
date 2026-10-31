@@ -3913,16 +3913,17 @@
               "url": "https://www1.g-reiki.net/vill.asahi.nagano/reiki_honbun/e788RG00000128.html",
               "label": "朝日村・返納支援要綱（令和8年4月1日施行）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.vill.asahi.nagano.jp/official/soshikikarasagasu/kikakuzaisei/kikakutanto/6/553.html",
               "label": "朝日村・地域公共交通案内",
               "updated": "2026-08-04",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -3930,16 +3931,16 @@
           "url": "https://www1.g-reiki.net/vill.asahi.nagano/reiki_honbun/e788RG00000128.html",
           "label": "朝日村・返納支援要綱（令和8年4月1日施行）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.vill.asahi.nagano.jp/official/soshikikarasagasu/kikakuzaisei/kikakutanto/6/553.html",
           "label": "朝日村・地域公共交通案内",
           "updated": "2026-08-04",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "令和8年施行の改正要綱を確認。申請添付書類と受付先は企画財政課0263-99-4107へ確認。買い物バスは9月末終了のため利用先から除外。"
+      "flag": "令和8年施行の改正要綱を確認。申請添付書類と受付先は企画財政課0263-99-4107へ確認。買い物バスは9月末終了のため利用先から除外。 要綱ページ自体の更新日は記載なし（確認した改正規定は2026年4月施行）。"
     },
     {
       "slug": "chikuhoku",
@@ -5075,23 +5076,30 @@
           "benefit": "地区別に2月当たり800／1,200／1,600円、年上限4,800／7,200／9,600円。年度途中は申請月で変動。100・200・500円単位。交通手段3種から1つ選択。",
           "fare": "不足額は現金払い。運賃を超えて券を使えず、月使用枚数上限なし。同行介助者1名にも利用可。",
           "routes": "乗合タクシー・菜の花バス・コミュニティバス斑尾線。",
-          "apply": "給付申請書と初回は取消通知書（返納）・免許経歴証明書（失効）または経歴証明書写し。取得歴なしの場合の書類は保健福祉課へ確認。",
+          "apply": "給付申請書と初回は取消通知書（返納）・運転免許経歴証明書（失効）または運転経歴証明書の写し。免許を取得したことがない方はこの証明書類不要。市報令和8年3月号では印鑑持参、令和7年度申請者の令和8年度申請は上記証明書写し不要と案内。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.iiyama.nagano.jp/soshiki/hokenfukushi/kaigo/koureishafukushi/norimono",
               "label": "飯山市・福祉乗り物利用券",
-              "updated": "2025-04-08",
-              "checked": "2026-10-07"
+              "updated": "2026-10-26",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
               "label": "長野県・令和8年度高齢者移動支援一覧",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.iiyama.nagano.jp/assets/files/kikakuzaisei/koho/R08.03/1-32.pdf",
+              "label": "飯山市・広報飯山令和8年3月号（福祉乗り物利用券）",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "福祉乗り物利用券・長電路線バス",
@@ -5101,40 +5109,53 @@
           "benefit": "地区別に2月当たり800／1,200／1,600円、年上限4,800／7,200／9,600円。年度途中は申請月で変動。100・200・500円単位。交通手段3種から1つ選択。",
           "fare": "不足額は現金払い。運賃を超えて券を使えず、月使用枚数上限なし。同行介助者1名にも利用可。",
           "routes": "長電バス運行路線で発着いずれかが飯山市内。",
-          "apply": "給付申請書と初回は取消通知書（返納）・免許経歴証明書（失効）または経歴証明書写し。取得歴なしの場合の書類は保健福祉課へ確認。",
+          "apply": "給付申請書と初回は取消通知書（返納）・運転免許経歴証明書（失効）または運転経歴証明書の写し。免許を取得したことがない方はこの証明書類不要。市報令和8年3月号では印鑑持参、令和7年度申請者の令和8年度申請は上記証明書写し不要と案内。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.iiyama.nagano.jp/soshiki/hokenfukushi/kaigo/koureishafukushi/norimono",
               "label": "飯山市・福祉乗り物利用券",
-              "updated": "2025-04-08",
-              "checked": "2026-10-07"
+              "updated": "2026-10-26",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
               "label": "長野県・令和8年度高齢者移動支援一覧",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.iiyama.nagano.jp/assets/files/kikakuzaisei/koho/R08.03/1-32.pdf",
+              "label": "飯山市・広報飯山令和8年3月号（福祉乗り物利用券）",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
         {
           "url": "https://www.city.iiyama.nagano.jp/soshiki/hokenfukushi/kaigo/koureishafukushi/norimono",
           "label": "飯山市・福祉乗り物利用券",
-          "updated": "2025-04-08",
-          "checked": "2026-10-07"
+          "updated": "2026-10-26",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
           "label": "長野県・令和8年度高齢者移動支援一覧",
           "updated": "",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.iiyama.nagano.jp/assets/files/kikakuzaisei/koho/R08.03/1-32.pdf",
+          "label": "飯山市・広報飯山令和8年3月号（福祉乗り物利用券）",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "県令和8年度一覧でも75歳以上の利用券を確認。市の細部は2025年4月案内。免許未取得者の必要書類・現在の券期限と申請先を保健福祉課0269-67-0727へ確認。返納等1万円は使途限定のバス助成ではないため別支援。"
+      "flag": "2026年10月26日更新の市本文で対象・居住地区別給付額・対象路線・不足額現金払いを確認。市報令和8年3月号で免許未取得者の証明書類不要と持ち物を確認しましたが、利用券の有効期限は記載なし。保健福祉課0269-67-0727へ確認してください。県PDFと市報PDF自体に更新日表示はありません。返納等の1万円補助は別制度です。"
     },
     {
       "slug": "yamanouchi",

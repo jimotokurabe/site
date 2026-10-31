@@ -117,17 +117,24 @@
           "benefit": "国際興業バス3,000円分＋戸田市コミュニティバス2,000円分、計5,000円分の回数券。",
           "fare": "回数券で支払い。",
           "routes": "国際興業バス、戸田市コミュニティバス。",
-          "apply": "都市交通課へ申請。予算がなくなり次第、その年度の交付終了。必要書類の詳細は窓口へ確認。",
+          "apply": "都市交通課へ、返納日を確認できる書類を持参。市本文にリンクされたチラシでは、運転経歴証明書、運転免許経歴証明書と本人確認書類、取消通知書と穴あき免許証の両方、のいずれかを案内。審査後その場で交付。予算がなくなり次第年度終了。",
           "sources": [
             {
               "url": "https://www.city.toda.saitama.jp/soshiki/275/tosi-kotsu-menkyohennou.html",
               "label": "自主返納促進事業",
               "updated": "2026-06-01",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.toda.saitama.jp/uploaded/attachment/47292.pdf",
+              "label": "戸田市運転免許証自主返納促進事業チラシ（必要書類・2頁目）",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [],
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -135,10 +142,16 @@
           "url": "https://www.city.toda.saitama.jp/soshiki/275/tosi-kotsu-menkyohennou.html",
           "label": "自主返納促進事業",
           "updated": "2026-06-01",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.toda.saitama.jp/uploaded/attachment/47292.pdf",
+          "label": "戸田市運転免許証自主返納促進事業チラシ（必要書類・2頁目）",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "申請に必要な書類は案内本文に詳しい記載がないため、都市交通課（048-441-1800）へ確認してください。"
+      "flag": "必要書類は市本文からリンクされたチラシ2頁目で確認しました。ただしチラシは発行日がなく証明書手数料に旧額が残るため、現在の書類取扱いは都市交通課（048-441-1800）へ確認してください。"
     },
     {
       "slug": "asaka",
@@ -975,9 +988,9 @@
           "name": "デマンドバス介護認定等割引",
           "kind": "discount",
           "age_min": null,
-          "eligibility": "介護保険の要介護・要支援認定、または介護予防・生活支援サービス事業対象者。介護保険証を提示。介助者1人も割引。事前利用登録が必要。",
+          "eligibility": "市内在住・在勤・在学で、自力又は介助者同行で乗車可能な事前利用登録者。介護保険の要介護・要支援認定、または介護予防・生活支援サービス事業対象者。介護保険証を提示。介助者1人も割引。事前利用登録が必要。",
           "benefit": "通常500円から割引。",
-          "fare": "片道250円。",
+          "fare": "片道250円。 降車時に支払い、釣銭が出ないよう小銭を用意。",
           "routes": "北本市デマンドバス。市内と埼玉県央病院・埼玉脳神経外科病院の乗降場所。",
           "apply": "電話048-592-0033、FAX・郵送、くらし安全課窓口で利用登録。受付翌々日から予約可。利用1週間前～当日1時間前に電話予約。",
           "sources": [
@@ -985,19 +998,20 @@
               "url": "https://www.city.kitamoto.lg.jp/soshiki/shiminkeizai/kurashi/gyomu/g7/1416919749711.html",
               "label": "デマンドバス利用案内",
               "updated": "2026-04-01",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-10-31"
         },
         {
           "name": "デマンドバス自主返納者割引",
           "kind": "henno",
           "age_min": null,
-          "eligibility": "運転免許証自主返納者で運転経歴証明書を提示。事前利用登録が必要。",
+          "eligibility": "市内在住・在勤・在学で、自力又は介助者同行で乗車可能な事前利用登録者。運転免許証自主返納者で運転経歴証明書を提示。事前利用登録が必要。",
           "benefit": "通常500円から割引。",
-          "fare": "片道250円。",
+          "fare": "片道250円。 降車時に支払い、釣銭が出ないよう小銭を用意。",
           "routes": "北本市デマンドバス。市内と埼玉県央病院・埼玉脳神経外科病院の乗降場所。",
           "apply": "電話048-592-0033、FAX・郵送、くらし安全課窓口で利用登録。受付翌々日から予約可。利用1週間前～当日1時間前に電話予約。",
           "sources": [
@@ -1005,11 +1019,18 @@
               "url": "https://www.city.kitamoto.lg.jp/soshiki/shiminkeizai/kurashi/gyomu/g7/1416919749711.html",
               "label": "デマンドバス利用案内",
               "updated": "2026-04-01",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/kitamotocity.html",
+              "label": "埼玉県・北本市の返納者支援要件",
+              "updated": "2026-04-27",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -1017,10 +1038,16 @@
           "url": "https://www.city.kitamoto.lg.jp/soshiki/shiminkeizai/kurashi/gyomu/g7/1416919749711.html",
           "label": "デマンドバス利用案内",
           "updated": "2026-04-01",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/kitamotocity.html",
+          "label": "埼玉県・北本市の返納者支援要件",
+          "updated": "2026-04-27",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "利用登録の住民条件の詳細は要確認。くらし安全課 048-594-5522。"
+      "flag": ""
     },
     {
       "slug": "ina",
@@ -1961,17 +1988,32 @@
           "benefit": "市内循環バス・大和観光バス等の回数券を自由に組み合わせて最大6,000円分（額面と購入価格は異なる）、1回限り、本人のみ。",
           "fare": "回数券と現金併用可。",
           "routes": "市内発着の市内循環バス・大和観光バス。くきまる回数券も選択可能。",
-          "apply": "交通住宅課・菖蒲・栗橋・鷲宮行政センターへ交付申請書。郵送不可、事前に在庫確認。詳しい本人確認書類は窓口へ確認。",
+          "apply": "交付申請書と取消通知書、申請者の本人確認書類写し（マイナンバーカード・資格確認書など）を交通住宅課又は3行政センターへ持参。経歴証明書/免許経歴証明書を取得済みの場合は持参。裏面に取消通知日がある返納免許による代替も案内。代理人は本人の同意・委任状が必要。郵送不可、来庁前に券在庫を確認。",
           "sources": [
             {
               "url": "https://www.city.kuki.lg.jp/kurashi/kotsu/1003448.html",
               "label": "免許返納推進回数券",
               "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/003/448/menkyochirashi.pdf",
+              "label": "令和8年4月1日現在・返納事業チラシ",
+              "updated": "2026-04-01",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/003/448/menkyosinseisyo0710.pdf",
+              "label": "返納回数券等交付申請書・委任状",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [
+            "令和8年4月1日現在のチラシで申請書類を確認。2025年県ページの書類選択説明とは書き方が異なります。"
+          ],
+          "checked": "2026-10-31"
         },
         {
           "name": "市内循環バス介護認定者無料",
@@ -1999,16 +2041,28 @@
           "url": "https://www.city.kuki.lg.jp/kurashi/kotsu/1003448.html",
           "label": "免許返納推進回数券",
           "updated": "2026-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.kuki.lg.jp/kurashi/kotsu/shinaijyunkan_bus/1003436.html",
           "label": "市内循環バス運賃",
           "updated": "2026-06-01",
           "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/003/448/menkyochirashi.pdf",
+          "label": "令和8年4月1日現在・返納事業チラシ",
+          "updated": "2026-04-01",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/003/448/menkyosinseisyo0710.pdf",
+          "label": "返納回数券等交付申請書・委任状",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "返納券の申請書類詳細は要確認。交通住宅課 0480-22-1111 内線2635。"
+      "flag": "令和8年4月1日現在の市チラシで必要書類を具体化しました。2025年県ページは書類を「いずれか」と説明する一方、市チラシは取消通知書と取得済み経歴書を案内しています。取消通知書を持参できない場合は交通住宅課0480-22-1111内線2635へ確認してください。申請書自体は更新日記載なしです。"
     },
     {
       "slug": "hasuda",
@@ -2689,7 +2743,7 @@
           "kind": "henno",
           "age_min": null,
           "eligibility": "町内在住で運転免許を自主返納した方。独立した年齢条件の記載なし。",
-          "benefit": "6,000円分を1人1回、本人のみ。券記載の有効期限内、釣銭なし。",
+          "benefit": "6,000円分を1人1回、本人のみ。券記載の有効期限内、釣銭なし。 再発行不可。",
           "fare": "券利用。",
           "routes": "西武観光バス、秩父市営バス、皆野町営・小鹿野町営バス。鉄道・タクシー用途も可。",
           "apply": "小鹿野庁舎総合政策課または両神庁舎おもてなし課へ取消通知書・穴あき免許証・印鑑。西武観光・皆野町営・小鹿野町営は回数券購入、秩父市営は運賃支払時に利用。",
@@ -2697,8 +2751,8 @@
             {
               "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/oganotown.html",
               "label": "自主返納公共交通利用券",
-              "updated": "",
-              "checked": "2026-10-07"
+              "updated": "2026-04-27",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2023/06/kurashinoouenanshintetyou.pdf",
@@ -2713,8 +2767,12 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [
+            "2026年4月27日掲載の県公式本文で対象・6,000円分・交付方法と本人限定/期限/再発行不可を再確認。",
+            "秩父地域外転出・死亡・免許再取得・不正等では交付取消し又は返還となります。"
+          ],
+          "checked": "2026-10-31"
         },
         {
           "name": "高齢者バス優待乗車券",
@@ -2741,8 +2799,8 @@
         {
           "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/oganotown.html",
           "label": "自主返納公共交通利用券",
-          "updated": "",
-          "checked": "2026-10-07"
+          "updated": "2026-04-27",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2023/06/kurashinoouenanshintetyou.pdf",
@@ -2757,7 +2815,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "資料の更新日が未記載または1年以上前のため現行条件は要確認。小鹿野の優待券交付条件・申請詳細は要確認。総合政策課 0494-75-1238。"
+      "flag": "返納者公共交通利用券は2026年4月27日掲載の県公式本文で再確認しました。旧「暮らしの応援安心手帳」PDFは今回404で、高齢者バス優待券の交付条件・申請・現行対象路線は総合政策課0494-75-1238へ確認してください。"
     }
   ],
   "common": {

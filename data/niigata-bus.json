@@ -374,7 +374,9 @@
           "fare": "ICタッチ精算で半額（10円単位切上げ）。カード提示の現金半額が使える対象路線もあります。現金提示の上限扱いは窓口確認。",
           "routes": "りゅーと対応路線バス（観光・空港リムジン含む）と東区・江南区・西区バス等。現金提示は北区・秋葉区・南区・西蒲区バス、おらって、カナリア、横バス等。高速バス除く。",
           "apply": "りゅーと取扱窓口へ住所・年齢が分かる本人確認書類原本とりゅーとカード。新規発行2,000円（預り500円含む）。毎年誕生月に更新。",
-          "notes": [],
+          "notes": [
+            "IC対応バスでチャージ不足のため現金精算する場合は正規運賃になります。月上限を超えた次の乗車から当月末までは通常のりゅーとカードとして精算されます。"
+          ],
           "sources": [
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/index.html",
@@ -385,17 +387,18 @@
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/howtouse.html",
               "label": "新潟市・ICカード利用方法",
-              "updated": "2024-02-21",
-              "checked": "2026-10-07"
+              "updated": "2026-10-20",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/s.html",
               "label": "新潟市・ICカード更新手続き",
               "updated": "2018-01-17",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "シルバーチケット・紙券半額",
@@ -512,14 +515,14 @@
         {
           "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/howtouse.html",
           "label": "新潟市・ICカード利用方法",
-          "updated": "2024-02-21",
-          "checked": "2026-10-07"
+          "updated": "2026-10-20",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/s.html",
           "label": "新潟市・ICカード更新手続き",
           "updated": "2018-01-17",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/kotsu2017041538.html",
@@ -546,7 +549,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "IC上限・更新の詳細は2024年/2018年案内、現行適用は都市交通政策課025-226-2723へ確認。返納支援の「自主返納など」に失効者を含む範囲、住民バス適用は市民生活課025-226-1113へ確認。以前のIC交通券給付は2018年6月30日受付終了。みなくるんは実証運行時の料金。"
+      "flag": "IC月上限8,600円・新規カード代2,000円（預り金500円含む）・チャージ不足時の正規運賃は2026年10月20日更新本文で確認。更新手続の詳細は同本文からリンクされる2018年資料、精算方法の総合ページと返納ページは日付表示なしです。返納支援の失効者を含む範囲と対象住民バス、現金提示時の上限は都市交通政策課025-226-2723又は市民生活課025-226-1113へ確認。以前のIC交通券給付は2018年6月30日受付終了。みなくるんは実証運行時の料金。"
     },
     {
       "slug": "gosen",
