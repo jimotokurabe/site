@@ -1024,18 +1024,68 @@
     {
       "slug": "shimada",
       "name": "島田市",
-      "status": "notfound",
-      "summary": "市のバス案内と自主返納支援を確認しましたが、高齢者向けの市のバス助成は見つかりませんでした。",
-      "programs": [],
-      "sources": [
+      "status": "active",
+      "summary": "笹間渡笹間線に限り65歳以上は運賃半額。通常200円の区間は100円、300円の区間は150円です。ほかの市コミュニティバス路線すべてへの高齢者割引ではありません。",
+      "programs": [
         {
-          "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/bus.html",
-          "label": "自主運行バス",
-          "updated": "2026-06-29",
-          "checked": "2026-10-06"
+          "name": "笹間渡笹間線の65歳以上運賃半額",
+          "kind": "discount",
+          "age_min": 65,
+          "eligibility": "65歳以上の方。笹間渡笹間線のみ対象。市内居住や免許返納を条件とする記載はありません。",
+          "benefit": "笹間渡笹間線に限り65歳以上は運賃半額。通常200円の区間は100円、300円の区間は150円です。ほかの市コミュニティバス路線すべてへの高齢者割引ではありません。",
+          "fare": "村上までは通常200円、村上を越えると通常300円の半額。現金のみ。",
+          "routes": "島田市コミュニティバス笹間渡笹間線。",
+          "apply": "現金で降車時に支払い。年齢確認書類・事前登録の要否は公式案内に明記なし。生活安心課交通防犯係0547-36-7144へ確認。",
+          "notes": [
+            "返納は条件として記載されていません。高校生以下の半額や障害者手帳所持者の無料利用とは別の年齢による割引。",
+            "年齢確認書類・事前登録の要否は公式案内に明記なし。生活安心課交通防犯係0547-36-7144へ確認。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/untin.html",
+              "label": "市の運賃と支払方法（65歳以上半額・現金払い）",
+              "updated": "2024-04-01",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.shimada.shizuoka.jp/fs/9/6/5/2/9/7/_/__8_____________.pdf",
+              "label": "令和8年度バスマップ（2026年4月1日現在・65歳以上半額の表）",
+              "updated": "2026-04-01",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/887686365.html",
+              "label": "令和8年度からの運行概要",
+              "updated": "2026-03-31",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "生活安心課（0547-36-7144）へ、年齢・返納によるバス助成の有無を確認してください。"
+      "sources": [
+        {
+          "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/untin.html",
+          "label": "市の運賃と支払方法（65歳以上半額・現金払い）",
+          "updated": "2024-04-01",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.shimada.shizuoka.jp/fs/9/6/5/2/9/7/_/__8_____________.pdf",
+          "label": "令和8年度バスマップ（2026年4月1日現在・65歳以上半額の表）",
+          "updated": "2026-04-01",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/887686365.html",
+          "label": "令和8年度からの運行概要",
+          "updated": "2026-03-31",
+          "checked": "2026-10-31"
+        }
+      ],
+      "flag": "運賃の本文は2024年4月1日更新ですが、令和8年度バスマップ（2026年4月1日現在）にも笹間渡笹間線の65歳以上半額が明記されています。年齢の確認方法は記載なし。生活安心課交通防犯係0547-36-7144へ確認してください。",
+      "checked": "2026-10-31"
     },
     {
       "slug": "yaizu",

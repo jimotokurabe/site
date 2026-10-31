@@ -9500,21 +9500,54 @@
         {
           "url": "https://www.city.shimada.shizuoka.jp/kurashi/tetuduki/kotu-kuko/kotu/bus/",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.city.shimada.shizuoka.jp/fs/9/6/5/2/9/7/_/__8_____________.pdf",
+          "fetch_status": 200,
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.shimada.shizuoka.jp/fs/9/6/6/5/5/7/_/260317yoryor8.pdf",
+          "fetch_status": 200,
+          "checked": "2026-10-31"
         }
       ],
       "updates": [
         {
-          "topic": "運転免許証自主返納支援",
+          "topic": "運転経歴証明書交付等手数料助成",
           "field": "support",
-          "value": "島田市に運転免許証の自主返納に関する公式案内があります。支援内容と対象・期限は本文を再確認してから具体値を追記します。",
+          "value": "運転経歴証明書1,150円、マイナ経歴証明書900円、両方1,250円の交付等手数料を全額助成。年度途中でも予算上限に達すると終了する場合があります。 交付から90日以内。 申請兼実績報告書、請求書、運転経歴証明書等の写し（マイナ経歴証明書のみは取消通知書）、領収書の写し、申請者本人名義の通帳又はキャッシュカードの写し。本人以外の口座へ振込を希望する場合は別途委任状が必要で、生活安心課0547-36-7144へ確認。",
           "source": "https://www.city.shimada.shizuoka.jp/kurashi-docs/menkyohennou.html",
-          "evidence": "ページ名「運転免許証の自主返納」",
+          "evidence": "2026年10月1日更新の市本文に全額・90日・予算上限・本人以外口座の委任状を記載。",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-10-31"
+        },
+        {
+          "topic": "笹間渡笹間線",
+          "field": "fare",
+          "value": "笹間渡笹間線に限り65歳以上は運賃半額。通常200円の区間は100円、300円の区間は150円です。ほかの市コミュニティバス路線すべてへの高齢者割引ではありません。",
+          "source": "https://www.city.shimada.shizuoka.jp/fs/9/6/5/2/9/7/_/__8_____________.pdf",
+          "evidence": "令和8年度バスマップの運賃表に65歳以上の方は半額と記載。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-10-31"
+        },
+        {
+          "topic": "ゆいタク",
+          "field": "fare",
+          "value": "別制度の地域タクシー「ゆいタク」は吹木・中講地区住民のみ、事前登録が必要。年齢・免許返納を条件とする制度ではありません。令和8年度から本運行し、指定場所間の1乗車はグループ全員で500円（往復は各500円）、差額は市が事業者へ負担します。 平日8～18時（祝日・12月29日～1月3日除く）、自宅と指定目的地又は指定目的地同士。市内医院・診療所は地区中心から片道10km以内。1か月前から大井タクシー0547-45-3131へ予約、当日予約可だが満車の場合あり。登録証は乗車する全員が提示し、最大5人。要領第9条により事業者割引・市の他のタクシー助成券は使用不可。",
+          "source": "https://www.city.shimada.shizuoka.jp/fs/9/6/6/5/5/7/_/260317yoryor8.pdf",
+          "evidence": "令和8年4月1日施行要領第6～11条に対象地区・登録・500円本人負担・併用禁止。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-10-31"
         }
       ],
       "unresolved": [
-        "返納支援・バス交通案内の具体的条件をページ本文から追加確認。"
+        "笹間渡笹間線の年齢確認書類・事前登録の要否は未記載。",
+        "一般高齢者を対象にした市内全域のタクシー助成の有無は未確認。",
+        "助成金を本人以外の口座へ振り込む際の委任状様式・詳細は生活安心課へ確認。"
       ]
     },
     "osaka:osakasayama": {
@@ -44890,6 +44923,11 @@
         {
           "url": "https://www.city.komoro.lg.jp/soshikikarasagasu/kensetsusuidoubu/toshikeikakuka/1/1/2/1736.html",
           "fetch_status": 200
+        },
+        {
+          "url": "https://www.city.komoro.lg.jp/material/files/group/18/ainori2606.pdf",
+          "fetch_status": 200,
+          "checked": "2026-10-31"
         }
       ],
       "updates": [
@@ -44905,11 +44943,12 @@
         {
           "topic": "予約制相乗りタクシー「こもろ愛のりくん」",
           "field": "eligibility",
-          "value": "1人で乗降できる人が対象。市外居住者には利用区間の制限があります。身体・精神障害者手帳または療育手帳所持者の利用券による100円乗車は、市内の人に限ります。",
+          "value": "市外居住者は市内の駅と通勤・通院・通学先の往復に限定。市内手帳所持者の回数券利用は100円、現金300円。介助者同伴時の利用可否は本文と最新PDFに相違があり事前確認。",
           "source": "https://www.city.komoro.lg.jp/soshikikarasagasu/kensetsusuidoubu/toshikeikakuka/1/1/2/1736.html",
-          "evidence": "予約制相乗りタクシー「こもろ愛のりくん」／小諸市オフィシャルサイト：住所：小諸市相生町2-2-22 こもテラス1階\n小諸市内に住居がある方。小諸市内に住居がない方で、市内の企業、病院、学校に通われている方。おひとりでの乗降ができない方のご利用はできません。身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳をお持ちの方は、障がい者利用券により100円。市の福祉事業となるため市内の方限定。",
+          "evidence": "市本文の利用区間・手帳所持者料金と、2026年6月改訂PDFの介助者同伴可の記載を照合。",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-10-31"
         },
         {
           "topic": "予約制相乗りタクシー「こもろ愛のりくん」",
@@ -44919,11 +44958,31 @@
           "evidence": "予約制相乗りタクシー「こもろ愛のりくん」／小諸市オフィシャルサイト：身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳をお持ちの方は、障がい者利用券（回数券）により100円で乗車できます。（会員登録時に手帳のコピーをご提出いただきます）なお、現金によるお支払いの場合は、1回の乗車につき300円となります。※小諸市の福祉事業となるため市内の方限定となります。",
           "reviewed": true,
           "safety_accepted": true
+        },
+        {
+          "topic": "こもろ愛のりくん",
+          "field": "booking",
+          "value": "事前の無料会員登録後、0267-25-8008へ電話予約。乗車日の1週間前から1時間前まで、朝9時までの便は前営業日の受付終了（平日16:30、土曜14:30）まで。変更・取消も同じ締切で連絡。登録は最新パンフレットでは利用前営業日までに申請書を提出します。",
+          "source": "https://www.city.komoro.lg.jp/soshikikarasagasu/kensetsusuidoubu/toshikeikakuka/1/1/2/1736.html",
+          "evidence": "市本文に1週間前から1時間前、朝3便は前営業日の平日16:30／土曜14:30までと記載。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-10-31"
+        },
+        {
+          "topic": "免許返納支援",
+          "field": "return_support",
+          "value": "市が掲載する返納引換案内、運転経歴証明書又は運転免許取消通知書を持参。障がい者手帳がある方は併せて持参し、専用用紙で会員登録の手続き後に乗車券を受け取ります。",
+          "source": "https://www.city.komoro.lg.jp/material/files/group/10/menkyohennouhikikaeannai.pdf",
+          "evidence": "掲載引換案内に65歳以上・令和3年4月1日以降の自主返納・4枚・持参書類・登録手続きを記載。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-10-31"
         }
       ],
       "unresolved": [
-        "予約制相乗りタクシー「こもろ愛のりくん」 / booking: 公式ページ原文に同じ条件・数値を確認できず、既存本文の値を補完候補として保留。",
-        "免許返納支援 / return_support: 公式原文から補完内容全体を照合できず保留。根拠文に条件と金額・期限・利用先などの記載がそろわない。"
+        "返納支援の本文は2021年11月5日更新です。現在掲載の引換案内で4枚を確認しましたが、券の額面・有効期限・支援申請期限・代理申請の可否は記載なし。「返納から5年以内」は運転経歴証明書の交付期限で、支援の申請期限ではありません。引換案内の窓口時間は旧時間のため、来所前にこもろ愛のりくんコールセンター0267-25-8008へ確認してください。",
+        "乗降に介助が必要な方は事前確認が必要です。市本文は1人で乗降できない方は利用不可と記載する一方、同ページ掲載の2026年6月改訂パンフレットは介助者同伴なら利用可と記載し、同PDF内の注記にも相違があります。運行時間・登録受付時間にも本文と最新PDFの差があるため、0267-25-8008へ確認してください。"
       ]
     },
     "okayama:yakage": {
@@ -47016,7 +47075,7 @@
     "ibaraki:kashima": {
       "key": "ibaraki:kashima",
       "status": "complete",
-      "checked": "2026-10-05",
+      "checked": "2026-10-31",
       "sources": [
         {
           "url": "https://city.kashima.ibaraki.jp/soshiki/15/1407.html",
@@ -47027,11 +47086,12 @@
         {
           "topic": "鹿嶋市デマンド型乗合タクシー",
           "field": "registration",
-          "value": "利用前に登録が必要。",
+          "value": "デマンド型乗合いタクシーは市内に住民登録がある方が対象で、初回登録1,000円、翌年度以降は無料で自動更新。年齢・免許返納は利用条件ではありません。同区域600円、隣接区域900円、その他区域1,200円（1人当たり）。3歳以上は本人の登録が必要。",
           "source": "https://city.kashima.ibaraki.jp/soshiki/15/1407.html",
           "evidence": "「利用するには、必ず事前の利用者登録が必要」",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-10-31"
         },
         {
           "topic": "鹿嶋市デマンド型乗合タクシー",
@@ -47040,16 +47100,28 @@
           "source": "https://city.kashima.ibaraki.jp/soshiki/15/1407.html",
           "evidence": "「平日のみ（土・日曜日、祝日および年末年始は運休）」「1日15便」",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-10-31"
         },
         {
           "topic": "鹿嶋市デマンド型乗合タクシー",
           "field": "fare",
-          "value": "区域内移動600円/人、隣接区域900円/人、その他区域間1,200円/人。未就学児・障害者等には300円引き条件あり。",
+          "value": "未就学児は300円引き（3歳未満で座席不使用は無料）。障がい者手帳又は指定難病特定医療費受給者証の所持者は300円引き。身体第1種・精神1級・療育A以上の場合は介助者1人も300円引き。高齢だけの割引とは区別します。 同区域600円、隣接区域900円、その他区域1,200円（1人当たり）。",
           "source": "https://city.kashima.ibaraki.jp/soshiki/15/1407.html",
           "evidence": "「600円/人」「900円/人」「1,200円/人」「未就学児は300円引き」「障がい者手帳…300円引き」",
           "reviewed": true,
-          "safety_accepted": true
+          "safety_accepted": true,
+          "checked": "2026-10-31"
+        },
+        {
+          "topic": "鹿嶋市デマンド型乗合タクシー",
+          "field": "booking",
+          "value": "平日のみ1日15便（土日祝・年末年始運休）。政策推進課・大野出張所又は電子申請で登録。電子申請の登録料はカード払い。登録後に電話又はWeb予約（Web利用申請は別途必要）。電話0299-94-6090は平日8～16時、8時・8時30分・9時便は前日16時まで。Webは24時間受付。自宅・登録目的施設間のみ、友人宅等は不可。1人で乗車困難な方は介助者同伴で利用できます。",
+          "source": "https://city.kashima.ibaraki.jp/soshiki/15/1407.html",
+          "evidence": "市本文に電話・Webの受付時間、早朝便の締切、登録窓口、介助者同伴等を明記。",
+          "reviewed": true,
+          "safety_accepted": true,
+          "checked": "2026-10-31"
         }
       ],
       "unresolved": []

@@ -6,35 +6,36 @@
       "slug": "komoro",
       "name": "小諸市",
       "status": "notfound",
-      "summary": "高齢者・返納者向けのこもろ愛のりくん乗車券があります。予約制相乗りタクシーのため、バス助成の案内は見つかっていません。",
+      "summary": "一般高齢者向けのバス助成の有無は未確認です。返納者のお試し券とお出かけ75チケットは、バスではなく相乗りタクシー「こもろ愛のりくん」の券です。",
       "programs": [],
       "sources": [
         {
           "url": "https://www.city.komoro.lg.jp/soshikikarasagasu/shiminseikatsubu/seikatsukankyoka/1/6/1/11415.html",
-          "label": "免許自主返納者・愛のりくん試乗券",
+          "label": "市の免許返納支援案内",
           "updated": "2021-11-05",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.komoro.lg.jp/material/files/group/10/menkyohennouhikikaeannai.pdf",
+          "label": "返納支援の引換案内",
+          "updated": "",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.komoro.lg.jp/soshikikarasagasu/hokenfukushibu/koreifukushika/1/3/seikatushien/16716.html",
           "label": "高齢者外出機会促進事業",
           "updated": "2025-08-28",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
-          "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
-          "label": "長野県令和8年度・高齢者移動支援一覧",
-          "updated": "",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8jisyuhennousien2.pdf",
-          "label": "長野県令和8年度・免許自主返納支援一覧",
-          "updated": "",
-          "checked": "2026-10-06"
+          "url": "https://www.city.komoro.lg.jp/soshikikarasagasu/kensetsusuidoubu/toshikeikakuka/1/1/2/1736.html",
+          "label": "市の公共交通・相乗りタクシー案内",
+          "updated": "2026-07-31",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "県令和8年度一覧も相乗りタクシー支援です。古い市案内と県一覧で試乗券の対象年齢が異なります。バス向け支援は高齢福祉課（0267-22-1700）へ確認してください。"
+      "flag": "返納支援・高齢者外出機会促進事業・公共交通案内を再照合しましたが、一般高齢者のバス助成の有無を確定する記載はありません。不存在とはせず、高齢福祉課又は都市計画課0267-22-1700へ確認してください。返納支援本文と高齢者支援本文は1年以上前の更新です。",
+      "checked": "2026-10-31"
     },
     {
       "slug": "saku",
