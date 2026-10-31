@@ -1,0 +1,36 @@
+.pref-layout{grid-template-columns:240px minmax(0,1fr);gap:24px;align-items:start}
+.pref-comparison{min-width:0}.comparison-results{min-width:0}
+.pref-comparison>h2{font-size:1.3rem;margin-top:0}
+.pref-comparison>p{font-size:.9rem;line-height:1.8}
+.comparison-kinds{display:flex;flex-wrap:wrap;gap:10px;border:0;padding:0;margin:22px 0}
+.comparison-kinds legend{font-weight:700;margin-bottom:10px}
+.comparison-kinds label{display:flex;align-items:center;gap:8px;min-height:48px;padding:8px 12px;border:1px solid #b7c9ab;border-radius:7px;background:#fffef9;cursor:pointer;font-size:.9rem}
+.comparison-kinds label:has(input:checked){background:#e8f0df;border-color:#285a40;font-weight:700}
+.comparison-kinds input{width:1.15em;height:1.15em;accent-color:#285a40;margin:0}
+.comparison-group h3{font-size:1.15rem;margin:24px 0 14px}
+.comparison-group table{width:100%;border-collapse:collapse;table-layout:fixed;background:#fffef9;font-size:.87rem;line-height:1.8}
+.comparison-group caption{text-align:left;color:#526452;font-size:.85rem;padding:0 0 10px}
+.comparison-group th,.comparison-group td{vertical-align:top;border:1px solid #d0dac8;padding:14px;overflow-wrap:anywhere}
+.comparison-group thead th{background:#e9efdf;text-align:left}
+.comparison-group thead th:first-child{width:13%}.comparison-group thead th:nth-child(2){width:31%}.comparison-group thead th:nth-child(3){width:30%}
+.comparison-group tbody th{background:#f5f6ed;text-align:left;font-size:1rem}
+.comparison-state{display:block;font-size:.78rem;font-weight:400;line-height:1.7;margin-top:9px;color:#526452}
+.comparison-program{font-size:1rem;display:block;margin-bottom:10px}
+.comparison-group dl,.comparison-group dd{margin:0}
+.comparison-group dl>div{margin-bottom:14px}.comparison-group dl>div:last-child{margin-bottom:0}
+.comparison-group dt{font-size:.8rem;font-weight:700;color:#526452;margin-bottom:4px}
+.comparison-group details{margin-top:14px;font-size:.82rem}.comparison-group summary{cursor:pointer;min-height:44px;line-height:1.8}
+.comparison-group details ul{padding-left:18px}.comparison-group details li{margin-bottom:12px}
+.comparison-group details small{display:block;font-size:.78rem;color:#526452}
+.comparison-date{font-size:.78rem;color:#526452;margin:0 0 8px}
+.comparison-detail{display:inline-flex;align-items:center;min-height:44px;line-height:1.8;font-weight:700}
+.comparison-relation{font-size:.82rem;color:#6e542a;border-left:3px solid #bba16b;padding-left:10px}
+.comparison-statewide,.comparison-directory{border:1px solid #cbd8c1;border-radius:10px;background:#f3f5e9;padding:14px 20px;margin:20px 0}
+.comparison-statewide summary,.comparison-directory>summary{font-weight:700;min-height:44px;cursor:pointer;line-height:1.8}
+.comparison-statewide p,.comparison-note{font-size:.88rem;line-height:1.8}
+.comparison-directory .city-group h3{font-size:1rem}
+.has-pref-comparison .comparison-group[hidden],.comparison-group [hidden]{display:none!important}
+:is(a,button,input,summary,select):focus-visible{outline:3px solid #ab6428;outline-offset:3px}
+@media(max-width:1100px){.pref-layout{display:block}.pref-layout .finder{position:static;margin-bottom:24px}.comparison-group thead{display:none}.comparison-group table,.comparison-group caption,.comparison-group tbody,.comparison-group tr,.comparison-group th,.comparison-group td{display:block;width:auto}.comparison-group tr{border:1px solid #c6d3bc;border-radius:10px;margin-bottom:18px;overflow:hidden}.comparison-group th,.comparison-group td{border:0;padding:16px 18px}.comparison-group td+td{border-top:1px solid #e0e5da}.comparison-group td::before{content:attr(data-label);display:block;font-size:.8rem;font-weight:700;color:#526452;margin-bottom:12px}.comparison-group td{font-size:.95rem}.comparison-group tbody th{font-size:1.15rem}.comparison-kinds{gap:8px}.comparison-kinds label{flex:1 1 auto}}
+@media(max-width:400px){.comparison-kinds{display:grid;grid-template-columns:1fr}.comparison-statewide,.comparison-directory{padding:12px 14px}}
+@media print{.comparison-kinds,.comparison-directory{display:none!important}.comparison-group details>summary{display:none}.pref-layout{display:block}.comparison-group table{font-size:10pt}.comparison-group tr{break-inside:avoid}.comparison-group[hidden]{display:none!important}}
