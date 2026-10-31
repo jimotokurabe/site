@@ -7183,27 +7183,44 @@
           "fare": "バス券交付申請無料、乗車ごと100円。",
           "routes": "市内路線バス。JR券は居住地域で区間限定の別選択。",
           "apply": "高齢者包括支援担当5番窓口で申請。印鑑・写真不要、対象者に直接ハガキ案内。有効期限を撤廃し新しい券を使用。",
-          "notes": [],
+          "notes": [
+            "根室交通の2026年1月9日案内を目視し、一般運賃の2026年4月改定後も優待券所持者は100円のままと確認。",
+            "バス券の新券には有効期限なし。JR券の居住地域別区間・市外区間の適用、居住条件詳細・再交付条件は介護福祉課へ確認。"
+          ],
           "sources": [
             {
               "url": "https://www.city.nemuro.hokkaido.jp/lifeinfo/kakuka/shiminfukushibu/kaigofukusi/s/1371.html",
-              "label": "高齢者バス等優待乗車券",
+              "label": "市の高齢者バス等優待乗車券（新券の有効期限撤廃）",
               "updated": "2025-04-16",
-              "checked": "2026-10-07"
+              "checked": "2026-11-01"
+            },
+            {
+              "url": "https://www.nemurokotsu.com/topics/%e6%a0%b9%e5%ae%a4%e5%b8%82%e9%ab%98%e9%bd%a2%e8%80%85%e3%83%90%e3%82%b9%e7%ad%89%e5%84%aa%e5%be%85%e4%b9%97%e8%bb%8a%e5%88%b870%e6%ad%b3%e4%bb%a5%e4%b8%8a%e3%81%8a%e6%8c%81%e3%81%a1%e3%81%ae",
+              "label": "根室交通の2026年4月改定後も優待100円の案内",
+              "updated": "2026-01-09",
+              "checked": "2026-11-01"
             }
           ],
-          "current": "document_checked"
+          "current": "document_checked",
+          "checked": "2026-11-01"
         }
       ],
       "sources": [
         {
           "url": "https://www.city.nemuro.hokkaido.jp/lifeinfo/kakuka/shiminfukushibu/kaigofukusi/s/1371.html",
-          "label": "高齢者バス等優待乗車券",
+          "label": "市の高齢者バス等優待乗車券（新券の有効期限撤廃）",
           "updated": "2025-04-16",
-          "checked": "2026-10-07"
+          "checked": "2026-11-01"
+        },
+        {
+          "url": "https://www.nemurokotsu.com/topics/%e6%a0%b9%e5%ae%a4%e5%b8%82%e9%ab%98%e9%bd%a2%e8%80%85%e3%83%90%e3%82%b9%e7%ad%89%e5%84%aa%e5%be%85%e4%b9%97%e8%bb%8a%e5%88%b870%e6%ad%b3%e4%bb%a5%e4%b8%8a%e3%81%8a%e6%8c%81%e3%81%a1%e3%81%ae",
+          "label": "根室交通の2026年4月改定後も優待100円の案内",
+          "updated": "2026-01-09",
+          "checked": "2026-11-01"
         }
       ],
-      "flag": "令和7年4月更新でバス券有効期限撤廃を確認。市外区間・居住条件は介護福祉課（0153-23-6111）へ確認。"
+      "flag": "市本文は2025年4月16日更新。根室交通の2026年1月9日案内でも、2026年4月の運賃改定後に優待券所持者は引き続き100円と確認。居住条件の詳細、JR券の地域別対象区間、券の再交付条件は市本文に明記なし。介護福祉課0153-23-6111へ確認してください。",
+      "checked": "2026-11-01"
     },
     {
       "slug": "betsukai",
