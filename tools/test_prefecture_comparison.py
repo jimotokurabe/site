@@ -48,9 +48,19 @@ class ComparisonTests(unittest.TestCase):
             for term in terms:
                 self.assertIn(term, text)
 
-    def test_confirmation_dates_are_original_not_release_date(self):
+    def test_confirmation_dates_follow_the_individually_reviewed_record(self):
+        returns = {city['slug']: city for city in self.pref['cities']}
+        buses = {city['slug']: city for city in self.bus['cities']}
         for row in self.rows:
-            self.assertNotEqual(row['checked'], '2026-10-31')
+            if row['kind'] == 'return':
+                expected = returns[row['slug']].get('checked') or self.pref['checked']
+            elif row['kind'] == 'taxi':
+                expected = self.taxi['cities'][row['slug']].get('checked') or self.taxi['checked']
+            else:
+                city = buses[row['slug']]
+                program = next((p for p in city['programs'] if p['name'] == row['name']), {})
+                expected = program.get('checked') or city.get('checked') or self.bus['checked']
+            self.assertEqual(row['checked'], expected)
             self.assertIn(row['checked'], row_html(row))
 
     def test_validity_is_not_mislabeled_as_application_deadline(self):
@@ -70,6 +80,19 @@ class ComparisonTests(unittest.TestCase):
         row = dict(self.rows[0], money=[('内容', '<script>alert(1)</script>')])
         self.assertNotIn('<script>', row_html(row))
         self.assertIn('&lt;script&gt;', row_html(row))
+
+    def test_custom_city_taxi_panels_include_the_reviewed_evidence(self):
+        for pref, slug in [('hyogo', 'kobe'), ('kanagawa', 'yokohama')]:
+            with self.subTest(city=slug):
+                record = json.loads((ROOT/'data'/f'{pref}-taxi.json').read_text())['cities'][slug]
+                panel = BeautifulSoup((ROOT/f'{pref}-menkyo-henno'/f'{slug}.html').read_text(), 'html.parser').select_one('#taxi')
+                text = panel.get_text(' ', strip=True)
+                for field in ('what', 'note', 'checked'):
+                    self.assertIn(record[field], text)
+                links = {link.get('href') for link in panel.select('a[href]')}
+                self.assertIn(record['url'], links)
+                for source in record.get('more_sources', []):
+                    self.assertIn(source['url'], links)
 
 
 if __name__ == '__main__':

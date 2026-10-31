@@ -298,24 +298,44 @@
     {
       "slug": "koto",
       "name": "江東区",
-      "status": "unknown",
-      "summary": "令和8年度予算案にシルバーパス購入費10,000円助成と10月開始予定の記載があるが、実施後の受付・申請案内を確認できていない。",
-      "programs": [],
-      "sources": [
+      "status": "active",
+      "summary": "70歳以上の区民が対象の東京都シルバーパス購入費助成は10月1日から受付中。12,000円の対象パスに10,000円を助成します。",
+      "programs": [
         {
-          "url": "https://www.city.koto.lg.jp/011502/kuse/koho/yosanan/documents/2026pressmaterials.pdf",
-          "label": "令和8年度当初予算案発表資料・シルバーパス購入費助成",
-          "updated": "",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.koto.lg.jp/051141/kuse/kucho/kaiken/r7text/r080202.html",
-          "label": "区長会見・2026年10月開始の購入費助成",
-          "updated": "2026-02-06",
-          "checked": "2026-10-06"
+          "name": "東京都シルバーパス購入費助成",
+          "kind": "reimbursement",
+          "age_min": 70,
+          "eligibility": "江東区に住所がある満70歳以上で、令和8年10月以降から有効のシルバーパスを12,000円で購入し、令和8年度住民税が課税・令和7年合計所得が135万円超の方。非課税又は所得135万円以下の方は対象外（1,000円のパスを購入）。払い戻しを受けた方・転入前の自治体で同様の助成を受けた方は対象外。",
+          "benefit": "購入したパスの有効期間内に1回、10,000円を助成。",
+          "fare": "購入時は12,000円をいったん本人が負担。助成後のパス負担は2,000円。PASMO新規発行費用1,000円は別途必要で、助成対象外。",
+          "routes": "東京都シルバーパスの対象交通機関。具体的な対象路線は東京都と東京バス協会の案内を確認してください。",
+          "apply": "購入後、パスの有効期間内に郵送又はオンライン申請。申請書兼請求書、振込口座確認書類、払込受領書・領収書等の購入額証明が必要。本人以外の受領は委任状が必要でオンライン不可。審査・振込まで2～3か月程度。",
+          "notes": [
+            "令和8年9月30日まで有効の旧パスは対象外。",
+            "2026年12月28日までの問合せはコールセンター03-4446-4058、2027年1月4日以降は長寿応援課03-3647-4541。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.koto.lg.jp/211100/silverpassjyosei.html",
+              "label": "江東区・東京都シルバーパス購入費助成（10月1日受付開始）",
+              "updated": "2026-10-13",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "2026年予算案発表資料の日付なしPDFに実施予定を確認しましたが、現在の受付本文・回数・申請方法は未確認です。長寿応援課03-3647-4541へ確認してください。"
+      "sources": [
+        {
+          "url": "https://www.city.koto.lg.jp/211100/silverpassjyosei.html",
+          "label": "江東区・東京都シルバーパス購入費助成（10月1日受付開始）",
+          "updated": "2026-10-13",
+          "checked": "2026-10-31"
+        }
+      ],
+      "flag": "",
+      "checked": "2026-10-31"
     },
     {
       "slug": "shinagawa",
@@ -439,24 +459,56 @@
     {
       "slug": "nakano",
       "name": "中野区",
-      "status": "unknown",
-      "summary": "コミュニティ交通の高齢者割引が資料にありますが、現在の案内本文とバスとしての制度範囲は確認待ちです。",
-      "programs": [],
-      "sources": [
+      "status": "active",
+      "summary": "申請時70歳以上の方は高齢者割引証で、みはとバスを通常200円から半額の100円で利用できます。",
+      "programs": [
         {
-          "url": "https://www.city.tokyo-nakano.lg.jp/kusei/kaigi/fuzokukikan/kokyokotsu-suishin/2025/dainikidaisankai.files/06_siryou3.pdf",
-          "label": "2025年交通政策推進協議会資料・コミュニティ交通",
-          "updated": "",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bohan/koutsu/menkyo-hennou.html",
-          "label": "運転免許自主返納案内",
-          "updated": "2024-08-19",
-          "checked": "2026-10-06"
+          "name": "みはとバス高齢者割引証",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "申請時点で70歳以上の方。区の対象者欄には居住地の限定は記載されていません。",
+          "benefit": "中野区発行の高齢者割引証を提示すると、みはとバスの大人運賃200円が半額。",
+          "fare": "1乗車100円。東京都シルバーパスは使えません。",
+          "routes": "中野区若宮・大和町地域を運行するコミュニティバス「みはとバス」。",
+          "apply": "年齢を確認できる書類を持参し、区役所本庁舎9階都市計画課ウォーカブル係（平日8:30～17:00）、鷺宮すこやか福祉センター、野方区民活動センター又は大和区民活動センターで申請。本人の年齢確認書類があれば代理申請可。シルバーパスは年齢確認書類として不可。",
+          "notes": [
+            "区役所以外の受付時間は各施設に確認。",
+            "立ち席での乗車不可。車椅子は空席4席以上・介助人同行・折りたたみ等の条件があります。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.tokyo-nakano.lg.jp/machizukuri/koutsu/tiikikoukyou/jissyou/wakamiyayamatocho/koureissyawaribikisyou.html",
+              "label": "中野区・高齢者割引証の発行（みはとバス）",
+              "updated": "2026-08-27",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.tokyo-nakano.lg.jp/machizukuri/koutsu/tiikikoukyou/jissyou/wakamiyayamatocho/kokyokotsu-jikken.html",
+              "label": "中野区・みはとバス運行概要",
+              "updated": "2026-10-01",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "現在の高齢者割引の条件を確認できていません。日付なしの会議資料には70歳の割引証・100円引きの記載があります。現在の対象年齢・路線・申請方法は交通政策担当（区代表03-3389-1111）へ確認してください。"
+      "sources": [
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/machizukuri/koutsu/tiikikoukyou/jissyou/wakamiyayamatocho/koureissyawaribikisyou.html",
+          "label": "中野区・高齢者割引証の発行（みはとバス）",
+          "updated": "2026-08-27",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/machizukuri/koutsu/tiikikoukyou/jissyou/wakamiyayamatocho/kokyokotsu-jikken.html",
+          "label": "中野区・みはとバス運行概要",
+          "updated": "2026-10-01",
+          "checked": "2026-10-31"
+        }
+      ],
+      "flag": "",
+      "checked": "2026-10-31"
     },
     {
       "slug": "suginami",

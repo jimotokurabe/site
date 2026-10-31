@@ -3,11 +3,21 @@
  "cities": {
   "kobe": {
    "k": "notfound",
-   "what": "年齢で使える高齢者向けのタクシー代の助成は見つかりませんでした。70歳以上の敬老パスを登録すると、予約して乗る一部の地域の乗り合いの車（デマンド型）に割引の運賃で乗れます。",
+   "what": "今回の公式情報調査では、年齢や免許返納だけで使える市独自の一般タクシー代助成は確認できませんでした。敬老・福祉パスの事前登録で一部地域のデマンド型交通を優待運賃で利用できますが、普通のタクシー券とは別です。",
    "henno_link": "記載なし",
    "url": "https://www.city.kobe.lg.jp/a80014/20230213_keiroupass.html",
    "src": "市の地域コミュニティ交通のページ",
-   "upd": "2025年2月10日更新"
+   "upd": "2025年2月10日更新",
+   "checked": "2026-10-31",
+   "note": "重度心身障害者タクシー利用券は、障害者手帳等の要件があり、敬老優待乗車証・福祉乗車証・自動車燃料費助成との併給ができない別制度です。高齢者一般の返納特典・タクシー助成と混同しないでください。",
+   "more_sources": [
+    {
+     "url": "https://www.city.kobe.lg.jp/a40792/kenko/handicap/zaitakufukushi/koutsukikan/s031.html",
+     "label": "神戸市・重度心身障害者タクシー利用券助成",
+     "updated": "2026-04-21",
+     "checked": "2026-10-31"
+    }
+   ]
   },
   "amagasaki": {
    "k": "care",
@@ -306,8 +316,14 @@
    "henno_link": "記載なし",
    "url": "https://www.city.tatsuno.lg.jp/soshiki/1017/shinsei_dl/2/2981.html",
    "more_sources": [
-    {"label": "市の2026年度高齢者おでかけ支援券", "url": "https://www.city.tatsuno.lg.jp/soshiki/1017/gyomu/konenfukushigakari/2/2/1779.html"},
-    {"label": "市の広報（高齢者タクシー事業）", "url": "https://www.city.tatsuno.lg.jp/soshiki/1008/gyomu/9/2/6/7_1/2_11/10115.html"}
+    {
+     "label": "市の2026年度高齢者おでかけ支援券",
+     "url": "https://www.city.tatsuno.lg.jp/soshiki/1017/gyomu/konenfukushigakari/2/2/1779.html"
+    },
+    {
+     "label": "市の広報（高齢者タクシー事業）",
+     "url": "https://www.city.tatsuno.lg.jp/soshiki/1008/gyomu/9/2/6/7_1/2_11/10115.html"
+    }
    ],
    "checked": "2026-10-03",
    "src": "市の高年福祉課のページ",
@@ -410,7 +426,10 @@
    "henno_link": "記載なし",
    "url": "https://www.city.asago.hyogo.jp/soshiki/27/17476.html",
    "more_sources": [
-    {"label": "市のあさGO運行案内", "url": "https://www.city.asago.hyogo.jp/site/demandkotsu/"}
+    {
+     "label": "市のあさGO運行案内",
+     "url": "https://www.city.asago.hyogo.jp/site/demandkotsu/"
+    }
    ],
    "checked": "2026-10-03",
    "src": "市の都市政策課のページ",

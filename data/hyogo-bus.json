@@ -1358,7 +1358,7 @@
           "age_min": 65,
           "eligibility": "65歳以上。マイナンバーカード等の提示で年齢を確認。居住条件は記載なし。",
           "benefit": "通常1乗車200円を半額の100円で利用。",
-          "fare": "1乗車100円。現金または回数券で支払い。交通系ICカードでの支払い不可。",
+          "fare": "1乗車100円。交通系ICカード（ICOCA、PiTaPa、Suica、NicoPaなど）を利用できます。",
           "routes": "コミュニティバス愛のり号。",
           "apply": "マイナンバーカード等を提示。事前申請の記載なし。",
           "notes": [
@@ -1367,18 +1367,13 @@
           "sources": [
             {
               "url": "https://www.town.kamigori.hyogo.jp/soshiki/chiiki/gyomuannai/16/2_1/6140.html",
-              "label": "コミュニティバス愛のり号（高齢者割引）",
-              "updated": "2025-03-05",
-              "checked": "2026-10-06"
-            },
-            {
-              "url": "https://www.town.kamigori.hyogo.jp/material/files/group/62/henkouten.pdf",
-              "label": "愛のり号のICカード利用・各種割引（令和5年12月1日開始）",
-              "updated": "",
-              "checked": "2026-10-06"
+              "label": "上郡町・愛のり号の利用料金と高齢者割引",
+              "updated": "2026-09-30",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         },
         {
           "name": "高齢者運転免許証自主返納支援事業",
@@ -1412,15 +1407,9 @@
       "sources": [
         {
           "url": "https://www.town.kamigori.hyogo.jp/soshiki/chiiki/gyomuannai/16/2_1/6140.html",
-          "label": "コミュニティバス愛のり号（高齢者割引）",
-          "updated": "2025-03-05",
-          "checked": "2026-10-06"
-        },
-        {
-          "url": "https://www.town.kamigori.hyogo.jp/material/files/group/62/henkouten.pdf",
-          "label": "愛のり号のICカード利用・各種割引（令和5年12月1日開始）",
-          "updated": "",
-          "checked": "2026-10-06"
+          "label": "上郡町・愛のり号の利用料金と高齢者割引",
+          "updated": "2026-09-30",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.town.kamigori.hyogo.jp/soshiki/chiiki/gyomuannai/16/1/1677.html",
@@ -1435,7 +1424,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "通常高齢者割引は2025年3月更新ページと2023年開始資料が根拠です。地域振興課で現行運賃・居住条件をご確認ください。返納共通券資料には更新日がなく、実際の交付冊数は窓口でご確認ください。"
+      "flag": "高齢者割引は2026年9月30日更新の本文で再確認。返納者向け共通乗車券の別資料は更新日の記載がないため、交付冊数・使用方法は地域振興課0791-52-1162で確認してください。"
     },
     {
       "slug": "sayo",

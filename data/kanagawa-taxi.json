@@ -12,16 +12,23 @@
    "henno_earlier": false,
    "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/menkyo.html",
    "src": "自治体の公式案内",
-   "upd": "2026年10月3日確認",
-   "note": "敬老パスはタクシー助成ではありません。",
-   "checked": "2026-10-03",
+   "upd": "2026年10月1日",
+   "note": "敬老パスは普通のタクシー助成券ではありません。別制度の福祉タクシー利用券は重度障害等の要件があり、敬老特別乗車証・福祉特別乗車券・特別乗車券・障害者自動車燃料券との重複交付はできません。年齢だけで使えるタクシー助成は今回の調査では未確認です。",
+   "checked": "2026-10-31",
    "guide_mobility": true,
    "guide_relation": "same",
    "guide_heading": "返納者向け敬老パス無料と福祉タクシー",
    "more_sources": [
     {
      "label": "市の一般返納案内",
-     "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/anzen/korei/koureisyamenkyo.html"
+     "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/anzen/korei/koureisyamenkyo.html",
+     "checked": "2026-10-03"
+    },
+    {
+     "url": "https://www.city.yokohama.lg.jp/faq/kukyoku/kenko/shogaijiritsu/20211015154934511.html",
+     "label": "横浜市・福祉タクシー利用券の対象条件と重複交付の制限",
+     "updated": "",
+     "checked": "2026-10-31"
     }
    ]
   },

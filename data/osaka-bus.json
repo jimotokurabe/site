@@ -520,7 +520,7 @@
       "slug": "moriguchi",
       "name": "守口市",
       "status": "active",
-      "summary": "75歳以上の市民向けに、病院シャトルバスの空席を無料利用する支援の案内があります。",
+      "summary": "75歳以上の市民で一人で乗降できる方は、松下記念病院シャトルバスの空席を無料利用。2026年4月以降も継続しています。",
       "programs": [
         {
           "name": "高齢者移動支援バス",
@@ -532,17 +532,31 @@
           "routes": "京阪守口市駅～松下記念病院の指定経路・乗降場所。",
           "apply": "条件・留意事項を確認して指定経路・時間のバスを利用。申請の記載なし。",
           "notes": [
-            "満席では乗車不可。施設利用目的の乗客を優先。"
+            "満席では乗車不可。施設利用目的の乗客を優先。",
+            "2026年3月号で4月1日以降の継続、4月号で運行中であることを確認。"
           ],
           "sources": [
             {
               "url": "https://www.city.moriguchi.osaka.jp/kakukanoannai/toshiseibibu/toshikeikakuka/koutuu/20225.html",
               "label": "高齢者移動支援バス 守口市ホームページ",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.moriguchi.osaka.jp/material/files/group/79/mrg_2026_3_w_16-17.pdf",
+              "label": "守口市・広報もりぐち2026年3月号17頁（4月1日以降の継続）",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.moriguchi.osaka.jp/material/files/group/79/26-4-mrg_w_16-17.pdf",
+              "label": "守口市・広報もりぐち2026年4月号17頁（運行案内）",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -550,10 +564,22 @@
           "url": "https://www.city.moriguchi.osaka.jp/kakukanoannai/toshiseibibu/toshikeikakuka/koutuu/20225.html",
           "label": "高齢者移動支援バス 守口市ホームページ",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.moriguchi.osaka.jp/material/files/group/79/mrg_2026_3_w_16-17.pdf",
+          "label": "守口市・広報もりぐち2026年3月号17頁（4月1日以降の継続）",
+          "updated": "",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.moriguchi.osaka.jp/material/files/group/79/26-4-mrg_w_16-17.pdf",
+          "label": "守口市・広報もりぐち2026年4月号17頁（運行案内）",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "本文に更新日・実施終了日の記載なし。2026年1月の広報検索には3月までの実証期間が出るため、現在の継続・申請の要否を都市・交通計画課（06-6992-1685）へ確認してください。"
+      "flag": "市の制度本文は更新日未記載ですが、2026年3・4月の市広報で継続を確認。乗車は指定便の空席に限り、申請手続きの記載はありません。利用の詳細は都市・交通計画課06-6992-1685へ確認してください。"
     },
     {
       "slug": "hirakata",
@@ -1509,21 +1535,30 @@
           "name": "福祉バス（らくらく号）",
           "kind": "discount",
           "age_min": 60,
-          "eligibility": "60歳以上の高石市民など。高石市・泉大津市・忠岡町の対象住民は相互利用可能。",
+          "eligibility": "高石市・泉大津市・忠岡町の住民で60歳以上の方。障がいのある方・妊産婦・乳幼児連れの方や対象者の介添者も利用可。",
           "benefit": "対象者は福祉バスを無料利用。",
           "fare": "無料。",
           "routes": "福祉バスらくらく号。泉大津市・忠岡町の福祉バスとの相互利用。",
-          "apply": "記載なし。",
-          "notes": [],
+          "apply": "事前申請・利用登録の要否は公式案内に記載なし。指定のバス停・時刻表で利用。",
+          "notes": [
+            "令和8年4月1日改正の案内に対象者と無料を明記。月～日運行、祝日・年末年始を除き一部祝日は運行。警報発令時等は運休。"
+          ],
           "sources": [
             {
               "url": "https://www.city.takaishi.lg.jp/kakuka/fukushi_hoken/koureisyougai/koureisyafukushi/fukushibus/4571.html",
               "label": "福祉バス（らくらく号）の運行について 高石市ホームページ",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.takaishi.lg.jp/material/files/group/44/R8-4jikokuhyou.pdf",
+              "label": "高石市・らくらく号の令和8年4月1日改正案内（対象・無料・時刻表）",
+              "updated": "2026-04-01",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -1531,10 +1566,16 @@
           "url": "https://www.city.takaishi.lg.jp/kakuka/fukushi_hoken/koureisyougai/koureisyafukushi/fukushibus/4571.html",
           "label": "福祉バス（らくらく号）の運行について 高石市ホームページ",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.takaishi.lg.jp/material/files/group/44/R8-4jikokuhyou.pdf",
+          "label": "高石市・らくらく号の令和8年4月1日改正案内（対象・無料・時刻表）",
+          "updated": "2026-04-01",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "本文更新日なし。2026年4月時刻表リンクあり。申請の要否・条件の現行性は高齢・障がい福祉係072-275-6294へ確認。"
+      "flag": "本文の更新日は未記載ですが、令和8年4月1日改正の案内で60歳以上・3市町相互利用・無料を再確認。利用登録の要否は記載がないため、高齢・障がい福祉係072-275-6294へ確認してください。"
     },
     {
       "slug": "tadaoka",
@@ -1551,22 +1592,25 @@
           "fare": "無料。",
           "routes": "忠岡町総合福祉センター起終点、1日6便。3市町相互利用。",
           "apply": "記載なし。",
-          "notes": [],
+          "notes": [
+            "町の案内と2026年9月30日更新の泉大津市の相互利用案内を照合。町の福祉バスは平日運行、土日祝・年末年始は運休（敬老の日は運行）。"
+          ],
           "sources": [
             {
               "url": "https://www.town.tadaoka.osaka.jp/soshiki/fukushi/gyoumuannai/5/3656.html",
               "label": "福祉バス 忠岡町役場ホームページ",
               "updated": "2025-04-03",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.izumiotsu.lg.jp/kakuka/fukushi/hukusiseisaku/tantougyoumu/fureaibasu/fureaibesunituite.html",
               "label": "ふれあいバスについて 泉大津市",
               "updated": "2026-09-30",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -1574,16 +1618,16 @@
           "url": "https://www.town.tadaoka.osaka.jp/soshiki/fukushi/gyoumuannai/5/3656.html",
           "label": "福祉バス 忠岡町役場ホームページ",
           "updated": "2025-04-03",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.izumiotsu.lg.jp/kakuka/fukushi/hukusiseisaku/tantougyoumu/fureaibasu/fureaibesunituite.html",
           "label": "ふれあいバスについて 泉大津市",
           "updated": "2026-09-30",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "町本文2025年4月で古い。相互利用は2026年泉大津市本文でも確認。申請要否・現行条件は福祉課0725-22-1122へ確認。"
+      "flag": "町本文の更新日は2025年4月3日です。60歳以上・無料・3市町相互利用は泉大津市の2026年9月30日更新案内とも照合。事前申請の要否は記載がないため、福祉課0725-22-1122へ確認してください。"
     },
     {
       "slug": "kishiwada",
