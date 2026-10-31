@@ -13,7 +13,7 @@
    "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/menkyo.html",
    "src": "自治体の公式案内",
    "upd": "2026年10月1日",
-   "note": "敬老パスは普通のタクシー助成券ではありません。別制度の福祉タクシー利用券は重度障害等の要件があり、敬老特別乗車証・福祉特別乗車券・特別乗車券・障害者自動車燃料券との重複交付はできません。年齢だけで使えるタクシー助成は今回の調査では未確認です。",
+   "note": "敬老パスは通常のタクシー券ではありません。別制度の福祉タクシー利用券は重度障害等の対象条件があり、敬老特別乗車証・福祉特別乗車券・特別乗車券・障害者自動車燃料券との重複交付不可。1枚500円を上限に助成し、年間最大84枚（対象となる腎臓機能障害で週3回以上の人工透析通院者は最大168枚）。2026年10月1日から1乗車7枚までの制限は撤廃されています。本人のみ利用可。年齢だけで使える一般タクシー助成は未確認のままです。",
    "checked": "2026-10-31",
    "guide_mobility": true,
    "guide_relation": "same",
@@ -26,11 +26,18 @@
     },
     {
      "url": "https://www.city.yokohama.lg.jp/faq/kukyoku/kenko/shogaijiritsu/20211015154934511.html",
-     "label": "横浜市・福祉タクシー利用券の対象条件と重複交付の制限",
-     "updated": "",
+     "label": "横浜市・旧FAQ（乗車枚数上限の説明は旧条件）",
+     "updated": "2024-12-05",
+     "checked": "2026-10-31"
+    },
+    {
+     "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/fukushi/annai/gaishutsu/kotsu/riyoken.html",
+     "label": "横浜市・福祉タクシー券の現行条件（10月1日から乗車枚数制限撤廃）",
+     "updated": "2026-09-28",
      "checked": "2026-10-31"
     }
-   ]
+   ],
+   "flag": "福祉タクシー券は2026年9月28日更新の制度案内で確認。2024年12月5日更新のFAQには旧7枚上限の説明が残るため、10月1日以降の扱いは新しい制度案内に従って記載しています。一般高齢者向けの助成の有無は別に未確認。各区の高齢・障害支援課へ確認してください。"
   },
   "kawasaki": {
    "k": "notfound",
