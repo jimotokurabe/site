@@ -923,21 +923,22 @@
           "name": "コミュニティバス高齢者割引",
           "kind": "discount",
           "age_min": 65,
-          "eligibility": "65歳以上。高齢者専用乗車カード又は介護保険被保険者証の提示。居住限定は運賃案内に記載なし。",
+          "eligibility": "65歳以上。乗車時に高齢者専用乗車カード又は介護保険被保険者証を提示。市のQ&Aは市外の方もバスを利用可能と案内。",
           "benefit": "通常180円から80円引き。",
           "fare": "1乗車100円、前払い現金又は回数券。交通系IC不可。",
           "routes": "綾瀬コミュニティバス5ルート（かしわ台、相模大塚、上土棚団地、長後駅、高座屋内温水プール）。",
-          "apply": "乗車時に高齢者専用乗車カード又は介護保険被保険者証を提示。カード交付方法はこの運賃案内に記載なし。",
+          "apply": "乗車時に高齢者専用乗車カード又は介護保険被保険者証を提示。高齢者専用乗車カードの新規交付方法は運賃Q&Aに記載なし。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.ayase.kanagawa.jp/soshiki/toshiseibika/doro_kotsu/1/2852.html",
               "label": "コミュニティバスに関するよくあるご質問Q&A／綾瀬市",
               "updated": "2026-03-26",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         },
         {
           "name": "自主返納コミュニティバス無料券",
@@ -954,16 +955,11 @@
               "url": "https://www.city.ayase.kanagawa.jp/soshiki/shiminkatsudosuishinka/bosai_bohan_anzen_anshin/1/584.html",
               "label": "高齢者運転免許証自主返納支援事業について／綾瀬市",
               "updated": "2026-06-01",
-              "checked": "2026-10-06"
-            },
-            {
-              "url": "https://www.city.ayase.kanagawa.jp/material/files/group/18/menkyoshoujishuhennouchirasi.pdf",
-              "label": "                                                    令和６年１０月作成",
-              "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-10-31"
         },
         {
           "name": "自主返納高齢者定額乗車券購入補助",
@@ -974,22 +970,25 @@
           "fare": "購入費から補助分を還付。乗車料金は各購入券による。",
           "routes": "相鉄ほほえみパス、神奈中IC定額乗車券。旧紙かなちゃん手形・ほほえみ会員証は販売終了。神奈中券の対象年齢・額が現行ページ内で食違いあり。",
           "apply": "取消通知書・身分証・申請書を市役所窓口棟2階市民活動推進課へ。購入後、領収書・口座確認書類等も提出。",
-          "notes": [],
+          "notes": [
+            "2026年6月1日更新の市案内でもICかなちゃん手形の年齢が65歳以上/69歳以上、6か月券額が28,000円/28,500円と異なります。補助対象券・助成額を購入前に市民活動推進課0467-70-5640で確認してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.ayase.kanagawa.jp/soshiki/shiminkatsudosuishinka/bosai_bohan_anzen_anshin/1/584.html",
               "label": "高齢者運転免許証自主返納支援事業について／綾瀬市",
               "updated": "2026-06-01",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.ayase.kanagawa.jp/material/files/group/18/menkyoshoujishuhennouchirasi.pdf",
               "label": "                                                    令和６年１０月作成",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -997,22 +996,22 @@
           "url": "https://www.city.ayase.kanagawa.jp/soshiki/toshiseibika/doro_kotsu/1/2852.html",
           "label": "コミュニティバスに関するよくあるご質問Q&A／綾瀬市",
           "updated": "2026-03-26",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.ayase.kanagawa.jp/soshiki/shiminkatsudosuishinka/bosai_bohan_anzen_anshin/1/584.html",
           "label": "高齢者運転免許証自主返納支援事業について／綾瀬市",
           "updated": "2026-06-01",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.ayase.kanagawa.jp/material/files/group/18/menkyoshoujishuhennouchirasi.pdf",
           "label": "                                                    令和６年１０月作成",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "返納チラシは令和6年10月、現行HPのICかなちゃん手形年齢/6か月額も欄ごとに異なるため市民活動推進課0467-70-5640へ対象券・助成額の現行性を確認してください。通常割引の居住限定は運賃案内に記載なし、都市整備課0467-70-5629で確認できます。"
+      "flag": "通常割引100円と返納者向け無料券50回・2年有効は現行本文で確認。定額乗車券購入補助は旧チラシが2024年作成で、現行本文内にも対象年齢と券額の食い違いが残るため、同補助の助成額・対象券は市民活動推進課0467-70-5640へ確認してください。"
     },
     {
       "slug": "aikawa",
