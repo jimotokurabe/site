@@ -58,6 +58,14 @@ class ComparisonTests(unittest.TestCase):
         self.assertIn(('有効期限', '利用者証を発行した年から、5年後の誕生日まで'), row['money'])
         self.assertFalse(any(label == '申請期限' and '5年後' in text for label, text in row['conditions']))
 
+    def test_deposits_frequency_and_personal_cost_are_visible_beside_money(self):
+        for slug, terms in {'akashi': ['預り金500円'], 'kawanishi': ['預り金500円'],
+                            'taka': ['1人1年に1冊', '1,000円'], 'taishi': ['1回だけ']}.items():
+            row = next(row for row in self.rows if row['kind'] == 'return' and row['slug'] == slug)
+            text = ' '.join(value for _, value in row['money'])
+            for term in terms:
+                self.assertIn(term, text)
+
     def test_input_values_are_escaped(self):
         row = dict(self.rows[0], money=[('内容', '<script>alert(1)</script>')])
         self.assertNotIn('<script>', row_html(row))
