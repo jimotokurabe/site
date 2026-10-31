@@ -831,62 +831,105 @@
       "slug": "sanjo",
       "name": "三条市",
       "status": "active",
-      "summary": "市内65歳以上はおでかけパスで、のるーとさんじょうの電話予約運賃が400円。返納1年以内はパス無料です。",
+      "summary": "市内在住65歳以上の通常おでかけパスは1,000円で発行日から1年間。のるーとさんじょうの電話予約は大人500円が400円。返納者の無料枠は年齢と期限の起算日に資料相違が残ります。",
       "programs": [
         {
           "name": "65歳以上・のるーとおでかけパス",
           "kind": "pass",
           "age_min": 65,
           "eligibility": "市内在住満65歳以上。",
-          "benefit": "年額1,000円のパスで市街地のるーとさんじょう割引。",
-          "fare": "市街地内電話予約通常500円→パス提示400円。乗車時に現金・PayPay等で支払い。アプリ・LINE一般料金400円と重複割引は記載なし。",
+          "benefit": "通常の有料パスは1人1,000円（現金のみ）、有効期間は発行日から1年間。本人のみ使用でき、譲渡・貸与不可。申込後10日ほどで簡易書留郵便により住所へ発送します。",
+          "fare": "市街地ののるーとさんじょうは1人乗車から利用でき、電話予約の大人500円をパス提示で400円。アプリ・LINEの一般大人運賃も400円で、さらにパス割引を引いて300円になるとは案内していません。市の2026年4月パンフレットでも、パス所持者は電話予約400円と確認しました。",
           "routes": "市街地エリアののるーとさんじょう（公式案内はオンデマンドバスと明記）。北・南・下田のひめさゆりはタクシーで別交通。",
-          "apply": "申込書・本人確認書類・発行料1,000円を環境課、栄又は下田サービスセンターへ。乗車は事前利用登録後に電話・アプリ等予約。",
-          "notes": [],
+          "apply": "申込書と本人確認書類、通常有料は1,000円（現金）を環境課（三条庁舎1階）・栄/下田サービスセンターへ。返納者は運転経歴証明書又は取消通知書も必要。無料枠は専用申込書と経歴証明書、又は取消通知書＋本人確認書類を提出します。申込書には平日8時30分～17時15分（祝日・年末年始除く）と記載があります。",
+          "notes": [
+            "市街地ののるーとさんじょうは1人乗車から利用でき、電話予約の大人500円をパス提示で400円。アプリ・LINEの一般大人運賃も400円で、さらにパス割引を引いて300円になるとは案内していません。市の2026年4月パンフレットでも、パス所持者は電話予約400円と確認しました。",
+            "通常パスの対象・有効期間・申込手順を市の掲載チラシと申込書で確認。返納者無料枠の条件は別に要確認。",
+            "発行後の1年間の有効期間と、無料交付を申し込める期限は別です。"
+          ],
           "sources": [
             {
               "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/kokyokotsu/2547.html",
-              "label": "三条市・おでかけパス",
+              "label": "三条市・おでかけパスの現行掲載案内",
               "updated": "2026-08-03",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/kokyokotsu/2454.html",
-              "label": "三条市・のるーとさんじょう運行案内",
+              "label": "三条市・デマンド交通の運賃と予約方法",
               "updated": "2026-05-27",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/odekakepasu.pdf",
+              "label": "三条市・掲載中の通常申込書とチラシ（発行日から1年間・返納者の有料申込みは年齢不問）",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/260401norutpanf.pdf",
+              "label": "三条市・2026年4月版のるーと案内（電話でパス提示400円）",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "免許返納・のるーと無料おでかけパス",
           "kind": "henno",
           "age_min": null,
-          "eligibility": "市内在住の免許自主返納者で、経歴証明書又は取消通知書所持。返納後1年以内の無料申込み。市本文は年齢下限なし、県一覧は65歳以上。",
-          "benefit": "返納から1年以内は通常年額1,000円のパス発行を無料に。",
-          "fare": "市街地内電話予約500円→400円。乗車時支払い。アプリ・LINEとの割引重複記載なし。",
+          "eligibility": "市内在住の免許返納者向け無料枠。無料枠の年齢下限は未確認（県一覧は65歳以上、市の無料様式は明記なし）。通常有料パスの返納者年齢不問という記載とは区別します。",
+          "benefit": "通常1,000円のパス発行料を無料にする枠。パスの有効期間は発行日から1年間。乗車料金が無料になる制度ではありません。",
+          "fare": "市街地ののるーとさんじょうは1人乗車から利用でき、電話予約の大人500円をパス提示で400円。アプリ・LINEの一般大人運賃も400円で、さらにパス割引を引いて300円になるとは案内していません。市の2026年4月パンフレットでも、パス所持者は電話予約400円と確認しました。",
           "routes": "市街地エリアのるーとさんじょう。北・南・下田エリアはタクシーで別交通。",
-          "apply": "無料交付申込書と経歴証明書、又は取消通知書＋本人確認書類を環境課・栄/下田サービスセンターへ。",
-          "notes": [],
+          "apply": "申込書と本人確認書類、通常有料は1,000円（現金）を環境課（三条庁舎1階）・栄/下田サービスセンターへ。返納者は運転経歴証明書又は取消通知書も必要。無料枠は専用申込書と経歴証明書、又は取消通知書＋本人確認書類を提出します。申込書には平日8時30分～17時15分（祝日・年末年始除く）と記載があります。",
+          "notes": [
+            "返納者の無料交付は、市本文が返納後1年以内、掲載中のR04.02無料様式が運転経歴証明書交付日又は取消日から1年以内と記載。県の2026年6月一覧には65歳以上の条件がありますが、市の無料様式には年齢下限の明記がありません。無料枠の年齢と起算日は未確認として環境課0256-34-5574へ申込前に確認してください。通常の有料申込書の「返納者は年齢不問」を無料枠の確定条件へ転用しません。",
+            "申込から10日ほどで簡易書留郵便により発送。パスは本人のみ使用でき、他人へ譲渡・貸与できません。"
+          ],
           "sources": [
             {
               "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/kokyokotsu/2547.html",
-              "label": "三条市・おでかけパス",
+              "label": "三条市・おでかけパスの現行掲載案内",
               "updated": "2026-08-03",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/kokyokotsu/2454.html",
-              "label": "三条市・のるーとさんじょう運行案内",
+              "label": "三条市・デマンド交通の運賃と予約方法",
               "updated": "2026-05-27",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/odekakepasu.pdf",
+              "label": "三条市・掲載中の通常申込書とチラシ（発行日から1年間・返納者の有料申込みは年齢不問）",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/260401norutpanf.pdf",
+              "label": "三条市・2026年4月版のるーと案内（電話でパス提示400円）",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/demandokoutuuUnchinhyou.pdf",
+              "label": "三条市・掲載中の2025年10月1日版運賃表（文書の適用日）",
+              "updated": "",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/muryoukouhu_odekakepass_2202.pdf",
+              "label": "三条市・掲載中の無料交付用申込書（R04.02様式・期限の起算日に相違）",
+              "updated": "",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
-              "label": "新潟県・令和8年6月返納支援一覧",
+              "label": "新潟県・2026年6月一覧（無料枠の年齢と一部運賃が市資料と相違）",
               "updated": "2026-06-29",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation"
@@ -895,24 +938,49 @@
       "sources": [
         {
           "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/kokyokotsu/2547.html",
-          "label": "三条市・おでかけパス",
+          "label": "三条市・おでかけパスの現行掲載案内",
           "updated": "2026-08-03",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/kokyokotsu/2454.html",
-          "label": "三条市・のるーとさんじょう運行案内",
+          "label": "三条市・デマンド交通の運賃と予約方法",
           "updated": "2026-05-27",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/odekakepasu.pdf",
+          "label": "三条市・掲載中の通常申込書とチラシ（発行日から1年間・返納者の有料申込みは年齢不問）",
+          "updated": "",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/260401norutpanf.pdf",
+          "label": "三条市・2026年4月版のるーと案内（電話でパス提示400円）",
+          "updated": "",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/demandokoutuuUnchinhyou.pdf",
+          "label": "三条市・掲載中の2025年10月1日版運賃表（文書の適用日）",
+          "updated": "",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.sanjo.niigata.jp/material/files/group/14/muryoukouhu_odekakepass_2202.pdf",
+          "label": "三条市・掲載中の無料交付用申込書（R04.02様式・期限の起算日に相違）",
+          "updated": "",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
-          "label": "新潟県・令和8年6月返納支援一覧",
+          "label": "新潟県・2026年6月一覧（無料枠の年齢と一部運賃が市資料と相違）",
           "updated": "2026-06-29",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "市本文と県一覧で返納無料パスの年齢条件が異なります。年齢・年単位の有効期間とアプリ等の重複割引は環境課0256-34-5574へ確認。"
+      "flag": "返納者の無料交付は、市本文が返納後1年以内、掲載中のR04.02無料様式が運転経歴証明書交付日又は取消日から1年以内と記載。県の2026年6月一覧には65歳以上の条件がありますが、市の無料様式には年齢下限の明記がありません。無料枠の年齢と起算日は未確認として環境課0256-34-5574へ申込前に確認してください。通常の有料申込書の「返納者は年齢不問」を無料枠の確定条件へ転用しません。",
+      "checked": "2026-10-31"
     },
     {
       "slug": "tsubame",
