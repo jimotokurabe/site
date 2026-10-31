@@ -39,7 +39,9 @@ def read_manifest():
 
 
 def strip_new_transport_links(soup):
-    """Remove only the added calculator entrances before comparing old pages."""
+    """Ignore the calculator/planner entrance while preserving all old records."""
+    for entrance in soup.select('.transport-cost-link'):
+        entrance.decompose()
     for link in soup.select('a[href]'):
         path = urlsplit(link.get('href', '')).path.rstrip('/')
         if path.endswith('/transport-cost.html') or path == 'transport-cost.html':

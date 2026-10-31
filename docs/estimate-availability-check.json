@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-31",
+  "baseline": "ffff57a52ed9b03c53993737b63af9a2fe6aa1ce",
+  "issue": 252,
+  "navigation": {
+    "municipalities": 1741,
+    "routing": {
+      "supported": 26,
+      "unsupported": 1715
+    },
+    "preserved_anchor_count": 80176,
+    "issues": []
+  },
+  "preservation": {
+    "baseline": "ffff57a52ed9b03c53993737b63af9a2fe6aa1ce",
+    "municipalities": 1741,
+    "prefectures": 47,
+    "checks": {
+      "outing_json_files": 48,
+      "source_json_files": 151,
+      "municipality_pages": 1741,
+      "visible_page_texts": 1741,
+      "page_link_sets": 1741,
+      "family_ui": 1741
+    },
+    "issues": []
+  },
+  "checks": {
+    "benefit_integration_tests": 10,
+    "analytics_generation_tests": 2,
+    "calculator": {
+      "rules": 28,
+      "municipalities": 26,
+      "scenarios": 252,
+      "assertions": 10576
+    },
+    "planner_behavior": "passed",
+    "analytics_dom_including_unsupported_switches": "passed",
+    "publication": {
+      "pages": 2205,
+      "sitemap_urls": 2205,
+      "issues": []
+    },
+    "bus_prefectures": 47
+  },
+  "browser": {
+    "yokohama_detail_to_planner": "region kanagawa:yokohama retained",
+    "unsupported_calculator_to_planner": "region kanagawa:yokohama retained",
+    "nishinomiya_detail_to_calculator": "existing result visible",
+    "mobile_widths": [
+      320,
+      390
+    ],
+    "large_text_at_320": "no horizontal overflow",
+    "console_errors_in_supported_flow": []
+  },
+  "known_baseline_check_failure": {
+    "municipalities": 1741,
+    "prefectures": 47,
+    "checks": {
+      "texts": 26489,
+      "urls": 6077,
+      "dates": 4678
+    },
+    "issues": [
+      [
+        "hyogo:kobe",
+        "record text missing",
+        "バス programs.notes",
+        "5,000円ICOCAの免許返納キャンペーンは2023-12-28受付終了のため現行制度に含めない。"
+      ]
+    ]
+  },
+  "baseline_failure_note": "check_national_records.py reports the same single Kobe bus note verbatim-text mismatch on the released baseline and this build. Full baseline text/source/date/link preservation passes. No benefit data or explanatory content changed."
+}

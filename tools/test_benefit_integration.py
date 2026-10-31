@@ -31,6 +31,23 @@ def page():
 
 
 class BenefitIntegrationTests(unittest.TestCase):
+    def test_supported_city_keeps_calculator_with_public_region_ids(self):
+        soup = page()
+        apply_benefit_integration(soup, 'hyogo', 'nishinomiya', estimate_available=True)
+        action = soup.select_one('.transport-cost-link a')
+        self.assertEqual(action['href'], '../transport-cost.html?pref=hyogo&city=nishinomiya')
+        self.assertIn('移動費の目安', action.get_text())
+        self.assertIsNone(soup.select_one('.estimate-note'))
+
+    def test_unsupported_city_explains_availability_and_goes_to_planner(self):
+        soup = page()
+        apply_benefit_integration(soup, 'kanagawa', 'yokohama', estimate_available=False)
+        action = soup.select_one('.transport-cost-link a')
+        self.assertEqual(action['href'], '../outing-plan.html?pref=kanagawa&city=yokohama')
+        self.assertIn('行き先と往復の費用', action.get_text())
+        self.assertIn('自動試算に未対応', soup.select_one('.estimate-note').get_text())
+        self.assertEqual(len(soup.select('.original-record')), 4)
+
     def test_records_are_moved_once_with_text_links_and_dates_intact(self):
         soup = page()
         before = {key: (soup.select_one('#' + key).get_text(' ', strip=True),

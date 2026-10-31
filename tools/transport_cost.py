@@ -45,20 +45,26 @@ def transport_cost_page(shell, draft=False):
     for script in source.select('script[src]'):
         if script['src'].split('?', 1)[0] in ('assets/transport-cost-engine.js', 'assets/transport-cost.js'):
             if script['src'].split('?', 1)[0] == 'assets/transport-cost.js':
-                script['src'] = 'assets/transport-cost.js?v=analytics-20261016'
+                script['src'] = 'assets/transport-cost.js?v=availability-20261031'
             soup.body.append(script)
     return str(soup)
 
 
-def write_estimates():
-    root = TEMPLATE.parents[2]
+def load_estimates(root=None):
+    """Read the same adopted rules for calculator output and municipal links."""
+    root = Path(root) if root is not None else TEMPLATE.parents[2]
     verified = json.loads((root / 'data/transport-estimate-verified.json').read_text())
     reviewed_path = root / 'data/transport-estimate-reviewed.json'
     reviewed = json.loads(reviewed_path.read_text()) if reviewed_path.exists() else []
     if not isinstance(reviewed, list):
         reviewed = reviewed['rules']
     known = {r['key'] for r in verified}
-    rules = verified + [r for r in reviewed if r['key'] not in known]
+    return verified + [r for r in reviewed if r['key'] not in known]
+
+
+def write_estimates():
+    root = TEMPLATE.parents[2]
+    rules = load_estimates(root)
     ids = set()
     catalogs = {}
     for rule in rules:
