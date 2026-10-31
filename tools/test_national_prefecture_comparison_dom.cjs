@@ -42,6 +42,6 @@ const normalize=text=>text.normalize('NFKC').toLowerCase().replace(/[ァ-ヶ]/g,
   assert.ok(!JSON.stringify(events).includes('PRIVATE_'),pid+' no query/input telemetry');
   pages++;records+=counts.return+counts.bus+counts.taxi;dom.window.close();
  }
- assert.equal(pages,47);assert.equal(records,6040); // 山北町の循環バス券を、山間部助成とは別の制度として追加。
- console.log('PASS: 47 generated prefectures / 6,040 records; local labels, all categories, multiple names, region AND, empty/reset, correct detail paths, unique IDs and tracking without input');
+ assert.equal(pages,47);assert.equal(records,6041); // 山北町の循環バス券と、春日井市の交通共通利用助成券を別制度として追加。
+ console.log('PASS: 47 generated prefectures / 6,041 records; local labels, all categories, multiple names, region AND, empty/reset, correct detail paths, unique IDs and tracking without input');
 })().catch(error=>{console.error(error);process.exit(1)});
