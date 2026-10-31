@@ -155,14 +155,15 @@ def bus_question(a):
 
 # 2026-10-10 Search Console（9/25〜10/6）で表示が多くクリックが少なかった市の題名。
 # 実際の検索語（手続き・特典・タクシー・敬老パス）に合わせ、掲載記録にある制度名だけを使う。
+# 横浜・神戸・札幌は2026-10-31に10/1〜10/28の検索語と公式案内を確認して更新。
 TITLE_OVERRIDES={
-    ('hyogo','kobe'):'免許返納特典は終了｜県内割引・敬老パスと返納手続き',
-    ('kanagawa','yokohama'):'免許返納特典と手続き｜敬老パス3年間無料の条件・県内割引',
+    ('hyogo','kobe'):'免許返納特典と手続き｜タクシー等の割引・ICOCA配布終了',
+    ('kanagawa','yokohama'):'免許返納特典｜75歳以上で敬老パス3年間無料の条件',
     ('hyogo','nishinomiya'):'免許返納特典｜市独自の特典はなし・県内割引と高齢者バス助成',
     ('hyogo','akashi'):'免許返納特典｜ICOCAか図書カード3,000円分・申請期限',
     ('hyogo','kawanishi'):'免許返納特典｜ICOCA・hanica・定期券支援の選択と条件',
     ('hyogo','himeji'):'免許返納特典｜市独自の特典は未確認・県内割引と75歳以上のバス・タクシー優待',
-    ('hokkaido','sapporo'):'免許返納特典と手続き｜運転経歴証明書で協力店割引・敬老パス',
+    ('hokkaido','sapporo'):'免許返納の手続き・特典｜運転経歴証明書と協力店割引',
     ('aichi','nagoya'):'免許返納特典｜マナカチャージ券5,000円分の対象・期間・申請方法',
     ('shizuoka','hamamatsu'):'免許返納特典｜みをつくしバス半額・70歳以上のタクシー券・県内割引',
     ('kagoshima','kagoshima'):'免許返納者割引と敬老パス｜対象・負担・変更予定',
@@ -170,14 +171,72 @@ TITLE_OVERRIDES={
 
 # 題名を手で決めた市の説明文。掲載記録に書かれている内容だけを、検索語に対する答えの順に並べる。
 DESCRIPTION_OVERRIDES={
-    ('kanagawa','yokohama'):'横浜市で運転免許を返納したときの特典と手続き。75歳以上で自主返納した人は敬老パスの交付負担が3年間無料（令和9年度以降は各年度の予算議決が条件）。返納の窓口と運転経歴証明書、神奈川県内で使える割引も掲載。敬老パスはバス・地下鉄用で、タクシー券とは別の制度です。',
-    ('hyogo','kobe'):'神戸市独自のICOCA 5,000円分配布は2023年12月28日で終了。返納後に使える兵庫県内の運転経歴証明書割引と、返納を条件としない70歳以上の敬老パス、返納の手続きと窓口を掲載しています。',
+    ('kanagawa','yokohama'):'75歳以上で有効なすべての免許を自主返納した横浜市民は、返納日・誕生日・申請期限の条件を満たすと敬老パスの交付負担が3年間無料。タクシー券とは別制度です。県内の協賛割引と返納手続きも案内。令和9年度以降は各年度の予算議決が条件です。',
+    ('hyogo','kobe'):'兵庫県内住所の運転経歴証明書を持つ65歳以上の方は、協賛タクシーなどの割引を利用できます。神戸市独自のICOCA 5,000円分配布は2023年12月28日に受付終了。返納手続きと、70歳以上の敬老パスの条件・自己負担も確認できます。',
     ('hyogo','nishinomiya'):'西宮市の免許返納特典。市のページには「西宮市の特典はありません」と記載があります。代わりに、兵庫県内で使える運転経歴証明書の割引、70歳以上の高齢者バス運賃助成（年5,000円まで）、返納の手続きを掲載しています。',
     ('hyogo','himeji'):'姫路市の免許返納特典。市独自の特典は公式ページで確認できていません（確認日 2026-09-26）。兵庫県内で使える運転経歴証明書の割引と、75歳以上が選べる交通優待（神姫バス市内区間1乗車150円、またはタクシーカード年7,000円分）を掲載しています。',
-    ('hokkaido','sapporo'):'札幌市の免許返納特典と手続き。運転経歴証明書を協力店で見せると割引や無料サービスが受けられます（さっぽろ圏12市町村共通）。北海道の自主返納サポート制度、敬老パスの負担額、返納の窓口・申請方法も掲載しています。',
+    ('hokkaido','sapporo'):'札幌市の免許返納と運転経歴証明書の手続きを案内。さっぽろ圏に住む65歳以上で証明書を持つ方は、協力店で配送料の割引や無料サービスを受けられます。特典の利用条件と、敬老パスの対象・負担金を分けて確認できます。',
     ('aichi','nagoya'):'名古屋市の免許返納特典。昭和32年4月1日以前生まれの70歳以上の市民が令和8年3月14日〜令和9年3月16日に自主返納すると、マナカチャージ券5,000円分がもらえます。65歳以上の敬老パス、敬老パス利用時のタクシー1割引、返納の手続きも掲載しています。',
     ('shizuoka','hamamatsu'):'浜松市の免許返納特典。運転経歴証明書の交付から1年未満の人は、細江みをつくしバスの運賃が半額です。70歳以上で所得条件を満たす市民が選べるタクシー利用券（6,000円分）、静岡県警のサポート店割引、返納の手続きも掲載しています。',
 }
+
+
+# 2026-10-31: these three pages answer the observed local search intentions.
+# Facts remain in their original sections with their original source/check dates.
+# The short entry does not determine eligibility or replace those records.
+CITY_SEARCH_ENTRIES = {
+    ('kanagawa', 'yokohama'): {
+        'heading': '横浜市の免許返納特典と手続き',
+        'lead': '75歳以上の横浜市民が有効なすべての免許を自主返納し、返納日・誕生日・申請期限の条件を満たすと、敬老パスの交付負担が3年間無料になります。',
+        'note': '敬老パスはタクシー券とは別制度です。令和9年度以降は、各年度の予算議決が条件です。',
+        'links': [('無料交付の条件', 'benefit'), ('タクシー割引の確認', 'taxi'), ('返納の手続き', 'procedure')],
+    },
+    ('hyogo', 'kobe'): {
+        'heading': '神戸市の免許返納特典と手続き',
+        'lead': '兵庫県内住所の運転経歴証明書を持つ65歳以上の方は、協賛タクシーなどの割引を利用できます。市独自のICOCA 5,000円分配布は2023年12月28日に受付を終了しました。',
+        'note': '70歳以上の敬老パスは、返納特典と分けて対象条件・自己負担を確認できます。',
+        'links': [('タクシーの割引', 'taxi'), ('県内の返納特典', 'benefit'), ('返納の手続き', 'procedure')],
+    },
+    ('hokkaido', 'sapporo'): {
+        'heading': '札幌市の免許返納の手続きと特典',
+        'lead': 'さっぽろ圏に住む65歳以上で運転経歴証明書を持つ方は、協力店で配送料の割引や無料サービスを受けられます。特典の内容・利用条件は店舗ごとに異なります。',
+        'note': '返納と運転経歴証明書の手続き、敬老パスの対象・負担金も分けて確認できます。',
+        'links': [('返納・証明書の手続き', 'procedure'), ('協力店の特典', 'benefit'), ('敬老パスの条件', 'support')],
+    },
+}
+
+
+def apply_city_search_entry(soup, pid, slug):
+    """Give the selected search landing pages a concrete first answer."""
+    entry = CITY_SEARCH_ENTRIES.get((pid, slug))
+    if entry is None:
+        return
+    hero = soup.select_one('.hero > div')
+    if hero is None:
+        raise ValueError(f'Missing city search hero: {pid}:{slug}')
+    heading = hero.find('h1')
+    lead = hero.select_one('p:not(.eyebrow)')
+    if heading is None or lead is None:
+        raise ValueError(f'Missing city search entry: {pid}:{slug}')
+    heading.string = entry['heading']
+    heading['class'] = list(dict.fromkeys(heading.get('class', []) + ['city-search-heading']))
+    lead.string = entry['lead']
+    for previous in hero.select('.city-search-note, .city-search-links'):
+        previous.decompose()
+    note = soup.new_tag('p', attrs={'class': 'city-search-note'})
+    note.string = entry['note']
+    lead.insert_after(note)
+    links = soup.new_tag('nav', attrs={'class': 'city-search-links', 'aria-label': '知りたい内容へ'})
+    for label, anchor in entry['links']:
+        if soup.find(id=anchor) is None:
+            raise ValueError(f'Missing search destination: {pid}:{slug}#{anchor}')
+        link = soup.new_tag('a', href='#' + anchor)
+        link.string = label
+        links.append(link)
+    note.insert_after(links)
+    style = soup.select_one('link[href="../assets/seo.css"]')
+    if style:
+        style['href'] = '../assets/seo.css?v=search-entry-20261031'
 
 
 def notfound_parts(a,prefname):
