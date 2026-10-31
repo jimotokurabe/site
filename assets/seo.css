@@ -24,3 +24,8 @@
 .answer-evidence summary{font-size:1rem;min-height:48px;padding:10px 0}
 .answer-evidence p{font-size:1rem;line-height:1.9}
 .answer-caution-detail{color:var(--warn,#f2d397)}
+.hero .city-search-heading{text-wrap:balance}
+.hero .city-search-note{font-size:1rem;line-height:1.8;margin:12px 0 4px;color:#526452}
+.city-search-links{display:flex;flex-wrap:wrap;gap:2px 18px;margin:8px 0 0}
+.city-search-links a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;font-size:1rem;font-weight:700;line-height:1.6;overflow-wrap:anywhere;text-underline-offset:4px}
+@media print{.city-search-links{display:none}}

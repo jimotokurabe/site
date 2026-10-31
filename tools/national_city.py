@@ -574,7 +574,7 @@ def improve_kobe_editorial_content(soup):
                 paragraph.decompose()
 
 def build_all(root:Path,out:Path,draft:bool=False)->dict:
-    from seo_content import make_city_content
+    from seo_content import make_city_content, apply_city_search_entry
     from warm_city import apply_warm_city
     from visual_city import apply_visual_city
     from compact_city import apply_compact_city, add_prefecture_procedures
@@ -651,6 +651,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         improve_shared_city_editorial_content(soup)
         if (pid, slug) == ('hyogo', 'kobe'):
             improve_kobe_editorial_content(soup)
+        apply_city_search_entry(soup, pid, slug)
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:
