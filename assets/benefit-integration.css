@@ -89,3 +89,21 @@
  .integrated-city .benefit-list .compact-highlights,.integrated-city .benefit-list .overview,.integrated-city .benefit-list .overview>li{display:contents}
  .integrated-city .benefit-list .benefit-card{height:100%;box-sizing:border-box}
 }
+/* Put the next family action beside the record, with the same quiet paper palette. */
+.family-entry{display:none}
+.integrated-enhanced .family-entry{display:block;border-top:1px solid #d5decf;padding-top:12px;margin:4px 0 0;grid-column:1/-1}
+.family-entry a,.family-back{display:inline-flex;align-items:center;min-height:44px;font-size:.9rem;font-weight:700}
+.family-entry small{display:block;font-size:.82rem;line-height:1.8;color:#526452}
+.integrated-enhanced .family-actions{display:block;background:#f1f5e9;border:1px solid #c9d6c1;border-left:4px solid #54785a;border-radius:8px;padding:18px;margin-top:24px}
+.family-actions h3{font-size:1rem;line-height:1.6;margin:0 0 8px}
+.family-actions p{font-size:.9rem;line-height:1.8;margin:0 0 14px}
+.family-action-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.family-action-buttons button{font-size:.9rem;line-height:1.6;min-height:48px;white-space:normal;overflow-wrap:anywhere}
+.family-action-buttons [data-share-benefit]{background:#285a40;border-color:#285a40;color:#fffef9;font-weight:700}
+.family-actions [data-selected-summary]{font-size:.85rem;line-height:1.7;overflow-wrap:anywhere}
+.integration-toast{box-sizing:border-box;max-width:calc(100vw - 32px)}
+.integrated-city #family:focus{outline:2px solid #597b50;outline-offset:4px}
+#selection-dialog #selection-copy{margin:8px 8px 0 0}
+#selection-dialog #selection-close{margin-top:8px}
+@media(max-width:680px){.family-action-buttons{display:grid;grid-template-columns:minmax(0,1fr)}.family-actions{min-width:0}}
+@media print{.family-entry{display:none!important}}

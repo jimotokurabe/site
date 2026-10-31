@@ -42,13 +42,15 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None, *, estimate_av
         raise ValueError('Benefit integration requires exactly four compact entrances')
 
     soup.body['class'] = soup.body.get('class', []) + ['integrated-city']
-    soup.head.append(soup.new_tag('link', rel='stylesheet', href='../assets/benefit-integration.css'))
+    soup.head.append(soup.new_tag('link', rel='stylesheet', href='../assets/benefit-integration.css?v=family-memo-20261031'))
     browser = soup.new_tag('section', id='benefit-browser', attrs={
         'class': 'benefit-browser', 'aria-label': '支援を選んで条件を確認',
     })
     intro.replace_with(browser)
     intro['class'] = intro.get('class', []) + ['benefit-list']
     browser.append(intro)
+    intro.append(fragment('<p class="family-entry"><a href="#family">家族用メモ・共有の使い方 →</a>'
+        '<small>気になる支援の条件や出典を、コピーして家族に伝えられます。</small></p>'))
     if pref_id is not None and city_slug is not None:
         destination = 'transport-cost.html' if estimate_available else 'outing-plan.html'
         href = '../' + destination + '?' + urlencode({'pref': pref_id, 'city': city_slug})
@@ -82,8 +84,12 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None, *, estimate_av
         panel.append(original)
         # A record may contain multiple programs and source URLs. Do not pick
         # one URL as an application action without verified program ownership.
-        panel.append(fragment('<div class="family-actions"><button type="button" data-add-family="' + key +
-            '">＋ 家族用メモに追加</button><a href="#family">家族と確認する</a></div>'))
+        panel.append(fragment('<div class="family-actions"><h3>この支援を、家族と確認</h3>'
+            '<p>対象条件・申請先・公式出典をひとつのメモに。コピーして、LINEやメールなどに貼り付けられます。</p>'
+            '<div class="family-action-buttons"><button type="button" data-share-benefit="' + key +
+            '">この支援のメモを確認・コピー</button><button type="button" data-add-family="' + key +
+            '">＋ 家族用メモに追加</button></div>'
+            '<a href="#family" data-selected-summary>複数の支援をまとめる・確認項目を見る →</a></div>'))
         panels.append(panel)
 
     # Some templates keep the empty legacy county anchor outside the section.
@@ -108,9 +114,11 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None, *, estimate_av
 
     family = soup.select_one('#family')
     if family:
-        saved = fragment('<div class="family-saved" id="selected-benefits"><h3>選んだ支援を家族用メモに</h3>'
+        family['tabindex'] = '-1'
+        saved = fragment('<div class="family-saved" id="selected-benefits"><h3>選んだ支援をまとめて共有</h3>'
+            '<p>各支援の「家族用メモに追加」でまとめられます。メモをコピーしたら、LINEやメールなどに貼り付けて家族と確認できます。</p>'
             '<p id="selected-status" role="status">各支援の「家族用メモに追加」を選ぶと、対象条件と出典をまとめてコピーできます。</p>'
-            '<div id="selected-list"></div></div>')
+            '<div id="selected-list"></div><a class="family-back" href="#benefit-browser">ほかの支援を選ぶ →</a></div>')
         lead = family.select_one('.lead')
         if lead:
             lead.string = '対象条件・費用・申請先・必要書類を本人や家族と確認し、公式窓口に相談するときに活用できます。'
@@ -121,10 +129,10 @@ def apply_benefit_integration(soup, pref_id=None, city_slug=None, *, estimate_av
             family.insert(0, saved)
     soup.body.append(fragment('<dialog id="selection-dialog" aria-labelledby="selection-title">'
         '<form method="dialog"><button aria-label="閉じる">閉じる</button></form>'
-        '<h2 id="selection-title">選んだ支援を家族に共有</h2>'
-        '<p>選んだ支援の条件と出典を含むメモです。申請・利用前に公式案内や窓口で最新の内容をご確認ください。</p>'
+        '<h2 id="selection-title">家族と確認する共有メモ</h2>'
+        '<p>下の内容をコピーして、LINEやメールなどに貼り付けられます。対象条件・出典・確認日を含むメモです。申請・利用前に公式案内や窓口で最新の内容をご確認ください。</p>'
         '<textarea id="selection-text" rows="13" readonly aria-label="選んだ支援のメモ"></textarea>'
         '<button type="button" id="selection-copy">メモをコピー</button>'
         '<p id="selection-copy-status" role="status"></p></dialog>'
         '<p class="integration-toast" role="status" hidden></p>'))
-    soup.body.append(soup.new_tag('script', src='../assets/benefit-integration.js?v=analytics-20261016'))
+    soup.body.append(soup.new_tag('script', src='../assets/benefit-integration.js?v=family-memo-20261031'))
