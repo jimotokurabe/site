@@ -141,7 +141,7 @@
               "url": "https://www.vill.kunigami.okinawa.jp/sisetu/",
               "label": "公式案内",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.vill.kunigami.okinawa.jp/kunigami-village/wp-content/uploads/2023/03/f74490d243b1d82b0ae3d17bec018fcb.pdf",
@@ -150,7 +150,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "村営バス自主返納者半額",
@@ -167,10 +168,11 @@
               "url": "https://www.vill.kunigami.okinawa.jp/sisetu/",
               "label": "公式案内",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -185,9 +187,15 @@
           "label": "2023年4月時点定住支援一覧",
           "updated": "",
           "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.vill.kunigami.okinawa.jp/?p=33734",
+          "label": "国頭村・周遊バスとAIバスの実証運行終了",
+          "updated": "2025-12-15",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "村営バス施設案内は更新日なし。2023年一覧に予約デマンドバス65歳半額もありますが、その後2025年AIバス導入があるため現行関係は未確認。総務課0980-41-2101へ対象・手続き・運賃を確認してください。"
+      "flag": "村営奥線・東線の施設案内には65歳以上無料・自主返納者半額とありますが更新日がなく、対象確認書類・登録・現在の通常運賃は記載なし。周遊バスとくにがみAIバスの実証は2025年12月14日で終了したと村が明記しており、奥線・東線の継続・統廃合の証拠ではありません。総務課0980-41-2101へ現行運用を確認してください。"
     },
     {
       "slug": "ogimi",

@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from bs4 import BeautifulSoup
-from seo_content import e, sources, return_question, statewide_question, values
+from seo_content import e, sources as source_rows, return_question, statewide_question, values
 
 KINDS = [('return', '返納した方の特典'), ('bus', 'バス助成・敬老パス'), ('taxi', 'タクシー支援')]
 STATES = {'end': '受付終了', 'ended': '終了した制度', 'none': '独自特典なしと記載',
@@ -17,6 +17,16 @@ def unique(items):
         if item and item not in result:
             result.append(item)
     return result
+
+
+def sources(record, inherited, path):
+    result = source_rows(record, inherited, path)
+    extra = source_rows({'sources': record.get('more_sources', []),
+                         'checked': record.get('checked')}, inherited, path)
+    for source in extra:
+        for key in ('key', 'checked_key'):
+            source[key] = source[key].replace('.sources[', '.more_sources[')
+    return unique(result + extra)
 
 
 def fields(record, pairs):
@@ -70,7 +80,8 @@ def comparison_rows(pref, bus, taxi):
             name=unit + '独自の返納特典・関連支援', state=state,
             money=money, conditions=conditions,
             notes=unique([p['text'] for p in q['cautions']] + values(guide.get('cautions')) + values(city.get('note')) + folded_facts + [city.get('what')]),
-            sources=unique(q['sources'] + sources(guide, guide.get('checked') or checked, 'return.guide')),
+            sources=unique(q['sources'] + sources(city, checked, 'return')
+                           + sources(guide, guide.get('checked') or checked, 'return.guide')),
             checked=checked, guide_checked=guide.get('checked'), anchor='benefit'))
         b = bus_by_city[slug]
         for p in b.get('programs') or [None]:
