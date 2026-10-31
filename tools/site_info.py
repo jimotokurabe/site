@@ -64,7 +64,7 @@ def privacy_content(contact):
 <p class="info-note">保存した設定やチェックは、ブラウザの設定でこのサイトのデータを削除すると消せます。削除すると、確認チェックや表示設定も初期状態に戻ります。</p></section>
 <section id="analytics"><h2>アクセス解析</h2>
 <p>使われ方を知り、サイトを改善するために Google アナリティクス 4 を利用しています。Cookieなどを使い、閲覧ページ、アクセス日時、端末・ブラウザ、参照元のドメイン、ページ内の操作などの情報をGoogleへ送信します。</p>
-<p>公式案内への移動、メモのコピー成功、移動費の試算結果の表示などを計測します。ページや機能の種類、公開されている地域ID、試算の対応状況、公式リンク先のドメインを使います。申し込み・受給・満足度を確認するものではありません。</p>
+<p>公式案内への移動、家族用メモの入口が画面に表示されたこと・メモを開いたこと、メモのコピー成功、移動費の試算結果の表示などを計測します。ページや機能・入口の種類、公開されている地域ID、試算の対応状況、公式リンク先のドメインを使います。申し込み・受給・満足度を確認するものではありません。</p>
 <p>解析用のページURLからクエリ文字列とページ内位置を除きます。リンク先の詳しいURL、入力値・検索語・選択した会話や支援の内容・メモ本文・料金・回数は解析へ送りません。開発・ローカル環境では本番用の解析を読み込みません。</p>
 <p><a href="https://support.google.com/analytics/answer/6004245?hl=ja" target="_blank" rel="noopener">Google アナリティクスのデータの取り扱い ↗</a></p>
 <p>対応するブラウザでは、<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a>で計測を無効にできます。Cookieの許可・削除はブラウザの設定でも管理できます。</p></section>
@@ -75,7 +75,7 @@ def privacy_content(contact):
 <p>お問い合わせ内容に関する確認・訂正・削除のご相談も、同じフォームからご連絡ください。</p></section>
 <section id="changes"><h2>広告・このページの変更</h2><p>現在、広告は掲載していません。広告を始める場合は、開始前にこのページへ記載します。情報の取り扱いを変更するときは、このページと更新日を更新します。</p></section>
 </div><aside class="info-aside" aria-label="ページ内の案内"><nav class="info-index" aria-label="プライバシーポリシーの目次"><p class="info-eyebrow">確認したい項目へ</p><a href="#inputs">入力・コピー・共有</a><a href="#storage">ブラウザ内の保存</a><a href="#analytics">アクセス解析</a><a href="#services">外部サービス</a><a href="#inquiries">お問い合わせの情報</a><a href="#changes">広告・変更について</a></nav><p class="info-related"><a href="about.html">運営者情報を見る →</a></p></aside></div>
-<p class="info-updated">2026年10月16日 更新</p>'''
+<p class="info-updated">2026年10月31日 更新</p>'''
 
 
 def info_page(shell, contact, draft, privacy=False):

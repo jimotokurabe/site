@@ -11,6 +11,7 @@
   let ready = false, context = {}, region = {};
   const pending = [], seen = new Set();
   const features = new Set(['family_hint', 'city_guide', 'selected_supports', 'outing_plan', 'gomi_consultation', 'transport_cost']);
+  const familyEntrances = new Set(['support_panel', 'family_section']);
   function send(name, extra = {}, once = '') {
     if (!ready) { pending.push([name, extra, once]); return; }
     if (once && seen.has(once)) return;
@@ -21,6 +22,12 @@
   window.jkAnalytics = Object.freeze({
     memoCopied(feature) {
       if (features.has(feature)) send('memo_copy', {feature_type: feature});
+    },
+    familyMemoViewed(entryPoint) {
+      if (familyEntrances.has(entryPoint)) send('family_memo_view', {entry_point: entryPoint}, 'family-view:' + entryPoint);
+    },
+    familyMemoOpened(entryPoint) {
+      if (familyEntrances.has(entryPoint)) send('family_memo_open', {entry_point: entryPoint});
     },
     transportRegion(pref, city, state) {
       if (!/^[a-z0-9-]{1,40}$/.test(pref) || !/^[a-z0-9-]{1,60}$/.test(city) ||

@@ -72,7 +72,7 @@ class BenefitIntegrationTests(unittest.TestCase):
         soup = page()
         compact_text = soup.select_one('.intro').get_text(' ', strip=True)
         apply_benefit_integration(soup)
-        self.assertEqual(soup.select_one('.intro').get_text(' ', strip=True), compact_text)
+        self.assertTrue(soup.select_one('.intro').get_text(' ', strip=True).startswith(compact_text))
         self.assertEqual([p['id'] for p in soup.select('.integrated-panel')],
                          ['support', 'benefit', 'taxi', 'rides'])
         self.assertEqual([a['data-pick'] for a in soup.select('.is-unknown')],
@@ -104,6 +104,8 @@ class BenefitIntegrationTests(unittest.TestCase):
         self.assertCountEqual([a['href'] for a in soup.select('a[href^="https:"]')], links)
         self.assertEqual(len(soup.select('#selection-dialog')), 1)
         self.assertEqual(len(soup.select('[data-add-family]')), 4)
+        self.assertEqual(len(soup.select('[data-share-benefit]')), 4)
+        self.assertEqual(len(soup.select('.family-entry')), 1)
 
     def test_missing_record_or_entrance_fails_explicitly(self):
         for selector in ('#taxi', '.overview li:last-child'):
