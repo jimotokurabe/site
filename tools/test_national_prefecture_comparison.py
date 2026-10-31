@@ -92,6 +92,21 @@ class NationalComparisonTests(unittest.TestCase):
                      guide_taxi_mobility(city, duplicate, pref, '../')):
             self.assertNotIn('ページに記載なし', BeautifulSoup(html, 'html.parser').get_text())
 
+    def test_additional_official_sources_keep_their_own_dates(self):
+        for pid, (_, _, taxi, rows) in self.datasets.items():
+            for slug, record in taxi['cities'].items():
+                row = next(row for row in rows if row['kind'] == 'taxi' and row['slug'] == slug)
+                for index, source in enumerate(record.get('more_sources', [])):
+                    if not isinstance(source, dict) or not source.get('url'):
+                        continue
+                    expected_date = source.get('checked') or record.get('checked') or taxi['checked']
+                    self.assertTrue(any(s['url'] == source['url'] and s['checked'] == expected_date
+                                        for s in row['sources']), (pid, slug, source['url']))
+                    if source.get('checked'):
+                        self.assertTrue(any(s['url'] == source['url'] and
+                                            s['checked_key'] == f'taxi.more_sources[{index}].checked'
+                                            for s in row['sources']), (pid, slug, 'source provenance'))
+
 
 if __name__ == '__main__':
     unittest.main()

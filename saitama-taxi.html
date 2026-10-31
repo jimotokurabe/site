@@ -191,8 +191,8 @@
     <button type="button" data-f="yes" aria-pressed="false">助成あり<span class="n">25</span></button>
     <button type="button" data-f="care" aria-pressed="false">条件つき<span class="n">8</span></button>
     <button type="button" data-f="henno" aria-pressed="false">返納すると早く使える<span class="n">5</span></button>
-    <button type="button" data-f="notfound" aria-pressed="false">記載なし<span class="n">28</span></button>
-    <button type="button" data-f="endnone" aria-pressed="false">終了・返納者のみ<span class="n">2</span></button>
+    <button type="button" data-f="notfound" aria-pressed="false">記載なし<span class="n">27</span></button>
+    <button type="button" data-f="endnone" aria-pressed="false">終了・返納者のみ<span class="n">3</span></button>
   </div>
   <p class="count" id="count" aria-live="polite" data-unit="市町村">63市町村すべてを表示しています。</p>
 </section>
@@ -323,13 +323,14 @@
     <h3 class="city" id="wako-h">和光市<span class="yomi">わこうし</span></h3>
     <span class="chip t-notfound">記載なし</span>
   </div>
-  <p class="what">年齢で使える高齢者向けのタクシー代の助成は、市のページで見つかりませんでした。</p>
+  <p class="what">市公式に公共交通空白地域の70歳以上へのタクシー券の案内があります。ただし、掲示された券の有効期限は2026年9月末で、現在利用できる券の配布は未確認です。</p>
   <p class="note">制度の名前：記載なし</p>
-  <p class="note">令和4年に70歳以上へのタクシー利用券（初乗り運賃の助成）の要綱があったが、コロナ対策の事業で、いまも続いているかは市のページで確かめられない。</p>
+  <p class="note">2026年8月31日更新の案内は、4月1日時点の市民かつ最寄バス停から直線300m超の地域に居住し、9月30日までに70歳以上となる方が対象。申請者へ500円券12枚（6,000円）を交付し、有効期限は2026年9月末。1乗車複数枚可・超過分自己負担、乗降いずれか市内、福祉タクシー券併用不可。10月以降の配布・期限延長は本文に記載なし。</p>
+  <p class="flag">確かめ方：掲示券は2026年9月末の期限を経過。制度全体の終了・継続や次回券の有無は断定せず、現行給付未確認を維持しています。</p>
   <p class="note"><a href="saitama-menkyo-henno.html#wako">和光市の免許返納の特典も見る</a></p>
   <div class="card-foot">
-    <span class="empty-src">市の公式ページ：見つかりませんでした</span>
-    <p class="dates">確かめた日：2026年9月27日</p>
+    <a class="btn-src" href="https://www.city.wako.lg.jp/machizukuri/kotsu/1010340/1010231/1005948.html" target="_blank" rel="noopener">市の公共交通空白地域タクシーチケット配布案内を見る<span aria-hidden="true">↗</span></a>
+    <p class="dates">ページの日付：更新日：2026年8月31日<br>確かめた日：2026年9月27日</p>
   </div>
   <p class="card-back"><a href="#pick">↑ ほかの市町村を選ぶ</a><a href="./">← トップ（地図）にもどる</a></p>
 </article>
@@ -1076,18 +1077,25 @@
   </div>
   <p class="card-back"><a href="#pick">↑ ほかの市町村を選ぶ</a><a href="./">← トップ（地図）にもどる</a></p>
 </article>
-<article class="card is-notfound" id="satte" data-k="notfound" aria-labelledby="satte-h">
+<article class="card" id="satte" data-k="henno_only" aria-labelledby="satte-h">
   <div class="card-head">
     <h3 class="city" id="satte-h">幸手市<span class="yomi">さってし</span></h3>
-    <span class="chip t-notfound">記載なし</span>
+    <span class="chip t-henno_only">返納者のみ</span>
   </div>
-  <p class="what">70歳以上で自主返納した市民には、初乗り運賃相当のタクシー券10枚を1回交付します。市の乗合型デマンドタクシーの実証運行は2026年6月30日で終了し、次のAIデマンド交通は2027年1月開始予定です。</p>
-  <p class="note">制度の名前：記載なし</p>
-  <p class="note">予定段階のAIデマンド交通を、現在利用できる制度として案内していません。</p>
+  <p class="what">70歳以上で自主返納した市民に、市内タクシー事業者で使う初乗運賃相当の利用券10枚を1回交付します。上の返納特典と同じ制度です。</p>
+  <p class="note">制度の名前：幸手市運転免許証自主返納者支援事業</p>
+  <dl class="facts">
+    <div><dt>対象</dt><dd>幸手市に居住し住民登録があり、平成31年1月1日以降の返納時に満70歳以上の方。免許失効は対象外。</dd></div>
+    <div><dt>助成の中身</dt><dd>初乗運賃相当のタクシー利用券10枚・1人1回。具体的な初乗金額は案内に記載なし。</dd></div>
+    <div><dt>申し込み</dt><dd>幸手市役所くらし防災課へ、運転経歴証明書又は申請による運転免許の取消通知書の写しを持参。申請最終期限・券の有効期限は本文に記載なし。</dd></div>
+    <div><dt>返納した人は</dt><dd>70歳以上で自主返納した市民に1人1回。上の返納特典と同じ制度。</dd></div>
+  </dl>
+  <p class="note">市の乗合型デマンドタクシー実証は2026年6月30日終了、次のAIデマンド交通は2027年1月予定と別の案内に記載。返納券の終了を意味しません。</p>
+  <p class="flag">確かめ方：申請最終期限・券の有効期限・具体的初乗額は支援本文に記載なし。くらし防災課へ確認してください。</p>
   <p class="note"><a href="saitama-menkyo-henno.html#satte">幸手市の免許返納の特典も見る</a></p>
   <div class="card-foot">
-    <a class="btn-src" href="https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_2/13628.html" target="_blank" rel="noopener">市の乗合型デマンドタクシーのページを見る<span aria-hidden="true">↗</span></a><a class="btn-src" href="https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_1/6053.html" target="_blank" rel="noopener">幸手市の返納者向けタクシー券を見る<span aria-hidden="true">↗</span></a>
-    <p class="dates">ページの日付：更新日：2025年07月01日<br>確かめた日：2026年10月3日</p>
+    <a class="btn-src" href="https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_1/6053.html" target="_blank" rel="noopener">市の運転免許証自主返納者支援事業を見る<span aria-hidden="true">↗</span></a><a class="btn-src" href="https://www.city.satte.lg.jp/soshiki/shiminkyoudou/1_1/6053.html" target="_blank" rel="noopener">幸手市の返納者向けタクシー券を見る<span aria-hidden="true">↗</span></a>
+    <p class="dates">ページの日付：更新日：2026年8月25日<br>確かめた日：2026年10月31日</p>
   </div>
   <p class="card-back"><a href="#pick">↑ ほかの市町村を選ぶ</a><a href="./">← トップ（地図）にもどる</a></p>
 </article>
@@ -1406,7 +1414,7 @@
     <li>2026年9月27日に、63市町村の公式ページを開いて、対象・金額・申し込み先を原文で確かめました。</li>
     <li>年齢や介護の認定などを条件にしたものを載せています。障害者手帳だけが条件の福祉タクシー券は含めていません。</li>
     <li>予約して乗る乗合タクシー（デマンド交通）の、高齢者向けの料金の助成も含めています。</li>
-    <li>市町村のページに書かれていないことは「記載なし」とし、推測で埋めていません。原文で確かめきれなかった点は、その市町村の欄に書いています（八潮市・桶川市・坂戸市・鶴ヶ島市・毛呂山町・滑川町・ときがわ町・東秩父村・所沢市・飯能市・狭山市・日高市・羽生市・杉戸町・深谷市・寄居町・本庄市・長瀞町・小鹿野町）。</li>
+    <li>市町村のページに書かれていないことは「記載なし」とし、推測で埋めていません。原文で確かめきれなかった点は、その市町村の欄に書いています（和光市・八潮市・桶川市・坂戸市・鶴ヶ島市・毛呂山町・滑川町・ときがわ町・東秩父村・所沢市・飯能市・狭山市・日高市・羽生市・幸手市・杉戸町・深谷市・寄居町・本庄市・長瀞町・小鹿野町）。</li>
     <li>運転免許を返納した人への特典は、<a href="saitama-menkyo-henno.html">免許返納の特典の一覧</a>にあります。</li>
     <li>制度は変わることがあります。申し込む前に、市町村の公式ページか窓口で確かめてください。</li>
     <li>間違いに気づいたら、<a href="https://docs.google.com/forms/d/e/1FAIpQLSeNJuZsE9F--Erk3ZQK5rMyP704VH8S4mW5BNll9z_t7BeREg/viewform" target="_blank" rel="noopener">お問い合わせフォーム</a>からお知らせください。</li>

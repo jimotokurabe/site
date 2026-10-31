@@ -22,11 +22,12 @@
             {
               "url": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/1040685/1040718.html",
               "label": "高齢者外出支援制度｜宇都宮市公式Webサイト",
-              "updated": "2026-05-29",
-              "checked": "2026-10-07"
+              "updated": "2026-10-30",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "高齢者外出支援・上河内地域路線バス回数券",
@@ -42,8 +43,8 @@
             {
               "url": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/1040685/1040718.html",
               "label": "高齢者外出支援制度｜宇都宮市公式Webサイト",
-              "updated": "2026-05-29",
-              "checked": "2026-10-07"
+              "updated": "2026-10-30",
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/1040681/1006071.html",
@@ -52,7 +53,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "上河内地域路線バス70歳以上運賃",
@@ -79,8 +81,8 @@
         {
           "url": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/1040685/1040718.html",
           "label": "高齢者外出支援制度｜宇都宮市公式Webサイト",
-          "updated": "2026-05-29",
-          "checked": "2026-10-07"
+          "updated": "2026-10-30",
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/1040681/1006071.html",
@@ -95,7 +97,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "返納制度案内は更新2025年12月。福祉ポイントの残高不足時支払と助成回数券の利用期限・不足額の精算など現行条件は高齢福祉課028-632-2367へ確認してください。"
+      "flag": "2026年10月30日更新の一般外出支援本文でR8受付・対象・交付内容を照合。福祉ポイント残高不足時の支払と上河内助成回数券の利用期限・不足額精算は本文未記載。R9年4月開始予定の返納追加支援やマイナカードtaxi利用を、現在のバス助成条件へ読み替えていません。高齢福祉課028-632-2367へ確認してください。"
     },
     {
       "slug": "kaminokawa",
@@ -1407,22 +1409,25 @@
           "fare": "額面以上運賃に利用、対象者証提示して券を渡す。不足現金、1日400円券は200円券2枚又は現金400円のみ、券1枚＋現金不可。",
           "routes": "200円券はゆーバス・ゆータク・市協定一般路線バス（乗降いずれか市内）。500円券は500円以上運賃のゆータク/協定一般バス。大田原市営・那須町民不可。ゆーバス等定期購入はタクシー事業者のみ可。",
           "apply": "70歳誕生日以後、申請書＋本人確認書類、親族条件に応じ就労証明/診断書等を本庁高齢福祉課・支所・箒根出張所へ。代理可。",
-          "notes": [],
+          "notes": [
+            "公式リーフレットでは200円のバス専用券は25枚で申請月による変更なし。500円タクシー券の月割りとは別。"
+          ],
           "sources": [
             {
               "url": "https://www.city.nasushiobara.tochigi.jp/soshikikarasagasu/koreifukushika/fukushi/1/1/3783.html",
               "label": "高齢者外出支援タクシー等料金助成事業／那須塩原市",
               "updated": "2026-09-11",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.nasushiobara.tochigi.jp/material/files/group/19/riifuretto.pdf",
               "label": "高齢者外出支援タクシー利用券リーフレット",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "自主返納共通乗車券",
@@ -1456,13 +1461,13 @@
           "url": "https://www.city.nasushiobara.tochigi.jp/soshikikarasagasu/koreifukushika/fukushi/1/1/3783.html",
           "label": "高齢者外出支援タクシー等料金助成事業／那須塩原市",
           "updated": "2026-09-11",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.nasushiobara.tochigi.jp/material/files/group/19/riifuretto.pdf",
           "label": "高齢者外出支援タクシー利用券リーフレット",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.nasushiobara.tochigi.jp/soshikikarasagasu/kb/doro_kotsu/2/4296.html",
@@ -1477,7 +1482,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "通常利用券の利用期限・申請月ごとの200円券枚数は高齢福祉課0287-62-7137へ、返納資料は2025年/2024年で現行条件は交通防犯課0287-62-7127へ確認してください。"
+      "flag": "200円バス専用券は25枚で申請月による変更なしと公式リーフレットで確認。利用期限は当該本文・リーフレットに記載なし。リーフレットは更新日なし、返納資料は2025年/2024年で現行受付の留保を維持。一般券は世帯単位で、返納共通券との対象・併用制限も残しています。通常券は高齢福祉課0287-62-7137、返納支援は交通防犯課0287-62-7127へ確認してください。"
     },
     {
       "slug": "nasu",

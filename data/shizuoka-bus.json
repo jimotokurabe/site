@@ -92,16 +92,25 @@
           "fare": "助成後の自己負担は半額、料金2,000円超では1,000円。",
           "routes": "下田メディカルセンターへの通院バス。具体的バス会社・系統は記載なし。",
           "apply": "印鑑・保険証を持ち福祉介護課へ申請。証明券を受け取り往復乗降時と受診後に確認印。請求書と証明券を提出。",
-          "notes": [],
+          "notes": [
+            "2026年掲載の交通資料でも対象・助成額とR4〜6実績を確認。申請書類等は2022年広報の案内で、令和8年度の手続きは未確認。"
+          ],
           "sources": [
             {
               "url": "https://www.town.minamiizu.shizuoka.jp/docs/2022040100012/file_contents/Book_R04_04.pdf",
               "label": "広報みなみいず2022年4月号・高齢者通院バス料金助成",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.minamiizu.shizuoka.jp/docs/2026021700017/file_contents/koutu2.pdf",
+              "label": "公共交通現状資料・高齢者通院バス料金助成",
+              "updated": "",
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -110,9 +119,15 @@
           "label": "広報みなみいず2022年4月号・高齢者通院バス料金助成",
           "updated": "",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.town.minamiizu.shizuoka.jp/docs/2026021700017/file_contents/koutu2.pdf",
+          "label": "公共交通現状資料・高齢者通院バス料金助成",
+          "updated": "",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "根拠は令和4年度の広報です。令和8年度の継続・必要書類・利用路線は福祉介護課福祉係（0558-62-6233）へ確認してください。"
+      "flag": "2026年掲載の交通資料で対象・助成額は確認しましたが、資料本体に日付はありません。申請手続きの根拠は令和4年度広報のため、令和8年度の書類・受付・生活保護条件・利用路線は福祉介護課（0558-62-6233）へ確認してください。"
     },
     {
       "slug": "matsuzaki",
@@ -1041,18 +1056,48 @@
     {
       "slug": "fujieda",
       "name": "藤枝市",
-      "status": "notfound",
-      "summary": "足すと号は地域福祉活動の団体向け送迎支援です。個人向けの高齢者バス助成は見つかりませんでした。",
-      "programs": [],
+      "status": "active",
+      "summary": "公式に70歳以上・所得段階条件付きの3000円分のbus等乗車券の案内があります。根拠が2023年のため現年度の継続・引換期間は未確認です。",
+      "programs": [
+        {
+          "name": "藤の里ふれあい乗車券",
+          "kind": "voucher",
+          "age_min": 70,
+          "eligibility": "4月1日現在70歳以上で、前年度4月の介護保険料所得段階1〜3の方。要介護4・5又は介護老人福祉施設等入所入居者を除く。",
+          "benefit": "3000円分。路線・自主運行bus券、ゆらく線券、taxi券のいずれか一つ。",
+          "fare": "差額精算方法・券の使用期限は本文に記載なし。",
+          "routes": "しずてつジャストライン路線bus・市自主運行bus（乗車又は降車が市内停留所）、又はゆらく線。",
+          "apply": "市から届くはがきと引換。地域包括ケア推進課は2月末まで、岡部支所・文化センター・地区交流センター・生涯学習センターは7月末までと旧本文が案内。",
+          "notes": [
+            "原文更新日は2023年4月1日。令和8年度の継続・引換期間・券期限は未確認。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.fujieda.shizuoka.jp/soshiki/kenkofukushi/chiikihokatsu/gyomu/3_/1445914652357.html",
+              "label": "藤の里ふれあい乗車券",
+              "updated": "2023-04-01",
+              "checked": "2026-10-31"
+            }
+          ],
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
+        }
+      ],
       "sources": [
         {
           "url": "https://www.city.fujieda.shizuoka.jp/kurashi/bus/noriaitaxi/20922.html",
           "label": "高齢者等外出支援デマンドバス",
           "updated": "2022-06-29",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.fujieda.shizuoka.jp/soshiki/kenkofukushi/chiikihokatsu/gyomu/3_/1445914652357.html",
+          "label": "藤の里ふれあい乗車券",
+          "updated": "2023-04-01",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "地域交通課（054-631-4169）へ、個人向けのバス助成の有無を確認してください。"
+      "flag": "2023年4月の原文です。令和8年度の継続・引換期間・券の使用期限と差額精算は地域包括ケア推進課（054-643-3225）へ確認してください。"
     },
     {
       "slug": "makinohara",

@@ -45,19 +45,21 @@
           "fare": "回数券で支払い。釣銭なし。券不足時の差額とバス券期限は記載なし。",
           "routes": "市内コミュニティバス。市街地循環接続便等。",
           "apply": "地域安全課防犯交通安全係へ取消通知書または経歴証明書を提示して申請。",
-          "notes": [],
+          "notes": [
+            "3頁チラシは全券の釣銭なし・紛失再発行なしを明記。添付発行日なし、バス券期限・券不足時の差額は未記載。"
+          ],
           "sources": [
             {
               "url": "https://www.city.shibata.lg.jp/kurashi/kotsu/anzen/1001458.html",
               "label": "新発田市・高齢者等免許返納支援",
               "updated": "2025-03-24",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/458/hennousienzigyou.pdf",
               "label": "新発田市・返納等支援チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -66,7 +68,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "自主返納・新潟交通観光バス回数券",
@@ -77,19 +80,21 @@
           "fare": "回数券で支払い。釣銭なし。券不足時の差額とバス券期限は記載なし。",
           "routes": "新発田市エリアの新潟交通観光バス路線。コミュニティバスでは使えません。",
           "apply": "地域安全課防犯交通安全係へ取消通知書または経歴証明書を提示して申請。",
-          "notes": [],
+          "notes": [
+            "3頁チラシは全券の釣銭なし・紛失再発行なしを明記。添付発行日なし、バス券期限・券不足時の差額は未記載。"
+          ],
           "sources": [
             {
               "url": "https://www.city.shibata.lg.jp/kurashi/kotsu/anzen/1001458.html",
               "label": "新発田市・高齢者等免許返納支援",
               "updated": "2025-03-24",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/458/hennousienzigyou.pdf",
               "label": "新発田市・返納等支援チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -98,7 +103,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "免許失効・コミュニティバス回数券",
@@ -109,19 +115,21 @@
           "fare": "回数券で支払い。釣銭なし。券不足時の差額とバス券期限は記載なし。",
           "routes": "市内コミュニティバス。市街地循環接続便等。",
           "apply": "地域安全課防犯交通安全係へ取消通知書または経歴証明書。失効者で証明を持たない場合は警察署等で返納等の手続き後に申請。",
-          "notes": [],
+          "notes": [
+            "3頁チラシは全券の釣銭なし・紛失再発行なしを明記。添付発行日なし、バス券期限・券不足時の差額は未記載。"
+          ],
           "sources": [
             {
               "url": "https://www.city.shibata.lg.jp/kurashi/kotsu/anzen/1001458.html",
               "label": "新発田市・高齢者等免許返納支援",
               "updated": "2025-03-24",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/458/hennousienzigyou.pdf",
               "label": "新発田市・返納等支援チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -130,7 +138,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "免許失効・新潟交通観光バス回数券",
@@ -141,19 +150,21 @@
           "fare": "回数券で支払い。釣銭なし。券不足時の差額とバス券期限は記載なし。",
           "routes": "新発田市エリアの新潟交通観光バス路線。コミュニティバスでは使えません。",
           "apply": "地域安全課防犯交通安全係へ取消通知書または経歴証明書。失効者で証明を持たない場合は警察署等で返納等の手続き後に申請。",
-          "notes": [],
+          "notes": [
+            "3頁チラシは全券の釣銭なし・紛失再発行なしを明記。添付発行日なし、バス券期限・券不足時の差額は未記載。"
+          ],
           "sources": [
             {
               "url": "https://www.city.shibata.lg.jp/kurashi/kotsu/anzen/1001458.html",
               "label": "新発田市・高齢者等免許返納支援",
               "updated": "2025-03-24",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/458/hennousienzigyou.pdf",
               "label": "新発田市・返納等支援チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -162,7 +173,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -170,13 +182,13 @@
           "url": "https://www.city.shibata.lg.jp/kurashi/kotsu/anzen/1001458.html",
           "label": "新発田市・高齢者等免許返納支援",
           "updated": "2025-03-24",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/458/hennousienzigyou.pdf",
           "label": "新発田市・返納等支援チラシ",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -185,7 +197,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "市本文は返納を記載、現行県一覧と市の添付チラシは失効者も対象。チラシは日付なし、市本文は2025年3月表示。現在の券期限・不足時の差額は地域安全課0254-28-9510へ確認。"
+      "flag": "市本文（2025年3月24日表示）と現行リンクの3頁チラシを照合。チラシは発行日なし、返納/未更新失効の手続き、択一5,000円・1回限り・全券釣銭なし/紛失再発行なしを明記。バス券の具体的な有効期限・不足時の差額は未記載。県一覧のcheckedは今回更新していません。"
     },
     {
       "slug": "tainai",
@@ -1978,16 +1990,17 @@
               "url": "https://www.city.myoko.niigata.jp/docs/80944.html",
               "label": "高齢者等バス利用乗車証",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.myoko.niigata.jp/fs/2/8/9/3/5/5/_/%E3%80%87%E3%80%90%E5%88%B6%E5%BA%A6%E6%A1%88%E5%86%85%E3%80%91_%E3%83%81%E3%83%A9%E3%82%B7.pdf",
               "label": "バス利用乗車証・利用券制度チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "自主返納・バス利用券・70歳以上",
@@ -2004,13 +2017,13 @@
               "url": "https://www.city.myoko.niigata.jp/docs/2632.html",
               "label": "運転免許返納支援",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.myoko.niigata.jp/fs/2/4/4/5/4/0/_/menkyohennouchirasi.pdf",
               "label": "返納支援制度チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -2019,7 +2032,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         },
         {
           "name": "自主返納・バス利用券・70歳未満・病気等で運転不安",
@@ -2036,13 +2050,13 @@
               "url": "https://www.city.myoko.niigata.jp/docs/2632.html",
               "label": "運転免許返納支援",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.myoko.niigata.jp/fs/2/4/4/5/4/0/_/menkyohennouchirasi.pdf",
               "label": "返納支援制度チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -2051,7 +2065,8 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-10-31"
         }
       ],
       "sources": [
@@ -2059,25 +2074,25 @@
           "url": "https://www.city.myoko.niigata.jp/docs/80944.html",
           "label": "高齢者等バス利用乗車証",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.myoko.niigata.jp/fs/2/8/9/3/5/5/_/%E3%80%87%E3%80%90%E5%88%B6%E5%BA%A6%E6%A1%88%E5%86%85%E3%80%91_%E3%83%81%E3%83%A9%E3%82%B7.pdf",
           "label": "バス利用乗車証・利用券制度チラシ",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.myoko.niigata.jp/docs/2632.html",
           "label": "運転免許返納支援",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.myoko.niigata.jp/fs/2/4/4/5/4/0/_/menkyohennouchirasi.pdf",
           "label": "返納支援制度チラシ",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -2086,7 +2101,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "市の制度本文と現在リンクされたチラシを確認しましたが、個別ページの更新日が分かりません。現在の対象路線、券の有効期間・申請条件は環境生活課（0255-74-0032）へ確認してください。返納支援は県令和8年一覧でも掲載されています。"
+      "flag": "市本文2件と現行リンクのチラシ2件を原文照合。返納券の2万円・本人1回、交付日から2年経過日の属する年度末まで、路線区間・提示証明・現金/75歳券併用を確認。100円制度の市外区間実費・券記入/提示・30枚冊追加も確認。ただし資料は表示更新日/発行日なしで現行変更の有無は未確認。旧保険証に代わる現在の提示書類、100円制度の具体的有効期間などは環境生活課へ確認。"
     },
     {
       "slug": "sado",
