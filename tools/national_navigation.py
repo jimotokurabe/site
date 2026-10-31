@@ -106,5 +106,16 @@ const input=document.getElementById('city-query'),area=document.getElementById('
 function filter(){const q=normalize(input.value);let n=0;document.querySelectorAll('.city-group').forEach(group=>{let gn=0;group.querySelectorAll('li').forEach(li=>{const ok=(!area.value||group.dataset.region===area.value)&&[li.dataset.name,li.dataset.kana].some(v=>normalize(v).includes(q));li.hidden=!ok;if(ok)gn++;});group.hidden=!gn;n+=gn;});document.getElementById('count').textContent=n+'市区町村を表示しています。';document.getElementById('empty').hidden=n!==0;}
 input.addEventListener('compositionstart',()=>composing=true);input.addEventListener('compositionend',()=>{composing=false;filter();});input.addEventListener('input',()=>{if(!composing)filter();});area.addEventListener('change',filter);document.getElementById('filter-form').addEventListener('submit',ev=>{ev.preventDefault();filter();document.querySelector('.city-group:not([hidden]) li:not([hidden]) a')?.focus();});function reset(){input.value='';area.value='';filter();input.focus();}document.getElementById('reset').addEventListener('click',reset);document.getElementById('empty-reset').addEventListener('click',reset);
 '''
- (OUT/f'{p}-menkyo-henno.html').write_text(shell(name+'の免許返納特典・高齢者の移動支援｜市町村一覧',body,js,name+'の'+str(len(cs))+'市区町村から、免許返納特典やバス・タクシー支援の案内を探せます。市町村の詳細ページで対象条件・費用・申請先・確認日を確認できます。掲載がないことは制度がないことを意味しません。'))
+ if p == 'hyogo':
+  from prefecture_comparison import enhance_hyogo
+  body=enhance_hyogo(body,ROOT,OUT)
+  page=BeautifulSoup(shell('兵庫県41市町の免許返納特典・交通支援を比較｜金額・対象条件',body,'', '兵庫県41市町の免許返納特典、バス助成・敬老パス、タクシー支援を比較。金額・本人負担・対象条件・出典と確認日を一覧で確認し、名前や地域で絞り込めます。'),'html.parser')
+  page.head.append(page.new_tag('link',rel='stylesheet',href='assets/prefecture-comparison.css?v=20261031'))
+  page.body.append(page.new_tag('script',src='assets/prefecture-comparison.js?v=20261031',defer=True))
+  for asset in ('prefecture-comparison.css','prefecture-comparison.js'):
+   if (ROOT/'assets'/asset).resolve() != (assets/asset).resolve():shutil.copy2(ROOT/'assets'/asset,assets/asset)
+  output=str(page)
+ else:
+  output=shell(name+'の免許返納特典・高齢者の移動支援｜市町村一覧',body,js,name+'の'+str(len(cs))+'市区町村から、免許返納特典やバス・タクシー支援の案内を探せます。市町村の詳細ページで対象条件・費用・申請先・確認日を確認できます。掲載がないことは制度がないことを意味しません。')
+ (OUT/f'{p}-menkyo-henno.html').write_text(output)
 print('Built nationwide navigation:',len(prefs),'prefectures,',len(records),'municipalities')
