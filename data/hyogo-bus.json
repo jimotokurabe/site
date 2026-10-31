@@ -540,7 +540,7 @@
       "slug": "takasago",
       "name": "高砂市",
       "status": "active",
-      "summary": "75歳以上はじょうとんバス運賃が半額。通常運賃200円は100円、1日券300円は150円。",
+      "summary": "75歳以上はじょうとんバス・じょうとんバスミニの運賃が半額。普通運賃200円は100円、1日乗車券300円は150円。市外在住者の利用・パス取得資格は未確認です。",
       "programs": [
         {
           "name": "じょうとんバス75歳以上割引",
@@ -550,23 +550,36 @@
           "benefit": "降車時に年齢を確認できる公的証明書またはじょうとんパス75の原本を提示すると運賃半額。コピー不可。",
           "fare": "普通運賃200円→100円、1日乗車券300円→150円。支払いは現金のみ。",
           "routes": "高砂市コミュニティバス「じょうとんバス・じょうとんバスミニ」。",
-          "apply": "公的証明書の原本提示で利用可能。じょうとんパス75は発行場所で年齢を確認できる公的証明書を提示して取得。発行場所は市役所、イオン高砂市民サービスコーナー、各地域交流センター、市立図書館、ユーアイ帆っとセンター。",
+          "apply": "年齢を確認できる公的証明書の原本を降車時に提示すれば、じょうとんパス75を取得せずに割引を利用できます。パスを取得する場合は発行場所で公的証明書を提示。市役所3階都市政策課5番窓口、イオン高砂3階市民サービスコーナー、各地域交流センター、市立図書館、ユーアイ帆っとセンター1階地域包括支援センターで発行します。市外在住者の利用・取得資格は未確認です。",
           "notes": [
             "ガイドの記載内容は2026年4月1日現在。",
-            "じょうとんパス75は使用回数の制限・有効期限なし。"
+            "じょうとんパス75は1枚で1人のみ。使用回数の制限・有効期限なし。",
+            "75歳以上の1日乗車券も150円。車内で乗務員に申し出て、年齢確認書類又はパスを提示します。割引の支払いは現金のみで、ほかの割引との重複不可。"
           ],
           "sources": [
             {
               "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/chiikifukushika/koreishafukushi_kaigo/2/9319.html",
               "label": "令和8年度高齢者くらしの安心ガイド（テキスト版）",
               "updated": "2026-04-24",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
             },
             {
               "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/8850.html",
               "label": "じょうとんバス75歳以上割引・じょうとんパス75",
               "updated": "2025-03-21",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/1545.html",
+              "label": "高砂市・料金と割引制度（現金限定・割引併用不可）",
+              "updated": "2025-12-04",
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/6000.html",
+              "label": "高砂市・じょうとんバスQ＆A（1日乗車券の購入方法）",
+              "updated": "2026-04-01",
+              "checked": "2026-10-31"
             }
           ],
           "current": "document_checked"
@@ -577,16 +590,29 @@
           "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/chiikifukushika/koreishafukushi_kaigo/2/9319.html",
           "label": "令和8年度高齢者くらしの安心ガイド（テキスト版）",
           "updated": "2026-04-24",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
         },
         {
           "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/8850.html",
           "label": "じょうとんバス75歳以上割引・じょうとんパス75",
           "updated": "2025-03-21",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/1545.html",
+          "label": "高砂市・料金と割引制度（現金限定・割引併用不可）",
+          "updated": "2025-12-04",
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.takasago.lg.jp/soshikikarasagasu/toshiseisakuka/doro_kotsu/1/6000.html",
+          "label": "高砂市・じょうとんバスQ＆A（1日乗車券の購入方法）",
+          "updated": "2026-04-01",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "居住地要件は2026年度ガイドと割引専用ページに記載なし。割引専用ページは2025年3月更新だが、年齢・料金は2026年4月現在のガイドでも確認。市外居住者の利用・パス取得可否は都市政策課へ確認。"
+      "flag": "2026年度高齢者ガイド、割引専用ページ、料金表、2026年4月1日更新のQ＆Aと掲載画像を再確認しましたが、居住要件の明記はありません。市外在住者も対象とは断定せず未確認を維持。割引利用とパス取得のそれぞれについて、都市政策課（コミュニティバス）079-451-6799へ確認してください。",
+      "checked": "2026-10-31"
     },
     {
       "slug": "inami",
