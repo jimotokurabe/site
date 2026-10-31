@@ -101,21 +101,14 @@ for p,d in prefs.items():
   listing+=f'<section class="city-group" data-region="{e(r["id"])}"><h3>{e(r["name"])}</h3><ul class="citylist">'+''.join(f'<li data-name="{e(c["name"])}" data-kana="{e(c["kana"])}">{citylink(c)}</li>' for c in rc)+'</ul></section>'
  body=f'''<nav class="crumbs" aria-label="いまいる場所"><a href="index.html">トップ</a> ＞ {e(name)}</nav><header class="pref-intro"><p class="eyebrow">{e(name)}の移動と支援</p><h1>お住まいの市町村を選んでください</h1><p>免許返納の特典、バス・タクシーの支援、地域の移動手段は、市町村のページで確認できます。</p></header><p class="sample-note">市町村を選ぶと、支援の対象条件・費用・申請先を確認できます。</p><p class="label-help" id="label-help">{e(LABEL_HELP)}</p><div class="pref-layout"><section class="finder" aria-labelledby="filter-title"><h2 id="filter-title">{e(name)}内を探す</h2><form id="filter-form" role="search"><label for="city-query">市町村名で絞り込む</label><div class="inputline"><input id="city-query" type="search" placeholder="例：名前・よみがな" autocomplete="off" enterkeyhint="search"><button class="primary" type="submit">探す</button></div><label class="filter-label" for="area">地域から絞り込む</label><select id="area"><option value="">すべての地域</option>{regionoptions}</select><button id="reset" class="reset" type="button">絞り込みを解除</button></form><p class="help">返納の有無や年齢は、詳細ページで確認できます。</p><a class="alternative" href="index.html#prefectures">別の都道府県を選ぶ</a></section><section aria-label="市町村の一覧" aria-describedby="label-help"><p class="count" id="count" role="status" aria-live="polite">{len(cs)}市区町村を表示しています。</p><div id="empty" class="empty" hidden><p>一致する市町村が見つかりませんでした。</p><p>名前を短くするか、地域の絞り込みを解除してください。</p><button type="button" id="empty-reset">すべての市町村を表示</button></div>{listing}</section></div><section class="section"><h2>選んだ先では、条件から確認できます</h2><p>「返納した方の特典」と「返納を条件にしない支援」を分けて読み、対象年齢・費用・申請先を確認します。制度が終了している場合や、確認が必要な点も記載します。</p></section>'''
  body+=family_strip()
- js=commonjs+'''
-const input=document.getElementById('city-query'),area=document.getElementById('area');let composing=false;
-function filter(){const q=normalize(input.value);let n=0;document.querySelectorAll('.city-group').forEach(group=>{let gn=0;group.querySelectorAll('li').forEach(li=>{const ok=(!area.value||group.dataset.region===area.value)&&[li.dataset.name,li.dataset.kana].some(v=>normalize(v).includes(q));li.hidden=!ok;if(ok)gn++;});group.hidden=!gn;n+=gn;});document.getElementById('count').textContent=n+'市区町村を表示しています。';document.getElementById('empty').hidden=n!==0;}
-input.addEventListener('compositionstart',()=>composing=true);input.addEventListener('compositionend',()=>{composing=false;filter();});input.addEventListener('input',()=>{if(!composing)filter();});area.addEventListener('change',filter);document.getElementById('filter-form').addEventListener('submit',ev=>{ev.preventDefault();filter();document.querySelector('.city-group:not([hidden]) li:not([hidden]) a')?.focus();});function reset(){input.value='';area.value='';filter();input.focus();}document.getElementById('reset').addEventListener('click',reset);document.getElementById('empty-reset').addEventListener('click',reset);
-'''
- if p == 'hyogo':
-  from prefecture_comparison import enhance_hyogo
-  body=enhance_hyogo(body,ROOT,OUT)
-  page=BeautifulSoup(shell('兵庫県41市町の免許返納特典・交通支援を比較｜金額・対象条件',body,'', '兵庫県41市町の免許返納特典、バス助成・敬老パス、タクシー支援を比較。金額・本人負担・対象条件・出典と確認日を一覧で確認し、名前や地域で絞り込めます。'),'html.parser')
-  page.head.append(page.new_tag('link',rel='stylesheet',href='assets/prefecture-comparison.css?v=20261031'))
-  page.body.append(page.new_tag('script',src='assets/prefecture-comparison.js?v=20261031',defer=True))
-  for asset in ('prefecture-comparison.css','prefecture-comparison.js'):
-   if (ROOT/'assets'/asset).resolve() != (assets/asset).resolve():shutil.copy2(ROOT/'assets'/asset,assets/asset)
-  output=str(page)
- else:
-  output=shell(name+'の免許返納特典・高齢者の移動支援｜市町村一覧',body,js,name+'の'+str(len(cs))+'市区町村から、免許返納特典やバス・タクシー支援の案内を探せます。市町村の詳細ページで対象条件・費用・申請先・確認日を確認できます。掲載がないことは制度がないことを意味しません。')
+ from prefecture_comparison import enhance_prefecture
+ body=enhance_prefecture(body,ROOT,p)
+ unit=d['pref'].get('unit','市区町村')
+ page=BeautifulSoup(shell(name+str(len(cs))+unit+'の免許返納特典・交通支援を比較｜金額・対象条件',body,'', name+str(len(cs))+unit+'の免許返納特典、バス助成・敬老パス、タクシー支援を比較。金額・本人負担・対象条件・出典と確認日を一覧で確認し、名前や地域で絞り込めます。'),'html.parser')
+ page.head.append(page.new_tag('link',rel='stylesheet',href='assets/prefecture-comparison.css?v=nationwide-20261031'))
+ page.body.append(page.new_tag('script',src='assets/prefecture-comparison.js?v=nationwide-20261031',defer=True))
+ for asset in ('prefecture-comparison.css','prefecture-comparison.js'):
+  if (ROOT/'assets'/asset).resolve() != (assets/asset).resolve():shutil.copy2(ROOT/'assets'/asset,assets/asset)
+ output=str(page)
  (OUT/f'{p}-menkyo-henno.html').write_text(output)
 print('Built nationwide navigation:',len(prefs),'prefectures,',len(records),'municipalities')

@@ -28,6 +28,7 @@
 .comparison-statewide,.comparison-directory{border:1px solid #cbd8c1;border-radius:10px;background:#f3f5e9;padding:14px 20px;margin:20px 0}
 .comparison-statewide summary,.comparison-directory>summary{font-weight:700;min-height:44px;cursor:pointer;line-height:1.8}
 .comparison-statewide p,.comparison-note{font-size:.88rem;line-height:1.8}
+.comparison-statewide a{overflow-wrap:anywhere}.comparison-statewide small{display:block;font-size:.8rem;color:#526452}
 .comparison-directory .city-group h3{font-size:1rem}
 .has-pref-comparison .comparison-group[hidden],.comparison-group [hidden]{display:none!important}
 :is(a,button,input,summary,select):focus-visible{outline:3px solid #ab6428;outline-offset:3px}

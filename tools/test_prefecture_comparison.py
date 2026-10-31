@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import unittest
 from bs4 import BeautifulSoup
-from prefecture_comparison import comparison_rows, row_html, enhance_hyogo
+from prefecture_comparison import comparison_rows, row_html, enhance_prefecture
 
 ROOT = Path(__file__).resolve().parents[1]
 
