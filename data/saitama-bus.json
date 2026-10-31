@@ -525,20 +525,30 @@
           "kind": "voucher",
           "age_min": 60,
           "eligibility": "市内在住60歳以上75歳未満、げんきdeMaaSバス運賃補助対象者を除く。老人福祉センターの利用者。",
-          "benefit": "センターから帰りのバス利用券を引き続き交付。券額・交付上限は変更案内に記載なし。",
+          "benefit": "センター利用後の帰り（復路分）のバス利用券を継続交付。券額・交付枚数上限は現行の取扱変更案内にも記載なし。",
           "fare": "券利用の詳細はセンターへ確認。",
           "routes": "老人福祉センター利用後の帰路のバス。",
-          "apply": "市内老人福祉センターで交付。具体的申請書類は変更案内に記載なし。",
+          "apply": "市内老人福祉センターの受付へ。施設を初めて利用する際は、年齢・住所等を確認できる書類と使用証交付申請書を受付に提出して施設使用証を取得します。これは施設利用の手続きで、バス券固有の必要書類・交付手順は別に受付へ確認してください。",
           "sources": [
             {
               "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/koureisha/oshirase/rouhukubasu2025.html",
-              "label": "老人福祉センターバス利用券変更",
+              "label": "越谷市・帰路バス券の対象変更と経過措置終了",
               "updated": "2026-07-01",
-              "checked": "2026-10-06"
+              "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.koshigaya.saitama.jp/toiawase/shisetsu/koureishafukushi/hinoki.html",
+              "label": "越谷市・ひのき荘の帰路券と施設使用証の手続き",
+              "updated": "2025-12-01",
+              "checked": "2026-10-31"
             }
           ],
           "current": "needs_confirmation",
-          "notes": []
+          "notes": [
+            "75歳以上への帰路券交付は2026年4月1日終了。2026年度内に75歳になる方の未登録者への経過措置も6月30日で終了し、7月1日以降は交付しません。",
+            "市内在住60歳以上75歳未満でも、げんきdeMaaSバス運賃補助対象者は帰路券の対象外です。MaaSの片道100円補助を帰路券の額面と読み替えないでください。",
+            "ひのき荘の市公式施設案内でも復路券と条件の受付確認を案内しています。現年度の利用可能区間・券額・上限・券の申請方法は未確認です。"
+          ]
         }
       ],
       "sources": [
@@ -550,12 +560,19 @@
         },
         {
           "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/koureisha/oshirase/rouhukubasu2025.html",
-          "label": "老人福祉センターバス利用券変更",
+          "label": "越谷市・帰路バス券の対象変更と経過措置終了",
           "updated": "2026-07-01",
-          "checked": "2026-10-06"
+          "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.koshigaya.saitama.jp/toiawase/shisetsu/koureishafukushi/hinoki.html",
+          "label": "越谷市・ひのき荘の帰路券と施設使用証の手続き",
+          "updated": "2025-12-01",
+          "checked": "2026-10-31"
         }
       ],
-      "flag": "センター帰路券の額・利用区間・申請詳細は要確認。都市計画課 048-963-9221、高齢福祉課 048-963-9187。"
+      "flag": "帰路券の券額・枚数上限・利用区間・券固有の書類と交付手順は未確認です。施設使用証の手続きとは区別し、高齢福祉課048-963-9187又は利用するセンター受付へ確認してください（ひのき荘048-973-7903）。MaaSの登録・補助は都市計画課048-963-9221の別制度です。",
+      "checked": "2026-10-31"
     },
     {
       "slug": "yashio",
