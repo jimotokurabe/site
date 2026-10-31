@@ -38,7 +38,12 @@ def comparison_rows(pref, bus, taxi):
         primary = next(((label, text) for label, text in guide_facts
                         if label in ('もらえるもの', '助成の中身', '補助の中身')), None)
         money = [('支援額・期間', amount or STATES.get(state, '金額は掲載情報で未確認')),
-                 primary or ('支援内容', q['answer'])]
+                 ('支援内容', q['answer'])]
+        # The short source can contain a deposit excluded from guide facts,
+        # while the guide can contain annual frequency or personal cost. Keep
+        # both visible instead of treating either as a substitute for the other.
+        if primary and primary[1] != q['answer']:
+            money.append(primary)
         conditions, folded_facts = [], []
         target = next(((label, text) for label, text in guide_facts if '対象' in label), None)
         deadline = next(((label, text) for label, text in guide_facts if '期限' in label and ('申' in label or '申し込' in label)), None)
