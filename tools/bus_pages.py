@@ -55,7 +55,7 @@ def validate_bus(data, pref_data):
         sources = list(c.get("sources", []))
         for p in c["programs"]:
             assert p["kind"] in KINDS
-            assert p["current"] in {"document_checked", "needs_confirmation"}, "invalid current state"
+            assert p["current"] in {"document_checked", "needs_confirmation", "ended"}, "invalid current state"
             if p["current"] == "needs_confirmation":
                 assert c.get("flag"), "unconfirmed program requires contact guidance"
             age = p["age_min"]
@@ -111,6 +111,8 @@ def bus_page(pref_data, bus, draft, shell, jdate):
                                  ("routes", "使えるバス"), ("apply", "申し込み")])
                 notes = ''.join(f'<li>{e(n)}</li>' for n in p["notes"])
                 current_note = '<p class="flag">この制度には、現在の条件・金額を確認できていない項目があります。下の注意と確認先をご覧ください。</p>' if p.get('current') == 'needs_confirmation' else ''
+                if p.get('current') == 'ended':
+                    current_note = '<p class="flag">掲載の実施期間は終了しています。</p>'
                 programs.append(f'<section class="bus-program"><h4>{e(p["name"])}<span class="chip">{KINDS[p["kind"]]}</span></h4>{current_note}'
                                 f'<dl class="facts">{facts}</dl>' + (f'<ul class="bullets">{notes}</ul>' if notes else '') + '</section>')
             all_sources = [*c.get("sources", []), *(s for p in c["programs"] for s in p["sources"])]
