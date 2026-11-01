@@ -1278,17 +1278,25 @@
           "benefit": "通常運賃から50％割引。",
           "fare": "なおとら線通常400〜1,000円、つつじ線通常300〜700円の半額。",
           "routes": "いなさみどりバス・なおとら線/つつじ線。",
-          "apply": "経歴証明書を提示。なおとら線は電話/インターネット、つつじ線は電話で事前予約。",
-          "notes": [],
+          "apply": "なおとら線は7日前から30分前までに予約。電話053-472-8451（8～17時）又は登録済みインターネット予約。つつじ線は053-523-1555へ電話予約。金指駅7時05分発は前日（月曜は金曜）17時まで、学校16時発は15時まで、18時40分（18時00分）発は17時まで。",
+          "notes": [
+            "2026年10月チラシにも証明書提示で50％割引、注記は取得後1年未満に限ると記載。2026年10月30日更新の本文は取得後期限を省略、市の2025年11月7日回答は取得後1年間と記載。期限境界は北行政センター053-523-3120へ確認。なおとら線は一人で乗降困難な場合、介護者同乗と電話予約が必要。"
+          ],
           "sources": [
             {
               "url": "https://www.city.hamamatsu.shizuoka.jp/n-machi/traffic/unkou/inasa/index.html",
               "label": "いなさみどりバス",
-              "updated": "2026-10-01",
-              "checked": "2026-10-06"
+              "updated": "2026-10-30",
+              "checked": "2026-11-01"
+            },
+            {
+              "url": "https://www.city.hamamatsu.shizuoka.jp/documents/15928/inasamidoribus.pdf",
+              "label": "現在掲載の2026年10月いなさみどりバスチラシ",
+              "checked": "2026-11-01"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-11-01"
         }
       ],
       "sources": [
@@ -1301,17 +1309,22 @@
         {
           "url": "https://www.city.hamamatsu.shizuoka.jp/n-machi/traffic/unkou/inasa/index.html",
           "label": "いなさみどりバス",
-          "updated": "2026-10-01",
-          "checked": "2026-10-06"
+          "updated": "2026-10-30",
+          "checked": "2026-11-01"
         },
         {
           "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/square/room/opinion/fukushi/2025-4026.html",
           "label": "高齢者への交通パスについて",
           "updated": "",
           "checked": "2026-10-06"
+        },
+        {
+          "url": "https://www.city.hamamatsu.shizuoka.jp/documents/15928/inasamidoribus.pdf",
+          "label": "現在掲載の2026年10月いなさみどりバスチラシ",
+          "checked": "2026-11-01"
         }
       ],
-      "flag": "いなさの現行ページには取得後期限の記載がありませんが、市の交通パス回答は地域バスを取得後1年に限ると案内しています。期限と予約方法を北行政センター（053-523-3120）へ確認してください。"
+      "flag": "現在掲載の2026年10月チラシは取得後1年未満、市の交通パス回答は取得後1年間と案内し、現行本文は期限を省略。割引期限の境界・インターネット予約受付時間（本文は午前8時～午後12時と表記）は北行政センター053-523-3120へ確認してください。"
     },
     {
       "slug": "iwata",
