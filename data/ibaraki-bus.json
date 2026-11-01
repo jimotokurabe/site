@@ -334,13 +334,13 @@
       "slug": "hitachinaka",
       "name": "ひたちなか市",
       "status": "active",
-      "summary": "返納後の1年間無料パスと、2026年9月19日～10月31日の高齢者無料期間があります。",
+      "summary": "返納時65歳以上の市民には申請による1年間無料パス。令和8年度の高齢者乗車無料期間は2026年10月31日で終了。",
       "programs": [
         {
           "name": "返納後のスマイルあおぞらバス無料パス",
           "kind": "henno",
           "age_min": 65,
-          "eligibility": "すべての免許を自主返納した満65歳以上の市民。",
+          "eligibility": "すべての運転免許を自主返納した、返納時に満65歳以上のひたちなか市民（掲載パンフレット）。",
           "benefit": "1年間無料乗車パス。本人1回限り。",
           "fare": "無料",
           "routes": "スマイルあおぞらバス",
@@ -350,18 +350,31 @@
               "url": "https://www.city.hitachinaka.lg.jp/kurashi/bohan/1003878/1003885.html",
               "label": "高齢者運転免許自主返納支援",
               "updated": "2025-07-29",
-              "checked": "2026-10-07"
+              "checked": "2026-11-01"
+            },
+            {
+              "label": "現在掲載の申請書",
+              "url": "https://www.city.hitachinaka.lg.jp/_res/projects/default_project/_page_/001/003/885/shinseisho2.pdf",
+              "checked": "2026-11-01"
+            },
+            {
+              "label": "現在掲載のパンフレット",
+              "url": "https://www.city.hitachinaka.lg.jp/_res/projects/default_project/_page_/001/003/885/tirasi2.pdf",
+              "checked": "2026-11-01"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [
+            "現在掲載の申請書・パンフレットを再確認。申請書は取消通知書を添付、パンフレットは即日交付を案内。1年間の起算日・代理申請・郵送は明記なし。生活安全課029-273-2958へ確認。"
+          ],
+          "checked": "2026-11-01"
         },
         {
           "name": "令和8年度高齢者乗車無料期間",
           "kind": "discount",
           "age_min": 65,
           "eligibility": "65歳以上でいばらきシニアカードを提示する方。本文に市内居住条件の記載なし。",
-          "benefit": "2026年9月19日～10月31日の期間に無料乗車。",
+          "benefit": "2026年9月19日～10月31日の期間限定無料乗車（期間終了）。",
           "fare": "無料",
           "routes": "スマイルあおぞらバス",
           "apply": "いばらきシニアカード交付を受け、降車時に運転手へ提示。新旧デザインとも利用可。",
@@ -370,11 +383,14 @@
               "url": "https://www.city.hitachinaka.lg.jp/kurashi/kotsu/1001712/1007501/1014160.html",
               "label": "高齢者乗車無料期間",
               "updated": "2026-09-14",
-              "checked": "2026-10-07"
+              "checked": "2026-11-01"
             }
           ],
-          "current": "document_checked",
-          "notes": []
+          "current": "ended",
+          "notes": [
+            "2026年11月1日時点では掲載の実施期間は終了。返納者向け1年間パスとは別の取組。延長・次回実施は確認できません。"
+          ],
+          "checked": "2026-11-01"
         }
       ],
       "sources": [
@@ -382,16 +398,16 @@
           "url": "https://www.city.hitachinaka.lg.jp/kurashi/bohan/1003878/1003885.html",
           "label": "高齢者運転免許自主返納支援",
           "updated": "2025-07-29",
-          "checked": "2026-10-07"
+          "checked": "2026-11-01"
         },
         {
           "url": "https://www.city.hitachinaka.lg.jp/kurashi/kotsu/1001712/1007501/1014160.html",
           "label": "高齢者乗車無料期間",
           "updated": "2026-09-14",
-          "checked": "2026-10-07"
+          "checked": "2026-11-01"
         }
       ],
-      "flag": "返納対象・手続きの資料は2025年7月更新です。現在の交付条件を生活安全課（029-273-2958）へ確認してください。"
+      "flag": "返納パスの年齢判定・必要書類・即日交付は現在掲載資料で確認。パスの1年間の起算日・代理・郵送は生活安全課029-273-2958へ確認。期間限定無料乗車の延長・次回実施は未確認。"
     },
     {
       "slug": "naka",
