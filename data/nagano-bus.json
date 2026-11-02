@@ -471,7 +471,8 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "高齢福祉・交通・返納を検索して本文照合。タクシー専用券をバス券として案内しない。町の両資料は更新日なし。企画財政課0267-32-3112へバス助成の有無を確認。 県PDF自体の更新日表示はないが、県案内ページは2026-10-06更新の令和8年度資料。"
+      "flag": "高齢福祉・交通・返納を検索して本文照合。タクシー専用券をバス券として案内しない。町の両資料は更新日なし。企画財政課0267-32-3112へバス助成の有無を確認。 県PDF自体の更新日表示はないが、県案内ページは2026-10-06更新の令和8年度資料。 2026年11月2日、町返納原文でタクシー券24枚の期限は交付年度の翌年度末と確認。バス用途の制度とは区別します。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "tateshina",
@@ -5179,16 +5180,16 @@
               "url": "https://www.town.yamanouchi.nagano.jp/soshiki/fukushi/gyomu/kourei_fukushi_kaigo/support_koreisha/451.html",
               "label": "山ノ内町・福祉乗物補助券",
               "updated": "2025-11-28",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
               "label": "長野県・令和8年度高齢者移動支援一覧",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "福祉乗物補助券・70歳以上免許非所持証明",
@@ -5205,10 +5206,10 @@
               "url": "https://www.town.yamanouchi.nagano.jp/soshiki/fukushi/gyomu/kourei_fukushi_kaigo/support_koreisha/451.html",
               "label": "山ノ内町・福祉乗物補助券",
               "updated": "2025-11-28",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -5216,16 +5217,17 @@
           "url": "https://www.town.yamanouchi.nagano.jp/soshiki/fukushi/gyomu/kourei_fukushi_kaigo/support_koreisha/451.html",
           "label": "山ノ内町・福祉乗物補助券",
           "updated": "2025-11-28",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
           "label": "長野県・令和8年度高齢者移動支援一覧",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "県一覧は非課税75歳以上、町本文は非課税高齢者または70歳以上の免許非所持証明書交付者。対象の年齢と現在の後期高齢者提示書類は健康福祉課0269-33-3116へ確認。70歳枠は返納のみと明記されず、返納専用の枠ではありません。"
+      "flag": "町の現行本文で月1,000円分・1回の枚数制限なし・年度末有効・毎年申請を再確認しました。県一覧の非課税高齢者枠は75歳以上、町本文は年齢定義を明記していないため、年齢と現在の後期高齢者提示書類は健康福祉課（0269-33-3116）へ確認してください。70歳枠は免許非所持を証明する枠で返納専用とはしていません。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "kijimadaira",

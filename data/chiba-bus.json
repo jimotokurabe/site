@@ -51,16 +51,16 @@
               "url": "https://www.police.pref.chiba.jp/kotsusomuka/traffic-safety_defend-03_municipality.html",
               "label": "自治体（29市・11町・１村） | 高齢者の交通事故を防ぐために | 千葉県警察",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.police.pref.chiba.jp/kotsusomuka/traffic-safety_defend-03_bus.html",
               "label": "路線バス | 高齢者の交通事故を防ぐために | 千葉県警察",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -68,16 +68,16 @@
           "url": "https://www.police.pref.chiba.jp/kotsusomuka/traffic-safety_defend-03_municipality.html",
           "label": "自治体（29市・11町・１村） | 高齢者の交通事故を防ぐために | 千葉県警察",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.police.pref.chiba.jp/kotsusomuka/traffic-safety_defend-03_bus.html",
           "label": "路線バス | 高齢者の交通事故を防ぐために | 千葉県警察",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "県警案内には更新日の記載がなく、市の現行条件・対象ルート・居住条件を市役所0436-22-1111または小湊鐵道塩田営業所043-261-5131へ確認してください。優待証の対象と市の割引の条件を合わせて確認してください。"
+      "flag": "県警は小湊鐵道ノーカー優待証の対象を69歳以上、現金支払半額、発行手数料530円と案内しています。市原市内の対象ルート・市独自の条件は未確認のため、市役所0436-22-1111又は塩田営業所043-261-5131へ確認してください。"
     },
     {
       "slug": "ichikawa",
@@ -970,27 +970,31 @@
           "fare": "証明書提示で無料（通常小学生以上100円）。",
           "routes": "栄町循環バス。",
           "apply": "乗車時に運転経歴証明書を提示。別途申請の記載なし。",
-          "notes": [],
+          "notes": [
+            "2026年9月1日ダイヤ改正後も証明書提示による無料を掲載。一般運賃100円、回数券11回1,000円。"
+          ],
           "sources": [
             {
               "url": "https://www.town.sakae.chiba.jp/kurashi/kokyokotsu/bus/page000210.html",
               "label": "町循環バス | 栄町公式ホームページ",
-              "updated": "",
-              "checked": "2026-10-06"
+              "updated": "2026-09-01",
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-11-02"
         }
       ],
       "sources": [
         {
           "url": "https://www.town.sakae.chiba.jp/kurashi/kokyokotsu/bus/page000210.html",
           "label": "町循環バス | 栄町公式ホームページ",
-          "updated": "",
-          "checked": "2026-10-06"
+          "updated": "2026-09-01",
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "案内に更新日の記載がありません。居住・年齢条件、失効による経歴証明書の利用、現行運用は企画財政課住まいと魅力創造班0476-33-7773へ確認してください。"
+      "flag": "2026年9月1日更新の町循環バス原文を2026年11月2日に確認。運転経歴証明書提示で無料です。年齢・居住条件や失効による証明書の取扱いは明記がなく、企画財政課0476-33-7773へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "katori",

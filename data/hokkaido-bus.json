@@ -180,19 +180,19 @@
               "url": "https://www.city.mikasa.hokkaido.jp/hotnews/detail/00015288.html",
               "label": "三笠市・外出支援拡充",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.mikasa.hokkaido.jp/contents/reiki_int/reiki_honbun/a023RG00000419.html",
               "label": "三笠市・外出支援規則",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.mikasa.hokkaido.jp/kouhou/pdf/2547_26171041.pdf",
               "label": "三笠市・広報2026年5月",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
           "current": "needs_confirmation"
@@ -214,7 +214,7 @@
               "url": "https://www.city.mikasa.hokkaido.jp/kouhou/pdf/2547_26171041.pdf",
               "label": "三笠市・広報2026年5月",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
           "current": "needs_confirmation"
@@ -225,22 +225,22 @@
           "url": "https://www.city.mikasa.hokkaido.jp/hotnews/detail/00015288.html",
           "label": "三笠市・外出支援拡充",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.mikasa.hokkaido.jp/contents/reiki_int/reiki_honbun/a023RG00000419.html",
           "label": "三笠市・外出支援規則",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.mikasa.hokkaido.jp/kouhou/pdf/2547_26171041.pdf",
           "label": "三笠市・広報2026年5月",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "案内ページ・規則に更新日なし。遠距離枠の個別金額・今年の申請会場と配布を福祉係に確認してください。"
+      "flag": "共通回数券は5月1日～翌年3月31日まで、再交付はありません。遠距離枠は最寄り停留所と障害者割引の有無で金額が異なります。福祉係（01267-2-3995）へ金額・対象施設を確認してください。"
     },
     {
       "slug": "takikawa",
@@ -658,16 +658,16 @@
               "url": "https://www.town.kuriyama.hokkaido.jp/uploaded/attachment/19857.pdf",
               "label": "栗山町・デマンドバスマニュアルR8.10.1現在",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www1.g-reiki.net/town.kuriyama/reiki_honbun/a092RG00000411.html",
               "label": "栗山町・高齢者乗車証要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納支援（町営バス回数券）",
@@ -684,10 +684,10 @@
               "url": "https://www.town.kuriyama.hokkaido.jp/site/jisyuhennnou/209.html",
               "label": "栗山町・免許返納支援",
               "updated": "2024-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -695,22 +695,22 @@
           "url": "https://www.town.kuriyama.hokkaido.jp/uploaded/attachment/19857.pdf",
           "label": "栗山町・デマンドバスマニュアルR8.10.1現在",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www1.g-reiki.net/town.kuriyama/reiki_honbun/a092RG00000411.html",
           "label": "栗山町・高齢者乗車証要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.town.kuriyama.hokkaido.jp/site/jisyuhennnou/209.html",
           "label": "栗山町・免許返納支援",
           "updated": "2024-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "PDF・要綱に更新日なし。現行R8.10デマンド割引を確認。乗車証申請書類、返納券の継続・1冊金額と期限を建設課・生活安全に確認してください。"
+      "flag": "令和8年10月1日マニュアルで乗車証所持70歳以上半額を確認。乗車証の持参書類、返納券1冊の金額・有効期限・不足額精算は本文記載なし。建設課（0123-73-7513）又は生活安全グループ（0123-73-7510）へ確認してください。"
     },
     {
       "slug": "tsukigata",
@@ -1041,7 +1041,8 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "返納支援として無料配送の案内があります。バス運賃の支援について市民生活課交通防犯011-381-1093に確認してください。 未発見は制度なしという意味ではありません。現行の支援は自治体の公共交通担当・高齢福祉担当に確認してください。"
+      "flag": "返納支援として無料配送の案内があります。バス運賃の支援について市民生活課交通防犯011-381-1093に確認してください。 未発見は制度なしという意味ではありません。現行の支援は自治体の公共交通担当・高齢福祉担当に確認してください。 2026年11月2日の返納支援本文は、市内65歳以上のコープさっぽろ組合員にコンテナ2個分までの無料配送を案内。配送支援とバス運賃助成は区別します。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "chitose",
@@ -2994,29 +2995,30 @@
       "slug": "hokuto",
       "name": "北斗市",
       "status": "notfound",
-      "summary": "調査した公式交通・福祉案内では、高齢者向けまたは免許返納者向けのバス料金助成を見つけられませんでした。",
+      "summary": "巡回ワゴンは通常300円、茂辺地・石別地区内200円です。返納者向けタクシー券の案内はありますが、路線バスに使える高齢者助成は今回確認できませんでした。",
       "programs": [],
       "sources": [
         {
           "url": "https://www.city.hokuto.hokkaido.jp/docs/3250.html",
           "label": "高齢者運転免許証自主返納支援事業",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.hokuto.hokkaido.jp/docs/11098.html",
           "label": "巡回ワゴン現行運行案内",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.hokuto.hokkaido.jp/fs/2/4/6/4/2/3/_/02_dai2kikeikakuann.pdf",
           "label": "第2期地域公共交通計画案",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "免許返納者への100円券150枚はタクシーと巡回ワゴンに使えます。路線バスにも使えるかは確認できていません。対象・使える交通手段は保健福祉課（代表0138-73-3111）に確認してください。"
+      "flag": "返納支援は70歳以上・返納後1年以内に100円券150枚、有効2年間です。巡回ワゴンと路線バスの扱いは区別し、路線バスへの適用は保健福祉課（代表0138-73-3111）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "matsumae",
@@ -3307,16 +3309,17 @@
           "url": "https://www.town.yakumo.lg.jp/soshiki/kikitaisaku/untenmenkyojisyuhennou.html",
           "label": "運転免許証自主返納支援事業",
           "updated": "2024-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.town.yakumo.lg.jp/soshiki/hoken/content0006-2022.html",
           "label": "福祉タクシー助成事業",
           "updated": "2026-03-24",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "返納・失効のハイヤー券と高齢者向け福祉タクシー券の案内を確認。バス料金支援は見つけられなかった。返納本文は令和6年更新。現行のバス支援の有無は危機対策課（0137-62-2226）へ確認。"
+      "flag": "再確認した返納・失効支援はハイヤー助成券（3年間計3万円）、一般高齢者枠は75歳以上の非課税在宅者等への福祉タクシー助成です。これらはバス券ではありません。現在のバス支援は今回確認できていないため危機対策課（0137-62-2226）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "oshamanbe",
@@ -4126,10 +4129,10 @@
               "url": "https://town.biei.hokkaido.jp/health/senior/welfare-services.html",
               "label": "各種制度・高齢者福祉サービス",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -4137,10 +4140,11 @@
           "url": "https://town.biei.hokkaido.jp/health/senior/welfare-services.html",
           "label": "各種制度・高齢者福祉サービス",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "案内の更新日と居住要件の明文は未確認です。保健福祉課社会係（0166-92-4245）へ確認してください。"
+      "flag": "現行掲載本文で年度末70歳以上の本人用乗車証・付添人対象外・期限なし・降車時提示を再確認しました。白金線無料証の居住要件は本文に明記されていないため保健福祉課社会係（0166-92-4245）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "kamifurano",
@@ -6420,10 +6424,10 @@
               "url": "https://www.town.makubetsu.lg.jp/kurashi/kotsu/komibasu/1033.html",
               "label": "返納者・75歳以上コミュニティバス割引",
               "updated": "2025-11-21",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "コミュニティバス・免許自主返納無料",
@@ -6440,10 +6444,10 @@
               "url": "https://www.town.makubetsu.lg.jp/kurashi/kotsu/komibasu/1033.html",
               "label": "返納者・75歳以上コミュニティバス割引",
               "updated": "2025-11-21",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -6451,10 +6455,11 @@
           "url": "https://www.town.makubetsu.lg.jp/kurashi/kotsu/komibasu/1033.html",
           "label": "返納者・75歳以上コミュニティバス割引",
           "updated": "2025-11-21",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "令和7年11月更新本文を確認。高齢者枠の申請・居住要件や券の有効期間は防災環境課（0155-54-6601）へ確認。"
+      "flag": "現行掲載本文で75歳以上は返納を問わず無料、65〜74歳返納者は無料乗車券を申請することを再確認しました。申請写真はマイナンバーカード等の写真を使うこともできます。高齢者枠の必要書類・居住要件・券の有効期間は本文に明記がないため防災環境課（0155-54-6601）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "ikeda",

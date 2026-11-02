@@ -1565,10 +1565,10 @@
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "65～69歳定期券",
@@ -1578,17 +1578,17 @@
           "benefit": "1か月3,000円、3か月8,550円、6か月16,200円。",
           "fare": "有効な定期券提示で対象全線に乗車。",
           "routes": "館林都市圏の広域公共路線バス全線。",
-          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "apply": "つゝじ観光バス、館林観光バス、館林駅観光案内所又は川俣駅西口駅前プラザ「メイちゃん家」で購入。年齢確認方法は窓口に確認。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "70歳以上シニア定期券",
@@ -1598,17 +1598,17 @@
           "benefit": "1か月500円、3か月1,500円、6か月3,000円。",
           "fare": "有効な定期券提示で対象全線に乗車。",
           "routes": "館林都市圏の広域公共路線バス全線。",
-          "apply": "つゝじ観光バス等の定期券販売窓口で購入。",
+          "apply": "つゝじ観光バス、館林観光バス、館林駅観光案内所又は川俣駅西口駅前プラザ「メイちゃん家」で購入。年齢確認方法は窓口に確認。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "高齢者路線バス無料定期券",
@@ -1625,16 +1625,16 @@
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/030/20200107225000.html",
               "label": "高齢者路線バス定期券の無料交付｜館林市",
               "updated": "2025-09-12",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1642,13 +1642,13 @@
           "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
           "label": "路線バスの乗り方・運賃｜館林市",
           "updated": "2025-12-11",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/030/20200107225000.html",
           "label": "高齢者路線バス定期券の無料交付｜館林市",
           "updated": "2025-09-12",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.tatebayashi.gunma.jp/s015/anzen/050/010/20200109233000.html",
@@ -1657,7 +1657,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "無料定期案内2025/9/12。年齢確認手順・現行交付は安全安心課0276-47-5115へ。"
+      "flag": "無料定期は初回窓口、更新はオンライン可、家族等による代理申請も可。交付まで約2週間。通常割引・有料シニア定期の年齢確認方法は安全安心課（0276-47-5115）又は販売所へ確認してください。"
     },
     {
       "slug": "midori",
@@ -1680,7 +1680,7 @@
               "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002133.html",
               "label": "東町路線バス",
               "updated": "2026-08-28",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -1694,25 +1694,27 @@
           "fare": "券で支払。東町通常300円（市内70以上150円）、電話でバス300円、大間々笠懸100円。返納券期限・不足額精算は記載なし。",
           "routes": "東町路線バス・大間々笠懸路線バス・電話でバス（デマンドバス）。",
           "apply": "有効な免許証を桐生交通安全協会（月～金）又は大間々分庁舎（火曜）へ持参し返納・申請。返納30日以内。",
-          "notes": [],
+          "notes": [
+            "電話でバスは通院目的に限り電話予約を4日前13時から受付（2026年10月1日開始の実証運用）。券の有効期限・不足額精算は記載なし。"
+          ],
           "sources": [
             {
               "url": "https://www.city.midori.gunma.jp/kurashi/1001628/1002066.html",
               "label": "高齢者運転免許証自主返納支援事業",
               "updated": "2026-08-05",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002133.html",
               "label": "東町路線バス",
               "updated": "2026-08-28",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002181.html",
               "label": "電話でバス（デマンドバス）",
               "updated": "2026-09-18",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002151.html",
@@ -1721,7 +1723,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1729,7 +1731,7 @@
           "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002133.html",
           "label": "東町路線バス",
           "updated": "2026-08-28",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002151.html",
@@ -1741,13 +1743,13 @@
           "url": "https://www.city.midori.gunma.jp/kurashi/1001625/1001730/1002181.html",
           "label": "電話でバス（デマンドバス）",
           "updated": "2026-09-18",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.midori.gunma.jp/kurashi/1001628/1002066.html",
           "label": "高齢者運転免許証自主返納支援事業",
           "updated": "2026-08-05",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
       "flag": "返納回数券の期限・不足額精算は防災危機管理課0277-76-0960へ確認してください。通常割引は企画課0277-76-0962へ。"

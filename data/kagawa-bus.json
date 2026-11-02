@@ -714,7 +714,7 @@
               "url": "https://www.town.ayagawa.lg.jp/docs/2026042300012/",
               "label": "町・70歳以上ゴールドIruCa、公開2026年4月23日",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -734,10 +734,10 @@
               "url": "https://www.town.ayagawa.lg.jp/docs/2011081700015/",
               "label": "町・返納者町民バス無料、公開2018年11月28日",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "県の卒業カード所持者の町民バス無料カード",
@@ -754,16 +754,16 @@
               "url": "https://www.town.ayagawa.lg.jp/docs/2011081700015/",
               "label": "町・返納者町民バス無料、公開2018年11月28日",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.kagawa.lg.jp/kurashi/koreisha-anzen/menkyosotugyou.html",
               "label": "県・卒業カード対象",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "70歳未満返納者のセーフティIruCa半額",
@@ -780,10 +780,10 @@
               "url": "https://www.town.ayagawa.lg.jp/docs/2019040500027/",
               "label": "町・70歳未満セーフティIruCa、公開2019年4月5日",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -791,28 +791,29 @@
           "url": "https://www.town.ayagawa.lg.jp/docs/2011081700015/",
           "label": "町・返納者町民バス無料、公開2018年11月28日",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.town.ayagawa.lg.jp/docs/2026042300012/",
           "label": "町・70歳以上ゴールドIruCa、公開2026年4月23日",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.town.ayagawa.lg.jp/docs/2019040500027/",
           "label": "町・70歳未満セーフティIruCa、公開2019年4月5日",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.pref.kagawa.lg.jp/kurashi/koreisha-anzen/menkyosotugyou.html",
           "label": "県・卒業カード対象",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "ゴールドの案内は2026年公開ですが更新日記載なし、無料カードは2018年、セーフティは2019年公開です。無料カードの提示・卒業カード所持者の必要書類、現在のセーフティ対象便・端数は総務課（087-876-1906）へ確認してください。"
+      "flag": "町の現行掲載原文で4制度を再確認しました。無料カードの提示方法と卒業カード所持者の提出書類、セーフティIruCaの対象便・端数処理は本文に明記がないため総務課（087-876-1906）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "kotohira",
@@ -847,16 +848,17 @@
           "url": "https://www.town.tadotsu.kagawa.jp/soshikikarasagasu/somuka/koutsuuanzen/936.html",
           "label": "町・返納商品券",
           "updated": "2023-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.town.tadotsu.kagawa.jp/soshikikarasagasu/koreishahokenka/koreishafukushi/index.html",
           "label": "高齢者福祉の案内",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "タクシー券・商品券等の案内を確認しました。バス向けの現在の支援は返納支援担当課または高齢福祉担当へお問い合わせください。旧資料・更新日記載のない案内を含みます。"
+      "flag": "返納支援本文は65歳以上の町民に共通商品券1万円を案内しており、バス券交付の記載ではありません。高齢者福祉一覧には島しょ部買物支援運賃助成の項目もありますが、バス助成の適用は未確認です。総務課交通法務監理係（0877-33-1110）等へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "manno",
