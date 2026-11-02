@@ -584,29 +584,37 @@
           "benefit": "年度1回、バスチケット10,000円分。",
           "fare": "不足分は現金、おつりなし、枚数制限なし。",
           "routes": "名阪近鉄バスの市内発着路線（高速・大垣伊吹山線除く）。東安中前・青刈も発着対象。",
-          "apply": "申請書を高齢福祉課、各市民サービスセンター又は地域事務所へ。利用は6月1日から。",
-          "notes": [],
+          "apply": "高齢福祉課で申請・受取。市民サービスセンターと地域事務所は申請書の受取のみ。申請後窓口受取（郵送の場合あり）。令和8年5月11日受付開始、6月1日利用開始。",
+          "notes": [
+            "令和8年6月制度のチラシと本文を確認。バス会社の障がい者・返納者割引と併用可、本人のみ使用。不足分現金・おつりなし・枚数制限なし。旧制度は2026年5月31日利用分までが対象で申請期限2027年3月31日。高齢福祉課0584-47-7424。"
+          ],
           "sources": [
             {
               "url": "https://www.city.ogaki.lg.jp/0000010022.html",
               "label": "高齢者おでかけバス助成事業 | 大垣市公式ホームページ／水の都おおがき",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.ogaki.lg.jp/0000040512.html",
               "label": "運転免許証自主返納者等を支援します | 大垣市公式ホームページ／水の都おおがき",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.gifu.lg.jp/uploaded/attachment/491556.pdf",
               "label": "岐阜県警・市町村別自主返納支援一覧（大垣市欄）",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000010/10022/buschirashi.pdf",
+              "label": "令和8年6月開始のおでかけバスチラシ",
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-02"
         },
         {
           "name": "自主返納者支援バス乗車券",
@@ -616,29 +624,47 @@
           "benefit": "バス・鉄道・タクシーの選択で5,000円程度の乗車券。",
           "fare": "乗車券で運賃を支払い。",
           "routes": "市内路線バス。",
-          "apply": "取消証明・本人確認等を交通政策課へ。代理は委任状と代理人確認書類必要。",
-          "notes": [],
+          "apply": "交通政策課は即日交付。他の申請先は後日郵送（約2週間）。郵送申請は〒503-8601大垣市丸の内2-29 交通政策課公共交通グループ宛。代理は委任者の署名・押印した委任状と代理人本人確認書類の写しが必要。 申請書、返納者は取消通知書と本人確認書類の写し。取消通知書がなければ穴の開いた返納免許証、両方なければ資料記載の「運転免許経歴証明書」を使用。失効者は失効免許証、なければ同証明書と本人確認書類の写し。",
+          "notes": [
+            "現在掲載の令和8年4月資料を再確認。違反による取消しは対象外。選択する券の詳しい有効期限・利用範囲は交通政策課へ確認。"
+          ],
           "sources": [
             {
               "url": "https://www.city.ogaki.lg.jp/0000010022.html",
               "label": "高齢者おでかけバス助成事業 | 大垣市公式ホームページ／水の都おおがき",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.ogaki.lg.jp/0000040512.html",
               "label": "運転免許証自主返納者等を支援します | 大垣市公式ホームページ／水の都おおがき",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.gifu.lg.jp/uploaded/attachment/491556.pdf",
               "label": "岐阜県警・市町村別自主返納支援一覧（大垣市欄）",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000040/40512/R08.04.01ri-huretto.pdf",
+              "label": "現掲載の令和8年4月返納・失効支援リーフレット",
+              "checked": "2026-11-02"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000040/40512/R08.04.07_hituyousyoruiitirann.pdf",
+              "label": "令和8年4月必要書類一覧",
+              "checked": "2026-11-02"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000040/40512/R080401sinnseisakiitirann.pdf",
+              "label": "令和8年4月申請先・交付方法一覧",
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-02"
         },
         {
           "name": "免許失効者支援バス乗車券",
@@ -648,29 +674,47 @@
           "benefit": "バス・鉄道・タクシーの選択で5,000円程度の乗車券。",
           "fare": "乗車券で運賃を支払い。",
           "routes": "市内路線バス。",
-          "apply": "失効証明・本人確認等の必要書類は交通政策課へ確認。代理は委任状等必要。",
-          "notes": [],
+          "apply": "交通政策課は即日交付。他の申請先は後日郵送（約2週間）。郵送申請は〒503-8601大垣市丸の内2-29 交通政策課公共交通グループ宛。代理は委任者の署名・押印した委任状と代理人本人確認書類の写しが必要。 申請書、返納者は取消通知書と本人確認書類の写し。取消通知書がなければ穴の開いた返納免許証、両方なければ資料記載の「運転免許経歴証明書」を使用。失効者は失効免許証、なければ同証明書と本人確認書類の写し。",
+          "notes": [
+            "現在掲載の令和8年4月資料を再確認。違反による取消しは対象外。選択する券の詳しい有効期限・利用範囲は交通政策課へ確認。"
+          ],
           "sources": [
             {
               "url": "https://www.city.ogaki.lg.jp/0000010022.html",
               "label": "高齢者おでかけバス助成事業 | 大垣市公式ホームページ／水の都おおがき",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.ogaki.lg.jp/0000040512.html",
               "label": "運転免許証自主返納者等を支援します | 大垣市公式ホームページ／水の都おおがき",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.gifu.lg.jp/uploaded/attachment/491556.pdf",
               "label": "岐阜県警・市町村別自主返納支援一覧（大垣市欄）",
               "updated": "",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000040/40512/R08.04.01ri-huretto.pdf",
+              "label": "現掲載の令和8年4月返納・失効支援リーフレット",
+              "checked": "2026-11-02"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000040/40512/R08.04.07_hituyousyoruiitirann.pdf",
+              "label": "令和8年4月必要書類一覧",
+              "checked": "2026-11-02"
+            },
+            {
+              "url": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000040/40512/R080401sinnseisakiitirann.pdf",
+              "label": "令和8年4月申請先・交付方法一覧",
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-02"
         }
       ],
       "sources": [
@@ -693,7 +737,8 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "更新日不明又は1年以上前の資料を含みます。現行条件・未記載事項は高齢福祉課（市役所代表0584-81-4111）・交通政策課（0584-47-7386）へ確認してください。"
+      "flag": "現年度チラシ・必要書類・交付先を確認。個別の対象判断や券の有効期限等は高齢福祉課0584-47-7424又は交通政策課0584-47-7386へ確認。県警の旧一覧は今回再取得していない。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "kaizu",
