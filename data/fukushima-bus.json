@@ -341,23 +341,31 @@
           "benefit": "5,000円相当の公共交通・入浴等利用券からLOCOCAを一つ選択。",
           "fare": "LOCOCA残高で通常運賃を支払い。交付額にデポジットを含むかは市へ確認。",
           "routes": "新常磐交通のLOCOCA対応エリアのバス。",
-          "apply": "取消通知書と本人確認書類を本庁生活安全課又は各支所へ持参。取消通知書交付日から1年以内。サービスセンター不可。約2カ月で郵送。生活安全課0246-22-1152。 代理申請は本人確認書類（写し可）と代理人の本人確認書類を持参します。",
-          "notes": [],
+          "apply": "取消通知書と本人確認書類を本庁生活安全課又は各支所へ持参。取消通知書交付日から1年以内。サービスセンター不可。約2カ月で郵送。生活安全課0246-22-1152。 代理申請は本人確認書類（写し可）と代理人の本人確認書類を持参します。 市本文では利用券を申請から2か月程度で簡易書留により自宅へ郵送。",
+          "notes": [
+            "市本文と現在掲載チラシを再確認。市の5,000円相当のLOCOCAについてデポジットを含むかは記載なし。一般のLOCOCA預り金をこの事業の交付額から自動控除しない。"
+          ],
           "sources": [
             {
               "url": "https://www.city.iwaki.lg.jp/www/contents/1529884404447/index.html",
               "label": "市・自主返納促進",
               "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.joko.co.jp/lococa-menu/lococa-faq/",
               "label": "新常磐交通・LOCOCA利用案内",
               "updated": "",
               "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.iwaki.lg.jp/www/contents/1529884404447/files/anzensodanchirashi.pdf",
+              "label": "現在掲載の高齢者免許返納促進事業チラシ",
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-11-02"
         }
       ],
       "sources": [
@@ -365,16 +373,21 @@
           "url": "https://www.city.iwaki.lg.jp/www/contents/1529884404447/index.html",
           "label": "市・自主返納促進",
           "updated": "2026-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.joko.co.jp/lococa-menu/lococa-faq/",
           "label": "新常磐交通・LOCOCA利用案内",
           "updated": "",
           "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.city.iwaki.lg.jp/www/contents/1529884404447/files/anzensodanchirashi.pdf",
+          "label": "現在掲載の高齢者免許返納促進事業チラシ",
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "交付LOCOCAの利用可能額とデポジットの扱いは生活安全課へ確認してください。"
+      "flag": "市の交付LOCOCAに預り金を含むか・実際の利用可能残高は未記載のため生活安全課0246-22-1152へ確認。一般のカード購入条件を本制度へ無条件に転用しない。"
     },
     {
       "slug": "koriyama",
