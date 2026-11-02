@@ -387,7 +387,8 @@
           "routes": "りゅーと対応路線バス（観光・空港リムジン含む）と東区・江南区・西区バス等。現金提示は北区・秋葉区・南区・西蒲区バス、おらって、カナリア、横バス等。高速バス除く。",
           "apply": "りゅーと取扱窓口へ住所・年齢が分かる本人確認書類原本とりゅーとカード。新規発行2,000円（預り500円含む）。毎年誕生月に更新。",
           "notes": [
-            "IC対応バスでチャージ不足のため現金精算する場合は正規運賃になります。月上限を超えた次の乗車から当月末までは通常のりゅーとカードとして精算されます。"
+            "IC対応バスでチャージ不足のため現金精算する場合は正規運賃になります。月上限を超えた次の乗車から当月末までは通常のりゅーとカードとして精算されます。",
+            "更新は毎年の誕生月初日から可能で手数料無料。有効期限後でも更新でき、窓口で更新した時点から割引が再開します。"
           ],
           "sources": [
             {
@@ -400,16 +401,16 @@
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/howtouse.html",
               "label": "新潟市・ICカード利用方法",
               "updated": "2026-10-20",
-              "checked": "2026-10-31"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/s.html",
               "label": "新潟市・ICカード更新手続き",
               "updated": "2018-01-17",
-              "checked": "2026-10-31"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "checked": "2026-10-31"
         },
         {
@@ -427,7 +428,7 @@
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/kotsu2017041538.html",
               "label": "新潟市・シルバーチケット現行利用方法",
               "updated": "2026-09-04",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/index.html",
@@ -453,7 +454,7 @@
               "url": "https://www.city.niigata.lg.jp/kurashi/bohan/koutuu_index/menkyo_hennou/index.html",
               "label": "新潟市・免許返納バス半額",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -462,7 +463,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "みなくるん・65歳以上半額",
@@ -479,13 +480,13 @@
               "url": "https://www.city.niigata.lg.jp/minami/torikumi/kotsu/minakurun/minakurun2610.html",
               "label": "新潟市・10月5日開始みなくるん",
               "updated": "2026-09-30",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/kotsu2017041538.html",
               "label": "新潟市・シルバーチケット現行利用方法",
               "updated": "2026-09-04",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -505,16 +506,16 @@
               "url": "https://www.city.niigata.lg.jp/minami/torikumi/kotsu/minakurun/minakurun2610.html",
               "label": "新潟市・10月5日開始みなくるん",
               "updated": "2026-09-30",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.niigata.lg.jp/kurashi/bohan/koutuu_index/menkyo_hennou/index.html",
               "label": "新潟市・免許返納バス半額",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -528,31 +529,31 @@
           "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/howtouse.html",
           "label": "新潟市・ICカード利用方法",
           "updated": "2026-10-20",
-          "checked": "2026-10-31"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/s.html",
           "label": "新潟市・ICカード更新手続き",
           "updated": "2018-01-17",
-          "checked": "2026-10-31"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.niigata.lg.jp/kurashi/doro/kotsu/by_bus/senior_hanwari/kotsu2017041538.html",
           "label": "新潟市・シルバーチケット現行利用方法",
           "updated": "2026-09-04",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.niigata.lg.jp/kurashi/bohan/koutuu_index/menkyo_hennou/index.html",
           "label": "新潟市・免許返納バス半額",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.niigata.lg.jp/minami/torikumi/kotsu/minakurun/minakurun2610.html",
           "label": "新潟市・10月5日開始みなくるん",
           "updated": "2026-09-30",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
@@ -561,7 +562,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "IC月上限8,600円・新規カード代2,000円（預り金500円含む）・チャージ不足時の正規運賃は2026年10月20日更新本文で確認。更新手続の詳細は同本文からリンクされる2018年資料、精算方法の総合ページと返納ページは日付表示なしです。返納支援の失効者を含む範囲と対象住民バス、現金提示時の上限は都市交通政策課025-226-2723又は市民生活課025-226-1113へ確認。以前のIC交通券給付は2018年6月30日受付終了。みなくるんは実証運行時の料金。"
+      "flag": "区バス返納割引は市内65歳以上で自主返納などにあわせ経歴証を取得した人が対象です。「など」の失効を含む具体範囲・対象住民バスは区バス担当へ。みなくるんは実証運賃で、65歳以上の経歴証提示で半額。現金提示時のIC月上限の扱いは都市交通政策課（025-226-2723）へ確認してください。"
     },
     {
       "slug": "gosen",
@@ -1629,16 +1630,17 @@
           "url": "https://www.city.tokamachi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/6020.html",
           "label": "市営バスの運賃・時刻表",
           "updated": "2026-08-31",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.tokamachi.lg.jp/material/files/group/1/siho2025_8katamen.pdf",
           "label": "市報2025年8月・運賃助成券",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "2025年の助成券の利用期限は過ぎています。令和8年度の同種事業の有無は企画政策課（025-757-3193）へ確認してください。"
+      "flag": "2026年11月2日に市営バス運賃本文を再確認し、一般200円・高校生年代以下無料等を確認しました。2025年の75歳以上向け助成券は期限切れで、令和8年度の同種事業は今回確認できていません。企画政策課（025-757-3193）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "uonuma",

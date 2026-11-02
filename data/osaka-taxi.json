@@ -35,13 +35,14 @@
    "src": "市の高齢者福祉の一覧ページ",
    "upd": "記載なし",
    "guide_mobility": true,
-   "checked": "2026-10-03",
+   "checked": "2026-11-02",
    "more_sources": [
     {
      "url": "https://www.city.higashiosaka.lg.jp/0000026499.html",
      "label": "市の重度障害者リフト付タクシー助成"
     }
-   ]
+   ],
+   "note": "確認したリフト付福祉タクシー助成は対象機能1級等の重度身体障がい・在宅が条件で、1回660円、月4回。窓口・郵送・電子申請で受け付けます。年齢だけの助成ではありません。"
   },
   "toyonaka": {
    "k": "end",
@@ -63,7 +64,12 @@
    "url": "https://www.city.ikeda.osaka.jp/soshiki/fukushi/kaigohoken/1496896262453.html",
    "src": "市の高齢福祉サービスのページ",
    "upd": "更新日：2026年04月01日",
-   "more_sources": [{"url": "https://www.city.ikeda.osaka.jp/soshiki/fukushi/shogaifukushi/shogaisha/13784.html", "label": "市の重度障がい者タクシー補助"}]
+   "more_sources": [
+    {
+     "url": "https://www.city.ikeda.osaka.jp/soshiki/fukushi/shogaifukushi/shogaisha/13784.html",
+     "label": "市の重度障がい者タクシー補助"
+    }
+   ]
   },
   "minoh": {
    "k": "notfound",
@@ -170,7 +176,10 @@
    "guide_mobility": true,
    "checked": "2026-10-03",
    "guide_relation_note": "上の返納特典でもらう1,000ポイントも、タクシークーポンに交換できるひらかたポイントです。",
-   "guide_details": ["交換には、500ポイント以上あるカードまたはアプリを入れたスマートフォンと、年齢が分かるものを持っていきます。郵送受け取りはひらかたポイント事務局（050-1809-8254）への電話か、市の申請フォームから申し込めます。", "使えるタクシーは大阪タクシー共通乗車券運営協議会（06-6125-5400）に問い合わせます。"],
+   "guide_details": [
+    "交換には、500ポイント以上あるカードまたはアプリを入れたスマートフォンと、年齢が分かるものを持っていきます。郵送受け取りはひらかたポイント事務局（050-1809-8254）への電話か、市の申請フォームから申し込めます。",
+    "使えるタクシーは大阪タクシー共通乗車券運営協議会（06-6125-5400）に問い合わせます。"
+   ],
    "name": "タクシークーポン（高齢者お出かけ推進事業）",
    "what": "年度内に65歳以上になる市民は、ひらかたポイント500ポイントをタクシークーポン500円分に換えられます。",
    "age": "年度内に65歳以上となる市民（市内在住・在職）",
@@ -275,7 +284,12 @@
    "url": "https://www.city.kawachinagano.lg.jp/soshiki/2/85848.html",
    "src": "市のまちづくり推進課のページ",
    "upd": "2026年5月29日更新",
-   "more_sources": [{"url": "https://www.city.kawachinagano.lg.jp/static/reiki/reiki_honbun/l700RG00001601.html", "label": "市の併用に関する要綱"}]
+   "more_sources": [
+    {
+     "url": "https://www.city.kawachinagano.lg.jp/static/reiki/reiki_honbun/l700RG00001601.html",
+     "label": "市の併用に関する要綱"
+    }
+   ]
   },
   "matsubara": {
    "k": "care",
@@ -317,7 +331,8 @@
    "src": "市の障がい者福祉のページ",
    "upd": "2026年03月27日",
    "guide_mobility": true,
-   "checked": "2026-10-03"
+   "checked": "2026-11-02",
+   "note": "福祉タクシー券は月2枚・1枚で普通タクシー初乗り相当額。身体障がい者手帳1・2級、療育A、精神1級が条件です。手帳と印鑑を福祉政策グループへ、代理人は委任状も必要。"
   },
   "taishi": {
    "k": "notfound",
@@ -325,7 +340,9 @@
    "henno_link": "記載なし",
    "url": "https://www.town.taishi.osaka.jp/busyo/kenkoufukusibu/fukisikaigoka/news/1528450393183.html",
    "src": "町の福祉介護課のページ",
-   "upd": "2023年12月05日"
+   "upd": "2023年12月05日",
+   "note": "確認したリフト付タクシー助成は、身体障がい者手帳1級・2級かつ車いす等が必要な在宅の人が対象です。1,400円券を月2枚（年間24枚まで）、利用できる事業者は限定されています。年齢だけの高齢者助成とは区別しています。",
+   "checked": "2026-11-02"
   },
   "kanan": {
    "k": "notfound",

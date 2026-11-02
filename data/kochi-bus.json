@@ -23,10 +23,10 @@
               "url": "https://www.city.muroto.kochi.jp/pages/page3735.php",
               "label": "室戸市・むろはぴ号令和8年10月運行",
               "updated": "2026-10-02",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "免許返納者のむろはぴ号半額",
@@ -43,10 +43,10 @@
               "url": "https://www.city.muroto.kochi.jp/pages/page3735.php",
               "label": "室戸市・むろはぴ号令和8年10月運行",
               "updated": "2026-10-02",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -54,10 +54,11 @@
           "url": "https://www.city.muroto.kochi.jp/pages/page3735.php",
           "label": "室戸市・むろはぴ号令和8年10月運行",
           "updated": "2026-10-02",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "令和8年10月の運行案内を確認。年齢・返納を確認する提示書類は市へ確認してください。"
+      "flag": "令和8年10月運行の掲載本文で65歳以上・免許返納者100円を再確認しました。中学生以下は無料です。年齢・返納の確認に使う提示書類は本文に記載がないため、まちづくり推進課（0887-22-5147）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "aki",
@@ -1009,16 +1010,16 @@
               "url": "https://www.town.ochi.kochi.jp/soumu/912",
               "label": "町民バスの料金表・路線時刻表",
               "updated": "2026-09-14",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
               "label": "県警・令和8年9月25日現在の返納移動支援一覧",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1026,16 +1027,16 @@
           "url": "https://www.town.ochi.kochi.jp/soumu/912",
           "label": "町民バスの料金表・路線時刻表",
           "updated": "2026-09-14",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.police.pref.kochi.lg.jp/docs/2023103100048/file_contents/file_20269281151457_1.pdf",
           "label": "県警・令和8年9月25日現在の返納移動支援一覧",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "県警の令和8年一覧と町の令和8年9月料金表案内を確認。具体的な区間運賃は町の総務課（0889-26-1111）へ確認してください。"
+      "flag": "県警の令和8年9月25日一覧では年齢・住所制限なし、運転経歴証明書の提示で町民バス半額です。路線ごとの実際の支払額は町総務課（0889-26-1111）へ確認してください。"
     },
     {
       "slug": "hidaka",

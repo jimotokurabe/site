@@ -268,7 +268,8 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "支援本文の更新日は1年以上前です。申請窓口・期限、グランドパスとnimocaの対象路線は市代表（092-501-2211）へ確認してください。 おげんき号の案内は更新日記載なしです。利用手続は東地区コミュニティ運営協議会（092-504-1430）、市地域行政センター統括課東地区担当（092-504-1433）へ確認してください。"
+      "flag": "支援本文の更新日は1年以上前です。申請窓口・期限、グランドパスとnimocaの対象路線は市代表（092-501-2211）へ確認してください。 おげんき号の案内は更新日記載なしです。利用手続は東地区コミュニティ運営協議会（092-504-1430）、市地域行政センター統括課東地区担当（092-504-1433）へ確認してください。 2026年11月2日の市原文で、グランドパス助成は返納又は失効の日以後に購入したものに限定されることを確認。券・nimocaは審査後簡易書留、パス助成は口座振込です。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "nakagawa",
@@ -2075,16 +2076,18 @@
           "fare": "カードでバス運賃を支払い。個別路線の運賃は支援本文未記載。",
           "routes": "バスや電車などに使えるnimoca。具体的バス区間は支援本文未記載。",
           "apply": "令和8年6月15日～令和9年2月26日（予算上限で終了）。電子・郵送・市役所6階安全安心推進課又は各総合支所地域振興課へ。申請書と取消通知書又は穴あき免許、紛失時は運転免許経歴証明書。市民センター不可。審査後1～2か月で簡易書留。",
-          "notes": [],
+          "notes": [
+            "支援品は10,000円相当ですが、利用できる金額は9,500円、残る500円はカード預り金です。受付中でも予算上限に達すると終了します。"
+          ],
           "sources": [
             {
               "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
               "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
               "updated": "2026-06-15",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "失効後の令和8年度nimoca支援",
@@ -2095,16 +2098,18 @@
           "fare": "カードでバス運賃を支払い。個別路線の運賃は支援本文未記載。",
           "routes": "バスや電車などに使えるnimoca。具体的バス区間は支援本文未記載。",
           "apply": "令和8年6月15日～令和9年2月26日（予算上限で終了）。電子・郵送・市役所6階安全安心推進課又は各総合支所地域振興課へ。申請書と失効免許写し又は運転免許経歴証明書（紛失時）。市民センター不可。審査後1～2か月で簡易書留。",
-          "notes": [],
+          "notes": [
+            "支援品は10,000円相当ですが、利用できる金額は9,500円、残る500円はカード預り金です。受付中でも予算上限に達すると終了します。"
+          ],
           "sources": [
             {
               "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
               "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
               "updated": "2026-06-15",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "経歴証提示・よりみちバス半額",
@@ -2121,16 +2126,16 @@
               "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
               "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
               "updated": "2026-06-15",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2070machi/3035koutsu/yorimichibus_201603.html",
               "label": "久留米市：生活支援交通「よりみちバス」の運行について",
               "updated": "2026-08-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -2138,16 +2143,16 @@
           "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2040bousaianzen/3070koutsuanzen/2023-koureiuntenjikoboushi.html",
           "label": "久留米市：【受付開始】令和8年度高齢運転者の交通事故防止対策事業",
           "updated": "2026-06-15",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2070machi/3035koutsu/yorimichibus_201603.html",
           "label": "久留米市：生活支援交通「よりみちバス」の運行について",
           "updated": "2026-08-25",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "ICの対象バス区間・運賃は安全安心推進課（0942-30-9094）、よりみちバスの現在の割引手続・運賃は交通政策課（0942-30-9328）へ確認してください。"
+      "flag": "nimoca支援は2027年2月26日まで、予算上限で早期終了し、利用額9,500円と預り金500円です。よりみちバスの対象運賃・失効後経歴証での取扱いは交通政策課（0942-30-9328）へ確認してください。"
     },
     {
       "slug": "ukiha",
@@ -2905,16 +2910,17 @@
           "url": "https://www.joho.tagawa.fukuoka.jp/kiji0032272/index.html",
           "label": "田川市コミュニティバスのお知らせ / 福岡県田川市",
           "updated": "2026-10-05",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.joho.tagawa.fukuoka.jp/kiji00310142/index.html",
           "label": "広報たがわ1月号（第1585号)   / 福岡県田川市",
           "updated": "2024-01-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "旧広報は1年以上前です。高齢者向けの独自バス支援は市交通担当（代表0947-44-2000）へ確認してください。"
+      "flag": "2026年11月2日更新本文で一般200円・未就学児無料、商店街の買物利用者向け無料乗車券を確認しました。年齢又は返納による独自バス助成は今回確認できていません。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "keisen",

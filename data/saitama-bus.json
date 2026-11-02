@@ -1124,17 +1124,19 @@
               "url": "https://www.city.kawagoe.saitama.jp/faq/faq-korei/1012797/1012828.html",
               "label": "川越シャトル特別乗車証FAQ",
               "updated": "2024-11-22",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003051/1003063/1003070.html",
               "label": "川越シャトルQ&A",
               "updated": "2024-11-22",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [
+            "特別乗車証を持つ市内70～89歳の方は、川越シャトル1日券を300円で車内購入できます。"
+          ]
         },
         {
           "name": "川越シャトル特別乗車証（90歳以上枠）",
@@ -1150,16 +1152,16 @@
               "url": "https://www.city.kawagoe.saitama.jp/faq/faq-korei/1012797/1012828.html",
               "label": "川越シャトル特別乗車証FAQ",
               "updated": "2024-11-22",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003051/1003063/1003070.html",
               "label": "川越シャトルQ&A",
               "updated": "2024-11-22",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         },
         {
@@ -1176,7 +1178,7 @@
               "url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003104/1020672.html",
               "label": "高齢者自主返納支援",
               "updated": "2026-07-02",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked",
@@ -1188,22 +1190,22 @@
           "url": "https://www.city.kawagoe.saitama.jp/faq/faq-korei/1012797/1012828.html",
           "label": "川越シャトル特別乗車証FAQ",
           "updated": "2024-11-22",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003051/1003063/1003070.html",
           "label": "川越シャトルQ&A",
           "updated": "2024-11-22",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.kawagoe.saitama.jp/kurashi/kotsu/1003104/1020672.html",
           "label": "高齢者自主返納支援",
           "updated": "2026-07-02",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "案内の日付が未記載または1年以上前のため現行条件は確認が必要です。乗車証は高齢者いきがい課 049-224-5809、返納補助は防犯・交通安全課 049-224-5721。"
+      "flag": "特別乗車証は年齢確認書類を持参し、高齢者いきがい課・各市民センター・川越駅西口連絡所で即日発行。高齢者いきがい課049-224-5809、返納IC入金補助は防犯・交通安全課049-224-5721へ。"
     },
     {
       "slug": "sakado",
@@ -1450,10 +1452,11 @@
           "url": "https://www.town.namegawa.saitama.jp/soshikikarasagasu/hukushika/anzen_anshin/1/3153.html",
           "label": "デマンド交通ターナちゃん",
           "updated": "2023-01-18",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "資料の日付が未記載または1年以上前のため現行条件は要確認。福祉課デマンド交通受付 0493-56-5800。"
+      "flag": "町公式本文で無料のドアツードア交通と、登録証作成200円を再確認しました。バスと明記された制度ではないためバス比較の対象には加えていません。高齢者バス助成の有無は福祉課（0493-56-5800）へ確認してください。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "ranzan",
@@ -2635,16 +2638,16 @@
               "url": "https://www.town.yokoze.saitama.jp/kurashi/kurashi-joho/588",
               "label": "自主返納公共交通利用券",
               "updated": "2026-07-17",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/yokozetown.html",
               "label": "県掲載の横瀬町公共交通券案内",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],
@@ -2653,16 +2656,17 @@
           "url": "https://www.town.yokoze.saitama.jp/kurashi/kurashi-joho/588",
           "label": "自主返納公共交通利用券",
           "updated": "2026-07-17",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.pref.saitama.lg.jp/a0311/idoshien/yokozetown.html",
           "label": "県掲載の横瀬町公共交通券案内",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "資料の更新日が未記載または1年以上前のため現行条件は要確認。まち経営課 0494-25-0112。"
+      "flag": "町の現行掲載本文と県案内で6,000円分の公共交通利用券を再確認しました。乗合デマンドの70歳以上・返納者300円は、バス用利用券とは別の制度です。利用券は本人のみ・1回交付で券記載の期限内に利用してください。まち経営課（0494-25-0112）。",
+      "checked": "2026-11-02"
     },
     {
       "slug": "minano",

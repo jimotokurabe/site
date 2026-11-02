@@ -896,13 +896,15 @@
           "fare": "券額を運賃に充当。バスは1乗車あたり上限なし、つり銭なし。市外区間分は自己負担。",
           "routes": "市内を運行する一般乗合バス・コミュニティバス。",
           "apply": "電子申請または高齢・障がい福祉課へ郵送。年度途中も受付、券を郵送交付。",
-          "notes": [],
+          "notes": [
+            "バス・タクシー共通券です。タクシーは1人1乗車500円までで、券所持者同士の相乗りは各人500円まで使えます。"
+          ],
           "sources": [
             {
               "url": "https://www.city.ise.mie.jp/kenkou_fukushi/koureisya/shien/1002610.html",
               "label": "令和8年度おでかけ乗車券",
               "updated": "2026-04-06",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -922,13 +924,13 @@
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
               "label": "おかげバス高齢者運賃",
               "updated": "2026-06-12",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
               "label": "おかげバスデマンド高齢者運賃",
               "updated": "2026-03-30",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -948,13 +950,13 @@
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
               "label": "おかげバス高齢者運賃",
               "updated": "2026-06-12",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
               "label": "おかげバスデマンド高齢者運賃",
               "updated": "2026-03-30",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -974,13 +976,13 @@
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
               "label": "おかげバス高齢者運賃",
               "updated": "2026-06-12",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             },
             {
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
               "label": "おかげバスデマンド高齢者運賃",
               "updated": "2026-03-30",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
           "current": "document_checked"
@@ -1000,10 +1002,10 @@
               "url": "https://www.city.ise.mie.jp/kurashi/koutsu/kanjo_bus/index.html",
               "label": "おかげバス環状線乗継割引",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-02"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1011,28 +1013,28 @@
           "url": "https://www.city.ise.mie.jp/kenkou_fukushi/koureisya/shien/1002610.html",
           "label": "令和8年度おでかけ乗車券",
           "updated": "2026-04-06",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004980.html",
           "label": "おかげバス高齢者運賃",
           "updated": "2026-06-12",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.ise.mie.jp/kurashi/koutsu/okage_bus/1004983.html",
           "label": "おかげバスデマンド高齢者運賃",
           "updated": "2026-03-30",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         },
         {
           "url": "https://www.city.ise.mie.jp/kurashi/koutsu/kanjo_bus/index.html",
           "label": "おかげバス環状線乗継割引",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-02"
         }
       ],
-      "flag": "環状線の案内に更新日なし。乗継無料条件の現行性、各割引の住所条件は交通政策課0596-21-5593へ確認。"
+      "flag": "環状線乗継は100円引きで65歳以上の100円対象者は無料、1乗車1枚・釣銭なし。65歳以上割引の住所条件は本文に記載なしのため交通政策課（0596-21-5593）へ確認してください。"
     },
     {
       "slug": "toba",
