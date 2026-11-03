@@ -512,26 +512,26 @@
       "slug": "kakogawa",
       "name": "加古川市",
       "status": "notfound",
-      "summary": "65歳以上の個人・団体を対象とする福祉バス貸切使用の案内あり。日常の路線・コミュニティバスの乗車証や運賃助成は、今回の公式資料では見つからず。",
+      "summary": "おおむね65歳以上で構成する11名以上の団体等に、福祉バスの貸切使用の案内があります。日常の路線・コミュニティバスの乗車証や運賃助成は、今回の公式資料では見つかりませんでした。",
       "programs": [],
       "sources": [
         {
           "url": "https://www.city.kakogawa.lg.jp/kurashi/bosai_bohan/kotsuanzen/1556245727486.html",
           "label": "運転免許証の自主返納（市特典の記載なし・県警優待案内）",
           "updated": "2026-09-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.kakogawa.lg.jp/fukushikenko/kaigo_fukushi/koreishafukushi/1413771792328.html",
           "label": "福祉バスの使用について（団体向け）",
           "updated": "2025-04-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.kakogawa.lg.jp/shiseijoho/jyoreikisokuyoko/youkousyu/29760.html",
           "label": "高齢者支援課所管要綱一覧（令和8年度要綱を含む）",
           "updated": "2026-05-07",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
       "flag": "高齢者個人向けのバス乗車証・運賃助成は、令和8年度を含む公式資料の再調査でも見つからず。制度がないとは断定できないため高齢者支援課・交通担当へ確認。福祉バスは貸切使用に関する制度で、日常の路線バス運賃助成とは別扱い。"
@@ -678,13 +678,19 @@
           "url": "https://www.town.harima.lg.jp/hoken/koureisyatakusiryoukin.html",
           "label": "高齢者等タクシー料金助成（バス支援ではないため除外確認）",
           "updated": "2026-07-21",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.town.harima.lg.jp/hoken/silverhandbook.html",
           "label": "高齢者のためのシルバー情報ハンドブック（令和6～8年度）",
           "updated": "2024-05-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
+        },
+        {
+          "url": "https://www.town.harima.lg.jp/hoken/documents/sirubahandobukku2024p28-35.pdf",
+          "label": "高齢者シルバー情報ハンドブック福祉サービス28～35ページ（令和6年4月改訂）",
+          "updated": "",
+          "checked": "2026-11-03"
         }
       ],
       "flag": "バス助成は令和6～8年度の高齢者福祉ハンドブックと2026年度関連資料の再調査でも見つからず。制度がないとは断定できないため保険課・交通担当へ確認。ハンドブックは2024年4月改訂版のため最新運用も確認。"
@@ -1841,7 +1847,7 @@
           "kind": "henno",
           "age_min": 65,
           "eligibility": "丹波篠山市に住民登録されている運転免許証をすべて自主返納した65歳以上。免許一部返納・失効は対象外。",
-          "benefit": "2024年4月2日資料では、3種類から2点選択。バス支援はニコパカード（神姫バス・コミュニティバス乗車券）5,000円相当分。 現行交付額は未確認。",
+          "benefit": "3種類から2点選択。バス支援はニコパカード（神姫バス・コミュニティバス乗車券）5,000円相当分。",
           "fare": "利用券支給。乗車ごとの高齢者・返納者料金は記載なし。",
           "routes": "神姫バス・コミュニティバス。",
           "apply": "返納後、取消通知書または運転経歴証明書写しで第2庁舎1階市民安全課窓口へ申請。",
@@ -1851,10 +1857,10 @@
               "url": "https://www.city.tambasasayama.lg.jp/soshikikarasagasu/shiminanzenka/koutsuu/2437.html",
               "label": "免許自主返納者への記念品交付",
               "updated": "2024-04-02",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1862,10 +1868,10 @@
           "url": "https://www.city.tambasasayama.lg.jp/soshikikarasagasu/shiminanzenka/koutsuu/2437.html",
           "label": "免許自主返納者への記念品交付",
           "updated": "2024-04-02",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "記念品の根拠は2024年更新。現行の交付品・金額・バス利用条件は市民安全課窓口でご確認ください。"
+      "flag": "2024年4月2日更新の現掲載本文を2026年11月3日に照合。選択品と金額は掲載内容を確認、個別バス利用条件は市民安全課へ。"
     },
     {
       "slug": "tamba",

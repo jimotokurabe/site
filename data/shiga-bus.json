@@ -270,10 +270,11 @@
               "url": "https://reiki.city.koka.lg.jp/reiki_int/reiki_honbun/r055RG00001132.html",
               "label": "運転免許証自主返納等支援事業実施要綱",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "お試し自主返納参加者へのバス券",
@@ -292,16 +293,17 @@
               "url": "https://www.pref.shiga.lg.jp/documents/15800/5611756.pdf",
               "label": "令和8年度お試し自主返納協賛店等一覧（第2号）",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.pref.shiga.lg.jp/police/pa22/15800.html",
               "label": "お試し自主返納のご案内【令和8年度】",
               "updated": "2026-05-26",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -309,34 +311,34 @@
           "url": "https://www.city.koka.lg.jp/8020.htm",
           "label": "コミュニティバス・コミタク無料乗車券交付事業",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://reiki.city.koka.lg.jp/reiki_int/reiki_honbun/r055RG00001299.html",
           "label": "コミュニティバス無料乗車券交付事業実施要綱（令和8年1月1日施行）",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://reiki.city.koka.lg.jp/reiki_int/reiki_honbun/r055RG00001132.html",
           "label": "運転免許証自主返納等支援事業実施要綱",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.pref.shiga.lg.jp/documents/15800/5611756.pdf",
           "label": "令和8年度お試し自主返納協賛店等一覧（第2号）",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.pref.shiga.lg.jp/police/pa22/15800.html",
           "label": "お試し自主返納のご案内【令和8年度】",
           "updated": "2026-05-26",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "案内・要綱に更新日の記載がありません。無料券は交通政策課（0748-69-2215）、返納支援は生活環境課（0748-69-2143）へ確認してください。 お試し参加の募集残数、券の交付手順・利用期限は県警と交通政策課（0748-69-2215）へ確認してください。 返納支援要綱の現行条件と回数券使用時の不足運賃の扱いも確認してください。"
+      "flag": "正式返納30枚は現行要綱、お試し参加者2枚は令和8年度県警資料で照合しました。正式返納の窓口・不足額精算は生活環境課0748-69-2143へ、お試し募集残数は県警077-522-1231、券の交付手順・利用期限は交通政策課0748-69-2215へ確認してください。"
     },
     {
       "slug": "konan",

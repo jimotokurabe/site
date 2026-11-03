@@ -593,9 +593,9 @@
             },
             {
               "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
-              "label": "富山県警・令和8年8月返納支援一覧",
-              "updated": "2026-08-20",
-              "checked": "2026-10-07"
+              "label": "富山県警・自治体別返納支援一覧（2026年10月14日更新）",
+              "updated": "2026-10-14",
+              "checked": "2026-11-03"
             }
           ],
           "current": "needs_confirmation"
@@ -605,7 +605,7 @@
           "kind": "voucher",
           "age_min": null,
           "eligibility": "昭和31年12月31日以前生まれの在宅者。令和8年4月1日以降の市転入者・施設入所者と障がい者福祉利用券対象者を除く。",
-          "benefit": "入浴用の高齢者福祉利用券の代わりに無料乗車券を選択。令和9年3月31日まで。交付枚数は年齢により異なるため確認。",
+          "benefit": "高齢者福祉利用券（入浴券）の代わりに無料乗車券を選択。令和9年3月31日まで。交付枚数は今回の配布資料に記載なし。",
           "fare": "本人1回乗車につき券1枚で無料。",
           "routes": "のるmy car。",
           "apply": "本人の氏名・生年月日・住所が分かるものを持参し、市役所東別館福祉課で受取。代理も本人確認書類等を持参。バス用の紙券を希望する旨を窓口へ確認。",
@@ -621,16 +621,16 @@
               "url": "https://www.city.namerikawa.toyama.jp/soshiki/11/1/5023.html",
               "label": "滑川市・令和8年度福祉券",
               "updated": "2026-02-26",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.namerikawa.toyama.jp/material/files/group/11/R8fukushiriyoukennnituite.pdf",
               "label": "滑川市・令和8年度福祉券配布資料",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -650,22 +650,22 @@
           "url": "https://www.city.namerikawa.toyama.jp/soshiki/11/1/5023.html",
           "label": "滑川市・令和8年度福祉券",
           "updated": "2026-02-26",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.namerikawa.toyama.jp/material/files/group/11/R8fukushiriyoukennnituite.pdf",
           "label": "滑川市・令和8年度福祉券配布資料",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://police.pref.toyama.jp/6115/untenmenkyo/hennou/kj00017702.html",
-          "label": "富山県警・令和8年8月返納支援一覧",
-          "updated": "2026-08-20",
-          "checked": "2026-10-07"
+          "label": "富山県警・自治体別返納支援一覧（2026年10月14日更新）",
+          "updated": "2026-10-14",
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "返納券は市の2026年4月案内が5年間、県警8月一覧が70歳以上3年間と異なります。生活環境課へ確認してください。高齢者無料券の交付枚数は福祉課へ確認してください。"
+      "flag": "返納フリー券の期間は市の2026年4月1日案内が5年間、県警2026年10月14日更新一覧が70歳以上3年間と異なり、2026年11月3日にも両方の原文で不一致を確認したためneeds_confirmationを維持。生活環境課へ確認してください。高齢者無料券は令和8年度配布資料を同日に照合。枚数は資料に記載なし、福祉課へ確認してください。"
     },
     {
       "slug": "funahashi",

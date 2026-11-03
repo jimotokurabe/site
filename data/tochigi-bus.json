@@ -533,16 +533,17 @@
               "url": "https://www.city.tochigi.lg.jp/soshiki/20/381.html",
               "label": "運転免許証自主返納支援制度 - 栃木市ホームページ",
               "updated": "2021-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.tochigi.lg.jp/soshiki/20/325.html",
               "label": "ふれあいバス（コミュニティバス）利用のご案内【令和８年４月１日から】 - 栃木市ホームページ",
               "updated": "2026-02-20",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -550,16 +551,16 @@
           "url": "https://www.city.tochigi.lg.jp/soshiki/20/325.html",
           "label": "ふれあいバス（コミュニティバス）利用のご案内【令和８年４月１日から】 - 栃木市ホームページ",
           "updated": "2026-02-20",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.tochigi.lg.jp/soshiki/20/381.html",
           "label": "運転免許証自主返納支援制度 - 栃木市ホームページ",
           "updated": "2021-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "返納支援詳細は2021年更新、現行の申請条件と券の枚数精算は交通防犯課0282-21-2153へ確認してください。"
+      "flag": "令和8年4月からのバス案内でも返納共通券1万円分の交付を確認しました。詳細ページは2021年更新で、券枚数・不足額精算は記載なし。交通防犯課0282-21-2153へ確認してください。"
     },
     {
       "slug": "oyama",
@@ -851,7 +852,7 @@
               "url": "https://www.city.ashikaga.tochigi.jp/living/000020/000136/000976/p007008.html",
               "label": "６５歳以上の運転免許自主返納者に路線バス回数乗車券・幸楽荘利用券を交付します！ | 足利市 公式ホームページ",
               "updated": "2026-06-02",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.ashikaga.tochigi.jp/living/000020/000136/000978/p002571.html",
@@ -860,7 +861,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -874,7 +875,7 @@
           "url": "https://www.city.ashikaga.tochigi.jp/living/000020/000136/000976/p007008.html",
           "label": "６５歳以上の運転免許自主返納者に路線バス回数乗車券・幸楽荘利用券を交付します！ | 足利市 公式ホームページ",
           "updated": "2026-06-02",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.ashikaga.tochigi.jp/living/000020/000136/000978/p002571.html",
@@ -988,7 +989,7 @@
           "name": "中央部循環路線65歳以上運賃",
           "kind": "discount",
           "age_min": 65,
-          "eligibility": "65歳以上。市居住限定・年齢証明方法は料金表に記載なし。",
+          "eligibility": "65歳以上。中央部循環路線は市外の方も利用可能。年齢証明方法は料金表に記載なし。",
           "benefit": "通常100円から50円に割引。",
           "fare": "1回50円、現金のみ。",
           "routes": "中央部循環路線（城の湯～市中心部等）。",
@@ -999,10 +1000,11 @@
               "url": "https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/koutsuu-renewal.html",
               "label": "矢板市の公共交通 - 栃木県矢板市公式ウェブサイト",
               "updated": "2026-09-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "ともなりパス75",
@@ -1045,16 +1047,17 @@
               "url": "https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/koureishagaishutsushien-tomonaripass.html",
               "label": "高齢者外出支援事業［ともなりパス］の利用について - 栃木県矢板市公式ウェブサイト",
               "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/koutsuu-renewal.html",
               "label": "矢板市の公共交通 - 栃木県矢板市公式ウェブサイト",
               "updated": "2026-09-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -1062,16 +1065,16 @@
           "url": "https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/koutsuu-renewal.html",
           "label": "矢板市の公共交通 - 栃木県矢板市公式ウェブサイト",
           "updated": "2026-09-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/koureishagaishutsushien-tomonaripass.html",
           "label": "高齢者外出支援事業［ともなりパス］の利用について - 栃木県矢板市公式ウェブサイト",
           "updated": "2026-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "ともなりパスの満年齢基準や更新の細部は都市整備課0287-43-6213へ確認できます。"
+      "flag": "ともなりパス65の返納時・申請時の年齢基準日は記載なし。都市整備課0287-43-6213へ確認してください。"
     },
     {
       "slug": "sakura",
@@ -1510,10 +1513,10 @@
               "url": "https://www.town.nasu.lg.jp/0085/info-0000000031-1.html",
               "label": "町民バスの利用案内 | 那須町行政ページ",
               "updated": "2026-04-08",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "町民バス60歳以上定期",
@@ -1530,10 +1533,10 @@
               "url": "https://www.town.nasu.lg.jp/0085/info-0000000031-1.html",
               "label": "町民バスの利用案内 | 那須町行政ページ",
               "updated": "2026-04-08",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "町民バス60歳以上1日乗車券",
@@ -1550,10 +1553,10 @@
               "url": "https://www.town.nasu.lg.jp/0085/info-0000000031-1.html",
               "label": "町民バスの利用案内 | 那須町行政ページ",
               "updated": "2026-04-08",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "高齢者自主返納町民バス回数券",
@@ -1570,16 +1573,16 @@
               "url": "https://www.town.nasu.lg.jp/0033/info-0000003263-1.html",
               "label": "【高齢者向け】運転免許の自主返納支援事業のお知らせ | 那須町行政ページ",
               "updated": "2023-08-31",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.town.nasu.lg.jp/0085/info-0000000031-1.html",
               "label": "町民バスの利用案内 | 那須町行政ページ",
               "updated": "2026-04-08",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1587,16 +1590,16 @@
           "url": "https://www.town.nasu.lg.jp/0085/info-0000000031-1.html",
           "label": "町民バスの利用案内 | 那須町行政ページ",
           "updated": "2026-04-08",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.town.nasu.lg.jp/0033/info-0000003263-1.html",
           "label": "【高齢者向け】運転免許の自主返納支援事業のお知らせ | 那須町行政ページ",
           "updated": "2023-08-31",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "返納案内は2023年。返納時年齢基準、支援券の利用期限/枚数精算は総務課0287-72-6901へ、通常運賃は公共交通係0287-72-6955へ確認できます。"
+      "flag": "2026年11月3日に町民バス利用案内と返納支援の現掲載本文を確認しました。年齢確認方法は公共交通係（0287-72-6955）、返納時の年齢基準日・支援券期限や不足精算は総務課（0287-72-6901）へ確認してください。"
     }
   ],
   "common": {
