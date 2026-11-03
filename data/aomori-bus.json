@@ -1090,16 +1090,19 @@
           "fare": "購入時に5,000円割引。超過分は本人負担。",
           "routes": "下北交通、JRバス東北青森支店大湊営業所、脇野沢交通、むつ車体工業。",
           "apply": "自主返納後、運転経歴証明書または申請による運転免許の取消通知書のコピーを持参しむつ市交通政策課（0175-22-1111 内線2351～2352）に申請（申請書は窓口）。むつ市民以外もむつ市交通政策課で申請可。資格者証をバス会社で購入時に提出。むつ市以外の窓口では交付に数日。",
-          "notes": [],
+          "notes": [
+            "市の現行本文は毎年度5月頃の総会で予算成立後に事業開始としています。令和8年度の受付・残予算は交通政策課へ確認してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.mutsu.lg.jp/kurashi/koutsu/koutsu_sisaku/menkyo_hennou.html",
               "label": "むつ市・下北地域高齢者等運転免許証自主返納支援事業",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -1107,7 +1110,7 @@
           "url": "https://www.city.mutsu.lg.jp/kurashi/koutsu/koutsu_sisaku/menkyo_hennou.html",
           "label": "むつ市・下北地域高齢者等運転免許証自主返納支援事業",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.mutsu.lg.jp/kurashi/koutsu/koutsu_sisaku/ageha.html",

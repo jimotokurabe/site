@@ -393,16 +393,16 @@
           "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kotsuanzen/rulemanner/jishuhennou.html",
           "label": "交通・高齢者支援案内",
           "updated": "2021-01-21",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.ota.tokyo.jp/seikatsu/fukushi/kourei/shakaisanka/sirubarpasu.html",
           "label": "交通・高齢者支援案内",
-          "updated": "2026-06-17",
-          "checked": "2026-10-06"
+          "updated": "2026-10-06",
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "日付なし又は1年以上前の案内を含みます。区独自の高齢者バス助成・上乗せは都市基盤管理課（03-5744-1315）へ確認してください。"
+      "flag": "区の2026年10月更新のパス案内は東京都共通制度です。区独自バス助成・上乗せは今回ページで確認できないため都市基盤管理課03-5744-1315へ確認してください。"
     },
     {
       "slug": "setagaya",
@@ -440,10 +440,10 @@
               "url": "https://www.city.shibuya.tokyo.jp/kurashi/kotsu/jidosha/menkyo_hennou.html",
               "label": "運転免許自主返納支援",
               "updated": "2023-03-17",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],
@@ -452,10 +452,10 @@
           "url": "https://www.city.shibuya.tokyo.jp/kurashi/kotsu/jidosha/menkyo_hennou.html",
           "label": "運転免許自主返納支援",
           "updated": "2023-03-17",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "区本文は2023年3月で1年以上前です。現行の券内容・期限は交通政策係03-3463-1854へ確認してください。"
+      "flag": "2026年11月3日に現掲載の返納支援本文を確認しました。券1冊の交付、本人申請・返納6か月以内です。専用券の詳細は交通政策係（03-3463-1854）へ確認してください。"
     },
     {
       "slug": "nakano",
@@ -647,42 +647,42 @@
           "apply": "事前の交付申請の記載なし。乗車時に年齢が分かるもの（区は運転免許証、健康保険証、パスポート等を例示）を提示。現在有効な確認書類は区へ確認。",
           "notes": [
             "東京都共通シルバーパスとは別の、区みどりバスの65歳以上運賃割引。",
-            "4路線の案内は1年以上前のため現行運行・適用を運行者へ確認してください。"
+            "5ルートの現行掲載本文を確認しました。各便の運休・変更等は運行者の最新情報をご確認ください。"
           ],
           "sources": [
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/seki_minami-route.html",
               "label": "練馬区・みどりバス 関町・南大泉ルート",
               "updated": "2026-04-01",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hikawadai-route.html",
               "label": "練馬区・みどりバス 氷川台ルート",
               "updated": "2025-06-04",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hoya-route.html",
               "label": "練馬区・みどりバス 保谷ルート",
               "updated": "2025-06-04",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/kitamachi-route.html",
               "label": "練馬区・みどりバス 北町ルート",
               "updated": "2025-06-06",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/oizumi-route.html",
               "label": "練馬区・みどりバス 大泉ルート",
               "updated": "2025-06-04",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "checked": "2026-10-31"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -690,46 +690,46 @@
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/unchin_20250601.html",
           "label": "高齢者・交通案内",
           "updated": "2025-05-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/index/beterandriver.html",
           "label": "運転免許自主返納案内",
           "updated": "2023-02-22",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/seki_minami-route.html",
           "label": "練馬区・みどりバス 関町・南大泉ルート",
           "updated": "2026-04-01",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hikawadai-route.html",
           "label": "練馬区・みどりバス 氷川台ルート",
           "updated": "2025-06-04",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/hoya-route.html",
           "label": "練馬区・みどりバス 保谷ルート",
           "updated": "2025-06-04",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/kitamachi-route.html",
           "label": "練馬区・みどりバス 北町ルート",
           "updated": "2025-06-06",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/bus/kakuruto/oizumi-route.html",
           "label": "練馬区・みどりバス 大泉ルート",
           "updated": "2025-06-04",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "65歳以上割引を区公式の5ルート運賃本文で確認し、従来の未発見表示を改めました。関町・南大泉は2026年4月1日更新、他4路線は2025年6月更新で1年以上前です。居住要件・現在の年齢確認書類・各路線の適用は交通企画課03-5984-1274、又は西武バス03-3867-2525・国際興業03-3934-1123へ確認してください。"
+      "flag": "みどりバス5ルートの現行掲載本文で65歳以上の現金120円・IC115円と年齢証明提示を照合しました。居住要件の明記はありません。利用時の確認書類や運行状況は交通企画課03-5984-1274又は運行事業者へ確認してください。"
     },
     {
       "slug": "adachi",

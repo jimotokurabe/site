@@ -329,17 +329,18 @@
           "benefit": "中和倉コースを半額利用。有効期限・更新なし。",
           "fare": "通常運賃の半額。具体的な運賃額は割引証案内に記載なし。",
           "routes": "ゆめいろバス中和倉コースのみ。高塚新田コース・他の路線は対象外。",
-          "apply": "交通政策課（竹ヶ花別館）で本人確認書類提示。支所または郵送は申請書・確認書類写し・返信切手を提出。代理は代理人確認書類も必要。",
+          "apply": "交通政策課（竹ヶ花別館）で本人確認書類提示。支所または郵送は申請書・確認書類写し・返信切手を提出。代理は代理人確認書類も必要。 オンライン申請も可能（24時間、割引証は後日着払い郵送）。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/bus_noriba-jikoku/yumeiro_bus/silver.html",
               "label": "松戸市コミュニティバス（中和倉コース）　シルバー割引証について｜松戸市",
               "updated": "2026-07-30",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -347,16 +348,16 @@
           "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/bus_noriba-jikoku/yumeiro_bus/silver.html",
           "label": "松戸市コミュニティバス（中和倉コース）　シルバー割引証について｜松戸市",
           "updated": "2026-07-30",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/anzenjyouhou/koureisya.html",
           "label": "高齢運転者による交通事故防止のための各種情報をお知らせします｜松戸市",
           "updated": "2023-08-10",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "高塚新田コースは対象外です。資料の現行性・通常運賃は交通政策課047-704-3996へ確認してください。"
+      "flag": "シルバー割引証は中和倉コースのみで高塚新田コース等は対象外。具体的な通常運賃は割引証ページに記載がないため交通政策課047-704-3996へ確認してください。"
     },
     {
       "slug": "noda",
@@ -587,17 +588,17 @@
           "benefit": "割引証交付後5年間半額。更新可。",
           "fare": "50円（通常100円）。現金のみ、ICカード・他割引併用不可。",
           "routes": "鎌ケ谷市コミュニティバスききょう号のみ。",
-          "apply": "都市計画課都市政策室（本庁4階）で申請書・経歴証明書等・写真を提出。代理可、追加書類あり。",
+          "apply": "都市計画課都市政策室（本庁4階）で即日交付。申請書・経歴証明書等の写し・写真3.0×2.4cmを提出。経歴証の代わりに取消通知書、自主返納の旨が記載された返却免許証又は経歴証明書交付済シール付きマイナンバーカードの写しも可。代理は委任状。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.kamagaya.chiba.jp/kurashi-tetsuzuki/koutsukikan/communitybus/menkyohennou.html",
               "label": "運転免許自主返納者への割引制度について｜鎌ケ谷市ホームページ",
               "updated": "2026-03-31",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -605,10 +606,10 @@
           "url": "https://www.city.kamagaya.chiba.jp/kurashi-tetsuzuki/koutsukikan/communitybus/menkyohennou.html",
           "label": "運転免許自主返納者への割引制度について｜鎌ケ谷市ホームページ",
           "updated": "2026-03-31",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "案内は返納支援ですが、経歴証明書の取得理由による資格・資料現行性は都市計画課都市政策室047-445-1422へ確認してください。"
+      "flag": "2026年11月3日に現掲載本文を確認しました。経歴証明書の取得理由による資格の範囲は都市計画課都市政策室（047-445-1422）へ確認してください。"
     },
     {
       "slug": "narita",
@@ -631,7 +632,7 @@
               "url": "https://www.city.narita.chiba.jp/anshin/page0123.html",
               "label": "運転免許証の自主返納について｜成田市公式ホームページ",
               "updated": "2026-07-01",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.pref.chiba.lg.jp/koufuku/seikatusienn/documents/202506bus.pdf",
@@ -640,7 +641,7 @@
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -648,13 +649,13 @@
           "url": "https://www.city.narita.chiba.jp/anshin/page0123.html",
           "label": "運転免許証の自主返納について｜成田市公式ホームページ",
           "updated": "2026-07-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.narita.chiba.jp/content/000223395.pdf",
           "label": "                   高齢者運転免許証",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.narita.chiba.jp/kenko_fukushi/page127700.html",
@@ -669,7 +670,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "バス用途は県令和7年度一覧で確認。現行の対象事業者・IC利用可能区間は交通防犯課0476-20-1527へ確認してください。日付なし県資料の現行性も要確認。"
+      "flag": "2026年11月3日に現在の市本文と添付案内を確認しました。具体的な対象事業者・IC利用可能区間、券の残高を超える際の支払いは交通防犯課（0476-20-1527）へ確認してください。"
     },
     {
       "slug": "sakura",
@@ -777,16 +778,16 @@
           "url": "https://www.city.yotsukaido.chiba.jp/smph/kurashi/kotsu/koukyokotsu/information/jisyuhennnou.html",
           "label": "四街道市内での交通に関する割引等特典　四街道市",
           "updated": "2026-04-07",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.yotsukaido.chiba.jp/smph/kenkofukushi/koreifukushi/shien/taxi.html",
           "label": "福祉タクシー利用助成　四街道市",
           "updated": "2026-05-11",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "市独自バス支援の有無はくらし安全交通課交通政策係043-421-6104へ確認してください。"
+      "flag": "2026年11月3日に市の割引案内を確認しました。掲載されているバス割引は事業者の制度です。市独自のバス支援の有無はくらし安全交通課交通政策係（043-421-6104）へ確認してください。"
     },
     {
       "slug": "yachimata",
@@ -809,16 +810,16 @@
               "url": "https://www.city.yachimata.lg.jp/soshiki/3/1489.html",
               "label": "高齢者運転免許証自主返納支援事業 - 千葉県八街市ホームページ",
               "updated": "2024-07-09",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.yachimata.lg.jp/soshiki/13/56059.html",
               "label": "高齢者福祉サービスのご案内 - 千葉県八街市ホームページ",
               "updated": "2026-04-01",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -826,16 +827,16 @@
           "url": "https://www.city.yachimata.lg.jp/soshiki/3/1489.html",
           "label": "高齢者運転免許証自主返納支援事業 - 千葉県八街市ホームページ",
           "updated": "2024-07-09",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.yachimata.lg.jp/soshiki/13/56059.html",
           "label": "高齢者福祉サービスのご案内 - 千葉県八街市ホームページ",
           "updated": "2026-04-01",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "詳細案内は2024年7月の更新のため、券の現行条件は企画政策課043-443-1114へ確認してください。"
+      "flag": "2026年11月3日に詳細案内と令和8年度高齢者サービス本文を照合。利用時の期限等は企画政策課043-443-1114へ確認してください。"
     },
     {
       "slug": "inzai",
@@ -934,7 +935,7 @@
           "url": "https://www.city.tomisato.lg.jp/0000013365.html",
           "label": "富里市デマンド交通【キャロリン号】 | 富里市",
           "updated": "2026-09-15",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
       "flag": "市独自の高齢者バス料金支援の有無は経営戦略課公共交通推進班0476-93-1118へ確認してください。デマンド交通の割引は別の移動支援です。"

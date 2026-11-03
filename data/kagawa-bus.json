@@ -522,16 +522,17 @@
               "url": "https://www.city.marugame.lg.jp/page/2468.html",
               "label": "市・返納支援",
               "updated": "2026-03-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.marugame.lg.jp/page/3224.html",
               "label": "市・自主返納者運賃割引",
               "updated": "2022-12-22",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "自主返納者のフリーIruCa交付",
@@ -548,22 +549,23 @@
               "url": "https://www.city.marugame.lg.jp/page/2468.html",
               "label": "市・返納支援",
               "updated": "2026-03-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.kotoden.co.jp/publichtm/iruca/buy/index.html",
               "label": "ことでん・フリーIruCa購入とバス車内取扱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.kotoden.co.jp/publichtm/kotoden/new/2025/2026_IruCa_discount_abolished/index.html",
               "label": "ことでん・2026年2月のIruCaサービス見直し",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -571,34 +573,34 @@
           "url": "https://www.city.marugame.lg.jp/page/2468.html",
           "label": "市・返納支援",
           "updated": "2026-03-25",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.marugame.lg.jp/page/14711.html",
           "label": "市・コミュニティバス無料キャンペーン",
           "updated": "2026-08-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.marugame.lg.jp/page/3224.html",
           "label": "市・自主返納者運賃割引",
           "updated": "2022-12-22",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.kotoden.co.jp/publichtm/iruca/buy/index.html",
           "label": "ことでん・フリーIruCa購入とバス車内取扱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.kotoden.co.jp/publichtm/kotoden/new/2025/2026_IruCa_discount_abolished/index.html",
           "label": "ことでん・2026年2月のIruCaサービス見直し",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "半額の市案内は2022年更新表示ですが、2026年返納案内から案内があります。現在の対象便と必要書類を都市計画課（0877-24-8812）へ確認してください。フリーIruCaは事業者のバス車内販売・現行案内でバス利用を確認しましたが、支給カードのチャージ額と対象便は生活環境課（0877-35-8891）へ確認してください。事業者案内は更新日記載なしです。ICOCAのバス用途は確認できていません。"
+      "flag": "65歳以上返納者の半額は市の現行本文と2026年返納案内で照合しました。フリーIruCaの支給は継続掲載されていますが、預り金を除くチャージ額・対象便・不足額払いは生活環境課0877-35-8891と事業者へ確認してください。ICOCAのバス用途は今回未照合です。"
     },
     {
       "slug": "sakaide",

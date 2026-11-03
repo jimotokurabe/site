@@ -437,10 +437,10 @@
               "url": "https://www.city-matsuura.jp/top/purpose/kaigo/3532.html",
               "label": "外出支援券の交付が始まります",
               "updated": "2026-04-30",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "外出支援券（要介護・要支援等）",
@@ -457,10 +457,10 @@
               "url": "https://www.city-matsuura.jp/top/purpose/kaigo/3532.html",
               "label": "外出支援券の交付が始まります",
               "updated": "2026-04-30",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "運転免許証自主返納支援事業",
@@ -477,7 +477,7 @@
               "url": "https://www.city-matsuura.jp/top/soshikikarasagasu/bosaika/3921.html",
               "label": "松浦市運転免許証自主返納支援事業",
               "updated": "2026-05-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -486,7 +486,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -494,13 +494,13 @@
           "url": "https://www.city-matsuura.jp/top/purpose/kaigo/3532.html",
           "label": "外出支援券の交付が始まります",
           "updated": "2026-04-30",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city-matsuura.jp/top/soshikikarasagasu/bosaika/3921.html",
           "label": "松浦市運転免許証自主返納支援事業",
           "updated": "2026-05-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -509,7 +509,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "利用券の乗車時の枚数・不足額・有効期限、返納者向け券の詳細は長寿介護課・防災課（0956-72-1111）へ確認してください。県警資料は更新日記載なし。"
+      "flag": "2026年11月3日に市の令和8年度本文を照合。利用券の乗車時枚数・不足額・有効期限、返納券の詳細は長寿介護課・防災課0956-72-1111へ確認してください。未読の県警資料のcheckedは更新していません。"
     },
     {
       "slug": "saza",
@@ -1385,13 +1385,13 @@
               "url": "https://www.city.tsushima.nagasaki.jp/gyousei/soshiki/hoken/tyozyu/koureisyahukushi/866.html",
               "label": "高齢者移動費助成事業",
               "updated": "2023-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.tsushima.nagasaki.jp/section/reiki_int/reiki_honbun/r013RG00001134.html",
               "label": "対馬市高齢者移動費助成事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.tsushima.nagasaki.jp/material/files/group/16/siteijigyousyo.pdf",
@@ -1400,7 +1400,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納支援利用券（年度4月1日75歳未満）",
@@ -1419,7 +1419,7 @@
               "url": "https://www.city.tsushima.nagasaki.jp/section/reiki_int/reiki_honbun/r013RG00001206.html",
               "label": "対馬市運転免許証自主返納支援事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -1428,7 +1428,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納支援利用券（年度4月1日75歳以上）",
@@ -1445,7 +1445,7 @@
               "url": "https://www.city.tsushima.nagasaki.jp/section/reiki_int/reiki_honbun/r013RG00001206.html",
               "label": "対馬市運転免許証自主返納支援事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -1454,7 +1454,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納者フリーパスポート購入助成",
@@ -1473,7 +1473,7 @@
               "url": "https://www.city.tsushima.nagasaki.jp/section/reiki_int/reiki_honbun/r013RG00001206.html",
               "label": "対馬市運転免許証自主返納支援事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -1482,7 +1482,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1490,13 +1490,13 @@
           "url": "https://www.city.tsushima.nagasaki.jp/gyousei/soshiki/hoken/tyozyu/koureisyahukushi/866.html",
           "label": "高齢者移動費助成事業",
           "updated": "2023-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.tsushima.nagasaki.jp/section/reiki_int/reiki_honbun/r013RG00001134.html",
           "label": "対馬市高齢者移動費助成事業実施要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.tsushima.nagasaki.jp/material/files/group/16/siteijigyousyo.pdf",
@@ -1508,7 +1508,7 @@
           "url": "https://www.city.tsushima.nagasaki.jp/section/reiki_int/reiki_honbun/r013RG00001206.html",
           "label": "対馬市運転免許証自主返納支援事業実施要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -1517,7 +1517,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "高齢者案内は2023年4月更新、要綱・事業者一覧・県警資料は更新日記載なし。返納者向けの現在の申請書類・不足額支払いは総務課地域安全防災室（0920-53-6111）、通常利用券は長寿介護課（0920-58-1118）へ確認してください。"
+      "flag": "2026年11月3日に市の現掲載要綱と高齢者案内を照合。高齢者案内は2023年更新、要綱のページ更新日は記載なし。返納者向け申請書類・不足額支払いは総務課地域安全防災室0920-53-6111、通常券は長寿介護課0920-58-1118へ確認してください。"
     }
   ],
   "common": {

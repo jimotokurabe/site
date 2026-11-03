@@ -13,16 +13,16 @@
           "url": "https://www.city.saitama.lg.jp/001/010/018/006/p124315.html",
           "label": "高齢者の運転免許返納制度等に関する支援",
           "updated": "2026-07-30",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.saitama.lg.jp/faq/001/002/003/p111721.html",
           "label": "シルバーカードのバス利用FAQ",
           "updated": "2022-01-24",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "FAQが2022年のため、現在の独自助成の有無は高齢福祉課 048-829-1259へ確認してください。"
+      "flag": "市の現行返納案内とシルバーカードFAQを再確認。シルバーカードでは交通機関を無料利用できません。別の高齢者バス助成の有無は高齢福祉課048-829-1259へ確認してください。"
     },
     {
       "slug": "kawaguchi",
@@ -80,11 +80,12 @@
               "url": "https://www.city.warabi.saitama.jp/anzen/koutsu/1011079/1005574.html",
               "label": "自主返納者助成",
               "updated": "2026-10-05",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -92,13 +93,13 @@
           "url": "https://www.city.warabi.saitama.jp/anzen/koutsu/1011079/1005574.html",
           "label": "自主返納者助成",
           "updated": "2026-10-05",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.warabi.saitama.jp/kurashi/kotsu/bus/1001542.html",
           "label": "ぷらっとわらび75歳以上無料化",
           "updated": "2026-09-17",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
       "flag": "返納バス券の利用事業者・路線詳細は安全安心課自治安全係 048-430-7834へ確認してください。"
@@ -1388,10 +1389,10 @@
               "url": "https://www.town.ogose.saitama.jp/kamei/kizai/kikaku/gyomuannai/keikakuseido/koutsu/1520470698573.html",
               "label": "地域交通タクシー・バス利用券",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         },
         {
@@ -1408,10 +1409,10 @@
               "url": "https://www.town.ogose.saitama.jp/kamei/kizai/kikaku/gyomuannai/keikakuseido/koutsu/1520470698573.html",
               "label": "地域交通タクシー・バス利用券",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],
@@ -1420,10 +1421,10 @@
           "url": "https://www.town.ogose.saitama.jp/kamei/kizai/kikaku/gyomuannai/keikakuseido/koutsu/1520470698573.html",
           "label": "地域交通タクシー・バス利用券",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "資料の日付が未記載または1年以上前のため現行条件は要確認。住民条件・有効期限の詳細は案内に記載なし、窓口へ確認。企画財政課 049-292-3121。"
+      "flag": "2026年11月3日に本文を照合。住民条件・有効期限の詳細とページ更新日は記載なし。企画財政課049-292-3121へ確認してください。"
     },
     {
       "slug": "higashimatsuyama",
@@ -1678,11 +1679,12 @@
               "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/waribiki_tokubetsu.html",
               "label": "ところバス・ワゴン運賃割引",
               "updated": "2025-06-05",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-11-03"
         },
         {
           "name": "ところバス特別乗車証（40～64歳介護認定）",
@@ -1698,11 +1700,12 @@
               "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/waribiki_tokubetsu.html",
               "label": "ところバス・ワゴン運賃割引",
               "updated": "2025-06-05",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-11-03"
         },
         {
           "name": "自主返納無料乗車定期券・回数券",
@@ -1718,11 +1721,12 @@
               "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/menkyo_hennou.html",
               "label": "自主返納無料乗車券",
               "updated": "2022-04-06",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "notes": []
+          "current": "document_checked",
+          "notes": [],
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -1730,16 +1734,16 @@
           "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/menkyo_hennou.html",
           "label": "自主返納無料乗車券",
           "updated": "2022-04-06",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.tokorozawa.saitama.jp/kurashi/dourokoutsuu/tokorobus/waribiki_tokubetsu.html",
           "label": "ところバス・ワゴン運賃割引",
           "updated": "2025-06-05",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "資料の日付が未記載または1年以上前のため現行条件は要確認。都市計画課 04-2998-9192。"
+      "flag": "市の現行割引一覧と返納無料券の本文で条件を照合しました。更新表示は2025年/2022年のため、来訪前の窓口運用等は都市計画課04-2998-9192へ確認できます。"
     },
     {
       "slug": "hanno",
@@ -1760,8 +1764,8 @@
     {
       "slug": "sayama",
       "name": "狭山市",
-      "status": "henno",
-      "summary": "70歳以上の正式返納者に交通系IC購入・入金費最大1万円。",
+      "status": "active",
+      "summary": "70歳以上返納者へ交通系IC費最大1万円。別に、70歳以上で単独乗降できる市民は病院送迎バスの空席を無料利用できます。",
       "programs": [
         {
           "name": "高齢者自主返納交通系IC費助成",
@@ -1777,17 +1781,37 @@
               "url": "https://www.city.sayama.saitama.jp/kurashi/anshin/kotsuanzen/koureishajikobousi/menkiyo-henno.html",
               "label": "高齢者自主返納交通系IC支援",
               "updated": "2025-04-03",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.sayama.saitama.jp/kurashi/anshin/kotsuanzen/koureishajikobousi/menkiyo-henno.files/R7-3.pdf",
               "label": "ICチャージ方法（路線・市内循環バス記載）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
+        },
+        {
+          "name": "病院送迎バスの空席利用（高齢者外出支援事業）",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "狭山市内在住で満70歳以上。送迎バスに1人で乗降でき、利用申請書兼同意書の同意事項に同意し、利用パスカードの交付を受けた人。",
+          "benefit": "協力病院の送迎バスの空席を無料利用。",
+          "fare": "無料。",
+          "routes": "狭山尚寿会病院の送迎バス。運行ルート・時刻は病院の案内を確認。",
+          "apply": "交通防犯課に事前申請。本人確認書類と緊急連絡先の氏名・続柄・住所・電話番号が必要。月～金9時～16時30分受付。",
+          "notes": [],
+          "sources": [
+            {
+              "url": "https://www.city.sayama.saitama.jp/kurashi/dourokotsuu/kotsu/sougeibus.html",
+              "label": "病院送迎バスの空席利用",
+              "updated": "2026-02-27",
+              "checked": "2026-11-03"
+            }
+          ],
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1795,16 +1819,22 @@
           "url": "https://www.city.sayama.saitama.jp/kurashi/anshin/kotsuanzen/koureishajikobousi/menkiyo-henno.html",
           "label": "高齢者自主返納交通系IC支援",
           "updated": "2025-04-03",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.sayama.saitama.jp/kurashi/anshin/kotsuanzen/koureishajikobousi/menkiyo-henno.files/R7-3.pdf",
           "label": "ICチャージ方法（路線・市内循環バス記載）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
+        },
+        {
+          "url": "https://www.city.sayama.saitama.jp/kurashi/dourokotsuu/kotsu/sougeibus.html",
+          "label": "病院送迎バスの空席利用",
+          "updated": "2026-02-27",
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "資料の日付が未記載または1年以上前のため現行条件は要確認。交通防犯課 04-2937-6641。"
+      "flag": "返納IC助成の申請から交付決定まで1～2か月程度。無料の病院送迎バスは通常の路線バスと異なり空席を活用する事業です。対象ルート・時刻は交通防犯課（04-2937-6641）へ確認してください。"
     },
     {
       "slug": "iruma",

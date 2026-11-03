@@ -58,7 +58,7 @@
               "url": "https://www.city.saku.nagano.jp/kurashi/kokyokotsu/henno.html",
               "label": "運転卒業サポート事業",
               "updated": "2023-01-04",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8jisyuhennousien2.pdf",
@@ -67,7 +67,7 @@
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "運転卒業サポート（失効後5年以内）",
@@ -84,7 +84,7 @@
               "url": "https://www.city.saku.nagano.jp/kurashi/kokyokotsu/henno.html",
               "label": "運転卒業サポート事業",
               "updated": "2023-01-04",
-              "checked": "2026-10-06"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8jisyuhennousien2.pdf",
@@ -93,7 +93,7 @@
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -101,7 +101,7 @@
           "url": "https://www.city.saku.nagano.jp/kurashi/kokyokotsu/henno.html",
           "label": "運転卒業サポート事業",
           "updated": "2023-01-04",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8jisyuhennousien2.pdf",
@@ -110,7 +110,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "令和8年度県一覧でバス使用・失効者の対象を確認しましたが、市の10,000円額や5年条件の案内は2023年です。生活環境課（0267-62-3094）へ現行額・対象路線を確認してください。"
+      "flag": "市の現掲載本文の1万円・失効後5年以内条件を2026年11月3日に照合。市本文は2023年1月4日更新。対象路線や利用前の確認は生活環境課0267-62-3094へ。"
     },
     {
       "slug": "komi",
@@ -610,13 +610,13 @@
           "url": "https://www.city.ueda.nagano.jp/soshiki/kotu/2174.html",
           "label": "上田市・返納支援券の申請と令和8年度終了予定",
           "updated": "2026-05-15",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.ueda.nagano.jp/soshiki/tkensetu/122909.html",
           "label": "上田市・武石スマイル号",
           "updated": "2025-12-11",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.ueda.nagano.jp/uploaded/attachment/8816.pdf",
@@ -3620,9 +3620,9 @@
           "name": "のるーと塩尻シニア割引",
           "kind": "discount",
           "age_min": 75,
-          "eligibility": "75歳以上。事前の利用者登録・予約が必要。居住条件は案内に記載なし。",
+          "eligibility": "75歳以上。事前の利用者登録・予約が必要。居住条件は案内に記載なし。シニアパス、後期高齢者医療資格確認書（2026年7月31日有効期限の旧証も可）又は資格情報のお知らせを提示。",
           "benefit": "大人運賃の半額。",
-          "fare": "7km以下100円、7km超200円（大人200/400円）。現金・回数券・アプリ登録クレジット・交通系IC・返納共通券で支払い可。",
+          "fare": "7km以下100円、7km超200円。シニア区分の証明書提示が必要。",
           "routes": "AIオンデマンドバスのるーと塩尻の運行範囲。",
           "apply": "予約時シニア区分を指定し、乗車時シニアパスまたは後期高齢者医療資格確認書・資格情報のお知らせを提示。提示なしは大人料金。",
           "notes": [],
@@ -3630,11 +3630,11 @@
             {
               "url": "https://www.city.shiojiri.lg.jp/soshiki/33/11587.html",
               "label": "塩尻市・AIオンデマンドバスのるーと",
-              "updated": "2026-10-02",
-              "checked": "2026-10-06"
+              "updated": "2026-10-26",
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -3648,10 +3648,10 @@
           "url": "https://www.city.shiojiri.lg.jp/soshiki/33/11587.html",
           "label": "塩尻市・AIオンデマンドバスのるーと",
           "updated": "2026-10-02",
-          "checked": "2026-10-06"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "のるーと塩尻の割引証明は2026年8月から更新済み。居住条件や返納共通券の差額払いの扱いは都市計画課0263-52-0689へ確認。"
+      "flag": "のるーとの75歳以上シニア割引と証明書を2026年11月3日に照合。居住条件や返納共通券の差額払いの扱いは都市計画課0263-52-0689へ確認してください。"
     },
     {
       "slug": "azumino",

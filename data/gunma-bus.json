@@ -17,16 +17,19 @@
           "fare": "登録ICで精算。関越交通・群馬中央バスは10円単位切上げで割引率10%未満の場合あり（180円→170円）。",
           "routes": "前橋市内の対象路線バス。ふるさと・るんるん・城南あおぞらのデマンドバス対象外。前橋玉村線の玉村町役場～新町駅間は通常料金。",
           "apply": "利用前日までにGunMaaSで会員・IC・マイナンバーカード登録し電子券使用開始。スマホなしは市交通政策課へ。市役所1階平日9～17時登録相談。",
-          "notes": [],
+          "notes": [
+            "ポータルの現行掲載を再確認。2024年5月31日記事で、使用開始手順に若者割引パスの記載が混在するため、年度の受付と正しい敬老パス手順を交通政策課027-898-6263へ確認してください。"
+          ],
           "sources": [
             {
               "url": "https://maebashimobility.jp/2995",
               "label": "敬老割引でおトクにバスに乗ろう!! | 前橋交通ポータル",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "needs_confirmation",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -34,7 +37,7 @@
           "url": "https://maebashimobility.jp/2995",
           "label": "敬老割引でおトクにバスに乗ろう!! | 前橋交通ポータル",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.maebashi.gunma.jp/soshiki/shimin/kyouseishakaisuishinka/gyomu/7/27654.html",
@@ -306,17 +309,17 @@
               "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
               "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
               "updated": "2026-02-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.takasaki.gunma.jp/page/3982.html",
               "label": "市内循環バス「ぐるりん」運賃・乗り継ぎ割引・回数券・定期券等の案内 - 高崎市公式ホームページ（地域交通課）",
               "updated": "2026-09-14",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "checked": "2026-10-31"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "自主返納よしいバス回数券交付",
@@ -333,17 +336,17 @@
               "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
               "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
               "updated": "2026-02-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.takasaki.gunma.jp/page/1955.html",
               "label": "よしいバス（自家用有償バス） - 高崎市公式ホームページ（吉井支所）",
               "updated": "2026-10-26",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "checked": "2026-10-31"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "自主返納GunMaaSポイント",
@@ -360,17 +363,17 @@
               "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
               "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
               "updated": "2026-02-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/41589.pdf",
               "label": "高崎市運転免許証自主返納奨励品 GunMaaSポイントのご案内（令和8年4月現在）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "checked": "2026-10-31"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "自主返納者等専用ぐるりん回数券購入",
@@ -387,11 +390,11 @@
               "url": "https://www.city.takasaki.gunma.jp/page/3982.html",
               "label": "市内循環バス「ぐるりん」運賃・乗り継ぎ割引・回数券・定期券等の案内 - 高崎市公式ホームページ（地域交通課）",
               "updated": "2026-09-14",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "checked": "2026-10-31"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "よしいバス自主返納者半額",
@@ -420,37 +423,37 @@
           "url": "https://www.city.takasaki.gunma.jp/page/78846.html",
           "label": "路線バス運賃の敬老割引について（GunMaaS） - 高崎市公式ホームページ（地域交通課）",
           "updated": "2026-09-14",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.takasaki.gunma.jp/page/79048.html",
           "label": "敬老割引対象路線バス一覧 - 高崎市公式ホームページ（地域交通課）",
           "updated": "2026-02-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.takasaki.gunma.jp/page/2091.html",
           "label": "運転免許証自主返納奨励事業について - 高崎市公式ホームページ（地域交通課）",
           "updated": "2026-02-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.takasaki.gunma.jp/page/3982.html",
           "label": "市内循環バス「ぐるりん」運賃・乗り継ぎ割引・回数券・定期券等の案内 - 高崎市公式ホームページ（地域交通課）",
           "updated": "2026-09-14",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.takasaki.gunma.jp/page/1955.html",
           "label": "よしいバス（自家用有償バス） - 高崎市公式ホームページ（吉井支所）",
           "updated": "2026-10-26",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.takasaki.gunma.jp/uploaded/attachment/41589.pdf",
           "label": "高崎市運転免許証自主返納奨励品 GunMaaSポイントのご案内（令和8年4月現在）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
       "flag": "返納交付回数券の有効期限、専用回数券の失効者利用、GunMaaSポイントと敬老割引の同時適用は地域交通課027-321-1231へ確認してください。ポイント資料は更新日なし。旧敬老回数券の新規販売は終了（既存券利用可）。"
@@ -2117,10 +2120,10 @@
               "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
               "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
               "updated": "2025-01-20",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "65～69歳定期券",
@@ -2137,10 +2140,10 @@
               "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
               "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
               "updated": "2025-01-20",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "70歳以上シニア定期券",
@@ -2157,10 +2160,10 @@
               "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
               "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
               "updated": "2025-01-20",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -2168,7 +2171,7 @@
           "url": "https://www.town.ora.gunma.jp/s008/050/040/050/timetable.html",
           "label": "公共路線バス「邑楽町内循環線」｜群馬県邑楽町",
           "updated": "2025-01-20",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.town.ora.gunma.jp/s022/030/010/hukushitakusi-ken.html",
@@ -2177,7 +2180,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "循環線案内2025/1/20。現行運賃・年齢確認方法は企画課0276-47-5009又は矢島タクシー0276-60-1212へ確認してください。"
+      "flag": "運賃表を2026年11月3日に照合。年齢確認書類・提示方法は本文に明記なし。企画課0276-47-5009又は矢島タクシー0276-60-1212へ確認してください。"
     }
   ],
   "common": {

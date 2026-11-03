@@ -46,11 +46,11 @@
               "url": "https://www.city.fukuoka.lg.jp/fukushi/oldage-welfare/health/00/01/1-010207_5_3_2_2-2-3.html",
               "label": "福岡市・令和8年度高齢者乗車券",
               "updated": "2026-07-13",
-              "checked": "2026-10-31"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation",
-          "checked": "2026-10-31"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -58,7 +58,7 @@
           "url": "https://www.city.fukuoka.lg.jp/fukushi/oldage-welfare/health/00/01/1-010207_5_3_2_2-2-3.html",
           "label": "福岡市・令和8年度高齢者乗車券",
           "updated": "2026-07-13",
-          "checked": "2026-10-31"
+          "checked": "2026-11-03"
         }
       ],
       "flag": "その他共通利用券の交付額と対象条件は令和8年度の公式案内で再確認しました。券額を超える運賃の支払方法は市本文・年度案内でも確認できないため、高齢者乗車券郵送受付センター0120-502-633へ確認してください。"
@@ -355,8 +355,8 @@
     {
       "slug": "munakata",
       "name": "宗像市",
-      "status": "henno",
-      "summary": "70歳以上の正式返納者へバス回数券又はnimoca等の択一支援。",
+      "status": "active",
+      "summary": "70歳以上の市民はふれあいバスカードで市のバスをこども運賃で利用。70歳以上返納者へ別にバス回数券又はnimoca等1万円分の択一支援があります。",
       "programs": [
         {
           "name": "正式返納者のバス券・nimoca支援",
@@ -373,10 +373,32 @@
               "url": "https://www.city.munakata.lg.jp/kiji003934/index.html",
               "label": "高齢者運転免許証自主返納支援 / 福岡県宗像市公式サイト",
               "updated": "2022-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
+        },
+        {
+          "name": "ふれあいバスカードによる70歳以上市民の割引",
+          "kind": "discount",
+          "age_min": 70,
+          "eligibility": "70歳以上の宗像市民でふれあいバスカードを提示する人。",
+          "benefit": "ふれあいバス・コミュニティバスをこども運賃で利用。",
+          "fare": "通常200円区間100円、玄海線BRT通常300円区間150円。1日フリーパス及び紙定期も特例者価格。",
+          "routes": "ふれあいバス・コミュニティバス及びふれあいバス玄海線BRT。",
+          "apply": "乗車時にふれあいバスカード提示。カード交付方法・必要書類はこの運賃案内に記載なし。",
+          "notes": [
+            "交通系ICカードはふれあいバス（玄海線BRT含む）のみ使用可能。コミュニティバスは使用不可。"
+          ],
+          "sources": [
+            {
+              "url": "https://www.city.munakata.lg.jp/kiji0034222/index.html",
+              "label": "ふれあいバス・コミュニティバス利用料金",
+              "updated": "2024-04-11",
+              "checked": "2026-11-03"
+            }
+          ],
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -384,10 +406,16 @@
           "url": "https://www.city.munakata.lg.jp/kiji003934/index.html",
           "label": "高齢者運転免許証自主返納支援 / 福岡県宗像市公式サイト",
           "updated": "2022-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
+        },
+        {
+          "url": "https://www.city.munakata.lg.jp/kiji0034222/index.html",
+          "label": "ふれあいバス・コミュニティバス利用料金",
+          "updated": "2024-04-11",
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "支援案内は1年以上前です。現在の支援内容、対象路線と運賃は危機管理課（市代表0940-36-1121）へ確認してください。"
+      "flag": "2026年11月3日に返納支援とバス運賃案内の現掲載本文を確認しました。ふれあいバスカードの交付方法や対象区間、返納券の差額精算は市へ確認してください。"
     },
     {
       "slug": "fukutsu",
@@ -1220,22 +1248,23 @@
               "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
               "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/10024/",
               "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
               "updated": "2026-02-16",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/ticket/customerservice/",
               "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
               "updated": "2025-02-12",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "正式返納割引・ふれあい定期70",
@@ -1252,22 +1281,23 @@
               "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
               "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/10024/",
               "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
               "updated": "2026-02-16",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/ticket/customerservice/",
               "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
               "updated": "2025-02-12",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "ふれあい定期",
@@ -1284,22 +1314,23 @@
               "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
               "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/10024/",
               "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
               "updated": "2026-02-16",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/ticket/customerservice/",
               "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
               "updated": "2025-02-12",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         },
         {
           "name": "正式返納割引・ふれあい定期",
@@ -1316,22 +1347,23 @@
               "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
               "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/10024/",
               "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
               "updated": "2026-02-16",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             },
             {
               "url": "https://kitakyushucity.jp/ticket/customerservice/",
               "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
               "updated": "2025-02-12",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked",
+          "checked": "2026-11-03"
         }
       ],
       "sources": [
@@ -1339,22 +1371,22 @@
           "url": "https://kitakyushucity.jp/ticket/otokujyousyaken/fureaiteiki/",
           "label": "ふれあい定期 | 定期乗車券 | 北九州交通局",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://kitakyushucity.jp/10024/",
           "label": "令和８年３月２８日以降の運賃・定期券などについて（こどもミライ割は３月２５日から開始） | お知らせ | 北九州交通局",
           "updated": "2026-02-16",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://kitakyushucity.jp/ticket/customerservice/",
           "label": "乗車券等の発売窓口 | 運賃・乗車券 | 北九州交通局",
           "updated": "2025-02-12",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "定期詳細の更新日は記載なし、発売窓口案内は1年以上前です。現在の購入・利用条件は交通局総務経営課（093-771-8401）へ確認してください。"
+      "flag": "ふれあい定期の年齢区分・金額・返納割・購入条件を交通局現行本文で照合しました。窓口の営業日・時間は来訪前に交通局093-771-8401へ確認できます。"
     },
     {
       "slug": "okagaki",
@@ -2271,10 +2303,10 @@
               "url": "https://www.city.chikugo.lg.jp/bosai/_12224/_31084/",
               "label": "運転免許証を自主返納した方にタクシー利用券などを交付します|筑後市公式ホームページ",
               "updated": "2026-08-10",
-              "checked": "2026-10-07"
+              "checked": "2026-11-03"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "はねバス・おでかけパス65",
@@ -2322,7 +2354,7 @@
           "url": "https://www.city.chikugo.lg.jp/bosai/_12224/_31084/",
           "label": "運転免許証を自主返納した方にタクシー利用券などを交付します|筑後市公式ホームページ",
           "updated": "2026-08-10",
-          "checked": "2026-10-07"
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.chikugo.lg.jp/kurashi/_24191/_30805/_30518.html",
@@ -2402,17 +2434,17 @@
         {
           "url": "https://www.city.yanagawa.fukuoka.jp/bosai/koutsuu/bohan__5669.html",
           "label": "令和8年4月1日返納支援案内",
-          "updated": "",
-          "checked": "2026-10-07"
+          "updated": "2026-04-01",
+          "checked": "2026-11-03"
         },
         {
           "url": "https://www.city.yanagawa.fukuoka.jp/kurashi/kotsu/communitybus/community-bus.html",
           "label": "柳川市コミュニティバスの利用 -  柳川市",
-          "updated": "",
-          "checked": "2026-10-07"
+          "updated": "2026-10-26",
+          "checked": "2026-11-03"
         }
       ],
-      "flag": "各案内に更新日表示はありません。高齢者向けバス助成は総合政策課（0944-77-8423）へ確認してください。"
+      "flag": "返納支援とコミュニティバスの本文を2026年11月3日に確認しました。一般100円のバス案内に高齢者限定の助成は記載されていません。別の支援の有無は総合政策課（0944-77-8423）へ確認してください。"
     },
     {
       "slug": "miyama",

@@ -48,7 +48,8 @@
    "url": "https://www.city.kawasaki.jp/350/page/0000022671.html",
    "src": "市の外出支援サービス事業のページ",
    "upd": "更新日：2024年7月4日",
-   "note": "タクシー代の助成ではなく、市の送迎サービス（県のページでは対象交通機関を「タクシー（リフト付きワンボックスカー）」と記載）。"
+   "note": "タクシー代の助成ではなく、市の送迎サービス（県のページでは対象交通機関を「タクシー（リフト付きワンボックスカー）」と記載）。 市内在住・在宅65歳以上、要介護3～5で他交通困難、家族等同乗介助が必要。月2回、1回4時間以内、1時間400円です。一般高齢者向けのタクシー券ではありません。",
+   "checked": "2026-11-03"
   },
   "sagamihara": {
    "k": "care",
@@ -168,9 +169,11 @@
    "henno_link": "記載なし",
    "url": "https://www.city.chigasaki.kanagawa.jp/shogai/1004362.html",
    "src": "市の在宅重度障害者福祉タクシー利用助成のページ",
-   "upd": "記載なし",
+   "upd": "2023年3月31日",
    "henno_earlier": false,
-   "name": "茅ヶ崎市"
+   "name": "茅ヶ崎市",
+   "checked": "2026-11-03",
+   "flag": "2026年11月3日に福祉タクシー本文を確認しました。これは障害等級等が条件の制度です。高齢者一般向け助成の有無は別途、市へ確認してください。"
   },
   "hadano": {
    "k": "care",
@@ -292,22 +295,29 @@
    "checked": "2026-11-02"
   },
   "ayase": {
-   "k": "notfound",
-   "what": "65歳以上の返納者はコミュニティバス乗車50回分などから1つを選べます。別に、免許を持たず自力で乗降できる市内65歳以上は、登録制の予約型交通「あやモビ」を1乗車500円で利用できます。市の案内では実証運行は2026年10月31日までです。",
-   "henno_link": "記載なし",
-   "checked": "2026-10-03",
+   "k": "yes",
+   "what": "市内在住65歳以上で自ら車両に乗降できる人が事前登録して利用する乗合交通です。運転免許を持つ人も利用できます。",
+   "henno_link": "返納要件なし。実証実験の延長に伴い免許所持者も登録可能。",
+   "checked": "2026-11-03",
    "guide_mobility": true,
-   "guide_relation": "same",
-   "guide_heading": "返納特典と65歳以上の「あやモビ」",
+   "guide_relation": "separate",
+   "guide_heading": "65歳以上の「あやモビ」（免許返納不要）",
    "url": "https://www.city.ayase.kanagawa.jp/kurashi_tetsuzuki/doro_kotsu/22723.html",
    "src": "自治体の公式案内",
-   "upd": "2026年10月3日確認",
+   "upd": "更新日：2025年09月01日",
    "more_sources": [
     {
      "label": "返納者向け支援",
-     "url": "https://www.city.ayase.kanagawa.jp/soshiki/shiminkatsudosuishinka/bosai_bohan_anzen_anshin/1/584.html"
+     "url": "https://www.city.ayase.kanagawa.jp/soshiki/shiminkatsudosuishinka/bosai_bohan_anzen_anshin/1/584.html",
+     "checked": "2026-10-03"
     }
-   ]
+   ],
+   "name": "綾瀬市AIデマンド型交通「あやモビ」",
+   "age": "市内在住65歳以上で自ら車両に乗降でき、事前に登録した人",
+   "amt": "1名1乗車500円。付添人も1乗車500円（利用者1名につき1名まで）",
+   "how": "都市整備課窓口・郵送・市公式LINE・登録専用電話0467-76-1198で登録。予約はハートフルタクシー046-292-3338またはインターネット。",
+   "note": "実証運行期間は令和7年11月1日～令和9年10月31日。月～土の8時～16時30分（日・祝日・年末年始を除く）。",
+   "guide_relation_note": "市の返納特典とは別の制度です。あやモビは免許返納を条件とせず、免許所持者も登録できます。"
   },
   "aikawa": {
    "k": "yes",
