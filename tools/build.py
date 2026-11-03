@@ -776,6 +776,14 @@ def taxi_page(data, draft):
   <p>免許を返納した人向けの特典と、返納しなくても条件を満たせば使える交通費の助成は、対象が異なります。お住まいの市や町の条件を確認してください。</p>
   <p class="src-links"><a href="{list_path(P)}">{e(pn)}の免許返納特典を探す →</a> {bus_link} <a href="mobility.html">通院・買い物の移動手段を探す →</a></p>
 </section>"""
+    search_answer = ""
+    if P["id"] == "kanagawa":
+        search_answer = """<section class="answer" aria-labelledby="taxi-search-h">
+  <h2 id="taxi-search-h">高齢者のタクシー割引・タクシー券を探す方へ</h2>
+  <p>このページは、市町村が交付するタクシー券や利用料金の助成の一覧です。年齢などで使える制度と、要介護認定などの条件がある制度を分けています。高齢者なら全員が対象になるわけではありません。</p>
+  <p>タクシー会社が運賃を割り引くサービスや、免許返納者向けの特典とは別の仕組みです。事業者の割引を網羅した一覧ではありません。</p>
+  <p class="src-links"><a href="#pick">お住まいの市町村の対象・金額・申請先を見る →</a> <a href="#list-h">助成の種類で絞る →</a> <a href="kanagawa-menkyo-henno.html">免許返納者向けの特典を探す →</a></p>
+</section>"""
     y, m, d = checked.split("-")
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {pn}の高齢者のタクシー代の助成</nav>
 <div class="hero">
@@ -785,7 +793,7 @@ def taxi_page(data, draft):
   </div>
   <h1>高齢者のタクシー代、市や町が助成してくれる？</h1>
   <p class="lead">{pn}の{total}{pu}が、高齢者に出しているタクシー券やタクシー代の助成を、対象の年齢・金額・申し込み先をそろえて並べました。</p>
-</div>{chr(10) + related_support if related_support else ""}
+</div>{chr(10) + search_answer if search_answer else ""}{chr(10) + related_support if related_support else ""}
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
   <h2 class="section-title" id="pick-h">お住まいの{pu}を選んでください</h2>
@@ -826,7 +834,7 @@ def taxi_page(data, draft):
   </ul>
 </section>"""
     return shell(
-        title=f"{pn}の高齢者タクシー助成 {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ",
+        title=(f"神奈川県の高齢者タクシー券・助成｜対象・金額・申請先を33市町村で比較｜じもとくらべ" if P["id"] == "kanagawa" else f"{pn}の高齢者タクシー助成 {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"),
         description=(f"{pn}の{total}{pu}が高齢者に出しているタクシー券・タクシー代の助成を、対象の年齢・金額・申し込み先をそろえて比べられます。"
                      f"{n_yes}{pu}で年齢などで使える助成あり。{jdate(checked)}に各市町の公式ページで確認。"),
         path=taxi_path(P),
@@ -2342,16 +2350,29 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
                  '<p>このページでは個別の交通手段を掲載していません。以下の運賃支援と公式案内をご確認ください。</p>')
     scope_note = (f'{scope}で確認した移動・支援の候補です。この地域の全交通手段を網羅した案内ではありません。'
                   if partial else '住む地区と目的地で使える交通が変わります。')
+    search_heading = f"{scope}の移動案内"
+    search_intro = ""
+    if path == "tokyo-mobility/hachioji.html":
+        search_heading = "八王子市のはちバス"
+        scope_note = "料金・シルバーパスの使い方を確認し、公式の時刻表・路線図へ進めます。"
+        search_intro = f'''<section class="mobility-city-overview" aria-labelledby="hachibus-answers-h">
+  <h2 id="hachibus-answers-h">はちバスに乗る前に</h2>
+  <dl class="mobility-city-summary">
+    <div><dt>料金</dt><dd>一律200円。小学生・障害のある方は半額、はちバス専用乗車券を提示する方は無料です。<a href="#ride-1">支払い方法と運行日を見る</a></dd></div>
+    <div><dt>シルバーパス</dt><dd>無料乗車には、市が発行する「はちバス専用乗車券」の申請が必要です。ICカードのシルバーパスで乗車すると料金が引かれます。<a href="#support-1">対象・持ち物・申請先を見る</a></dd></div>
+    <div><dt>時刻表・路線図</dt><dd>2026年10月から10路線で運行。路線ごとに運行曜日が異なります。<a href="{e(city['rides'][0]['source'])}" target="_blank" rel="noopener">市公式の時刻表・路線図（はちバスマップ）を見る ↗</a></dd></div>
+  </dl>
+</section>'''
     main = f'''<nav class="crumbs" aria-label="いまいる場所"><a href="../">トップ</a> ＞ <a href="../mobility.html">移動手段を探す</a> ＞ {e(scope)}</nav>
 <header class="mobility-city-hero">
   <p class="mobility-kicker">{e(pref_data['pref']['name'])}の移動案内</p>
-  <h1>{e(scope)}の移動案内</h1>
+  <h1>{e(search_heading)}</h1>
   <p>{e(scope_note)}</p>
 </header>
 <nav class="mobility-city-sections" aria-label="この地域で調べる内容">
   <a href="#ride-h">移動手段</a><a href="#support-h">運賃の助成</a><a href="#return-h">免許返納</a>
 </nav>
-<section class="mobility-city-overview" aria-labelledby="overview-h">
+{search_intro + chr(10) if search_intro else ''}<section class="mobility-city-overview" aria-labelledby="overview-h">
   <div class="mobility-city-overview-heading">
     <h2 id="overview-h">この地域で確認した候補</h2>
     <p>公式確認 <time datetime="{e(checked)}">{jdate(checked)}</time></p>
@@ -2382,7 +2403,9 @@ def mobility_city_page(city, coverage, pref_data, regional_cities, mobility_scop
 <p class="mobility-city-updated">公式ページを確認した日：{jdate(checked)}。運行内容や制度は変わるため、利用前に各公式ページで最新情報を確認してください。</p>'''
     description = (f'{scope}の移動手段と運賃支援。{city["quick_scope"]}'
                    f'公式ページを{jdate(checked)}に確認。')
-    return shell(title=f'{city["search_title"]}｜じもとくらべ',
+    if path == "tokyo-mobility/hachioji.html":
+        description = "八王子市のはちバスの料金、シルバーパス利用時の専用乗車券と申請先を案内。公式の時刻表・路線図へ進めます。路線別の運行曜日にも注意してください。"
+    return shell(title=f'{"八王子市のはちバス｜料金・シルバーパス・時刻表" if path == "tokyo-mobility/hachioji.html" else city["search_title"]}｜じもとくらべ',
                  description=description, path=path, main=main, draft=draft,
                  base='../', page_class='mobility-city-page', body_class='wayfinding')
 
