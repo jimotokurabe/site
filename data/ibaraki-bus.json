@@ -207,10 +207,10 @@
               "url": "https://www.city.takahagi.ibaraki.jp/kurashi/koutsu/page005096.html",
               "label": "65歳以上路線バス運賃半額",
               "updated": "2024-12-05",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],
@@ -225,7 +225,7 @@
           "url": "https://www.city.takahagi.ibaraki.jp/kurashi/koutsu/page005096.html",
           "label": "65歳以上路線バス運賃半額",
           "updated": "2024-12-05",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "半額制度の資料は2024年12月更新のため、現在の条件を生涯現役推進課（0293-23-1125）へ確認してください。"
@@ -1442,22 +1442,22 @@
           "benefit": "バス共通無料お試し乗車券10枚（のり愛くん10枚との選択）。本人1回限り、有効期限2年。別途タクシー助成券も交付。",
           "fare": "無料お試し乗車券",
           "routes": "筑西市内を運行するバス共通",
-          "apply": "取消通知書又は運転経歴証明書を持ち本庁まちづくり課で申請書記入。郵送受付あり。各支所・出張所は不可。",
+          "apply": "本庁舎3階まちづくり課で申請。取消通知書又は運転経歴証明書を持参。郵送申請可。支所・出張所での受付なし。",
           "sources": [
             {
               "url": "https://www.city.chikusei.lg.jp/machidukuri/traffic/page005743.html",
               "label": "自主返納後のタクシー助成券・お試し乗車券",
               "updated": "2024-03-19",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.chikusei.lg.jp/data/doc/1710833600_doc_167_0.pdf",
               "label": "自主返納支援リーフレット",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],
@@ -1466,13 +1466,13 @@
           "url": "https://www.city.chikusei.lg.jp/machidukuri/traffic/page005743.html",
           "label": "自主返納後のタクシー助成券・お試し乗車券",
           "updated": "2024-03-19",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.chikusei.lg.jp/data/doc/1710833600_doc_167_0.pdf",
           "label": "自主返納支援リーフレット",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "案内は2024年3月更新、添付に更新日の記載がありません。具体対象路線と現行条件をまちづくり課（0296-20-1181）へ確認してください。"

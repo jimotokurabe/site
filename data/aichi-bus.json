@@ -1016,7 +1016,7 @@
           "age_min": 70,
           "eligibility": "市民70歳以上、返納後1年以内。本人1回。",
           "benefit": "ふれあいバス無料乗車券10回。",
-          "fare": "券利用で無料。",
+          "fare": "本人のみ、券利用で無料。券の有効期限は市の案内に記載なし。",
           "routes": "津島市ふれあいバス。",
           "apply": "取消通知書又は経歴証明書を市民協働課へ提示。0567-24-1111。",
           "sources": [
@@ -1024,10 +1024,10 @@
               "url": "https://www.city.tsushima.lg.jp/kurashi/anshinanzen/koutsuuanzen/jishuhennou.html",
               "label": "正式返納促進事業",
               "updated": "2025-04-01",
-              "checked": "2026-10-06"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],

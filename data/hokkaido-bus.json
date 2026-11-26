@@ -1065,10 +1065,10 @@
               "url": "https://www.city.chitose.lg.jp/c30/1002672/1002677/1006126.html",
               "label": "千歳市・福祉サービス利用券",
               "updated": "2023-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "高齢者運転免許自主返納サポート制度",
@@ -1085,10 +1085,10 @@
               "url": "https://www.city.chitose.lg.jp/c50/1002727/1003469.html",
               "label": "千歳市・免許返納サポート",
               "updated": "2025-04-21",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1096,13 +1096,13 @@
           "url": "https://www.city.chitose.lg.jp/c30/1002672/1002677/1006126.html",
           "label": "千歳市・福祉サービス利用券",
           "updated": "2023-12-11",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.chitose.lg.jp/c50/1002727/1003469.html",
           "label": "千歳市・免許返納サポート",
           "updated": "2025-04-21",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "ページ更新日は1年以上前ですがR8の送付・対象事業者変更の案内があります。福祉券の指定バス会社・未着手続きは高齢者支援課、返納券の差額と釣銭は防犯交通安全係に確認してください。"
@@ -1203,16 +1203,16 @@
               "url": "https://www.city.ishikari.hokkaido.jp/kenko/fukushi/1005269/1007075.html",
               "label": "石狩市・福祉利用券",
               "updated": "2026-04-30",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.ishikari.hokkaido.jp/_res/projects/default_project/_page_/001/007/075/annnai.pdf",
               "label": "石狩市・R8利用機関と方法",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1220,13 +1220,13 @@
           "url": "https://www.city.ishikari.hokkaido.jp/kenko/fukushi/1005269/1007075.html",
           "label": "石狩市・福祉利用券",
           "updated": "2026-04-30",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.ishikari.hokkaido.jp/_res/projects/default_project/_page_/001/007/075/annnai.pdf",
           "label": "石狩市・R8利用機関と方法",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "年度末75歳条件のためage_minはnull。PDFに更新日なし。交付券の総額、未着手続き、回数券の利用区間を高齢者支援課・中央バス石狩営業所0133-74-2325に確認してください。"
@@ -3783,10 +3783,10 @@
               "url": "https://www.city.shibetsu.lg.jp/gyoseisaito/iryo_kenko_fukushi/kaigo_korei/2/2942.html",
               "label": "公式案内",
               "updated": "2024-03-27",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -3794,7 +3794,7 @@
           "url": "https://www.city.shibetsu.lg.jp/gyoseisaito/iryo_kenko_fukushi/kaigo_korei/2/2942.html",
           "label": "公式案内",
           "updated": "2024-03-27",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "2024年3月更新で1年以上経過。現行運賃・証明交付手続きは高齢者福祉課0165-26-7749へ確認してください。"
