@@ -139,23 +139,23 @@
               "url": "https://www.city.motomiya.lg.jp/soshiki/10/hennou.html",
               "label": "市・自主返納等支援",
               "updated": "2026-06-04",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
               "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納者・NORUCA引換券",
           "kind": "henno",
           "age_min": 65,
           "eligibility": "市内在住65歳以上。平成29年1月以降発行の取消通知書又は運転経歴証明書を持つ自主返納者。",
-          "benefit": "福島交通バスIC「NORUCA」の購入・チャージ引換券10,000円分。交通サービス利用券を1万円単位で組み合わせ、一般タクシー券を含め合計50,000円分が上限。使用期限なし。",
+          "benefit": "福島交通バスIC「NORUCA」の購入・チャージ引換券10,000円分。共通乗車券・一般タクシー券と1万円単位で組み合わせ、合計50,000円分が上限。引換券の使用期限なし。",
           "fare": "NORUCA新規発行時は1,000円自己負担。通常のバス運賃をカードで支払い。",
           "routes": "福島交通バス。市の案内は「がくとくん⇔まゆみちゃんライン」を掲載。",
           "apply": "取消通知書と本人確認書類、又は運転経歴証明書を持ち、市役所生活環境課又は白沢総合支所へ申請。準備後に通知が届き、本庁又は支所で受取。生活環境課0243-24-5361。カード本体の受取・チャージは、別途モコステーションで手続き。 代理申請では代理人の本人確認書類も必要です。",
@@ -165,7 +165,7 @@
               "url": "https://www.city.motomiya.lg.jp/soshiki/10/hennou.html",
               "label": "市・自主返納等支援",
               "updated": "2026-06-04",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
@@ -174,7 +174,7 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "免許失効者・共通乗車券",
@@ -191,7 +191,7 @@
               "url": "https://www.city.motomiya.lg.jp/soshiki/10/hennou.html",
               "label": "市・自主返納等支援",
               "updated": "2026-06-04",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
@@ -203,7 +203,7 @@
               "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/30056.pdf",
               "label": "市・自主返納等支援チラシ（令和5年10月）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
           "current": "needs_confirmation"
@@ -223,7 +223,7 @@
               "url": "https://www.city.motomiya.lg.jp/soshiki/10/hennou.html",
               "label": "市・自主返納等支援",
               "updated": "2026-06-04",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
@@ -235,7 +235,7 @@
               "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/30056.pdf",
               "label": "市・自主返納等支援チラシ（令和5年10月）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
           "current": "needs_confirmation"
@@ -246,19 +246,19 @@
           "url": "https://www.city.motomiya.lg.jp/soshiki/10/hennou.html",
           "label": "市・自主返納等支援",
           "updated": "2026-06-04",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/28740.pdf",
           "label": "市・中学校区別公共交通ガイド（本宮二中学区）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/30056.pdf",
           "label": "市・自主返納等支援チラシ（令和5年10月）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "失効者の条件は令和5年10月の市チラシにあり、現在の受付・必要書類を生活環境課へ確認してください。 コミュニティバスの詳細ページは現在開けないため、市の公共交通案内からリンクされている利用ガイドを参照しています。現在の運賃・利用券の扱いは生活環境課へ確認してください。"
@@ -2263,17 +2263,23 @@
         {
           "url": "https://www.shinchi-town.jp/soshiki/2/koutuusyuppatusiki.html",
           "label": "町・しんちゃんタクシーとバス",
-          "updated": "2025-12-05",
-          "checked": "2026-10-07"
+          "updated": "2026-11-05",
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.shinchi-town.jp/soshiki/2/sinchantaxitouroku.html",
           "label": "町・タクシー登録",
           "updated": "2024-05-21",
           "checked": "2026-10-07"
+        },
+        {
+          "url": "https://www.shinchi-town.jp/soshiki/2/shinchanbushaisi.html",
+          "label": "町・しんちゃんバス運行廃止のお知らせ",
+          "updated": "2026-11-05",
+          "checked": "2026-11-26"
         }
       ],
-      "flag": "タクシー登録の詳細は2024年更新です。バス向け制度の有無は企画政策課0244-62-2112へ確認してください。"
+      "flag": "しんちゃんバスは令和9年3月31日で運行終了。未使用券の払戻しは令和9年4月1日～9月30日に役場2階企画政策課で受付。"
     },
     {
       "slug": "iitate",

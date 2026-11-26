@@ -868,17 +868,17 @@
           "benefit": "You Bus運賃1回100円引き。",
           "fare": "令和7年6月1日以降通常300円から100円引きで200円。",
           "routes": "コミュニティバス上今泉・大谷杉久保・国分、実証下今泉・門沢橋。実証路線は車いす利用不可。",
-          "apply": "本人確認書類と申請書を市役所2階福祉政策課へ持参・郵送、又は市HP・LINEから申請。運転手に乗車証を提示。",
+          "apply": "市役所2階福祉政策課への持参・郵送のほか、市ウェブサイト又はLINEで申請できます。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.ebina.kanagawa.jp/guide/shogaisha/koureisha/1015721.html",
               "label": "You Busぬくもり乗車証｜海老名市公式ウェブサイト",
               "updated": "2025-06-10",
-              "checked": "2026-10-06"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -886,7 +886,7 @@
           "url": "https://www.city.ebina.kanagawa.jp/guide/shogaisha/koureisha/1015721.html",
           "label": "You Busぬくもり乗車証｜海老名市公式ウェブサイト",
           "updated": "2025-06-10",
-          "checked": "2026-10-06"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "資料更新は2025年6月のため運賃・対象ルートの現行性は福祉政策課046-235-4820へ確認してください。えび～くるは乗合タクシーとして別交通。"
@@ -1375,7 +1375,7 @@
               "url": "https://www.town.yamakita.kanagawa.jp/0000000370.html",
               "label": "高齢者等の生活支援事業 | 山北町",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-26"
             }
           ],
           "current": "needs_confirmation"
@@ -1397,10 +1397,10 @@
               "url": "https://www.pref.kanagawa.jp/docs/u6s/cnt/f536479/p1141504.html",
               "label": "神奈川県・山北町の外出支援（循環バス券助成）",
               "updated": "2026-08-03",
-              "checked": "2026-10-31"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "checked": "2026-10-31"
         }
       ],
@@ -1409,13 +1409,13 @@
           "url": "https://www.town.yamakita.kanagawa.jp/0000000370.html",
           "label": "高齢者等の生活支援事業 | 山北町",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.pref.kanagawa.jp/docs/u6s/cnt/f536479/p1141504.html",
           "label": "神奈川県・山北町の外出支援（循環バス券助成）",
           "updated": "2026-08-03",
-          "checked": "2026-10-31"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "循環バス5,000円券は2026年8月3日更新の県の町別本文で確認しました。申請・券の期限・1回の使用枚数等は記載なし。山間部の地区別金額の町本文は2021年で旧事業者名のため、現在の地区別額・路線と併せ福祉課0465-75-3644へ確認してください。"

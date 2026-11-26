@@ -585,22 +585,22 @@
               "url": "https://www.city.gosen.lg.jp/organization/7/12/1201.html",
               "label": "五泉市・65歳以上免許返納支援",
               "updated": "2026-03-31",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
               "label": "新潟県・令和8年6月返納支援一覧",
               "updated": "2026-06-29",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.gosen.lg.jp/material/files/group/14/koureisyamenkyohenou.pdf",
               "label": "五泉市・現行案内に添付された返納申請チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "免許返納・バス・さくら号セット",
@@ -617,22 +617,22 @@
               "url": "https://www.city.gosen.lg.jp/organization/7/12/1201.html",
               "label": "五泉市・65歳以上免許返納支援",
               "updated": "2026-03-31",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
               "label": "新潟県・令和8年6月返納支援一覧",
               "updated": "2026-06-29",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.gosen.lg.jp/material/files/group/14/koureisyamenkyohenou.pdf",
               "label": "五泉市・現行案内に添付された返納申請チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -640,19 +640,19 @@
           "url": "https://www.city.gosen.lg.jp/organization/7/12/1201.html",
           "label": "五泉市・65歳以上免許返納支援",
           "updated": "2026-03-31",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/jishuhennou.html",
           "label": "新潟県・令和8年6月返納支援一覧",
           "updated": "2026-06-29",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.gosen.lg.jp/material/files/group/14/koureisyamenkyohenou.pdf",
           "label": "五泉市・現行案内に添付された返納申請チラシ",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "市の2026年3月案内と県一覧を確認。現在の普通運賃・券期限・差額は環境保全課0250-43-3911へ確認。失効は対象外。"
@@ -1930,17 +1930,17 @@
           "benefit": "市が2,500円負担し、額面6,500円の6か月券を4,000円で購入。",
           "fare": "購入日から6か月、対象路線は乗り放題。",
           "routes": "糸魚川バスの市内路線（糸魚川〜蓮華温泉線除く）と頸城自動車の能生〜直江津駅南口線。",
-          "apply": "糸魚川バス本社営業所、ジオパル案内所、市社協、能生生涯学習センター、好望こまくさひまわり作業所のいずれかで本人確認書類を持参し申請・購入。代理可。",
+          "apply": "糸魚川バス本社営業所、ジオパル案内所、市社協、能生生涯学習センター、好望こまくさひまわり作業所のいずれかで本人確認書類を持参し申請・購入。代理可。 代理の場合も申請する方と実際に利用する方の本人確認書類が必要です。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.itoigawa.lg.jp/page/1911.html",
               "label": "高齢者・障害者おでかけパス",
               "updated": "2025-03-17",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "おでかけパス・1か月",
@@ -1950,17 +1950,17 @@
           "benefit": "市が500円負担し、額面1,500円の1か月券を1,000円で購入。",
           "fare": "購入日から1か月、対象路線は乗り放題。",
           "routes": "糸魚川バスの市内路線（糸魚川〜蓮華温泉線除く）と頸城自動車の能生〜直江津駅南口線。",
-          "apply": "糸魚川バス本社営業所、ジオパル案内所、市社協、能生生涯学習センター、好望こまくさひまわり作業所のいずれかで本人確認書類を持参し申請・購入。代理可。",
+          "apply": "糸魚川バス本社営業所、ジオパル案内所、市社協、能生生涯学習センター、好望こまくさひまわり作業所のいずれかで本人確認書類を持参し申請・購入。代理可。 代理の場合も申請する方と実際に利用する方の本人確認書類が必要です。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.itoigawa.lg.jp/page/1911.html",
               "label": "高齢者・障害者おでかけパス",
               "updated": "2025-03-17",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "あさひまちバス回数券助成",
@@ -1977,10 +1977,10 @@
               "url": "https://www.city.itoigawa.lg.jp/page/1911.html",
               "label": "高齢者・障害者おでかけパス",
               "updated": "2025-03-17",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納・バスカード選択支援・75歳以上",
@@ -1994,13 +1994,13 @@
           "notes": [],
           "sources": [
             {
-              "url": "https://www.city.itoigawa.lg.jp/3431.htm",
+              "url": "https://www.city.itoigawa.lg.jp/page/1632.html",
               "label": "高齢者運転免許自主返納支援",
               "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納・バスカード選択支援・65〜74歳・手帳等あり",
@@ -2014,13 +2014,13 @@
           "notes": [],
           "sources": [
             {
-              "url": "https://www.city.itoigawa.lg.jp/3431.htm",
+              "url": "https://www.city.itoigawa.lg.jp/page/1632.html",
               "label": "高齢者運転免許自主返納支援",
               "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -2028,16 +2028,16 @@
           "url": "https://www.city.itoigawa.lg.jp/page/1911.html",
           "label": "高齢者・障害者おでかけパス",
           "updated": "2025-03-17",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
-          "url": "https://www.city.itoigawa.lg.jp/3431.htm",
+          "url": "https://www.city.itoigawa.lg.jp/page/1632.html",
           "label": "高齢者運転免許自主返納支援",
           "updated": "2026-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
-      "flag": "おでかけパスは本文に令和8年4月の料金改定があり、表示更新日は2025年3月です。居住条件、あさひまち券の現在の額・期限・差額、返納カードの利用路線・期限・差額を市（025-552-1511）へ確認してください。"
+      "flag": "おでかけパスの居住要件、あさひまち回数券と返納バスカードの期限・差額、返納バスカードの対象路線は記載なし。"
     },
     {
       "slug": "myoko",
@@ -2194,10 +2194,10 @@
               "url": "https://www.city.sado.niigata.jp/soshiki/2016/4147.html",
               "label": "高齢者路線バス運賃割引",
               "updated": "2025-10-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納・バス・タクシー共通券",
@@ -2214,16 +2214,16 @@
               "url": "https://www.city.sado.niigata.jp/soshiki/2016/4173.html",
               "label": "高齢者運転免許自主返納支援",
               "updated": "2026-01-09",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.sado.niigata.jp/uploaded/attachment/57300.pdf",
               "label": "返納共通券案内",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -2231,19 +2231,19 @@
           "url": "https://www.city.sado.niigata.jp/soshiki/2016/4147.html",
           "label": "高齢者路線バス運賃割引",
           "updated": "2025-10-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.sado.niigata.jp/soshiki/2016/4173.html",
           "label": "高齢者運転免許自主返納支援",
           "updated": "2026-01-09",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.sado.niigata.jp/uploaded/attachment/57300.pdf",
           "label": "返納共通券案内",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
       "flag": "250円制度の案内は2025年10月更新で1年以上経過しています。現在の運賃・適用路線と返納共通券の不足分支払いを交通政策課（0259-63-3184）へ確認してください。"

@@ -143,14 +143,14 @@
       "slug": "ichikikushikino",
       "name": "いちき串木野市",
       "status": "notfound",
-      "summary": "いきいきバスの料金案内と高齢者福祉案内では、高齢者・返納者専用の市独自バス運賃助成は見つかりませんでした。",
+      "summary": "市の2026年10月1日更新の案内では、いきいきバスの大人運賃は200円。掲載調査では高齢者・返納者向けの割引を確認できていません。",
       "programs": [],
       "sources": [
         {
           "url": "https://www.city.ichikikushikino.lg.jp/shokan1/kurashi/seikatsu/kokyokotsu.html",
           "label": "いちき串木野市／バス（いきいきバス・路線バス）",
           "updated": "2026-10-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.ichikikushikino.lg.jp/kaigo1/kenko/fukushi/koresha/service.html",
@@ -159,7 +159,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "高齢者福祉案内は2025年4月更新です。現在のバス助成の有無は水産商工課（0996-33-5638）又は長寿介護課（0996-33-5643）へ確認してください。"
+      "flag": "高齢者向けの別制度の有無は、水産商工課（0996-33-5638）又は長寿介護課（0996-33-5643）へ確認してください。"
     },
     {
       "slug": "mishima",
@@ -264,22 +264,22 @@
               "url": "https://www.city.minamisatsuma.lg.jp/living/kenko-iryo-fukushi/koreisha/ikigaikenkou/e044803.html",
               "label": "シニア健康増進「よか日だな」事業ルールを守って健康増進",
               "updated": "2026-08-20",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.minamisatsuma.lg.jp/reiki_int/reiki_honbun/r356RG00001446.html",
               "label": "南さつま市シニア健康増進「よか日だな」事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納後のいわさきICカード交付",
           "kind": "henno",
           "age_min": 65,
-          "eligibility": "南さつま市住所、満65歳以上の自主返納者、市税完納のすべてを満たす。",
+          "eligibility": "南さつま市住所、満65歳以上の自主返納者、市税完納のすべてを満たす。 自主返納から1年以内に申請。",
           "benefit": "3種類から1つ10,500円分を1回。バス用の選択肢はいわさきICカード。預り金と実運賃残高の内訳は市案内に記載なし。",
           "fare": "ICカードを乗降時読み取り機へ。残高から精算。不足額支払い方法は記載なし。",
           "routes": "いわさきIC対応の鹿児島交通・種子島屋久島交通、南国交通・JR九州バス・市交通局等の路線バス。",
@@ -290,7 +290,7 @@
               "url": "https://www.city.minamisatsuma.lg.jp/living/bousai-bouhan-koutsu/koutsu/e043773.html",
               "label": "高齢者運転免許証自主返納支援事業",
               "updated": "2026-01-27",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.iwasaki-corp.com/corp/ic_card/",
@@ -299,15 +299,15 @@
               "checked": "2026-10-07"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "自主返納後のつわちゃんバス無料",
           "kind": "henno",
           "age_min": 65,
-          "eligibility": "65歳以上の正式返納者。南さつま警察署発行の証明書提示。無料枠の居住条件は記載なし。市案内は返納カード又は運転経歴証明書提示と記載。",
+          "eligibility": "運行概要では65歳以上の正式返納者が対象。無料利用時に提示できる書類の範囲と居住条件は未確認。",
           "benefit": "つわちゃんバス運賃無料。",
-          "fare": "乗車証明書を提示すると無料、通常1回200円。",
+          "fare": "通常1回200円。無料利用に必要な提示書類は市の返納支援本文と運行概要で表記が異なります。",
           "routes": "南さつま市のつわちゃんバス。",
           "apply": "自主返納後の証明書を利用時提示。別途無料証申請の記載なし。資格の詳細は総合政策課政策推進係へ。",
           "notes": [],
@@ -316,13 +316,13 @@
               "url": "https://www.city.minamisatsuma.lg.jp/living/bousai-bouhan-koutsu/koutsu/e043773.html",
               "label": "高齢者運転免許証自主返納支援事業",
               "updated": "2026-01-27",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.minamisatsuma.lg.jp/living/docs/gaiyou20250430tsuwachanbus.pdf",
               "label": "つわちゃんバス概要（現在の運行案内からリンク）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
           "current": "needs_confirmation"
@@ -333,25 +333,25 @@
           "url": "https://www.city.minamisatsuma.lg.jp/living/kenko-iryo-fukushi/koreisha/ikigaikenkou/e044803.html",
           "label": "シニア健康増進「よか日だな」事業ルールを守って健康増進 | 南さつま市",
           "updated": "2026-08-20",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.minamisatsuma.lg.jp/reiki_int/reiki_honbun/r356RG00001446.html",
           "label": "南さつま市シニア健康増進「よか日だな」事業実施要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.minamisatsuma.lg.jp/living/bousai-bouhan-koutsu/koutsu/e043773.html",
           "label": "高齢者運転免許証自主返納支援事業 | 南さつま市",
           "updated": "2026-01-27",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.minamisatsuma.lg.jp/living/docs/gaiyou20250430tsuwachanbus.pdf",
           "label": "つわちゃんバス概要（現在の運行案内からリンク）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.iwasaki-corp.com/corp/ic_card/",

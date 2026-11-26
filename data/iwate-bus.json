@@ -280,7 +280,7 @@
           "name": "高齢者福祉タクシー等事業",
           "kind": "voucher",
           "age_min": 80,
-          "eligibility": "80歳以上で一人暮らしまたは65歳以上のみの世帯。障がい者福祉タクシー券受給者、本人・同一世帯員名義の車（バイク除く）所有者は対象外。",
+          "eligibility": "80歳以上で一人暮らし、又は65歳以上のみの世帯。障がい者福祉タクシー券受給者は対象外。車・免許の条件は市本文と添付チラシに表記差があるため未確認。",
           "benefit": "年12,000円（100円×120枚）券を交付。",
           "fare": "券分を差し引き差額現金。",
           "routes": "市内発着路線バス、市内循環バス、予約乗合バスなど。タクシーにも使用可。",
@@ -290,14 +290,14 @@
             {
               "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/koureinokata/1019853/1004577.html",
               "label": "花巻市・在宅高齢者向けサービス",
-              "updated": "2026-06-23",
-              "checked": "2026-10-07"
+              "updated": "2026-11-18",
+              "checked": "2026-11-26"
             },
             {
               "url": "https://www.city.hanamaki.iwate.jp/_res/projects/default_project/_page_/001/004/577/r7taxitirashi2.pdf",
               "label": "花巻市・高齢者福祉タクシー等案内チラシ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-26"
             }
           ],
           "current": "needs_confirmation"
@@ -328,8 +328,8 @@
         {
           "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/koureinokata/1019853/1004577.html",
           "label": "花巻市・在宅高齢者向けサービス",
-          "updated": "2026-06-23",
-          "checked": "2026-10-07"
+          "updated": "2026-11-18",
+          "checked": "2026-11-26"
         },
         {
           "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/kotsuanzen/1000728.html",
@@ -341,10 +341,10 @@
           "url": "https://www.city.hanamaki.iwate.jp/_res/projects/default_project/_page_/001/004/577/r7taxitirashi2.pdf",
           "label": "花巻市・高齢者福祉タクシー等案内チラシ",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-26"
         }
       ],
-      "flag": "一般高齢者枠は本文とR7ファイルのチラシで車所有条件の表記差が残り、長寿福祉課へ確認が必要です。返納枠は2026年10月22日更新本文で対象・額・本人1回・券期限と窓口を確認。返納助成券の不足分・釣銭の扱いは本文に記載なし。"
+      "flag": "車の所有・免許の条件は2026年11月更新の市本文と令和7年の添付チラシに表記差が残ります。 返納枠の助成券の不足分・釣銭の扱いは本文に記載なし。"
     },
     {
       "slug": "kitakami",
