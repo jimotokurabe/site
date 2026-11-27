@@ -1417,62 +1417,80 @@
       "slug": "kobayashi",
       "name": "小林市",
       "status": "active",
-      "summary": "自主返納者向け乗車証でコミュニティバスが1回100円。悠々パス所持者向けの100円運賃も案内されています。",
+      "summary": "市の令和8年5月改正時刻表では、65歳以上の返納者は返納から3年間、専用乗車証で1回100円。宮崎交通の対象定期券の所持者も1回100円で利用できます。",
       "programs": [
         {
           "name": "自主返納者のコミュニティバス割引",
           "kind": "henno",
           "age_min": 65,
-          "eligibility": "65歳以上で運転免許証を自主返納した人。市の料金案内に居住条件は記載なし。",
+          "eligibility": "65歳以上の自主返納者。市の交通会議資料では市内在住者を対象としています。",
           "benefit": "返納後3年間、専用乗車証提示で割引運賃。",
-          "fare": "1回100円。県警の一覧には半額と記載。",
+          "fare": "市の令和8年5月改正時刻表では1回100円。県警の以前の一覧の「半額」との関係は未確認。",
           "routes": "小林市コミュニティバス。",
-          "apply": "運賃支払い時に小林市コミュニティバス運転免許証返納者乗車証を提示。乗車証の発行手続きは記載なし。",
+          "apply": "市の時刻表では小林警察署で返納者乗車証を交付。運賃を支払うときに提示します。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/2/2632.html",
               "label": "コミュニティバス(料金など)／宮崎県小林市公式ホームページ -Kobayashi City-",
               "updated": "2022-02-18",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20261028165815-1.pdf",
               "label": "宮崎県警・返納メリット一覧（令和8年10月29日現在）",
               "updated": "2026-10-29",
               "checked": "2026-10-31"
+            },
+            {
+              "url": "https://www.city.kobayashi.lg.jp/material/files/group/6/komibasukaiseigojikokuhyou.pdf",
+              "label": "市・コミュニティバス時刻表（令和8年5月1日改正）",
+              "updated": "",
+              "checked": "2026-11-27"
+            },
+            {
+              "url": "https://www.city.kobayashi.lg.jp/material/files/group/6/siryou.pdf",
+              "label": "市・地域公共交通会議の資料（小林・須木地区）",
+              "updated": "",
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation",
           "checked": "2026-10-31"
         },
         {
-          "name": "悠々パス所持者のコミュニティバス割引",
+          "name": "宮崎交通の特殊定期券所持者のコミュニティバス割引",
           "kind": "discount",
           "age_min": null,
-          "eligibility": "宮崎交通発行の特殊定期券「悠々パス」を所持している人。市の案内に年齢・居住条件は記載なし。",
+          "eligibility": "宮崎交通の「悠々パス」又は「宮交スマート65」の所持者。",
           "benefit": "市コミュニティバス全路線を割引運賃で利用。",
           "fare": "1回100円。",
           "routes": "小林市コミュニティバス全路線。",
-          "apply": "運転士に悠々パスを提示。対象商品の現在の取扱いは市に確認。",
+          "apply": "降車時に運転士へ対象定期券を提示。",
           "notes": [
-            "宮崎市の現行案内に悠々パスの販売は2026年3月31日終了と記載があります。小林市の所持者割引の現在の対象券と利用期限は市へ確認してください。"
+            "小林・須木地区の市の令和8年5月改正時刻表で確認。各定期券の販売や有効期限は交通事業者の案内を確認してください。"
           ],
           "sources": [
             {
               "url": "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/2/2632.html",
               "label": "コミュニティバス(料金など)／宮崎県小林市公式ホームページ -Kobayashi City-",
               "updated": "2022-02-18",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.miyazaki.miyazaki.jp/health/elderly_welfare/vivid/705.html",
               "label": "宮崎市・悠々パス販売終了の案内",
               "updated": "2026-04-01",
               "checked": "2026-10-07"
+            },
+            {
+              "url": "https://www.city.kobayashi.lg.jp/material/files/group/6/komibasukaiseigojikokuhyou.pdf",
+              "label": "市・コミュニティバス時刻表（令和8年5月1日改正）",
+              "updated": "",
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1480,7 +1498,7 @@
           "url": "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/doro_kotsu/kokyokotsu/2/2632.html",
           "label": "コミュニティバス(料金など)／宮崎県小林市公式ホームページ -Kobayashi City-",
           "updated": "2022-02-18",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.pref.miyazaki.lg.jp/documents/27861/27861_20260413115340-1.pdf",
@@ -1493,9 +1511,21 @@
           "label": "宮崎県警・返納メリット一覧（令和8年10月29日現在）",
           "updated": "2026-10-29",
           "checked": "2026-10-31"
+        },
+        {
+          "url": "https://www.city.kobayashi.lg.jp/material/files/group/6/komibasukaiseigojikokuhyou.pdf",
+          "label": "市・コミュニティバス時刻表（令和8年5月1日改正）",
+          "updated": "",
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.city.kobayashi.lg.jp/material/files/group/6/siryou.pdf",
+          "label": "市・地域公共交通会議の資料（小林・須木地区）",
+          "updated": "",
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "県警の2026年10月29日一覧で返納支援の内容を再確認しました。市の古い2022年案内の100円・3年条件と県警の半額の対応、発行手続き等は未解決。 元の令和8年4月7日一覧URLは今回404のため過去の参照記録として残しています。市の料金案内は2022年更新です。返納者乗車証の発行方法・居住条件、県警の「半額」と市の「100円」の対応、悠々パスの現行対象商品は企画政策課（0984-23-0456）へ確認してください。"
+      "flag": "小林・須木地区の市の現行時刻表では返納後3年・1回100円。県警一覧の半額表記との関係は未確認。悠々パス又は宮交スマート65提示の100円も市時刻表で確認。"
     },
     {
       "slug": "ebino",
