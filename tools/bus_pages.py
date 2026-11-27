@@ -137,17 +137,32 @@ def bus_page(pref_data, bus, draft, shell, jdate):
     common_link = (f'<p><a href="{e(common["url"])}" target="_blank" rel="noopener">{e(common["label"])}</a>も別に確認できます。</p>'
                    if common.get('url') else '')
     taxi_link = f'<a href="{pref["id"]}-taxi.html">高齢者のタクシー助成</a> ／ ' if pref_data.get('taxi') else ''
+    title = f"{pref['name']}の高齢者バス助成・敬老パス {total}{pref['unit']}比較｜じもとくらべ"
+    description = f"{pref['name']}の高齢者バス助成・敬老パスを対象、料金、使える路線、申し込みで比較。{total}{pref['unit']}の公式資料を調査し、未確認の点も表示。{jdate(bus['checked'])}確認。"
+    heading = '高齢者のバス代、<br>住むまちでどう違う？'
     search_answer = ""
     if pref["id"] == "hyogo":
+        title = "兵庫県の高齢者バス割引・敬老パス｜対象年齢・運賃を41市町で比較｜じもとくらべ"
+        description = "兵庫県41市町の高齢者バス運賃助成、敬老パス、バス券を比較。対象年齢・自己負担・路線・申請方法と、尼崎市の乗車払カードのチャージ先を確認できます。"
+        heading = "兵庫県の高齢者バス割引・敬老パス"
         search_answer = """<section class="answer" aria-labelledby="bus-search-h">
 <h2 id="bus-search-h">何歳から・いくらで乗れる？ 市町ごとに確認</h2>
-<p>敬老パスやバス券は、市町・年齢・対象路線によって条件が異なります。無料乗車、運賃の割引、乗車券の助成を分け、カードの交付と乗るときの自己負担も確認してください。</p>
-<p class="src-links"><a href="#amagasaki">尼崎市の高齢者バスカード</a> ／ <a href="#itami">伊丹市の対象・申請方法</a> ／ <a href="#kobe">神戸市の敬老パス</a> ／ <a href="#nishinomiya">西宮市のバス支援</a></p>
-<p>カードのチャージ場所や使える路線は、各市町の欄にある公式案内へ。記載がない場合は、市町の窓口や交通事業者に確認してください。<a href="#pick">ほかの市町を探す →</a></p>
+<p>対象年齢や使える路線は、市町によって異なります。お住まいの市町を選び、パスや乗車券を受け取るときの費用と、乗るたびに支払う運賃を確認できます。</p>
+<p class="src-links"><a href="#amagasaki">尼崎市の乗車払カード・定期券</a> ／ <a href="#itami">伊丹市の対象・申請方法</a> ／ <a href="#kobe">神戸市の敬老パス</a> ／ <a href="#nishinomiya">西宮市のバス支援</a> ／ <a href="#pick">ほかの市町を探す</a></p>
+<p>尼崎市の乗車払カードは、市内の阪神バス営業所やバス車内でチャージできます。入金単位や上限は<a href="https://faq.city.amagasaki.hyogo.jp/faq/detail.aspx?id=1608">尼崎市の乗車払カードの案内</a>で確認できます。</p>
+</section>"""
+    elif pref["id"] == "kyoto":
+        title = "京都府の高齢者バス割引・敬老乗車証｜対象年齢・負担金・路線｜じもとくらべ"
+        description = "京都市の敬老乗車証（フリーパス証・敬老バス回数券）と、京都府26市町村の高齢者バス助成の掲載状況を案内。対象年齢、負担金、使える路線、申請方法を市町村ごとに確認できます。"
+        heading = "京都府の高齢者バス割引・敬老乗車証"
+        search_answer = """<section class="answer" aria-labelledby="bus-search-h">
+<h2 id="bus-search-h">京都市の敬老乗車証と市町村ごとのバス助成</h2>
+<p>京都市では、年齢・所得などの条件を満たす市民が、フリーパス証か敬老バス回数券のどちらかを選べます。負担金と使える路線は、選ぶ券によって異なります。</p>
+<p class="src-links"><a href="#kyoto">京都市の敬老乗車証・使える路線</a> ／ <a href="#kameoka">亀岡市の敬老乗車券</a> ／ <a href="#pick">ほかの市町村を探す</a></p>
 </section>"""
     main = f'''<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {e(pref['name'])}の高齢者バス助成</nav>
 <div class="hero"><p class="eyebrow">{e(pref['name'])}・{total}{e(pref['unit'])} ／ {jdate(bus['checked'])}確認</p>
-<h1>高齢者のバス代、<br>住むまちでどう違う？</h1>
+<h1>{heading}</h1>
 <p class="lead">敬老パス・運賃の割引・バス券の助成を、対象、助成の中身、料金、使えるバス、申し込みの5項目で比べられます。</p></div>{chr(10) + search_answer if search_answer else ""}
 <section class="pick" id="pick" aria-labelledby="pick-h"><h2 class="section-title" id="pick-h">お住まいのまちを探す</h2>
 <div class="bus-controls"><div class="search"><label for="bus-q">市町村の名前（ひらがなでも検索）</label><input id="bus-q" type="search" autocomplete="off" placeholder="{e(pref.get('placeholder', '例：あかし、神戸'))}"></div>
@@ -165,8 +180,7 @@ def bus_page(pref_data, bus, draft, shell, jdate):
 <li>古い資料や日付のない資料、制度の条件が曖昧な場合は、申し込む前に市町村の窓口で確認してください。</li>
 <li>{taxi_link}<a href="{pref['id']}-menkyo-henno.html">免許返納の特典</a></li>
 </ul></section>'''
-    return shell(title=f"{pref['name']}の高齢者バス助成・敬老パス {total}{pref['unit']}比較｜じもとくらべ",
-                 description=f"{pref['name']}の高齢者バス助成・敬老パスを対象、料金、使える路線、申し込みで比較。{total}{pref['unit']}の公式資料を調査し、未確認の点も表示。{jdate(bus['checked'])}確認。",
+    return shell(title=title, description=description,
                  path=bus_path(pref), main=main, draft=draft or bus.get("draft", False), scripts=BUS_SCRIPT,
                  draft_note=f"制度の内容を確認するための{pref['name']}版です。", page_class="bus-page",
                  styles=f'\n<link rel="stylesheet" href="assets/bus.css?v={css_rev}">')

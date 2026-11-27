@@ -104,7 +104,22 @@ for p,d in prefs.items():
  from prefecture_comparison import enhance_prefecture
  body=enhance_prefecture(body,ROOT,p)
  unit=d['pref'].get('unit','市区町村')
- page=BeautifulSoup(shell(name+str(len(cs))+unit+'の免許返納特典・交通支援を比較｜金額・対象条件',body,'', name+str(len(cs))+unit+'の免許返納特典、バス助成・敬老パス、タクシー支援を比較。金額・本人負担・対象条件・出典と確認日を一覧で確認し、名前や地域で絞り込めます。'),'html.parser')
+ title=name+str(len(cs))+unit+'の免許返納特典・交通支援を比較｜金額・対象条件'
+ description=name+str(len(cs))+unit+'の免許返納特典、バス助成・敬老パス、タクシー支援を比較。金額・本人負担・対象条件・出典と確認日を一覧で確認し、名前や地域で絞り込めます。'
+ if p=='hyogo':
+  title='兵庫県の免許返納特典まとめ｜41市町の支援・県内の割引・手続き'
+  description='兵庫県41市町の免許返納特典を、金額・対象年齢・申請条件で一覧比較。運転経歴証明書で受けられる県内の協賛割引と、免許返納の窓口・必要書類も確認できます。'
+  intro=BeautifulSoup(body,'html.parser')
+  header=intro.select_one('.pref-intro')
+  header.h1.string='兵庫県の免許返納特典まとめ'
+  header.select_one('p:last-child').string='市町によって返納特典の内容や対象が異なります。41市町の掲載情報から、金額・年齢・申請条件を比べられます。'
+  header.append(BeautifulSoup(
+   '<p>兵庫県内の住所が記載された運転経歴証明書を持つ65歳以上の方には、協賛先でバス・タクシーなどの割引があります。</p>'
+   '<p><a href="#support-comparison">41市町の返納特典を比べる</a> ／ <a href="#return-procedure">免許返納の窓口・必要書類</a> ／ '
+   '<a href="https://www.police.pref.hyogo.lg.jp/traffic/license/keireki_tokuten/index.htm">県警の協賛特典一覧</a></p>',
+   'html.parser'))
+  body=str(intro)
+ page=BeautifulSoup(shell(title,body,'',description),'html.parser')
  page.head.append(page.new_tag('link',rel='stylesheet',href='assets/prefecture-comparison.css?v=nationwide-20261031'))
  page.body.append(page.new_tag('script',src='assets/prefecture-comparison.js?v=nationwide-20261031',defer=True))
  for asset in ('prefecture-comparison.css','prefecture-comparison.js'):

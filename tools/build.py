@@ -777,22 +777,31 @@ def taxi_page(data, draft):
   <p class="src-links"><a href="{list_path(P)}">{e(pn)}の免許返納特典を探す →</a> {bus_link} <a href="mobility.html">通院・買い物の移動手段を探す →</a></p>
 </section>"""
     search_answer = ""
-    if P["id"] == "kanagawa":
-        search_answer = """<section class="answer" aria-labelledby="taxi-search-h">
-  <h2 id="taxi-search-h">高齢者のタクシー割引・タクシー券を探す方へ</h2>
-  <p>このページは、市町村が交付するタクシー券や利用料金の助成の一覧です。年齢などで使える制度と、要介護認定などの条件がある制度を分けています。高齢者なら全員が対象になるわけではありません。</p>
-  <p>タクシー会社が運賃を割り引くサービスや、免許返納者向けの特典とは別の仕組みです。事業者の割引を網羅した一覧ではありません。</p>
-  <p class="src-links"><a href="#pick">お住まいの市町村の対象・金額・申請先を見る →</a> <a href="#list-h">助成の種類で絞る →</a> <a href="kanagawa-menkyo-henno.html">免許返納者向けの特典を探す →</a></p>
-</section>"""
     y, m, d = checked.split("-")
+    title = f"{pn}の高齢者タクシー助成 {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"
+    description = (f"{pn}の{total}{pu}が高齢者に出しているタクシー券・タクシー代の助成を、対象の年齢・金額・申し込み先をそろえて比べられます。"
+                   f"{n_yes}{pu}で年齢などで使える助成あり。{jdate(checked)}に各市町の公式ページで確認。")
+    heading = "高齢者のタクシー代、市や町が助成してくれる？"
+    lead = f"{pn}の{total}{pu}が、高齢者に出しているタクシー券やタクシー代の助成を、対象の年齢・金額・申し込み先をそろえて並べました。"
+    if P["id"] == "kanagawa":
+        title = "神奈川県の高齢者タクシー券・運賃助成｜33市町村の対象と申請先｜じもとくらべ"
+        description = "神奈川県の高齢者向けタクシー券・利用料助成を33市町村から探せます。年齢・介護などの対象条件、金額、申請先を掲載。タクシー会社の割引や免許返納の特典とは仕組みが異なります。"
+        heading = "神奈川県の高齢者タクシー券・運賃助成"
+        lead = "タクシー券や利用料の助成を受けられるかは、お住まいの市町村や年齢、介護などの条件で変わります。33市町村の掲載状況と、対象・金額・申請先を確認できます。"
+        search_answer = """<section class="answer" aria-labelledby="taxi-search-h">
+  <h2 id="taxi-search-h">お住まいの市町村で対象条件を確認</h2>
+  <p>例えば秦野市の福祉タクシー券は、在宅ねたきり高齢者として登録している方も対象です。交付の除外条件は<a href="https://www.city.hadano.kanagawa.jp/kosodate/mokuteki/2/4/8790.html">秦野市の公式案内</a>で確認できます。</p>
+  <p class="pick-grid src-links"><a href="#hadano">秦野市の福祉タクシー券</a> <a href="#pick">市町村から探す</a> <a href="#list-h">助成の種類で絞る</a></p>
+  <p>タクシー会社の割引は各事業者の案内をご確認ください。<a href="kanagawa-menkyo-henno.html">免許返納者向けの特典</a>は県の返納特典一覧から探せます。</p>
+</section>"""
     main = f"""<nav class="crumbs" aria-label="いまいる場所"><a href="./">トップ</a> ＞ {pn}の高齢者のタクシー代の助成</nav>
 <div class="hero">
   <div class="hero-top">
     <p class="eyebrow">{pn}・{total}{pu}</p>
     <div class="stamp" role="img" aria-label="{jdate(checked)}に確認"><span>確認</span><b>{y}</b><b>{int(m)}.{int(d)}</b></div>
   </div>
-  <h1>高齢者のタクシー代、市や町が助成してくれる？</h1>
-  <p class="lead">{pn}の{total}{pu}が、高齢者に出しているタクシー券やタクシー代の助成を、対象の年齢・金額・申し込み先をそろえて並べました。</p>
+  <h1>{heading}</h1>
+  <p class="lead">{lead}</p>
 </div>{chr(10) + search_answer if search_answer else ""}{chr(10) + related_support if related_support else ""}
 
 <section class="pick" id="pick" aria-labelledby="pick-h">
@@ -834,9 +843,8 @@ def taxi_page(data, draft):
   </ul>
 </section>"""
     return shell(
-        title=(f"神奈川県の高齢者タクシー券・助成｜対象・金額・申請先を33市町村で比較｜じもとくらべ" if P["id"] == "kanagawa" else f"{pn}の高齢者タクシー助成 {total}{pu}の一覧（{int(y)}年{int(m)}月確認）｜じもとくらべ"),
-        description=(f"{pn}の{total}{pu}が高齢者に出しているタクシー券・タクシー代の助成を、対象の年齢・金額・申し込み先をそろえて比べられます。"
-                     f"{n_yes}{pu}で年齢などで使える助成あり。{jdate(checked)}に各市町の公式ページで確認。"),
+        title=title,
+        description=description,
         path=taxi_path(P),
         main=main, draft=draft,
         scripts=LIST_SCRIPT)
