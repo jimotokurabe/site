@@ -210,7 +210,7 @@
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
               "label": "長野県令和8年度・高齢者移動支援一覧",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.vill.kawakami.nagano.jp/www/contents/1001000000031/index.html",
@@ -225,7 +225,7 @@
               "checked": "2026-10-06"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -233,7 +233,7 @@
           "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
           "label": "長野県令和8年度・高齢者移動支援一覧",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.vill.kawakami.nagano.jp/www/contents/1001000000031/index.html",
@@ -248,7 +248,7 @@
           "checked": "2026-10-06"
         }
       ],
-      "flag": "令和8年度県一覧で70歳以上の無料券を確認しました。村の説明は2017年、運賃案内は2024年です。保健福祉課（0267-97-3600）へ住所条件・対象区間・申請方法を確認してください。"
+      "flag": "県の令和8年度一覧で70歳以上の無料券を確認。住所・対象区間・提示方法は未記載。"
     },
     {
       "slug": "minamimaki",
@@ -2336,7 +2336,7 @@
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8jisyuhennousien2.pdf",
               "label": "長野県・令和8年度自主返納支援一覧",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation"
@@ -2356,7 +2356,7 @@
               "url": "http://www.town.anan.nagano.jp/anan_town/living_subsidies/",
               "label": "阿南町・生活に関する補助制度",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation"
@@ -2367,16 +2367,16 @@
           "url": "http://www.town.anan.nagano.jp/anan_town/living_subsidies/",
           "label": "阿南町・生活に関する補助制度",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8jisyuhennousien2.pdf",
           "label": "長野県・令和8年度自主返納支援一覧",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "町公式の案内と県の令和8年度一覧を確認。町ページは更新日なし。県R8は南部公共バスの返納・失効枠を確認できるが、町民バスの現行条件、失効者の提示方法は総務課0260-22-2141へ確認。"
+      "flag": "県の令和8年度一覧は失効者も南部公共バス無償と掲載。失効者の証明書の取得・提示方法と町民バスの現在の手続きは未確認。"
     },
     {
       "slug": "achi",
@@ -4584,16 +4584,16 @@
               "url": "https://www.vill.takayama.nagano.jp/docs/7321014.html",
               "label": "高山村・おでかけパスポート",
               "updated": "2024-03-21",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
               "label": "長野県・令和8年度高齢者移動支援一覧",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -4601,7 +4601,7 @@
           "url": "https://www.vill.takayama.nagano.jp/docs/7321014.html",
           "label": "高山村・おでかけパスポート",
           "updated": "2024-03-21",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.vill.takayama.nagano.jp/docs/7624278.html",
@@ -4613,10 +4613,10 @@
           "url": "https://www.pref.nagano.lg.jp/kurashi-shohi/anzen/documents/documents/r8koureisyasien.pdf",
           "label": "長野県・令和8年度高齢者移動支援一覧",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "県令和8年度一覧でも70歳以上割引を確認。詳細ページは2024年表示。旧保険証を含む身分証と適用路線を健康福祉課026-242-1201へ確認。古い返納1万円チャージ支援は現行本文を確認できず受付を同課へ確認。"
+      "flag": "村の割引額と県の令和8年度一覧を照合。申請時に今使える身分証と対象区間の詳細は未確認。"
     },
     {
       "slug": "shinano",

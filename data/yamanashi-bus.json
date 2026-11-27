@@ -579,16 +579,16 @@
               "url": "https://www.town.hayakawa.yamanashi.jp/people/pdf/1.pdf",
               "label": "早川町乗合バス運賃表",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
               "label": "県内市町村交通利用促進施策（令和8年3月現在）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "notes": []
         }
       ],
@@ -597,16 +597,16 @@
           "url": "https://www.town.hayakawa.yamanashi.jp/people/pdf/1.pdf",
           "label": "早川町乗合バス運賃表",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
           "label": "県内市町村交通利用促進施策（令和8年3月現在）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "運賃表は更新日記載なし。県の令和8年3月一覧にも半額を確認。年齢確認方法・申請の要否は町役場（0556-45-2511）へ確認してください。"
+      "flag": "町の運賃表と県の令和8年3月一覧で75歳以上半額を確認。年齢確認書類は未記載。"
     },
     {
       "slug": "minobu",
@@ -787,13 +787,19 @@
           "url": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/chiikishinkou_t/1_1/619.html",
           "label": "高齢者運転免許証自主返納支援",
           "updated": "2026-05-14",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/chiikishinkou_t/2_1/14351.html",
           "label": "令和8年4月から公共交通",
           "updated": "2026-09-07",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/documents/114845/r803kotusesaku.pdf",
+          "label": "山梨県・令和8年3月の交通施策一覧",
+          "updated": "",
+          "checked": "2026-11-27"
         }
       ],
       "flag": "県令和8年3月一覧には旧バス回数券が掲載されていますが、市の5月案内ではタクシー券のみです。バス支援の有無を地域環境課地域振興担当（0554-43-1111内線174・175）へ確認してください。"

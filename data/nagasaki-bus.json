@@ -1079,19 +1079,21 @@
           "fare": "1枚100円、1乗車10枚まで。乗車時に本人確認書類を提示し券使用を伝え、降車時に券と不足額を支払う。定期券購入不可。",
           "routes": "市の協力機関のバス・タクシー。対象バスの具体的路線は記載なし。",
           "apply": "令和8年3月25日から各支所。本人確認書類、代理は代理人身分証も必要。",
-          "notes": [],
+          "notes": [
+            "市の令和8年度受付案内はタクシー券表記です。バスで使える対象区間は市へ確認してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.minamishimabara.lg.jp/kiji00312406/index.html",
               "label": "令和8年度高齢者、障害者等交通費助成利用券の受付",
               "updated": "2026-03-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www1.g-reiki.net/city.minamishimabara/reiki_honbun/r405RG00000630.html",
               "label": "高齢者、障害者等交通費助成事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.minamishimabara.lg.jp/kiji00310109/3_10109_80433_up_2ajemcxi.pdf",
@@ -1111,19 +1113,21 @@
           "fare": "1枚100円、1乗車10枚まで。乗車時に本人確認書類を提示し券使用を伝え、降車時に券と不足額を支払う。定期券購入不可。",
           "routes": "島鉄バスと市契約のタクシー。対象区間は確認。",
           "apply": "令和8年3月25日から各支所。本人確認書類、代理は代理人身分証も必要。全免許取消が分かる取消通知書。紛失時は警察の申請取消照会回答書。",
-          "notes": [],
+          "notes": [
+            "市の令和8年度受付案内はタクシー券表記です。バスで使える対象区間は市へ確認してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.minamishimabara.lg.jp/kiji00312406/index.html",
               "label": "令和8年度高齢者、障害者等交通費助成利用券の受付",
               "updated": "2026-03-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www1.g-reiki.net/city.minamishimabara/reiki_honbun/r405RG00000630.html",
               "label": "高齢者、障害者等交通費助成事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.police.pref.nagasaki.jp/police/wp-content/uploads/2026/05/8a05dfd0cf3ae4503b8218d30aa1a83d-2.pdf",
@@ -1140,13 +1144,13 @@
           "url": "https://www.city.minamishimabara.lg.jp/kiji00312406/index.html",
           "label": "令和8年度高齢者、障害者等交通費助成利用券の受付",
           "updated": "2026-03-25",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www1.g-reiki.net/city.minamishimabara/reiki_honbun/r405RG00000630.html",
           "label": "高齢者、障害者等交通費助成事業実施要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.minamishimabara.lg.jp/kiji00310109/3_10109_80433_up_2ajemcxi.pdf",
@@ -1161,7 +1165,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "要綱・計画・県警資料は更新日記載なし。協力バスの最新区間・対象路線と利用券の現行運用は福祉課（0957-73-6651）へ確認してください。"
+      "flag": "令和8年度の受付、金額、本人確認を照合。市の受付案内はタクシー券表記で、協力バスの対象区間は未確認。"
     },
     {
       "slug": "goto",
@@ -1336,16 +1340,16 @@
               "url": "https://www.city.iki.nagasaki.jp/soshiki/tyouzyu/ippan/14135.html",
               "label": "福祉一般・市内路線バス乗車カード",
               "updated": "2025-01-22",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.iki.nagasaki.jp/section/reiki/reiki_honbun/r014RG00000683.html",
               "label": "市内路線バス乗車カード交付要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1353,16 +1357,16 @@
           "url": "https://www.city.iki.nagasaki.jp/soshiki/tyouzyu/ippan/14135.html",
           "label": "福祉一般・市内路線バス乗車カード",
           "updated": "2025-01-22",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.iki.nagasaki.jp/section/reiki/reiki_honbun/r014RG00000683.html",
           "label": "市内路線バス乗車カード交付要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "案内は2025年1月更新、要綱は更新日記載なし。現在の申請窓口・有効期限は長寿支援課（0920-45-1197）へ確認してください。"
+      "flag": "壱岐交通1路線100円、75歳の誕生日を経過した市内在住者が対象。カードの利用期限は未確認。"
     },
     {
       "slug": "tsushima",

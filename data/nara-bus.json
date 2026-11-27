@@ -496,7 +496,7 @@
           "benefit": "斑鳩町コミュニティバスに無料乗車。",
           "fare": "無料。",
           "routes": "斑鳩町コミュニティバス。",
-          "apply": "初回は顔写真（縦3cm・横2.5cm）と印鑑を持参し申請。福祉課へ問い合わせ。",
+          "apply": "初めて高齢者優待利用券を受け取る方は、申請書・顔写真（縦3cm×横2.5cm）・本人確認書類を持参し、役場1階福祉課で申請。令和8年度は令和9年3月31日まで。",
           "notes": [],
           "sources": [
             {
@@ -504,6 +504,12 @@
               "label": "町の高齢者の生きがい支援",
               "updated": "2026-09-25",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.ikaruga.nara.jp/cmsfiles/contents/0000000/94/R8yutai.pdf",
+              "label": "町・令和8年度高齢者優待券の交付案内",
+              "updated": "",
+              "checked": "2026-11-27"
             }
           ],
           "current": "document_checked"
@@ -516,16 +522,28 @@
           "benefit": "1年度に3,500円分のCI-CAを交付。公式案内にはプレミア分の加算も記載。",
           "fare": "各路線の運賃をカード残高から支払う。",
           "routes": "奈良交通・エヌシーバスのICカード読取機搭載車両。",
-          "apply": "初回は顔写真（縦3cm・横2.5cm）と印鑑を持参し申請。福祉課へ問い合わせ。",
+          "apply": "初めて高齢者優待利用券を受け取る方は、申請書・顔写真（縦3cm×横2.5cm）・本人確認書類を持参し、役場1階福祉課で申請。令和8年度は令和9年3月31日まで。",
           "notes": [
-            "令和8年10月のプレミア終了後の交付額を要確認。"
+            "町の年度案内は3,500円＋プレミア分と記載。奈良交通の普通チャージ時プレミア終了後の町の交付額は未確認。"
           ],
           "sources": [
             {
               "url": "https://www.town.ikaruga.nara.jp/0000000094.html",
               "label": "町の高齢者の生きがい支援",
               "updated": "2026-09-25",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
+            },
+            {
+              "url": "https://www.town.ikaruga.nara.jp/cmsfiles/contents/0000000/94/R8yutai.pdf",
+              "label": "町・令和8年度高齢者優待券の交付案内",
+              "updated": "",
+              "checked": "2026-11-27"
+            },
+            {
+              "url": "https://www.narakotsu.co.jp/news/general/33769/",
+              "label": "奈良交通・CI-CA普通のチャージ時プレミア終了",
+              "updated": "",
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation"
@@ -538,9 +556,10 @@
           "benefit": "ICOCA所持者は3,000円分チャージ券。未所持者は2,000円のカード（利用可能額1,500円）と1,000円チャージ券。1年度に当該年度分のみ交付。",
           "fare": "各交通機関の通常運賃。",
           "routes": "ICOCA利用可能エリアの公共バス・一部私鉄等。",
-          "apply": "初回は顔写真（縦3cm・横2.5cm）と印鑑を持参し申請。福祉課へ問い合わせ。",
+          "apply": "初めて高齢者優待利用券を受け取る方は、申請書・顔写真（縦3cm×横2.5cm）・本人確認書類を持参し、役場1階福祉課で申請。令和8年度は令和9年3月31日まで。",
           "notes": [
-            "チャージは町指定のコンビニ。500円の高齢者優待共通利用券も交付されるが、これは施設利用用。"
+            "チャージは町指定のコンビニ。500円の高齢者優待共通利用券も交付されるが、これは施設利用用。",
+            "令和8年度交付分のICOCAチャージ券は令和9年3月31日まで。"
           ],
           "sources": [
             {
@@ -548,6 +567,12 @@
               "label": "町の高齢者の生きがい支援",
               "updated": "2026-09-25",
               "checked": "2026-10-06"
+            },
+            {
+              "url": "https://www.town.ikaruga.nara.jp/cmsfiles/contents/0000000/94/R8yutai.pdf",
+              "label": "町・令和8年度高齢者優待券の交付案内",
+              "updated": "",
+              "checked": "2026-11-27"
             }
           ],
           "current": "document_checked"
@@ -558,10 +583,22 @@
           "url": "https://www.town.ikaruga.nara.jp/0000000094.html",
           "label": "町の高齢者の生きがい支援",
           "updated": "2026-09-25",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.town.ikaruga.nara.jp/cmsfiles/contents/0000000/94/R8yutai.pdf",
+          "label": "町・令和8年度高齢者優待券の交付案内",
+          "updated": "",
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.narakotsu.co.jp/news/general/33769/",
+          "label": "奈良交通・CI-CA普通のチャージ時プレミア終了",
+          "updated": "",
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "住所条件とCI-CAのプレミア終了後の交付額、年度ごとの申請方法は福祉課（0745-74-1001）へ確認してください。"
+      "flag": "町の令和8年度案内はCI-CAを3,500円＋プレミア分と掲載。奈良交通は2026年10月に普通チャージ時のプレミアを終了。町の交付分への影響は未確認。"
     },
     {
       "slug": "ando",
@@ -1274,10 +1311,10 @@
               "url": "https://www.town.shimoichi.lg.jp/0000000785.html",
               "label": "町の運転免許自主返納路線バス利用促進事業",
               "updated": "2025-02-17",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1285,10 +1322,10 @@
           "url": "https://www.town.shimoichi.lg.jp/0000000785.html",
           "label": "町の運転免許自主返納路線バス利用促進事業",
           "updated": "2025-02-17",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "2025年2月更新で1年以上前。年齢条件・具体的な対象区間、券の使い方と現行条件は総務課（0747-52-0001）で確認してください。"
+      "flag": "町の案内で奈良交通券200円×78枚を確認。年齢要件、具体的な区間、券と現金の併用は未記載。"
     },
     {
       "slug": "kurotaki",

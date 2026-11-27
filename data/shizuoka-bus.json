@@ -100,13 +100,13 @@
               "url": "https://www.town.minamiizu.shizuoka.jp/docs/2022040100012/file_contents/Book_R04_04.pdf",
               "label": "広報みなみいず2022年4月号・高齢者通院バス料金助成",
               "updated": "",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.minamiizu.shizuoka.jp/docs/2026021700017/file_contents/koutu2.pdf",
               "label": "公共交通現状資料・高齢者通院バス料金助成",
               "updated": "",
-              "checked": "2026-10-31"
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation",
@@ -118,16 +118,16 @@
           "url": "https://www.town.minamiizu.shizuoka.jp/docs/2022040100012/file_contents/Book_R04_04.pdf",
           "label": "広報みなみいず2022年4月号・高齢者通院バス料金助成",
           "updated": "",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.minamiizu.shizuoka.jp/docs/2026021700017/file_contents/koutu2.pdf",
           "label": "公共交通現状資料・高齢者通院バス料金助成",
           "updated": "",
-          "checked": "2026-10-31"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "2026年掲載の交通資料で対象・助成額は確認しましたが、資料本体に日付はありません。申請手続きの根拠は令和4年度広報のため、令和8年度の書類・受付・生活保護条件・利用路線は福祉介護課（0558-62-6233）へ確認してください。"
+      "flag": "2026年掲載の交通資料で対象・金額を確認。現在の申請書類と利用対象便は未確認。"
     },
     {
       "slug": "matsuzaki",
@@ -651,10 +651,22 @@
               "url": "https://www.city.susono.shizuoka.jp/kenko/4/2696.html",
               "label": "高齢者バス・タクシー利用助成",
               "updated": "2025-08-04",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
+            },
+            {
+              "url": "https://www.city.susono.shizuoka.jp/soshiki/3/3/4/5/musen_naiyo/21592.html",
+              "label": "市・令和8年4月の無線放送（通常助成券）",
+              "updated": "",
+              "checked": "2026-11-27"
+            },
+            {
+              "url": "https://www.city.susono.shizuoka.jp/kenko/4/22333.html",
+              "label": "市・物価高騰対応高齢者移動支援事業",
+              "updated": "2026-09-07",
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "物価高騰対応高齢者移動支援券",
@@ -665,13 +677,15 @@
           "fare": "現金払い時に利用。2026年9月18日〜2027年1月31日有効。本人用、譲渡・換金不可。",
           "routes": "富士急シティバス・富士急モビリティの路線バス。乗降のいずれかが市内、高速バス除外。",
           "apply": "申請不要。2026年9月7日から対象者へ順次郵送。",
-          "notes": [],
+          "notes": [
+            "通常の2,000円分の助成券と併用できます。"
+          ],
           "sources": [
             {
               "url": "https://www.city.susono.shizuoka.jp/kenko/4/22333.html",
               "label": "物価高騰対応高齢者移動支援事業",
               "updated": "2026-09-07",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
           "current": "document_checked"
@@ -682,16 +696,22 @@
           "url": "https://www.city.susono.shizuoka.jp/kenko/4/2696.html",
           "label": "高齢者バス・タクシー利用助成",
           "updated": "2025-08-04",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.susono.shizuoka.jp/kenko/4/22333.html",
           "label": "物価高騰対応高齢者移動支援事業",
           "updated": "2026-09-07",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
+        },
+        {
+          "url": "https://www.city.susono.shizuoka.jp/soshiki/3/3/4/5/musen_naiyo/21592.html",
+          "label": "市・令和8年4月の無線放送（通常助成券）",
+          "updated": "",
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "1年以上前の案内のため令和8年度の継続・対象会社は都市計画課（055-995-1829）へ確認してください。"
+      "flag": "通常2,000円分の令和8年度交付を確認。別の物価高騰対策は3,000円分、現金払いで通常券と併用可、令和9年1月31日まで。"
     },
     {
       "slug": "izu",
@@ -840,10 +860,10 @@
               "url": "https://www.town.kannami.shizuoka.jp/soshiki/1009/2/2/649.html",
               "label": "介護保険以外の高齢者サービス",
               "updated": "2025-03-27",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "運転免許証自主返納地域交通利用券",
@@ -860,10 +880,10 @@
               "url": "https://www.town.kannami.shizuoka.jp/soshiki/1009/2/2/649.html",
               "label": "介護保険以外の高齢者サービス",
               "updated": "2025-03-27",
-              "checked": "2026-10-06"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -871,10 +891,10 @@
           "url": "https://www.town.kannami.shizuoka.jp/soshiki/1009/2/2/649.html",
           "label": "介護保険以外の高齢者サービス",
           "updated": "2025-03-27",
-          "checked": "2026-10-06"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "案内更新が2025年3月で、現年度の金額・対象条件と本人確認書類を福祉課（055-979-8126）へ確認してください。"
+      "flag": "町の専用案内で80歳以上枠と70歳以上80歳未満の自主返納者枠を確認。指定バス事業者・路線の最新情報は未確認。"
     },
     {
       "slug": "shimizu",

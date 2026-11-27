@@ -428,24 +428,24 @@
           "eligibility": "70歳以上の深川市民。事前に停留所を登録。自力乗降条件は要綱による。",
           "benefit": "通常運賃別の専用助成券を10枚単位で割安販売。",
           "fare": "登録料300円。専用券100–280円、JRは330円以上区間230円。市内で利用者証提示し1枚使用。",
-          "routes": "空知中央、JR北海道、沿岸、道北の路線バス。高速除外、登録した市内停留所間のみ、市外にまたがる乗車不可。",
-          "apply": "市役所又は納内・多度志支所で申請し利用者証交付。助成券購入。市立病院売店は前月末正午まで予約。介護予防係0164-26-2644。",
+          "routes": "登録した停留所から市内のバス発着点まで。市外にまたがる乗車は対象外。空知中央バスの滝深線は廃止され、市は助成券の払い戻しを案内しています。",
+          "apply": "市役所高齢者支援課又は納内・多度志支所で、利用停留所を登録。初回登録料300円。印鑑・身分証明書は不要です。助成券は10枚単位で購入し、利用期限はありません。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.city.fukagawa.lg.jp/cms/section/kourei/ik75k4000000113m.html",
               "label": "深川市・高齢者バス利用料金助成",
               "updated": "2026-08-19",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.fukagawa.lg.jp/cms/section/kourei/ik75k4000000113m-att/u4rdqr0000000q7l.pdf",
               "label": "深川市・利用案内R8.5以降",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -453,16 +453,16 @@
           "url": "https://www.city.fukagawa.lg.jp/cms/section/kourei/ik75k4000000113m.html",
           "label": "深川市・高齢者バス利用料金助成",
           "updated": "2026-08-19",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.fukagawa.lg.jp/cms/section/kourei/ik75k4000000113m-att/u4rdqr0000000q7l.pdf",
           "label": "深川市・利用案内R8.5以降",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "PDF更新日なし（市の現行リンクはR8.5以降）。申請時の書類、運行変更後の区間・料金表を介護予防係に確認してください。"
+      "flag": "申請時に印鑑・身分証明書は不要で、券に利用期限なし。滝深線は廃止。現在の便は運行案内で確認。"
     },
     {
       "slug": "nanporo",
@@ -938,16 +938,16 @@
               "url": "https://www.town.numata.hokkaido.jp/section/kensetu/h0opp2000000448w-att/h0opp2000000m33f.pdf",
               "label": "沼田町・町営バスR8.4時刻表",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.numata.hokkaido.jp/section/soumu/h0opp2000000jbjm-att/h0opp2000000mamu.pdf",
               "label": "沼田町・シルバーパスポート購入案内",
               "updated": "2023-10-26",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -955,16 +955,16 @@
           "url": "https://www.town.numata.hokkaido.jp/section/kensetu/h0opp2000000448w-att/h0opp2000000m33f.pdf",
           "label": "沼田町・町営バスR8.4時刻表",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.numata.hokkaido.jp/section/soumu/h0opp2000000jbjm-att/h0opp2000000mamu.pdf",
           "label": "沼田町・シルバーパスポート購入案内",
           "updated": "2023-10-26",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "現行R8時刻表PDF更新日なし。購入案内は2023年。現行販売窓口・必要証明を建設課管理に確認してください。"
+      "flag": "町内在住65歳以上、月1,000円を町の時刻表で確認。購入窓口・書類の案内は令和5年資料。"
     },
     {
       "slug": "sapporo",
@@ -3962,10 +3962,10 @@
               "url": "https://www.town.tohma.hokkaido.jp/living/09/02/2451",
               "label": "のるーと当麻",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -3973,10 +3973,10 @@
           "url": "https://www.town.tohma.hokkaido.jp/living/09/02/2451",
           "label": "のるーと当麻",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "公式案内の更新日と割引時の年齢・居住証明方法は未確認です。まちづくり推進課企画商工係（0166-84-2111）へ確認してください。"
+      "flag": "65歳以上300円、町民の80歳以上100円を確認。利用時の年齢・居住の提示書類は未確認。"
     },
     {
       "slug": "pippu",
@@ -4074,16 +4074,16 @@
               "url": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85%EF%BC%88R8.4.1%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
               "label": "しずくらいん利用案内",
               "updated": "2026-04-01",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93FAQ.pdf",
               "label": "しずくらいんFAQ",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -4097,16 +4097,16 @@
           "url": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85%EF%BC%88R8.4.1%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
           "label": "しずくらいん利用案内",
           "updated": "2026-04-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93FAQ.pdf",
           "label": "しずくらいんFAQ",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "無料乗車証の申請に必要な本人・居住・年齢証明書類は公式本文に明記がありません。保健福祉課（0166-82-2111）へ確認してください。道の2025年末一覧に載る旧バスIC助成は、現在の町案内がハイヤー助成のみを案内するため現行扱いを保留しています。"
+      "flag": "町の利用案内とFAQで65歳以上の町民の全額免除を確認。証明書類は未記載。"
     },
     {
       "slug": "biei",
@@ -5657,16 +5657,16 @@
               "url": "https://town.yubetsu.lg.jp/administration/life/detail.html?content=613",
               "label": "町営バス・民営バス",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.yubetsu.lg.jp/administration/reiki/reiki_honbun/r383RG00000393.html",
               "label": "湧別町営バス運行条例",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "高齢者バス通院費助成",
@@ -5683,16 +5683,16 @@
               "url": "https://www.town.yubetsu.lg.jp/administration/welfare/detail.html?content=212",
               "label": "地域支援事業",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.yubetsu.lg.jp/administration/reiki/reiki_honbun/r383RG00000316.html",
               "label": "湧別町高齢者バス通院費助成事業実施要綱",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -5700,28 +5700,28 @@
           "url": "https://town.yubetsu.lg.jp/administration/life/detail.html?content=613",
           "label": "町営バス・民営バス",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.yubetsu.lg.jp/administration/reiki/reiki_honbun/r383RG00000393.html",
           "label": "湧別町営バス運行条例",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.yubetsu.lg.jp/administration/welfare/detail.html?content=212",
           "label": "地域支援事業",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.yubetsu.lg.jp/administration/reiki/reiki_honbun/r383RG00000316.html",
           "label": "湧別町高齢者バス通院費助成事業実施要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "町営バスと通院助成の案内に更新日の表示がありません。通院券の必要書類、対象医療機関とハイヤー助成からの切替計算は地域包括支援センター（01586-5-3761）へ確認してください。 運賃や助成券の差額の扱いは申込窓口で確認してください。"
+      "flag": "町営バスの無料運賃は介護保険被保険者証を提示。遠軽町への通院券は町がやむを得ないと認めた場合に対象。"
     },
     {
       "slug": "takinoue",
@@ -5972,10 +5972,10 @@
               "url": "https://www.kamishihoro.jp/page/00000218",
               "label": "高齢者等福祉バス",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -5983,10 +5983,10 @@
           "url": "https://www.kamishihoro.jp/page/00000218",
           "label": "高齢者等福祉バス",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "更新日表示なし。利用登録・居住条件・予約の支援は保健福祉課（01564-2-4296）へ確認。"
+      "flag": "町案内で利用対象、事前予約と無料を確認。証明書類は窓口に確認。"
     },
     {
       "slug": "shikaoi",
@@ -6976,16 +6976,16 @@
               "url": "https://town.shibecha.hokkaido.jp/reiki/d1w_reiki/H405902100044/H405902100044_j.html",
               "label": "町有バス使用料金助成規則",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://town.shibecha.hokkaido.jp/gyousei/ijuu_kouryuu/soudanmadoguchi.html",
               "label": "移住相談・敬老パス案内",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -6993,13 +6993,13 @@
           "url": "https://town.shibecha.hokkaido.jp/reiki/d1w_reiki/H405902100044/H405902100044_j.html",
           "label": "町有バス使用料金助成規則",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://town.shibecha.hokkaido.jp/gyousei/ijuu_kouryuu/soudanmadoguchi.html",
           "label": "移住相談・敬老パス案内",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://town.shibecha.hokkaido.jp/kurashi/sougou/sonota/rosen/shibecha_bus_information.html",
@@ -7008,7 +7008,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "現行例規掲載と町公式移住案内を確認。高齢者のパス交付に必要な書類・現在の乗車便は車両管理係へ確認。"
+      "flag": "現行規則と町の案内で70歳以上の町有バス使用料全額助成を確認。敬老パスの申請手続きは未確認。"
     },
     {
       "slug": "teshikaga",
@@ -7031,10 +7031,10 @@
               "url": "https://www.town.teshikaga.hokkaido.jp/kurashi/soshikiichiran/kankyoseikatsuka/5/1/3242.html",
               "label": "高齢者等運転免許証自主返納支援",
               "updated": "2021-01-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -7042,10 +7042,10 @@
           "url": "https://www.town.teshikaga.hokkaido.jp/kurashi/soshikiichiran/kankyoseikatsuka/5/1/3242.html",
           "label": "高齢者等運転免許証自主返納支援",
           "updated": "2021-01-25",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "案内は令和3年更新。現在の券種・配分・利用期限は生活係（015-482-2934）へ確認。"
+      "flag": "町の専用案内で選択式・合計20,000円分と確認。個別券の期限は未記載。"
     },
     {
       "slug": "tsurui",
@@ -7341,10 +7341,10 @@
               "url": "https://www.shibetsutown.jp/welfare/?content=510",
               "label": "高齢者福祉・無料バス券",
               "updated": "2026-03-03",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -7352,7 +7352,7 @@
           "url": "https://www.shibetsutown.jp/welfare/?content=510",
           "label": "高齢者福祉・無料バス券",
           "updated": "2026-03-03",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.shibetsutown.jp/life/?content=351",
@@ -7364,10 +7364,10 @@
           "url": "https://www.shibetsutown.jp/assets/images/content/content_20260216_134542.pdf",
           "label": "自主返納支援実施要綱",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "年齢・年24枚・町内範囲は令和8年更新本文で確認。現年度の申請手続・利用期限は本文に記載がないため確認。返納支援は商品券・証明書実費補てん。"
+      "flag": "70歳以上、年24枚、町内停留所間を確認。利用期限・交付時期・必要書類は未記載。"
     },
     {
       "slug": "rausu",

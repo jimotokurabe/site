@@ -634,68 +634,70 @@
       "slug": "shimonita",
       "name": "下仁田町",
       "status": "active",
-      "summary": "しもにたバスは70歳以上と正式返納者が証明提示で無料。11/1から日中等がねぎまるへ移行し、70歳以上の町民は100円になる予定です。",
+      "summary": "予約制のデマンドバス「ねぎまる」は令和8年11月1日に実証運行を開始。町内在住の70歳以上は1回100円。平日朝夕の定時スクールバスは無料と案内されています。",
       "programs": [
         {
-          "name": "しもにたバス70歳以上無料",
+          "name": "ねぎまる・町内在住70歳以上運賃",
           "kind": "discount",
           "age_min": 70,
-          "eligibility": "70歳以上。居住限定は現在の無料対象一覧に記載なし。証明書提示。",
-          "benefit": "通常大人200円を無料。",
-          "fare": "証明できるものを提示して無料。",
-          "routes": "しもにたバス（現在町内5地域運行）。11/1以降の日中・土日祝はねぎまるへ移行予定で運賃変更。",
-          "apply": "乗車時に対象を証明できるものを提示。",
-          "notes": [],
+          "eligibility": "下仁田町内に住む70歳以上の方。",
+          "benefit": "町内在住者の通常運賃200円から100円に割引。町外在住者は500円。",
+          "fare": "1回100円。",
+          "routes": "町内の予約制デマンドバス「ねぎまる」。平日の日中と土日祝日に運行。",
+          "apply": "電話、アプリ、LINEで予約。年齢・居住を確認する書類は町に確認。",
+          "notes": [
+            "平日朝夕の定時スクールバスには別の案内があります。"
+          ],
           "sources": [
             {
               "url": "https://www.town.shimonita.lg.jp/shimonita-bus/20170404110712.html",
               "label": "下仁田町ホームページ ： 運賃・時刻表",
-              "updated": "2025-02-27",
-              "checked": "2026-10-07"
+              "updated": "2026-11-13",
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demandbus.html",
               "label": "下仁田町ホームページ ： デマンドバスの実証運行について",
-              "updated": "2026-10-01",
-              "checked": "2026-10-07"
+              "updated": "2026-11-01",
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demando_setsumei.pdf",
               "label": "下仁田町ねぎまる（デマンド運行バス）案内（令和8年11月1日開始）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
-          "name": "しもにたバス自主返納者無料",
+          "name": "しもにたバス自主返納者無料（旧運行）",
           "kind": "henno",
           "age_min": null,
-          "eligibility": "運転免許証自主返納者。年齢・居住限定は現在の無料対象一覧に記載なし。証明書提示。",
-          "benefit": "通常大人200円を無料。",
-          "fare": "証明できるものを提示して無料。",
-          "routes": "しもにたバス（現在町内5地域運行）。11/1以降の日中・土日祝はねぎまるへ移行予定で運賃変更。",
-          "apply": "乗車時に対象を証明できるものを提示。",
+          "eligibility": "旧運行での運転免許証自主返納者。",
+          "benefit": "旧運行では証明の提示で無料。",
+          "fare": "ねぎまるの運賃表に返納者向け無料の記載はありません。",
+          "routes": "旧運行のしもにたバス。",
+          "apply": "現行の扱いは企画課へ確認。",
           "notes": [],
           "sources": [
             {
               "url": "https://www.town.shimonita.lg.jp/shimonita-bus/20170404110712.html",
               "label": "下仁田町ホームページ ： 運賃・時刻表",
-              "updated": "2025-02-27",
-              "checked": "2026-10-07"
+              "updated": "2026-11-13",
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demandbus.html",
               "label": "下仁田町ホームページ ： デマンドバスの実証運行について",
-              "updated": "2026-10-01",
-              "checked": "2026-10-07"
+              "updated": "2026-11-01",
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demando_setsumei.pdf",
               "label": "下仁田町ねぎまる（デマンド運行バス）案内（令和8年11月1日開始）",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation"
@@ -705,20 +707,20 @@
         {
           "url": "https://www.town.shimonita.lg.jp/shimonita-bus/20170404110712.html",
           "label": "下仁田町ホームページ ： 運賃・時刻表",
-          "updated": "2025-02-27",
-          "checked": "2026-10-07"
+          "updated": "2026-11-13",
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demandbus.html",
           "label": "下仁田町ホームページ ： デマンドバスの実証運行について",
-          "updated": "2026-10-01",
-          "checked": "2026-10-07"
+          "updated": "2026-11-01",
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.shimonita.lg.jp/kikaku-zaisei/m02/m02/m01/demando_setsumei.pdf",
           "label": "下仁田町ねぎまる（デマンド運行バス）案内（令和8年11月1日開始）",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.shimonita.lg.jp/soumu/m02/m03/koutsuanzenundo/01.html",
@@ -727,7 +729,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "既存運賃案内は2025年。11/1からデマンド運行へ移行、ねぎまるは町民70歳以上100円（町外500円）で、正式返納者無料の記載なし。新しい定時スクール混乗便は全年齢無料と案内。移行後の対象・年齢証明は企画課0274-82-2111へ確認してください。"
+      "flag": "令和8年11月1日から予約制の実証運行。町内在住70歳以上は100円。返納を理由とする新運行の無料扱いは未確認。旧運賃ページ内の4月・11月表記には差がある。"
     },
     {
       "slug": "nanmoku",
@@ -1861,10 +1863,10 @@
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "65～69歳定期券",
@@ -1881,10 +1883,10 @@
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "70歳以上シニア定期券",
@@ -1901,10 +1903,10 @@
               "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
               "label": "路線バスの乗り方・運賃｜館林市",
               "updated": "2025-12-11",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -1912,13 +1914,13 @@
           "url": "https://www.town.meiwa.gunma.jp/life/soshiki/somu/1/2/674.html",
           "label": "広域公共路線バス／群馬県明和町｜公式ホームページ",
           "updated": "2023-09-01",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.tatebayashi.gunma.jp/s015/kurashi/140/060/040/20200107224000.html",
           "label": "路線バスの乗り方・運賃｜館林市",
           "updated": "2025-12-11",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.town.meiwa.gunma.jp/life/kenko_fukushi/10/4509.html",
@@ -1927,7 +1929,7 @@
           "checked": "2026-10-07"
         }
       ],
-      "flag": "町案内2023/9/1。現行対象路線・年齢確認方法は総務課危機管理係0276-84-3111へ確認してください。"
+      "flag": "明和町が案内する広域路線について、館林市の運賃表を照合。年齢・住所の確認書類は未記載。"
     },
     {
       "slug": "chiyoda",

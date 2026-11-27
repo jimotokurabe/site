@@ -429,23 +429,23 @@
             {
               "url": "https://www.city.koriyama.lg.jp/soshiki/66/3008.html",
               "label": "市・健康長寿サポート令和8年度",
-              "updated": "2026-10-28",
-              "checked": "2026-10-31"
+              "updated": "2026-11-05",
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.koriyama.lg.jp/soshiki/66/47803.html",
               "label": "市・サポート申請方法",
               "updated": "2024-11-15",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.koriyama.lg.jp/uploaded/attachment/120449.pdf",
               "label": "市・令和8年度サポート案内",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation",
+          "current": "document_checked",
           "checked": "2026-10-31"
         }
       ],
@@ -459,23 +459,23 @@
         {
           "url": "https://www.city.koriyama.lg.jp/soshiki/66/3008.html",
           "label": "市・健康長寿サポート令和8年度",
-          "updated": "2026-10-28",
-          "checked": "2026-10-31"
+          "updated": "2026-11-05",
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.koriyama.lg.jp/soshiki/66/47803.html",
           "label": "市・サポート申請方法",
           "updated": "2024-11-15",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.koriyama.lg.jp/uploaded/attachment/120449.pdf",
           "label": "市・令和8年度サポート案内",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "健康長寿サポート券の対象ICカード・対象定期券、年額・月別枚数は2026年10月28日更新本文で確認しました。差額と新規カード発行費の扱いは本文に記載なし。健康長寿課024-924-2401へ確認してください。令和8年度チラシ自体には更新日表示がなく、申請方法ページは2024年11月の資料です。"
+      "flag": "共通券のバス・タクシー利用は年度内75歳以上。初年度の月別枚数・有効期限を市の専用案内で確認。バスの差額・カード発行費は未記載。"
     },
     {
       "slug": "sukagawa",
@@ -535,10 +535,10 @@
               "url": "https://www.city.tamura.lg.jp/soshiki/8/entry_2.html",
               "label": "市・自主返納支援",
               "updated": "2024-09-09",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -546,10 +546,10 @@
           "url": "https://www.city.tamura.lg.jp/soshiki/8/entry_2.html",
           "label": "市・自主返納支援",
           "updated": "2024-09-09",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "市の条件案内は2024年9月更新。県警の令和8年一覧にも掲載がありますが、現在の受付・使える路線は生活安全課へ確認してください。"
+      "flag": "市の専用案内で返納日から6か月以内、カード作成料500円を含むことを確認。区間の扱いは未確認。"
     },
     {
       "slug": "kagamiishi",

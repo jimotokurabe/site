@@ -74,19 +74,21 @@
           "fare": "ユーバス専用券を使用。券の期限・差額の扱いは支援本文に記載なし。",
           "routes": "由布市コミュニティバス「ユーバス」。通常運賃は全路線1乗車200円。",
           "apply": "返納から90日以内、取消通知書と本人確認書類を本庁総合政策課（バス券）又は挾間/湯布院地域振興課へ。代理可。90日以内に申請できない場合は問い合わせ。",
-          "notes": [],
+          "notes": [
+            "交付条件は2018年の市案内で確認。現在の受付は市へ確認してください。"
+          ],
           "sources": [
             {
               "url": "https://www.city.yufu.oita.jp/newly/untenmenkyojishuhennou",
               "label": "大分県由布市｜公式ホームページ",
               "updated": "2018-03-28",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             },
             {
               "url": "https://www.city.yufu.oita.jp/kurashi/koutuu/bus/yu",
               "label": "大分県由布市｜公式ホームページ｜暮らしの情報",
               "updated": "",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
           "current": "needs_confirmation"
@@ -97,16 +99,16 @@
           "url": "https://www.city.yufu.oita.jp/newly/untenmenkyojishuhennou",
           "label": "大分県由布市｜公式ホームページ",
           "updated": "2018-03-28",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.yufu.oita.jp/kurashi/koutuu/bus/yu",
           "label": "大分県由布市｜公式ホームページ｜暮らしの情報",
           "updated": "",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "返納案内は1年以上前、バス案内の更新日記載なしです。現在の受付・券期限は総合政策課（097-582-1111）へ確認してください。"
+      "flag": "市本文で申請は90日以内と確認。券の利用期限、差額精算は未確認。"
     },
     {
       "slug": "usuki",
@@ -452,10 +454,10 @@
               "url": "https://www.city.bungotakada.oita.jp/soshiki/5/1731.html",
               "label": "70パス（路線バス割引利用券）をご利用ください - 豊後高田市ホームページ",
               "updated": "2023-10-25",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         },
         {
           "name": "正式返納後の共通利用券",
@@ -472,10 +474,10 @@
               "url": "https://www.city.bungotakada.oita.jp/soshiki/7/2112.html",
               "label": "運転免許証自主返納支援事業 - 豊後高田市ホームページ",
               "updated": "2025-07-16",
-              "checked": "2026-10-07"
+              "checked": "2026-11-27"
             }
           ],
-          "current": "needs_confirmation"
+          "current": "document_checked"
         }
       ],
       "sources": [
@@ -483,16 +485,16 @@
           "url": "https://www.city.bungotakada.oita.jp/soshiki/5/1731.html",
           "label": "70パス（路線バス割引利用券）をご利用ください - 豊後高田市ホームページ",
           "updated": "2023-10-25",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         },
         {
           "url": "https://www.city.bungotakada.oita.jp/soshiki/7/2112.html",
           "label": "運転免許証自主返納支援事業 - 豊後高田市ホームページ",
           "updated": "2025-07-16",
-          "checked": "2026-10-07"
+          "checked": "2026-11-27"
         }
       ],
-      "flag": "両案内は1年以上前です。70パスの券期限・購入書類は地域活力創造課（0978-25-6392）、返納券の現行条件は市民課（0978-25-6157）へ確認してください。"
+      "flag": "70パスと正式返納後の共通券は別制度。70パスの期限・購入時の必要書類は本文に記載なし。"
     },
     {
       "slug": "usa",
