@@ -27,20 +27,25 @@ def about_content(contact):
 {cards([('place', '地域の支援を探す', '返納特典・バス助成・タクシー支援', 'index.html#prefectures'), ('talk', '家族と話し始める', '話の切り出し方や、ひと言の例', 'henno-hanashikata.html'), ('route', '車なしの往復を考える', 'いつもの病院・お店への方法と費用', 'outing-plan.html')])}
 <div class="info-layout"><div class="info-body">
 <section id="editorial"><h2>情報をどう確かめるか</h2>
-<p>自治体・警察・交通事業者などの公式情報をもとに、対象者・支援内容・申請先を整理しています。</p>
-<ul class="info-principles"><li><strong>出典と確認日を添える</strong><span>ご自身でも元の案内を確認できるようにします。</span></li><li><strong>分からないことは、そのまま伝える</strong><span>記載なし・要確認・終了を区別し、推測で補いません。</span></li><li><strong>制度の条件を省かない</strong><span>年齢や居住地、返納の要否などを合わせて案内します。</span></li></ul>
+<p>市町村の制度案内を起点に、必要に応じて要綱・申請書・年度ごとのお知らせや、都道府県・警察の案内、交通事業者の運賃表を照らし合わせます。対象の年度や期間を見たうえで、年齢・居住地・返納の要否、支援額、申請期限や窓口を確かめます。</p>
+<ul class="info-principles"><li><strong>根拠になった公式資料へリンクする</strong><span>制度の欄に、条件や手続きが載っている公式ページやPDFへのリンクを添えます。</span></li><li><strong>確かめられた範囲を伝える</strong><span>資料に書かれていない項目は「記載なし」とし、現年度の資料が見つからない場合や資料の記載が食い違う場合は「要確認」とします。制度を確認できなかった場合も、支援がないとは断定しません。終了は公式案内で確認できた場合に示します。</span></li><li><strong>確認日を制度や出典ごとに記録する</strong><span>確認日は掲載内容を公式資料と照合した日です。一部の制度や資料を見直したときは、照合した箇所の確認日を更新します。</span></li></ul>
 <p class="info-note">画面のデザイン変更だけで、制度の確認日を更新することはありません。</p></section>
+<section id="ai"><h2>生成AIの使い方</h2>
+<p>生成AIは、公式資料の候補探しや、原文の該当箇所と比較項目の整理を補助するために使います。金額・対象・期限や制度の有無を、AIの回答だけで決めることはありません。掲載の根拠は、制度を案内する公式資料です。</p>
+<p>運営者は掲載の範囲や公開の可否を判断します。公式資料との照合にもAIを使うことがあり、制度の確認日は人がすべての項目を目視した日を示すものではありません。</p></section>
+<section id="review"><h2>いつ見直すか</h2>
+<p>年度が替わる4月を、掲載済みの制度を見直す時期としています。廃止や運賃改定などの告知が分かったときにも、該当する地域の公式資料を開き直し、掲載内容と照らし合わせます。期限を過ぎた制度は、次の年度も続くかを公式の案内で確かめます。</p></section>
 <section id="use"><h2>利用するときに知っておいてほしいこと</h2>
 <p>個人が運営する情報サイトで、自治体や交通事業者の公式サイトではありません。制度への申請や交通の予約は、各窓口で行ってください。</p>
 <p>掲載内容は確認日時点の情報です。対象になるか、今も利用できるかは、申し込み前に公式ページや窓口で確かめてください。</p>
 <p>「移動費の目安」では、地域の掲載情報と料金・回数の例から支援利用後の費用を概算します。対象資格・実際の受給額・経路運賃を確定するものではありません。</p>
 <p>会話のひと言は、このサイトが作成した例です。お出かけ計画は入力した方法・費用を整理する道具で、経路・運賃や利用資格を自動で調べるものではありません。</p>
 <p class="info-note">このサイトの情報の利用により生じた損害について、責任を負いかねます。</p></section>
-<section id="ads"><h2>広告について</h2><p>現在、広告は掲載していません。掲載する場合も、広告の都合で制度の内容を変えることはしません。</p></section>
+<section id="ads"><h2>広告について</h2><p>じもとくらべでは、Google AdSenseなどの広告を掲載する場合があります。広告の都合で掲載する制度の内容を変えることはありません。広告を掲載するときは、本文と区別できるように表示します。</p><p><a href="privacy.html#ads">広告配信とCookieの取り扱い</a></p></section>
 </div><aside class="info-aside" aria-label="運営と連絡先">
 <section class="info-profile"><p class="info-eyebrow">運営の基本情報</p><h2>じもとくらべ</h2><dl><div><dt>運営形態</dt><dd>個人運営</dd></div><div><dt>サイト</dt><dd><a href="https://jimotokurabe.jp/">jimotokurabe.jp</a></dd></div></dl><a href="privacy.html">プライバシーポリシー →</a></section>
-<section class="info-contact" id="contact"><h2>間違い・変更のお知らせ</h2><p>地域名、該当ページ、気づいた内容をお知らせください。公式情報を確認して修正します。</p><a class="info-button" href="{contact}" target="_blank" rel="noopener">お問い合わせ ↗</a><p class="info-note">Googleフォームが開きます。制度の申請・利用可否の相談は、各制度の窓口へお願いします。</p></section>
-</aside></div><p class="info-updated">2026年9月26日 作成 ／ 2026年10月10日 更新</p>'''
+<section class="info-contact" id="contact"><h2>間違い・変更のお知らせ</h2><p>掲載内容の間違いや制度の変更にお気づきのときは、地域名、該当ページのURL、気づいた内容をお知らせください。根拠となる公式ページが分かれば、そのURLもお送りください。公式情報を確認し、必要に応じて修正します。</p><a class="info-button" href="{contact}" target="_blank" rel="noopener">お問い合わせ ↗</a><p class="info-note">Googleフォームが開きます。制度の申請・利用可否の相談は、各制度の窓口へお願いします。</p></section>
+</aside></div><p class="info-updated">2026年9月26日 作成 ／ 2026年11月28日 更新</p>'''
 
 
 def privacy_content(contact):
@@ -68,14 +73,19 @@ def privacy_content(contact):
 <p>解析用のページURLからクエリ文字列とページ内位置を除きます。リンク先の詳しいURL、入力値・検索語・選択した会話や支援の内容・メモ本文・料金・回数は解析へ送りません。開発・ローカル環境では本番用の解析を読み込みません。</p>
 <p><a href="https://support.google.com/analytics/answer/6004245?hl=ja" target="_blank" rel="noopener">Google アナリティクスのデータの取り扱い ↗</a></p>
 <p>対応するブラウザでは、<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a>で計測を無効にできます。Cookieの許可・削除はブラウザの設定でも管理できます。</p></section>
+<section id="ads"><h2>広告配信</h2>
+<p>当サイトでは、Google AdSenseなどの第三者配信の広告を掲載する場合があります。広告を配信する際、Googleなどの第三者配信事業者がCookieを設定・読み取り、当サイトや他のウェブサイトへの過去のアクセス情報に基づいて広告を表示することがあります。Googleとそのパートナーは、このために広告用Cookieを使用します。</p>
+<p>広告配信に伴い、第三者配信事業者がウェブビーコンやIPアドレスなどを使って情報を収集する場合があります。</p>
+<p>利用者は、<a href="https://adssettings.google.com/" target="_blank" rel="noopener">Googleの広告設定</a>で、パーソナライズド広告を無効にできます。</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのサービスを使うサイトやアプリからの情報をGoogleが利用する方法 ↗</a></p></section>
 <section id="services"><h2>ページの表示に使う外部サービス</h2>
 <dl class="info-storage"><div><dt>GitHub Pages</dt><dd>サイトの公開に利用しています。GitHubは、セキュリティのために訪問者のIPアドレスを記録します。<a href="https://docs.github.com/ja/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noopener">GitHubの説明 ↗</a></dd></div><div><dt>Google Fonts</dt><dd>一部のページで文字の表示に使っています。文字データを読み込む際にGoogleのサーバーへ接続し、IPアドレスなどが送られます。<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleのプライバシーポリシー ↗</a></dd></div></dl></section>
 <section id="inquiries"><h2>お問い合わせの情報</h2>
 <p><a href="{contact}" target="_blank" rel="noopener">お問い合わせ用のGoogleフォーム ↗</a>から送信された内容は、Googleのサーバーに保存されます。いただいた内容やメールアドレスは、お問い合わせへの対応のために使います。</p>
 <p>お問い合わせ内容に関する確認・訂正・削除のご相談も、同じフォームからご連絡ください。</p></section>
-<section id="changes"><h2>広告・このページの変更</h2><p>現在、広告は掲載していません。広告を始める場合は、開始前にこのページへ記載します。情報の取り扱いを変更するときは、このページと更新日を更新します。</p></section>
-</div><aside class="info-aside" aria-label="ページ内の案内"><nav class="info-index" aria-label="プライバシーポリシーの目次"><p class="info-eyebrow">確認したい項目へ</p><a href="#inputs">入力・コピー・共有</a><a href="#storage">ブラウザ内の保存</a><a href="#analytics">アクセス解析</a><a href="#services">外部サービス</a><a href="#inquiries">お問い合わせの情報</a><a href="#changes">広告・変更について</a></nav><p class="info-related"><a href="about.html">運営者情報を見る →</a></p></aside></div>
-<p class="info-updated">2026年10月31日 更新</p>'''
+<section id="changes"><h2>このページの変更</h2><p>情報の取り扱いを変更するときは、このページと更新日を更新します。</p></section>
+</div><aside class="info-aside" aria-label="ページ内の案内"><nav class="info-index" aria-label="プライバシーポリシーの目次"><p class="info-eyebrow">確認したい項目へ</p><a href="#inputs">入力・コピー・共有</a><a href="#storage">ブラウザ内の保存</a><a href="#analytics">アクセス解析</a><a href="#ads">広告配信</a><a href="#services">外部サービス</a><a href="#inquiries">お問い合わせの情報</a><a href="#changes">このページの変更</a></nav><p class="info-related"><a href="about.html">運営者情報を見る →</a></p></aside></div>
+<p class="info-updated">2026年11月28日 更新</p>'''
 
 
 def info_page(shell, contact, draft, privacy=False):
@@ -83,8 +93,8 @@ def info_page(shell, contact, draft, privacy=False):
     path = 'privacy.html' if privacy else 'about.html'
     main = f'<nav class="crumbs" aria-label="パンくず"><a href="index.html">ホーム</a> / {title}</nav><article class="site-info">' + (privacy_content(contact) if privacy else about_content(contact)) + '</article>'
     soup = BeautifulSoup(shell(title=title+'｜じもとくらべ', description=(
-        '入力内容、ブラウザ内の保存、アクセス解析、お問い合わせの情報の取り扱いについて。' if privacy else
-        'じもとくらべの目的、情報の確認方針、運営とお問い合わせについて。'),
+        '入力内容、ブラウザ内の保存、アクセス解析、広告配信、お問い合わせの情報の取り扱いについて。' if privacy else
+        'じもとくらべの運営者情報。制度の調べ方、生成AIの使い方、情報の見直し、広告方針とお問い合わせについて。'),
         path=path, main=main, draft=draft), 'html.parser')
     soup.body['class'] = ['info-page']
     soup.select_one('.topbar')['class'] = ['mast']
