@@ -4,7 +4,8 @@ Source records are read only. Conditions, cautions and confirmation dates are
 retained without inferring entitlement or calculating combined benefit totals.
 """
 from pathlib import Path
-from urllib.parse import urljoin
+from datetime import date
+from urllib.parse import urljoin, urlsplit
 import argparse
 import copy
 import html
@@ -176,6 +177,48 @@ def accepted_updates(record):
             and u.get('reviewed') is True and u.get('safety_accepted') is True
             and u.get('value') and u.get('source') and u.get('evidence')]
 
+def load_commentary(root, indexed):
+    records = {}
+    for path in sorted((root / 'data/city-commentary').glob('*.json')):
+        for key, record in load(path).items():
+            if record.get('status') != 'approved':
+                continue
+            city = tuple(key.split(':'))
+            if city not in indexed or city[0] != path.stem or city in records:
+                raise ValueError(f'Invalid city commentary key: {key}')
+            sources = record['sources']
+            paragraphs = record['paragraphs']
+            date.fromisoformat(record['checked'])
+            if not record['scope'].strip() or not sources or not paragraphs:
+                raise ValueError(f'Incomplete city commentary: {key}')
+            for source in sources:
+                url = urlsplit(source['url'])
+                if url.scheme != 'https' or not url.hostname or not source['label'].strip() or not source['location'].strip():
+                    raise ValueError(f'Invalid city commentary source: {key}')
+            for paragraph in paragraphs:
+                refs = paragraph['sources']
+                if (not paragraph['text'].strip() or not refs or len(set(refs)) != len(refs)
+                    or any(type(ref) is not int or not 1 <= ref <= len(sources) for ref in refs)):
+                    raise ValueError(f'Invalid city commentary paragraph: {key}')
+            records[city] = record
+    return records
+
+def add_commentary(soup, record):
+    paragraphs = []
+    for paragraph in record['paragraphs']:
+        refs = ''.join(
+            f' <a href="#city-commentary-source-{ref}" aria-label="出典{ref}">[{ref}]</a>'
+            for ref in paragraph['sources']
+        )
+        paragraphs.append(f'<p>{e(paragraph["text"])}{refs}</p>')
+    sources = ''.join(
+        f'<li id="city-commentary-source-{index}">{link(source["url"], source["label"] + " ↗")}</li>'
+        for index, source in enumerate(record['sources'], 1)
+    )
+    body = ''.join(paragraphs) + '<h3>出典</h3><ol class="sources">' + sources + '</ol>' + date_line(record, '')
+    card_html = section('city-commentary', '地域の移動と支援', body)
+    soup.select_one('#benefit-browser').insert_after(BeautifulSoup(card_html, 'html.parser'))
+
 def gather(root):
     prefs={};bus={};taxi={}
     for path in sorted((root/'data').glob('*-menkyo-henno.json')):
@@ -185,14 +228,20 @@ def gather(root):
         if tp.exists():taxi[pid]=load(tp)
     supplemental=load(root/'data/municipality-supplements.json')
     mobility={}
+    for key, entry in supplemental['records'].items():
+        for local in entry.get('local_mobility', []):
+            mobility.setdefault(tuple(key.split(':')), []).append({
+                'record': local, 'checked': local['checked'],
+                'coverage': {'scope': local['scope'], 'level': 'partial'},
+            })
     md=load(root/'data/municipal-mobility.json')
     for m in md['cities']:
-        mobility.setdefault((m['pref'],m['municipality']),[]).append({'record':m,'checked':m.get('checked') or md['checked'],'coverage':{'scope':m['scope'],'level':m['level']}})
+        mobility.setdefault((m['pref'],m['municipality']),[]).append({'record':m,'checked':m.get('checked') or md['checked'],'coverage':{'scope':m['scope'],'level':m['level']},'legacy_page':True})
     east=load(root/'data/east-harima-mobility.json');byid={m['id']:m for m in east['cities']}
     coverage=load(root/'data/mobility-coverage.json')
     for c in coverage['entries']:
         m=byid[c['city']]
-        mobility.setdefault((c['pref'],c['municipality']),[]).append({'record':m,'checked':m.get('checked') or east['checked'],'coverage':c,'coverage_checked':c.get('checked') or coverage['checked']})
+        mobility.setdefault((c['pref'],c['municipality']),[]).append({'record':m,'checked':m.get('checked') or east['checked'],'coverage':c,'coverage_checked':c.get('checked') or coverage['checked'],'legacy_page':True})
     return prefs,bus,taxi,supplemental,mobility
 
 def adopted(pid,city,d,bus,taxi,supp,mobility):
@@ -241,9 +290,12 @@ def mobility_body(a):
     body=''
     counts = {'ride': 0, 'support': 0}
     regional_links = []
-    for index, item in enumerate(a['mobility']):
+    has_legacy_page = False
+    for item in a['mobility']:
         m=item['record'];cv=item['coverage'];checked=item['checked']
-        overview_id = ' id="overview-h"' if index == 0 else ''
+        legacy_page = item.get('legacy_page', False)
+        overview_id = ' id="overview-h"' if legacy_page and not has_legacy_page else ''
+        has_legacy_page |= legacy_page
         body+=f'<div class="notice"{overview_id}><strong>掲載範囲：'+e(cv.get('scope',m.get('scope',m['name'])))+'</strong><p>'+e(m.get('quick_scope',''))+'</p>'
         if cv.get('level')=='partial':
             body+='<p>地区や制度を限定した情報です。市町村全域・すべての交通手段を網羅した案内ではありません。</p>'
@@ -257,19 +309,23 @@ def mobility_body(a):
             records = unique(m.get(category, []))
             if not records:
                 continue
-            heading_id = f' id="{anchor}-h"' if not counts[anchor] else ''
+            heading_id = f' id="{anchor}-h"' if legacy_page and not counts[anchor] else ''
             body += f'<h3{heading_id}>{title}</h3>'
             for r in records:
-                counts[anchor] += 1
+                record_id = ''
+                if legacy_page:
+                    counts[anchor] += 1
+                    record_id = f'{anchor}-{counts[anchor]}'
                 body += card(r['name'], recursive(r, checked) + date_line(r, checked),
-                             f'{anchor}-{counts[anchor]}')
+                             record_id)
         if not m.get('rides'):body+='<p>この案内は運賃支援のみです。個別の交通手段・運行・予約は未掲載です。</p>'
         if item.get('coverage_checked'):
             regional_links.append(f'<p><a href="../east-harima-mobility.html?city={e(m["id"])}">{e(m["name"])}の交通を外出目的で探す</a></p>')
-    for anchor, count in counts.items():
-        if not count:
-            body += f'<span id="{anchor}-h" class="legacy-anchor"></span>'
-    body += '<div id="next-h">' + ''.join(regional_links) + '</div>' if regional_links else '<span id="next-h" class="legacy-anchor"></span>'
+    if has_legacy_page:
+        for anchor, count in counts.items():
+            if not count:
+                body += f'<span id="{anchor}-h" class="legacy-anchor"></span>'
+        body += '<div id="next-h">' + ''.join(regional_links) + '</div>' if regional_links else '<span id="next-h" class="legacy-anchor"></span>'
     return body
 
 
@@ -633,6 +689,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
     outing_cities = {(pid, city["id"]): city for pid, pref in outing_catalog.items() for city in pref["cities"]}
     estimate_cities = {rule['key'] for rule in load_estimates(root)}
     indexed={(pid,c['slug']):(c,d) for pid,d in prefs.items() for c in d['cities']}
+    commentary = load_commentary(root, indexed)
     wanted=[tuple(row['key'].split(':')) for row in supp['municipalities']]
     assert len(wanted)==1741 and len(set(wanted))==1741
     assert set(wanted)==set(indexed),'City enumeration differs between supplements and return records'
@@ -676,13 +733,15 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
         apply_benefit_integration(soup, pid, slug, estimate_available=f'{pid}:{slug}' in estimate_cities)
-        if a['mobility']:
+        if any(item.get('legacy_page') for item in a['mobility']):
             alias = soup.new_tag('span', id='return-h', attrs={'class': 'legacy-anchor'})
             soup.select_one('#benefit').insert(0, alias)
         improve_shared_city_editorial_content(soup)
         if (pid, slug) == ('hyogo', 'kobe'):
             improve_kobe_editorial_content(soup)
         apply_city_search_entry(soup, pid, slug)
+        if (pid, slug) in commentary:
+            add_commentary(soup, commentary[(pid, slug)])
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:

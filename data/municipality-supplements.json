@@ -39302,17 +39302,42 @@
     },
     "okinawa:ogimi": {
       "key": "okinawa:ogimi",
-      "status": "reviewed",
-      "checked": "2026-10-05",
+      "status": "complete",
+      "checked": "2026-11-28",
       "sources": [
         {
-          "url": "https://www.vill.ogimi.okinawa.jp/",
+          "url": "https://www.vill.ogimi.okinawa.jp/section/reiki_int/reiki_honbun/q913RG00000309.html",
+          "fetch_status": 200
+        },
+        {
+          "url": "https://oogimishakyo.or.jp/service",
           "fetch_status": 200
         }
       ],
       "updates": [],
+      "local_mobility": [
+        {
+          "name": "大宜味村",
+          "scope": "高齢者の外出支援（医療機関等への送迎）",
+          "quick_scope": "一般の交通機関を利用しにくい人のために、自宅から医療機関などまで送迎します。",
+          "checked": "2026-11-28",
+          "rides": [
+            {
+              "name": "在宅安心カー（高齢者外出支援サービス）",
+              "eligibility": "村内に住み、一般の交通機関を利用しにくいおおむね65歳以上の人、または身体が不自由なおおむね60歳以上の人。",
+              "routes": "自宅と医療機関、在宅福祉サービスや生きがい活動支援事業の提供場所などの間。車椅子に対応します。",
+              "fare": "片道。村内100円、国頭村・東村200円、名護市400円、今帰仁村・本部町500円、それ以外の国頭郡内700円。",
+              "apply": "役場内の大宜味村地域包括支援センター（0980-44-3011）へ。村が申請を審査し、利用決定後に村社会福祉協議会が送迎します。",
+              "sources": [
+                {"label": "大宜味村「高齢者外出支援サービス事業実施要綱」第1条・第3〜7条、別表", "url": "https://www.vill.ogimi.okinawa.jp/section/reiki_int/reiki_honbun/q913RG00000309.html"},
+                {"label": "大宜味村社会福祉協議会「在宅安心カー事業」", "url": "https://oogimishakyo.or.jp/service"}
+              ]
+            }
+          ]
+        }
+      ],
       "unresolved": [
-        "自治体名＋公式＋免許返納/高齢者交通/外出支援で検索した範囲で、該当交通制度の具体条件を確認できず。制度なしとは断定しない。"
+        "村例規集の「老人福祉」では、自主返納を条件とする特典の記載を確認できなかった。"
       ]
     },
     "kagoshima:yoron": {

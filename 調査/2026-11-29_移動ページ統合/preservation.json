@@ -1,0 +1,72 @@
+{
+  "base": "d87d671c",
+  "html_count": 2205,
+  "changed_html": 430,
+  "changed_municipalities": 214,
+  "changed_lookup_pages": [
+    "east-harima-mobility.html",
+    "mobility.html"
+  ],
+  "byte_identical_html_outside_scope": 1775,
+  "existing_anchors_in_changed_content_pages": 9705,
+  "old_mobility_body_ids_present_on_destination": 1313,
+  "mobility_cards_checked": 242,
+  "mobility_sections_with_identical_text": 0,
+  "return_placeholders_already_covered_by_municipality_status": [
+    [
+      "aichi-mobility/fuso.html",
+      "町独自の、免許を返納した人だけの特典は見つかりませんでした。"
+    ],
+    [
+      "hokkaido-mobility/kiyosato.html",
+      "返納した人への町独自の特典は、町のページで見つかりませんでした。"
+    ],
+    [
+      "hokkaido-mobility/yubari.html",
+      "返納した人への市独自の特典は、市のページで見つかりませんでした。"
+    ],
+    [
+      "kagoshima-mobility/aira.html",
+      "姶良市の公式ページに、免許返納の特典は見つかりませんでした。"
+    ],
+    [
+      "miyazaki-mobility/shiiba.html",
+      "椎葉村の公式ページに、免許返納の特典は見つかりませんでした。"
+    ],
+    [
+      "okinawa-mobility/kadena.html",
+      "町のページには、町独自の返納特典は見つかりませんでした。"
+    ],
+    [
+      "okinawa-mobility/miyakojima.html",
+      "宮古島市のページに、免許を返納した人への独自の特典は見つかりませんでした。"
+    ],
+    [
+      "shimane-mobility/kawamoto.html",
+      "川本町の公式ページに、免許返納の特典は見つかりませんでした。"
+    ],
+    [
+      "tokyo-mobility/hachijo.html",
+      "八丈町のページには、町独自の返納特典は見つかりませんでした。"
+    ],
+    [
+      "tottori-mobility/yazu.html",
+      "八頭町の公式ページに、免許返納の特典は見つかりませんでした。"
+    ],
+    [
+      "yamanashi-mobility/nanbu.html",
+      "南部町の公式ページで、返納した人への独自の特典は見つかりませんでした。"
+    ]
+  ],
+  "return_dates_using_the_municipal_record_instead_of_the_legacy_prefecture_fallback": [
+    [
+      "wakayama-mobility/nachikatsuura.html",
+      "2026-09-28",
+      "2026-11-01"
+    ]
+  ],
+  "sitemap_before": 2205,
+  "sitemap_after": 1991,
+  "data_files_changed": [],
+  "issues": []
+}
