@@ -1,0 +1,39 @@
+{
+  "osaka:kashiwara": {
+    "status": "approved",
+    "checked": "2026-11-28",
+    "scope": "2026年5月改正版、運行概要・南北ルートと柏原ルート停留所。大阪府の返納サポート案内、問い合わせ。2026年5月改正版の配布場所、訂正案内、運行開始。",
+    "paragraphs": [
+      {
+        "text": "JR柏原駅西口から市立柏原病院方面へは、無料の市内循環バス「きらめき号」が使えます。2026年5月にルートと時刻表が変わり、市立柏原病院や市役所別館2階の交通政策課窓口などで紙の運行ガイドを受け取れます。市の案内から最新の訂正も確認できます。",
+        "sources": [
+          1,
+          3
+        ]
+      },
+      {
+        "text": "返納後の特典を探すときは、市の自主返納案内から大阪府の協力店舗を確認できます。この市の案内ページには、市独自の交付特典の記載は見当たりませんでした。案内の問い合わせ先は交通政策課（072-971-2263）です。",
+        "sources": [
+          2
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "柏原市「きらめき号」運行ガイド（PDF）",
+        "url": "https://www.city.kashiwara.lg.jp/docs/2014011600010/file_contents/R0805_01_gaiyou.pdf",
+        "location": "2026年5月改正版、運行概要・南北ルートと柏原ルート停留所"
+      },
+      {
+        "label": "柏原市「高齢者運転免許自主返納サポート制度について」",
+        "url": "https://www.city.kashiwara.lg.jp/docs/2019120300028/?doc_id=12187",
+        "location": "大阪府の返納サポート案内、問い合わせ"
+      },
+      {
+        "label": "柏原市「公共施設・循環バス」",
+        "url": "https://www.city.kashiwara.lg.jp/category/bunya/kurashi_tetsuzuki/shisetsu_bus/more@docs_4@c_articles.html",
+        "location": "2026年5月改正版の配布場所、訂正案内、運行開始"
+      }
+    ]
+  }
+}
