@@ -4,7 +4,8 @@ Source records are read only. Conditions, cautions and confirmation dates are
 retained without inferring entitlement or calculating combined benefit totals.
 """
 from pathlib import Path
-from urllib.parse import urljoin
+from datetime import date
+from urllib.parse import urljoin, urlsplit
 import argparse
 import copy
 import html
@@ -176,6 +177,48 @@ def accepted_updates(record):
             and u.get('reviewed') is True and u.get('safety_accepted') is True
             and u.get('value') and u.get('source') and u.get('evidence')]
 
+def load_commentary(root, indexed):
+    records = {}
+    for path in sorted((root / 'data/city-commentary').glob('*.json')):
+        for key, record in load(path).items():
+            if record.get('status') != 'approved':
+                continue
+            city = tuple(key.split(':'))
+            if city not in indexed or city[0] != path.stem or city in records:
+                raise ValueError(f'Invalid city commentary key: {key}')
+            sources = record['sources']
+            paragraphs = record['paragraphs']
+            date.fromisoformat(record['checked'])
+            if not record['scope'].strip() or not sources or not paragraphs:
+                raise ValueError(f'Incomplete city commentary: {key}')
+            for source in sources:
+                url = urlsplit(source['url'])
+                if url.scheme != 'https' or not url.hostname or not source['label'].strip() or not source['location'].strip():
+                    raise ValueError(f'Invalid city commentary source: {key}')
+            for paragraph in paragraphs:
+                refs = paragraph['sources']
+                if (not paragraph['text'].strip() or not refs or len(set(refs)) != len(refs)
+                    or any(type(ref) is not int or not 1 <= ref <= len(sources) for ref in refs)):
+                    raise ValueError(f'Invalid city commentary paragraph: {key}')
+            records[city] = record
+    return records
+
+def add_commentary(soup, record):
+    paragraphs = []
+    for paragraph in record['paragraphs']:
+        refs = ''.join(
+            f' <a href="#city-commentary-source-{ref}" aria-label="出典{ref}">[{ref}]</a>'
+            for ref in paragraph['sources']
+        )
+        paragraphs.append(f'<p>{e(paragraph["text"])}{refs}</p>')
+    sources = ''.join(
+        f'<li id="city-commentary-source-{index}">{link(source["url"], source["label"] + " ↗")}</li>'
+        for index, source in enumerate(record['sources'], 1)
+    )
+    body = ''.join(paragraphs) + '<h3>出典</h3><ol class="sources">' + sources + '</ol>' + date_line(record, '')
+    card_html = section('city-commentary', '地域の移動と支援', body)
+    soup.select_one('#benefit-browser').insert_after(BeautifulSoup(card_html, 'html.parser'))
+
 def gather(root):
     prefs={};bus={};taxi={}
     for path in sorted((root/'data').glob('*-menkyo-henno.json')):
@@ -185,6 +228,12 @@ def gather(root):
         if tp.exists():taxi[pid]=load(tp)
     supplemental=load(root/'data/municipality-supplements.json')
     mobility={}
+    for key, entry in supplemental['records'].items():
+        for local in entry.get('local_mobility', []):
+            mobility.setdefault(tuple(key.split(':')), []).append({
+                'record': local, 'checked': local['checked'],
+                'coverage': {'scope': local['scope'], 'level': 'partial'},
+            })
     md=load(root/'data/municipal-mobility.json')
     for m in md['cities']:
         mobility.setdefault((m['pref'],m['municipality']),[]).append({'record':m,'checked':m.get('checked') or md['checked'],'coverage':{'scope':m['scope'],'level':m['level'],'page':f"{m['pref']}-mobility/{m['municipality']}.html"}})
@@ -252,7 +301,8 @@ def mobility_body(a):
                 body+='<h3>'+title+'</h3>'
                 for r in unique(m[category]):body+=card(r['name'],recursive(r,checked)+date_line(r,checked))
         if not m.get('rides'):body+='<p>この案内は運賃支援のみです。個別の交通手段・運行・予約は未掲載です。</p>'
-        body+=link(cv.get('page'),m['name']+'の交通案内を開く ↗','primary')
+        if cv.get('page'):
+            body+=link(cv['page'],m['name']+'の交通案内を開く ↗','primary')
     return body
 
 def short(v):
@@ -605,6 +655,7 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
     outing_cities = {(pid, city["id"]): city for pid, pref in outing_catalog.items() for city in pref["cities"]}
     estimate_cities = {rule['key'] for rule in load_estimates(root)}
     indexed={(pid,c['slug']):(c,d) for pid,d in prefs.items() for c in d['cities']}
+    commentary = load_commentary(root, indexed)
     wanted=[tuple(row['key'].split(':')) for row in supp['municipalities']]
     assert len(wanted)==1741 and len(set(wanted))==1741
     assert set(wanted)==set(indexed),'City enumeration differs between supplements and return records'
@@ -652,6 +703,8 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         if (pid, slug) == ('hyogo', 'kobe'):
             improve_kobe_editorial_content(soup)
         apply_city_search_entry(soup, pid, slug)
+        if (pid, slug) in commentary:
+            add_commentary(soup, commentary[(pid, slug)])
         for record_tag in soup.select('#preserved-records'):
             record_tag.decompose()
         if not draft:

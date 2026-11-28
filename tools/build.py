@@ -294,7 +294,7 @@ def card(c, checked, taxi=None, statewide=True, hk=None, back=None, gdir=GUIDE_D
         src = c.get("src") or f"{unit}の公式ページ"
         link = (f'<a class="btn-src" href="{e(c["url"])}" target="_blank" rel="noopener">'
                 f'{e(src)}を見る<span aria-hidden="true">↗</span></a>')
-        dates = f'ページの日付：{e(c["upd"])}<br>確かめた日：{jdate(checked)}'
+        dates = f'ページの日付：{e(c.get("upd") or "記載なし")}<br>確かめた日：{jdate(checked)}'
     else:
         link = f'<span class="empty-src">{unit}の公式ページ：見つかりませんでした</span>'
         dates = f'確かめた日：{jdate(checked)}'
