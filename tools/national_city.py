@@ -187,7 +187,7 @@ def gather(root):
     mobility={}
     md=load(root/'data/municipal-mobility.json')
     for m in md['cities']:
-        mobility.setdefault((m['pref'],m['municipality']),[]).append({'record':m,'checked':m.get('checked') or md['checked'],'coverage':{'scope':m['scope'],'level':m['level'],'page':f"{m['pref']}-mobility/{m['municipality']}.html"}})
+        mobility.setdefault((m['pref'],m['municipality']),[]).append({'record':m,'checked':m.get('checked') or md['checked'],'coverage':{'scope':m['scope'],'level':m['level']}})
     east=load(root/'data/east-harima-mobility.json');byid={m['id']:m for m in east['cities']}
     coverage=load(root/'data/mobility-coverage.json')
     for c in coverage['entries']:
@@ -239,21 +239,49 @@ def mobility_body(a):
     if not a['mobility']:
         return '<div class="unknown"><p>個別の交通手段・運行・予約の詳しい案内は、このページでは未掲載です。掲載済みの支援の利用路線は、各制度の条件でご確認ください。</p></div>'
     body=''
-    for item in a['mobility']:
+    counts = {'ride': 0, 'support': 0}
+    regional_links = []
+    for index, item in enumerate(a['mobility']):
         m=item['record'];cv=item['coverage'];checked=item['checked']
-        body+='<div class="notice"><strong>掲載範囲：'+e(cv.get('scope',m.get('scope',m['name'])))+'</strong><p>'+e(m.get('quick_scope',''))+'</p>'
+        overview_id = ' id="overview-h"' if index == 0 else ''
+        body+=f'<div class="notice"{overview_id}><strong>掲載範囲：'+e(cv.get('scope',m.get('scope',m['name'])))+'</strong><p>'+e(m.get('quick_scope',''))+'</p>'
         if cv.get('level')=='partial':
             body+='<p>地区や制度を限定した情報です。市町村全域・すべての交通手段を網羅した案内ではありません。</p>'
         body+='</div>'+date_line(m,checked)
         if item.get('coverage_checked'):
             body+='<p class="dates">掲載範囲の対応表の確認日：'+e(item['coverage_checked'])+'</p>'
-        for category,title in [('rides','交通手段'),('supports','地域交通に関連する運賃支援')]:
-            if m.get(category):
-                body+='<h3>'+title+'</h3>'
-                for r in unique(m[category]):body+=card(r['name'],recursive(r,checked)+date_line(r,checked))
+        if (m.get('pref'), m.get('municipality')) == ('tokyo', 'hachioji'):
+            body += hachibus_overview(m['rides'][0]['source'])
+        for category, anchor, title in [('rides', 'ride', '交通手段'),
+                                        ('supports', 'support', '地域交通に関連する運賃支援')]:
+            records = unique(m.get(category, []))
+            if not records:
+                continue
+            heading_id = f' id="{anchor}-h"' if not counts[anchor] else ''
+            body += f'<h3{heading_id}>{title}</h3>'
+            for r in records:
+                counts[anchor] += 1
+                body += card(r['name'], recursive(r, checked) + date_line(r, checked),
+                             f'{anchor}-{counts[anchor]}')
         if not m.get('rides'):body+='<p>この案内は運賃支援のみです。個別の交通手段・運行・予約は未掲載です。</p>'
-        body+=link(cv.get('page'),m['name']+'の交通案内を開く ↗','primary')
+        if item.get('coverage_checked'):
+            regional_links.append(f'<p><a href="../east-harima-mobility.html?city={e(m["id"])}">{e(m["name"])}の交通を外出目的で探す</a></p>')
+    for anchor, count in counts.items():
+        if not count:
+            body += f'<span id="{anchor}-h" class="legacy-anchor"></span>'
+    body += '<div id="next-h">' + ''.join(regional_links) + '</div>' if regional_links else '<span id="next-h" class="legacy-anchor"></span>'
     return body
+
+
+def hachibus_overview(source):
+    return f'''<section aria-labelledby="hachibus-answers-h">
+  <h3 id="hachibus-answers-h">はちバスに乗る前に</h3>
+  <dl class="facts">
+    <div><dt>料金</dt><dd>一律200円。小学生・障害のある方は半額、はちバス専用乗車券を提示する方は無料です。<br><a href="#ride-1">支払い方法と運行日を見る</a></dd></div>
+    <div><dt>シルバーパス</dt><dd>無料乗車には、市が発行する「はちバス専用乗車券」の申請が必要です。ICカードのシルバーパスで乗車すると料金が引かれます。<br><a href="#support-1">対象・持ち物・申請先を見る</a></dd></div>
+    <div><dt>時刻表・路線図</dt><dd>2026年10月から10路線で運行。路線ごとに運行曜日が異なります。<br><a href="{e(source)}">市公式の時刻表・路線図（はちバスマップ）を見る ↗</a></dd></div>
+  </dl>
+</section>'''
 
 def short(v):
     v=str(v or '詳細で対象・条件を確認')
@@ -648,6 +676,9 @@ button,.city-switch a,.crumb a,footer a{min-height:48px}.sources a,.facts a,.rec
         apply_compact_city(soup, pid, slug, a)
         city_links(soup, pid, slug, outing_cities.get((pid, slug)))
         apply_benefit_integration(soup, pid, slug, estimate_available=f'{pid}:{slug}' in estimate_cities)
+        if a['mobility']:
+            alias = soup.new_tag('span', id='return-h', attrs={'class': 'legacy-anchor'})
+            soup.select_one('#benefit').insert(0, alias)
         improve_shared_city_editorial_content(soup)
         if (pid, slug) == ('hyogo', 'kobe'):
             improve_kobe_editorial_content(soup)
